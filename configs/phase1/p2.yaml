@@ -1,0 +1,14 @@
+extends: common.yaml
+experiment:
+  id: phase1-p2
+  method: P2
+  description: Spatial masked context SSL with Cox and pairwise ranking.
+
+model:
+  kind: context
+  use_ssl: true
+  survival_finetune: true
+  survival_loss: cox_pairwise
+  use_coords: true
+  mask_type: spatial
+  mask_ratio: 0.4

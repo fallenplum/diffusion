@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/fallenplum/diffusion/schemas/experiment_request.schema.json",
+  "title": "Diffusion automated experiment request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "experiment",
+    "code",
+    "config",
+    "execution",
+    "dataset",
+    "reproducibility",
+    "outputs"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "experiment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "phase", "description"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,95}$"
+        },
+        "phase": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1, "maxLength": 2000}
+      }
+    },
+    "code": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["base_commit"],
+      "properties": {
+        "base_commit": {"type": "string", "minLength": 1}
+      }
+    },
+    "config": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^(?![A-Za-z]:)(?!/)(?!\\\\)configs/[A-Za-z0-9._/-]+\\.ya?ml$"
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "device", "expected_gpu", "timeout_minutes"],
+      "properties": {
+        "mode": {"enum": ["smoke", "full"]},
+        "device": {"enum": ["auto", "cpu", "cuda"]},
+        "expected_gpu": {"type": "boolean"},
+        "timeout_minutes": {"type": "integer", "minimum": 1, "maximum": 1440},
+        "command": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["data_root_env", "requires_patient_data"],
+      "properties": {
+        "data_root_env": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_]{2,63}$"
+        },
+        "required_directories": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^[A-Za-z0-9._/-]+$"}
+        },
+        "requires_patient_data": {"type": "boolean"}
+      }
+    },
+    "reproducibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["seeds", "folds"],
+      "properties": {
+        "seeds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "integer", "minimum": 0}
+        },
+        "folds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifact_name"],
+      "properties": {
+        "artifact_name": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,95}$"
+        }
+      }
+    }
+  }
+}

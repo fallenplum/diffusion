@@ -202,7 +202,16 @@ def tensor_batch(x: np.ndarray, coords: np.ndarray):
 
 
 def make_mask(coords: np.ndarray, ratio: float, kind: str, rng: np.random.Generator) -> np.ndarray:
+    coords = np.asarray(coords, dtype=float)
+    if coords.ndim != 2 or coords.shape[1] != 2:
+        raise ValueError("coords must have shape (n_tokens, 2)")
+    if not np.all(np.isfinite(coords)):
+        raise ValueError("coords contains NaN or Inf")
+    if not np.isfinite(ratio) or not 0.0 <= ratio <= 1.0:
+        raise ValueError("mask ratio must be between 0 and 1")
     n = len(coords)
+    if n < 2:
+        raise ValueError("at least two tokens are required for masking")
     count = min(n - 1, max(1, int(round(n * ratio))))
     if kind == "random":
         selected = rng.choice(n, count, replace=False)

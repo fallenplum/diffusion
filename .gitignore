@@ -18,6 +18,11 @@ ENV/
 Thumbs.db
 .git_local/
 
+# Ephemeral automated-research runtime and smoke/full artifacts
+runtime/
+outputs/automated_runs/
+preflight_report.json
+
 # Raw/derived data and model artifacts (never commit patient-level data)
 TCGA/
 data/

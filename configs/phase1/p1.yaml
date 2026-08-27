@@ -1,0 +1,14 @@
+extends: common.yaml
+experiment:
+  id: phase1-p1
+  method: P1
+  description: Spatial masked context SSL followed by Cox fine-tuning.
+
+model:
+  kind: context
+  use_ssl: true
+  survival_finetune: true
+  survival_loss: cox
+  use_coords: true
+  mask_type: spatial
+  mask_ratio: 0.4

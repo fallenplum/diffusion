@@ -1,0 +1,12 @@
+# Runtime dependencies for the existing Phase P1 scripts and automation runner.
+# The PyTorch constraint intentionally leaves CUDA wheel selection to the host
+# environment; do not install a CUDA-specific wheel from this file.
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.10,<2
+scikit-learn>=1.2,<2
+h5py>=3.8,<4
+matplotlib>=3.7,<4
+torch>=2.1,<3
+PyYAML>=6.0,<7
+jsonschema>=4.20,<5

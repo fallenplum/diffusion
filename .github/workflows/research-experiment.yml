@@ -181,39 +181,46 @@ jobs:
           persist-credentials: false
 
       - name: Validate self-hosted research environment
-        shell: powershell
+        shell: cmd
         run: |
-          $ErrorActionPreference = "Stop"
-          if (-not $env:DIFFUSION_PYTHON) {
-            throw "Machine environment variable DIFFUSION_PYTHON is not set."
-          }
-          if (-not (Test-Path -LiteralPath $env:DIFFUSION_PYTHON)) {
-            throw "DIFFUSION_PYTHON does not point to an existing python.exe."
-          }
-          if (-not $env:DIFFUSION_DATA_ROOT) {
-            throw "Machine environment variable DIFFUSION_DATA_ROOT is not set."
-          }
-          & $env:DIFFUSION_PYTHON --version
-          & $env:DIFFUSION_PYTHON -c "import torch; print('torch=', torch.__version__); print('cuda=', torch.version.cuda); print('available=', torch.cuda.is_available()); print('gpu=', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NONE')"
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          @echo off
+          if not defined DIFFUSION_PYTHON (
+            echo Machine environment variable DIFFUSION_PYTHON is not set.
+            exit /b 1
+          )
+          if not exist "%DIFFUSION_PYTHON%" (
+            echo DIFFUSION_PYTHON does not point to an existing python.exe.
+            exit /b 1
+          )
+          if not defined DIFFUSION_DATA_ROOT (
+            echo Machine environment variable DIFFUSION_DATA_ROOT is not set.
+            exit /b 1
+          )
+          "%DIFFUSION_PYTHON%" --version
+          if errorlevel 1 exit /b 1
+          "%DIFFUSION_PYTHON%" -c "import torch; print('torch=', torch.__version__); print('cuda=', torch.version.cuda); print('available=', torch.cuda.is_available()); print('gpu=', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NONE')"
+          if errorlevel 1 exit /b 1
 
       - name: Validate request in dry-run mode
-        shell: powershell
+        shell: cmd
         run: |
-          & $env:DIFFUSION_PYTHON scripts/run_research_experiment.py --request "${{ needs.select-request.outputs.request }}" --dry-run
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          @echo off
+          "%DIFFUSION_PYTHON%" scripts\run_research_experiment.py --request "${{ needs.select-request.outputs.request }}" --dry-run
+          if errorlevel 1 exit /b 1
 
       - name: GPU and data preflight (fail fast)
-        shell: powershell
+        shell: cmd
         run: |
-          & $env:DIFFUSION_PYTHON scripts/gpu_preflight.py --data-root-env DIFFUSION_DATA_ROOT --require-data --require-gpu --required-dir TCGA --report-path preflight_report.json
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          @echo off
+          "%DIFFUSION_PYTHON%" scripts\gpu_preflight.py --data-root-env DIFFUSION_DATA_ROOT --require-data --require-gpu --required-dir TCGA --report-path preflight_report.json
+          if errorlevel 1 exit /b 1
 
       - name: Run requested full experiment
-        shell: powershell
+        shell: cmd
         run: |
-          & $env:DIFFUSION_PYTHON scripts/run_research_experiment.py --request "${{ needs.select-request.outputs.request }}"
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          @echo off
+          "%DIFFUSION_PYTHON%" scripts\run_research_experiment.py --request "${{ needs.select-request.outputs.request }}"
+          if errorlevel 1 exit /b 1
 
       - name: Upload run state, logs, and lightweight metrics
         if: always()

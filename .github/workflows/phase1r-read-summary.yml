@@ -1,0 +1,29 @@
+name: Phase1R read summary
+
+on:
+  push:
+    branches: [chatgpt/phase1r-confirmatory]
+    paths:
+      - ".github/workflows/phase1r-read-summary.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  read-summary:
+    runs-on: [self-hosted, diffusion, gpu]
+    timeout-minutes: 10
+    steps:
+      - name: Print aggregate Phase1R summary only
+        shell: cmd
+        run: |
+          @echo off
+          set "RUN_DIR=D:\actions-runner\_work\diffusion\diffusion\outputs\automated_runs\phase1r-confirmatory-20260828"
+          if not exist "%RUN_DIR%\summary.json" (
+            echo Phase1R summary.json is not present in the retained self-hosted workspace.
+            exit /b 2
+          )
+          type "%RUN_DIR%\summary.json"
+          echo.
+          echo ==== FOLD METRICS ====
+          type "%RUN_DIR%\fold_metrics.csv"

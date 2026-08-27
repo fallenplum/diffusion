@@ -13,6 +13,43 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
 
+def _survival_vector(name: str, values, *, dtype=float) -> np.ndarray:
+    """Convert a survival input to a finite one-dimensional array.
+
+    The historical experiments only pass valid arrays.  These checks make the
+    shared metrics fail closed for automation and tests without changing the
+    result for valid Phase P1 inputs.
+    """
+    raw = np.asarray(values)
+    if raw.ndim != 1:
+        raise ValueError(f"{name} must be one-dimensional")
+    try:
+        array = raw.astype(dtype)
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"{name} must be numeric") from exc
+    if not np.all(np.isfinite(array)):
+        raise ValueError(f"{name} contains NaN or Inf")
+    return array
+
+
+def _validate_survival_inputs(durations, events, risks=None):
+    durations = _survival_vector("durations", durations, dtype=float)
+    raw_events = np.asarray(events)
+    if raw_events.ndim != 1:
+        raise ValueError("events must be one-dimensional")
+    if not np.all(np.isin(raw_events, [0, 1])):
+        raise ValueError("events must contain only 0 or 1")
+    events = raw_events.astype(int)
+    if len(durations) != len(events):
+        raise ValueError("durations and events must have the same length")
+    if risks is None:
+        return durations, events
+    risks = _survival_vector("risks", risks, dtype=float)
+    if len(risks) != len(durations):
+        raise ValueError("durations, events and risks must have the same length")
+    return durations, events, risks
+
+
 def set_seed(seed: int) -> None:
     random.seed(seed)
     np.random.seed(seed)
@@ -30,9 +67,7 @@ def set_seed(seed: int) -> None:
 
 
 def harrell_c(durations: np.ndarray, events: np.ndarray, risks: np.ndarray) -> float:
-    durations = np.asarray(durations, dtype=float)
-    events = np.asarray(events, dtype=int)
-    risks = np.asarray(risks, dtype=float)
+    durations, events, risks = _validate_survival_inputs(durations, events, risks)
     concordant = 0.0
     comparable = 0
     for i in range(len(durations)):
@@ -49,8 +84,8 @@ def harrell_c(durations: np.ndarray, events: np.ndarray, risks: np.ndarray) -> f
 
 
 def censoring_km(train_times: np.ndarray, train_events: np.ndarray):
-    times = np.asarray(train_times, dtype=float)
-    censor = 1 - np.asarray(train_events, dtype=int)
+    times, events = _validate_survival_inputs(train_times, train_events)
+    censor = 1 - events
     unique = np.sort(np.unique(times))
     survival = 1.0
     values = []
@@ -65,12 +100,17 @@ def censoring_km(train_times: np.ndarray, train_events: np.ndarray):
 
     def predict(query: np.ndarray | float, left_limit: bool = True) -> np.ndarray:
         q = np.asarray(query, dtype=float)
+        if not np.all(np.isfinite(q)):
+            raise ValueError("query contains NaN or Inf")
+        original_shape = q.shape
+        q = q.reshape(-1)
         side = "left" if left_limit else "right"
         index = np.searchsorted(unique, q, side=side) - 1
         result = np.ones_like(q, dtype=float)
         valid = index >= 0
         result[valid] = values[index[valid]]
-        return result
+        result = result.reshape(original_shape)
+        return result.item() if original_shape == () else result
 
     return predict
 
@@ -81,10 +121,12 @@ def uno_c(
     risks: np.ndarray,
     censor_survival_at_event: np.ndarray,
 ) -> float:
-    durations = np.asarray(durations, dtype=float)
-    events = np.asarray(events, dtype=int)
-    risks = np.asarray(risks, dtype=float)
-    g = np.asarray(censor_survival_at_event, dtype=float)
+    durations, events, risks = _validate_survival_inputs(durations, events, risks)
+    g = _survival_vector("censor_survival_at_event", censor_survival_at_event, dtype=float)
+    if len(g) != len(durations):
+        raise ValueError("censor_survival_at_event must match durations length")
+    if np.any(g < 0):
+        raise ValueError("censor_survival_at_event cannot be negative")
     numerator = 0.0
     denominator = 0.0
     for i in range(len(durations)):
@@ -160,4 +202,3 @@ def update_run_state(root: Path, completed_job: str, next_stage: str | None = No
         state["stage"] = next_stage
     state["updated_at"] = datetime.now(timezone.utc).isoformat()
     path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
-

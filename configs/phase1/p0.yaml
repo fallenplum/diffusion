@@ -1,0 +1,13 @@
+extends: common.yaml
+experiment:
+  id: phase1-p0
+  method: P0
+  description: Masked context SSL followed by a frozen linear Cox probe.
+
+model:
+  kind: context
+  use_ssl: true
+  survival_finetune: false
+  use_coords: true
+  mask_type: spatial
+  mask_ratio: 0.4

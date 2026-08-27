@@ -1,0 +1,10 @@
+extends: common.yaml
+experiment:
+  id: phase1-b1
+  method: B1
+  description: Frozen UNI2-h projection with gated attention MIL and Cox.
+
+model:
+  kind: abmil
+  use_ssl: false
+  use_coords: false

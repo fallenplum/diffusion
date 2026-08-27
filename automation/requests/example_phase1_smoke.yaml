@@ -1,0 +1,30 @@
+schema_version: 1
+
+experiment:
+  id: phase1-smoke
+  phase: phase1
+  description: Synthetic CPU smoke test for the request-to-artifact execution path.
+
+code:
+  base_commit: HEAD
+
+config:
+  path: configs/phase1/p2.yaml
+
+execution:
+  mode: smoke
+  device: cpu
+  expected_gpu: false
+  timeout_minutes: 10
+
+dataset:
+  data_root_env: DIFFUSION_DATA_ROOT
+  required_directories: []
+  requires_patient_data: false
+
+reproducibility:
+  seeds: [20260723]
+  folds: [1]
+
+outputs:
+  artifact_name: phase1-smoke

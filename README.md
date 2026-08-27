@@ -37,3 +37,31 @@ The neural experiments additionally require a CUDA-compatible PyTorch environmen
 ## Reproducibility and safety
 
 All reported survival metrics are patient-level out-of-fold metrics. The outer split is fixed with `StratifiedKFold(n_splits=5, shuffle=True, random_state=20260723)`, and the repository workflow checks compilation, statistical utility imports, and the absence of protected data/model binaries.
+
+## Development setup
+
+Install formal runtime dependencies with `python -m pip install -r requirements.txt`. The CI-only dependencies (pytest, ruff, PyYAML and schema validation) are listed in `requirements-ci.txt`. The observed local GPU environment and the CPU/GPU boundary are documented in `docs/environment.md`.
+
+## Testing and CI
+
+Run the same lightweight checks locally:
+
+```bash
+ruff check src tests scripts
+pytest
+python -m compileall -q src scripts tests
+python scripts/check_protected_data.py
+python scripts/run_research_experiment.py --request automation/requests/example_phase1_smoke.yaml --dry-run
+```
+
+`.github/workflows/ci.yml` runs these checks on a GitHub-hosted CPU runner and installs only the official CPU PyTorch wheel for synthetic model tests. It never downloads patient data or large model artifacts.
+
+## Experiment configs and automated workflow
+
+The historical Phase P1 parameters are declared under `configs/phase1/`. A request is validated against `automation/schemas/experiment_request.schema.json` and executed through `scripts/run_research_experiment.py`. `mode: smoke` is synthetic and cannot be treated as a scientific result; `mode: full` requires an explicit repository-relative command and a self-hosted GPU/data environment.
+
+The self-hosted workflow is `.github/workflows/research-experiment.yml`. It accepts one request per same-repository PR (and manual dispatch), applies fork protection, serializes GPU runs, fails fast in `scripts/gpu_preflight.py`, and uploads state/logs/lightweight metrics with `if: always()`. It does not auto-commit results, preventing an Action loop. See `docs/auto_research_loop.md` and `docs/self_hosted_runner.md` before registering a runner.
+
+## Data safety
+
+Set `DIFFUSION_DATA_ROOT` only on the local/GPU runner. Do not place a real data path, patient identifier, API key, PAT, HuggingFace token, SSH key or runner registration token in a request, workflow, README or commit. `TCGA/`, `data/`, raw H5/NPY/NPZ files, checkpoints and large outputs remain local and are checked by both `.gitignore` and the CI guard.

@@ -1,0 +1,45 @@
+schema_version: 1
+phase: phase1
+
+data:
+  data_root_env: DIFFUSION_DATA_ROOT
+  required_directories:
+    - TCGA
+  relative_bag_root: TCGA/uni2_h_bags
+  relative_audit_root: outputs/pathology_context_phase1/audit
+
+reproducibility:
+  seed: 20260723
+  outer_folds: 5
+  split: StratifiedKFold
+  shuffle: true
+
+encoder:
+  input_dim: 1536
+  projection_dim: 256
+  heads: 8
+  layers: 2
+  ffn_dim: 512
+  dropout: 0.1
+  max_tokens: 1024
+  pooling: cls
+
+sampling:
+  train: dynamic
+  evaluation_seeds: [11, 23, 47, 89]
+  test_subsamples: 4
+
+survival:
+  optimizer: AdamW
+  learning_rate_candidates: [0.0001, 0.0003]
+  weight_decay: 0.0001
+  epochs: 20
+  patience: 5
+  risk_set_comparators: 7
+  cox_approximation: nested risk-set sampling
+  lambda_rank: 0.2
+  tau: 1.0
+
+outputs:
+  primary_root: outputs/pathology_context_phase1
+  automated_root: outputs/automated_runs

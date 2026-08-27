@@ -1,0 +1,115 @@
+name: Research experiment
+
+on:
+  pull_request:
+    paths:
+      - "automation/requests/**"
+      - "configs/**"
+      - "src/**"
+      - "scripts/**"
+      - ".github/workflows/research-experiment.yml"
+  workflow_dispatch:
+    inputs:
+      request:
+        description: Repository-relative experiment request YAML
+        required: true
+        default: automation/requests/example_phase1_smoke.yaml
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  select-request:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      request: ${{ steps.select.outputs.request }}
+      should_run: ${{ steps.select.outputs.should_run }}
+    steps:
+      - name: Check out request branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Select exactly one request
+        id: select
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_REQUEST: ${{ inputs.request }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            candidate="$DISPATCH_REQUEST"
+          else
+            mapfile -t requests < <(git diff --name-only "$BASE_SHA" "$HEAD_SHA" | grep -E '^automation/requests/[^/]+\.ya?ml$' || true)
+            if [[ "${#requests[@]}" -eq 0 ]]; then
+              echo "No experiment request changed; GPU job will be skipped."
+              echo "should_run=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            if [[ "${#requests[@]}" -ne 1 ]]; then
+              echo "A PR must change exactly one experiment request; found: ${requests[*]}" >&2
+              exit 1
+            fi
+            candidate="${requests[0]}"
+          fi
+          case "$candidate" in
+            automation/requests/*.yaml|automation/requests/*.yml) ;;
+            *) echo "Request must be under automation/requests and use YAML" >&2; exit 1 ;;
+          esac
+          test -f "$candidate"
+          echo "request=$candidate" >> "$GITHUB_OUTPUT"
+          echo "should_run=true" >> "$GITHUB_OUTPUT"
+
+  gpu-research:
+    needs: select-request
+    if: >-
+      needs.select-request.outputs.should_run == 'true' &&
+      (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: [self-hosted, diffusion, gpu]
+    timeout-minutes: 720
+    concurrency:
+      group: diffusion-gpu-${{ github.repository }}-${{ github.event.pull_request.number || github.run_id }}
+      cancel-in-progress: false
+    env:
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - name: Check out the exact request commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+
+      - name: Validate request in dry-run mode
+        run: >-
+          python scripts/run_research_experiment.py
+          --request "${{ needs.select-request.outputs.request }}"
+          --dry-run
+
+      - name: GPU preflight (fail fast)
+        run: >-
+          python scripts/gpu_preflight.py
+          --data-root-env DIFFUSION_DATA_ROOT
+          --require-gpu
+          --report-path preflight_report.json
+
+      - name: Run requested experiment
+        run: >-
+          python scripts/run_research_experiment.py
+          --request "${{ needs.select-request.outputs.request }}"
+
+      - name: Upload run state, logs, and lightweight metrics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-${{ github.run_id }}
+          path: |
+            preflight_report.json
+            outputs/automated_runs/**
+          if-no-files-found: warn
+          retention-days: 14

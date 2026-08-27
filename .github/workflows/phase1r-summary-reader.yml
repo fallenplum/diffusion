@@ -1,0 +1,27 @@
+name: Phase1R summary reader
+
+on:
+  push:
+    branches: [chatgpt/phase1r-summary-reader]
+    paths:
+      - ".github/workflows/phase1r-summary-reader.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  read:
+    runs-on: [self-hosted, diffusion, gpu]
+    timeout-minutes: 10
+    steps:
+      - name: Print retained aggregate outputs
+        shell: cmd
+        run: |
+          @echo off
+          set "RUN_DIR=D:\actions-runner\_work\diffusion\diffusion\outputs\automated_runs\phase1r-confirmatory-20260828"
+          if not exist "%RUN_DIR%\metrics.csv" exit /b 2
+          echo ==== METRICS ====
+          type "%RUN_DIR%\metrics.csv"
+          echo.
+          echo ==== DECISION ====
+          type "%RUN_DIR%\decision.json"

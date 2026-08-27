@@ -37,4 +37,3 @@ The neural experiments additionally require a CUDA-compatible PyTorch environmen
 ## Reproducibility and safety
 
 All reported survival metrics are patient-level out-of-fold metrics. The outer split is fixed with `StratifiedKFold(n_splits=5, shuffle=True, random_state=20260723)`, and the repository workflow checks compilation, statistical utility imports, and the absence of protected data/model binaries.
-

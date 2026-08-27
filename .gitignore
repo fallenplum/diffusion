@@ -1,0 +1,70 @@
+# Python bytecode, caches, and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Editors and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.git_local/
+
+# Raw/derived data and model artifacts (never commit patient-level data)
+TCGA/
+data/
+.cache/
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.tar
+*.tar.gz
+*.zip
+
+# Large generated outputs: keep only lightweight, reviewable summaries
+outputs/*
+!outputs/pathology_context_phase1/
+outputs/pathology_context_phase1/*
+!outputs/pathology_context_phase1/RESULTS.md
+!outputs/pathology_context_phase1/NEXT_DECISION.md
+!outputs/pathology_context_phase1/experiment_manifest.json
+!outputs/pathology_context_phase1/results_master.csv
+!outputs/pathology_context_phase1/audit/
+outputs/pathology_context_phase1/audit/*
+!outputs/pathology_context_phase1/audit/data_audit.json
+!outputs/pathology_context_phase1/audit/data_audit.md
+!outputs/pathology_context_phase1/audit/split_audit.md
+!outputs/pathology_context_phase1/statistical_tests/
+outputs/pathology_context_phase1/statistical_tests/*
+!outputs/pathology_context_phase1/statistical_tests/embedding_diagnostics.csv
+!outputs/pathology_context_phase1/ssl_metrics/
+outputs/pathology_context_phase1/ssl_metrics/*
+!outputs/pathology_context_phase1/ssl_metrics/ssl_metrics_summary.csv
+
+# Local logs and secrets
+*.log
+.env
+.env.*
+!.env.example
+credentials.json
+secrets.json
+
+# Local literature/application PDFs may contain copyrighted or confidential material
+literature/*.pdf
+申请书/

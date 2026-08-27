@@ -26,6 +26,7 @@ jobs:
     outputs:
       request: ${{ steps.select.outputs.request }}
       should_run: ${{ steps.select.outputs.should_run }}
+      mode: ${{ steps.select.outputs.mode }}
     steps:
       - name: Check out request branch
         uses: actions/checkout@v4
@@ -48,7 +49,7 @@ jobs:
           else
             mapfile -t requests < <(git diff --name-only "$BASE_SHA" "$HEAD_SHA" | grep -E '^automation/requests/[^/]+\.ya?ml$' || true)
             if [[ "${#requests[@]}" -eq 0 ]]; then
-              echo "No experiment request changed; GPU job will be skipped."
+              echo "No experiment request changed; research execution will be skipped."
               echo "should_run=false" >> "$GITHUB_OUTPUT"
               exit 0
             fi
@@ -58,18 +59,112 @@ jobs:
             fi
             candidate="${requests[0]}"
           fi
+
           case "$candidate" in
             automation/requests/*.yaml|automation/requests/*.yml) ;;
             *) echo "Request must be under automation/requests and use YAML" >&2; exit 1 ;;
           esac
           test -f "$candidate"
+
+          mode="$(awk '/^[[:space:]]*mode:[[:space:]]*/ {gsub(/["'"'"'[:space:]]/, "", $2); print $2; exit}' "$candidate")"
+          case "$mode" in
+            smoke|full) ;;
+            *) echo "Request execution.mode must be smoke or full; found: ${mode:-<missing>}" >&2; exit 1 ;;
+          esac
+
           echo "request=$candidate" >> "$GITHUB_OUTPUT"
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
           echo "should_run=true" >> "$GITHUB_OUTPUT"
 
-  gpu-research:
+  quality-gate:
     needs: select-request
+    if: needs.select-request.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Check out the exact request commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-ci.txt
+
+      - name: Install CPU quality-gate dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple "torch>=2.4,<2.6"
+          python -m pip install -r requirements-ci.txt
+
+      - name: Compile source tree
+        run: python -m compileall -q src scripts tests
+
+      - name: Lint source and tests
+        run: ruff check src tests scripts
+
+      - name: Run CPU test suite
+        run: pytest -q
+
+      - name: Validate selected request
+        run: >-
+          python scripts/run_research_experiment.py
+          --request "${{ needs.select-request.outputs.request }}"
+          --dry-run
+
+      - name: Verify protected data is absent
+        run: python scripts/check_protected_data.py
+
+  smoke-research:
+    needs: [select-request, quality-gate]
     if: >-
       needs.select-request.outputs.should_run == 'true' &&
+      needs.select-request.outputs.mode == 'smoke'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the exact request commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-ci.txt
+
+      - name: Install smoke dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-ci.txt
+
+      - name: Run synthetic smoke request
+        run: >-
+          python scripts/run_research_experiment.py
+          --request "${{ needs.select-request.outputs.request }}"
+
+      - name: Upload smoke artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-${{ github.run_id }}-smoke
+          path: |
+            outputs/automated_runs/**
+          if-no-files-found: warn
+          retention-days: 14
+
+  gpu-research:
+    needs: [select-request, quality-gate]
+    if: >-
+      needs.select-request.outputs.should_run == 'true' &&
+      needs.select-request.outputs.mode == 'full' &&
       (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: [self-hosted, diffusion, gpu]
     timeout-minutes: 720
@@ -85,29 +180,46 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
           persist-credentials: false
 
+      - name: Validate self-hosted research environment
+        shell: powershell
+        run: |
+          $ErrorActionPreference = "Stop"
+          if (-not $env:DIFFUSION_PYTHON) {
+            throw "Machine environment variable DIFFUSION_PYTHON is not set."
+          }
+          if (-not (Test-Path -LiteralPath $env:DIFFUSION_PYTHON)) {
+            throw "DIFFUSION_PYTHON does not point to an existing python.exe."
+          }
+          if (-not $env:DIFFUSION_DATA_ROOT) {
+            throw "Machine environment variable DIFFUSION_DATA_ROOT is not set."
+          }
+          & $env:DIFFUSION_PYTHON --version
+          & $env:DIFFUSION_PYTHON -c "import torch; print('torch=', torch.__version__); print('cuda=', torch.version.cuda); print('available=', torch.cuda.is_available()); print('gpu=', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NONE')"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
       - name: Validate request in dry-run mode
-        run: >-
-          python scripts/run_research_experiment.py
-          --request "${{ needs.select-request.outputs.request }}"
-          --dry-run
+        shell: powershell
+        run: |
+          & $env:DIFFUSION_PYTHON scripts/run_research_experiment.py --request "${{ needs.select-request.outputs.request }}" --dry-run
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-      - name: GPU preflight (fail fast)
-        run: >-
-          python scripts/gpu_preflight.py
-          --data-root-env DIFFUSION_DATA_ROOT
-          --require-gpu
-          --report-path preflight_report.json
+      - name: GPU and data preflight (fail fast)
+        shell: powershell
+        run: |
+          & $env:DIFFUSION_PYTHON scripts/gpu_preflight.py --data-root-env DIFFUSION_DATA_ROOT --require-data --require-gpu --required-dir TCGA --report-path preflight_report.json
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-      - name: Run requested experiment
-        run: >-
-          python scripts/run_research_experiment.py
-          --request "${{ needs.select-request.outputs.request }}"
+      - name: Run requested full experiment
+        shell: powershell
+        run: |
+          & $env:DIFFUSION_PYTHON scripts/run_research_experiment.py --request "${{ needs.select-request.outputs.request }}"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Upload run state, logs, and lightweight metrics
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: research-${{ github.run_id }}
+          name: research-${{ github.run_id }}-full
           path: |
             preflight_report.json
             outputs/automated_runs/**

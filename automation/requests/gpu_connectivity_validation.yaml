@@ -1,0 +1,36 @@
+schema_version: 1
+
+experiment:
+  id: gpu-connectivity-validation
+  phase: infrastructure
+  description: Validate the GitHub-to-self-hosted-GPU-to-artifact loop without reading patient files or running a scientific experiment.
+
+code:
+  base_commit: HEAD
+
+config:
+  path: configs/phase1/p2.yaml
+
+execution:
+  mode: full
+  device: cuda
+  expected_gpu: true
+  timeout_minutes: 10
+  command:
+    - python
+    - scripts/gpu_connectivity_probe.py
+
+dataset:
+  data_root_env: DIFFUSION_DATA_ROOT
+  required_directories:
+    - TCGA
+  requires_patient_data: true
+
+reproducibility:
+  seeds:
+    - 20260723
+  folds:
+    - 1
+
+outputs:
+  artifact_name: gpu-connectivity-validation

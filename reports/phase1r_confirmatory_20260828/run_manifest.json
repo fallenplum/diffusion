@@ -1,6 +1,6 @@
 {
   "experiment_id": "phase1r_confirmatory_20260828",
-  "git_commit": "28e82631914f9c77719baf8ab8dab1f39fc98a5f",
+  "git_commit": "124b6e5a1f004b2681ead62846ac7c767281c5da",
   "branch": "codex/phase1r-local-confirmatory",
   "python_version": "3.11.14",
   "pytorch_version": "2.4.1+cu121",
@@ -55,4 +55,3 @@
   "elapsed_seconds": 7032.879029,
   "completed_job_count": 33
 }
-

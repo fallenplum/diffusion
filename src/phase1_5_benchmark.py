@@ -1426,7 +1426,7 @@ The local feature-only benchmark has 65 observed events, so confidence intervals
 
     report_root = root / "reports" / EXPERIMENT_ID
     report_root.mkdir(parents=True, exist_ok=True)
-    for name in ["PHASE1_5_RESULTS.md", "PHASE1_5_DECISION.md", "PHASE1_5_REPRODUCIBILITY.md", "PHASE1_5_FAILURE_LOG.md"]:
+    for name in ["PHASE1_5_RESULTS.md", "PHASE1_5_DECISION.md", "PHASE1_5_REPRODUCIBILITY.md", "PHASE1_5_REPRODUCIBILITY.json", "PHASE1_5_FAILURE_LOG.md"]:
         shutil.copy2(out / name, report_root / name)
     for name in ["main_metrics.csv", "fold_metrics.csv", "attention_audit_summary.csv", "embedding_diagnostics.csv", "failure_ledger.csv"]:
         src = out / "tables" / name
@@ -1517,9 +1517,32 @@ def run(root: Path, resume: bool = False, force_audit: bool = False, max_epochs:
                     atomic_json(out / "run_state.json", state)
                     raise
     profile_marker = out / "configs" / "inference_profile_complete.json"
-    if not profile_marker.exists():
+    profile_csv = out / "compute" / "compute_profile.csv"
+    runnable_neural = [method for method in NEURAL_METHODS if method not in FAILED_METHODS]
+    profile_needs_refresh = True
+    if profile_csv.exists():
+        try:
+            current_profile = pd.read_csv(profile_csv)
+            profile_needs_refresh = not all(
+                ((current_profile["method"].astype(str) == method)
+                 & current_profile["inference_time_seconds"].notna()).any()
+                for method in runnable_neural
+            )
+        except (OSError, ValueError, KeyError):
+            profile_needs_refresh = True
+    # A completion marker alone is not sufficient: an interrupted/resumed
+    # report build may have left a stale profile with blank inference fields.
+    # Refreshing this table only loads saved checkpoints and never retrains.
+    if profile_needs_refresh:
         profile_rows.extend(measure_saved_inference(root, data, patients, slides, out, device))
         atomic_json(profile_marker, {"created_at": utc_now(), "training_time_note": "initial run did not persist per-job training wall time; inference and peak memory remeasured from saved checkpoints"})
+    if profile_csv.exists():
+        try:
+            # Preserve previously measured rows on --resume; newly measured
+            # rows are appended after them and win in aggregate_metrics().
+            profile_rows = pd.read_csv(profile_csv).to_dict("records") + profile_rows
+        except (OSError, ValueError, KeyError):
+            pass
     alias_rows = alias_b9a(out, state)
     profile_rows.extend(alias_rows)
     write_failures(out)

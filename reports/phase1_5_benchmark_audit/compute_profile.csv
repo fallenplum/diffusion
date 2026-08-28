@@ -1,0 +1,10 @@
+method,trainable_params,peak_gpu_memory_gb,train_time_minutes,inference_time_seconds,avg_num_tokens,measurement_status
+B0_mean,0,,,,,timing_not_persisted_in_initial_run
+B0b_mean_std,0,,,,,timing_not_persisted_in_initial_run
+B1_ABMIL,12802,,,,128.0,timing_not_persisted_in_initial_run
+B2_GatedABMIL,21122,,,,128.0,timing_not_persisted_in_initial_run
+B4_TransMIL,75778,,,,128.0,timing_not_persisted_in_initial_run
+B6_PANTHER_GMM,0,,,,,timing_not_persisted_in_initial_run
+B8_EAGLE_spatial,21314,,,,128.0,timing_not_persisted_in_initial_run
+B9a_ABMIL_Cox,0,,,,,timing_not_persisted_in_initial_run
+B9b_ABMIL_CoxRank,12802,,,,128.0,timing_not_persisted_in_initial_run

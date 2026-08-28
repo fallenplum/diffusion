@@ -23,6 +23,17 @@ The completed patient-level five-fold evaluation did not support the primary cla
 
 The lightweight reports are committed; fold checkpoints and raw embeddings remain local and ignored.
 
+## Phase 1.5 benchmark audit
+
+The pathology-only UNI2-h/DSS benchmark is resumable with:
+
+```bash
+python src/phase1_5_benchmark.py --root . --resume
+python scripts/validate_phase1_5.py --root .
+```
+
+It reuses the frozen Phase1R patient split, runs three seeds for every locally reproducible method, writes the full runtime tree under `outputs/phase1_5_benchmark_audit/`, and keeps raw data, checkpoints, patient-level OOF/attention files out of Git. Lightweight results, failure ledger, bootstrap comparisons, figures and the next decision are in `reports/phase1_5_benchmark_audit/`. MambaMIL, PAMoE and the unvalidated CLAM survival adaptation are retained as explicit `FAILED_TO_REPRODUCE` entries rather than being replaced by paper numbers.
+
 ## Local setup
 
 For source checks:

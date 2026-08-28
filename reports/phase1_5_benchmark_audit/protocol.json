@@ -1,0 +1,21 @@
+{
+  "protocol_s": "slide-first",
+  "patient_aggregation": "mean slide embedding",
+  "max_tokens": 128,
+  "token_selection": "uniform_order_preserving",
+  "projection_dim": 64,
+  "projection_seed": 20260828,
+  "seeds": [
+    20260723,
+    20260724,
+    20260725
+  ],
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "bootstrap": 2000
+}

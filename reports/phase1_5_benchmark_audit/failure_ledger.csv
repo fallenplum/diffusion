@@ -1,0 +1,4 @@
+method,status,reason,official_reference,attempts
+B3_CLAM_SB_survival,FAILED_TO_REPRODUCE,The official CLAM repository is classification-focused and no validated survival adaptation/checkpoint is available in the current assets. An initial bag-level Cox adaptation was run as a diagnostic but is excluded from the primary benchmark because it is not a defensible CLAM survival reproduction.,https://github.com/mahmoodlab/CLAM,1
+B5_MambaMIL,FAILED_TO_REPRODUCE,Official isyangshu/MambaMIL code requires the mamba package/causal-conv1d stack; mamba_ssm is absent in the locked environment and the project does not contain the official source or checkpoint.,https://github.com/isyangshu/MambaMIL,1
+B7_PAMoE,FAILED_TO_REPRODUCE,The official PAMoE repository is not vendored and its released demo requires the original training integration/extra assets; current scope contains frozen UNI2-h features only. No approximation is reported as PAMoE.,https://github.com/wjx-error/PAMoE,1

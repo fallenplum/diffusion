@@ -1,0 +1,42 @@
+# Phase 1.5 frozen protocol.  Raw features are supplied only through
+# DIFFUSION_DATA_ROOT at run time; this file contains no private paths.
+experiment_id: phase1_5_benchmark_audit
+data_root_env: DIFFUSION_DATA_ROOT
+endpoint: dss
+split:
+  source: outputs/phase1r_confirmatory_20260828/split/confirmatory_patient_manifest.csv
+  folds: 5
+  patient_level: true
+  reuse_if_available: true
+protocol:
+  main: slide_first
+  patient_aggregation: mean_slide_embedding
+  max_tokens: 128
+  token_selection: uniform_order_preserving
+  feature_projection_dim: 64
+  feature_projection_seed: 20260828
+seeds: [20260723, 20260724, 20260725]
+training:
+  optimizer: AdamW
+  weight_decay: 0.0001
+  max_epochs: 50
+  early_stopping_patience: 7
+  gradient_clip_norm: 1.0
+  mixed_precision: false
+statistics:
+  primary_metrics: [harrell_c, uno_c]
+  paired_bootstrap_replicates: 2000
+  bootstrap_censoring: fixed_full_cohort_km
+methods:
+  - B0_mean
+  - B0b_mean_std
+  - B1_ABMIL
+  - B2_GatedABMIL
+  - B3_CLAM_SB_survival
+  - B4_TransMIL
+  - B5_MambaMIL
+  - B6_PANTHER_GMM
+  - B7_PAMoE
+  - B8_EAGLE_spatial
+  - B9a_ABMIL_Cox
+  - B9b_ABMIL_CoxRank

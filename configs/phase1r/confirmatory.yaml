@@ -68,3 +68,4 @@ decision:
     same gate for B1_ABMIL; if neither passes, lock B0_mean as the pathology branch
     for Phase P2. Bootstrap intervals are reported as uncertainty evidence but are
     not used as an after-the-fact tuning criterion.
+

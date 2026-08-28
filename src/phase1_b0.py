@@ -25,10 +25,15 @@ SEED = 20260723
 def compute_patient_means(root: Path, patients: pd.DataFrame, slides: pd.DataFrame) -> np.ndarray:
     cache = root / "outputs" / "pathology_context_phase1" / "cache" / "tcga_patient_mean_float16_source.npz"
     if cache.exists():
-        with np.load(cache, allow_pickle=False) as bundle:
-            cached_ids = bundle["patient_ids"].astype(str)
-            if np.array_equal(cached_ids, patients["patient_id"].astype(str).to_numpy()):
-                return np.asarray(bundle["features"], dtype=np.float32)
+        try:
+            with np.load(cache, allow_pickle=False) as bundle:
+                cached_ids = bundle["patient_ids"].astype(str)
+                if np.array_equal(cached_ids, patients["patient_id"].astype(str).to_numpy()):
+                    return np.asarray(bundle["features"], dtype=np.float32)
+        except (ValueError, OSError):
+            # Older runs could have saved pandas object arrays.  They are not
+            # safe to unpickle in a resumable run, so recompute this cache.
+            pass
     vectors = []
     for idx, pid in enumerate(patients["patient_id"].astype(str), start=1):
         slide_vectors = []
@@ -40,7 +45,10 @@ def compute_patient_means(root: Path, patients: pd.DataFrame, slides: pd.DataFra
             print(f"[mean] {idx}/{len(patients)} patients", flush=True)
     features = np.asarray(vectors, dtype=np.float32)
     cache.parent.mkdir(parents=True, exist_ok=True)
-    np.savez_compressed(cache, patient_ids=patients["patient_id"].astype(str).to_numpy(), features=features)
+    # Force a NumPy Unicode array; object arrays require pickle and break the
+    # ``allow_pickle=False`` integrity boundary used by Phase1R resume.
+    patient_ids = np.asarray(patients["patient_id"].astype(str).to_numpy(), dtype="<U64")
+    np.savez_compressed(cache, patient_ids=patient_ids, features=features)
     return features
 
 
@@ -142,3 +150,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

@@ -93,6 +93,7 @@ TransformerMIL is explicitly a generic reimplementation and is not labeled offic
 - Only outer-training data are used for scaling, PCA, prototype fitting, hyperparameter selection and censoring KM.
 - The cohort has 65 events; conflicting Harrell/Uno directions are reported as mixed evidence.
 - Official MambaMIL/CLAM assets may remain unavailable; a queued dependency install is not treated as a successful reproduction.
+- The long run resumed after a compute-only batch adjustment (patient_batch=32, slide_batch=32; earlier interrupted work used 8). Raw 1536D features, K values, split, seeds, folds and epoch grid were unchanged, but bitwise identity across batch settings is not claimed.
 - Training/inference timing and model memory are recorded in `tables/compute_profile.csv` when measurable.
 
 ## 8. Data boundary

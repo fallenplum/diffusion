@@ -1,6 +1,6 @@
 {
   "experiment_id": "phase1_5r_confirmatory_repair",
-  "git_revision": "804a9071603cc408ba9f2283995a01bb2f4a6cec",
+  "git_revision": "9c766721dc3fecc1124bc15956f21800a0f5b68e",
   "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
   "platform": "Windows-10-10.0.26200-SP0",
   "torch": "2.4.1+cu121",
@@ -21,6 +21,9 @@
     "learned512"
   ],
   "eval_sampling_repeats": 5,
+  "patient_batch": 32,
+  "slide_batch": 32,
+  "batch_change_note": "compute-only adjustment from 8 to 32 after an interrupted resume; raw feature/token budgets and split/seeds/folds unchanged; bitwise identity across batch settings not claimed",
   "seeds": [
     20260723,
     20260724,

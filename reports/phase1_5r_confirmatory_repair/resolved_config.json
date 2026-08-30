@@ -1,0 +1,107 @@
+{
+  "experiment_id": "phase1_5r_confirmatory_repair",
+  "cohort": {
+    "patients": 487,
+    "events": 65,
+    "folds": 5
+  },
+  "split_source": "D:\\develop\\diffusion\\outputs\\phase1r_confirmatory_20260828\\split\\confirmatory_patient_manifest.csv",
+  "split_hash": "68238e4be6e690cb96fe5eac4752202f716977a7ca503e611beb2bff1119d945",
+  "raw_feature_dim": 1536,
+  "main_token_budget": 1024,
+  "token_grid": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "eval_sampling_repeats": 5,
+  "sampling": "if N<=K all patches; otherwise sorted stochastic choice without replacement; deterministic five-repeat evaluation",
+  "seeds": [
+    20260723,
+    20260724,
+    20260725
+  ],
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "lr_grid": [
+    0.0003,
+    0.0001,
+    3e-05
+  ],
+  "rank_lambda_grid": [
+    0.05,
+    0.2
+  ],
+  "max_epochs": 50,
+  "patience": 8,
+  "patient_batch": 32,
+  "slide_batch": 32,
+  "batch_change_note": "compute-only batching; raw feature and token information budget unchanged",
+  "bootstrap_replicates": 5000,
+  "uno_censoring": "outer-train censoring KM per fold; no test KM",
+  "anchor_gate": [
+    {
+      "method": "B0_mean",
+      "historical_harrell": 0.6097524825848525,
+      "new_harrell": 0.6097524825848525,
+      "historical_uno": 0.5923531753164893,
+      "new_uno": 0.5923531753164893,
+      "abs_delta_harrell": 0.0,
+      "abs_delta_uno": 0.0,
+      "gate_pass": true,
+      "source": "Phase1R original implementation/runtime OOF; frozen split revalidated"
+    },
+    {
+      "method": "B1_ABMIL",
+      "historical_harrell": 0.6487327701200534,
+      "new_harrell": 0.6487327701200534,
+      "historical_uno": 0.605460419831024,
+      "new_uno": 0.605460419831024,
+      "abs_delta_harrell": 0.0,
+      "abs_delta_uno": 0.0,
+      "gate_pass": true,
+      "source": "Phase1R original implementation/runtime OOF; frozen split revalidated"
+    }
+  ],
+  "mamba_dependency": {
+    "available": false,
+    "reason": "ModuleNotFoundError: No module named 'mamba_ssm'",
+    "attempt_count": 4,
+    "attempts": [
+      {
+        "route": "import_preflight",
+        "command": "D:\\Anaconda\\envs\\tslib\\python.exe -c import mamba_ssm, causal_conv1d",
+        "returncode": 1,
+        "output": "ModuleNotFoundError: No module named 'mamba_ssm'"
+      },
+      {
+        "route": "official_pip_compatible_stack",
+        "command": "D:\\Anaconda\\envs\\tslib\\python.exe -m pip install --disable-pip-version-check causal-conv1d mamba-ssm --no-build-isolation",
+        "returncode": 1,
+        "elapsed_seconds": 8.402174700022442,
+        "output": "Defaulting to user installation because normal site-packages is not writeable\n\nWARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000021E2B6A5ED0>: Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。')': /simple/causal-conv1d/\nWARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000021E2B6A6B90>: Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。')': /simple/causal-conv1d/\nWARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000021E2B6A7850>: Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。')': /simple/causal-conv1d/\nWARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000021E2B6A7E90>: Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。')': /simple/causal-conv1d/\nWARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000021E2B6BD010>: Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。')': /simple/causal-conv1d/\nERROR: Could not find a version that satisfies the requirement causal-conv1d (from versions: none)\nERROR: No matching distribution found for causal-conv1d\n"
+      },
+      {
+        "route": "conda_or_prebuilt_route",
+        "command": "conda install -y -c conda-forge mamba-ssm causal-conv1d",
+        "returncode": null,
+        "elapsed_seconds": 0.02168910001637414,
+        "output": "FileNotFoundError: [WinError 2] 系统找不到指定的文件。"
+      },
+      {
+        "route": "official_source_install",
+        "command": "D:\\Anaconda\\envs\\tslib\\python.exe -m pip install --disable-pip-version-check git+https://github.com/state-spaces/mamba.git",
+        "returncode": 1,
+        "elapsed_seconds": 1.0747930999787059,
+        "output": "Defaulting to user installation because normal site-packages is not writeable\nCollecting git+https://github.com/state-spaces/mamba.git\n  Cloning https://github.com/state-spaces/mamba.git to C:\\Users\\23301\\AppData\\Local\\Temp\\pip-req-build-o1wfpd8d\n\n  Running command git clone --filter=blob:none --quiet https://github.com/state-spaces/mamba.git 'C:\\Users\\23301\\AppData\\Local\\Temp\\pip-req-build-o1wfpd8d'\n  fatal: unable to access 'https://github.com/state-spaces/mamba.git/': Failed to connect to github.com port 443 after 17 ms: Could not connect to server\n  error: subprocess-exited-with-error\n  \n  git clone --filter=blob:none --quiet https://github.com/state-spaces/mamba.git 'C:\\Users\\23301\\AppData\\Local\\Temp\\pip-req-build-o1wfpd8d' did not run successfully.\n  exit code: 128\n  \n  No available output.\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nERROR: Failed to build 'git+https://github.com/state-spaces/mamba.git' when git clone --filter=blob:none --quiet https://github.com/state-spaces/mamba.git 'c:\\users\\23301\\appdata\\local\\temp\\pip-req-build-o1wfpd8d'\n"
+      }
+    ],
+    "checked_at": "2026-08-29T16:56:25.988314+00:00"
+  }
+}

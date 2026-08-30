@@ -1,0 +1,55 @@
+# Phase 1.5R pre-registered registry
+# All trainable models consume raw 1536D UNI2-h features and K=1024 in the main protocol.
+B0_full:
+  feature_dim: 1536
+  token_budget: full
+  sampling: all_patches
+  transform: train_only_standard_scaler_plus_PCA32_or_64
+B0_1024:
+  feature_dim: 1536
+  token_budget: 1024
+  sampling: deterministic_five_repeat_without_replacement
+B1_GatedABMIL:
+  feature_dim: 1536
+  learned_projection: 256
+  gated_attention: true
+  token_budget: 1024
+  train_sampling: stochastic_without_replacement
+  eval_sampling_repeats: 5
+  loss: full_patient_level_cox
+B2_PlainABMIL:
+  feature_dim: 1536
+  learned_projection: 256
+  gated_attention: false
+  token_budget: 1024
+  loss: full_patient_level_cox
+B3_TransformerMIL_reimplementation:
+  feature_dim: 1536
+  learned_projection: 256
+  token_budget: 1024
+  official_status: generic_reimplementation_not_official_TransMIL
+B4_MambaMIL:
+  feature_dim: 1536
+  learned_projection: 256
+  token_budget: 1024
+  official_status: dependency_gate_recorded
+B5_PANTHER_style_GMM:
+  feature_dim: 1536
+  feature_space: train_only_PCA64
+  token_budget: 1024
+  prototype_fit: outer_train_only
+  official_status: PANTHER_style_not_official_PANTHER
+B6_SpatialNeighborhoodMIL:
+  feature_dim: 1536
+  learned_projection: 256
+  token_budget: 1024
+  neighborhood: coordinate_only_local_density
+B7a_GatedABMIL_Cox:
+  alias_of: B1_GatedABMIL
+B7b_GatedABMIL_CoxRank:
+  alias_base: B1_GatedABMIL
+  rank_pairs: event_i_and_Ti_less_than_Tj_only
+sensitivity_token_budget:
+  values: [128, 256, 512, 1024]
+sensitivity_projection:
+  values: [random64, learned64, learned256, learned512]

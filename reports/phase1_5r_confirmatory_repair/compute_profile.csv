@@ -1,0 +1,10 @@
+method,feature_dim,projection,token_budget,train_time_minutes,inference_time_seconds,peak_gpu_memory_gb,trainable_params,measurement_status
+B0_full,1536,none,full,0.0,,,0,training_recorded_inference_unavailable
+B0_1024,1536,none,1024,0.0,,,0,training_recorded_inference_unavailable
+B1_GatedABMIL,1536,learned256,1024,0.29665419033334023,1.1259052000000338,0.4173765182495117,462722,recorded_from_job_metrics_and_saved_checkpoint
+B2_PlainABMIL,1536,learned256,1024,0.2825643448889281,0.9578149999999823,0.4172539710998535,429826,recorded_from_job_metrics_and_saved_checkpoint
+B3_TransformerMIL_reimplementation,1536,learned256,1024,0.7740372922222014,1.1441047999999228,2.3890485763549805,1468353,recorded_from_job_metrics_and_saved_checkpoint
+B5_PANTHER_style_GMM,1536,none,1024,0.0,,,0,training_recorded_inference_unavailable
+B6_SpatialNeighborhoodMIL,1536,learned256,1024,1.0359855048888453,1.0073879999999917,0.41747188568115234,488066,recorded_from_job_metrics_and_saved_checkpoint
+B7a_GatedABMIL_Cox,1536,none,full,0.0,,,0,training_recorded_inference_unavailable
+B7b_GatedABMIL_CoxRank,1536,learned256,1024,0.7272352915556985,0.9828941999999188,0.4173765182495117,462722,recorded_from_job_metrics_and_saved_checkpoint

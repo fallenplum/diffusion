@@ -290,6 +290,7 @@ def scan_feature(path: Path, coords_path: Path, root: Path, data: Path, row: pd.
         "h5_feature_shape": h5_shape,
         "h5_has_coords": h5_coords,
     }
+    return result
 
 
 def audit_and_freeze(root: Path, out: Path, force: bool = False) -> dict[str, Any]:

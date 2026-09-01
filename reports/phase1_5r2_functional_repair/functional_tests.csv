@@ -1,0 +1,7 @@
+test,status,max_abs_error,cosine_similarity
+Cox analytic vs autograd,True,4.163336342344337e-17,1.0
+Cox analytic vs finite difference,True,1.828784346180612e-11,1.0000000000000002
+Rank analytic vs autograd,True,2.7755575615628914e-17,1.0
+Combined analytic vs autograd lambda=0.05,True,2.7755575615628914e-17,1.0
+Combined analytic vs autograd lambda=0.2,True,5.551115123125783e-17,1.0000000000000002
+Two-pass vs direct autograd,True,0.0,

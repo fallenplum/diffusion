@@ -1,0 +1,137 @@
+[
+  {
+    "method": "B1_GatedABMIL",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.169982539162491,
+    "mean_best_train_cox": 3.2520038513523155,
+    "mean_final_train_cox": 3.9110962286209445
+  },
+  {
+    "method": "B2_PlainABMIL",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.163938738360549,
+    "mean_best_train_cox": 3.5561771249229257,
+    "mean_final_train_cox": 4.171514339859669
+  },
+  {
+    "method": "B3_TransformerMIL_reimplementation",
+    "n_histories": 15,
+    "n_final_gt_initial": 1,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.209719364570849,
+    "mean_best_train_cox": 2.8096153505146506,
+    "mean_final_train_cox": 3.9244272170922696
+  },
+  {
+    "method": "B6_SpatialNeighborhoodMIL",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.159731099099825,
+    "mean_best_train_cox": 3.655721393588818,
+    "mean_final_train_cox": 4.271700261036555
+  },
+  {
+    "method": "B7a_GatedABMIL_Cox",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.169033284620806,
+    "mean_best_train_cox": 3.4924947431593223,
+    "mean_final_train_cox": 4.179565024605164
+  },
+  {
+    "method": "B7b_GatedABMIL_CoxRank",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.176901413816394,
+    "mean_best_train_cox": 3.629549535251025,
+    "mean_final_train_cox": 4.290404007297295
+  },
+  {
+    "method": "Projection_learned512",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.165707679589588,
+    "mean_best_train_cox": 3.4712943791440036,
+    "mean_final_train_cox": 4.188630045377291
+  },
+  {
+    "method": "Projection_learned64",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.16992620265845,
+    "mean_best_train_cox": 4.058493197686745,
+    "mean_final_train_cox": 4.498288401655662
+  },
+  {
+    "method": "Projection_random64",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.169939589861667,
+    "mean_best_train_cox": 5.106811318614267,
+    "mean_final_train_cox": 5.296905915859418
+  },
+  {
+    "method": "Token_B1_K128",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.169707882404327,
+    "mean_best_train_cox": 3.3588251199686163,
+    "mean_final_train_cox": 3.96267896027137
+  },
+  {
+    "method": "Token_B1_K256",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.171506545760415,
+    "mean_best_train_cox": 3.643840784556937,
+    "mean_final_train_cox": 4.300088309553954
+  },
+  {
+    "method": "Token_B1_K512",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.169833162336638,
+    "mean_best_train_cox": 3.5411799879236665,
+    "mean_final_train_cox": 4.172230544915566
+  },
+  {
+    "method": "Token_Transformer_K128",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.210725585258369,
+    "mean_best_train_cox": 2.8734217689795924,
+    "mean_final_train_cox": 3.8169756993269304
+  },
+  {
+    "method": "Token_Transformer_K256",
+    "n_histories": 15,
+    "n_final_gt_initial": 0,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.20581407402501,
+    "mean_best_train_cox": 2.8091129417220757,
+    "mean_final_train_cox": 3.7873460162144443
+  },
+  {
+    "method": "Token_Transformer_K512",
+    "n_histories": 15,
+    "n_final_gt_initial": 1,
+    "majority_final_gt_initial_warning": false,
+    "mean_initial_train_cox": 5.203947858738176,
+    "mean_best_train_cox": 2.7029746056957675,
+    "mean_final_train_cox": 3.809868777294954
+  }
+]

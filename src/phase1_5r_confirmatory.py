@@ -645,6 +645,14 @@ def predict_risk(
 
 
 def cox_risk_coefficients(times: np.ndarray, events: np.ndarray, risks: np.ndarray) -> np.ndarray:
+    """Return the gradient of the negative Cox partial log likelihood.
+
+    Phase 1.5R originally subtracted the risk-set probabilities and added the
+    event indicator, which is ``-dL/dr`` and therefore performs ascent when
+    passed to ``optimizer.step``.  Keep the implementation explicit here so
+    the Phase 1.5R2 functional tests and the repaired trainer share the exact
+    same sign convention.
+    """
     coeff = np.zeros(len(times), dtype=np.float64)
     event_indices = np.flatnonzero(events == 1)
     if not len(event_indices):
@@ -654,8 +662,8 @@ def cox_risk_coefficients(times: np.ndarray, events: np.ndarray, risks: np.ndarr
         logits = risks[mask] - np.max(risks[mask])
         probs = np.exp(logits)
         probs /= np.maximum(probs.sum(), 1e-12)
-        coeff[mask] -= probs
-        coeff[i] += 1.0
+        coeff[mask] += probs
+        coeff[i] -= 1.0
     return coeff / len(event_indices)
 
 
@@ -788,19 +796,21 @@ def refit_neural(
     rank_lambda: float,
     selected_epoch: int,
     projection: str = "learned256",
-) -> tuple[nn.Module, Any, float, float]:
+) -> tuple[nn.Module, Any, float, float, list[dict[str, Any]]]:
     torch.manual_seed(stable_seed("refit", seed, fold, method, projection, lr, rank_lambda))
     model, preprocessor = build_model(method, projection)
     model = model.to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-4)
     started = time.perf_counter()
+    history: list[dict[str, Any]] = []
     for epoch in range(1, max(1, int(selected_epoch)) + 1):
-        train_epoch_full_risk(model, store, train, token_budget, seed, epoch, device, optimizer, rank_lambda, preprocessor)
+        train_loss = train_epoch_full_risk(model, store, train, token_budget, seed, epoch, device, optimizer, rank_lambda, preprocessor)
+        history.append({"epoch": epoch, "train_cox_loss": float(train_loss), "phase": "outer_refit"})
     elapsed = time.perf_counter() - started
     peak = torch.cuda.max_memory_allocated(device) / (1024**3) if device.type == "cuda" else 0.0
     if device.type == "cuda":
         torch.cuda.reset_peak_memory_stats(device)
-    return model, preprocessor, elapsed, float(peak)
+    return model, preprocessor, elapsed, float(peak), history
 
 
 def inner_split(patients: pd.DataFrame, outer_fold: int, seed: int) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -833,6 +843,27 @@ def tune_neural(
     return candidates[0]
 
 
+def cox_training_direction_warning(history: pd.DataFrame) -> bool:
+    """Flag sustained ascent within a training phase, not a phase reset.
+
+    Inner-selection and outer-refit losses start from different random model
+    initializations.  Comparing the first inner loss with the last refit loss
+    therefore creates a false warning even when both trajectories descend.
+    A warning is reserved for a phase whose loss rises on at least 80% of its
+    consecutive steps and finishes above its own starting value.
+    """
+    if history.empty or "train_cox_loss" not in history.columns:
+        return False
+    for _, phase in history.groupby("phase", sort=False):
+        losses = pd.to_numeric(phase["train_cox_loss"], errors="coerce").dropna().to_numpy(float)
+        if len(losses) < 2:
+            continue
+        deltas = np.diff(losses)
+        if losses[-1] > losses[0] + 1e-8 and float(np.mean(deltas > 1e-8)) >= 0.8:
+            return True
+    return False
+
+
 def neural_job(
     root: Path,
     out: Path,
@@ -859,7 +890,7 @@ def neural_job(
         outer_train = patients.loc[patients.fold != fold].copy().reset_index(drop=True)
         outer_test = patients.loc[patients.fold == fold].copy().reset_index(drop=True)
         selected = tune_neural(method, outer_train, store, token_budget, seed, fold, device, projection, rank)
-        model, preprocessor, train_seconds, peak = refit_neural(method, outer_train, store, token_budget, seed, fold, device, selected["lr"], selected["rank_lambda"], selected["epoch"], projection)
+        model, preprocessor, train_seconds, peak, refit_history = refit_neural(method, outer_train, store, token_budget, seed, fold, device, selected["lr"], selected["rank_lambda"], selected["epoch"], projection)
         checkpoint_path = out / "checkpoints" / output_method / f"seed_{seed}" / f"fold_{fold}_K{token_budget}_{projection}.pt"
         checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
         torch.save({"model_state": {key: value.detach().cpu() for key, value in model.state_dict().items()}, "method": method, "projection": projection, "token_budget": token_budget, "seed": seed, "fold": fold, "selected_epoch": int(selected["epoch"])}, checkpoint_path)
@@ -874,6 +905,24 @@ def neural_job(
         pred["token_budget"] = token_budget
         pred["projection"] = projection
         p15.atomic_csv(pred, pred_path)
+        selected_history = selected["meta"].get("history", [])
+        selected_frame = pd.DataFrame(selected_history)
+        if not selected_frame.empty:
+            selected_frame["phase"] = "inner_selection"
+        history = pd.DataFrame(refit_history)
+        if not history.empty:
+            history["phase"] = "outer_refit"
+        history = pd.concat([selected_frame, history], ignore_index=True, sort=False)
+        if "val_harrell_c" not in history.columns:
+            history["val_harrell_c"] = np.nan
+        history_path = out / "fold_metrics" / output_method / f"seed_{seed}_fold_{fold}_K{token_budget}_{projection}.csv"
+        p15.atomic_csv(history, history_path)
+        initial_train_cox = float(history["train_cox_loss"].iloc[0]) if not history.empty else float("nan")
+        final_train_cox = float(history["train_cox_loss"].iloc[-1]) if not history.empty else float("nan")
+        test_h = float(harrell_c(outer_test.dss_time, outer_test.dss_event, risk))
+        test_u = float(uno_c(outer_test.dss_time, outer_test.dss_event, risk, g))
+        neg_h = float(harrell_c(outer_test.dss_time, outer_test.dss_event, -risk))
+        neg_u = float(uno_c(outer_test.dss_time, outer_test.dss_event, -risk, g))
         metric = {
             "method": output_method,
             "base_method": method,
@@ -890,8 +939,15 @@ def neural_job(
             "inner_val_harrell_c": float(selected["score"]),
             "n_test": len(outer_test),
             "n_events": int(outer_test.dss_event.sum()),
-            "test_harrell_c": float(harrell_c(outer_test.dss_time, outer_test.dss_event, risk)),
-            "test_uno_c": float(uno_c(outer_test.dss_time, outer_test.dss_event, risk, g)),
+            "test_harrell_c": test_h,
+            "test_uno_c": test_u,
+            "risk_direction_harrell_negated": neg_h,
+            "risk_direction_uno_negated": neg_u,
+            "risk_direction_warning": bool(test_h < 0.5 and neg_h > test_h + 0.05),
+            "initial_train_cox": initial_train_cox,
+            "best_train_cox": float(history["train_cox_loss"].min()) if not history.empty else float("nan"),
+            "final_train_cox": final_train_cox,
+            "cox_training_direction_warning": cox_training_direction_warning(history),
             "trainable_params": int(sum(param.numel() for param in model.parameters() if param.requires_grad)),
             "training_time_seconds": float(train_seconds),
             "peak_gpu_memory_gb": float(peak),

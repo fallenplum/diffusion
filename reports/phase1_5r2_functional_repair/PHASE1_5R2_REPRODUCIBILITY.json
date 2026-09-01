@@ -1,0 +1,40 @@
+{
+  "experiment_id": "phase1_5r2_functional_repair",
+  "git_revision": "be6302591a06127f096e918192154236842638f7",
+  "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "torch": "2.4.1+cu121",
+  "cuda": true,
+  "cuda_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "raw_feature_dim": 1536,
+  "main_token_budget": 1024,
+  "token_grid": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "projection_grid": [
+    "random64",
+    "learned64",
+    "learned256",
+    "learned512"
+  ],
+  "seeds": [
+    20260723,
+    20260724,
+    20260725
+  ],
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "bootstrap_replicates": 5000,
+  "split_hash": "68238e4be6e690cb96fe5eac4752202f716977a7ca503e611beb2bff1119d945",
+  "uno_censoring": "outer-train censoring KM per fold",
+  "cox_gradient": "correct d negative partial log-likelihood / d risk",
+  "unaffected_results": "reused_from_phase1_5R_non_neural_unaffected_results"
+}

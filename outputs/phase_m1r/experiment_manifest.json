@@ -1,0 +1,28 @@
+{
+  "seed": 20260904,
+  "neural_seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "n_patients": 512,
+  "dss_events": 65,
+  "models": [
+    "C0",
+    "R0",
+    "N0",
+    "O0",
+    "P0",
+    "PO0",
+    "PC0",
+    "OC0",
+    "POC0",
+    "C1",
+    "R1",
+    "N1",
+    "O1",
+    "P1"
+  ],
+  "elapsed_seconds": 84.70983743667603,
+  "status": "completed"
+}

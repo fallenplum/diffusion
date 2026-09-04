@@ -73,3 +73,10 @@ secrets.json
 # Local literature/application PDFs may contain copyrighted or confidential material
 literature/*.pdf
 申请书/
+
+# Phase M1R local patient-level artifacts
+outputs/phase_m1_complete/aligned_patients.csv
+outputs/phase_m1_complete/fixed_patient_folds.csv
+outputs/phase_m1r/pathology_slide_means.npy
+outputs/phase_m1r/pathology_slide_manifest.csv
+outputs/phase_m1r/statistical_tests/oof_predictions.csv

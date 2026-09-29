@@ -1,0 +1,38 @@
+{
+  "clinical": "outer-train median imputation and categorical encoding",
+  "data_root_env": "DIFFUSION_DATA_ROOT",
+  "dss_events": 65,
+  "endpoint": "DSS",
+  "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv",
+  "folds": 5,
+  "functional_checks": {
+    "analytic_vs_autograd_max_abs": 2.7755575615628914e-17,
+    "analytic_vs_finite_difference_max_abs": 9.046208226948238e-12,
+    "autograd_match": true,
+    "finite_difference_match": true,
+    "one_step_after": 0.7363339208708286,
+    "one_step_before": 0.7490550264093128,
+    "one_step_descent": true,
+    "risk_direction_sanity": true,
+    "status": true
+  },
+  "n_patients": 512,
+  "neural_seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "no_patient_level_outputs_in_reports": true,
+  "objective": "negative Breslow Cox partial likelihood with T_j >= T_i",
+  "omics": {
+    "CNA": "outer-train imputation/standardization/top-256 variance",
+    "RNA": "outer-train imputation/standardization/top-512 variance"
+  },
+  "pathology": {
+    "K": 1024,
+    "source": "TCGA COAD/READ UNI2-h H5",
+    "test_sampling": "deterministic",
+    "train_sampling": "random"
+  },
+  "phase": "M2"
+}

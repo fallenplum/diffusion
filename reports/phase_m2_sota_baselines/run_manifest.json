@@ -1,0 +1,29 @@
+{
+  "data_root_env": "DIFFUSION_DATA_ROOT",
+  "dss_events": 65,
+  "elapsed_seconds": 0.03485365503001958,
+  "functional_checks": {
+    "analytic_vs_autograd_max_abs": 2.7755575615628914e-17,
+    "analytic_vs_finite_difference_max_abs": 9.046208226948238e-12,
+    "autograd_match": true,
+    "finite_difference_match": true,
+    "one_step_after": 0.7363339208708286,
+    "one_step_before": 0.7490550264093128,
+    "one_step_descent": true,
+    "risk_direction_sanity": true,
+    "status": true
+  },
+  "git_revision": "unknown",
+  "methods_completed": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5"
+  ],
+  "n_patients": 512,
+  "phase": "M2",
+  "platform": "Linux-5.15.0-113-generic-x86_64-with-glibc2.35",
+  "status": "Phase M2 COMPLETE"
+}

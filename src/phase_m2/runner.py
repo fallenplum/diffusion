@@ -354,7 +354,20 @@ def _write_results(reports: Path, raw: RawInputs, fold_rows: list[dict[str, Any]
     }
     atomic_json(reports / "protocol.json", protocol)
     completed = {row["method"] for row in main_rows if row.get("status") == "completed"}
-    complete = len(completed) >= 5 and {"B2", "B3", "B4"}.issubset(completed) and all(row.get("status") == "completed" for row in statuses)
+    neural_methods = set(MODEL_ORDER) - {"B0"}
+    all_seed_metrics = all(row.get("status") == "completed" for row in seed_rows)
+    three_neural_seeds = all(
+        sum(row.get("method") == method and row.get("status") == "completed" for row in seed_rows) == len(NEURAL_SEEDS)
+        for method in neural_methods
+    )
+    reproducibility_gate = all(row.get("status") != "FAILED_TO_REPRODUCE" for row in statuses)
+    complete = (
+        len(completed) >= 5
+        and {"B2", "B3", "B4"}.issubset(completed)
+        and all_seed_metrics
+        and three_neural_seeds
+        and reproducibility_gate
+    )
     status_text = "Phase M2 COMPLETE" if complete else "Phase M2 BLOCKED"
     sorted_rows = sorted([row for row in main_rows if row.get("status") == "completed"], key=lambda row: row.get("harrell_c_seed_mean", -float("inf")), reverse=True)
     lines = [f"# Phase M2 SOTA Baselines", "", f"## Decision", "", f"**{status_text}**", "", f"- Cohort: {len(raw.patient_ids)} patients, {int(raw.dss_event.sum())} DSS events.", "- The committed Phase M1 fixed patient split was reused; no split was regenerated.", "- Reports contain aggregate fold/seed/compute summaries only; patient IDs, H5/NPY/NPZ, checkpoints and patient-level predictions are excluded.", "", "## Baseline ranking", "", "| Rank | Method | Harrell C seed mean ± std | Uno C seed mean ± std | Fold mean ± std | Worst fold | Params | GPU GB | Time s | Reproduction status |", "|---:|---|---:|---:|---:|---:|---:|---:|---:|---|"]

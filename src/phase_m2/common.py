@@ -151,10 +151,6 @@ def run_functional_checks() -> dict[str, Any]:
         finite[j] = (float(cox_loss(torch.tensor(times), torch.tensor(events), torch.tensor(plus))) - float(cox_loss(torch.tensor(times), torch.tensor(events), torch.tensor(minus)))) / (2 * epsilon)
     step = torch.tensor(values, dtype=torch.float64, requires_grad=True)
     before = float(cox_loss(torch.tensor(times), torch.tensor(events), step))
-    step.data -= 0.1 * step.grad if step.grad is not None else 0.0
-    # The explicit gradient update above needs one backward pass.
-    step = torch.tensor(values, dtype=torch.float64, requires_grad=True)
-    before = float(cox_loss(torch.tensor(times), torch.tensor(events), step))
     before_loss = cox_loss(torch.tensor(times), torch.tensor(events), step)
     before_loss.backward()
     with torch.no_grad():
@@ -218,3 +214,4 @@ class Timer:
     @property
     def seconds(self) -> float:
         return float(time.perf_counter() - self.started)
+

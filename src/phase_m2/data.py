@@ -194,12 +194,26 @@ def load_raw_inputs(data_root: Path, repo_root: Path) -> RawInputs:
 
 
 def _read_selected_rows(path: Path, indices: np.ndarray) -> np.ndarray:
+    # h5py requires strictly increasing fancy-index arrays. Random sampling
+    # uses replacement when a slide has fewer than K patches, so duplicates
+    # are possible. Read unique sorted rows and restore the caller's order.
+    requested = np.asarray(indices, dtype=np.int64)
+    if requested.ndim != 1:
+        raise ValueError(f"patch indices must be one-dimensional, got {requested.shape}")
+    if requested.size == 0:
+        return np.zeros((0, 1536), dtype=np.float32)
+    order = np.argsort(requested, kind="stable")
+    sorted_requested = requested[order]
+    unique_requested, inverse = np.unique(sorted_requested, return_inverse=True)
     with h5py.File(path, "r") as handle:
         dataset = handle["features"]
         if dataset.ndim == 3:
-            values = np.asarray(dataset[0, indices, :], dtype=np.float32)
+            unique_values = np.asarray(dataset[0, unique_requested, :], dtype=np.float32)
         else:
-            values = np.asarray(dataset[indices, :], dtype=np.float32)
+            unique_values = np.asarray(dataset[unique_requested, :], dtype=np.float32)
+    sorted_values = unique_values[inverse]
+    values = np.empty_like(sorted_values)
+    values[order] = sorted_values
     return values
 
 

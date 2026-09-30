@@ -1,0 +1,334 @@
+{
+  "determinism": {
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "known_cuda_warnings": [
+      "memory-efficient attention backward may be nondeterministic",
+      "adaptive_avg_pool2d_backward_cuda may be nondeterministic"
+    ],
+    "warn_only": true
+  },
+  "execution_commit": "b3dc68ba4585a9bb10abaafb147243ce717af7cb",
+  "fold": 1,
+  "kan_parameters": {
+    "frozen_hidden": 8,
+    "grid_size": 5,
+    "range": [
+      -3.0,
+      3.0
+    ],
+    "requested_hidden": 48,
+    "spline_order": 3
+  },
+  "lowrank_parameters": {
+    "projected_dim": 32,
+    "rank": 8
+  },
+  "projector_mismatches": {
+    "A": {
+      "A2": [],
+      "A2W": [],
+      "A3": []
+    },
+    "B": {
+      "B2": [],
+      "B2W": [],
+      "B3": []
+    }
+  },
+  "projector_scope": "projectors.* for A1-A3 and B1-B3",
+  "risk_head_mismatches": {
+    "A": {
+      "A2": [],
+      "A2W": [],
+      "A3": []
+    },
+    "B": {
+      "B2": [],
+      "B2W": [],
+      "B3": []
+    }
+  },
+  "seed": 20260916,
+  "status": "PASS",
+  "upstream_representation_mismatches": {
+    "A": {
+      "A1": [],
+      "A2": [],
+      "A2W": [],
+      "A3": []
+    },
+    "B": {
+      "B1": [],
+      "B2": [],
+      "B2W": [],
+      "B3": []
+    }
+  },
+  "variant_only_fusion_seeds": {
+    "A0": 839460967,
+    "A1": 613299046,
+    "A2": 1847011948,
+    "A2W": 1434273394,
+    "A3": 1957783339,
+    "B0": 1552161888,
+    "B1": 1864438273,
+    "B2": 988772157,
+    "B2W": 478697393,
+    "B3": 145225716
+  },
+  "variant_only_seeds_distinct": true,
+  "worker_audits": [
+    {
+      "determinism": {
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "known_cuda_warnings": [
+          "memory-efficient attention backward may be nondeterministic",
+          "adaptive_avg_pool2d_backward_cuda may be nondeterministic"
+        ],
+        "warn_only": true
+      },
+      "execution_commit": "b3dc68ba4585a9bb10abaafb147243ce717af7cb",
+      "fold": 1,
+      "kan_parameters": {
+        "frozen_hidden": 8,
+        "grid_size": 5,
+        "range": [
+          -3.0,
+          3.0
+        ],
+        "requested_hidden": 48,
+        "spline_order": 3
+      },
+      "lowrank_parameters": {
+        "projected_dim": 32,
+        "rank": 8
+      },
+      "projector_mismatches": {
+        "A": {
+          "A2": [],
+          "A2W": [],
+          "A3": []
+        },
+        "B": {
+          "B2": [],
+          "B2W": [],
+          "B3": []
+        }
+      },
+      "projector_scope": "projectors.* for A1-A3 and B1-B3",
+      "risk_head_mismatches": {
+        "A": {
+          "A2": [],
+          "A2W": [],
+          "A3": []
+        },
+        "B": {
+          "B2": [],
+          "B2W": [],
+          "B3": []
+        }
+      },
+      "seed": 20260916,
+      "status": "PASS",
+      "upstream_representation_mismatches": {
+        "A": {
+          "A1": [],
+          "A2": [],
+          "A2W": [],
+          "A3": []
+        },
+        "B": {
+          "B1": [],
+          "B2": [],
+          "B2W": [],
+          "B3": []
+        }
+      },
+      "variant_only_fusion_seeds": {
+        "A0": 839460967,
+        "A1": 613299046,
+        "A2": 1847011948,
+        "A2W": 1434273394,
+        "A3": 1957783339,
+        "B0": 1552161888,
+        "B1": 1864438273,
+        "B2": 988772157,
+        "B2W": 478697393,
+        "B3": 145225716
+      },
+      "variant_only_seeds_distinct": true
+    },
+    {
+      "determinism": {
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "known_cuda_warnings": [
+          "memory-efficient attention backward may be nondeterministic",
+          "adaptive_avg_pool2d_backward_cuda may be nondeterministic"
+        ],
+        "warn_only": true
+      },
+      "execution_commit": "b3dc68ba4585a9bb10abaafb147243ce717af7cb",
+      "fold": 1,
+      "kan_parameters": {
+        "frozen_hidden": 8,
+        "grid_size": 5,
+        "range": [
+          -3.0,
+          3.0
+        ],
+        "requested_hidden": 48,
+        "spline_order": 3
+      },
+      "lowrank_parameters": {
+        "projected_dim": 32,
+        "rank": 8
+      },
+      "projector_mismatches": {
+        "A": {
+          "A2": [],
+          "A2W": [],
+          "A3": []
+        },
+        "B": {
+          "B2": [],
+          "B2W": [],
+          "B3": []
+        }
+      },
+      "projector_scope": "projectors.* for A1-A3 and B1-B3",
+      "risk_head_mismatches": {
+        "A": {
+          "A2": [],
+          "A2W": [],
+          "A3": []
+        },
+        "B": {
+          "B2": [],
+          "B2W": [],
+          "B3": []
+        }
+      },
+      "seed": 20260916,
+      "status": "PASS",
+      "upstream_representation_mismatches": {
+        "A": {
+          "A1": [],
+          "A2": [],
+          "A2W": [],
+          "A3": []
+        },
+        "B": {
+          "B1": [],
+          "B2": [],
+          "B2W": [],
+          "B3": []
+        }
+      },
+      "variant_only_fusion_seeds": {
+        "A0": 839460967,
+        "A1": 613299046,
+        "A2": 1847011948,
+        "A2W": 1434273394,
+        "A3": 1957783339,
+        "B0": 1552161888,
+        "B1": 1864438273,
+        "B2": 988772157,
+        "B2W": 478697393,
+        "B3": 145225716
+      },
+      "variant_only_seeds_distinct": true
+    },
+    {
+      "determinism": {
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "known_cuda_warnings": [
+          "memory-efficient attention backward may be nondeterministic",
+          "adaptive_avg_pool2d_backward_cuda may be nondeterministic"
+        ],
+        "warn_only": true
+      },
+      "execution_commit": "b3dc68ba4585a9bb10abaafb147243ce717af7cb",
+      "fold": 1,
+      "kan_parameters": {
+        "frozen_hidden": 8,
+        "grid_size": 5,
+        "range": [
+          -3.0,
+          3.0
+        ],
+        "requested_hidden": 48,
+        "spline_order": 3
+      },
+      "lowrank_parameters": {
+        "projected_dim": 32,
+        "rank": 8
+      },
+      "projector_mismatches": {
+        "A": {
+          "A2": [],
+          "A2W": [],
+          "A3": []
+        },
+        "B": {
+          "B2": [],
+          "B2W": [],
+          "B3": []
+        }
+      },
+      "projector_scope": "projectors.* for A1-A3 and B1-B3",
+      "risk_head_mismatches": {
+        "A": {
+          "A2": [],
+          "A2W": [],
+          "A3": []
+        },
+        "B": {
+          "B2": [],
+          "B2W": [],
+          "B3": []
+        }
+      },
+      "seed": 20260916,
+      "status": "PASS",
+      "upstream_representation_mismatches": {
+        "A": {
+          "A1": [],
+          "A2": [],
+          "A2W": [],
+          "A3": []
+        },
+        "B": {
+          "B1": [],
+          "B2": [],
+          "B2W": [],
+          "B3": []
+        }
+      },
+      "variant_only_fusion_seeds": {
+        "A0": 839460967,
+        "A1": 613299046,
+        "A2": 1847011948,
+        "A2W": 1434273394,
+        "A3": 1957783339,
+        "B0": 1552161888,
+        "B1": 1864438273,
+        "B2": 988772157,
+        "B2W": 478697393,
+        "B3": 145225716
+      },
+      "variant_only_seeds_distinct": true
+    }
+  ],
+  "all_worker_audits_pass": true,
+  "execution_commits": [
+    "b3dc68ba4585a9bb10abaafb147243ce717af7cb"
+  ]
+}

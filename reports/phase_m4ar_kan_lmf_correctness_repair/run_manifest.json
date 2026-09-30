@@ -1,0 +1,48 @@
+{
+  "phase": "M4AR",
+  "status": "COMPLETE",
+  "execution_commit": [
+    "b3dc68ba4585a9bb10abaafb147243ce717af7cb"
+  ],
+  "variants": [
+    "A0",
+    "A1",
+    "A2",
+    "A2W",
+    "A3",
+    "B0",
+    "B1",
+    "B2",
+    "B2W",
+    "B3",
+    "C0"
+  ],
+  "seeds": [
+    20260916,
+    20260917,
+    20260918
+  ],
+  "cells_completed": 165,
+  "expected_cells": 165,
+  "n_patients": 512,
+  "dss_events": 65,
+  "reports": [
+    "RESULTS.md",
+    "main_metrics.csv",
+    "fold_metrics.csv",
+    "seed_metrics.csv",
+    "paired_deltas.csv",
+    "compute_profile.csv",
+    "kan_basis_audit.json",
+    "kan_clamp_audit.csv",
+    "lmf_scale_audit.json",
+    "initialization_audit.json",
+    "protocol.json",
+    "run_manifest.json"
+  ],
+  "global_oof_status": "diagnostic_only",
+  "no_leakage": true,
+  "no_seed_hunting": true,
+  "no_preprocessing_change": true,
+  "remote_branch": "codex/phase-m4ar-kan-lmf-correctness-repair"
+}

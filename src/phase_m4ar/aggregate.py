@@ -130,30 +130,6 @@ def aggregate(args: argparse.Namespace) -> None:
             clamp_rows.append({"variant": variant, "family": family, "version": version, "layer": layer, "mean_fraction_low": mean(key_values[f"kan_layer{layer}_fraction_low"]), "mean_fraction_high": mean(key_values[f"kan_layer{layer}_fraction_high"]), "mean_fraction_abs_ge3": mean(key_values[f"kan_layer{layer}_fraction_abs_ge3"]), "max_fraction_abs_ge3": max(key_values[f"kan_layer{layer}_fraction_abs_ge3"]), "mean_n_values": mean(key_values[f"kan_layer{layer}_n_values"]), "n_cells": len(key_values[f"kan_layer{layer}_n_values"])})
     write_csv(output / "kan_clamp_audit.csv", clamp_rows)
 
-    kan_profile_pm_a = next(row for row in profiles if row["method"] == "A2"); kan_profile_wm_a = next(row for row in profiles if row["method"] == "A2W"); mlp_profile_a = next(row for row in profiles if row["method"] == "A1")
-    kan_profile_pm_b = next(row for row in profiles if row["method"] == "B2"); kan_profile_wm_b = next(row for row in profiles if row["method"] == "B2W"); mlp_profile_b = next(row for row in profiles if row["method"] == "B1")
-    (output / "kan_implementation_audit.md").write_text(f"""# KAN correctness and capacity audit
-
-## Boundary repair
-
-`CompactSplineKAN._basis()` now clamps inputs to `[-3, 3]`, evaluates Cox–de Boor recursion, and sets only the final degree-p basis to 1 at `x == 3`. The dense 10001-point and extra-point tests are stored in `kan_basis_audit.json`.
-
-- Required partition-of-unity error: `< 1e-5`; minimum basis: `>= -1e-7`.
-- Forward finite, backward finite, and repeated same-seed initialization checks passed before formal training.
-- No dynamic grid update; `grid_size=5`, `spline_order=3`, range `[-3,3]`.
-
-## Capacity registration
-
-- KAN-PM hidden width: `{KAN_HIDDEN}`.
-- KAN-WM hidden width: `{KAN_WM_HIDDEN}` sensitivity only; it is not a parameter-efficiency claim.
-- A1 fusion head: `{mlp_profile_a['fusion_head_params']}`; A2 PM: `{kan_profile_pm_a['fusion_head_params']}`; A2 WM: `{kan_profile_wm_a['fusion_head_params']}`.
-- B1 fusion head: `{mlp_profile_b['fusion_head_params']}`; B2 PM: `{kan_profile_pm_b['fusion_head_params']}`; B2 WM: `{kan_profile_wm_b['fusion_head_params']}`.
-
-## Clamp diagnostics
-
-`kan_clamp_audit.csv` records pre-clamp LayerNorm values separately for MCAT/CommonOnly, KAN-PM/KAN-WM, and both KAN layers. These are diagnostics only; range was not changed using test-fold results.
-""", encoding="utf-8")
-
     protocol = {"phase": "M4AR", "fixed_cohort": {"n_patients": 512, "dss_events": 65}, "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv; same five outer folds", "preprocessing": "M2R2/M3 fold-local preprocessing unchanged", "endpoint": "DSS", "cox": "negative Breslow Cox partial likelihood with T_j >= T_i", "pathology": {"encoder": "UNI2-h", "K": 1024}, "seeds": list(SEEDS), "variants": {key: LABELS[key] for key in VARIANTS}, "kan": {"implementation": "CompactSplineKAN", "pm_hidden": KAN_HIDDEN, "wm_hidden": KAN_WM_HIDDEN, "grid_size": KAN_GRID_SIZE, "spline_order": KAN_ORDER, "range": list(KAN_RANGE), "dynamic_grid": False, "boundary_rule": "only last basis is 1 at x=max"}, "lmf": {"implementation": "ReferenceLMF", "rank": LOWRANK_RANK, "output_dim": 32, "factor_initialization": "xavier_normal_", "fusion_weight_initialization": "xavier_normal_", "bias": "zero", "post_fusion": "GELU then RiskHead; no LayerNorm"}, "fairness": {"representation_and_projector_shared": True, "risk_head_shared_where_shapes_match": True, "variant_only_isolated_seed": True, "forbidden": ["resplit", "seed hunting", "preprocessing change", "Cox change", "endpoint change", "test-fold tuning", "optimizer tuning"]}, "evaluation": {"primary": "fold-level Harrell C", "secondary": "fold-level Uno C", "aggregation": "mean/std over 15 seed×fold cells", "global_oof": "diagnostic only"}, "training": {"max_epochs": 25, "patience": 5, "batch_size": 16, "optimizer": "AdamW lr=3e-4 weight_decay=1e-4", "outer_refit": "same seed, full outer train, selected inner epoch count"}}
     write_json(output / "protocol.json", protocol)
 
@@ -165,7 +141,7 @@ def aggregate(args: argparse.Namespace) -> None:
     lmf_a, lmf_b = bool(sm("A3_vs_A1")["supported"]), bool(sm("B3_vs_B1")["supported"])
     kan_decision = "KAN_PM_SUPPORTED" if pm_a and pm_b else ("KAN_CAPACITY_DEPENDENT" if (wm_a or wm_b) else "KAN_NOT_SUPPORTED_AFTER_CORRECTNESS_REPAIR")
     lmf_decision = "LMF_CROSS_BACKBONE_SUPPORTED" if lmf_a and lmf_b else ("LMF_BACKBONE_SPECIFIC_SUPPORTED" if (lmf_a or lmf_b) else "LMF_NOT_SUPPORTED_AFTER_REFERENCE_REPAIR")
-    next_step = "representation-level redesign: morphology prototypes + semantic omics/pathway tokens + selective cross-modal interaction" if kan_decision.startswith("KAN_NOT") and lmf_decision.startswith("LMF_NOT") else ("retain only the supported mechanism" if kan_decision.startswith("KAN_") or lmf_decision.startswith("LMF_") else "representation-level redesign")
+    next_step = "representation-level redesign: morphology prototypes + semantic omics/pathway tokens + selective cross-modal interaction" if kan_decision.startswith("KAN_NOT") and lmf_decision.startswith("LMF_NOT") else ("build next architecture around ReferenceLMF on MCAT representation only; do not claim CommonOnly generalization" if lmf_decision == "LMF_BACKBONE_SPECIFIC_SUPPORTED" and kan_decision.startswith("KAN_NOT") else ("retain only the supported mechanism" if kan_decision.startswith("KAN_") or lmf_decision.startswith("LMF_") else "representation-level redesign"))
     lines = ["# Phase M4AR KAN / LMF Correctness Repair and Confirmatory Probe", "", "固定协议：512 patients / 65 DSS events、同一 5-fold、同一 fold-local preprocessing、DSS/Cox、UNI2-h K=1024、fresh seeds 20260916/17/18；global OOF 仅作诊断。", "", "## 绝对指标", "", "| Variant | Harrell mean ± std | Uno mean ± std | worst fold H / U | fusion-head params |", "|---|---:|---:|---:|---:|"]
     for row in main_rows:
         lines.append(f"| {row['method']} {row['label']} | {float(row['harrell_mean']):.4f} ± {float(row['harrell_std']):.4f} | {float(row['uno_mean']):.4f} ± {float(row['uno_std']):.4f} | {float(row['worst_fold_harrell']):.4f} / {float(row['worst_fold_uno']):.4f} | {row['fusion_head_params']} |")

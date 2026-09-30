@@ -285,7 +285,7 @@ No optimizer, endpoint, split, preprocessing, or hidden width was changed after 
         "",
         "## 复现入口",
         "",
-        "本目录保留规定的 9 个输出文件；运行缓存和 cell 预测不纳入 Git。",
+        "本目录保留规定的 10 个输出文件；运行缓存和 cell 预测不纳入 Git。",
     ]
     (output / "RESULTS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 

@@ -1,0 +1,65 @@
+{
+  "clinical": [
+    "AGE",
+    "SEX",
+    "AJCC_PATHOLOGIC_TUMOR_STAGE",
+    "PATH_T_STAGE",
+    "PATH_N_STAGE",
+    "PATH_M_STAGE"
+  ],
+  "dss_events": 65,
+  "endpoint": "DSS",
+  "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv",
+  "folds": 5,
+  "functional_checks": {
+    "analytic_vs_autograd_max_abs": 2.7755575615628914e-17,
+    "analytic_vs_finite_difference_max_abs": 9.046208226948238e-12,
+    "autograd_match": true,
+    "finite_difference_match": true,
+    "one_step_after": 0.7363339208708286,
+    "one_step_before": 0.7490550264093128,
+    "one_step_descent": true,
+    "risk_direction_sanity": true,
+    "status": true
+  },
+  "models": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6"
+  ],
+  "n_patients": 512,
+  "neural_seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "no_patient_level_outputs_in_reports": true,
+  "objective": "negative Breslow Cox partial likelihood with T_j >= T_i",
+  "omics": {
+    "RNA_global_baselines": "outer-train median imputation -> metadata-verified log2(x+1) without clipping -> outer-train variance ranking -> top-512 -> standardization",
+    "CNA_global_baselines": "outer-train imputation -> nonzero/variance filtering -> top-256 -> standardization",
+    "MCAT": "six official groups; each token concatenates fold-local RNA and CNA symbol intersections; mutation unavailable",
+    "MMPTrans-Hallmark": "50 official Hallmark groups; fold-local RNA-only pathway vectors and pathway-specific encoders; morphology outer-train Ch=16 GMM"
+  },
+  "pathology": {
+    "K": 1024,
+    "K_note": "benchmark normalization, not paper-original setting",
+    "source": "TCGA COAD/READ UNI2-h H5",
+    "test_sampling": "deterministic fixed",
+    "train_sampling": "deterministic by seed, epoch and patient from per-patient pool"
+  },
+  "phase": "M2R2",
+  "primary_metric": "Harrell C",
+  "secondary_metric": "Uno C",
+  "signature_metadata": {
+    "MCAT": "src/phase_m2/metadata/mcat_signatures.csv (mahmoodlab/MCAT datasets_csv_sig/signatures.csv)",
+    "MMP": "src/phase_m2/metadata/mmp_hallmarks_signatures.csv (mahmoodlab/MMP src/data_csvs/rna/metadata/hallmarks_signatures.csv)"
+  },
+  "execution_commit": "cd49fc775a0e3fb8ab0426d9d404c4784c7acea2",
+  "provenance": "rerun_M2R2",
+  "reused_from_M2R": false
+}

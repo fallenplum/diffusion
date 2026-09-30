@@ -1,0 +1,31 @@
+{
+  "phase": "M2R2",
+  "status": "Phase M2R2 COMPLETE",
+  "execution_commit": "cd49fc775a0e3fb8ab0426d9d404c4784c7acea2",
+  "n_patients": 512,
+  "dss_events": 65,
+  "cells_completed": 95,
+  "methods_completed": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6"
+  ],
+  "parallel_worker_wall_seconds": 1522.7354568169685,
+  "compute_profile_training_seconds_sum": 3576.674630036461,
+  "report_aggregation_seconds": 0.03420618094969541,
+  "worker_elapsed_seconds": {
+    "b0": 54.91701533703599,
+    "s1": 1339.1435506269336,
+    "s2": 1522.7354568169685,
+    "s3": 1164.567144178087
+  },
+  "platform": "Linux-5.15.0-113-generic-x86_64-with-glibc2.35",
+  "fidelity_status": "PAPER_FAITHFUL_REIMPLEMENTATION",
+  "provenance": "rerun_M2R2",
+  "reused_from_M2R": false,
+  "no_patient_level_outputs_in_reports": true
+}

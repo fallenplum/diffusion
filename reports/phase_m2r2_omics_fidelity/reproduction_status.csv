@@ -1,0 +1,8 @@
+method,label,mechanism,source,status,provenance,execution_commit,reused_from_M2R
+B0,EarlyFusion,early concatenation + Cox,fixed protocol baseline,PAPER_FAITHFUL_REIMPLEMENTATION,rerun_M2R2,cd49fc775a0e3fb8ab0426d9d404c4784c7acea2,False
+B1,TransSurv,histology/omics branches + cross-modal transformer + clinical Cox head,TransSurv paper-faithful reimplementation adapted to UNI2-h,PAPER_FAITHFUL_REIMPLEMENTATION,rerun_M2R2,cd49fc775a0e3fb8ab0426d9d404c4784c7acea2,False
+B2,MGCT,"two-stage mutual-guided cross-attention, gated pooling and feed-forward fusion",https://github.com/lmxmercy/MGCT,PAPER_FAITHFUL_REIMPLEMENTATION,rerun_M2R2,cd49fc775a0e3fb8ab0426d9d404c4784c7acea2,False
+B3,CAMR,invariant/specific encoders + adversarial alignment + reconstruction + CMFM,https://github.com/wxq-ustc/CAMR,PAPER_FAITHFUL_REIMPLEMENTATION,rerun_M2R2,cd49fc775a0e3fb8ab0426d9d404c4784c7acea2,False
+B4,MMPTrans-Hallmark,train-only Ch=16 GMM morphology prototypes + 50 Hallmark pathway tokens + MMPTrans,https://github.com/mahmoodlab/MMP,PAPER_FAITHFUL_REIMPLEMENTATION,rerun_M2R2,cd49fc775a0e3fb8ab0426d9d404c4784c7acea2,False
+B5,MCAT,six combined RNA+CNA signature tokens + omic-query histology co-attention + dual transformer pooling,https://github.com/mahmoodlab/MCAT,PAPER_FAITHFUL_REIMPLEMENTATION,rerun_M2R2,cd49fc775a0e3fb8ab0426d9d404c4784c7acea2,False
+B6,MOTCat,entropic OT token alignment + global structure consistency + clinical fusion,https://github.com/Innse/MOTCat,PAPER_FAITHFUL_REIMPLEMENTATION,rerun_M2R2,cd49fc775a0e3fb8ab0426d9d404c4784c7acea2,False

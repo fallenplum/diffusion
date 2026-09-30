@@ -1,0 +1,262 @@
+{
+  "determinism": {
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "known_cuda_warnings": [
+      "memory-efficient attention backward may be nondeterministic",
+      "adaptive_avg_pool2d_backward_cuda may be nondeterministic"
+    ],
+    "warn_only": true
+  },
+  "execution_commit": "b824e90518adaf96a2c7bfb66e9edcb83d3ab41a",
+  "fold": 1,
+  "kan_parameters": {
+    "frozen_hidden": 8,
+    "grid_size": 5,
+    "range": [
+      -3.0,
+      3.0
+    ],
+    "requested_hidden": 48,
+    "spline_order": 3
+  },
+  "lowrank_parameters": {
+    "projected_dim": 32,
+    "rank": 8
+  },
+  "projector_mismatches": {
+    "A": {
+      "A2": [],
+      "A3": []
+    },
+    "B": {
+      "B2": [],
+      "B3": []
+    }
+  },
+  "projector_scope": "projectors.* for A1-A3 and B1-B3",
+  "seed": 20260913,
+  "status": "PASS",
+  "upstream_representation_mismatches": {
+    "A": {
+      "A1": [],
+      "A2": [],
+      "A3": []
+    },
+    "B": {
+      "B1": [],
+      "B2": [],
+      "B3": []
+    }
+  },
+  "variant_only_fusion_seeds": {
+    "A0": 1756442454,
+    "A1": 1383255533,
+    "A2": 389418434,
+    "A3": 752367130,
+    "B0": 1941859317,
+    "B1": 741316241,
+    "B2": 1352305990,
+    "B3": 754019707
+  },
+  "variant_only_seeds_distinct": true,
+  "worker_audits": [
+    {
+      "determinism": {
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "known_cuda_warnings": [
+          "memory-efficient attention backward may be nondeterministic",
+          "adaptive_avg_pool2d_backward_cuda may be nondeterministic"
+        ],
+        "warn_only": true
+      },
+      "execution_commit": "b824e90518adaf96a2c7bfb66e9edcb83d3ab41a",
+      "fold": 1,
+      "kan_parameters": {
+        "frozen_hidden": 8,
+        "grid_size": 5,
+        "range": [
+          -3.0,
+          3.0
+        ],
+        "requested_hidden": 48,
+        "spline_order": 3
+      },
+      "lowrank_parameters": {
+        "projected_dim": 32,
+        "rank": 8
+      },
+      "projector_mismatches": {
+        "A": {
+          "A2": [],
+          "A3": []
+        },
+        "B": {
+          "B2": [],
+          "B3": []
+        }
+      },
+      "projector_scope": "projectors.* for A1-A3 and B1-B3",
+      "seed": 20260913,
+      "status": "PASS",
+      "upstream_representation_mismatches": {
+        "A": {
+          "A1": [],
+          "A2": [],
+          "A3": []
+        },
+        "B": {
+          "B1": [],
+          "B2": [],
+          "B3": []
+        }
+      },
+      "variant_only_fusion_seeds": {
+        "A0": 1756442454,
+        "A1": 1383255533,
+        "A2": 389418434,
+        "A3": 752367130,
+        "B0": 1941859317,
+        "B1": 741316241,
+        "B2": 1352305990,
+        "B3": 754019707
+      },
+      "variant_only_seeds_distinct": true
+    },
+    {
+      "determinism": {
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "known_cuda_warnings": [
+          "memory-efficient attention backward may be nondeterministic",
+          "adaptive_avg_pool2d_backward_cuda may be nondeterministic"
+        ],
+        "warn_only": true
+      },
+      "execution_commit": "b824e90518adaf96a2c7bfb66e9edcb83d3ab41a",
+      "fold": 1,
+      "kan_parameters": {
+        "frozen_hidden": 8,
+        "grid_size": 5,
+        "range": [
+          -3.0,
+          3.0
+        ],
+        "requested_hidden": 48,
+        "spline_order": 3
+      },
+      "lowrank_parameters": {
+        "projected_dim": 32,
+        "rank": 8
+      },
+      "projector_mismatches": {
+        "A": {
+          "A2": [],
+          "A3": []
+        },
+        "B": {
+          "B2": [],
+          "B3": []
+        }
+      },
+      "projector_scope": "projectors.* for A1-A3 and B1-B3",
+      "seed": 20260913,
+      "status": "PASS",
+      "upstream_representation_mismatches": {
+        "A": {
+          "A1": [],
+          "A2": [],
+          "A3": []
+        },
+        "B": {
+          "B1": [],
+          "B2": [],
+          "B3": []
+        }
+      },
+      "variant_only_fusion_seeds": {
+        "A0": 1756442454,
+        "A1": 1383255533,
+        "A2": 389418434,
+        "A3": 752367130,
+        "B0": 1941859317,
+        "B1": 741316241,
+        "B2": 1352305990,
+        "B3": 754019707
+      },
+      "variant_only_seeds_distinct": true
+    },
+    {
+      "determinism": {
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "known_cuda_warnings": [
+          "memory-efficient attention backward may be nondeterministic",
+          "adaptive_avg_pool2d_backward_cuda may be nondeterministic"
+        ],
+        "warn_only": true
+      },
+      "execution_commit": "b824e90518adaf96a2c7bfb66e9edcb83d3ab41a",
+      "fold": 1,
+      "kan_parameters": {
+        "frozen_hidden": 8,
+        "grid_size": 5,
+        "range": [
+          -3.0,
+          3.0
+        ],
+        "requested_hidden": 48,
+        "spline_order": 3
+      },
+      "lowrank_parameters": {
+        "projected_dim": 32,
+        "rank": 8
+      },
+      "projector_mismatches": {
+        "A": {
+          "A2": [],
+          "A3": []
+        },
+        "B": {
+          "B2": [],
+          "B3": []
+        }
+      },
+      "projector_scope": "projectors.* for A1-A3 and B1-B3",
+      "seed": 20260913,
+      "status": "PASS",
+      "upstream_representation_mismatches": {
+        "A": {
+          "A1": [],
+          "A2": [],
+          "A3": []
+        },
+        "B": {
+          "B1": [],
+          "B2": [],
+          "B3": []
+        }
+      },
+      "variant_only_fusion_seeds": {
+        "A0": 1756442454,
+        "A1": 1383255533,
+        "A2": 389418434,
+        "A3": 752367130,
+        "B0": 1941859317,
+        "B1": 741316241,
+        "B2": 1352305990,
+        "B3": 754019707
+      },
+      "variant_only_seeds_distinct": true
+    }
+  ],
+  "all_worker_audits_pass": true,
+  "execution_commits": [
+    "b824e90518adaf96a2c7bfb66e9edcb83d3ab41a"
+  ]
+}

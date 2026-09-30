@@ -1,0 +1,44 @@
+{
+  "phase": "M4A",
+  "status": "COMPLETE",
+  "execution_commit": [
+    "b824e90518adaf96a2c7bfb66e9edcb83d3ab41a"
+  ],
+  "variants": [
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "C0"
+  ],
+  "seeds": [
+    20260913,
+    20260914,
+    20260915
+  ],
+  "cells_completed": 135,
+  "expected_cells": 135,
+  "n_patients": 512,
+  "dss_events": 65,
+  "reports": [
+    "RESULTS.md",
+    "main_metrics.csv",
+    "fold_metrics.csv",
+    "seed_metrics.csv",
+    "paired_deltas.csv",
+    "compute_profile.csv",
+    "kan_implementation_audit.md",
+    "initialization_audit.json",
+    "protocol.json",
+    "run_manifest.json"
+  ],
+  "global_oof_status": "diagnostic_only",
+  "no_leakage": true,
+  "no_seed_hunting": true,
+  "no_preprocessing_change": true,
+  "remote_branch": "codex/phase-m4a-kan-lowrank-probe"
+}

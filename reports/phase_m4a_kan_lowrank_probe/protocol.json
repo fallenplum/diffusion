@@ -1,0 +1,86 @@
+{
+  "phase": "M4A",
+  "goal": "probe KAN versus matched MLP and Low-Rank Fusion versus matched MLP on fixed MCAT and CommonOnly representations",
+  "fixed_cohort": {
+    "n_patients": 512,
+    "dss_events": 65
+  },
+  "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv; same five outer folds as M3R2",
+  "preprocessing": "M2R2/M3 fold-local preprocessing unchanged",
+  "endpoint": "DSS",
+  "cox": "negative Breslow Cox partial likelihood with T_j >= T_i",
+  "pathology": {
+    "encoder": "UNI2-h",
+    "K": 1024,
+    "train_sampling": "seed/epoch/patient deterministic pool sampling",
+    "test_sampling": "fixed deterministic cache"
+  },
+  "seeds": [
+    20260913,
+    20260914,
+    20260915
+  ],
+  "variants": {
+    "A0": "MCAT-OriginalFusion",
+    "A1": "MCAT-MatchedMLP",
+    "A2": "MCAT-CompactKAN",
+    "A3": "MCAT-LowRankFusion",
+    "B0": "CommonOnly-OriginalFusion",
+    "B1": "CommonOnly-MatchedMLP",
+    "B2": "CommonOnly-CompactKAN",
+    "B3": "CommonOnly-LowRankFusion",
+    "C0": "ClinicalOnly"
+  },
+  "families": {
+    "A": "MCAT representation with official omic-query to pathology co-attention",
+    "B": "M3R2 S3 CommonOnly representation",
+    "C": "clinical-only control"
+  },
+  "stream_projector": "Linear(96->32), LayerNorm(32), GELU; same seed/fold within family A1-A3 or B1-B3",
+  "kan": {
+    "layer": "CompactSplineKAN",
+    "requested_hidden": 48,
+    "frozen_hidden": 8,
+    "grid_size": 5,
+    "spline_order": 3,
+    "range": [
+      -3.0,
+      3.0
+    ],
+    "dynamic_grid": false,
+    "parameter_match_window": [
+      0.8,
+      1.2
+    ]
+  },
+  "lowrank": {
+    "rank": 8,
+    "projected_dim": 32,
+    "constant_augmented_stream": true
+  },
+  "fairness": {
+    "upstream_and_projector_shared": true,
+    "variant_only_isolated_seed": true,
+    "forbidden": [
+      "resplit",
+      "seed hunting",
+      "preprocessing change",
+      "Cox change",
+      "endpoint change",
+      "test-fold tuning"
+    ]
+  },
+  "evaluation": {
+    "primary": "fold-level Harrell C",
+    "secondary": "fold-level Uno C",
+    "aggregation": "mean/std over 15 seed×fold cells",
+    "global_oof": "diagnostic only"
+  },
+  "training": {
+    "max_epochs": 25,
+    "patience": 5,
+    "batch_size": 16,
+    "optimizer": "AdamW lr=3e-4 weight_decay=1e-4",
+    "outer_refit": "same seed, full outer train, selected inner epoch count"
+  }
+}

@@ -8,6 +8,8 @@ from pathlib import Path
 from statistics import mean, stdev
 from typing import Any
 
+from .models import KAN_GRID_SIZE, KAN_HIDDEN, KAN_ORDER, KAN_RANGE, LOWRANK_RANK
+
 
 VARIANTS = ("A0", "A1", "A2", "A3", "B0", "B1", "B2", "B3", "C0")
 LABELS = {

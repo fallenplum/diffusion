@@ -322,10 +322,12 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
                            "params": profile["total_params"], "status": "completed"}
                     np.save(cells / f"{stem}.npy", pred)
                     atomic_json(cells / f"{stem}.json", {"row": row, "profile": profile})
-                    state.setdefault("completed", []).append(cell)
-                    atomic_json(state_path, state)
                     if variant in PERM_AUDIT_VARIANTS:
                         permutation_rows.extend(_permutation_audit(model, arrays, provider, test_idx, device, args.batch_size, variant, seed, fold))
+                    # Mark a cell complete only after its required permutation
+                    # audit (when applicable) has also finished.
+                    state.setdefault("completed", []).append(cell)
+                    atomic_json(state_path, state)
                     del model
                     if device.type == "cuda":
                         torch.cuda.empty_cache()

@@ -10,16 +10,30 @@ from .nn_blocks import MultimodalBackbone, RiskHead
 class SixSignatureEncoder(nn.Module):
     """Six independent genomic signature networks as in official MCAT.
 
-    Each signature receives its own RNA and CNA gene group.  The input width
-    is supplied from the fold-local symbol intersection rather than inferred
-    by slicing the globally selected feature vector.
+    Each official signature is one omic vector formed by concatenating its
+    fold-local RNA and CNA symbol intersections.  MCAT therefore produces
+    exactly six omic tokens, one per signature (the prior implementation
+    incorrectly produced twelve separate RNA/CNA tokens).
     """
 
     def __init__(self, widths: tuple[tuple[int, int], ...], dim: int = 96) -> None:
         super().__init__()
-        self.widths = tuple((max(1, int(rna)), max(1, int(cna))) for rna, cna in widths)
-        self.rna = nn.ModuleList([nn.Sequential(nn.LayerNorm(rna), nn.Linear(rna, dim), nn.ReLU()) for rna, _ in self.widths])
-        self.cna = nn.ModuleList([nn.Sequential(nn.LayerNorm(cna), nn.Linear(cna, dim), nn.ReLU()) for _, cna in self.widths])
+        if len(widths) != 6:
+            raise ValueError(f"MCAT requires six official signature groups, got {len(widths)}")
+        if any(int(rna) <= 0 or int(cna) <= 0 for rna, cna in widths):
+            raise ValueError(f"MCAT signature groups must all have nonzero RNA/CNA overlap: {widths}")
+        self.widths = tuple((int(rna), int(cna)) for rna, cna in widths)
+        self.sig_networks = nn.ModuleList([
+            nn.Sequential(
+                nn.Linear(rna + cna, dim),
+                nn.ELU(),
+                nn.AlphaDropout(p=0.25),
+                nn.Linear(dim, dim),
+                nn.ELU(),
+                nn.AlphaDropout(p=0.25),
+            )
+            for rna, cna in self.widths
+        ])
 
     def forward(self, groups: torch.Tensor) -> torch.Tensor:
         # groups: [batch, six official signatures, max_group_width, 2], with
@@ -27,8 +41,9 @@ class SixSignatureEncoder(nn.Module):
         # each module slices its audited fold-local width.
         values = []
         for index, (rna_width, cna_width) in enumerate(self.widths):
-            values.append(self.rna[index](groups[:, index, :rna_width, 0].float()))
-            values.append(self.cna[index](groups[:, index, :cna_width, 1].float()))
+            rna = groups[:, index, :rna_width, 0].float()
+            cna = groups[:, index, :cna_width, 1].float()
+            values.append(self.sig_networks[index](torch.cat([rna, cna], dim=-1)))
         return torch.stack(values, dim=1)
 
 

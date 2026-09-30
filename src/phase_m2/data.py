@@ -325,14 +325,17 @@ def _scale_audit(values: np.ndarray, modality: str) -> dict[str, Any]:
     if finite.size == 0:
         return {"modality": modality, "finite": False}
     quantiles = np.quantile(finite, [0.01, 0.5, 0.99]).tolist()
-    # RSEM/count-like matrices have a large positive dynamic range.  A small
-    # negative tail is treated as an input artifact and clipped before log1p;
-    # logged matrices (roughly centred around zero with no large positive
-    # tail) are left untouched.
-    count_like = modality == "RNA" and (float(np.max(finite)) > 50.0 or (float(np.min(finite)) >= 0.0 and float(np.max(finite)) > 10.0))
+    # This is a metadata-driven decision, not a test-set range heuristic.  The
+    # supplied cBioPortal profile is RSEM batch-normalized expression and the
+    # project protocol applies log2(x+1).  EB++-adjusted matrices can contain
+    # valid negative values; values <= -1 are invalid for this transform and
+    # must fail closed rather than being clipped.
+    count_like = modality == "RNA"
     return {
         "modality": modality,
         "finite": True,
+        "finite_count": int(finite.size),
+        "nonfinite_count": int(np.asarray(values).size - finite.size),
         "min": float(np.min(finite)),
         "max": float(np.max(finite)),
         "q01": float(quantiles[0]),
@@ -341,7 +344,9 @@ def _scale_audit(values: np.ndarray, modality: str) -> dict[str, Any]:
         "zero_fraction": float(np.mean(finite == 0.0)),
         "negative_fraction": float(np.mean(finite < 0.0)),
         "count_like_detected": bool(count_like),
-        "decision": "log2(x+1) after clipping negative input to zero" if count_like else "no log transform",
+        "decision": "metadata_verified_log2(x+1)_without_clipping" if count_like else "no log transform",
+        "transform_basis": "cBioPortal RSEM batch-normalized profile; Xena/GDC metadata audit",
+        "min_transform_domain": -1.0 if count_like else None,
     }
 
 
@@ -350,13 +355,14 @@ def _negative_value_audit(values: np.ndarray, symbols: np.ndarray, patient_ids: 
     locations = np.argwhere(np.isfinite(values) & (values < 0.0))
     unique, counts = np.unique(values[values < 0.0], return_counts=True)
     order = np.argsort(-counts, kind="stable")
-    examples = [
-        {"patient_id": str(patient_ids[int(row)]), "gene": str(symbols[int(column)]), "value": float(values[row, column])}
-        for row, column in locations[:20]
-    ]
+    examples = [{"gene": str(symbols[int(column)]), "value": float(values[row, column])} for row, column in locations[:20]]
+    finite_count = int(np.isfinite(values).sum())
     return {
         "negative_count": int(len(locations)),
-        "negative_fraction": float(len(locations) / values.size),
+        "negative_fraction": float(len(locations) / finite_count) if finite_count else 0.0,
+        "finite_count": finite_count,
+        "nonfinite_count": int(values.size - finite_count),
+        "values_leq_minus_one": int(np.sum(np.isfinite(values) & (values <= -1.0))),
         "unique_negative_values": int(len(unique)),
         "most_common_negative_values": [
             {"value": float(unique[int(index)]), "count": int(counts[int(index)])} for index in order[:10]
@@ -371,11 +377,11 @@ def _fit_numeric(raw: np.ndarray, train_idx: np.ndarray, output_dim: int, modali
     med = np.nanmedian(train, axis=0)
     med[~np.isfinite(med)] = 0.0
     clean = np.where(np.isfinite(raw), raw, med).astype(np.float32)
-    audit = _scale_audit(clean, modality)
+    audit = _scale_audit(raw, modality)
     negative_clipped = 0
     if modality == "RNA" and audit.get("count_like_detected", False):
-        negative_clipped = int(np.sum(clean < 0.0))
-        clean = np.maximum(clean, 0.0)
+        if np.any(clean <= -1.0):
+            raise ValueError("RNA log2(x+1) domain violation: finite input <= -1")
         clean = np.log2(clean + 1.0).astype(np.float32)
         transform = "log2(x+1)"
     else:
@@ -460,11 +466,11 @@ def _transform_matrix(raw: np.ndarray, train_idx: np.ndarray, modality: str) -> 
     med = np.nanmedian(train, axis=0)
     med[~np.isfinite(med)] = 0.0
     clean = np.where(np.isfinite(raw), raw, med).astype(np.float32)
-    audit = _scale_audit(clean, modality)
+    audit = _scale_audit(raw, modality)
     clipped = 0
     if modality == "RNA" and audit.get("count_like_detected", False):
-        clipped = int(np.sum(clean < 0.0))
-        clean = np.maximum(clean, 0.0)
+        if np.any(clean <= -1.0):
+            raise ValueError("RNA log2(x+1) domain violation: finite input <= -1")
         clean = np.log2(clean + 1.0).astype(np.float32)
         transform = "log2(x+1)"
     else:
@@ -489,32 +495,34 @@ def _fit_group_matrix(
     widths: list[int] = []
     audits: list[dict[str, Any]] = []
     for name, genes in groups:
-        indices = [index for gene in genes for index in symbol_to_indices.get(gene, [])]
-        indices = list(dict.fromkeys(indices))
-        if not indices:
-            # Preserve the official group as a zero-width group without
-            # changing the batch tensor shape; the audit exposes the miss.
-            indices = [0]
-            missing = True
-        else:
-            missing = False
-        values = transformed[:, indices].astype(np.float32)
+        matched_genes = [gene for gene in genes if gene in symbol_to_indices]
+        if not matched_genes:
+            raise ValueError(f"{modality} signature group {name!r} has zero symbol overlap")
+        # Collapse duplicate source rows deterministically by gene symbol.
+        # The model consumes one feature per official symbol, while the audit
+        # records how many source rows contributed to those features.
+        values = np.column_stack([
+            np.mean(transformed[:, symbol_to_indices[gene]], axis=1)
+            for gene in matched_genes
+        ]).astype(np.float32)
         train_values = values[train_idx]
         mean = np.mean(train_values, axis=0)
         std = np.std(train_values, axis=0)
         std[~np.isfinite(std) | (std < 1e-6)] = 1.0
         values = ((values - mean) / std).astype(np.float32)
         matrices.append(values)
-        widths.append(len(indices))
+        widths.append(len(matched_genes))
         audits.append({
             "group": name,
             "official_gene_count": len(genes),
-            "local_feature_count": len(indices) if not missing else 0,
-            "missing_group": missing,
+            "local_gene_count": len(matched_genes),
+            "local_feature_count": int(sum(len(symbol_to_indices[gene]) for gene in matched_genes)),
+            "duplicate_source_rows": int(sum(max(0, len(symbol_to_indices[gene]) - 1) for gene in matched_genes)),
+            "missing_group": False,
             "standardizer": "outer_train_group_feature_mean_std",
             "imputation": "outer_train_median",
             "transform": scale_audit.get("transform", "none"),
-            "selected_symbols_sha256": hashlib.sha256("\n".join(symbols[indices].tolist()).encode()).hexdigest() if not missing else "",
+            "selected_symbols_sha256": hashlib.sha256("\n".join(matched_genes).encode()).hexdigest(),
         })
     max_width = max(widths, default=1)
     packed = np.zeros((len(raw), len(matrices), max_width), dtype=np.float32)

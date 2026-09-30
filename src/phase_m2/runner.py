@@ -357,18 +357,27 @@ def _fit_mmp_banks(train_pool: np.ndarray, arrays: FoldArrays, train_idx: np.nda
 
 def _write_fidelity_docs(reports: Path) -> None:
     docs = {
-        "transsurv": ("TransSurv", "Histopathology branch, multi-omics representation, cross-modal fusion transformer/cross-attention, clinical integration and Cox head.", "Official paper architecture; no vendored official repository was used.", "TransSurvModel in src/phase_m2/transsurv.py. UNI2-h replaces the original extractor; input dimensions and clinical encoding follow the fixed protocol.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
-        "mgct": ("MGCT", "Histology/genomic streams; MGCA Q/K/V cross-attention; gated pooling; feed-forward refinement; two-stage deep mutual-guided fusion.", "Official reference: https://github.com/lmxmercy/MGCT.", "MGCTModel and MutualGuidedFusionLayer in src/phase_m2/mgct.py. UNI2-h and the fixed RNA/CNA protocol replace the official feature dimensions and omic groups; the core fusion stages are retained.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
-        "camr": ("CAMR", "Invariant/specific encoders, adversarial cross-modal alignment, reconstruction, orthogonality, CMFM and survival loss.", "Official reference: https://github.com/wxq-ustc/CAMR.", "CAMRModel, LowRankMultimodalFusion and gradient_reverse in src/phase_m2/camr.py. Official gene/path/CNA inputs map to fold-local RNA/UNI2-h/CNA; clinical is fused before the Cox head while the listed losses are retained.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
-        "mmp": ("MMPTrans-Hallmark", "Train-only Ch=16 morphology prototypes, 50 Hallmark pathway groups, pathway-specific encoders, MMPTrans fusion and Cox.", "Official reference: https://github.com/mahmoodlab/MMP; metadata vendored as src/phase_m2/metadata/mmp_hallmarks_signatures.csv.", "MMPModel and fit_morphology_prototypes in src/phase_m2/mmp.py; pathway groups in src/phase_m2/data.py. Official MMP Hallmark metadata is intersected by gene symbol and each group is imputed/standardized within the outer training fold.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
-        "mcat": ("MCAT", "Six official genomic signature groups, omic-query histology co-attention, path/omic transformers, gated attention heads and fusion.", "Official reference: https://github.com/mahmoodlab/MCAT; metadata vendored as src/phase_m2/metadata/mcat_signatures.csv.", "MCATModel and SixSignatureEncoder in src/phase_m2/mcat.py; group construction in src/phase_m2/data.py. Official MCAT signature metadata is intersected by gene symbol; RNA, CNA, and mutation availability are recorded explicitly.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
-        "motcat": ("MOTCat", "OT-guided cross-modal alignment with entropic transport and global structure consistency.", "Official reference: https://github.com/Innse/MOTCat; no vendored module was imported.", "MOTCatModel and sinkhorn_transport in src/phase_m2/motcat.py. UNI2-h and fold-local RNA/CNA streams replace original features; OT coupling and structure penalty remain.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
+        "transsurv": {"model": "TransSurv", "paper_components": "Histopathology branch, multi-omics representation, cross-modal fusion transformer/cross-attention, clinical integration and Cox head.", "official": "No official source tree was vendored or imported in this checkout; paper-level architecture only.", "local": "src/phase_m2/transsurv.py:TransSurvModel.", "preserved": "cross-modal transformer/fusion and clinical Cox path", "changed": "UNI2-h pathology input, fixed RNA+CNA inputs, six-field clinical protocol and benchmark dimensions", "status": "PAPER_FAITHFUL_REIMPLEMENTATION"},
+        "mgct": {"model": "MGCT", "paper_components": "MGCA Q/K/V cross-attention, gated pooling, feed-forward refinement and two-stage mutual-guided fusion.", "official": "mahmoodlab/MGCT reference tree: model/*.py and utils/coattn_train_utils.py (audited cached tree; not imported at runtime).", "local": "src/phase_m2/mgct.py:MGCTModel, MutualGuidedFusionLayer.", "preserved": "mutual-guided cross-attention, gated pooling and fusion stages", "changed": "UNI2-h and fold-local RNA/CNA/clinical tensors; official training/data loader is not used", "status": "PAPER_FAITHFUL_REIMPLEMENTATION"},
+        "camr": {"model": "CAMR", "paper_components": "Invariant/specific encoders, adversarial alignment, reconstruction, orthogonality, CMFM and survival loss.", "official": "wxq-ustc/CAMR: networks.py and fusion.py in the audited cached tree (reference only; not imported at runtime).", "local": "src/phase_m2/camr.py:CAMRModel, LowRankMultimodalFusion, gradient_reverse.", "preserved": "invariant/specific branches, alignment/reconstruction penalties and CMFM path", "changed": "UNI2-h/fold-local omics dimensions and fixed clinical Cox integration", "status": "PAPER_FAITHFUL_REIMPLEMENTATION"},
+        "mmp": {"model": "MMPTrans-Hallmark", "paper_components": "Outer-train Ch=16 morphology prototypes, 50 Hallmark pathway groups, pathway-specific encoders, MMPTrans fusion and Cox.", "official": "mahmoodlab/MMP: src/mil_models/model_multimodal.py, src/mil_models/components.py, src/wsi_datasets/wsi_survival.py, src/utils/proto_utils.py and src/data_csvs/rna/metadata/hallmarks_signatures.csv (metadata vendored locally).", "local": "src/phase_m2/mmp.py:MMPModel, fit_morphology_prototypes; src/phase_m2/data.py:_fit_group_matrix.", "preserved": "morphology-only GMM bank, 50 pathway group semantics, pathway-specific encoders and bidirectional fusion", "changed": "UNI2-h pathology tensor, fixed RNA-only Hallmark branch because mutation/CNA pathway inputs are unavailable, and benchmark Cox dimensions", "status": "PAPER_FAITHFUL_REIMPLEMENTATION"},
+        "mcat": {"model": "MCAT", "paper_components": "Six genomic signature networks, omic-query histology co-attention, path/omic transformers, gated attention heads and fusion.", "official": "mahmoodlab/MCAT: models/model_coattn.py, models/model_utils.py:SNN_Block and datasets/dataset_survival.py signature intersection; metadata file datasets_csv_sig/signatures.csv.", "local": "src/phase_m2/mcat.py:SixSignatureEncoder, MCATModel; src/phase_m2/data.py:_fit_group_matrix.", "preserved": "six token structure, SNN-style per-signature encoders, omic-query co-attention and transformer/pooling/fusion body", "changed": "fold-local RNA+CNA symbol intersections, UNI2-h pathology, fixed clinical/Cox dimensions; mutation is unavailable and not fabricated", "status": "PAPER_FAITHFUL_REIMPLEMENTATION"},
+        "motcat": {"model": "MOTCat", "paper_components": "OT-guided cross-modal alignment with entropic transport and global structure consistency.", "official": "Innse/MOTCat source was not vendored or imported for this checkout; repository reference is recorded in reproduction_status.csv.", "local": "src/phase_m2/motcat.py:MOTCatModel, sinkhorn_transport.", "preserved": "OT coupling and structure penalty", "changed": "UNI2-h and fold-local RNA/CNA streams, fixed clinical/Cox dimensions", "status": "PAPER_FAITHFUL_REIMPLEMENTATION"},
     }
     fidelity_dir = reports / "fidelity"
     fidelity_dir.mkdir(parents=True, exist_ok=True)
-    for filename, (model, equation, official, adaptation, status) in docs.items():
-        text = "\n".join([f"# {model} fidelity record", "", "## Paper module/equation", "", equation, "", "## Official code module", "", official, "", "## Our adapted code module", "", adaptation, "", "## Preserved?", "", f"core modules retained where stated; status={status}", ""])
+    for filename, item in docs.items():
+        text = "\n".join([f"# {item['model']} fidelity record", "", "## Paper components", "", item["paper_components"], "", "## Official repository file/module", "", item["official"], "", "## Local adapted file/module", "", item["local"], "", "## Preserved components", "", item["preserved"], "", "## Changed components", "", item["changed"], "", "## Truthful status", "", item["status"], ""])
         (fidelity_dir / f"{filename}.md").write_text(text, encoding="utf-8")
+
+
+def _redact_patient_identifiers(value: Any) -> Any:
+    """Keep public reports free of patient-level identifiers."""
+    if isinstance(value, dict):
+        return {key: _redact_patient_identifiers(item) for key, item in value.items() if key not in {"patient_id", "patient_ids"}}
+    if isinstance(value, list):
+        return [_redact_patient_identifiers(item) for item in value]
+    return value
 
 
 def _write_results(
@@ -385,6 +394,11 @@ def _write_results(
     elapsed: float,
 ) -> None:
     reports.mkdir(parents=True, exist_ok=True)
+    # A fold is preprocessed once per cell in the simple resumable runner, but
+    # its semantic audit is a fold-level artifact.  De-duplicate before public
+    # serialization so signature_overlap.csv has exactly 5 x (6+6+50) rows.
+    fold_audit_map = {str(item.get("outer_fold")): item for item in fold_audits if item.get("outer_fold") is not None}
+    public_fold_audits = [fold_audit_map[key] for key in sorted(fold_audit_map, key=lambda x: int(x))]
     status_by_method = {row["method"]: row for row in statuses}
     successful: set[str] = set()
     main_rows: list[dict[str, Any]] = []
@@ -410,7 +424,7 @@ def _write_results(
     atomic_csv(reports / "compute_profile.csv", profiles)
     atomic_csv(reports / "reproduction_status.csv", statuses)
     overlap_rows: list[dict[str, Any]] = []
-    for fold_audit in fold_audits:
+    for fold_audit in public_fold_audits:
         fold = fold_audit.get("outer_fold")
         for modality_key, modality in (("mcat_signature_groups", "MCAT_RNA"), ("mcat_signature_cna_groups", "MCAT_CNA"), ("mmp_hallmark_groups", "MMP_RNA_HALLMARK")):
             for group in fold_audit.get(modality_key, []):
@@ -430,19 +444,19 @@ def _write_results(
         "",
         f"- min={raw_rna_audit.get('min')}; median={raw_rna_audit.get('median')}; q99={raw_rna_audit.get('q99')}; max={raw_rna_audit.get('max')}; negative_fraction={raw_rna_audit.get('negative_fraction')}.",
         f"- Negative audit: count={negative_audit.get('negative_count')}; unique_values={negative_audit.get('unique_negative_values')}; most_common={negative_audit.get('most_common_negative_values')}.",
-        f"- Example locations: {negative_audit.get('examples', [])[:5]}.",
+        f"- Example negative values (gene/value only): {[{'gene': item.get('gene'), 'value': item.get('value')} for item in negative_audit.get('examples', [])[:5]]}.",
         "- The file contains a very large positive range and negative values consistent with batch-adjusted RSEM values rather than a simple nonnegative count export.",
         "",
         "## Decision",
         "",
-        "- Preserve the protocol's audited `log2(x+1)` transform after clipping the negative input tail to zero, then fit imputation, feature selection, and standardization on the outer training fold only.",
-        "- This is an adaptation decision for the supplied cBioPortal matrix; no claim is made that the file is raw counts.",
+        "- Apply metadata-verified `log2(x+1)` to the RSEM profile without clipping the negative tail; all observed finite values are above -1, and any future value <= -1 fails closed.",
+        "- The negative tail is retained as a normalized continuous value and is not treated as a missing sentinel. Imputation, variance ranking and standardization remain outer-train only.",
         "",
     ]
     (reports / "rna_scale_audit.md").write_text("\n".join(rna_lines), encoding="utf-8")
-    atomic_json(reports / "preprocessing_audit.json", {"raw_input_audit": raw.audit, "fold_audits": fold_audits, "path_cache": cache_meta, "clinical_protocol_columns": ["AGE", "SEX", "AJCC_PATHOLOGIC_TUMOR_STAGE", "PATH_T_STAGE", "PATH_N_STAGE", "PATH_M_STAGE"], "variance_selection_before_standardization": True, "outer_train_only": True, "outer_refit": "reinitialize_from_same_seed_then_full_outer_train_for_inner_selected_epoch_count", "inner_validation_sampling": "fixed deterministic path view", "outer_test_sampling": "fixed deterministic path view"})
-    atomic_json(reports / "protocol.json", {"phase": "M2R2", "endpoint": "DSS", "n_patients": int(len(raw.patient_ids)), "dss_events": int(raw.dss_event.sum()), "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv", "folds": 5, "neural_seeds": list(NEURAL_SEEDS), "models": list(MODEL_ORDER), "pathology": {"source": "TCGA COAD/READ UNI2-h H5", "K": 1024, "K_note": "benchmark normalization, not paper-original setting", "train_sampling": "deterministic by seed, epoch and patient from per-patient pool", "test_sampling": "deterministic fixed"}, "signature_metadata": {"MCAT": "src/phase_m2/metadata/mcat_signatures.csv (mahmoodlab/MCAT datasets_csv_sig/signatures.csv)", "MMP": "src/phase_m2/metadata/mmp_hallmarks_signatures.csv (mahmoodlab/MMP src/data_csvs/rna/metadata/hallmarks_signatures.csv)"}, "omics": {"RNA_global_baselines": "outer-train imputation -> scale audit -> log2(x+1) when count-like -> outer-train variance ranking -> top-512 -> StandardScaler", "CNA_global_baselines": "outer-train imputation -> nonzero/variance filtering -> top-256 -> StandardScaler", "MCAT": "official six signature gene groups, fold-local RNA/CNA imputation and standardization; mutation unavailable", "MMPTrans-Hallmark": "official 50 Hallmark gene groups, fold-local RNA imputation and standardization; morphology outer-train Ch=16 GMM"}, "clinical": ["AGE", "SEX", "AJCC_PATHOLOGIC_TUMOR_STAGE", "PATH_T_STAGE", "PATH_N_STAGE", "PATH_M_STAGE"], "objective": "negative Breslow Cox partial likelihood with T_j >= T_i", "primary_metric": "Harrell C", "secondary_metric": "Uno C", "functional_checks": functional, "no_patient_level_outputs_in_reports": True})
-    complete = len(successful) >= 5 and {"B2", "B3", "B4"}.issubset(successful) and all(len([row for row in seed_rows if row["method"] == method and row["status"] == "completed"]) == (1 if method == "B0" else len(NEURAL_SEEDS)) for method in successful) and all(len([row for row in fold_rows if row["method"] == method and row["status"] == "completed"]) == (5 if method == "B0" else len(NEURAL_SEEDS) * 5) for method in successful) and functional["status"]
+    atomic_json(reports / "preprocessing_audit.json", _redact_patient_identifiers({"raw_input_audit": raw.audit, "fold_audits": public_fold_audits, "path_cache": cache_meta, "clinical_protocol_columns": ["AGE", "SEX", "AJCC_PATHOLOGIC_TUMOR_STAGE", "PATH_T_STAGE", "PATH_N_STAGE", "PATH_M_STAGE"], "variance_selection_before_standardization": True, "outer_train_only": True, "outer_refit": "reinitialize_from_same_seed_then_full_outer_train_for_inner_selected_epoch_count", "inner_validation_sampling": "fixed deterministic path view", "outer_test_sampling": "fixed deterministic path view"}))
+    atomic_json(reports / "protocol.json", {"phase": "M2R2", "endpoint": "DSS", "n_patients": int(len(raw.patient_ids)), "dss_events": int(raw.dss_event.sum()), "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv", "folds": 5, "neural_seeds": list(NEURAL_SEEDS), "models": list(MODEL_ORDER), "pathology": {"source": "TCGA COAD/READ UNI2-h H5", "K": 1024, "K_note": "benchmark normalization, not paper-original setting", "train_sampling": "deterministic by seed, epoch and patient from per-patient pool", "test_sampling": "deterministic fixed"}, "signature_metadata": {"MCAT": "src/phase_m2/metadata/mcat_signatures.csv (mahmoodlab/MCAT datasets_csv_sig/signatures.csv)", "MMP": "src/phase_m2/metadata/mmp_hallmarks_signatures.csv (mahmoodlab/MMP src/data_csvs/rna/metadata/hallmarks_signatures.csv)"}, "omics": {"RNA_global_baselines": "outer-train median imputation -> metadata-verified log2(x+1) without clipping -> outer-train variance ranking -> top-512 -> standardization", "CNA_global_baselines": "outer-train imputation -> nonzero/variance filtering -> top-256 -> StandardScaler", "MCAT": "six official signature groups, each one concatenated fold-local RNA+CNA vector and one token; mutation unavailable", "MMPTrans-Hallmark": "50 official Hallmark groups, fold-local RNA-only pathway vectors and pathway-specific encoders; morphology outer-train Ch=16 GMM"}, "clinical": ["AGE", "SEX", "AJCC_PATHOLOGIC_TUMOR_STAGE", "PATH_T_STAGE", "PATH_N_STAGE", "PATH_M_STAGE"], "objective": "negative Breslow Cox partial likelihood with T_j >= T_i", "primary_metric": "Harrell C", "secondary_metric": "Uno C", "functional_checks": functional, "no_patient_level_outputs_in_reports": True})
+    complete = successful == set(MODEL_ORDER) and all(len([row for row in seed_rows if row["method"] == method and row["status"] == "completed"]) == (1 if method == "B0" else len(NEURAL_SEEDS)) for method in MODEL_ORDER) and all(len([row for row in fold_rows if row["method"] == method and row["status"] == "completed"]) == (5 if method == "B0" else len(NEURAL_SEEDS) * 5) for method in MODEL_ORDER) and len(public_fold_audits) == 5 and all(len(item.get("mcat_signature_groups", [])) == 6 and len(item.get("mcat_signature_cna_groups", [])) == 6 and len(item.get("mmp_hallmark_groups", [])) == 50 for item in public_fold_audits) and functional["status"]
     status_text = "Phase M2R2 COMPLETE" if complete else "Phase M2R2 BLOCKED"
     sorted_rows = sorted(main_rows, key=lambda row: row.get("harrell_c_seed_mean", -float("inf")), reverse=True)
     lines = ["# Phase M2R2 Omics Fidelity", "", "## Decision", "", f"**{status_text}**", "", f"- Cohort: {len(raw.patient_ids)} patients, {int(raw.dss_event.sum())} DSS events.", "- The committed Phase M1R fixed patient split was reused.", "- The ranking table contains only models with complete required seed/fold evidence.", "", "## Formal ranking", "", "| Rank | Method | Harrell C seed mean +/- std | Uno C seed mean +/- std | Harrell C fold mean +/- std | Worst Harrell fold | Params | GPU GB | Time s | Fidelity |", "|---:|---|---:|---:|---:|---:|---:|---:|---:|---|"]
@@ -470,8 +484,8 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     if not data_root_value:
         raise RuntimeError(f"{env_name} is not set")
     data_root = Path(data_root_value).resolve()
-    runtime_root = Path(args.runtime_root).resolve() if args.runtime_root else repo_root / "runtime" / "phase_m2"
-    reports = Path(args.reports_root).resolve() if args.reports_root else repo_root / "reports" / "phase_m2r_faithful_baselines"
+    runtime_root = Path(args.runtime_root).resolve() if args.runtime_root else repo_root / "runtime" / "phase_m2r2_omics_fidelity"
+    reports = Path(args.reports_root).resolve() if args.reports_root else repo_root / "reports" / "phase_m2r2_omics_fidelity"
     runtime_root.mkdir(parents=True, exist_ok=True)
     reports.mkdir(parents=True, exist_ok=True)
     _write_fidelity_docs(reports)
@@ -483,7 +497,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     atomic_json(runtime_root / "data_audit.json", raw.audit)
     cache_meta = prepare_path_cache(raw, runtime_root, k=1024, pool_k=2048)
     if args.prepare_cache:
-        atomic_json(reports / "preprocessing_audit.json", {"raw_input_audit": raw.audit, "path_cache": cache_meta, "variance_selection_before_standardization": True, "outer_train_only": True})
+        atomic_json(reports / "preprocessing_audit.json", _redact_patient_identifiers({"raw_input_audit": raw.audit, "path_cache": cache_meta, "variance_selection_before_standardization": True, "outer_train_only": True}))
         print(json.dumps({"status": "cache_prepared", "data_root_env_set": True, "cache": cache_meta}, ensure_ascii=False))
         return {"status": "cache_prepared"}
     deterministic = np.load(runtime_root / "path_tokens_deterministic.npy", mmap_mode="r")

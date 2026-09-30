@@ -41,13 +41,6 @@ def fit_morphology_prototypes(train_path_pool: np.ndarray, seed: int, components
     return prototypes, {"method": "GaussianMixture", "components": components, "source": "outer_train_pathology_pool", "sampled_stride": sampled_stride}
 
 
-def fit_transcriptomic_prototypes(train_rna: np.ndarray, train_cna: np.ndarray, seed: int, components: int = 16) -> tuple[np.ndarray, dict[str, Any]]:
-    """Fit transcriptomic prototype bank from outer-training RNA+CNA values."""
-    values = np.concatenate([np.asarray(train_rna, dtype=np.float32), np.asarray(train_cna, dtype=np.float32)], axis=1)
-    prototypes = _gmm_prototypes(values, components, seed)
-    return prototypes, {"method": "GaussianMixture", "components": components, "source": "outer_train_RNA_CNA", "pathway_mapping": "six fixed RNA/CNA signature groups used by the adapted protocol"}
-
-
 class PrototypeSpecificFFN(nn.Module):
     def __init__(self, dim: int, count: int) -> None:
         super().__init__()
@@ -60,26 +53,28 @@ class PrototypeSpecificFFN(nn.Module):
 
 
 class MMPModel(nn.Module):
-    """MMPTrans adaptation with train-only GMM morphology and omic banks."""
+    """MMPTrans adaptation with morphology prototypes and Hallmark tokens."""
 
     def __init__(
         self,
         clinical_dim: int,
         morphology_prototypes: np.ndarray | None = None,
-        transcriptomic_prototypes: np.ndarray | None = None,
+        hallmark_widths: tuple[int, ...] | None = None,
         dim: int = 96,
         prototype_count: int = 16,
     ) -> None:
         super().__init__()
         self.backbone = MultimodalBackbone(clinical_dim, dim=dim, path_tokens=32)
         morphology = np.zeros((prototype_count, 1536), dtype=np.float32) if morphology_prototypes is None else np.asarray(morphology_prototypes, dtype=np.float32)
-        transcriptomic = np.zeros((prototype_count, 768), dtype=np.float32) if transcriptomic_prototypes is None else np.asarray(transcriptomic_prototypes, dtype=np.float32)
         self.register_buffer("morphology_prototypes", torch.from_numpy(morphology), persistent=False)
-        self.register_buffer("transcriptomic_prototypes", torch.from_numpy(transcriptomic), persistent=False)
         self.morphology_projection = nn.Linear(1536, dim)
-        self.transcriptomic_projection = nn.Linear(768, dim)
         self.morphology_ffn = PrototypeSpecificFFN(dim, prototype_count)
-        self.transcriptomic_ffn = PrototypeSpecificFFN(dim, prototype_count)
+        if hallmark_widths is None:
+            hallmark_widths = tuple(1 for _ in range(50))
+        self.hallmark_widths = tuple(max(1, int(width)) for width in hallmark_widths)
+        self.hallmark_encoders = nn.ModuleList(
+            [nn.Sequential(nn.LayerNorm(width), nn.Linear(width, dim), nn.GELU()) for width in self.hallmark_widths]
+        )
         self.mmp_cross = nn.MultiheadAttention(dim, 4, dropout=0.1, batch_first=True)
         self.mmp_reverse = nn.MultiheadAttention(dim, 4, dropout=0.1, batch_first=True)
         self.path_pool = GatedAttentionPool(dim)
@@ -97,18 +92,25 @@ class MMPModel(nn.Module):
         assignment = torch.softmax(scores, dim=1)
         return self.morphology_ffn(torch.matmul(assignment.transpose(1, 2), values_proj))
 
-    def _transcriptomic_tokens(self, rna: torch.Tensor, cna: torch.Tensor) -> torch.Tensor:
-        values = torch.cat([rna.float(), cna.float()], dim=1)
-        prototypes = self.transcriptomic_prototypes.to(device=values.device, dtype=values.dtype)
-        proto = self.transcriptomic_projection(prototypes).unsqueeze(0).expand(values.shape[0], -1, -1)
-        global_value = self.transcriptomic_projection(values).unsqueeze(1)
-        tokens = proto + global_value
-        return self.transcriptomic_ffn(tokens)
+    def _hallmark_tokens(self, groups: torch.Tensor) -> torch.Tensor:
+        values = []
+        for index, (width, encoder) in enumerate(zip(self.hallmark_widths, self.hallmark_encoders)):
+            values.append(encoder(groups[:, index, :width].float()).unsqueeze(1))
+        return torch.cat(values, dim=1)
 
-    def forward(self, pathology: torch.Tensor, rna: torch.Tensor, cna: torch.Tensor, clinical: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
+    def forward(
+        self,
+        pathology: torch.Tensor,
+        rna: torch.Tensor,
+        cna: torch.Tensor,
+        clinical: torch.Tensor,
+        hallmark_groups: torch.Tensor | None = None,
+    ) -> tuple[torch.Tensor, torch.Tensor]:
         encoded = self.backbone.encode(pathology, rna, cna, clinical)
         morph = self._morphology_tokens(pathology)
-        trans = self._transcriptomic_tokens(rna, cna)
+        if hallmark_groups is None:
+            raise ValueError("MMPTrans requires the 50 official Hallmark pathway groups")
+        trans = self._hallmark_tokens(hallmark_groups)
         morph_update, _ = self.mmp_cross(morph, trans, trans)
         trans_update, _ = self.mmp_reverse(trans, morph, morph)
         morph = morph + morph_update

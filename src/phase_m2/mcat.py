@@ -8,32 +8,39 @@ from .nn_blocks import MultimodalBackbone, RiskHead
 
 
 class SixSignatureEncoder(nn.Module):
-    """Six independent genomic signature networks as in official MCAT."""
+    """Six independent genomic signature networks as in official MCAT.
 
-    def __init__(self, dim: int = 96) -> None:
+    Each signature receives its own RNA and CNA gene group.  The input width
+    is supplied from the fold-local symbol intersection rather than inferred
+    by slicing the globally selected feature vector.
+    """
+
+    def __init__(self, widths: tuple[tuple[int, int], ...], dim: int = 96) -> None:
         super().__init__()
-        self.rna = nn.ModuleList(
-            [nn.Sequential(nn.LayerNorm(width), nn.Linear(width, dim), nn.ReLU()) for width in (171, 171, 170)]
-        )
-        self.cna = nn.ModuleList(
-            [nn.Sequential(nn.LayerNorm(width), nn.Linear(width, dim), nn.ReLU()) for width in (86, 85, 85)]
-        )
+        self.widths = tuple((max(1, int(rna)), max(1, int(cna))) for rna, cna in widths)
+        self.rna = nn.ModuleList([nn.Sequential(nn.LayerNorm(rna), nn.Linear(rna, dim), nn.ReLU()) for rna, _ in self.widths])
+        self.cna = nn.ModuleList([nn.Sequential(nn.LayerNorm(cna), nn.Linear(cna, dim), nn.ReLU()) for _, cna in self.widths])
 
-    def forward(self, rna: torch.Tensor, cna: torch.Tensor) -> torch.Tensor:
-        rna_chunks = torch.split(rna.float(), (171, 171, 170), dim=1)
-        cna_chunks = torch.split(cna.float(), (86, 85, 85), dim=1)
-        values = [network(chunk) for network, chunk in zip(self.rna, rna_chunks)]
-        values.extend(network(chunk) for network, chunk in zip(self.cna, cna_chunks))
+    def forward(self, groups: torch.Tensor) -> torch.Tensor:
+        # groups: [batch, six official signatures, max_group_width, 2], with
+        # channel 0 RNA and channel 1 CNA.  Padding is never consumed because
+        # each module slices its audited fold-local width.
+        values = []
+        for index, (rna_width, cna_width) in enumerate(self.widths):
+            values.append(self.rna[index](groups[:, index, :rna_width, 0].float()))
+            values.append(self.cna[index](groups[:, index, :cna_width, 1].float()))
         return torch.stack(values, dim=1)
 
 
 class MCATModel(nn.Module):
     """MCAT co-attention model kept separate from MOTCat."""
 
-    def __init__(self, clinical_dim: int, dim: int = 96) -> None:
+    def __init__(self, clinical_dim: int, signature_widths: tuple[tuple[int, int], ...] | None = None, dim: int = 96) -> None:
         super().__init__()
         self.backbone = MultimodalBackbone(clinical_dim, dim=dim, path_tokens=32)
-        self.sig_networks = SixSignatureEncoder(dim)
+        if signature_widths is None:
+            signature_widths = tuple((1, 1) for _ in range(6))
+        self.sig_networks = SixSignatureEncoder(signature_widths, dim)
         self.coattn = nn.MultiheadAttention(dim, 4, dropout=0.1, batch_first=True)
         path_layer = nn.TransformerEncoderLayer(dim, 4, dim_feedforward=dim * 2, dropout=0.25, activation="relu", batch_first=True)
         omic_layer = nn.TransformerEncoderLayer(dim, 4, dim_feedforward=dim * 2, dropout=0.25, activation="relu", batch_first=True)
@@ -47,10 +54,19 @@ class MCATModel(nn.Module):
         self.clinical_gate = nn.Sequential(nn.Linear(dim * 2, dim), nn.GELU(), nn.LayerNorm(dim))
         self.head = RiskHead(dim)
 
-    def forward(self, pathology: torch.Tensor, rna: torch.Tensor, cna: torch.Tensor, clinical: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
+    def forward(
+        self,
+        pathology: torch.Tensor,
+        rna: torch.Tensor,
+        cna: torch.Tensor,
+        clinical: torch.Tensor,
+        signature_groups: torch.Tensor | None = None,
+    ) -> tuple[torch.Tensor, torch.Tensor]:
         encoded = self.backbone.encode(pathology, rna, cna, clinical)
         h_path = encoded.pathology
-        h_omic = self.sig_networks(rna, cna)
+        if signature_groups is None:
+            raise ValueError("MCAT requires official six-signature gene groups")
+        h_omic = self.sig_networks(signature_groups)
         # MCAT: omic queries attend to the histology bag.
         h_path_coattn, _ = self.coattn(h_omic, h_path, h_path)
         h_path_trans = self.path_transformer(h_path_coattn)

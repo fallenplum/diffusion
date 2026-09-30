@@ -37,7 +37,7 @@ from .common import (
 from .data import FoldArrays, RawInputs, load_raw_inputs, prepare_path_cache, preprocess_fold
 from .early_fusion import fit_ridge_cox
 from .mgct import MGCTModel
-from .mmp import MMPModel, fit_morphology_prototypes, fit_transcriptomic_prototypes
+from .mmp import MMPModel, fit_morphology_prototypes
 from .motcat import MOTCatModel
 from .transsurv import TransSurvModel
 
@@ -48,7 +48,7 @@ MODEL_LABELS = {
     "B1": "TransSurv",
     "B2": "MGCT",
     "B3": "CAMR",
-    "B4": "MMPTrans",
+    "B4": "MMPTrans-Hallmark",
     "B5": "MCAT",
     "B6": "MOTCat",
 }
@@ -57,7 +57,7 @@ MECHANISMS = {
     "B1": "histology/omics branches + cross-modal transformer + clinical Cox head",
     "B2": "two-stage mutual-guided cross-attention, gated pooling and feed-forward fusion",
     "B3": "invariant/specific encoders + adversarial alignment + reconstruction + CMFM",
-    "B4": "train-only Ch=16 GMM morphology/transcriptomic prototypes + MMPTrans",
+    "B4": "train-only Ch=16 GMM morphology prototypes + 50 Hallmark pathway tokens + MMPTrans",
     "B5": "omic-query histology co-attention + dual transformer attention pooling",
     "B6": "entropic OT token alignment + global structure consistency + clinical fusion",
 }
@@ -73,11 +73,11 @@ REPRODUCTION_SOURCES = {
 FIDELITY_STATUS = {
     "B0": "PAPER_FAITHFUL_REIMPLEMENTATION",
     "B1": "PAPER_FAITHFUL_REIMPLEMENTATION",
-    "B2": "OFFICIAL_ADAPTED",
-    "B3": "OFFICIAL_ADAPTED",
-    "B4": "OFFICIAL_ADAPTED",
-    "B5": "OFFICIAL_ADAPTED",
-    "B6": "OFFICIAL_ADAPTED",
+    "B2": "PAPER_FAITHFUL_REIMPLEMENTATION",
+    "B3": "PAPER_FAITHFUL_REIMPLEMENTATION",
+    "B4": "PAPER_FAITHFUL_REIMPLEMENTATION",
+    "B5": "PAPER_FAITHFUL_REIMPLEMENTATION",
+    "B6": "PAPER_FAITHFUL_REIMPLEMENTATION",
 }
 
 
@@ -119,15 +119,35 @@ def _batch_indices(indices: np.ndarray, batch_size: int, rng: np.random.Generato
     return [indices[start : start + batch_size] for start in range(0, len(indices), batch_size)]
 
 
-def _tensor_batch(arrays: FoldArrays, provider: PathTokenProvider, indices: np.ndarray, device: torch.device, deterministic: bool, epoch: int) -> tuple[torch.Tensor, ...]:
+def _tensor_batch(
+    arrays: FoldArrays,
+    provider: PathTokenProvider,
+    indices: np.ndarray,
+    device: torch.device,
+    deterministic: bool,
+    epoch: int,
+    method: str | None = None,
+) -> tuple[torch.Tensor, ...]:
     path = torch.from_numpy(provider.batch(indices, epoch=epoch, deterministic=deterministic)).to(device=device, non_blocking=True)
     rna = torch.from_numpy(arrays.rna[indices]).to(device=device, non_blocking=True)
     cna = torch.from_numpy(arrays.cna[indices]).to(device=device, non_blocking=True)
     clinical = torch.from_numpy(arrays.clinical[indices]).to(device=device, non_blocking=True)
+    if method == "B5":
+        signatures = torch.from_numpy(arrays.mcat_groups[indices]).to(device=device, non_blocking=True)
+        return path, rna, cna, clinical, signatures
+    if method == "B4":
+        hallmarks = torch.from_numpy(arrays.mmp_groups[indices]).to(device=device, non_blocking=True)
+        return path, rna, cna, clinical, hallmarks
     return path, rna, cna, clinical
 
 
-def _make_model(name: str, clinical_dim: int, mmp_banks: dict[str, np.ndarray] | None = None) -> torch.nn.Module:
+def _make_model(
+    name: str,
+    clinical_dim: int,
+    mmp_banks: dict[str, np.ndarray] | None = None,
+    mcat_widths: tuple[tuple[int, int], ...] | None = None,
+    mmp_widths: tuple[int, ...] | None = None,
+) -> torch.nn.Module:
     if name == "B1":
         return TransSurvModel(clinical_dim)
     if name == "B2":
@@ -137,9 +157,9 @@ def _make_model(name: str, clinical_dim: int, mmp_banks: dict[str, np.ndarray] |
     if name == "B4":
         if mmp_banks is None:
             raise ValueError("MMP requires outer-train prototype banks")
-        return MMPModel(clinical_dim, morphology_prototypes=mmp_banks["morphology"], transcriptomic_prototypes=mmp_banks["transcriptomic"])
+        return MMPModel(clinical_dim, morphology_prototypes=mmp_banks["morphology"], hallmark_widths=mmp_widths)
     if name == "B5":
-        return MCATModel(clinical_dim)
+        return MCATModel(clinical_dim, signature_widths=mcat_widths)
     if name == "B6":
         return MOTCatModel(clinical_dim)
     raise ValueError(name)
@@ -157,6 +177,7 @@ def _forward_epoch(
     train: bool,
     rng: np.random.Generator | None,
     epoch: int,
+    method: str,
 ) -> tuple[float, torch.Tensor | np.ndarray, torch.Tensor | None]:
     model.train(train)
     risks: list[torch.Tensor] = []
@@ -164,7 +185,7 @@ def _forward_epoch(
     batches = _batch_indices(indices, batch_size, rng if train else None)
     ordered_indices = np.concatenate(batches) if batches else np.empty(0, dtype=int)
     for batch in batches:
-        inputs = _tensor_batch(arrays, provider, batch, device, deterministic=not train, epoch=epoch)
+        inputs = _tensor_batch(arrays, provider, batch, device, deterministic=not train, epoch=epoch, method=method)
         risk, aux = model(*inputs)
         risks.append(risk)
         aux_values.append(aux)
@@ -187,12 +208,13 @@ def _predict(
     device: torch.device,
     batch_size: int,
     deterministic: bool,
+    method: str,
 ) -> np.ndarray:
     model.eval()
     values: list[np.ndarray] = []
     with torch.no_grad():
         for batch in _batch_indices(indices, batch_size):
-            inputs = _tensor_batch(arrays, provider, batch, device, deterministic=deterministic, epoch=0)
+            inputs = _tensor_batch(arrays, provider, batch, device, deterministic=deterministic, epoch=0, method=method)
             values.append(model(*inputs)[0].detach().cpu().numpy())
     return np.concatenate(values) if values else np.empty(0, dtype=float)
 
@@ -229,7 +251,7 @@ def _fit_neural_fold(
     if device.type == "cuda":
         torch.cuda.reset_peak_memory_stats(device)
     inner_train, inner_val = _inner_split(raw, fold, seed)
-    model = _make_model(name, arrays.clinical.shape[1], mmp_banks).to(device)
+    model = _make_model(name, arrays.clinical.shape[1], mmp_banks, arrays.mcat_widths, arrays.mmp_widths).to(device)
     parameters = count_parameters(model)
     optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4, weight_decay=1e-4)
     best_metric = -float("inf")
@@ -240,12 +262,12 @@ def _fit_neural_fold(
     rng = np.random.default_rng(seed + fold + 101)
     for epoch in range(1, max_epochs + 1):
         optimizer.zero_grad(set_to_none=True)
-        train_loss, _train_risk, loss = _forward_epoch(model, arrays, provider, inner_train, raw.dss_time, raw.dss_event, device, batch_size, True, rng, epoch)
+        train_loss, _train_risk, loss = _forward_epoch(model, arrays, provider, inner_train, raw.dss_time, raw.dss_event, device, batch_size, True, rng, epoch, name)
         assert loss is not None
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), 5.0)
         optimizer.step()
-        val_risk = _predict(model, arrays, provider, inner_val, device, batch_size, deterministic=True)
+        val_risk = _predict(model, arrays, provider, inner_val, device, batch_size, deterministic=True, method=name)
         val_c = harrell_c(raw.dss_time[inner_val], raw.dss_event[inner_val], val_risk)
         score = val_c if np.isfinite(val_c) else -train_loss
         history.append({"epoch": float(epoch), "train_loss": float(train_loss), "val_harrell_c": float(val_c)})
@@ -266,19 +288,19 @@ def _fit_neural_fold(
         torch.cuda.empty_cache()
     set_seed(seed + fold)
     provider.train_seed = seed
-    model = _make_model(name, arrays.clinical.shape[1], mmp_banks).to(device)
+    model = _make_model(name, arrays.clinical.shape[1], mmp_banks, arrays.mcat_widths, arrays.mmp_widths).to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4, weight_decay=1e-4)
     outer_train = np.flatnonzero(raw.outer_folds != fold)
     refit_rng = np.random.default_rng(seed + fold + 101)
     for epoch in range(1, max(1, best_epoch) + 1):
         optimizer.zero_grad(set_to_none=True)
-        _, _risk, loss = _forward_epoch(model, arrays, provider, outer_train, raw.dss_time, raw.dss_event, device, batch_size, True, refit_rng, epoch)
+        _, _risk, loss = _forward_epoch(model, arrays, provider, outer_train, raw.dss_time, raw.dss_event, device, batch_size, True, refit_rng, epoch, name)
         assert loss is not None
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), 5.0)
         optimizer.step()
     test_idx = np.flatnonzero(raw.outer_folds == fold)
-    prediction = _predict(model, arrays, provider, test_idx, device, batch_size, deterministic=True)
+    prediction = _predict(model, arrays, provider, test_idx, device, batch_size, deterministic=True, method=name)
     profile = {
         "method": name,
         "seed": seed,
@@ -330,23 +352,22 @@ def _b0_fold(raw: RawInputs, arrays: FoldArrays, provider: PathTokenProvider, fo
 def _fit_mmp_banks(train_pool: np.ndarray, arrays: FoldArrays, train_idx: np.ndarray, fold: int) -> tuple[dict[str, np.ndarray], dict[str, Any]]:
     sampled = np.stack([np.asarray(train_pool[int(index), ::128, :], dtype=np.float16) for index in train_idx], axis=0)
     morphology, morph_audit = fit_morphology_prototypes(sampled, BASELINE_SEED + fold, sampled_stride=1)
-    transcriptomic, transcriptomic_audit = fit_transcriptomic_prototypes(arrays.rna[train_idx], arrays.cna[train_idx], BASELINE_SEED + fold)
-    return {"morphology": morphology, "transcriptomic": transcriptomic}, {"morphology": morph_audit, "transcriptomic": transcriptomic_audit}
+    return {"morphology": morphology}, {"morphology": morph_audit, "transcriptomic": {"source": "outer_train_fold_local_hallmark_groups", "group_count": len(arrays.mmp_widths), "widths": list(arrays.mmp_widths)}}
 
 
 def _write_fidelity_docs(reports: Path) -> None:
     docs = {
-        "transsurv": ("TransSurv", "Histopathology branch, multi-omics representation, cross-modal fusion transformer/cross-attention, clinical integration and Cox head.", "TransSurvModel in src/phase_m2/transsurv.py", "UNI2-h replaces the original extractor; input dimensions and clinical encoding follow the fixed protocol.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
-        "mgct": ("MGCT", "Histology/genomic streams; MGCA Q/K/V cross-attention; gated pooling; feed-forward refinement; two-stage deep mutual-guided fusion.", "MGCTModel and MutualGuidedFusionLayer in src/phase_m2/mgct.py", "UNI2-h and RNA/CNA chunks replace the official feature dimensions and omic groups.", "OFFICIAL_ADAPTED"),
-        "camr": ("CAMR", "Invariant/specific encoders, adversarial cross-modal alignment, reconstruction, orthogonality, CMFM and survival loss.", "CAMRModel, LowRankMultimodalFusion and gradient_reverse in src/phase_m2/camr.py", "Official gene/path/CNA inputs map to fold-local RNA/UNI2-h/CNA; clinical is fused before the Cox head.", "OFFICIAL_ADAPTED"),
-        "mmp": ("MMPTrans", "Train-only Ch=16 GMM morphology prototypes, transcriptomic pathway prototypes, prototype-specific feed-forward encoding, MMPTrans fusion and Cox.", "fit_morphology_prototypes, fit_transcriptomic_prototypes and MMPModel in src/phase_m2/mmp.py", "Outer-train PCA/GMM banks are fitted because the fixed cohort has no external hallmark matrix; six RNA/CNA signature groups provide the transcriptomic mapping.", "OFFICIAL_ADAPTED"),
-        "mcat": ("MCAT", "Omic-query histology co-attention, path/omic transformers, gated attention heads and fusion.", "MCATModel and SixSignatureEncoder in src/phase_m2/mcat.py", "UNI2-h and six RNA/CNA signature chunks replace original feature dimensions; MCAT remains separate from MOTCat.", "OFFICIAL_ADAPTED"),
-        "motcat": ("MOTCat", "OT-guided cross-modal alignment with entropic transport and global structure consistency.", "MOTCatModel and sinkhorn_transport in src/phase_m2/motcat.py", "UNI2-h and fold-local RNA/CNA streams replace original features; OT coupling and structure penalty remain.", "OFFICIAL_ADAPTED"),
+        "transsurv": ("TransSurv", "Histopathology branch, multi-omics representation, cross-modal fusion transformer/cross-attention, clinical integration and Cox head.", "Official paper architecture; no vendored official repository was used.", "TransSurvModel in src/phase_m2/transsurv.py. UNI2-h replaces the original extractor; input dimensions and clinical encoding follow the fixed protocol.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
+        "mgct": ("MGCT", "Histology/genomic streams; MGCA Q/K/V cross-attention; gated pooling; feed-forward refinement; two-stage deep mutual-guided fusion.", "Official reference: https://github.com/lmxmercy/MGCT.", "MGCTModel and MutualGuidedFusionLayer in src/phase_m2/mgct.py. UNI2-h and the fixed RNA/CNA protocol replace the official feature dimensions and omic groups; the core fusion stages are retained.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
+        "camr": ("CAMR", "Invariant/specific encoders, adversarial cross-modal alignment, reconstruction, orthogonality, CMFM and survival loss.", "Official reference: https://github.com/wxq-ustc/CAMR.", "CAMRModel, LowRankMultimodalFusion and gradient_reverse in src/phase_m2/camr.py. Official gene/path/CNA inputs map to fold-local RNA/UNI2-h/CNA; clinical is fused before the Cox head while the listed losses are retained.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
+        "mmp": ("MMPTrans-Hallmark", "Train-only Ch=16 morphology prototypes, 50 Hallmark pathway groups, pathway-specific encoders, MMPTrans fusion and Cox.", "Official reference: https://github.com/mahmoodlab/MMP; metadata vendored as src/phase_m2/metadata/mmp_hallmarks_signatures.csv.", "MMPModel and fit_morphology_prototypes in src/phase_m2/mmp.py; pathway groups in src/phase_m2/data.py. Official MMP Hallmark metadata is intersected by gene symbol and each group is imputed/standardized within the outer training fold.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
+        "mcat": ("MCAT", "Six official genomic signature groups, omic-query histology co-attention, path/omic transformers, gated attention heads and fusion.", "Official reference: https://github.com/mahmoodlab/MCAT; metadata vendored as src/phase_m2/metadata/mcat_signatures.csv.", "MCATModel and SixSignatureEncoder in src/phase_m2/mcat.py; group construction in src/phase_m2/data.py. Official MCAT signature metadata is intersected by gene symbol; RNA, CNA, and mutation availability are recorded explicitly.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
+        "motcat": ("MOTCat", "OT-guided cross-modal alignment with entropic transport and global structure consistency.", "Official reference: https://github.com/Innse/MOTCat; no vendored module was imported.", "MOTCatModel and sinkhorn_transport in src/phase_m2/motcat.py. UNI2-h and fold-local RNA/CNA streams replace original features; OT coupling and structure penalty remain.", "PAPER_FAITHFUL_REIMPLEMENTATION"),
     }
     fidelity_dir = reports / "fidelity"
     fidelity_dir.mkdir(parents=True, exist_ok=True)
     for filename, (model, equation, official, adaptation, status) in docs.items():
-        text = "\n".join([f"# {model} fidelity record", "", "## Paper module/equation", "", equation, "", "## Official code module", "", official, "", "## Our adapted code module", "", official, "", "## Preserved?", "", f"yes, status={status}", "", "## Adaptation reason", "", adaptation, ""])
+        text = "\n".join([f"# {model} fidelity record", "", "## Paper module/equation", "", equation, "", "## Official code module", "", official, "", "## Our adapted code module", "", adaptation, "", "## Preserved?", "", f"core modules retained where stated; status={status}", ""])
         (fidelity_dir / f"{filename}.md").write_text(text, encoding="utf-8")
 
 
@@ -388,12 +409,43 @@ def _write_results(
     atomic_csv(reports / "seed_metrics.csv", seed_rows)
     atomic_csv(reports / "compute_profile.csv", profiles)
     atomic_csv(reports / "reproduction_status.csv", statuses)
+    overlap_rows: list[dict[str, Any]] = []
+    for fold_audit in fold_audits:
+        fold = fold_audit.get("outer_fold")
+        for modality_key, modality in (("mcat_signature_groups", "MCAT_RNA"), ("mcat_signature_cna_groups", "MCAT_CNA"), ("mmp_hallmark_groups", "MMP_RNA_HALLMARK")):
+            for group in fold_audit.get(modality_key, []):
+                overlap_rows.append({"outer_fold": fold, "model": "MCAT" if modality_key.startswith("mcat") else "MMPTrans-Hallmark", "modality": modality, **group})
+    atomic_csv(reports / "signature_overlap.csv", overlap_rows)
+    raw_rna_audit = raw.audit.get("rna_input_scale_audit", {})
+    negative_audit = raw.audit.get("rna_negative_value_audit", {})
+    rna_lines = [
+        "# RNA scale audit",
+        "",
+        "## Source metadata",
+        "",
+        "- cBioPortal profile metadata identifies `data_mrna_seq_v2_rsem.txt` as RSEM batch-normalized mRNA expression from Illumina HiSeq RNASeqV2.",
+        "- The local file contains 20,531 rows and a small negative tail, so it is not a raw nonnegative count matrix.",
+        "",
+        "## Observed values",
+        "",
+        f"- min={raw_rna_audit.get('min')}; median={raw_rna_audit.get('median')}; q99={raw_rna_audit.get('q99')}; max={raw_rna_audit.get('max')}; negative_fraction={raw_rna_audit.get('negative_fraction')}.",
+        f"- Negative audit: count={negative_audit.get('negative_count')}; unique_values={negative_audit.get('unique_negative_values')}; most_common={negative_audit.get('most_common_negative_values')}.",
+        f"- Example locations: {negative_audit.get('examples', [])[:5]}.",
+        "- The file contains a very large positive range and negative values consistent with batch-adjusted RSEM values rather than a simple nonnegative count export.",
+        "",
+        "## Decision",
+        "",
+        "- Preserve the protocol's audited `log2(x+1)` transform after clipping the negative input tail to zero, then fit imputation, feature selection, and standardization on the outer training fold only.",
+        "- This is an adaptation decision for the supplied cBioPortal matrix; no claim is made that the file is raw counts.",
+        "",
+    ]
+    (reports / "rna_scale_audit.md").write_text("\n".join(rna_lines), encoding="utf-8")
     atomic_json(reports / "preprocessing_audit.json", {"raw_input_audit": raw.audit, "fold_audits": fold_audits, "path_cache": cache_meta, "clinical_protocol_columns": ["AGE", "SEX", "AJCC_PATHOLOGIC_TUMOR_STAGE", "PATH_T_STAGE", "PATH_N_STAGE", "PATH_M_STAGE"], "variance_selection_before_standardization": True, "outer_train_only": True, "outer_refit": "reinitialize_from_same_seed_then_full_outer_train_for_inner_selected_epoch_count", "inner_validation_sampling": "fixed deterministic path view", "outer_test_sampling": "fixed deterministic path view"})
-    atomic_json(reports / "protocol.json", {"phase": "M2R", "endpoint": "DSS", "n_patients": int(len(raw.patient_ids)), "dss_events": int(raw.dss_event.sum()), "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv", "folds": 5, "neural_seeds": list(NEURAL_SEEDS), "models": list(MODEL_ORDER), "pathology": {"source": "TCGA COAD/READ UNI2-h H5", "K": 1024, "K_note": "benchmark normalization, not paper-original setting", "train_sampling": "deterministic by seed, epoch and patient from per-patient pool", "test_sampling": "deterministic fixed"}, "omics": {"RNA": "outer-train imputation -> scale audit -> log2(x+1) when count-like -> outer-train variance ranking -> top-512 -> StandardScaler", "CNA": "outer-train imputation -> nonzero/variance filtering -> top-256 -> StandardScaler"}, "clinical": ["AGE", "SEX", "AJCC_PATHOLOGIC_TUMOR_STAGE", "PATH_T_STAGE", "PATH_N_STAGE", "PATH_M_STAGE"], "objective": "negative Breslow Cox partial likelihood with T_j >= T_i", "primary_metric": "Harrell C", "secondary_metric": "Uno C", "functional_checks": functional, "no_patient_level_outputs_in_reports": True})
+    atomic_json(reports / "protocol.json", {"phase": "M2R2", "endpoint": "DSS", "n_patients": int(len(raw.patient_ids)), "dss_events": int(raw.dss_event.sum()), "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv", "folds": 5, "neural_seeds": list(NEURAL_SEEDS), "models": list(MODEL_ORDER), "pathology": {"source": "TCGA COAD/READ UNI2-h H5", "K": 1024, "K_note": "benchmark normalization, not paper-original setting", "train_sampling": "deterministic by seed, epoch and patient from per-patient pool", "test_sampling": "deterministic fixed"}, "signature_metadata": {"MCAT": "src/phase_m2/metadata/mcat_signatures.csv (mahmoodlab/MCAT datasets_csv_sig/signatures.csv)", "MMP": "src/phase_m2/metadata/mmp_hallmarks_signatures.csv (mahmoodlab/MMP src/data_csvs/rna/metadata/hallmarks_signatures.csv)"}, "omics": {"RNA_global_baselines": "outer-train imputation -> scale audit -> log2(x+1) when count-like -> outer-train variance ranking -> top-512 -> StandardScaler", "CNA_global_baselines": "outer-train imputation -> nonzero/variance filtering -> top-256 -> StandardScaler", "MCAT": "official six signature gene groups, fold-local RNA/CNA imputation and standardization; mutation unavailable", "MMPTrans-Hallmark": "official 50 Hallmark gene groups, fold-local RNA imputation and standardization; morphology outer-train Ch=16 GMM"}, "clinical": ["AGE", "SEX", "AJCC_PATHOLOGIC_TUMOR_STAGE", "PATH_T_STAGE", "PATH_N_STAGE", "PATH_M_STAGE"], "objective": "negative Breslow Cox partial likelihood with T_j >= T_i", "primary_metric": "Harrell C", "secondary_metric": "Uno C", "functional_checks": functional, "no_patient_level_outputs_in_reports": True})
     complete = len(successful) >= 5 and {"B2", "B3", "B4"}.issubset(successful) and all(len([row for row in seed_rows if row["method"] == method and row["status"] == "completed"]) == (1 if method == "B0" else len(NEURAL_SEEDS)) for method in successful) and all(len([row for row in fold_rows if row["method"] == method and row["status"] == "completed"]) == (5 if method == "B0" else len(NEURAL_SEEDS) * 5) for method in successful) and functional["status"]
-    status_text = "Phase M2R COMPLETE" if complete else "Phase M2R BLOCKED"
+    status_text = "Phase M2R2 COMPLETE" if complete else "Phase M2R2 BLOCKED"
     sorted_rows = sorted(main_rows, key=lambda row: row.get("harrell_c_seed_mean", -float("inf")), reverse=True)
-    lines = ["# Phase M2R Faithful Baselines", "", "## Decision", "", f"**{status_text}**", "", f"- Cohort: {len(raw.patient_ids)} patients, {int(raw.dss_event.sum())} DSS events.", "- The committed Phase M1R fixed patient split was reused.", "- The ranking table contains only models with complete required seed/fold evidence.", "", "## Formal ranking", "", "| Rank | Method | Harrell C seed mean +/- std | Uno C seed mean +/- std | Harrell C fold mean +/- std | Worst Harrell fold | Params | GPU GB | Time s | Fidelity |", "|---:|---|---:|---:|---:|---:|---:|---:|---:|---|"]
+    lines = ["# Phase M2R2 Omics Fidelity", "", "## Decision", "", f"**{status_text}**", "", f"- Cohort: {len(raw.patient_ids)} patients, {int(raw.dss_event.sum())} DSS events.", "- The committed Phase M1R fixed patient split was reused.", "- The ranking table contains only models with complete required seed/fold evidence.", "", "## Formal ranking", "", "| Rank | Method | Harrell C seed mean +/- std | Uno C seed mean +/- std | Harrell C fold mean +/- std | Worst Harrell fold | Params | GPU GB | Time s | Fidelity |", "|---:|---|---:|---:|---:|---:|---:|---:|---:|---|"]
     for rank, row in enumerate(sorted_rows, 1):
         lines.append(f"| {rank} | {row['label']} | {row['harrell_c_seed_mean']:.4f} +/- {row['harrell_c_seed_std']:.4f} | {row['uno_c_seed_mean']:.4f} +/- {row['uno_c_seed_std']:.4f} | {row['harrell_c_fold_mean']:.4f} +/- {row['harrell_c_fold_std']:.4f} | {row['harrell_c_worst_fold']:.4f} | {row['params']} | {row['peak_gpu_memory_gb']:.2f} | {row['training_seconds']:.1f} | {row['reproduction_status']} |")
     lines.extend(["", "## Fidelity status", ""])
@@ -408,7 +460,7 @@ def _write_results(
         lines.append("- No formal baseline failed its required cell evidence.")
     (reports / "RESULTS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     _write_fidelity_docs(reports)
-    atomic_json(reports / "run_manifest.json", {"phase": "M2R", "status": status_text, "n_patients": int(len(raw.patient_ids)), "dss_events": int(raw.dss_event.sum()), "methods_completed": sorted(successful), "elapsed_seconds": elapsed, "platform": platform.platform(), "functional_checks": functional, "git_revision": _git_revision(repo_root)})
+    atomic_json(reports / "run_manifest.json", {"phase": "M2R2", "status": status_text, "n_patients": int(len(raw.patient_ids)), "dss_events": int(raw.dss_event.sum()), "methods_completed": sorted(successful), "elapsed_seconds": elapsed, "platform": platform.platform(), "functional_checks": functional, "git_revision": _git_revision(repo_root)})
 
 
 def run(args: argparse.Namespace) -> dict[str, Any]:

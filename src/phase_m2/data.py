@@ -21,6 +21,7 @@ CLINICAL_CATEGORICAL = (
     "PATH_N_STAGE",
     "PATH_M_STAGE",
 )
+METADATA_ROOT = Path(__file__).resolve().parent / "metadata"
 
 
 @dataclass
@@ -32,6 +33,8 @@ class RawInputs:
     cancer_type: np.ndarray
     rna: np.ndarray
     cna: np.ndarray
+    rna_symbols: np.ndarray
+    cna_symbols: np.ndarray
     clinical: pd.DataFrame
     h5_files: dict[str, list[Path]]
     audit: dict[str, Any]
@@ -43,6 +46,10 @@ class FoldArrays:
     rna: np.ndarray
     cna: np.ndarray
     clinical: np.ndarray
+    mcat_groups: np.ndarray
+    mcat_widths: tuple[tuple[int, int], ...]
+    mmp_groups: np.ndarray
+    mmp_widths: tuple[int, ...]
     audit: dict[str, Any]
 
 
@@ -78,7 +85,7 @@ def _load_patient_table(path: Path, patient_ids: list[str]) -> pd.DataFrame:
     return table.reindex(patient_ids)
 
 
-def _load_omics_table(path: Path, patient_ids: list[str]) -> np.ndarray:
+def _load_omics_table(path: Path, patient_ids: list[str]) -> tuple[np.ndarray, np.ndarray]:
     table = _table(path)
     if table.shape[1] < 3:
         raise ValueError(f"{path} does not contain sample columns")
@@ -100,7 +107,11 @@ def _load_omics_table(path: Path, patient_ids: list[str]) -> np.ndarray:
         primary = [x for x in columns if _sample_priority(x)[0] == 0]
         selected = primary or columns
         output[row] = np.nanmean(numeric[:, [column_index[x] for x in selected]], axis=1).astype(np.float32)
-    return output
+    # Preserve the feature symbols separately.  The official MCAT and MMP
+    # metadata are symbol based, while the global baseline arrays remain
+    # dimension-reduced for the other models.
+    symbols = table.iloc[:, 0].fillna("").astype(str).str.strip().str.upper().to_numpy()
+    return output, symbols
 
 
 def _merge_clinical(primary: pd.DataFrame, supplement: pd.DataFrame, patient_ids: list[str]) -> pd.DataFrame:
@@ -160,8 +171,8 @@ def load_raw_inputs(data_root: Path, repo_root: Path) -> RawInputs:
     if int(np.sum(dss_event)) != 65:
         raise ValueError(f"M2 fixed split must contain 65 DSS events, got {int(np.sum(dss_event))}")
 
-    rna = _load_omics_table(base / "data_mrna_seq_v2_rsem.txt", ids)
-    cna = _load_omics_table(base / "data_log2_cna.txt", ids)
+    rna, rna_symbols = _load_omics_table(base / "data_mrna_seq_v2_rsem.txt", ids)
+    cna, cna_symbols = _load_omics_table(base / "data_log2_cna.txt", ids)
     h5_files = build_h5_index(data_root, ids)
     audit = {
         "n_patients": len(ids),
@@ -172,6 +183,7 @@ def load_raw_inputs(data_root: Path, repo_root: Path) -> RawInputs:
         "rna_raw_dim": int(rna.shape[1]),
         "cna_raw_dim": int(cna.shape[1]),
         "rna_input_scale_audit": _scale_audit(rna, "RNA"),
+        "rna_negative_value_audit": _negative_value_audit(rna, rna_symbols, ids),
         "cna_input_scale_audit": _scale_audit(cna, "CNA"),
         "clinical_columns": ["AGE", *CLINICAL_CATEGORICAL],
         "split_path": "outputs/phase_m1r/fixed_patient_folds.csv",
@@ -185,6 +197,8 @@ def load_raw_inputs(data_root: Path, repo_root: Path) -> RawInputs:
         cancer_type=cancer,
         rna=rna,
         cna=cna,
+        rna_symbols=rna_symbols,
+        cna_symbols=cna_symbols,
         clinical=clinical,
         h5_files=h5_files,
         audit=audit,
@@ -331,6 +345,27 @@ def _scale_audit(values: np.ndarray, modality: str) -> dict[str, Any]:
     }
 
 
+def _negative_value_audit(values: np.ndarray, symbols: np.ndarray, patient_ids: list[str]) -> dict[str, Any]:
+    values = np.asarray(values, dtype=np.float32)
+    locations = np.argwhere(np.isfinite(values) & (values < 0.0))
+    unique, counts = np.unique(values[values < 0.0], return_counts=True)
+    order = np.argsort(-counts, kind="stable")
+    examples = [
+        {"patient_id": str(patient_ids[int(row)]), "gene": str(symbols[int(column)]), "value": float(values[row, column])}
+        for row, column in locations[:20]
+    ]
+    return {
+        "negative_count": int(len(locations)),
+        "negative_fraction": float(len(locations) / values.size),
+        "unique_negative_values": int(len(unique)),
+        "most_common_negative_values": [
+            {"value": float(unique[int(index)]), "count": int(counts[int(index)])} for index in order[:10]
+        ],
+        "examples": examples,
+        "interpretation": "small repeated negative tail in a batch-normalized RSEM profile; not a missing-value sentinel",
+    }
+
+
 def _fit_numeric(raw: np.ndarray, train_idx: np.ndarray, output_dim: int, modality: str, center: bool = True) -> tuple[np.ndarray, dict[str, Any]]:
     train = np.asarray(raw[train_idx], dtype=np.float32)
     med = np.nanmedian(train, axis=0)
@@ -408,15 +443,119 @@ def _fit_clinical(frame: pd.DataFrame, train_idx: np.ndarray) -> tuple[np.ndarra
     return np.concatenate(values, axis=1), {"dim": int(sum(x.shape[1] for x in values)), "age_median": median, "category_counts": category_counts}
 
 
+def _read_signature_groups(path: Path) -> list[tuple[str, list[str]]]:
+    table = pd.read_csv(path, dtype=str).fillna("")
+    groups: list[tuple[str, list[str]]] = []
+    for column in table.columns:
+        genes = [str(value).strip().upper() for value in table[column].tolist() if str(value).strip()]
+        groups.append((str(column), list(dict.fromkeys(genes))))
+    if not groups:
+        raise ValueError(f"signature metadata has no groups: {path}")
+    return groups
+
+
+def _transform_matrix(raw: np.ndarray, train_idx: np.ndarray, modality: str) -> tuple[np.ndarray, dict[str, Any]]:
+    """Apply fold-local imputation and the audited RNA scale transform."""
+    train = np.asarray(raw[train_idx], dtype=np.float32)
+    med = np.nanmedian(train, axis=0)
+    med[~np.isfinite(med)] = 0.0
+    clean = np.where(np.isfinite(raw), raw, med).astype(np.float32)
+    audit = _scale_audit(clean, modality)
+    clipped = 0
+    if modality == "RNA" and audit.get("count_like_detected", False):
+        clipped = int(np.sum(clean < 0.0))
+        clean = np.maximum(clean, 0.0)
+        clean = np.log2(clean + 1.0).astype(np.float32)
+        transform = "log2(x+1)"
+    else:
+        transform = "none"
+    audit.update({"imputation": "outer_train_median", "transform": transform, "negative_values_clipped": clipped})
+    return clean, audit
+
+
+def _fit_group_matrix(
+    raw: np.ndarray,
+    symbols: np.ndarray,
+    train_idx: np.ndarray,
+    groups: list[tuple[str, list[str]]],
+    modality: str,
+) -> tuple[np.ndarray, tuple[int, ...], list[dict[str, Any]]]:
+    transformed, scale_audit = _transform_matrix(raw, train_idx, modality)
+    symbol_to_indices: dict[str, list[int]] = {}
+    for index, symbol in enumerate(symbols.tolist()):
+        if symbol:
+            symbol_to_indices.setdefault(symbol, []).append(index)
+    matrices: list[np.ndarray] = []
+    widths: list[int] = []
+    audits: list[dict[str, Any]] = []
+    for name, genes in groups:
+        indices = [index for gene in genes for index in symbol_to_indices.get(gene, [])]
+        indices = list(dict.fromkeys(indices))
+        if not indices:
+            # Preserve the official group as a zero-width group without
+            # changing the batch tensor shape; the audit exposes the miss.
+            indices = [0]
+            missing = True
+        else:
+            missing = False
+        values = transformed[:, indices].astype(np.float32)
+        train_values = values[train_idx]
+        mean = np.mean(train_values, axis=0)
+        std = np.std(train_values, axis=0)
+        std[~np.isfinite(std) | (std < 1e-6)] = 1.0
+        values = ((values - mean) / std).astype(np.float32)
+        matrices.append(values)
+        widths.append(len(indices))
+        audits.append({
+            "group": name,
+            "official_gene_count": len(genes),
+            "local_feature_count": len(indices) if not missing else 0,
+            "missing_group": missing,
+            "standardizer": "outer_train_group_feature_mean_std",
+            "imputation": "outer_train_median",
+            "transform": scale_audit.get("transform", "none"),
+            "selected_symbols_sha256": hashlib.sha256("\n".join(symbols[indices].tolist()).encode()).hexdigest() if not missing else "",
+        })
+    max_width = max(widths, default=1)
+    packed = np.zeros((len(raw), len(matrices), max_width), dtype=np.float32)
+    for group_index, values in enumerate(matrices):
+        packed[:, group_index, : values.shape[1]] = values
+    return packed, tuple(widths), audits
+
+
 def preprocess_fold(raw: RawInputs, path_tokens: np.ndarray, fold: int) -> FoldArrays:
     train_idx = np.flatnonzero(raw.outer_folds != fold)
     rna, rna_audit = _fit_numeric(raw.rna, train_idx, output_dim=512, modality="RNA")
     cna, cna_audit = _fit_numeric(raw.cna, train_idx, output_dim=256, modality="CNA")
     clinical, clinical_audit = _fit_clinical(raw.clinical, train_idx)
+    mcat_groups = _read_signature_groups(METADATA_ROOT / "mcat_signatures.csv")
+    mmp_groups = _read_signature_groups(METADATA_ROOT / "mmp_hallmarks_signatures.csv")
+    mcat_rna, mcat_rna_widths, mcat_rna_audit = _fit_group_matrix(raw.rna, raw.rna_symbols, train_idx, mcat_groups, "RNA")
+    mcat_cna, mcat_cna_widths, mcat_cna_audit = _fit_group_matrix(raw.cna, raw.cna_symbols, train_idx, mcat_groups, "CNA")
+    mcat_max_rna = mcat_rna.shape[-1]
+    mcat_max_cna = mcat_cna.shape[-1]
+    mcat_packed = np.zeros((len(raw.patient_ids), len(mcat_groups), max(mcat_max_rna, mcat_max_cna), 2), dtype=np.float32)
+    mcat_packed[:, :, :mcat_max_rna, 0] = mcat_rna
+    mcat_packed[:, :, :mcat_max_cna, 1] = mcat_cna
+    mmp_packed, mmp_widths, mmp_audit = _fit_group_matrix(raw.rna, raw.rna_symbols, train_idx, mmp_groups, "RNA")
     return FoldArrays(
         path_tokens=path_tokens,
         rna=rna,
         cna=cna,
         clinical=clinical,
-        audit={"outer_fold": fold, "rna": rna_audit, "cna": cna_audit, "clinical": clinical_audit},
+        mcat_groups=mcat_packed,
+        mcat_widths=tuple(zip(mcat_rna_widths, mcat_cna_widths)),
+        mmp_groups=mmp_packed,
+        mmp_widths=mmp_widths,
+        audit={
+            "outer_fold": fold,
+            "rna": rna_audit,
+            "cna": cna_audit,
+            "clinical": clinical_audit,
+            "mcat_signature_groups": mcat_rna_audit,
+            "mcat_signature_cna_groups": mcat_cna_audit,
+            "mcat_mutation_input": "unavailable in the fixed RNA+CNA+clinical protocol; not fabricated",
+            "mmp_hallmark_groups": mmp_audit,
+            "mmp_hallmark_group_count": len(mmp_groups),
+        },
     )

@@ -54,9 +54,9 @@ class CAMRModel(nn.Module):
     vector is integrated by the survival head after CMFM.
     """
 
-    def __init__(self, clinical_dim: int, dim: int = 96, variant: str = "B0") -> None:
+    def __init__(self, clinical_dim: int, dim: int = 96, variant: str = "B0", concat_seed: int | None = None) -> None:
         super().__init__()
-        allowed = {"B0", "B1", "B2", "B3"}
+        allowed = {"B0", "B1", "B2", "B3", "D0", "D1"}
         if variant not in allowed:
             raise ValueError(f"unknown CAMR ablation variant: {variant}")
         self.variant = variant
@@ -67,7 +67,17 @@ class CAMRModel(nn.Module):
         self.lmf = LowRankMultimodalFusion(dim)
         self.cmfm = nn.MultiheadAttention(dim, 4, dropout=0.1, batch_first=True)
         self.cmfm_norm = nn.LayerNorm(dim)
-        self.concat_fusion = nn.Linear(dim * 3, dim)
+        # The confirmatory D0/D1 pair is constructed so that D0 never
+        # instantiates the variant-only concat module.  D1 initializes that
+        # module under an isolated deterministic RNG after all shared modules
+        # have been created, preserving byte-identical shared parameters.
+        if variant in {"B3", "D1"}:
+            if variant == "D1" and concat_seed is not None:
+                with torch.random.fork_rng(devices=[]):
+                    torch.manual_seed(int(concat_seed))
+                    self.concat_fusion = nn.Linear(dim * 3, dim)
+            else:
+                self.concat_fusion = nn.Linear(dim * 3, dim)
         self.discriminator = nn.Sequential(nn.Linear(dim, dim), nn.ReLU(), nn.Linear(dim, 3))
         self.head = RiskHead(dim * 2, hidden=dim)
 
@@ -86,7 +96,7 @@ class CAMRModel(nn.Module):
 
         # CMFM retains CAMR's low-rank multiplicative common fusion and adds
         # cross-modal attention over the common/specific token set.
-        if self.variant == "B3":
+        if self.variant in {"B3", "D1"}:
             # Remove CMFM and replace it with a common-representation concat.
             cmfm = torch.cat([common["gene"], common["path"], common["cna"]], dim=-1)
             cmfm = nn.functional.relu(self.concat_fusion(cmfm))

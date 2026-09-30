@@ -48,6 +48,8 @@ class FoldArrays:
     clinical: np.ndarray
     mcat_groups: np.ndarray
     mcat_widths: tuple[tuple[int, int], ...]
+    mcat_equal_groups: np.ndarray
+    mcat_equal_widths: tuple[tuple[int, int], ...]
     mmp_groups: np.ndarray
     mmp_widths: tuple[int, ...]
     audit: dict[str, Any]
@@ -546,6 +548,18 @@ def preprocess_fold(raw: RawInputs, path_tokens: np.ndarray, fold: int) -> FoldA
     mcat_packed[:, :, :mcat_max_rna, 0] = mcat_rna
     mcat_packed[:, :, :mcat_max_cna, 1] = mcat_cna
     mmp_packed, mmp_widths, mmp_audit = _fit_group_matrix(raw.rna, raw.rna_symbols, train_idx, mmp_groups, "RNA")
+    # A1 control: use the same fold-local top-512/top-256 standardized arrays,
+    # but partition them into six deterministic equal-width chunks.  No
+    # signature metadata or new fitting is used, so this isolates semantic
+    # grouping from the rest of the MCAT protocol.
+    rna_chunks = np.array_split(rna, 6, axis=1)
+    cna_chunks = np.array_split(cna, 6, axis=1)
+    equal_widths = tuple((int(r.shape[1]), int(c.shape[1])) for r, c in zip(rna_chunks, cna_chunks))
+    equal_max = max(max(widths) for widths in equal_widths)
+    equal_packed = np.zeros((len(raw.patient_ids), 6, equal_max, 2), dtype=np.float32)
+    for index, (rna_chunk, cna_chunk) in enumerate(zip(rna_chunks, cna_chunks)):
+        equal_packed[:, index, :rna_chunk.shape[1], 0] = rna_chunk
+        equal_packed[:, index, :cna_chunk.shape[1], 1] = cna_chunk
     return FoldArrays(
         path_tokens=path_tokens,
         rna=rna,
@@ -553,6 +567,8 @@ def preprocess_fold(raw: RawInputs, path_tokens: np.ndarray, fold: int) -> FoldA
         clinical=clinical,
         mcat_groups=mcat_packed,
         mcat_widths=tuple(zip(mcat_rna_widths, mcat_cna_widths)),
+        mcat_equal_groups=equal_packed,
+        mcat_equal_widths=equal_widths,
         mmp_groups=mmp_packed,
         mmp_widths=mmp_widths,
         audit={

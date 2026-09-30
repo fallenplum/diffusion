@@ -4,7 +4,7 @@ import torch
 from torch import nn
 
 from .mgct import GatedAttentionPool
-from .nn_blocks import MultimodalBackbone, RiskHead
+from .nn_blocks import MultimodalBackbone, RiskHead, mean_pool
 
 
 class SixSignatureEncoder(nn.Module):
@@ -50,8 +50,12 @@ class SixSignatureEncoder(nn.Module):
 class MCATModel(nn.Module):
     """MCAT co-attention model kept separate from MOTCat."""
 
-    def __init__(self, clinical_dim: int, signature_widths: tuple[tuple[int, int], ...] | None = None, dim: int = 96) -> None:
+    def __init__(self, clinical_dim: int, signature_widths: tuple[tuple[int, int], ...] | None = None, dim: int = 96, variant: str = "A0") -> None:
         super().__init__()
+        allowed = {"A0", "A1", "A2", "A3", "A4", "A5", "A6", "A7"}
+        if variant not in allowed:
+            raise ValueError(f"unknown MCAT ablation variant: {variant}")
+        self.variant = variant
         self.backbone = MultimodalBackbone(clinical_dim, dim=dim, path_tokens=32)
         if signature_widths is None:
             signature_widths = tuple((1, 1) for _ in range(6))
@@ -83,12 +87,37 @@ class MCATModel(nn.Module):
             raise ValueError("MCAT requires official six-signature gene groups")
         h_omic = self.sig_networks(signature_groups)
         # MCAT: omic queries attend to the histology bag.
-        h_path_coattn, _ = self.coattn(h_omic, h_path, h_path)
-        h_path_trans = self.path_transformer(h_path_coattn)
-        h_path, _ = self.path_attention_head(h_path_trans)
+        if self.variant == "A2":
+            # No co-attention: each stream is transformed and pooled alone.
+            path_tokens = h_path
+            omic_tokens = h_omic
+        elif self.variant == "A3":
+            # Reverse direction: pathology queries the six omic tokens.
+            path_tokens, _ = self.coattn(h_path, h_omic, h_omic)
+            omic_tokens = h_omic
+        elif self.variant == "A4":
+            # Bidirectional direction: each modality receives the other as K/V.
+            path_from_omic, _ = self.coattn(h_path, h_omic, h_omic)
+            omic_from_path, _ = self.coattn(h_omic, h_path, h_path)
+            path_tokens = h_path + path_from_omic
+            omic_tokens = h_omic + omic_from_path
+        else:
+            # A0/A1/A5/A6/A7: official omic-query -> pathology co-attention.
+            path_tokens, _ = self.coattn(h_omic, h_path, h_path)
+            omic_tokens = h_omic
+
+        if self.variant != "A5":
+            path_tokens = self.path_transformer(path_tokens)
+        if self.variant != "A6":
+            omic_tokens = self.omic_transformer(omic_tokens)
+
+        if self.variant == "A7":
+            h_path = mean_pool(path_tokens)
+            h_omic = mean_pool(omic_tokens)
+        else:
+            h_path, _ = self.path_attention_head(path_tokens)
+            h_omic, _ = self.omic_attention_head(omic_tokens)
         h_path = self.path_rho(h_path)
-        h_omic_trans = self.omic_transformer(h_omic)
-        h_omic, _ = self.omic_attention_head(h_omic_trans)
         h_omic = self.omic_rho(h_omic)
         fused = self.mm(torch.cat([h_path, h_omic], dim=-1))
         clinical_context = self.clinical_gate(torch.cat([fused, encoded.clinical[:, 0]], dim=-1))

@@ -54,8 +54,12 @@ class CAMRModel(nn.Module):
     vector is integrated by the survival head after CMFM.
     """
 
-    def __init__(self, clinical_dim: int, dim: int = 96) -> None:
+    def __init__(self, clinical_dim: int, dim: int = 96, variant: str = "B0") -> None:
         super().__init__()
+        allowed = {"B0", "B1", "B2", "B3"}
+        if variant not in allowed:
+            raise ValueError(f"unknown CAMR ablation variant: {variant}")
+        self.variant = variant
         self.backbone = MultimodalBackbone(clinical_dim, dim=dim, path_tokens=32)
         self.common = nn.ModuleDict({name: nn.Sequential(nn.Linear(dim, dim * 2), nn.ReLU(), nn.Linear(dim * 2, dim), nn.ReLU()) for name in ("gene", "path", "cna")})
         self.specific = nn.ModuleDict({name: nn.Sequential(nn.Linear(dim, dim), nn.ReLU(), nn.Dropout(0.1)) for name in ("gene", "path", "cna")})
@@ -63,6 +67,7 @@ class CAMRModel(nn.Module):
         self.lmf = LowRankMultimodalFusion(dim)
         self.cmfm = nn.MultiheadAttention(dim, 4, dropout=0.1, batch_first=True)
         self.cmfm_norm = nn.LayerNorm(dim)
+        self.concat_fusion = nn.Linear(dim * 3, dim)
         self.discriminator = nn.Sequential(nn.Linear(dim, dim), nn.ReLU(), nn.Linear(dim, 3))
         self.head = RiskHead(dim * 2, hidden=dim)
 
@@ -75,21 +80,33 @@ class CAMRModel(nn.Module):
         }
         common = {name: self.common[name](value) for name, value in base.items()}
         specific = {name: self.specific[name](value) for name, value in base.items()}
+        if self.variant == "B2":
+            # Remove the modality-specific branch from the computation graph.
+            specific = {name: torch.zeros_like(value) for name, value in base.items()}
 
         # CMFM retains CAMR's low-rank multiplicative common fusion and adds
         # cross-modal attention over the common/specific token set.
-        lmf = self.lmf(common["gene"], common["path"], common["cna"])
-        tokens = torch.stack([common["gene"], common["path"], common["cna"]], dim=1)
-        attended, _ = self.cmfm(tokens, tokens, tokens)
-        cmfm = self.cmfm_norm(attended + tokens).mean(dim=1) + lmf
+        if self.variant == "B3":
+            # Remove CMFM and replace it with a common-representation concat.
+            cmfm = torch.cat([common["gene"], common["path"], common["cna"]], dim=-1)
+            cmfm = nn.functional.relu(self.concat_fusion(cmfm))
+        else:
+            lmf = self.lmf(common["gene"], common["path"], common["cna"])
+            tokens = torch.stack([common["gene"], common["path"], common["cna"]], dim=1)
+            attended, _ = self.cmfm(tokens, tokens, tokens)
+            cmfm = self.cmfm_norm(attended + tokens).mean(dim=1) + lmf
 
-        reconstruction = sum((self.reconstruct[name](torch.cat([common[name], specific[name]], dim=-1)) - base[name]).square().mean() for name in base) / 3.0
-        orthogonality = sum((common[name] * specific[name]).sum(dim=-1).square().mean() for name in base) / 3.0
+        if self.variant == "B2":
+            reconstruction = cmfm.new_zeros(())
+            orthogonality = cmfm.new_zeros(())
+        else:
+            reconstruction = sum((self.reconstruct[name](torch.cat([common[name], specific[name]], dim=-1)) - base[name]).square().mean() for name in base) / 3.0
+            orthogonality = sum((common[name] * specific[name]).sum(dim=-1).square().mean() for name in base) / 3.0
         domain_input = gradient_reverse(torch.cat([common[name] for name in ("gene", "path", "cna")], dim=0))
         domain_labels = torch.arange(3, device=domain_input.device).repeat_interleave(common["gene"].shape[0])
         adversarial = nn.functional.cross_entropy(self.discriminator(domain_input), domain_labels)
         clinical_context = encoded.clinical[:, 0]
         risk = self.head(torch.cat([cmfm, clinical_context], dim=-1))
-        aux = 0.10 * reconstruction + 0.01 * orthogonality + 0.05 * adversarial
+        aux = 0.10 * reconstruction + 0.01 * orthogonality + (0.0 if self.variant == "B1" else 0.05) * adversarial
         return risk, aux
 

@@ -127,7 +127,14 @@ def main() -> None:
     confirm_seed_rows = read_csv(args.confirm_seed)
     write_csv(output / "reaggregated_m3.csv", reaggregate_m3(m3_rows))
     write_csv(output / "confirmatory_fold_metrics.csv", confirm_rows)
-    write_csv(output / "confirmatory_seed_metrics.csv", confirm_seed_rows)
+    confirm_seed_out = []
+    for row in confirm_seed_rows:
+        cells = [cell for cell in confirm_rows if cell["method"] == row["method"] and int(cell["seed"]) == int(row["seed"])]
+        row = dict(row)
+        row["test_fold_harrell_mean5"] = average([number(cell, "harrell_c") for cell in cells])
+        row["test_fold_uno_mean5"] = average([number(cell, "uno_c") for cell in cells])
+        confirm_seed_out.append(row)
+    write_csv(output / "confirmatory_seed_metrics.csv", confirm_seed_out)
     paired: list[dict] = []
     for candidate, control in (("C1", "C0"), ("C2", "C0"), ("D1", "D0")):
         paired.extend(pair(confirm_rows, candidate, control, "M3R_confirmatory"))
@@ -168,6 +175,7 @@ def main() -> None:
         "primary_metric": "test-fold Harrell C aggregated across 15 seed×fold cells",
         "secondary_metric": "test-fold Uno C aggregated across 15 seed×fold cells",
         "global_oof_metric": "diagnostic only",
+        "per_seed_summary": "confirmatory_seed_metrics.csv contains test_fold_harrell_mean5 and test_fold_uno_mean5 for each seed",
         "required_cells": 75,
         "completed_cells": len(confirm_rows),
         "initialization_audit": initialization,
@@ -190,6 +198,10 @@ def main() -> None:
     ]
     for item, label in ((c1, "C1 Reverse vs C0"), (c2, "C2 Bidirectional vs C0"), (d1, "D1 Simple concat vs D0")):
         lines.append(f"| {label} | {item['mean_delta_harrell']:.4f} ± {item['std_delta_harrell']:.4f} | {item['mean_delta_uno']:.4f} ± {item['std_delta_uno']:.4f} | {item['harrell_wins_15']}/15 | {item['uno_wins_15']}/15 | {item['both_metrics_wins_15']}/15 | {'confirmed' if confirmed(item) else 'mixed / not confirmed'} |")
+    lines += ["", "## Confirmatory absolute test-fold metrics", "", "| Variant | Harrell mean ± std (15) | Uno mean ± std (15) |", "|---|---:|---:|"]
+    for method in ("C0", "C1", "C2", "D0", "D1"):
+        cells = [row for row in confirm_rows if row["method"] == method]
+        lines.append(f"| {method} {cells[0]['label']} | {average([number(row, 'harrell_c') for row in cells]):.4f} ± {deviation([number(row, 'harrell_c') for row in cells]):.4f} | {average([number(row, 'uno_c') for row in cells]):.4f} ± {deviation([number(row, 'uno_c') for row in cells]):.4f} |")
     lines += [
         "", "## Re-aggregated M3 evidence", "",
         "| Variant | Fold Harrell mean ± std (15) | Fold Uno mean ± std (15) |",

@@ -16,6 +16,7 @@
   "primary_metric": "test-fold Harrell C aggregated across 15 seed×fold cells",
   "secondary_metric": "test-fold Uno C aggregated across 15 seed×fold cells",
   "global_oof_metric": "diagnostic only",
+  "per_seed_summary": "confirmatory_seed_metrics.csv contains test_fold_harrell_mean5 and test_fold_uno_mean5 for each seed",
   "required_cells": 75,
   "completed_cells": 75,
   "initialization_audit": {

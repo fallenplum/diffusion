@@ -16,6 +16,16 @@
 | C2 Bidirectional vs C0 | 0.0010 ± 0.0325 | -0.0030 ± 0.0340 | 7/15 | 8/15 | 6/15 | mixed / not confirmed |
 | D1 Simple concat vs D0 | 0.0720 ± 0.0848 | 0.0571 ± 0.1011 | 12/15 | 9/15 | 8/15 | confirmed |
 
+## Confirmatory absolute test-fold metrics
+
+| Variant | Harrell mean ± std (15) | Uno mean ± std (15) |
+|---|---:|---:|
+| C0 MCAT-Full | 0.7806 ± 0.0680 | 0.7905 ± 0.0732 |
+| C1 MCAT-ReverseCoAttention | 0.7765 ± 0.0603 | 0.7690 ± 0.0818 |
+| C2 MCAT-BidirectionalCoAttention | 0.7816 ± 0.0814 | 0.7875 ± 0.0875 |
+| D0 CAMR-Full | 0.7187 ± 0.0864 | 0.7431 ± 0.0959 |
+| D1 CAMR-NoCMFM-CommonConcat | 0.7907 ± 0.0556 | 0.8002 ± 0.0605 |
+
 ## Re-aggregated M3 evidence
 
 | Variant | Fold Harrell mean ± std (15) | Fold Uno mean ± std (15) |

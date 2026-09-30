@@ -123,7 +123,9 @@ def aggregate(args: argparse.Namespace) -> None:
     _write_csv(output / "paired_deltas.csv", paired + summaries)
 
     # The audit is identical by construction, but retain each worker provenance.
-    audit = audits[0] if audits else {"status": "MISSING"}
+    # Copy the first audit before adding the worker list; mutating audits[0]
+    # would create a circular JSON object.
+    audit = dict(audits[0]) if audits else {"status": "MISSING"}
     audit["worker_audits"] = audits
     audit["all_worker_audits_pass"] = bool(audits) and all(item.get("status") == "PASS" for item in audits)
     audit["execution_commits"] = sorted({item.get("execution_commit", "unknown") for item in worker_manifests})

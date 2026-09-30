@@ -1,0 +1,63 @@
+{
+  "phase": "M3R2",
+  "goal": "decompose simple concat, shared/specific regularization, and same-protocol clinical-only control",
+  "fixed_cohort": {
+    "n_patients": 512,
+    "dss_events": 65
+  },
+  "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv; same five outer folds as M3R",
+  "preprocessing": "M2R2/M3 fold-local preprocessing unchanged",
+  "endpoint": "DSS",
+  "cox": "negative Breslow Cox partial likelihood with T_j >= T_i",
+  "pathology": {
+    "encoder": "UNI2-h",
+    "K": 1024,
+    "train_sampling": "seed/epoch/patient deterministic pool sampling",
+    "test_sampling": "fixed deterministic cache"
+  },
+  "seeds": [
+    20260907,
+    20260908,
+    20260909
+  ],
+  "variants": {
+    "S0": "ClinicalOnly",
+    "S1": "SimpleCAMR-FullReg",
+    "S2": "SimpleCAMR-NoAdv",
+    "S3": "SimpleCAMR-CommonOnly",
+    "S4": "RawEncodedConcat",
+    "S5": "SimpleCAMR-NoClinical"
+  },
+  "variant_definitions": {
+    "S0": "clinical encoder and survival head using AGE, SEX, AJCC stage, T/N/M only",
+    "S1": "M3R D1: common/specific, adversarial, reconstruction, orthogonality, common concat, clinical",
+    "S2": "S1 with adversarial coefficient removed",
+    "S3": "common encoders + common concat + clinical only",
+    "S4": "raw pooled upstream pathology/RNA/CNA concat + clinical",
+    "S5": "S1 with clinical context removed from survival head"
+  },
+  "fairness": {
+    "S1_S4_shared_upstream": "backbone pathology, omics, and clinical encoder initialization byte-identical at same seed/fold",
+    "variant_only": "independent stable hashed deterministic seeds isolated with fork_rng",
+    "forbidden": [
+      "new split",
+      "preprocessing change",
+      "Cox change",
+      "seed hunting",
+      "result-driven hidden tuning"
+    ]
+  },
+  "evaluation": {
+    "primary": "fold-level Harrell C",
+    "secondary": "fold-level Uno C",
+    "aggregation": "mean/std over 15 seed×fold cells",
+    "global_oof": "diagnostic only; never used for selection"
+  },
+  "training": {
+    "max_epochs": 25,
+    "patience": 5,
+    "batch_size": 16,
+    "optimizer": "AdamW lr=3e-4 weight_decay=1e-4",
+    "outer_refit": "same seed, full outer train, best inner epoch count"
+  }
+}

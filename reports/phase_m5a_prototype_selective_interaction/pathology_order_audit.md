@@ -1,0 +1,3 @@
+# Pathology order audit
+
+The current pathology encoder is `LayerNorm(1536) -> Linear(1536, 96) -> GELU -> adaptive_avg_pool1d(..., 32)`, applied to a 1024-patch bag. The patch bag is a set: the training `PathTokenProvider` samples 1024 indices from the 2048-patch train pool in a fresh deterministic random order for each patient and epoch, while the test deterministic cache uses a fixed evenly spaced order. **Adaptive pooling is permutation-sensitive, and train/test token-order policies differ.** This is a representation inconsistency / inductive-bias mismatch, not data leakage. M0 is retained as the diagnostic original implementation; M1/M3 replace the order-sensitive pooling with prototype-conditioned weighted sums.

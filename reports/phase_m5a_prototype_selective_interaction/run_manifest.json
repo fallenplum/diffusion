@@ -1,0 +1,33 @@
+{
+  "all_three_fresh_seeds": true,
+  "cells_completed": 105,
+  "cells_expected": 105,
+  "combined_supported": false,
+  "execution_shas": [
+    "39102c2f05600a8f2363ec17fb005dc2704559e9"
+  ],
+  "no_leakage": true,
+  "no_seed_hunting": true,
+  "outer_train_only_prototype_fitting": true,
+  "output_files": [
+    "RESULTS.md",
+    "main_metrics.csv",
+    "fold_metrics.csv",
+    "seed_metrics.csv",
+    "paired_deltas.csv",
+    "compute_profile.csv",
+    "pathology_order_audit.md",
+    "prototype_audit.csv",
+    "permutation_invariance_audit.csv",
+    "initialization_audit.json",
+    "protocol.json",
+    "run_manifest.json"
+  ],
+  "phase": "M5A",
+  "prototype_supported": false,
+  "remote_resolvable_execution_sha": true,
+  "repo_sha_at_aggregation": "39102c2f05600a8f2363ec17fb005dc2704559e9",
+  "report_sha256": "35164fa5227f1d61a3a641c2d8135300c542c27fd0bed84d58e1ed00c2f836c0",
+  "selective_supported": false,
+  "status": "complete"
+}

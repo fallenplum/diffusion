@@ -1,0 +1,70 @@
+{
+  "cells": 105,
+  "comparisons": [
+    "M1 vs M0",
+    "M2 vs M0",
+    "M3 vs M1",
+    "M3 vs M2",
+    "M3 vs M0",
+    "M3 vs M4",
+    "M3 vs B0",
+    "M3 vs C0"
+  ],
+  "dss_events": 65,
+  "global_oof": "diagnostic only",
+  "outer_folds": 5,
+  "pathology_K": 1024,
+  "patients": 512,
+  "permutation_audit": {
+    "methods": [
+      "M0",
+      "M1",
+      "M3"
+    ],
+    "permutations": 5,
+    "threshold": 1e-05
+  },
+  "phase": "M5A",
+  "primary_metric": "fold-level Harrell C",
+  "prototype": {
+    "fit": "outer-train only",
+    "gmm": "16 components, diagonal covariance",
+    "pca": "randomized PCA, max dimension 32",
+    "source": "train_pool patches only",
+    "tokenizer": "softmax over patches, weighted sum, LayerNorm(T+C)"
+  },
+  "secondary_metric": "fold-level Uno C",
+  "seeds": [
+    20260919,
+    20260920,
+    20260921
+  ],
+  "selective_interaction": {
+    "adaptive_top_k": 8,
+    "anti_selection": "bottom-k",
+    "dense_mha_unchanged": true,
+    "direction": "omic query -> pathology K/V",
+    "prototype_top_k": 4,
+    "score": "parameter-free cosine",
+    "top_fraction": 0.25
+  },
+  "train_pool_K": 2048,
+  "training": {
+    "batch_size": 16,
+    "epochwise_sampling": true,
+    "lr": 0.0003,
+    "max_epochs": 25,
+    "optimizer": "AdamW",
+    "patience": 5,
+    "weight_decay": 0.0001
+  },
+  "variants": [
+    "M0",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "B0",
+    "C0"
+  ]
+}

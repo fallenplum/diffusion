@@ -1,0 +1,97 @@
+{
+  "cache": {
+    "deterministic_shape": [
+      512,
+      1024,
+      1536
+    ],
+    "dtype": "float16",
+    "feature_dim": 1536,
+    "k": 1024,
+    "patient_order_sha256": "76a144d544b7461d669487625855dc7de65f115a6a2f65d7a20002b2a8e5008f",
+    "test_sampling": "deterministic_evenly_spaced_per_patient",
+    "train_pool_k": 2048,
+    "train_pool_shape": [
+      512,
+      2048,
+      1536
+    ],
+    "train_sampling": "deterministic_epochwise_without_replacement_from_patient_pool",
+    "train_sampling_seed": 20260904
+  },
+  "cells_completed": 75,
+  "determinism": {
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "warn_only": true
+  },
+  "device": "cuda",
+  "elapsed_seconds": 1530.9183923749952,
+  "execution_commit": "11c9a929bc4475d9df263948733ffadebc35284b",
+  "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv",
+  "global_oof_status": "diagnostic_only",
+  "initialization_audit_status": "PASS",
+  "no_preprocessing_change": true,
+  "phase": "M3R",
+  "primary_metric": "test-fold Harrell C aggregated across folds/seeds",
+  "secondary_metric": "test-fold Uno C aggregated across folds/seeds",
+  "seeds": [
+    20260907
+  ],
+  "status": "Phase M3R COMPLETE",
+  "variants": [
+    "C0",
+    "C1",
+    "C2",
+    "D0",
+    "D1"
+  ],
+  "cells_required": 75,
+  "no_leakage": true,
+  "confirmatory_decisions": {
+    "C1_vs_C0": {
+      "scope": "M3R_confirmatory_summary",
+      "comparison": "C1_vs_C0",
+      "n_cells": 15,
+      "mean_delta_harrell": -0.004096549985707291,
+      "std_delta_harrell": 0.025336965201849415,
+      "mean_delta_uno": -0.02147974555142324,
+      "std_delta_uno": 0.0414736838810367,
+      "harrell_wins_15": 8,
+      "uno_wins_15": 6,
+      "both_metrics_wins_15": 5
+    },
+    "C2_vs_C0": {
+      "scope": "M3R_confirmatory_summary",
+      "comparison": "C2_vs_C0",
+      "n_cells": 15,
+      "mean_delta_harrell": 0.0010232337291382176,
+      "std_delta_harrell": 0.03245491393193272,
+      "mean_delta_uno": -0.0029854613231866,
+      "std_delta_uno": 0.03397341156167342,
+      "harrell_wins_15": 7,
+      "uno_wins_15": 8,
+      "both_metrics_wins_15": 6
+    },
+    "D1_vs_D0": {
+      "scope": "M3R_confirmatory_summary",
+      "comparison": "D1_vs_D0",
+      "n_cells": 15,
+      "mean_delta_harrell": 0.07202215590865765,
+      "std_delta_harrell": 0.08480286738098781,
+      "mean_delta_uno": 0.057064465921032474,
+      "std_delta_uno": 0.10109651376050473,
+      "harrell_wins_15": 12,
+      "uno_wins_15": 9,
+      "both_metrics_wins_15": 8
+    },
+    "bidirectional": "mixed / not confirmed",
+    "cmfm": "CMFM_OVERCOMPLEXITY_CONFIRMED"
+  },
+  "known_nondeterministic_cuda_paths": [
+    "memory-efficient attention backward on CUDA",
+    "adaptive_avg_pool2d_backward_cuda"
+  ],
+  "cublas_workspace_config": ":4096:8"
+}

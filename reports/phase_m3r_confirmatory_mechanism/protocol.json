@@ -1,0 +1,53 @@
+{
+  "phase": "M3R",
+  "base_branch": "codex/phase-m3-mcat-mechanism-audit",
+  "branch": "codex/phase-m3r-confirmatory-mechanism",
+  "n_patients": 512,
+  "dss_events": 65,
+  "folds": 5,
+  "seeds_confirmatory": [
+    20260907,
+    20260908,
+    20260909
+  ],
+  "K": 1024,
+  "preprocessing": "identical to M2R2/M3; no change",
+  "cox": "identical to M2R2/M3; no change",
+  "primary_metric": "test-fold Harrell C aggregated across 15 seed×fold cells",
+  "secondary_metric": "test-fold Uno C aggregated across 15 seed×fold cells",
+  "global_oof_metric": "diagnostic only",
+  "required_cells": 75,
+  "completed_cells": 75,
+  "initialization_audit": {
+    "concat_seed": 310907,
+    "d0_has_concat_fusion": false,
+    "d0_parameter_count": 1051210,
+    "d1_parameter_count": 1078954,
+    "d1_variant_only_keys": [
+      "concat_fusion.bias",
+      "concat_fusion.weight"
+    ],
+    "determinism": {
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": true,
+      "warn_only": true
+    },
+    "execution_commit": "11c9a929bc4475d9df263948733ffadebc35284b",
+    "seed": 20260907,
+    "shared_state_byte_identical": true,
+    "shared_state_mismatches": [],
+    "status": "PASS"
+  },
+  "determinism": {
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "warn_only": true
+  },
+  "known_nondeterministic_cuda_paths": [
+    "memory-efficient attention backward on CUDA",
+    "adaptive_avg_pool2d_backward_cuda"
+  ],
+  "cublas_workspace_config": ":4096:8"
+}

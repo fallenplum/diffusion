@@ -17,12 +17,9 @@ SAMPLE_RE = re.compile(r"^(TCGA-[A-Z0-9]{2}-[A-Z0-9]{4})-([0-9]{2})", re.IGNOREC
 CLINICAL_CATEGORICAL = (
     "SEX",
     "AJCC_PATHOLOGIC_TUMOR_STAGE",
-    "AJCC_STAGING_EDITION",
     "PATH_T_STAGE",
     "PATH_N_STAGE",
     "PATH_M_STAGE",
-    "HISTOLOGICAL_DIAGNOSIS",
-    "PRIMARY_SITE_PATIENT",
 )
 
 
@@ -112,13 +109,12 @@ def _merge_clinical(primary: pd.DataFrame, supplement: pd.DataFrame, patient_ids
     for column in columns:
         result[column] = primary[column] if column in primary.columns else np.nan
     supplement = supplement.reindex(patient_ids)
-    aliases = {
-        "HISTOLOGICAL_DIAGNOSIS": "HISTOLOGICAL_DIAGNOSIS",
-        "PRIMARY_SITE_PATIENT": "PRIMARY_SITE_PATIENT",
-    }
-    for target, source in aliases.items():
-        if source in supplement.columns:
-            result[target] = result[target].where(result[target].notna(), supplement[source])
+    # The M2R protocol deliberately excludes staging edition, histology and
+    # primary-site fields.  Supplementary clinical data may fill only the
+    # six declared protocol fields, never introduce extra covariates.
+    for target in ["SEX", *CLINICAL_CATEGORICAL[1:]]:
+        if target in supplement.columns:
+            result[target] = result[target].where(result[target].notna(), supplement[target])
     return result.reset_index(names="patient_id")
 
 
@@ -175,6 +171,8 @@ def load_raw_inputs(data_root: Path, repo_root: Path) -> RawInputs:
         "h5_unique_patients": int(sum(bool(v) for v in h5_files.values())),
         "rna_raw_dim": int(rna.shape[1]),
         "cna_raw_dim": int(cna.shape[1]),
+        "rna_input_scale_audit": _scale_audit(rna, "RNA"),
+        "cna_input_scale_audit": _scale_audit(cna, "CNA"),
         "clinical_columns": ["AGE", *CLINICAL_CATEGORICAL],
         "split_path": "outputs/phase_m1r/fixed_patient_folds.csv",
         "data_root_env": "DIFFUSION_DATA_ROOT",
@@ -256,15 +254,31 @@ def _sample_patient(files: list[Path], k: int, seed: int, deterministic: bool) -
     return values[:k].astype(np.float16, copy=False)
 
 
-def prepare_path_cache(raw: RawInputs, runtime_root: Path, k: int = 1024, train_seed: int = 20260904) -> dict[str, Any]:
+def prepare_path_cache(
+    raw: RawInputs,
+    runtime_root: Path,
+    k: int = 1024,
+    train_seed: int = 20260904,
+    pool_k: int = 2048,
+) -> dict[str, Any]:
+    """Prepare fixed test tokens and a compact train sampling pool.
+
+    The old M2 cache sampled one training view once and replayed it for every
+    epoch.  M2R stores a per-patient pool, then :class:`PathTokenProvider`
+    chooses a deterministic subset from that pool as a function of
+    ``(seed, epoch, patient)``.  This keeps reruns reproducible while ensuring
+    that different epochs see different patch subsets without writing one
+    multi-gigabyte array per epoch.
+    """
     runtime_root.mkdir(parents=True, exist_ok=True)
     metadata_path = runtime_root / "path_tokens_meta.json"
     paths = {
         "deterministic": runtime_root / "path_tokens_deterministic.npy",
-        "train_random": runtime_root / "path_tokens_train_random.npy",
+        "train_pool": runtime_root / "path_tokens_train_pool.npy",
     }
-    shape = (len(raw.patient_ids), k, 1536)
+    shapes = {"deterministic": (len(raw.patient_ids), k, 1536), "train_pool": (len(raw.patient_ids), pool_k, 1536)}
     for mode, path in paths.items():
+        shape = shapes[mode]
         if path.exists():
             mapped = np.load(path, mmap_mode="r")
             if tuple(mapped.shape) == shape:
@@ -272,15 +286,17 @@ def prepare_path_cache(raw: RawInputs, runtime_root: Path, k: int = 1024, train_
         mapped = np.lib.format.open_memmap(path, mode="w+", dtype=np.float16, shape=shape)
         for i, patient in enumerate(raw.patient_ids):
             seed = train_seed ^ int(hashlib.sha256(patient.encode()).hexdigest()[:8], 16)
-            mapped[i] = _sample_patient(raw.h5_files[patient], k, seed, mode == "deterministic")
+            mapped[i] = _sample_patient(raw.h5_files[patient], shape[1], seed, mode == "deterministic")
         mapped.flush()
         del mapped
     payload = {
-        "shape": list(shape),
+        "deterministic_shape": list(shapes["deterministic"]),
+        "train_pool_shape": list(shapes["train_pool"]),
         "dtype": "float16",
         "k": k,
+        "train_pool_k": pool_k,
         "feature_dim": 1536,
-        "train_sampling": "random_without_replacement_per_patient",
+        "train_sampling": "deterministic_epochwise_without_replacement_from_patient_pool",
         "train_sampling_seed": train_seed,
         "test_sampling": "deterministic_evenly_spaced_per_patient",
         "patient_order_sha256": hashlib.sha256("\n".join(raw.patient_ids).encode()).hexdigest(),
@@ -289,20 +305,83 @@ def prepare_path_cache(raw: RawInputs, runtime_root: Path, k: int = 1024, train_
     return payload
 
 
-def _fit_numeric(raw: np.ndarray, train_idx: np.ndarray, output_dim: int, center: bool = True) -> tuple[np.ndarray, dict[str, Any]]:
+def _scale_audit(values: np.ndarray, modality: str) -> dict[str, Any]:
+    finite = np.asarray(values, dtype=np.float32)
+    finite = finite[np.isfinite(finite)]
+    if finite.size == 0:
+        return {"modality": modality, "finite": False}
+    quantiles = np.quantile(finite, [0.01, 0.5, 0.99]).tolist()
+    # RSEM/count-like matrices have a large positive dynamic range.  A small
+    # negative tail is treated as an input artifact and clipped before log1p;
+    # logged matrices (roughly centred around zero with no large positive
+    # tail) are left untouched.
+    count_like = modality == "RNA" and (float(np.max(finite)) > 50.0 or (float(np.min(finite)) >= 0.0 and float(np.max(finite)) > 10.0))
+    return {
+        "modality": modality,
+        "finite": True,
+        "min": float(np.min(finite)),
+        "max": float(np.max(finite)),
+        "q01": float(quantiles[0]),
+        "median": float(quantiles[1]),
+        "q99": float(quantiles[2]),
+        "zero_fraction": float(np.mean(finite == 0.0)),
+        "negative_fraction": float(np.mean(finite < 0.0)),
+        "count_like_detected": bool(count_like),
+        "decision": "log2(x+1) after clipping negative input to zero" if count_like else "no log transform",
+    }
+
+
+def _fit_numeric(raw: np.ndarray, train_idx: np.ndarray, output_dim: int, modality: str, center: bool = True) -> tuple[np.ndarray, dict[str, Any]]:
     train = np.asarray(raw[train_idx], dtype=np.float32)
     med = np.nanmedian(train, axis=0)
     med[~np.isfinite(med)] = 0.0
     clean = np.where(np.isfinite(raw), raw, med).astype(np.float32)
+    audit = _scale_audit(clean, modality)
+    negative_clipped = 0
+    if modality == "RNA" and audit.get("count_like_detected", False):
+        negative_clipped = int(np.sum(clean < 0.0))
+        clean = np.maximum(clean, 0.0)
+        clean = np.log2(clean + 1.0).astype(np.float32)
+        transform = "log2(x+1)"
+    else:
+        transform = "none"
     train_clean = clean[train_idx]
-    mean = np.mean(train_clean, axis=0) if center else np.zeros(train_clean.shape[1], dtype=np.float32)
-    std = np.std(train_clean, axis=0)
+    # Feature ranking is deliberately performed on the imputed, transformed
+    # training matrix before any standardisation.  The old implementation
+    # ranked the post-scaled matrix, making every retained variance nearly 1.
+    raw_variance = np.var(train_clean, axis=0)
+    finite_variance = np.isfinite(raw_variance)
+    candidate = finite_variance & (raw_variance > 1e-12)
+    if modality == "CNA":
+        nonzero_fraction = np.mean(np.abs(train_clean) > 1e-12, axis=0)
+        candidate &= nonzero_fraction > 0.0
+    if not np.any(candidate):
+        candidate[:] = finite_variance
+    ranked = np.flatnonzero(candidate)
+    ranked = ranked[np.argsort(-raw_variance[ranked], kind="stable")]
+    keep = ranked[: min(output_dim, len(ranked))]
+    if len(keep) < min(output_dim, clean.shape[1]):
+        remaining = np.setdiff1d(np.arange(clean.shape[1]), keep, assume_unique=False)
+        keep = np.concatenate([keep, remaining[: min(output_dim, clean.shape[1]) - len(keep)]])
+    selected_train = train_clean[:, keep]
+    mean = np.mean(selected_train, axis=0) if center else np.zeros(selected_train.shape[1], dtype=np.float32)
+    std = np.std(selected_train, axis=0)
     std[~np.isfinite(std) | (std < 1e-6)] = 1.0
-    scaled_train = (train_clean - mean) / std
-    variance = np.var(scaled_train, axis=0)
-    keep = np.argsort(variance, kind="stable")[-min(output_dim, scaled_train.shape[1]):]
-    transformed = ((clean - mean) / std)[:, keep].astype(np.float32)
-    return transformed, {"raw_dim": int(raw.shape[1]), "selected_dim": int(len(keep)), "selected_indices_sha256": hashlib.sha256(keep.tobytes()).hexdigest()}
+    transformed = ((clean[:, keep] - mean) / std).astype(np.float32)
+    audit.update({
+        "raw_dim": int(raw.shape[1]),
+        "selected_dim": int(len(keep)),
+        "transform": transform,
+        "negative_values_clipped": negative_clipped,
+        "imputation": "outer_train_median",
+        "variance_ranking": "outer_train_transformed_unscaled_variance_descending",
+        "selection_before_standardization": True,
+        "selected_indices_sha256": hashlib.sha256(keep.tobytes()).hexdigest(),
+        "selected_variance_max": float(np.max(raw_variance[keep])) if len(keep) else 0.0,
+        "selected_variance_min": float(np.min(raw_variance[keep])) if len(keep) else 0.0,
+        "standardizer": "outer_train_selected_features_mean_std",
+    })
+    return transformed, audit
 
 
 def _fit_clinical(frame: pd.DataFrame, train_idx: np.ndarray) -> tuple[np.ndarray, dict[str, Any]]:
@@ -331,8 +410,8 @@ def _fit_clinical(frame: pd.DataFrame, train_idx: np.ndarray) -> tuple[np.ndarra
 
 def preprocess_fold(raw: RawInputs, path_tokens: np.ndarray, fold: int) -> FoldArrays:
     train_idx = np.flatnonzero(raw.outer_folds != fold)
-    rna, rna_audit = _fit_numeric(raw.rna, train_idx, output_dim=512)
-    cna, cna_audit = _fit_numeric(raw.cna, train_idx, output_dim=256)
+    rna, rna_audit = _fit_numeric(raw.rna, train_idx, output_dim=512, modality="RNA")
+    cna, cna_audit = _fit_numeric(raw.cna, train_idx, output_dim=256, modality="CNA")
     clinical, clinical_audit = _fit_clinical(raw.clinical, train_idx)
     return FoldArrays(
         path_tokens=path_tokens,

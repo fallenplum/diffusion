@@ -14,8 +14,8 @@ import numpy as np
 import torch
 from sklearn.model_selection import StratifiedShuffleSplit
 
-from phase_m2.camr import CAMRModel
-from phase_m2.common import (
+from src.phase_m2.camr import CAMRModel
+from src.phase_m2.common import (
     NEURAL_SEEDS,
     Timer,
     aggregate_uno,
@@ -29,9 +29,9 @@ from phase_m2.common import (
     stable_int,
     uno_c_index,
 )
-from phase_m2.data import FoldArrays, RawInputs, load_raw_inputs, prepare_path_cache, preprocess_fold
-from phase_m2.mcat import MCATModel
-from phase_m2.runner import PathTokenProvider
+from src.phase_m2.data import FoldArrays, RawInputs, load_raw_inputs, prepare_path_cache, preprocess_fold
+from src.phase_m2.mcat import MCATModel
+from src.phase_m2.runner import PathTokenProvider
 
 
 MCAT_VARIANTS = ("A0", "A1", "A2", "A3", "A4", "A5", "A6", "A7")

@@ -1,0 +1,41 @@
+{
+  "phase": "M8A",
+  "status": "STOP_DISCREPANCY",
+  "base_branch": "codex/phase-m7r-mechanism-confirmation",
+  "base_sha": "6beb312b864be1f9fe1a6550656b274f8a5fca22",
+  "intended_branch": "codex/phase-m8a-small-event-variance-audit",
+  "formal_cells_started": 0,
+  "expected": {
+    "DSS_valid": 512,
+    "DSS_events": 65,
+    "PFS_valid": 529,
+    "PFS_events": 135,
+    "same_master_fold_assignment": true
+  },
+  "local_canonical_source": {
+    "manifest_sha256": "0CAD2B6DADB0937D1B3C593AA9715D28C43FBCBE3BAFDD71DAE008428CA435E8",
+    "pfs_cohort_sha256": "A0B4C01298103CD0E84B9B7659E008177B6DE7DBF00496CB40213EE98616BFEB"
+  },
+  "server_runtime": {
+    "repo_sha": "6beb312b864be1f9fe1a6550656b274f8a5fca22",
+    "fixed_m7r_split_patients": 512,
+    "fixed_m7r_split_fold_counts": {"1": 103, "2": 103, "3": 102, "4": 102, "5": 102},
+    "uni2_h_h5_files": 520,
+    "uni2_h_unique_patients": 512,
+    "dss_expected_h5_coverage": 512,
+    "pfs_expected_h5_coverage": 512,
+    "pfs_expected_h5_missing": 17,
+    "gpu": "NVIDIA GeForce RTX 4080",
+    "gpu_memory_mib": 32760
+  },
+  "blocking_discrepancies": [
+    "PFS-valid canonical cohort has 529 patients but server UNI2-h H5 covers only 512; 17 required PFS pathology inputs are absent.",
+    "The available frozen M7R master fold file contains 512 patient assignments and does not assign the additional PFS-valid patients.",
+    "M8A section 4 requires STOP when the runtime cohort/pathology audit is inconsistent with PFS=529/135; no formal training was started."
+  ],
+  "required_resolution": [
+    "Provide UNI2-h H5 features for the 17 missing PFS-valid patients.",
+    "Provide a frozen master fold assignment covering the full M8A patient universe, or an explicitly approved protocol repair."
+  ],
+  "patient_level_data_included": false
+}

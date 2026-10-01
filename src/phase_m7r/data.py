@@ -36,11 +36,11 @@ def _shuffle_group_defs(raw, arrays, fold):
     if sum(rw)>len(rna_perm) or sum(cw)>len(cna_perm): raise RuntimeError("outer-train visible universe smaller than official widths")
     r_groups=[]; c_groups=[]; ro=0; co=0
     for i,(r,c) in enumerate(zip(rw,cw)):
-        r_groups.append((f"SHUFFLED_{i:02d}",r_perm[ro:ro+r].tolist())); c_groups.append((f"SHUFFLED_{i:02d}",c_perm[co:co+c].tolist())); ro+=r; co+=c
+        r_groups.append((f"SHUFFLED_{i:02d}",rna_perm[ro:ro+r].tolist())); c_groups.append((f"SHUFFLED_{i:02d}",cna_perm[co:co+c].tolist())); ro+=r; co+=c
     rpack,rwidth,r_audit=m2._fit_group_matrix(raw.rna,raw.rna_symbols,train_idx,r_groups,"RNA")
     cpack,cwidth,c_audit=m2._fit_group_matrix(raw.cna,raw.cna_symbols,train_idx,c_groups,"CNA")
     packed=np.zeros((len(raw.patient_ids),6,max(rpack.shape[-1],cpack.shape[-1]),2),dtype=np.float32); packed[:,:,:rpack.shape[-1],0]=rpack; packed[:,:,:cpack.shape[-1],1]=cpack
-    def digest(groups): return hashlib.sha256("\n".join("|".join(x) for x in groups).encode()).hexdigest()
+    def digest(groups): return hashlib.sha256("\n".join("|".join(x[1]) for x in groups).encode()).hexdigest()
     audit={"outer_fold":int(fold),"shuffle_seed":SHUFFLE_SIGNATURE_SEED,"rna_universe_count":len(rna_universe),"cna_universe_count":len(cna_universe),"original_rna_widths":rw,"original_cna_widths":cw,"shuffled_rna_widths":[int(x) for x in rwidth],"shuffled_cna_widths":[int(x) for x in cwidth],"rna_assignment_sha256":digest(r_groups),"cna_assignment_sha256":digest(c_groups),"mapping_reproducibility":"fixed outer-train-visible universe, seed-independent"}
     return packed,tuple(zip(rwidth,cwidth)),audit
 
@@ -48,3 +48,4 @@ def preprocess_m7r(raw:RawInputs,path_tokens:np.ndarray,fold:int):
     base=preprocess_fold(raw,path_tokens,fold); shuffled,widths,audit=_shuffle_group_defs(raw,base,fold)
     return M7RFoldArrays(base.path_tokens,base.rna,base.cna,base.clinical,base.mcat_groups,tuple(base.mcat_widths),shuffled,widths,{**base.audit,"shuffled_signature":audit}),audit
 __all__=["RawInputs","FoldArrays","M7RFoldArrays","load_raw_inputs","prepare_path_cache","preprocess_fold","preprocess_m7r","SHUFFLE_SIGNATURE_SEED"]
+

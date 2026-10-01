@@ -26,6 +26,7 @@ class AdaptivePath(nn.Module):
 class FiLMModule(nn.Module):
     def __init__(self):
         super().__init__(); self.net=nn.Sequential(nn.Linear(DIM,64),nn.GELU(),nn.Linear(64,DIM*2)); nn.init.zeros_(self.net[-1].weight); nn.init.zeros_(self.net[-1].bias)
+    def forward(self,value): return self.net(value).chunk(2,dim=-1)
 @dataclass
 class Streams: path:torch.Tensor; omic:torch.Tensor; clinical:torch.Tensor
 class M7RRepresentation(nn.Module):
@@ -56,7 +57,7 @@ class M7RModel(nn.Module):
         self.eval(); streams,_=self.representation.encode(pathology,rna,cna,clinical,groups); _,_,diag=self._condition(streams.path,streams.omic); return diag
     @torch.no_grad()
     def audit_forward(self,pathology,rna,cna,clinical,groups):
-        self.eval(); streams,_=self.representation.encode(pathology,rna,cna,clinical,groups); path,omic,_=self._condition(streams.path,streams.omic); fused=self.representation.fusion(torch.cat([path,omic],dim=-1)); context=self.representation.clinical_gate(torch.cat([fused,streams.clinical],dim=-1)); return self.representation.head(context),pathology.new_zeros(())
+        self.eval(); streams,_=self.representation.encode(pathology,rna,cna,clinical,groups); path,omic,_=self._condition(streams.path,streams.omic); fused=self.representation.fusion(torch.cat([path,omic],dim=-1)); context=self.representation.clinical_gate(torch.cat([fused,streams.clinical],dim=-1)); return self.representation.head(context),path
 def control_seed(method,seed,fold):
     from src.phase_m2.common import stable_int
     return 800000+stable_int(f"m7r-control:{method}:{seed}:{fold}",modulo=1900000000)

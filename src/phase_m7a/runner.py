@@ -116,7 +116,7 @@ def _fit_fold(variant: str, raw: RawInputs, arrays: FoldArrays, provider: PathTo
     if device.type == "cuda": torch.cuda.reset_peak_memory_stats(device)
     inner_train, inner_val = _inner_split(raw, fold, seed); timer = Timer()
     model = _make_model(variant, arrays, seed, fold).to(device)
-    breakdown = {"total_params": count_parameters(model), "representation_params": count_parameters(model), "projector_params": 0, "fusion_head_params": 0}
+    breakdown = parameter_breakdown(model)
     opt = torch.optim.AdamW(model.parameters(), lr=3e-4, weight_decay=1e-4); best, best_epoch, wait = -float("inf"), 1, 0; rng = np.random.default_rng(seed + fold + 101)
     for epoch in range(1, max_epochs + 1):
         opt.zero_grad(set_to_none=True)
@@ -144,8 +144,23 @@ def _initialization_audit(arrays: FoldArrays, seed: int, fold: int) -> dict[str,
     shared_keys = [k for k in models["F1"].state_dict() if not k.startswith(interaction_prefixes)]
     mismatches = {v: [k for k in shared_keys if k not in models[v].state_dict() or not torch.equal(models["F1"].state_dict()[k], models[v].state_dict()[k])] for v in ("F2", "F3", "F4")}
     f2 = count_parameters(models["F2"].residual); f3 = count_parameters(models["F3"].film_o); match = abs(f2 - f3) / f3 <= 0.10
-    status = all(not x for x in mismatches.values()) and match
-    return {"status": "PASS" if status else "FAIL", "seed": seed, "outer_fold": fold, "shared_upstream_mismatches": mismatches, "F2_residual_params": f2, "F3_FiLM_params": f3, "F2_F3_interaction_parameter_match_within_10pct": match, "shared_components": ["ABMIL patch projection", "ABMIL attention", "SixSignatureEncoder", "omic Transformer", "omic GatedAttentionPool", "omic_rho", "clinical encoder", "late fusion", "clinical gate", "RiskHead"]}
+    m5 = _make_model("F5", arrays, seed, fold); m5_again = _make_model("F5", arrays, seed, fold)
+    f5_same = all(torch.equal(t, m5_again.state_dict()[k]) for k, t in m5.state_dict().items())
+    f5_audit = {"same_seed_byte_identical": f5_same, "uses_six_signature_metadata": False, "raw_global_vector_dim": DIM, "parameter_breakdown": parameter_breakdown(m5), "note": "F5 registers unused Transformer/pool/rho for source compatibility; these are excluded from active parameter count and cannot affect predictions."}
+    status = all(not x for x in mismatches.values()) and match and f5_same
+    return {"status": "PASS" if status else "FAIL", "seed": seed, "outer_fold": fold, "shared_upstream_mismatches": mismatches, "F2_residual_params": f2, "F3_FiLM_params": f3, "F2_F3_interaction_parameter_match_within_10pct": match, "F5_separate_audit": f5_audit, "shared_components": ["ABMIL patch projection", "ABMIL attention", "SixSignatureEncoder", "omic Transformer", "omic GatedAttentionPool", "omic_rho", "clinical encoder", "late fusion", "clinical gate", "RiskHead"]}
+
+
+def parameter_breakdown(model: torch.nn.Module) -> dict[str, int]:
+    total = count_parameters(model); projector = interaction = unused = 0
+    if isinstance(model, M7AModel):
+        projector = count_parameters(model.representation.abmil.projection)
+        interaction = sum(count_parameters(x) for x in (model.residual, model.film_o, model.film_p) if x is not None)
+        fusion = count_parameters(model.representation.fusion) + count_parameters(model.representation.clinical_gate) + count_parameters(model.representation.head) + interaction
+        if model.variant == "F5": unused = sum(count_parameters(x) for x in (model.representation.omic_transformer, model.representation.omic_attention_head, model.representation.omic_rho))
+    else:
+        fusion = sum(p.numel() for n, p in model.named_parameters() if any(x in n.lower() for x in ("fusion", "gate", "head")))
+    return {"total_params": total, "active_params": total - unused, "registered_unused_params": unused, "representation_params": total - unused - fusion - projector, "projector_params": projector, "fusion_head_params": fusion, "interaction_params": interaction}
 
 
 def film_correctness_audit(clinical_dim: int, widths: tuple[tuple[int, int], ...], seed: int = 20260928, fold: int = 1) -> dict[str, Any]:
@@ -159,19 +174,37 @@ def film_correctness_audit(clinical_dim: int, widths: tuple[tuple[int, int], ...
     grad_names = ["film_o.net.2.weight", "film_o.net.2.bias"]; grads = {n: m3.state_dict()[n].new_tensor(float(getattr(m3, n.split('.')[0]).net[-1].weight.grad.norm() if n.endswith('weight') else getattr(m3, n.split('.')[0]).net[-1].bias.grad.norm())) for n in grad_names}
     deterministic = all(torch.equal(a, b) for a, b in zip(m3.state_dict().values(), _make_model("F3", type("A", (), {"clinical": np.zeros((1, clinical_dim), np.float32), "mcat_widths": widths})(), seed, fold).state_dict().values()))
     out.update({"zero_init_identity_max_abs": identity, "zero_init_threshold": 1e-7, "identity_pass": all(v < 1e-7 for v in identity.values()), "film_final_layer_gradient_norms": {k: float(v) for k, v in grads.items()}, "gradient_finite_and_nonzero": all(np.isfinite(float(v)) and float(v) > 0 for v in grads.values()), "same_seed_byte_identical": deterministic})
-    out["status"] = "PASS" if out["identity_pass"] and out["gradient_finite_and_nonzero"] and deterministic else "FAIL"
+    expanded = {}
+    arrays = type("A", (), {"clinical": np.zeros((1, clinical_dim), np.float32), "mcat_widths": widths})()
+    for variant in ("F3", "F4", "F5"):
+        model = _make_model(variant, arrays, seed, fold)
+        pp = p.clone().requires_grad_(); oo = o.clone().requires_grad_()
+        pm, om, _ = model._condition(pp, oo)
+        (pm.square().mean() + om.square().mean()).backward()
+        final = {n: float(t.grad.norm()) for n, t in model.named_parameters() if n.startswith(("film_o.net.2", "film_p.net.2"))}
+        expanded[variant] = {"final_layer_gradient_norms": final, "final_gradients_finite_nonzero": all(np.isfinite(v) and v > 0 for v in final.values()), "upstream_p_gradient_finite": bool(pp.grad is not None and torch.isfinite(pp.grad).all()), "upstream_o_gradient_finite": bool(oo.grad is not None and torch.isfinite(oo.grad).all()), "same_seed_byte_identical": all(torch.equal(t, _make_model(variant, arrays, seed, fold).state_dict()[k]) for k, t in model.state_dict().items())}
+    out["all_film_variants"] = expanded
+    out["status"] = "PASS" if out["identity_pass"] and out["gradient_finite_and_nonzero"] and deterministic and all(all(v for k, v in r.items() if k != "final_layer_gradient_norms") for r in expanded.values()) else "FAIL"
     return out
 
 
 def _film_diagnostics(model: M7AModel, arrays: FoldArrays, provider: PathTokenProvider, test_idx: np.ndarray, device: torch.device, batch_size: int, variant: str, seed: int, fold: int) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
+    vectors: dict[str, list[np.ndarray]] = {k: [] for k in ("gamma_o", "beta_o", "gamma_p", "beta_p")}
     for batch in _batches(test_idx, batch_size):
         path = torch.from_numpy(provider.batch(batch, epoch=0, deterministic=True)).to(device=device); rna = torch.from_numpy(arrays.rna[batch]).to(device=device); cna = torch.from_numpy(arrays.cna[batch]).to(device=device); clinical = torch.from_numpy(arrays.clinical[batch]).to(device=device); groups = torch.from_numpy(arrays.mcat_groups[batch]).to(device=device)
         d = model.modulation_diagnostics(path, rna, cna, clinical, groups)
+        for key in vectors:
+            vectors[key].append(d.get(key, torch.zeros(len(batch), DIM, device=device)).detach().cpu().numpy())
         n = len(batch)
         for i, patient in enumerate(batch):
             row = {"method": variant, "seed": seed, "outer_fold": fold, "patient_index": int(patient), "mean_abs_gamma_o": float(d.get("gamma_o", torch.zeros(n, DIM))[i].abs().mean()), "mean_abs_beta_o": float(d.get("beta_o", torch.zeros(n, DIM))[i].abs().mean()), "gamma_o_std": float(d.get("gamma_o", torch.zeros(n, DIM))[i].std()), "beta_o_std": float(d.get("beta_o", torch.zeros(n, DIM))[i].std()), "fraction_gamma_o_abs_lt_0_05": float((d.get("gamma_o", torch.zeros(n, DIM))[i].abs() < 0.05).float().mean()), "path_correction_norm": float(d.get("path_correction_norm", torch.zeros(n))[i]), "mean_abs_gamma_p": float(d.get("gamma_p", torch.zeros(n, DIM))[i].abs().mean()), "mean_abs_beta_p": float(d.get("beta_p", torch.zeros(n, DIM))[i].abs().mean()), "gamma_p_std": float(d.get("gamma_p", torch.zeros(n, DIM))[i].std()), "beta_p_std": float(d.get("beta_p", torch.zeros(n, DIM))[i].std()), "fraction_gamma_p_abs_lt_0_05": float((d.get("gamma_p", torch.zeros(n, DIM))[i].abs() < 0.05).float().mean()), "omic_correction_norm": float(d.get("omic_correction_norm", torch.zeros(n))[i])}
             rows.append(row)
+    for key, values in vectors.items():
+        across_patient = float(np.concatenate(values).std(axis=0, ddof=1).mean())
+        for row in rows:
+            row[key + "_std_across_features_patientwise"] = row.pop(key + "_std")
+            row[key + "_std_across_patients_mean_features"] = across_patient
     return rows
 
 

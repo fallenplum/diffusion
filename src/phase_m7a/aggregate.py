@@ -81,15 +81,18 @@ def aggregate(worker_dirs: list[Path], output: Path, repo: Path) -> None:
     if got != expected or len(folds) != 120 or any(r.get("status") != "completed" for r in folds): raise RuntimeError(f"invalid fold matrix {len(folds)}")
     if {(r["method"], int(r["seed"])) for r in seeds} != {(v, s) for v in VARIANTS for s in SEEDS} or len(seeds) != 24: raise RuntimeError("invalid seed summaries")
     if {(r["method"], int(r["seed"]), int(r["outer_fold"])) for r in profiles} != expected or len(profiles) != 120: raise RuntimeError("invalid profiles")
-    if len(film) != 3 * 15 * 512: raise RuntimeError(f"invalid FiLM diagnostics {len(film)}")
+    if len(film) != 3 * 3 * 512: raise RuntimeError(f"invalid FiLM diagnostics {len(film)}")
     pkeys = {(r["row_type"], r["method"], int(r["seed"]), int(r["outer_fold"]), r.get("patient_index", "") if r["row_type"] == "summary" else int(r["patient_index"])) for r in perms}
     if len(perms) != 4653 or len(pkeys) != 4653: raise RuntimeError(f"invalid permutation audit {len(perms)}")
+    if any(num(r.get("max_abs_prediction_difference")) > 1e-5 for r in perms if r["row_type"] == "summary"): raise RuntimeError("permutation audit failed")
     write_csv(output / "fold_metrics.csv", folds); write_csv(output / "seed_metrics.csv", seeds); write_csv(output / "compute_profile.csv", profiles); write_csv(output / "film_modulation_diagnostics.csv", film); write_csv(output / "permutation_invariance_audit.csv", perms)
     main = []
     for method in VARIANTS:
         rows = [r for r in folds if r["method"] == method]; h = np.asarray([num(r["harrell_c"]) for r in rows]); u = np.asarray([num(r["uno_c"]) for r in rows]); main.append({"method": method, "label": LABELS[method], "cells": len(rows), "harrell_mean": float(h.mean()), "harrell_std": float(h.std(ddof=1)), "harrell_worst": float(h.min()), "uno_mean": float(u.mean()), "uno_std": float(u.std(ddof=1)), "uno_worst": float(u.min()), "status": "completed"})
     write_csv(output / "main_metrics.csv", main); pairs = paired(folds); write_csv(output / "paired_deltas.csv", pairs); cross = cross_phase(repo); write_csv(output / "cross_phase_prototype_reaggregation.csv", cross)
-    init = {"status": "PASS" if all(x.get("status") == "PASS" for x in inits) else "FAIL", "workers": inits, "scope": "F1-F4 shared upstream and late fusion byte equality; F2/F3 interaction parameter matching; F5 separate raw omics audit"}; write_json(output / "initialization_audit.json", init)
+    init = {"status": "PASS" if all(x.get("status") == "PASS" for x in inits) else "FAIL", "workers": inits, "scope": "F1-F4 shared upstream and late fusion byte equality; F2/F3 interaction parameter matching; F5 separate raw omics audit"}
+    if init["status"] != "PASS": raise RuntimeError("initialization audit failed")
+    write_json(output / "initialization_audit.json", init)
     corr = correctness[0]
     if not all(x.get("status") == "PASS" for x in correctness): raise RuntimeError("FiLM correctness audit failed")
     write_json(output / "film_correctness_audit.json", corr); (output / "abmil_implementation_audit.md").write_text("# ABMIL implementation audit\n\nThe formal worker audit uses `src/phase_m7a/models.py:GatedABMIL`: `LayerNorm(1536) -> Linear(1536,96) -> GELU`, followed by `w^T(tanh(Vh) * sigmoid(Uh))` with hidden attention dimension 48, softmax over the unordered patch bag, weighted sum, and `LayerNorm(96)`. No positional or patch-order feature is present.\n", encoding="utf-8")

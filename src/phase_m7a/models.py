@@ -148,7 +148,7 @@ class M7AModel(nn.Module):
         return path_mod, omic, diag
 
     def forward(self, pathology: torch.Tensor, rna: torch.Tensor, cna: torch.Tensor, clinical: torch.Tensor, groups: torch.Tensor | None = None) -> tuple[torch.Tensor, torch.Tensor]:
-        if groups is None:
+        if groups is None and self.variant != "F5":
             raise ValueError("M7A F-family requires six-signature groups")
         streams, _, _ = self.representation.encode(pathology, rna, cna, clinical, groups)
         path, omic, _ = self._condition(streams.path, streams.omic)

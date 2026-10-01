@@ -133,7 +133,7 @@ def _fit_fold(variant: str, raw: RawInputs, arrays: FoldArrays, provider: PathTo
     for epoch in range(1, max(1, best_epoch) + 1):
         opt.zero_grad(set_to_none=True); _, _, loss = _forward_epoch(model, arrays, provider, outer_train, raw.dss_time, raw.dss_event, device, batch_size, True, refit_rng, epoch, variant); loss.backward(); torch.nn.utils.clip_grad_norm_(model.parameters(), 5.0); opt.step()
     test_idx = np.flatnonzero(raw.outer_folds == fold); pred = _predict(model, arrays, provider, test_idx, device, batch_size, variant)
-    profile = {"method": variant, "seed": seed, "outer_fold": fold, **breakdown, "best_epoch": int(best_epoch), "inner_best_harrell_c": float(best), "training_seconds": timer.seconds, "peak_gpu_memory_gb": gpu_memory_gb(device), "outer_refit": "fresh reinitialize same seed full outer train", "epochwise_sampling": True, "status": "completed"}
+    profile = {"method": variant, "seed": seed, "outer_fold": fold, **breakdown, "best_epoch": int(best_epoch), "inner_best_harrell_c": float(best), "training_seconds": timer.seconds, "peak_gpu_memory_gb": gpu_memory_gb(device), "outer_refit": "fresh reinitialize same seed full outer train", "epochwise_sampling": True, "execution_commit": _git_revision(Path(__file__).resolve().parents[2]), "status": "completed"}
     del opt
     return pred, profile, model
 
@@ -146,7 +146,7 @@ def _initialization_audit(arrays: FoldArrays, seed: int, fold: int) -> dict[str,
     f2 = count_parameters(models["F2"].residual); f3 = count_parameters(models["F3"].film_o); match = abs(f2 - f3) / f3 <= 0.10
     m5 = _make_model("F5", arrays, seed, fold); m5_again = _make_model("F5", arrays, seed, fold)
     f5_same = all(torch.equal(t, m5_again.state_dict()[k]) for k, t in m5.state_dict().items())
-    f5_audit = {"same_seed_byte_identical": f5_same, "uses_six_signature_metadata": False, "raw_global_vector_dim": DIM, "parameter_breakdown": parameter_breakdown(m5), "note": "F5 registers unused Transformer/pool/rho for source compatibility; these are excluded from active parameter count and cannot affect predictions."}
+    f5_audit = {"same_seed_byte_identical": f5_same, "uses_six_signature_metadata": False, "raw_global_vector_dim": DIM, "parameter_breakdown": parameter_breakdown(m5), "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters."}
     status = all(not x for x in mismatches.values()) and match and f5_same
     return {"status": "PASS" if status else "FAIL", "seed": seed, "outer_fold": fold, "shared_upstream_mismatches": mismatches, "F2_residual_params": f2, "F3_FiLM_params": f3, "F2_F3_interaction_parameter_match_within_10pct": match, "F5_separate_audit": f5_audit, "shared_components": ["ABMIL patch projection", "ABMIL attention", "SixSignatureEncoder", "omic Transformer", "omic GatedAttentionPool", "omic_rho", "clinical encoder", "late fusion", "clinical gate", "RiskHead"]}
 
@@ -157,7 +157,7 @@ def parameter_breakdown(model: torch.nn.Module) -> dict[str, int]:
         projector = count_parameters(model.representation.abmil.projection)
         interaction = sum(count_parameters(x) for x in (model.residual, model.film_o, model.film_p) if x is not None)
         fusion = count_parameters(model.representation.fusion) + count_parameters(model.representation.clinical_gate) + count_parameters(model.representation.head) + interaction
-        if model.variant == "F5": unused = sum(count_parameters(x) for x in (model.representation.omic_transformer, model.representation.omic_attention_head, model.representation.omic_rho))
+        if model.variant == "F5": unused = sum(count_parameters(x) for x in (model.representation.omic_transformer, model.representation.omic_attention_head, model.representation.omic_rho) if x is not None)
     else:
         fusion = sum(p.numel() for n, p in model.named_parameters() if any(x in n.lower() for x in ("fusion", "gate", "head")))
     return {"total_params": total, "active_params": total - unused, "registered_unused_params": unused, "representation_params": total - unused - fusion - projector, "projector_params": projector, "fusion_head_params": fusion, "interaction_params": interaction}
@@ -182,7 +182,8 @@ def film_correctness_audit(clinical_dim: int, widths: tuple[tuple[int, int], ...
         pm, om, _ = model._condition(pp, oo)
         (pm.square().mean() + om.square().mean()).backward()
         final = {n: float(t.grad.norm()) for n, t in model.named_parameters() if n.startswith(("film_o.net.2", "film_p.net.2"))}
-        expanded[variant] = {"final_layer_gradient_norms": final, "final_gradients_finite_nonzero": all(np.isfinite(v) and v > 0 for v in final.values()), "upstream_p_gradient_finite": bool(pp.grad is not None and torch.isfinite(pp.grad).all()), "upstream_o_gradient_finite": bool(oo.grad is not None and torch.isfinite(oo.grad).all()), "same_seed_byte_identical": all(torch.equal(t, _make_model(variant, arrays, seed, fold).state_dict()[k]) for k, t in model.state_dict().items())}
+        replica = _make_model(variant, arrays, seed, fold)
+        expanded[variant] = {"final_layer_gradient_norms": final, "final_gradients_finite_nonzero": all(np.isfinite(v) and v > 0 for v in final.values()), "upstream_p_gradient_finite": bool(pp.grad is not None and torch.isfinite(pp.grad).all()), "upstream_o_gradient_finite": bool(oo.grad is not None and torch.isfinite(oo.grad).all()), "same_seed_byte_identical": all(torch.equal(t, replica.state_dict()[k]) for k, t in model.state_dict().items())}
     out["all_film_variants"] = expanded
     out["status"] = "PASS" if out["identity_pass"] and out["gradient_finite_and_nonzero"] and deterministic and all(all(v for k, v in r.items() if k != "final_layer_gradient_norms") for r in expanded.values()) else "FAIL"
     return out
@@ -246,6 +247,11 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
             arrays = arrays_cache[fold]; provider = PathTokenProvider(train_pool=train_pool, deterministic=deterministic, train_seed=seed, k=1024)
             if cell in state.get("completed", []) and (cells / f"{stem}.json").exists() and (cells / f"{stem}.npy").exists():
                 payload = json.loads((cells / f"{stem}.json").read_text()); row, profile, pred = payload["row"], payload["profile"], np.load(cells / f"{stem}.npy"); film_rows.extend(payload.get("film_rows", [])); perm_rows.extend(payload.get("perm_rows", []))
+                profile.update(parameter_breakdown(_make_model(variant, arrays, seed, fold)))
+                if not profile.get("execution_commit"):
+                    prior = "35a520c" if variant in {"B0", "C0", "F5"} else "c5a00a5"
+                    profile["execution_commit"] = subprocess.check_output(["git", "-C", str(repo_root), "rev-parse", prior], text=True).strip()
+                row["params"] = profile["total_params"]
             else:
                 try:
                     pred, profile, model = _fit_fold(variant, raw, arrays, provider, fold, seed, device, args.max_epochs, args.patience, args.batch_size)

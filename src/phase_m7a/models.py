@@ -95,6 +95,12 @@ class M7ARepresentation(nn.Module):
             self.fusion = nn.Sequential(nn.Linear(DIM * 2, DIM), nn.ReLU(), nn.Linear(DIM, DIM), nn.ReLU())
             self.clinical_gate = nn.Sequential(nn.Linear(DIM * 2, DIM), nn.GELU(), nn.LayerNorm(DIM))
             self.head = RiskHead(DIM)
+            if raw_omics:
+                # Preserve construction order and active weights, but do not register
+                # MCAT-only modules that are bypassed by the raw omics path.
+                self.omic_transformer = None
+                self.omic_attention_head = None
+                self.omic_rho = None
         self.raw_omics = raw_omics
 
     def encode(self, pathology: torch.Tensor, rna: torch.Tensor, cna: torch.Tensor, clinical: torch.Tensor, groups: torch.Tensor) -> tuple[M7AStreams, torch.Tensor, torch.Tensor]:

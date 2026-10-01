@@ -1,0 +1,76 @@
+{
+  "audit_coverage": {
+    "film_rows": 4608,
+    "fold_rows": 120,
+    "initialization_rows": 15,
+    "permutation_rows": 4653,
+    "profile_rows": 120,
+    "seed_rows": 24
+  },
+  "best_context_comparisons": "F3 and F4 are both reported; descriptive best is not used to create a new post-hoc significance test",
+  "cells": 120,
+  "comparisons": [
+    "F1 vs F0",
+    "F3 vs F1",
+    "F3 vs F2",
+    "F4 vs F3",
+    "F3 vs F5",
+    "F3 vs F0",
+    "F4 vs F0",
+    "F3 vs B0",
+    "F4 vs B0",
+    "F3 vs C0",
+    "F4 vs C0"
+  ],
+  "dss_events": 65,
+  "gates": {
+    "abmil_pathology_supported": false,
+    "bidirectional_film_supported": false,
+    "omic_to_path_film_supported": true,
+    "six_signature_semantics_under_film_supported": false
+  },
+  "global_oof": "diagnostic only",
+  "motivation_lock": {
+    "dense_attention": "near-uniform diagnostic, not an information-theoretic proof",
+    "hallmark50": "not supported",
+    "prototype_effect": "initialization-sensitive and not confirmed",
+    "small_n": "keep interaction compact"
+  },
+  "omics": "SixSignatureEncoder, six official RNA+CNA groups, two-layer Transformer, GatedAttentionPool, omic_rho",
+  "outer_folds": 5,
+  "pathology": {
+    "K": 1024,
+    "hidden_attention_dim": 48,
+    "input": "UNI2-h",
+    "no_positional_or_order_feature": true,
+    "tokenizer": "permutation-invariant supervised gated ABMIL"
+  },
+  "patients": 512,
+  "phase": "M7A",
+  "primary_metric": "fold-level Harrell C",
+  "secondary_metric": "fold-level Uno C",
+  "seeds": [
+    20260928,
+    20260929,
+    20260930
+  ],
+  "training": {
+    "batch_size": 16,
+    "lr": 0.0003,
+    "max_epochs": 25,
+    "nested_inner_val": true,
+    "optimizer": "AdamW",
+    "patience": 5,
+    "weight_decay": 0.0001
+  },
+  "variants": [
+    "F0",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "B0",
+    "C0"
+  ]
+}

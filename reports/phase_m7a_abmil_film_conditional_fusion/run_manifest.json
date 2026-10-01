@@ -1,0 +1,39 @@
+{
+  "abmil_pathology_supported": false,
+  "all_formal_decisions_fold_level": true,
+  "all_three_fresh_seeds": true,
+  "bidirectional_film_supported": false,
+  "cells_completed": 120,
+  "cells_expected": 120,
+  "execution_shas": [
+    "1c22b70",
+    "3a3318f"
+  ],
+  "film_correctness_status": "PASS",
+  "no_leakage": true,
+  "no_seed_hunting": true,
+  "omic_to_path_film_supported": true,
+  "output_files": [
+    "RESULTS.md",
+    "cross_phase_prototype_reaggregation.csv",
+    "main_metrics.csv",
+    "fold_metrics.csv",
+    "seed_metrics.csv",
+    "paired_deltas.csv",
+    "compute_profile.csv",
+    "abmil_implementation_audit.md",
+    "film_correctness_audit.json",
+    "film_modulation_diagnostics.csv",
+    "permutation_invariance_audit.csv",
+    "initialization_audit.json",
+    "protocol.json",
+    "run_manifest.json"
+  ],
+  "permutation_audit_status": "PASS",
+  "phase": "M7A",
+  "remote_resolvable_execution_sha": true,
+  "repo_sha_at_aggregation": "6c3e9325be5951c5c534dac0003498a971a2e59b",
+  "report_sha256": "7a948ad3535dc46dc151780f91b2ad04897bd2af5553d611470cc282227b60b1",
+  "six_signature_semantics_supported_under_film": false,
+  "status": "complete"
+}

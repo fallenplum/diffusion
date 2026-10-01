@@ -1,0 +1,1592 @@
+{
+  "coverage": 15,
+  "expected_coverage": 15,
+  "scope": "F1-F4 shared upstream and late fusion byte equality; F2/F3 interaction parameter matching; F5 separate raw omics audit; fixed compact widths, not parameter-matched to F3",
+  "status": "PASS",
+  "workers": [
+    {
+      "coverage": 15,
+      "expected": 15,
+      "f5_parameter_audit": {
+        "20260928_1": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331784,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106311,
+            "total_params": 331784
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260928_2": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331588,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106115,
+            "total_params": 331588
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260928_3": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331784,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106311,
+            "total_params": 331784
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260928_4": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331784,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106311,
+            "total_params": 331784
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260928_5": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331686,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106213,
+            "total_params": 331686
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260929_1": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331784,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106311,
+            "total_params": 331784
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260929_2": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331588,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106115,
+            "total_params": 331588
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260929_3": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331784,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106311,
+            "total_params": 331784
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260929_4": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331784,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106311,
+            "total_params": 331784
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260929_5": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331686,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106213,
+            "total_params": 331686
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260930_1": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331784,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106311,
+            "total_params": 331784
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260930_2": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331588,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106115,
+            "total_params": 331588
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260930_3": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331784,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106311,
+            "total_params": 331784
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260930_4": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331784,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106311,
+            "total_params": 331784
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        },
+        "20260930_5": {
+          "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+          "parameter_breakdown": {
+            "active_params": 331686,
+            "fusion_head_params": 74849,
+            "interaction_params": 18688,
+            "projector_params": 150624,
+            "registered_unused_params": 0,
+            "representation_params": 106213,
+            "total_params": 331686
+          },
+          "raw_global_vector_dim": 96,
+          "same_seed_byte_identical": true,
+          "uses_six_signature_metadata": false
+        }
+      },
+      "rows": [
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331784,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106311,
+              "total_params": 331784
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.25939205288887024,
+                  "film_o.net.2.weight": 0.5593237280845642
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.25939205288887024,
+                  "film_o.net.2.weight": 0.5593237280845642,
+                  "film_p.net.2.bias": 0.2605295777320862,
+                  "film_p.net.2.weight": 0.5885336995124817
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.25939205288887024,
+                  "film_o.net.2.weight": 0.5593237280845642
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.25939205288887024,
+              "film_o.net.2.weight": 0.5593237280845642
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 1,
+          "seed": 20260928,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331784,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106311,
+              "total_params": 331784
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2547123432159424,
+                  "film_o.net.2.weight": 0.5526812076568604
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2547123432159424,
+                  "film_o.net.2.weight": 0.5526812076568604,
+                  "film_p.net.2.bias": 0.27317917346954346,
+                  "film_p.net.2.weight": 0.5645679831504822
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2547123432159424,
+                  "film_o.net.2.weight": 0.5526812076568604
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2547123432159424,
+              "film_o.net.2.weight": 0.5526812076568604
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 1,
+          "seed": 20260929,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331784,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106311,
+              "total_params": 331784
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2688870131969452,
+                  "film_o.net.2.weight": 0.5317985415458679
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2688870131969452,
+                  "film_o.net.2.weight": 0.5317985415458679,
+                  "film_p.net.2.bias": 0.25261083245277405,
+                  "film_p.net.2.weight": 0.5749675035476685
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2688870131969452,
+                  "film_o.net.2.weight": 0.5317985415458679
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2688870131969452,
+              "film_o.net.2.weight": 0.5317985415458679
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 1,
+          "seed": 20260930,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331588,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106115,
+              "total_params": 331588
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2547123432159424,
+                  "film_o.net.2.weight": 0.5506255030632019
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2547123432159424,
+                  "film_o.net.2.weight": 0.5506255030632019,
+                  "film_p.net.2.bias": 0.27317917346954346,
+                  "film_p.net.2.weight": 0.5264678001403809
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2547123432159424,
+                  "film_o.net.2.weight": 0.5506255030632019
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2547123432159424,
+              "film_o.net.2.weight": 0.5506255030632019
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 2,
+          "seed": 20260928,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331588,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106115,
+              "total_params": 331588
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2688870131969452,
+                  "film_o.net.2.weight": 0.5835770964622498
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2688870131969452,
+                  "film_o.net.2.weight": 0.5835770964622498,
+                  "film_p.net.2.bias": 0.25261083245277405,
+                  "film_p.net.2.weight": 0.5620132088661194
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2688870131969452,
+                  "film_o.net.2.weight": 0.5835770964622498
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2688870131969452,
+              "film_o.net.2.weight": 0.5835770964622498
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 2,
+          "seed": 20260929,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331588,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106115,
+              "total_params": 331588
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2741521894931793,
+                  "film_o.net.2.weight": 0.5314856171607971
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2741521894931793,
+                  "film_o.net.2.weight": 0.5314856171607971,
+                  "film_p.net.2.bias": 0.26736897230148315,
+                  "film_p.net.2.weight": 0.5468541979789734
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2741521894931793,
+                  "film_o.net.2.weight": 0.5314856171607971
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2741521894931793,
+              "film_o.net.2.weight": 0.5314856171607971
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 2,
+          "seed": 20260930,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331784,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106311,
+              "total_params": 331784
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2688870131969452,
+                  "film_o.net.2.weight": 0.6283388733863831
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2688870131969452,
+                  "film_o.net.2.weight": 0.6283388733863831,
+                  "film_p.net.2.bias": 0.25261083245277405,
+                  "film_p.net.2.weight": 0.5708935260772705
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2688870131969452,
+                  "film_o.net.2.weight": 0.6283388733863831
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2688870131969452,
+              "film_o.net.2.weight": 0.6283388733863831
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 3,
+          "seed": 20260928,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331784,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106311,
+              "total_params": 331784
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2741521894931793,
+                  "film_o.net.2.weight": 0.6116346120834351
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2741521894931793,
+                  "film_o.net.2.weight": 0.6116346120834351,
+                  "film_p.net.2.bias": 0.26736897230148315,
+                  "film_p.net.2.weight": 0.5941395163536072
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2741521894931793,
+                  "film_o.net.2.weight": 0.6116346120834351
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2741521894931793,
+              "film_o.net.2.weight": 0.6116346120834351
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 3,
+          "seed": 20260929,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331784,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106311,
+              "total_params": 331784
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2782175540924072,
+                  "film_o.net.2.weight": 0.5685796737670898
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2782175540924072,
+                  "film_o.net.2.weight": 0.5685796737670898,
+                  "film_p.net.2.bias": 0.2612360715866089,
+                  "film_p.net.2.weight": 0.6014972925186157
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2782175540924072,
+                  "film_o.net.2.weight": 0.5685796737670898
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2782175540924072,
+              "film_o.net.2.weight": 0.5685796737670898
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 3,
+          "seed": 20260930,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331784,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106311,
+              "total_params": 331784
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2741521894931793,
+                  "film_o.net.2.weight": 0.6123184561729431
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2741521894931793,
+                  "film_o.net.2.weight": 0.6123184561729431,
+                  "film_p.net.2.bias": 0.26736897230148315,
+                  "film_p.net.2.weight": 0.718292236328125
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2741521894931793,
+                  "film_o.net.2.weight": 0.6123184561729431
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2741521894931793,
+              "film_o.net.2.weight": 0.6123184561729431
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 4,
+          "seed": 20260928,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331784,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106311,
+              "total_params": 331784
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2782175540924072,
+                  "film_o.net.2.weight": 0.6324246525764465
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2782175540924072,
+                  "film_o.net.2.weight": 0.6324246525764465,
+                  "film_p.net.2.bias": 0.2612360715866089,
+                  "film_p.net.2.weight": 0.47797074913978577
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2782175540924072,
+                  "film_o.net.2.weight": 0.6324246525764465
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2782175540924072,
+              "film_o.net.2.weight": 0.6324246525764465
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 4,
+          "seed": 20260929,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331784,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106311,
+              "total_params": 331784
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2911537289619446,
+                  "film_o.net.2.weight": 0.4932418167591095
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2911537289619446,
+                  "film_o.net.2.weight": 0.4932418167591095,
+                  "film_p.net.2.bias": 0.26217734813690186,
+                  "film_p.net.2.weight": 0.6431722640991211
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2911537289619446,
+                  "film_o.net.2.weight": 0.4932418167591095
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2911537289619446,
+              "film_o.net.2.weight": 0.4932418167591095
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 4,
+          "seed": 20260930,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331686,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106213,
+              "total_params": 331686
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2782175540924072,
+                  "film_o.net.2.weight": 0.6159127354621887
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2782175540924072,
+                  "film_o.net.2.weight": 0.6159127354621887,
+                  "film_p.net.2.bias": 0.2612360715866089,
+                  "film_p.net.2.weight": 0.6626964807510376
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2782175540924072,
+                  "film_o.net.2.weight": 0.6159127354621887
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2782175540924072,
+              "film_o.net.2.weight": 0.6159127354621887
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 5,
+          "seed": 20260928,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331686,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106213,
+              "total_params": 331686
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2911537289619446,
+                  "film_o.net.2.weight": 0.6144064664840698
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2911537289619446,
+                  "film_o.net.2.weight": 0.6144064664840698,
+                  "film_p.net.2.bias": 0.26217734813690186,
+                  "film_p.net.2.weight": 0.6121119856834412
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2911537289619446,
+                  "film_o.net.2.weight": 0.6144064664840698
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2911537289619446,
+              "film_o.net.2.weight": 0.6144064664840698
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 5,
+          "seed": 20260929,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        },
+        {
+          "F2_F3_interaction_parameter_match_within_10pct": true,
+          "F2_residual_params": 18592,
+          "F3_FiLM_params": 18688,
+          "F5_separate_audit": {
+            "note": "F5 bypasses MCAT six-signature modules and registers only the active raw-omics encoder, FiLM, fusion, clinical, and risk-head parameters.",
+            "parameter_breakdown": {
+              "active_params": 331686,
+              "fusion_head_params": 74849,
+              "interaction_params": 18688,
+              "projector_params": 150624,
+              "registered_unused_params": 0,
+              "representation_params": 106213,
+              "total_params": 331686
+            },
+            "raw_global_vector_dim": 96,
+            "same_seed_byte_identical": true,
+            "uses_six_signature_metadata": false
+          },
+          "film_correctness": {
+            "all_film_variants": {
+              "F3": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2783336043357849,
+                  "film_o.net.2.weight": 0.6150872707366943
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F4": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2783336043357849,
+                  "film_o.net.2.weight": 0.6150872707366943,
+                  "film_p.net.2.bias": 0.24929179251194,
+                  "film_p.net.2.weight": 0.5267103910446167
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              },
+              "F5": {
+                "final_gradients_finite_nonzero": true,
+                "final_layer_gradient_norms": {
+                  "film_o.net.2.bias": 0.2783336043357849,
+                  "film_o.net.2.weight": 0.6150872707366943
+                },
+                "same_seed_byte_identical": true,
+                "upstream_o_gradient_finite": true,
+                "upstream_p_gradient_finite": true
+              }
+            },
+            "film_final_layer_gradient_norms": {
+              "film_o.net.2.bias": 0.2783336043357849,
+              "film_o.net.2.weight": 0.6150872707366943
+            },
+            "gradient_finite_and_nonzero": true,
+            "identity_pass": true,
+            "same_seed_byte_identical": true,
+            "status": "PASS",
+            "zero_init_identity_max_abs": {
+              "F3_path": 0.0,
+              "F4_omic": 0.0,
+              "F4_path": 0.0
+            },
+            "zero_init_threshold": 1e-07
+          },
+          "outer_fold": 5,
+          "seed": 20260930,
+          "shared_components": [
+            "ABMIL patch projection",
+            "ABMIL attention",
+            "SixSignatureEncoder",
+            "omic Transformer",
+            "omic GatedAttentionPool",
+            "omic_rho",
+            "clinical encoder",
+            "late fusion",
+            "clinical gate",
+            "RiskHead"
+          ],
+          "shared_upstream_mismatches": {
+            "F2": [],
+            "F3": [],
+            "F4": []
+          },
+          "status": "PASS"
+        }
+      ],
+      "status": "PASS"
+    }
+  ]
+}

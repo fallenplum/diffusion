@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "workers": [
+    {
+      "different_seeds_change_initialization": {
+        "B0": true,
+        "C0": true
+      },
+      "same_seed_fold_reproducible": {
+        "B0": true,
+        "C0": true
+      },
+      "seed_rule": "deterministic_hash(method, seed, fold)",
+      "status": "PASS"
+    },
+    {
+      "different_seeds_change_initialization": {
+        "B0": true,
+        "C0": true
+      },
+      "same_seed_fold_reproducible": {
+        "B0": true,
+        "C0": true
+      },
+      "seed_rule": "deterministic_hash(method, seed, fold)",
+      "status": "PASS"
+    },
+    {
+      "different_seeds_change_initialization": {
+        "B0": true,
+        "C0": true
+      },
+      "same_seed_fold_reproducible": {
+        "B0": true,
+        "C0": true
+      },
+      "seed_rule": "deterministic_hash(method, seed, fold)",
+      "status": "PASS"
+    }
+  ]
+}

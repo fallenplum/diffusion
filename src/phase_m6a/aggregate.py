@@ -153,7 +153,8 @@ def aggregate(worker_dirs: list[Path], output: Path, repo_root: Path) -> None:
     write_json(output / "shuffled_pathway_audit.json", {"phase": "M6A", "folds": [shuffle_by_fold[k] for k in sorted(shuffle_by_fold)], "outcome_blind": True, "size_matched": True})
     init_status = all(x.get("status") == "PASS" for x in inits)
     control_status = all(x.get("status") == "PASS" for x in controls)
-    write_json(output / "initialization_audit.json", {"status": "PASS" if init_status and control_status else "FAIL", "workers": inits, "control_workers": controls, "scope": "G0/G1 non-omics; G3/G4 all trainable; G3/G5 omic and downstream; G3/G4 parameter equality", "control_scope": "B0/C0 same-seed reproducibility and different-seed divergence"})
+    strict_full = next((x.get("strict_full_matrix") for x in inits if x.get("strict_full_matrix")), None)
+    write_json(output / "initialization_audit.json", {"status": "PASS" if init_status and control_status else "FAIL", "workers": inits, "control_workers": controls, "strict_full_matrix": strict_full, "scope": "G0/G1 non-omics; G3/G4 all trainable; G3/G5 omic and downstream; G3/G4 parameter equality", "control_scope": "B0/C0 same-seed reproducibility and different-seed divergence"})
 
     summary = {(r["candidate"], r["baseline"]): r for r in paired if r["row_type"] == "summary"}
     main_map = {r["method"]: r for r in main}

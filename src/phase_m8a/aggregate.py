@@ -117,6 +117,11 @@ def main(args):
         for k in ["seed","outer_fold","n_test","events_test","params"]: r[k]=int(r[k])
         for k in ["harrell_c","uno_c","uno_numerator","uno_denominator"]: r[k]=float(r[k])
     atomic_csv(out/"fold_metrics.csv",fold_rows); atomic_csv(out/"seed_metrics.csv",seed_rows); atomic_csv(out/"compute_profile.csv",profiles); atomic_csv(out/"film_modulation_diagnostics.csv",films)
+    main_rows=[]
+    for v in VARIANTS:
+        z=[r for r in fold_rows if r["variant"]==v]; h=np.asarray([r["harrell_c"] for r in z],float); u=np.asarray([r["uno_c"] for r in z],float)
+        main_rows.append({"variant":v,"n_cells":len(z),"n_seeds":len(set(r["seed"] for r in z)),"n_outer_folds":len(set(r["outer_fold"] for r in z)),"mean_harrell_c":float(np.nanmean(h)),"std_harrell_c":float(np.nanstd(h,ddof=1)),"mean_uno_c":float(np.nanmean(u)),"std_uno_c":float(np.nanstd(u,ddof=1)),"status":"complete"})
+    atomic_csv(out/"main_metrics.csv",main_rows)
     deltas=delta_rows(fold_rows); atomic_csv(out/"paired_deltas.csv",deltas); atomic_csv(out/"robust_delta_diagnostics.csv",robust(deltas))
     bootstrap(raw,workers,out)
     pool=np.load(Path(args.path_runtime)/"path_tokens_train_pool.npy",mmap_mode="r"); tie=json.loads((out/"cox_tie_audit.json").read_text()) if (out/"cox_tie_audit.json").exists() else {}; cox=json.loads((out/"cox_grouped_breslow_audit.json").read_text()) if (out/"cox_grouped_breslow_audit.json").exists() else {}

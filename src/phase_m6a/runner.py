@@ -70,7 +70,7 @@ def _tensor_batch(arrays: M6AFoldArrays, provider: PathTokenProvider, indices: n
 
 def _make_model(variant: str, arrays: M6AFoldArrays, centers: np.ndarray, seed: int, fold: int) -> torch.nn.Module:
     set_seed(seed + fold)
-    widths = arrays.mcat_widths if variant in {"G0", "G1"} else _groups(arrays, variant)[1]
+    widths = arrays.mcat_widths if variant in {"G0", "G1", "B0", "C0"} else _groups(arrays, variant)[1]
     return build_model(variant, arrays.clinical.shape[1], tuple(widths), centers, seed, fold)
 
 

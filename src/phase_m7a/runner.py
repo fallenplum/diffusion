@@ -16,7 +16,7 @@ from sklearn.model_selection import StratifiedShuffleSplit
 from src.phase_m2.common import Timer, aggregate_uno, atomic_csv, atomic_json, count_parameters, cox_loss, gpu_memory_gb, harrell_c, set_seed, stable_int, uno_c_index
 from src.phase_m2.runner import PathTokenProvider
 from .data import FoldArrays, RawInputs, load_raw_inputs, prepare_path_cache, preprocess_fold
-from .models import M7AModel, build_model
+from .models import DIM, M7AModel, build_model
 
 VARIANTS = ("F0", "F1", "F2", "F3", "F4", "F5", "B0", "C0")
 MCAT_VARIANTS = ("F0", "F1", "F2", "F3", "F4")

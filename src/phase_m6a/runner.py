@@ -312,17 +312,17 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
             arrays = arrays_cache[fold]; centers = proto_cache[fold][0]; provider = PathTokenProvider(train_pool=train_pool, deterministic=deterministic, train_seed=seed, k=1024)
             if cell in state.get("completed", []) and (cells / f"{stem}.json").exists() and (cells / f"{stem}.npy").exists():
                 payload = json.loads((cells / f"{stem}.json").read_text()); row, profile, pred = payload["row"], payload["profile"], np.load(cells / f"{stem}.npy")
+                pathway_rows.extend(payload.get("pathway_rows", [])); perm_rows.extend(payload.get("perm_rows", []))
             else:
                 try:
                     pred, profile, model = _fit_fold(variant, raw, arrays, provider, centers, fold, seed, device, args.max_epochs, args.patience, args.batch_size)
                     train_idx = np.flatnonzero(raw.outer_folds != fold); uno, num, den = uno_c_index(raw.dss_time[test_idx], raw.dss_event[test_idx], pred, raw.dss_time[train_idx], raw.dss_event[train_idx])
                     row = {"method": variant, "label": LABELS[variant], "seed": seed, "outer_fold": fold, "n_test": len(test_idx), "events_test": int(raw.dss_event[test_idx].sum()), "harrell_c": harrell_c(raw.dss_time[test_idx], raw.dss_event[test_idx], pred), "uno_c": uno, "uno_numerator": num, "uno_denominator": den, "params": profile["total_params"], "status": "completed"}
                     np.save(cells / f"{stem}.npy", pred)
-                    if variant in DIAG_VARIANTS:
-                        pathway_rows.extend(_pathway_diagnostics(model, arrays, provider, test_idx, device, args.batch_size, variant, seed, fold))
-                    if variant in PERM_VARIANTS:
-                        perm_rows.extend(_permutation_audit(model, arrays, provider, raw, test_idx, device, args.batch_size, variant, seed, fold))
-                    atomic_json(cells / f"{stem}.json", {"row": row, "profile": profile}); state.setdefault("completed", []).append(cell); atomic_json(state_path, state); del model; gc.collect()
+                    cell_pathway_rows = _pathway_diagnostics(model, arrays, provider, test_idx, device, args.batch_size, variant, seed, fold) if variant in DIAG_VARIANTS else []
+                    cell_perm_rows = _permutation_audit(model, arrays, provider, raw, test_idx, device, args.batch_size, variant, seed, fold) if variant in PERM_VARIANTS else []
+                    pathway_rows.extend(cell_pathway_rows); perm_rows.extend(cell_perm_rows)
+                    atomic_json(cells / f"{stem}.json", {"row": row, "profile": profile, "pathway_rows": cell_pathway_rows, "perm_rows": cell_perm_rows}); state.setdefault("completed", []).append(cell); atomic_json(state_path, state); del model; gc.collect()
                     if device.type == "cuda": torch.cuda.empty_cache()
                 except Exception as exc:
                     state.setdefault("failed", []).append({"cell": cell, "error": repr(exc)}); atomic_json(state_path, state); raise

@@ -1,0 +1,30 @@
+{
+  "cells_completed": 200,
+  "cells_expected": 200,
+  "dss_events": 65,
+  "dss_n": 512,
+  "execution_sha": "6f2ff5034fa64340f0328b278168e376d787b8da",
+  "grouped_breslow_used": true,
+  "no_leakage": true,
+  "no_seed_hunting": true,
+  "phase": "M8A",
+  "remote_resolvable_execution_sha": true,
+  "seeds": [
+    20261007,
+    20261008,
+    20261009,
+    20261010,
+    20261011
+  ],
+  "status": "complete",
+  "variants": [
+    "C0",
+    "C1",
+    "C2",
+    "A0",
+    "A1",
+    "A2",
+    "M0",
+    "K0"
+  ]
+}

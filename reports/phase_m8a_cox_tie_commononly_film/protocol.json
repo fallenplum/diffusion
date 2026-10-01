@@ -1,0 +1,53 @@
+{
+  "C1_film": {
+    "input": "concat(g,n), 192-D",
+    "network": "192->32->192",
+    "zero_init": true
+  },
+  "C1_interaction_params": 12512,
+  "C2_residual": {
+    "hidden": 32,
+    "interaction_params": 12416,
+    "network": "288->32->96"
+  },
+  "batch_size": 16,
+  "branch": "codex/phase-m8a-cox-tie-commononly-film",
+  "cox": "grouped Breslow",
+  "dss_events": 65,
+  "formal_comparisons": [
+    "C1_vs_C0",
+    "C1_vs_C2",
+    "A1_vs_A0",
+    "A1_vs_A2",
+    "C1_vs_M0",
+    "C1_vs_K0",
+    "C0_vs_M0"
+  ],
+  "lr": 0.0003,
+  "max_epochs": 25,
+  "n_patients": 512,
+  "optimizer": "AdamW",
+  "outer_folds": 5,
+  "pathology": "UNI2-h",
+  "pathology_K": 1024,
+  "patience": 5,
+  "phase": "M8A",
+  "seeds": [
+    20261007,
+    20261008,
+    20261009,
+    20261010,
+    20261011
+  ],
+  "variants": [
+    "C0",
+    "C1",
+    "C2",
+    "A0",
+    "A1",
+    "A2",
+    "M0",
+    "K0"
+  ],
+  "weight_decay": 0.0001
+}

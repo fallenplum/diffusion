@@ -1,0 +1,42 @@
+{
+  "finite_difference_max_abs_error": 1.97425298331666e-10,
+  "implementation": "src.phase_m8a.survival.cox_loss_breslow_grouped",
+  "manual_tied_cases": [
+    {
+      "abs_diff": 0.0,
+      "loss": 1.3030019824788408,
+      "manual": 1.3030019824788408,
+      "name": "two_events"
+    },
+    {
+      "abs_diff": 0.0,
+      "loss": 1.7487905314092427,
+      "manual": 1.7487905314092427,
+      "name": "three_events"
+    },
+    {
+      "abs_diff": 0.0,
+      "loss": 1.1580086174393966,
+      "manual": 1.1580086174393966,
+      "name": "event_censor_same"
+    }
+  ],
+  "no_tie_gradient_max_abs_diff": 4.163336342344337e-17,
+  "no_tie_loss_abs_diff": 0.0,
+  "real_endpoint": {
+    "gradient_max_abs_difference": 0.00031630347859122,
+    "grouped_breslow_loss": 6.108100319923379,
+    "grouped_gradient_norm": 0.021680768420157513,
+    "historical_gradient_norm": 0.021733535813307607,
+    "historical_loss": 6.106229629328008,
+    "loss_difference": 0.0018706905953704833,
+    "seed": 8102026
+  },
+  "status": "PASS",
+  "thresholds": {
+    "finite_difference_max_abs_error_lt": 2e-05,
+    "manual_tie_loss_abs_diff_lt": 1e-08,
+    "no_tie_gradient_max_abs_diff_lt": 1e-07,
+    "no_tie_loss_abs_diff_lt": 1e-08
+  }
+}

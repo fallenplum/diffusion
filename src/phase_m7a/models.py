@@ -101,7 +101,7 @@ class M7ARepresentation(nn.Module):
         path, path_weights = self.abmil(pathology)
         if self.raw_omics:
             assert self.raw_omic is not None
-            omic = self.raw_omic(rna, cna).unsqueeze(1)
+            omic = self.raw_omic(rna, cna)
         else:
             assert self.six_encoder is not None
             omic = self.six_encoder(groups)

@@ -35,13 +35,14 @@ def delta_rows(fold_rows):
 
 def bootstrap(raw, workers, out):
     rows=[]; rng=np.random.default_rng(8102026)
+    pred_cache={(v,s,f):load_predictions(workers,v,s,f) for v in ["C0","C1","C2","A1","A0","A2"] for s in SEEDS for f in range(1,6)}
     for a,b in [("C1","C0"),("C1","C2"),("A1","A0"),("A1","A2")]:
         for seed in SEEDS:
             vals_h=[]; vals_u=[]
             for rep in range(2000):
                 dh=[]; du=[]
                 for fold in range(1,6):
-                    idx=np.flatnonzero(raw.outer_folds==fold); samp=rng.choice(len(idx),size=len(idx),replace=True); ids=idx[samp]; pa=load_predictions(workers,a,seed,fold)[samp]; pb=load_predictions(workers,b,seed,fold)[samp]; train=np.flatnonzero(raw.outer_folds!=fold); uh,_,_=uno_c_index(raw.dss_time[ids],raw.dss_event[ids],pa,raw.dss_time[train],raw.dss_event[train]); ub,_,_=uno_c_index(raw.dss_time[ids],raw.dss_event[ids],pb,raw.dss_time[train],raw.dss_event[train]); dh.append(cfast(raw.dss_time[ids],raw.dss_event[ids],pa)-cfast(raw.dss_time[ids],raw.dss_event[ids],pb)); du.append(uh-ub)
+                    idx=np.flatnonzero(raw.outer_folds==fold); samp=rng.choice(len(idx),size=len(idx),replace=True); ids=idx[samp]; pa=pred_cache[(a,seed,fold)][samp]; pb=pred_cache[(b,seed,fold)][samp]; train=np.flatnonzero(raw.outer_folds!=fold); uh,_,_=uno_c_index(raw.dss_time[ids],raw.dss_event[ids],pa,raw.dss_time[train],raw.dss_event[train]); ub,_,_=uno_c_index(raw.dss_time[ids],raw.dss_event[ids],pb,raw.dss_time[train],raw.dss_event[train]); dh.append(cfast(raw.dss_time[ids],raw.dss_event[ids],pa)-cfast(raw.dss_time[ids],raw.dss_event[ids],pb)); du.append(uh-ub)
                 vals_h.append(float(np.nanmean(dh))); vals_u.append(float(np.nanmean(du)))
             h=np.asarray(vals_h); u=np.asarray(vals_u); rows.append({"comparison":f"{a}_vs_{b}","seed":seed,"n_reps":2000,"mean_delta_harrell":float(h.mean()),"ci95_low_harrell":float(np.nanquantile(h,.025)),"ci95_high_harrell":float(np.nanquantile(h,.975)),"mean_delta_uno":float(u.mean()),"ci95_low_uno":float(np.nanquantile(u,.025)),"ci95_high_uno":float(np.nanquantile(u,.975)),"resampling":"within each outer test fold; paired candidate/control; five-fold mean","status":"completed"})
     atomic_csv(out/"fold_stratified_paired_bootstrap.csv",rows)

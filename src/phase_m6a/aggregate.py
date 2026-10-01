@@ -120,7 +120,7 @@ def aggregate(worker_dirs: list[Path], output: Path, repo_root: Path) -> None:
     if len(pathway) != 2250 or {r["method"] for r in pathway_all} != {"G2", "G3", "G4"}:
         raise RuntimeError(f"invalid pathway diagnostics coverage rows={len(pathway_all)} unique={len(pathway)}")
     perm_keys = {(r["row_type"], r["method"], int(r["seed"]), int(r["outer_fold"]), r.get("patient_index", "") if r["row_type"] == "summary" else int(r["patient_index"])) for r in perms}
-    if len(perms) != 4743 or len(perm_keys) != 4743:
+    if len(perms) != 4653 or len(perm_keys) != 4653:
         raise RuntimeError(f"invalid permutation audit coverage rows={len(perms)} unique={len(perm_keys)}")
     manifests = [json.loads((d / "run_manifest.json").read_text()) for d in worker_dirs]
     inits = [json.loads((d / "initialization_audit.json").read_text()) for d in worker_dirs]

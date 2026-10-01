@@ -2,7 +2,7 @@ from __future__ import annotations
 import argparse,csv,hashlib,json,subprocess,time
 from pathlib import Path
 import numpy as np
-from src.phase_m2.common import harrell_c,uno_c_index
+from src.phase_m2.common import censoring_survival,harrell_c,lookup_censor_survival,uno_c_index
 from src.phase_m2.data import load_raw_inputs
 VARIANTS=("F0","A0","F1","F2","F3","F6","B0"); SEEDS=(20261002,20261003,20261004,20261005,20261006)
 LABELS={"F0":"MCAT-Original","A0":"AdaptivePath-SemanticConcat","F1":"ABMIL-SemanticConcat","F2":"ABMIL-MatchedResidualMLP","F3":"ABMIL-OmicToPath-FiLM","F6":"ABMIL-ShuffledSixSignature-FiLM","B0":"CommonOnly-OriginalFusion"}
@@ -40,19 +40,34 @@ def load_oof(worker_dirs,raw):
                 p=np.full(len(raw.patient_ids),np.nan)
                 for r in rows:
                     if int(r["seed"])==seed and r["method"]==v:
-                        stem=f"{v}|{seed}|{int(r['outer_fold'])}".replace("|",""); idx=np.flatnonzero(raw.outer_folds==int(r["outer_fold"])); p[idx]=np.load(d.parent.parent/"dummy.npy") if False else np.load(d/"cells"/f"{stem}.npy")
+                        stem=f"{v}|{seed}|{int(r['outer_fold'])}".replace("|",""); idx=np.flatnonzero(raw.outer_folds==int(r["outer_fold"])); p[idx]=np.load(Path(str(d).replace("phase_m7r_workers","diffusion_runtime_m7r"))/"cells"/f"{stem}.npy")
                 out[(v,seed)]=p
     return out
+def _fast_bootstrap(a,b,t,e,train_t,train_e,reps,rng):
+    """Vectorized paired bootstrap, algebraically identical to common.py metrics."""
+    n=len(t); comparable=(t[None,:]>t[:,None]).astype(np.float64)
+    km_t,km_g=censoring_survival(train_t,train_e); g=lookup_censor_survival(t,km_t,km_g)
+    valid=(e==1)&(g>1e-8); iw=np.where(valid,1.0/(g*g),0.0)
+    def one(risk, uno):
+        pair=((risk[:,None]>risk[None,:]).astype(np.float64)+0.5*(risk[:,None]==risk[None,:]))*comparable
+        vals=[]
+        for start in range(0,reps,100):
+            m=min(100,reps-start); w=rng.multinomial(n,np.full(n,1.0/n),size=m).astype(np.float64)
+            weights=w*(iw if uno else e)
+            den=np.einsum('bi,ij,bj->b',weights,comparable,w)
+            num=np.einsum('bi,ij,bj->b',weights,pair,w)
+            vals.extend(np.divide(num,den,out=np.full(m,np.nan),where=den>0))
+        return np.asarray(vals)
+    h1=one(a,False); h0=one(b,False); u1=one(a,True); u0=one(b,True)
+    return h1-h0,u1-u0
+
 def paired_bootstrap(worker_dirs,raw,reps=2000):
     preds=load_oof(worker_dirs,raw);out=[]
     for cand,base,pid in PAIRS:
         for seed in SEEDS:
             a=preds[(cand,seed)];b=preds[(base,seed)]; rng=np.random.default_rng(7102026+seed+sum(map(ord,pid))); hs=[];us=[]; n=len(raw.patient_ids)
-            for _ in range(reps):
-                ix=rng.integers(0,n,n); t=raw.dss_time[ix];e=raw.dss_event[ix]; aa=a[ix];bb=b[ix]
-                h1=harrell_c(t,e,aa);h0=harrell_c(t,e,bb);u1,_,_=uno_c_index(t,e,aa,raw.dss_time,raw.dss_event);u0,_,_=uno_c_index(t,e,bb,raw.dss_time,raw.dss_event)
-                if np.isfinite(h1-h0) and np.isfinite(u1-u0):hs.append(h1-h0);us.append(u1-u0)
-            hs=np.asarray(hs);us=np.asarray(us);out.append({"comparison":pid,"candidate":cand,"baseline":base,"seed":seed,"bootstrap_replicates_requested":reps,"bootstrap_replicates_valid":len(hs),"mean_delta_harrell":float(np.mean(hs)),"harrell_ci_lower":float(np.quantile(hs,.025)),"harrell_ci_upper":float(np.quantile(hs,.975)),"mean_delta_uno":float(np.mean(us)),"uno_ci_lower":float(np.quantile(us,.025)),"uno_ci_upper":float(np.quantile(us,.975)),"censoring_estimator":"full-cohort fixed estimator, same for candidate and baseline; uncertainty only"})
+            hs,us=_fast_bootstrap(a,b,raw.dss_time,raw.dss_event,raw.dss_time,raw.dss_event,reps,rng); hs=hs[np.isfinite(hs)]; us=us[np.isfinite(us)]
+            out.append({"comparison":pid,"candidate":cand,"baseline":base,"seed":seed,"bootstrap_replicates_requested":reps,"bootstrap_replicates_valid":min(len(hs),len(us)),"mean_delta_harrell":float(np.mean(hs)),"harrell_ci_lower":float(np.quantile(hs,.025)),"harrell_ci_upper":float(np.quantile(hs,.975)),"mean_delta_uno":float(np.mean(us)),"uno_ci_lower":float(np.quantile(us,.025)),"uno_ci_upper":float(np.quantile(us,.975)),"censoring_estimator":"full-cohort fixed estimator, same for candidate and baseline; uncertainty only"})
     return out
 def aggregate(worker_dirs,output,repo_root,data_root):
     output.mkdir(parents=True,exist_ok=True)
@@ -87,7 +102,7 @@ def aggregate(worker_dirs,output,repo_root,data_root):
     else:decision="D"
     def fmt(x):return "NA" if not np.isfinite(num(x)) else f"{num(x):.4f}"
     def sl(pid):
-        r=summary[pid];return f"ΔH={fmt(r['mean_delta_harrell'])}, ΔU={fmt(r['mean_delta_uno'])}, seed-positive H/U={sum(int(sm[(pid,s)]['mean_delta_harrell'])>0 for s in SEEDS)}/{sum(int(sm[(pid,s)]['mean_delta_uno'])>0 for s in SEEDS)}, pooled 25-cell direction={r['pooled_25_cell_direction_consistent']}"
+        r=summary[pid];return f"ΔH={fmt(r['mean_delta_harrell'])}, ΔU={fmt(r['mean_delta_uno'])}, seed-positive H/U={sum(float(sm[(pid,s)]['mean_delta_harrell'])>0 for s in SEEDS)}/{sum(float(sm[(pid,s)]['mean_delta_uno'])>0 for s in SEEDS)}, pooled 25-cell direction={r['pooled_25_cell_direction_consistent']}"
     lines=["# Phase M7R Results","","## 1. Executive conclusion","",f"正式完成 7×5×5={len(folds)} 个 cells。主要观察：F3 vs F1（P2）为 {sl('P2')}；F3 vs B0（P6）为 {sl('P6')}。Decision {decision}。下述结论区分点估计、seed-level 证据和 patient-level bootstrap。","","## 2. Protocol integrity","",f"N={len(raw.patient_ids)}，DSS events={int(raw.dss_event.sum())}，fixed outer folds=5，fresh seeds={list(SEEDS)}，K=1024，formal cells={len(folds)}。Cox={cox_audit['status']}；initialization={init['status']}；FiLM={film_audit['status']}；permutation={perm_pass}。","","## 3. Main metrics","","| method | Harrell mean±SD | Uno mean±SD | worst Harrell | worst Uno |","|---|---:|---:|---:|---:|"]
     for r in main:lines.append(f"| {r['method']} {r['label']} | {r['harrell_mean']:.4f} ± {r['harrell_std']:.4f} | {r['uno_mean']:.4f} ± {r['uno_std']:.4f} | {r['harrell_worst']:.4f} | {r['uno_worst']:.4f} |")
     lines += ["","## 4. Seed-level replication","","每个 comparison 按 5 个 seed 的五折均值解释；25 个 cells 不当作 25 个独立实验。"]
@@ -103,3 +118,5 @@ def aggregate(worker_dirs,output,repo_root,data_root):
 def main():
     p=argparse.ArgumentParser();p.add_argument("--worker-reports",nargs="+",type=Path,required=True);p.add_argument("--output",type=Path,required=True);p.add_argument("--repo-root",type=Path,required=True);p.add_argument("--data-root",type=Path,required=True);a=p.parse_args();aggregate(a.worker_reports,a.output,a.repo_root,a.data_root)
 if __name__=="__main__":main()
+
+

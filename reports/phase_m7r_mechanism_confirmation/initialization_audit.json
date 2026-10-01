@@ -1,0 +1,136 @@
+{
+  "expected_shared_audit": "F1/F2/F3/F6 byte-identical shared modules; F2/F3 interaction difference <=2%; F3/F6 active params identical",
+  "status": "PASS",
+  "workers": [
+    {
+      "F2_F3_match_within_2pct": true,
+      "F2_interaction_params": 18592,
+      "F3_F6_active_params_identical": true,
+      "F3_interaction_params": 18688,
+      "outer_fold": 1,
+      "relative_interaction_difference": 0.005136986301369863,
+      "seed": 20261002,
+      "shared_components": [
+        "ABMIL patch projection/attention",
+        "SixSignatureEncoder",
+        "omic Transformer",
+        "omic gated pool",
+        "omic_rho",
+        "clinical encoder",
+        "late fusion",
+        "clinical gate",
+        "RiskHead"
+      ],
+      "shared_upstream_mismatches": {
+        "F2": [],
+        "F3": [],
+        "F6": []
+      },
+      "status": "PASS"
+    },
+    {
+      "F2_F3_match_within_2pct": true,
+      "F2_interaction_params": 18592,
+      "F3_F6_active_params_identical": true,
+      "F3_interaction_params": 18688,
+      "outer_fold": 1,
+      "relative_interaction_difference": 0.005136986301369863,
+      "seed": 20261003,
+      "shared_components": [
+        "ABMIL patch projection/attention",
+        "SixSignatureEncoder",
+        "omic Transformer",
+        "omic gated pool",
+        "omic_rho",
+        "clinical encoder",
+        "late fusion",
+        "clinical gate",
+        "RiskHead"
+      ],
+      "shared_upstream_mismatches": {
+        "F2": [],
+        "F3": [],
+        "F6": []
+      },
+      "status": "PASS"
+    },
+    {
+      "F2_F3_match_within_2pct": true,
+      "F2_interaction_params": 18592,
+      "F3_F6_active_params_identical": true,
+      "F3_interaction_params": 18688,
+      "outer_fold": 1,
+      "relative_interaction_difference": 0.005136986301369863,
+      "seed": 20261004,
+      "shared_components": [
+        "ABMIL patch projection/attention",
+        "SixSignatureEncoder",
+        "omic Transformer",
+        "omic gated pool",
+        "omic_rho",
+        "clinical encoder",
+        "late fusion",
+        "clinical gate",
+        "RiskHead"
+      ],
+      "shared_upstream_mismatches": {
+        "F2": [],
+        "F3": [],
+        "F6": []
+      },
+      "status": "PASS"
+    },
+    {
+      "F2_F3_match_within_2pct": true,
+      "F2_interaction_params": 18592,
+      "F3_F6_active_params_identical": true,
+      "F3_interaction_params": 18688,
+      "outer_fold": 1,
+      "relative_interaction_difference": 0.005136986301369863,
+      "seed": 20261005,
+      "shared_components": [
+        "ABMIL patch projection/attention",
+        "SixSignatureEncoder",
+        "omic Transformer",
+        "omic gated pool",
+        "omic_rho",
+        "clinical encoder",
+        "late fusion",
+        "clinical gate",
+        "RiskHead"
+      ],
+      "shared_upstream_mismatches": {
+        "F2": [],
+        "F3": [],
+        "F6": []
+      },
+      "status": "PASS"
+    },
+    {
+      "F2_F3_match_within_2pct": true,
+      "F2_interaction_params": 18592,
+      "F3_F6_active_params_identical": true,
+      "F3_interaction_params": 18688,
+      "outer_fold": 1,
+      "relative_interaction_difference": 0.005136986301369863,
+      "seed": 20261006,
+      "shared_components": [
+        "ABMIL patch projection/attention",
+        "SixSignatureEncoder",
+        "omic Transformer",
+        "omic gated pool",
+        "omic_rho",
+        "clinical encoder",
+        "late fusion",
+        "clinical gate",
+        "RiskHead"
+      ],
+      "shared_upstream_mismatches": {
+        "F2": [],
+        "F3": [],
+        "F6": []
+      },
+      "status": "PASS"
+    }
+  ]
+}

@@ -10,6 +10,7 @@ from torch import nn
 from torch.nn import functional as F
 
 from src.phase_m2.mgct import GatedAttentionPool
+from src.phase_m2.mcat import SixSignatureEncoder
 from src.phase_m2.nn_blocks import ClinicalEncoder, RiskHead
 from src.phase_m3r2.models import ClinicalOnlyModel, SimpleFusionModel
 
@@ -29,8 +30,12 @@ class GroupedOmicEncoder(nn.Module):
             raise ValueError(f"invalid grouped widths for {mode}: {widths}")
         self.widths = tuple((int(r), int(c)) for r, c in widths)
         self.mode = mode
+        # The six-signature control is required to reuse the unchanged
+        # official MCAT encoder.  The generic encoder below is only used for
+        # the new 50-group RNA/RC token families.
+        self.six_encoder = SixSignatureEncoder(self.widths, dim) if mode == "six" else None
         self.group_networks = nn.ModuleList()
-        for rna_width, cna_width in self.widths:
+        for rna_width, cna_width in (self.widths if mode != "six" else ()):
             input_width = rna_width if mode == "rna" else rna_width + cna_width
             self.group_networks.append(
                 nn.Sequential(
@@ -44,6 +49,9 @@ class GroupedOmicEncoder(nn.Module):
             )
 
     def forward(self, groups: torch.Tensor) -> torch.Tensor:
+        if self.mode == "six":
+            assert self.six_encoder is not None
+            return self.six_encoder(groups)
         values = []
         for index, (rna_width, cna_width) in enumerate(self.widths):
             rna = groups[:, index, :rna_width, 0].float()

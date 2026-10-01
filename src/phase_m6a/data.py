@@ -140,7 +140,8 @@ def _group_audit_rows(
                 "cna_missing_symbols": int(max(0, ca.get("official_gene_count", 0) - ca.get("local_gene_count", 0))),
                 "rna_symbols_sha256": ra.get("selected_symbols_sha256", ""),
                 "cna_symbols_sha256": ca.get("selected_symbols_sha256", ""),
-                "zero_overlap_fail_closed": False,
+                "zero_overlap_fail_closed": True,
+                "zero_overlap_detected": bool(int(ra.get("local_gene_count", 0)) == 0 or int(ca.get("local_gene_count", 0)) == 0),
             }
         )
     return rows

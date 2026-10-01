@@ -1,0 +1,46 @@
+{
+  "all_three_fresh_seeds": true,
+  "cells_completed": 120,
+  "cells_expected": 120,
+  "control_initialization_audit_status": "PASS",
+  "execution_commit_roles": {
+    "G2_G3_G4_G5_B0_C0": "54df6b511cf0a31540e01e4dab45925cb59c3840",
+    "strict_G0_G1": "0f00aa361d4e17069c86bf85ac2e4aa34f570eed"
+  },
+  "execution_shas": [
+    "54df6b511cf0a31540e01e4dab45925cb59c3840",
+    "0f00aa361d4e17069c86bf85ac2e4aa34f570eed"
+  ],
+  "hallmark_semantics_supported": false,
+  "initialization_audit_status": "PASS",
+  "m5r_qk_sparse_backbone_frozen": false,
+  "no_leakage": true,
+  "no_seed_hunting": true,
+  "outcome_blind_shuffled_control": true,
+  "outer_train_only_preprocessing": true,
+  "outer_train_only_prototype_fitting": true,
+  "output_files": [
+    "RESULTS.md",
+    "cross_phase_prototype_reaggregation.csv",
+    "main_metrics.csv",
+    "fold_metrics.csv",
+    "seed_metrics.csv",
+    "paired_deltas.csv",
+    "compute_profile.csv",
+    "hallmark_group_audit.csv",
+    "shuffled_pathway_audit.json",
+    "pathway_attention_diagnostics.csv",
+    "permutation_invariance_audit.csv",
+    "initialization_audit.json",
+    "protocol.json",
+    "run_manifest.json"
+  ],
+  "pathway_cna_coupling_supported": false,
+  "pathway_coupled_multimodal_representation_candidate": false,
+  "permutation_audit_status": "PASS",
+  "phase": "M6A",
+  "remote_resolvable_execution_sha": true,
+  "repo_sha_at_aggregation": "c5317789ce24c7c9ecdbd851d7cd13db966ae3c5",
+  "report_sha256": "a723975f3307d091465abca1fdbc0bf05576fbcc7d7c79a0c890523f7c78d12e",
+  "status": "complete"
+}

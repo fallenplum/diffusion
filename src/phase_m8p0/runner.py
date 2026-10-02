@@ -30,14 +30,23 @@ def fit_anchor(clinical,times,events,train_idx,val_idx,seed,device,max_epochs=25
   else:wait+=1
   if wait>=patience:break
  del opt;return m,be,best
+def fit_anchor_fixed(clinical,times,events,train_idx,seed,device,epochs):
+ set_seed(seed);m=ClinicalOnlyModel(clinical.shape[1],variant_seed=500000+stable_int(f"m8p0-anchor:{seed}"));m.to(device);opt=torch.optim.AdamW(m.parameters(),lr=3e-4,weight_decay=1e-4)
+ for ep in range(max(1,int(epochs))):
+  m.train();r=m.encoder(torch.from_numpy(clinical[train_idx]).to(device).float());risk=m.head(r);loss=cox_loss_full(torch.tensor(times[train_idx],device=device),torch.tensor(events[train_idx],device=device,dtype=torch.float32),risk);opt.zero_grad();loss.backward();opt.step()
+ del opt;return m
 def crossfit_anchor(clinical,times,events,outer_train,outer_test,seed,fold,device):
  strata=np.asarray([str(int(events[i])) for i in outer_train]);split=StratifiedKFold(5,shuffle=True,random_state=8402026+fold);cf=np.full(len(outer_train),np.nan);rows=[]
  for k,(tr,va) in enumerate(split.split(outer_train,strata),1):
   m,ep,sc=fit_anchor(clinical,times,events,outer_train[tr],outer_train[va],8402026+fold+k,device);m.eval()
   with torch.no_grad():cf[va]=m.head(m.encoder(torch.from_numpy(clinical[outer_train[va]]).to(device).float())).cpu().numpy()
   rows.append({"seed":seed,"outer_fold":fold,"crossfit_subfold":k,"train_count":len(tr),"heldout_count":len(va),"selected_epoch":ep,"heldout_harrell":sc,"self_training":False})
- # full outer train refit with deterministic selected epoch
- m,ep,sc=fit_anchor(clinical,times,events,outer_train,outer_test,900000+seed+fold,device)
+ # Select anchor epoch only inside outer-train, then refit on all outer-train.
+ ref_strata=np.asarray([str(int(events[i])) for i in outer_train]);ref_split=StratifiedShuffleSplit(1,test_size=.15,random_state=900000+seed+fold)
+ try:ri,rv=next(ref_split.split(outer_train,ref_strata))
+ except ValueError:ri,rv=np.arange(max(1,len(outer_train)-len(outer_train)//7)),np.arange(max(1,len(outer_train)-len(outer_train)//7),len(outer_train))
+ _,ep,_=fit_anchor(clinical,times,events,outer_train[ri],outer_train[rv],900000+seed+fold,device)
+ m=fit_anchor_fixed(clinical,times,events,outer_train,900000+seed+fold,device,ep)
  with torch.no_grad():test=m.head(m.encoder(torch.from_numpy(clinical[outer_test]).to(device).float())).cpu().numpy()
  del m;gc.collect();return cf,test,rows
 def inner_split(raw,fold,seed):

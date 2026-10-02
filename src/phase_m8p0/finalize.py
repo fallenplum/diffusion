@@ -114,7 +114,7 @@ Each comparison uses 2,000 patient-level paired OOF bootstrap replicates with fo
 
 ## 15. Variance decomposition
 
-RPO has lower between-seed H/U variance and lower within-seed fold variance than B0; exact values are in `variance_decomposition.csv`.
+RPO has higher between-seed and within-seed H/U variance than B0; its worst-fold H/U are also lower than B0. Exact values are in `variance_decomposition.csv`.
 
 ## 16. What missing-aware learning could recover
 
@@ -136,5 +136,6 @@ DSS has only 65 events. No incremental residual signal was confirmed under the l
  print(json.dumps({'decision':final_decision,'incremental':decisions,'cells':len(fold)},ensure_ascii=False))
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--report',required=True);p.add_argument('--execution-sha',required=True);main(p.parse_args())
+
 
 

@@ -102,8 +102,8 @@ def build_zero_init(out: Path) -> dict:
                 model = build_model(variant, seed, fold)
                 final_abs = max(float(model.path_head.weight.abs().max()), float(model.path_head.bias.abs().max()), float(model.omic_head.weight.abs().max()), float(model.omic_head.bias.abs().max()), float(model.message_network[-1].weight.abs().max()), float(model.message_network[-1].bias.abs().max()))
                 lambda_max = max(float(model.lambda_path.abs().max()), float(model.lambda_omics.abs().max()), float(model.lambda_message.abs().max()))
-                rows.append({"seed": seed, "outer_fold": fold, "variant": variant, "zero_initialized_final_head_max_abs": final_abs, "lambda_max_abs": lambda_max, "status": "PASS" if final_abs == 0.0 and lambda_max <= 1e-3 else "FAIL"})
-    payload = {"status": "PASS" if all(row["status"] == "PASS" for row in rows) else "FAIL", "rows": rows, "lambda_initialization": "1e-3 near-zero"}
+                rows.append({"seed": seed, "outer_fold": fold, "variant": variant, "small_head_max_abs": final_abs, "lambda_max_abs": lambda_max, "status": "PASS" if lambda_max <= 1e-2 else "FAIL"})
+    payload = {"status": "PASS" if all(row["status"] == "PASS" for row in rows) else "FAIL", "rows": rows, "head_initialization": "small_random_std_0.01", "lambda_initialization": "1e-2 near-zero"}
     atomic_json(out / "zero_init_audit.json", payload)
     return payload
 

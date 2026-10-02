@@ -60,7 +60,7 @@ Each comparison uses 2,000 patient-level paired OOF bootstrap replicates with fo
 
 ## 15. Variance decomposition
 
-RPO has lower between-seed H/U variance and lower within-seed fold variance than B0; exact values are in `variance_decomposition.csv`.
+RPO has higher between-seed and within-seed H/U variance than B0; its worst-fold H/U are also lower than B0. Exact values are in `variance_decomposition.csv`.
 
 ## 16. What missing-aware learning could recover
 

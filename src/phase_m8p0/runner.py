@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 import argparse,gc,json,os,subprocess,time
 from pathlib import Path
 import numpy as np,torch
@@ -90,7 +90,7 @@ def fit_residual(v,raw,arr,provider,fold,seed,device,args,cf,testoff,auditrows):
  test=np.flatnonzero(raw.outer_folds==fold);m.eval();pred=[];drows=[]
  with torch.no_grad():
   for b in batches(test,args.batch_size):
-   off=torch.tensor(testoff[np.searchsorted(test,b)],device=device,dtype=torch.float32);path,rna,cna,clin=tensor_batch(arr,provider,b,device,0,v,False);risk,delta=m(path,rna,cna,clin,off);pred.append(risk.cpu().numpy());dp,do=m.delta_parts(path,rna,cna,clin);drows.extend({"variant":v,"seed":seed,"outer_fold":fold,"patient_index":int(i),"delta_pathology":float(dp[j]),"delta_omics":float(do[j])} for j,i in enumerate(b))
+   off=torch.tensor(testoff[np.searchsorted(test,b)],device=device,dtype=torch.float32);path,rna,cna,clin=tensor_batch(arr,provider,b,device,0,v,False);risk,delta=m(path,rna,cna,clin,off);pred.append(risk.cpu().numpy());dp,do=m.delta_parts(path,rna,cna,clin);drows.extend({"variant":v,"seed":seed,"outer_fold":fold,"patient_index":int(i),"clinical_offset":float(off[j]),"delta_pathology":float(dp[j]),"delta_omics":float(do[j])} for j,i in enumerate(b))
  return np.concatenate(pred),{"variant":v,"seed":seed,"outer_fold":fold,"params":count_parameters(m),"best_epoch":be,"inner_best_harrell":best,"status":"completed"},auditrows,drows
 def run(args):
  repo=Path(args.repo_root);root=Path(args.data_root);runtime=Path(args.runtime);worker=Path(args.worker);worker.mkdir(parents=True,exist_ok=True);(worker/"cells").mkdir(exist_ok=True);device=torch.device("cuda" if torch.cuda.is_available() and not args.cpu else "cpu");raw=load_raw_inputs(root,repo);det=np.load(runtime/"path_tokens_deterministic.npy",mmap_mode="r");pool=np.load(runtime/"path_tokens_train_pool.npy",mmap_mode="r");seed=int(args.seed);foldrows=[];profiles=[];audits=[];diag=[];arrays={}
@@ -104,3 +104,4 @@ def run(args):
  atomic_csv(worker/"fold_metrics.csv",foldrows);atomic_csv(worker/"compute_profile.csv",profiles);atomic_csv(worker/"clinical_anchor_crossfit_audit.csv",audits);atomic_csv(worker/"residual_diagnostics.csv",diag);atomic_json(worker/"worker_manifest.json",{"seed":seed,"variants":args.variants,"cells_completed":len(foldrows),"execution_sha":git_sha(repo),"status":"complete"});print(json.dumps({"seed":seed,"cells":len(foldrows)},ensure_ascii=False))
 if __name__=="__main__":
  p=argparse.ArgumentParser();p.add_argument("--repo-root",required=True);p.add_argument("--data-root",required=True);p.add_argument("--runtime",required=True);p.add_argument("--worker",required=True);p.add_argument("--seed",required=True);p.add_argument("--variants",default=",".join(VARIANTS));p.add_argument("--max-epochs",type=int,default=25);p.add_argument("--patience",type=int,default=5);p.add_argument("--batch-size",type=int,default=16);p.add_argument("--cpu",action="store_true");run(p.parse_args())
+

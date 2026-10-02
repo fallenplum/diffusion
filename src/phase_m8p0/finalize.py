@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 import argparse,csv,json
 from pathlib import Path
 import numpy as np
@@ -51,22 +51,22 @@ def main(args):
  mm={r['variant']:r for r in mainm};sdom=[r for r in deltas if r.get('status')=='seed_summary' and r.get('variant_a')=='C0-Full' and r.get('variant_b')=='C0-NoStage']
  top='; '.join(f"{r['endpoint']} {r['pattern']}: N={r['N']}, events={r['events']}" for r in read(out/'modality_pattern_census.csv')[:8])
  def block(v):
-  s,ss,bb,ph,pu=details[v];ci='; '.join(f"{r['seed']}: H[{fmt(r['ci95_low_harrell'])},{fmt(r['ci95_high_harrell'])}], U[{fmt(r['ci95_low_uno'])},{fmt(r['ci95_high_uno'])}]" for r in bb);return f"ΔH={fmt(s['mean_delta_harrell'])}, ΔU={fmt(s['mean_delta_uno'])}; positive seeds H={ph}/5, U={pu}/5; bootstrap 95% CI by seed: {ci}; **{decisions[v]}**"
+  s,ss,bb,ph,pu=details[v];ci='; '.join(f"{r['seed']}: H[{fmt(r['ci95_low_harrell'])},{fmt(r['ci95_high_harrell'])}], U[{fmt(r['ci95_low_uno'])},{fmt(r['ci95_high_uno'])}]" for r in bb);return f"螖H={fmt(s['mean_delta_harrell'])}, 螖U={fmt(s['mean_delta_uno'])}; positive seeds H={ph}/5, U={pu}/5; bootstrap 95% CI by seed: {ci}; **{decisions[v]}**"
  text=f'''# Phase M8-P0 Results
 
 ## 1. Executive conclusion
 
-The locked M8-P0 audit completed 150/150 cells. Canonical incomplete DSS-labelled patients add **{census['PotentialPatientGain_DSS']} patients and {census['PotentialEventGain_DSS']} observed events**. The corrected OOF audit supports a conditional residual signal, while no additional DSS events are recoverable from canonical incomplete cases.
+The locked M8-P0 audit completed 150/150 cells. Canonical incomplete DSS-labelled patients add **{census['PotentialPatientGain_DSS']} patients and {census['PotentialEventGain_DSS']} observed events**. The corrected OOF audit does not confirm a conditional residual signal. Canonical incomplete cases add four observed DSS events, so the missing-aware question remains a cohort-coverage problem rather than evidence for a new fusion architecture.
 
 ## 2. Protocol integrity
 
 - DSS complete-case: 512 patients / 65 events; fixed five outer folds.
-- Seeds: 20261012–20261016; variants: C0-Full, C0-NoStage, B0, RP, RO, RPO.
+- Seeds: 20261012鈥?0261016; variants: C0-Full, C0-NoStage, B0, RP, RO, RPO.
 - Clinical anchors were cross-fitted per outer fold and shared across residual variants.
 
 ## 3. Full COAD/READ modality-availability census
 
-Canonical manifest: 555 patients. Current runtime lacks staged H5 files for 43 patients; these are runtime staging gaps, not canonical source missingness. Aggregate pattern counts: {top}.
+Canonical manifest: {census["canonical_patient_count"]} patients. Current runtime lacks staged H5 files for {census["runtime_staging_missing_pathology"]} patients; these are runtime staging gaps, not canonical source missingness. Aggregate pattern counts: {top}.
 
 ## 4. DSS complete-case vs incomplete-case event counts
 
@@ -78,7 +78,7 @@ Outcome-labelled PFS: {census['PFS_all_outcome_labeled']['N']} / {census['PFS_al
 
 ## 6. Clinical dominance audit
 
-C0-Full mean Δ over C0-NoStage is H={fmt(dom['mean_delta_harrell'])}, U={fmt(dom['mean_delta_uno'])}; seed directions are {sum(num(r['mean_delta_harrell'])>0 for r in sdom)}/5 for H and {sum(num(r['mean_delta_uno'])>0 for r in sdom)}/5 for U. The pattern is consistent with stage/TNM being a major component of Clinical prognostic signal, but the bootstrap intervals are not uniformly separated from zero.
+C0-Full mean 螖 over C0-NoStage is H={fmt(dom['mean_delta_harrell'])}, U={fmt(dom['mean_delta_uno'])}; seed directions are {sum(num(r['mean_delta_harrell'])>0 for r in sdom)}/5 for H and {sum(num(r['mean_delta_uno'])>0 for r in sdom)}/5 for U. The pattern is consistent with stage/TNM being a major component of Clinical prognostic signal, but the bootstrap intervals are not uniformly separated from zero.
 
 ## 7. Clinical cross-fit integrity
 
@@ -98,7 +98,7 @@ RPO vs C0-Full: {block('RPO')}.
 
 ## 11. Residual formulation vs CommonOnly
 
-RPO mean H/U={fmt(rpo_main['mean_harrell_c'])}/{fmt(rpo_main['mean_uno_c'])}; B0 mean H/U={fmt(b0_main['mean_harrell_c'])}/{fmt(b0_main['mean_uno_c'])}. ΔH={fmt(rb['mean_delta_harrell'])}, ΔU={fmt(rb['mean_delta_uno'])}; gate: **{decisions['residual_formulation']}**.
+RPO mean H/U={fmt(rpo_main['mean_harrell_c'])}/{fmt(rpo_main['mean_uno_c'])}; B0 mean H/U={fmt(b0_main['mean_harrell_c'])}/{fmt(b0_main['mean_uno_c'])}. 螖H={fmt(rb['mean_delta_harrell'])}, 螖U={fmt(rb['mean_delta_uno'])}; gate: **{decisions['residual_formulation']}**.
 
 ## 12. Seed-level robustness
 
@@ -118,7 +118,7 @@ RPO has lower between-seed H/U variance and lower within-seed fold variance than
 
 ## 16. What missing-aware learning could recover
 
-Canonical incomplete DSS-labelled cases recover no additional observed events. Missing-modality work would target robustness and coverage, not DSS event scarcity.
+Canonical incomplete DSS-labelled cases add {census["PotentialPatientGain_DSS"]} patients and {census["PotentialEventGain_DSS"]} observed events ({census["PotentialEventGainRatio_DSS"]:.2%} of the complete-case event count). Missing-modality work should target cohort coverage and robustness; it does not justify a complex residual architecture under this audit.
 
 ## 17. Advantages
 
@@ -126,7 +126,7 @@ The audit separates canonical source missingness from runtime staging, uses cros
 
 ## 18. Risks / limitations
 
-DSS has only 65 events. The residual signal is supported by the locked seed and bootstrap rules, but this is not a causal claim and should be validated on an independent cohort. Runtime staging gaps remain an operational data-transfer issue.
+DSS has only 65 events. No incremental residual signal was confirmed under the locked seed and bootstrap rules. DSS has only 65 complete-case events, so the negative mechanism result should be validated on an independent cohort before changing the research direction. Runtime staging gaps remain an operational data-transfer issue.
 
 ## 19. Final decision
 
@@ -136,3 +136,4 @@ DSS has only 65 events. The residual signal is supported by the locked seed and 
  print(json.dumps({'decision':final_decision,'incremental':decisions,'cells':len(fold)},ensure_ascii=False))
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--report',required=True);p.add_argument('--execution-sha',required=True);main(p.parse_args())
+

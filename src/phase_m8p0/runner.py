@@ -52,8 +52,7 @@ def direct_forward(m,arr,p,b,device,ep,v,train):return m(*tensor_batch(arr,p,b,d
 def fit_direct(v,raw,arr,provider,fold,seed,device,args):
  dim=2 if v=="C0-NoStage" else arr.clinical.shape[1];tr,va=inner_split(raw,fold,seed);m=direct_model(v,dim,seed,fold).to(device);opt=torch.optim.AdamW(m.parameters(),lr=3e-4,weight_decay=1e-4);best=-1e9;be=1;wait=0;rng=np.random.default_rng(seed+fold+101)
  for ep in range(1,args.max_epochs+1):
-  risks=[];order=np.concatenate(batches(tr,args.batch_size,rng))
-  for b in batches(tr,args.batch_size,rng):risks.append(direct_forward(m,arr,provider,b,device,ep,v,True))
+  bs=batches(tr,args.batch_size,rng);order=np.concatenate(bs);risks=[direct_forward(m,arr,provider,b,device,ep,v,True) for b in bs]
   loss=cox_loss_full(torch.tensor(raw.dss_time[order],device=device),torch.tensor(raw.dss_event[order],device=device,dtype=torch.float32),torch.cat(risks));opt.zero_grad();loss.backward();torch.nn.utils.clip_grad_norm_(m.parameters(),5);opt.step();m.eval();
   with torch.no_grad():vr=np.concatenate([direct_forward(m,arr,provider,b,device,0,v,False).cpu().numpy() for b in batches(va,args.batch_size)])
   sc=harrell_c(raw.dss_time[va],raw.dss_event[va],vr);sc=sc if np.isfinite(sc) else -float(loss)

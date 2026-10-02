@@ -1,0 +1,187 @@
+{
+  "anchor_definition": "A0 equals saved clinical_offset; no refit",
+  "cells_checked": 25,
+  "duplicate_offsets": 0,
+  "finite_offsets": true,
+  "full_coverage": true,
+  "max_abs_diff": 0.0,
+  "rows": [
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 103,
+      "outer_fold": 1,
+      "seed": 20261012,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 103,
+      "outer_fold": 2,
+      "seed": 20261012,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 3,
+      "seed": 20261012,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 4,
+      "seed": 20261012,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 5,
+      "seed": 20261012,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 103,
+      "outer_fold": 1,
+      "seed": 20261013,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 103,
+      "outer_fold": 2,
+      "seed": 20261013,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 3,
+      "seed": 20261013,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 4,
+      "seed": 20261013,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 5,
+      "seed": 20261013,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 103,
+      "outer_fold": 1,
+      "seed": 20261014,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 103,
+      "outer_fold": 2,
+      "seed": 20261014,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 3,
+      "seed": 20261014,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 4,
+      "seed": 20261014,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 5,
+      "seed": 20261014,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 103,
+      "outer_fold": 1,
+      "seed": 20261015,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 103,
+      "outer_fold": 2,
+      "seed": 20261015,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 3,
+      "seed": 20261015,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 4,
+      "seed": 20261015,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 5,
+      "seed": 20261015,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 103,
+      "outer_fold": 1,
+      "seed": 20261016,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 103,
+      "outer_fold": 2,
+      "seed": 20261016,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 3,
+      "seed": 20261016,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 4,
+      "seed": 20261016,
+      "status": "PASS"
+    },
+    {
+      "max_abs_diff": 0.0,
+      "n_test": 102,
+      "outer_fold": 5,
+      "seed": 20261016,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "tolerance": 1e-07
+}

@@ -19,7 +19,7 @@ def fmt(x):return 'NA' if not np.isfinite(float(x)) else f'{float(x):.6f}'
 def corr(a,b):
  a=np.asarray(a,float);b=np.asarray(b,float);return float(np.corrcoef(a,b)[0,1]) if len(a)>1 and np.std(a)>0 and np.std(b)>0 else float('nan')
 def main(args):
- out=Path(args.report);fold=read(out/'fold_metrics.csv');diag=[r for r in read(out/'residual_diagnostics.csv') if r.get('diagnostic_level') != 'summary'];mainm=read(out/'main_metrics.csv');deltas=read(out/'paired_deltas.csv');boot=read(out/'paired_bootstrap.csv');var=read(out/'variance_decomposition.csv');diag=read(out/'residual_diagnostics.csv');census=json.loads((out/'cohort_expansion_summary.json').read_text(encoding='utf-8'))
+ out=Path(args.report);fold=read(out/'fold_metrics.csv');diag=[r for r in read(out/'residual_diagnostics.csv') if r.get('diagnostic_level') != 'summary'];mainm=read(out/'main_metrics.csv');deltas=read(out/'paired_deltas.csv');boot=read(out/'paired_bootstrap.csv');var=read(out/'variance_decomposition.csv');census=json.loads((out/'cohort_expansion_summary.json').read_text(encoding='utf-8'))
  # Add auditable aggregate residual diagnostics while retaining patient-level rows.
  summaries=[]
  for v in ('RP','RO','RPO'):
@@ -136,6 +136,7 @@ DSS has only 65 events. No incremental residual signal was confirmed under the l
  print(json.dumps({'decision':final_decision,'incremental':decisions,'cells':len(fold)},ensure_ascii=False))
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--report',required=True);p.add_argument('--execution-sha',required=True);main(p.parse_args())
+
 
 
 

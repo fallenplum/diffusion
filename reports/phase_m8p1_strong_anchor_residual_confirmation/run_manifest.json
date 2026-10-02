@@ -1,0 +1,41 @@
+{
+  "DSS_events": 65,
+  "N": 512,
+  "audits": {
+    "clinical_crossfit": "PASS",
+    "cox_riskset": "PASS",
+    "strong_anchor_identity": "PASS",
+    "zero_init": "PASS"
+  },
+  "cells_completed": 75,
+  "cells_expected": 75,
+  "decisions": {
+    "SO": "STRONG_ANCHOR_INCREMENT_NOT_CONFIRMED",
+    "SP": "STRONG_ANCHOR_INCREMENT_NOT_CONFIRMED",
+    "SPO": "STRONG_ANCHOR_INCREMENT_NOT_CONFIRMED"
+  },
+  "execution_sha": "9f5ef3d4d5daa3b1e1f1235e02f93d5b063eab09",
+  "final_decision": "C",
+  "formal_residual_cells": 75,
+  "model_training_runs": 75,
+  "phase": "M8-P1",
+  "predictions_modified": false,
+  "s0_frozen_cells": 25,
+  "seeds": [
+    20261012,
+    20261013,
+    20261014,
+    20261015,
+    20261016
+  ],
+  "source_files_unchanged": true,
+  "source_workers": "/root/autodl-tmp/m8p0_workers_final3",
+  "status": "complete",
+  "variants": [
+    "S0",
+    "SP",
+    "SO",
+    "SPO"
+  ],
+  "total_rows_including_frozen_s0": 100
+}

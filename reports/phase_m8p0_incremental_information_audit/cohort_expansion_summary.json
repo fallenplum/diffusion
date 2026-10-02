@@ -1,0 +1,34 @@
+{
+  "DSS_all_outcome_labeled": {
+    "N": 547,
+    "censored": 478,
+    "events": 69
+  },
+  "DSS_complete_case": {
+    "N": 512,
+    "events": 65
+  },
+  "DSS_incomplete": {
+    "N": 35,
+    "events": 4
+  },
+  "PFS_all_outcome_labeled": {
+    "N": 566,
+    "censored": 422,
+    "events": 144
+  },
+  "PFS_complete_case": {
+    "N": 529,
+    "events": 135
+  },
+  "PFS_incomplete": {
+    "N": 37,
+    "events": 9
+  },
+  "PotentialEventGainRatio_DSS": 0.06153846153846154,
+  "PotentialEventGain_DSS": 4,
+  "PotentialPatientGain_DSS": 35,
+  "canonical_patient_count": 626,
+  "runtime_h5_patient_count": 512,
+  "runtime_staging_missing_pathology": 79
+}

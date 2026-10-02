@@ -1,0 +1,38 @@
+{
+  "DSS_events": 65,
+  "N": 512,
+  "batch_size": 16,
+  "clinical_crossfit_seed": 8402026,
+  "comparisons": [
+    "RP_vs_C0-Full",
+    "RO_vs_C0-Full",
+    "RPO_vs_C0-Full",
+    "RPO_vs_RP",
+    "RPO_vs_RO",
+    "RPO_vs_B0",
+    "C0-Full_vs_C0-NoStage"
+  ],
+  "cox": "historical M7R full risk-set Cox",
+  "formal_cells": 150,
+  "lr": 0.0003,
+  "max_epochs": 25,
+  "optimizer": "AdamW",
+  "patience": 5,
+  "phase": "M8-P0",
+  "seeds": [
+    20261012,
+    20261013,
+    20261014,
+    20261015,
+    20261016
+  ],
+  "variants": [
+    "C0-Full",
+    "C0-NoStage",
+    "B0",
+    "RP",
+    "RO",
+    "RPO"
+  ],
+  "weight_decay": 0.0001
+}

@@ -1,0 +1,96 @@
+{
+  "rows": [
+    {
+      "seed": 20261012,
+      "status": "PASS",
+      "variant": "RP",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261012,
+      "status": "PASS",
+      "variant": "RO",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261012,
+      "status": "PASS",
+      "variant": "RPO",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261013,
+      "status": "PASS",
+      "variant": "RP",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261013,
+      "status": "PASS",
+      "variant": "RO",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261013,
+      "status": "PASS",
+      "variant": "RPO",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261014,
+      "status": "PASS",
+      "variant": "RP",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261014,
+      "status": "PASS",
+      "variant": "RO",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261014,
+      "status": "PASS",
+      "variant": "RPO",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261015,
+      "status": "PASS",
+      "variant": "RP",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261015,
+      "status": "PASS",
+      "variant": "RO",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261015,
+      "status": "PASS",
+      "variant": "RPO",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261016,
+      "status": "PASS",
+      "variant": "RP",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261016,
+      "status": "PASS",
+      "variant": "RO",
+      "zero_init_max_abs": 0.0
+    },
+    {
+      "seed": 20261016,
+      "status": "PASS",
+      "variant": "RPO",
+      "zero_init_max_abs": 0.0
+    }
+  ],
+  "shared_residual_representation": "CommonOnly MultimodalBackbone",
+  "status": "PASS"
+}

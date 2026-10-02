@@ -1,0 +1,2 @@
+comparison,variant_a,variant_b,seed,outer_fold,delta_harrell,delta_uno,status,mean_delta_harrell,std_delta_harrell,mean_delta_uno,std_delta_uno,harrell_wins,uno_wins,harrell_fold_wins,uno_fold_wins,bootstrap_harrell_low,bootstrap_harrell_high,bootstrap_uno_low,bootstrap_uno_high
+C0-Full_vs_C0-NoStage,C0-Full,C0-NoStage,ALL,ALL,,,summary,0.2119643975881608,0.09550663610417892,0.28160790281173786,0.12188726363761822,25,24,,,-0.007290878246896695,0.3919795292210103,0.08176466749339611,0.4224051768596375

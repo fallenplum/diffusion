@@ -36,14 +36,27 @@ def run(args):
    q=[r for r in z if r["seed"]==s];h=np.array([r["delta_harrell"] for r in q]);u=np.array([r["delta_uno"] for r in q]);deltas.append({"comparison":f"{a}_vs_{b}","variant_a":a,"variant_b":b,"seed":s,"outer_fold":"MEAN","mean_delta_harrell":h.mean(),"mean_delta_uno":u.mean(),"harrell_fold_wins":int((h>0).sum()),"uno_fold_wins":int((u>0).sum()),"status":"seed_summary"})
  atomic_csv(out/"paired_deltas.csv",deltas)
  # Global patient-level paired bootstrap over complete OOF predictions.
+ # Predictions are concatenated in outer-fold order, so outcome arrays must
+ # use the identical order.  Patient-id order would silently mis-pair scores
+ # and outcomes and invalidate the uncertainty audit.
+ ordered_idx=np.concatenate([np.flatnonzero(raw.outer_folds==f) for f in range(1,6)])
+ oof_time=raw.dss_time[ordered_idx];oof_event=raw.dss_event[ordered_idx]
  pred={(v,s,f):np.load(workers/f"seed_{s}"/"cells"/f"{v}_{s}_{f}.npy") for v in VARS for s in SEEDS for f in range(1,6)};boot=[];rng=np.random.default_rng(8102026)
  for a,b in COMPS:
   for s in SEEDS:
    pa=np.concatenate([pred[(a,s,f)] for f in range(1,6)]);pb=np.concatenate([pred[(b,s,f)] for f in range(1,6)]);h=[];u=[]
    for _ in range(2000):
-    idx=rng.integers(0,len(pa),len(pa));t=raw.dss_time;e=raw.dss_event;aa=pa[idx];bb=pb[idx];h.append(cfast(t[idx],e[idx],aa)-cfast(t[idx],e[idx],bb));ua,_,_=uno_c_index(t[idx],e[idx],aa,t,e);ub,_,_=uno_c_index(t[idx],e[idx],bb,t,e);u.append(ua-ub)
+    idx=rng.integers(0,len(pa),len(pa));aa=pa[idx];bb=pb[idx];h.append(cfast(oof_time[idx],oof_event[idx],aa)-cfast(oof_time[idx],oof_event[idx],bb));ua,_,_=uno_c_index(oof_time[idx],oof_event[idx],aa,oof_time,oof_event);ub,_,_=uno_c_index(oof_time[idx],oof_event[idx],bb,oof_time,oof_event);u.append(ua-ub)
    h=np.asarray(h);u=np.asarray(u);boot.append({"comparison":f"{a}_vs_{b}","seed":s,"n_reps":2000,"mean_delta_harrell":h.mean(),"ci95_low_harrell":np.quantile(h,.025),"ci95_high_harrell":np.quantile(h,.975),"mean_delta_uno":u.mean(),"ci95_low_uno":np.quantile(u,.025),"ci95_high_uno":np.quantile(u,.975)})
  atomic_csv(out/"paired_bootstrap.csv",boot)
+ # Required seed-level summary table (one row per variant and fresh seed).
+ seed_rows=[]
+ for v in VARS:
+  for s in SEEDS:
+   z=[r for r in fr if r["variant"]==v and r["seed"]==s]
+   hh=np.array([r["harrell_c"] for r in z]);uu=np.array([r["uno_c"] for r in z])
+   seed_rows.append({"variant":v,"seed":s,"n_patients":int(sum(r["n_test"] for r in z)),"dss_events":int(sum(r["events_test"] for r in z)),"fold_mean_harrell":hh.mean(),"fold_std_harrell":hh.std(ddof=1),"worst_fold_harrell":hh.min(),"fold_mean_uno":uu.mean(),"fold_std_uno":uu.std(ddof=1),"worst_fold_uno":uu.min(),"status":"PASS"})
+ atomic_csv(out/"seed_metrics.csv",seed_rows)
  vrows=[]
  for v in ["C0-Full","B0","RPO"]:
   z=[r for r in fr if r["variant"]==v];h=np.array([r["harrell_c"] for r in z]);u=np.array([r["uno_c"] for r in z]);vrows.append({"variant":v,"between_seed_variance_H":np.var([np.mean([r["harrell_c"] for r in z if r["seed"]==s]) for s in SEEDS],ddof=1),"between_seed_variance_U":np.var([np.mean([r["uno_c"] for r in z if r["seed"]==s]) for s in SEEDS],ddof=1),"within_seed_fold_variance_H":np.mean([np.var([r["harrell_c"] for r in z if r["seed"]==s],ddof=1) for s in SEEDS]),"within_seed_fold_variance_U":np.mean([np.var([r["uno_c"] for r in z if r["seed"]==s],ddof=1) for s in SEEDS]),"worst_fold_H":h.min(),"worst_fold_U":u.min()})

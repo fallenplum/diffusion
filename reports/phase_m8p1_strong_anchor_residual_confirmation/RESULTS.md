@@ -9,7 +9,7 @@
 ## Required summary
 
 1. Branch: `codex/phase-m8p1-strong-anchor-residual-confirmation`
-2. Commit SHA: `93ec9391f2787c92527a8ce92d6fef604b55219d`
+2. Commit SHA: `4dbbbd9f17f4c9648ed3c9bb8ccf6c008f1dbaaa`
 3. 75/75 residual cells complete: **YES** (80 total rows including 25 frozen S0 cells)
 4. StrongAnchor == C0 audit: **PASS**, max abs diff=0
 S0 H/U: 0.771574 / 0.785990

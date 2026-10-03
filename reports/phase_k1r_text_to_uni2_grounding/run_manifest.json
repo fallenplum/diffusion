@@ -1,0 +1,45 @@
+{
+  "concept_bank_sha256": "830f7d3574b95aada65fcd23cec7bb3b0aeae34641539726654aac937b6c8a40",
+  "d": 32,
+  "decision_rule": "PASS iff unseen real-minus-shuffled text alignment is positive in at least 75% cells and mean delta > 0; frozen before evaluation",
+  "device": "cuda",
+  "dss_events": 65,
+  "elapsed_seconds": 389.8858518600464,
+  "epochs": 8,
+  "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv",
+  "grounding_pass": false,
+  "n_patients": 512,
+  "path_runtime": "/root/autodl-tmp/diffusion_runtime_m2r",
+  "phase": "K1R_TEXT_TO_UNI2_GROUNDING",
+  "raw_wsi_used": false,
+  "rotations": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "stage1_uses_dss": false,
+  "status": "complete",
+  "temperature": 0.07,
+  "text_embedding_sha256": "8fd88c9ce34d74e9e181d8b0d6e1e68e5db376c8c854c773ae78128e6186d38e",
+  "text_embedding_source": "/root/autodl-tmp/diffusion_runtime_m2r/phase_k1_conch_test/concept_text_embeddings.pt",
+  "unseen_mean_delta": -9.293602623447658e-05,
+  "unseen_positive_fraction": 0.4166666666666667
+}

@@ -1,0 +1,8 @@
+ablation,variant,status,description
+real_concepts,K-MSG,formal,fixed CRC concept bank and real concept-to-gene mapping
+shuffled_concept_to_gene_mapping,K-SHUFFLE,formal,same K-MSG capacity with frozen deterministic gene-membership shuffle; pathology branch and initialization are unchanged
+no_text_description_concept_id_only,K-MSG,formal_architecture,no text encoder; descriptions are metadata only and no text enters the model
+omics_only,K-O,formal,concept omics residual only
+pathology_only,K-P,formal,concept pathology residual only
+additive,K-ADD,formal,concept pathology plus concept omics additive residual
+message_fusion,K-MSG,formal,within-concept P/O message fusion

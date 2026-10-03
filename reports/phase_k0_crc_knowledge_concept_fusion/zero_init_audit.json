@@ -1,0 +1,1007 @@
+{
+  "head_initialization": "small_random_std_0.01",
+  "lambda_initialization": "1e-2 near-zero",
+  "rows": [
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261012,
+      "small_head_max_abs": 0.021590333431959152,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261012,
+      "small_head_max_abs": 0.021590333431959152,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261012,
+      "small_head_max_abs": 0.021590333431959152,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261012,
+      "small_head_max_abs": 0.021590333431959152,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261012,
+      "small_head_max_abs": 0.021590333431959152,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261012,
+      "small_head_max_abs": 0.021198594942688942,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261012,
+      "small_head_max_abs": 0.021198594942688942,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261012,
+      "small_head_max_abs": 0.021198594942688942,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261012,
+      "small_head_max_abs": 0.021198594942688942,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261012,
+      "small_head_max_abs": 0.021198594942688942,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261012,
+      "small_head_max_abs": 0.025033527985215187,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261012,
+      "small_head_max_abs": 0.025033527985215187,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261012,
+      "small_head_max_abs": 0.025033527985215187,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261012,
+      "small_head_max_abs": 0.025033527985215187,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261012,
+      "small_head_max_abs": 0.025033527985215187,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261012,
+      "small_head_max_abs": 0.028718428686261177,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261012,
+      "small_head_max_abs": 0.028718428686261177,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261012,
+      "small_head_max_abs": 0.028718428686261177,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261012,
+      "small_head_max_abs": 0.028718428686261177,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261012,
+      "small_head_max_abs": 0.028718428686261177,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261012,
+      "small_head_max_abs": 0.020583588629961014,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261012,
+      "small_head_max_abs": 0.020583588629961014,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261012,
+      "small_head_max_abs": 0.020583588629961014,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261012,
+      "small_head_max_abs": 0.020583588629961014,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261012,
+      "small_head_max_abs": 0.020583588629961014,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261013,
+      "small_head_max_abs": 0.01691272296011448,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261013,
+      "small_head_max_abs": 0.01691272296011448,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261013,
+      "small_head_max_abs": 0.01691272296011448,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261013,
+      "small_head_max_abs": 0.01691272296011448,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261013,
+      "small_head_max_abs": 0.01691272296011448,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261013,
+      "small_head_max_abs": 0.030710438266396523,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261013,
+      "small_head_max_abs": 0.030710438266396523,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261013,
+      "small_head_max_abs": 0.030710438266396523,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261013,
+      "small_head_max_abs": 0.030710438266396523,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261013,
+      "small_head_max_abs": 0.030710438266396523,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261013,
+      "small_head_max_abs": 0.02528185211122036,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261013,
+      "small_head_max_abs": 0.02528185211122036,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261013,
+      "small_head_max_abs": 0.02528185211122036,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261013,
+      "small_head_max_abs": 0.02528185211122036,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261013,
+      "small_head_max_abs": 0.02528185211122036,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261013,
+      "small_head_max_abs": 0.024151261895895004,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261013,
+      "small_head_max_abs": 0.024151261895895004,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261013,
+      "small_head_max_abs": 0.024151261895895004,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261013,
+      "small_head_max_abs": 0.024151261895895004,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261013,
+      "small_head_max_abs": 0.024151261895895004,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261013,
+      "small_head_max_abs": 0.029587065801024437,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261013,
+      "small_head_max_abs": 0.029587065801024437,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261013,
+      "small_head_max_abs": 0.029587065801024437,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261013,
+      "small_head_max_abs": 0.029587065801024437,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261013,
+      "small_head_max_abs": 0.029587065801024437,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261014,
+      "small_head_max_abs": 0.02312535233795643,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261014,
+      "small_head_max_abs": 0.02312535233795643,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261014,
+      "small_head_max_abs": 0.02312535233795643,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261014,
+      "small_head_max_abs": 0.02312535233795643,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261014,
+      "small_head_max_abs": 0.02312535233795643,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261014,
+      "small_head_max_abs": 0.022707436233758926,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261014,
+      "small_head_max_abs": 0.022707436233758926,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261014,
+      "small_head_max_abs": 0.022707436233758926,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261014,
+      "small_head_max_abs": 0.022707436233758926,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261014,
+      "small_head_max_abs": 0.022707436233758926,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261014,
+      "small_head_max_abs": 0.021050266921520233,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261014,
+      "small_head_max_abs": 0.021050266921520233,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261014,
+      "small_head_max_abs": 0.021050266921520233,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261014,
+      "small_head_max_abs": 0.021050266921520233,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261014,
+      "small_head_max_abs": 0.021050266921520233,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261014,
+      "small_head_max_abs": 0.015463643707334995,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261014,
+      "small_head_max_abs": 0.015463643707334995,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261014,
+      "small_head_max_abs": 0.015463643707334995,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261014,
+      "small_head_max_abs": 0.015463643707334995,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261014,
+      "small_head_max_abs": 0.015463643707334995,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261014,
+      "small_head_max_abs": 0.017787013202905655,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261014,
+      "small_head_max_abs": 0.017787013202905655,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261014,
+      "small_head_max_abs": 0.017787013202905655,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261014,
+      "small_head_max_abs": 0.017787013202905655,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261014,
+      "small_head_max_abs": 0.017787013202905655,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261015,
+      "small_head_max_abs": 0.018221456557512283,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261015,
+      "small_head_max_abs": 0.018221456557512283,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261015,
+      "small_head_max_abs": 0.018221456557512283,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261015,
+      "small_head_max_abs": 0.018221456557512283,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261015,
+      "small_head_max_abs": 0.018221456557512283,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261015,
+      "small_head_max_abs": 0.020379001274704933,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261015,
+      "small_head_max_abs": 0.020379001274704933,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261015,
+      "small_head_max_abs": 0.020379001274704933,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261015,
+      "small_head_max_abs": 0.020379001274704933,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261015,
+      "small_head_max_abs": 0.020379001274704933,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261015,
+      "small_head_max_abs": 0.022325720638036728,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261015,
+      "small_head_max_abs": 0.022325720638036728,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261015,
+      "small_head_max_abs": 0.022325720638036728,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261015,
+      "small_head_max_abs": 0.022325720638036728,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261015,
+      "small_head_max_abs": 0.022325720638036728,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261015,
+      "small_head_max_abs": 0.021464811637997627,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261015,
+      "small_head_max_abs": 0.021464811637997627,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261015,
+      "small_head_max_abs": 0.021464811637997627,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261015,
+      "small_head_max_abs": 0.021464811637997627,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261015,
+      "small_head_max_abs": 0.021464811637997627,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261015,
+      "small_head_max_abs": 0.02108941785991192,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261015,
+      "small_head_max_abs": 0.02108941785991192,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261015,
+      "small_head_max_abs": 0.02108941785991192,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261015,
+      "small_head_max_abs": 0.02108941785991192,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261015,
+      "small_head_max_abs": 0.02108941785991192,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261016,
+      "small_head_max_abs": 0.022304944694042206,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261016,
+      "small_head_max_abs": 0.022304944694042206,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261016,
+      "small_head_max_abs": 0.022304944694042206,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261016,
+      "small_head_max_abs": 0.022304944694042206,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 1,
+      "seed": 20261016,
+      "small_head_max_abs": 0.022304944694042206,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261016,
+      "small_head_max_abs": 0.019456854090094566,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261016,
+      "small_head_max_abs": 0.019456854090094566,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261016,
+      "small_head_max_abs": 0.019456854090094566,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261016,
+      "small_head_max_abs": 0.019456854090094566,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 2,
+      "seed": 20261016,
+      "small_head_max_abs": 0.019456854090094566,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261016,
+      "small_head_max_abs": 0.02424069680273533,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261016,
+      "small_head_max_abs": 0.02424069680273533,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261016,
+      "small_head_max_abs": 0.02424069680273533,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261016,
+      "small_head_max_abs": 0.02424069680273533,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 3,
+      "seed": 20261016,
+      "small_head_max_abs": 0.02424069680273533,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261016,
+      "small_head_max_abs": 0.01569822058081627,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261016,
+      "small_head_max_abs": 0.01569822058081627,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261016,
+      "small_head_max_abs": 0.01569822058081627,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261016,
+      "small_head_max_abs": 0.01569822058081627,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 4,
+      "seed": 20261016,
+      "small_head_max_abs": 0.01569822058081627,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261016,
+      "small_head_max_abs": 0.019062329083681107,
+      "status": "PASS",
+      "variant": "K-O"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261016,
+      "small_head_max_abs": 0.019062329083681107,
+      "status": "PASS",
+      "variant": "K-P"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261016,
+      "small_head_max_abs": 0.019062329083681107,
+      "status": "PASS",
+      "variant": "K-ADD"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261016,
+      "small_head_max_abs": 0.019062329083681107,
+      "status": "PASS",
+      "variant": "K-MSG"
+    },
+    {
+      "lambda_max_abs": 0.009999999776482582,
+      "outer_fold": 5,
+      "seed": 20261016,
+      "small_head_max_abs": 0.019062329083681107,
+      "status": "PASS",
+      "variant": "K-SHUFFLE"
+    }
+  ],
+  "status": "PASS"
+}

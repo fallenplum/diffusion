@@ -1,0 +1,71 @@
+{
+  "DSS_events": 65,
+  "N": 512,
+  "audits": {
+    "clinical_crossfit": "PASS",
+    "cox_riskset": "PASS",
+    "initialization_identity": "PASS",
+    "strong_anchor_identity": "PASS",
+    "zero_init": "PASS"
+  },
+  "cells_completed": 125,
+  "cells_expected": 125,
+  "concept_bank_sha256": "830f7d3574b95aada65fcd23cec7bb3b0aeae34641539726654aac937b6c8a40",
+  "execution_sha": "b3b8342dffb11658e4a9f6c5d03b0ca2bd733d30",
+  "final_decision": "D",
+  "formal_concept_cells": 125,
+  "gates": {
+    "A_omics_recovery": {
+      "mean_harrell": -3.9822361881807214e-05,
+      "mean_uno": 0.00010813782685266115,
+      "pass": false,
+      "positive_seed_harrell": 2,
+      "positive_seed_uno": 3
+    },
+    "B_concept_semantics": {
+      "mean_harrell": 5.102040816326703e-05,
+      "mean_uno": 6.760328363723644e-05,
+      "pass": false,
+      "positive_seed_harrell": 1,
+      "positive_seed_uno": 1
+    },
+    "C_message_complementarity": {
+      "mean_harrell": -0.0005953995358135211,
+      "mean_uno": -0.00013902582240489015,
+      "pass": false,
+      "positive_seed_harrell": 1,
+      "positive_seed_uno": 0
+    },
+    "D_strong_anchor_increment": {
+      "mean_harrell": -5.425956543707589e-05,
+      "mean_uno": -3.988665340464159e-06,
+      "pass": false,
+      "positive_seed_harrell": 3,
+      "positive_seed_uno": 2
+    }
+  },
+  "model_training_runs": 125,
+  "phase": "K0",
+  "predictions_modified": false,
+  "s0_frozen_cells": 25,
+  "seeds": [
+    20261012,
+    20261013,
+    20261014,
+    20261015,
+    20261016
+  ],
+  "shuffle_mapping_sha256": "fe447c703fd3c3ed02ef8681e9da55bbfc9f09d3f5ec638d8693a293ce2d5c36",
+  "source_files_unchanged": true,
+  "source_workers": "/root/autodl-tmp/m8p0_workers_final3",
+  "status": "complete",
+  "total_rows_including_frozen_s0": 150,
+  "variants": [
+    "S0",
+    "K-O",
+    "K-P",
+    "K-ADD",
+    "K-MSG",
+    "K-SHUFFLE"
+  ]
+}

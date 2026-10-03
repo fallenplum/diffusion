@@ -48,16 +48,16 @@ class ConceptFusionResidualModel(nn.Module):
             self.lambda_omics = nn.Parameter(torch.full((CONCEPTS,), 1e-2))
             self.lambda_message = nn.Parameter(torch.full((CONCEPTS,), 1e-2))
 
-        # Small nonzero heads keep the residual near the frozen anchor while
-        # allowing the concept-matched message branch to receive gradients
-        # from the first Cox update.  The protocol freezes the anchor through
-        # detach() and constrains the lambda gates near zero.
-        nn.init.normal_(self.path_head.weight, mean=0.0, std=0.01)
-        nn.init.zeros_(self.path_head.bias)
-        nn.init.normal_(self.omic_head.weight, mean=0.0, std=0.01)
-        nn.init.zeros_(self.omic_head.bias)
-        nn.init.normal_(self.message_network[-1].weight, mean=0.0, std=0.01)
-        nn.init.zeros_(self.message_network[-1].bias)
+            # Small nonzero heads keep the residual near the frozen anchor while
+            # allowing the concept-matched message branch to receive gradients
+            # from the first Cox update.  All initialization stays inside the
+            # forked RNG context so K-MSG and K-SHUFFLE are byte-identical.
+            nn.init.normal_(self.path_head.weight, mean=0.0, std=0.01)
+            nn.init.zeros_(self.path_head.bias)
+            nn.init.normal_(self.omic_head.weight, mean=0.0, std=0.01)
+            nn.init.zeros_(self.omic_head.bias)
+            nn.init.normal_(self.message_network[-1].weight, mean=0.0, std=0.01)
+            nn.init.zeros_(self.message_network[-1].bias)
 
     def pathology_concepts(self, pathology: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
         hidden = self.path_projection(pathology.float())

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import random
 from pathlib import Path
 from typing import Any
 
@@ -137,6 +138,39 @@ def _sha_payload(payload: Any) -> str:
     return hashlib.sha256(encoded).hexdigest()
 
 
+def _build_gene_level_shuffle(concepts: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], str]:
+    """Create a frozen gene-membership shuffle with unchanged concept sizes.
+
+    The negative control must change which genes are assigned to each concept,
+    rather than merely reordering already-computed concept channels.  The pool
+    and deterministic seed are fixed before any fold or outcome is observed.
+    """
+    pool = sorted({gene for concept in concepts for gene in concept["mapped_gene_symbols"]})
+    if not pool:
+        raise ValueError("cannot build an empty concept gene shuffle")
+    rng = random.Random(20261003)
+    rng.shuffle(pool)
+    shuffled = []
+    cursor = 0
+    for concept in concepts:
+        length = len(concept["mapped_gene_symbols"])
+        if length > len(pool):
+            raise ValueError(f"shuffle pool is smaller than {concept['concept_id']} gene set")
+        genes = sorted(pool[(cursor + offset) % len(pool)] for offset in range(length))
+        if len(genes) != length:
+            raise ValueError(f"gene shuffle size mismatch for {concept['concept_id']}")
+        item = dict(concept)
+        item["shuffled_mapped_gene_symbols"] = genes
+        item["shuffled_mapped_gene_count"] = len(genes)
+        shuffled.append(item)
+        cursor = (cursor + length + 173) % len(pool)
+    mapping_payload = [
+        {"concept_id": item["concept_id"], "genes": item["shuffled_mapped_gene_symbols"]}
+        for item in shuffled
+    ]
+    return shuffled, _sha_payload(mapping_payload)
+
+
 def build_concept_bank(metadata_path: Path, mcat_path: Path | None = None) -> dict[str, Any]:
     import pandas as pd
 
@@ -159,6 +193,7 @@ def build_concept_bank(metadata_path: Path, mcat_path: Path | None = None) -> di
         item["mapped_gene_count"] = len(item["mapped_gene_symbols"])
         item["text_source"] = "fixed author-written description; no LLM or patient outcome input"
         bank.append(item)
+    bank, shuffle_sha = _build_gene_level_shuffle(bank)
     payload = {
         "version": "concept_bank_v1",
         "disease": "colorectal cancer",
@@ -168,7 +203,9 @@ def build_concept_bank(metadata_path: Path, mcat_path: Path | None = None) -> di
         "text_encoder": "none",
         "text_descriptions_used_in_model": False,
         "concepts": bank,
-        "shuffle_permutation": [1, 2, 3, 4, 5, 6, 7, 0],
+        "shuffle_mapping_method": "deterministic_gene_membership_shuffle",
+        "shuffle_mapping_seed": 20261003,
+        "shuffle_mapping_sha256": shuffle_sha,
     }
     payload["content_sha256"] = _sha_payload(payload)
     return payload
@@ -190,5 +227,13 @@ def load_concept_bank(path: Path) -> dict[str, Any]:
         raise ValueError(f"concept bank hash mismatch: expected={expected}, actual={actual}")
     if payload.get("version") != "concept_bank_v1" or len(payload.get("concepts", [])) != 8:
         raise ValueError("invalid concept bank version or concept count")
+    if payload.get("shuffle_mapping_method") != "deterministic_gene_membership_shuffle":
+        raise ValueError("concept bank is missing the frozen gene-level shuffle mapping")
+    shuffle_payload = [
+        {"concept_id": concept["concept_id"], "genes": concept["shuffled_mapped_gene_symbols"]}
+        for concept in payload["concepts"]
+    ]
+    if payload.get("shuffle_mapping_sha256") != _sha_payload(shuffle_payload):
+        raise ValueError("concept bank shuffle mapping hash mismatch")
     return payload
 

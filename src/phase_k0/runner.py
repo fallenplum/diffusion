@@ -191,6 +191,8 @@ def run(args: argparse.Namespace) -> None:
     repo = Path(args.repo_root)
     raw = load_raw_inputs(Path(args.data_root), repo)
     bank = load_concept_bank(Path(args.concept_bank))
+    shuffled_bank = dict(bank)
+    shuffled_bank["concepts"] = [dict(concept) for concept in bank["concepts"]]
     runtime = Path(args.runtime)
     source = Path(args.source_workers)
     output = Path(args.worker)
@@ -211,9 +213,11 @@ def run(args: argparse.Namespace) -> None:
         # This call retains the established path cache/fold audit and protects
         # the fixed preprocessing protocol even though K0 uses concept evidence.
         preprocess_fold(raw, train_pool, fold)
-        evidence_fold = build_concept_evidence(raw, train, bank)
+        evidence_fold = build_concept_evidence(raw, train, bank, gene_field="mapped_gene_symbols", mapping_name="real")
+        evidence_fold_shuffle = build_concept_evidence(raw, train, shuffled_bank, gene_field="shuffled_mapped_gene_symbols", mapping_name="gene_level_shuffle")
         evidence = evidence_fold.omics_evidence
         audits.extend([{"seed": seed, "outer_fold": fold, **row} for row in evidence_fold.audit])
+        audits.extend([{"seed": seed, "outer_fold": fold, **row} for row in evidence_fold_shuffle.audit])
         provider = PathTokenProvider(train_pool, deterministic, train_seed=seed, k=1024)
         anchor_path = source / f"seed_{seed}" / "cells" / f"C0-Full_{seed}_{fold}.npy"
         anchor_test = np.asarray(np.load(anchor_path), dtype=np.float64)
@@ -231,15 +235,14 @@ def run(args: argparse.Namespace) -> None:
         for variant in VARIANTS:
             variant_evidence = evidence
             if variant == "K-SHUFFLE":
-                permutation = np.asarray(bank["shuffle_permutation"], dtype=int)
-                variant_evidence = evidence[:, permutation, :]
+                variant_evidence = evidence_fold_shuffle.omics_evidence
             prediction, profile, diag = _fit_variant(variant, raw, provider, variant_evidence, train, test, fold, seed, device, cfg, crossfit_offsets, exact_offsets)
-            profile.update({"concept_bank_sha256": bank["content_sha256"], "crossfit_version": REPAIR_VERSION, "shuffle_mapping": variant == "K-SHUFFLE"})
+            profile.update({"concept_bank_sha256": bank["content_sha256"], "crossfit_version": REPAIR_VERSION, "shuffle_mapping": variant == "K-SHUFFLE", "shuffle_mapping_method": bank.get("shuffle_mapping_method", "") if variant == "K-SHUFFLE" else ""})
             row = {"variant": variant, "seed": seed, "outer_fold": fold, "n_test": len(test), "events_test": int(raw.dss_event[test].sum()), **_metric(raw, test, train, prediction), "params": profile["params"], "best_epoch": profile["best_epoch"], "status": "completed"}
             rows.append(row); profiles.append(profile); diagnostics.extend(diag)
             np.save(output / "cells" / f"{variant}_{seed}_{fold}.npy", prediction)
             atomic_json(output / "cells" / f"{variant}_{seed}_{fold}.json", row)
-        del evidence_fold, evidence, provider, crossfit_offsets
+        del evidence_fold, evidence_fold_shuffle, evidence, provider, crossfit_offsets
         gc.collect()
         if device.type == "cuda":
             torch.cuda.empty_cache()
@@ -255,6 +258,7 @@ def run(args: argparse.Namespace) -> None:
         "cells_expected": 30,
         "formal_concept_cells": 25,
         "concept_bank_sha256": bank["content_sha256"],
+        "shuffle_mapping_sha256": bank.get("shuffle_mapping_sha256"),
         "execution_sha": _git_sha(repo),
         "source_c0_sha256": source_hashes,
         "clinical_crossfit_version": REPAIR_VERSION,

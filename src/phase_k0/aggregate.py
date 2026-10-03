@@ -5,12 +5,13 @@ import csv
 import hashlib
 import json
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import numpy as np
 import torch
 
-from src.phase_m2.common import atomic_csv, atomic_json, harrell_c, uno_c_index
+from src.phase_m2.common import atomic_csv, atomic_json, censoring_survival, harrell_c, lookup_censor_survival, uno_c_index
 from src.phase_m2.data import load_raw_inputs
 from src.phase_m8p0.survival import cox_loss_full
 
@@ -48,12 +49,35 @@ def cfast(times: np.ndarray, events: np.ndarray, risk: np.ndarray) -> float:
     times = np.asarray(times)
     events = np.asarray(events).astype(int)
     risk = np.asarray(risk)
-    numerator = denominator = 0.0
-    for i in np.flatnonzero(events == 1):
-        at_risk = times > times[i]
-        denominator += at_risk.sum()
-        numerator += (risk[i] > risk[at_risk]).sum() + 0.5 * (risk[i] == risk[at_risk]).sum()
-    return numerator / denominator if denominator else float("nan")
+    event_times = times[events == 1]
+    if event_times.size == 0:
+        return float("nan")
+    at_risk = times[None, :] > event_times[:, None]
+    event_risk = risk[events == 1][:, None]
+    numerator = ((event_risk > risk[None, :]) & at_risk).sum(dtype=np.float64)
+    numerator += 0.5 * ((event_risk == risk[None, :]) & at_risk).sum(dtype=np.float64)
+    denominator = at_risk.sum(dtype=np.float64)
+    return float(numerator / denominator) if denominator else float("nan")
+
+
+def ufast(test_times: np.ndarray, test_events: np.ndarray, risks: np.ndarray, train_times: np.ndarray, train_events: np.ndarray) -> tuple[float, float, float]:
+    t = np.asarray(test_times, dtype=float)
+    e = np.asarray(test_events, dtype=int)
+    r = np.asarray(risks, dtype=float)
+    km_t, km_g = censoring_survival(train_times, train_events)
+    g = lookup_censor_survival(t, km_t, km_g)
+    selected = (e == 1) & (g > 1e-8)
+    if not np.any(selected):
+        return float("nan"), 0.0, 0.0
+    event_times = t[selected]
+    event_risk = r[selected][:, None]
+    at_risk = t[None, :] > event_times[:, None]
+    weights = 1.0 / (g[selected] ** 2)
+    pairs = ((event_risk > r[None, :]) & at_risk).sum(axis=1, dtype=np.float64)
+    pairs += 0.5 * ((event_risk == r[None, :]) & at_risk).sum(axis=1, dtype=np.float64)
+    denominator = float(np.sum(weights * at_risk.sum(axis=1)))
+    numerator = float(np.sum(weights * pairs))
+    return (float(numerator / denominator) if denominator else float("nan"), numerator, denominator)
 
 
 def metric(raw, test_idx: np.ndarray, train_idx: np.ndarray, prediction: np.ndarray) -> tuple[float, float]:
@@ -108,12 +132,38 @@ def build_zero_init(out: Path) -> dict:
     return payload
 
 
+def build_initialization_identity_audit(out: Path) -> dict:
+    rows = []
+    for seed in SEEDS:
+        for fold in range(1, 6):
+            left = build_model("K-MSG", seed, fold).state_dict()
+            right = build_model("K-SHUFFLE", seed, fold).state_dict()
+            keys = sorted(set(left) | set(right))
+            mismatches = [key for key in keys if key not in left or key not in right or not torch.equal(left[key], right[key])]
+            rows.append({"seed": seed, "outer_fold": fold, "identical": not mismatches, "mismatched_keys": mismatches})
+    payload = {"status": "PASS" if all(row["identical"] for row in rows) else "FAIL", "definition": "K-MSG and K-SHUFFLE use byte-identical initial parameters; only frozen gene evidence differs", "rows": rows}
+    atomic_json(out / "initialization_identity_audit.json", payload)
+    return payload
+
+
 def _load_prediction(root: Path, variant: str, seed: int, fold: int) -> np.ndarray:
     return np.asarray(np.load(root / f"seed_{seed}" / "cells" / f"{variant}_{seed}_{fold}.npy"), dtype=float)
 
 
 def _baseline_prediction(root: Path, variant: str, seed: int, fold: int) -> np.ndarray:
     return _load_prediction(root, variant, seed, fold)
+
+
+def _bootstrap_one(task: tuple[str, str, int, np.ndarray, np.ndarray, np.ndarray, np.ndarray, int]) -> dict:
+    a, b, seed, pa, pb, oof_time, oof_event, rng_seed = task
+    rng = np.random.default_rng(rng_seed)
+    hvals = []; uvals = []
+    for _ in range(2000):
+        idx = rng.integers(0, len(pa), len(pa)); tt = oof_time[idx]; ee = oof_event[idx]
+        hvals.append(cfast(tt, ee, pa[idx]) - cfast(tt, ee, pb[idx]))
+        ua, _, _ = ufast(tt, ee, pa[idx], oof_time, oof_event); ub, _, _ = ufast(tt, ee, pb[idx], oof_time, oof_event); uvals.append(ua - ub)
+    h = np.asarray(hvals); u = np.asarray(uvals)
+    return {"comparison": f"{a}_vs_{b}", "seed": seed, "n_reps": 2000, "mean_delta_harrell": h.mean(), "ci95_low_harrell": np.quantile(h, .025), "ci95_high_harrell": np.quantile(h, .975), "mean_delta_uno": u.mean(), "ci95_low_uno": np.quantile(u, .025), "ci95_high_uno": np.quantile(u, .975)}
 
 
 def _summary_rows(fold_rows: list[dict], variant: str, seeds: tuple[int, ...]) -> tuple[dict, list[dict]]:
@@ -219,18 +269,15 @@ def run(args: argparse.Namespace) -> None:
 
     ordered_idx = np.concatenate([np.flatnonzero(raw.outer_folds == fold) for fold in range(1, 6)])
     oof_time = raw.dss_time[ordered_idx]; oof_event = raw.dss_event[ordered_idx]
-    bootstrap = []
-    rng = np.random.default_rng(8212026)
+    tasks = []
+    task_index = 0
     for a, b in COMPARISONS:
         for seed in SEEDS:
             pa = np.concatenate([pred_for(a, seed, fold) for fold in range(1, 6)]); pb = np.concatenate([pred_for(b, seed, fold) for fold in range(1, 6)])
-            hvals = []; uvals = []
-            for _ in range(2000):
-                idx = rng.integers(0, len(pa), len(pa)); tt = oof_time[idx]; ee = oof_event[idx]
-                hvals.append(cfast(tt, ee, pa[idx]) - cfast(tt, ee, pb[idx]))
-                ua, _, _ = uno_c_index(tt, ee, pa[idx], oof_time, oof_event); ub, _, _ = uno_c_index(tt, ee, pb[idx], oof_time, oof_event); uvals.append(ua - ub)
-            h = np.asarray(hvals); u = np.asarray(uvals)
-            bootstrap.append({"comparison": f"{a}_vs_{b}", "seed": seed, "n_reps": 2000, "mean_delta_harrell": h.mean(), "ci95_low_harrell": np.quantile(h, .025), "ci95_high_harrell": np.quantile(h, .975), "mean_delta_uno": u.mean(), "ci95_low_uno": np.quantile(u, .025), "ci95_high_uno": np.quantile(u, .975)})
+            tasks.append((a, b, seed, pa, pb, oof_time, oof_event, 8212026 + task_index))
+            task_index += 1
+    with ThreadPoolExecutor(max_workers=min(8, len(tasks))) as pool:
+        bootstrap = list(pool.map(_bootstrap_one, tasks))
     atomic_csv(out / "paired_bootstrap.csv", bootstrap)
 
     variances = []
@@ -257,7 +304,7 @@ def run(args: argparse.Namespace) -> None:
     atomic_csv(out / "concept_risk_contribution.csv", risk_rows)
     atomic_csv(out / "concept_ablation.csv", [
         {"ablation": "real_concepts", "variant": "K-MSG", "status": "formal", "description": "fixed CRC concept bank and real concept-to-gene mapping"},
-        {"ablation": "shuffled_concept_to_gene_mapping", "variant": "K-SHUFFLE", "status": "formal", "description": "same K-MSG capacity with fixed cyclic concept permutation"},
+        {"ablation": "shuffled_concept_to_gene_mapping", "variant": "K-SHUFFLE", "status": "formal", "description": "same K-MSG capacity with frozen deterministic gene-membership shuffle; pathology branch and initialization are unchanged"},
         {"ablation": "no_text_description_concept_id_only", "variant": "K-MSG", "status": "formal_architecture", "description": "no text encoder; descriptions are metadata only and no text enters the model"},
         {"ablation": "omics_only", "variant": "K-O", "status": "formal", "description": "concept omics residual only"},
         {"ablation": "pathology_only", "variant": "K-P", "status": "formal", "description": "concept pathology residual only"},
@@ -268,6 +315,7 @@ def run(args: argparse.Namespace) -> None:
     anchor = build_anchor_audit(out, workers, source)
     cox = build_cox_audit(out)
     zero = build_zero_init(out)
+    init_identity = build_initialization_identity_audit(out)
     # Clinical cross-fit audit is already detailed in workers; validate all rows.
     cf_pass = bool(clinical_audit_rows) and all(str(row.get(key, "0")).lower() in {"0", "false"} for row in clinical_audit_rows for key in ("fit_heldout_overlap", "selection_train_heldout_overlap", "selection_val_heldout_overlap", "outer_test_training_overlap", "heldout_labels_used_for_epoch_selection", "heldout_features_used_for_preprocessing_fit")) and all(row.get("status") == "PASS" for row in clinical_audit_rows)
 
@@ -286,7 +334,7 @@ def run(args: argparse.Namespace) -> None:
         final_decision = "C"
     else:
         final_decision = "D"
-    atomic_json(out / "run_manifest.json", {"phase": "K0", "status": "complete", "cells_completed": 125, "cells_expected": 125, "total_rows_including_frozen_s0": 150, "formal_concept_cells": 125, "s0_frozen_cells": 25, "N": 512, "DSS_events": 65, "seeds": list(SEEDS), "variants": list(VARIANTS), "concept_bank_sha256": bank["content_sha256"], "source_workers": str(source), "source_files_unchanged": True, "predictions_modified": False, "model_training_runs": 125, "execution_sha": subprocess.check_output(["git", "-C", args.repo_root, "rev-parse", "HEAD"], text=True).strip(), "audits": {"strong_anchor_identity": anchor["status"], "clinical_crossfit": "PASS" if cf_pass else "FAIL", "cox_riskset": cox["status"], "zero_init": zero["status"]}, "gates": gates, "final_decision": final_decision})
+    atomic_json(out / "run_manifest.json", {"phase": "K0", "status": "complete", "cells_completed": 125, "cells_expected": 125, "total_rows_including_frozen_s0": 150, "formal_concept_cells": 125, "s0_frozen_cells": 25, "N": 512, "DSS_events": 65, "seeds": list(SEEDS), "variants": list(VARIANTS), "concept_bank_sha256": bank["content_sha256"], "shuffle_mapping_sha256": bank.get("shuffle_mapping_sha256"), "source_workers": str(source), "source_files_unchanged": True, "predictions_modified": False, "model_training_runs": 125, "execution_sha": subprocess.check_output(["git", "-C", args.repo_root, "rev-parse", "HEAD"], text=True).strip(), "audits": {"strong_anchor_identity": anchor["status"], "clinical_crossfit": "PASS" if cf_pass else "FAIL", "cox_riskset": cox["status"], "zero_init": zero["status"], "initialization_identity": init_identity["status"]}, "gates": gates, "final_decision": final_decision})
 
     main_by = {row["variant"]: row for row in main}
     top = sorted([row for row in risk_rows if row["variant"] == "K-MSG"], key=lambda row: -float(row["mean_abs_delta_contribution"]))[:3]
@@ -298,7 +346,7 @@ def run(args: argparse.Namespace) -> None:
     for a, b in COMPARISONS:
         s = summary_lookup[f"{a}_vs_{b}"]; seed_rows = [row for row in deltas if row["status"] == "seed_summary" and row["comparison"] == f"{a}_vs_{b}"]
         lines.append(f"{a} vs {b}: ΔH={float(s['mean_delta_harrell']):+.6f}, ΔU={float(s['mean_delta_uno']):+.6f}; positive seeds H={sum(float(row['mean_delta_harrell']) > 0 for row in seed_rows)}/5, U={sum(float(row['mean_delta_uno']) > 0 for row in seed_rows)}/5")
-    lines += ["", "## Bootstrap", "", "All seven required comparisons used 2,000 patient-level paired bootstrap replicates per seed. Exact 95% intervals are in `paired_bootstrap.csv`; intervals crossing zero are retained as uncertainty.", "", "## Variance", "", "Between-seed and within-seed fold variances are in `variance_decomposition.csv`.", "", "## Concept diagnostics", "", "Top K-MSG held-out absolute risk-contribution concepts: " + ", ".join(f"{row['concept_id']} {row['short_name']}" for row in top), "", "## Gates", "", *(f"- {key}: **{'PASS' if value['pass'] else 'FAIL'}** (ΔH={value['mean_harrell']:+.6f}, ΔU={value['mean_uno']:+.6f}; positive seeds H/U={value['positive_seed_harrell']}/5, {value['positive_seed_uno']}/5)" for key, value in gates.items()), "", f"## Final decision", "", f"**Decision {final_decision}**", "", {"A": "KNOWLEDGE_CONCEPT_FUSION_SUPPORTED", "B": "KNOWLEDGE_REPRESENTATION_SUPPORTED_BUT_MESSAGE_FUSION_NOT_CONFIRMED", "C": "OMICS_RECOVERED_BUT_FINAL_MULTIMODAL_GAIN_NOT_CONFIRMED", "D": "KNOWLEDGE_PRIOR_NOT_SUPPORTED"}[final_decision], "", "## Audit status", "", f"- Strong anchor identity: {anchor['status']}", f"- Nested Clinical cross-fit: {'PASS' if cf_pass else 'FAIL'}", f"- Cox risk-set: {cox['status']}", f"- Zero initialization and parameter stop rule: {zero['status']}", "", "## Output directory", "", str(out)]
+    lines += ["", "## Bootstrap", "", "All seven required comparisons used 2,000 patient-level paired bootstrap replicates per seed. Exact 95% intervals are in `paired_bootstrap.csv`; intervals crossing zero are retained as uncertainty.", "", "## Variance", "", "Between-seed and within-seed fold variances are in `variance_decomposition.csv`.", "", "## Concept diagnostics", "", "Top K-MSG held-out absolute risk-contribution concepts: " + ", ".join(f"{row['concept_id']} {row['short_name']}" for row in top), "", "## Gates", "", *(f"- {key}: **{'PASS' if value['pass'] else 'FAIL'}** (ΔH={value['mean_harrell']:+.6f}, ΔU={value['mean_uno']:+.6f}; positive seeds H/U={value['positive_seed_harrell']}/5, {value['positive_seed_uno']}/5)" for key, value in gates.items()), "", f"## Final decision", "", f"**Decision {final_decision}**", "", {"A": "KNOWLEDGE_CONCEPT_FUSION_SUPPORTED", "B": "KNOWLEDGE_REPRESENTATION_SUPPORTED_BUT_MESSAGE_FUSION_NOT_CONFIRMED", "C": "OMICS_RECOVERED_BUT_FINAL_MULTIMODAL_GAIN_NOT_CONFIRMED", "D": "KNOWLEDGE_PRIOR_NOT_SUPPORTED"}[final_decision], "", "## Audit status", "", f"- Strong anchor identity: {anchor['status']}", f"- Nested Clinical cross-fit: {'PASS' if cf_pass else 'FAIL'}", f"- Cox risk-set: {cox['status']}", f"- Zero initialization and parameter stop rule: {zero['status']}", f"- K-MSG/K-SHUFFLE initialization identity: {init_identity['status']}", "", "## Output directory", "", str(out)]
     (out / "RESULTS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(json.dumps({"cells": 125, "gates": gates, "final_decision": final_decision}, ensure_ascii=False), flush=True)
 

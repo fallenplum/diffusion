@@ -22,7 +22,7 @@ def _membership_hash(symbols: list[str]) -> str:
     return hashlib.sha256("\n".join(symbols).encode()).hexdigest()
 
 
-def _fit_modality(raw_values: np.ndarray, symbols: np.ndarray, train_idx: np.ndarray, modality: str, bank: dict[str, Any]) -> tuple[np.ndarray, list[dict[str, Any]]]:
+def _fit_modality(raw_values: np.ndarray, symbols: np.ndarray, train_idx: np.ndarray, modality: str, bank: dict[str, Any], gene_field: str, mapping_name: str) -> tuple[np.ndarray, list[dict[str, Any]]]:
     transformed, transform_audit = _transform_matrix(raw_values, train_idx, modality)
     symbol_to_indices: dict[str, list[int]] = {}
     for index, symbol in enumerate(symbols.tolist()):
@@ -33,7 +33,7 @@ def _fit_modality(raw_values: np.ndarray, symbols: np.ndarray, train_idx: np.nda
     outputs: list[np.ndarray] = []
     audits: list[dict[str, Any]] = []
     for concept in bank["concepts"]:
-        genes = [str(g).strip().upper() for g in concept["mapped_gene_symbols"]]
+        genes = [str(g).strip().upper() for g in concept[gene_field]]
         matched = [gene for gene in genes if gene in symbol_to_indices]
         if not matched:
             raise ValueError(f"{modality} concept {concept['concept_id']} has no feature overlap")
@@ -60,14 +60,16 @@ def _fit_modality(raw_values: np.ndarray, symbols: np.ndarray, train_idx: np.nda
             "transform": transform_audit.get("transform", "none"),
             "imputation": "outer_train_median",
             "selection_uses_outcomes": False,
+            "gene_mapping": mapping_name,
+            "gene_field": gene_field,
         })
     return np.stack(outputs, axis=1), audits
 
 
-def build_concept_evidence(raw: RawInputs, train_idx: np.ndarray, bank: dict[str, Any]) -> ConceptFoldArrays:
+def build_concept_evidence(raw: RawInputs, train_idx: np.ndarray, bank: dict[str, Any], gene_field: str = "mapped_gene_symbols", mapping_name: str = "real") -> ConceptFoldArrays:
     """Build fixed concept summaries with train-only imputation and scaling."""
-    rna, rna_audit = _fit_modality(raw.rna, raw.rna_symbols, train_idx, "RNA", bank)
-    cna, cna_audit = _fit_modality(raw.cna, raw.cna_symbols, train_idx, "CNA", bank)
+    rna, rna_audit = _fit_modality(raw.rna, raw.rna_symbols, train_idx, "RNA", bank, gene_field, mapping_name)
+    cna, cna_audit = _fit_modality(raw.cna, raw.cna_symbols, train_idx, "CNA", bank, gene_field, mapping_name)
     evidence = np.stack([rna, cna], axis=-1).astype(np.float32)
     audit = rna_audit + cna_audit
     for row in audit:

@@ -1,0 +1,82 @@
+{
+  "concept_bank_sha256": "830f7d3574b95aada65fcd23cec7bb3b0aeae34641539726654aac937b6c8a40",
+  "d": 32,
+  "decision": "A. SPARSE_MEDICAL_CONCEPT_GRAPH_SUPPORTED",
+  "device": "cuda",
+  "dss_used": false,
+  "epochs": 8,
+  "fixed_incidence": {
+    "Clinical": {
+      "K1": 0,
+      "K2": 0,
+      "K3": 0,
+      "K4": 1,
+      "K5": 0,
+      "K6": 0,
+      "K7": 1,
+      "K8": 0
+    },
+    "Omics": {
+      "K1": 1,
+      "K2": 1,
+      "K3": 1,
+      "K4": 1,
+      "K5": 1,
+      "K6": 1,
+      "K7": 1,
+      "K8": 1
+    },
+    "Pathology": {
+      "K1": 1,
+      "K2": 1,
+      "K3": 0,
+      "K4": 1,
+      "K5": 0,
+      "K6": 0,
+      "K7": 1,
+      "K8": 0
+    },
+    "clinical_fields": {
+      "K4": [
+        "PATH_T_STAGE",
+        "PATH_N_STAGE",
+        "PATH_M_STAGE"
+      ],
+      "K7": [
+        "PATH_T_STAGE",
+        "PATH_N_STAGE",
+        "PATH_M_STAGE"
+      ]
+    }
+  },
+  "multimodal_concepts": [
+    "K1",
+    "K4",
+    "K7"
+  ],
+  "n_patients": 512,
+  "outer_folds": 5,
+  "phase": "K2_SPARSE_MEDICAL_CONCEPT_GRAPH",
+  "random_graph_mean": 0.11600568367849491,
+  "random_path_edges": [
+    "K3",
+    "K5",
+    "K6",
+    "K8"
+  ],
+  "raw_wsi_used": false,
+  "real_graph_mean": 0.17308805481872616,
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "status": "complete",
+  "student_forward": "pathology + frozen concept queries only",
+  "supported_edges": 10,
+  "survival_run": false,
+  "tau": 0.07,
+  "text_embedding_sha256": "d3c5d9d2b33db7bc85b54850b62754ec4e598b7469a6880ae5cb98e9ae683472",
+  "trainable_path_parameters": 52289,
+  "trainable_text_parameters": 0
+}

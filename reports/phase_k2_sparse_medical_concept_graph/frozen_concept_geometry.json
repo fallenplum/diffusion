@@ -1,0 +1,7 @@
+{
+  "basis": "right singular vectors of frozen CONCH text matrix; zero-padded to d=32",
+  "effective_rank_threshold": 0.001,
+  "off_diagonal_cosine_mean": 0.14509950578212738,
+  "rank": 8,
+  "text_collapse": false
+}

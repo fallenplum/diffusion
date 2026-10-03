@@ -1,0 +1,15 @@
+{
+  "attention_noncollapse": true,
+  "clinical_used": false,
+  "decision": "C. TEXT_SEMANTICS_NOT_SUPPORTED",
+  "dss_used": false,
+  "fraction_real_better_than_id_only": 0.48333333333333334,
+  "grounding_pass": false,
+  "mean_real_minus_shuffled": 0.004154900669528011,
+  "mean_real_minus_shuffled_gene_teacher": -0.029417609488195873,
+  "omics_in_student_forward": false,
+  "positive_fraction": 0.5333333333333333,
+  "raw_wsi_used": false,
+  "text_query_collapse": false,
+  "unseen_cells": 120
+}

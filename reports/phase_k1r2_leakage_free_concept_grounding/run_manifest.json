@@ -1,0 +1,53 @@
+{
+  "branch": "codex/phase-k1r2-leakage-free-concept-grounding",
+  "concept_bank_sha256": "830f7d3574b95aada65fcd23cec7bb3b0aeae34641539726654aac937b6c8a40",
+  "d": 32,
+  "decision": "C. TEXT_SEMANTICS_NOT_SUPPORTED",
+  "device": "cuda",
+  "elapsed_seconds": 445.90991973876953,
+  "epochs": 8,
+  "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv",
+  "n_patients": 512,
+  "outer_folds": 5,
+  "phase": "K1R2_LEAKAGE_FREE_CONCEPT_GROUNDING",
+  "required_tests": {
+    "status": true,
+    "test_concept_id_only_control": true,
+    "test_dss_never_loaded_in_stage1": true,
+    "test_holdout_concepts_not_optimized": true,
+    "test_query_geometry_noncollapse": true,
+    "test_student_forward_has_no_clinical_argument": true,
+    "test_student_forward_has_no_omics_argument": true,
+    "test_teacher_detached": true,
+    "test_text_shuffle_changes_queries": true
+  },
+  "rotations": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "status": "complete",
+  "student_forward_signature": "student_forward(pathology, text)",
+  "tau": 0.07,
+  "teacher_input_only": "fixed RNA/CNA concept activity used only in detached loss",
+  "text_embedding_sha256": "d3c5d9d2b33db7bc85b54850b62754ec4e598b7469a6880ae5cb98e9ae683472",
+  "trainable_parameters": 68673
+}

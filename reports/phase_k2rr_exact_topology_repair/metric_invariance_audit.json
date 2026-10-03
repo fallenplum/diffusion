@@ -1,0 +1,31 @@
+{
+  "initialization_hashes_checked": 360,
+  "max_order_invariance_abs_delta": 1.3877787807814457e-16,
+  "model_parameter_counts": [
+    52289,
+    52289,
+    52289,
+    52289,
+    52289,
+    52289,
+    52289,
+    52289,
+    52289,
+    52289,
+    52289,
+    52289,
+    52289,
+    52289,
+    52289
+  ],
+  "notes": {
+    "metric": "all outer-test predictions and targets are concatenated before Pearson",
+    "teacher": "RNA and CNA remain separate through training and full-fold evaluation"
+  },
+  "test_dss_not_used": "PASS",
+  "test_full_fold_metric_order_invariant": "PASS",
+  "test_no_batchwise_pearson": "PASS",
+  "test_rna_cna_not_preaveraged": "PASS",
+  "test_same_initialization_all_permutations": "PASS",
+  "test_same_model_capacity_all_permutations": "PASS"
+}

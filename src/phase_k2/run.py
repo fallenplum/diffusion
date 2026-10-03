@@ -23,7 +23,7 @@ SEEDS = (20260904, 20260905, 20260906)
 CONCEPTS = 8
 PATH_EDGES = (0, 1, 3, 6)  # K1, K2, K4, K7; frozen before evaluation
 CLINICAL_EDGES = (3, 6)    # stage/T/N/M -> K4/K7; frozen before evaluation
-RANDOM_PATH_EDGES = (2, 4, 5, 7)  # matched edge-count negative graph
+GRAPH_SHUFFLE_SEED = 20261003
 PATH_DIM = 1536
 D = 32
 TAU = 0.07
@@ -93,7 +93,13 @@ def load_label_free_inputs(data_root: Path, repo_root: Path):
     base = data_root / "data" / "data_8" / "coadread_tcga_pan_can_atlas_2018"
     rna, rna_symbols = _load_omics_table(base / "data_mrna_seq_v2_rsem.txt", ids)
     cna, cna_symbols = _load_omics_table(base / "data_log2_cna.txt", ids)
-    clinical = pd.read_csv(base / "data_clinical_patient.txt", sep="\t", comment="#", dtype=str, low_memory=False)
+    # Load only the protocol-declared clinical proxy columns.  In particular,
+    # DSS time/event columns are never materialized in Stage 1.
+    clinical = pd.read_csv(
+        base / "data_clinical_patient.txt",
+        sep="\t", comment="#", dtype=str, low_memory=False,
+        usecols=["PATIENT_ID", "PATH_T_STAGE", "PATH_N_STAGE", "PATH_M_STAGE"],
+    )
     clinical["patient_id"] = clinical["PATIENT_ID"].map(patient_id)
     clinical = clinical.dropna(subset=["patient_id"]).drop_duplicates("patient_id").set_index("patient_id").reindex(ids)
     return SimpleNamespace(
@@ -245,7 +251,13 @@ def main(args):
     text_collapse=bool(float((cosine.sum()-np.trace(cosine))/56)>.95 or rank<4)
     atomic_json(out/"frozen_concept_geometry.json",{"rank":rank,"effective_rank_threshold":.001,"off_diagonal_cosine_mean":float((cosine.sum()-np.trace(cosine))/56),"text_collapse":text_collapse,"basis":"right singular vectors of frozen CONCH text matrix; zero-padded to d=32"})
     incidence={"Pathology":{"K1":1,"K2":1,"K3":0,"K4":1,"K5":0,"K6":0,"K7":1,"K8":0},"Omics":{"K1":1,"K2":1,"K3":1,"K4":1,"K5":1,"K6":1,"K7":1,"K8":1},"Clinical":{"K1":0,"K2":0,"K3":0,"K4":1,"K5":0,"K6":0,"K7":1,"K8":0},"clinical_fields":{"K4":["PATH_T_STAGE","PATH_N_STAGE","PATH_M_STAGE"],"K7":["PATH_T_STAGE","PATH_N_STAGE","PATH_M_STAGE"]}}
-    atomic_json(out/"modality_concept_incidence.json",{"incidence":incidence,"basis":"fixed before evaluation from CRC medical concept definitions","random_path_edges":[f"K{i+1}" for i in RANDOM_PATH_EDGES]})
+    # A true matched-edge random graph is sampled once from all eight concepts
+    # with a frozen pre-evaluation seed.  It is not the complement of the real
+    # graph, which would be a deterministic alternative graph rather than a
+    # random-incidence control.
+    graph_rng = np.random.default_rng(GRAPH_SHUFFLE_SEED)
+    random_path_edges = tuple(sorted(int(x) for x in graph_rng.choice(np.arange(CONCEPTS), size=len(PATH_EDGES), replace=False)))
+    atomic_json(out/"modality_concept_incidence.json",{"incidence":incidence,"basis":"fixed before evaluation from CRC medical concept definitions","random_graph_seed":GRAPH_SHUFFLE_SEED,"random_path_edges":[f"K{i+1}" for i in random_path_edges]})
     device=torch.device("cuda" if torch.cuda.is_available() and not args.cpu else "cpu")
     path_rows=[]; text_rows=[]; gene_rows=[]; clinical_rows=[]; entropy_rows=[]; overlap_rows=[]; specificity_rows=[]; random_rows=[]; start_time=time.time()
     for seed in SEEDS:
@@ -266,10 +278,10 @@ def main(args):
             for k in CLINICAL_EDGES:
                 value=clinical[test,k]; expected=.5*(spearman(value,real["rna"][test,k])+spearman(value,real["cna"][test,k])); clinical_rows.append({"seed":seed,"outer_fold":fold,"edge":f"Clinical->K{k+1}","concept_id":f"K{k+1}","expected_direction_spearman":expected,"pathology_stage_score_variance":float(np.var(value))})
             # Matched-edge random graph, fixed before metrics and trained independently.
-            torch.manual_seed(seed+fold*1000+991); random_model=FrozenTextPathStudent().to(device); fit_path(random_model,path,queries,real["rna"],real["cna"],train,RANDOM_PATH_EDGES,seed,fold,device); random_score,_=eval_path(random_model,path,queries,test,device)
+            torch.manual_seed(seed+fold*1000+991); random_model=FrozenTextPathStudent().to(device); fit_path(random_model,path,queries,real["rna"],real["cna"],train,random_path_edges,seed,fold,device); random_score,_=eval_path(random_model,path,queries,test,device)
             random_real=[]
-            for k in RANDOM_PATH_EDGES: random_real.append(.5*(pearson(random_score[:,k],real["rna"][test,k])+pearson(random_score[:,k],real["cna"][test,k])))
-            random_rows.append({"seed":seed,"outer_fold":fold,"graph":"REAL","mean_path_alignment":float(np.mean([r["mean_pearson"] for r in path_rows[-len(PATH_EDGES):]])),"edge_count":len(PATH_EDGES)}); random_rows.append({"seed":seed,"outer_fold":fold,"graph":"RANDOM_MATCHED","mean_path_alignment":float(np.mean(random_real)),"edge_count":len(RANDOM_PATH_EDGES)})
+            for k in random_path_edges: random_real.append(.5*(pearson(random_score[:,k],real["rna"][test,k])+pearson(random_score[:,k],real["cna"][test,k])))
+            random_rows.append({"seed":seed,"outer_fold":fold,"graph":"REAL","mean_path_alignment":float(np.mean([r["mean_pearson"] for r in path_rows[-len(PATH_EDGES):]])),"edge_count":len(PATH_EDGES)}); random_rows.append({"seed":seed,"outer_fold":fold,"graph":"RANDOM_MATCHED","mean_path_alignment":float(np.mean(random_real)),"edge_count":len(random_path_edges)})
             del model,random_model
             if device.type=="cuda": torch.cuda.empty_cache()
         print(json.dumps({"seed":seed,"device":str(device),"elapsed":round(time.time()-start_time,1)}),flush=True)
@@ -283,13 +295,15 @@ def main(args):
         rows=[r for r in clinical_rows if r["concept_id"]==f"K{k+1}"]; values=[r["expected_direction_spearman"] for r in rows]; status="SUPPORTED" if np.mean(np.asarray(values)>0)>=.75 and np.mean(values)>0 else ("DIRECTIONAL" if np.mean(np.asarray(values)>0)>=.5 and np.mean(values)>0 else "UNSUPPORTED"); edge_rows.append({"modality":"Clinical","concept_id":f"K{k+1}","status":status,"positive_fraction":float(np.mean(np.asarray(values)>0)),"mean_control_delta":float(np.mean(values))})
     atomic_csv(out/"pathology_edge_metrics.csv",path_rows); atomic_csv(out/"omics_edge_metrics.csv",gene_rows); atomic_csv(out/"clinical_edge_metrics.csv",clinical_rows); atomic_csv(out/"edge_support_matrix.csv",edge_rows); atomic_csv(out/"attention_entropy.csv",entropy_rows); atomic_csv(out/"attention_overlap.csv",overlap_rows); atomic_csv(out/"concept_specificity.csv",specificity_rows); atomic_csv(out/"real_vs_random_graph.csv",random_rows); atomic_csv(out/"real_vs_shuffled_text.csv",path_rows); atomic_csv(out/"real_vs_shuffled_gene.csv",gene_rows)
     real_graph=np.mean([r["mean_path_alignment"] for r in random_rows if r["graph"]=="REAL"]); random_graph=np.mean([r["mean_path_alignment"] for r in random_rows if r["graph"]=="RANDOM_MATCHED"]); supported=[r for r in edge_rows if r["status"] in ("SUPPORTED","DIRECTIONAL")]; concepts={c for r in supported for c in [r["concept_id"]]}; multimodal={c for c in concepts if sum(r["concept_id"]==c for r in supported)>=2}
+    path_text_delta=float(np.mean([r["real_minus_shuffled"] for r in path_rows])); gene_control_delta=float(np.mean([r["real_minus_shuffled"] for r in gene_rows]))
+    text_control_pass=bool(path_text_delta>0); gene_control_pass=bool(gene_control_delta>0)
     if text_collapse: decision="D. SEMANTIC_OR_TEACHER_AUDIT_FAIL"
-    elif real_graph>random_graph and len(supported)>=3 and len(multimodal)>=1: decision="A. SPARSE_MEDICAL_CONCEPT_GRAPH_SUPPORTED"
+    elif real_graph>random_graph and text_control_pass and gene_control_pass and len(supported)>=3 and len(multimodal)>=1: decision="A. SPARSE_MEDICAL_CONCEPT_GRAPH_SUPPORTED"
     elif real_graph>random_graph and len(supported)>=1: decision="B. PARTIAL_CONCEPT_GRAPH_SUPPORTED"
     else: decision="C. MEDICAL_GRAPH_NOT_SUPPORTED"
-    atomic_json(out/"run_manifest.json",{"phase":"K2_SPARSE_MEDICAL_CONCEPT_GRAPH","status":"complete","seeds":list(SEEDS),"n_patients":512,"outer_folds":5,"device":str(device),"d":D,"tau":TAU,"epochs":EPOCHS,"trainable_path_parameters":sum(p.numel() for p in FrozenTextPathStudent().parameters() if p.requires_grad),"trainable_text_parameters":0,"student_forward":"pathology + frozen concept queries only","dss_used":False,"survival_run":False,"raw_wsi_used":False,"concept_bank_sha256":bank["content_sha256"],"text_embedding_sha256":sha256_file(Path(args.text_embeddings)),"decision":decision,"real_graph_mean":float(real_graph),"random_graph_mean":float(random_graph),"supported_edges":len(supported),"multimodal_concepts":sorted(multimodal),"fixed_incidence":incidence,"random_path_edges":[f"K{i+1}" for i in RANDOM_PATH_EDGES]})
-    atomic_json(out/"concept_geometry_audit.json",{"text_collapse":text_collapse,"rank":rank,"off_diagonal_cosine_mean":float((cosine.sum()-np.trace(cosine))/56),"attention_entropy_mean":float(np.mean([r["entropy_normalized"] for r in entropy_rows])),"attention_overlap_mean":float(np.mean([r["real_top10pct_jaccard"] for r in overlap_rows])),"real_graph_mean":float(real_graph),"random_graph_mean":float(random_graph)})
-    lines=["# Phase K2 — Sparse Medical Concept Graph Audit","",f"- Decision: **{decision}**",f"- Frozen text geometry: rank {rank}; collapse={text_collapse}",f"- Real graph mean path alignment: {real_graph:.6f}; matched random graph: {random_graph:.6f}",f"- Supported/directional edges: {len(supported)}; multimodal concepts: {sorted(multimodal)}",f"- DSS, survival, and raw WSI/SVS were not used.","", "Edge statuses are retained in `edge_support_matrix.csv`; no failed edge was removed."]
+    atomic_json(out/"run_manifest.json",{"phase":"K2_SPARSE_MEDICAL_CONCEPT_GRAPH","status":"complete","seeds":list(SEEDS),"n_patients":512,"outer_folds":5,"device":str(device),"d":D,"tau":TAU,"epochs":EPOCHS,"trainable_path_parameters":sum(p.numel() for p in FrozenTextPathStudent().parameters() if p.requires_grad),"trainable_text_parameters":0,"student_forward":"pathology + frozen concept queries only","dss_used":False,"clinical_loaded_columns":["PATH_T_STAGE","PATH_N_STAGE","PATH_M_STAGE"],"survival_run":False,"raw_wsi_used":False,"concept_bank_sha256":bank["content_sha256"],"text_embedding_sha256":sha256_file(Path(args.text_embeddings)),"decision":decision,"real_graph_mean":float(real_graph),"random_graph_mean":float(random_graph),"real_vs_shuffled_text_mean_delta":path_text_delta,"real_vs_shuffled_gene_mean_delta":gene_control_delta,"real_vs_shuffled_text_pass":text_control_pass,"real_vs_shuffled_gene_pass":gene_control_pass,"supported_edges":len(supported),"multimodal_concepts":sorted(multimodal),"fixed_incidence":incidence,"random_graph_seed":GRAPH_SHUFFLE_SEED,"random_path_edges":[f"K{i+1}" for i in random_path_edges]})
+    atomic_json(out/"concept_geometry_audit.json",{"text_collapse":text_collapse,"rank":rank,"off_diagonal_cosine_mean":float((cosine.sum()-np.trace(cosine))/56),"attention_entropy_mean":float(np.mean([r["entropy_normalized"] for r in entropy_rows])),"attention_overlap_mean":float(np.mean([r["real_top10pct_jaccard"] for r in overlap_rows])),"real_graph_mean":float(real_graph),"random_graph_mean":float(random_graph),"real_vs_shuffled_text_mean_delta":path_text_delta,"real_vs_shuffled_gene_mean_delta":gene_control_delta})
+    lines=["# Phase K2 — Sparse Medical Concept Graph Audit","",f"- Decision: **{decision}**",f"- Frozen text geometry: rank {rank}; collapse={text_collapse}",f"- Real graph mean path alignment: {real_graph:.6f}; matched random graph: {random_graph:.6f}",f"- Real vs shuffled text mean delta: {path_text_delta:.6f}; real vs shuffled gene mean delta: {gene_control_delta:.6f}",f"- Supported/directional edges: {len(supported)}; multimodal concepts: {sorted(multimodal)}",f"- DSS, survival, and raw WSI/SVS were not used.","", "Edge statuses are retained in `edge_support_matrix.csv`; no failed edge was removed."]
     (out/"RESULTS.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
     print(json.dumps({"decision":decision,"real_graph":real_graph,"random_graph":random_graph,"supported_edges":len(supported),"multimodal":sorted(multimodal)},ensure_ascii=False),flush=True)
 

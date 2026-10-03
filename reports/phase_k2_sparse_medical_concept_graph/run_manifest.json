@@ -1,4 +1,9 @@
 {
+  "clinical_loaded_columns": [
+    "PATH_T_STAGE",
+    "PATH_N_STAGE",
+    "PATH_M_STAGE"
+  ],
   "concept_bank_sha256": "830f7d3574b95aada65fcd23cec7bb3b0aeae34641539726654aac937b6c8a40",
   "d": 32,
   "decision": "A. SPARSE_MEDICAL_CONCEPT_GRAPH_SUPPORTED",
@@ -57,15 +62,20 @@
   "n_patients": 512,
   "outer_folds": 5,
   "phase": "K2_SPARSE_MEDICAL_CONCEPT_GRAPH",
-  "random_graph_mean": 0.11600568367849491,
+  "random_graph_mean": 0.15730036655702948,
+  "random_graph_seed": 20261003,
   "random_path_edges": [
-    "K3",
+    "K2",
+    "K4",
     "K5",
-    "K6",
-    "K8"
+    "K7"
   ],
   "raw_wsi_used": false,
   "real_graph_mean": 0.17308805481872616,
+  "real_vs_shuffled_gene_mean_delta": 0.025840618311940008,
+  "real_vs_shuffled_gene_pass": true,
+  "real_vs_shuffled_text_mean_delta": 0.028607112424795102,
+  "real_vs_shuffled_text_pass": true,
   "seeds": [
     20260904,
     20260905,

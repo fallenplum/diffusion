@@ -1,0 +1,6 @@
+gate,status,detail
+cohort,PASS,"N=512, DSS events=65"
+split,PASS,273ec884ea2bc7afbe817305c5c423e56c012790e610965e12f01ea1052e5f24
+anchor_identity,PASS,25 frozen C0-Full cells
+omics_preprocessing,PASS,M2R2 preprocess_fold
+leakage,PASS,outer-test excluded from fits and selection

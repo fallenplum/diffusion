@@ -1,0 +1,233 @@
+{
+  "cells_checked": 25,
+  "outer_test_labels_used": false,
+  "outer_test_preprocessing_used": false,
+  "rows": [
+    {
+      "anchor_source_seed": 20261012,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 1,
+      "seed": 20261020,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261012,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 2,
+      "seed": 20261020,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261012,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 3,
+      "seed": 20261020,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261012,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 4,
+      "seed": 20261020,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261012,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 5,
+      "seed": 20261020,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261013,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 1,
+      "seed": 20261021,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261013,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 2,
+      "seed": 20261021,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261013,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 3,
+      "seed": 20261021,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261013,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 4,
+      "seed": 20261021,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261013,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 5,
+      "seed": 20261021,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261014,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 1,
+      "seed": 20261022,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261014,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 2,
+      "seed": 20261022,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261014,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 3,
+      "seed": 20261022,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261014,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 4,
+      "seed": 20261022,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261014,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 5,
+      "seed": 20261022,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261015,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 1,
+      "seed": 20261023,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261015,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 2,
+      "seed": 20261023,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261015,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 3,
+      "seed": 20261023,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261015,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 4,
+      "seed": 20261023,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261015,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 5,
+      "seed": 20261023,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261016,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 1,
+      "seed": 20261024,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261016,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 2,
+      "seed": 20261024,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261016,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 3,
+      "seed": 20261024,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261016,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 4,
+      "seed": 20261024,
+      "status": "PASS",
+      "used_without_refit": true
+    },
+    {
+      "anchor_source_seed": 20261016,
+      "max_abs_difference": 0.0,
+      "offset_source": "frozen M8-P1R C0-Full outer-test prediction",
+      "outer_fold": 5,
+      "seed": 20261024,
+      "status": "PASS",
+      "used_without_refit": true
+    }
+  ],
+  "status": "PASS"
+}

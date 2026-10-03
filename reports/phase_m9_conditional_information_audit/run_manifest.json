@@ -1,0 +1,101 @@
+{
+  "DSS_events": 65,
+  "N": 512,
+  "anchor_hashes": {
+    "20261020/1": "dab5a2eec382d138f5985b9ae54f190c188756067bfe19fc3f6eff9958f5c984",
+    "20261020/2": "915ed3b2f89a0de42249b5c754114d85be42167ef1bee5cd54c0a921a4f34d05",
+    "20261020/3": "11f3c2203c26966657a84670fc761a80543f4308ba2671c9dae2eba88e58f464",
+    "20261020/4": "730bbd615da010b2fa6ae31566aaf00871e794bf20c2aa05a6c197a6a51b316d",
+    "20261020/5": "7245c0de9782c1539cbd8958694d5fb485128b0be4991040416f93410693ceee",
+    "20261021/1": "2c9f3da5324184de3e757055bb830c129c1692ccfac374ccf5af0b6700ecbf68",
+    "20261021/2": "d0cac9cd42158131e9f529f8cf4f1fb047adb6ccd29d5b2c9c57cf5316786b0c",
+    "20261021/3": "bad384e061653093189f9c0765e02ecdb3fe30255a257ced7ade86515c950205",
+    "20261021/4": "89810104e45862ebc19382e66100b42bda56f99204ddb31a66b1ca6cb6e60f2e",
+    "20261021/5": "485b2fb77f307889d0952a7996e7c131bc5e94e78d3cac796e3bdcd263095be8",
+    "20261022/1": "ca728a18e4a85eff15e7e440b64134675e3c6a4a1ff83f8cd08e228fe0506c8a",
+    "20261022/2": "a103c85a4f31958405549578668dc4c48afa7daa13e0aa5e5ddd8aed9a6c597e",
+    "20261022/3": "f962f6c203789757edd8c6f4069e7f48c2409fa261373511cd83b3be3b83eceb",
+    "20261022/4": "61da587aabe703b107d5153cd45c9bbb58e67e5053d2fcbe62229a8f11c3d737",
+    "20261022/5": "d4d50e1822939fe9d74d1a81861c3b583179e857c289baeeddef562db031df3d",
+    "20261023/1": "c51afb1a9967dfc1ed06673fc2ca7d511056f2df04eda49b6d14d55352b31c8b",
+    "20261023/2": "d84a8266ea568020407ebf96dc7554df10027478ce2a17dcaead9bd6f99abb15",
+    "20261023/3": "d99916ee51138a13259f57ce3a1828574fbef27247b95479077c912cab4749e6",
+    "20261023/4": "7b8a62789c0528fec86e296e36eeefd64bca19c52ee345296b4b29713a67de2f",
+    "20261023/5": "94311e2a576d9d8bc74b2021cdac658e3d391a6bff89e7c4a8b51876a1209dce",
+    "20261024/1": "36d0becb6961c0353f08cdec538f5ade9dc8302345de01643ca8d6ac4d5451b6",
+    "20261024/2": "aadca2546f2bc39388ccbbbbbf7198df76f8713888d4aafb8dafc27c53fbd5b2",
+    "20261024/3": "c0ff43c3cecd6ea14334efd31c07cd5405b827592d56482a16eaced5e6c9bc2d",
+    "20261024/4": "eafd95d12f94ebbb9cec5378510e1f3c6666ff8ee770f39d74be3a9c446a9e4b",
+    "20261024/5": "09a188142f1989c2fbbf82c99e433c61475aa2bacf9a48d0efc9c4e93a7a81c9"
+  },
+  "anchor_source": "M8-P1R C0-Full frozen outer-test predictions",
+  "branch": "codex/phase-m9-conditional-information-audit",
+  "decision": "C. CONDITIONAL_SIGNAL_NOT_SUPPORTED",
+  "dss_only": true,
+  "fixed_split_sha256": "273ec884ea2bc7afbe817305c5c423e56c012790e610965e12f01ea1052e5f24",
+  "formal_cells": {
+    "bootstrap": {
+      "completed": 100000,
+      "expected": 100000
+    },
+    "clinical_envelope": {
+      "completed": 15,
+      "expected": 15
+    },
+    "completeness": {
+      "completed": 45,
+      "expected": 45
+    },
+    "conditional_permutation": {
+      "completed": 3000,
+      "expected": 3000
+    },
+    "marginal": {
+      "completed": 60,
+      "expected": 60
+    },
+    "redundancy": {
+      "completed": 40,
+      "expected": 40
+    },
+    "residual": {
+      "completed": 225,
+      "expected": 225
+    }
+  },
+  "hard_stops": [
+    "STOP_COHORT_DISCREPANCY",
+    "STOP_SPLIT_MISMATCH",
+    "STOP_ANCHOR_IDENTITY_FAIL",
+    "STOP_OMICS_FIDELITY_FAIL",
+    "outer-test leakage"
+  ],
+  "historical_b0_context_available": true,
+  "historical_b0_context_source": "runtime/cells/B0_20260904_<fold>.npy",
+  "patient_level_artifacts_written": false,
+  "phase": "M9_CONDITIONAL_INFORMATION_AUDIT",
+  "raw_dimensions": {
+    "cna": 25131,
+    "pathology": [
+      1024,
+      1536
+    ],
+    "rna": 20531
+  },
+  "seeds": [
+    20261020,
+    20261021,
+    20261022,
+    20261023,
+    20261024
+  ],
+  "server": {
+    "cuda": "NVIDIA GeForce RTX 4080 SUPER",
+    "gpu_parallelism": "serial formal cells; compute-only scheduling unchanged",
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "torch": "2.5.1+cu124"
+  },
+  "source_branch": "codex/phase-m8p1r-strong-anchor-residual-repair",
+  "source_sha": "75b43a86795b0af43c6a4c522848ff3996564926",
+  "status": "complete"
+}

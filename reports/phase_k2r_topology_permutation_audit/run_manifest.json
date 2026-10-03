@@ -1,0 +1,33 @@
+{
+  "concept_bank_sha256": "830f7d3574b95aada65fcd23cec7bb3b0aeae34641539726654aac937b6c8a40",
+  "d": 32,
+  "decision": "C. TOPOLOGY_NOT_SUPPORTED",
+  "device": "cuda",
+  "dss_used": false,
+  "epochs": 8,
+  "exact_p_value": 0.9583333333333334,
+  "fixed_split": "outputs/phase_m1r/fixed_patient_folds.csv",
+  "identity_mapping": "K1+K2+K4+K7",
+  "n_patients": 512,
+  "outer_folds": 5,
+  "permutation_mean": 0.2212808191630544,
+  "permutation_std": 0.008989167836606075,
+  "permutations": 24,
+  "phase": "K2R_TOPOLOGY_PERMUTATION_AUDIT",
+  "positive_seed_fold_fraction": 0.2,
+  "query_set": "K1+K2+K4+K7",
+  "raw_wsi_used": false,
+  "real_mean": 0.20493754826858307,
+  "real_percentile": 8.333333333333334,
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "status": "complete",
+  "survival_run": false,
+  "tau": 0.07,
+  "text_embedding_sha256": "d3c5d9d2b33db7bc85b54850b62754ec4e598b7469a6880ae5cb98e9ae683472",
+  "trainable_path_parameters": 52289,
+  "trainable_text_parameters": 0
+}

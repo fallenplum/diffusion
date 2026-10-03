@@ -1,0 +1,11 @@
+modality,edge,concept_id,n_unique_outer_folds,positive_folds,positive_fraction,mean_control_delta,interpretation
+Omics,Omics->K1,K1,5,5,1.0,0.07520869299518382,RNA/CNA pathway activity versus frozen shuffled gene membership
+Omics,Omics->K2,K2,5,0,0.0,-0.123177446740215,RNA/CNA pathway activity versus frozen shuffled gene membership
+Omics,Omics->K3,K3,5,0,0.0,-0.07853041281411594,RNA/CNA pathway activity versus frozen shuffled gene membership
+Omics,Omics->K4,K4,5,5,1.0,0.1443090118656217,RNA/CNA pathway activity versus frozen shuffled gene membership
+Omics,Omics->K5,K5,5,5,1.0,0.06997322717452613,RNA/CNA pathway activity versus frozen shuffled gene membership
+Omics,Omics->K6,K6,5,1,0.2,-0.02859095237952928,RNA/CNA pathway activity versus frozen shuffled gene membership
+Omics,Omics->K7,K7,5,5,1.0,0.05777881674704195,RNA/CNA pathway activity versus frozen shuffled gene membership
+Omics,Omics->K8,K8,5,5,1.0,0.08975400964700657,RNA/CNA pathway activity versus frozen shuffled gene membership
+Clinical,Clinical->K4,K4,5,5,1.0,0.0362481476149196,shared disease-extent context from the same TNM composite; K4/K7 are not independent clinical evidence
+Clinical,Clinical->K7,K7,5,4,0.8,0.02148735158627666,shared disease-extent context from the same TNM composite; K4/K7 are not independent clinical evidence

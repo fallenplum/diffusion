@@ -5,7 +5,7 @@ import csv
 import hashlib
 import json
 import subprocess
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
 import numpy as np
@@ -276,7 +276,9 @@ def run(args: argparse.Namespace) -> None:
             pa = np.concatenate([pred_for(a, seed, fold) for fold in range(1, 6)]); pb = np.concatenate([pred_for(b, seed, fold) for fold in range(1, 6)])
             tasks.append((a, b, seed, pa, pb, oof_time, oof_event, 8212026 + task_index))
             task_index += 1
-    with ThreadPoolExecutor(max_workers=min(8, len(tasks))) as pool:
+    # Bootstrap is dominated by Python-level pair construction.  Use separate
+    # processes so the GIL cannot serialize the seven comparisons x five seeds.
+    with ProcessPoolExecutor(max_workers=min(16, len(tasks))) as pool:
         bootstrap = list(pool.map(_bootstrap_one, tasks))
     atomic_csv(out / "paired_bootstrap.csv", bootstrap)
 

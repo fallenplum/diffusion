@@ -1,0 +1,9 @@
+{
+  "phase": "K1",
+  "status": "preflight_only",
+  "source_k0_concept_bank_sha256": "830f7d3574b95aada65fcd23cec7bb3b0aeae34641539726654aac937b6c8a40",
+  "concept_text_embeddings": "not_generated",
+  "text_encoder": "unavailable",
+  "text_descriptions_used_in_model": false,
+  "note": "K1 concept definitions are inherited only as a preflight reference; no K1 text embedding artifact is claimed."
+}

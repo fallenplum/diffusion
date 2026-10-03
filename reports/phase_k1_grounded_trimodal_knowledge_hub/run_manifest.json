@@ -1,0 +1,25 @@
+{
+  "phase": "K1",
+  "status": "stopped_precondition",
+  "branch": "codex/phase-k1-grounded-trimodal-knowledge-hub",
+  "base_branch": "codex/phase-k0-crc-knowledge-concept-fusion",
+  "protocol": {
+    "cohort": "TCGA COAD/READ",
+    "N": 512,
+    "outer_folds": 5,
+    "endpoint": "DSS",
+    "stage1_forbids_outcomes": true
+  },
+  "stage1": {
+    "text_aligned_pathology_encoder_available": false,
+    "text_embeddings_generated": false,
+    "grounding_metrics_generated": false
+  },
+  "stage2": {
+    "run": false,
+    "reason": "Stage 1 grounding prerequisite failed"
+  },
+  "cells_completed": 0,
+  "survival_not_run": true,
+  "concept_bank_source_sha256": "830f7d3574b95aada65fcd23cec7bb3b0aeae34641539726654aac937b6c8a40"
+}

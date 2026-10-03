@@ -1,0 +1,19 @@
+{
+  "phase": "K1",
+  "status": "STOPPED_PRECONDITION",
+  "concepts": [
+    "K1 immune_inflamed_interferon",
+    "K2 canonical_epithelial_wnt_myc",
+    "K3 metabolic_phenotype",
+    "K4 mesenchymal_tgf_beta_stromal",
+    "K5 proliferation_cell_cycle",
+    "K6 hypoxia_angiogenesis",
+    "K7 invasion_emt_ecm",
+    "K8 inflammatory_immune_suppressive"
+  ],
+  "source_bank_sha256": "830f7d3574b95aada65fcd23cec7bb3b0aeae34641539726654aac937b6c8a40",
+  "text_encoder": "unavailable",
+  "text_embedding_file": null,
+  "frozen_before_survival": false,
+  "note": "This is a preflight record, not a completed K1 concept bank with text embeddings."
+}

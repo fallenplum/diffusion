@@ -1,0 +1,18 @@
+{
+  "phase": "K1",
+  "status": "STOPPED_PRECONDITION",
+  "decision": "GROUNDING_FAIL",
+  "reason": "No usable frozen text-aligned pathology encoder is available in the current server environment.",
+  "stage1_run": false,
+  "stage2_run": false,
+  "survival_cells_completed": 0,
+  "required_next_prerequisite": "Provide a frozen text-aligned pathology encoder and checkpoint.",
+  "forbidden_fallbacks_not_used": ["random concept query", "generic UNI2-h as text-aligned representation", "synthetic text embedding"],
+  "evidence": {
+    "path_tokens_train_pool_shape": [512, 2048, 1536],
+    "path_tokens_deterministic_shape": [512, 1024, 1536],
+    "pathology_backbone": "UNI2-h",
+    "missing_packages": ["transformers", "sentence_transformers", "open_clip", "clip", "timm"],
+    "text_aligned_model_artifacts_found": 0
+  }
+}

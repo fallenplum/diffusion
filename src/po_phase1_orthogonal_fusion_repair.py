@@ -546,12 +546,14 @@ def main(args: argparse.Namespace) -> None:
                         rna_train = np.asarray(saved["rna_train"]); rna_test = np.asarray(saved["rna_test"])
                         path_train = np.asarray(saved["path_train"]); path_test = np.asarray(saved["path_test"])
                         path_emb_train = np.asarray(saved["path_emb_train"]); path_emb_test = np.asarray(saved["path_emb_test"])
-                    rna_row = {"method": "RNA-Linear", "model_field": "RNA-Linear", "seed": seed, "outer_fold": fold, "harrell_c": harrell_c(raw.dss_time[test], raw.dss_event[test], rna_test), "uno_c": uno_c_index(raw.dss_time[test], raw.dss_event[test], rna_test, raw.dss_time[train], raw.dss_event[train])[0], "params": 512, "status": "completed", "cache_reused": True}
-                    path_row = {"method": "Pathology-ABMIL", "model_field": "Pathology-ABMIL", "seed": seed, "outer_fold": fold, "harrell_c": harrell_c(raw.dss_time[test], raw.dss_event[test], path_test), "uno_c": uno_c_index(raw.dss_time[test], raw.dss_event[test], path_test, raw.dss_time[train], raw.dss_event[train])[0], "params": count_parameters(ABMIL()), "status": "completed", "cache_reused": True}
+                    rna_alpha = float(saved["rna_alpha"]) if "rna_alpha" in saved.files else 0.1
+                    path_selected_epoch = int(saved["path_selected_epoch"]) if "path_selected_epoch" in saved.files else ABMIL_MAX_EPOCHS
+                    rna_row = {"method": "RNA-Linear", "model_field": "RNA-Linear", "seed": seed, "outer_fold": fold, "harrell_c": harrell_c(raw.dss_time[test], raw.dss_event[test], rna_test), "uno_c": uno_c_index(raw.dss_time[test], raw.dss_event[test], rna_test, raw.dss_time[train], raw.dss_event[train])[0], "params": 512, "alpha": rna_alpha, "selected_epoch": 220, "status": "completed", "cache_reused": True}
+                    path_row = {"method": "Pathology-ABMIL", "model_field": "Pathology-ABMIL", "seed": seed, "outer_fold": fold, "harrell_c": harrell_c(raw.dss_time[test], raw.dss_event[test], path_test), "uno_c": uno_c_index(raw.dss_time[test], raw.dss_event[test], path_test, raw.dss_time[train], raw.dss_event[train])[0], "params": count_parameters(ABMIL()), "selected_epoch": path_selected_epoch, "status": "completed", "cache_reused": True}
                 else:
                     rna_row, rna_train, rna_test, _ = fit_rna_cell(arrays, raw, train, test, seed, fold)
                     path_row, path_train, path_test, path_emb_train, path_emb_test = fit_abmil_cell(pool, deterministic, arrays, raw, train, test, seed, fold, device)
-                    np.savez_compressed(main_cache, rna_train=rna_train, rna_test=rna_test, path_train=path_train, path_test=path_test, path_emb_train=path_emb_train, path_emb_test=path_emb_test)
+                    np.savez_compressed(main_cache, rna_train=rna_train, rna_test=rna_test, path_train=path_train, path_test=path_test, path_emb_train=path_emb_train, path_emb_test=path_emb_test, rna_alpha=float(rna_row.get("alpha", 0.1)), path_selected_epoch=int(path_row.get("selected_epoch", ABMIL_MAX_EPOCHS)))
                 # Cross-fitted scalar main effects remove in-sample stacking
                 # bias from Additive-Main and from the final interaction fit.
                 crossfit_rr, crossfit_rp = crossfit_main_scores(

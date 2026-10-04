@@ -5,6 +5,8 @@
     "pathway_model_fields_match": true,
     "pathway_params_match_profiles": true,
     "rna_full_selection_15_cells": true,
+    "canonical_rna_manifest_correct": true,
+    "canonical_rna_files_are_not_15_cell_seed_mean": true,
     "replays_all_exact": true,
     "oof_rows_and_seeds": true,
     "mechanism_matrix_90_cells": true,

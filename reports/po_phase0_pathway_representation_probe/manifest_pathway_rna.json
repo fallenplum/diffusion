@@ -1,17 +1,19 @@
 {
+  "phase": "PO-pathway-representation-repair",
+  "model_field": "Pathway-RNA",
+  "model_class": "PathwayEncoder",
   "cohort": 512,
   "events": 65,
   "folds": 5,
-  "knowledge_prior": "M2R2 fold-local MMP Hallmark groups and MCAT signature groups",
-  "models": [
-    "Pathway-RNA+CNA"
-  ],
-  "no_clinical": true,
-  "phase": "PO-pathway-representation-probe",
-  "runtime_seconds": 64.79633212089539,
   "seeds": [
     20260904,
     20260905,
     20260906
-  ]
+  ],
+  "params": 509990,
+  "no_clinical": true,
+  "full_selection_rerun": true,
+  "oof_cache": "private server cache; five disjoint outer-test predictions concatenated per seed",
+  "summary_aggregation": "three per-seed five-fold OOF Harrell and fold-local-IPCW Uno; not a 15-cell mean",
+  "status": "completed"
 }

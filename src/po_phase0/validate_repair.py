@@ -24,6 +24,10 @@ def main(repo: Path, report: Path, runtime: Path) -> None:
     oof = pd.read_csv(report / "seed_oof_metrics.csv")
     profiles = json.loads((report / "model_profiles.json").read_text())['profiles']
     bootstrap = json.loads((report / "paired_patient_bootstrap.json").read_text())
+    canonical = report.parent / 'po_phase0_pathway_representation_probe'
+    canonical_manifest = json.loads((canonical / 'manifest_pathway_rna.json').read_text())
+    canonical_fold = pd.read_csv(canonical / 'fold_pathway_rna.csv')
+    canonical_summary = pd.read_csv(canonical / 'summary_pathway_rna.csv')
     expected_params = {x['model_field']: int(x['params']) for x in profiles}
     expected_models = set(expected_params)
     checks = {}
@@ -31,6 +35,8 @@ def main(repo: Path, report: Path, runtime: Path) -> None:
     checks['pathway_model_fields_match'] = bool((fold['method'] == fold['model_field']).all() and set(fold['method']) == expected_models)
     checks['pathway_params_match_profiles'] = bool(all(int(r.params) == expected_params[r.method] for r in fold.itertuples()))
     checks['rna_full_selection_15_cells'] = bool((fold.query("method == 'Pathway-RNA'").recovery_mode == 'full_selection_refit').all())
+    checks['canonical_rna_manifest_correct'] = bool(canonical_manifest.get('model_field') == 'Pathway-RNA' and canonical_manifest.get('model_class') == 'PathwayEncoder' and int(canonical_manifest.get('params')) == 509990 and canonical_manifest.get('full_selection_rerun') is True)
+    checks['canonical_rna_files_are_not_15_cell_seed_mean'] = bool(len(canonical_fold) == 15 and set(canonical_fold['model_field']) == {'Pathway-RNA'} and 'seed_mean' not in set(canonical_summary.columns) and set(canonical_summary['aggregation']) == {'mean/std of three per-seed five-fold OOF metrics'})
     checks['replays_all_exact'] = bool(fold.query("method != 'Pathway-RNA'").replay_metric_match.all())
     checks['oof_rows_and_seeds'] = bool(len(oof) == 9 and set(oof.groupby('method').size()) == {3} and set(oof.groupby(['method', 'seed']).size()) == {1})
     checks['mechanism_matrix_90_cells'] = bool(len(mechanism) == 90 and set(mechanism.groupby('method').size()) == {15})

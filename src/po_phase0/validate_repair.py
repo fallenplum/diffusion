@@ -28,6 +28,8 @@ def main(repo: Path, report: Path, runtime: Path) -> None:
     canonical_manifest = json.loads((canonical / 'manifest_pathway_rna.json').read_text())
     canonical_fold = pd.read_csv(canonical / 'fold_pathway_rna.csv')
     canonical_summary = pd.read_csv(canonical / 'summary_pathway_rna.csv')
+    legacy_cna_summary = pd.read_csv(canonical / 'summary_pathway_rna_cna.csv')
+    legacy_sig_summary = pd.read_csv(canonical / 'summary_signature.csv')
     expected_params = {x['model_field']: int(x['params']) for x in profiles}
     expected_models = set(expected_params)
     checks = {}
@@ -37,6 +39,7 @@ def main(repo: Path, report: Path, runtime: Path) -> None:
     checks['rna_full_selection_15_cells'] = bool((fold.query("method == 'Pathway-RNA'").recovery_mode == 'full_selection_refit').all())
     checks['canonical_rna_manifest_correct'] = bool(canonical_manifest.get('model_field') == 'Pathway-RNA' and canonical_manifest.get('model_class') == 'PathwayEncoder' and int(canonical_manifest.get('params')) == 509990 and canonical_manifest.get('full_selection_rerun') is True)
     checks['canonical_rna_files_are_not_15_cell_seed_mean'] = bool(len(canonical_fold) == 15 and set(canonical_fold['model_field']) == {'Pathway-RNA'} and 'seed_mean' not in set(canonical_summary.columns) and set(canonical_summary['aggregation']) == {'mean/std of three per-seed five-fold OOF metrics'})
+    checks['legacy_cell_summaries_are_explicitly_non_seed'] = bool(all('seed_mean' not in set(x.columns) and set(x['aggregation']) == {'arithmetic mean/std over 15 outer-fold cells; not per-seed OOF'} for x in (legacy_cna_summary, legacy_sig_summary)))
     checks['replays_all_exact'] = bool(fold.query("method != 'Pathway-RNA'").replay_metric_match.all())
     checks['oof_rows_and_seeds'] = bool(len(oof) == 9 and set(oof.groupby('method').size()) == {3} and set(oof.groupby(['method', 'seed']).size()) == {1})
     checks['mechanism_matrix_90_cells'] = bool(len(mechanism) == 90 and set(mechanism.groupby('method').size()) == {15})
@@ -69,7 +72,7 @@ def main(repo: Path, report: Path, runtime: Path) -> None:
     # Git HEAD is the pre-experiment archive; this protects the two raw cell
     # files from accidental overwrite during the repair run.
     preserved = {}
-    for rel in ('reports/po_phase0_pathway_representation_probe/fold_pathway_rna_cna.csv', 'reports/po_phase0_pathway_representation_probe/summary_pathway_rna_cna.csv', 'reports/po_phase0_pathway_representation_probe/manifest_pathway_rna_cna.json', 'reports/po_phase0_pathway_representation_probe/fold_signature.csv', 'reports/po_phase0_pathway_representation_probe/summary_signature.csv', 'reports/po_phase0_pathway_representation_probe/manifest_signature.json'):
+    for rel in ('reports/po_phase0_pathway_representation_probe/fold_pathway_rna_cna.csv', 'reports/po_phase0_pathway_representation_probe/manifest_pathway_rna_cna.json', 'reports/po_phase0_pathway_representation_probe/fold_signature.csv', 'reports/po_phase0_pathway_representation_probe/manifest_signature.json'):
         current = (repo / rel).read_bytes()
         archived = subprocess.check_output(['git', 'show', f'HEAD:{rel}'], cwd=repo)
         preserved[rel] = {'current_sha256': digest(current), 'head_sha256': digest(archived), 'unchanged': current == archived}

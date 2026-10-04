@@ -1,2 +1,2 @@
-method,harrell_c_seed_mean,harrell_c_seed_std,uno_c_seed_mean,uno_c_seed_std,harrell_c_fold_mean,uno_c_fold_mean,params,status
-Signature-RNA+CNA,0.5938044832185586,0.08224089248219875,0.5108686733629381,0.15634311860241043,0.5938044832185586,0.5108686733629381,477666,completed
+method,fold_cell_harrell_mean,fold_cell_harrell_std,fold_cell_uno_mean,fold_cell_uno_std,params,n_cells,aggregation,status
+Signature-RNA+CNA,0.5938044832185586,0.08224089248219875,0.5108686733629381,0.15634311860241043,477666,15,arithmetic mean/std over 15 outer-fold cells; not per-seed OOF,archived_raw_cells_preserved

@@ -1,0 +1,69 @@
+{
+  "clinical_columns_present_in_raw_for_audit_only": [
+    "AGE",
+    "SEX",
+    "AJCC_STAGE",
+    "T",
+    "N",
+    "M"
+  ],
+  "clinical_used_in_forward": false,
+  "clinical_used_in_model_selection": false,
+  "models": {
+    "CAMR-PO": {
+      "clinical_context_modules": false,
+      "forward_signature_excludes_clinical": true,
+      "parameter_names_containing_clinical": [],
+      "status": "PASS"
+    },
+    "EarlyFusion-PO": {
+      "clinical_context_modules": false,
+      "forward_signature_excludes_clinical": true,
+      "parameter_names_containing_clinical": [],
+      "status": "PASS"
+    },
+    "MCAT-PO": {
+      "clinical_context_modules": false,
+      "forward_signature_excludes_clinical": true,
+      "parameter_names_containing_clinical": [],
+      "status": "PASS"
+    },
+    "MGCT-PO": {
+      "clinical_context_modules": false,
+      "forward_signature_excludes_clinical": true,
+      "parameter_names_containing_clinical": [],
+      "status": "PASS"
+    },
+    "MMPTrans-PO": {
+      "clinical_context_modules": false,
+      "forward_signature_excludes_clinical": true,
+      "parameter_names_containing_clinical": [],
+      "status": "PASS_SOURCE_AUDIT"
+    },
+    "MOTCat-PO": {
+      "clinical_context_modules": false,
+      "forward_signature_excludes_clinical": true,
+      "parameter_names_containing_clinical": [],
+      "status": "PASS"
+    },
+    "Omics-only": {
+      "clinical_context_modules": false,
+      "forward_signature_excludes_clinical": true,
+      "parameter_names_containing_clinical": [],
+      "status": "PASS"
+    },
+    "Pathology-only": {
+      "clinical_context_modules": false,
+      "forward_signature_excludes_clinical": true,
+      "parameter_names_containing_clinical": [],
+      "status": "PASS"
+    },
+    "TransSurv-PO": {
+      "clinical_context_modules": false,
+      "forward_signature_excludes_clinical": true,
+      "parameter_names_containing_clinical": [],
+      "status": "PASS"
+    }
+  },
+  "protocol": "PO-Phase0"
+}

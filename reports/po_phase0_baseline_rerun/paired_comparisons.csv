@@ -1,0 +1,26 @@
+comparison,harrell_delta,uno_delta,harrell_positive_seeds,uno_positive_seeds,stable_both_metrics_all_seeds,rule,status
+MGCT-PO - Pathology-only,0.00775266792215934,-0.05744162886416271,2,0,False,all 3 seed directions on both metrics for stability,available
+MGCT-PO - Omics-only,0.17112366603892015,0.18323914052706736,3,3,True,all 3 seed directions on both metrics for stability,available
+MGCT-PO - historical M2R2 CPO,0.0518675455116131,-0.00887098440701839,NA,NA,NA,historical M2R2 report aggregate; architecture differs by Clinical removal,available
+Pathology-only - Pathology-only,0.0,0.0,0,0,False,all 3 seed directions on both metrics for stability,available
+Pathology-only - Omics-only,0.1633709981167608,0.24068076939123006,3,3,True,all 3 seed directions on both metrics for stability,available
+EarlyFusion-PO - Pathology-only,-0.012335216572504693,-0.06531433277373988,1,0,False,all 3 seed directions on both metrics for stability,available
+EarlyFusion-PO - Omics-only,0.15103578154425612,0.17536643661749018,3,3,True,all 3 seed directions on both metrics for stability,available
+EarlyFusion-PO - historical M2R2 CPO,-0.02928436911487764,-0.028134561898335964,NA,NA,NA,historical M2R2 report aggregate; architecture differs by Clinical removal,available
+MMPTrans-PO - Pathology-only,-0.021578782172002486,-0.034938453346389786,0,0,False,all 3 seed directions on both metrics for stability,available
+MMPTrans-PO - Omics-only,0.14179221594475833,0.20574231604484028,3,3,True,all 3 seed directions on both metrics for stability,available
+MMPTrans-PO - historical M2R2 CPO,0.008568738229755235,0.009910621571276312,NA,NA,NA,historical M2R2 report aggregate; architecture differs by Clinical removal,available
+TransSurv-PO - Pathology-only,-0.028044569993722512,-0.03595018274156736,0,0,False,all 3 seed directions on both metrics for stability,available
+TransSurv-PO - Omics-only,0.1353264281230383,0.2047305866496627,3,3,True,all 3 seed directions on both metrics for stability,available
+TransSurv-PO - historical M2R2 CPO,-0.0013810420590082417,0.007736510413157371,NA,NA,NA,historical M2R2 report aggregate; architecture differs by Clinical removal,available
+MOTCat-PO - Pathology-only,-0.02832705586942874,-0.02642362194163972,1,1,False,all 3 seed directions on both metrics for stability,available
+MOTCat-PO - Omics-only,0.13504394224733207,0.21425714744959035,3,3,True,all 3 seed directions on both metrics for stability,available
+MOTCat-PO - historical M2R2 CPO,-0.004598242310106748,-0.013261459802523579,NA,NA,NA,historical M2R2 report aggregate; architecture differs by Clinical removal,available
+MCAT-PO - Pathology-only,-0.0320935342121782,-0.057931826002087905,1,1,False,all 3 seed directions on both metrics for stability,available
+MCAT-PO - Omics-only,0.13127746390458261,0.18274894338914216,3,3,True,all 3 seed directions on both metrics for stability,available
+MCAT-PO - historical M2R2 CPO,-0.09772441933458875,-0.12896158376157207,NA,NA,NA,historical M2R2 report aggregate; architecture differs by Clinical removal,available
+CAMR-PO - Pathology-only,-0.06279033270558698,-0.08911812226395766,0,0,False,all 3 seed directions on both metrics for stability,available
+CAMR-PO - Omics-only,0.10058066541117383,0.1515626471272724,3,3,True,all 3 seed directions on both metrics for stability,available
+CAMR-PO - historical M2R2 CPO,-0.09698681732580039,-0.11154858553036107,NA,NA,NA,historical M2R2 report aggregate; architecture differs by Clinical removal,available
+Omics-only - Pathology-only,-0.1633709981167608,-0.24068076939123006,0,0,False,all 3 seed directions on both metrics for stability,available
+Omics-only - Omics-only,0.0,0.0,0,0,False,all 3 seed directions on both metrics for stability,available

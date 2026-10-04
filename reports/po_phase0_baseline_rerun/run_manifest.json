@@ -1,0 +1,26 @@
+{
+  "cohort": 512,
+  "complete_models": 9,
+  "decision": "C. PO_FUSION_NOT_SUPPORTED",
+  "events": 65,
+  "formal_cells_completed": 135,
+  "formal_cells_expected": 135,
+  "models": [
+    "EarlyFusion-PO",
+    "MCAT-PO",
+    "MGCT-PO",
+    "CAMR-PO",
+    "MOTCat-PO",
+    "MMPTrans-PO",
+    "TransSurv-PO",
+    "Pathology-only",
+    "Omics-only"
+  ],
+  "phase": "PO-Phase0",
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "status": "C. PO_FUSION_NOT_SUPPORTED"
+}

@@ -1,0 +1,7 @@
+method,seed_oof_harrell_mean,seed_oof_harrell_std,seed_oof_uno_mean,seed_oof_uno_std,n_seeds,aggregation,status,median_params,median_selected_epoch,median_inner_harrell
+RNA-LN-Linear,0.6408819836785938,0.00101014030393937,0.5732536882053513,0.002098937852278206,3,mean/std of three per-seed five-fold OOF metrics,completed,512,220.0,0.5981308411214953
+RNA-Linear,0.6563716258631512,0.00028379066729482353,0.5886356853480293,0.002992473420283083,3,mean/std of three per-seed five-fold OOF metrics,completed,512,220.0,0.6019108280254777
+RNA-MLP,0.5849340866290019,0.024594528577849925,0.5542842387929569,0.007133365417220533,3,mean/std of three per-seed five-fold OOF metrics,completed,50369,6.0,0.6821705426356589
+RNA-MLP-noLN,0.6001412429378531,0.020137069268545686,0.5846649220875784,0.012427771147841452,3,mean/std of three per-seed five-fold OOF metrics,completed,49345,7.0,0.7003484320557491
+RNA-PCA32-Linear,0.6116290018832392,0.0,0.5616583965353342,0.0,3,mean/std of three per-seed five-fold OOF metrics,completed,32,220.0,0.6350710900473934
+RNA-PathwayMean-Linear,0.5707627118644067,0.015139005840488762,0.5776208938596631,0.025028897752139553,3,mean/std of three per-seed five-fold OOF metrics,completed,50,220.0,0.6666666666666666

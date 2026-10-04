@@ -1,0 +1,61 @@
+{
+  "status": true,
+  "checks": {
+    "pathway_cell_count": true,
+    "pathway_model_fields_match": true,
+    "pathway_params_match_profiles": true,
+    "rna_full_selection_15_cells": true,
+    "replays_all_exact": true,
+    "oof_rows_and_seeds": true,
+    "mechanism_matrix_90_cells": true,
+    "mechanism_methods": true,
+    "paired_bootstrap_has_harrell_and_uno": true,
+    "public_reports_have_no_patient_ids": true,
+    "all_oof_cache_cover_512_once": true,
+    "fast_cox_matches_grouped": true,
+    "existing_raw_files_unchanged": true
+  },
+  "oof_coverage": {
+    "Pathway-RNA/20260904": true,
+    "Pathway-RNA/20260905": true,
+    "Pathway-RNA/20260906": true,
+    "Pathway-RNA+CNA/20260904": true,
+    "Pathway-RNA+CNA/20260905": true,
+    "Pathway-RNA+CNA/20260906": true,
+    "Signature-RNA+CNA/20260904": true,
+    "Signature-RNA+CNA/20260905": true,
+    "Signature-RNA+CNA/20260906": true
+  },
+  "preserved_raw_hashes": {
+    "reports/po_phase0_pathway_representation_probe/fold_pathway_rna_cna.csv": {
+      "current_sha256": "469ca6441b1e6ab758f657713ea79ac67f3dd301a076716234caf04e5a015fab",
+      "head_sha256": "469ca6441b1e6ab758f657713ea79ac67f3dd301a076716234caf04e5a015fab",
+      "unchanged": true
+    },
+    "reports/po_phase0_pathway_representation_probe/summary_pathway_rna_cna.csv": {
+      "current_sha256": "604d2cc733cbc339abb9aadaefaec7aaae501ef1a9e76bfe60d7f324566f65ea",
+      "head_sha256": "604d2cc733cbc339abb9aadaefaec7aaae501ef1a9e76bfe60d7f324566f65ea",
+      "unchanged": true
+    },
+    "reports/po_phase0_pathway_representation_probe/manifest_pathway_rna_cna.json": {
+      "current_sha256": "aacef6e1b2c79c94f305bc9325d3a44a351743ba41c40183880c7d62d510b412",
+      "head_sha256": "aacef6e1b2c79c94f305bc9325d3a44a351743ba41c40183880c7d62d510b412",
+      "unchanged": true
+    },
+    "reports/po_phase0_pathway_representation_probe/fold_signature.csv": {
+      "current_sha256": "bc5b1828f06b5c7ad0209fc90cbedb5ad505a37fd4964e6726908da159a47c61",
+      "head_sha256": "bc5b1828f06b5c7ad0209fc90cbedb5ad505a37fd4964e6726908da159a47c61",
+      "unchanged": true
+    },
+    "reports/po_phase0_pathway_representation_probe/summary_signature.csv": {
+      "current_sha256": "c8b9097826b06234b0ef679e10f08605f1ce4a08d72429d524c3ac373e62ae2b",
+      "head_sha256": "c8b9097826b06234b0ef679e10f08605f1ce4a08d72429d524c3ac373e62ae2b",
+      "unchanged": true
+    },
+    "reports/po_phase0_pathway_representation_probe/manifest_signature.json": {
+      "current_sha256": "75f49ea754b7fd4329a3a454971c382160cbb85ab6e7762dcd2b9d3b9c733303",
+      "head_sha256": "75f49ea754b7fd4329a3a454971c382160cbb85ab6e7762dcd2b9d3b9c733303",
+      "unchanged": true
+    }
+  }
+}

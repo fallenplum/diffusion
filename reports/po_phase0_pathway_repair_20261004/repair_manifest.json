@@ -1,0 +1,43 @@
+{
+  "cohort": 512,
+  "device": "cuda",
+  "events": 65,
+  "existing_raw_preserved": [
+    "Pathway-RNA+CNA",
+    "Signature-RNA+CNA"
+  ],
+  "folds": 5,
+  "full_selection_rerun": [
+    "Pathway-RNA"
+  ],
+  "linear_controls": [
+    "RNA-Linear",
+    "RNA-LN-Linear",
+    "RNA-PCA32-Linear",
+    "RNA-PathwayMean-Linear",
+    "RNA-MLP",
+    "RNA-MLP-noLN"
+  ],
+  "models": [
+    "Pathway-RNA",
+    "Pathway-RNA+CNA",
+    "Signature-RNA+CNA"
+  ],
+  "oof_definition": "each seed concatenates five disjoint outer-test predictions; Harrell is computed over all 512 OOF predictions; Uno uses each patient's outer-train censoring KM while comparing against the complete OOF cohort",
+  "paired_comparison": "same seed and same outer fold; CNA minus RNA",
+  "patient_order_sha256": "76a144d544b7461d669487625855dc7de65f115a6a2f65d7a20002b2a8e5008f",
+  "phase": "PO-pathway-representation-repair",
+  "runtime_seconds": 196.20554089546204,
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "source_sha256": {
+    "src/phase_m2/common.py": "effd9687d91dddb1ed1380e3dabaa250a3b9cae513c1292976e227e13f5f2d2d",
+    "src/phase_m2/data.py": "34ec2d0fffba8ebcca196fc3eb3c49c0343b9a84b0daca1ff55ce1dd0f34a125",
+    "src/po_phase0/pathway_probe.py": "dd038f89a752356ae69746de2b10f8b18cbc1ffb40cfb68f2cc3de7ae01b77fd",
+    "src/po_phase0/runner.py": "ffe60880b3ca0a90a18ff71dd5f76574aab6c6fdb7e3d4cd60c3c185f82c40db"
+  },
+  "status": "completed"
+}

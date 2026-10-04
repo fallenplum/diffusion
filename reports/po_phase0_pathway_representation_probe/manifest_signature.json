@@ -1,0 +1,17 @@
+{
+  "cohort": 512,
+  "events": 65,
+  "folds": 5,
+  "knowledge_prior": "M2R2 fold-local MMP Hallmark groups and MCAT signature groups",
+  "models": [
+    "Signature-RNA+CNA"
+  ],
+  "no_clinical": true,
+  "phase": "PO-pathway-representation-probe",
+  "runtime_seconds": 38.72086429595947,
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ]
+}

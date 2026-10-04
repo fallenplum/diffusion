@@ -1,0 +1,14 @@
+{
+  "branch": "codex/po-phase1-orthogonal-fusion-poc",
+  "cohort": 512,
+  "device": "cuda",
+  "events": 65,
+  "failures": 0,
+  "formal_cells": 105,
+  "phase": "PO-Phase1",
+  "runtime_seconds": 473.4981439113617,
+  "status": "completed",
+  "mgct_reference": "strict_historical_reference",
+  "validation_file": "validation.json",
+  "source_script_sha256": "704c9a95d45d01aae4c790e7951977d9205e043f5a31a9e0cade119488b93b7a"
+}

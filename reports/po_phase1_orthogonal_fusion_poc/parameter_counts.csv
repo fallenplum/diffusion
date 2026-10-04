@@ -1,0 +1,9 @@
+method,parameter_count,source,parameter_count_median
+RNA-Linear,512.0,trained,
+Pathology-ABMIL,169778.0,trained,
+Additive-Main,2.0,trained,
+MGCT-PO,798247.0,strict_historical_reference,
+Interaction-noOrth,4947.0,trained,4947.0
+Interaction-Orth,4947.0,trained,4947.0
+Interaction-Orth-noGate,4946.0,trained,4946.0
+Interaction-Orth-Gated,4947.0,trained,4947.0

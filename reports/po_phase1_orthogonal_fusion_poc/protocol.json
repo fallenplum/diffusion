@@ -1,0 +1,75 @@
+{
+  "cohort": 512,
+  "endpoint": "DSS",
+  "events": 65,
+  "excluded": [
+    "Clinical",
+    "CNA",
+    "LLM",
+    "knowledge_graph",
+    "Q-Former",
+    "cross-attention Transformer"
+  ],
+  "folds": 5,
+  "interaction_grid": {
+    "bilinear_rank": [
+      4,
+      8
+    ],
+    "dim": [
+      8,
+      16
+    ],
+    "functions": [
+      "I0-Bilinear",
+      "I1-Hadamard"
+    ],
+    "lambda_gate": [
+      0.0,
+      0.001,
+      0.01
+    ],
+    "lambda_perp": [
+      0.01,
+      0.1,
+      1.0
+    ]
+  },
+  "main_effects": {
+    "Pathology": "current legal Gated ABMIL",
+    "RNA": "top-512 M2R2 fold-local standardized linear Cox"
+  },
+  "modalities": [
+    "RNA",
+    "Pathology UNI2-h"
+  ],
+  "objective": "signal-preserving orthogonal fusion proof-of-concept",
+  "orthogonality_claim": "empirical batch covariance penalty only; no strict RKHS-ANOVA claim",
+  "phase": "PO-Phase1",
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "selection": "inner-only; outer test used only once for final metrics",
+  "status": "completed",
+  "mgct_reference": {
+    "mode": "strict_historical_reference",
+    "source": "reports/po_phase0_baseline_rerun plus private /root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_<seed>_<fold>.npy",
+    "cohort": 512,
+    "events": 65,
+    "folds": 5,
+    "seeds": [
+      20260904,
+      20260905,
+      20260906
+    ],
+    "prediction_cache_required": true
+  },
+  "gate_variants": {
+    "Interaction-noOrth": "lambda_perp=0, learned gate",
+    "Interaction-Orth": "selected lambda_perp, learned gate, lambda_gate=0",
+    "Interaction-Orth-noGate": "selected lambda_perp, fixed alpha=1",
+    "Interaction-Orth-Gated": "selected lambda_perp and lambda_gate, learned gate"
+  }
+}

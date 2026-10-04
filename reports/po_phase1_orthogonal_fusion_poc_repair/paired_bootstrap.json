@@ -1,0 +1,42 @@
+{
+  "Additive-Main": {
+    "bootstrap_replicates": 1000,
+    "delta_harrell_ci95_high": 0.022204385987665606,
+    "delta_harrell_ci95_low": -0.11520812685352692,
+    "delta_harrell_mean": -0.04552913636258577,
+    "delta_uno_ci95_high": 0.04586566583668697,
+    "delta_uno_ci95_low": -0.11018980819407151,
+    "delta_uno_mean": -0.035493307083757225,
+    "paired_patient_resampling": true
+  },
+  "MGCT-PO": {
+    "bootstrap_replicates": 1000,
+    "delta_harrell_ci95_high": 0.012227822473651876,
+    "delta_harrell_ci95_low": -0.15197138851109812,
+    "delta_harrell_mean": -0.07198874849385534,
+    "delta_uno_ci95_high": 0.03698443838599632,
+    "delta_uno_ci95_low": -0.1306360470172973,
+    "delta_uno_mean": -0.04866738625782277,
+    "paired_patient_resampling": true
+  },
+  "Pathology-ABMIL": {
+    "bootstrap_replicates": 1000,
+    "delta_harrell_ci95_high": 0.017216544760794726,
+    "delta_harrell_ci95_low": -0.13868248626333796,
+    "delta_harrell_mean": -0.059413285700591206,
+    "delta_uno_ci95_high": 0.008858514795977549,
+    "delta_uno_ci95_low": -0.1680013192264849,
+    "delta_uno_mean": -0.08187616680313414,
+    "paired_patient_resampling": true
+  },
+  "RNA-Linear": {
+    "bootstrap_replicates": 1000,
+    "delta_harrell_ci95_high": 0.017131162941884923,
+    "delta_harrell_ci95_low": -0.09714471407659711,
+    "delta_harrell_mean": -0.04135388750020388,
+    "delta_uno_ci95_high": 0.09411738176534637,
+    "delta_uno_ci95_low": -0.07164099711516736,
+    "delta_uno_mean": 0.010692134965951623,
+    "paired_patient_resampling": true
+  }
+}

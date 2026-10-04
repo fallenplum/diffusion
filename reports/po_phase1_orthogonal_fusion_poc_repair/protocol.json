@@ -1,0 +1,59 @@
+{
+  "cohort": 512,
+  "endpoint": "DSS",
+  "events": 65,
+  "excluded": [
+    "Clinical",
+    "CNA",
+    "LLM",
+    "knowledge_graph",
+    "Q-Former",
+    "cross-attention Transformer"
+  ],
+  "folds": 5,
+  "interaction_grid": {
+    "bilinear_rank": [
+      4
+    ],
+    "candidate_count": 4,
+    "dim": [
+      8
+    ],
+    "functions": [
+      "I0-Bilinear",
+      "I1-Hadamard"
+    ],
+    "lambda_gate": [
+      0.001
+    ],
+    "lambda_perp": [
+      0.01,
+      0.1
+    ]
+  },
+  "main_effects": {
+    "Pathology": "current legal Gated ABMIL",
+    "RNA": "top-512 M2R2 fold-local standardized linear Cox"
+  },
+  "modalities": [
+    "RNA",
+    "Pathology UNI2-h"
+  ],
+  "objective": "leakage-safe orthogonal fusion proof-of-concept",
+  "orthogonality_claim": "empirical batch covariance penalty only; no strict RKHS-ANOVA claim",
+  "phase": "PO-Phase1-repair",
+  "schedule": {
+    "abmil_max_epochs": 12,
+    "crossfit_folds": 4,
+    "crossfit_main_risks": true,
+    "embedding_coordinate_system": "one final outer-train ABMIL fit shared by all rows"
+  },
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "selection": "for every outer fold, Stage-A RNA/ABMIL is fit on inner-train only; Stage-B candidates are fit on those inner-train outputs and scored once on inner-val; outer-test is evaluated once after configuration lock",
+  "stacking_bias_control": "Additive and interaction training use outer-train cross-fitted scalar main risks; independent fold-specific ABMIL embeddings are never concatenated",
+  "status": "completed"
+}

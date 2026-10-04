@@ -1,0 +1,51 @@
+{
+  "bootstrap_replicates": 2000,
+  "cohort": 512,
+  "conditional_l2": 0.01,
+  "d3_provenance": "outer-train 4-fold cross-fitted scalar risks reconstructed with the locked Phase1 repair schedule; no outer-test labels used",
+  "decision_threshold_correlation_high": 0.7,
+  "decision_threshold_headroom": 0.02,
+  "decision_threshold_permutation_near_zero": 0.01,
+  "decision_threshold_rescue_small": 0.1,
+  "endpoint": "DSS",
+  "events": 65,
+  "excluded": [
+    "Clinical",
+    "CNA",
+    "Transformer",
+    "Q-Former",
+    "LLM",
+    "new_fusion_network"
+  ],
+  "folds": 5,
+  "modalities": [
+    "RNA",
+    "Pathology UNI2-h"
+  ],
+  "oracle_definition": "non-realizable pairwise diagnostic upper bound; any correct modality wins, both wrong loses, ties score 0.5",
+  "permutation_replicates": 1000,
+  "phase": "PO-Phase2",
+  "risk_dependence": {
+    "extreme_threshold_abs_d": 2.0,
+    "standardized_difference": "z(RNA)-z(Pathology)",
+    "top_fractions": [
+      0.1,
+      0.2,
+      0.3
+    ]
+  },
+  "scalar_grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "source_commit": "1b17f5438061c2b876303bab04372bba372e45bb",
+  "source_phase1_branch": "codex/po-phase1-orthogonal-fusion-poc-repair",
+  "status": "completed"
+}

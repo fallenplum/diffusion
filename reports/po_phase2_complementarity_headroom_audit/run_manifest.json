@@ -1,0 +1,15 @@
+{
+  "bootstrap_replicates": 2000,
+  "cohort": 512,
+  "crossfit_rebuilt": false,
+  "decision": "HIGH_HEADROOM_LOW_RECOVERABILITY",
+  "events": 65,
+  "failures": 0,
+  "formal_outer_folds": 15,
+  "formal_seeds": 3,
+  "permutation_replicates": 1000,
+  "phase": "PO-Phase2",
+  "runtime_seconds": 613.4196186065674,
+  "source_commit": "1b17f5438061c2b876303bab04372bba372e45bb",
+  "status": "completed"
+}

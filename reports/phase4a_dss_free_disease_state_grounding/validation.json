@@ -1,0 +1,17 @@
+{
+  "all_oof_grounding_predictions_complete": true,
+  "clinical_targets_not_inputs": true,
+  "cohort_512": true,
+  "dss_labels_used_for_training": false,
+  "dss_metrics_used_for_selection": false,
+  "fixed_outer_folds": true,
+  "formal_expected_seed_rows": 21,
+  "formal_seed_rows": 21,
+  "hallmark_mapping_recorded": true,
+  "outer_test_not_used_for_pretraining": true,
+  "patient_ids_public": false,
+  "shuffled_gene_degree_preserved": true,
+  "shuffled_pathway_size_matched": true,
+  "status": true,
+  "three_shuffle_controls_complete": true
+}

@@ -1,0 +1,44 @@
+{
+  "M0": {
+    "dss_supervision": false,
+    "input": "RNA pathway summaries",
+    "model": "M0",
+    "parameter_count": 4530
+  },
+  "M1": {
+    "dss_supervision": false,
+    "input": "UNI2-h patches",
+    "model": "M1",
+    "parameter_count": 51346
+  },
+  "M2": {
+    "dss_supervision": false,
+    "input": "RNA pathway summaries + UNI2-h patches",
+    "model": "M2",
+    "parameter_count": 57956
+  },
+  "M3": {
+    "dss_supervision": false,
+    "input": "RNA pathway summaries + UNI2-h patches",
+    "model": "M3",
+    "parameter_count": 63570
+  },
+  "M4": {
+    "dss_supervision": false,
+    "input": "RNA pathway summaries + UNI2-h patches",
+    "model": "M4",
+    "parameter_count": 63570
+  },
+  "M5": {
+    "dss_supervision": false,
+    "input": "RNA pathway summaries + UNI2-h patches",
+    "model": "M5",
+    "parameter_count": 63570
+  },
+  "M6": {
+    "dss_supervision": false,
+    "input": "RNA pathway summaries + UNI2-h patches",
+    "model": "M6",
+    "parameter_count": 63570
+  }
+}

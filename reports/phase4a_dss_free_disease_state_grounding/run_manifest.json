@@ -1,0 +1,241 @@
+{
+  "cohort_size": 512,
+  "data_audit": {
+    "clinical_columns": [
+      "AGE",
+      "SEX",
+      "AJCC_PATHOLOGIC_TUMOR_STAGE",
+      "PATH_T_STAGE",
+      "PATH_N_STAGE",
+      "PATH_M_STAGE"
+    ],
+    "cna_input_scale_audit": {
+      "count_like_detected": false,
+      "decision": "no log transform",
+      "finite": true,
+      "finite_count": 12865536,
+      "max": 3.6600000858306885,
+      "median": 0.0,
+      "min": -1.2899999618530273,
+      "min_transform_domain": null,
+      "modality": "CNA",
+      "negative_fraction": 0.4704698661602595,
+      "nonfinite_count": 1536,
+      "q01": -0.8259999752044678,
+      "q99": 1.4900000095367432,
+      "transform_basis": "cBioPortal RSEM batch-normalized profile; Xena/GDC metadata audit",
+      "zero_fraction": 0.050521019878223494
+    },
+    "cna_raw_dim": 25131,
+    "data_root_env": "DIFFUSION_DATA_ROOT",
+    "dss_events": 65,
+    "fold_counts": {
+      "1": 103,
+      "2": 103,
+      "3": 102,
+      "4": 102,
+      "5": 102
+    },
+    "h5_slides": 520,
+    "h5_unique_patients": 512,
+    "n_patients": 512,
+    "rna_input_scale_audit": {
+      "count_like_detected": true,
+      "decision": "metadata_verified_log2(x+1)_without_clipping",
+      "finite": true,
+      "finite_count": 9898000,
+      "max": 894409.0,
+      "median": 219.72862243652344,
+      "min": -0.9641786217689514,
+      "min_transform_domain": -1.0,
+      "modality": "RNA",
+      "negative_fraction": 0.01689088704788846,
+      "nonfinite_count": 613872,
+      "q01": -0.2290647178888321,
+      "q99": 11151.0,
+      "transform_basis": "cBioPortal RSEM batch-normalized profile; Xena/GDC metadata audit",
+      "zero_fraction": 0.09809072539907052
+    },
+    "rna_negative_value_audit": {
+      "examples": [
+        {
+          "gene": "",
+          "value": -0.26337236166000366
+        },
+        {
+          "gene": "A2ML1",
+          "value": -0.3211534023284912
+        },
+        {
+          "gene": "AACSL",
+          "value": -0.2045004516839981
+        },
+        {
+          "gene": "ABCA12",
+          "value": -0.27125778794288635
+        },
+        {
+          "gene": "ABCA17P",
+          "value": -0.2387361079454422
+        },
+        {
+          "gene": "ABCB5",
+          "value": -0.3528476357460022
+        },
+        {
+          "gene": "ABCC11",
+          "value": -0.2684040665626526
+        },
+        {
+          "gene": "ABCC13",
+          "value": -0.11368037760257721
+        },
+        {
+          "gene": "ABCG8",
+          "value": -0.3340193033218384
+        },
+        {
+          "gene": "ABHD12B",
+          "value": -0.5136483907699585
+        },
+        {
+          "gene": "ACCN4",
+          "value": -0.21173281967639923
+        },
+        {
+          "gene": "ACOT6",
+          "value": -0.2838073968887329
+        },
+        {
+          "gene": "ACSBG2",
+          "value": -0.21506325900554657
+        },
+        {
+          "gene": "ACTN2",
+          "value": -0.4059716463088989
+        },
+        {
+          "gene": "ACTN3",
+          "value": -0.08912890404462814
+        },
+        {
+          "gene": "ADAD2",
+          "value": -0.21334615349769592
+        },
+        {
+          "gene": "ADAM20",
+          "value": -0.2510722577571869
+        },
+        {
+          "gene": "ADARB2",
+          "value": -0.21230311691761017
+        },
+        {
+          "gene": "ADCY10",
+          "value": -0.23320195078849792
+        },
+        {
+          "gene": "AFP",
+          "value": -0.791877031326294
+        }
+      ],
+      "finite_count": 9898000,
+      "interpretation": "small repeated negative tail in a batch-normalized RSEM profile; not a missing-value sentinel",
+      "most_common_negative_values": [
+        {
+          "count": 191,
+          "value": -0.22322656214237213
+        },
+        {
+          "count": 186,
+          "value": -0.028129147365689278
+        },
+        {
+          "count": 185,
+          "value": -0.15483000874519348
+        },
+        {
+          "count": 185,
+          "value": -0.04935970902442932
+        },
+        {
+          "count": 183,
+          "value": -0.36356469988822937
+        },
+        {
+          "count": 182,
+          "value": -0.3034227788448334
+        },
+        {
+          "count": 180,
+          "value": -0.14276665449142456
+        },
+        {
+          "count": 178,
+          "value": -0.506978452205658
+        },
+        {
+          "count": 178,
+          "value": -0.22026583552360535
+        },
+        {
+          "count": 177,
+          "value": -0.1390620917081833
+        }
+      ],
+      "negative_count": 167186,
+      "negative_fraction": 0.01689088704788846,
+      "nonfinite_count": 613872,
+      "unique_negative_values": 9305,
+      "values_leq_minus_one": 0
+    },
+    "rna_raw_dim": 20531,
+    "split_path": "outputs/phase_m1r/fixed_patient_folds.csv"
+  },
+  "dss_labels_loaded_for_split_audit_only": true,
+  "dss_labels_used_for_training": false,
+  "dss_metrics_used_for_selection": false,
+  "models": [
+    "M0",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6"
+  ],
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "path_cache_meta": {
+    "deterministic_shape": [
+      512,
+      1024,
+      1536
+    ],
+    "dtype": "float16",
+    "feature_dim": 1536,
+    "k": 1024,
+    "patient_order_sha256": "76a144d544b7461d669487625855dc7de65f115a6a2f65d7a20002b2a8e5008f",
+    "test_sampling": "deterministic_evenly_spaced_per_patient",
+    "train_pool_k": 2048,
+    "train_pool_shape": [
+      512,
+      2048,
+      1536
+    ],
+    "train_sampling": "deterministic_epochwise_without_replacement_from_patient_pool",
+    "train_sampling_seed": 20260904
+  },
+  "phase": "Phase4A",
+  "script_sha256": "018057eda86986459c72af2d694ed6ca472373ce21b9e384d9007b5fb6bbda05",
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "clinical_targets_not_inputs": true,
+  "cohort": 512,
+  "dss_labels_used_for_training": false,
+  "dss_metrics_used_for_selection": false,
+  "input_modalities": [
+    "RNA",
+    "UNI2-h patch tokens"
+  ],
+  "mask_ratio": 0.2,
+  "max_epochs": 100,
+  "outer_folds": 5,
+  "pathway_source": "MSigDB 2024.1.Hs Hallmark H collection",
+  "pathway_source_file": "/root/diffusion_m3_verified_9f859ef/src/phase_m2/metadata/h.all.v2024.1.Hs.symbols.gmt",
+  "patience": 12,
+  "phase": "Phase4A",
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "shuffle_seeds": [
+    9401,
+    9402,
+    9403
+  ],
+  "token_dim": 32
+}

@@ -1,0 +1,13 @@
+method,params_mean,params_min,params_max,status
+A0 Clinical-only,0.0,0.0,0.0,completed
+A1 Additive-C+P+R,3.0,3.0,3.0,completed
+A2 CC-RiskScale,368.2,357.0,373.0,completed
+A3 CC-LowRank-full,2848.2,2837.0,2853.0,completed
+A4 CC-LowRank-CP-only,2847.2,2836.0,2852.0,completed
+A5 CC-LowRank-CR-only,2847.2,2836.0,2852.0,completed
+B0 Clinical-only,,,,locked_or_historical
+B1 C+P additive,2.0,2.0,2.0,completed
+B2 C+R additive,2.0,2.0,2.0,completed
+B3 C+P+R additive,3.0,3.0,3.0,completed
+B4 equal standardized C+P+R,0.0,0.0,0.0,completed
+Selected-conditioned,1048.4666666666667,3.0,2853.0,completed

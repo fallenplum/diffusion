@@ -1,0 +1,38 @@
+{
+  "allowed_forward_columns": [
+    "AGE",
+    "SEX",
+    "AJCC_PATHOLOGIC_TUMOR_STAGE",
+    "PATH_T_STAGE",
+    "PATH_N_STAGE",
+    "PATH_M_STAGE"
+  ],
+  "clinical_context_dim": 8,
+  "forbidden_outcome_columns_checked": [
+    "DSS_STATUS",
+    "DSS_MONTHS",
+    "days-to-death",
+    "follow-up",
+    "censoring"
+  ],
+  "forward_columns": [
+    "AGE",
+    "SEX",
+    "AJCC_PATHOLOGIC_TUMOR_STAGE",
+    "PATH_T_STAGE",
+    "PATH_N_STAGE",
+    "PATH_M_STAGE"
+  ],
+  "leakage_status": "PASS",
+  "patient_ids_written": false,
+  "preprocessing": "outer-train median AGE plus outer-train categorical vocab with MISSING unknown handling",
+  "raw_columns": [
+    "patient_id",
+    "AGE",
+    "SEX",
+    "AJCC_PATHOLOGIC_TUMOR_STAGE",
+    "PATH_T_STAGE",
+    "PATH_N_STAGE",
+    "PATH_M_STAGE"
+  ]
+}

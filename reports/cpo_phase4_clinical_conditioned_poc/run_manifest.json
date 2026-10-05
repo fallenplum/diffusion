@@ -1,0 +1,13 @@
+{
+  "decision": "ADDITIVE_NONCLINICAL_GAIN_SUPPORTED",
+  "failures": 0,
+  "formal_cells_completed": 15,
+  "formal_cells_expected": 15,
+  "formal_outer_folds": 5,
+  "formal_seeds": 3,
+  "paired_bootstrap_replicates": 2000,
+  "phase": "CPO-Phase4",
+  "runtime_seconds": 3459.1529643535614,
+  "source_commit": "d88dc263bf5bbfcb9d23f3c6a100888e6c8e8b49",
+  "status": "completed"
+}

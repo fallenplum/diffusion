@@ -1,0 +1,17 @@
+{
+  "canonical_uno_fold_local": true,
+  "cohort_512": true,
+  "crossfitted_pathology_embedding_complete": true,
+  "decision": "ADDITIVE_NONCLINICAL_GAIN_SUPPORTED",
+  "events_65": true,
+  "failure_count": 0,
+  "formal_cells_completed": 15,
+  "formal_cells_expected": 15,
+  "historical_b5": "M7-CommonOnly",
+  "inner_val_not_used_for_upstream_main_effects": true,
+  "no_patient_ids_public": true,
+  "outer_test_not_used_for_selection": true,
+  "phase1_oof_complete": true,
+  "phase2_crossfit_complete": true,
+  "status": true
+}

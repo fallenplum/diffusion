@@ -1,0 +1,124 @@
+{
+  "best_strict_cpo_comparator": "M7-CommonOnly",
+  "models": {
+    "M7-CommonOnly": {
+      "clinical_fields": [
+        "AGE",
+        "SEX",
+        "AJCC_PATHOLOGIC_TUMOR_STAGE",
+        "PATH_T_STAGE",
+        "PATH_N_STAGE",
+        "PATH_M_STAGE"
+      ],
+      "clinical_usage_audited": true,
+      "cohort": 512,
+      "endpoint": "DSS",
+      "events": 65,
+      "fixed_outer_folds": true,
+      "mean_harrell": 0.7733333333333333,
+      "mean_uno": 0.8192895959625831,
+      "model": "M7-CommonOnly",
+      "patient_ids_written": false,
+      "seeds": [
+        20261002,
+        20261003,
+        20261004,
+        20261005,
+        20261006
+      ],
+      "source": "M7R",
+      "source_runtime": "/root/autodl-tmp",
+      "status": "comparable"
+    },
+    "M7-FiLM": {
+      "clinical_fields": [
+        "AGE",
+        "SEX",
+        "AJCC_PATHOLOGIC_TUMOR_STAGE",
+        "PATH_T_STAGE",
+        "PATH_N_STAGE",
+        "PATH_M_STAGE"
+      ],
+      "clinical_usage_audited": true,
+      "cohort": 512,
+      "endpoint": "DSS",
+      "events": 65,
+      "fixed_outer_folds": true,
+      "mean_harrell": 0.7780508474576271,
+      "mean_uno": 0.8149430155123873,
+      "model": "M7-FiLM",
+      "patient_ids_written": false,
+      "seeds": [
+        20261002,
+        20261003,
+        20261004,
+        20261005,
+        20261006
+      ],
+      "source": "M7R",
+      "source_runtime": "/root/autodl-tmp",
+      "status": "comparable"
+    },
+    "M7-MCAT": {
+      "clinical_fields": [
+        "AGE",
+        "SEX",
+        "AJCC_PATHOLOGIC_TUMOR_STAGE",
+        "PATH_T_STAGE",
+        "PATH_N_STAGE",
+        "PATH_M_STAGE"
+      ],
+      "clinical_usage_audited": true,
+      "cohort": 512,
+      "endpoint": "DSS",
+      "events": 65,
+      "fixed_outer_folds": true,
+      "mean_harrell": 0.7682391713747647,
+      "mean_uno": 0.822484895210297,
+      "model": "M7-MCAT",
+      "patient_ids_written": false,
+      "seeds": [
+        20261002,
+        20261003,
+        20261004,
+        20261005,
+        20261006
+      ],
+      "source": "M7R",
+      "source_runtime": "/root/autodl-tmp",
+      "status": "comparable"
+    },
+    "M8P1R-SPO": {
+      "clinical_fields": [
+        "AGE",
+        "SEX",
+        "AJCC_PATHOLOGIC_TUMOR_STAGE",
+        "PATH_T_STAGE",
+        "PATH_N_STAGE",
+        "PATH_M_STAGE"
+      ],
+      "clinical_usage_audited": true,
+      "cohort": 512,
+      "endpoint": "DSS",
+      "events": 65,
+      "fixed_outer_folds": true,
+      "mean_harrell": 0.7556873822975518,
+      "mean_uno": 0.8042887161062866,
+      "model": "M8P1R-SPO",
+      "patient_ids_written": false,
+      "seeds": [
+        20261012,
+        20261013,
+        20261014,
+        20261015,
+        20261016
+      ],
+      "source": "M8P1R",
+      "source_runtime": "/root/autodl-tmp",
+      "status": "comparable",
+      "strong_anchor_audit": "PASS"
+    }
+  },
+  "patient_ids_written": false,
+  "selection_rule": "audited historical M7 CommonOnly primary Harrell anchor; fallback max historical Harrell only if unavailable"
+}

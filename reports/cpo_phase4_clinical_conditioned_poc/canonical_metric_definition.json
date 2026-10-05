@@ -1,0 +1,8 @@
+{
+  "bootstrap": "2000 paired patient-level resamples with fold-local Uno weights",
+  "endpoint": "DSS",
+  "harrell_primary": "full 512-patient seed-level OOF Harrell C",
+  "harrell_secondary": "five outer-fold mean and SD",
+  "patient_ids_written": false,
+  "uno": "fold-local IPCW micro-aggregation; censoring distribution from each fold outer-train; final sum numerator divided by sum denominator"
+}

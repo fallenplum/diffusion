@@ -1,0 +1,51 @@
+{
+  "ablations": [
+    "A0 Clinical-only",
+    "A1 Additive-C+P+R",
+    "A2 CC-RiskScale",
+    "A3 CC-LowRank-full",
+    "A4 CC-LowRank-CP-only",
+    "A5 CC-LowRank-CR-only"
+  ],
+  "architectures": [
+    "Additive-C+P+R",
+    "CC-RiskScale",
+    "CC-LowRank"
+  ],
+  "clinical_context_dim": 8,
+  "clinical_fields": [
+    "AGE",
+    "SEX",
+    "AJCC_PATHOLOGIC_TUMOR_STAGE",
+    "PATH_T_STAGE",
+    "PATH_N_STAGE",
+    "PATH_M_STAGE"
+  ],
+  "cohort": 512,
+  "endpoint": "DSS",
+  "events": 65,
+  "forbidden": [
+    "P-R interaction",
+    "cross-attention",
+    "Transformer",
+    "LLM",
+    "knowledge graph",
+    "patient-level modality selector",
+    "CNA"
+  ],
+  "l2_grid": [
+    0.01,
+    0.1
+  ],
+  "low_rank": 4,
+  "outer_folds": 5,
+  "patient_ids_written": false,
+  "phase": "CPO-Phase4",
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "stage1_l2": 0.1,
+  "strict_inner_selection": "RNA/ABMIL/Clinical upstream fits receive labels only from inner-train; inner-val is Stage-B scoring only"
+}

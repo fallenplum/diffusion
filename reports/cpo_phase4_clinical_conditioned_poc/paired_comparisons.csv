@@ -1,0 +1,28 @@
+scope,seed,comparison,delta_harrell,delta_uno,status,positive_seed_both
+seed_oof,20260904,A1 Additive-C+P+R - A0 Clinical-only,-0.009063088512241024,0.05709575286859547,completed,
+seed_oof,20260905,A1 Additive-C+P+R - A0 Clinical-only,0.051012241054613994,0.04259788443647439,completed,
+seed_oof,20260906,A1 Additive-C+P+R - A0 Clinical-only,-0.00520244821092275,-0.08356464102421568,completed,
+mean_seed,ALL,A1 Additive-C+P+R - A0 Clinical-only,0.01224890144381674,0.00537633209361806,completed,1
+seed_oof,20260904,A2 CC-RiskScale - A0 Clinical-only,-0.008121468926553632,0.05542089686629781,completed,
+seed_oof,20260905,A2 CC-RiskScale - A0 Clinical-only,0.04234934086629005,0.03562036613153485,completed,
+seed_oof,20260906,A2 CC-RiskScale - A0 Clinical-only,-0.011746704331450086,-0.08098234737331955,completed,
+mean_seed,ALL,A2 CC-RiskScale - A0 Clinical-only,0.0074937225360954445,0.0033529718748377033,completed,1
+seed_oof,20260904,A3 CC-LowRank-full - A0 Clinical-only,-0.013724105461393576,0.05433885346158285,completed,
+seed_oof,20260905,A3 CC-LowRank-full - A0 Clinical-only,0.05138888888888893,0.04600398348743184,completed,
+seed_oof,20260906,A3 CC-LowRank-full - A0 Clinical-only,-0.0028013182674199166,-0.07183396095005101,completed,
+mean_seed,ALL,A3 CC-LowRank-full - A0 Clinical-only,0.011621155053358478,0.009502958666321226,completed,1
+seed_oof,20260904,A1 Additive-C+P+R - B3 C+P+R additive,0.007532956685499026,0.026177640333050034,completed,
+seed_oof,20260905,A1 Additive-C+P+R - B3 C+P+R additive,0.035075329566854996,0.02515546873754715,completed,
+seed_oof,20260906,A1 Additive-C+P+R - B3 C+P+R additive,0.029661016949152574,-0.03511117766431793,completed,
+mean_seed,ALL,A1 Additive-C+P+R - B3 C+P+R additive,0.024089767733835532,0.005407310468759752,completed,2
+seed_oof,20260904,A2 CC-RiskScale - B3 C+P+R additive,0.008474576271186418,0.02450278433075237,completed,
+seed_oof,20260905,A2 CC-RiskScale - B3 C+P+R additive,0.026412429378531055,0.018177950432607615,completed,
+seed_oof,20260906,A2 CC-RiskScale - B3 C+P+R additive,0.023116760828625238,-0.0325288840134218,completed,
+mean_seed,ALL,A2 CC-RiskScale - B3 C+P+R additive,0.019334588826114236,0.003383950249979395,completed,2
+seed_oof,20260904,A3 CC-LowRank-full - B3 C+P+R additive,0.002871939736346474,0.02342074092603741,completed,
+seed_oof,20260905,A3 CC-LowRank-full - B3 C+P+R additive,0.03545197740112993,0.028561567788504605,completed,
+seed_oof,20260906,A3 CC-LowRank-full - B3 C+P+R additive,0.03206214689265541,-0.02338049759015326,completed,
+mean_seed,ALL,A3 CC-LowRank-full - B3 C+P+R additive,0.02346202134337727,0.009533937041462917,completed,2
+current_vs_historical_mean,20260904,A3 CC-LowRank-full - M7-CommonOnly,-0.026977401129943512,-0.0642258290995662,completed,
+current_vs_historical_mean,20260905,A3 CC-LowRank-full - M7-CommonOnly,-0.028154425612052725,-0.011036553221176693,completed,
+current_vs_historical_mean,20260906,A3 CC-LowRank-full - M7-CommonOnly,-0.04736346516007528,-0.09129026526697004,completed,

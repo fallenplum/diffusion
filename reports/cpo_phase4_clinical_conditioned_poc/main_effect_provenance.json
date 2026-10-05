@@ -1,0 +1,178 @@
+{
+  "inner_upstream_models_fit_only_on_inner_train": true,
+  "inner_val_labels_used_for_upstream": false,
+  "outer_cells": [
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 347,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 1,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260904,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 347,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 2,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260904,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 348,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 3,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260904,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 348,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 4,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260904,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 348,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 5,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260904,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 347,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 1,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260905,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 347,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 2,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260905,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 348,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 3,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260905,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 348,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 4,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260905,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 348,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 5,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260905,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 347,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 1,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260906,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 347,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 2,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260906,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 348,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 3,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260906,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 348,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 4,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260906,
+      "status": "completed"
+    },
+    {
+      "clinical_crossfit_subfolds": 4,
+      "coordinate_alignment": "label-free per-model whitening plus orthogonal Procrustes to first crossfit model",
+      "inner_fit_count": 348,
+      "inner_val_upstream_labels_used": false,
+      "outer_fold": 5,
+      "path_crossfit_risk_replay_match": true,
+      "path_test_risk_replay_match": true,
+      "seed": 20260906,
+      "status": "completed"
+    }
+  ],
+  "pathology_embedding_coordinate_alignment": "label-free whitening plus orthogonal Procrustes on outer-train calibration samples",
+  "patient_ids_written": false,
+  "phase1_cache_provenance_count": 30,
+  "phase1_valid": true,
+  "phase2_cache_provenance_count": 15,
+  "phase2_valid": true,
+  "source_commit": "d88dc263bf5bbfcb9d23f3c6a100888e6c8e8b49"
+}

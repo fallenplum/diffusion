@@ -1,0 +1,50 @@
+{
+  "bootstrap_replicates": 2000,
+  "cohort": 512,
+  "endpoint": "DSS",
+  "events": 65,
+  "excluded": [
+    "Clinical",
+    "CNA",
+    "new endpoint",
+    "new split",
+    "Q-Former",
+    "cross-attention",
+    "Transformer",
+    "LLM",
+    "concept graph",
+    "large hyperparameter search"
+  ],
+  "feature_sets": [
+    "F0-RiskOnly",
+    "F1-RiskPlusPathReliability",
+    "F2-RiskPlusPathPlusRNAUncertainty"
+  ],
+  "folds": 5,
+  "gate_definition": "w=sigmoid(g(q)); r=w*z(rP)+(1-w)*z(rR)",
+  "inner_cv_folds": 4,
+  "lambda_g": [
+    0.0,
+    0.01
+  ],
+  "lambda_s": 0.001,
+  "modalities": [
+    "RNA",
+    "Pathology UNI2-h"
+  ],
+  "models": [
+    "G0-Logistic",
+    "G1-TinyMLP"
+  ],
+  "pairwise_diagnostic": "L2 logistic on |q_i-q_j| and q_i+q_j; never used to form patient-level risk",
+  "patient_ids_written": false,
+  "phase": "PO-Phase3",
+  "rna_bootstrap_replicates": 50,
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "selection": "S1 fixed G0 lambda_g=0.01 compares F0/F1/F2; S2 locks feature set and compares G0/G1 x lambda_g",
+  "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856"
+}

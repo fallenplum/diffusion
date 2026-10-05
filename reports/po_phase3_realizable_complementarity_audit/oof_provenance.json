@@ -1,0 +1,476 @@
+{
+  "mgct_records": [
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260904_1.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 103,
+      "outer_fold": 1,
+      "seed": 20260904,
+      "sha256": "11074f9e196ce67e6e7c3043a029566c71e5976dcea52f90890d0f48098b42af",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260904_2.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 103,
+      "outer_fold": 2,
+      "seed": 20260904,
+      "sha256": "69af00920a8b6b01d2040b3c2ae49d19564a33fd9b1ddbf1312ea32849547705",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260904_3.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 102,
+      "outer_fold": 3,
+      "seed": 20260904,
+      "sha256": "24c24b6a2eb79a7b3bf495ac001778fc32fbe61d01f59ec13499bea127a0b4d8",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260904_4.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 102,
+      "outer_fold": 4,
+      "seed": 20260904,
+      "sha256": "bb40707974a8523900518172267a77229da4c8ffe6150552316831280da088a6",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260904_5.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 102,
+      "outer_fold": 5,
+      "seed": 20260904,
+      "sha256": "037d4fec3438637dd7de8163a0fa68d4cc7c711be8e1beff65b4be9dca465429",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260905_1.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 103,
+      "outer_fold": 1,
+      "seed": 20260905,
+      "sha256": "6ca3db08a799e6eeb34702cb58ef441118bcfc31ec5b1093f1f1c97f0e33d23d",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260905_2.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 103,
+      "outer_fold": 2,
+      "seed": 20260905,
+      "sha256": "ba40ea9760c9ac6ebe0429bd2ca1b696385ff50472c520f118c9d5544e4f01f2",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260905_3.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 102,
+      "outer_fold": 3,
+      "seed": 20260905,
+      "sha256": "7eb57f7b0da10f6b3525490b44c755d75dd3b3e8ac160b75a53be23e5d87d8ee",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260905_4.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 102,
+      "outer_fold": 4,
+      "seed": 20260905,
+      "sha256": "8e879fcfdf6d2fc9b1831e6f0fd908befa896f05dde3590a9954bf3ab65f998b",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260905_5.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 102,
+      "outer_fold": 5,
+      "seed": 20260905,
+      "sha256": "1a1a7bc460f5b9a35398788838982aa0e6f6f78168db0720629f1c363f4fa98b",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260906_1.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 103,
+      "outer_fold": 1,
+      "seed": 20260906,
+      "sha256": "f9c0fd1b2fe293212e48b121a489690d0dd9c06b7446b33d585747ff9b8189e1",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260906_2.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 103,
+      "outer_fold": 2,
+      "seed": 20260906,
+      "sha256": "892534a4824ff1b5dd8c86d195fb779511a09b55cc63fd4619c21e37e66c098d",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260906_3.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 102,
+      "outer_fold": 3,
+      "seed": 20260906,
+      "sha256": "a89ee11737a63f00f88d4bbab8b17737fd33a7a304fb06ad790f5c13f955c3b2",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260906_4.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 102,
+      "outer_fold": 4,
+      "seed": 20260906,
+      "sha256": "bf472b7df73c607d7f8313d61bc41fcb71c1599d8812f76f3fc87f2751ba06dd",
+      "status": "completed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/cells/MGCT_PO_20260906_5.npy",
+      "method": "MGCT-PO",
+      "n_predictions": 102,
+      "outer_fold": 5,
+      "seed": 20260906,
+      "sha256": "22f72cb51297d8a5293b04becd6498b59b2b4db1ed7941c86ab9c18c0c131c66",
+      "status": "completed"
+    }
+  ],
+  "patient_ids_written": false,
+  "patient_ordering_sha256": "a7b2508fd6fbfbdf7f9d576cc30e2f2f319ee4f6b8eb98d467589f51ba72a9c7",
+  "phase1_records": [
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260904_f1.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 103,
+      "outer_fold": 1,
+      "seed": 20260904,
+      "sha256": "0da83167a52bb1f1b292830eab9e4c26ff4ad3c68eba2e479ca2ed7e3849269c",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "899083913699b5105fcf1a972d1a49adae5b6a107ad89041a7dfcca12772443d"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260904_f1.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 103,
+      "outer_fold": 1,
+      "seed": 20260904,
+      "sha256": "09b0af03280bfb853cbc5ab5bb6bfaf8b77984d2f0a2cf34d2be781daebf6ce1",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "899083913699b5105fcf1a972d1a49adae5b6a107ad89041a7dfcca12772443d"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260904_f2.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 103,
+      "outer_fold": 2,
+      "seed": 20260904,
+      "sha256": "49567431fc50a3b436fce70d033efcd900700247a88b6e0b554071cf5d9ca4e0",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "2dbe1462a7bd688f427573efef56eb835238685dad333e39f417eac4518391a2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260904_f2.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 103,
+      "outer_fold": 2,
+      "seed": 20260904,
+      "sha256": "b0ceeb67a436c16d852ae0cca3bf6c2e687b7baba1b2822406cb4f6322e4d2da",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "2dbe1462a7bd688f427573efef56eb835238685dad333e39f417eac4518391a2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260904_f3.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 102,
+      "outer_fold": 3,
+      "seed": 20260904,
+      "sha256": "c6aa72bd819e554830f4872c67f95e9d6ce3b4b6e8db6e513b7ac2cf35f0c996",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "eb76e8e655a67ded639fe2f35ee5e94c17a0908ee4ce6a3205006a322c332ef2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260904_f3.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 102,
+      "outer_fold": 3,
+      "seed": 20260904,
+      "sha256": "9807f20472e652b903fb60782fca359295715c688de0e22d3c340eeea9d9437e",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "eb76e8e655a67ded639fe2f35ee5e94c17a0908ee4ce6a3205006a322c332ef2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260904_f4.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 102,
+      "outer_fold": 4,
+      "seed": 20260904,
+      "sha256": "bb7635921d99e630eacfa0e9affd31fd26c69e63eabc6b6db0039d428f463903",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "ecc4264ede66c687a8db0977d242b98226cf688d2d76ed1dd423a69bc0834783"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260904_f4.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 102,
+      "outer_fold": 4,
+      "seed": 20260904,
+      "sha256": "11d6086063ab6ab162c418b14baec505f27965dbd867c13e4482b2bc4ae79c21",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "ecc4264ede66c687a8db0977d242b98226cf688d2d76ed1dd423a69bc0834783"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260904_f5.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 102,
+      "outer_fold": 5,
+      "seed": 20260904,
+      "sha256": "89eaea2c29a7c0a0b8354040ba58318b0b4854f8ff6f787d08de4e8e973adc0a",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "dbf85dca4be59eca3424c545df4d8e8194288c2c49e08a32c55f3f4eae4b5aed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260904_f5.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 102,
+      "outer_fold": 5,
+      "seed": 20260904,
+      "sha256": "185dc361b56884529db9e994a1d02017bb1620c7457d26f971460dca4f5c6914",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "dbf85dca4be59eca3424c545df4d8e8194288c2c49e08a32c55f3f4eae4b5aed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260905_f1.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 103,
+      "outer_fold": 1,
+      "seed": 20260905,
+      "sha256": "52ffdb49f0031aeeeba9dd63b13bc4ead5a8491744734a4f767019601675123c",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "899083913699b5105fcf1a972d1a49adae5b6a107ad89041a7dfcca12772443d"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260905_f1.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 103,
+      "outer_fold": 1,
+      "seed": 20260905,
+      "sha256": "3de8afd1e7805d5b8ac0d7b85dec95d091582a4b4f929a205aec8f63c5835925",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "899083913699b5105fcf1a972d1a49adae5b6a107ad89041a7dfcca12772443d"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260905_f2.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 103,
+      "outer_fold": 2,
+      "seed": 20260905,
+      "sha256": "49567431fc50a3b436fce70d033efcd900700247a88b6e0b554071cf5d9ca4e0",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "2dbe1462a7bd688f427573efef56eb835238685dad333e39f417eac4518391a2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260905_f2.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 103,
+      "outer_fold": 2,
+      "seed": 20260905,
+      "sha256": "f3ee1fd5882d8ecb55fdeb988a64bf5d58040da759b3aaac0d2a517c306f31b7",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "2dbe1462a7bd688f427573efef56eb835238685dad333e39f417eac4518391a2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260905_f3.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 102,
+      "outer_fold": 3,
+      "seed": 20260905,
+      "sha256": "c6aa72bd819e554830f4872c67f95e9d6ce3b4b6e8db6e513b7ac2cf35f0c996",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "eb76e8e655a67ded639fe2f35ee5e94c17a0908ee4ce6a3205006a322c332ef2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260905_f3.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 102,
+      "outer_fold": 3,
+      "seed": 20260905,
+      "sha256": "eff8177f14a50c02020b10ba53fdc801dd342fad26151c0fd95b62ed332c2c2c",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "eb76e8e655a67ded639fe2f35ee5e94c17a0908ee4ce6a3205006a322c332ef2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260905_f4.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 102,
+      "outer_fold": 4,
+      "seed": 20260905,
+      "sha256": "941ede992a6efb5c110d8a2694e01354223b339600d800a9d3a98849bebb4cdc",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "ecc4264ede66c687a8db0977d242b98226cf688d2d76ed1dd423a69bc0834783"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260905_f4.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 102,
+      "outer_fold": 4,
+      "seed": 20260905,
+      "sha256": "d94227b10122f0d6965273bc5d4ed800a47d311140a8ef09a7edb856ea90f7d8",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "ecc4264ede66c687a8db0977d242b98226cf688d2d76ed1dd423a69bc0834783"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260905_f5.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 102,
+      "outer_fold": 5,
+      "seed": 20260905,
+      "sha256": "89eaea2c29a7c0a0b8354040ba58318b0b4854f8ff6f787d08de4e8e973adc0a",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "dbf85dca4be59eca3424c545df4d8e8194288c2c49e08a32c55f3f4eae4b5aed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260905_f5.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 102,
+      "outer_fold": 5,
+      "seed": 20260905,
+      "sha256": "61d6f4310a089f4df0cefdabc33ae5d6a4fe2b980d2a0b156c5ea34445aa4061",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "dbf85dca4be59eca3424c545df4d8e8194288c2c49e08a32c55f3f4eae4b5aed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260906_f1.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 103,
+      "outer_fold": 1,
+      "seed": 20260906,
+      "sha256": "52ffdb49f0031aeeeba9dd63b13bc4ead5a8491744734a4f767019601675123c",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "899083913699b5105fcf1a972d1a49adae5b6a107ad89041a7dfcca12772443d"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260906_f1.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 103,
+      "outer_fold": 1,
+      "seed": 20260906,
+      "sha256": "efda3320d6d7db69294dc7581fd6154c86ae80cb19a05b87ce8999e0f8bd69b5",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "899083913699b5105fcf1a972d1a49adae5b6a107ad89041a7dfcca12772443d"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260906_f2.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 103,
+      "outer_fold": 2,
+      "seed": 20260906,
+      "sha256": "ae018e89ab7c9ed0c35f372ad27565bbd3d602b2bb2a1225161a690e1c656187",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "2dbe1462a7bd688f427573efef56eb835238685dad333e39f417eac4518391a2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260906_f2.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 103,
+      "outer_fold": 2,
+      "seed": 20260906,
+      "sha256": "d4216f8d703ae9b75225b232e4c077b0957de2eb03f2df8c8625d6565b29ca60",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "2dbe1462a7bd688f427573efef56eb835238685dad333e39f417eac4518391a2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260906_f3.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 102,
+      "outer_fold": 3,
+      "seed": 20260906,
+      "sha256": "60b641a738394496a87fbc71498389e38ffc00eedb513c5cf8b4ed5697809e96",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "eb76e8e655a67ded639fe2f35ee5e94c17a0908ee4ce6a3205006a322c332ef2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260906_f3.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 102,
+      "outer_fold": 3,
+      "seed": 20260906,
+      "sha256": "6b1e3e5df3daab4725f8cb3b712bd89dd2b10211c6dc5c51076e5044eded1430",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "eb76e8e655a67ded639fe2f35ee5e94c17a0908ee4ce6a3205006a322c332ef2"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260906_f4.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 102,
+      "outer_fold": 4,
+      "seed": 20260906,
+      "sha256": "771047ca024b8d7d34a1e82c1f17ab73d71672ca8ef7eb99458f38a827e809a7",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "ecc4264ede66c687a8db0977d242b98226cf688d2d76ed1dd423a69bc0834783"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260906_f4.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 102,
+      "outer_fold": 4,
+      "seed": 20260906,
+      "sha256": "06fb64c1fc20e395879ea02fdf8acb4fb629ac3f3f8083ed44fd115a067a58dc",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "ecc4264ede66c687a8db0977d242b98226cf688d2d76ed1dd423a69bc0834783"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/RNA_Linear_s20260906_f5.npz",
+      "method": "RNA-Linear",
+      "n_predictions": 102,
+      "outer_fold": 5,
+      "seed": 20260906,
+      "sha256": "85b1f5d8394f38fc5cc0f080eb8de921fcd5331d7139d1971a18ed8090a905c4",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "dbf85dca4be59eca3424c545df4d8e8194288c2c49e08a32c55f3f4eae4b5aed"
+    },
+    {
+      "cache_path": "/root/autodl-tmp/po_phase0_runtime/phase1_orthogonal_cells_repair/Pathology_ABMIL_s20260906_f5.npz",
+      "method": "Pathology-ABMIL",
+      "n_predictions": 102,
+      "outer_fold": 5,
+      "seed": 20260906,
+      "sha256": "b5ec91dc7284407718ed06ca243ee87034a24e09d605fba908ad5f94820db6a7",
+      "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856",
+      "status": "completed",
+      "test_idx_sha256": "dbf85dca4be59eca3424c545df4d8e8194288c2c49e08a32c55f3f4eae4b5aed"
+    }
+  ],
+  "phase2_crossfit_cache": "/root/autodl-tmp/po_phase0_runtime/phase2_crossfit_main_cache",
+  "source_branch": "codex/po-phase2-complementarity-headroom-audit",
+  "source_commit": "2578d63abd3273f1870c4ed1b6f67cf31a5ec856"
+}

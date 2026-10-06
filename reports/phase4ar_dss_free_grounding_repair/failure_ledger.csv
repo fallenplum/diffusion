@@ -1,0 +1,3 @@
+failure_type,details
+ephemeral_training_preflight,Missing attention output directory; fixed before formal cells; temporary cells excluded
+scheduler_duplicate,Initial worker used default 3 seeds; stopped after seed4 complete; seed5/6 duplicates retained privately and excluded by explicit runtime assignment

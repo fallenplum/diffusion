@@ -1,0 +1,24 @@
+{
+  "base_script_sha256": "018057eda86986459c72af2d694ed6ca472373ce21b9e384d9007b5fb6bbda05",
+  "cohort_size": 512,
+  "duplicate_policy": "seed4 only from first runtime; seed5/6 only from independent runtimes; duplicates excluded",
+  "finalizer_sha256": "749e4c0837bcb2a058996b9f01e5d249c568235caa735d7aafac1803269d727e",
+  "gpu": "NVIDIA GeForce RTX 4080 32760MiB",
+  "hallmark_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+  "patient_order_sha256": "76a144d544b7461d669487625855dc7de65f115a6a2f65d7a20002b2a8e5008f",
+  "phase": "Phase4A-R",
+  "provenance_inventory": "private_cache_provenance.csv; hashes only, no patient data",
+  "runtime_artifacts_not_public": true,
+  "seed_runtime_assignment": {
+    "20260904": "/root/autodl-tmp/phase4ar_runtime_20261006",
+    "20260905": "/root/autodl-tmp/phase4ar_runtime_20261006_s20260905",
+    "20260906": "/root/autodl-tmp/phase4ar_runtime_20261006_s20260906"
+  },
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "training_script_sha256": "efe2abf2f15388341c14f632158d64668b6d13508efbc5c7031a6010fab66097",
+  "unique_cells": 135
+}

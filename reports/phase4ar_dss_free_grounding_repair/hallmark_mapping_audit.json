@@ -1,0 +1,2636 @@
+{
+  "folds": [
+    {
+      "outer_fold": 1,
+      "rows": [
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 189,
+          "matched_symbols_sha256": "600c0a0ae74dcfca5768992d66a5f0e4f9423536537c975d851084c3905b4b45",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ADIPOGENESIS",
+          "unmatched_gene_count": 11
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "0d3038d0985dc15303888ca171bfecb43300c990532a0c8b57400fd44dfdb93c",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ALLOGRAFT_REJECTION",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 101,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 97,
+          "matched_symbols_sha256": "989fc8f02ef6c58a49c4f0d568939d5de2c8a78244b3d0cfef485b2c30b23ab2",
+          "original_gene_count": 101,
+          "pathway": "HALLMARK_ANDROGEN_RESPONSE",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 36,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 36,
+          "matched_symbols_sha256": "0bc177a4683bdd3de82901776cde31b41e354b6bfd4fbff4c61b319e86cfb4b1",
+          "original_gene_count": 36,
+          "pathway": "HALLMARK_ANGIOGENESIS",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 192,
+          "matched_symbols_sha256": "61d912261fc098ffe70a76c11534666e827c23f096a1ec8cd3435e448bbf50a4",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_APICAL_JUNCTION",
+          "unmatched_gene_count": 8
+        },
+        {
+          "assigned_gene_count": 44,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 43,
+          "matched_symbols_sha256": "3574147c314cd051200a76a066eedd410000ab5768e8885a7a8cc7412b35b7d1",
+          "original_gene_count": 44,
+          "pathway": "HALLMARK_APICAL_SURFACE",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 161,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 158,
+          "matched_symbols_sha256": "2e822f72abcb53ad807fe313f6236aaca451882c5929d9efee4690379669dded",
+          "original_gene_count": 161,
+          "pathway": "HALLMARK_APOPTOSIS",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 112,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 112,
+          "matched_symbols_sha256": "f0e0ced79e98889cc11897ae04d70be6c63fea3f1fafcbd9a38e2a0c3e462006",
+          "original_gene_count": 112,
+          "pathway": "HALLMARK_BILE_ACID_METABOLISM",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 74,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 72,
+          "matched_symbols_sha256": "208c95081fdeb800fdf508f20480dacb32cdf2e3d6837683014a1d9f6cf87469",
+          "original_gene_count": 74,
+          "pathway": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+          "unmatched_gene_count": 2
+        },
+        {
+          "assigned_gene_count": 138,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 136,
+          "matched_symbols_sha256": "58855a67c7085560232887b7b3ea88ed022b40d39f2afb9e98435d1aa9789f7b",
+          "original_gene_count": 138,
+          "pathway": "HALLMARK_COAGULATION",
+          "unmatched_gene_count": 2
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "28cb0f7c3e3cf2e8840b173120ad79c0ab40c970db1c1f31b84b4a15ef654672",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_COMPLEMENT",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 150,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 139,
+          "matched_symbols_sha256": "e50b7d402e0dec5751399b4198185fcc30e04f95dc1cf1083b763e2d246072e5",
+          "original_gene_count": 150,
+          "pathway": "HALLMARK_DNA_REPAIR",
+          "unmatched_gene_count": 11
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 186,
+          "matched_symbols_sha256": "c7602bfe24f3dfd00073241f4263fd573175fa7c175b4630e91d96e00dd82424",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_E2F_TARGETS",
+          "unmatched_gene_count": 14
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 194,
+          "matched_symbols_sha256": "6a2086568861d95432b178531f023c7b6e149774ffc655474aed60936fd37678",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 191,
+          "matched_symbols_sha256": "1ca3b2b8bde665f5221f50da67b352d133c74c814b7b0a5faa7dea91993c0a7d",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+          "unmatched_gene_count": 9
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "eeb1f43113e1cef98411e764e1049fa1103b0ccf02e078a82c496921f2450484",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 158,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 153,
+          "matched_symbols_sha256": "154977c36365349ac06f64002803191c16391c958094894d3821c87120488788",
+          "original_gene_count": 158,
+          "pathway": "HALLMARK_FATTY_ACID_METABOLISM",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 184,
+          "matched_symbols_sha256": "34bfe9ddbe7ef705ac17fe408c9378c4423eb2c794affb2ce8770553478bd05b",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_G2M_CHECKPOINT",
+          "unmatched_gene_count": 16
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "9085f97ebb76627f4e7d8e46347c04df1ee2eacbca9b7888db88964b18d836df",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_GLYCOLYSIS",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 36,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 35,
+          "matched_symbols_sha256": "94b51553297859b2108ab4e08724e8a2d6f70e62943c86b92665c2a602a08dd5",
+          "original_gene_count": 36,
+          "pathway": "HALLMARK_HEDGEHOG_SIGNALING",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "62f191d49d8b25e8d43a02434eb45236a60bb090ab8622e6bb2dde25b9ee5de5",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_HEME_METABOLISM",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "206b2f8ea29b4f755f9c80cd3720d7dd97739c31e4264696225d2aef02c9514a",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_HYPOXIA",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 199,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "59623cb0455258ea9b72f4a9ebe6035a05e81991c36690fd5cfcff0ee3509521",
+          "original_gene_count": 199,
+          "pathway": "HALLMARK_IL2_STAT5_SIGNALING",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 87,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 87,
+          "matched_symbols_sha256": "b9629d4182b8dce50fdf1de27e3179b75d4115aaaa24cbe944b5e6efaa70d3d1",
+          "original_gene_count": 87,
+          "pathway": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 197,
+          "matched_symbols_sha256": "5e43be6319816cc984da259cb3533668713d1bf4d692652677a5232b77cc3a6b",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_INFLAMMATORY_RESPONSE",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 97,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 92,
+          "matched_symbols_sha256": "481d58e296034b93b34472250cf0dfa06bb74a4f20d4bd38851a6e7eedd7762d",
+          "original_gene_count": 97,
+          "pathway": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 194,
+          "matched_symbols_sha256": "d1c97f8a8073a7e386addf1595cb99a78a9e9a977cfa41c06c9734aebc82d78e",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 188,
+          "matched_symbols_sha256": "2a89917d03b38a348f0988a3f662498ab6a99a01e2ba7a2d8dcac22e40ffba36",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_KRAS_SIGNALING_DN",
+          "unmatched_gene_count": 12
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "fc477feadbdc56fedc520a926122d70396ffca171803f591bfe0946a6e437c5a",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_KRAS_SIGNALING_UP",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 199,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "ddf27d2557fa98305c6ddebdb1c5b629c562791d7ce8ac6cb0279b8a8c822505",
+          "original_gene_count": 199,
+          "pathway": "HALLMARK_MITOTIC_SPINDLE",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 191,
+          "matched_symbols_sha256": "ae9e1d18ac146022c5911af2b6d7179f0fd451b7356462a41af4eae03ef527d5",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MTORC1_SIGNALING",
+          "unmatched_gene_count": 9
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 187,
+          "matched_symbols_sha256": "84f544c65955adb0c5a9df3b92e09e668227c7e085002e4db138c3f546831e6e",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MYC_TARGETS_V1",
+          "unmatched_gene_count": 13
+        },
+        {
+          "assigned_gene_count": 58,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 57,
+          "matched_symbols_sha256": "7a15e56ca74dd3198749c454817e3f39b5562004af085a4c3a007012741250b5",
+          "original_gene_count": 58,
+          "pathway": "HALLMARK_MYC_TARGETS_V2",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 197,
+          "matched_symbols_sha256": "b101500c08b14e68817c08362ebe87b9686603d55b9f3e9ec3366eaa22c229c3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MYOGENESIS",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 32,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 32,
+          "matched_symbols_sha256": "1279900280660e43b0fbcfaf73750a53a5a1f4feccacf0ec8387449dbcccdcb6",
+          "original_gene_count": 32,
+          "pathway": "HALLMARK_NOTCH_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 182,
+          "matched_symbols_sha256": "42df464ef848950230ca59405bf54e932e555f1296a6d9edcd684bb62e4ad505",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+          "unmatched_gene_count": 18
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "1578b6499b07b036542cb2a143c5dfb69b14fe3ca67b04e0933cfb0762da31c3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_P53_PATHWAY",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 40,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 40,
+          "matched_symbols_sha256": "37ab2ce1d6d7dbbb688fac3a315b6364b6ca5be254bc2a8276cba7f306b1bb3a",
+          "original_gene_count": 40,
+          "pathway": "HALLMARK_PANCREAS_BETA_CELLS",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 104,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 101,
+          "matched_symbols_sha256": "cb50b92243dad6ef572053b89340f9df63b263e63a4ae0b7391dc711229f305f",
+          "original_gene_count": 104,
+          "pathway": "HALLMARK_PEROXISOME",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 105,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 104,
+          "matched_symbols_sha256": "43f319a67dd9007d514c51944d809b0f832c40bd198ad8fa9fedcb9133109fce",
+          "original_gene_count": 105,
+          "pathway": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 96,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 95,
+          "matched_symbols_sha256": "b9aebbad45cd80d890a477800bf0bd34ca069aea45bf35860675454766da020d",
+          "original_gene_count": 96,
+          "pathway": "HALLMARK_PROTEIN_SECRETION",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 49,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 45,
+          "matched_symbols_sha256": "4c95691d3dac6927899d8e6eb407aaea354b6466964e5668dad0d749b7f55eb5",
+          "original_gene_count": 49,
+          "pathway": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 135,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 131,
+          "matched_symbols_sha256": "cf415b4bd4b937485a6b3c6f24c84dd55fcc357890c3491504bcf2e8627f4352",
+          "original_gene_count": 135,
+          "pathway": "HALLMARK_SPERMATOGENESIS",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 54,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 54,
+          "matched_symbols_sha256": "1029ebe92314197269b1622a8322f189578ed5c981bcda687fee79778446bca4",
+          "original_gene_count": 54,
+          "pathway": "HALLMARK_TGF_BETA_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "1c1bb92b295093d3a3a4e0b36f0094620ed42ff191f61ec6098ce64c76ebffbc",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 113,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 105,
+          "matched_symbols_sha256": "9c874c16713161a7c56cf4c575b9dccb24c2116198f614f8542a561178f6f249",
+          "original_gene_count": 113,
+          "pathway": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+          "unmatched_gene_count": 8
+        },
+        {
+          "assigned_gene_count": 144,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 137,
+          "matched_symbols_sha256": "ae8135bf302e80f727fa6fce69363c656a6e87f10bbe0dd1c067be1bbc88c92c",
+          "original_gene_count": 144,
+          "pathway": "HALLMARK_UV_RESPONSE_DN",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 158,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 152,
+          "matched_symbols_sha256": "69874910c32b4923cf6b1249620e15f922ae193fc15a9e31a6bf464aa70cda8b",
+          "original_gene_count": 158,
+          "pathway": "HALLMARK_UV_RESPONSE_UP",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 42,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 42,
+          "matched_symbols_sha256": "dc952bd5bed0777a5c15a690cbae4f4e254b1179710f3f01ed8d3f1e1c23196b",
+          "original_gene_count": 42,
+          "pathway": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "26833be52dd99e87bd0d6b16c79f66e5848b1ec1016896195fa3ac9ee0ad24e3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_XENOBIOTIC_METABOLISM",
+          "unmatched_gene_count": 4
+        }
+      ]
+    },
+    {
+      "outer_fold": 2,
+      "rows": [
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 189,
+          "matched_symbols_sha256": "600c0a0ae74dcfca5768992d66a5f0e4f9423536537c975d851084c3905b4b45",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ADIPOGENESIS",
+          "unmatched_gene_count": 11
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "0d3038d0985dc15303888ca171bfecb43300c990532a0c8b57400fd44dfdb93c",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ALLOGRAFT_REJECTION",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 101,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 97,
+          "matched_symbols_sha256": "989fc8f02ef6c58a49c4f0d568939d5de2c8a78244b3d0cfef485b2c30b23ab2",
+          "original_gene_count": 101,
+          "pathway": "HALLMARK_ANDROGEN_RESPONSE",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 36,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 36,
+          "matched_symbols_sha256": "0bc177a4683bdd3de82901776cde31b41e354b6bfd4fbff4c61b319e86cfb4b1",
+          "original_gene_count": 36,
+          "pathway": "HALLMARK_ANGIOGENESIS",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 192,
+          "matched_symbols_sha256": "61d912261fc098ffe70a76c11534666e827c23f096a1ec8cd3435e448bbf50a4",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_APICAL_JUNCTION",
+          "unmatched_gene_count": 8
+        },
+        {
+          "assigned_gene_count": 44,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 43,
+          "matched_symbols_sha256": "3574147c314cd051200a76a066eedd410000ab5768e8885a7a8cc7412b35b7d1",
+          "original_gene_count": 44,
+          "pathway": "HALLMARK_APICAL_SURFACE",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 161,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 158,
+          "matched_symbols_sha256": "2e822f72abcb53ad807fe313f6236aaca451882c5929d9efee4690379669dded",
+          "original_gene_count": 161,
+          "pathway": "HALLMARK_APOPTOSIS",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 112,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 112,
+          "matched_symbols_sha256": "f0e0ced79e98889cc11897ae04d70be6c63fea3f1fafcbd9a38e2a0c3e462006",
+          "original_gene_count": 112,
+          "pathway": "HALLMARK_BILE_ACID_METABOLISM",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 74,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 72,
+          "matched_symbols_sha256": "208c95081fdeb800fdf508f20480dacb32cdf2e3d6837683014a1d9f6cf87469",
+          "original_gene_count": 74,
+          "pathway": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+          "unmatched_gene_count": 2
+        },
+        {
+          "assigned_gene_count": 138,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 136,
+          "matched_symbols_sha256": "58855a67c7085560232887b7b3ea88ed022b40d39f2afb9e98435d1aa9789f7b",
+          "original_gene_count": 138,
+          "pathway": "HALLMARK_COAGULATION",
+          "unmatched_gene_count": 2
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "28cb0f7c3e3cf2e8840b173120ad79c0ab40c970db1c1f31b84b4a15ef654672",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_COMPLEMENT",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 150,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 139,
+          "matched_symbols_sha256": "e50b7d402e0dec5751399b4198185fcc30e04f95dc1cf1083b763e2d246072e5",
+          "original_gene_count": 150,
+          "pathway": "HALLMARK_DNA_REPAIR",
+          "unmatched_gene_count": 11
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 186,
+          "matched_symbols_sha256": "c7602bfe24f3dfd00073241f4263fd573175fa7c175b4630e91d96e00dd82424",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_E2F_TARGETS",
+          "unmatched_gene_count": 14
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 194,
+          "matched_symbols_sha256": "6a2086568861d95432b178531f023c7b6e149774ffc655474aed60936fd37678",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 191,
+          "matched_symbols_sha256": "1ca3b2b8bde665f5221f50da67b352d133c74c814b7b0a5faa7dea91993c0a7d",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+          "unmatched_gene_count": 9
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "eeb1f43113e1cef98411e764e1049fa1103b0ccf02e078a82c496921f2450484",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 158,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 153,
+          "matched_symbols_sha256": "154977c36365349ac06f64002803191c16391c958094894d3821c87120488788",
+          "original_gene_count": 158,
+          "pathway": "HALLMARK_FATTY_ACID_METABOLISM",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 184,
+          "matched_symbols_sha256": "34bfe9ddbe7ef705ac17fe408c9378c4423eb2c794affb2ce8770553478bd05b",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_G2M_CHECKPOINT",
+          "unmatched_gene_count": 16
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "9085f97ebb76627f4e7d8e46347c04df1ee2eacbca9b7888db88964b18d836df",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_GLYCOLYSIS",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 36,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 35,
+          "matched_symbols_sha256": "94b51553297859b2108ab4e08724e8a2d6f70e62943c86b92665c2a602a08dd5",
+          "original_gene_count": 36,
+          "pathway": "HALLMARK_HEDGEHOG_SIGNALING",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "62f191d49d8b25e8d43a02434eb45236a60bb090ab8622e6bb2dde25b9ee5de5",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_HEME_METABOLISM",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "206b2f8ea29b4f755f9c80cd3720d7dd97739c31e4264696225d2aef02c9514a",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_HYPOXIA",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 199,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "59623cb0455258ea9b72f4a9ebe6035a05e81991c36690fd5cfcff0ee3509521",
+          "original_gene_count": 199,
+          "pathway": "HALLMARK_IL2_STAT5_SIGNALING",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 87,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 87,
+          "matched_symbols_sha256": "b9629d4182b8dce50fdf1de27e3179b75d4115aaaa24cbe944b5e6efaa70d3d1",
+          "original_gene_count": 87,
+          "pathway": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 197,
+          "matched_symbols_sha256": "5e43be6319816cc984da259cb3533668713d1bf4d692652677a5232b77cc3a6b",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_INFLAMMATORY_RESPONSE",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 97,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 92,
+          "matched_symbols_sha256": "481d58e296034b93b34472250cf0dfa06bb74a4f20d4bd38851a6e7eedd7762d",
+          "original_gene_count": 97,
+          "pathway": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 194,
+          "matched_symbols_sha256": "d1c97f8a8073a7e386addf1595cb99a78a9e9a977cfa41c06c9734aebc82d78e",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 188,
+          "matched_symbols_sha256": "2a89917d03b38a348f0988a3f662498ab6a99a01e2ba7a2d8dcac22e40ffba36",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_KRAS_SIGNALING_DN",
+          "unmatched_gene_count": 12
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "fc477feadbdc56fedc520a926122d70396ffca171803f591bfe0946a6e437c5a",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_KRAS_SIGNALING_UP",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 199,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "ddf27d2557fa98305c6ddebdb1c5b629c562791d7ce8ac6cb0279b8a8c822505",
+          "original_gene_count": 199,
+          "pathway": "HALLMARK_MITOTIC_SPINDLE",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 191,
+          "matched_symbols_sha256": "ae9e1d18ac146022c5911af2b6d7179f0fd451b7356462a41af4eae03ef527d5",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MTORC1_SIGNALING",
+          "unmatched_gene_count": 9
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 187,
+          "matched_symbols_sha256": "84f544c65955adb0c5a9df3b92e09e668227c7e085002e4db138c3f546831e6e",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MYC_TARGETS_V1",
+          "unmatched_gene_count": 13
+        },
+        {
+          "assigned_gene_count": 58,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 57,
+          "matched_symbols_sha256": "7a15e56ca74dd3198749c454817e3f39b5562004af085a4c3a007012741250b5",
+          "original_gene_count": 58,
+          "pathway": "HALLMARK_MYC_TARGETS_V2",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 197,
+          "matched_symbols_sha256": "b101500c08b14e68817c08362ebe87b9686603d55b9f3e9ec3366eaa22c229c3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MYOGENESIS",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 32,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 32,
+          "matched_symbols_sha256": "1279900280660e43b0fbcfaf73750a53a5a1f4feccacf0ec8387449dbcccdcb6",
+          "original_gene_count": 32,
+          "pathway": "HALLMARK_NOTCH_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 182,
+          "matched_symbols_sha256": "42df464ef848950230ca59405bf54e932e555f1296a6d9edcd684bb62e4ad505",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+          "unmatched_gene_count": 18
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "1578b6499b07b036542cb2a143c5dfb69b14fe3ca67b04e0933cfb0762da31c3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_P53_PATHWAY",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 40,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 40,
+          "matched_symbols_sha256": "37ab2ce1d6d7dbbb688fac3a315b6364b6ca5be254bc2a8276cba7f306b1bb3a",
+          "original_gene_count": 40,
+          "pathway": "HALLMARK_PANCREAS_BETA_CELLS",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 104,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 101,
+          "matched_symbols_sha256": "cb50b92243dad6ef572053b89340f9df63b263e63a4ae0b7391dc711229f305f",
+          "original_gene_count": 104,
+          "pathway": "HALLMARK_PEROXISOME",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 105,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 104,
+          "matched_symbols_sha256": "43f319a67dd9007d514c51944d809b0f832c40bd198ad8fa9fedcb9133109fce",
+          "original_gene_count": 105,
+          "pathway": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 96,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 95,
+          "matched_symbols_sha256": "b9aebbad45cd80d890a477800bf0bd34ca069aea45bf35860675454766da020d",
+          "original_gene_count": 96,
+          "pathway": "HALLMARK_PROTEIN_SECRETION",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 49,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 45,
+          "matched_symbols_sha256": "4c95691d3dac6927899d8e6eb407aaea354b6466964e5668dad0d749b7f55eb5",
+          "original_gene_count": 49,
+          "pathway": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 135,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 131,
+          "matched_symbols_sha256": "cf415b4bd4b937485a6b3c6f24c84dd55fcc357890c3491504bcf2e8627f4352",
+          "original_gene_count": 135,
+          "pathway": "HALLMARK_SPERMATOGENESIS",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 54,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 54,
+          "matched_symbols_sha256": "1029ebe92314197269b1622a8322f189578ed5c981bcda687fee79778446bca4",
+          "original_gene_count": 54,
+          "pathway": "HALLMARK_TGF_BETA_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "1c1bb92b295093d3a3a4e0b36f0094620ed42ff191f61ec6098ce64c76ebffbc",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 113,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 105,
+          "matched_symbols_sha256": "9c874c16713161a7c56cf4c575b9dccb24c2116198f614f8542a561178f6f249",
+          "original_gene_count": 113,
+          "pathway": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+          "unmatched_gene_count": 8
+        },
+        {
+          "assigned_gene_count": 144,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 137,
+          "matched_symbols_sha256": "ae8135bf302e80f727fa6fce69363c656a6e87f10bbe0dd1c067be1bbc88c92c",
+          "original_gene_count": 144,
+          "pathway": "HALLMARK_UV_RESPONSE_DN",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 158,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 152,
+          "matched_symbols_sha256": "69874910c32b4923cf6b1249620e15f922ae193fc15a9e31a6bf464aa70cda8b",
+          "original_gene_count": 158,
+          "pathway": "HALLMARK_UV_RESPONSE_UP",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 42,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 42,
+          "matched_symbols_sha256": "dc952bd5bed0777a5c15a690cbae4f4e254b1179710f3f01ed8d3f1e1c23196b",
+          "original_gene_count": 42,
+          "pathway": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "26833be52dd99e87bd0d6b16c79f66e5848b1ec1016896195fa3ac9ee0ad24e3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_XENOBIOTIC_METABOLISM",
+          "unmatched_gene_count": 4
+        }
+      ]
+    },
+    {
+      "outer_fold": 3,
+      "rows": [
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 189,
+          "matched_symbols_sha256": "600c0a0ae74dcfca5768992d66a5f0e4f9423536537c975d851084c3905b4b45",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ADIPOGENESIS",
+          "unmatched_gene_count": 11
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "0d3038d0985dc15303888ca171bfecb43300c990532a0c8b57400fd44dfdb93c",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ALLOGRAFT_REJECTION",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 101,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 97,
+          "matched_symbols_sha256": "989fc8f02ef6c58a49c4f0d568939d5de2c8a78244b3d0cfef485b2c30b23ab2",
+          "original_gene_count": 101,
+          "pathway": "HALLMARK_ANDROGEN_RESPONSE",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 36,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 36,
+          "matched_symbols_sha256": "0bc177a4683bdd3de82901776cde31b41e354b6bfd4fbff4c61b319e86cfb4b1",
+          "original_gene_count": 36,
+          "pathway": "HALLMARK_ANGIOGENESIS",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 192,
+          "matched_symbols_sha256": "61d912261fc098ffe70a76c11534666e827c23f096a1ec8cd3435e448bbf50a4",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_APICAL_JUNCTION",
+          "unmatched_gene_count": 8
+        },
+        {
+          "assigned_gene_count": 44,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 43,
+          "matched_symbols_sha256": "3574147c314cd051200a76a066eedd410000ab5768e8885a7a8cc7412b35b7d1",
+          "original_gene_count": 44,
+          "pathway": "HALLMARK_APICAL_SURFACE",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 161,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 158,
+          "matched_symbols_sha256": "2e822f72abcb53ad807fe313f6236aaca451882c5929d9efee4690379669dded",
+          "original_gene_count": 161,
+          "pathway": "HALLMARK_APOPTOSIS",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 112,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 112,
+          "matched_symbols_sha256": "f0e0ced79e98889cc11897ae04d70be6c63fea3f1fafcbd9a38e2a0c3e462006",
+          "original_gene_count": 112,
+          "pathway": "HALLMARK_BILE_ACID_METABOLISM",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 74,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 72,
+          "matched_symbols_sha256": "208c95081fdeb800fdf508f20480dacb32cdf2e3d6837683014a1d9f6cf87469",
+          "original_gene_count": 74,
+          "pathway": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+          "unmatched_gene_count": 2
+        },
+        {
+          "assigned_gene_count": 138,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 136,
+          "matched_symbols_sha256": "58855a67c7085560232887b7b3ea88ed022b40d39f2afb9e98435d1aa9789f7b",
+          "original_gene_count": 138,
+          "pathway": "HALLMARK_COAGULATION",
+          "unmatched_gene_count": 2
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "28cb0f7c3e3cf2e8840b173120ad79c0ab40c970db1c1f31b84b4a15ef654672",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_COMPLEMENT",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 150,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 139,
+          "matched_symbols_sha256": "e50b7d402e0dec5751399b4198185fcc30e04f95dc1cf1083b763e2d246072e5",
+          "original_gene_count": 150,
+          "pathway": "HALLMARK_DNA_REPAIR",
+          "unmatched_gene_count": 11
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 186,
+          "matched_symbols_sha256": "c7602bfe24f3dfd00073241f4263fd573175fa7c175b4630e91d96e00dd82424",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_E2F_TARGETS",
+          "unmatched_gene_count": 14
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 194,
+          "matched_symbols_sha256": "6a2086568861d95432b178531f023c7b6e149774ffc655474aed60936fd37678",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 191,
+          "matched_symbols_sha256": "1ca3b2b8bde665f5221f50da67b352d133c74c814b7b0a5faa7dea91993c0a7d",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+          "unmatched_gene_count": 9
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "eeb1f43113e1cef98411e764e1049fa1103b0ccf02e078a82c496921f2450484",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 158,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 153,
+          "matched_symbols_sha256": "154977c36365349ac06f64002803191c16391c958094894d3821c87120488788",
+          "original_gene_count": 158,
+          "pathway": "HALLMARK_FATTY_ACID_METABOLISM",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 184,
+          "matched_symbols_sha256": "34bfe9ddbe7ef705ac17fe408c9378c4423eb2c794affb2ce8770553478bd05b",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_G2M_CHECKPOINT",
+          "unmatched_gene_count": 16
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "9085f97ebb76627f4e7d8e46347c04df1ee2eacbca9b7888db88964b18d836df",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_GLYCOLYSIS",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 36,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 35,
+          "matched_symbols_sha256": "94b51553297859b2108ab4e08724e8a2d6f70e62943c86b92665c2a602a08dd5",
+          "original_gene_count": 36,
+          "pathway": "HALLMARK_HEDGEHOG_SIGNALING",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "62f191d49d8b25e8d43a02434eb45236a60bb090ab8622e6bb2dde25b9ee5de5",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_HEME_METABOLISM",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "206b2f8ea29b4f755f9c80cd3720d7dd97739c31e4264696225d2aef02c9514a",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_HYPOXIA",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 199,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "59623cb0455258ea9b72f4a9ebe6035a05e81991c36690fd5cfcff0ee3509521",
+          "original_gene_count": 199,
+          "pathway": "HALLMARK_IL2_STAT5_SIGNALING",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 87,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 87,
+          "matched_symbols_sha256": "b9629d4182b8dce50fdf1de27e3179b75d4115aaaa24cbe944b5e6efaa70d3d1",
+          "original_gene_count": 87,
+          "pathway": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 197,
+          "matched_symbols_sha256": "5e43be6319816cc984da259cb3533668713d1bf4d692652677a5232b77cc3a6b",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_INFLAMMATORY_RESPONSE",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 97,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 92,
+          "matched_symbols_sha256": "481d58e296034b93b34472250cf0dfa06bb74a4f20d4bd38851a6e7eedd7762d",
+          "original_gene_count": 97,
+          "pathway": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 194,
+          "matched_symbols_sha256": "d1c97f8a8073a7e386addf1595cb99a78a9e9a977cfa41c06c9734aebc82d78e",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 188,
+          "matched_symbols_sha256": "2a89917d03b38a348f0988a3f662498ab6a99a01e2ba7a2d8dcac22e40ffba36",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_KRAS_SIGNALING_DN",
+          "unmatched_gene_count": 12
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "fc477feadbdc56fedc520a926122d70396ffca171803f591bfe0946a6e437c5a",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_KRAS_SIGNALING_UP",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 199,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "ddf27d2557fa98305c6ddebdb1c5b629c562791d7ce8ac6cb0279b8a8c822505",
+          "original_gene_count": 199,
+          "pathway": "HALLMARK_MITOTIC_SPINDLE",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 191,
+          "matched_symbols_sha256": "ae9e1d18ac146022c5911af2b6d7179f0fd451b7356462a41af4eae03ef527d5",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MTORC1_SIGNALING",
+          "unmatched_gene_count": 9
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 187,
+          "matched_symbols_sha256": "84f544c65955adb0c5a9df3b92e09e668227c7e085002e4db138c3f546831e6e",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MYC_TARGETS_V1",
+          "unmatched_gene_count": 13
+        },
+        {
+          "assigned_gene_count": 58,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 57,
+          "matched_symbols_sha256": "7a15e56ca74dd3198749c454817e3f39b5562004af085a4c3a007012741250b5",
+          "original_gene_count": 58,
+          "pathway": "HALLMARK_MYC_TARGETS_V2",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 197,
+          "matched_symbols_sha256": "b101500c08b14e68817c08362ebe87b9686603d55b9f3e9ec3366eaa22c229c3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MYOGENESIS",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 32,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 32,
+          "matched_symbols_sha256": "1279900280660e43b0fbcfaf73750a53a5a1f4feccacf0ec8387449dbcccdcb6",
+          "original_gene_count": 32,
+          "pathway": "HALLMARK_NOTCH_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 182,
+          "matched_symbols_sha256": "42df464ef848950230ca59405bf54e932e555f1296a6d9edcd684bb62e4ad505",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+          "unmatched_gene_count": 18
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "1578b6499b07b036542cb2a143c5dfb69b14fe3ca67b04e0933cfb0762da31c3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_P53_PATHWAY",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 40,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 40,
+          "matched_symbols_sha256": "37ab2ce1d6d7dbbb688fac3a315b6364b6ca5be254bc2a8276cba7f306b1bb3a",
+          "original_gene_count": 40,
+          "pathway": "HALLMARK_PANCREAS_BETA_CELLS",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 104,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 101,
+          "matched_symbols_sha256": "cb50b92243dad6ef572053b89340f9df63b263e63a4ae0b7391dc711229f305f",
+          "original_gene_count": 104,
+          "pathway": "HALLMARK_PEROXISOME",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 105,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 104,
+          "matched_symbols_sha256": "43f319a67dd9007d514c51944d809b0f832c40bd198ad8fa9fedcb9133109fce",
+          "original_gene_count": 105,
+          "pathway": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 96,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 95,
+          "matched_symbols_sha256": "b9aebbad45cd80d890a477800bf0bd34ca069aea45bf35860675454766da020d",
+          "original_gene_count": 96,
+          "pathway": "HALLMARK_PROTEIN_SECRETION",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 49,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 45,
+          "matched_symbols_sha256": "4c95691d3dac6927899d8e6eb407aaea354b6466964e5668dad0d749b7f55eb5",
+          "original_gene_count": 49,
+          "pathway": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 135,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 131,
+          "matched_symbols_sha256": "cf415b4bd4b937485a6b3c6f24c84dd55fcc357890c3491504bcf2e8627f4352",
+          "original_gene_count": 135,
+          "pathway": "HALLMARK_SPERMATOGENESIS",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 54,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 54,
+          "matched_symbols_sha256": "1029ebe92314197269b1622a8322f189578ed5c981bcda687fee79778446bca4",
+          "original_gene_count": 54,
+          "pathway": "HALLMARK_TGF_BETA_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "1c1bb92b295093d3a3a4e0b36f0094620ed42ff191f61ec6098ce64c76ebffbc",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 113,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 105,
+          "matched_symbols_sha256": "9c874c16713161a7c56cf4c575b9dccb24c2116198f614f8542a561178f6f249",
+          "original_gene_count": 113,
+          "pathway": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+          "unmatched_gene_count": 8
+        },
+        {
+          "assigned_gene_count": 144,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 137,
+          "matched_symbols_sha256": "ae8135bf302e80f727fa6fce69363c656a6e87f10bbe0dd1c067be1bbc88c92c",
+          "original_gene_count": 144,
+          "pathway": "HALLMARK_UV_RESPONSE_DN",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 158,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 152,
+          "matched_symbols_sha256": "69874910c32b4923cf6b1249620e15f922ae193fc15a9e31a6bf464aa70cda8b",
+          "original_gene_count": 158,
+          "pathway": "HALLMARK_UV_RESPONSE_UP",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 42,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 42,
+          "matched_symbols_sha256": "dc952bd5bed0777a5c15a690cbae4f4e254b1179710f3f01ed8d3f1e1c23196b",
+          "original_gene_count": 42,
+          "pathway": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "26833be52dd99e87bd0d6b16c79f66e5848b1ec1016896195fa3ac9ee0ad24e3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_XENOBIOTIC_METABOLISM",
+          "unmatched_gene_count": 4
+        }
+      ]
+    },
+    {
+      "outer_fold": 4,
+      "rows": [
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 189,
+          "matched_symbols_sha256": "600c0a0ae74dcfca5768992d66a5f0e4f9423536537c975d851084c3905b4b45",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ADIPOGENESIS",
+          "unmatched_gene_count": 11
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "0d3038d0985dc15303888ca171bfecb43300c990532a0c8b57400fd44dfdb93c",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ALLOGRAFT_REJECTION",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 101,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 97,
+          "matched_symbols_sha256": "989fc8f02ef6c58a49c4f0d568939d5de2c8a78244b3d0cfef485b2c30b23ab2",
+          "original_gene_count": 101,
+          "pathway": "HALLMARK_ANDROGEN_RESPONSE",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 36,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 36,
+          "matched_symbols_sha256": "0bc177a4683bdd3de82901776cde31b41e354b6bfd4fbff4c61b319e86cfb4b1",
+          "original_gene_count": 36,
+          "pathway": "HALLMARK_ANGIOGENESIS",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 192,
+          "matched_symbols_sha256": "61d912261fc098ffe70a76c11534666e827c23f096a1ec8cd3435e448bbf50a4",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_APICAL_JUNCTION",
+          "unmatched_gene_count": 8
+        },
+        {
+          "assigned_gene_count": 44,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 43,
+          "matched_symbols_sha256": "3574147c314cd051200a76a066eedd410000ab5768e8885a7a8cc7412b35b7d1",
+          "original_gene_count": 44,
+          "pathway": "HALLMARK_APICAL_SURFACE",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 161,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 158,
+          "matched_symbols_sha256": "2e822f72abcb53ad807fe313f6236aaca451882c5929d9efee4690379669dded",
+          "original_gene_count": 161,
+          "pathway": "HALLMARK_APOPTOSIS",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 112,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 112,
+          "matched_symbols_sha256": "f0e0ced79e98889cc11897ae04d70be6c63fea3f1fafcbd9a38e2a0c3e462006",
+          "original_gene_count": 112,
+          "pathway": "HALLMARK_BILE_ACID_METABOLISM",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 74,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 72,
+          "matched_symbols_sha256": "208c95081fdeb800fdf508f20480dacb32cdf2e3d6837683014a1d9f6cf87469",
+          "original_gene_count": 74,
+          "pathway": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+          "unmatched_gene_count": 2
+        },
+        {
+          "assigned_gene_count": 138,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 136,
+          "matched_symbols_sha256": "58855a67c7085560232887b7b3ea88ed022b40d39f2afb9e98435d1aa9789f7b",
+          "original_gene_count": 138,
+          "pathway": "HALLMARK_COAGULATION",
+          "unmatched_gene_count": 2
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "28cb0f7c3e3cf2e8840b173120ad79c0ab40c970db1c1f31b84b4a15ef654672",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_COMPLEMENT",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 150,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 139,
+          "matched_symbols_sha256": "e50b7d402e0dec5751399b4198185fcc30e04f95dc1cf1083b763e2d246072e5",
+          "original_gene_count": 150,
+          "pathway": "HALLMARK_DNA_REPAIR",
+          "unmatched_gene_count": 11
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 186,
+          "matched_symbols_sha256": "c7602bfe24f3dfd00073241f4263fd573175fa7c175b4630e91d96e00dd82424",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_E2F_TARGETS",
+          "unmatched_gene_count": 14
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 194,
+          "matched_symbols_sha256": "6a2086568861d95432b178531f023c7b6e149774ffc655474aed60936fd37678",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 191,
+          "matched_symbols_sha256": "1ca3b2b8bde665f5221f50da67b352d133c74c814b7b0a5faa7dea91993c0a7d",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+          "unmatched_gene_count": 9
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "eeb1f43113e1cef98411e764e1049fa1103b0ccf02e078a82c496921f2450484",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 158,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 153,
+          "matched_symbols_sha256": "154977c36365349ac06f64002803191c16391c958094894d3821c87120488788",
+          "original_gene_count": 158,
+          "pathway": "HALLMARK_FATTY_ACID_METABOLISM",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 184,
+          "matched_symbols_sha256": "34bfe9ddbe7ef705ac17fe408c9378c4423eb2c794affb2ce8770553478bd05b",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_G2M_CHECKPOINT",
+          "unmatched_gene_count": 16
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "9085f97ebb76627f4e7d8e46347c04df1ee2eacbca9b7888db88964b18d836df",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_GLYCOLYSIS",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 36,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 35,
+          "matched_symbols_sha256": "94b51553297859b2108ab4e08724e8a2d6f70e62943c86b92665c2a602a08dd5",
+          "original_gene_count": 36,
+          "pathway": "HALLMARK_HEDGEHOG_SIGNALING",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "62f191d49d8b25e8d43a02434eb45236a60bb090ab8622e6bb2dde25b9ee5de5",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_HEME_METABOLISM",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "206b2f8ea29b4f755f9c80cd3720d7dd97739c31e4264696225d2aef02c9514a",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_HYPOXIA",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 199,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "59623cb0455258ea9b72f4a9ebe6035a05e81991c36690fd5cfcff0ee3509521",
+          "original_gene_count": 199,
+          "pathway": "HALLMARK_IL2_STAT5_SIGNALING",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 87,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 87,
+          "matched_symbols_sha256": "b9629d4182b8dce50fdf1de27e3179b75d4115aaaa24cbe944b5e6efaa70d3d1",
+          "original_gene_count": 87,
+          "pathway": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 197,
+          "matched_symbols_sha256": "5e43be6319816cc984da259cb3533668713d1bf4d692652677a5232b77cc3a6b",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_INFLAMMATORY_RESPONSE",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 97,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 92,
+          "matched_symbols_sha256": "481d58e296034b93b34472250cf0dfa06bb74a4f20d4bd38851a6e7eedd7762d",
+          "original_gene_count": 97,
+          "pathway": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 194,
+          "matched_symbols_sha256": "d1c97f8a8073a7e386addf1595cb99a78a9e9a977cfa41c06c9734aebc82d78e",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 188,
+          "matched_symbols_sha256": "2a89917d03b38a348f0988a3f662498ab6a99a01e2ba7a2d8dcac22e40ffba36",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_KRAS_SIGNALING_DN",
+          "unmatched_gene_count": 12
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "fc477feadbdc56fedc520a926122d70396ffca171803f591bfe0946a6e437c5a",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_KRAS_SIGNALING_UP",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 199,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "ddf27d2557fa98305c6ddebdb1c5b629c562791d7ce8ac6cb0279b8a8c822505",
+          "original_gene_count": 199,
+          "pathway": "HALLMARK_MITOTIC_SPINDLE",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 191,
+          "matched_symbols_sha256": "ae9e1d18ac146022c5911af2b6d7179f0fd451b7356462a41af4eae03ef527d5",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MTORC1_SIGNALING",
+          "unmatched_gene_count": 9
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 187,
+          "matched_symbols_sha256": "84f544c65955adb0c5a9df3b92e09e668227c7e085002e4db138c3f546831e6e",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MYC_TARGETS_V1",
+          "unmatched_gene_count": 13
+        },
+        {
+          "assigned_gene_count": 58,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 57,
+          "matched_symbols_sha256": "7a15e56ca74dd3198749c454817e3f39b5562004af085a4c3a007012741250b5",
+          "original_gene_count": 58,
+          "pathway": "HALLMARK_MYC_TARGETS_V2",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 197,
+          "matched_symbols_sha256": "b101500c08b14e68817c08362ebe87b9686603d55b9f3e9ec3366eaa22c229c3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MYOGENESIS",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 32,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 32,
+          "matched_symbols_sha256": "1279900280660e43b0fbcfaf73750a53a5a1f4feccacf0ec8387449dbcccdcb6",
+          "original_gene_count": 32,
+          "pathway": "HALLMARK_NOTCH_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 182,
+          "matched_symbols_sha256": "42df464ef848950230ca59405bf54e932e555f1296a6d9edcd684bb62e4ad505",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+          "unmatched_gene_count": 18
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "1578b6499b07b036542cb2a143c5dfb69b14fe3ca67b04e0933cfb0762da31c3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_P53_PATHWAY",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 40,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 40,
+          "matched_symbols_sha256": "37ab2ce1d6d7dbbb688fac3a315b6364b6ca5be254bc2a8276cba7f306b1bb3a",
+          "original_gene_count": 40,
+          "pathway": "HALLMARK_PANCREAS_BETA_CELLS",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 104,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 101,
+          "matched_symbols_sha256": "cb50b92243dad6ef572053b89340f9df63b263e63a4ae0b7391dc711229f305f",
+          "original_gene_count": 104,
+          "pathway": "HALLMARK_PEROXISOME",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 105,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 104,
+          "matched_symbols_sha256": "43f319a67dd9007d514c51944d809b0f832c40bd198ad8fa9fedcb9133109fce",
+          "original_gene_count": 105,
+          "pathway": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 96,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 95,
+          "matched_symbols_sha256": "b9aebbad45cd80d890a477800bf0bd34ca069aea45bf35860675454766da020d",
+          "original_gene_count": 96,
+          "pathway": "HALLMARK_PROTEIN_SECRETION",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 49,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 45,
+          "matched_symbols_sha256": "4c95691d3dac6927899d8e6eb407aaea354b6466964e5668dad0d749b7f55eb5",
+          "original_gene_count": 49,
+          "pathway": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 135,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 131,
+          "matched_symbols_sha256": "cf415b4bd4b937485a6b3c6f24c84dd55fcc357890c3491504bcf2e8627f4352",
+          "original_gene_count": 135,
+          "pathway": "HALLMARK_SPERMATOGENESIS",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 54,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 54,
+          "matched_symbols_sha256": "1029ebe92314197269b1622a8322f189578ed5c981bcda687fee79778446bca4",
+          "original_gene_count": 54,
+          "pathway": "HALLMARK_TGF_BETA_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "1c1bb92b295093d3a3a4e0b36f0094620ed42ff191f61ec6098ce64c76ebffbc",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 113,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 105,
+          "matched_symbols_sha256": "9c874c16713161a7c56cf4c575b9dccb24c2116198f614f8542a561178f6f249",
+          "original_gene_count": 113,
+          "pathway": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+          "unmatched_gene_count": 8
+        },
+        {
+          "assigned_gene_count": 144,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 137,
+          "matched_symbols_sha256": "ae8135bf302e80f727fa6fce69363c656a6e87f10bbe0dd1c067be1bbc88c92c",
+          "original_gene_count": 144,
+          "pathway": "HALLMARK_UV_RESPONSE_DN",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 158,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 152,
+          "matched_symbols_sha256": "69874910c32b4923cf6b1249620e15f922ae193fc15a9e31a6bf464aa70cda8b",
+          "original_gene_count": 158,
+          "pathway": "HALLMARK_UV_RESPONSE_UP",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 42,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 42,
+          "matched_symbols_sha256": "dc952bd5bed0777a5c15a690cbae4f4e254b1179710f3f01ed8d3f1e1c23196b",
+          "original_gene_count": 42,
+          "pathway": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "26833be52dd99e87bd0d6b16c79f66e5848b1ec1016896195fa3ac9ee0ad24e3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_XENOBIOTIC_METABOLISM",
+          "unmatched_gene_count": 4
+        }
+      ]
+    },
+    {
+      "outer_fold": 5,
+      "rows": [
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 189,
+          "matched_symbols_sha256": "600c0a0ae74dcfca5768992d66a5f0e4f9423536537c975d851084c3905b4b45",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ADIPOGENESIS",
+          "unmatched_gene_count": 11
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "0d3038d0985dc15303888ca171bfecb43300c990532a0c8b57400fd44dfdb93c",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ALLOGRAFT_REJECTION",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 101,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 97,
+          "matched_symbols_sha256": "989fc8f02ef6c58a49c4f0d568939d5de2c8a78244b3d0cfef485b2c30b23ab2",
+          "original_gene_count": 101,
+          "pathway": "HALLMARK_ANDROGEN_RESPONSE",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 36,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 36,
+          "matched_symbols_sha256": "0bc177a4683bdd3de82901776cde31b41e354b6bfd4fbff4c61b319e86cfb4b1",
+          "original_gene_count": 36,
+          "pathway": "HALLMARK_ANGIOGENESIS",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 192,
+          "matched_symbols_sha256": "61d912261fc098ffe70a76c11534666e827c23f096a1ec8cd3435e448bbf50a4",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_APICAL_JUNCTION",
+          "unmatched_gene_count": 8
+        },
+        {
+          "assigned_gene_count": 44,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 43,
+          "matched_symbols_sha256": "3574147c314cd051200a76a066eedd410000ab5768e8885a7a8cc7412b35b7d1",
+          "original_gene_count": 44,
+          "pathway": "HALLMARK_APICAL_SURFACE",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 161,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 158,
+          "matched_symbols_sha256": "2e822f72abcb53ad807fe313f6236aaca451882c5929d9efee4690379669dded",
+          "original_gene_count": 161,
+          "pathway": "HALLMARK_APOPTOSIS",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 112,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 112,
+          "matched_symbols_sha256": "f0e0ced79e98889cc11897ae04d70be6c63fea3f1fafcbd9a38e2a0c3e462006",
+          "original_gene_count": 112,
+          "pathway": "HALLMARK_BILE_ACID_METABOLISM",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 74,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 72,
+          "matched_symbols_sha256": "208c95081fdeb800fdf508f20480dacb32cdf2e3d6837683014a1d9f6cf87469",
+          "original_gene_count": 74,
+          "pathway": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+          "unmatched_gene_count": 2
+        },
+        {
+          "assigned_gene_count": 138,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 136,
+          "matched_symbols_sha256": "58855a67c7085560232887b7b3ea88ed022b40d39f2afb9e98435d1aa9789f7b",
+          "original_gene_count": 138,
+          "pathway": "HALLMARK_COAGULATION",
+          "unmatched_gene_count": 2
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "28cb0f7c3e3cf2e8840b173120ad79c0ab40c970db1c1f31b84b4a15ef654672",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_COMPLEMENT",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 150,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 139,
+          "matched_symbols_sha256": "e50b7d402e0dec5751399b4198185fcc30e04f95dc1cf1083b763e2d246072e5",
+          "original_gene_count": 150,
+          "pathway": "HALLMARK_DNA_REPAIR",
+          "unmatched_gene_count": 11
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 186,
+          "matched_symbols_sha256": "c7602bfe24f3dfd00073241f4263fd573175fa7c175b4630e91d96e00dd82424",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_E2F_TARGETS",
+          "unmatched_gene_count": 14
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 194,
+          "matched_symbols_sha256": "6a2086568861d95432b178531f023c7b6e149774ffc655474aed60936fd37678",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 191,
+          "matched_symbols_sha256": "1ca3b2b8bde665f5221f50da67b352d133c74c814b7b0a5faa7dea91993c0a7d",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+          "unmatched_gene_count": 9
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "eeb1f43113e1cef98411e764e1049fa1103b0ccf02e078a82c496921f2450484",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 158,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 153,
+          "matched_symbols_sha256": "154977c36365349ac06f64002803191c16391c958094894d3821c87120488788",
+          "original_gene_count": 158,
+          "pathway": "HALLMARK_FATTY_ACID_METABOLISM",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 184,
+          "matched_symbols_sha256": "34bfe9ddbe7ef705ac17fe408c9378c4423eb2c794affb2ce8770553478bd05b",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_G2M_CHECKPOINT",
+          "unmatched_gene_count": 16
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 195,
+          "matched_symbols_sha256": "9085f97ebb76627f4e7d8e46347c04df1ee2eacbca9b7888db88964b18d836df",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_GLYCOLYSIS",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 36,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 35,
+          "matched_symbols_sha256": "94b51553297859b2108ab4e08724e8a2d6f70e62943c86b92665c2a602a08dd5",
+          "original_gene_count": 36,
+          "pathway": "HALLMARK_HEDGEHOG_SIGNALING",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "62f191d49d8b25e8d43a02434eb45236a60bb090ab8622e6bb2dde25b9ee5de5",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_HEME_METABOLISM",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "206b2f8ea29b4f755f9c80cd3720d7dd97739c31e4264696225d2aef02c9514a",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_HYPOXIA",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 199,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "59623cb0455258ea9b72f4a9ebe6035a05e81991c36690fd5cfcff0ee3509521",
+          "original_gene_count": 199,
+          "pathway": "HALLMARK_IL2_STAT5_SIGNALING",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 87,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 87,
+          "matched_symbols_sha256": "b9629d4182b8dce50fdf1de27e3179b75d4115aaaa24cbe944b5e6efaa70d3d1",
+          "original_gene_count": 87,
+          "pathway": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 197,
+          "matched_symbols_sha256": "5e43be6319816cc984da259cb3533668713d1bf4d692652677a5232b77cc3a6b",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_INFLAMMATORY_RESPONSE",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 97,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 92,
+          "matched_symbols_sha256": "481d58e296034b93b34472250cf0dfa06bb74a4f20d4bd38851a6e7eedd7762d",
+          "original_gene_count": 97,
+          "pathway": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+          "unmatched_gene_count": 5
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 194,
+          "matched_symbols_sha256": "d1c97f8a8073a7e386addf1595cb99a78a9e9a977cfa41c06c9734aebc82d78e",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 188,
+          "matched_symbols_sha256": "2a89917d03b38a348f0988a3f662498ab6a99a01e2ba7a2d8dcac22e40ffba36",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_KRAS_SIGNALING_DN",
+          "unmatched_gene_count": 12
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 193,
+          "matched_symbols_sha256": "fc477feadbdc56fedc520a926122d70396ffca171803f591bfe0946a6e437c5a",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_KRAS_SIGNALING_UP",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 199,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "ddf27d2557fa98305c6ddebdb1c5b629c562791d7ce8ac6cb0279b8a8c822505",
+          "original_gene_count": 199,
+          "pathway": "HALLMARK_MITOTIC_SPINDLE",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 191,
+          "matched_symbols_sha256": "ae9e1d18ac146022c5911af2b6d7179f0fd451b7356462a41af4eae03ef527d5",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MTORC1_SIGNALING",
+          "unmatched_gene_count": 9
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 187,
+          "matched_symbols_sha256": "84f544c65955adb0c5a9df3b92e09e668227c7e085002e4db138c3f546831e6e",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MYC_TARGETS_V1",
+          "unmatched_gene_count": 13
+        },
+        {
+          "assigned_gene_count": 58,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 57,
+          "matched_symbols_sha256": "7a15e56ca74dd3198749c454817e3f39b5562004af085a4c3a007012741250b5",
+          "original_gene_count": 58,
+          "pathway": "HALLMARK_MYC_TARGETS_V2",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 197,
+          "matched_symbols_sha256": "b101500c08b14e68817c08362ebe87b9686603d55b9f3e9ec3366eaa22c229c3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_MYOGENESIS",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 32,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 32,
+          "matched_symbols_sha256": "1279900280660e43b0fbcfaf73750a53a5a1f4feccacf0ec8387449dbcccdcb6",
+          "original_gene_count": 32,
+          "pathway": "HALLMARK_NOTCH_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 182,
+          "matched_symbols_sha256": "42df464ef848950230ca59405bf54e932e555f1296a6d9edcd684bb62e4ad505",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+          "unmatched_gene_count": 18
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 1,
+          "matched_gene_count": 190,
+          "matched_symbols_sha256": "1578b6499b07b036542cb2a143c5dfb69b14fe3ca67b04e0933cfb0762da31c3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_P53_PATHWAY",
+          "unmatched_gene_count": 10
+        },
+        {
+          "assigned_gene_count": 40,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 40,
+          "matched_symbols_sha256": "37ab2ce1d6d7dbbb688fac3a315b6364b6ca5be254bc2a8276cba7f306b1bb3a",
+          "original_gene_count": 40,
+          "pathway": "HALLMARK_PANCREAS_BETA_CELLS",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 104,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 101,
+          "matched_symbols_sha256": "cb50b92243dad6ef572053b89340f9df63b263e63a4ae0b7391dc711229f305f",
+          "original_gene_count": 104,
+          "pathway": "HALLMARK_PEROXISOME",
+          "unmatched_gene_count": 3
+        },
+        {
+          "assigned_gene_count": 105,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 104,
+          "matched_symbols_sha256": "43f319a67dd9007d514c51944d809b0f832c40bd198ad8fa9fedcb9133109fce",
+          "original_gene_count": 105,
+          "pathway": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 96,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 95,
+          "matched_symbols_sha256": "b9aebbad45cd80d890a477800bf0bd34ca069aea45bf35860675454766da020d",
+          "original_gene_count": 96,
+          "pathway": "HALLMARK_PROTEIN_SECRETION",
+          "unmatched_gene_count": 1
+        },
+        {
+          "assigned_gene_count": 49,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 45,
+          "matched_symbols_sha256": "4c95691d3dac6927899d8e6eb407aaea354b6466964e5668dad0d749b7f55eb5",
+          "original_gene_count": 49,
+          "pathway": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 135,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 131,
+          "matched_symbols_sha256": "cf415b4bd4b937485a6b3c6f24c84dd55fcc357890c3491504bcf2e8627f4352",
+          "original_gene_count": 135,
+          "pathway": "HALLMARK_SPERMATOGENESIS",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 54,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 54,
+          "matched_symbols_sha256": "1029ebe92314197269b1622a8322f189578ed5c981bcda687fee79778446bca4",
+          "original_gene_count": 54,
+          "pathway": "HALLMARK_TGF_BETA_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "1c1bb92b295093d3a3a4e0b36f0094620ed42ff191f61ec6098ce64c76ebffbc",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+          "unmatched_gene_count": 4
+        },
+        {
+          "assigned_gene_count": 113,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 105,
+          "matched_symbols_sha256": "9c874c16713161a7c56cf4c575b9dccb24c2116198f614f8542a561178f6f249",
+          "original_gene_count": 113,
+          "pathway": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+          "unmatched_gene_count": 8
+        },
+        {
+          "assigned_gene_count": 144,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 137,
+          "matched_symbols_sha256": "ae8135bf302e80f727fa6fce69363c656a6e87f10bbe0dd1c067be1bbc88c92c",
+          "original_gene_count": 144,
+          "pathway": "HALLMARK_UV_RESPONSE_DN",
+          "unmatched_gene_count": 7
+        },
+        {
+          "assigned_gene_count": 158,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 152,
+          "matched_symbols_sha256": "69874910c32b4923cf6b1249620e15f922ae193fc15a9e31a6bf464aa70cda8b",
+          "original_gene_count": 158,
+          "pathway": "HALLMARK_UV_RESPONSE_UP",
+          "unmatched_gene_count": 6
+        },
+        {
+          "assigned_gene_count": 42,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 42,
+          "matched_symbols_sha256": "dc952bd5bed0777a5c15a690cbae4f4e254b1179710f3f01ed8d3f1e1c23196b",
+          "original_gene_count": 42,
+          "pathway": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+          "unmatched_gene_count": 0
+        },
+        {
+          "assigned_gene_count": 200,
+          "duplicate_source_rows": 0,
+          "matched_gene_count": 196,
+          "matched_symbols_sha256": "26833be52dd99e87bd0d6b16c79f66e5848b1ec1016896195fa3ac9ee0ad24e3",
+          "original_gene_count": 200,
+          "pathway": "HALLMARK_XENOBIOTIC_METABOLISM",
+          "unmatched_gene_count": 4
+        }
+      ]
+    }
+  ],
+  "mapping_rule": "HGNC symbol exact match after uppercase normalization; fold-local overlap is recorded per fold",
+  "matched_gene_universe_count": 4191,
+  "pathway_count": 50,
+  "rows": [
+    {
+      "matched_gene_count_global": 189,
+      "pathway": "HALLMARK_ADIPOGENESIS",
+      "source_gene_count": 200,
+      "source_gene_sha256": "850f76d80637987d3dff1973c0f921f0dd8ed4ccf397559ced70270584bcbf97",
+      "unmatched_gene_count_global": 11
+    },
+    {
+      "matched_gene_count_global": 195,
+      "pathway": "HALLMARK_ALLOGRAFT_REJECTION",
+      "source_gene_count": 200,
+      "source_gene_sha256": "b25304fd20576681f54b6112d85a3c36b9ee499dedf74b24e86bfb7103a41c4d",
+      "unmatched_gene_count_global": 5
+    },
+    {
+      "matched_gene_count_global": 97,
+      "pathway": "HALLMARK_ANDROGEN_RESPONSE",
+      "source_gene_count": 101,
+      "source_gene_sha256": "5e5f6090e275fe3a7ce51fd11d8ffc5c4e54d93f844dbb9b58ca5ae5358214f9",
+      "unmatched_gene_count_global": 4
+    },
+    {
+      "matched_gene_count_global": 36,
+      "pathway": "HALLMARK_ANGIOGENESIS",
+      "source_gene_count": 36,
+      "source_gene_sha256": "0bc177a4683bdd3de82901776cde31b41e354b6bfd4fbff4c61b319e86cfb4b1",
+      "unmatched_gene_count_global": 0
+    },
+    {
+      "matched_gene_count_global": 192,
+      "pathway": "HALLMARK_APICAL_JUNCTION",
+      "source_gene_count": 200,
+      "source_gene_sha256": "cbb160b40a6c89ed869b87020d40f66ec79755469e32c59cfbbf60c9cb0787c3",
+      "unmatched_gene_count_global": 8
+    },
+    {
+      "matched_gene_count_global": 43,
+      "pathway": "HALLMARK_APICAL_SURFACE",
+      "source_gene_count": 44,
+      "source_gene_sha256": "fb48a2d6fcc1571e9b20926b973434b804f6021a5a3ab88ac440d6af89208915",
+      "unmatched_gene_count_global": 1
+    },
+    {
+      "matched_gene_count_global": 158,
+      "pathway": "HALLMARK_APOPTOSIS",
+      "source_gene_count": 161,
+      "source_gene_sha256": "28c3a139dbb52ace82f22d3789975db295929f8f90d8ece0223e547c0d46396f",
+      "unmatched_gene_count_global": 3
+    },
+    {
+      "matched_gene_count_global": 112,
+      "pathway": "HALLMARK_BILE_ACID_METABOLISM",
+      "source_gene_count": 112,
+      "source_gene_sha256": "f0e0ced79e98889cc11897ae04d70be6c63fea3f1fafcbd9a38e2a0c3e462006",
+      "unmatched_gene_count_global": 0
+    },
+    {
+      "matched_gene_count_global": 72,
+      "pathway": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+      "source_gene_count": 74,
+      "source_gene_sha256": "1129df9625c8f037c6f4ebab5d7911e976c0c452ffa43daadeac37c4b87bd2d7",
+      "unmatched_gene_count_global": 2
+    },
+    {
+      "matched_gene_count_global": 136,
+      "pathway": "HALLMARK_COAGULATION",
+      "source_gene_count": 138,
+      "source_gene_sha256": "a83be4688e0cabe50f48d4ce0ee412169aec70ae797196ebd101f81c4804259f",
+      "unmatched_gene_count_global": 2
+    },
+    {
+      "matched_gene_count_global": 195,
+      "pathway": "HALLMARK_COMPLEMENT",
+      "source_gene_count": 200,
+      "source_gene_sha256": "8834b99e2612ede0f097ef47a7ea1a269ede55b2838454fb4da4b8a8b47c7f40",
+      "unmatched_gene_count_global": 5
+    },
+    {
+      "matched_gene_count_global": 139,
+      "pathway": "HALLMARK_DNA_REPAIR",
+      "source_gene_count": 150,
+      "source_gene_sha256": "6aef95e73befe76c54add8e23e9561075761cab1583b0e0014acd134d4e37e74",
+      "unmatched_gene_count_global": 11
+    },
+    {
+      "matched_gene_count_global": 186,
+      "pathway": "HALLMARK_E2F_TARGETS",
+      "source_gene_count": 200,
+      "source_gene_sha256": "564b78438ff87fdfb0fd79653cc41163db2dab0829de7926f93204f7d8518967",
+      "unmatched_gene_count_global": 14
+    },
+    {
+      "matched_gene_count_global": 194,
+      "pathway": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+      "source_gene_count": 200,
+      "source_gene_sha256": "ce2782c435c8b89c2a7f68a8603515f1cd474eebcfc38e092c3826a99e4dac2f",
+      "unmatched_gene_count_global": 6
+    },
+    {
+      "matched_gene_count_global": 191,
+      "pathway": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+      "source_gene_count": 200,
+      "source_gene_sha256": "27b57b06a92ab4bde612a26e91f194d0afad6d790b64e0404b9ab216d6372247",
+      "unmatched_gene_count_global": 9
+    },
+    {
+      "matched_gene_count_global": 193,
+      "pathway": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+      "source_gene_count": 200,
+      "source_gene_sha256": "f2ffa00ea298909653c5799ff6ed0895fb19ae68b1e9edc7e2222295ea5582b6",
+      "unmatched_gene_count_global": 7
+    },
+    {
+      "matched_gene_count_global": 153,
+      "pathway": "HALLMARK_FATTY_ACID_METABOLISM",
+      "source_gene_count": 158,
+      "source_gene_sha256": "d61a2be8ef4a6e1f220765bd507c8c465ec968faf65d190d05566e727a3bc72e",
+      "unmatched_gene_count_global": 5
+    },
+    {
+      "matched_gene_count_global": 184,
+      "pathway": "HALLMARK_G2M_CHECKPOINT",
+      "source_gene_count": 200,
+      "source_gene_sha256": "591de018bfded3fdbdf0780dec75f31f84779dfd51afee604eca6a9442a62ba2",
+      "unmatched_gene_count_global": 16
+    },
+    {
+      "matched_gene_count_global": 195,
+      "pathway": "HALLMARK_GLYCOLYSIS",
+      "source_gene_count": 200,
+      "source_gene_sha256": "c0b90a28afee230795c557fc44d35b1398786cccd36356c88da22517e4ebe8fb",
+      "unmatched_gene_count_global": 5
+    },
+    {
+      "matched_gene_count_global": 35,
+      "pathway": "HALLMARK_HEDGEHOG_SIGNALING",
+      "source_gene_count": 36,
+      "source_gene_sha256": "98c51eb018e678adc3f24f186606bfd539ae1b006d9c14fba95ab923941e4547",
+      "unmatched_gene_count_global": 1
+    },
+    {
+      "matched_gene_count_global": 190,
+      "pathway": "HALLMARK_HEME_METABOLISM",
+      "source_gene_count": 200,
+      "source_gene_sha256": "4634c179fe840abec70e887dec0762009e2aca1d047fa0cfee6fb005d17cf351",
+      "unmatched_gene_count_global": 10
+    },
+    {
+      "matched_gene_count_global": 190,
+      "pathway": "HALLMARK_HYPOXIA",
+      "source_gene_count": 200,
+      "source_gene_sha256": "5c03f2b832d21088e242e2df9aca773be63c1cf0310831b84749e0d022232ab5",
+      "unmatched_gene_count_global": 10
+    },
+    {
+      "matched_gene_count_global": 193,
+      "pathway": "HALLMARK_IL2_STAT5_SIGNALING",
+      "source_gene_count": 199,
+      "source_gene_sha256": "48434be5ce28a4b7e124c73081521ab9420932305995c17624e30fe17f43a0ca",
+      "unmatched_gene_count_global": 6
+    },
+    {
+      "matched_gene_count_global": 87,
+      "pathway": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+      "source_gene_count": 87,
+      "source_gene_sha256": "b9629d4182b8dce50fdf1de27e3179b75d4115aaaa24cbe944b5e6efaa70d3d1",
+      "unmatched_gene_count_global": 0
+    },
+    {
+      "matched_gene_count_global": 197,
+      "pathway": "HALLMARK_INFLAMMATORY_RESPONSE",
+      "source_gene_count": 200,
+      "source_gene_sha256": "1bc300f292109dfd053e02e6a364603fc8cc4a454070cd0295f8d14eafc6e58f",
+      "unmatched_gene_count_global": 3
+    },
+    {
+      "matched_gene_count_global": 92,
+      "pathway": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+      "source_gene_count": 97,
+      "source_gene_sha256": "2fa982dafcc252c85fb3e08ef08cec321ced0212cf6690a3b5afd37803b16911",
+      "unmatched_gene_count_global": 5
+    },
+    {
+      "matched_gene_count_global": 194,
+      "pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+      "source_gene_count": 200,
+      "source_gene_sha256": "fb13471b0f7575e5818aae4d7d2f0db79de5047ee88b8894c800aae79732875c",
+      "unmatched_gene_count_global": 6
+    },
+    {
+      "matched_gene_count_global": 188,
+      "pathway": "HALLMARK_KRAS_SIGNALING_DN",
+      "source_gene_count": 200,
+      "source_gene_sha256": "38347facd5070b8161f704722c968a65c16fe9b2b68c9d5ab5b976e8abf521c6",
+      "unmatched_gene_count_global": 12
+    },
+    {
+      "matched_gene_count_global": 193,
+      "pathway": "HALLMARK_KRAS_SIGNALING_UP",
+      "source_gene_count": 200,
+      "source_gene_sha256": "5c5b45a17c2151e6152263a03a794b9cc21ccf867c702182872cf1f6c38e9f9d",
+      "unmatched_gene_count_global": 7
+    },
+    {
+      "matched_gene_count_global": 196,
+      "pathway": "HALLMARK_MITOTIC_SPINDLE",
+      "source_gene_count": 199,
+      "source_gene_sha256": "613be45d159122980cb3d675bf389db183f00897290094a6d2486c2fe3faba66",
+      "unmatched_gene_count_global": 3
+    },
+    {
+      "matched_gene_count_global": 191,
+      "pathway": "HALLMARK_MTORC1_SIGNALING",
+      "source_gene_count": 200,
+      "source_gene_sha256": "5771bbbef4fb3c3952822bb08565c8744d6a3b3f27f2e5c41ae3050f95199420",
+      "unmatched_gene_count_global": 9
+    },
+    {
+      "matched_gene_count_global": 187,
+      "pathway": "HALLMARK_MYC_TARGETS_V1",
+      "source_gene_count": 200,
+      "source_gene_sha256": "50cd9ea3002d1be2e35652dd92850be95434361a27c330ef0e523f5f792de179",
+      "unmatched_gene_count_global": 13
+    },
+    {
+      "matched_gene_count_global": 57,
+      "pathway": "HALLMARK_MYC_TARGETS_V2",
+      "source_gene_count": 58,
+      "source_gene_sha256": "285ffc1718d3063103b7ae9ede0bedd9c0942fc9603a91cd45a470016ba5df1c",
+      "unmatched_gene_count_global": 1
+    },
+    {
+      "matched_gene_count_global": 197,
+      "pathway": "HALLMARK_MYOGENESIS",
+      "source_gene_count": 200,
+      "source_gene_sha256": "0d0411dc271a17a36870b6568bdf61654e0e2e70076867dcb56d824651758fa5",
+      "unmatched_gene_count_global": 3
+    },
+    {
+      "matched_gene_count_global": 32,
+      "pathway": "HALLMARK_NOTCH_SIGNALING",
+      "source_gene_count": 32,
+      "source_gene_sha256": "1279900280660e43b0fbcfaf73750a53a5a1f4feccacf0ec8387449dbcccdcb6",
+      "unmatched_gene_count_global": 0
+    },
+    {
+      "matched_gene_count_global": 182,
+      "pathway": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+      "source_gene_count": 200,
+      "source_gene_sha256": "b21142da2044058b63185afa0c8b2efe91f1f10b43d993fade969b7e6f24e972",
+      "unmatched_gene_count_global": 18
+    },
+    {
+      "matched_gene_count_global": 190,
+      "pathway": "HALLMARK_P53_PATHWAY",
+      "source_gene_count": 200,
+      "source_gene_sha256": "c1efaa88761d292fdc86bd8e03622a56bf35dba05d36bb39e8ceb115aba2d830",
+      "unmatched_gene_count_global": 10
+    },
+    {
+      "matched_gene_count_global": 40,
+      "pathway": "HALLMARK_PANCREAS_BETA_CELLS",
+      "source_gene_count": 40,
+      "source_gene_sha256": "37ab2ce1d6d7dbbb688fac3a315b6364b6ca5be254bc2a8276cba7f306b1bb3a",
+      "unmatched_gene_count_global": 0
+    },
+    {
+      "matched_gene_count_global": 101,
+      "pathway": "HALLMARK_PEROXISOME",
+      "source_gene_count": 104,
+      "source_gene_sha256": "c33ca358743bb64a82b4cdb1630813e7d9eb3dddaab6f77679d76ec516fb2dd4",
+      "unmatched_gene_count_global": 3
+    },
+    {
+      "matched_gene_count_global": 104,
+      "pathway": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+      "source_gene_count": 105,
+      "source_gene_sha256": "f70bb97ff816b068c35062ac38d6b76a051b75a7f8e9507faefe717478efa7ee",
+      "unmatched_gene_count_global": 1
+    },
+    {
+      "matched_gene_count_global": 95,
+      "pathway": "HALLMARK_PROTEIN_SECRETION",
+      "source_gene_count": 96,
+      "source_gene_sha256": "7c36e1de47cecd3a374b93458fae226c3c8cb877a1513629142d4f30e66a58b7",
+      "unmatched_gene_count_global": 1
+    },
+    {
+      "matched_gene_count_global": 45,
+      "pathway": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+      "source_gene_count": 49,
+      "source_gene_sha256": "80a0666caae04b25f6ee54c9d922279d38c659d131cc31eedcbd92b281c48a4d",
+      "unmatched_gene_count_global": 4
+    },
+    {
+      "matched_gene_count_global": 131,
+      "pathway": "HALLMARK_SPERMATOGENESIS",
+      "source_gene_count": 135,
+      "source_gene_sha256": "dcb33f3789d69689b7791e57567a751b00ecde76a08690ca6842bfaf8279566c",
+      "unmatched_gene_count_global": 4
+    },
+    {
+      "matched_gene_count_global": 54,
+      "pathway": "HALLMARK_TGF_BETA_SIGNALING",
+      "source_gene_count": 54,
+      "source_gene_sha256": "1029ebe92314197269b1622a8322f189578ed5c981bcda687fee79778446bca4",
+      "unmatched_gene_count_global": 0
+    },
+    {
+      "matched_gene_count_global": 196,
+      "pathway": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+      "source_gene_count": 200,
+      "source_gene_sha256": "a827844a4d4d54e8f069dffca1650143231bd910fad0fb4caff534bd9cdbdb74",
+      "unmatched_gene_count_global": 4
+    },
+    {
+      "matched_gene_count_global": 105,
+      "pathway": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+      "source_gene_count": 113,
+      "source_gene_sha256": "28a14fff358df21aea255d5cf4bab00bb895575d86fc20cffe9f4c411b18cd05",
+      "unmatched_gene_count_global": 8
+    },
+    {
+      "matched_gene_count_global": 137,
+      "pathway": "HALLMARK_UV_RESPONSE_DN",
+      "source_gene_count": 144,
+      "source_gene_sha256": "8ccf2b3c7127a90e4d353fb0b57fd5ff6a6384840b6c23a654c417735c0e388d",
+      "unmatched_gene_count_global": 7
+    },
+    {
+      "matched_gene_count_global": 152,
+      "pathway": "HALLMARK_UV_RESPONSE_UP",
+      "source_gene_count": 158,
+      "source_gene_sha256": "666f29ff3a0ab99bdaa063d0b399b893153dbd68e0375b3e25cc0ddbcbcef1dc",
+      "unmatched_gene_count_global": 6
+    },
+    {
+      "matched_gene_count_global": 42,
+      "pathway": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+      "source_gene_count": 42,
+      "source_gene_sha256": "dc952bd5bed0777a5c15a690cbae4f4e254b1179710f3f01ed8d3f1e1c23196b",
+      "unmatched_gene_count_global": 0
+    },
+    {
+      "matched_gene_count_global": 196,
+      "pathway": "HALLMARK_XENOBIOTIC_METABOLISM",
+      "source_gene_count": 200,
+      "source_gene_sha256": "fc348a7af0be7d0809f83d0c49c0a9e5bec0238e4e4412378a75d7dd9dff91ea",
+      "unmatched_gene_count_global": 4
+    }
+  ],
+  "source_file_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+  "source_version": "MSigDB 2024.1.Hs Hallmark H collection"
+}

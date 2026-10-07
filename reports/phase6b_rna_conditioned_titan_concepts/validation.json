@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "patients": 512,
+  "seeds": 3,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "metrics_rows": 48,
+  "pair_rows": 36,
+  "oof_files": 180,
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "elapsed_seconds": 853.6969349384308,
+  "survival_columns_read": [],
+  "server_weight_copy_used": false,
+  "patient_level_outputs_published": false
+}

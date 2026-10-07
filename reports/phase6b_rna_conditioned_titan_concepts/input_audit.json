@@ -1,0 +1,49 @@
+{
+  "representation_cache_sha256": "3d27ebbdc65c6e76c7af183729875be2e732675cf117ccd97a22f2a6d0c6f259",
+  "rna": {
+    "raw_shape": [
+      512,
+      20531
+    ],
+    "input_sha256": "5887b1cb84d5df0faaf5e484fdcbf91d3836c12d4a7be4e81c2ba7e799ba8c90",
+    "patient_count": 512,
+    "survival_columns_read": [],
+    "clinical_columns_read": []
+  },
+  "fold_file_sha256": "273ec884ea2bc7afbe817305c5c423e56c012790e610965e12f01ea1052e5f24",
+  "patient_count": 512,
+  "concept_ids": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C31",
+    "C32"
+  ]
+}

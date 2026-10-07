@@ -1,0 +1,39 @@
+{
+  "version": "phase6b_rna_conditioned_titan_concepts_v1",
+  "hypothesis": "A low-capacity patient RNA context can alter the interpretation of frozen TITAN CRC morphology concepts.",
+  "representation": {
+    "image": "Phase6A official TITAN semantic patient representation, frozen",
+    "text": "Phase6A official TITAN zero-shot text prototypes for 32 outcome-blind CRC morphology concepts, frozen",
+    "dynamic_prompt": "output-space prompt basis and gate; this is a frozen-encoder adapter, not token-level TITAN prompt tuning",
+    "rna": "fold-local log2(x+1), variance-top-512, standardization fit only on inner-train or outer-train, then Linear(512,16)"
+  },
+  "controls": [
+    "static_concepts",
+    "rna_conditioned",
+    "static_concepts_plus_rna",
+    "wrong_patient_rna_conditioned"
+  ],
+  "targets": ["T", "N", "M", "Stage"],
+  "no_survival_inputs": true,
+  "seeds": [20261007, 20261008, 20261009],
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "schedule": {
+    "max_epochs": 120,
+    "checkpoint_epochs": [40, 80, 120],
+    "optimizer": "AdamW",
+    "learning_rate": 0.01,
+    "weight_decay": 0.001,
+    "selection_metric": "inner balanced accuracy",
+    "class_weighting": "inverse frequency from inner-train or outer-train"
+  },
+  "prompt_adapter": {
+    "basis_count": 16,
+    "basis_dim": 768,
+    "gate_shape": [16, 32, 16],
+    "lambda_candidates": [0.15, 0.30],
+    "frozen_titan": true
+  },
+  "wrong_patient_control": "At outer-test only, cyclically derange RNA within the test fold; use the same matched model and image representation.",
+  "publication_storage": "Only scripts, config, aggregate metrics, paired summaries, and validation are publishable. Patient OOF files, embeddings, RNA matrices, raw clinical tables, H5 files, and weights stay off GitHub."
+}

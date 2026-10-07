@@ -56,10 +56,10 @@ def event_budget_indices(train,event,fraction,seed):
  chosen_ce=np.sort(rng.choice(ce_idx,size=min(n_ce,len(ce_idx)),replace=False)) if n_ce else np.empty(0,dtype=int)
  return np.sort(np.concatenate([chosen_ev,chosen_ce])).astype(int)
 
-def derive_decision(seed_rows,boot_rows,budget_rows):
+def derive_decision(seed_rows,boot_rows,budget_rows,seeds=SEEDS):
  def rows(ep,mod): return [x for x in seed_rows if x["endpoint"]==ep and x["model"]==mod]
  b0={x["seed"]:x for x in rows("OS","B0-Clinical-only")}; b4={x["seed"]:x for x in rows("OS","B4-Frozen-M2-P+R")}
- concordant=sum(int(b4.get(s,{}).get("harrell_oof",-np.inf)>b0.get(s,{}).get("harrell_oof",np.inf) and b4.get(s,{}).get("uno_oof",-np.inf)>b0.get(s,{}).get("uno_oof",np.inf)) for s in SEEDS)
+ concordant=sum(int(b4.get(s,{}).get("harrell_oof",-np.inf)>b0.get(s,{}).get("harrell_oof",np.inf) and b4.get(s,{}).get("uno_oof",-np.inf)>b0.get(s,{}).get("uno_oof",np.inf)) for s in seeds)
  boots=[x for x in boot_rows if x["endpoint"]=="OS" and x["comparison"]=="B4-Frozen-M2-P+R - B0-Clinical-only"]
  if concordant>=2 and any(x.get("delta_harrell_ci95_low",-np.inf)>0 or x.get("delta_uno_ci95_low",-np.inf)>0 for x in boots): return "PRETRAINING_TRANSFER_SUPPORTED"
  gains=[]
@@ -91,17 +91,18 @@ def boot(t,e,folds,c,b,seed):
   du.append(n/d-nb/db if d and db else np.nan)
  a=np.asarray(dh); u=np.asarray(du); return {"bootstrap_replicates":BOOT,"delta_harrell_mean":float(np.nanmean(a)),"delta_harrell_ci95_low":float(np.nanquantile(a,.025)),"delta_harrell_ci95_high":float(np.nanquantile(a,.975)),"delta_uno_mean":float(np.nanmean(u)),"delta_uno_ci95_low":float(np.nanquantile(u,.025)),"delta_uno_ci95_high":float(np.nanquantile(u,.975))}
 def main(a):
- repo=Path(a.repo_root); root=Path(a.data_root); runtime=Path(a.runtime_root); pathrt=Path(a.path_runtime_root); out=Path(a.reports_root); out.mkdir(parents=True,exist_ok=True); runtime.mkdir(parents=True,exist_ok=True); dev=torch.device("cuda" if torch.cuda.is_available() and not a.cpu else "cpu"); raw=load_raw_inputs(root,repo); print("P5_STAGE raw_loaded",flush=True); base=root/"data/data_8/coadread_tcga_pan_can_atlas_2018"; primary=_load_patient_table(base/"data_clinical_patient.txt",raw.patient_ids.tolist()); labels={}; audits=[]
+ repo=Path(a.repo_root); root=Path(a.data_root); runtime=Path(a.runtime_root); pathrt=Path(a.path_runtime_root); out=Path(a.reports_root); out.mkdir(parents=True,exist_ok=True); runtime.mkdir(parents=True,exist_ok=True); selected_seeds=tuple(int(x) for x in a.seeds); selected_endpoints=tuple(str(x) for x in a.endpoints); dev=torch.device("cuda" if torch.cuda.is_available() and not a.cpu else "cpu"); raw=load_raw_inputs(root,repo); print(json.dumps({"stage":"raw_loaded","device":str(dev),"seeds":selected_seeds,"endpoints":selected_endpoints},sort_keys=True),flush=True); base=root/"data/data_8/coadread_tcga_pan_can_atlas_2018"; primary=_load_patient_table(base/"data_clinical_patient.txt",raw.patient_ids.tolist()); labels={}; audits=[]
  for ep in ("DSS","OS","PFI","PFS"):
   sc,tc=ep+"_STATUS",ep+"_MONTHS"
   if sc not in primary or tc not in primary: audits.append({"endpoint":ep,"available":False,"eligible_for_modeling":False,"reason":"explicit_status_or_months_field_missing"}); continue
-  st=primary[sc].map(_status).to_numpy(float); tm=pd.to_numeric(primary[tc],errors="coerce").to_numpy(float); valid=np.isfinite(st)&np.isfinite(tm)&np.isin(st,[0,1])&(tm>0); ev=valid&(st==1); labels[ep]=(tm,st.astype(int),valid); audits.append({"endpoint":ep,"available":True,"eligible_for_modeling":bool(ep in ENDPOINTS and valid.all()),"valid_n":int(valid.sum()),"event_n":int(ev.sum()),"censoring_rate":float(np.sum(valid&(st==0))/max(1,valid.sum())),"median_followup":float(np.median(tm[valid])) if valid.any() else np.nan,"time_min":float(np.min(tm[valid])) if valid.any() else np.nan,"time_max":float(np.max(tm[valid])) if valid.any() else np.nan,"missing_or_invalid_n":int((~valid).sum()),"dss_event_overlap_n":int(np.sum(ev&(raw.dss_event==1))),"fold_event_counts":json.dumps({str(f):int(np.sum(ev&(raw.outer_folds==f))) for f in FOLDS},sort_keys=True),"fold_valid_counts":json.dumps({str(f):int(np.sum(valid&(raw.outer_folds==f))) for f in FOLDS},sort_keys=True),"source_columns":f"{sc},{tc}","reason":"PFS excluded from formal modeling because valid_n != 512" if ep=="PFS" and not valid.all() else ""})
+  st=primary[sc].map(_status).to_numpy(float); tm=pd.to_numeric(primary[tc],errors="coerce").to_numpy(float); valid=np.isfinite(st)&np.isfinite(tm)&np.isin(st,[0,1])&(tm>0); ev=valid&(st==1); labels[ep]=(tm,st.astype(int),valid); audits.append({"endpoint":ep,"available":True,"eligible_for_modeling":bool(ep in selected_endpoints and valid.all()),"valid_n":int(valid.sum()),"event_n":int(ev.sum()),"censoring_rate":float(np.sum(valid&(st==0))/max(1,valid.sum())),"median_followup":float(np.median(tm[valid])) if valid.any() else np.nan,"time_min":float(np.min(tm[valid])) if valid.any() else np.nan,"time_max":float(np.max(tm[valid])) if valid.any() else np.nan,"missing_or_invalid_n":int((~valid).sum()),"dss_event_overlap_n":int(np.sum(ev&(raw.dss_event==1))),"fold_event_counts":json.dumps({str(f):int(np.sum(ev&(raw.outer_folds==f))) for f in FOLDS},sort_keys=True),"fold_valid_counts":json.dumps({str(f):int(np.sum(valid&(raw.outer_folds==f))) for f in FOLDS},sort_keys=True),"source_columns":f"{sc},{tc}","reason":"PFS excluded from formal modeling because valid_n != 512" if ep=="PFS" and not valid.all() else ""})
  atomic_csv(out/"endpoint_audit.csv",audits); atomic_json(out/"endpoint_provenance.json",{"source":"data/data_8/coadread_tcga_pan_can_atlas_2018/data_clinical_patient.txt","cohort_n":512,"DSS":"DSS_STATUS/DSS_MONTHS","OS":"OS_STATUS/OS_MONTHS","PFI":"unavailable; no explicit fields; no fabricated definition","PFS":"PFS_STATUS/PFS_MONTHS; valid_n=510; audit only","patient_ids_written":False})
  if a.smoke: print(json.dumps({"smoke":True,"cohort":len(raw.patient_ids),"device":str(dev),"audit":audits},sort_keys=True)); return
- pool=np.load(pathrt/"path_tokens_train_pool.npy",mmap_mode="r"); det=np.load(pathrt/"path_tokens_deterministic.npy",mmap_mode="r"); m2=load_m2_module(repo); names,groups=m2.load_hallmarks(repo/"src/phase_m2/metadata/mmp_hallmarks_signatures.csv"); summaries={f:m2.prepare_summaries(raw,names,groups,np.flatnonzero(raw.outer_folds!=f))[0] for f in FOLDS}; print("P5_STAGE summaries_done",flush=True); fold_arrays={f:type("A",(),{"rna":_fit_numeric(raw.rna,np.flatnonzero(raw.outer_folds!=f),output_dim=512,modality="RNA")[0]})() for f in FOLDS}; print("P5_STAGE fold_arrays_done",flush=True); phase1=pathrt/"phase1_orthogonal_cells_repair"; fold_rows=[]; seed_rows=[]; boot_rows=[]; frozen_rows=[]; budget_rows=[]; failures=[]; allrisk={ep:{mod:{s:np.full(512,np.nan) for s in (20260904,20260905,20260906)} for mod in ("B0-Clinical-only","B1-Pathology-only","B2-RNA-only","B3-Additive-C+P+R","B4-Frozen-M2-P+R")} for ep in ENDPOINTS}
- for ep in ENDPOINTS:
+ pool=np.load(pathrt/"path_tokens_train_pool.npy",mmap_mode="r"); det=np.load(pathrt/"path_tokens_deterministic.npy",mmap_mode="r"); m2=load_m2_module(repo); names,groups=m2.load_hallmarks(repo/"src/phase_m2/metadata/mmp_hallmarks_signatures.csv"); summaries={f:m2.prepare_summaries(raw,names,groups,np.flatnonzero(raw.outer_folds!=f))[0] for f in FOLDS}; print("P5_STAGE summaries_done",flush=True); fold_arrays={f:type("A",(),{"rna":_fit_numeric(raw.rna,np.flatnonzero(raw.outer_folds!=f),output_dim=512,modality="RNA")[0]})() for f in FOLDS}; print("P5_STAGE fold_arrays_done",flush=True); phase1=pathrt/"phase1_orthogonal_cells_repair"; fold_rows=[]; seed_rows=[]; boot_rows=[]; frozen_rows=[]; budget_rows=[]; failures=[]; allrisk={ep:{mod:{s:np.full(512,np.nan) for s in selected_seeds} for mod in ("B0-Clinical-only","B1-Pathology-only","B2-RNA-only","B3-Additive-C+P+R","B4-Frozen-M2-P+R")} for ep in selected_endpoints}
+ for ep in selected_endpoints:
   tm,ev,valid=labels[ep]; proxy=copy.copy(raw); proxy.dss_time=tm; proxy.dss_event=ev
-  for seed in (20260904,20260905,20260906):
+  for seed in selected_seeds:
+   print(json.dumps({"stage":"cell_start","endpoint":ep,"seed":seed},sort_keys=True),flush=True)
    for f in FOLDS:
     train=np.flatnonzero(raw.outer_folds!=f); test=np.flatnonzero(raw.outer_folds==f)
     try:
@@ -130,32 +131,34 @@ def main(a):
          wb=fit_scalar(xf,proxy,btrain,seed+f+sub_seed+int(frac*1000)); bp=xf[test]@wb
          bu=uno_c_index(tm[test],ev[test],bp,tm[btrain],ev[btrain])[0]
          budget_rows.append({"endpoint":ep,"model":bmod,"seed":seed,"outer_fold":f,"budget_fraction":float(frac),"subsample_seed":int(sub_seed),"events_used":int(ev[btrain].sum()),"n_train_used":int(len(btrain)),"harrell_c":float(harrell_c(tm[test],ev[test],bp)),"uno_c":float(bu),"outer_test_unchanged":True,"mapping_only":True,"status":"completed"})
+     print(json.dumps({"stage":"cell_done","endpoint":ep,"seed":seed,"outer_fold":f},sort_keys=True),flush=True)
     except Exception as ex: failures.append({"endpoint":ep,"seed":seed,"outer_fold":f,"error":repr(ex),"traceback":traceback.format_exc()})
- for ep in ENDPOINTS:
+ for ep in selected_endpoints:
   tm,ev,_=labels[ep]
   for mod in allrisk[ep]:
-   for s in (20260904,20260905,20260906):
+   for s in selected_seeds:
     r=allrisk[ep][mod][s]
     if np.all(np.isfinite(r)): seed_rows.append({"endpoint":ep,"model":mod,"seed":s,"harrell_oof":float(harrell_c(tm,ev,r)),"uno_oof":float(np.nanmean([x["uno_c"] for x in fold_rows if x["endpoint"]==ep and x["model"]==mod and x["seed"]==s])),"events":int(ev.sum()),"status":"completed"})
-  for s in (20260904,20260905,20260906):
+  for s in selected_seeds:
    b0=allrisk[ep]["B0-Clinical-only"][s]
    for mod in ("B3-Additive-C+P+R","B4-Frozen-M2-P+R"):
     c=allrisk[ep][mod][s]
     if np.all(np.isfinite(c)) and np.all(np.isfinite(b0)): boot_rows.append({"endpoint":ep,"seed":s,"comparison":mod+" - B0-Clinical-only",**boot(tm,ev,raw.outer_folds,c,b0,s+17)})
- decision=derive_decision(seed_rows,boot_rows,budget_rows)
+ decision=derive_decision(seed_rows,boot_rows,budget_rows,selected_seeds)
  atomic_csv(out/"fold_metrics.csv",fold_rows); atomic_csv(out/"seed_oof_metrics.csv",seed_rows); atomic_csv(out/"paired_bootstrap.csv",boot_rows); atomic_csv(out/"frozen_probe_metrics.csv",frozen_rows); atomic_csv(out/"event_budget_curve.csv",budget_rows); atomic_csv(out/"failure_ledger.csv",failures)
- val={"status":not failures and len(seed_rows)==30 and len(fold_rows)==150 and len(budget_rows)==135,"cohort_n":512,"formal_endpoints":list(ENDPOINTS),"formal_fold_rows":len(fold_rows),"expected_fold_rows":150,"seed_oof_rows":len(seed_rows),"expected_seed_oof_rows":30,"event_budget_rows":len(budget_rows),"expected_event_budget_rows":135,"bootstrap_replicates":BOOT,"pfi_not_fabricated":True,"pfs_not_modeled_same_512":True,"b4_encoder_frozen":True,"outer_test_not_used_for_selection":True,"failure_count":len(failures),"decision":decision}
- split_info={"cohort_n":512,"fold_source":"outputs/phase_m1r/fixed_patient_folds.csv","endpoints":{e:{"deterministic":True,"fold_events":{str(f):int(np.sum(labels[e][1]&(raw.outer_folds==f))) for f in FOLDS}} for e in ENDPOINTS},"excluded":{"PFI":"no explicit fields","PFS":"valid_n=510"}}
+ expected_fold_rows=len(selected_endpoints)*len(selected_seeds)*len(FOLDS)*5; expected_seed_rows=len(selected_endpoints)*len(selected_seeds)*5; expected_budget_rows=(len(selected_seeds)*len(FOLDS)*3*3*3) if "OS" in selected_endpoints else 0
+ val={"status":not failures and len(seed_rows)==expected_seed_rows and len(fold_rows)==expected_fold_rows and len(budget_rows)==expected_budget_rows,"cohort_n":512,"formal_endpoints":list(selected_endpoints),"formal_seeds":list(selected_seeds),"formal_fold_rows":len(fold_rows),"expected_fold_rows":expected_fold_rows,"seed_oof_rows":len(seed_rows),"expected_seed_oof_rows":expected_seed_rows,"event_budget_rows":len(budget_rows),"expected_event_budget_rows":expected_budget_rows,"bootstrap_replicates":BOOT,"pfi_not_fabricated":True,"pfs_not_modeled_same_512":True,"b4_encoder_frozen":True,"outer_test_not_used_for_selection":True,"failure_count":len(failures),"decision":decision}
+ split_info={"cohort_n":512,"fold_source":"outputs/phase_m1r/fixed_patient_folds.csv","endpoints":{e:{"deterministic":True,"fold_events":{str(f):int(np.sum(labels[e][1]&(raw.outer_folds==f))) for f in FOLDS}} for e in selected_endpoints},"excluded":{"PFI":"no explicit fields","PFS":"valid_n=510"}}
  atomic_json(out/"endpoint_split_manifest.json",split_info); atomic_json(out/"validation.json",val)
  lines=["# Phase5 Endpoint & Survival-Supervision Budget Audit","","- DSS and OS were modeled on fixed 512 patients.","- PFI has no explicit fields; PFS has valid_n=510 and was audited only.","","|Endpoint|Model|Harrell OOF mean|Uno fold mean|","|---|---|---:|---:|"]
  def mean(e,m,k):
   v=[float(x[k]) for x in seed_rows if x["endpoint"]==e and x["model"]==m]; return float(np.mean(v)) if v else np.nan
- for e in ENDPOINTS:
+ for e in selected_endpoints:
   for m in allrisk[e]: lines.append(f"|{e}|{m}|{mean(e,m,'harrell_oof'):.4f}|{mean(e,m,'uno_oof'):.4f}|")
  lines += ["",f"- Decision: **{decision}**.",f"- Event budget rows: {len(budget_rows)}.","- Public reports contain aggregate metrics only; patient-indexed arrays remain private."]
  (out/"RESULTS.md").write_text("\n".join(lines),encoding="utf-8"); (out/"DECISION.md").write_text(f"# Phase5 decision\n\n- Decision: **{decision}**\n- Validation: **{'PASS' if val['status'] else 'BLOCKED'}**\n- Failures: {len(failures)}\n- Event-budget rows: {len(budget_rows)}\n",encoding="utf-8"); print(json.dumps({"status":val["status"],"fold_rows":len(fold_rows),"seed_rows":len(seed_rows),"budget_rows":len(budget_rows),"failures":len(failures),"decision":decision},sort_keys=True))
 if __name__=="__main__":
- p=argparse.ArgumentParser(); p.add_argument("--repo-root",required=True); p.add_argument("--data-root",required=True); p.add_argument("--runtime-root",required=True); p.add_argument("--path-runtime-root",required=True); p.add_argument("--reports-root",required=True); p.add_argument("--smoke",action="store_true"); p.add_argument("--cpu",action="store_true"); main(p.parse_args())
+ p=argparse.ArgumentParser(); p.add_argument("--repo-root",required=True); p.add_argument("--data-root",required=True); p.add_argument("--runtime-root",required=True); p.add_argument("--path-runtime-root",required=True); p.add_argument("--reports-root",required=True); p.add_argument("--seeds",nargs="+",type=int,default=list(SEEDS)); p.add_argument("--endpoints",nargs="+",choices=list(ENDPOINTS),default=list(ENDPOINTS)); p.add_argument("--smoke",action="store_true"); p.add_argument("--cpu",action="store_true"); main(p.parse_args())
 
 
 

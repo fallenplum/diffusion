@@ -1,0 +1,104 @@
+{
+  "status": true,
+  "cohort_n": 512,
+  "formal_endpoints": [
+    "DSS",
+    "OS"
+  ],
+  "formal_seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "formal_fold_rows": 150,
+  "expected_fold_rows": 150,
+  "seed_oof_rows": 30,
+  "expected_seed_oof_rows": 30,
+  "event_budget_rows": 405,
+  "expected_event_budget_rows": 405,
+  "event_budget_row_definition": "formal_seed x outer_fold x budget_fraction x subsample_seed x model(B0/B3/B4)",
+  "bootstrap_replicates": 2000,
+  "pfi_not_fabricated": true,
+  "pfs_not_modeled_same_512": true,
+  "b4_encoder_frozen": true,
+  "outer_test_not_used_for_selection": true,
+  "failure_count": 0,
+  "decision": "DSS_REMAINS_PRIMARY",
+  "worker_validations": [
+    {
+      "seed": 20260904,
+      "b4_encoder_frozen": true,
+      "bootstrap_replicates": 2000,
+      "cohort_n": 512,
+      "decision": "DSS_REMAINS_PRIMARY",
+      "event_budget_rows": 135,
+      "expected_event_budget_rows": 135,
+      "expected_fold_rows": 50,
+      "expected_seed_oof_rows": 10,
+      "failure_count": 0,
+      "formal_endpoints": [
+        "DSS",
+        "OS"
+      ],
+      "formal_fold_rows": 50,
+      "formal_seeds": [
+        20260904
+      ],
+      "outer_test_not_used_for_selection": true,
+      "pfi_not_fabricated": true,
+      "pfs_not_modeled_same_512": true,
+      "seed_oof_rows": 10,
+      "status": true
+    },
+    {
+      "seed": 20260905,
+      "b4_encoder_frozen": true,
+      "bootstrap_replicates": 2000,
+      "cohort_n": 512,
+      "decision": "DSS_REMAINS_PRIMARY",
+      "event_budget_rows": 135,
+      "expected_event_budget_rows": 135,
+      "expected_fold_rows": 50,
+      "expected_seed_oof_rows": 10,
+      "failure_count": 0,
+      "formal_endpoints": [
+        "DSS",
+        "OS"
+      ],
+      "formal_fold_rows": 50,
+      "formal_seeds": [
+        20260905
+      ],
+      "outer_test_not_used_for_selection": true,
+      "pfi_not_fabricated": true,
+      "pfs_not_modeled_same_512": true,
+      "seed_oof_rows": 10,
+      "status": true
+    },
+    {
+      "seed": 20260906,
+      "b4_encoder_frozen": true,
+      "bootstrap_replicates": 2000,
+      "cohort_n": 512,
+      "decision": "DSS_REMAINS_PRIMARY",
+      "event_budget_rows": 135,
+      "expected_event_budget_rows": 135,
+      "expected_fold_rows": 50,
+      "expected_seed_oof_rows": 10,
+      "failure_count": 0,
+      "formal_endpoints": [
+        "DSS",
+        "OS"
+      ],
+      "formal_fold_rows": 50,
+      "formal_seeds": [
+        20260906
+      ],
+      "outer_test_not_used_for_selection": true,
+      "pfi_not_fabricated": true,
+      "pfs_not_modeled_same_512": true,
+      "seed_oof_rows": 10,
+      "status": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "utc": "2026-10-07T10:19:12.774093+00:00",
+  "inference_success": true,
+  "geometry_passed": true,
+  "clinical_evaluation_performed": true,
+  "protocol_lock": {
+    "protocol_sha256": "d356db5a1592367102996aef0e26b3638267106b608084d39814f7e981068eee",
+    "vocabulary_sha256": "3fc4ae7aeb34ec68f37a9667b1aa95c1c9a1ee479913dc7e6a6ca67b9f493d69",
+    "script_sha256": "60c91d79b7cdfe7fb08381cf716297003dfa006507a041ca3c6ee276660df8c1",
+    "input_manifest_sha256": "00986d86a760989f7a269edf1e38b3dafbe77386148c3c667f477f059e2bfc09",
+    "memory_helper_sha256": "f0a94f8cddd8b8b4a2586092f62a7cbe1d7ad0299d21501bd12a90ec14d2ef49",
+    "model_revision": "dac6773d9961cfc75503440676ff157a2c6e8d2e"
+  }
+}

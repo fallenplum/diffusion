@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "compute": "Server RTX 4080 SUPER 32 GB",
+  "inputs_streamed": 519,
+  "input_bytes": 4075428024,
+  "queue_window": 16,
+  "max_inflight_windows": 2,
+  "transfer_workers": 4,
+  "clinical_labels_uploaded": false,
+  "server_weight_copy_removed": true,
+  "large_source_files_retained_on_local_E": true
+}

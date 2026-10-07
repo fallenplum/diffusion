@@ -1,0 +1,29 @@
+{
+  "phase": "Phase6 clinical-conditioned concept co-adaptation POC",
+  "seeds": [
+    20261007,
+    20261008,
+    20261009
+  ],
+  "concepts": 8,
+  "runtime_seconds": 25.238932132720947,
+  "script_sha256": "27a0a5b55997fec72616276421470e955d445129d275cca5d7da62991d8347fd",
+  "heldout_splits": {
+    "20261007": {
+      "train_n": 390,
+      "eval_n": 97,
+      "eval_indices_sha256": "b45f86e69cd52ff357ffe551fca03f16f7d6e7e8ff282f8ee2697867ff851447"
+    },
+    "20261008": {
+      "train_n": 390,
+      "eval_n": 97,
+      "eval_indices_sha256": "a9ec627b1ebf890801b832c4d884c9e670d7a71428c24f3e3f145533ed7da675"
+    },
+    "20261009": {
+      "train_n": 390,
+      "eval_n": 97,
+      "eval_indices_sha256": "d9f4908e3a8f39dee5426a6ba0e66de0eca8e4f7547c6bd1d5bca0ef7f59331e"
+    }
+  },
+  "status": "completed"
+}

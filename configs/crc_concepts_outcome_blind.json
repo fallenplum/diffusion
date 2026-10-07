@@ -1,0 +1,19 @@
+{
+  "version": "phase6_outcome_blind_v1",
+  "selection_rule": "fixed_before_survival; no DSS/OS/PFS/PFI values are read",
+  "concepts": [
+    {"id": "K1", "name": "immune_inflamed_interferon", "hallmarks": ["HALLMARK_INTERFERON_ALPHA_RESPONSE", "HALLMARK_INTERFERON_GAMMA_RESPONSE", "HALLMARK_ALLOGRAFT_REJECTION", "HALLMARK_IL2_STAT5_SIGNALING"]},
+    {"id": "K2", "name": "canonical_epithelial_wnt_myc", "hallmarks": ["HALLMARK_WNT_BETA_CATENIN_SIGNALING", "HALLMARK_MYC_TARGETS_V1", "HALLMARK_MYC_TARGETS_V2", "HALLMARK_KRAS_SIGNALING_UP"]},
+    {"id": "K3", "name": "metabolic_phenotype", "hallmarks": ["HALLMARK_OXIDATIVE_PHOSPHORYLATION", "HALLMARK_GLYCOLYSIS", "HALLMARK_FATTY_ACID_METABOLISM", "HALLMARK_MTORC1_SIGNALING"]},
+    {"id": "K4", "name": "mesenchymal_tgf_beta_stromal", "hallmarks": ["HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION", "HALLMARK_TGF_BETA_SIGNALING", "HALLMARK_APICAL_JUNCTION", "HALLMARK_COMPLEMENT"]},
+    {"id": "K5", "name": "proliferation_cell_cycle", "hallmarks": ["HALLMARK_G2M_CHECKPOINT", "HALLMARK_E2F_TARGETS", "HALLMARK_MITOTIC_SPINDLE", "HALLMARK_DNA_REPAIR"]},
+    {"id": "K6", "name": "hypoxia_angiogenesis", "hallmarks": ["HALLMARK_HYPOXIA", "HALLMARK_ANGIOGENESIS", "HALLMARK_GLYCOLYSIS", "HALLMARK_VEGF_SIGNALING"]},
+    {"id": "K7", "name": "invasion_emt_ecm", "hallmarks": ["HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION", "HALLMARK_APICAL_JUNCTION", "HALLMARK_COAGULATION", "HALLMARK_TGF_BETA_SIGNALING"]},
+    {"id": "K8", "name": "inflammatory_immune_suppressive", "hallmarks": ["HALLMARK_TNFA_SIGNALING_VIA_NFKB", "HALLMARK_INFLAMMATORY_RESPONSE", "HALLMARK_IL6_JAK_STAT3_SIGNALING", "HALLMARK_COMPLEMENT"]}
+  ],
+  "pathology_input": "UNI2-h patient-level mean feature; no CONCH text/image embedding",
+  "omics_input": "RNA RSEM transformed into 50 fixed Hallmark summaries",
+  "clinical_input": ["AGE", "SEX", "AJCC_PATHOLOGIC_TUMOR_STAGE", "PATH_T_STAGE", "PATH_N_STAGE", "PATH_M_STAGE"],
+  "gene_set_source": "repository Hallmark metadata; mappings are fixed without survival labels",
+  "status": "outcome_blind_surrogate_vocabulary"
+}

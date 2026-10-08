@@ -1,0 +1,86 @@
+{
+  "version": "phase7_p0_v4_corrected_before_valid_oof",
+  "seeds": [
+    20261007,
+    20261008,
+    20261009
+  ],
+  "seed_meaning": "three inner-split seeds on the same cohort, not independent cohorts or neural initializations",
+  "endpoints": [
+    "T",
+    "N",
+    "M",
+    "Stage"
+  ],
+  "outer_folds": 5,
+  "workers": 3,
+  "inner_validation_fraction": 0.2,
+  "representation_methods": [
+    "R0_raw_rna_top512",
+    "R1_true_biology_state_rna",
+    "R2_matched_shuffled_state_rna",
+    "R3_true_biology_state_rna_cna"
+  ],
+  "bridge_methods": [
+    "B0_static_titan_concepts",
+    "B1_raw_rna_additive",
+    "B1_molecular_state_additive",
+    "B2_biology_grounded_concept_bridge",
+    "B3_shuffled_concept_mapping",
+    "B4_wrong_patient_omics_bridge"
+  ],
+  "molecular_states": [
+    "proliferation_g2m",
+    "invasion_emt",
+    "immune_ifng",
+    "hypoxia",
+    "tgfb_stroma",
+    "dna_repair",
+    "wnt_beta_catenin",
+    "angiogenesis"
+  ],
+  "gene_set_source": "existing, hash-locked Hallmark metadata; no target-driven gene set selection",
+  "rna_scoring": "log2(RSEM+1), train-only median imputation and gene z scores, duplicate symbols averaged, mean score per fixed set",
+  "rna_negative_values": "preserve batch-normalized values in (-1,0); require finite values > -1; no clipping or target-driven transform changes",
+  "raw_rna": "Top512 variance on train-only log2 median-imputed expression BEFORE standardization",
+  "shuffled_gene_control": "fold-local global gene derangement within 5x5 train mean/SD rank bins; preserves set sizes and inter-set overlap; usable measured symbols only",
+  "shuffled_gene_seed": 20261007,
+  "cna_scoring": "signed continuous log2 copy-number values; train-only gene z scores averaged by fixed set; dosage evidence, NOT pathway activity; RNA/CNA remain separate",
+  "molecular_dim": 16,
+  "bridge_mapping_file": "configs/phase7_p0_molecular_morphology_prior.json",
+  "bridge_formula": "features=[standardized static S, standardized molecular Z, lambda*S*tanh(Z_R*A.T)/static_scale, lambda*S*tanh(Z_CNA*A.T)/static_scale]; separate main effects retained",
+  "bridge_lambda": 0.1,
+  "bridge_scope": "fixed bounded concept-evidence interactions + fitted tiny linear head; no learned TITAN token prompt or encoder adaptation",
+  "shuffled_mapping": "degree-preserving edge swaps; same per-concept and per-state edge counts, zero rows preserved",
+  "shuffled_mapping_seed": 20261008,
+  "wrong_patient": "same fitted B2 weights and scaler; only bridge conditioning uses a deterministic cyclic shift of test omics; pathology and molecular additive main effects remain matched",
+  "classifier": "class-balanced L2 multinomial logistic regression, LBFGS tol=1e-6, max_iter=5000; convergence required in every fit",
+  "candidate_C": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "selection": "one shared stratified inner split per seed/endpoint/fold; all preprocessing fitted on inner-train, select C by inner-val BA with ties favoring smaller C; refit identical algorithm on outer-train",
+  "bootstrap": {
+    "replicates": 2000,
+    "interval": 0.9875,
+    "scheme": "class-stratified paired patients, shared resamples across the three seed predictions, average seed difference",
+    "scope": "conditional descriptive interval, not pipeline retraining or formal multiplicity control"
+  },
+  "decision": "RNA biological representation compared independently with raw RNA and matched shuffled sets; CNA incremental benefit is a separate question; bridge must exceed static, raw-RNA additive, molecular additive, shuffled mapping and conditioning-only wrong-patient controls",
+  "clinical_text": {
+    "status": "DEFERRED",
+    "reason": "optional supplement; no safely audited target-free text input has been established"
+  },
+  "data_boundary": {
+    "targets": [
+      "T",
+      "N",
+      "M",
+      "Stage"
+    ],
+    "survival_columns_read": [],
+    "dss_used": false
+  },
+  "publication": "aggregate reports, source, fixed gene lists and protocol only; patient IDs, raw data, preprocessing parameters and OOF remain server-private"
+}

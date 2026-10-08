@@ -1,0 +1,30 @@
+{
+  "version": "outcome_blind_candidate_prior_v1",
+  "interpretation": "Allowed association only; no patient-level morphology labels, no causal assertion, unknown direction learned only by the final small classification head. CNA dosage in these sets is not pathway activation.",
+  "concept_file": "configs/phase6a_titan_crc_morphology_concepts.json",
+  "sources": {
+    "hallmark": "https://www.gsea-msigdb.org/gsea/msigdb/collections.jsp",
+    "cms": "https://www.nature.com/articles/nm.3967",
+    "budding": "https://www.nature.com/articles/bjc2016382",
+    "emt_stromal_caveat": "https://www.nature.com/articles/s41467-021-22800-1",
+    "hypoxia": "https://www.gsea-msigdb.org/gsea/msigdb/cards/HALLMARK_HYPOXIA",
+    "g2m": "https://www.gsea-msigdb.org/gsea/msigdb/cards/HALLMARK_G2M_CHECKPOINT",
+    "angiogenesis": "https://www.gsea-msigdb.org/gsea/msigdb/cards/HALLMARK_ANGIOGENESIS",
+    "cna_encoding": "https://github.com/cBioPortal/cbioportal/blob/master/docs/File-Formats.md"
+  },
+  "allowed": [
+    {"concept_id": "C01", "states": ["invasion_emt"], "basis": ["cms", "emt_stromal_caveat"], "confidence": "low", "note": "Bulk EMT/stromal expression may supply invasion context; not a visual invasion label."},
+    {"concept_id": "C05", "states": ["invasion_emt"], "basis": ["budding", "emt_stromal_caveat"], "confidence": "medium", "note": "Microdissected budding regions showed an EMT-like phenotype; bulk expression need not identify buds."},
+    {"concept_id": "C12", "states": ["hypoxia"], "basis": ["hypoxia"], "confidence": "low", "note": "Oxygen-response context for necrosis; indirect biological inference, not validated in this cohort."},
+    {"concept_id": "C14", "states": ["proliferation_g2m"], "basis": ["g2m"], "confidence": "medium", "note": "Cell-cycle expression can supply proliferative context; no mitosis annotation is inferred."},
+    {"concept_id": "C16", "states": ["invasion_emt", "tgfb_stroma"], "basis": ["cms", "emt_stromal_caveat"], "confidence": "medium", "note": "CMS4 and stromal composition motivate a candidate connection."},
+    {"concept_id": "C17", "states": ["invasion_emt", "tgfb_stroma"], "basis": ["cms", "emt_stromal_caveat"], "confidence": "medium", "note": "Bulk mesenchymal scores can reflect fibroblasts."},
+    {"concept_id": "C18", "states": ["invasion_emt", "tgfb_stroma"], "basis": ["cms", "emt_stromal_caveat"], "confidence": "low", "note": "Fibrotic stromal context; no collagen abundance label."},
+    {"concept_id": "C19", "states": ["immune_ifng"], "basis": ["cms"], "confidence": "low", "note": "Immune molecular context, not a cell-count estimate."},
+    {"concept_id": "C20", "states": ["immune_ifng"], "basis": ["cms"], "confidence": "low", "note": "Immune context cannot localize infiltrates."},
+    {"concept_id": "C21", "states": ["immune_ifng"], "basis": ["cms"], "confidence": "low", "note": "Immune context cannot establish lymphoid organization."},
+    {"concept_id": "C29", "states": ["angiogenesis"], "basis": ["angiogenesis", "cms"], "confidence": "medium", "note": "Angiogenesis program as vascular context; no vessel-count label."},
+    {"concept_id": "C30", "states": ["hypoxia"], "basis": ["hypoxia"], "confidence": "low", "note": "Perinecrotic hypoxia is an indirect inference."}
+  ],
+  "unmapped": "All other CRC concepts and the DNA-repair/WNT state-to-morphology links remain unknown and have no bridge edges; all molecular states remain in the additive path. Do not infer mappings from keyword matches."
+}

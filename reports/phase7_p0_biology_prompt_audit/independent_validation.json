@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "patients": 512,
+  "fitted_outer_cells": 540,
+  "outer_oof_files": 600,
+  "true_seed_oof_rows": 120,
+  "independently_checked_preprocessing_partitions": 120,
+  "checked_counterfactual_blocks": 60,
+  "max_independent_metric_error": 8.326672684688674e-17,
+  "max_counterfactual_probability_error": 0.0,
+  "max_classifier_iterations": 531,
+  "all_classifier_fits_converged": true,
+  "source_and_input_hashes_match": true,
+  "all_oof_patients_covered_once_per_method_seed": true,
+  "mapping_row_column_degree_preservation": true,
+  "signature_size_overlap_preservation": true,
+  "survival_columns_read": [],
+  "scope": "implementation and OOF correctness; not a positive mechanism claim"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "validation": {
+    "status": "PASS",
+    "fitted_outer_cells": 540,
+    "outer_oof_files": 600,
+    "true_seed_oof_rows": 120,
+    "worker_count": 3,
+    "survival_columns_read": [],
+    "private_patient_predictions_published": false
+  },
+  "protocol_sha256": "2699f12bf2d1b1bb423a51a9eea4de1e96a0f606ee05eedfbc31f9bbb5646dfc",
+  "independent_validation": "independent_validation.json"
+}

@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "rna": {
+    "patients": 512,
+    "aligned_patients": 512,
+    "missing_patients": 0,
+    "selection": "primary tumor 01 only; mean duplicate primary aliquots",
+    "patients_with_multiple_primary_columns": 0,
+    "source_samples": 592,
+    "gene_rows": 20531,
+    "valid_unique_symbols": 20511,
+    "duplicate_symbol_rows": 7,
+    "blank_symbol_rows": 13,
+    "finite_fraction": 0.9416020286396182,
+    "all_missing_gene_rows": 0,
+    "all_missing_patient_rows": 0,
+    "nonfinite_count": 613872,
+    "infinity_count": 0,
+    "negative_finite_count": 167186,
+    "finite_value_quantiles": [
+      -0.9641786217689514,
+      -0.2290647178888321,
+      219.72862243652344,
+      11151.0,
+      894409.0
+    ]
+  },
+  "cna": {
+    "patients": 512,
+    "aligned_patients": 512,
+    "missing_patients": 0,
+    "selection": "primary tumor 01 only; mean duplicate primary aliquots",
+    "patients_with_multiple_primary_columns": 0,
+    "source_samples": 592,
+    "gene_rows": 25131,
+    "valid_unique_symbols": 25101,
+    "duplicate_symbol_rows": 30,
+    "blank_symbol_rows": 0,
+    "finite_fraction": 0.9998806255222633,
+    "all_missing_gene_rows": 0,
+    "all_missing_patient_rows": 0,
+    "nonfinite_count": 1536,
+    "infinity_count": 0,
+    "negative_finite_count": 6052847,
+    "finite_value_quantiles": [
+      -1.2899999618530273,
+      -0.8259999752044678,
+      0.0,
+      1.4900000095367432,
+      3.6600000858306885
+    ]
+  },
+  "same_selected_aliquot_lists_rna_cna": 512,
+  "rna_encoding": "Batch-normalized RSEM; log2(x+1)",
+  "cna_encoding": "LOG2-VALUE SNP6; no second log transform",
+  "cna_interpretation": "signed gene dosage, not pathway activation; no arm-level burden claims",
+  "static_concept_shape": [
+    512,
+    32
+  ],
+  "mapping_shape": [
+    32,
+    8
+  ],
+  "mapping_edges": 15,
+  "targets": {
+    "T": {
+      "valid_n": 511,
+      "class_counts": [
+        18,
+        94,
+        343,
+        56
+      ]
+    },
+    "N": {
+      "valid_n": 511,
+      "class_counts": [
+        293,
+        127,
+        91
+      ]
+    },
+    "M": {
+      "valid_n": 452,
+      "class_counts": [
+        383,
+        69
+      ]
+    },
+    "Stage": {
+      "valid_n": 501,
+      "class_counts": [
+        94,
+        184,
+        151,
+        72
+      ]
+    }
+  },
+  "survival_columns_read": [],
+  "clinical_predictors_used": []
+}

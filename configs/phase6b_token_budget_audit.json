@@ -1,5 +1,5 @@
 {
-  "version": "phase6b_token_budget_audit_v1",
+  "version": "phase6b_token_budget_audit_v1_1",
   "seeds": [20261007, 20261008, 20261009],
   "endpoints": ["T", "N", "M", "Stage"],
   "outer_folds": 5,
@@ -13,12 +13,13 @@
     "min_epochs": 30,
     "initial_ceiling": 120,
     "extended_ceiling": 240,
+    "maximum_ceiling": 960,
     "smooth_window": 5,
     "patience_epochs": 20,
     "meaningful_ce_improvement": 0.002,
     "meaningful_ba_improvement": 0.005,
-    "stop": "after min_epochs, BOTH inner-val smoothed balanced CE and BA have no meaningful improvement for patience_epochs",
-    "selection": "earliest minimum five-epoch trailing smoothed inner-val balanced CE",
+    "stop": "after min_epochs, BOTH inner-val smoothed balanced CE and BA have no meaningful improvement for patience_epochs; extend 120 -> 240 -> 960 using inner histories only",
+    "selection": "earliest minimum up-to-five-epoch trailing smoothed inner-val balanced CE; epochs 1-4 use available history and remain eligible",
     "numerical_plateau": "last ten mean train CE versus preceding ten differs <= max(0.001,0.005*previous), and last-ten SD <= max(0.002,0.01*last_mean)"
   },
   "refit": "restart from same final seed; refit RNA preprocessing on full outer-train; same optimizer, batch size and selected number of epochs",

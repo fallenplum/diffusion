@@ -211,7 +211,7 @@ def inner_select(method, data, y, tr, va, n_classes, seed, projector, protocol, 
         ce_changed, ba_changed = saved['ce_changed'], saved['ba_changed']
     budget = protocol['budget']
     saturated = False
-    for epoch in range(len(history) + 1, budget['extended_ceiling'] + 1):
+    for epoch in range(len(history) + 1, budget['maximum_ceiling'] + 1):
         before = time.time()
         grad = train_one_epoch(net, optimizer, inputs, labels, weights, projector, rng)
         train_ce, train_ba = assess(net, inputs, labels, weights, projector)
@@ -223,7 +223,7 @@ def inner_select(method, data, y, tr, va, n_classes, seed, projector, protocol, 
         smooth_ce = float(np.mean([r['inner_val_ce'] for r in history[-width:]]))
         smooth_ba = float(np.mean([r['inner_val_ba'] for r in history[-width:]]))
         history[-1].update({'smooth_val_ce': smooth_ce, 'smooth_val_ba': smooth_ba})
-        if epoch >= width and smooth_ce < best_value - 1e-10:
+        if smooth_ce < best_value - 1e-10:
             best_value, best_epoch, best_state = smooth_ce, epoch, cpu_state(net)
         if smooth_ce < anchor_ce - budget['meaningful_ce_improvement']:
             anchor_ce, ce_changed = smooth_ce, epoch
@@ -239,6 +239,8 @@ def inner_select(method, data, y, tr, va, n_classes, seed, projector, protocol, 
             break
         if epoch == budget['initial_ceiling']:
             print(f'EXTEND_TO_{budget["extended_ceiling"]} method={method}', flush=True)
+        if epoch == budget['extended_ceiling']:
+            print(f'EXTEND_TO_{budget["maximum_ceiling"]} method={method}', flush=True)
     result = {'selected_epoch': int(best_epoch), 'inner_epochs_run': len(history), 'best_smooth_inner_val_ce': best_value,
               'validation_saturated': bool(saturated), 'numerical_training_plateau': plateau(history),
               'inner_fit': transform, 'inner_val_indices_sha256': index_hash(va), 'history': history,
@@ -425,7 +427,7 @@ def aggregate(out):
                         assert cell['refit']['outer_fit']['selected_dim'] == 512
                         select = cell['selection']
                         hist = select['history']
-                        eligible = [h for h in hist if h['epoch'] >= protocol['budget']['smooth_window']]
+                        eligible = hist
                         selected = min(eligible, key=lambda h: (h['smooth_val_ce'], h['epoch']))['epoch']
                         assert selected == select['selected_epoch']
                         assert len(cell['refit']['history']) == selected
@@ -482,7 +484,7 @@ def aggregate(out):
              '本轮保持 S0–S4、模型容量、学习率、batch size、词表和输入不变，仅增加训练预算并在 outer-train 内部选择 epoch。TITAN 完全冻结，T/N/M/Stage 是唯一目标。', '',
              '## Protocol', '',
              '- 3 seeds × 5 outer folds × 4 endpoints；每个 outer-train 有一个固定 stratified 80/20 inner split。RNA 预处理和所有 trainable parameters 仅拟合 inner-train；inner-val 只用于 epoch selection。',
-             '- 至少 30 epochs；120 上限时仍未停止则扩展至 240。5-epoch 平滑的 balanced CE 最小值决定 epoch，CE 与 BA 均 20 epochs 无实质改善才停止。',
+             '- 至少观察 30 epochs；120 时未饱和则扩展至 240，240 时未饱和继续至 960，扩展仅依据内部曲线。最多 5-epoch trailing mean 的 balanced CE 最小值决定 epoch，epoch 1–4 使用已有历史长度，不排除早期最佳 epoch；CE 与 BA 均 20 epochs 无实质改善才停止。',
              '- epoch 锁定后，从头在完整 outer-train 重训；相同 optimizer/batch schedule，outer-test 每个模型只预测一次。历史 3-epoch OOF 只在全部训练完成后用于预算配对比较。',
              '- 本 cohort 的旧 outer-test 结果已经被研究过程看过，本轮是内部预算审计，不是全新独立确认。区间是逐比较描述性 bootstrap，不提供全家族错误率保证。', '',
              '## Computational validation', '', '```json', json.dumps(validation, indent=2), '```', '',

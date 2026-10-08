@@ -1,5 +1,5 @@
 {
-  "version": "phase6b_token_prompt_titan_v1",
+  "version": "phase6b_token_prompt_titan_v2_mask_repair",
   "hypothesis": "RNA-conditioned continuous token prompts change the pathology concept semantics before encoding by frozen TITAN text transformer.",
   "controls": {
     "S0": "Static TITAN concept cosine scores with a class-balanced linear head",
@@ -13,6 +13,8 @@
     "prompt_length": 4,
     "pool_size": 4,
     "basis_shape": [4, 4, 768],
+    "cls_mask": "BOS + visible prompt tokens + shifted original concept/EOS/padding sequence",
+    "template_aggregation": "normalize each template, average templates, normalize ensemble (official TITAN order)",
     "templates": "the locked Phase6A two-template CRC morphology ensemble",
     "text_transformer": "TITAN frozen; gradients flow only to prompt pool, RNA adapter/gate and classifier head"
   },
@@ -22,7 +24,10 @@
     "outer_folds": 5,
     "schedule": "fixed three-epoch outer-train fit; no label-driven epoch selection",
     "primary_mechanism_tests": ["S2>S1", "S2>S3", "S2>S4"],
-    "bootstrap": "2000 patient resamples, 98.75 percent interval"
+    "bootstrap": "2000 class-stratified paired patient resamples, 98.75 percent descriptive interval; exact OOF delta as point estimate",
+    "inner_folds": 0,
+    "reuse": "retain v1 S0/S3 cells with patient/fold/label/class/schedule/input-hash validation; rerun S1/S2 only",
+    "persist": "all five controls including wrong-patient S4 OOF, privately on the server"
   },
   "storage": {
     "titan_weights": "retain verified 635 MB snapshot on GPU server for repeated token-level runs",

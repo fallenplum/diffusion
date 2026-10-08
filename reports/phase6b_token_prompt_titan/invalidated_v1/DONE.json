@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "validation": {
+    "status": "PASS",
+    "patients": 512,
+    "seeds": 3,
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "metrics_rows": 60,
+    "pair_rows": 36,
+    "oof_files": 240,
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+    "elapsed_seconds": 12018.880568027496,
+    "survival_columns_read": [],
+    "text_transformer_trainable_parameters": 0,
+    "patient_level_outputs_published": false
+  },
+  "config_sha256": "0032add90a67bd043bad9dcdf3c84011c49f76143ab1d893c65a2b858784e6f2"
+}

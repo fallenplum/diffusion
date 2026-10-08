@@ -1,4 +1,4 @@
-# Phase6B-R token-level TITAN prompt audit
+# Phase6B-R token-level TITAN prompt audit (mask repair)
 
 This run implements continuous prompts before the frozen TITAN text
 transformer. The prompt is inserted after the original BOS token and before

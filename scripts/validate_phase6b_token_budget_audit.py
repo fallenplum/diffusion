@@ -27,6 +27,11 @@ def main(out):
     manifest = json.loads((out / 'manifest.json').read_text())
     assert digest(out / 'protocol.json') == manifest['protocol_sha256']
     assert digest(out / 'private_dataset.npz') == manifest['private_dataset_sha256']
+    repo = Path('/root/diffusion_phase5_20261007')
+    for name, sha in manifest['source_sha256'].items():
+        assert digest(repo / 'scripts' / name) == sha, 'locked training source changed: ' + name
+    for name, record in manifest['inputs'].items():
+        assert digest(Path(record['path'])) == record['sha256'], 'input changed: ' + name
     assert json.loads((out / 'encoder_audit.json').read_text())['status'] == 'PASS'
     assert all(json.loads((out / f'worker_{i}_DONE.json').read_text())['status'] == 'PASS' for i in range(3))
     data = dict(np.load(out / 'private_dataset.npz', allow_pickle=False))
@@ -41,7 +46,6 @@ def main(out):
             y = data['y_' + endpoint]
             valid = y >= 0
             for method in methods:
-                all_p = np.empty((valid.sum(), int(y.max()) + 1))
                 all_y, all_ids, predictions = [], [], []
                 for fold in range(1, 6):
                     tag = f'{endpoint}__{method}__seed{seed}__fold{fold}'
@@ -121,6 +125,7 @@ def main(out):
                     assert error < 1e-10
     assert cell_count == 240 and oof_count == 300 and len(reported) == 60
     result = {'status': 'PASS', 'patients': 512, 'fitted_cells': cell_count, 'complete_oof_files': oof_count,
+              'validator_sha256': digest(Path(__file__)), 'unchanged_training_sources_and_inputs': True,
               'true_seed_oof_metric_rows': len(reported), 'max_independent_metric_error': maximum_error,
               'inner_preprocessing_disjoint_split_and_epoch_checks': cell_count,
               'inner_validation_saturated_cells': saturated, 'inner_training_numerical_plateau_cells': inner_plateau,

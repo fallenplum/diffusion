@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "primary_endpoint": "DSS",
+  "secondary_endpoint": "PFS",
+  "robust_increment_by_endpoint": {
+    "DSS": {
+      "CR-C": false,
+      "CU-C": false,
+      "CT-C": false,
+      "CS-C": false,
+      "CM-C": false,
+      "CMC-C": false,
+      "CRU-CR": false,
+      "CRT-CR": false,
+      "CRS-CR": true,
+      "CRMC-CR": false
+    },
+    "PFS": {
+      "CR-C": false,
+      "CU-C": false,
+      "CT-C": false,
+      "CS-C": false,
+      "CM-C": false,
+      "CMC-C": false,
+      "CRU-CR": false,
+      "CRT-CR": false,
+      "CRS-CR": false,
+      "CRMC-CR": false
+    }
+  },
+  "scope": "conditional frozen representations with linear ridge Cox, no proof that absent significance equals absent signal",
+  "bootstrap": "conditional on fitted OOF; three seeds share patients",
+  "PFS_not_pooled_with_DSS": true
+}

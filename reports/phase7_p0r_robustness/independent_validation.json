@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "independent_macro_recall": true,
+  "oof_files_verified": 1485,
+  "complete_seed_oof_verified": 297,
+  "unique_partition_permutation_checks": 30,
+  "eight_feature_protocol_retained": true,
+  "maximum_metric_error": 8.326672684688674e-17,
+  "source_mask_upstream_confirmed": true
+}

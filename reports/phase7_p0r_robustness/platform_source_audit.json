@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "source_url": "https://api.gdc.cancer.gov/data/1a7d7be8-675d-4e60-a105-19d4121bdebf",
+  "source_sha256": "e3190253ccb55f9f5ccc558b7f994577b2e90c2ee306814231b7d5f077364deb",
+  "matching": "patient identity and primary tumor 01 aliquots only; all public RNASeqV2 annotations, ambiguity retained",
+  "platform_missingness_groups": [
+    {
+      "primary_tumor_rna_platforms": "IlluminaGA_RNASeqV2",
+      "patients": 203,
+      "missing_block_patients": 203,
+      "complete_rna_patients": 0
+    },
+    {
+      "primary_tumor_rna_platforms": "IlluminaGA_RNASeqV2+IlluminaHiSeq_RNASeqV2",
+      "patients": 14,
+      "missing_block_patients": 0,
+      "complete_rna_patients": 14
+    },
+    {
+      "primary_tumor_rna_platforms": "IlluminaHiSeq_RNASeqV2",
+      "patients": 295,
+      "missing_block_patients": 0,
+      "complete_rna_patients": 295
+    }
+  ],
+  "exclusive_platform_identification_patients": 498,
+  "ambiguous_or_unmatched_patients": 14,
+  "missing_block_exactly_exclusive_GAII": true,
+  "missing_patients_with_ambiguous_platform": 0,
+  "complete_patients_with_HiSeq_annotation": 309,
+  "interpretation": "platform association identifies source context; PanCancer processing notes describe NA removal, not biological absence",
+  "batch_correction_performed": false,
+  "survival_labels_used": false
+}

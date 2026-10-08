@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "true_mean_oof_ba": 0.34227109014105667,
+  "true_seed_oof_ba": [
+    0.3445129780290917,
+    0.3437581471112173,
+    0.3385421452828609
+  ],
+  "random_mean_oof_ba": 0.2768388407395483,
+  "random_mean_sd": 0.021213185253849975,
+  "random_mean_quantiles": [
+    0.22432531850454152,
+    0.239014906405646,
+    0.27578978337221255,
+    0.3126953172418456,
+    0.3162783625120455,
+    0.33679738008189714
+  ],
+  "random_realizations_ge_true": 0,
+  "conditional_benchmark_exceedance": 0.01,
+  "delta_true_minus_average_random": 0.06543224940150838,
+  "paired_conditional_ci95": [
+    0.02832860470775428,
+    0.10419713347380902
+  ],
+  "all_seed_95percentile_gate": [
+    true,
+    true,
+    true
+  ],
+  "robustness_gate": true,
+  "independent_random_realizations": 99,
+  "outer_oof_files": 1485,
+  "seed_oof_metrics": 297,
+  "all_fits_converged": true,
+  "max_iterations": 51,
+  "source_and_patient_alignment_unchanged": true,
+  "scope": "same discovery cohort; matched-gene benchmark, not independent external confirmation or causal significance"
+}

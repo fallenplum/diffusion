@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "patients": 512,
+  "slides": 520,
+  "patches": 3295129,
+  "dimension": 1536,
+  "feature_sha256": "2aaa859d4fb4632b8b721c1754c638b739ea8db6a210bddc6fb1d111b156a332",
+  "source_provenance_sha256": "fc06d760fcc57b4b15bb53ffb1b6603601b48fc0319001d5e2c7358b0140cf97",
+  "pooling": "all patches mean per slide; equal slide mean per patient",
+  "labels_used": false
+}

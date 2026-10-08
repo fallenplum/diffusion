@@ -1,0 +1,24 @@
+{
+  "parent": "/root/phase7_p0_biology_audit_v4",
+  "parent_protocol_sha256": "2699f12bf2d1b1bb423a51a9eea4de1e96a0f606ee05eedfbc31f9bbb5646dfc",
+  "parent_private_dataset_sha256": "0af8d9e3602294d1de2b9c76b8b1a527ffbfc7a225ebcf56ebfeba75c670ccc0",
+  "protocol_sha256": "ed24d8fa316dc1d27447bb597175be1f5ae7d896ce2b8cd7b2d5d888be2cd170",
+  "locked_utc": "2026-10-08T18:09:35.975149+00:00",
+  "sources": [
+    {
+      "path": "/root/diffusion_phase5_20261007/configs/phase7_p0r_robustness.json",
+      "sha256": "1806164bfdf092e2f1246f30b4080544c73f60235ff19ff3a22a6ef12c9ca39a"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/scripts/phase7_p0r_robustness.py",
+      "sha256": "2f6515b6953fa3620d077c34babadbb9d0c9546f078d3f17c4dbf65fea669763"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/scripts/phase7_p0_biology_prompt_audit.py",
+      "sha256": "6b3917bb3a8d29649479fa47704eea51a5c7b3343b1d8c019b9623cf1f094661"
+    }
+  ],
+  "independent_permutations": 99,
+  "endpoint": "Stage",
+  "survival_columns_read": []
+}

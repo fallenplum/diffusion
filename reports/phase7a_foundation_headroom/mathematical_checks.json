@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "tied_efron_loss_error": 0.0,
+  "gradient_finite_difference_error": 1.033895191682177e-09,
+  "optimizer_check": {
+    "iterations": 19,
+    "gradient_max": 5.084085413602224e-08,
+    "objective": 1.4533026056589946,
+    "optimizer_message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+  }
+}

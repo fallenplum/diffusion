@@ -1,0 +1,6 @@
+{
+  "status": "INVALIDATED_BEFORE_OOF_AGGREGATION",
+  "reason": "five complete validation epochs inadvertently excluded epochs 1-4 from selection; repaired to up-to-five trailing mean from epoch 1",
+  "aggregate_metrics_examined": false,
+  "completed_cells": 8
+}

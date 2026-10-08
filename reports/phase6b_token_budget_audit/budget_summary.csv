@@ -1,0 +1,17 @@
+endpoint,method,selected_epoch_median,selected_epoch_min,selected_epoch_max,inner_epochs_median,validation_saturated_cells,inner_numerical_plateau_cells
+M,S0_static_concepts,54.0,1,357,71.0,15,2
+M,S1_static_token_prompt,19.0,1,76,46.0,15,0
+M,S2_rna_token_prompt,1.0,1,28,34.0,15,0
+M,S3_static_concepts_plus_rna,1.0,1,3,30.0,15,5
+N,S0_static_concepts,87.0,7,149,101.0,15,13
+N,S1_static_token_prompt,21.0,4,65,49.0,15,1
+N,S2_rna_token_prompt,3.0,1,13,31.0,15,0
+N,S3_static_concepts_plus_rna,1.0,1,2,30.0,15,3
+Stage,S0_static_concepts,86.0,6,158,105.0,15,11
+Stage,S1_static_token_prompt,35.0,12,55,54.0,15,2
+Stage,S2_rna_token_prompt,3.0,1,22,38.0,15,0
+Stage,S3_static_concepts_plus_rna,1.0,1,1,30.0,15,3
+T,S0_static_concepts,95.0,13,232,111.0,15,7
+T,S1_static_token_prompt,31.0,8,84,61.0,15,0
+T,S2_rna_token_prompt,5.0,1,50,39.0,15,0
+T,S3_static_concepts_plus_rna,1.0,1,2,30.0,15,3

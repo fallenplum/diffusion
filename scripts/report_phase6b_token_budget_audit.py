@@ -98,6 +98,7 @@ def main(out):
     lines += ['', f'- 三项均值控制同时通过的 endpoint：**{", ".join(passing) if passing else "无"}**。',
               f'- 三项控制且每个 seed 的区间下界均 >0：**{", ".join(strong) if strong else "无"}**。',
               '- S2>S0 单独只能说明整个可训练 prompt pipeline 有收益；S2>S1 才排除普通 prompt tuning 的解释；S2>S3 才超出直接增加 RNA 的解释；S2>S4 才表明患者配对有用。配对有用仍不自动等价于医学概念语义正确。', '',
+              '**S4 的解释范围：**它复用已在匹配 RNA 上训练的 S2，只在测试时替换 RNA。一个主要利用 RNA 独立分类信息的模型也可能因错误患者 RNA 而变差，因此 S2>S4 是配对敏感性的证据，不能单独证明 pathology–RNA 的语义互补。', '',
               '## 4. 结构层面的诊断', '',
               '| Endpoint | Gate normalized entropy | Patient gate mean SD | Dynamic-to-static concept cosine | Score effective rank |', '|---|---:|---:|---:|---:|']
     for endpoint in endpoints:
@@ -108,6 +109,7 @@ def main(out):
               '这些诊断不使用标签，限每个测试折的前 64 人。低患者 gate 变化提示弱条件化；低概念余弦提示明显语义漂移；它们均不是机制成立或医学语义正确的独立证明。', '',
               '**结构推断的边界：**S2 的 RNA 只能经四个 prompt basis 的混合与 32 个 pathology cosine 传给分类器，S3 有直接 RNA 通路。如果 S2 持续弱于 S3，这与该中介通路限制信息传递相容；本轮没有专门隔离该瓶颈的消融，不能把它当作已经证明的因果原因。', '',
               '源码中 RNA adapter 与 gate 都是线性层，中间没有激活：`alpha = softmax(W_gate W_adapter x + b)`。四个 mixture weights 只有三个独立自由度，因此 16D adapter 不等于向 text encoder 提供 16 个独立 context 维度。不过四分类线性模型也只需要三个独立 log-odds；这条数学观察本身不能证明当前信息瓶颈导致失败。', '',
+              'S3 的 RNA adapter 与最终 head 也都是线性层，合成后仍是 RNA 的仿射分类函数。S2 则包含 softmax gate 和冻结 text transformer 的非线性。因此，即使 S2 优于 S3，也仍需区分非线性 RNA 预测能力、跨模态交互与医学语义适配；本轮没有容量匹配的纯 RNA 非线性控制，不能单凭性能差异把三者等同。', '',
               '### 与 CTF_2 原文的范围差异', '',
               '原文 GCSP 联合使用 concept-specific global prompt、互补模态的 context prompt 和双模态 shared prompt，并在两个 VLM 分支对称运行。本轮按照已指定的低容量方案，只检验 RNA 驱动的 context prompt → 冻结 TITAN text encoder → pathology concept scores；没有原文全部 GCSP 组件、对称双 VLM 或 Clinical conditioner。这个范围差异由 [原论文 §3.2–3.3](https://openreview.net/pdf/4b3fab8d88280ab054b8f5acb353e783df7c6d2d.pdf) 与本轮源码直接核对。', '',
               '因此，负结果表示当前受检配置没有展示出预期的性能优势，不能直接否定完整 CTF、医学先验或全部 tri-modal co-adaptation。反过来，这个范围差异也不能用来忽略当前配置的负结果。', '',

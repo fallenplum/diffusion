@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "patients": 512,
+  "fitted_cells": 240,
+  "complete_oof_files": 300,
+  "validator_sha256": "3b55e290e55714266f506786846fc7f126e7dae21c4546164a1b5da94d63c201",
+  "unchanged_training_sources_and_inputs": true,
+  "true_seed_oof_metric_rows": 60,
+  "max_independent_metric_error": 8.326672684688674e-17,
+  "inner_preprocessing_disjoint_split_and_epoch_checks": 240,
+  "inner_validation_saturated_cells": 240,
+  "inner_training_numerical_plateau_cells": 50,
+  "refit_training_numerical_plateau_cells": 30,
+  "budget_cap_bound_cells": 0,
+  "survival_columns_read": [],
+  "scope": "computational/data/protocol validation; not a positive mechanism claim"
+}

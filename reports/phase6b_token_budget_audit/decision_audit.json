@@ -1,0 +1,285 @@
+{
+  "status": "COMPLETE",
+  "training_budget": [
+    {
+      "endpoint": "T",
+      "method": "S0_static_concepts",
+      "mean_delta_ba": 0.0927626749788061,
+      "selected_epoch_median": 95.0,
+      "selected_more_than3_cells": 15,
+      "positive_seeds": 3,
+      "all_seed_ci_positive": true
+    },
+    {
+      "endpoint": "T",
+      "method": "S1_static_token_prompt",
+      "mean_delta_ba": 0.0971202733035125,
+      "selected_epoch_median": 31.0,
+      "selected_more_than3_cells": 15,
+      "positive_seeds": 3,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "T",
+      "method": "S2_rna_token_prompt",
+      "mean_delta_ba": 0.010938257437389,
+      "selected_epoch_median": 5.0,
+      "selected_more_than3_cells": 8,
+      "positive_seeds": 2,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "T",
+      "method": "S3_static_concepts_plus_rna",
+      "mean_delta_ba": -0.0004016930987187,
+      "selected_epoch_median": 1.0,
+      "selected_more_than3_cells": 0,
+      "positive_seeds": 1,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "T",
+      "method": "S4_wrong_patient_rna_token_prompt",
+      "mean_delta_ba": 0.0128059329101448,
+      "selected_epoch_median": 5.0,
+      "selected_more_than3_cells": 8,
+      "positive_seeds": 2,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "N",
+      "method": "S0_static_concepts",
+      "mean_delta_ba": 0.0715018262517657,
+      "selected_epoch_median": 87.0,
+      "selected_more_than3_cells": 15,
+      "positive_seeds": 3,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "N",
+      "method": "S1_static_token_prompt",
+      "mean_delta_ba": 0.0328117294605698,
+      "selected_epoch_median": 21.0,
+      "selected_more_than3_cells": 15,
+      "positive_seeds": 3,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "N",
+      "method": "S2_rna_token_prompt",
+      "mean_delta_ba": -0.0103354434331833,
+      "selected_epoch_median": 3.0,
+      "selected_more_than3_cells": 6,
+      "positive_seeds": 1,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "N",
+      "method": "S3_static_concepts_plus_rna",
+      "mean_delta_ba": 0.031366189491475,
+      "selected_epoch_median": 1.0,
+      "selected_more_than3_cells": 0,
+      "positive_seeds": 3,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "N",
+      "method": "S4_wrong_patient_rna_token_prompt",
+      "mean_delta_ba": 0.0063687234685057,
+      "selected_epoch_median": 3.0,
+      "selected_more_than3_cells": 6,
+      "positive_seeds": 2,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "M",
+      "method": "S0_static_concepts",
+      "mean_delta_ba": 0.069297814104262,
+      "selected_epoch_median": 54.0,
+      "selected_more_than3_cells": 12,
+      "positive_seeds": 3,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "M",
+      "method": "S1_static_token_prompt",
+      "mean_delta_ba": 0.0383887690619442,
+      "selected_epoch_median": 19.0,
+      "selected_more_than3_cells": 12,
+      "positive_seeds": 3,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "M",
+      "method": "S2_rna_token_prompt",
+      "mean_delta_ba": -0.0172866134382764,
+      "selected_epoch_median": 1.0,
+      "selected_more_than3_cells": 3,
+      "positive_seeds": 1,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "M",
+      "method": "S3_static_concepts_plus_rna",
+      "mean_delta_ba": -0.0298747493094183,
+      "selected_epoch_median": 1.0,
+      "selected_more_than3_cells": 0,
+      "positive_seeds": 1,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "M",
+      "method": "S4_wrong_patient_rna_token_prompt",
+      "mean_delta_ba": -0.0021631916852713,
+      "selected_epoch_median": 1.0,
+      "selected_more_than3_cells": 3,
+      "positive_seeds": 2,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "Stage",
+      "method": "S0_static_concepts",
+      "mean_delta_ba": 0.0448714168877235,
+      "selected_epoch_median": 86.0,
+      "selected_more_than3_cells": 15,
+      "positive_seeds": 3,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "Stage",
+      "method": "S1_static_token_prompt",
+      "mean_delta_ba": 0.0359911082045281,
+      "selected_epoch_median": 35.0,
+      "selected_more_than3_cells": 15,
+      "positive_seeds": 3,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "Stage",
+      "method": "S2_rna_token_prompt",
+      "mean_delta_ba": 0.0234677928597894,
+      "selected_epoch_median": 3.0,
+      "selected_more_than3_cells": 5,
+      "positive_seeds": 3,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "Stage",
+      "method": "S3_static_concepts_plus_rna",
+      "mean_delta_ba": 0.0045992321833384,
+      "selected_epoch_median": 1.0,
+      "selected_more_than3_cells": 0,
+      "positive_seeds": 1,
+      "all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "Stage",
+      "method": "S4_wrong_patient_rna_token_prompt",
+      "mean_delta_ba": 0.0067690794708793,
+      "selected_epoch_median": 3.0,
+      "selected_more_than3_cells": 5,
+      "positive_seeds": 2,
+      "all_seed_ci_positive": false
+    }
+  ],
+  "mechanism": [
+    {
+      "endpoint": "T",
+      "comparisons": {
+        "S2-S1": {
+          "mean_delta_ba": -0.1183672895027649,
+          "positive_seeds": 0,
+          "all_seed_ci_positive": false
+        },
+        "S2-S3": {
+          "mean_delta_ba": 0.0078291743918101,
+          "positive_seeds": 2,
+          "all_seed_ci_positive": false
+        },
+        "S2-S4": {
+          "mean_delta_ba": -0.0014160848398798,
+          "positive_seeds": 1,
+          "all_seed_ci_positive": false
+        }
+      },
+      "all_three_mean_deltas_positive": false,
+      "all_three_all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "N",
+      "comparisons": {
+        "S2-S1": {
+          "mean_delta_ba": -0.0619810617660715,
+          "positive_seeds": 0,
+          "all_seed_ci_positive": false
+        },
+        "S2-S3": {
+          "mean_delta_ba": -0.0390235415899869,
+          "positive_seeds": 0,
+          "all_seed_ci_positive": false
+        },
+        "S2-S4": {
+          "mean_delta_ba": 0.0351481071429473,
+          "positive_seeds": 3,
+          "all_seed_ci_positive": false
+        }
+      },
+      "all_three_mean_deltas_positive": false,
+      "all_three_all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "M",
+      "comparisons": {
+        "S2-S1": {
+          "mean_delta_ba": -0.088110644416695,
+          "positive_seeds": 0,
+          "all_seed_ci_positive": false
+        },
+        "S2-S3": {
+          "mean_delta_ba": -0.0888548328098787,
+          "positive_seeds": 0,
+          "all_seed_ci_positive": false
+        },
+        "S2-S4": {
+          "mean_delta_ba": 0.0170595729115425,
+          "positive_seeds": 3,
+          "all_seed_ci_positive": false
+        }
+      },
+      "all_three_mean_deltas_positive": false,
+      "all_three_all_seed_ci_positive": false
+    },
+    {
+      "endpoint": "Stage",
+      "comparisons": {
+        "S2-S1": {
+          "mean_delta_ba": -0.057686808651316,
+          "positive_seeds": 0,
+          "all_seed_ci_positive": false
+        },
+        "S2-S3": {
+          "mean_delta_ba": -0.0135163978587945,
+          "positive_seeds": 0,
+          "all_seed_ci_positive": false
+        },
+        "S2-S4": {
+          "mean_delta_ba": 0.0441250734303601,
+          "positive_seeds": 3,
+          "all_seed_ci_positive": false
+        }
+      },
+      "all_three_mean_deltas_positive": false,
+      "all_three_all_seed_ci_positive": false
+    }
+  ],
+  "inner_validation_saturated_cells": 240,
+  "budget_cap_bound_cells": 0,
+  "limitations": [
+    "same cohort previously examined",
+    "one inner validation split",
+    "three seeds are not three independent cohorts",
+    "bootstrap conditional on fitted pipelines",
+    "no morphology ground-truth annotations",
+    "no DSS training or evaluation"
+  ]
+}

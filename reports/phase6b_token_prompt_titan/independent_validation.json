@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "oof_files": 300,
+  "patient_count": 512,
+  "valid_reused_baseline_cells": 120,
+  "fold_local_fit_audits": 120,
+  "max_recomputed_metric_error": 8.326672684688674e-17,
+  "OOF_patient_exactly_once_per_seed_endpoint_control": true,
+  "S4_predictions_persisted": true,
+  "wrong_patient_fixed_points": 0,
+  "survival_columns_read": [],
+  "encoder_gate": {
+    "status": "PASS",
+    "no_prompt_official_max_abs_error": 0.00012497883290052414,
+    "prompt_grad_norm": 33.42402648925781,
+    "text_transformer_trainable_parameters": 0,
+    "shifted_mask_different_positions": 1496,
+    "template_aggregation": "normalize_each_template_then_mean_then_normalize",
+    "cls_mask": "BOS + nonpad_prompt + shifted_original_concept_mask",
+    "compact_prefix_tokens": 30,
+    "original_cls_position": 127,
+    "compact_full_embedding_max_abs_error": 0.00011518597602844238,
+    "compact_full_gradient_relative_error": 0.0023562577553093433,
+    "shared_static_embedding_max_abs_error": 0.00013126805424690247,
+    "shared_static_gradient_relative_error": 0.002055846620351076
+  }
+}

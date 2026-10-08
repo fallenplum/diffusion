@@ -82,6 +82,11 @@ def main() -> int:
     paired_summary["comparison"] = pd.Categorical(paired_summary["comparison"], COMPARISON_ORDER, ordered=True)
     paired_summary = paired_summary.sort_values(["endpoint", "comparison"])
     paired_summary.to_csv(out / "aggregate_paired_comparisons.csv", index=False)
+    under_static = paired_summary[(paired_summary.comparison == "S2-S1") & (paired_summary.mean_delta_balanced_accuracy < 0)].endpoint.tolist()
+    above_additive = paired_summary[(paired_summary.comparison == "S2-S3") & (paired_summary.mean_delta_balanced_accuracy > 0)].endpoint.tolist()
+    overview = ("**结果概览：S2 的三 seed 平均 OOF BA 低于 S1 的 endpoint：" + (", ".join(under_static) or "无") +
+                "；S2−S3 均值为正的 endpoint：" + (", ".join(above_additive) or "无") +
+                "。结论限于本训练预算和 cohort，不能据此直接否定领域先验或 patient-specific semantics 的研究 idea。**")
 
     lines = [
         "# Phase6B token-level TITAN prompt audit — v2 mask repair",
@@ -90,9 +95,11 @@ def main() -> int:
         "",
         "v1 在计算层面完成，但其 CLS padding mask 未随插入 token 移动，且模板融合顺序与官方不同，机制比较已作废。v2 只重跑 S1/S2，复用经输入与逐 cell 校验的 S0/S3；完整 S4 OOF 也已在服务器私有保存。",
         "",
+        overview,
+        "",
         "## Protocol",
         "",
-        "- 3 seeds × 5 outer folds；每个 outer-train 使用固定 3 epoch schedule。没有使用 inner-val 标签选择 epoch 或 upstream main effect，避免 inner-val 标签进入配置训练。",
+        "- 3 initialization seeds × 5 outer folds；各模型保持相同的固定 batch shuffle，outer-train 使用固定 3 epoch schedule。没有使用 inner-val 标签选择 epoch 或 upstream main effect。",
         "- S0 static TITAN concepts；S1 static learnable token prompt；S2 RNA-conditioned token prompt；S3 static concepts + RNA additive；S4 为 S2 的 wrong-patient RNA permutation。",
         "- RNA 只经过 fold-local Top512/512→16 adapter；S2 的 prompt pool 为 4×4×768；T/N/M/Stage 是唯一读取的临床目标。DSS/OS 未读取。",
         "- 每个 seed 先拼接 5-fold OOF，再计算该 seed 的指标；本报告的 seed mean 是 3 个 seed-level OOF 结果的均值，不是 15 个 cells 的直接均值。",
@@ -110,6 +117,15 @@ def main() -> int:
         "| Endpoint | Method | Seed mean BA | Seed SD BA | Seed mean macro-F1 | Seed mean AUROC |",
         "|---|---|---:|---:|---:|---:|",
     ]
+    independent_path = out / "independent_validation.json"
+    if independent_path.exists():
+        independent = json.loads(independent_path.read_text())
+        if independent["status"] != "PASS":
+            raise RuntimeError("independent OOF audit failed")
+        validation_lines = ["", "独立重算全部 300 个 OOF 文件通过：120 个 S0/S3 原文件 hash 一致，120 个 S1/S2 fold-local fit audit 通过，S4 fixed points = 0。",
+                            "", "```json", json.dumps(independent, indent=2, ensure_ascii=False), "```", ""]
+        insertion = lines.index("## Seed-level OOF metrics")
+        lines[insertion:insertion] = validation_lines
     for row in method_summary.itertuples(index=False):
         lines.append(
             f"| {row.endpoint} | {row.method} | {fmt(row.seed_mean_balanced_accuracy)} | {fmt(row.seed_sd_balanced_accuracy)} | {fmt(row.seed_mean_macro_f1)} | {fmt(row.seed_mean_macro_ovr_auroc)} |"
@@ -153,6 +169,7 @@ def main() -> int:
         "- S4 使用 outer-test 上的循环错配 RNA 作为机制对照；它不是独立训练的第五模型。",
         "- S1/S2 与 S3 的函数形式和参数量不同；即使控制通过，也尚缺独立形态概念标注来验证语义解释。",
         "- 没有因看到 v1/v2 outer-test 结果而调整学习率、epoch、词表或 prompt 容量。后续协议变更需按探索性或新确认实验解释。",
+        "- 复用基线原始 GPU 为 RTX 4080 SUPER，修复计算在 NVIDIA vGPU-32GB 上进行；输入和有效 OOF 文件严格不变，跨 GPU 数值差异没有用于模型选择。",
         "",
     ]
     counts = json.loads((out / "parameter_counts.json").read_text(encoding="utf-8"))
@@ -168,6 +185,7 @@ def main() -> int:
     for (endpoint, method), group in loss_table.groupby(["endpoint", "method"]):
         by_epoch = group.set_index("epoch").mean_batch_train_ce
         lines.append(f"| {endpoint} | {method} | {fmt(by_epoch.loc[1])} | {fmt(by_epoch.loc[3])} |")
+    lines += ["", "S1/S2 的平均 training CE 在 epoch 1→2→3 均仍下降；第 3 epoch 的 S2 training CE 在各 endpoint 低于 S1，但 OOF BA 没有相应优势。缺少收敛门禁，不能把当前结果直接解释为训练预算已经足够，也不能只据此确定过拟合原因。"]
     lines += ["", "**Storage:** TITAN 权重保留在服务器；模型权重、RNA、患者 embeddings、OOF 和逐患者标签均未推送。", ""]
     (out / "RESULTS.md").write_text("\n".join(lines), encoding="utf-8")
     return 0

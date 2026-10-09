@@ -404,11 +404,11 @@ def report(out: Path, availability: dict):
     for _, r in l2[l2.method.str.contains("_delta|wrong_patient", regex=True)].iterrows():
         label = "wrong-patient" if "wrong_patient" in r.method else "delta vs N"
         lines.append(f"|{r.target}|{r.method} ({label})|{r.auc:+.4f}|[{r.bootstrap95_low:+.4f},{r.bootstrap95_high:+.4f}]|")
-    lines += ["", "正确配对只有在分子特征仍有增量、而 wrong-patient 对照回落时，才支持患者级对应关系；若临床基线已很强，wrong-patient 可能仍保持较高 AUC，这不能被误读为分子匹配有效。", "",
+    lines += ["", "正确配对只有在分子特征仍有增量、而 wrong-patient 对照回落时，才支持患者级对应关系；若临床基线已很强，wrong-patient 可能仍保持较高 AUC，这不能被误读为分子匹配有效。99 次 wrong-patient 的逐次结果留在服务器私有输出，仓库只保留聚合值。", "",
               "## 4. Clinical + 原始病理证据下的 DSS", "", "|比较|三 seed Harrell 增量|99% CI|三 seed Uno 增量|稳定正向|", "|---|---:|---|---:|---:|"]
     for _, r in pairs.iterrows():
         lines.append(f"|{r.comparison}|{r.delta_harrell:+.4f}|[{r.harrell_family99_low:+.4f},{r.harrell_family99_high:+.4f}]|{r.delta_uno60:+.4f}|{bool(r.stable_positive)}|")
-    lines += ["", "## 决策边界", "", "- 独立形态字段只支持对应概念的语义审计；不能推断其他概念或 patch 级真值。", "- 分子对形态标签的 OOF 关联不等于因果，也不能把 TNM 代理结果替代真实形态标注。", "- DSS 结果只判断当前冻结表示和低容量 Cox 头的条件增量；若区间跨零，不把点估计写成已验证机制。", "", "## 可复核文件", "", "- `L1_titan_independent_morphology.csv`", "- `L2_oof_metrics.csv`、`L2_wrong_patient_*.csv`", "- `L3_seed_oof_metrics.csv`、`L3_paired_increments.csv`", "- `manifest.json`、`protocol.json`、`DONE.json`"]
+    lines += ["", "## 决策边界", "", "- 独立形态字段只支持对应概念的语义审计；不能推断其他概念或 patch 级真值。", "- 分子对形态标签的 OOF 关联不等于因果，也不能把 TNM 代理结果替代真实形态标注。", "- DSS 结果只判断当前冻结表示和低容量 Cox 头的条件增量；若区间跨零，不把点估计写成已验证机制。", "", "## 可复核文件", "", "- `L1_titan_independent_morphology.csv`", "- `L2_oof_metrics.csv`（含 wrong-patient 聚合统计；逐次私有曲线留服务器）", "- `L3_seed_oof_metrics.csv`、`L3_paired_increments.csv`", "- `DONE.json`"]
     (out / "RESULTS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

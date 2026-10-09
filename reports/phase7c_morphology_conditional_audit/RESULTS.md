@@ -85,7 +85,7 @@ GRADE、tumor budding 和 stromal indicator 没有可用字段，因此未进入
 |perineural|NMC_wrong_patient_mean (wrong-patient)|+0.5614|[+0.5158,+0.6093]|
 |perineural|NSMC_wrong_patient_mean (wrong-patient)|+0.5562|[+0.5100,+0.6011]|
 
-正确配对只有在分子特征仍有增量、而 wrong-patient 对照回落时，才支持患者级对应关系；若临床基线已很强，wrong-patient 可能仍保持较高 AUC，这不能被误读为分子匹配有效。
+正确配对只有在分子特征仍有增量、而 wrong-patient 对照回落时，才支持患者级对应关系；若临床基线已很强，wrong-patient 可能仍保持较高 AUC，这不能被误读为分子匹配有效。99 次 wrong-patient 的逐次结果留在服务器私有输出，仓库只保留聚合值。
 
 ## 4. Clinical + 原始病理证据下的 DSS
 
@@ -103,6 +103,6 @@ GRADE、tumor budding 和 stromal indicator 没有可用字段，因此未进入
 ## 可复核文件
 
 - `L1_titan_independent_morphology.csv`
-- `L2_oof_metrics.csv`、`L2_wrong_patient_*.csv`
+- `L2_oof_metrics.csv`（含 wrong-patient 聚合统计；逐次私有曲线留服务器）
 - `L3_seed_oof_metrics.csv`、`L3_paired_increments.csv`
-- `manifest.json`、`protocol.json`、`DONE.json`
+- `DONE.json`

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "primary_DSS": true,
+  "new_outer_fits": 60,
+  "new_inner_fits": 240,
+  "reused_parent_outer_oof": 45,
+  "primary_pairs_passed": [],
+  "maximum_iterations": 390,
+  "maximum_gradient": 1.8553739323766416e-06,
+  "scope": "conditional fixed-OOF retrospective inference, not conditional mutual information estimation"
+}

@@ -1,0 +1,22 @@
+{
+  "RESULTS.md": "5256b82dc8fd1a2f5cd72c925d276867f1ca351ee7e4ad62eb950b7398cebc92",
+  "protocol.json": "9d39ce33f2df3910ed6bec9321ba1ca7764addeb098721a138add9052d901010",
+  "manifest.json": "d3a20653857b48f61115797b409accb77575d55bf24e56ed8128d7bfdd54bd4d",
+  "DONE.json": "84042f3f24d6c2dc2dbbf413ad956a28a4cefd716e53f3b5323cd9dd6e92f803",
+  "independent_validation.json": "20418eef203c46481bc2163b3db05e5d9a96d8a00c1a7ad91b6f713a954e16f5",
+  "implementation_repair_note.json": "702bd5c9632f6b6cb4565afa5284e6ce89efa72962dd45a704a48a476d4917d8",
+  "environment.json": "36985f04eaa3feaa77a527b2a500fe15b21f6e1224957ee1390fb83ae834e9e3",
+  "A_decision.json": "b7e2df0c4cb70558962cfe04b323f062b7876f450e6847e1332e4cca3b2a0e67",
+  "A_fit_summary.csv": "c0c90b054ab80cc5867cc8578f45c4f5a34ca18ef345d532542c45e4de61bf5f",
+  "A_seed_oof_metrics.csv": "02fef93380658d1b732dc0a8e6f78904c1b336ec4791596bf2fb1cb1da815f99",
+  "A_three_seed_oof_means.csv": "b1f5b62e2d6f26c30ce4c711bc720be1c10054b86a2023cbf6d81e2fba317b25",
+  "A_paired_increments.csv": "4f7461dfca77e23bdb5fc07accdd2cc034d476d79a75d105e1c41f584ca11fc8",
+  "B_decision.json": "796e4817c213939dc6b3da9343b4dbc40ebf27041995456e815b05e80bfa19b6",
+  "B_morphology_label_audit.json": "915106f6b33c8a988d36d5f4b042137b2dc73e9ccbbbdfd66b81d3736080c7dd",
+  "B_alignment_correlations.csv": "acdf00f2c7dfa7d222b7c0947d3b44d795eef075b3b7ba86cf9675746cdbdc68",
+  "B_nuisance_fit_audit.csv": "8721ef8f7f68cfbe03e96f7ab08058e6ec5e7250b82aafb39d1b54607e793dc0",
+  "B_mapping_benchmark.csv": "b3681a6b870c95a4e8a8f1ac0f137947120d8cd31952f8b1e29d825fad1323df",
+  "B_pairing_null_benchmark.csv": "8f08984376a3927df544d36a009c1c41851f59a79655708bc6898ad6b444539d",
+  "B_wrong_patient_benchmark.csv": "857333aa364c1cae120d31bcc67535f247c70b7a686ad8fe176203ab7562ffc6",
+  "B_CNA_cancellation_descriptive.csv": "f6b2e1e5450618b438a81c99661d59351c192e56bbc3b93551cefaffedccfaf3"
+}

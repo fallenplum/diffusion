@@ -1,0 +1,6 @@
+method_id,input_modality,input_features,trainable_encoder,original_or_adapted,survival_loss,model_selection,fold_seeds,n_events,metric_definition,status
+A0,C,Clinical six fields,Cox ridge,adapted,DSS/Efron,inner ridge,20261007/08/09,65,within-fold Harrell/Uno60,READY
+A3,C+P+O,C3R frozen features additive,AdamW residual head,new,DSS/Efron,inner epoch,20261007/08/09,65,within-fold Harrell/Uno60,READY
+JointRidge,C+P+O,same fold-local features,ridge Cox,new,DSS/Efron,inner lambda,20261007/08/09,65,within-fold Harrell/Uno60,REGISTERED
+Clinical+S32,C+S,Phase7A S32 pipeline,ridge Cox,adapted,DSS/Efron,inner lambda,20261007/08/09,65,within-fold Harrell/Uno60,REGISTERED
+Clinical+RNA+S32,C+R+S,Phase7A R/S pipeline,ridge Cox,adapted,DSS/Efron,inner lambda,20261007/08/09,65,within-fold Harrell/Uno60,REGISTERED

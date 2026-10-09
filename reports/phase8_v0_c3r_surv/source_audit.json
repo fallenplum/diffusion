@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "sources": [
+    {
+      "path": "/root/diffusion_phase5_20261007/reports/phase_m2r2_omics_fidelity/RESULTS.md",
+      "exists": true,
+      "bytes": 2933,
+      "sha256": "dc6ab78fd1e02f97ff7d49ab0ac240e0b9b15f2d9cca88c7a94e9ec28c839ba7"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/reports/phase_m2r2_omics_fidelity/protocol.json",
+      "exists": true,
+      "bytes": 2286,
+      "sha256": "00bc8c6dd1a013cabe5a492fb73ce90a75b277d98ff321295efb3f931d9c8e3b"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/reports/phase_m3r2_simple_fusion_audit/RESULTS.md",
+      "exists": true,
+      "bytes": 3787,
+      "sha256": "228b920e8bd055fad4621b57a81654962250f6bd23ca4ff8715e16ef56b1508c"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/reports/phase_m8p1r_strong_anchor_residual_repair/RESULTS.md",
+      "exists": true,
+      "bytes": 2453,
+      "sha256": "88f8eadfb3fc841bcd1a80c57507c39897b2936ca37b458112fe63e245996594"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/reports/phase7a_foundation_headroom/RESULTS.md",
+      "exists": true,
+      "bytes": 10054,
+      "sha256": "46dbd8a35ed366d50e47ba93ad3d3afff7a2b524791889ef1d892118dbdb3f05"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/reports/phase7a_foundation_headroom/protocol.json",
+      "exists": true,
+      "bytes": 3959,
+      "sha256": "0d4373c3071d70d8944bf9ee5ab67322c4a9adb8dac3ebc0b09b65270f171bba"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/reports/phase7a_foundation_headroom/independent_validation.json",
+      "exists": true,
+      "bytes": 487,
+      "sha256": "56c1d5a418f5bcb704e1774537fff6365daf83ef95a8e061e545d792757d6230"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/reports/phase7b_bridge_evidence/RESULTS.md",
+      "exists": true,
+      "bytes": 14080,
+      "sha256": "5256b82dc8fd1a2f5cd72c925d276867f1ca351ee7e4ad62eb950b7398cebc92"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/reports/phase7c_morphology_conditional_audit/RESULTS.md",
+      "exists": true,
+      "bytes": 5595,
+      "sha256": "e09c5c96588cdd5f9994fc3b777d85b94ba7c17435333c28edb4108323b34d3c"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/reports/phase7d_morphology_calibrated_molecular_concept_audit/RESULTS.md",
+      "exists": true,
+      "bytes": 1465,
+      "sha256": "2c2bed1a9833c162df067179a2e22da7b87c910814c31e8c52226789f40202d1"
+    },
+    {
+      "path": "/root/diffusion_phase5_20261007/outputs/phase_m1r/fixed_patient_folds.csv",
+      "exists": true,
+      "bytes": 7696,
+      "sha256": "273ec884ea2bc7afbe817305c5c423e56c012790e610965e12f01ea1052e5f24"
+    },
+    {
+      "path": "/root/phase7a_foundation_headroom_v1/private_dataset.npz",
+      "exists": true,
+      "bytes": 86726348,
+      "sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1"
+    },
+    {
+      "path": "/root/phase7a_foundation_headroom_v1/uni2_patient_means.npz",
+      "exists": true,
+      "bytes": 6007789,
+      "sha256": "b3d72e334ddfc27c3e91c5f1cf2cbdd03757889c82d1d7eccfc122987827f75e"
+    },
+    {
+      "path": "/root/phase6a_titan_runtime/cache_v1/patient_representations.npz",
+      "exists": true,
+      "bytes": 2994124,
+      "sha256": "3d27ebbdc65c6e76c7af183729875be2e732675cf117ccd97a22f2a6d0c6f259"
+    },
+    {
+      "path": "/root/phase7a_foundation_headroom_v1/manifest.json",
+      "exists": true,
+      "bytes": 18847,
+      "sha256": "bfce1427b121d15b81774702b8ed18086b8740e77ac3b477be91529b0e91211c"
+    },
+    {
+      "path": "/root/phase7a_foundation_headroom_v1/protocol.json",
+      "exists": true,
+      "bytes": 3959,
+      "sha256": "0d4373c3071d70d8944bf9ee5ab67322c4a9adb8dac3ebc0b09b65270f171bba"
+    }
+  ],
+  "historical_numbers_reusable": [
+    "Phase7A source preprocessing/metrics logic"
+  ],
+  "context_only": [
+    "Phase7b-7d morphology/bridge audits"
+  ],
+  "rerun_required": [
+    "all unified SOTA baselines"
+  ]
+}

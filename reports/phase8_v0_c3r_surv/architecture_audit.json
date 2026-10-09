@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "arms": [
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6"
+  ],
+  "expected": [
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6"
+  ],
+  "zero_residual_tolerance": 1e-08,
+  "cell_count": 105
+}

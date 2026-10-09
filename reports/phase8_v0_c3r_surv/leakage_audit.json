@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "rules": [
+    "outer-test labels unavailable",
+    "inner-val excluded from projections and offsets",
+    "clinical OOF offset for residual-head training"
+  ]
+}

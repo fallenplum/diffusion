@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "target": "independent mucinous diagnosis",
+  "outer_folds": 5,
+  "fixed_classifier_C": 1.0,
+  "primary_comparisons": [
+    "NSMC-NS",
+    "NSMC-C10_frozen_cosine"
+  ],
+  "interaction_features": [
+    "C10_z * mean(RNA_8_states)",
+    "C10_z * mean(CNA_8_states)"
+  ],
+  "max_classifier_iterations": 131,
+  "wrong_patient_replicates": 99,
+  "interpretation": "paired AUC audit; no claim that patient diagnosis is patch-level truth"
+}

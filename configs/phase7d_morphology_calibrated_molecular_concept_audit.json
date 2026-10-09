@@ -1,0 +1,21 @@
+{
+  "version": "phase7d_morphology_calibrated_molecular_concept_audit_v1",
+  "parent_run": "/root/phase7a_foundation_headroom_v1",
+  "quality_file": "/root/phase7_p0r_robustness_v1/sample_quality.tsv",
+  "target": "independent supplementary HISTOLOGICAL_DIAGNOSIS mucinous label",
+  "models": {
+    "C10_frozen_cosine": "raw frozen TITAN C10 cosine",
+    "NS": "Clinical + frozen C10, class-balanced LogisticRegression C=1",
+    "NSMC": "Clinical + frozen C10 + fixed RNA/CNA molecular states, C=1",
+    "NSMC_wrong_patient": "NSMC test molecular states deranged within cancer/platform blocks",
+    "NSMCx2": "NSMC + C10_z*mean(RNA states) + C10_z*mean(CNA states), C=1"
+  },
+  "primary_paired_comparisons": [
+    "NSMC-NS",
+    "NSMC-C10_frozen_cosine"
+  ],
+  "outer_folds": 5,
+  "wrong_patient_replicates": 99,
+  "bootstrap_replicates": 3000,
+  "selection": "no outcome-driven concept or molecular-state selection"
+}

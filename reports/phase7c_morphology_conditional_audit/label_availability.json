@@ -1,0 +1,51 @@
+{
+  "mucinous": {
+    "source_field": "supplementary.HISTOLOGICAL_DIAGNOSIS",
+    "valid": 505,
+    "positive": 66,
+    "unknown": 7,
+    "independent_from_TITAN": true
+  },
+  "lvi": {
+    "source_field": "supplementary.LYMPHOVASCULAR_INVASION_INDICATOR",
+    "valid": 478,
+    "positive": 193,
+    "unknown": 34,
+    "independent_from_TITAN": true
+  },
+  "vascular": {
+    "source_field": "supplementary.VASCULAR_INVASION_INDICATOR",
+    "valid": 462,
+    "positive": 114,
+    "unknown": 50,
+    "independent_from_TITAN": true
+  },
+  "perineural": {
+    "source_field": "supplementary.PERINEURAL_INVASION",
+    "valid": 217,
+    "positive": 56,
+    "unknown": 295,
+    "independent_from_TITAN": true
+  },
+  "grade": {
+    "source_field": "primary_sample.GRADE",
+    "valid": 0,
+    "positive": null,
+    "unknown": 512,
+    "independent_from_TITAN": true
+  },
+  "tumor_budding": {
+    "source_field": "no corresponding field in locked clinical tables",
+    "valid": 0,
+    "positive": null,
+    "unknown": 512,
+    "independent_from_TITAN": null
+  },
+  "stromal_indicator": {
+    "source_field": "no corresponding field in locked clinical tables",
+    "valid": 0,
+    "positive": null,
+    "unknown": 512,
+    "independent_from_TITAN": null
+  }
+}

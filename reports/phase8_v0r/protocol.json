@@ -1,0 +1,43 @@
+{
+  "version": "phase8_v0r_evaluation_repair_and_controls_v1",
+  "formal_protocol": "phase8_v0_c3r_surv_v1",
+  "seeds": [
+    20261007,
+    20261008,
+    20261009
+  ],
+  "outer_folds": 5,
+  "dss_events": 65,
+  "repair": {
+    "source_cells": 105,
+    "uno_rule": "sum fold-local IPCW numerators and denominators",
+    "bootstrap_replicates": 2000,
+    "anchor_check": "bitwise r_C equality for every arm/seed/fold"
+  },
+  "training_diagnostics": {
+    "arms": [
+      "A3",
+      "A4",
+      "A5"
+    ],
+    "replay_recorded_selected_epochs": true,
+    "adds_training_budget": false,
+    "checkpoint_required": false
+  },
+  "simple_controls": {
+    "methods": [
+      "Clinical+S32",
+      "Clinical+RNA+S32",
+      "JointRidge"
+    ],
+    "ridge_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "same_fold_local_features": true,
+    "same_efron_cox_objective": true
+  },
+  "publication_scope": "aggregated metrics, audit records and scalar diagnostics only; no patient IDs, OOF arrays, private contexts or coefficients"
+}

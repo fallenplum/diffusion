@@ -88,7 +88,7 @@ def train_head(spec, blocks, r_c, time_values, event_values, epochs, seed, lr=1e
     rcv = torch.as_tensor(val_r_c, dtype=torch.float32, device=device) if val_r_c is not None else None
     tt = torch.as_tensor(time_values, dtype=torch.float32, device=device); ee = torch.as_tensor(event_values, dtype=torch.int64, device=device)
     opt = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=weight_decay)
-    best = -np.inf; best_epoch = 1; stale = 0; losses = []; peak = 0
+    best = -np.inf; best_epoch = 1; stale = 0; losses = []; grad_trace = []; peak = 0
     for epoch in range(1, epochs + 1):
         model.train(); opt.zero_grad(set_to_none=True)
         _, risk, _ = model(x["C"], x["P"], x["O"], x["S"], rc)
@@ -99,7 +99,7 @@ def train_head(spec, blocks, r_c, time_values, event_values, epochs, seed, lr=1e
         loss = loss + lambda_l2 * l2
         loss.backward(); grad = max(float(par.grad.detach().abs().max()) for par in model.parameters() if par.grad is not None)
         torch.nn.utils.clip_grad_norm_(model.parameters(), 100.0); opt.step()
-        losses.append(float(loss.detach().cpu())); peak = max(peak, int(torch.cuda.max_memory_allocated() if device == "cuda" else 0))
+        losses.append(float(loss.detach().cpu())); grad_trace.append(float(grad)); peak = max(peak, int(torch.cuda.max_memory_allocated() if device == "cuda" else 0))
         if val_blocks is not None:
             model.eval()
             with torch.no_grad():
@@ -112,7 +112,7 @@ def train_head(spec, blocks, r_c, time_values, event_values, epochs, seed, lr=1e
                 if stale >= patience: break
     return model, {"selected_epoch": int(best_epoch), "epochs_run": len(losses), "inner_best_harrell": float(best) if val_blocks is not None else None,
                    "train_loss_last": losses[-1], "max_grad": float(grad), "peak_gpu_bytes": peak, "device": device,
-                   "loss_trace": losses}
+                   "loss_trace": losses, "gradient_trace": grad_trace}
 
 
 def fit_for_epochs(spec, blocks, r_c, time_values, event_values, epochs, seed, **kwargs):

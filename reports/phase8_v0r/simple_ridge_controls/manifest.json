@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "formal_dir": "/root/phase8_v0_c3r_surv",
+  "methods": {
+    "Clinical+S32": "cs",
+    "Clinical+RNA+S32": "crs",
+    "JointRidge": "joint"
+  },
+  "dimensions": {
+    "Clinical+S32": 72,
+    "Clinical+RNA+S32": 88,
+    "JointRidge": 136
+  },
+  "ridge_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "same_fixed_outer_folds": true,
+  "no_patient_level_artifacts_published": true
+}

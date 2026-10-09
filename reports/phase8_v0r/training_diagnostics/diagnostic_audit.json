@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "cells": 45,
+  "arms": [
+    "A3",
+    "A4",
+    "A5"
+  ],
+  "checkpoint_found": false,
+  "replayed_exact_selected_epochs": true,
+  "inner_epoch_mismatch": 0,
+  "max_inner_replay_harrell_nan": false,
+  "max_outer_gradient_trace": 1.4178760051727295,
+  "wall_seconds": 307.7323069572449,
+  "interpretation": "replay uses recorded selected epochs and does not increase the formal training budget"
+}

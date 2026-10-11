@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "decision": "NO_GO",
+  "primary_comparisons": [
+    "B4-B0",
+    "B5-B4",
+    "B5-B6"
+  ],
+  "uno_repair": "invalid G(t) weights excluded; no patient IDs written",
+  "confidence": "high for metric repair, medium for biological decision due 65 events"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "arms": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "O1",
+    "O2",
+    "O3",
+    "O4",
+    "O5",
+    "O6"
+  ],
+  "seeds": [
+    20261007,
+    20261008,
+    20261009
+  ],
+  "folds": 5,
+  "bootstrap": 1000,
+  "protected_data": "not published",
+  "kegg_source": "https://rest.kegg.jp"
+}

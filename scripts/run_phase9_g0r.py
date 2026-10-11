@@ -102,18 +102,16 @@ def run(out,data_parent,ctxdir,kroot):
         def save(arm,risk,extra):
             np.savez_compressed(out/'oof'/f'DSS_seed{seed}_fold{fold}_{arm}.npz',test_indices=te,risk=np.asarray(risk),base_test_risk=np.asarray(base_te),seed=seed,fold=fold); (out/'cells'/f'DSS_seed{seed}_fold{fold}_{arm}.json').write_text(json.dumps({'seed':seed,'fold':fold,'arm':arm,'lambda':lam,'base_test_sha256':h(base_te),'test_risk_sha256':h(np.asarray(risk)),'test_indices_private':True,**extra},indent=2),encoding='utf8')
         save('R0',base_te,{'ridge_trials':trials,'base_identity_pass':True})
-        R,keep,rs=top512(d['rna_genes'],tr); Ri,_,_=top512(d['rna_genes'],it); # apply the train-selected index to all patients for outer fitting
+        R,keep,rs=top512(d['rna_genes'],tr); Ri,keep_i,ris_i=top512(d['rna_genes'],it); # separate train-only selection for inner epoch/lambda selection
         rr,_,_=norm(d['rna_genes'],tr); R=rr[:,keep]; rmean=R[tr].mean(0); rsd=R[tr].std(0); rsd[rsd<1e-8]=1; R=(R-rmean)/rsd
         # PCA fitted only on outer-train Top512 values.
         pca=PCA(16,svd_solver='full',random_state=seed).fit(R[tr]); RP=pca.transform(R)
+        pca_i=PCA(16,svd_solver='full',random_state=seed).fit(Ri[it]); RPi=pca_i.transform(Ri)
         O=ctx['outer_O']; feats={'R1':R,'R2':RP,'R3':O[:,16:32]}
         for arm,F in feats.items():
             X=np.c_[outerX,F]; la,ttt=select_ridge(np.c_[innerX['base'],ctx['inner_O'][:,0:512] if False else np.zeros((len(t),F.shape[1]))],np.c_[innerX['base'],np.zeros((len(t),F.shape[1]))],t,e,it,iv) if False else (lam,trials)
             # use the same locked lambda grid and inner validation on the actual feature block
-            Fi=ctx['inner_O'][:,0:16] if arm=='R2' else (ctx['inner_O'][:,16:32] if arm=='R3' else F)
-            if arm=='R1':
-                # Top512 selected in the outer training fold, and applied to inner split without leakage.
-                ri,_,_=norm(d['rna_genes'],it); Fi=ri[:,keep]; mu=Fi[it].mean(0); sd=Fi[it].std(0); sd[sd<1e-8]=1; Fi=(Fi-mu)/sd
+            Fi=RPi if arm=='R2' else (ctx['inner_O'][:,16:32] if arm=='R3' else (Ri if arm=='R1' else F))
             full=np.c_[ctx['inner_C'],ctx['inner_S'],Fi]; la,ttt=select_ridge(full,full,t,e,it,iv); w,_=fitcox(X[tr],t[tr],e[tr],la); save(arm,(X[te]@w),{'lambda':la,'ridge_trials':ttt,'feature_hash':h(F[tr])})
         X,A,P,stats,edges,ga=pathway_data(d,kroot,tr); Xi,Ai,Pi,stati,_,_=pathway_data(d,kroot,it); # R4 uses 32x3 frozen stats
         for arm,F0,Fi0 in [('R4',stats,stati)]:
@@ -130,7 +128,7 @@ def run(out,data_parent,ctxdir,kroot):
         Xo,Ao,Po,_,_,go=pathway_data(d,kroot,tr); Xi,Ai,Pi,_,_,_=pathway_data(d,kroot,it); graph_specs=[('R5',np.eye(Ao.shape[0]),100,0),('R6',Ao,100,0)];
         for j in range(5): graph_specs.append(('R7',swap_graph(Ao,seed*100+fold*10+j)[0],100,j))
         for arm,AA,ep,rep in graph_specs:
-            AAi=Ai if arm!='R7' else swap_graph(Ai,seed*100+fold*10+rep)[0]
+            AAi=np.eye(Ai.shape[0]) if arm=='R5' else (Ai if arm=='R6' else swap_graph(Ai,seed*100+fold*10+rep)[0])
             _,gd=graph_fit(Xi,AAi,Pi,it,iv,inner_base_train,inner_base_val,t,e,seed+fold+rep,ep,base_all=None); # inner epoch probe
             bo,meta=graph_fit(Xo,AA,Po,tr,np.asarray([],dtype=int),base_all[tr],np.asarray([],dtype=float),t,e,seed+fold+rep,int(gd['selected_epoch']),base_all=base_all,fixed_epoch=int(gd['selected_epoch']))
             fname=arm if arm!='R7' else f'R7_rep{rep}'

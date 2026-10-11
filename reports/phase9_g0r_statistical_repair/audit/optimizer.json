@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "ridge": "same Efron/L-BFGS grid for all Ridge arms",
+  "neural": "inner-val Harrell epoch; outer fixed epoch refit; AdamW lr .002 wd .001",
+  "graph_parameters": 74,
+  "R7_replicas": 5
+}

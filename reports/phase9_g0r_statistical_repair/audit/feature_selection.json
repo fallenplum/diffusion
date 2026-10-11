@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "R1": "inner and outer train-fold Top512",
+  "R2": "inner and outer train-fold Top512 then PCA16",
+  "CNA": "gain/loss separate channels",
+  "KEGG": "fixed 32 pathways, no DSS screening"
+}

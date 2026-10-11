@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "main_metric": "sum fold concordant numerator / sum fold pair denominator",
+  "uno": "sum supported IPCW numerators / sum supported IPCW denominators",
+  "tau_months": 60,
+  "invalid_uno_events": 0,
+  "OOF_reassembled_independently": true
+}

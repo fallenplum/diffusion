@@ -1,0 +1,35 @@
+{
+  "protocol": "Phase9-G0R-statistical-repair",
+  "cohort": "TCGA-COAD/READ",
+  "patients": 512,
+  "DSS_events": 65,
+  "seeds": [
+    20261007,
+    20261008,
+    20261009
+  ],
+  "folds": 5,
+  "arms": [
+    "R0",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "O1",
+    "O2",
+    "O3"
+  ],
+  "R7_replicas": 5,
+  "R7_bootstrap": "mean of five per-graph paired C-indices",
+  "Ridge_grid": [
+    0.01,
+    0.1,
+    1,
+    10
+  ],
+  "R2": "inner and outer fold-local Top512 then PCA16",
+  "privacy": "patient-level OOF remains private"
+}

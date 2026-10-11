@@ -42,19 +42,26 @@ def main(out,parent):
                 frows.append({'seed':s,'fold':f,'method':a,'DSS_events_test':int(e[ix].sum()),'harrell_num':hn,'harrell_den':hd,'harrell':hn/hd if hd else np.nan,'uno_num':un,'uno_den':ud,'uno60':un/ud if ud else np.nan,'uno_invalid_events':int((active&~supported).sum())})
     pd.DataFrame(frows).to_csv(out/'fold_metrics.csv',index=False)
     # Patient-matched fixed-OOF bootstrap; R7 is summarized across all five graph nulls.
-    rng=np.random.default_rng(20261012); pairs=[('R4','R0'),('R6','R5'),('R6','R7')]; boot=[]; B=1000
-    for a,b in pairs:
+    rng=np.random.default_rng(20261012); pairs=[('R4','R0','primary'),('R6','R5','primary'),('R6','R7','primary'),('R1','R0','secondary')]; boot=[]; B=1000
+    for a,b,kind in pairs:
         dh=[]; du=[]
         for _ in range(B):
             hs=[]; us=[]
             for s in SEEDS:
-                m=rng.multinomial(len(t),np.full(len(t),1/len(t))); ar=risks[s][a]; brs=risks[s][b] if b!='R7' else np.mean(np.stack(risks[s]['R7']),axis=0); hnum=hden=unum=uden=0.
-                for f in range(1,6):
-                    ix=np.flatnonzero(folds==f); tr=np.flatnonzero(folds!=f); n,d0=ps(t[ix],e[ix],ar[ix],m=m[ix]); n2,d2=ps(t[ix],e[ix],brs[ix],m=m[ix]); hnum+=n-n2; hden+=d0
-                    g=km_left(t[tr],e[tr],t[ix]); active=(e[ix]==1)&(t[ix]<=60)&np.isfinite(g)&(g>0); ww=np.where(active,1/(g*g),0.); n,d0=ps(t[ix],e[ix],ar[ix],ww,m[ix]); n2,d2=ps(t[ix],e[ix],brs[ix],ww,m[ix]); unum+=n-n2; uden+=d0
-                hs.append(hnum/hden if hden else np.nan); us.append(unum/uden if uden else np.nan)
+                m=rng.multinomial(len(t),np.full(len(t),1/len(t))); ar=risks[s][a]
+                # R7 is a graph-level null distribution.  Bootstrap the same
+                # statistic as the reported mean of five per-graph C-indices,
+                # rather than taking C-index of an averaged risk vector.
+                reps=risks[s]['R7'] if b=='R7' else [risks[s][b]]; hs_rep=[]; us_rep=[]
+                for brs in reps:
+                    hnum=hden=unum=uden=0.
+                    for f in range(1,6):
+                        ix=np.flatnonzero(folds==f); tr=np.flatnonzero(folds!=f); n,d0=ps(t[ix],e[ix],ar[ix],m=m[ix]); n2,d2=ps(t[ix],e[ix],brs[ix],m=m[ix]); hnum+=n-n2; hden+=d0
+                        g=km_left(t[tr],e[tr],t[ix]); active=(e[ix]==1)&(t[ix]<=60)&np.isfinite(g)&(g>0); ww=np.where(active,1/(g*g),0.); n,d0=ps(t[ix],e[ix],ar[ix],ww,m=m[ix]); n2,d2=ps(t[ix],e[ix],brs[ix],ww,m=m[ix]); unum+=n-n2; uden+=d0
+                    hs_rep.append(hnum/hden if hden else np.nan); us_rep.append(unum/uden if uden else np.nan)
+                hs.append(np.nanmean(hs_rep)); us.append(np.nanmean(us_rep))
             dh.append(np.nanmean(hs)); du.append(np.nanmean(us))
-        aa=sm[sm.method==a]; bb=sm[sm.method==b] if b!='R7' else sm[sm.method.str.startswith('R7_rep')]; obs_h=float(aa.harrell.mean()-bb.harrell.mean()); obs_u=float(aa.uno60.mean()-bb.uno60.mean()); boot.append({'comparison':f'{a}-{b}','delta_harrell':obs_h,'ci_harrell_low':float(np.nanquantile(dh,.0083333)),'ci_harrell_high':float(np.nanquantile(dh,.9916667)),'delta_uno60':obs_u,'ci_uno60_low':float(np.nanquantile(du,.0083333)),'ci_uno60_high':float(np.nanquantile(du,.9916667)),'bootstrap_reps':B,'ci_level':.9833334,'seed':20261012})
+        aa=sm[sm.method==a]; bb=sm[sm.method==b] if b!='R7' else sm[sm.method.str.startswith('R7_rep')]; obs_h=float(aa.harrell.mean()-bb.harrell.mean()); obs_u=float(aa.uno60.mean()-bb.uno60.mean()); lo,hi=(.0083333,.9916667) if kind=='primary' else (.025,.975); boot.append({'comparison':f'{a}-{b}','kind':kind,'delta_harrell':obs_h,'ci_harrell_low':float(np.nanquantile(dh,lo)),'ci_harrell_high':float(np.nanquantile(dh,hi)),'delta_uno60':obs_u,'ci_uno60_low':float(np.nanquantile(du,lo)),'ci_uno60_high':float(np.nanquantile(du,hi)),'bootstrap_reps':B,'ci_level':.9833334 if kind=='primary' else .95,'seed':20261012})
     comp=pd.DataFrame(boot); comp.to_csv(out/'paired_comparisons.csv',index=False)
     null=sm[sm.method.str.startswith('R7_rep')].groupby('method')[['harrell','uno60']].mean().reset_index(); null.to_csv(out/'random_graph_null.csv',index=False)
     summ=sm[sm.method.isin(BASE)].groupby('method')[['harrell','uno60']].mean().reset_index(); r7summary=sm[sm.method.str.startswith('R7_rep')][['harrell','uno60']].mean(); summ=pd.concat([summ,pd.DataFrame([{'method':'R7(mean5)','harrell':r7summary.harrell,'uno60':r7summary.uno60}])],ignore_index=True); summ.to_csv(out/'summary_metrics.csv',index=False)

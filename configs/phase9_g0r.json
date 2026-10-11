@@ -1,0 +1,16 @@
+{
+  "protocol": "Phase9-G0R",
+  "cohort": "TCGA-COAD/READ",
+  "patients": 512,
+  "dss_events": 65,
+  "seeds": [20261007, 20261008, 20261009],
+  "outer_folds": 5,
+  "ridge_grid": [0.01, 0.1, 1.0, 10.0],
+  "primary_comparisons": ["R4-R0", "R6-R5", "R6-R7-mean"],
+  "random_graphs_per_fold": 5,
+  "randomization": "undirected double-edge swaps; exact node degree and edge count",
+  "graph_source": "KEGG REST list/hsa, link/hsa/path:hsaNNNNN, get/hsaNNNNN/kgml",
+  "dss_tau_months": 60,
+  "pfs": "exploratory transfer of DSS-trained OOF risk only",
+  "privacy": "patient-level arrays, indices and OOF archives remain private"
+}

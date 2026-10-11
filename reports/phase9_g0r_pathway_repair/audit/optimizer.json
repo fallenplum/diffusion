@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "ridge": "same Efron objective; L-BFGS maxiter 50000; gradient threshold 2e-5",
+  "neural": "AdamW lr 0.002 weight_decay 0.001; max_epoch 100; inner-val Harrell epoch selection; outer refit fixed selected epoch",
+  "graph_parameters": 74,
+  "initial_gradient_checked": true,
+  "best_trace_saved_private": true,
+  "outer_test_selection": false
+}

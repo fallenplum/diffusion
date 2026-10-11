@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "anchor": "Clinical+S32 Ridge Cox",
+  "ridge_grid": [
+    0.01,
+    0.1,
+    1,
+    10
+  ],
+  "inner_lambda_selection": true,
+  "inner_train_anchor": "3-way cross-fit within inner-train",
+  "outer_train_anchor": "3-way cross-fit within outer-train",
+  "outer_test_anchor": "full outer-train fit",
+  "graph_arms_same_base": true,
+  "identity_max_abs_diff": 0.0
+}

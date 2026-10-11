@@ -1,0 +1,1 @@
+修复版结论：结构门为 NO_GO_STRUCTURE，组学增量门为 NO_GO_OMICS_INCREMENT。该结论只适用于本队列和当前冻结协议，不能视为外部确认。

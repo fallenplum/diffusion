@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "patients": 512,
+  "slides": 519,
+  "patches": 1278642,
+  "encoder": "conch_v15",
+  "feature_shape": "[N,768]",
+  "coordinates": true,
+  "sha256_per_file_verified": true,
+  "patient_identifiers_public": false
+}

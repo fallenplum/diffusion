@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "best_arm": "P4",
+  "best_harrell": 0.8081939454689557,
+  "best_uno60": 0.772370652768554,
+  "primary_comparisons": [
+    "P2-P1",
+    "P3-P2",
+    "P3-P3-noTopo",
+    "P4-P3",
+    "P4-P0"
+  ],
+  "external_confirmation": false,
+  "test_label_selection": false
+}

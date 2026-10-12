@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "prototype_outcome_blind": true,
+  "inner_outer_prototypes_separate": true,
+  "train_fold_only_preprocessing": true,
+  "crossfit_anchor_offsets": true,
+  "outer_test_used_for_selection": false,
+  "conch_patch_row_alignment_with_uni2": false
+}

@@ -1,0 +1,32 @@
+{
+  "protocol": "phase10_p0_spatial_niche_v1",
+  "seed": 20261007,
+  "folds": [1,2,3,4,5],
+  "arms": ["P0","P1","P2","P3","P4","P3-noTopo"],
+  "parent": "/root/phase7a_foundation_headroom_v1",
+  "contexts": "/root/phase8_v0_c3r_surv/private_contexts",
+  "features": "/root/autodl-tmp/phase10_conch",
+  "output": "/root/phase10_p0_private/run_v1",
+  "manifest": "reports/phase6_conch_v15_download_audit/cohort_manifest.csv",
+  "ridge_grid": [0.01,0.1,1.0,10.0],
+  "prototype_k": 16,
+  "prototype_samples_per_slide": 256,
+  "max_regions": 256,
+  "irregular_radius_multiplier": 1.05,
+  "hidden_dim": 128,
+  "attention_dim": 32,
+  "rare_k": 8,
+  "attention_dropout": 0.05,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "residual_l2": 0.01,
+  "max_epochs": 35,
+  "patience": 7,
+  "crossfit_splits": 3,
+  "batch_size": 8,
+  "tau_months": 60,
+  "smoke_epochs": 2,
+  "primary_comparisons": ["P2-P1","P3-P2","P3-P3-noTopo","P4-P3","P4-P0"]
+}
+
+

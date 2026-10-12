@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "data_alignment": {
+    "patients": 512,
+    "slides": 519,
+    "patches": 1278642,
+    "encoder": "conch_v15",
+    "feature_shape": "[N,768]",
+    "coords": true
+  },
+  "architecture": {
+    "status": "PASS",
+    "arms": [
+      "P0",
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P3-noTopo"
+    ],
+    "encoder": "CONCH v1.5 [N,768] frozen",
+    "p2_projection": 128,
+    "p3_graph_layers": 1,
+    "p3_noTopo_same_region_tokens": true,
+    "p4_only_query_conditioned": true,
+    "risk": "outer Clinical+S32 anchor + residual delta",
+    "full_risk_set_cox": true,
+    "test_labels_used_for_selection": false
+  },
+  "leakage": {
+    "status": "PASS",
+    "prototype_outcome_blind": true,
+    "inner_outer_prototypes_separate": true,
+    "train_fold_only_preprocessing": true,
+    "crossfit_anchor_offsets": true,
+    "outer_test_used_for_selection": false,
+    "conch_patch_row_alignment_with_uni2": false
+  },
+  "v1_training_validity": "FAIL_AS_FINAL_MODEL",
+  "v2_formal": "PASS"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "arms": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P3-noTopo"
+  ],
+  "encoder": "CONCH v1.5 [N,768] frozen",
+  "p2_projection": 128,
+  "p3_graph_layers": 1,
+  "p3_noTopo_same_region_tokens": true,
+  "p4_only_query_conditioned": true,
+  "risk": "outer Clinical+S32 anchor + residual delta",
+  "full_risk_set_cox": true,
+  "test_labels_used_for_selection": false
+}

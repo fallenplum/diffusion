@@ -548,8 +548,8 @@
     },
     {
       "path": "reports/phase10_trimodal_mechanism_audit/RESULTS.md",
-      "sha256": "004a9fba147d4292508145f305e3ca61902612ffc57f2d3572856ae5c5695c05",
-      "size_bytes": 9180,
+      "sha256": "5cda83f546b811e56b710c7c1b2702ca310d06b0a60f9b6220b2ea6803b1ff5f",
+      "size_bytes": 9513,
       "models": "see MODEL_MATRIX",
       "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
       "role": "aggregate evidence/frozen source"

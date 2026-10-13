@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "arm": "B0",
+  "seed": 31,
+  "fold": 1,
+  "inner_epochs_each": 80,
+  "refit_epochs_each": 10,
+  "all_state_tensors_bitwise_equal": true,
+  "test_label_and_all_feature_perturbation": true,
+  "patch_test_absent_from_actual_training_calls": true,
+  "legal_test_input_changes_risk": true,
+  "test_patch_extreme_values_in_second_condition": true,
+  "state_fingerprint": "909c882d1c22fe9bfce49f08babf1dd60489ec5389125cca44e0951c8032f976",
+  "no_private_smoke_outputs_saved": true
+}

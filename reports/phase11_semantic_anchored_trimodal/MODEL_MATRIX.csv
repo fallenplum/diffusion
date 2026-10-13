@@ -1,0 +1,33 @@
+arm,model,records,actual_fits,parameters_min,parameters_max,connected_parameters_min,connected_parameters_max,nonzero_gradient_elements_min,nonzero_gradient_elements_max,S32_used,RNA_prediction,patch_budget,replication,clinical_fields,S32_tokens,RNA_tokens_to_prediction,attention_directions,auxiliary_Cox_weight
+A0,Clinical Ridge,15,15,38,40,,,,,False,False,0,BASELINE,"AGE,SEX,Stage,T,N,M",0,0,"Ridge, no attention",0.0
+A1,Clinical+TITAN S32 Ridge,15,15,70,72,,,,,True,False,0,BASELINE,"AGE,SEX,Stage,T,N,M",0,0,"Ridge, no attention",0.0
+A2,Clinical+TITAN native PCA32 Ridge,15,15,70,72,,,,,False,False,0,BASELINE,"AGE,SEX,Stage,T,N,M",0,0,"Ridge, no attention",0.0
+A3,RNA Top512 Ridge,15,15,512,512,,,,,False,True,0,BASELINE,NONE,0,0,"Ridge, no attention",0.0
+A4,Clinical+S32+RNA Top512 Ridge,15,15,582,584,,,,,True,True,0,BASELINE,"AGE,SEX,Stage,T,N,M",0,0,"Ridge, no attention",0.0
+A5,"C+S32+Patch, unguided Patch queries, no RNA",15,15,482640,483410,128327.0,129097.0,112071.0,112201.0,True,False,128,BASELINE,"AGE,SEX,Stage,T,N,M",32,0,constant<->Patch; S32 late; no RNA prediction,0.0
+A6,"C/S32<->Patch, no RNA",15,15,482640,483410,126279.0,127049.0,110023.0,110153.0,True,False,128,BASELINE,"AGE,SEX,Stage,T,N,M",32,0,C/S32<->Patch; no RNA prediction,0.0
+A7,A6+RNA tokenwise late concat,15,15,482640,483410,447303.0,448073.0,205767.0,205897.0,True,True,128,BASELINE,"AGE,SEX,Stage,T,N,M",32,8,"C/S32<->Patch; RNA tokenwise late, no RNA cross-attention",0.0
+B0,"C/S32<->Patch and RNA->Patch, independent QKV",15,15,482640,483410,447303.0,448073.0,205767.0,205897.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0
+B1,C/S32<->Patch and RNA->S32,15,15,482640,483410,447303.0,448073.0,205767.0,205897.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->S32,0.0
+B2,C->RNA->Patch plus C/S32<->Patch,15,15,482640,483410,476423.0,477193.0,234887.0,235017.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; C->RNA->Patch,0.0
+B3,B0 reverse RNA path: Patch->RNA,15,15,482640,483410,447303.0,448073.0,205767.0,205897.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; Patch->RNA,0.0
+B4,B0 bidirectional RNA<->Patch,15,15,482640,483410,447303.0,448073.0,205767.0,205897.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA<->Patch,0.0
+B5,"C/constant queries<->Patch, S32 late head, RNA->Patch",15,15,482640,483410,449351.0,450121.0,207815.0,207945.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,constant<->Patch; S32 late; RNA->Patch,0.0
+B6,B0 without any effective RNA input,15,15,482640,483410,126279.0,127049.0,110023.0,110153.0,True,False,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,0,C/S32<->Patch; no RNA prediction,0.0
+B7,B0 split-local wrong-patient RNA,15,15,482640,483410,447303.0,448073.0,205767.0,205897.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0
+C0,"REUSED_IDENTICAL B0, sequential8x64 supports + GroupMSA",15,0,482640,483410,,,,,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0
+C1,"sequential8x64 supports, same-weight tokenwise QKV/FF",15,15,482640,483410,447303.0,448073.0,205767.0,205897.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0
+C2,Top512 patient gene-wise soft weighted token projection,15,15,482640,483410,451407.0,452177.0,439247.0,439377.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0
+C3,Top512 Hallmark membership+explicit uncovered fallback,15,15,482640,483410,447303.0,448073.0,205895.0,206153.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0
+C4,C3 train-bin-matched global gene permutation,15,15,482640,483410,447303.0,448073.0,205895.0,206153.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0
+C5,C1+RNA-only auxiliary Efron(.1),15,15,482640,483410,447368.0,448138.0,205832.0,205962.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.1
+D0,B0 split-local wrong-patient S32,15,15,482640,483410,447303.0,448073.0,205767.0,205897.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0
+D1,REUSED_IDENTICAL B5: S32 only final head/linear anchor,15,0,482640,483410,,,,,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,constant<->Patch; S32 late; RNA->Patch,0.0
+D2,B0 Age/Sex/Stage clinical subset,15,15,471099,471292,435762.0,435955.0,204210.0,204275.0,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage",32,8,C/S32<->Patch; RNA->Patch,0.0
+D3,"A6+RNA aux(.1), RNA prohibited from prediction",15,15,482640,483410,418248.0,419018.0,172609.0,172746.0,True,False,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,0,C/S32<->Patch; no RNA prediction,0.1
+P1,A6 512 patch,15,15,482640,483410,126279.0,127049.0,110023.0,110153.0,True,False,512,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,0,C/S32<->Patch; no RNA prediction,0.0
+P2,A6 1024 patch,15,15,482640,483410,126279.0,127049.0,110023.0,110153.0,True,False,1024,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,0,C/S32<->Patch; no RNA prediction,0.0
+P4,B0 512 patch,15,15,482640,483410,447303.0,448073.0,205767.0,205897.0,True,True,512,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0
+P5,B0 1024 patch,15,15,482640,483410,447303.0,448073.0,205767.0,205897.0,True,True,1024,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0
+P0,REUSED_IDENTICAL A6 128 patch,15,0,482640,483410,,,,,True,False,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,0,C/S32<->Patch; no RNA prediction,0.0
+P3,REUSED_IDENTICAL B0 128 patch,15,0,482640,483410,,,,,True,True,128,ADAPTED/INSPIRED,"AGE,SEX,Stage,T,N,M",32,8,C/S32<->Patch; RNA->Patch,0.0

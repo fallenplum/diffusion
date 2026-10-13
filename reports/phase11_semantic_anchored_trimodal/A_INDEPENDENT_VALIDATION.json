@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope": "A",
+  "expected_records": 120,
+  "verified_records": 120,
+  "failures": [],
+  "metrics": "independent event-pair/reverseKM versus sksurv0.23.1"
+}

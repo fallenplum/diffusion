@@ -1,0 +1,10 @@
+{
+  "draws": 30000,
+  "seed": 1197311,
+  "counts_sha256": "e04790d21c23838604779ff9837fe89214c3019907ff8ff88c915624d73c7540",
+  "primary_extreme_tail_expected_draws": 46.875,
+  "tail_probability_MC_SE": 0.0002280393674894754,
+  "refit_variance_included": false,
+  "patient_counts_shared": true,
+  "averaged_seed_pair_credit_not_risk": true
+}

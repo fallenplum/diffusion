@@ -1,0 +1,5 @@
+# S32语义来源
+
+来自原固定outcome-blind32个CRC形态/临床病理描述词及两模板，官方TITAN视觉proj+L2和text embedding cosine，非native PCA32或softmax概率。缓存patient_representations与当前队列逐元素一致；确切revision/protocol/vocab hashes见SOURCE_REGISTRY。Foundation权重冻结且本轮不重新编码/微调。
+
+trainable concept ID仅固定词项身份，不自动带医学语义；S32→CONCH局部查询属于患者条件的学习相关性，不是已标注patch概念真值，也没有使用CONCHv1 text混合v1.5特征。

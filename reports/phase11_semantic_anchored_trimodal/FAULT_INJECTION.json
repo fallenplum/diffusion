@@ -1,0 +1,701 @@
+{
+  "status": "PASS",
+  "faults": [
+    {
+      "fault": "DSS_alias_in_Clinical",
+      "status": "REJECTED",
+      "error": "forbidden label source",
+      "synthetic_injection": {
+        "outer_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "outer_test": [
+          0,
+          1
+        ],
+        "inner_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "inner_val": [
+          8,
+          9
+        ],
+        "preprocess_inner": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE",
+            "DSS_time"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97"
+          }
+        },
+        "preprocess_outer": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110"
+          }
+        }
+      }
+    },
+    {
+      "fault": "DSS_alias_in_S32_prompt",
+      "status": "REJECTED",
+      "error": "forbidden label source",
+      "synthetic_injection": {
+        "outer_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "outer_test": [
+          0,
+          1
+        ],
+        "inner_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "inner_val": [
+          8,
+          9
+        ],
+        "preprocess_inner": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97"
+          }
+        },
+        "preprocess_outer": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "DSS-selected concepts",
+          "pca": {
+            "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110"
+          }
+        }
+      }
+    },
+    {
+      "fault": "DSS_alias_in_TopK",
+      "status": "REJECTED",
+      "error": "forbidden label source",
+      "synthetic_injection": {
+        "outer_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "outer_test": [
+          0,
+          1
+        ],
+        "inner_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "inner_val": [
+          8,
+          9
+        ],
+        "preprocess_inner": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "DSS gene ranking",
+          "pca": {
+            "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97"
+          }
+        },
+        "preprocess_outer": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110"
+          }
+        }
+      }
+    },
+    {
+      "fault": "slide_patient_split",
+      "status": "REJECTED",
+      "error": "split isolation",
+      "synthetic_injection": {
+        "outer_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0
+        ],
+        "outer_test": [
+          0,
+          1
+        ],
+        "inner_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "inner_val": [
+          8,
+          9
+        ],
+        "preprocess_inner": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97"
+          }
+        },
+        "preprocess_outer": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110"
+          }
+        }
+      }
+    },
+    {
+      "fault": "global_scaler_TopK",
+      "status": "REJECTED",
+      "error": "preprocessing fit mismatch",
+      "synthetic_injection": {
+        "outer_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "outer_test": [
+          0,
+          1
+        ],
+        "inner_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "inner_val": [
+          8,
+          9
+        ],
+        "preprocess_inner": {
+          "fit_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97"
+          }
+        },
+        "preprocess_outer": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110"
+          }
+        }
+      }
+    },
+    {
+      "fault": "global_PCA",
+      "status": "REJECTED",
+      "error": "PCA fit mismatch",
+      "synthetic_injection": {
+        "outer_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "outer_test": [
+          0,
+          1
+        ],
+        "inner_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "inner_val": [
+          8,
+          9
+        ],
+        "preprocess_inner": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97"
+          }
+        },
+        "preprocess_outer": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "23c379d6c0f22ef64cdef873fd530df1f1419b4a3935e9323d5f1d82ca697b6a"
+          }
+        }
+      }
+    },
+    {
+      "fault": "cross_split_wrong_RNA",
+      "status": "REJECTED",
+      "error": "cross split wrong pairing",
+      "synthetic_injection": {
+        "outer_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "outer_test": [
+          0,
+          1
+        ],
+        "inner_train": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "inner_val": [
+          8,
+          9
+        ],
+        "preprocess_inner": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "bbbbfb83b9b651ddc6c4d325205baaf0378d13d14381a061f22b00ab7e1dec97"
+          }
+        },
+        "preprocess_outer": {
+          "fit_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110",
+          "source_fields": [
+            "AGE",
+            "SEX",
+            "AJCC_PATHOLOGIC_TUMOR_STAGE",
+            "PATH_T_STAGE",
+            "PATH_N_STAGE",
+            "PATH_M_STAGE"
+          ],
+          "selection_source": "RNA expression only; no outcome",
+          "pca": {
+            "fit_hash": "f4c5c5fe274c1ec40316aa8790e33a78a4c1b909662e6e683435e3d831dea110"
+          }
+        },
+        "outer_test_modality_indices": {
+          "RNA": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "fault": "CONCH_UNI2_row_grid_pair",
+      "status": "REJECTED",
+      "error": "unverified different patch grid row pairing",
+      "synthetic_injection": {
+        "source_grid": [
+          256,
+          512
+        ],
+        "row_pair": true
+      }
+    },
+    {
+      "fault": "disconnected_S32",
+      "status": "REJECTED",
+      "error": "disconnected modality",
+      "synthetic_injection": {
+        "detached": "S32"
+      }
+    },
+    {
+      "fault": "disconnected_RNA",
+      "status": "REJECTED",
+      "error": "disconnected modality",
+      "synthetic_injection": {
+        "detached": "RNA"
+      }
+    },
+    {
+      "fault": "minibatch_Cox",
+      "status": "REJECTED",
+      "error": "Scalars are not close!\n\nExpected 1.313261687518223 but got 2.3767256930397096.\nAbsolute difference: 1.0634640055214866 (up to 1e-07 allowed)\nRelative difference: 0.8097883427416516 (up to 1e-07 allowed)",
+      "synthetic_injection": {
+        "mini_size": 2,
+        "full_size": 4
+      }
+    },
+    {
+      "fault": "unmasked_padding",
+      "status": "REJECTED",
+      "error": "Scalars are not equal!\n\nExpected 3334.333251953125 but got 1.0.\nAbsolute difference: 3333.333251953125\nRelative difference: 0.9997000899656883",
+      "synthetic_injection": {
+        "padding_value": 10000
+      }
+    },
+    {
+      "fault": "event_censor_reversed",
+      "status": "REJECTED",
+      "error": "OOF label/direction identity",
+      "synthetic_injection": {
+        "event_flipped": true
+      }
+    },
+    {
+      "fault": "metadata_arm",
+      "status": "REJECTED",
+      "error": "container identity",
+      "synthetic_injection": {
+        "arm": "B1"
+      }
+    },
+    {
+      "fault": "metadata_seed",
+      "status": "REJECTED",
+      "error": "container identity",
+      "synthetic_injection": {
+        "seed": 47
+      }
+    },
+    {
+      "fault": "metadata_fold",
+      "status": "REJECTED",
+      "error": "container identity",
+      "synthetic_injection": {
+        "fold": 2
+      }
+    },
+    {
+      "fault": "metadata_source_hash",
+      "status": "REJECTED",
+      "error": "source/selection mismatch",
+      "synthetic_injection": {
+        "source_hash": "bad"
+      }
+    },
+    {
+      "fault": "OOF_risk_reversed",
+      "status": "REJECTED",
+      "error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 2 (50.0%)\nGreatest absolute difference: 2.0 at index (0,) (up to 1e-07 allowed)\nGreatest relative difference: 2.0 at index (0,) (up to 1e-07 allowed)",
+      "synthetic_injection": {
+        "checkpoint_risk": [
+          1.0,
+          0.0
+        ],
+        "OOF_risk": [
+          -1.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "fault": "checkpoint_OOF_mismatch",
+      "status": "REJECTED",
+      "error": "The values for attribute 'dtype' do not match: torch.float32 != torch.float64.",
+      "synthetic_injection": {
+        "checkpoint_risk": [
+          2.0,
+          0.0
+        ],
+        "OOF_risk": [
+          1.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "clean_corrected_manifest": "PASS",
+  "scope": "synthetic injections, separate from formal/private data"
+}

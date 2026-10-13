@@ -1,0 +1,1597 @@
+arm,seed,stratum,group,patients,events,Harrell,Uno60,small_event_suppressed
+A0,31,cancer,COAD,382,54,0.7967032967032966,0.6813692917444213,False
+A0,31,cancer,READ,130,11,0.7933333333333333,0.8090556855637622,False
+A0,31,RNA_missing_pattern,3024_missing,203,29,0.7889182058047494,0.8420757688499141,False
+A0,31,RNA_missing_pattern,complete,309,36,0.8063354931605472,0.6044085922817339,False
+A0,31,clinical_stage,STAGE I,93,1,,,True
+A0,31,clinical_stage,STAGE IA,1,0,,,True
+A0,31,clinical_stage,STAGE II,23,4,,,True
+A0,31,clinical_stage,STAGE IIA,149,5,,,True
+A0,31,clinical_stage,STAGE IIB,10,1,,,True
+A0,31,clinical_stage,STAGE IIC,2,0,,,True
+A0,31,clinical_stage,STAGE III,20,4,,,True
+A0,31,clinical_stage,STAGE IIIA,13,0,,,True
+A0,31,clinical_stage,STAGE IIIB,73,7,,,True
+A0,31,clinical_stage,STAGE IIIC,45,9,,,True
+A0,31,clinical_stage,STAGE IV,46,27,0.6138211382113821,0.7380153117598239,False
+A0,31,clinical_stage,STAGE IVA,24,5,,,True
+A0,31,clinical_stage,STAGE IVB,2,0,,,True
+A0,31,clinical_stage,[Discrepancy],2,0,,,True
+A0,31,clinical_stage,[Not Available],9,2,,,True
+A0,47,cancer,COAD,382,54,0.7967032967032966,0.6813692917444213,False
+A0,47,cancer,READ,130,11,0.7933333333333333,0.8090556855637622,False
+A0,47,RNA_missing_pattern,3024_missing,203,29,0.7889182058047494,0.8420757688499141,False
+A0,47,RNA_missing_pattern,complete,309,36,0.8063354931605472,0.6044085922817339,False
+A0,47,clinical_stage,STAGE I,93,1,,,True
+A0,47,clinical_stage,STAGE IA,1,0,,,True
+A0,47,clinical_stage,STAGE II,23,4,,,True
+A0,47,clinical_stage,STAGE IIA,149,5,,,True
+A0,47,clinical_stage,STAGE IIB,10,1,,,True
+A0,47,clinical_stage,STAGE IIC,2,0,,,True
+A0,47,clinical_stage,STAGE III,20,4,,,True
+A0,47,clinical_stage,STAGE IIIA,13,0,,,True
+A0,47,clinical_stage,STAGE IIIB,73,7,,,True
+A0,47,clinical_stage,STAGE IIIC,45,9,,,True
+A0,47,clinical_stage,STAGE IV,46,27,0.6138211382113821,0.7380153117598239,False
+A0,47,clinical_stage,STAGE IVA,24,5,,,True
+A0,47,clinical_stage,STAGE IVB,2,0,,,True
+A0,47,clinical_stage,[Discrepancy],2,0,,,True
+A0,47,clinical_stage,[Not Available],9,2,,,True
+A0,83,cancer,COAD,382,54,0.7967032967032966,0.6813692917444213,False
+A0,83,cancer,READ,130,11,0.7933333333333333,0.8090556855637622,False
+A0,83,RNA_missing_pattern,3024_missing,203,29,0.7889182058047494,0.8420757688499141,False
+A0,83,RNA_missing_pattern,complete,309,36,0.8063354931605472,0.6044085922817339,False
+A0,83,clinical_stage,STAGE I,93,1,,,True
+A0,83,clinical_stage,STAGE IA,1,0,,,True
+A0,83,clinical_stage,STAGE II,23,4,,,True
+A0,83,clinical_stage,STAGE IIA,149,5,,,True
+A0,83,clinical_stage,STAGE IIB,10,1,,,True
+A0,83,clinical_stage,STAGE IIC,2,0,,,True
+A0,83,clinical_stage,STAGE III,20,4,,,True
+A0,83,clinical_stage,STAGE IIIA,13,0,,,True
+A0,83,clinical_stage,STAGE IIIB,73,7,,,True
+A0,83,clinical_stage,STAGE IIIC,45,9,,,True
+A0,83,clinical_stage,STAGE IV,46,27,0.6138211382113821,0.7380153117598239,False
+A0,83,clinical_stage,STAGE IVA,24,5,,,True
+A0,83,clinical_stage,STAGE IVB,2,0,,,True
+A0,83,clinical_stage,[Discrepancy],2,0,,,True
+A0,83,clinical_stage,[Not Available],9,2,,,True
+A1,31,cancer,COAD,382,54,0.6461538461538462,0.6388800733822558,False
+A1,31,cancer,READ,130,11,0.5866666666666667,0.5857685731558265,False
+A1,31,RNA_missing_pattern,3024_missing,203,29,0.6134564643799473,0.5600291346580136,False
+A1,31,RNA_missing_pattern,complete,309,36,0.6630669546436285,0.7192926133495494,False
+A1,31,clinical_stage,STAGE I,93,1,,,True
+A1,31,clinical_stage,STAGE IA,1,0,,,True
+A1,31,clinical_stage,STAGE II,23,4,,,True
+A1,31,clinical_stage,STAGE IIA,149,5,,,True
+A1,31,clinical_stage,STAGE IIB,10,1,,,True
+A1,31,clinical_stage,STAGE IIC,2,0,,,True
+A1,31,clinical_stage,STAGE III,20,4,,,True
+A1,31,clinical_stage,STAGE IIIA,13,0,,,True
+A1,31,clinical_stage,STAGE IIIB,73,7,,,True
+A1,31,clinical_stage,STAGE IIIC,45,9,,,True
+A1,31,clinical_stage,STAGE IV,46,27,0.6991869918699187,0.6821169884911082,False
+A1,31,clinical_stage,STAGE IVA,24,5,,,True
+A1,31,clinical_stage,STAGE IVB,2,0,,,True
+A1,31,clinical_stage,[Discrepancy],2,0,,,True
+A1,31,clinical_stage,[Not Available],9,2,,,True
+A1,47,cancer,COAD,382,54,0.6461538461538462,0.6388800733822558,False
+A1,47,cancer,READ,130,11,0.5866666666666667,0.5857685731558265,False
+A1,47,RNA_missing_pattern,3024_missing,203,29,0.6134564643799473,0.5600291346580136,False
+A1,47,RNA_missing_pattern,complete,309,36,0.6630669546436285,0.7192926133495494,False
+A1,47,clinical_stage,STAGE I,93,1,,,True
+A1,47,clinical_stage,STAGE IA,1,0,,,True
+A1,47,clinical_stage,STAGE II,23,4,,,True
+A1,47,clinical_stage,STAGE IIA,149,5,,,True
+A1,47,clinical_stage,STAGE IIB,10,1,,,True
+A1,47,clinical_stage,STAGE IIC,2,0,,,True
+A1,47,clinical_stage,STAGE III,20,4,,,True
+A1,47,clinical_stage,STAGE IIIA,13,0,,,True
+A1,47,clinical_stage,STAGE IIIB,73,7,,,True
+A1,47,clinical_stage,STAGE IIIC,45,9,,,True
+A1,47,clinical_stage,STAGE IV,46,27,0.6991869918699187,0.6821169884911082,False
+A1,47,clinical_stage,STAGE IVA,24,5,,,True
+A1,47,clinical_stage,STAGE IVB,2,0,,,True
+A1,47,clinical_stage,[Discrepancy],2,0,,,True
+A1,47,clinical_stage,[Not Available],9,2,,,True
+A1,83,cancer,COAD,382,54,0.6461538461538462,0.6388800733822558,False
+A1,83,cancer,READ,130,11,0.5866666666666667,0.5857685731558265,False
+A1,83,RNA_missing_pattern,3024_missing,203,29,0.6134564643799473,0.5600291346580136,False
+A1,83,RNA_missing_pattern,complete,309,36,0.6630669546436285,0.7192926133495494,False
+A1,83,clinical_stage,STAGE I,93,1,,,True
+A1,83,clinical_stage,STAGE IA,1,0,,,True
+A1,83,clinical_stage,STAGE II,23,4,,,True
+A1,83,clinical_stage,STAGE IIA,149,5,,,True
+A1,83,clinical_stage,STAGE IIB,10,1,,,True
+A1,83,clinical_stage,STAGE IIC,2,0,,,True
+A1,83,clinical_stage,STAGE III,20,4,,,True
+A1,83,clinical_stage,STAGE IIIA,13,0,,,True
+A1,83,clinical_stage,STAGE IIIB,73,7,,,True
+A1,83,clinical_stage,STAGE IIIC,45,9,,,True
+A1,83,clinical_stage,STAGE IV,46,27,0.6991869918699187,0.6821169884911082,False
+A1,83,clinical_stage,STAGE IVA,24,5,,,True
+A1,83,clinical_stage,STAGE IVB,2,0,,,True
+A1,83,clinical_stage,[Discrepancy],2,0,,,True
+A1,83,clinical_stage,[Not Available],9,2,,,True
+A2,31,cancer,COAD,382,54,0.6945054945054945,0.7110153011350744,False
+A2,31,cancer,READ,130,11,0.7666666666666667,0.7851957356439871,False
+A2,31,RNA_missing_pattern,3024_missing,203,29,0.6240105540897097,0.6442740743320526,False
+A2,31,RNA_missing_pattern,complete,309,36,0.7465802735781137,0.7162363309523107,False
+A2,31,clinical_stage,STAGE I,93,1,,,True
+A2,31,clinical_stage,STAGE IA,1,0,,,True
+A2,31,clinical_stage,STAGE II,23,4,,,True
+A2,31,clinical_stage,STAGE IIA,149,5,,,True
+A2,31,clinical_stage,STAGE IIB,10,1,,,True
+A2,31,clinical_stage,STAGE IIC,2,0,,,True
+A2,31,clinical_stage,STAGE III,20,4,,,True
+A2,31,clinical_stage,STAGE IIIA,13,0,,,True
+A2,31,clinical_stage,STAGE IIIB,73,7,,,True
+A2,31,clinical_stage,STAGE IIIC,45,9,,,True
+A2,31,clinical_stage,STAGE IV,46,27,0.5284552845528455,0.6065732527784697,False
+A2,31,clinical_stage,STAGE IVA,24,5,,,True
+A2,31,clinical_stage,STAGE IVB,2,0,,,True
+A2,31,clinical_stage,[Discrepancy],2,0,,,True
+A2,31,clinical_stage,[Not Available],9,2,,,True
+A2,47,cancer,COAD,382,54,0.6959706959706959,0.6804446197776951,False
+A2,47,cancer,READ,130,11,0.78,0.8491942978791496,False
+A2,47,RNA_missing_pattern,3024_missing,203,29,0.6015831134564644,0.6679875813872848,False
+A2,47,RNA_missing_pattern,complete,309,36,0.7473002159827213,0.6936378367558641,False
+A2,47,clinical_stage,STAGE I,93,1,,,True
+A2,47,clinical_stage,STAGE IA,1,0,,,True
+A2,47,clinical_stage,STAGE II,23,4,,,True
+A2,47,clinical_stage,STAGE IIA,149,5,,,True
+A2,47,clinical_stage,STAGE IIB,10,1,,,True
+A2,47,clinical_stage,STAGE IIC,2,0,,,True
+A2,47,clinical_stage,STAGE III,20,4,,,True
+A2,47,clinical_stage,STAGE IIIA,13,0,,,True
+A2,47,clinical_stage,STAGE IIIB,73,7,,,True
+A2,47,clinical_stage,STAGE IIIC,45,9,,,True
+A2,47,clinical_stage,STAGE IV,46,27,0.5691056910569106,0.6754887470630788,False
+A2,47,clinical_stage,STAGE IVA,24,5,,,True
+A2,47,clinical_stage,STAGE IVB,2,0,,,True
+A2,47,clinical_stage,[Discrepancy],2,0,,,True
+A2,47,clinical_stage,[Not Available],9,2,,,True
+A2,83,cancer,COAD,382,54,0.7329670329670329,0.7193653984209571,False
+A2,83,cancer,READ,130,11,0.7933333333333333,0.8351673305788578,False
+A2,83,RNA_missing_pattern,3024_missing,203,29,0.662269129287599,0.687328282807538,False
+A2,83,RNA_missing_pattern,complete,309,36,0.7998560115190785,0.7326733979938654,False
+A2,83,clinical_stage,STAGE I,93,1,,,True
+A2,83,clinical_stage,STAGE IA,1,0,,,True
+A2,83,clinical_stage,STAGE II,23,4,,,True
+A2,83,clinical_stage,STAGE IIA,149,5,,,True
+A2,83,clinical_stage,STAGE IIB,10,1,,,True
+A2,83,clinical_stage,STAGE IIC,2,0,,,True
+A2,83,clinical_stage,STAGE III,20,4,,,True
+A2,83,clinical_stage,STAGE IIIA,13,0,,,True
+A2,83,clinical_stage,STAGE IIIB,73,7,,,True
+A2,83,clinical_stage,STAGE IIIC,45,9,,,True
+A2,83,clinical_stage,STAGE IV,46,27,0.5691056910569106,0.5982667129644336,False
+A2,83,clinical_stage,STAGE IVA,24,5,,,True
+A2,83,clinical_stage,STAGE IVB,2,0,,,True
+A2,83,clinical_stage,[Discrepancy],2,0,,,True
+A2,83,clinical_stage,[Not Available],9,2,,,True
+A3,31,cancer,COAD,382,54,0.819047619047619,0.7614199684105152,False
+A3,31,cancer,READ,130,11,0.6866666666666666,0.7329012823205432,False
+A3,31,RNA_missing_pattern,3024_missing,203,29,0.7691292875989446,0.8265561227454323,False
+A3,31,RNA_missing_pattern,complete,309,36,0.8473722102231821,0.7315472064664897,False
+A3,31,clinical_stage,STAGE I,93,1,,,True
+A3,31,clinical_stage,STAGE IA,1,0,,,True
+A3,31,clinical_stage,STAGE II,23,4,,,True
+A3,31,clinical_stage,STAGE IIA,149,5,,,True
+A3,31,clinical_stage,STAGE IIB,10,1,,,True
+A3,31,clinical_stage,STAGE IIC,2,0,,,True
+A3,31,clinical_stage,STAGE III,20,4,,,True
+A3,31,clinical_stage,STAGE IIIA,13,0,,,True
+A3,31,clinical_stage,STAGE IIIB,73,7,,,True
+A3,31,clinical_stage,STAGE IIIC,45,9,,,True
+A3,31,clinical_stage,STAGE IV,46,27,0.5934959349593496,0.6684931281205312,False
+A3,31,clinical_stage,STAGE IVA,24,5,,,True
+A3,31,clinical_stage,STAGE IVB,2,0,,,True
+A3,31,clinical_stage,[Discrepancy],2,0,,,True
+A3,31,clinical_stage,[Not Available],9,2,,,True
+A3,47,cancer,COAD,382,54,0.819047619047619,0.7614199684105152,False
+A3,47,cancer,READ,130,11,0.6866666666666666,0.7329012823205432,False
+A3,47,RNA_missing_pattern,3024_missing,203,29,0.7691292875989446,0.8265561227454323,False
+A3,47,RNA_missing_pattern,complete,309,36,0.8473722102231821,0.7315472064664897,False
+A3,47,clinical_stage,STAGE I,93,1,,,True
+A3,47,clinical_stage,STAGE IA,1,0,,,True
+A3,47,clinical_stage,STAGE II,23,4,,,True
+A3,47,clinical_stage,STAGE IIA,149,5,,,True
+A3,47,clinical_stage,STAGE IIB,10,1,,,True
+A3,47,clinical_stage,STAGE IIC,2,0,,,True
+A3,47,clinical_stage,STAGE III,20,4,,,True
+A3,47,clinical_stage,STAGE IIIA,13,0,,,True
+A3,47,clinical_stage,STAGE IIIB,73,7,,,True
+A3,47,clinical_stage,STAGE IIIC,45,9,,,True
+A3,47,clinical_stage,STAGE IV,46,27,0.5934959349593496,0.6684931281205312,False
+A3,47,clinical_stage,STAGE IVA,24,5,,,True
+A3,47,clinical_stage,STAGE IVB,2,0,,,True
+A3,47,clinical_stage,[Discrepancy],2,0,,,True
+A3,47,clinical_stage,[Not Available],9,2,,,True
+A3,83,cancer,COAD,382,54,0.819047619047619,0.7614199684105152,False
+A3,83,cancer,READ,130,11,0.6866666666666666,0.7329012823205432,False
+A3,83,RNA_missing_pattern,3024_missing,203,29,0.7691292875989446,0.8265561227454323,False
+A3,83,RNA_missing_pattern,complete,309,36,0.8473722102231821,0.7315472064664897,False
+A3,83,clinical_stage,STAGE I,93,1,,,True
+A3,83,clinical_stage,STAGE IA,1,0,,,True
+A3,83,clinical_stage,STAGE II,23,4,,,True
+A3,83,clinical_stage,STAGE IIA,149,5,,,True
+A3,83,clinical_stage,STAGE IIB,10,1,,,True
+A3,83,clinical_stage,STAGE IIC,2,0,,,True
+A3,83,clinical_stage,STAGE III,20,4,,,True
+A3,83,clinical_stage,STAGE IIIA,13,0,,,True
+A3,83,clinical_stage,STAGE IIIB,73,7,,,True
+A3,83,clinical_stage,STAGE IIIC,45,9,,,True
+A3,83,clinical_stage,STAGE IV,46,27,0.5934959349593496,0.6684931281205312,False
+A3,83,clinical_stage,STAGE IVA,24,5,,,True
+A3,83,clinical_stage,STAGE IVB,2,0,,,True
+A3,83,clinical_stage,[Discrepancy],2,0,,,True
+A3,83,clinical_stage,[Not Available],9,2,,,True
+A4,31,cancer,COAD,382,54,0.7904761904761904,0.7483027356441633,False
+A4,31,cancer,READ,130,11,0.7666666666666667,0.7326133207141134,False
+A4,31,RNA_missing_pattern,3024_missing,203,29,0.7744063324538258,0.8087865305726024,False
+A4,31,RNA_missing_pattern,complete,309,36,0.8135349172066235,0.6828760466831205,False
+A4,31,clinical_stage,STAGE I,93,1,,,True
+A4,31,clinical_stage,STAGE IA,1,0,,,True
+A4,31,clinical_stage,STAGE II,23,4,,,True
+A4,31,clinical_stage,STAGE IIA,149,5,,,True
+A4,31,clinical_stage,STAGE IIB,10,1,,,True
+A4,31,clinical_stage,STAGE IIC,2,0,,,True
+A4,31,clinical_stage,STAGE III,20,4,,,True
+A4,31,clinical_stage,STAGE IIIA,13,0,,,True
+A4,31,clinical_stage,STAGE IIIB,73,7,,,True
+A4,31,clinical_stage,STAGE IIIC,45,9,,,True
+A4,31,clinical_stage,STAGE IV,46,27,0.6178861788617886,0.5694612252449691,False
+A4,31,clinical_stage,STAGE IVA,24,5,,,True
+A4,31,clinical_stage,STAGE IVB,2,0,,,True
+A4,31,clinical_stage,[Discrepancy],2,0,,,True
+A4,31,clinical_stage,[Not Available],9,2,,,True
+A4,47,cancer,COAD,382,54,0.7904761904761904,0.7483027356441633,False
+A4,47,cancer,READ,130,11,0.7666666666666667,0.7326133207141134,False
+A4,47,RNA_missing_pattern,3024_missing,203,29,0.7744063324538258,0.8087865305726024,False
+A4,47,RNA_missing_pattern,complete,309,36,0.8135349172066235,0.6828760466831205,False
+A4,47,clinical_stage,STAGE I,93,1,,,True
+A4,47,clinical_stage,STAGE IA,1,0,,,True
+A4,47,clinical_stage,STAGE II,23,4,,,True
+A4,47,clinical_stage,STAGE IIA,149,5,,,True
+A4,47,clinical_stage,STAGE IIB,10,1,,,True
+A4,47,clinical_stage,STAGE IIC,2,0,,,True
+A4,47,clinical_stage,STAGE III,20,4,,,True
+A4,47,clinical_stage,STAGE IIIA,13,0,,,True
+A4,47,clinical_stage,STAGE IIIB,73,7,,,True
+A4,47,clinical_stage,STAGE IIIC,45,9,,,True
+A4,47,clinical_stage,STAGE IV,46,27,0.6178861788617886,0.5694612252449691,False
+A4,47,clinical_stage,STAGE IVA,24,5,,,True
+A4,47,clinical_stage,STAGE IVB,2,0,,,True
+A4,47,clinical_stage,[Discrepancy],2,0,,,True
+A4,47,clinical_stage,[Not Available],9,2,,,True
+A4,83,cancer,COAD,382,54,0.7904761904761904,0.7483027356441633,False
+A4,83,cancer,READ,130,11,0.7666666666666667,0.7326133207141134,False
+A4,83,RNA_missing_pattern,3024_missing,203,29,0.7744063324538258,0.8087865305726024,False
+A4,83,RNA_missing_pattern,complete,309,36,0.8135349172066235,0.6828760466831205,False
+A4,83,clinical_stage,STAGE I,93,1,,,True
+A4,83,clinical_stage,STAGE IA,1,0,,,True
+A4,83,clinical_stage,STAGE II,23,4,,,True
+A4,83,clinical_stage,STAGE IIA,149,5,,,True
+A4,83,clinical_stage,STAGE IIB,10,1,,,True
+A4,83,clinical_stage,STAGE IIC,2,0,,,True
+A4,83,clinical_stage,STAGE III,20,4,,,True
+A4,83,clinical_stage,STAGE IIIA,13,0,,,True
+A4,83,clinical_stage,STAGE IIIB,73,7,,,True
+A4,83,clinical_stage,STAGE IIIC,45,9,,,True
+A4,83,clinical_stage,STAGE IV,46,27,0.6178861788617886,0.5694612252449691,False
+A4,83,clinical_stage,STAGE IVA,24,5,,,True
+A4,83,clinical_stage,STAGE IVB,2,0,,,True
+A4,83,clinical_stage,[Discrepancy],2,0,,,True
+A4,83,clinical_stage,[Not Available],9,2,,,True
+A5,31,cancer,COAD,382,54,0.7937728937728937,0.7061329045783972,False
+A5,31,cancer,READ,130,11,0.8466666666666667,0.8498390561013281,False
+A5,31,RNA_missing_pattern,3024_missing,203,29,0.787598944591029,0.8371171216383996,False
+A5,31,RNA_missing_pattern,complete,309,36,0.8171346292296616,0.6547057056117208,False
+A5,31,clinical_stage,STAGE I,93,1,,,True
+A5,31,clinical_stage,STAGE IA,1,0,,,True
+A5,31,clinical_stage,STAGE II,23,4,,,True
+A5,31,clinical_stage,STAGE IIA,149,5,,,True
+A5,31,clinical_stage,STAGE IIB,10,1,,,True
+A5,31,clinical_stage,STAGE IIC,2,0,,,True
+A5,31,clinical_stage,STAGE III,20,4,,,True
+A5,31,clinical_stage,STAGE IIIA,13,0,,,True
+A5,31,clinical_stage,STAGE IIIB,73,7,,,True
+A5,31,clinical_stage,STAGE IIIC,45,9,,,True
+A5,31,clinical_stage,STAGE IV,46,27,0.5934959349593496,0.6413697961479815,False
+A5,31,clinical_stage,STAGE IVA,24,5,,,True
+A5,31,clinical_stage,STAGE IVB,2,0,,,True
+A5,31,clinical_stage,[Discrepancy],2,0,,,True
+A5,31,clinical_stage,[Not Available],9,2,,,True
+A5,47,cancer,COAD,382,54,0.7827838827838828,0.6974307354796084,False
+A5,47,cancer,READ,130,11,0.8333333333333334,0.8453388808820427,False
+A5,47,RNA_missing_pattern,3024_missing,203,29,0.7862796833773087,0.8453480697170437,False
+A5,47,RNA_missing_pattern,complete,309,36,0.7984161267098632,0.6379699095471645,False
+A5,47,clinical_stage,STAGE I,93,1,,,True
+A5,47,clinical_stage,STAGE IA,1,0,,,True
+A5,47,clinical_stage,STAGE II,23,4,,,True
+A5,47,clinical_stage,STAGE IIA,149,5,,,True
+A5,47,clinical_stage,STAGE IIB,10,1,,,True
+A5,47,clinical_stage,STAGE IIC,2,0,,,True
+A5,47,clinical_stage,STAGE III,20,4,,,True
+A5,47,clinical_stage,STAGE IIIA,13,0,,,True
+A5,47,clinical_stage,STAGE IIIB,73,7,,,True
+A5,47,clinical_stage,STAGE IIIC,45,9,,,True
+A5,47,clinical_stage,STAGE IV,46,27,0.5853658536585366,0.6839121568403,False
+A5,47,clinical_stage,STAGE IVA,24,5,,,True
+A5,47,clinical_stage,STAGE IVB,2,0,,,True
+A5,47,clinical_stage,[Discrepancy],2,0,,,True
+A5,47,clinical_stage,[Not Available],9,2,,,True
+A5,83,cancer,COAD,382,54,0.773992673992674,0.6742103566781942,False
+A5,83,cancer,READ,130,11,0.78,0.8012302874965669,False
+A5,83,RNA_missing_pattern,3024_missing,203,29,0.762532981530343,0.8194967515350644,False
+A5,83,RNA_missing_pattern,complete,309,36,0.796976241900648,0.6244239274968117,False
+A5,83,clinical_stage,STAGE I,93,1,,,True
+A5,83,clinical_stage,STAGE IA,1,0,,,True
+A5,83,clinical_stage,STAGE II,23,4,,,True
+A5,83,clinical_stage,STAGE IIA,149,5,,,True
+A5,83,clinical_stage,STAGE IIB,10,1,,,True
+A5,83,clinical_stage,STAGE IIC,2,0,,,True
+A5,83,clinical_stage,STAGE III,20,4,,,True
+A5,83,clinical_stage,STAGE IIIA,13,0,,,True
+A5,83,clinical_stage,STAGE IIIB,73,7,,,True
+A5,83,clinical_stage,STAGE IIIC,45,9,,,True
+A5,83,clinical_stage,STAGE IV,46,27,0.5853658536585366,0.5530364661812377,False
+A5,83,clinical_stage,STAGE IVA,24,5,,,True
+A5,83,clinical_stage,STAGE IVB,2,0,,,True
+A5,83,clinical_stage,[Discrepancy],2,0,,,True
+A5,83,clinical_stage,[Not Available],9,2,,,True
+A6,31,cancer,COAD,382,54,0.7893772893772893,0.7379841087962609,False
+A6,31,cancer,READ,130,11,0.8266666666666667,0.8345898537954826,False
+A6,31,RNA_missing_pattern,3024_missing,203,29,0.7968337730870713,0.8410283096329491,False
+A6,31,RNA_missing_pattern,complete,309,36,0.802735781137509,0.7162589419828828,False
+A6,31,clinical_stage,STAGE I,93,1,,,True
+A6,31,clinical_stage,STAGE IA,1,0,,,True
+A6,31,clinical_stage,STAGE II,23,4,,,True
+A6,31,clinical_stage,STAGE IIA,149,5,,,True
+A6,31,clinical_stage,STAGE IIB,10,1,,,True
+A6,31,clinical_stage,STAGE IIC,2,0,,,True
+A6,31,clinical_stage,STAGE III,20,4,,,True
+A6,31,clinical_stage,STAGE IIIA,13,0,,,True
+A6,31,clinical_stage,STAGE IIIB,73,7,,,True
+A6,31,clinical_stage,STAGE IIIC,45,9,,,True
+A6,31,clinical_stage,STAGE IV,46,27,0.6097560975609756,0.6381956791611703,False
+A6,31,clinical_stage,STAGE IVA,24,5,,,True
+A6,31,clinical_stage,STAGE IVB,2,0,,,True
+A6,31,clinical_stage,[Discrepancy],2,0,,,True
+A6,31,clinical_stage,[Not Available],9,2,,,True
+A6,47,cancer,COAD,382,54,0.7853479853479853,0.6921767218753347,False
+A6,47,cancer,READ,130,11,0.78,0.8041500357796658,False
+A6,47,RNA_missing_pattern,3024_missing,203,29,0.7994722955145118,0.8535972323052198,False
+A6,47,RNA_missing_pattern,complete,309,36,0.7904967602591793,0.6437505638926169,False
+A6,47,clinical_stage,STAGE I,93,1,,,True
+A6,47,clinical_stage,STAGE IA,1,0,,,True
+A6,47,clinical_stage,STAGE II,23,4,,,True
+A6,47,clinical_stage,STAGE IIA,149,5,,,True
+A6,47,clinical_stage,STAGE IIB,10,1,,,True
+A6,47,clinical_stage,STAGE IIC,2,0,,,True
+A6,47,clinical_stage,STAGE III,20,4,,,True
+A6,47,clinical_stage,STAGE IIIA,13,0,,,True
+A6,47,clinical_stage,STAGE IIIB,73,7,,,True
+A6,47,clinical_stage,STAGE IIIC,45,9,,,True
+A6,47,clinical_stage,STAGE IV,46,27,0.6341463414634146,0.6395328900722831,False
+A6,47,clinical_stage,STAGE IVA,24,5,,,True
+A6,47,clinical_stage,STAGE IVB,2,0,,,True
+A6,47,clinical_stage,[Discrepancy],2,0,,,True
+A6,47,clinical_stage,[Not Available],9,2,,,True
+A6,83,cancer,COAD,382,54,0.7765567765567766,0.6781434017992783,False
+A6,83,cancer,READ,130,11,0.7866666666666666,0.8078758235236634,False
+A6,83,RNA_missing_pattern,3024_missing,203,29,0.7941952506596306,0.8530482424263136,False
+A6,83,RNA_missing_pattern,complete,309,36,0.7840172786177105,0.6120743936572006,False
+A6,83,clinical_stage,STAGE I,93,1,,,True
+A6,83,clinical_stage,STAGE IA,1,0,,,True
+A6,83,clinical_stage,STAGE II,23,4,,,True
+A6,83,clinical_stage,STAGE IIA,149,5,,,True
+A6,83,clinical_stage,STAGE IIB,10,1,,,True
+A6,83,clinical_stage,STAGE IIC,2,0,,,True
+A6,83,clinical_stage,STAGE III,20,4,,,True
+A6,83,clinical_stage,STAGE IIIA,13,0,,,True
+A6,83,clinical_stage,STAGE IIIB,73,7,,,True
+A6,83,clinical_stage,STAGE IIIC,45,9,,,True
+A6,83,clinical_stage,STAGE IV,46,27,0.6666666666666666,0.6493937234960129,False
+A6,83,clinical_stage,STAGE IVA,24,5,,,True
+A6,83,clinical_stage,STAGE IVB,2,0,,,True
+A6,83,clinical_stage,[Discrepancy],2,0,,,True
+A6,83,clinical_stage,[Not Available],9,2,,,True
+A7,31,cancer,COAD,382,54,0.8043956043956044,0.7493202576395308,False
+A7,31,cancer,READ,130,11,0.74,0.8280024894215704,False
+A7,31,RNA_missing_pattern,3024_missing,203,29,0.7519788918205804,0.7761194920670001,False
+A7,31,RNA_missing_pattern,complete,309,36,0.8286537077033838,0.7534844927892008,False
+A7,31,clinical_stage,STAGE I,93,1,,,True
+A7,31,clinical_stage,STAGE IA,1,0,,,True
+A7,31,clinical_stage,STAGE II,23,4,,,True
+A7,31,clinical_stage,STAGE IIA,149,5,,,True
+A7,31,clinical_stage,STAGE IIB,10,1,,,True
+A7,31,clinical_stage,STAGE IIC,2,0,,,True
+A7,31,clinical_stage,STAGE III,20,4,,,True
+A7,31,clinical_stage,STAGE IIIA,13,0,,,True
+A7,31,clinical_stage,STAGE IIIB,73,7,,,True
+A7,31,clinical_stage,STAGE IIIC,45,9,,,True
+A7,31,clinical_stage,STAGE IV,46,27,0.6585365853658537,0.712922731160638,False
+A7,31,clinical_stage,STAGE IVA,24,5,,,True
+A7,31,clinical_stage,STAGE IVB,2,0,,,True
+A7,31,clinical_stage,[Discrepancy],2,0,,,True
+A7,31,clinical_stage,[Not Available],9,2,,,True
+A7,47,cancer,COAD,382,54,0.8043956043956044,0.7493202576395308,False
+A7,47,cancer,READ,130,11,0.74,0.8280024894215704,False
+A7,47,RNA_missing_pattern,3024_missing,203,29,0.7519788918205804,0.7761194920670001,False
+A7,47,RNA_missing_pattern,complete,309,36,0.8286537077033838,0.7534844927892008,False
+A7,47,clinical_stage,STAGE I,93,1,,,True
+A7,47,clinical_stage,STAGE IA,1,0,,,True
+A7,47,clinical_stage,STAGE II,23,4,,,True
+A7,47,clinical_stage,STAGE IIA,149,5,,,True
+A7,47,clinical_stage,STAGE IIB,10,1,,,True
+A7,47,clinical_stage,STAGE IIC,2,0,,,True
+A7,47,clinical_stage,STAGE III,20,4,,,True
+A7,47,clinical_stage,STAGE IIIA,13,0,,,True
+A7,47,clinical_stage,STAGE IIIB,73,7,,,True
+A7,47,clinical_stage,STAGE IIIC,45,9,,,True
+A7,47,clinical_stage,STAGE IV,46,27,0.6585365853658537,0.712922731160638,False
+A7,47,clinical_stage,STAGE IVA,24,5,,,True
+A7,47,clinical_stage,STAGE IVB,2,0,,,True
+A7,47,clinical_stage,[Discrepancy],2,0,,,True
+A7,47,clinical_stage,[Not Available],9,2,,,True
+A7,83,cancer,COAD,382,54,0.8043956043956044,0.7493202576395308,False
+A7,83,cancer,READ,130,11,0.74,0.8280024894215704,False
+A7,83,RNA_missing_pattern,3024_missing,203,29,0.7519788918205804,0.7761194920670001,False
+A7,83,RNA_missing_pattern,complete,309,36,0.8286537077033838,0.7534844927892008,False
+A7,83,clinical_stage,STAGE I,93,1,,,True
+A7,83,clinical_stage,STAGE IA,1,0,,,True
+A7,83,clinical_stage,STAGE II,23,4,,,True
+A7,83,clinical_stage,STAGE IIA,149,5,,,True
+A7,83,clinical_stage,STAGE IIB,10,1,,,True
+A7,83,clinical_stage,STAGE IIC,2,0,,,True
+A7,83,clinical_stage,STAGE III,20,4,,,True
+A7,83,clinical_stage,STAGE IIIA,13,0,,,True
+A7,83,clinical_stage,STAGE IIIB,73,7,,,True
+A7,83,clinical_stage,STAGE IIIC,45,9,,,True
+A7,83,clinical_stage,STAGE IV,46,27,0.6585365853658537,0.712922731160638,False
+A7,83,clinical_stage,STAGE IVA,24,5,,,True
+A7,83,clinical_stage,STAGE IVB,2,0,,,True
+A7,83,clinical_stage,[Discrepancy],2,0,,,True
+A7,83,clinical_stage,[Not Available],9,2,,,True
+A8,31,cancer,COAD,382,54,0.7970695970695971,0.7438317559091221,False
+A8,31,cancer,READ,130,11,0.7266666666666667,0.8234736069843219,False
+A8,31,RNA_missing_pattern,3024_missing,203,29,0.7506596306068601,0.7778602215287787,False
+A8,31,RNA_missing_pattern,complete,309,36,0.8092152627789777,0.7347704994360291,False
+A8,31,clinical_stage,STAGE I,93,1,,,True
+A8,31,clinical_stage,STAGE IA,1,0,,,True
+A8,31,clinical_stage,STAGE II,23,4,,,True
+A8,31,clinical_stage,STAGE IIA,149,5,,,True
+A8,31,clinical_stage,STAGE IIB,10,1,,,True
+A8,31,clinical_stage,STAGE IIC,2,0,,,True
+A8,31,clinical_stage,STAGE III,20,4,,,True
+A8,31,clinical_stage,STAGE IIIA,13,0,,,True
+A8,31,clinical_stage,STAGE IIIB,73,7,,,True
+A8,31,clinical_stage,STAGE IIIC,45,9,,,True
+A8,31,clinical_stage,STAGE IV,46,27,0.6341463414634146,0.6584512227778039,False
+A8,31,clinical_stage,STAGE IVA,24,5,,,True
+A8,31,clinical_stage,STAGE IVB,2,0,,,True
+A8,31,clinical_stage,[Discrepancy],2,0,,,True
+A8,31,clinical_stage,[Not Available],9,2,,,True
+A8,47,cancer,COAD,382,54,0.7970695970695971,0.7438317559091221,False
+A8,47,cancer,READ,130,11,0.7266666666666667,0.8234736069843219,False
+A8,47,RNA_missing_pattern,3024_missing,203,29,0.7506596306068601,0.7778602215287787,False
+A8,47,RNA_missing_pattern,complete,309,36,0.8092152627789777,0.7347704994360291,False
+A8,47,clinical_stage,STAGE I,93,1,,,True
+A8,47,clinical_stage,STAGE IA,1,0,,,True
+A8,47,clinical_stage,STAGE II,23,4,,,True
+A8,47,clinical_stage,STAGE IIA,149,5,,,True
+A8,47,clinical_stage,STAGE IIB,10,1,,,True
+A8,47,clinical_stage,STAGE IIC,2,0,,,True
+A8,47,clinical_stage,STAGE III,20,4,,,True
+A8,47,clinical_stage,STAGE IIIA,13,0,,,True
+A8,47,clinical_stage,STAGE IIIB,73,7,,,True
+A8,47,clinical_stage,STAGE IIIC,45,9,,,True
+A8,47,clinical_stage,STAGE IV,46,27,0.6341463414634146,0.6584512227778039,False
+A8,47,clinical_stage,STAGE IVA,24,5,,,True
+A8,47,clinical_stage,STAGE IVB,2,0,,,True
+A8,47,clinical_stage,[Discrepancy],2,0,,,True
+A8,47,clinical_stage,[Not Available],9,2,,,True
+A8,83,cancer,COAD,382,54,0.7970695970695971,0.7438317559091221,False
+A8,83,cancer,READ,130,11,0.7266666666666667,0.8234736069843219,False
+A8,83,RNA_missing_pattern,3024_missing,203,29,0.7506596306068601,0.7778602215287787,False
+A8,83,RNA_missing_pattern,complete,309,36,0.8092152627789777,0.7347704994360291,False
+A8,83,clinical_stage,STAGE I,93,1,,,True
+A8,83,clinical_stage,STAGE IA,1,0,,,True
+A8,83,clinical_stage,STAGE II,23,4,,,True
+A8,83,clinical_stage,STAGE IIA,149,5,,,True
+A8,83,clinical_stage,STAGE IIB,10,1,,,True
+A8,83,clinical_stage,STAGE IIC,2,0,,,True
+A8,83,clinical_stage,STAGE III,20,4,,,True
+A8,83,clinical_stage,STAGE IIIA,13,0,,,True
+A8,83,clinical_stage,STAGE IIIB,73,7,,,True
+A8,83,clinical_stage,STAGE IIIC,45,9,,,True
+A8,83,clinical_stage,STAGE IV,46,27,0.6341463414634146,0.6584512227778039,False
+A8,83,clinical_stage,STAGE IVA,24,5,,,True
+A8,83,clinical_stage,STAGE IVB,2,0,,,True
+A8,83,clinical_stage,[Discrepancy],2,0,,,True
+A8,83,clinical_stage,[Not Available],9,2,,,True
+B0,31,cancer,COAD,382,54,0.8014652014652015,0.7088871361626031,False
+B0,31,cancer,READ,130,11,0.8333333333333334,0.9302398576339638,False
+B0,31,RNA_missing_pattern,3024_missing,203,29,0.7902374670184696,0.8433947006711675,False
+B0,31,RNA_missing_pattern,complete,309,36,0.830093592512599,0.6719851037807182,False
+B0,31,clinical_stage,STAGE I,93,1,,,True
+B0,31,clinical_stage,STAGE IA,1,0,,,True
+B0,31,clinical_stage,STAGE II,23,4,,,True
+B0,31,clinical_stage,STAGE IIA,149,5,,,True
+B0,31,clinical_stage,STAGE IIB,10,1,,,True
+B0,31,clinical_stage,STAGE IIC,2,0,,,True
+B0,31,clinical_stage,STAGE III,20,4,,,True
+B0,31,clinical_stage,STAGE IIIA,13,0,,,True
+B0,31,clinical_stage,STAGE IIIB,73,7,,,True
+B0,31,clinical_stage,STAGE IIIC,45,9,,,True
+B0,31,clinical_stage,STAGE IV,46,27,0.6178861788617886,0.6319011555433888,False
+B0,31,clinical_stage,STAGE IVA,24,5,,,True
+B0,31,clinical_stage,STAGE IVB,2,0,,,True
+B0,31,clinical_stage,[Discrepancy],2,0,,,True
+B0,31,clinical_stage,[Not Available],9,2,,,True
+B0,47,cancer,COAD,382,54,0.7860805860805861,0.6997435903971652,False
+B0,47,cancer,READ,130,11,0.84,0.8880507053626348,False
+B0,47,RNA_missing_pattern,3024_missing,203,29,0.8007915567282322,0.8491309155912703,False
+B0,47,RNA_missing_pattern,complete,309,36,0.7955363570914327,0.6612945193960191,False
+B0,47,clinical_stage,STAGE I,93,1,,,True
+B0,47,clinical_stage,STAGE IA,1,0,,,True
+B0,47,clinical_stage,STAGE II,23,4,,,True
+B0,47,clinical_stage,STAGE IIA,149,5,,,True
+B0,47,clinical_stage,STAGE IIB,10,1,,,True
+B0,47,clinical_stage,STAGE IIC,2,0,,,True
+B0,47,clinical_stage,STAGE III,20,4,,,True
+B0,47,clinical_stage,STAGE IIIA,13,0,,,True
+B0,47,clinical_stage,STAGE IIIB,73,7,,,True
+B0,47,clinical_stage,STAGE IIIC,45,9,,,True
+B0,47,clinical_stage,STAGE IV,46,27,0.6829268292682927,0.7163738594502006,False
+B0,47,clinical_stage,STAGE IVA,24,5,,,True
+B0,47,clinical_stage,STAGE IVB,2,0,,,True
+B0,47,clinical_stage,[Discrepancy],2,0,,,True
+B0,47,clinical_stage,[Not Available],9,2,,,True
+B0,83,cancer,COAD,382,54,0.8073260073260073,0.7329496423928525,False
+B0,83,cancer,READ,130,11,0.82,0.8391815041228874,False
+B0,83,RNA_missing_pattern,3024_missing,203,29,0.8113456464379947,0.8608599466137786,False
+B0,83,RNA_missing_pattern,complete,309,36,0.8401727861771058,0.7268725941690555,False
+B0,83,clinical_stage,STAGE I,93,1,,,True
+B0,83,clinical_stage,STAGE IA,1,0,,,True
+B0,83,clinical_stage,STAGE II,23,4,,,True
+B0,83,clinical_stage,STAGE IIA,149,5,,,True
+B0,83,clinical_stage,STAGE IIB,10,1,,,True
+B0,83,clinical_stage,STAGE IIC,2,0,,,True
+B0,83,clinical_stage,STAGE III,20,4,,,True
+B0,83,clinical_stage,STAGE IIIA,13,0,,,True
+B0,83,clinical_stage,STAGE IIIB,73,7,,,True
+B0,83,clinical_stage,STAGE IIIC,45,9,,,True
+B0,83,clinical_stage,STAGE IV,46,27,0.7154471544715447,0.5775990805275354,False
+B0,83,clinical_stage,STAGE IVA,24,5,,,True
+B0,83,clinical_stage,STAGE IVB,2,0,,,True
+B0,83,clinical_stage,[Discrepancy],2,0,,,True
+B0,83,clinical_stage,[Not Available],9,2,,,True
+B1,31,cancer,COAD,382,54,0.8080586080586081,0.7123266287455939,False
+B1,31,cancer,READ,130,11,0.82,0.8402368436871317,False
+B1,31,RNA_missing_pattern,3024_missing,203,29,0.7915567282321899,0.8587713486191955,False
+B1,31,RNA_missing_pattern,complete,309,36,0.8264938804895609,0.6534863750578142,False
+B1,31,clinical_stage,STAGE I,93,1,,,True
+B1,31,clinical_stage,STAGE IA,1,0,,,True
+B1,31,clinical_stage,STAGE II,23,4,,,True
+B1,31,clinical_stage,STAGE IIA,149,5,,,True
+B1,31,clinical_stage,STAGE IIB,10,1,,,True
+B1,31,clinical_stage,STAGE IIC,2,0,,,True
+B1,31,clinical_stage,STAGE III,20,4,,,True
+B1,31,clinical_stage,STAGE IIIA,13,0,,,True
+B1,31,clinical_stage,STAGE IIIB,73,7,,,True
+B1,31,clinical_stage,STAGE IIIC,45,9,,,True
+B1,31,clinical_stage,STAGE IV,46,27,0.5934959349593496,0.655479866893355,False
+B1,31,clinical_stage,STAGE IVA,24,5,,,True
+B1,31,clinical_stage,STAGE IVB,2,0,,,True
+B1,31,clinical_stage,[Discrepancy],2,0,,,True
+B1,31,clinical_stage,[Not Available],9,2,,,True
+B1,47,cancer,COAD,382,54,0.8054945054945055,0.7042407916618023,False
+B1,47,cancer,READ,130,11,0.82,0.879513526116685,False
+B1,47,RNA_missing_pattern,3024_missing,203,29,0.7849604221635884,0.8496437358932324,False
+B1,47,RNA_missing_pattern,complete,309,36,0.827933765298776,0.6701813304838838,False
+B1,47,clinical_stage,STAGE I,93,1,,,True
+B1,47,clinical_stage,STAGE IA,1,0,,,True
+B1,47,clinical_stage,STAGE II,23,4,,,True
+B1,47,clinical_stage,STAGE IIA,149,5,,,True
+B1,47,clinical_stage,STAGE IIB,10,1,,,True
+B1,47,clinical_stage,STAGE IIC,2,0,,,True
+B1,47,clinical_stage,STAGE III,20,4,,,True
+B1,47,clinical_stage,STAGE IIIA,13,0,,,True
+B1,47,clinical_stage,STAGE IIIB,73,7,,,True
+B1,47,clinical_stage,STAGE IIIC,45,9,,,True
+B1,47,clinical_stage,STAGE IV,46,27,0.6097560975609756,0.5856202550039362,False
+B1,47,clinical_stage,STAGE IVA,24,5,,,True
+B1,47,clinical_stage,STAGE IVB,2,0,,,True
+B1,47,clinical_stage,[Discrepancy],2,0,,,True
+B1,47,clinical_stage,[Not Available],9,2,,,True
+B1,83,cancer,COAD,382,54,0.7985347985347986,0.6849551847455981,False
+B1,83,cancer,READ,130,11,0.8066666666666666,0.8762297745918328,False
+B1,83,RNA_missing_pattern,3024_missing,203,29,0.7862796833773087,0.8466482601741396,False
+B1,83,RNA_missing_pattern,complete,309,36,0.827933765298776,0.6574073153499039,False
+B1,83,clinical_stage,STAGE I,93,1,,,True
+B1,83,clinical_stage,STAGE IA,1,0,,,True
+B1,83,clinical_stage,STAGE II,23,4,,,True
+B1,83,clinical_stage,STAGE IIA,149,5,,,True
+B1,83,clinical_stage,STAGE IIB,10,1,,,True
+B1,83,clinical_stage,STAGE IIC,2,0,,,True
+B1,83,clinical_stage,STAGE III,20,4,,,True
+B1,83,clinical_stage,STAGE IIIA,13,0,,,True
+B1,83,clinical_stage,STAGE IIIB,73,7,,,True
+B1,83,clinical_stage,STAGE IIIC,45,9,,,True
+B1,83,clinical_stage,STAGE IV,46,27,0.6260162601626016,0.5214511710162308,False
+B1,83,clinical_stage,STAGE IVA,24,5,,,True
+B1,83,clinical_stage,STAGE IVB,2,0,,,True
+B1,83,clinical_stage,[Discrepancy],2,0,,,True
+B1,83,clinical_stage,[Not Available],9,2,,,True
+B2,31,cancer,COAD,382,54,0.7769230769230769,0.6931802520776902,False
+B2,31,cancer,READ,130,11,0.8066666666666666,0.838037671340805,False
+B2,31,RNA_missing_pattern,3024_missing,203,29,0.7757255936675461,0.8292191430909034,False
+B2,31,RNA_missing_pattern,complete,309,36,0.7962562994960403,0.6357993070420995,False
+B2,31,clinical_stage,STAGE I,93,1,,,True
+B2,31,clinical_stage,STAGE IA,1,0,,,True
+B2,31,clinical_stage,STAGE II,23,4,,,True
+B2,31,clinical_stage,STAGE IIA,149,5,,,True
+B2,31,clinical_stage,STAGE IIB,10,1,,,True
+B2,31,clinical_stage,STAGE IIC,2,0,,,True
+B2,31,clinical_stage,STAGE III,20,4,,,True
+B2,31,clinical_stage,STAGE IIIA,13,0,,,True
+B2,31,clinical_stage,STAGE IIIB,73,7,,,True
+B2,31,clinical_stage,STAGE IIIC,45,9,,,True
+B2,31,clinical_stage,STAGE IV,46,27,0.6016260162601627,0.6190477502605236,False
+B2,31,clinical_stage,STAGE IVA,24,5,,,True
+B2,31,clinical_stage,STAGE IVB,2,0,,,True
+B2,31,clinical_stage,[Discrepancy],2,0,,,True
+B2,31,clinical_stage,[Not Available],9,2,,,True
+B2,47,cancer,COAD,382,54,0.782051282051282,0.693668556245984,False
+B2,47,cancer,READ,130,11,0.8066666666666666,0.8375836613558684,False
+B2,47,RNA_missing_pattern,3024_missing,203,29,0.8007915567282322,0.8394829019695151,False
+B2,47,RNA_missing_pattern,complete,309,36,0.7768178545716342,0.6332266250200754,False
+B2,47,clinical_stage,STAGE I,93,1,,,True
+B2,47,clinical_stage,STAGE IA,1,0,,,True
+B2,47,clinical_stage,STAGE II,23,4,,,True
+B2,47,clinical_stage,STAGE IIA,149,5,,,True
+B2,47,clinical_stage,STAGE IIB,10,1,,,True
+B2,47,clinical_stage,STAGE IIC,2,0,,,True
+B2,47,clinical_stage,STAGE III,20,4,,,True
+B2,47,clinical_stage,STAGE IIIA,13,0,,,True
+B2,47,clinical_stage,STAGE IIIB,73,7,,,True
+B2,47,clinical_stage,STAGE IIIC,45,9,,,True
+B2,47,clinical_stage,STAGE IV,46,27,0.6747967479674797,0.6862794919586986,False
+B2,47,clinical_stage,STAGE IVA,24,5,,,True
+B2,47,clinical_stage,STAGE IVB,2,0,,,True
+B2,47,clinical_stage,[Discrepancy],2,0,,,True
+B2,47,clinical_stage,[Not Available],9,2,,,True
+B2,83,cancer,COAD,382,54,0.7567765567765568,0.6984818051688613,False
+B2,83,cancer,READ,130,11,0.78,0.8065084530885505,False
+B2,83,RNA_missing_pattern,3024_missing,203,29,0.7638522427440633,0.8337072427400146,False
+B2,83,RNA_missing_pattern,complete,309,36,0.7818574514038877,0.6753991258443457,False
+B2,83,clinical_stage,STAGE I,93,1,,,True
+B2,83,clinical_stage,STAGE IA,1,0,,,True
+B2,83,clinical_stage,STAGE II,23,4,,,True
+B2,83,clinical_stage,STAGE IIA,149,5,,,True
+B2,83,clinical_stage,STAGE IIB,10,1,,,True
+B2,83,clinical_stage,STAGE IIC,2,0,,,True
+B2,83,clinical_stage,STAGE III,20,4,,,True
+B2,83,clinical_stage,STAGE IIIA,13,0,,,True
+B2,83,clinical_stage,STAGE IIIB,73,7,,,True
+B2,83,clinical_stage,STAGE IIIC,45,9,,,True
+B2,83,clinical_stage,STAGE IV,46,27,0.6585365853658537,0.6519585079704394,False
+B2,83,clinical_stage,STAGE IVA,24,5,,,True
+B2,83,clinical_stage,STAGE IVB,2,0,,,True
+B2,83,clinical_stage,[Discrepancy],2,0,,,True
+B2,83,clinical_stage,[Not Available],9,2,,,True
+B3,31,cancer,COAD,382,54,0.802930402930403,0.7092598530005366,False
+B3,31,cancer,READ,130,11,0.8466666666666667,0.8698710660275567,False
+B3,31,RNA_missing_pattern,3024_missing,203,29,0.8060686015831134,0.8598501016289454,False
+B3,31,RNA_missing_pattern,complete,309,36,0.8264938804895609,0.6607141476038288,False
+B3,31,clinical_stage,STAGE I,93,1,,,True
+B3,31,clinical_stage,STAGE IA,1,0,,,True
+B3,31,clinical_stage,STAGE II,23,4,,,True
+B3,31,clinical_stage,STAGE IIA,149,5,,,True
+B3,31,clinical_stage,STAGE IIB,10,1,,,True
+B3,31,clinical_stage,STAGE IIC,2,0,,,True
+B3,31,clinical_stage,STAGE III,20,4,,,True
+B3,31,clinical_stage,STAGE IIIA,13,0,,,True
+B3,31,clinical_stage,STAGE IIIB,73,7,,,True
+B3,31,clinical_stage,STAGE IIIC,45,9,,,True
+B3,31,clinical_stage,STAGE IV,46,27,0.6178861788617886,0.6279606626901364,False
+B3,31,clinical_stage,STAGE IVA,24,5,,,True
+B3,31,clinical_stage,STAGE IVB,2,0,,,True
+B3,31,clinical_stage,[Discrepancy],2,0,,,True
+B3,31,clinical_stage,[Not Available],9,2,,,True
+B3,47,cancer,COAD,382,54,0.8073260073260073,0.706941948814465,False
+B3,47,cancer,READ,130,11,0.8133333333333334,0.8593399808618954,False
+B3,47,RNA_missing_pattern,3024_missing,203,29,0.7889182058047494,0.8474031794193151,False
+B3,47,RNA_missing_pattern,complete,309,36,0.822174226061915,0.6594042378056336,False
+B3,47,clinical_stage,STAGE I,93,1,,,True
+B3,47,clinical_stage,STAGE IA,1,0,,,True
+B3,47,clinical_stage,STAGE II,23,4,,,True
+B3,47,clinical_stage,STAGE IIA,149,5,,,True
+B3,47,clinical_stage,STAGE IIB,10,1,,,True
+B3,47,clinical_stage,STAGE IIC,2,0,,,True
+B3,47,clinical_stage,STAGE III,20,4,,,True
+B3,47,clinical_stage,STAGE IIIA,13,0,,,True
+B3,47,clinical_stage,STAGE IIIB,73,7,,,True
+B3,47,clinical_stage,STAGE IIIC,45,9,,,True
+B3,47,clinical_stage,STAGE IV,46,27,0.6016260162601627,0.5796296178182806,False
+B3,47,clinical_stage,STAGE IVA,24,5,,,True
+B3,47,clinical_stage,STAGE IVB,2,0,,,True
+B3,47,clinical_stage,[Discrepancy],2,0,,,True
+B3,47,clinical_stage,[Not Available],9,2,,,True
+B3,83,cancer,COAD,382,54,0.8062271062271062,0.7086698783838632,False
+B3,83,cancer,READ,130,11,0.8,0.8537948828684095,False
+B3,83,RNA_missing_pattern,3024_missing,203,29,0.8100263852242744,0.8650298622799875,False
+B3,83,RNA_missing_pattern,complete,309,36,0.8228941684665226,0.6674628835498406,False
+B3,83,clinical_stage,STAGE I,93,1,,,True
+B3,83,clinical_stage,STAGE IA,1,0,,,True
+B3,83,clinical_stage,STAGE II,23,4,,,True
+B3,83,clinical_stage,STAGE IIA,149,5,,,True
+B3,83,clinical_stage,STAGE IIB,10,1,,,True
+B3,83,clinical_stage,STAGE IIC,2,0,,,True
+B3,83,clinical_stage,STAGE III,20,4,,,True
+B3,83,clinical_stage,STAGE IIIA,13,0,,,True
+B3,83,clinical_stage,STAGE IIIB,73,7,,,True
+B3,83,clinical_stage,STAGE IIIC,45,9,,,True
+B3,83,clinical_stage,STAGE IV,46,27,0.6422764227642277,0.6359683914389829,False
+B3,83,clinical_stage,STAGE IVA,24,5,,,True
+B3,83,clinical_stage,STAGE IVB,2,0,,,True
+B3,83,clinical_stage,[Discrepancy],2,0,,,True
+B3,83,clinical_stage,[Not Available],9,2,,,True
+B4,31,cancer,COAD,382,54,0.7974358974358975,0.724689629780965,False
+B4,31,cancer,READ,130,11,0.8333333333333334,0.8882478187508402,False
+B4,31,RNA_missing_pattern,3024_missing,203,29,0.7968337730870713,0.8523739283004274,False
+B4,31,RNA_missing_pattern,complete,309,36,0.822174226061915,0.6878026630581278,False
+B4,31,clinical_stage,STAGE I,93,1,,,True
+B4,31,clinical_stage,STAGE IA,1,0,,,True
+B4,31,clinical_stage,STAGE II,23,4,,,True
+B4,31,clinical_stage,STAGE IIA,149,5,,,True
+B4,31,clinical_stage,STAGE IIB,10,1,,,True
+B4,31,clinical_stage,STAGE IIC,2,0,,,True
+B4,31,clinical_stage,STAGE III,20,4,,,True
+B4,31,clinical_stage,STAGE IIIA,13,0,,,True
+B4,31,clinical_stage,STAGE IIIB,73,7,,,True
+B4,31,clinical_stage,STAGE IIIC,45,9,,,True
+B4,31,clinical_stage,STAGE IV,46,27,0.6178861788617886,0.671890363855495,False
+B4,31,clinical_stage,STAGE IVA,24,5,,,True
+B4,31,clinical_stage,STAGE IVB,2,0,,,True
+B4,31,clinical_stage,[Discrepancy],2,0,,,True
+B4,31,clinical_stage,[Not Available],9,2,,,True
+B4,47,cancer,COAD,382,54,0.8,0.711625488925804,False
+B4,47,cancer,READ,130,11,0.8133333333333334,0.8729500810248689,False
+B4,47,RNA_missing_pattern,3024_missing,203,29,0.7915567282321899,0.8523063650493121,False
+B4,47,RNA_missing_pattern,complete,309,36,0.8192944564434845,0.678446634883747,False
+B4,47,clinical_stage,STAGE I,93,1,,,True
+B4,47,clinical_stage,STAGE IA,1,0,,,True
+B4,47,clinical_stage,STAGE II,23,4,,,True
+B4,47,clinical_stage,STAGE IIA,149,5,,,True
+B4,47,clinical_stage,STAGE IIB,10,1,,,True
+B4,47,clinical_stage,STAGE IIC,2,0,,,True
+B4,47,clinical_stage,STAGE III,20,4,,,True
+B4,47,clinical_stage,STAGE IIIA,13,0,,,True
+B4,47,clinical_stage,STAGE IIIB,73,7,,,True
+B4,47,clinical_stage,STAGE IIIC,45,9,,,True
+B4,47,clinical_stage,STAGE IV,46,27,0.6260162601626016,0.6777290585681481,False
+B4,47,clinical_stage,STAGE IVA,24,5,,,True
+B4,47,clinical_stage,STAGE IVB,2,0,,,True
+B4,47,clinical_stage,[Discrepancy],2,0,,,True
+B4,47,clinical_stage,[Not Available],9,2,,,True
+B4,83,cancer,COAD,382,54,0.793040293040293,0.7477919472178288,False
+B4,83,cancer,READ,130,11,0.78,0.8489346737544482,False
+B4,83,RNA_missing_pattern,3024_missing,203,29,0.7810026385224275,0.8487984892085071,False
+B4,83,RNA_missing_pattern,complete,309,36,0.8142548596112311,0.7258964573850706,False
+B4,83,clinical_stage,STAGE I,93,1,,,True
+B4,83,clinical_stage,STAGE IA,1,0,,,True
+B4,83,clinical_stage,STAGE II,23,4,,,True
+B4,83,clinical_stage,STAGE IIA,149,5,,,True
+B4,83,clinical_stage,STAGE IIB,10,1,,,True
+B4,83,clinical_stage,STAGE IIC,2,0,,,True
+B4,83,clinical_stage,STAGE III,20,4,,,True
+B4,83,clinical_stage,STAGE IIIA,13,0,,,True
+B4,83,clinical_stage,STAGE IIIB,73,7,,,True
+B4,83,clinical_stage,STAGE IIIC,45,9,,,True
+B4,83,clinical_stage,STAGE IV,46,27,0.7154471544715447,0.6840567263480989,False
+B4,83,clinical_stage,STAGE IVA,24,5,,,True
+B4,83,clinical_stage,STAGE IVB,2,0,,,True
+B4,83,clinical_stage,[Discrepancy],2,0,,,True
+B4,83,clinical_stage,[Not Available],9,2,,,True
+B5,31,cancer,COAD,382,54,0.8010989010989011,0.7039805976285209,False
+B5,31,cancer,READ,130,11,0.8133333333333334,0.872620442104742,False
+B5,31,RNA_missing_pattern,3024_missing,203,29,0.7664907651715039,0.8273323516594867,False
+B5,31,RNA_missing_pattern,complete,309,36,0.827933765298776,0.6579252775511829,False
+B5,31,clinical_stage,STAGE I,93,1,,,True
+B5,31,clinical_stage,STAGE IA,1,0,,,True
+B5,31,clinical_stage,STAGE II,23,4,,,True
+B5,31,clinical_stage,STAGE IIA,149,5,,,True
+B5,31,clinical_stage,STAGE IIB,10,1,,,True
+B5,31,clinical_stage,STAGE IIC,2,0,,,True
+B5,31,clinical_stage,STAGE III,20,4,,,True
+B5,31,clinical_stage,STAGE IIIA,13,0,,,True
+B5,31,clinical_stage,STAGE IIIB,73,7,,,True
+B5,31,clinical_stage,STAGE IIIC,45,9,,,True
+B5,31,clinical_stage,STAGE IV,46,27,0.6097560975609756,0.6339157987553662,False
+B5,31,clinical_stage,STAGE IVA,24,5,,,True
+B5,31,clinical_stage,STAGE IVB,2,0,,,True
+B5,31,clinical_stage,[Discrepancy],2,0,,,True
+B5,31,clinical_stage,[Not Available],9,2,,,True
+B5,47,cancer,COAD,382,54,0.7967032967032966,0.6938623931824502,False
+B5,47,cancer,READ,130,11,0.8,0.8401526817459184,False
+B5,47,RNA_missing_pattern,3024_missing,203,29,0.7915567282321899,0.8474879042254242,False
+B5,47,RNA_missing_pattern,complete,309,36,0.8135349172066235,0.6419434258489334,False
+B5,47,clinical_stage,STAGE I,93,1,,,True
+B5,47,clinical_stage,STAGE IA,1,0,,,True
+B5,47,clinical_stage,STAGE II,23,4,,,True
+B5,47,clinical_stage,STAGE IIA,149,5,,,True
+B5,47,clinical_stage,STAGE IIB,10,1,,,True
+B5,47,clinical_stage,STAGE IIC,2,0,,,True
+B5,47,clinical_stage,STAGE III,20,4,,,True
+B5,47,clinical_stage,STAGE IIIA,13,0,,,True
+B5,47,clinical_stage,STAGE IIIB,73,7,,,True
+B5,47,clinical_stage,STAGE IIIC,45,9,,,True
+B5,47,clinical_stage,STAGE IV,46,27,0.5934959349593496,0.595773691070447,False
+B5,47,clinical_stage,STAGE IVA,24,5,,,True
+B5,47,clinical_stage,STAGE IVB,2,0,,,True
+B5,47,clinical_stage,[Discrepancy],2,0,,,True
+B5,47,clinical_stage,[Not Available],9,2,,,True
+B5,83,cancer,COAD,382,54,0.7952380952380952,0.6841564303010842,False
+B5,83,cancer,READ,130,11,0.7733333333333333,0.8386758358931836,False
+B5,83,RNA_missing_pattern,3024_missing,203,29,0.7889182058047494,0.8357163527415415,False
+B5,83,RNA_missing_pattern,complete,309,36,0.8005759539236861,0.6365696996266395,False
+B5,83,clinical_stage,STAGE I,93,1,,,True
+B5,83,clinical_stage,STAGE IA,1,0,,,True
+B5,83,clinical_stage,STAGE II,23,4,,,True
+B5,83,clinical_stage,STAGE IIA,149,5,,,True
+B5,83,clinical_stage,STAGE IIB,10,1,,,True
+B5,83,clinical_stage,STAGE IIC,2,0,,,True
+B5,83,clinical_stage,STAGE III,20,4,,,True
+B5,83,clinical_stage,STAGE IIIA,13,0,,,True
+B5,83,clinical_stage,STAGE IIIB,73,7,,,True
+B5,83,clinical_stage,STAGE IIIC,45,9,,,True
+B5,83,clinical_stage,STAGE IV,46,27,0.6747967479674797,0.5038646952549323,False
+B5,83,clinical_stage,STAGE IVA,24,5,,,True
+B5,83,clinical_stage,STAGE IVB,2,0,,,True
+B5,83,clinical_stage,[Discrepancy],2,0,,,True
+B5,83,clinical_stage,[Not Available],9,2,,,True
+C0,31,cancer,COAD,382,54,0.7688644688644689,0.7161676226026324,False
+C0,31,cancer,READ,130,11,0.8733333333333333,0.9625625655862781,False
+C0,31,RNA_missing_pattern,3024_missing,203,29,0.8100263852242744,0.868826036923947,False
+C0,31,RNA_missing_pattern,complete,309,36,0.7717782577393808,0.6890471961015182,False
+C0,31,clinical_stage,STAGE I,93,1,,,True
+C0,31,clinical_stage,STAGE IA,1,0,,,True
+C0,31,clinical_stage,STAGE II,23,4,,,True
+C0,31,clinical_stage,STAGE IIA,149,5,,,True
+C0,31,clinical_stage,STAGE IIB,10,1,,,True
+C0,31,clinical_stage,STAGE IIC,2,0,,,True
+C0,31,clinical_stage,STAGE III,20,4,,,True
+C0,31,clinical_stage,STAGE IIIA,13,0,,,True
+C0,31,clinical_stage,STAGE IIIB,73,7,,,True
+C0,31,clinical_stage,STAGE IIIC,45,9,,,True
+C0,31,clinical_stage,STAGE IV,46,27,0.6504065040650406,0.6925476028761347,False
+C0,31,clinical_stage,STAGE IVA,24,5,,,True
+C0,31,clinical_stage,STAGE IVB,2,0,,,True
+C0,31,clinical_stage,[Discrepancy],2,0,,,True
+C0,31,clinical_stage,[Not Available],9,2,,,True
+C0,47,cancer,COAD,382,54,0.798901098901099,0.6939292543741876,False
+C0,47,cancer,READ,130,11,0.8666666666666667,0.915240388740286,False
+C0,47,RNA_missing_pattern,3024_missing,203,29,0.8139841688654353,0.8662795258391552,False
+C0,47,RNA_missing_pattern,complete,309,36,0.7984161267098632,0.6486522784905913,False
+C0,47,clinical_stage,STAGE I,93,1,,,True
+C0,47,clinical_stage,STAGE IA,1,0,,,True
+C0,47,clinical_stage,STAGE II,23,4,,,True
+C0,47,clinical_stage,STAGE IIA,149,5,,,True
+C0,47,clinical_stage,STAGE IIB,10,1,,,True
+C0,47,clinical_stage,STAGE IIC,2,0,,,True
+C0,47,clinical_stage,STAGE III,20,4,,,True
+C0,47,clinical_stage,STAGE IIIA,13,0,,,True
+C0,47,clinical_stage,STAGE IIIB,73,7,,,True
+C0,47,clinical_stage,STAGE IIIC,45,9,,,True
+C0,47,clinical_stage,STAGE IV,46,27,0.6016260162601627,0.6512509125361382,False
+C0,47,clinical_stage,STAGE IVA,24,5,,,True
+C0,47,clinical_stage,STAGE IVB,2,0,,,True
+C0,47,clinical_stage,[Discrepancy],2,0,,,True
+C0,47,clinical_stage,[Not Available],9,2,,,True
+C0,83,cancer,COAD,382,54,0.773992673992674,0.6692370614378412,False
+C0,83,cancer,READ,130,11,0.8666666666666667,0.913741455981149,False
+C0,83,RNA_missing_pattern,3024_missing,203,29,0.7717678100263852,0.8312672297840218,False
+C0,83,RNA_missing_pattern,complete,309,36,0.8056155507559395,0.6403542198638102,False
+C0,83,clinical_stage,STAGE I,93,1,,,True
+C0,83,clinical_stage,STAGE IA,1,0,,,True
+C0,83,clinical_stage,STAGE II,23,4,,,True
+C0,83,clinical_stage,STAGE IIA,149,5,,,True
+C0,83,clinical_stage,STAGE IIB,10,1,,,True
+C0,83,clinical_stage,STAGE IIC,2,0,,,True
+C0,83,clinical_stage,STAGE III,20,4,,,True
+C0,83,clinical_stage,STAGE IIIA,13,0,,,True
+C0,83,clinical_stage,STAGE IIIB,73,7,,,True
+C0,83,clinical_stage,STAGE IIIC,45,9,,,True
+C0,83,clinical_stage,STAGE IV,46,27,0.6910569105691057,0.6676285171592907,False
+C0,83,clinical_stage,STAGE IVA,24,5,,,True
+C0,83,clinical_stage,STAGE IVB,2,0,,,True
+C0,83,clinical_stage,[Discrepancy],2,0,,,True
+C0,83,clinical_stage,[Not Available],9,2,,,True
+C1,31,cancer,COAD,382,54,0.7703296703296704,0.7032946023506724,False
+C1,31,cancer,READ,130,11,0.8733333333333333,0.9625625655862781,False
+C1,31,RNA_missing_pattern,3024_missing,203,29,0.8100263852242744,0.8682685575769452,False
+C1,31,RNA_missing_pattern,complete,309,36,0.7724982001439885,0.6696653021126789,False
+C1,31,clinical_stage,STAGE I,93,1,,,True
+C1,31,clinical_stage,STAGE IA,1,0,,,True
+C1,31,clinical_stage,STAGE II,23,4,,,True
+C1,31,clinical_stage,STAGE IIA,149,5,,,True
+C1,31,clinical_stage,STAGE IIB,10,1,,,True
+C1,31,clinical_stage,STAGE IIC,2,0,,,True
+C1,31,clinical_stage,STAGE III,20,4,,,True
+C1,31,clinical_stage,STAGE IIIA,13,0,,,True
+C1,31,clinical_stage,STAGE IIIB,73,7,,,True
+C1,31,clinical_stage,STAGE IIIC,45,9,,,True
+C1,31,clinical_stage,STAGE IV,46,27,0.6829268292682927,0.7089111181203815,False
+C1,31,clinical_stage,STAGE IVA,24,5,,,True
+C1,31,clinical_stage,STAGE IVB,2,0,,,True
+C1,31,clinical_stage,[Discrepancy],2,0,,,True
+C1,31,clinical_stage,[Not Available],9,2,,,True
+C1,47,cancer,COAD,382,54,0.8025641025641026,0.7172731370395371,False
+C1,47,cancer,READ,130,11,0.86,0.9363444716829308,False
+C1,47,RNA_missing_pattern,3024_missing,203,29,0.8087071240105541,0.8635757238877778,False
+C1,47,RNA_missing_pattern,complete,309,36,0.8056155507559395,0.6873700614561346,False
+C1,47,clinical_stage,STAGE I,93,1,,,True
+C1,47,clinical_stage,STAGE IA,1,0,,,True
+C1,47,clinical_stage,STAGE II,23,4,,,True
+C1,47,clinical_stage,STAGE IIA,149,5,,,True
+C1,47,clinical_stage,STAGE IIB,10,1,,,True
+C1,47,clinical_stage,STAGE IIC,2,0,,,True
+C1,47,clinical_stage,STAGE III,20,4,,,True
+C1,47,clinical_stage,STAGE IIIA,13,0,,,True
+C1,47,clinical_stage,STAGE IIIB,73,7,,,True
+C1,47,clinical_stage,STAGE IIIC,45,9,,,True
+C1,47,clinical_stage,STAGE IV,46,27,0.6016260162601627,0.6512509125361382,False
+C1,47,clinical_stage,STAGE IVA,24,5,,,True
+C1,47,clinical_stage,STAGE IVB,2,0,,,True
+C1,47,clinical_stage,[Discrepancy],2,0,,,True
+C1,47,clinical_stage,[Not Available],9,2,,,True
+C1,83,cancer,COAD,382,54,0.7688644688644689,0.6562049743078416,False
+C1,83,cancer,READ,130,11,0.8666666666666667,0.913741455981149,False
+C1,83,RNA_missing_pattern,3024_missing,203,29,0.7704485488126649,0.838870976284177,False
+C1,83,RNA_missing_pattern,complete,309,36,0.7991360691144709,0.6321211367854259,False
+C1,83,clinical_stage,STAGE I,93,1,,,True
+C1,83,clinical_stage,STAGE IA,1,0,,,True
+C1,83,clinical_stage,STAGE II,23,4,,,True
+C1,83,clinical_stage,STAGE IIA,149,5,,,True
+C1,83,clinical_stage,STAGE IIB,10,1,,,True
+C1,83,clinical_stage,STAGE IIC,2,0,,,True
+C1,83,clinical_stage,STAGE III,20,4,,,True
+C1,83,clinical_stage,STAGE IIIA,13,0,,,True
+C1,83,clinical_stage,STAGE IIIB,73,7,,,True
+C1,83,clinical_stage,STAGE IIIC,45,9,,,True
+C1,83,clinical_stage,STAGE IV,46,27,0.6504065040650406,0.6483340257198659,False
+C1,83,clinical_stage,STAGE IVA,24,5,,,True
+C1,83,clinical_stage,STAGE IVB,2,0,,,True
+C1,83,clinical_stage,[Discrepancy],2,0,,,True
+C1,83,clinical_stage,[Not Available],9,2,,,True
+C2,31,cancer,COAD,382,54,0.7805860805860806,0.7186536538706136,False
+C2,31,cancer,READ,130,11,0.8533333333333334,0.8892623693706874,False
+C2,31,RNA_missing_pattern,3024_missing,203,29,0.7889182058047494,0.830930588329222,False
+C2,31,RNA_missing_pattern,complete,309,36,0.8034557235421166,0.7046719970323705,False
+C2,31,clinical_stage,STAGE I,93,1,,,True
+C2,31,clinical_stage,STAGE IA,1,0,,,True
+C2,31,clinical_stage,STAGE II,23,4,,,True
+C2,31,clinical_stage,STAGE IIA,149,5,,,True
+C2,31,clinical_stage,STAGE IIB,10,1,,,True
+C2,31,clinical_stage,STAGE IIC,2,0,,,True
+C2,31,clinical_stage,STAGE III,20,4,,,True
+C2,31,clinical_stage,STAGE IIIA,13,0,,,True
+C2,31,clinical_stage,STAGE IIIB,73,7,,,True
+C2,31,clinical_stage,STAGE IIIC,45,9,,,True
+C2,31,clinical_stage,STAGE IV,46,27,0.6422764227642277,0.588334157405691,False
+C2,31,clinical_stage,STAGE IVA,24,5,,,True
+C2,31,clinical_stage,STAGE IVB,2,0,,,True
+C2,31,clinical_stage,[Discrepancy],2,0,,,True
+C2,31,clinical_stage,[Not Available],9,2,,,True
+C2,47,cancer,COAD,382,54,0.7952380952380952,0.7078218321866283,False
+C2,47,cancer,READ,130,11,0.88,0.9440922805582408,False
+C2,47,RNA_missing_pattern,3024_missing,203,29,0.7902374670184696,0.8143747838950988,False
+C2,47,RNA_missing_pattern,complete,309,36,0.8192944564434845,0.6828128549212764,False
+C2,47,clinical_stage,STAGE I,93,1,,,True
+C2,47,clinical_stage,STAGE IA,1,0,,,True
+C2,47,clinical_stage,STAGE II,23,4,,,True
+C2,47,clinical_stage,STAGE IIA,149,5,,,True
+C2,47,clinical_stage,STAGE IIB,10,1,,,True
+C2,47,clinical_stage,STAGE IIC,2,0,,,True
+C2,47,clinical_stage,STAGE III,20,4,,,True
+C2,47,clinical_stage,STAGE IIIA,13,0,,,True
+C2,47,clinical_stage,STAGE IIIB,73,7,,,True
+C2,47,clinical_stage,STAGE IIIC,45,9,,,True
+C2,47,clinical_stage,STAGE IV,46,27,0.5934959349593496,0.5613894310552002,False
+C2,47,clinical_stage,STAGE IVA,24,5,,,True
+C2,47,clinical_stage,STAGE IVB,2,0,,,True
+C2,47,clinical_stage,[Discrepancy],2,0,,,True
+C2,47,clinical_stage,[Not Available],9,2,,,True
+C2,83,cancer,COAD,382,54,0.7776556776556777,0.7027491050976017,False
+C2,83,cancer,READ,130,11,0.8333333333333334,0.7997628857884704,False
+C2,83,RNA_missing_pattern,3024_missing,203,29,0.7849604221635884,0.8056341932476618,False
+C2,83,RNA_missing_pattern,complete,309,36,0.8034557235421166,0.6874840122946633,False
+C2,83,clinical_stage,STAGE I,93,1,,,True
+C2,83,clinical_stage,STAGE IA,1,0,,,True
+C2,83,clinical_stage,STAGE II,23,4,,,True
+C2,83,clinical_stage,STAGE IIA,149,5,,,True
+C2,83,clinical_stage,STAGE IIB,10,1,,,True
+C2,83,clinical_stage,STAGE IIC,2,0,,,True
+C2,83,clinical_stage,STAGE III,20,4,,,True
+C2,83,clinical_stage,STAGE IIIA,13,0,,,True
+C2,83,clinical_stage,STAGE IIIB,73,7,,,True
+C2,83,clinical_stage,STAGE IIIC,45,9,,,True
+C2,83,clinical_stage,STAGE IV,46,27,0.6422764227642277,0.6301445991413248,False
+C2,83,clinical_stage,STAGE IVA,24,5,,,True
+C2,83,clinical_stage,STAGE IVB,2,0,,,True
+C2,83,clinical_stage,[Discrepancy],2,0,,,True
+C2,83,clinical_stage,[Not Available],9,2,,,True
+C3,31,cancer,COAD,382,54,0.7956043956043956,0.7519629792230551,False
+C3,31,cancer,READ,130,11,0.8933333333333333,0.9688930002414133,False
+C3,31,RNA_missing_pattern,3024_missing,203,29,0.7968337730870713,0.80479066811411,False
+C3,31,RNA_missing_pattern,complete,309,36,0.8020158387329014,0.7446366716971619,False
+C3,31,clinical_stage,STAGE I,93,1,,,True
+C3,31,clinical_stage,STAGE IA,1,0,,,True
+C3,31,clinical_stage,STAGE II,23,4,,,True
+C3,31,clinical_stage,STAGE IIA,149,5,,,True
+C3,31,clinical_stage,STAGE IIB,10,1,,,True
+C3,31,clinical_stage,STAGE IIC,2,0,,,True
+C3,31,clinical_stage,STAGE III,20,4,,,True
+C3,31,clinical_stage,STAGE IIIA,13,0,,,True
+C3,31,clinical_stage,STAGE IIIB,73,7,,,True
+C3,31,clinical_stage,STAGE IIIC,45,9,,,True
+C3,31,clinical_stage,STAGE IV,46,27,0.5853658536585366,0.6005452531879003,False
+C3,31,clinical_stage,STAGE IVA,24,5,,,True
+C3,31,clinical_stage,STAGE IVB,2,0,,,True
+C3,31,clinical_stage,[Discrepancy],2,0,,,True
+C3,31,clinical_stage,[Not Available],9,2,,,True
+C3,47,cancer,COAD,382,54,0.7802197802197802,0.7416556360136864,False
+C3,47,cancer,READ,130,11,0.8066666666666666,0.8778412560610332,False
+C3,47,RNA_missing_pattern,3024_missing,203,29,0.7335092348284961,0.7951223393972029,False
+C3,47,RNA_missing_pattern,complete,309,36,0.8128149748020158,0.7494469022375798,False
+C3,47,clinical_stage,STAGE I,93,1,,,True
+C3,47,clinical_stage,STAGE IA,1,0,,,True
+C3,47,clinical_stage,STAGE II,23,4,,,True
+C3,47,clinical_stage,STAGE IIA,149,5,,,True
+C3,47,clinical_stage,STAGE IIB,10,1,,,True
+C3,47,clinical_stage,STAGE IIC,2,0,,,True
+C3,47,clinical_stage,STAGE III,20,4,,,True
+C3,47,clinical_stage,STAGE IIIA,13,0,,,True
+C3,47,clinical_stage,STAGE IIIB,73,7,,,True
+C3,47,clinical_stage,STAGE IIIC,45,9,,,True
+C3,47,clinical_stage,STAGE IV,46,27,0.5528455284552846,0.6138322275319562,False
+C3,47,clinical_stage,STAGE IVA,24,5,,,True
+C3,47,clinical_stage,STAGE IVB,2,0,,,True
+C3,47,clinical_stage,[Discrepancy],2,0,,,True
+C3,47,clinical_stage,[Not Available],9,2,,,True
+C3,83,cancer,COAD,382,54,0.7582417582417582,0.7333464917166291,False
+C3,83,cancer,READ,130,11,0.82,0.8567138408122048,False
+C3,83,RNA_missing_pattern,3024_missing,203,29,0.7651715039577837,0.8109612148277978,False
+C3,83,RNA_missing_pattern,complete,309,36,0.7926565874730022,0.7391762728098484,False
+C3,83,clinical_stage,STAGE I,93,1,,,True
+C3,83,clinical_stage,STAGE IA,1,0,,,True
+C3,83,clinical_stage,STAGE II,23,4,,,True
+C3,83,clinical_stage,STAGE IIA,149,5,,,True
+C3,83,clinical_stage,STAGE IIB,10,1,,,True
+C3,83,clinical_stage,STAGE IIC,2,0,,,True
+C3,83,clinical_stage,STAGE III,20,4,,,True
+C3,83,clinical_stage,STAGE IIIA,13,0,,,True
+C3,83,clinical_stage,STAGE IIIB,73,7,,,True
+C3,83,clinical_stage,STAGE IIIC,45,9,,,True
+C3,83,clinical_stage,STAGE IV,46,27,0.5853658536585366,0.5665825722952798,False
+C3,83,clinical_stage,STAGE IVA,24,5,,,True
+C3,83,clinical_stage,STAGE IVB,2,0,,,True
+C3,83,clinical_stage,[Discrepancy],2,0,,,True
+C3,83,clinical_stage,[Not Available],9,2,,,True
+C4,31,cancer,COAD,382,54,0.7838827838827839,0.7229255061882656,False
+C4,31,cancer,READ,130,11,0.88,0.9232404424865897,False
+C4,31,RNA_missing_pattern,3024_missing,203,29,0.8245382585751979,0.8728185620123275,False
+C4,31,RNA_missing_pattern,complete,309,36,0.7724982001439885,0.6884302871667144,False
+C4,31,clinical_stage,STAGE I,93,1,,,True
+C4,31,clinical_stage,STAGE IA,1,0,,,True
+C4,31,clinical_stage,STAGE II,23,4,,,True
+C4,31,clinical_stage,STAGE IIA,149,5,,,True
+C4,31,clinical_stage,STAGE IIB,10,1,,,True
+C4,31,clinical_stage,STAGE IIC,2,0,,,True
+C4,31,clinical_stage,STAGE III,20,4,,,True
+C4,31,clinical_stage,STAGE IIIA,13,0,,,True
+C4,31,clinical_stage,STAGE IIIB,73,7,,,True
+C4,31,clinical_stage,STAGE IIIC,45,9,,,True
+C4,31,clinical_stage,STAGE IV,46,27,0.7560975609756098,0.7511507269625339,False
+C4,31,clinical_stage,STAGE IVA,24,5,,,True
+C4,31,clinical_stage,STAGE IVB,2,0,,,True
+C4,31,clinical_stage,[Discrepancy],2,0,,,True
+C4,31,clinical_stage,[Not Available],9,2,,,True
+C4,47,cancer,COAD,382,54,0.8135531135531135,0.7343867656841641,False
+C4,47,cancer,READ,130,11,0.8533333333333334,0.8583680604617931,False
+C4,47,RNA_missing_pattern,3024_missing,203,29,0.8073878627968337,0.8660383138254306,False
+C4,47,RNA_missing_pattern,complete,309,36,0.8228941684665226,0.6996694726387209,False
+C4,47,clinical_stage,STAGE I,93,1,,,True
+C4,47,clinical_stage,STAGE IA,1,0,,,True
+C4,47,clinical_stage,STAGE II,23,4,,,True
+C4,47,clinical_stage,STAGE IIA,149,5,,,True
+C4,47,clinical_stage,STAGE IIB,10,1,,,True
+C4,47,clinical_stage,STAGE IIC,2,0,,,True
+C4,47,clinical_stage,STAGE III,20,4,,,True
+C4,47,clinical_stage,STAGE IIIA,13,0,,,True
+C4,47,clinical_stage,STAGE IIIB,73,7,,,True
+C4,47,clinical_stage,STAGE IIIC,45,9,,,True
+C4,47,clinical_stage,STAGE IV,46,27,0.6666666666666666,0.7357385924515825,False
+C4,47,clinical_stage,STAGE IVA,24,5,,,True
+C4,47,clinical_stage,STAGE IVB,2,0,,,True
+C4,47,clinical_stage,[Discrepancy],2,0,,,True
+C4,47,clinical_stage,[Not Available],9,2,,,True
+C4,83,cancer,COAD,382,54,0.7919413919413919,0.7254258617162188,False
+C4,83,cancer,READ,130,11,0.8533333333333334,0.9093561096337157,False
+C4,83,RNA_missing_pattern,3024_missing,203,29,0.8021108179419525,0.8405606982443902,False
+C4,83,RNA_missing_pattern,complete,309,36,0.8128149748020158,0.7028455225152042,False
+C4,83,clinical_stage,STAGE I,93,1,,,True
+C4,83,clinical_stage,STAGE IA,1,0,,,True
+C4,83,clinical_stage,STAGE II,23,4,,,True
+C4,83,clinical_stage,STAGE IIA,149,5,,,True
+C4,83,clinical_stage,STAGE IIB,10,1,,,True
+C4,83,clinical_stage,STAGE IIC,2,0,,,True
+C4,83,clinical_stage,STAGE III,20,4,,,True
+C4,83,clinical_stage,STAGE IIIA,13,0,,,True
+C4,83,clinical_stage,STAGE IIIB,73,7,,,True
+C4,83,clinical_stage,STAGE IIIC,45,9,,,True
+C4,83,clinical_stage,STAGE IV,46,27,0.5772357723577236,0.6197423340302366,False
+C4,83,clinical_stage,STAGE IVA,24,5,,,True
+C4,83,clinical_stage,STAGE IVB,2,0,,,True
+C4,83,clinical_stage,[Discrepancy],2,0,,,True
+C4,83,clinical_stage,[Not Available],9,2,,,True
+C5,31,cancer,COAD,382,54,0.7622710622710622,0.689255508686239,False
+C5,31,cancer,READ,130,11,0.8866666666666667,0.9115410495100117,False
+C5,31,RNA_missing_pattern,3024_missing,203,29,0.7862796833773087,0.8194558654532123,False
+C5,31,RNA_missing_pattern,complete,309,36,0.7832973362131029,0.6713199396205585,False
+C5,31,clinical_stage,STAGE I,93,1,,,True
+C5,31,clinical_stage,STAGE IA,1,0,,,True
+C5,31,clinical_stage,STAGE II,23,4,,,True
+C5,31,clinical_stage,STAGE IIA,149,5,,,True
+C5,31,clinical_stage,STAGE IIB,10,1,,,True
+C5,31,clinical_stage,STAGE IIC,2,0,,,True
+C5,31,clinical_stage,STAGE III,20,4,,,True
+C5,31,clinical_stage,STAGE IIIA,13,0,,,True
+C5,31,clinical_stage,STAGE IIIB,73,7,,,True
+C5,31,clinical_stage,STAGE IIIC,45,9,,,True
+C5,31,clinical_stage,STAGE IV,46,27,0.5934959349593496,0.6220175009698748,False
+C5,31,clinical_stage,STAGE IVA,24,5,,,True
+C5,31,clinical_stage,STAGE IVB,2,0,,,True
+C5,31,clinical_stage,[Discrepancy],2,0,,,True
+C5,31,clinical_stage,[Not Available],9,2,,,True
+C5,47,cancer,COAD,382,54,0.7813186813186813,0.6849888454270818,False
+C5,47,cancer,READ,130,11,0.8333333333333334,0.8398073136300954,False
+C5,47,RNA_missing_pattern,3024_missing,203,29,0.7849604221635884,0.8336182066046158,False
+C5,47,RNA_missing_pattern,complete,309,36,0.7919366450683946,0.6392467770114878,False
+C5,47,clinical_stage,STAGE I,93,1,,,True
+C5,47,clinical_stage,STAGE IA,1,0,,,True
+C5,47,clinical_stage,STAGE II,23,4,,,True
+C5,47,clinical_stage,STAGE IIA,149,5,,,True
+C5,47,clinical_stage,STAGE IIB,10,1,,,True
+C5,47,clinical_stage,STAGE IIC,2,0,,,True
+C5,47,clinical_stage,STAGE III,20,4,,,True
+C5,47,clinical_stage,STAGE IIIA,13,0,,,True
+C5,47,clinical_stage,STAGE IIIB,73,7,,,True
+C5,47,clinical_stage,STAGE IIIC,45,9,,,True
+C5,47,clinical_stage,STAGE IV,46,27,0.6747967479674797,0.6685413671541037,False
+C5,47,clinical_stage,STAGE IVA,24,5,,,True
+C5,47,clinical_stage,STAGE IVB,2,0,,,True
+C5,47,clinical_stage,[Discrepancy],2,0,,,True
+C5,47,clinical_stage,[Not Available],9,2,,,True
+C5,83,cancer,COAD,382,54,0.7695970695970696,0.6885566694713908,False
+C5,83,cancer,READ,130,11,0.8266666666666667,0.8778660153894683,False
+C5,83,RNA_missing_pattern,3024_missing,203,29,0.7612137203166227,0.8157523173443512,False
+C5,83,RNA_missing_pattern,complete,309,36,0.7955363570914327,0.6571556709688814,False
+C5,83,clinical_stage,STAGE I,93,1,,,True
+C5,83,clinical_stage,STAGE IA,1,0,,,True
+C5,83,clinical_stage,STAGE II,23,4,,,True
+C5,83,clinical_stage,STAGE IIA,149,5,,,True
+C5,83,clinical_stage,STAGE IIB,10,1,,,True
+C5,83,clinical_stage,STAGE IIC,2,0,,,True
+C5,83,clinical_stage,STAGE III,20,4,,,True
+C5,83,clinical_stage,STAGE IIIA,13,0,,,True
+C5,83,clinical_stage,STAGE IIIB,73,7,,,True
+C5,83,clinical_stage,STAGE IIIC,45,9,,,True
+C5,83,clinical_stage,STAGE IV,46,27,0.7317073170731707,0.710590084505207,False
+C5,83,clinical_stage,STAGE IVA,24,5,,,True
+C5,83,clinical_stage,STAGE IVB,2,0,,,True
+C5,83,clinical_stage,[Discrepancy],2,0,,,True
+C5,83,clinical_stage,[Not Available],9,2,,,True
+D0,31,cancer,COAD,382,54,0.8014652014652015,0.7088871361626031,False
+D0,31,cancer,READ,130,11,0.8333333333333334,0.9302398576339638,False
+D0,31,RNA_missing_pattern,3024_missing,203,29,0.7902374670184696,0.8433947006711675,False
+D0,31,RNA_missing_pattern,complete,309,36,0.830093592512599,0.6719851037807182,False
+D0,31,clinical_stage,STAGE I,93,1,,,True
+D0,31,clinical_stage,STAGE IA,1,0,,,True
+D0,31,clinical_stage,STAGE II,23,4,,,True
+D0,31,clinical_stage,STAGE IIA,149,5,,,True
+D0,31,clinical_stage,STAGE IIB,10,1,,,True
+D0,31,clinical_stage,STAGE IIC,2,0,,,True
+D0,31,clinical_stage,STAGE III,20,4,,,True
+D0,31,clinical_stage,STAGE IIIA,13,0,,,True
+D0,31,clinical_stage,STAGE IIIB,73,7,,,True
+D0,31,clinical_stage,STAGE IIIC,45,9,,,True
+D0,31,clinical_stage,STAGE IV,46,27,0.6178861788617886,0.6319011555433888,False
+D0,31,clinical_stage,STAGE IVA,24,5,,,True
+D0,31,clinical_stage,STAGE IVB,2,0,,,True
+D0,31,clinical_stage,[Discrepancy],2,0,,,True
+D0,31,clinical_stage,[Not Available],9,2,,,True
+D0,47,cancer,COAD,382,54,0.7860805860805861,0.6997435903971652,False
+D0,47,cancer,READ,130,11,0.84,0.8880507053626348,False
+D0,47,RNA_missing_pattern,3024_missing,203,29,0.8007915567282322,0.8491309155912703,False
+D0,47,RNA_missing_pattern,complete,309,36,0.7955363570914327,0.6612945193960191,False
+D0,47,clinical_stage,STAGE I,93,1,,,True
+D0,47,clinical_stage,STAGE IA,1,0,,,True
+D0,47,clinical_stage,STAGE II,23,4,,,True
+D0,47,clinical_stage,STAGE IIA,149,5,,,True
+D0,47,clinical_stage,STAGE IIB,10,1,,,True
+D0,47,clinical_stage,STAGE IIC,2,0,,,True
+D0,47,clinical_stage,STAGE III,20,4,,,True
+D0,47,clinical_stage,STAGE IIIA,13,0,,,True
+D0,47,clinical_stage,STAGE IIIB,73,7,,,True
+D0,47,clinical_stage,STAGE IIIC,45,9,,,True
+D0,47,clinical_stage,STAGE IV,46,27,0.6829268292682927,0.7163738594502006,False
+D0,47,clinical_stage,STAGE IVA,24,5,,,True
+D0,47,clinical_stage,STAGE IVB,2,0,,,True
+D0,47,clinical_stage,[Discrepancy],2,0,,,True
+D0,47,clinical_stage,[Not Available],9,2,,,True
+D0,83,cancer,COAD,382,54,0.8073260073260073,0.7329496423928525,False
+D0,83,cancer,READ,130,11,0.82,0.8391815041228874,False
+D0,83,RNA_missing_pattern,3024_missing,203,29,0.8113456464379947,0.8608599466137786,False
+D0,83,RNA_missing_pattern,complete,309,36,0.8401727861771058,0.7268725941690555,False
+D0,83,clinical_stage,STAGE I,93,1,,,True
+D0,83,clinical_stage,STAGE IA,1,0,,,True
+D0,83,clinical_stage,STAGE II,23,4,,,True
+D0,83,clinical_stage,STAGE IIA,149,5,,,True
+D0,83,clinical_stage,STAGE IIB,10,1,,,True
+D0,83,clinical_stage,STAGE IIC,2,0,,,True
+D0,83,clinical_stage,STAGE III,20,4,,,True
+D0,83,clinical_stage,STAGE IIIA,13,0,,,True
+D0,83,clinical_stage,STAGE IIIB,73,7,,,True
+D0,83,clinical_stage,STAGE IIIC,45,9,,,True
+D0,83,clinical_stage,STAGE IV,46,27,0.7154471544715447,0.5775990805275354,False
+D0,83,clinical_stage,STAGE IVA,24,5,,,True
+D0,83,clinical_stage,STAGE IVB,2,0,,,True
+D0,83,clinical_stage,[Discrepancy],2,0,,,True
+D0,83,clinical_stage,[Not Available],9,2,,,True
+D1,31,cancer,COAD,382,54,0.7926739926739926,0.6980939098726898,False
+D1,31,cancer,READ,130,11,0.8266666666666667,0.8868517410977643,False
+D1,31,RNA_missing_pattern,3024_missing,203,29,0.7941952506596306,0.8464015413029511,False
+D1,31,RNA_missing_pattern,complete,309,36,0.8012958963282938,0.6421415341336267,False
+D1,31,clinical_stage,STAGE I,93,1,,,True
+D1,31,clinical_stage,STAGE IA,1,0,,,True
+D1,31,clinical_stage,STAGE II,23,4,,,True
+D1,31,clinical_stage,STAGE IIA,149,5,,,True
+D1,31,clinical_stage,STAGE IIB,10,1,,,True
+D1,31,clinical_stage,STAGE IIC,2,0,,,True
+D1,31,clinical_stage,STAGE III,20,4,,,True
+D1,31,clinical_stage,STAGE IIIA,13,0,,,True
+D1,31,clinical_stage,STAGE IIIB,73,7,,,True
+D1,31,clinical_stage,STAGE IIIC,45,9,,,True
+D1,31,clinical_stage,STAGE IV,46,27,0.6422764227642277,0.6400293472575064,False
+D1,31,clinical_stage,STAGE IVA,24,5,,,True
+D1,31,clinical_stage,STAGE IVB,2,0,,,True
+D1,31,clinical_stage,[Discrepancy],2,0,,,True
+D1,31,clinical_stage,[Not Available],9,2,,,True
+D1,47,cancer,COAD,382,54,0.8168498168498168,0.7267145951278249,False
+D1,47,cancer,READ,130,11,0.8666666666666667,0.9391292163382182,False
+D1,47,RNA_missing_pattern,3024_missing,203,29,0.8139841688654353,0.8589753983143488,False
+D1,47,RNA_missing_pattern,complete,309,36,0.830093592512599,0.6857934671324872,False
+D1,47,clinical_stage,STAGE I,93,1,,,True
+D1,47,clinical_stage,STAGE IA,1,0,,,True
+D1,47,clinical_stage,STAGE II,23,4,,,True
+D1,47,clinical_stage,STAGE IIA,149,5,,,True
+D1,47,clinical_stage,STAGE IIB,10,1,,,True
+D1,47,clinical_stage,STAGE IIC,2,0,,,True
+D1,47,clinical_stage,STAGE III,20,4,,,True
+D1,47,clinical_stage,STAGE IIIA,13,0,,,True
+D1,47,clinical_stage,STAGE IIIB,73,7,,,True
+D1,47,clinical_stage,STAGE IIIC,45,9,,,True
+D1,47,clinical_stage,STAGE IV,46,27,0.6666666666666666,0.7071026188672201,False
+D1,47,clinical_stage,STAGE IVA,24,5,,,True
+D1,47,clinical_stage,STAGE IVB,2,0,,,True
+D1,47,clinical_stage,[Discrepancy],2,0,,,True
+D1,47,clinical_stage,[Not Available],9,2,,,True
+D1,83,cancer,COAD,382,54,0.8106227106227106,0.7549602235008818,False
+D1,83,cancer,READ,130,11,0.8533333333333334,0.8938534259302426,False
+D1,83,RNA_missing_pattern,3024_missing,203,29,0.8153034300791556,0.8606749994975729,False
+D1,83,RNA_missing_pattern,complete,309,36,0.8329733621310296,0.7371550579027246,False
+D1,83,clinical_stage,STAGE I,93,1,,,True
+D1,83,clinical_stage,STAGE IA,1,0,,,True
+D1,83,clinical_stage,STAGE II,23,4,,,True
+D1,83,clinical_stage,STAGE IIA,149,5,,,True
+D1,83,clinical_stage,STAGE IIB,10,1,,,True
+D1,83,clinical_stage,STAGE IIC,2,0,,,True
+D1,83,clinical_stage,STAGE III,20,4,,,True
+D1,83,clinical_stage,STAGE IIIA,13,0,,,True
+D1,83,clinical_stage,STAGE IIIB,73,7,,,True
+D1,83,clinical_stage,STAGE IIIC,45,9,,,True
+D1,83,clinical_stage,STAGE IV,46,27,0.6747967479674797,0.6583538496651915,False
+D1,83,clinical_stage,STAGE IVA,24,5,,,True
+D1,83,clinical_stage,STAGE IVB,2,0,,,True
+D1,83,clinical_stage,[Discrepancy],2,0,,,True
+D1,83,clinical_stage,[Not Available],9,2,,,True
+D2,31,cancer,COAD,382,54,0.7992673992673993,0.7092595811605656,False
+D2,31,cancer,READ,130,11,0.8266666666666667,0.8829750952238978,False
+D2,31,RNA_missing_pattern,3024_missing,203,29,0.8007915567282322,0.8479255692792942,False
+D2,31,RNA_missing_pattern,complete,309,36,0.816414686825054,0.6764097504547558,False
+D2,31,clinical_stage,STAGE I,93,1,,,True
+D2,31,clinical_stage,STAGE IA,1,0,,,True
+D2,31,clinical_stage,STAGE II,23,4,,,True
+D2,31,clinical_stage,STAGE IIA,149,5,,,True
+D2,31,clinical_stage,STAGE IIB,10,1,,,True
+D2,31,clinical_stage,STAGE IIC,2,0,,,True
+D2,31,clinical_stage,STAGE III,20,4,,,True
+D2,31,clinical_stage,STAGE IIIA,13,0,,,True
+D2,31,clinical_stage,STAGE IIIB,73,7,,,True
+D2,31,clinical_stage,STAGE IIIC,45,9,,,True
+D2,31,clinical_stage,STAGE IV,46,27,0.6504065040650406,0.6404954684929786,False
+D2,31,clinical_stage,STAGE IVA,24,5,,,True
+D2,31,clinical_stage,STAGE IVB,2,0,,,True
+D2,31,clinical_stage,[Discrepancy],2,0,,,True
+D2,31,clinical_stage,[Not Available],9,2,,,True
+D2,47,cancer,COAD,382,54,0.8095238095238095,0.708704332432777,False
+D2,47,cancer,READ,130,11,0.86,0.8532861719181581,False
+D2,47,RNA_missing_pattern,3024_missing,203,29,0.8100263852242744,0.8563908309164492,False
+D2,47,RNA_missing_pattern,complete,309,36,0.8214542836573074,0.6474967813371204,False
+D2,47,clinical_stage,STAGE I,93,1,,,True
+D2,47,clinical_stage,STAGE IA,1,0,,,True
+D2,47,clinical_stage,STAGE II,23,4,,,True
+D2,47,clinical_stage,STAGE IIA,149,5,,,True
+D2,47,clinical_stage,STAGE IIB,10,1,,,True
+D2,47,clinical_stage,STAGE IIC,2,0,,,True
+D2,47,clinical_stage,STAGE III,20,4,,,True
+D2,47,clinical_stage,STAGE IIIA,13,0,,,True
+D2,47,clinical_stage,STAGE IIIB,73,7,,,True
+D2,47,clinical_stage,STAGE IIIC,45,9,,,True
+D2,47,clinical_stage,STAGE IV,46,27,0.6585365853658537,0.7003102744563401,False
+D2,47,clinical_stage,STAGE IVA,24,5,,,True
+D2,47,clinical_stage,STAGE IVB,2,0,,,True
+D2,47,clinical_stage,[Discrepancy],2,0,,,True
+D2,47,clinical_stage,[Not Available],9,2,,,True
+D2,83,cancer,COAD,382,54,0.8084249084249084,0.7237233926205487,False
+D2,83,cancer,READ,130,11,0.8066666666666666,0.8389060349063533,False
+D2,83,RNA_missing_pattern,3024_missing,203,29,0.8087071240105541,0.8617677821033677,False
+D2,83,RNA_missing_pattern,complete,309,36,0.8336933045356372,0.689200408933684,False
+D2,83,clinical_stage,STAGE I,93,1,,,True
+D2,83,clinical_stage,STAGE IA,1,0,,,True
+D2,83,clinical_stage,STAGE II,23,4,,,True
+D2,83,clinical_stage,STAGE IIA,149,5,,,True
+D2,83,clinical_stage,STAGE IIB,10,1,,,True
+D2,83,clinical_stage,STAGE IIC,2,0,,,True
+D2,83,clinical_stage,STAGE III,20,4,,,True
+D2,83,clinical_stage,STAGE IIIA,13,0,,,True
+D2,83,clinical_stage,STAGE IIIB,73,7,,,True
+D2,83,clinical_stage,STAGE IIIC,45,9,,,True
+D2,83,clinical_stage,STAGE IV,46,27,0.7154471544715447,0.6762904311632341,False
+D2,83,clinical_stage,STAGE IVA,24,5,,,True
+D2,83,clinical_stage,STAGE IVB,2,0,,,True
+D2,83,clinical_stage,[Discrepancy],2,0,,,True
+D2,83,clinical_stage,[Not Available],9,2,,,True
+D3,31,cancer,COAD,382,54,0.7970695970695971,0.6978390796729671,False
+D3,31,cancer,READ,130,11,0.8333333333333334,0.8878423441860291,False
+D3,31,RNA_missing_pattern,3024_missing,203,29,0.8021108179419525,0.8412302268091699,False
+D3,31,RNA_missing_pattern,complete,309,36,0.8106551475881929,0.6554477130099905,False
+D3,31,clinical_stage,STAGE I,93,1,,,True
+D3,31,clinical_stage,STAGE IA,1,0,,,True
+D3,31,clinical_stage,STAGE II,23,4,,,True
+D3,31,clinical_stage,STAGE IIA,149,5,,,True
+D3,31,clinical_stage,STAGE IIB,10,1,,,True
+D3,31,clinical_stage,STAGE IIC,2,0,,,True
+D3,31,clinical_stage,STAGE III,20,4,,,True
+D3,31,clinical_stage,STAGE IIIA,13,0,,,True
+D3,31,clinical_stage,STAGE IIIB,73,7,,,True
+D3,31,clinical_stage,STAGE IIIC,45,9,,,True
+D3,31,clinical_stage,STAGE IV,46,27,0.6422764227642277,0.6404308982657193,False
+D3,31,clinical_stage,STAGE IVA,24,5,,,True
+D3,31,clinical_stage,STAGE IVB,2,0,,,True
+D3,31,clinical_stage,[Discrepancy],2,0,,,True
+D3,31,clinical_stage,[Not Available],9,2,,,True
+D3,47,cancer,COAD,382,54,0.8047619047619048,0.7277116103140281,False
+D3,47,cancer,READ,130,11,0.86,0.8723725756407498,False
+D3,47,RNA_missing_pattern,3024_missing,203,29,0.8139841688654353,0.840375579912082,False
+D3,47,RNA_missing_pattern,complete,309,36,0.8214542836573074,0.6993753557294329,False
+D3,47,clinical_stage,STAGE I,93,1,,,True
+D3,47,clinical_stage,STAGE IA,1,0,,,True
+D3,47,clinical_stage,STAGE II,23,4,,,True
+D3,47,clinical_stage,STAGE IIA,149,5,,,True
+D3,47,clinical_stage,STAGE IIB,10,1,,,True
+D3,47,clinical_stage,STAGE IIC,2,0,,,True
+D3,47,clinical_stage,STAGE III,20,4,,,True
+D3,47,clinical_stage,STAGE IIIA,13,0,,,True
+D3,47,clinical_stage,STAGE IIIB,73,7,,,True
+D3,47,clinical_stage,STAGE IIIC,45,9,,,True
+D3,47,clinical_stage,STAGE IV,46,27,0.6910569105691057,0.6728506186219115,False
+D3,47,clinical_stage,STAGE IVA,24,5,,,True
+D3,47,clinical_stage,STAGE IVB,2,0,,,True
+D3,47,clinical_stage,[Discrepancy],2,0,,,True
+D3,47,clinical_stage,[Not Available],9,2,,,True
+D3,83,cancer,COAD,382,54,0.8010989010989011,0.7158998688734207,False
+D3,83,cancer,READ,130,11,0.8066666666666666,0.8808693665715138,False
+D3,83,RNA_missing_pattern,3024_missing,203,29,0.8153034300791556,0.8575966967896776,False
+D3,83,RNA_missing_pattern,complete,309,36,0.8077753779697624,0.6743339881936501,False
+D3,83,clinical_stage,STAGE I,93,1,,,True
+D3,83,clinical_stage,STAGE IA,1,0,,,True
+D3,83,clinical_stage,STAGE II,23,4,,,True
+D3,83,clinical_stage,STAGE IIA,149,5,,,True
+D3,83,clinical_stage,STAGE IIB,10,1,,,True
+D3,83,clinical_stage,STAGE IIC,2,0,,,True
+D3,83,clinical_stage,STAGE III,20,4,,,True
+D3,83,clinical_stage,STAGE IIIA,13,0,,,True
+D3,83,clinical_stage,STAGE IIIB,73,7,,,True
+D3,83,clinical_stage,STAGE IIIC,45,9,,,True
+D3,83,clinical_stage,STAGE IV,46,27,0.7154471544715447,0.7222055339718083,False
+D3,83,clinical_stage,STAGE IVA,24,5,,,True
+D3,83,clinical_stage,STAGE IVB,2,0,,,True
+D3,83,clinical_stage,[Discrepancy],2,0,,,True
+D3,83,clinical_stage,[Not Available],9,2,,,True
+E0,31,cancer,COAD,382,54,0.7648351648351648,0.6835883986575814,False
+E0,31,cancer,READ,130,11,0.8266666666666667,0.8987627003634049,False
+E0,31,RNA_missing_pattern,3024_missing,203,29,0.7902374670184696,0.8546603810402875,False
+E0,31,RNA_missing_pattern,complete,309,36,0.7573794096472283,0.6322869318290996,False
+E0,31,clinical_stage,STAGE I,93,1,,,True
+E0,31,clinical_stage,STAGE IA,1,0,,,True
+E0,31,clinical_stage,STAGE II,23,4,,,True
+E0,31,clinical_stage,STAGE IIA,149,5,,,True
+E0,31,clinical_stage,STAGE IIB,10,1,,,True
+E0,31,clinical_stage,STAGE IIC,2,0,,,True
+E0,31,clinical_stage,STAGE III,20,4,,,True
+E0,31,clinical_stage,STAGE IIIA,13,0,,,True
+E0,31,clinical_stage,STAGE IIIB,73,7,,,True
+E0,31,clinical_stage,STAGE IIIC,45,9,,,True
+E0,31,clinical_stage,STAGE IV,46,27,0.6341463414634146,0.6568418147437733,False
+E0,31,clinical_stage,STAGE IVA,24,5,,,True
+E0,31,clinical_stage,STAGE IVB,2,0,,,True
+E0,31,clinical_stage,[Discrepancy],2,0,,,True
+E0,31,clinical_stage,[Not Available],9,2,,,True
+E0,47,cancer,COAD,382,54,0.802930402930403,0.7187663964496818,False
+E0,47,cancer,READ,130,11,0.8133333333333334,0.8500731530823,False
+E0,47,RNA_missing_pattern,3024_missing,203,29,0.8047493403693932,0.8578485205784409,False
+E0,47,RNA_missing_pattern,complete,309,36,0.8070554355651548,0.6786524485039928,False
+E0,47,clinical_stage,STAGE I,93,1,,,True
+E0,47,clinical_stage,STAGE IA,1,0,,,True
+E0,47,clinical_stage,STAGE II,23,4,,,True
+E0,47,clinical_stage,STAGE IIA,149,5,,,True
+E0,47,clinical_stage,STAGE IIB,10,1,,,True
+E0,47,clinical_stage,STAGE IIC,2,0,,,True
+E0,47,clinical_stage,STAGE III,20,4,,,True
+E0,47,clinical_stage,STAGE IIIA,13,0,,,True
+E0,47,clinical_stage,STAGE IIIB,73,7,,,True
+E0,47,clinical_stage,STAGE IIIC,45,9,,,True
+E0,47,clinical_stage,STAGE IV,46,27,0.6097560975609756,0.6512835275487528,False
+E0,47,clinical_stage,STAGE IVA,24,5,,,True
+E0,47,clinical_stage,STAGE IVB,2,0,,,True
+E0,47,clinical_stage,[Discrepancy],2,0,,,True
+E0,47,clinical_stage,[Not Available],9,2,,,True
+E0,83,cancer,COAD,382,54,0.8014652014652015,0.7123761918667061,False
+E0,83,cancer,READ,130,11,0.8333333333333334,0.8882765259688032,False
+E0,83,RNA_missing_pattern,3024_missing,203,29,0.7770448548812665,0.8500746084684139,False
+E0,83,RNA_missing_pattern,complete,309,36,0.838012958963283,0.67684116123818,False
+E0,83,clinical_stage,STAGE I,93,1,,,True
+E0,83,clinical_stage,STAGE IA,1,0,,,True
+E0,83,clinical_stage,STAGE II,23,4,,,True
+E0,83,clinical_stage,STAGE IIA,149,5,,,True
+E0,83,clinical_stage,STAGE IIB,10,1,,,True
+E0,83,clinical_stage,STAGE IIC,2,0,,,True
+E0,83,clinical_stage,STAGE III,20,4,,,True
+E0,83,clinical_stage,STAGE IIIA,13,0,,,True
+E0,83,clinical_stage,STAGE IIIB,73,7,,,True
+E0,83,clinical_stage,STAGE IIIC,45,9,,,True
+E0,83,clinical_stage,STAGE IV,46,27,0.6910569105691057,0.6967828320075081,False
+E0,83,clinical_stage,STAGE IVA,24,5,,,True
+E0,83,clinical_stage,STAGE IVB,2,0,,,True
+E0,83,clinical_stage,[Discrepancy],2,0,,,True
+E0,83,clinical_stage,[Not Available],9,2,,,True
+E1,31,cancer,COAD,382,54,0.7805860805860806,0.6988916866455966,False
+E1,31,cancer,READ,130,11,0.8,0.8913842481840787,False
+E1,31,RNA_missing_pattern,3024_missing,203,29,0.7862796833773087,0.8465124472632173,False
+E1,31,RNA_missing_pattern,complete,309,36,0.7904967602591793,0.6498460331670347,False
+E1,31,clinical_stage,STAGE I,93,1,,,True
+E1,31,clinical_stage,STAGE IA,1,0,,,True
+E1,31,clinical_stage,STAGE II,23,4,,,True
+E1,31,clinical_stage,STAGE IIA,149,5,,,True
+E1,31,clinical_stage,STAGE IIB,10,1,,,True
+E1,31,clinical_stage,STAGE IIC,2,0,,,True
+E1,31,clinical_stage,STAGE III,20,4,,,True
+E1,31,clinical_stage,STAGE IIIA,13,0,,,True
+E1,31,clinical_stage,STAGE IIIB,73,7,,,True
+E1,31,clinical_stage,STAGE IIIC,45,9,,,True
+E1,31,clinical_stage,STAGE IV,46,27,0.6260162601626016,0.6559213065554179,False
+E1,31,clinical_stage,STAGE IVA,24,5,,,True
+E1,31,clinical_stage,STAGE IVB,2,0,,,True
+E1,31,clinical_stage,[Discrepancy],2,0,,,True
+E1,31,clinical_stage,[Not Available],9,2,,,True
+E1,47,cancer,COAD,382,54,0.7893772893772893,0.718850821885079,False
+E1,47,cancer,READ,130,11,0.8066666666666666,0.8567186004985855,False
+E1,47,RNA_missing_pattern,3024_missing,203,29,0.783641160949868,0.8423197886164239,False
+E1,47,RNA_missing_pattern,complete,309,36,0.7868970482361412,0.6571797647000384,False
+E1,47,clinical_stage,STAGE I,93,1,,,True
+E1,47,clinical_stage,STAGE IA,1,0,,,True
+E1,47,clinical_stage,STAGE II,23,4,,,True
+E1,47,clinical_stage,STAGE IIA,149,5,,,True
+E1,47,clinical_stage,STAGE IIB,10,1,,,True
+E1,47,clinical_stage,STAGE IIC,2,0,,,True
+E1,47,clinical_stage,STAGE III,20,4,,,True
+E1,47,clinical_stage,STAGE IIIA,13,0,,,True
+E1,47,clinical_stage,STAGE IIIB,73,7,,,True
+E1,47,clinical_stage,STAGE IIIC,45,9,,,True
+E1,47,clinical_stage,STAGE IV,46,27,0.6666666666666666,0.7234491910632272,False
+E1,47,clinical_stage,STAGE IVA,24,5,,,True
+E1,47,clinical_stage,STAGE IVB,2,0,,,True
+E1,47,clinical_stage,[Discrepancy],2,0,,,True
+E1,47,clinical_stage,[Not Available],9,2,,,True
+E1,83,cancer,COAD,382,54,0.7827838827838828,0.7001575539520524,False
+E1,83,cancer,READ,130,11,0.82,0.8829079871839698,False
+E1,83,RNA_missing_pattern,3024_missing,203,29,0.7915567282321899,0.8591682010328078,False
+E1,83,RNA_missing_pattern,complete,309,36,0.7962562994960403,0.6434780758329763,False
+E1,83,clinical_stage,STAGE I,93,1,,,True
+E1,83,clinical_stage,STAGE IA,1,0,,,True
+E1,83,clinical_stage,STAGE II,23,4,,,True
+E1,83,clinical_stage,STAGE IIA,149,5,,,True
+E1,83,clinical_stage,STAGE IIB,10,1,,,True
+E1,83,clinical_stage,STAGE IIC,2,0,,,True
+E1,83,clinical_stage,STAGE III,20,4,,,True
+E1,83,clinical_stage,STAGE IIIA,13,0,,,True
+E1,83,clinical_stage,STAGE IIIB,73,7,,,True
+E1,83,clinical_stage,STAGE IIIC,45,9,,,True
+E1,83,clinical_stage,STAGE IV,46,27,0.7073170731707317,0.7002928760066961,False
+E1,83,clinical_stage,STAGE IVA,24,5,,,True
+E1,83,clinical_stage,STAGE IVB,2,0,,,True
+E1,83,clinical_stage,[Discrepancy],2,0,,,True
+E1,83,clinical_stage,[Not Available],9,2,,,True
+A0_min,31,cancer,COAD,382,54,0.7531135531135531,0.7141083353796199,False
+A0_min,31,cancer,READ,130,11,0.8,0.8095334739876893,False
+A0_min,31,RNA_missing_pattern,3024_missing,203,29,0.7658311345646438,0.8301315372714051,False
+A0_min,31,RNA_missing_pattern,complete,309,36,0.7703383729301656,0.693941972476182,False
+A0_min,31,clinical_stage,STAGE I,93,1,,,True
+A0_min,31,clinical_stage,STAGE IA,1,0,,,True
+A0_min,31,clinical_stage,STAGE II,23,4,,,True
+A0_min,31,clinical_stage,STAGE IIA,149,5,,,True
+A0_min,31,clinical_stage,STAGE IIB,10,1,,,True
+A0_min,31,clinical_stage,STAGE IIC,2,0,,,True
+A0_min,31,clinical_stage,STAGE III,20,4,,,True
+A0_min,31,clinical_stage,STAGE IIIA,13,0,,,True
+A0_min,31,clinical_stage,STAGE IIIB,73,7,,,True
+A0_min,31,clinical_stage,STAGE IIIC,45,9,,,True
+A0_min,31,clinical_stage,STAGE IV,46,27,0.5813008130081301,0.6304459887579006,False
+A0_min,31,clinical_stage,STAGE IVA,24,5,,,True
+A0_min,31,clinical_stage,STAGE IVB,2,0,,,True
+A0_min,31,clinical_stage,[Discrepancy],2,0,,,True
+A0_min,31,clinical_stage,[Not Available],9,2,,,True
+A0_min,47,cancer,COAD,382,54,0.7531135531135531,0.7141083353796199,False
+A0_min,47,cancer,READ,130,11,0.8,0.8095334739876893,False
+A0_min,47,RNA_missing_pattern,3024_missing,203,29,0.7658311345646438,0.8301315372714051,False
+A0_min,47,RNA_missing_pattern,complete,309,36,0.7703383729301656,0.693941972476182,False
+A0_min,47,clinical_stage,STAGE I,93,1,,,True
+A0_min,47,clinical_stage,STAGE IA,1,0,,,True
+A0_min,47,clinical_stage,STAGE II,23,4,,,True
+A0_min,47,clinical_stage,STAGE IIA,149,5,,,True
+A0_min,47,clinical_stage,STAGE IIB,10,1,,,True
+A0_min,47,clinical_stage,STAGE IIC,2,0,,,True
+A0_min,47,clinical_stage,STAGE III,20,4,,,True
+A0_min,47,clinical_stage,STAGE IIIA,13,0,,,True
+A0_min,47,clinical_stage,STAGE IIIB,73,7,,,True
+A0_min,47,clinical_stage,STAGE IIIC,45,9,,,True
+A0_min,47,clinical_stage,STAGE IV,46,27,0.5813008130081301,0.6304459887579006,False
+A0_min,47,clinical_stage,STAGE IVA,24,5,,,True
+A0_min,47,clinical_stage,STAGE IVB,2,0,,,True
+A0_min,47,clinical_stage,[Discrepancy],2,0,,,True
+A0_min,47,clinical_stage,[Not Available],9,2,,,True
+A0_min,83,cancer,COAD,382,54,0.7531135531135531,0.7141083353796199,False
+A0_min,83,cancer,READ,130,11,0.8,0.8095334739876893,False
+A0_min,83,RNA_missing_pattern,3024_missing,203,29,0.7658311345646438,0.8301315372714051,False
+A0_min,83,RNA_missing_pattern,complete,309,36,0.7703383729301656,0.693941972476182,False
+A0_min,83,clinical_stage,STAGE I,93,1,,,True
+A0_min,83,clinical_stage,STAGE IA,1,0,,,True
+A0_min,83,clinical_stage,STAGE II,23,4,,,True
+A0_min,83,clinical_stage,STAGE IIA,149,5,,,True
+A0_min,83,clinical_stage,STAGE IIB,10,1,,,True
+A0_min,83,clinical_stage,STAGE IIC,2,0,,,True
+A0_min,83,clinical_stage,STAGE III,20,4,,,True
+A0_min,83,clinical_stage,STAGE IIIA,13,0,,,True
+A0_min,83,clinical_stage,STAGE IIIB,73,7,,,True
+A0_min,83,clinical_stage,STAGE IIIC,45,9,,,True
+A0_min,83,clinical_stage,STAGE IV,46,27,0.5813008130081301,0.6304459887579006,False
+A0_min,83,clinical_stage,STAGE IVA,24,5,,,True
+A0_min,83,clinical_stage,STAGE IVB,2,0,,,True
+A0_min,83,clinical_stage,[Discrepancy],2,0,,,True
+A0_min,83,clinical_stage,[Not Available],9,2,,,True

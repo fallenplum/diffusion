@@ -1,0 +1,752 @@
+{
+  "status": "PASS",
+  "contains_patient_level_data": false,
+  "files": [
+    {
+      "path": "src/phase10_trimodal/data.py",
+      "sha256": "9e23aefb8b1a82b56525ce5cd7e37d8c5d8324054c8059c243633936021039ea",
+      "size_bytes": 4493,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "src/phase10_trimodal/features.py",
+      "sha256": "535f4f589168c120bee00a2306190d5bdc315c7412830ff043cda3a27619c919",
+      "size_bytes": 6344,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "src/phase10_trimodal/math.py",
+      "sha256": "e744e652590e9103ba0b376a7b4c232652789d72b5bb1976e511144bc07c417b",
+      "size_bytes": 2748,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "src/phase10_trimodal/models.py",
+      "sha256": "5966321928c9bbab95752dbd1c1581acacb64193e0301be6bc103ed6c98d9296",
+      "size_bytes": 9856,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "src/phase10_trimodal/reference.py",
+      "sha256": "a5b05d2c11a8aeb3b1ecffcf799746f90610382179b40f27564cbc7df7e25e07",
+      "size_bytes": 3299,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "src/phase10_trimodal/train.py",
+      "sha256": "1b2e7ff7eae02fcfa06058fc8084a991c339835a546f280f3abcacb8544bfce9",
+      "size_bytes": 9130,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "src/phase10_trimodal/__init__.py",
+      "sha256": "253fb1a2ceab8aac5c2a2590668c8bb9796f12d15ae97bfd949b5251542ab051",
+      "size_bytes": 72,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/run_phase10_trimodal.py",
+      "sha256": "f343d96550f8976cd12b5f2db88426874d639e222070c33f9b9de6709256f95b",
+      "size_bytes": 9389,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/schedule_phase10_trimodal.py",
+      "sha256": "eb36c1b73780016f04a4332b9e341da85156b163677a58515c444d3ec059a73c",
+      "size_bytes": 2397,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/validate_phase10_independent.py",
+      "sha256": "8e7102a70e73cc432fcc93a2d9b26a82ffa6853b5c818d9063eed8de9271296a",
+      "size_bytes": 10329,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/repair_phase10_reuse_metadata.py",
+      "sha256": "d785fb48d67091360c44ee9c4a3d535a3911d38c541f657e998cfd8194fbf8d8",
+      "size_bytes": 1964,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/audit_phase10_representations.py",
+      "sha256": "ddd22d5d6e8238db653e5661e27af74a668397948ba2cbb365fc726e2340a278",
+      "size_bytes": 3977,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/audit_phase10_final.py",
+      "sha256": "e5eecf9ff0e0696a408329a7b7fcb731c949685edeefeb4110bb8dcb35ca7b1f",
+      "size_bytes": 5785,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/audit_phase10_raw_sources.py",
+      "sha256": "10f0280c7f5e7cabed51443a479e738744f94b7fed148740a32a355b9869c538",
+      "size_bytes": 3692,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/audit_phase10_omics_source.py",
+      "sha256": "402a6619ccb2650c67e46ea72bf0ecef1b9bedc3fd201e19fc04e805a143fdce",
+      "size_bytes": 5071,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/collect_phase10_audit_tables.py",
+      "sha256": "5fff5178567b345745892790bf0ccd951fc17262bd5140a7a6ee7e7d32aea03a",
+      "size_bytes": 8588,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/supplement_phase10_fixed_representations.py",
+      "sha256": "32de41ad5ab259344ca9b09f4b0557797a556aacf144fafc7f20be05a73d4206",
+      "size_bytes": 3251,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/add_phase10_descriptive_pairs.py",
+      "sha256": "63c2847ac8a1acf71f4e8348a1bc2d53b410277a514c778de975bd69be3e268b",
+      "size_bytes": 2972,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/test_phase10_real_test_perturbation.py",
+      "sha256": "5105fd31c9dbe2b71807907012fb6eb043966850e0d95734b314209709e1a0fe",
+      "size_bytes": 2915,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/run_phase10_complete.py",
+      "sha256": "2592ab4ccf4ed4119d5e5f16b9492a18af535ec4cd16a9998f8d2ba340c42f1f",
+      "size_bytes": 1742,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "scripts/package_phase10_public.py",
+      "sha256": "6e1deae8e7b202c3c4977832def288c29e88ed8dd98e02adebd9d2df773e420c",
+      "size_bytes": 3772,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "tests/test_phase10_trimodal_audit.py",
+      "sha256": "c157934c3a0324599d88a305021019d221e0203c254c0e6a48ce0319b1dc2bf1",
+      "size_bytes": 11230,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "configs/phase10_trimodal_mechanism_audit.json",
+      "sha256": "b022915f0f912f5b9b70f61e90d66df515cefb3cd8f80396d4d6a1314756e7f5",
+      "size_bytes": 4489,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "configs/phase10_molecular_groups.json",
+      "sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+      "size_bytes": 14851,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/additional_paired_comparisons.csv",
+      "sha256": "62bb3833e48c6274f40f79a5c1a5830d013ef8a74662a7ae73d9b812c854dd68",
+      "size_bytes": 2814,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/anchor_elementwise_audit.csv",
+      "sha256": "08ef6113527db4de5120b6e01b899786789cf893ba38dc38f45ac7e033834bbb",
+      "size_bytes": 1685,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/AUDIT_TEST_REPORT.md",
+      "sha256": "58a9463e7dea678cd08d515b0a5c50ec87dd20ef5047ede88261682b5e854278",
+      "size_bytes": 2325,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/baseline_fold_metrics.csv",
+      "sha256": "2524cadb5d5f1583eba5627f4933dd77abbef14809fafc732c96210f1dd22429",
+      "size_bytes": 17656,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/baseline_independent_validation.json",
+      "sha256": "3fd336d9595b319317de7ccdb6a2e56e4aa8024e212fbf8490ffe5879529972c",
+      "size_bytes": 351,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/BASELINE_REGISTRY.csv",
+      "sha256": "202a6292a492f850847989ce4c44927998b1de9de4163618d207808e27540dfa",
+      "size_bytes": 3995,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/bootstrap_intervals.csv",
+      "sha256": "029e135f71d562099d12b662184916557f994fe6d17ccc7103d6bf5b5238c17e",
+      "size_bytes": 8947,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/bootstrap_provenance.json",
+      "sha256": "3f7eccb161b054b5ef64a382d155be6aa67a5303e9592b3962724a46f5313f6a",
+      "size_bytes": 497,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/checkpoint_replay_audit.csv",
+      "sha256": "efe4df023a2fbeef621c5cbb1550c4ca4905f496266e15ac974bdf64c7f708c0",
+      "size_bytes": 5155,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/cp_selection_seed31.csv",
+      "sha256": "030e6f912d36600cafc33d345a71c5b01c15cf2659851f49ee7f25ad8e9383f3",
+      "size_bytes": 163,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/cp_selection_seed47.csv",
+      "sha256": "975068f839d452cc4549c85724c4c83f5fb5ecfdc2d6e9f304b57e489bc8b61b",
+      "size_bytes": 161,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/cp_selection_seed83.csv",
+      "sha256": "eb67cae091b7828d9341966ed9a8710191bed748ad3df9fe63be771d4499d4ff",
+      "size_bytes": 163,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/DATA_AUDIT.md",
+      "sha256": "ac504d7aefcdc94c0773cec5598f2e61c40a4ce4ebcb40fbd1a9fbb7ed99017f",
+      "size_bytes": 3025,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/data_manifest.json",
+      "sha256": "0b443abfc93dfb4ab1da2fb302e842f950a26b300286998f88c306ed75695011",
+      "size_bytes": 1236,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/decision.json",
+      "sha256": "d283adada55ad1eaf0e961238d95e908898ea09ed8e77e504ef88b4e23329f02",
+      "size_bytes": 2181,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/DECISION.md",
+      "sha256": "e9b949383057433de306b59c9946fbb593dd17167b06149d288c4ceace61e99e",
+      "size_bytes": 1666,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/evaluation_dependency_versions.json",
+      "sha256": "8dde5d0fedb76ef4e1945a3ad247f676ed69a5594be76f878d16755c96328331",
+      "size_bytes": 238,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/extra_independent_validation.json",
+      "sha256": "374dac37058a87fcd85ed6ba1b23d128922e49e51320fa87ae0909b346d41ca8",
+      "size_bytes": 342,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/FAILURES.csv",
+      "sha256": "0a582b2ca92de35fec38cb9797d8c4ceb95d3f86c7126b7bf6a8108d3f1d1208",
+      "size_bytes": 1027,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/fixed_rep_fold_metrics.csv",
+      "sha256": "90840a2472e3f0dd4581bf0ddb1c6012909348a52b2f0f44a956ca422fa4277a",
+      "size_bytes": 3354,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/fixed_rep_oof_metrics.csv",
+      "sha256": "b26ee07d6beb70b0b2028fed9600306ff2ac7734e571bde61b5e92f99723c6f4",
+      "size_bytes": 557,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/fixed_rep_supplement_protocol.json",
+      "sha256": "908f2c05f059fa55a4373658a9a89fc5b04ce788b526d5fc155da4d5f9244456",
+      "size_bytes": 546,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/fold_metrics.csv",
+      "sha256": "7f35502c13563e08e9c36052f7c003fc9747826a929e307959f6828dd1f25f40",
+      "size_bytes": 49921,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/frozen_probe_fold_metrics.csv",
+      "sha256": "9e410dc646cca2489b505dc3d5c943a3b308f712d7c07543e43ca76da30a7f09",
+      "size_bytes": 147442,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/HISTORY_CONTROL_MAPPING.md",
+      "sha256": "568992e70237c27188fcdcd349a433da5740bd11dbdb89e8e80fb1a62c3148aa",
+      "size_bytes": 2299,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/imbalance_family_intervals.csv",
+      "sha256": "f31c75e7a1a0272c24a2a5c04e04e066005da1652b07ec44afebdd30a5971967",
+      "size_bytes": 1252,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/INDEPENDENT_AUDIT.md",
+      "sha256": "107aa2cb674d5541884117a8dc9e9b6ac72b4378d15d33c16979874b7614ad67",
+      "size_bytes": 1390,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/independent_validation.json",
+      "sha256": "3f0aa2a201817ceb086a5f1a99b716ecfc97b205ee9caf0328697ff3c1f19133",
+      "size_bytes": 581,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/inherited_privacy_cleanup.json",
+      "sha256": "7851bfee00a7e022840bad0832c2928b1e021029e9b769607aad9ce5ae8aa5f2",
+      "size_bytes": 2561,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/KNOWN_LIMITATIONS.md",
+      "sha256": "c08dd7855187416f354d35a3b3b3de41cd17780f58d416f3972f1a3538b53ab4",
+      "size_bytes": 4024,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/metadata_repair_audit.json",
+      "sha256": "eddc89952edbe79c691b15496f02ee9e10177182832a6f285322fc680428ed42",
+      "size_bytes": 6185,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/modality_imbalance_diagnostics.csv",
+      "sha256": "50d4187e0c17e5805c75d15f916c050c4f470ea95017b918490a4b98c9d69ad1",
+      "size_bytes": 27848,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/MODEL_MATRIX.csv",
+      "sha256": "ae91cc040be9c6dfe6def67a2b1c42129278d25a7ae8aea9f2900c3172a71b08",
+      "size_bytes": 5882,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/model_summary.csv",
+      "sha256": "064e9d469e1752d40b1b48a906660a5edba6cb11adc8a0f4a078b246652bd08a",
+      "size_bytes": 3228,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/module_ablation.csv",
+      "sha256": "ff51b21b4330e2aa6f751a28fdfb941dd5d50061080d487ea659e1ca85dd919c",
+      "size_bytes": 8279,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/negative_controls.csv",
+      "sha256": "93878f0484cee321b11c132a72e78f993c7bd0a3886edf0e7f8db5d9f7cf3676",
+      "size_bytes": 2733,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/paired_comparisons.csv",
+      "sha256": "029e135f71d562099d12b662184916557f994fe6d17ccc7103d6bf5b5238c17e",
+      "size_bytes": 8947,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/PAPER_CODE_AUDIT.md",
+      "sha256": "d27e5b2f8a648a9cd0625627978656dac9242c1e7e94d88cc92b9a7db960e1fa",
+      "size_bytes": 7022,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/pip-freeze.txt",
+      "sha256": "37c1377a7a70dd3c9cfcff47fa826937936e121040613ebdf33a3afdb7dadd17",
+      "size_bytes": 5255,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/PROTOCOL_LOCK.json",
+      "sha256": "ac6cc68c72d7f7188c704a5c7d3a578d85a0a8e4e6d189e5ff2624837e9cda5c",
+      "size_bytes": 5847,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/raw_clinical_representation_audit.json",
+      "sha256": "08709891f9128dec2f1deab8c57499ea0d2f49e998e3f2dbf7c0dda1afa26763",
+      "size_bytes": 1960,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/raw_source_provenance.json",
+      "sha256": "7927c46283dbc19ebadfcd0a09412b0764eaf840588bec85a939e5b2a151020c",
+      "size_bytes": 1912,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/README.md",
+      "sha256": "5dd445f7cf1b05b71270bf83c9f50ced7058666b9d7a7bb7c4c3419a34407d44",
+      "size_bytes": 4174,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/real_test_perturbation_audit.json",
+      "sha256": "2406cacce9fd7d51538ba362252dfe75208ce5ad3f31ec9cfd575b208a50958a",
+      "size_bytes": 550,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/RESULTS.md",
+      "sha256": "004a9fba147d4292508145f305e3ca61902612ffc57f2d3572856ae5c5695c05",
+      "size_bytes": 9180,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/run_manifest.json",
+      "sha256": "2fd6d1eb0ed234e8f2070bb0b714edf208b7ab602d541d0cf395f583c41c7789",
+      "size_bytes": 2538,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/seed_oof_metrics.csv",
+      "sha256": "4a3815d40660d693de2b68ae587757b5bbe313d5213f227a1e3496cb924f01c0",
+      "size_bytes": 11656,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/SOURCE_REGISTRY.json",
+      "sha256": "593c0c0a5e2938c9268b7f105e74188cf908049c4535454d47072b91d35bda8e",
+      "size_bytes": 18535,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/subgroup_diagnostics.csv",
+      "sha256": "f703b58b8b8690e6983eb3b1ea58fafecc654ae77aa59c8d4b00a8f79f7afff5",
+      "size_bytes": 83922,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/synthetic_audit.json",
+      "sha256": "13360ee823823692cf05ad2c8557dd56f5e2a7a6e4746181f4051fefb2f6a38a",
+      "size_bytes": 297,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_budget_summary.json",
+      "sha256": "fdd3e0d9184bde1a8a0790065d5198be18f3698e8388dd29468b021042016af3",
+      "size_bytes": 610,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_diagnostics.csv",
+      "sha256": "cea9a99b36ca43d8873a225125c76a0857611e7eea30ad7cc4c8737c5e675dc7",
+      "size_bytes": 133522,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/configs/phase10_molecular_groups.json",
+      "sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+      "size_bytes": 14851,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/configs/phase10_trimodal_mechanism_audit.json",
+      "sha256": "b022915f0f912f5b9b70f61e90d66df515cefb3cd8f80396d4d6a1314756e7f5",
+      "size_bytes": 4489,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/scripts/run_phase10_trimodal.py",
+      "sha256": "2fdbe2619d2e1851678159dd02cb5a6f7d6fd7e8cac38bb4c23a40ffadeeada8",
+      "size_bytes": 9312,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/scripts/schedule_phase10_trimodal.py",
+      "sha256": "eb36c1b73780016f04a4332b9e341da85156b163677a58515c444d3ec059a73c",
+      "size_bytes": 2397,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/scripts/validate_phase10_independent.py",
+      "sha256": "07df8131f97948021ab1922e14e0c0ea8735117e73b1509d27eb2380b52c2d37",
+      "size_bytes": 9293,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/src/phase10_trimodal/__init__.py",
+      "sha256": "253fb1a2ceab8aac5c2a2590668c8bb9796f12d15ae97bfd949b5251542ab051",
+      "size_bytes": 72,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/src/phase10_trimodal/data.py",
+      "sha256": "9e23aefb8b1a82b56525ce5cd7e37d8c5d8324054c8059c243633936021039ea",
+      "size_bytes": 4493,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/src/phase10_trimodal/features.py",
+      "sha256": "67bd32a4afc08995f652cc7b99199f85e598411bbf67f0bd601df1d18373d746",
+      "size_bytes": 6042,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/src/phase10_trimodal/math.py",
+      "sha256": "e744e652590e9103ba0b376a7b4c232652789d72b5bb1976e511144bc07c417b",
+      "size_bytes": 2748,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/src/phase10_trimodal/models.py",
+      "sha256": "f2b64ee37568ceea79dd4d1c9fb6932ef7c92083940b5f671905b78bf3722a9e",
+      "size_bytes": 9673,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/src/phase10_trimodal/reference.py",
+      "sha256": "a5b05d2c11a8aeb3b1ecffcf799746f90610382179b40f27564cbc7df7e25e07",
+      "size_bytes": 3299,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/src/phase10_trimodal/train.py",
+      "sha256": "1b2e7ff7eae02fcfa06058fc8084a991c339835a546f280f3abcacb8544bfce9",
+      "size_bytes": 9130,
+      "models": "ALL",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_source_v2/tests/test_phase10_trimodal_audit.py",
+      "sha256": "4fb18edd1a7b7302e07d781532d986e142aa807cc126682d49797d45683067c9",
+      "size_bytes": 9412,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "source/config"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/TRAINING_SOURCE_V2.tgz",
+      "sha256": "e1cd931ecae93c48f98f619788ea0bd7edd65eb979793fa5b77c529f2f3422be",
+      "size_bytes": 28625,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_v2_synthetic_audit.json",
+      "sha256": "591781cc9d098d1d8ebd8fcab7447ba2225789989e1ad9d3fa21ca67955612e3",
+      "size_bytes": 297,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/training_v2_unit_test_output.txt",
+      "sha256": "833a238ea5aaf32c43c3331fc7ee41c8a1cbc741e7e7624f9dfbcd592ce7822a",
+      "size_bytes": 2512,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    },
+    {
+      "path": "reports/phase10_trimodal_mechanism_audit/unit_test_output.txt",
+      "sha256": "0f90046f24fdc1d7b93f237cc8cb051eb799a57092b4ce8e48419e8137aae838",
+      "size_bytes": 3130,
+      "models": "see MODEL_MATRIX",
+      "associated_script": "scripts/run_phase10_trimodal.py + scripts/validate_phase10_independent.py",
+      "role": "aggregate evidence/frozen source"
+    }
+  ],
+  "self_reference": "manifest and package_checksums excluded from per-file hash list to avoid recursive checksums",
+  "archives": "PUBLIC zip + frozen code tgz local/server artifacts; not tracked in Git under binary guard"
+}

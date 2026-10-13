@@ -1,0 +1,6 @@
+{
+  "scikit-survival": "0.23.1",
+  "ecos": "2.0.14",
+  "isolated_target": "/root/phase10_trimodal_eval_deps",
+  "install": "python -m pip install --no-deps --target /root/phase10_trimodal_eval_deps scikit-survival==0.23.1 ecos==2.0.14"
+}

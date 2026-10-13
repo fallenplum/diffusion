@@ -1,0 +1,6 @@
+stage,cells,severity,reason,repair
+v1 baseline numerical gate,4,FAIL_RESOLVED,L-BFGS relative convergence with excessive absolute residual gradient,same objective/lambda Newton polish; all v1 cells archived and fresh v2 full matrix; no test metrics inspected
+v2 independent metadata gate,15,FAIL_RESOLVED,D0 copied B0 container hashes,preserve original records; exact risk equality then repair container hashes; no training/prediction changed
+raw source cache,0,WARN_RESOLVED_PRECISION,float32 log2 cache not bitwise reproducible on current vector kernel,raw exact; float64-log reference within one float32 ULP; historical cached tensor retained
+historical anchor OOF,0,BLOCKED_HISTORICAL_RECOMPUTATION,Phase8 private OOF/checkpoints unavailable on this server,current 45 independent anchor checks complete; historical number compared only as published report
+paper fidelity,0,BLOCKED_EXACT_REPLICATION,CiMP full text and BMLSurv full text/code unavailable; official CiMP/MRePath defects,ADAPTED/INSPIRED only; no exact claims

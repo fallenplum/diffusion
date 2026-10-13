@@ -1,0 +1,27 @@
+test_cna_separate_polarities (tests.test_phase10_trimodal_audit.BoundaryAudit.test_cna_separate_polarities) ... ok
+test_constructor_rejects_disguised_label_source (tests.test_phase10_trimodal_audit.BoundaryAudit.test_constructor_rejects_disguised_label_source) ... ok
+test_future_source_even_benign_name_rejected (tests.test_phase10_trimodal_audit.BoundaryAudit.test_future_source_even_benign_name_rejected) ... ok
+test_reused_metadata_container_cannot_override_identity (tests.test_phase10_trimodal_audit.BoundaryAudit.test_reused_metadata_container_cannot_override_identity) ... ok
+test_teacher_heldout_times_cannot_change_own_prediction (tests.test_phase10_trimodal_audit.BoundaryAudit.test_teacher_heldout_times_cannot_change_own_prediction) ... ok
+test_test_perturbation_fitted_state_invariant (tests.test_phase10_trimodal_audit.BoundaryAudit.test_test_perturbation_fitted_state_invariant) ... ok
+test_wrong_pair_split_boundary (tests.test_phase10_trimodal_audit.BoundaryAudit.test_wrong_pair_split_boundary) ... ok
+test_efron_independent_extremes_and_gradient (tests.test_phase10_trimodal_audit.MathematicalAudit.test_efron_independent_extremes_and_gradient) ... ok
+test_hand_harrell_and_comparable_ties (tests.test_phase10_trimodal_audit.MathematicalAudit.test_hand_harrell_and_comparable_ties) ... ok
+test_metrics_against_sksurv (tests.test_phase10_trimodal_audit.MathematicalAudit.test_metrics_against_sksurv) ... ok
+test_micro_and_bootstrap_duplicates (tests.test_phase10_trimodal_audit.MathematicalAudit.test_micro_and_bootstrap_duplicates) ... ok
+test_ridge_ill_conditioned_convergence (tests.test_phase10_trimodal_audit.MathematicalAudit.test_ridge_ill_conditioned_convergence) ... ok
+test_zero_events_rejected (tests.test_phase10_trimodal_audit.MathematicalAudit.test_zero_events_rejected) ... ok
+test_all_mechanisms_forward_gradient (tests.test_phase10_trimodal_audit.MechanismAudit.test_all_mechanisms_forward_gradient) ... ok
+test_attention_order_and_qkv_against_manual (tests.test_phase10_trimodal_audit.MechanismAudit.test_attention_order_and_qkv_against_manual) ... ok
+test_constant_and_removed_rna_do_not_use_rna (tests.test_phase10_trimodal_audit.MechanismAudit.test_constant_and_removed_rna_do_not_use_rna) ... ok
+test_determinism_dropout_checkpoint (tests.test_phase10_trimodal_audit.MechanismAudit.test_determinism_dropout_checkpoint) ... ok
+test_gate_active_vs_source_dead (tests.test_phase10_trimodal_audit.MechanismAudit.test_gate_active_vs_source_dead) ... ok
+test_gate_perturbation_changes_full_risk (tests.test_phase10_trimodal_audit.MechanismAudit.test_gate_perturbation_changes_full_risk) ... ok
+test_matched_budget (tests.test_phase10_trimodal_audit.MechanismAudit.test_matched_budget) ... ok
+test_padding_values_cannot_change_any_arm_output (tests.test_phase10_trimodal_audit.MechanismAudit.test_padding_values_cannot_change_any_arm_output) ... ok
+test_patch_joint_permutation_and_slide_order (tests.test_phase10_trimodal_audit.MechanismAudit.test_patch_joint_permutation_and_slide_order) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 1.411s
+
+OK

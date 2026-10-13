@@ -1,0 +1,14 @@
+{
+  "private": {
+    "server_path": "/root/phase10_trimodal_private/PHASE10_PRIVATE_REPRO.zip",
+    "sha256": "1a0c82bd7fc945fc5d078ab0e185d588afc7f433f6f837aa2f0a1dd0d869c938",
+    "size_bytes": 459208941,
+    "files": 2042,
+    "never_public": true
+  },
+  "public": {
+    "path": "reports/phase10_trimodal_mechanism_audit/PHASE10_PUBLIC_AUDIT.zip",
+    "sha256": "35c7b29b307a7b80f36fa4a47d56ad852c8a3aa5fd71f6289be400c5056c6feb",
+    "size_bytes": 320572
+  }
+}

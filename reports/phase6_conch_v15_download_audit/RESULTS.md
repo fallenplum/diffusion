@@ -47,13 +47,13 @@ E 盘为 exFAT，不支持硬链接。因此，验收后将 519 个匹配文件�
 缺失切片：
 
 ```text
-TCGA-QG-A5Z1-01Z-00-DX1.F3157C57-0F35-42D3-9CA5-C72D93F1BF89.h5
+CASE_WITHHELD-01Z-00-DX1.F3157C57-0F35-42D3-9CA5-C72D93F1BF89.h5
 ```
 
 该患者的下列 DX2 切片本来就在原始 520 张切片内，且已精确匹配：
 
 ```text
-TCGA-QG-A5Z1-01Z-00-DX2.2CE72B6A-557F-43BD-BA4C-B252E14E46EF.h5
+CASE_WITHHELD-01Z-00-DX2.2CE72B6A-557F-43BD-BA4C-B252E14E46EF.h5
 ```
 
 因此没有丢失患者，但不能声称原始 520 张切片全部齐备。`cohort_manifest.csv` 保留完整 520 行，其中缺失 DX1 标记为 `MISSING_CONCH_SLIDE`；没有复制 DX2 冒充 DX1，也没有将缺失切片填成零特征。

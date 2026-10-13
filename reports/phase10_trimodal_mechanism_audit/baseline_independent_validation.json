@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "baselines",
+  "cells_verified": 150,
+  "expected_cells": 150,
+  "failures": [],
+  "independent_library": "scikit-survival 0.23.1",
+  "metric_scope": "fold-local Harrell/Uno numerator-denominator; pooled sensitivity separately",
+  "dataset_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1"
+}

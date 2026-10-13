@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "B0 seed31 fold1 full 40-epoch inner selection + selected-epoch final fit repeated twice",
+  "changed": "all test patch inputs, RNA/CNA/S32/TITAN feature values, test survival time/event pairing",
+  "outer_event_count_preserved": true,
+  "selected_epochs": [
+    13,
+    13
+  ],
+  "preprocessing_states_identical": true,
+  "all_model_parameters_bitwise_identical": true,
+  "max_parameter_error": 0.0,
+  "unperturbed_refit_identical_to_original_formal_checkpoint": true,
+  "exploratory_private_outputs_saved": false
+}

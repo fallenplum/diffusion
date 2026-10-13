@@ -1,0 +1,26 @@
+{
+  "scope": "post-matrix descriptive supplement; no model or primary comparison changes",
+  "arms": [
+    "P_S32",
+    "P_TITAN_PCA32",
+    "P_UNI2_PCA32",
+    "R_PCA16",
+    "R_molecular8"
+  ],
+  "ridge_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "initialization": "deterministic convex fits once per fold; no fake three independent initializations",
+  "lambda_selection": "same train-only inner split and Harrell; no test selection",
+  "new_prognostic_claims": "exploratory only"
+}

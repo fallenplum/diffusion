@@ -1,0 +1,223 @@
+endpoint,model,records,family,producer_kind,information_scope,gene_set,tap,parameters_min,parameters_max,actual_outer_fits,three_seeds_independent_initializations,RNA_penalty_OFF_outer_folds
+DSS,C,15,BASE,NONE,Clinical/pathology conditioned or baseline,NONE,NONE,38,40,5,False,0.0
+DSS,S,15,BASE,NONE,Clinical/pathology conditioned or baseline,NONE,NONE,32,32,5,False,0.0
+DSS,CS,15,BASE,NONE,Clinical/pathology conditioned or baseline,NONE,NONE,70,72,0,False,0.0
+DSS,TOP_R_tuned,15,BASE,NONE,RNA-only,TOP,NONE,512,512,0,False,0.0
+DSS,TOP_R_fixed1,15,BASE,NONE,RNA-only,TOP,NONE,512,512,5,False,0.0
+DSS,TOP_PCA16_tuned,15,BASE,NONE,RNA-only,TOP,NONE,16,16,5,False,0.0
+DSS,TOP_RESID_tuned,15,BASE,NONE,RNA-only,TOP,NONE,512,512,5,False,0.0
+DSS,TOP_C_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,TOP,NONE,38,552,5,False,4.0
+DSS,TOP_S_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,TOP,NONE,32,544,5,False,4.0
+DSS,TOP_CS_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,TOP,NONE,70,72,5,False,5.0
+DSS,TOP_CS_PCA16,15,BASE,NONE,Clinical/pathology conditioned or baseline,TOP,NONE,70,72,5,False,5.0
+DSS,RO_TOP_HEAD,15,NEURAL_NATIVE,RNA_ONLY,RNA-only,TOP,NONE,296520,296520,15,True,0.0
+DSS,RO_TOP_before_raw_full,15,PROBE,RNA_ONLY,RNA-only,TOP,before_raw_full,512,512,15,True,0.0
+DSS,RO_TOP_before_processed_full,15,PROBE,RNA_ONLY,RNA-only,TOP,before_processed_full,512,512,15,True,0.0
+DSS,RO_TOP_before_raw_mean,15,PROBE,RNA_ONLY,RNA-only,TOP,before_raw_mean,64,64,15,True,0.0
+DSS,RO_TOP_before_processed_mean,15,PROBE,RNA_ONLY,RNA-only,TOP,before_processed_mean,64,64,15,True,0.0
+DSS,RO_TOP_after_raw_full,15,PROBE,RNA_ONLY,RNA-only,TOP,after_raw_full,512,512,15,True,0.0
+DSS,RO_TOP_after_processed_full,15,PROBE,RNA_ONLY,RNA-only,TOP,after_processed_full,512,512,15,True,0.0
+DSS,RO_TOP_after_raw_mean,15,PROBE,RNA_ONLY,RNA-only,TOP,after_raw_mean,64,64,15,True,0.0
+DSS,RO_TOP_after_processed_mean,15,PROBE,RNA_ONLY,RNA-only,TOP,after_processed_mean,64,64,15,True,0.0
+DSS,CS_RO_TOP_after_raw_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,TOP,after_raw_full,582,584,15,True,0.0
+DSS,CS_RO_TOP_after_processed_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,TOP,after_processed_full,582,584,15,True,0.0
+DSS,F_TOP_ORIGINAL,15,NEURAL_NATIVE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",TOP,NONE,482640,483410,0,True,0.0
+DSS,F_TOP_before_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_raw_full,512,512,15,True,0.0
+DSS,F_TOP_before_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_processed_full,512,512,15,True,0.0
+DSS,F_TOP_before_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_raw_mean,64,64,15,True,0.0
+DSS,F_TOP_before_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_processed_mean,64,64,15,True,0.0
+DSS,F_TOP_before_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_RNApatch_full,512,512,15,True,0.0
+DSS,F_TOP_before_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_RNApatch_mean,64,64,15,True,0.0
+DSS,F_TOP_before_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",TOP,before_joint,320,320,15,True,0.0
+DSS,F_TOP_after_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_raw_full,512,512,15,True,0.0
+DSS,F_TOP_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_processed_full,512,512,15,True,0.0
+DSS,F_TOP_after_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_raw_mean,64,64,15,True,0.0
+DSS,F_TOP_after_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_processed_mean,64,64,15,True,0.0
+DSS,F_TOP_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_RNApatch_full,512,512,15,True,0.0
+DSS,F_TOP_after_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_RNApatch_mean,64,64,15,True,0.0
+DSS,F_TOP_after_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",TOP,after_joint,320,320,15,True,0.0
+DSS,CS_F_TOP_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,TOP,after_processed_full,582,584,15,True,0.0
+DSS,CS_F_TOP_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,TOP,after_RNApatch_full,582,584,15,True,0.0
+DSS,HALL_R_tuned,15,BASE,NONE,RNA-only,HALL,NONE,512,512,0,False,0.0
+DSS,HALL_R_fixed1,15,BASE,NONE,RNA-only,HALL,NONE,512,512,5,False,0.0
+DSS,HALL_PCA16_tuned,15,BASE,NONE,RNA-only,HALL,NONE,16,16,5,False,0.0
+DSS,HALL_RESID_tuned,15,BASE,NONE,RNA-only,HALL,NONE,512,512,5,False,0.0
+DSS,HALL_C_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,HALL,NONE,38,552,5,False,3.0
+DSS,HALL_S_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,HALL,NONE,32,544,5,False,2.0
+DSS,HALL_CS_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,HALL,NONE,70,584,5,False,3.0
+DSS,HALL_CS_PCA16,15,BASE,NONE,Clinical/pathology conditioned or baseline,HALL,NONE,70,88,5,False,3.0
+DSS,RO_HALL_HEAD,15,NEURAL_NATIVE,RNA_ONLY,RNA-only,HALL,NONE,296520,296520,15,True,0.0
+DSS,RO_HALL_before_raw_full,15,PROBE,RNA_ONLY,RNA-only,HALL,before_raw_full,512,512,15,True,0.0
+DSS,RO_HALL_before_processed_full,15,PROBE,RNA_ONLY,RNA-only,HALL,before_processed_full,512,512,15,True,0.0
+DSS,RO_HALL_before_raw_mean,15,PROBE,RNA_ONLY,RNA-only,HALL,before_raw_mean,64,64,15,True,0.0
+DSS,RO_HALL_before_processed_mean,15,PROBE,RNA_ONLY,RNA-only,HALL,before_processed_mean,64,64,15,True,0.0
+DSS,RO_HALL_after_raw_full,15,PROBE,RNA_ONLY,RNA-only,HALL,after_raw_full,512,512,15,True,0.0
+DSS,RO_HALL_after_processed_full,15,PROBE,RNA_ONLY,RNA-only,HALL,after_processed_full,512,512,15,True,0.0
+DSS,RO_HALL_after_raw_mean,15,PROBE,RNA_ONLY,RNA-only,HALL,after_raw_mean,64,64,15,True,0.0
+DSS,RO_HALL_after_processed_mean,15,PROBE,RNA_ONLY,RNA-only,HALL,after_processed_mean,64,64,15,True,0.0
+DSS,CS_RO_HALL_after_raw_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,HALL,after_raw_full,582,584,15,True,0.0
+DSS,CS_RO_HALL_after_processed_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,HALL,after_processed_full,582,584,15,True,0.0
+DSS,F_HALL_ORIGINAL,15,NEURAL_NATIVE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",HALL,NONE,482640,483410,0,True,0.0
+DSS,F_HALL_before_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_raw_full,512,512,15,True,0.0
+DSS,F_HALL_before_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_processed_full,512,512,15,True,0.0
+DSS,F_HALL_before_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_raw_mean,64,64,15,True,0.0
+DSS,F_HALL_before_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_processed_mean,64,64,15,True,0.0
+DSS,F_HALL_before_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_RNApatch_full,512,512,15,True,0.0
+DSS,F_HALL_before_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_RNApatch_mean,64,64,15,True,0.0
+DSS,F_HALL_before_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",HALL,before_joint,320,320,15,True,0.0
+DSS,F_HALL_after_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_raw_full,512,512,15,True,0.0
+DSS,F_HALL_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_processed_full,512,512,15,True,0.0
+DSS,F_HALL_after_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_raw_mean,64,64,15,True,0.0
+DSS,F_HALL_after_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_processed_mean,64,64,15,True,0.0
+DSS,F_HALL_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_RNApatch_full,512,512,15,True,0.0
+DSS,F_HALL_after_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_RNApatch_mean,64,64,15,True,0.0
+DSS,F_HALL_after_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",HALL,after_joint,320,320,15,True,0.0
+DSS,CS_F_HALL_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,HALL,after_processed_full,582,584,15,True,0.0
+DSS,CS_F_HALL_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,HALL,after_RNApatch_full,582,584,15,True,0.0
+DSS,MATCH_R_tuned,15,BASE,NONE,RNA-only,MATCH,NONE,512,512,0,False,0.0
+DSS,MATCH_R_fixed1,15,BASE,NONE,RNA-only,MATCH,NONE,512,512,5,False,0.0
+DSS,MATCH_PCA16_tuned,15,BASE,NONE,RNA-only,MATCH,NONE,16,16,5,False,0.0
+DSS,MATCH_RESID_tuned,15,BASE,NONE,RNA-only,MATCH,NONE,512,512,5,False,0.0
+DSS,MATCH_C_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,MATCH,NONE,38,552,5,False,4.0
+DSS,MATCH_S_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,MATCH,NONE,32,544,5,False,3.0
+DSS,MATCH_CS_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,MATCH,NONE,70,72,5,False,5.0
+DSS,MATCH_CS_PCA16,15,BASE,NONE,Clinical/pathology conditioned or baseline,MATCH,NONE,70,88,5,False,4.0
+DSS,RO_MATCH_HEAD,15,NEURAL_NATIVE,RNA_ONLY,RNA-only,MATCH,NONE,296520,296520,15,True,0.0
+DSS,RO_MATCH_before_raw_full,15,PROBE,RNA_ONLY,RNA-only,MATCH,before_raw_full,512,512,15,True,0.0
+DSS,RO_MATCH_before_processed_full,15,PROBE,RNA_ONLY,RNA-only,MATCH,before_processed_full,512,512,15,True,0.0
+DSS,RO_MATCH_before_raw_mean,15,PROBE,RNA_ONLY,RNA-only,MATCH,before_raw_mean,64,64,15,True,0.0
+DSS,RO_MATCH_before_processed_mean,15,PROBE,RNA_ONLY,RNA-only,MATCH,before_processed_mean,64,64,15,True,0.0
+DSS,RO_MATCH_after_raw_full,15,PROBE,RNA_ONLY,RNA-only,MATCH,after_raw_full,512,512,15,True,0.0
+DSS,RO_MATCH_after_processed_full,15,PROBE,RNA_ONLY,RNA-only,MATCH,after_processed_full,512,512,15,True,0.0
+DSS,RO_MATCH_after_raw_mean,15,PROBE,RNA_ONLY,RNA-only,MATCH,after_raw_mean,64,64,15,True,0.0
+DSS,RO_MATCH_after_processed_mean,15,PROBE,RNA_ONLY,RNA-only,MATCH,after_processed_mean,64,64,15,True,0.0
+DSS,CS_RO_MATCH_after_raw_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,MATCH,after_raw_full,582,584,15,True,0.0
+DSS,CS_RO_MATCH_after_processed_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,MATCH,after_processed_full,582,584,15,True,0.0
+DSS,F_MATCH_ORIGINAL,15,NEURAL_NATIVE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",MATCH,NONE,482640,483410,0,True,0.0
+DSS,F_MATCH_before_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_raw_full,512,512,15,True,0.0
+DSS,F_MATCH_before_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_processed_full,512,512,15,True,0.0
+DSS,F_MATCH_before_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_raw_mean,64,64,15,True,0.0
+DSS,F_MATCH_before_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_processed_mean,64,64,15,True,0.0
+DSS,F_MATCH_before_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_RNApatch_full,512,512,15,True,0.0
+DSS,F_MATCH_before_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_RNApatch_mean,64,64,15,True,0.0
+DSS,F_MATCH_before_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",MATCH,before_joint,320,320,15,True,0.0
+DSS,F_MATCH_after_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_raw_full,512,512,15,True,0.0
+DSS,F_MATCH_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_processed_full,512,512,15,True,0.0
+DSS,F_MATCH_after_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_raw_mean,64,64,15,True,0.0
+DSS,F_MATCH_after_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_processed_mean,64,64,15,True,0.0
+DSS,F_MATCH_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_RNApatch_full,512,512,15,True,0.0
+DSS,F_MATCH_after_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_RNApatch_mean,64,64,15,True,0.0
+DSS,F_MATCH_after_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",MATCH,after_joint,320,320,15,True,0.0
+DSS,CS_F_MATCH_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,MATCH,after_processed_full,582,584,15,True,0.0
+DSS,CS_F_MATCH_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,MATCH,after_RNApatch_full,582,584,15,True,0.0
+PFI,C,15,BASE,NONE,Clinical/pathology conditioned or baseline,NONE,NONE,38,40,5,False,0.0
+PFI,S,15,BASE,NONE,Clinical/pathology conditioned or baseline,NONE,NONE,32,32,5,False,0.0
+PFI,CS,15,BASE,NONE,Clinical/pathology conditioned or baseline,NONE,NONE,70,72,5,False,0.0
+PFI,TOP_R_tuned,15,BASE,NONE,RNA-only,TOP,NONE,512,512,5,False,0.0
+PFI,TOP_R_fixed1,15,BASE,NONE,RNA-only,TOP,NONE,512,512,5,False,0.0
+PFI,TOP_PCA16_tuned,15,BASE,NONE,RNA-only,TOP,NONE,16,16,5,False,0.0
+PFI,TOP_RESID_tuned,15,BASE,NONE,RNA-only,TOP,NONE,512,512,5,False,0.0
+PFI,TOP_C_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,TOP,NONE,38,552,5,False,4.0
+PFI,TOP_S_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,TOP,NONE,32,544,5,False,2.0
+PFI,TOP_CS_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,TOP,NONE,71,584,5,False,3.0
+PFI,TOP_CS_PCA16,15,BASE,NONE,Clinical/pathology conditioned or baseline,TOP,NONE,71,88,5,False,3.0
+PFI,RO_TOP_HEAD,15,NEURAL_NATIVE,RNA_ONLY,RNA-only,TOP,NONE,296520,296520,15,True,0.0
+PFI,RO_TOP_before_raw_full,15,PROBE,RNA_ONLY,RNA-only,TOP,before_raw_full,512,512,15,True,0.0
+PFI,RO_TOP_before_processed_full,15,PROBE,RNA_ONLY,RNA-only,TOP,before_processed_full,512,512,15,True,0.0
+PFI,RO_TOP_before_raw_mean,15,PROBE,RNA_ONLY,RNA-only,TOP,before_raw_mean,64,64,15,True,0.0
+PFI,RO_TOP_before_processed_mean,15,PROBE,RNA_ONLY,RNA-only,TOP,before_processed_mean,64,64,15,True,0.0
+PFI,RO_TOP_after_raw_full,15,PROBE,RNA_ONLY,RNA-only,TOP,after_raw_full,512,512,15,True,0.0
+PFI,RO_TOP_after_processed_full,15,PROBE,RNA_ONLY,RNA-only,TOP,after_processed_full,512,512,15,True,0.0
+PFI,RO_TOP_after_raw_mean,15,PROBE,RNA_ONLY,RNA-only,TOP,after_raw_mean,64,64,15,True,0.0
+PFI,RO_TOP_after_processed_mean,15,PROBE,RNA_ONLY,RNA-only,TOP,after_processed_mean,64,64,15,True,0.0
+PFI,CS_RO_TOP_after_raw_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,TOP,after_raw_full,582,584,15,True,0.0
+PFI,CS_RO_TOP_after_processed_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,TOP,after_processed_full,582,584,15,True,0.0
+PFI,F_TOP_ORIGINAL,15,NEURAL_NATIVE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",TOP,NONE,482640,483410,0,True,0.0
+PFI,F_TOP_before_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_raw_full,512,512,15,True,0.0
+PFI,F_TOP_before_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_processed_full,512,512,15,True,0.0
+PFI,F_TOP_before_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_raw_mean,64,64,15,True,0.0
+PFI,F_TOP_before_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_processed_mean,64,64,15,True,0.0
+PFI,F_TOP_before_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_RNApatch_full,512,512,15,True,0.0
+PFI,F_TOP_before_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,before_RNApatch_mean,64,64,15,True,0.0
+PFI,F_TOP_before_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",TOP,before_joint,320,320,15,True,0.0
+PFI,F_TOP_after_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_raw_full,512,512,15,True,0.0
+PFI,F_TOP_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_processed_full,512,512,15,True,0.0
+PFI,F_TOP_after_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_raw_mean,64,64,15,True,0.0
+PFI,F_TOP_after_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_processed_mean,64,64,15,True,0.0
+PFI,F_TOP_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_RNApatch_full,512,512,15,True,0.0
+PFI,F_TOP_after_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,TOP,after_RNApatch_mean,64,64,15,True,0.0
+PFI,F_TOP_after_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",TOP,after_joint,320,320,15,True,0.0
+PFI,CS_F_TOP_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,TOP,after_processed_full,582,584,15,True,0.0
+PFI,CS_F_TOP_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,TOP,after_RNApatch_full,582,584,15,True,0.0
+PFI,HALL_R_tuned,15,BASE,NONE,RNA-only,HALL,NONE,512,512,5,False,0.0
+PFI,HALL_R_fixed1,15,BASE,NONE,RNA-only,HALL,NONE,512,512,5,False,0.0
+PFI,HALL_PCA16_tuned,15,BASE,NONE,RNA-only,HALL,NONE,16,16,5,False,0.0
+PFI,HALL_RESID_tuned,15,BASE,NONE,RNA-only,HALL,NONE,512,512,5,False,0.0
+PFI,HALL_C_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,HALL,NONE,38,552,5,False,3.0
+PFI,HALL_S_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,HALL,NONE,32,544,5,False,2.0
+PFI,HALL_CS_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,HALL,NONE,71,584,5,False,3.0
+PFI,HALL_CS_PCA16,15,BASE,NONE,Clinical/pathology conditioned or baseline,HALL,NONE,71,88,5,False,2.0
+PFI,RO_HALL_HEAD,15,NEURAL_NATIVE,RNA_ONLY,RNA-only,HALL,NONE,296520,296520,15,True,0.0
+PFI,RO_HALL_before_raw_full,15,PROBE,RNA_ONLY,RNA-only,HALL,before_raw_full,512,512,15,True,0.0
+PFI,RO_HALL_before_processed_full,15,PROBE,RNA_ONLY,RNA-only,HALL,before_processed_full,512,512,15,True,0.0
+PFI,RO_HALL_before_raw_mean,15,PROBE,RNA_ONLY,RNA-only,HALL,before_raw_mean,64,64,15,True,0.0
+PFI,RO_HALL_before_processed_mean,15,PROBE,RNA_ONLY,RNA-only,HALL,before_processed_mean,64,64,15,True,0.0
+PFI,RO_HALL_after_raw_full,15,PROBE,RNA_ONLY,RNA-only,HALL,after_raw_full,512,512,15,True,0.0
+PFI,RO_HALL_after_processed_full,15,PROBE,RNA_ONLY,RNA-only,HALL,after_processed_full,512,512,15,True,0.0
+PFI,RO_HALL_after_raw_mean,15,PROBE,RNA_ONLY,RNA-only,HALL,after_raw_mean,64,64,15,True,0.0
+PFI,RO_HALL_after_processed_mean,15,PROBE,RNA_ONLY,RNA-only,HALL,after_processed_mean,64,64,15,True,0.0
+PFI,CS_RO_HALL_after_raw_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,HALL,after_raw_full,582,584,15,True,0.0
+PFI,CS_RO_HALL_after_processed_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,HALL,after_processed_full,582,584,15,True,0.0
+PFI,F_HALL_ORIGINAL,15,NEURAL_NATIVE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",HALL,NONE,482640,483410,0,True,0.0
+PFI,F_HALL_before_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_raw_full,512,512,15,True,0.0
+PFI,F_HALL_before_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_processed_full,512,512,15,True,0.0
+PFI,F_HALL_before_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_raw_mean,64,64,15,True,0.0
+PFI,F_HALL_before_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_processed_mean,64,64,15,True,0.0
+PFI,F_HALL_before_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_RNApatch_full,512,512,15,True,0.0
+PFI,F_HALL_before_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,before_RNApatch_mean,64,64,15,True,0.0
+PFI,F_HALL_before_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",HALL,before_joint,320,320,15,True,0.0
+PFI,F_HALL_after_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_raw_full,512,512,15,True,0.0
+PFI,F_HALL_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_processed_full,512,512,15,True,0.0
+PFI,F_HALL_after_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_raw_mean,64,64,15,True,0.0
+PFI,F_HALL_after_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_processed_mean,64,64,15,True,0.0
+PFI,F_HALL_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_RNApatch_full,512,512,15,True,0.0
+PFI,F_HALL_after_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,HALL,after_RNApatch_mean,64,64,15,True,0.0
+PFI,F_HALL_after_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",HALL,after_joint,320,320,15,True,0.0
+PFI,CS_F_HALL_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,HALL,after_processed_full,582,584,15,True,0.0
+PFI,CS_F_HALL_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,HALL,after_RNApatch_full,582,584,15,True,0.0
+PFI,MATCH_R_tuned,15,BASE,NONE,RNA-only,MATCH,NONE,512,512,5,False,0.0
+PFI,MATCH_R_fixed1,15,BASE,NONE,RNA-only,MATCH,NONE,512,512,5,False,0.0
+PFI,MATCH_PCA16_tuned,15,BASE,NONE,RNA-only,MATCH,NONE,16,16,5,False,0.0
+PFI,MATCH_RESID_tuned,15,BASE,NONE,RNA-only,MATCH,NONE,512,512,5,False,0.0
+PFI,MATCH_C_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,MATCH,NONE,38,552,5,False,4.0
+PFI,MATCH_S_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,MATCH,NONE,32,544,5,False,2.0
+PFI,MATCH_CS_RAW,15,BASE,NONE,Clinical/pathology conditioned or baseline,MATCH,NONE,71,584,5,False,3.0
+PFI,MATCH_CS_PCA16,15,BASE,NONE,Clinical/pathology conditioned or baseline,MATCH,NONE,71,88,5,False,3.0
+PFI,RO_MATCH_HEAD,15,NEURAL_NATIVE,RNA_ONLY,RNA-only,MATCH,NONE,296520,296520,15,True,0.0
+PFI,RO_MATCH_before_raw_full,15,PROBE,RNA_ONLY,RNA-only,MATCH,before_raw_full,512,512,15,True,0.0
+PFI,RO_MATCH_before_processed_full,15,PROBE,RNA_ONLY,RNA-only,MATCH,before_processed_full,512,512,15,True,0.0
+PFI,RO_MATCH_before_raw_mean,15,PROBE,RNA_ONLY,RNA-only,MATCH,before_raw_mean,64,64,15,True,0.0
+PFI,RO_MATCH_before_processed_mean,15,PROBE,RNA_ONLY,RNA-only,MATCH,before_processed_mean,64,64,15,True,0.0
+PFI,RO_MATCH_after_raw_full,15,PROBE,RNA_ONLY,RNA-only,MATCH,after_raw_full,512,512,15,True,0.0
+PFI,RO_MATCH_after_processed_full,15,PROBE,RNA_ONLY,RNA-only,MATCH,after_processed_full,512,512,15,True,0.0
+PFI,RO_MATCH_after_raw_mean,15,PROBE,RNA_ONLY,RNA-only,MATCH,after_raw_mean,64,64,15,True,0.0
+PFI,RO_MATCH_after_processed_mean,15,PROBE,RNA_ONLY,RNA-only,MATCH,after_processed_mean,64,64,15,True,0.0
+PFI,CS_RO_MATCH_after_raw_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,MATCH,after_raw_full,582,584,15,True,0.0
+PFI,CS_RO_MATCH_after_processed_full,15,PROBE,RNA_ONLY,Clinical/pathology conditioned or baseline,MATCH,after_processed_full,582,584,15,True,0.0
+PFI,F_MATCH_ORIGINAL,15,NEURAL_NATIVE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",MATCH,NONE,482640,483410,0,True,0.0
+PFI,F_MATCH_before_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_raw_full,512,512,15,True,0.0
+PFI,F_MATCH_before_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_processed_full,512,512,15,True,0.0
+PFI,F_MATCH_before_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_raw_mean,64,64,15,True,0.0
+PFI,F_MATCH_before_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_processed_mean,64,64,15,True,0.0
+PFI,F_MATCH_before_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_RNApatch_full,512,512,15,True,0.0
+PFI,F_MATCH_before_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,before_RNApatch_mean,64,64,15,True,0.0
+PFI,F_MATCH_before_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",MATCH,before_joint,320,320,15,True,0.0
+PFI,F_MATCH_after_raw_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_raw_full,512,512,15,True,0.0
+PFI,F_MATCH_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_processed_full,512,512,15,True,0.0
+PFI,F_MATCH_after_raw_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_raw_mean,64,64,15,True,0.0
+PFI,F_MATCH_after_processed_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_processed_mean,64,64,15,True,0.0
+PFI,F_MATCH_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_RNApatch_full,512,512,15,True,0.0
+PFI,F_MATCH_after_RNApatch_mean,15,PROBE,FUSION_DSS_FROZEN,RNA-only,MATCH,after_RNApatch_mean,64,64,15,True,0.0
+PFI,F_MATCH_after_joint,15,PROBE,FUSION_DSS_FROZEN,"joint Clinical/S32/Pathology/RNA,not RNA-only",MATCH,after_joint,320,320,15,True,0.0
+PFI,CS_F_MATCH_after_processed_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,MATCH,after_processed_full,582,584,15,True,0.0
+PFI,CS_F_MATCH_after_RNApatch_full,15,PROBE,FUSION_DSS_FROZEN,Clinical/pathology conditioned or baseline,MATCH,after_RNApatch_full,582,584,15,True,0.0

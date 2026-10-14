@@ -1,0 +1,18 @@
+{
+  "scope": "POSTHOC_EXPLORATORY_MATCHED_CAPACITY_CONTROL",
+  "reason": "coreRAWconditional tunesRNA penalty butlatentprobes usefixed1;matchRAW512 conditional toexistingprobe,not outerselectedwinner",
+  "RNA_penalty": 1.0,
+  "baseline_penalty": "sameinner-only selected CS lambda fromlockedcore",
+  "genes": [
+    "TOP",
+    "HALL",
+    "MATCH"
+  ],
+  "endpoints": [
+    "DSS",
+    "PFI"
+  ],
+  "primary_upgrade": false,
+  "parent_core_training_source_hash": "c7572934892a0787d3e7068c5a9743eb01854306d09b2c3820aa876f20c9040e",
+  "appendix_source_sha256": "927d5c3e637a89eb2e0303617183100030317f1f15bdc0d64038337ead4526a3"
+}

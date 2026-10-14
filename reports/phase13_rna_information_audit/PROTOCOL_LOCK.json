@@ -1,0 +1,130 @@
+{
+  "version": "phase13_r0_rna_information_retention_locked",
+  "parent_commit": "96a25fd93da8ff39c7b081f078edd3880b0803af",
+  "parent_training_source_hash": "d6141b4cdb34fd471edc2dcc461fbebc6173eed8acb1b97032cbacd5e82b6a34",
+  "seeds": [
+    31,
+    47,
+    83
+  ],
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "genes": {
+    "TOP": {
+      "variant": "top",
+      "group": "g0",
+      "fusion_arm": "R0_128"
+    },
+    "HALL": {
+      "variant": "enriched",
+      "group": "enriched_true",
+      "fusion_arm": "H1_128"
+    },
+    "MATCH": {
+      "variant": "matched",
+      "group": "matched_random",
+      "fusion_arm": "MR_128"
+    }
+  },
+  "endpoints": [
+    "DSS",
+    "PFI"
+  ],
+  "primary_endpoint": "DSS",
+  "secondary_endpoint": "PFI",
+  "endpoint_scope": "same512 DSS cohort;PFI positive-time valid intersection;no cohort expansion",
+  "PFI_original_source": "https://api.gdc.cancer.gov/data/1b5f413e-a8d1-4d10-92eb-7c4ae739ed81",
+  "PFI_definition": "TCGA-CDR broad PFI,not arbitrary equivalence with generic clinical PFS",
+  "PFI_scaling": "originalCDR verified all512 records;cached historicalmonth=originaldays/30.417,rounding tolerance1e-5 months;preservecached times,exclude nonpositive/missing times",
+  "PFI_gene_inputs": "freeze corresponding DSS training-only gene indices/membership;refit RNA/Clinical/S32 statistics onPFI-valid fitpatients;no PFI outcome gene selection",
+  "inner_split": "exact Phase12 saved inner-train/val;PFI intersects each partition withvalidmask;never re-stratify onouter-test",
+  "tau": 60,
+  "loss": "full-risk-set Efron Cox",
+  "ridge_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "RNA_block_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    "OFF"
+  ],
+  "conditional_tie_rule": "prefer OFF if tied with best innerHarrell within1e-12",
+  "conditional_selection": "baseline lambda inner-only thenfixed;RNA block lambda selected withsame inner-train/val;joint convexfit of both blocks,no in-sample risk stacking;OFF exactly equalsbaseline",
+  "probe_lambda": 1.0,
+  "probe_regularization": "fixed1 for RAW512/full-token512/mean64 probes,all producer-local trainstandardization;no second selection usingproducer inner-val labels",
+  "pca_dimension": 16,
+  "residualizer_lambda": 0.1,
+  "rna_only_model": "same inherited RNATokenizer64/membership,full8x64 flattened linearhead;matched producer initialization;new RNA-only objective,not new fusionarchitecture",
+  "training": {
+    "inner_epochs": 80,
+    "minimum_epoch": 10,
+    "ema_alpha": 0.3,
+    "learning_rate": 0.001,
+    "weight_decay": 0.001,
+    "gradient_clip": 5.0,
+    "hidden_dim": 64,
+    "patient_chunk": 64
+  },
+  "producer_reuse": "all45 final Phase12 fusioncheckpoints reused;reconstruct45 missing innercheckpoints exactly and verifyselectedepoch/mean-representations;never concatenate latentcoordinates acrossindependent producers fortraining",
+  "RNA_only_producers": 90,
+  "fusion_inner_reconstructions": 45,
+  "fusion_taps": [
+    "raw_full",
+    "processed_full",
+    "raw_mean",
+    "processed_mean",
+    "RNApatch_full",
+    "RNApatch_mean",
+    "joint"
+  ],
+  "RNA_only_taps": [
+    "raw_full",
+    "processed_full",
+    "raw_mean",
+    "processed_mean"
+  ],
+  "conditional_probe_taps": [
+    "after_raw_full",
+    "after_processed_full"
+  ],
+  "fusion_conditional_probe_taps": [
+    "after_processed_full",
+    "after_RNApatch_full"
+  ],
+  "primary_comparisons": [
+    "TOP_CS_RAW-CS",
+    "HALL_CS_RAW-CS",
+    "MATCH_CS_RAW-CS",
+    "TOP_FUSED_processed_full-RAW_fixed1",
+    "HALL_FUSED_processed_full-RAW_fixed1",
+    "MATCH_FUSED_processed_full-RAW_fixed1"
+  ],
+  "primary_family_tests": 12,
+  "bootstrap": {
+    "draws": 30000,
+    "seed": 1307911,
+    "method": "shared patientcounts acrossarms/seeds;within-fold paircredits;fixed trainingIPCW;never meanrisks or treatseeds aspatients"
+  },
+  "event_uncertainty": "eventwise credit mass/Neff andleave-one-event influence;PFI sensitivity isdifferentendpoint,not causal proof65 events causefailure;no synthetic censoring or posthocevent removal fromprimary",
+  "frozen_gene_diagnostics": "train-only CS-to-RNA multivariate Ridge;heldout referenceRNA-risk predictability andRNA-residual Cox;predictability isnot conditional independence",
+  "diagnostic_scope": "heldout linearreadout retention andpairtransitions,not information-theoretic mutualinformation;supervisedproducer training-readout alignment disclosed",
+  "execution_workers": 12,
+  "privacy": "IDs,arrays,OOF,checkpoints,sourceclinical tables private;publicaggregates only",
+  "status_scope": "exploratory repeatedly studiedcohort;external auditorpending;no blanketidea no-go",
+  "source_hash": "c7572934892a0787d3e7068c5a9743eb01854306d09b2c3820aa876f20c9040e",
+  "locked_before_new_outer_evaluation": true,
+  "known_parent_outer_results": true,
+  "parent_outer_models_reused": 45,
+  "DSS_baseline_parent_records_reused": 60,
+  "new_record_target": 3330
+}

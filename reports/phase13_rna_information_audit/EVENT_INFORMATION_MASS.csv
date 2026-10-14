@@ -1,0 +1,5 @@
+endpoint,metric,events_observed,events_with_comparable_credit,effective_event_credit_Neff,largest_event_mass_fraction,comparable_mass,notice
+DSS,Harrell,65,65,54.38796909658371,0.02328863796753705,4251.0,"credit concentration,not independent-pair sample size"
+DSS,Uno60,65,62,37.25452222353485,0.07253743235456447,11171.728700678275,"credit concentration,not independent-pair sample size"
+PFI,Harrell,129,129,109.59840946119554,0.012357763367184632,8173.0,"credit concentration,not independent-pair sample size"
+PFI,Uno60,129,127,70.74613009484786,0.06665159961511687,18514.96538526245,"credit concentration,not independent-pair sample size"

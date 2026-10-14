@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "expected_records": 3330,
+  "verified_records": 3330,
+  "failures": [],
+  "independent_raw_clinical_verified": true,
+  "metrics_crosschecked": "scikit-survival0.23.1"
+}

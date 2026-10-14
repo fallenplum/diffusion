@@ -1,0 +1,10 @@
+test_encoder_gradient_path_live (tests.test_phase13_rna.DiagnosisTests.test_encoder_gradient_path_live) ... ok
+test_equal_penalty_reduces_to_existing_ridge (tests.test_phase13_rna.DiagnosisTests.test_equal_penalty_reduces_to_existing_ridge) ... ok
+test_independent_efron_stationarity (tests.test_phase13_rna.DiagnosisTests.test_independent_efron_stationarity) ... ok
+test_off_is_exact_baseline_and_wins_tie (tests.test_phase13_rna.DiagnosisTests.test_off_is_exact_baseline_and_wins_tie) ... ok
+test_shared_initial_encoder_and_full_mean_identity (tests.test_phase13_rna.DiagnosisTests.test_shared_initial_encoder_and_full_mean_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.164s
+
+OK

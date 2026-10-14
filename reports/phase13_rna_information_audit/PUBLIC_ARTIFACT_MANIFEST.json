@@ -1,0 +1,716 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "PHASE13_R0_RNA_INFORMATION_AUDIT_PROTOCOL.md",
+      "sha256": "4f8e7b12679984a954b4e36242b4115b1592b6c84030d67558811aab7b875b6f",
+      "bytes": 4010
+    },
+    {
+      "path": "configs/phase10_molecular_groups.json",
+      "sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+      "bytes": 14851
+    },
+    {
+      "path": "configs/phase11_semantic_anchored.json",
+      "sha256": "0afa4f38031fe32b0bdac850888601c681b9ad5ac74993badd56f73e5b7b3cad",
+      "bytes": 4448
+    },
+    {
+      "path": "configs/phase12_c4_confirmation.json",
+      "sha256": "efa991598eba000f5e51766ddac05b607d8eb42928a28fce4a634fb432e0dfcb",
+      "bytes": 7129
+    },
+    {
+      "path": "configs/phase13_rna_information_audit.json",
+      "sha256": "578008942a04fab3d05cc9e1e08d41f7b4517980a5aee541fa9e3471a904bb06",
+      "bytes": 4289
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/ACTUAL_TEST_INTERVENTION.json",
+      "sha256": "4c299b09a1fb0c659aa1d2fc54a7b4f82bc59e4fb3c5311785c02c372679f8ef",
+      "bytes": 251
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/ALL_PAIRED.csv",
+      "sha256": "59c4cc07bee8a38773aa40358e1f5cb0a9dc01aae942ca4e3aef863f3a1b28d6",
+      "bytes": 51819
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/APPENDIX_CHECKPOINT_AUDIT.csv",
+      "sha256": "76a7e322b7b4b4ffa992049504dc29b83d58f6b13bab5ec71a6db9e15565bcc6",
+      "bytes": 3147
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/APPENDIX_FIXED_RAW_SUMMARY.csv",
+      "sha256": "79432870fbd1ff68f0cb877fcda9fa5c47a7f5d890c66b48a67f12af18418746",
+      "bytes": 616
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/APPENDIX_PAIRED.csv",
+      "sha256": "a0de88609ecb460ff8385cc3f9a88c09bde9353fe6e683ee645eace4ece4b593",
+      "bytes": 6833
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/APPENDIX_PROTOCOL_LOCK.json",
+      "sha256": "ecd58b6bb1f0d880eb61d59d4f84a31a3fa89ad3d6f27f9ba7370442129be509",
+      "bytes": 625
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/APPENDIX_VALIDATION.json",
+      "sha256": "7877f31f37248c051b2fdc8289664bb97cc172a7a9134cebc8f72ace8d5a7829",
+      "bytes": 300
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/ARTIFACT_HASH_INDEX.csv",
+      "sha256": "40360ff96631560eae815e2bdea711873bc82c54404d2b5fb93811c4d90d875b",
+      "bytes": 987353
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/BOOTSTRAP_AUDIT.json",
+      "sha256": "29fed96d6b4018447d1d79974ffdea9ad2a6cc635675cd70fb6dce4875cc0014",
+      "bytes": 746
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/BUG_LOG.csv",
+      "sha256": "c792b4318146bd1f93d1e9767a7766a07fc5c44a95afd871e89492f7a3f8dc1c",
+      "bytes": 1594
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/CHECKPOINT_REPLAY.csv",
+      "sha256": "7431312349b59993ca3076c146f5ce508be829763c43f7d222a2962e47e82bd5",
+      "bytes": 190220
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/CS_RNA_RISK_PREDICTABILITY.csv",
+      "sha256": "8ea013fd8e16fb39945da6fa2ebd0243effd06f0c260b47716632a82df88f2a8",
+      "bytes": 4299
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/DECISION.md",
+      "sha256": "ad9feb0603d97524446bf25cddb341d124e49e4a6e01e1b55015e6f34c5ca821",
+      "bytes": 555
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/ENDPOINT_AUDIT.json",
+      "sha256": "2a0276b4efd8cea13696a68fc757530e6647ddab64e5930d40fd5a610f4035ac",
+      "bytes": 1386
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/EVENT_INFORMATION_MASS.csv",
+      "sha256": "0ddc12e94550d3cd17b5bbd0469f354a87bad74dcd2a3f02266994e1d66543e0",
+      "bytes": 642
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/FAULT_INJECTION.json",
+      "sha256": "637916223142d155dc5ce696ab9a8a0fc5d8eb422e96bb9c67e50fdd0ca46186",
+      "bytes": 713
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/FOLD_METRICS.csv",
+      "sha256": "1f12c81f298ba8faf927e319106ce19c7f358bf65bbd7a96efe646eba89c09e6",
+      "bytes": 536843
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/FUSION_INNER_RECONSTRUCTION.csv",
+      "sha256": "a73d5f47ffb8dcc0a74c1e05b49fd790e9a123a5c94f47d60ead84370b16db89",
+      "bytes": 10272
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/GPU_UTILIZATION.json",
+      "sha256": "76144c2e0a15e21ed2e9dad7ce87651c989b5b0479c0eee3e00659b298a3ee1f",
+      "bytes": 205
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/HARD_GATES.json",
+      "sha256": "7a835ee6226a45777dc57c13d5e6d41ae9fd9e5b7c4206064824c7322a8b057a",
+      "bytes": 1002
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/INDEPENDENT_METRICS.json",
+      "sha256": "2badda6ab10c331e75fb4af9bb158de272c42d246cb3dca9780b2cb9645f7af7",
+      "bytes": 192
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/INDEPENDENT_VALIDATION.json",
+      "sha256": "e2806e56132f66683c530a84d2fe2db571652e1e141b222ae12c4fdbdd52b98c",
+      "bytes": 1101
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/LEAVE_ONE_EVENT_INFLUENCE.csv",
+      "sha256": "34ac463a94c46c43b11639989347949a81cc6a78b7168c77da51612a862772fc",
+      "bytes": 4070
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/LITERAL_BOOTSTRAP_AUDIT.json",
+      "sha256": "b8a4b1966a422f003f7de88f9577bb130dfe832480c55b9819259e7bb823c32f",
+      "bytes": 256
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/MODEL_ABSOLUTE_CI.csv",
+      "sha256": "9923d1d8f982a3d2c220f7ca4466b3556ceb9648d1d5fbd9843400098d231e1b",
+      "bytes": 72860
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/MODEL_MATRIX.csv",
+      "sha256": "3504523dc8cafde4213be38fb0c32cbaafd90c0183f5bf4c676517dfbb3c30d7",
+      "bytes": 23951
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/MODEL_SUMMARY.csv",
+      "sha256": "f61d6b9ecdff7f458c9282037553601aaf5ff3eecb1fccb81fcf6387b91c5442",
+      "bytes": 25716
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/PAIR_RETENTION_TRANSITIONS.csv",
+      "sha256": "f2f86a3dbc84e7b0f41830407544d8923cb43ee42545033dbf1f98a2ed9c3c62",
+      "bytes": 48352
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/PCA_RESIDUAL_FIT_AUDIT.csv",
+      "sha256": "365772b3f277d75460cabfe7b5e7346c21760825fc0a399b2d7c6fb4e4e4cd66",
+      "bytes": 3794
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/PREPROCESS_RECONSTRUCTION.csv",
+      "sha256": "7285c8f26957e911f3e81ffe2197b4e103750c7bffcf3ba8cd59ad814a3bbe1b",
+      "bytes": 2017
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/PRIMARY_PAIRED.csv",
+      "sha256": "b733939f34c2cb0e807b463d2a641075a9df3c42b042e4dbeb6bc00cba55dac4",
+      "bytes": 2352
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/PROTOCOL_LOCK.json",
+      "sha256": "9b73262884a3800529bfa365b9da0e37a90ec923b2fe33892fd0684f3ab62ae7",
+      "bytes": 4916
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/README.md",
+      "sha256": "48dfdbc53a1d4380655be139aa06bf68caf2efc0f255aeca4a05a0c0dc718497",
+      "bytes": 177
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/REFERENCE_RISK_RECOVERY.csv",
+      "sha256": "3ee3dbfdb110a1caadb4b2a33107387296fd33a40f78b1a49f5356e7a8db07b0",
+      "bytes": 337080
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/REPLAY_AUDIT.json",
+      "sha256": "4cb1913c9c5722b17c04326069000d67b6ff76e3e1c0991e9d37699508396228",
+      "bytes": 457
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/REPRODUCE.md",
+      "sha256": "9b737c2445e6f34d5496e10f49c46d3f675d92041eff78aa9b6737631a4623ec",
+      "bytes": 1144
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/RESULTS.md",
+      "sha256": "7f6b5d1f8aa8407ec53988b8ec8d17bb1d6b67fd0e7fffaa897dfe53d2c1bc5f",
+      "bytes": 17547
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/RUN_MANIFEST.json",
+      "sha256": "44c4f50521c85c6cc11e493a5a902cde84b641682b6c441afcc1e0d04b143b37",
+      "bytes": 356
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/SEED_OOF_METRICS.csv",
+      "sha256": "4097500f4e70748c9c6827f7efb1edc7faf9cff3ec7230bede5f8995abc1c205",
+      "bytes": 56807
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/SOURCE_REGISTRY.json",
+      "sha256": "b150ef2c1120de4709adbf90dcedb076165f409475da0d034fd307b19cdd7678",
+      "bytes": 2533
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/SUBGROUP_METRICS.csv",
+      "sha256": "002db192992cc93984f721093bf67c764392bc504213c3af37421863c5b577f2",
+      "bytes": 19795
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/TRAINING_DIAGNOSTICS.csv",
+      "sha256": "82dd6bb85bc83f6703008f38db200d5f9b957702c61c3ae8a652dd6b418b0dac",
+      "bytes": 29259
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/UNIT_TEST_OUTPUT.txt",
+      "sha256": "81dd0ec7929a3b7a5cf4b5e192f6a68905abbc84983041bf355a11ea72324e32",
+      "bytes": 741
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/decision.json",
+      "sha256": "8d231e199a731dbce0cb8a24123853b425bcffe1c36995434bcd093fc224dbc3",
+      "bytes": 1193
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/PHASE13_R0_RNA_INFORMATION_AUDIT_PROTOCOL.md",
+      "sha256": "4f8e7b12679984a954b4e36242b4115b1592b6c84030d67558811aab7b875b6f",
+      "bytes": 4010
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/configs/phase10_molecular_groups.json",
+      "sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+      "bytes": 14851
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/configs/phase11_semantic_anchored.json",
+      "sha256": "0afa4f38031fe32b0bdac850888601c681b9ad5ac74993badd56f73e5b7b3cad",
+      "bytes": 4448
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/configs/phase12_c4_confirmation.json",
+      "sha256": "efa991598eba000f5e51766ddac05b607d8eb42928a28fce4a634fb432e0dfcb",
+      "bytes": 7129
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/configs/phase13_rna_information_audit.json",
+      "sha256": "578008942a04fab3d05cc9e1e08d41f7b4517980a5aee541fa9e3471a904bb06",
+      "bytes": 4289
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/audit_phase13_absolute_ci.py",
+      "sha256": "02a44b8f5191ab096e12ff1e330c63e22abf1a85291616168e5808b59df9ec40",
+      "bytes": 2583
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/audit_phase13_statistics.py",
+      "sha256": "4c03c048bec272fa51d95e285404a77675cab96fb7592eb31b6d5eaa0b7ecf35",
+      "bytes": 2944
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/check_phase13_delivery.py",
+      "sha256": "9ff22fe19f6fc41131e3fc0d1e4eaeda564becec6b24e00142ce518b262194d0",
+      "bytes": 2376
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/gate_phase13.py",
+      "sha256": "f3bfce4f25a03ec4bffa172efd29fd95da110c3ae90d26acd968a43eb90e714c",
+      "bytes": 4890
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/launch_phase13.py",
+      "sha256": "7fc920d8349650adce95b486b3c2faf8514049b6e010ea7572f447ea11604c65",
+      "bytes": 1198
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/launch_phase13_audit.py",
+      "sha256": "106ad5f581ba9c6889d60c2af2804bdaa06c67fc46c04ae6a4edbe1edaabf24d",
+      "bytes": 1056
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/package_phase13.py",
+      "sha256": "3542289e60b51e5d621c594ca0602f2cec1c8ebbfe639adb84ee36f476cdb537",
+      "bytes": 5788
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/phase13_matched_conditional_appendix.py",
+      "sha256": "927d5c3e637a89eb2e0303617183100030317f1f15bdc0d64038337ead4526a3",
+      "bytes": 6581
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/prepare_phase13.py",
+      "sha256": "fb8d22f995ca17d74bbeb04c04f610d96e34aec937bfbe45815a22f2b1a02fc3",
+      "bytes": 4227
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/replay_phase11.py",
+      "sha256": "5c5e203c8151475f165c54ce1d9d8a5afdc73938c9c835dd9444ba7ae81936f9",
+      "bytes": 12408
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/replay_phase13.py",
+      "sha256": "1b2cd814ca4501ea8f0f87604a39121a86543ed3f084ec79884c74d34b066cee",
+      "bytes": 11739
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/report_phase13.py",
+      "sha256": "7ed649667943c56791e1eeaa3e4087b5c7c5f0f6344b4b44b7212a5b2f30c9a7",
+      "bytes": 21485
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/run_phase11.py",
+      "sha256": "bcc580ddc2bd34e206906fe47269fc171fc492b71b13b8d74775475ceeca06a6",
+      "bytes": 11308
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/run_phase12.py",
+      "sha256": "9ad0972e6a1f063d9b5bfd788d7deb7de4ffc25c278446a2f20eae0aa48e83f4",
+      "bytes": 10426
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/run_phase13.py",
+      "sha256": "de09163d873070fd149ef6abdcc088cfb77d5d4a6f0ce940fb82ff4b15a9fd5a",
+      "bytes": 19800
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/schedule_phase13.py",
+      "sha256": "bf43ab241cc962a6c9bdba0dfb7130a2f18dbbbb019a162b01b2d1e5f817644e",
+      "bytes": 3001
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/stage_phase13_public.py",
+      "sha256": "72c8aa60e0766bdf240df56bf8fc144f479996633421f8d511f22de42f5562a5",
+      "bytes": 1460
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/validate_phase11_independent.py",
+      "sha256": "be966378d25ae52d5dfdde9246aae371b04556def978f5dfea57423a1a7c874f",
+      "bytes": 12524
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/scripts/validate_phase13_independent.py",
+      "sha256": "856fec5dd6623bcd93ac8a28f4e8fe2b99308148f9dff5a0b1503bec021a269a",
+      "bytes": 16211
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase10_trimodal/__init__.py",
+      "sha256": "253fb1a2ceab8aac5c2a2590668c8bb9796f12d15ae97bfd949b5251542ab051",
+      "bytes": 72
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase10_trimodal/data.py",
+      "sha256": "9e23aefb8b1a82b56525ce5cd7e37d8c5d8324054c8059c243633936021039ea",
+      "bytes": 4493
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase10_trimodal/features.py",
+      "sha256": "535f4f589168c120bee00a2306190d5bdc315c7412830ff043cda3a27619c919",
+      "bytes": 6344
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase10_trimodal/math.py",
+      "sha256": "e744e652590e9103ba0b376a7b4c232652789d72b5bb1976e511144bc07c417b",
+      "bytes": 2748
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase11_semantic/__init__.py",
+      "sha256": "8fe749a44d057423687c349a6be478de8fcf128bcb52a6418f07a9198a2d04eb",
+      "bytes": 75
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase11_semantic/data.py",
+      "sha256": "40cc0712aae36a5437b09430bcb20f8ba42d668c0560e44efce3eb2c954afd21",
+      "bytes": 6358
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase11_semantic/features.py",
+      "sha256": "a416822346286f7f75069b36ae71ed918602b98028d0d9c732bb76effc3a4438",
+      "bytes": 3761
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase11_semantic/models.py",
+      "sha256": "a092178cbca23ef2ac3769ee57742da20f2978351d4f2eb57d545e705729421e",
+      "bytes": 6549
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase11_semantic/train.py",
+      "sha256": "145cc4d67880d54b2ee772e357de1a12770e2ec90d6635076cedfbff2b8340ed",
+      "bytes": 8048
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase12_c4/__init__.py",
+      "sha256": "5a1d342a99cf94d713ab6be31868d80fb587efd41c091edf98876da1fcbd0082",
+      "bytes": 77
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase12_c4/cache.py",
+      "sha256": "1d2125bb30446a9b791e38ea1eaa0e120ed45c3b3dcdd7b986f36bbe526951df",
+      "bytes": 1800
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase12_c4/features.py",
+      "sha256": "6019f105785df11eaeb082c93a6b4dfda78b39ede112dab44e850b5b02e15032",
+      "bytes": 6233
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase12_c4/models.py",
+      "sha256": "8473a7d5e90be0bfe5c0198137bd89592d15fdd92fd2a75ff4dbd4b860ca347a",
+      "bytes": 1421
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase12_c4/train.py",
+      "sha256": "aabb492486194619ca0f99d11549a6f66715b4b77b20c06da89cdd538133c3f0",
+      "bytes": 2825
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase13_rna/__init__.py",
+      "sha256": "ce94f014d5bcee7ddded8e0cc749a2a8397bf514a4c30e76668ebd75cfc666d7",
+      "bytes": 81
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase13_rna/data.py",
+      "sha256": "91a119631ca68253cafc200bc6b80919cde4cf4e130a50e6936cb66a68827c63",
+      "bytes": 7588
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase13_rna/math.py",
+      "sha256": "0be06b393c86b2125198c3553bf07c87da3bc70890c809cfc134ef628f9bebfe",
+      "bytes": 2930
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase13_rna/models.py",
+      "sha256": "12cf94184a95db8759d9f773936de065d3af426ba45b376252eb1713416ba182",
+      "bytes": 3817
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase13_rna/probes.py",
+      "sha256": "3978e28701d7cfc2205becb87783b79180db2506bb292bb0c06d53722f45815b",
+      "bytes": 1444
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase13_rna/records.py",
+      "sha256": "1768810becd183d144f47194131a99a5b3f04fedbffa5d47ab973fe3b7fd3ae3",
+      "bytes": 2320
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase13_rna/taps.py",
+      "sha256": "0d4ef330df0e693cf7d97b2061683b554f1730ecf0dfbcd8c0bf1e82915fb96e",
+      "bytes": 2026
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/src/phase_m2/metadata/mmp_hallmarks_signatures.csv",
+      "sha256": "d12450d83aea1d7a62d33782e4a46d19a2cc40d3db9cc39e54f6f8784fa284dd",
+      "bytes": 46129
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/tests/__init__.py",
+      "sha256": "4a471e78eab637e60488419f1c6c8da9707d13892f49e0b5ca89b1441d0d94e3",
+      "bytes": 83
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/tests/test_phase12_c4.py",
+      "sha256": "3f581c361f17d0a92c6a9c91f75fa2d6a3c0e3d8e53032e0f83c0daaeff6dc97",
+      "bytes": 6229
+    },
+    {
+      "path": "reports/phase13_rna_information_audit/training_source/tests/test_phase13_rna.py",
+      "sha256": "4b975ba083427a59b5a735c0c6a16c5fc959e0d7abee9a67e3a507ff7ed41a4e",
+      "bytes": 2529
+    },
+    {
+      "path": "scripts/audit_phase13_absolute_ci.py",
+      "sha256": "02a44b8f5191ab096e12ff1e330c63e22abf1a85291616168e5808b59df9ec40",
+      "bytes": 2583
+    },
+    {
+      "path": "scripts/audit_phase13_statistics.py",
+      "sha256": "4c03c048bec272fa51d95e285404a77675cab96fb7592eb31b6d5eaa0b7ecf35",
+      "bytes": 2944
+    },
+    {
+      "path": "scripts/check_phase13_delivery.py",
+      "sha256": "9ff22fe19f6fc41131e3fc0d1e4eaeda564becec6b24e00142ce518b262194d0",
+      "bytes": 2376
+    },
+    {
+      "path": "scripts/gate_phase13.py",
+      "sha256": "f3bfce4f25a03ec4bffa172efd29fd95da110c3ae90d26acd968a43eb90e714c",
+      "bytes": 4890
+    },
+    {
+      "path": "scripts/launch_phase13.py",
+      "sha256": "7fc920d8349650adce95b486b3c2faf8514049b6e010ea7572f447ea11604c65",
+      "bytes": 1198
+    },
+    {
+      "path": "scripts/launch_phase13_audit.py",
+      "sha256": "106ad5f581ba9c6889d60c2af2804bdaa06c67fc46c04ae6a4edbe1edaabf24d",
+      "bytes": 1056
+    },
+    {
+      "path": "scripts/package_phase13.py",
+      "sha256": "3542289e60b51e5d621c594ca0602f2cec1c8ebbfe639adb84ee36f476cdb537",
+      "bytes": 5788
+    },
+    {
+      "path": "scripts/phase13_matched_conditional_appendix.py",
+      "sha256": "927d5c3e637a89eb2e0303617183100030317f1f15bdc0d64038337ead4526a3",
+      "bytes": 6581
+    },
+    {
+      "path": "scripts/prepare_phase13.py",
+      "sha256": "fb8d22f995ca17d74bbeb04c04f610d96e34aec937bfbe45815a22f2b1a02fc3",
+      "bytes": 4227
+    },
+    {
+      "path": "scripts/replay_phase11.py",
+      "sha256": "5c5e203c8151475f165c54ce1d9d8a5afdc73938c9c835dd9444ba7ae81936f9",
+      "bytes": 12408
+    },
+    {
+      "path": "scripts/replay_phase13.py",
+      "sha256": "1b2cd814ca4501ea8f0f87604a39121a86543ed3f084ec79884c74d34b066cee",
+      "bytes": 11739
+    },
+    {
+      "path": "scripts/report_phase13.py",
+      "sha256": "7ed649667943c56791e1eeaa3e4087b5c7c5f0f6344b4b44b7212a5b2f30c9a7",
+      "bytes": 21485
+    },
+    {
+      "path": "scripts/run_phase11.py",
+      "sha256": "bcc580ddc2bd34e206906fe47269fc171fc492b71b13b8d74775475ceeca06a6",
+      "bytes": 11308
+    },
+    {
+      "path": "scripts/run_phase12.py",
+      "sha256": "9ad0972e6a1f063d9b5bfd788d7deb7de4ffc25c278446a2f20eae0aa48e83f4",
+      "bytes": 10426
+    },
+    {
+      "path": "scripts/run_phase13.py",
+      "sha256": "de09163d873070fd149ef6abdcc088cfb77d5d4a6f0ce940fb82ff4b15a9fd5a",
+      "bytes": 19800
+    },
+    {
+      "path": "scripts/schedule_phase13.py",
+      "sha256": "bf43ab241cc962a6c9bdba0dfb7130a2f18dbbbb019a162b01b2d1e5f817644e",
+      "bytes": 3001
+    },
+    {
+      "path": "scripts/stage_phase13_public.py",
+      "sha256": "72c8aa60e0766bdf240df56bf8fc144f479996633421f8d511f22de42f5562a5",
+      "bytes": 1460
+    },
+    {
+      "path": "scripts/validate_phase11_independent.py",
+      "sha256": "be966378d25ae52d5dfdde9246aae371b04556def978f5dfea57423a1a7c874f",
+      "bytes": 12524
+    },
+    {
+      "path": "scripts/validate_phase13_independent.py",
+      "sha256": "856fec5dd6623bcd93ac8a28f4e8fe2b99308148f9dff5a0b1503bec021a269a",
+      "bytes": 16211
+    },
+    {
+      "path": "src/phase10_trimodal/__init__.py",
+      "sha256": "253fb1a2ceab8aac5c2a2590668c8bb9796f12d15ae97bfd949b5251542ab051",
+      "bytes": 72
+    },
+    {
+      "path": "src/phase10_trimodal/data.py",
+      "sha256": "9e23aefb8b1a82b56525ce5cd7e37d8c5d8324054c8059c243633936021039ea",
+      "bytes": 4493
+    },
+    {
+      "path": "src/phase10_trimodal/features.py",
+      "sha256": "535f4f589168c120bee00a2306190d5bdc315c7412830ff043cda3a27619c919",
+      "bytes": 6344
+    },
+    {
+      "path": "src/phase10_trimodal/math.py",
+      "sha256": "e744e652590e9103ba0b376a7b4c232652789d72b5bb1976e511144bc07c417b",
+      "bytes": 2748
+    },
+    {
+      "path": "src/phase11_semantic/__init__.py",
+      "sha256": "8fe749a44d057423687c349a6be478de8fcf128bcb52a6418f07a9198a2d04eb",
+      "bytes": 75
+    },
+    {
+      "path": "src/phase11_semantic/data.py",
+      "sha256": "40cc0712aae36a5437b09430bcb20f8ba42d668c0560e44efce3eb2c954afd21",
+      "bytes": 6358
+    },
+    {
+      "path": "src/phase11_semantic/features.py",
+      "sha256": "a416822346286f7f75069b36ae71ed918602b98028d0d9c732bb76effc3a4438",
+      "bytes": 3761
+    },
+    {
+      "path": "src/phase11_semantic/models.py",
+      "sha256": "a092178cbca23ef2ac3769ee57742da20f2978351d4f2eb57d545e705729421e",
+      "bytes": 6549
+    },
+    {
+      "path": "src/phase11_semantic/train.py",
+      "sha256": "145cc4d67880d54b2ee772e357de1a12770e2ec90d6635076cedfbff2b8340ed",
+      "bytes": 8048
+    },
+    {
+      "path": "src/phase12_c4/__init__.py",
+      "sha256": "5a1d342a99cf94d713ab6be31868d80fb587efd41c091edf98876da1fcbd0082",
+      "bytes": 77
+    },
+    {
+      "path": "src/phase12_c4/cache.py",
+      "sha256": "1d2125bb30446a9b791e38ea1eaa0e120ed45c3b3dcdd7b986f36bbe526951df",
+      "bytes": 1800
+    },
+    {
+      "path": "src/phase12_c4/features.py",
+      "sha256": "6019f105785df11eaeb082c93a6b4dfda78b39ede112dab44e850b5b02e15032",
+      "bytes": 6233
+    },
+    {
+      "path": "src/phase12_c4/models.py",
+      "sha256": "8473a7d5e90be0bfe5c0198137bd89592d15fdd92fd2a75ff4dbd4b860ca347a",
+      "bytes": 1421
+    },
+    {
+      "path": "src/phase12_c4/train.py",
+      "sha256": "aabb492486194619ca0f99d11549a6f66715b4b77b20c06da89cdd538133c3f0",
+      "bytes": 2825
+    },
+    {
+      "path": "src/phase13_rna/__init__.py",
+      "sha256": "ce94f014d5bcee7ddded8e0cc749a2a8397bf514a4c30e76668ebd75cfc666d7",
+      "bytes": 81
+    },
+    {
+      "path": "src/phase13_rna/data.py",
+      "sha256": "91a119631ca68253cafc200bc6b80919cde4cf4e130a50e6936cb66a68827c63",
+      "bytes": 7588
+    },
+    {
+      "path": "src/phase13_rna/math.py",
+      "sha256": "0be06b393c86b2125198c3553bf07c87da3bc70890c809cfc134ef628f9bebfe",
+      "bytes": 2930
+    },
+    {
+      "path": "src/phase13_rna/models.py",
+      "sha256": "12cf94184a95db8759d9f773936de065d3af426ba45b376252eb1713416ba182",
+      "bytes": 3817
+    },
+    {
+      "path": "src/phase13_rna/probes.py",
+      "sha256": "3978e28701d7cfc2205becb87783b79180db2506bb292bb0c06d53722f45815b",
+      "bytes": 1444
+    },
+    {
+      "path": "src/phase13_rna/records.py",
+      "sha256": "1768810becd183d144f47194131a99a5b3f04fedbffa5d47ab973fe3b7fd3ae3",
+      "bytes": 2320
+    },
+    {
+      "path": "src/phase13_rna/taps.py",
+      "sha256": "0d4ef330df0e693cf7d97b2061683b554f1730ecf0dfbcd8c0bf1e82915fb96e",
+      "bytes": 2026
+    },
+    {
+      "path": "src/phase_m2/metadata/mmp_hallmarks_signatures.csv",
+      "sha256": "d12450d83aea1d7a62d33782e4a46d19a2cc40d3db9cc39e54f6f8784fa284dd",
+      "bytes": 46129
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "4a471e78eab637e60488419f1c6c8da9707d13892f49e0b5ca89b1441d0d94e3",
+      "bytes": 83
+    },
+    {
+      "path": "tests/test_phase12_c4.py",
+      "sha256": "3f581c361f17d0a92c6a9c91f75fa2d6a3c0e3d8e53032e0f83c0daaeff6dc97",
+      "bytes": 6229
+    },
+    {
+      "path": "tests/test_phase13_rna.py",
+      "sha256": "4b975ba083427a59b5a735c0c6a16c5fc959e0d7abee9a67e3a507ff7ed41a4e",
+      "bytes": 2529
+    }
+  ],
+  "patient_arrays_or_checkpoints_public": false
+}

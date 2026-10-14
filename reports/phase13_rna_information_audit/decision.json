@@ -1,0 +1,35 @@
+{
+  "overall": "EXPLORATORY_DIAGNOSTIC_EVIDENCE",
+  "hypotheses": [
+    {
+      "gene": "TOP",
+      "conditional_increment": "INCONCLUSIVE_OR_NOT_DETECTED",
+      "matched_full_token_readout_loss": "INCONCLUSIVE",
+      "overlap_causal_claim": "NOT_IDENTIFIED",
+      "event_scarcity_causal_claim": "NOT_IDENTIFIED"
+    },
+    {
+      "gene": "HALL",
+      "conditional_increment": "INCONCLUSIVE_OR_NOT_DETECTED",
+      "matched_full_token_readout_loss": "INCONCLUSIVE",
+      "overlap_causal_claim": "NOT_IDENTIFIED",
+      "event_scarcity_causal_claim": "NOT_IDENTIFIED"
+    },
+    {
+      "gene": "MATCH",
+      "conditional_increment": "INCONCLUSIVE_OR_NOT_DETECTED",
+      "matched_full_token_readout_loss": "INCONCLUSIVE",
+      "overlap_causal_claim": "NOT_IDENTIFIED",
+      "event_scarcity_causal_claim": "NOT_IDENTIFIED"
+    }
+  ],
+  "records": 3330,
+  "RNA_only_complete_pipelines": 90,
+  "new_inner_reconstructions": 45,
+  "parent_final_fusion_checkpoints_reused": 45,
+  "RNA_only_budget_sensitive_cells": 0,
+  "RNA_only_min10_selection_restricts_earlier_best_cells": 75,
+  "external_auditor_completed": false,
+  "repeated_cohort": true,
+  "PFI_is_pure_power_experiment": false
+}

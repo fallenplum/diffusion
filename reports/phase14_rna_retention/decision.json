@@ -1,0 +1,22 @@
+{
+  "status": "INCONCLUSIVE_MECHANISM",
+  "ranking_constraint_confirmed_both_metrics": false,
+  "interaction_exceeds_additive_convex_and_wrong_both_corrected_metrics": false,
+  "budget_sensitive_inner_cells": 32,
+  "interpretation": "No blanket no-go. Ranking retention,conditional increment andinteraction are separate gates. Single-cohort exploratory findings;no conditional-independence or causal claim.",
+  "primary_family_tests": 10,
+  "endpoint_counts": {
+    "DSS": {
+      "n": 512,
+      "events": 65
+    },
+    "PFI": {
+      "n": 510,
+      "events": 129
+    }
+  },
+  "source_hash": "932cc8127235131da786f231db0f489449e17ea370a9c892f27fcaf458ea00d8",
+  "budget_appendix_remaining_ceiling_improving": 8,
+  "DSS_HALL_real_interaction_ceiling_improving": 0,
+  "post_inspection_budget_interaction_confirmed": false
+}

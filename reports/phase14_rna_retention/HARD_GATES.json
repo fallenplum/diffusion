@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source_hash": "932cc8127235131da786f231db0f489449e17ea370a9c892f27fcaf458ea00d8",
+  "protocol_sha256": "b4f021d1d383a5f6fabeb567886f39a2530f469454fc4ad4cbb750635aabd674",
+  "checks": {
+    "DSS_valid": {
+      "n": 512,
+      "events": 65
+    },
+    "PFI_valid": {
+      "n": 510,
+      "events": 129
+    },
+    "outer_test_label_perturbation": "bitwise-identical two-epoch selected state",
+    "ranking_KL_identity": "PASS",
+    "unsorted_inner_index_mapping": "PASS",
+    "pure_bilinear_and_bound": "PASS"
+  },
+  "smoke_predictions_saved": false,
+  "parent_commit": "8403d77c8891dadea075feed7bcbd2224a12f4d0"
+}

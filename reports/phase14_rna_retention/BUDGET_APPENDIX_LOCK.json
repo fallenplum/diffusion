@@ -1,0 +1,23 @@
+{
+  "status": "LOCKED",
+  "appendix_hash": "63168b082909514f2a959b90706b07b22d141bb1a77d921b30e496323bf3af1f",
+  "scope": {
+    "version": "phase14_readout_budget_only_post_inspection_appendix",
+    "epochs": 1280,
+    "minimum_epoch": 1,
+    "reason": "32 of540 inner producer/readout choices selected80 with final10 EMA improving;concrete readout optimization limit",
+    "upstream": "exact immutable Phase14 TOKEN/RANK producers andtransforms",
+    "arms": [
+      "ADDITIVE",
+      "INTERACT",
+      "WRONG_ADDITIVE",
+      "WRONG_INTERACT"
+    ],
+    "selection": "same inner-val EMA Cox;fresh outer refit at selectedepoch;noouter selection",
+    "changes": "only common readout epoch ceiling80->1280;architecture,initial weights,optimizer,RNA representation,penalties,pairing unchanged",
+    "statistics": "post-inspection sensitivity;paired sharedpatient bootstrap30000;Bonferroni24 for3genes x4contrasts x2metrics DSS;PFIsecondary",
+    "not_primary": true,
+    "termination": "reportremaining ceiling/improvement honestly;no automaticunbounded budgetextension"
+  },
+  "parent_source_hash": "932cc8127235131da786f231db0f489449e17ea370a9c892f27fcaf458ea00d8"
+}

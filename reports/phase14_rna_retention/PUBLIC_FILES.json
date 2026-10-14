@@ -1,0 +1,383 @@
+{
+  "status": "PASS",
+  "scope": "source and anonymous model-level aggregate only",
+  "files": [
+    {
+      "path": "configs/phase14_rna_retention.json",
+      "sha256": "b4f021d1d383a5f6fabeb567886f39a2530f469454fc4ad4cbb750635aabd674",
+      "bytes": 981,
+      "columns": []
+    },
+    {
+      "path": "PHASE14_R0_PROTOCOL.md",
+      "sha256": "38cd24cfea1fda4471fef2700a54838b58ffe095950e332ad27b2cc59c76d722",
+      "bytes": 4723,
+      "columns": []
+    },
+    {
+      "path": "src/phase14_rna/__init__.py",
+      "sha256": "c71d253b2d15ded9929658b61cdc8b6165836417ec93de9e62fc143402dd402b",
+      "bytes": 59,
+      "columns": []
+    },
+    {
+      "path": "src/phase14_rna/models.py",
+      "sha256": "a810f7c80487f0bb8d5e073ac47064d2d299d6410fa32fc0b00518b854fc62f6",
+      "bytes": 5160,
+      "columns": []
+    },
+    {
+      "path": "scripts/run_phase14.py",
+      "sha256": "7463e7c2080f095c516b920d62d8a549fad900dea0e653db61f08c9345107a72",
+      "bytes": 11424,
+      "columns": []
+    },
+    {
+      "path": "scripts/gate_phase14.py",
+      "sha256": "14abf5cd2a91ddfdd304b13e1b96d50458c3a61f07c27f256e6d155e8e0c34cd",
+      "bytes": 2994,
+      "columns": []
+    },
+    {
+      "path": "scripts/launch_phase14.py",
+      "sha256": "d826a76b84f1f0afb58301954c1b6b6efdcffd8d9eb69327d79884fcb48f04da",
+      "bytes": 2464,
+      "columns": []
+    },
+    {
+      "path": "scripts/evaluate_phase14.py",
+      "sha256": "dc4bb33dec2ac7e3b4251d2ba3449c8f6f42c4594d2497c905267e9360d190c3",
+      "bytes": 12300,
+      "columns": []
+    },
+    {
+      "path": "scripts/audit_phase14.py",
+      "sha256": "e8cf6dc2048ff6490425135926bd6006d76de92a86aafe4221e773e042e82520",
+      "bytes": 7324,
+      "columns": []
+    },
+    {
+      "path": "scripts/report_phase14.py",
+      "sha256": "d6fa8066248f8fe91e49b060e90ce30db7ab6df8b3622dacdd196e46d1466876",
+      "bytes": 15496,
+      "columns": []
+    },
+    {
+      "path": "configs/phase14_budget_appendix.json",
+      "sha256": "03eccb4489d7dd2944520cf276cc3bc9ff1b5a37db05fbc5cd43a671c4995059",
+      "bytes": 898,
+      "columns": []
+    },
+    {
+      "path": "scripts/budget_phase14.py",
+      "sha256": "4f03feabcdad888a603be00a8b7069cbc29d14419b5771fc12cb86d3340608da",
+      "bytes": 6371,
+      "columns": []
+    },
+    {
+      "path": "scripts/evaluate_budget_phase14.py",
+      "sha256": "f267642df7a00b14a8e2c0a2778157c99fb3099455eea011f22ae35875fde5e5",
+      "bytes": 8255,
+      "columns": []
+    },
+    {
+      "path": "scripts/publish_phase14.py",
+      "sha256": "21d544dd9d829e6bdfbd734147e37ad45e692a661e1cc32691b4fc9510ba12d8",
+      "bytes": 2944,
+      "columns": []
+    },
+    {
+      "path": "reports/phase14_rna_retention/ADDITIONAL_AUDIT.json",
+      "sha256": "a01a72d3bb22e5a7d3540c00f4869804c0bc3c031d45014de3ce1784732baf19",
+      "bytes": 306,
+      "columns": []
+    },
+    {
+      "path": "reports/phase14_rna_retention/BUDGET_APPENDIX_ARTIFACT_HASHES.csv",
+      "sha256": "bff8ffc2401038fe9bb4998a585ff5912f4aeda31fd290807dbe7087643a3a4d",
+      "bytes": 8500,
+      "columns": [
+        "pipeline",
+        "artifact_sha256",
+        "artifact_bytes"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/BUDGET_APPENDIX_AUDIT.json",
+      "sha256": "1f2387f413d7966506b29bb52901dd2ef7f28892073190c6dba1401509c410b4",
+      "bytes": 310,
+      "columns": []
+    },
+    {
+      "path": "reports/phase14_rna_retention/BUDGET_APPENDIX_FOLD_METRICS.csv",
+      "sha256": "765c4e40a9c859325b9af2bc00efb022aa535aa5473152f9ebd29bf864dd8d44",
+      "bytes": 59925,
+      "columns": [
+        "endpoint",
+        "gene",
+        "seed",
+        "fold",
+        "model",
+        "Harrell",
+        "Uno60",
+        "H_num",
+        "H_den",
+        "U_num",
+        "U_den"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/BUDGET_APPENDIX_LOCK.json",
+      "sha256": "e6975420eaf421b519d22d8207fc6f049d0dc8c2db5b878065b324e190fe9322",
+      "bytes": 1167,
+      "columns": []
+    },
+    {
+      "path": "reports/phase14_rna_retention/BUDGET_APPENDIX_PAIRED.csv",
+      "sha256": "78b976e01fc25dd618421e9aa35d9a0e4e553285c26db7e0ab8b5243d32d7601",
+      "bytes": 7007,
+      "columns": [
+        "endpoint",
+        "gene",
+        "comparison",
+        "metric",
+        "delta",
+        "CI_low",
+        "CI_high",
+        "corrected_low",
+        "corrected_high",
+        "post_inspection_appendix"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/BUDGET_APPENDIX_SEED_METRICS.csv",
+      "sha256": "d8b9a706f1d1034f81ddc28c6796d482dc55f7e8d7a15b40be8c0049a4c7fea6",
+      "bytes": 6396,
+      "columns": [
+        "endpoint",
+        "gene",
+        "seed",
+        "model",
+        "Harrell",
+        "Uno60"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/BUDGET_APPENDIX_TRAINING.csv",
+      "sha256": "ed3268cd2584f97923970fce69b226d72879c2d569310d2bd9c7e0719de1f232",
+      "bytes": 25109,
+      "columns": [
+        "endpoint",
+        "gene",
+        "seed",
+        "fold",
+        "arm",
+        "selected_epoch",
+        "inner_epochs",
+        "outer_epochs",
+        "first80_EMA_max_error",
+        "ceiling_and_improving",
+        "last10_EMA_slope"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/BUDGET_AUDIT.csv",
+      "sha256": "2b1904d6b49c98d13de77a41b55aee5df5829add80583e4f6a1eee8a3255b2cd",
+      "bytes": 36943,
+      "columns": [
+        "endpoint",
+        "gene",
+        "seed",
+        "fold",
+        "family",
+        "arm",
+        "selected_epoch",
+        "ceiling_selected",
+        "final10_EMA_slope",
+        "ceiling_and_improving"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/FOLD_METRICS.csv",
+      "sha256": "55537d9d3e77b2e86b1ea96a2d2ebec377e1bb35cb4fca850264e92df9fd2d5f",
+      "bytes": 200253,
+      "columns": [
+        "endpoint",
+        "gene",
+        "seed",
+        "fold",
+        "model",
+        "Harrell",
+        "Uno60",
+        "H_num",
+        "H_den",
+        "U_num",
+        "U_den",
+        "n",
+        "events"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/HARD_GATES.json",
+      "sha256": "87ecc5c7fbe4ba8ddc4fb2c53fb516dc1c64d3dd7e635ab171b977a3fb543a8d",
+      "bytes": 637,
+      "columns": []
+    },
+    {
+      "path": "reports/phase14_rna_retention/INDEPENDENT_AUDIT.json",
+      "sha256": "0408978c93f7e841acd763b0889ce24cc534841f8346ce3674d073fd2fe4254c",
+      "bytes": 376,
+      "columns": []
+    },
+    {
+      "path": "reports/phase14_rna_retention/INTERACTION_GRADIENTS.csv",
+      "sha256": "3dcbf91606329ab02495e1da16d1e89ab3d5b3ae39de37e957c9fe414874449c",
+      "bytes": 59714,
+      "columns": [
+        "endpoint",
+        "gene",
+        "seed",
+        "fold",
+        "arm",
+        "objective_gradient_norm",
+        "main_gradient",
+        "left_gradient",
+        "right_gradient",
+        "mix_gradient",
+        "train_correction_max",
+        "train_correction_RMS",
+        "base_weight_norm",
+        "RNA_weight_norm"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/MODEL_SUMMARY.csv",
+      "sha256": "70291c0ac6536776fa1bb8635c22624c000faa65130d71fe5a3ec21c051608ce",
+      "bytes": 10272,
+      "columns": [
+        "endpoint",
+        "gene",
+        "model",
+        "Harrell_mean",
+        "Harrell_std",
+        "Uno60_mean",
+        "Uno60_std"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/PAIRED_COMPARISONS.csv",
+      "sha256": "a072f920cf582eb3595efa890aecdc171693e0fce100a2a3588350922facc79e",
+      "bytes": 45409,
+      "columns": [
+        "endpoint",
+        "gene",
+        "comparison",
+        "metric",
+        "delta",
+        "CI_low",
+        "CI_high",
+        "corrected_low",
+        "corrected_high",
+        "primary",
+        "positive_seeds",
+        "seed31",
+        "seed47",
+        "seed83"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/PAIR_TRANSITIONS.csv",
+      "sha256": "f1c8402102919714dd3b1bf4d776cc318e69f480cbe11f649bfd5644537ca77f",
+      "bytes": 15391,
+      "columns": [
+        "endpoint",
+        "gene",
+        "comparison",
+        "metric",
+        "improved_pair_mass",
+        "worsened_pair_mass"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/PRIVATE_ARTIFACT_HASHES.csv",
+      "sha256": "b7b3d13e95400359d4d4021fef9f0dc05c12acb3452dd86598d3c666c4b62ad2",
+      "bytes": 14452,
+      "columns": [
+        "pipeline",
+        "artifact_sha256",
+        "cell_sha256",
+        "artifact_bytes"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/REPRODUCE.md",
+      "sha256": "ed5bb96bdab0194bf9406e3ec49bdb17348736de841fd62da63bf858a1ed4040",
+      "bytes": 2555,
+      "columns": []
+    },
+    {
+      "path": "reports/phase14_rna_retention/RESULTS.md",
+      "sha256": "631aff20b168977cf32fc2d990f4f9314c320c1fd6ea3e526953d8d9f887a991",
+      "bytes": 9129,
+      "columns": []
+    },
+    {
+      "path": "reports/phase14_rna_retention/SEED_OOF_METRICS.csv",
+      "sha256": "bbfa4485778958e103ea562ec11035cb1a978ee795ead47e52ef595850a95726",
+      "bytes": 19947,
+      "columns": [
+        "endpoint",
+        "gene",
+        "seed",
+        "model",
+        "Harrell",
+        "Uno60"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/TEACHER_DECODABILITY.csv",
+      "sha256": "1a57adc97630802800e3f93940cbfc52173c7df6edf7fc8b116d5e7219988312",
+      "bytes": 57189,
+      "columns": [
+        "model",
+        "teacher_R2",
+        "teacher_pair_agreement",
+        "dimension",
+        "endpoint",
+        "gene",
+        "seed",
+        "fold"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/TRAINING_DIAGNOSTICS.csv",
+      "sha256": "32a69f424201dde474c65f5851ce22af591224ef8e2f41b6b6afe6b6b0b097b0",
+      "bytes": 164287,
+      "columns": [
+        "endpoint",
+        "gene",
+        "seed",
+        "fold",
+        "kind",
+        "stage",
+        "selected_epoch",
+        "actual_epochs",
+        "parameters",
+        "connected_parameters",
+        "train_initial",
+        "train_last",
+        "train_selected",
+        "validation_selected",
+        "last_gradient",
+        "last_rank_KL",
+        "test_correction_max"
+      ]
+    },
+    {
+      "path": "reports/phase14_rna_retention/decision.json",
+      "sha256": "79178ead59f3d5b36156caa6a02afd575f0e37835a3317bed2e57c00126cc3b1",
+      "bytes": 823,
+      "columns": []
+    }
+  ]
+}

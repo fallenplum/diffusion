@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "pipelines": 90,
+  "model_fold_records": 1710,
+  "expected_records": 1710,
+  "max_checkpoint_replay_error": 5.960464477539062e-07,
+  "all_metric_cells_crosschecked_sksurv": true,
+  "teacher_and_wrong_pairing_audited": true,
+  "parent_raw_endpoint_independent": true,
+  "source_hash": "932cc8127235131da786f231db0f489449e17ea370a9c892f27fcaf458ea00d8"
+}

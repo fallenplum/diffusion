@@ -1,0 +1,8 @@
+{
+  "samples": 254,
+  "sampling_seconds": 10,
+  "mean_busy_percent": 89.57874015748031,
+  "peak_memory_MB": 31008.0,
+  "scope": "resumed scheduler only,including complete-cell skips andCPU Ridge/probe work;original scheduler telemetry retained in resource_failure_1024_workers5;not a full-run utilization estimate",
+  "interpretation": "includesCPU probes andloading;GPUcached tensors audited exactly equivalent;per-cell loader time ishost submission,not GPU kernel duration"
+}

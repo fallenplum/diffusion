@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "source_hash": "d6141b4cdb34fd471edc2dcc461fbebc6173eed8acb1b97032cbacd5e82b6a34",
+  "historical_gate": {
+    "status": "PASS",
+    "data": {
+      "status": "PASS",
+      "patients": 512,
+      "DSS_events": 65,
+      "WSIs": 519,
+      "source_H5_and_cache_elementwise_checked": 519,
+      "nested_budgets": {
+        "128": 66432,
+        "512": 261064,
+        "1024": 474959
+      },
+      "data_hashes": {
+        "dataset": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+        "patch": "47aaecd6c3a56bcd4bbe8217a7dff7b41c0c3b638bb3da10893b5fb6da49dc8f",
+        "coords": "8fbd610beae11a469e33c9ae3488ff92e624755ef76e5d369e2bfc08c2551f13",
+        "slides": "078bdf7ca1391d2011457b5456f1ad7a983676b27f2f10ceae8fa1015f216f8f"
+      },
+      "patient_hash": "de6d7f259366cfe9eb7675494d99963d2e72eaaaecf31a12649eb0af1add7064",
+      "fold_hash": "7ad94dfdfa496c21be86b82fd0a048152c9d1cb25bd862296b220609f7c64950",
+      "shared_cache": "read-only,no duplication",
+      "platform_identity": "missing3024 proxy only,not confirmed sequencing platform"
+    },
+    "reproduction": {
+      "status": "PASS",
+      "checkpoint_records": 75,
+      "independent_feature_matrices": 50,
+      "A1_fresh_unique_refits": 5,
+      "tolerance": 2e-06
+    },
+    "source_hash": "d6141b4cdb34fd471edc2dcc461fbebc6173eed8acb1b97032cbacd5e82b6a34"
+  },
+  "control_unit_tests": 10,
+  "faults_rejected": 28,
+  "independent_metric_synthetic": {
+    "status": "PASS",
+    "ties_censor_extreme_repeat_zero_event_cases": true
+  },
+  "actual_test_intervention": {
+    "status": "PASS",
+    "full_inner_epochs_each": 80,
+    "fresh_refit_epochs_each": 10,
+    "fitted_states_and_init_bitwise_equal": true,
+    "all3_RNA_gene_variants_8group_maps_train_only": true,
+    "legal_test_input_risk_response": true,
+    "private_smoke_predictions_not_saved": true,
+    "state_hash": "edb0254fc31ee1e730ce42f34a4bcdba4ae7e6b099366e4acf6349b0f551c2fb"
+  }
+}

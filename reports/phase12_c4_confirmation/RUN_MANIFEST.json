@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE_AUDITED",
+  "records": 465,
+  "new_fits": 390,
+  "new_neural_fits": 360,
+  "new_Ridge_fits": 30,
+  "exact_parent_reuse_records": 75,
+  "source_hash": "d6141b4cdb34fd471edc2dcc461fbebc6173eed8acb1b97032cbacd5e82b6a34",
+  "private_directory": "/root/phase12_c4_private",
+  "branch": "codex/phase12-c4-mechanism-confirmation"
+}

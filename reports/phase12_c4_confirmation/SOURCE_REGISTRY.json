@@ -1,0 +1,136 @@
+{
+  "parent_git_sha": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+  "references": [
+    {
+      "path": "reports/phase11_semantic_anchored_trimodal/RESULTS.md",
+      "sha256": "bf5c24de77ecc9d52dc7aab007dac60fa241de0f948e7e0878630f4df7877ec1",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 25859
+    },
+    {
+      "path": "reports/phase11_semantic_anchored_trimodal/DECISION.md",
+      "sha256": "7ab2b3939628cbb7198a990d489853e14b98b7d40b7a9e1d228bea04405b4a3d",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 1830
+    },
+    {
+      "path": "reports/phase11_semantic_anchored_trimodal/BUG_LOG.csv",
+      "sha256": "caf7ea5392a692e7bb906a07e23f35dfe68103d4ac1ba155489c9f142afbebca",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 2137
+    },
+    {
+      "path": "reports/phase11_semantic_anchored_trimodal/PROTOCOL_LOCK.json",
+      "sha256": "d54192adbbf7532fafd1fc5a8be2a7b24621c64b1ab22f0292fa5fcf687a36e4",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 4435
+    },
+    {
+      "path": "reports/phase11_semantic_anchored_trimodal/MODEL_MATRIX.csv",
+      "sha256": "dffae6c70a8bef9c724b425e23eb4c9c51644044f392df7725fd34ccc3db6e54",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 5805
+    },
+    {
+      "path": "reports/phase11_semantic_anchored_trimodal/INDEPENDENT_AUDIT.md",
+      "sha256": "881ccf05b9e64ccd7b76001e96df7616772fa83fc0f9ba7c9321c53f7e8d0933",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 3051
+    },
+    {
+      "path": "reports/phase11_semantic_anchored_trimodal/KNOWN_LIMITATIONS.md",
+      "sha256": "2cafa26a27e3d29611626750c7588fbe3da22c26bcb6c706f87b4046ad71da59",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 2493
+    },
+    {
+      "path": "reports/phase11_semantic_anchored_trimodal/SOURCE_REGISTRY.json",
+      "sha256": "d97cf513c248ef86cc625153c49caf7f0e75964dca9ce83a2881402a0a6d411e",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 20387
+    },
+    {
+      "path": "src/phase11_semantic/__init__.py",
+      "sha256": "8fe749a44d057423687c349a6be478de8fcf128bcb52a6418f07a9198a2d04eb",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 75
+    },
+    {
+      "path": "src/phase11_semantic/data.py",
+      "sha256": "40cc0712aae36a5437b09430bcb20f8ba42d668c0560e44efce3eb2c954afd21",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 6358
+    },
+    {
+      "path": "src/phase11_semantic/features.py",
+      "sha256": "a416822346286f7f75069b36ae71ed918602b98028d0d9c732bb76effc3a4438",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 3761
+    },
+    {
+      "path": "src/phase11_semantic/models.py",
+      "sha256": "a092178cbca23ef2ac3769ee57742da20f2978351d4f2eb57d545e705729421e",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 6549
+    },
+    {
+      "path": "src/phase11_semantic/train.py",
+      "sha256": "145cc4d67880d54b2ee772e357de1a12770e2ec90d6635076cedfbff2b8340ed",
+      "ref": "79b5db0ffa17dce094b4b8b13239d621f9cdc909",
+      "read_bytes": 8048
+    }
+  ],
+  "data": {
+    "status": "PASS",
+    "patients": 512,
+    "DSS_events": 65,
+    "WSIs": 519,
+    "source_H5_and_cache_elementwise_checked": 519,
+    "nested_budgets": {
+      "128": 66432,
+      "512": 261064,
+      "1024": 474959
+    },
+    "data_hashes": {
+      "dataset": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+      "patch": "47aaecd6c3a56bcd4bbe8217a7dff7b41c0c3b638bb3da10893b5fb6da49dc8f",
+      "coords": "8fbd610beae11a469e33c9ae3488ff92e624755ef76e5d369e2bfc08c2551f13",
+      "slides": "078bdf7ca1391d2011457b5456f1ad7a983676b27f2f10ceae8fa1015f216f8f"
+    },
+    "patient_hash": "de6d7f259366cfe9eb7675494d99963d2e72eaaaecf31a12649eb0af1add7064",
+    "fold_hash": "7ad94dfdfa496c21be86b82fd0a048152c9d1cb25bd862296b220609f7c64950",
+    "shared_cache": "read-only,no duplication",
+    "platform_identity": "missing3024 proxy only,not confirmed sequencing platform"
+  },
+  "source_hash": "d6141b4cdb34fd471edc2dcc461fbebc6173eed8acb1b97032cbacd5e82b6a34",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "CUDA": "12.4",
+  "GPU": "NVIDIA GeForce RTX 4080 SUPER",
+  "dependencies": {
+    "torch": "2.5.1+cu124",
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "h5py": "3.16.0",
+    "scikit-survival": "0.23.1"
+  },
+  "Hallmark": {
+    "dictionary_sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+    "source_MMP_CSV_sha256": "d12450d83aea1d7a62d33782e4a46d19a2cc40d3db9cc39e54f6f8784fa284dd",
+    "column_sets_exact": {
+      "HALLMARK_G2M_CHECKPOINT": true,
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": true,
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": true,
+      "HALLMARK_HYPOXIA": true,
+      "HALLMARK_TGF_BETA_SIGNALING": true,
+      "HALLMARK_DNA_REPAIR": true,
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": true,
+      "HALLMARK_ANGIOGENESIS": true
+    },
+    "reference": "https://www.gsea-msigdb.org/gsea/msigdb/collections.jsp",
+    "scope": "same8 historical frozen sets,not a current MSigDB update"
+  },
+  "timestamp_UTC": "2026-10-14T04:26:15.963024+00:00"
+}

@@ -1,0 +1,219 @@
+{
+  "overall": "INCONCLUSIVE",
+  "comparisons": [
+    {
+      "comparison": "Real128-Null128",
+      "scope": "primary",
+      "decision": "DIRECTIONAL_ONLY",
+      "both_metrics_positive": true,
+      "all3_seeds_both_positive": true,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "Real128-Wrong128",
+      "scope": "primary",
+      "decision": "DIRECTIONAL_ONLY",
+      "both_metrics_positive": true,
+      "all3_seeds_both_positive": true,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "Real512-Null512",
+      "scope": "primary",
+      "decision": "DIRECTIONAL_ONLY",
+      "both_metrics_positive": true,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "Real512-Wrong512",
+      "scope": "primary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "DID512vs128",
+      "scope": "primary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "Real128-A1",
+      "scope": "primary",
+      "decision": "DIRECTIONAL_ONLY",
+      "both_metrics_positive": true,
+      "all3_seeds_both_positive": true,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "Real1024-Null1024",
+      "scope": "secondary",
+      "decision": "DIRECTIONAL_ONLY",
+      "both_metrics_positive": true,
+      "all3_seeds_both_positive": true,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "Real1024-Wrong1024",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "DID1024vs128",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "Real512-A1",
+      "scope": "secondary",
+      "decision": "DIRECTIONAL_ONLY",
+      "both_metrics_positive": true,
+      "all3_seeds_both_positive": true,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "Real1024-A1",
+      "scope": "secondary",
+      "decision": "DIRECTIONAL_ONLY",
+      "both_metrics_positive": true,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "OriginalHallmark-Group0",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "EnrichedTrue-Random128",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "EnrichedTrue-Random512",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "EnrichedRandom-MatchedSet128",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "EnrichedRandom-MatchedSet512",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "EnrichedTrue-Original128",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "EnrichedTrue-Original512",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "NoAnchorReal-Null",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "NoAnchor-Anchored",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "MeanOtherGroups-Group0",
+      "scope": "secondary",
+      "decision": "INCONCLUSIVE",
+      "both_metrics_positive": false,
+      "all3_seeds_both_positive": false,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "Mean8Groups-Null",
+      "scope": "secondary",
+      "decision": "DIRECTIONAL_ONLY",
+      "both_metrics_positive": true,
+      "all3_seeds_both_positive": true,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    },
+    {
+      "comparison": "Mean8Groups-A1",
+      "scope": "secondary",
+      "decision": "DIRECTIONAL_ONLY",
+      "both_metrics_positive": true,
+      "all3_seeds_both_positive": true,
+      "corrected_both_intervals_positive": false,
+      "budget_sensitive": false
+    }
+  ],
+  "training_budget_sensitive_cells": [],
+  "research_scope": "first execution/audit,external reviewer pending; repeatedly studied512/65 cohort",
+  "records": 465,
+  "new_fits": 390,
+  "new_neural_fits": 360,
+  "new_Ridge_fits": 30,
+  "exact_parent_reuse_records": 75
+}

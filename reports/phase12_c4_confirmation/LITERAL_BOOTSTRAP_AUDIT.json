@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "draws_rechecked": 25,
+  "contrasts": [
+    "Real128-Null128",
+    "Real128-Wrong128",
+    "Real512-Null512",
+    "Real512-Wrong512",
+    "DID512vs128",
+    "Real128-A1",
+    "Mean8Groups-Null"
+  ],
+  "scalar_metric_checks": 1050,
+  "max_error": 1.0269562977782698e-15,
+  "patients_explicitly_duplicated": true,
+  "DID_verified": true,
+  "groups_not_independent_patients": true
+}

@@ -1,0 +1,15 @@
+test_gene_set_match_disjoint_and_train_only_stats (tests.test_phase12_c4.Controls.test_gene_set_match_disjoint_and_train_only_stats) ... ok
+test_group_global_overlap_and_missing_bins (tests.test_phase12_c4.Controls.test_group_global_overlap_and_missing_bins) ... ok
+test_initialization_and_dropout_rng (tests.test_phase12_c4.Controls.test_initialization_and_dropout_rng) ... ok
+test_no_anchor_no_linear_prediction (tests.test_phase12_c4.Controls.test_no_anchor_no_linear_prediction) ... ok
+test_null_input_independence_and_live_constant (tests.test_phase12_c4.Controls.test_null_input_independence_and_live_constant) ... ok
+test_padding_and_slide_order (tests.test_phase12_c4.Controls.test_padding_and_slide_order) ... ok
+test_parent_state_eval_exact (tests.test_phase12_c4.Controls.test_parent_state_eval_exact) ... ok
+test_parent_training_forward_and_gradients (tests.test_phase12_c4.Controls.test_parent_training_forward_and_gradients) ... ok
+test_real_RNA_S32_live (tests.test_phase12_c4.Controls.test_real_RNA_S32_live) ... ok
+test_wrong_split_and_singleton_fallback (tests.test_phase12_c4.Controls.test_wrong_split_and_singleton_fallback) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.701s
+
+OK

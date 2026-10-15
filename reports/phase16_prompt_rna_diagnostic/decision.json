@@ -1,0 +1,16 @@
+{
+  "status": "DIAGNOSTICS_COMPLETED_NO_NEW_FUSION_MODEL",
+  "RNA_finding": "large Harrell loss already after same512-to8 pooling and PCA8;quantization adds no confirmed further loss",
+  "RNA_claim_boundary": "Uno60 compression contrasts include zero;not a proof that every8D supervised representation fails",
+  "query_finding": "RNA presence changes ROI more than swapping patient RNA states;regional medical meaning unverified",
+  "visual_finding": "dual64 positive visual-only point differences but intervals include zero;dual32 matched capacity not superior",
+  "next_gate": "preserve RNA512 reference and verify conditional utility before further prompt/fusion growth",
+  "raw_WSI_QA": "DEFERRED_BY_USER",
+  "unique_outer_model_units": 180,
+  "actual_outer_optimizer_fits": 167,
+  "constant_OFF_references": 13,
+  "seed_fold_evaluation_slots": 540,
+  "metric_records": 1080,
+  "deterministic_references_not_independent_seeds": true,
+  "no_patient_data_public": true
+}

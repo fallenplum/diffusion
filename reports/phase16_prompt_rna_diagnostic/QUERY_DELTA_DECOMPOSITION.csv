@@ -1,0 +1,21 @@
+fold,comparison,patients,concept_specific_delta_energy_fraction,common_delta_energy_fraction,mean_query_L2_change,scope
+1,CLIN_RNA_TEXT-JOINT_WRONG_RNA,103,0.4621449164973879,0.5378550835026121,0.1112261335681943,posthoc descriptive vector decomposition;not a causal semantic measure
+1,RNA_TEXT-WRONG_RNA,103,0.49195769631746905,0.508042303682531,0.14530117719352825,posthoc descriptive vector decomposition;not a causal semantic measure
+1,CLIN_RNA_TEXT-CLIN_TEXT,103,0.35213903807899327,0.6478609619210067,0.3898751984522181,posthoc descriptive vector decomposition;not a causal semantic measure
+1,CLIN_TEXT-FIXED_TEXT,103,0.44295136037382105,0.5570486396261789,0.3741841102109372,posthoc descriptive vector decomposition;not a causal semantic measure
+2,CLIN_RNA_TEXT-JOINT_WRONG_RNA,103,0.43824209605605857,0.5617579039439414,0.10867998105229683,posthoc descriptive vector decomposition;not a causal semantic measure
+2,RNA_TEXT-WRONG_RNA,103,0.47909795369916747,0.5209020463008325,0.13534269304674806,posthoc descriptive vector decomposition;not a causal semantic measure
+2,CLIN_RNA_TEXT-CLIN_TEXT,103,0.352619757640709,0.6473802423592909,0.39103341883826026,posthoc descriptive vector decomposition;not a causal semantic measure
+2,CLIN_TEXT-FIXED_TEXT,103,0.4505939127750767,0.5494060872249233,0.369156016886813,posthoc descriptive vector decomposition;not a causal semantic measure
+3,CLIN_RNA_TEXT-JOINT_WRONG_RNA,102,0.44498814963826944,0.5550118503617305,0.11177521253771641,posthoc descriptive vector decomposition;not a causal semantic measure
+3,RNA_TEXT-WRONG_RNA,102,0.4808471033386156,0.5191528966613844,0.1439407220585089,posthoc descriptive vector decomposition;not a causal semantic measure
+3,CLIN_RNA_TEXT-CLIN_TEXT,102,0.3536200578890595,0.6463799421109405,0.38980916726822945,posthoc descriptive vector decomposition;not a causal semantic measure
+3,CLIN_TEXT-FIXED_TEXT,102,0.4450937515380336,0.5549062484619665,0.37188225341778175,posthoc descriptive vector decomposition;not a causal semantic measure
+4,CLIN_RNA_TEXT-JOINT_WRONG_RNA,102,0.4645952319397646,0.5354047680602354,0.10384169613540757,posthoc descriptive vector decomposition;not a causal semantic measure
+4,RNA_TEXT-WRONG_RNA,102,0.5024124711167579,0.4975875288832421,0.13426879713056133,posthoc descriptive vector decomposition;not a causal semantic measure
+4,CLIN_RNA_TEXT-CLIN_TEXT,102,0.3533371426895553,0.6466628573104447,0.3905348476825976,posthoc descriptive vector decomposition;not a causal semantic measure
+4,CLIN_TEXT-FIXED_TEXT,102,0.4400230675351386,0.5599769324648614,0.37603789743255167,posthoc descriptive vector decomposition;not a causal semantic measure
+5,CLIN_RNA_TEXT-JOINT_WRONG_RNA,102,0.4599963867781209,0.5400036132218791,0.10256551753948717,posthoc descriptive vector decomposition;not a causal semantic measure
+5,RNA_TEXT-WRONG_RNA,102,0.4956725026462592,0.5043274973537408,0.13154138642929347,posthoc descriptive vector decomposition;not a causal semantic measure
+5,CLIN_RNA_TEXT-CLIN_TEXT,102,0.3519871497855467,0.6480128502144533,0.3900554361296635,posthoc descriptive vector decomposition;not a causal semantic measure
+5,CLIN_TEXT-FIXED_TEXT,102,0.44628609161750943,0.5537139083824906,0.37106943072057236,posthoc descriptive vector decomposition;not a causal semantic measure

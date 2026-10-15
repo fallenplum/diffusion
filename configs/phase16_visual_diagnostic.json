@@ -1,0 +1,17 @@
+{
+ "version":"phase16_coordinate_matched_visual_diagnostic_v1",
+ "parent_commit":"74b7885b3c262f2ef7596662b1f001600a9d6302",
+ "selection":"no text or RNA; old GRID1024 ranking filtered to positive CONCH-UNI2 coordinate overlap; same matched rows for every visual arm; at most512 patches per patient, n-proportional quotas",
+ "fallback":"if fewer matched GRID-ranked rows than quota, remaining matched coordinates in deterministic lexicographic order; report count",
+ "alignment":"positive geometric rectangle intersection area; row-L2-normalized UNI2-h vectors averaged by area within each selected CONCH footprint then L2-normalized; equal slide means within patient",
+ "representations":["CONCH32","UNI32","DUAL32","DUAL64"],
+ "dimension":"train-only separate branch PCA; DUAL32=CONCH16+UNI16, DUAL64=CONCH32+UNI32; all final features fit-standardized",
+ "contexts":["VISUAL_ONLY","CS_PLUS_VISUAL"],
+ "schedules":["FIXED1","SELECTED"],
+ "Cox":"same full-risk Efron Ridge, same lambda grid and original patient folds as RNA diagnostic; OFF allowed for whole model in selected schedule",
+ "primary_contrasts":[["DUAL32","CONCH32"],["DUAL32","UNI32"],["DUAL64","DUAL32"]],
+ "primary_family_tests":12,
+ "primary_schedule":"FIXED1; two contexts x3 contrasts x2 metrics",
+ "scope":"computational spatial matching only; not raw histology QA, no patch-gene matching, no new attention or fusion Transformer",
+ "raw_image_QA":"DEFERRED_BY_USER_UNTIL_MECHANISM_SIGNAL"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "query_seed": 31,
+  "heldout_patients": 512,
+  "counterfactual_patients": 30,
+  "RNA_states": 8,
+  "text_vectors_generated": 63872,
+  "cache_vectors_reused": 9984,
+  "raw_visual_cache_exact": true,
+  "official_projection_cache_exact": true,
+  "survival_labels_used": false,
+  "raw_image_QA": "BLOCKED",
+  "cached_ROI_replay_mean_intersection": 1.0,
+  "numeric_query_max_abs_error": 0.00023017823696136475,
+  "query_source_sha256": "035b918271eafac8e23d666082aebfe00891ba5f2e125ce39cfe7211aca14f38"
+}

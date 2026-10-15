@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "unique_outer_model_evaluations": 180,
+  "actual_outer_optimizer_fits": 167,
+  "constant_OFF_references": 13,
+  "deterministic_seed_references": 360,
+  "seed_fold_metric_records": 1080,
+  "independent_gradient_max": 9.24480653280435e-08,
+  "risk_replay_error": 0.0,
+  "RNA_preprocessing_independent_max_error": 5.329070518200751e-15,
+  "all_metrics_crosschecked_sksurv": true,
+  "seeds_not_independent": true,
+  "raw_endpoint_verified": true,
+  "source": "1fe6a54fbfeb166c8d6ad196f4cd42e76606db618a04a0ed1bb43a8858fe8051",
+  "visual_source": "c7791cf3ca0603e255507c9c3fcf45966f431b46f61942b01070564858432be0"
+}

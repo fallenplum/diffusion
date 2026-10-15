@@ -1,0 +1,7 @@
+comparison,budget,delta_AUC,CI_low,CI_high,scope
+CLIN_RNA_TEXT-JOINT_WRONG_RNA,128,0.0031407468765100033,-0.005488541450956194,0.01177003520397608,exploratory patient-level association;not regional validation
+CLIN_RNA_TEXT-CLIN_TEXT,128,-0.014633809622420113,-0.03423845516670129,0.0030743080002761753,exploratory patient-level association;not regional validation
+CLIN_TEXT-FIXED_TEXT,128,0.004900945675433088,-0.012770932560226402,0.024056913094498488,exploratory patient-level association;not regional validation
+CLIN_RNA_TEXT-JOINT_WRONG_RNA,512,0.0033823427900875336,-0.0013805480775868101,0.00835231586940011,exploratory patient-level association;not regional validation
+CLIN_RNA_TEXT-CLIN_TEXT,512,0.0020363084144404686,-0.011941740871125765,0.014772727272727444,exploratory patient-level association;not regional validation
+CLIN_TEXT-FIXED_TEXT,512,0.016083385103886183,0.0006212466349141382,0.03323755781045075,exploratory patient-level association;not regional validation

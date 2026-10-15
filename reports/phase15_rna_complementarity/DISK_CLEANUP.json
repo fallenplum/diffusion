@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "time_UTC": 1792066179.6291134,
+  "deleted": [
+    {
+      "path": "/root/.cache/pip/http-v2",
+      "bytes": 2686063003,
+      "reason": "re-downloadable pip HTTP cache;installed packages unaffected"
+    },
+    {
+      "path": "/root/phase6b_token_budget_audit_selection_warmup_invalidated",
+      "bytes": 35202626,
+      "reason": "invalid selection warmup superseded by240-cell verified corrected experiment"
+    },
+    {
+      "path": "conda-managed downloaded archives and index caches",
+      "bytes": 3277305470,
+      "reason": "conda clean --tarballs --index-cache;no installed/extracted packages removed"
+    }
+  ],
+  "free_before": {
+    "/root": 471101440,
+    "/root/autodl-tmp": 986791936
+  },
+  "free_after": {
+    "/root": 7491874816,
+    "/root/autodl-tmp": 986791936
+  },
+  "protected_hashes_unchanged": true,
+  "corrected_experiments_preserved": true
+}

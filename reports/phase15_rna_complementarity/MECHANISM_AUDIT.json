@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "actual_teacher_held_label_perturbations": [
+    {
+      "teacher": 0,
+      "held_labels_perturbed": 109,
+      "lambda_and_weights_bitwise_unchanged": true
+    },
+    {
+      "teacher": 1,
+      "held_labels_perturbed": 109,
+      "lambda_and_weights_bitwise_unchanged": true
+    },
+    {
+      "teacher": 2,
+      "held_labels_perturbed": 109,
+      "lambda_and_weights_bitwise_unchanged": true
+    }
+  ],
+  "event_mass_records": 180,
+  "teacher_shift_records": 270,
+  "selection_stability_records": 540,
+  "gain_damage_identity_max_error": 3.469446951953614e-16,
+  "faults_rejected": 1,
+  "outer_errors_used_for_training": false,
+  "scope": "post-fit exploratory diagnostics only;no model/config change"
+}

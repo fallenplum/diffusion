@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "source": "9581d4fa5616561f93cd96ca07ace0cf9bff90eff617088ba774b15e82d9d090",
+  "public_files": [
+    {
+      "path": "configs/phase16r_light_rna.json",
+      "bytes": 4140,
+      "sha256": "da02eeecff5dc6d8483bcb94a3126615faba7b01258bcbc86b8ca0bbbaa6aa44"
+    },
+    {
+      "path": "src/phase16r_light/__init__.py",
+      "bytes": 77,
+      "sha256": "e75706ce6b5098c99ebea76d3209d6fdcc4857ab52cac40cdd5649b0cbd89b33"
+    },
+    {
+      "path": "src/phase16r_light/core.py",
+      "bytes": 6871,
+      "sha256": "51c8f84b45b129dde08725e25eff9eb14ed41dedc121c62f50299154d1635c35"
+    },
+    {
+      "path": "scripts/run_phase16r_light_rna.py",
+      "bytes": 9475,
+      "sha256": "0ba9fb58754f5f39f2b649dffbd6f6c629957deb47ea6ae3a4c34d91bdc0041b"
+    },
+    {
+      "path": "scripts/validate_phase16r_light_rna.py",
+      "bytes": 19488,
+      "sha256": "81194ab357508dbc8e61d37bb293fe848e6274340efaec858725f376eb83b902"
+    },
+    {
+      "path": "scripts/report_phase16r_light_rna.py",
+      "bytes": 20266,
+      "sha256": "fca549fbb839ce386442c1efbb10c42e39f3cd6cd4cb2292b2cb2e8a2f735ea7"
+    },
+    {
+      "path": "scripts/pipeline_phase16r_light_rna.py",
+      "bytes": 560,
+      "sha256": "ceb71a12c51730e95d3ff309a301d7a2650fca9b4292fb6de3219a75c3869da5"
+    },
+    {
+      "path": "scripts/publish_phase16r_light_rna.py",
+      "bytes": 3112,
+      "sha256": "01eb87c86b2ca78ab6c369b961aefbc6786873b6f01ecc891e1031e59266c33d"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/ADAPTIVE_COMPACT_SELECTION.csv",
+      "bytes": 642,
+      "sha256": "7ce387e8a49780c7b1b33837e8b89b8ce3829ba0492c99d8a1a187f8e07cdbdc"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/CLINICAL_PATH_RISK_COMPONENTS.csv",
+      "bytes": 10049,
+      "sha256": "3fff7d618ffa51058da9d768515334c02bc2e0245d3256522338147132d14e51"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/ENVIRONMENT.json",
+      "bytes": 240,
+      "sha256": "93ae289a76c1d962ed2b3508c5254a72d3875d8f042b5f84c2dd2666c84271db"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/FOLD_METRICS.csv",
+      "bytes": 166768,
+      "sha256": "f38dc9b349c9f1e0ade957b9a523ce76399b21cd8a831e8123aabae03d9b0017"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/FOLD_STABILITY.csv",
+      "bytes": 8767,
+      "sha256": "26342cd492cf801159c2cc6a1488b30f322bde8c9912b4793f285c10b1f37e74"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/INDEPENDENT_AUDIT.json",
+      "bytes": 646,
+      "sha256": "5e5df9c0a5151353d20ae5b24fc549e10593272bdffba3bdf0cc0860919d9e0a"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/INNER_CV_METRICS.csv",
+      "bytes": 197753,
+      "sha256": "7029834ff39951abd2233adf44cc693be3509705f3773cf86b1dc630a3228aa0"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/LAMBDA_SELECTION.csv",
+      "bytes": 5035,
+      "sha256": "fee86417ef1d7d23b89d707b706faa6be1b873c5d9f83c57c400080a44ffbbd2"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/MODEL_DETAILS.csv",
+      "bytes": 29630,
+      "sha256": "10531eb2ebe5bdc72a363cccab86dc54a006a603f24ace72ca49a2ba8a767a22"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/PAIRED_COMPARISONS.csv",
+      "bytes": 41009,
+      "sha256": "a936583cff42d8e34687234830c374812b593c62fde6824801db81d25d26dad5"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/PAIR_TRANSITIONS.csv",
+      "bytes": 17819,
+      "sha256": "c1279d1c8011dfe8e1813dbb73d92362ce5b8317f72fa9eb3147faa314209f45"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/PROTOCOL_LOCK.json",
+      "bytes": 339,
+      "sha256": "d8c4e23fe308c8a159ca4bf49107df1975c8d13d3711e4b8027cacc75a4558bf"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/REFERENCE_REGISTRY.csv",
+      "bytes": 7929,
+      "sha256": "75d1e723066ca06b9ab926ed28c3659ef78f50bbcff1b97d0b5bdf32b367fc48"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/REPRODUCE.md",
+      "bytes": 960,
+      "sha256": "dd71e3682dfed5bdb20f72197f6a5273fc2504de0d4d450faff56d445d782beb"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/RESULTS.md",
+      "bytes": 12404,
+      "sha256": "dc018d761fc5c44d528e7f5ce4982b7d46725f7aca4966ea097c8913dba03066"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/RNA_BASIS_DIAGNOSTICS.csv",
+      "bytes": 12932,
+      "sha256": "d8fd63f41ed7c5befd32aae888be10dab29981e66a28fa8cb86c27c0ae305229"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/RNA_RETENTION_GATES.csv",
+      "bytes": 1090,
+      "sha256": "3501944b928fc18299ef8aa44c8c468d74fbb948fffec3fc2553dde16df0a4b3"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/SEED_OOF_METRICS.csv",
+      "bytes": 16788,
+      "sha256": "259dbc0a94d222a0d6144fd6f3c4bd2b5ae7879ded787ed4ad265b68bd68d437"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/SUMMARY.csv",
+      "bytes": 7475,
+      "sha256": "61b361dad9c41ceccbe685c8afaf58bf1cabc77607d8f78a6c26cc626f2c0d55"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/VISUAL_CANDIDATES.csv",
+      "bytes": 6866,
+      "sha256": "f3acdaffe249481ae23391d999e5283824706b8fd0505a5df6afb02508858965"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/WRONG_PAIRING_FALLBACKS.csv",
+      "bytes": 2971,
+      "sha256": "bc5a141641202ddb6d9855b7f0459250e0820d0076e62c174badb221e0b2a830"
+    },
+    {
+      "path": "reports/phase16r_light_baseline_rna_compact/decision.json",
+      "bytes": 1378,
+      "sha256": "987ab6dece0b5a8fe7eb7bd4be3db75817d5f47e479cfa2dfc93b8c538cf2e81"
+    }
+  ],
+  "previous_public_files_unchanged": 190,
+  "no_patient_data_public": true
+}

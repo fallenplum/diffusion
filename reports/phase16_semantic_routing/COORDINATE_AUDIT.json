@@ -1,0 +1,12 @@
+{
+  "status": "BLOCKED_RAW_WSI_VISUAL_QA",
+  "computationally_mapped_slides": 519,
+  "conch_patches": 1278642,
+  "uni2_patches_in_paired_slides": 3285483,
+  "unmatched_mean_across_slides": 0.20089254936980022,
+  "area_mean_across_slides": 0.7417804038291048,
+  "sampled_coordinate_examples": 30,
+  "raw_histology_examples_verified": 0,
+  "same_row_matching_used": false,
+  "extra_UNI2_files_not_added_to_cohort": 1
+}

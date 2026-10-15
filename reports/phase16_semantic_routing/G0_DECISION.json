@@ -1,0 +1,16 @@
+{
+  "status": "PARTIAL_G0",
+  "nonsemantic_pool": "PASS",
+  "semantic_route": "BLOCKED_CONCH_Z_ACCESS",
+  "dual_visual": "BLOCKED_RAW_WSI_OR_COORD_VALIDATION",
+  "G5_semantic_omics": "BLOCKED_DEPENDS_ON_SEMANTIC_G2",
+  "continue": [
+    "G1_RAND_GRID_DIVERSE",
+    "G2_nonsemantic_and_anchors",
+    "MIL_train_only_pilot"
+  ],
+  "candidate_pool_limited": true,
+  "original_cohort_slides": 520,
+  "missing_original_CONCH_slides": 1,
+  "available_original_H5_rows_complete": true
+}

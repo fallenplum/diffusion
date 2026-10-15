@@ -1,0 +1,17 @@
+{
+  "status": "SEMANTIC_ROUTE_BLOCKED_PENDING_CONCH_Z",
+  "TITAN_text_to_raw_CONCH_v15_cosine": "PROHIBITED_NOT_SAME_SPACE",
+  "TITAN_scope": "verified slide text alignment;retain S32/native baseline",
+  "original_CONCH_v15_release": "patch visual weights;no compatible contrastive projection+text checkpoint in audited assets",
+  "CONCH_Z_official_revision": "60211fced9c25a014494e248eedb6a6be80109f7",
+  "CONCH_Z_required_operations": [
+    "project_image_features(raw768)",
+    "encode_text(tokenizer(prompts),normalize=True)"
+  ],
+  "CONCH_Z_access": "new user token authenticated config GET403:request awaiting review from repo authors;no bypass",
+  "sources": [
+    "https://github.com/mahmoodlab/LIMIT",
+    "https://github.com/mahmoodlab/TITAN/issues/17",
+    "https://github.com/mahmoodlab/CONCH"
+  ]
+}

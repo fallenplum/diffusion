@@ -1,0 +1,13 @@
+{
+  "reason": "E drive became accessible during execution;original slide coverage provenance newly verified",
+  "candidate_pool_limited": true,
+  "available_CONCH_H5_files": 519,
+  "original_UNI2_cohort_slides": 520,
+  "missing_original_CONCH_slides": 1,
+  "cohort_patients": 512,
+  "all_cohort_patients_have_CONCH": true,
+  "additional_CONCH_files_for_these_patients_outside_original_manifest": 0,
+  "local_cohort_manifest_sha256": "00986d86a760989f7a269edf1e38b3dafbe77386148c3c667f477f059e2bfc09",
+  "impact": "scope label corrected;all available CONCH patch rows used;no feature,model,split,selection,statistical hypothesis or prediction changed;no retraining needed",
+  "effective_scope": "all Phase16 arms,cells and conclusions are candidate-pool-limited relative to original520-slide set"
+}

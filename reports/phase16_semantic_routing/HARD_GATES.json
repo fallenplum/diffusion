@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "source_hash": "1cf395ed51a97368bae01b8688292058d50f6625d994f3f52c9ee85ad0adee82",
+  "actual_fault_checks": [
+    {
+      "fault": "cross_patient_ROI",
+      "status": "REJECTED",
+      "exception": "ValueError"
+    },
+    {
+      "fault": "wrong_level_or_MPP",
+      "status": "REJECTED",
+      "exception": "ValueError"
+    },
+    {
+      "fault": "unverified_CONCH_UNI2_mapping",
+      "status": "REJECTED",
+      "exception": "ValueError"
+    },
+    {
+      "fault": "RNA_prompt_cross_partition",
+      "status": "REJECTED",
+      "exception": "ValueError"
+    },
+    {
+      "fault": "RNA_prompt_identity",
+      "status": "REJECTED",
+      "exception": "ValueError"
+    },
+    {
+      "fault": "mismatched_checkpoint",
+      "status": "REJECTED",
+      "exception": "ValueError"
+    },
+    {
+      "fault": "outer_label_perturbation",
+      "status": "INVARIANT_BITWISE",
+      "check": "actual2epoch training repeated after all outer labels/time changed"
+    },
+    {
+      "fault": "tampered_censoring_time",
+      "status": "REJECTED",
+      "exception": "ValueError"
+    },
+    {
+      "fault": "reversed_risk",
+      "status": "REJECTED",
+      "exception": "ValueError"
+    }
+  ],
+  "Efron_gradient_error": 1.2740211663420098e-11,
+  "full_ROI_ownership_checked": true,
+  "semantic_accuracy_faults": "BLOCKED_NO_TEXT_MODEL;only partition guards exercised",
+  "dual_mapping_fault": "rejected at hard gate;no raw-image alignment accuracy claim"
+}

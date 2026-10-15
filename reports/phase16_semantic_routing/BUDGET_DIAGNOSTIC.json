@@ -1,0 +1,9 @@
+{
+  "status": "PASS_DIAGNOSTIC_ONLY",
+  "inner_fits": 16,
+  "outer_fits": 0,
+  "prediction_changes": 0,
+  "models_or_predictions_retained": false,
+  "original_formal_budget80_unchanged": true,
+  "scope": "post hoc nonconfirmatory;seed31fold1/2;320epochs fixed once;no further budget search"
+}

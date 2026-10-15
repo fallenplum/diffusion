@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "draws": 30000,
+  "count_hashes": {
+    "DSS": "c5f1ada615637fb92351989d4a4be7b5efbfbab49d90c10a313ea7ec3d48fbcb",
+    "PFI": "858b3dc8b9f8ea8354a8faf09eb15f7622d240d86223007bfab0c9af4ddc2b6d"
+  },
+  "literal_expanded_max_error": 9.324138683375338e-17,
+  "shared_patient_resampling": true,
+  "within_fold_pairs_only": true,
+  "averaged_seed_pair_credits_not_risks": true,
+  "refit_variance_included": false,
+  "secondary_family_tests": 52,
+  "primary_family_tests": 16,
+  "adjusted_CI_extreme_tail_expected_draws": 14.423076923076923
+}

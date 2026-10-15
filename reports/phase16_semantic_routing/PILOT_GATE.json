@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "source_hash": "1cf395ed51a97368bae01b8688292058d50f6625d994f3f52c9ee85ad0adee82",
+  "results": [
+    {
+      "status": "PASS",
+      "arm": "CS_CONCH_GLOBAL",
+      "seed": 31,
+      "fold": 1,
+      "outer_test_prediction_performed": false,
+      "gradient_max": 3.1177248283054126e-12,
+      "seconds": 1.462989330291748,
+      "source_hash": "1cf395ed51a97368bae01b8688292058d50f6625d994f3f52c9ee85ad0adee82"
+    },
+    {
+      "status": "PASS",
+      "arm": "CS_CONCH_GLOBAL",
+      "seed": 31,
+      "fold": 2,
+      "outer_test_prediction_performed": false,
+      "gradient_max": 3.289035710452026e-13,
+      "seconds": 1.459796667098999,
+      "source_hash": "1cf395ed51a97368bae01b8688292058d50f6625d994f3f52c9ee85ad0adee82"
+    },
+    {
+      "status": "PASS",
+      "arm": "MIL_512",
+      "seed": 31,
+      "fold": 1,
+      "S32_gradient": 24.32514190673828,
+      "attention_gradient": 0.00026191072538495064,
+      "ROI_gradient": 0.007168910000473261,
+      "outer_test_prediction_performed": false,
+      "peak_GPU_MiB": 4889.24755859375,
+      "seconds": 6.886511325836182,
+      "source_hash": "1cf395ed51a97368bae01b8688292058d50f6625d994f3f52c9ee85ad0adee82"
+    },
+    {
+      "status": "PASS",
+      "arm": "MIL_512",
+      "seed": 31,
+      "fold": 2,
+      "S32_gradient": 1.6436659097671509,
+      "attention_gradient": 0.00025537662440910935,
+      "ROI_gradient": 0.013035443611443043,
+      "outer_test_prediction_performed": false,
+      "peak_GPU_MiB": 4889.2392578125,
+      "seconds": 7.0203330516815186,
+      "source_hash": "1cf395ed51a97368bae01b8688292058d50f6625d994f3f52c9ee85ad0adee82"
+    },
+    {
+      "status": "PASS",
+      "arm": "RAND_512",
+      "seed": 31,
+      "fold": 1,
+      "S32_gradient": 24.336563110351562,
+      "attention_gradient": 0.00026216317201033235,
+      "ROI_gradient": 0.006915074307471514,
+      "outer_test_prediction_performed": false,
+      "peak_GPU_MiB": 870.150390625,
+      "seconds": 4.1180572509765625,
+      "source_hash": "1cf395ed51a97368bae01b8688292058d50f6625d994f3f52c9ee85ad0adee82"
+    },
+    {
+      "status": "PASS",
+      "arm": "RAND_512",
+      "seed": 31,
+      "fold": 2,
+      "S32_gradient": 1.6440685987472534,
+      "attention_gradient": 0.0002587577037047595,
+      "ROI_gradient": 0.014591959305107594,
+      "outer_test_prediction_performed": false,
+      "peak_GPU_MiB": 870.138671875,
+      "seconds": 4.1301257610321045,
+      "source_hash": "1cf395ed51a97368bae01b8688292058d50f6625d994f3f52c9ee85ad0adee82"
+    }
+  ],
+  "no_outer_predictions": true
+}

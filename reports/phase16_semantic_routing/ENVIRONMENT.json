@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3",
+  "torch": "2.5.1+cu124",
+  "numpy": "2.1.3",
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "source_hash": "1cf395ed51a97368bae01b8688292058d50f6625d994f3f52c9ee85ad0adee82",
+  "workers": 4,
+  "GPU_total_MiB": 32230.8125
+}

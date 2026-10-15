@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pairs": 10,
+  "metrics": 2,
+  "bootstrap_draws": 30000,
+  "constant_reference_new_fits": 0,
+  "patient_shared_weights": true,
+  "primary_family_unchanged": true,
+  "protocol_sha256": "b6d871df8998bc19dd36737543823b7e303e6a8a2464d673d5d1b36a586bdbe8"
+}

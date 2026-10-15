@@ -1,0 +1,12 @@
+{
+  "python": "3.12.3",
+  "torch": "2.5.1+cu124",
+  "numpy": "2.1.3",
+  "gpu_reported_name": "NVIDIA GeForce RTX 4080 SUPER",
+  "workers": 8,
+  "additional_MIL_workers": 2,
+  "text_batch": 512,
+  "sksurv": "0.23.1",
+  "official_model_revision": "60211fced9c25a014494e248eedb6a6be80109f7",
+  "runtime_offline_after_download": true
+}

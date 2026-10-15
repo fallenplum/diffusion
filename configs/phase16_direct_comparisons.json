@@ -1,0 +1,9 @@
+{
+ "version":"phase16_requested_query_vs_head_secondary_analysis",
+ "query_head_contrasts":"CLIN_RNA_TEXT minus FIXED_TEXT with identical G5 head/input: RNA,RC_UNGATED,RC_GATED each128/512;6contrasts",
+ "MIL_benchmarks":"CLIN_RNA_TEXT128/512 minus same-budget two-stageMIL;2contrasts",
+ "omics_independent_controls":"RNA_ONLY/CNA_ONLY minus constant-risk chance reference;2contrasts;constant is not a trained51starm",
+ "contrasts":10,"metrics":2,"multiplicity":"Bonferroni20 within supplementary direct-comparison family",
+ "bootstrap_draws":30000,"bootstrap_seed":1608531,"primary_tests_unchanged":true,
+ "scope":"supplementary analyses of the original prompt questions;not substitutes for the8primary contrasts;no training/model selection based on these outputs"
+}

@@ -1,0 +1,9 @@
+fault,status
+wrong_RNA_cross_partition,REJECTED
+wrong_RNA_identity,REJECTED
+cross_patient_ROI,REJECTED
+coordinate_wrong_scale,REJECTED
+identity_instead_of_official_projection,REJECTED
+outer_label_prompt_perturbation,INVARIANT_ALL_ACTUAL_STRINGS
+outer_label_training_perturbation,INVARIANT_BITWISE_AND_SELECTION
+mismatched_checkpoint,REJECTED

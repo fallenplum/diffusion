@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "ROI_budget_order_checks": 720,
+  "projected_features_checked": 1024,
+  "projection_error": 1.862645149230957e-07,
+  "fresh_text_max_roundoff": 0.00028954073786735535,
+  "outcome_labels_used": false,
+  "persistent_private_replay_capsule_sha256": "580003d0e033317104314c6575e69e41762e69b9216bfd58551da63a9f19ba1c",
+  "persistent_capsule_vectors": 8576,
+  "sampling_scope": "one deterministic WSI perrole and selector;all selected rows have full ownership/hash checks elsewhere"
+}

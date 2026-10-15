@@ -1,0 +1,440 @@
+{
+  "status": "PASS",
+  "public_files": [
+    {
+      "path": "configs/phase16_semantic_continuation.json",
+      "sha256": "30bb36db8997b2a78f3feb29ea582a30173016481416957115e45910d441217d",
+      "bytes": 3426
+    },
+    {
+      "path": "configs/phase16_omics_continuation.json",
+      "sha256": "b9067744f7ac1bacda10194487dda47521494ff7bd609cd7d1431858803a3fe8",
+      "bytes": 2581
+    },
+    {
+      "path": "configs/phase16_mil_two_stage.json",
+      "sha256": "8b4176b845c144d8faf052411fe7e75af5a62e1a55e84971cb6646ddaacde180",
+      "bytes": 1502
+    },
+    {
+      "path": "configs/phase16_direct_comparisons.json",
+      "sha256": "b6d871df8998bc19dd36737543823b7e303e6a8a2464d673d5d1b36a586bdbe8",
+      "bytes": 767
+    },
+    {
+      "path": "src/phase16_semantic/__init__.py",
+      "sha256": "8be5a4b4a96fd4e7c5da60c6719c88a93698c45a465bc6b0eb27f3b7c2ce2e2a",
+      "bytes": 86
+    },
+    {
+      "path": "src/phase16_semantic/core.py",
+      "sha256": "18827e1f646d9cd2708ee80e141046150310344159dccd6f0f94d54fb567793e",
+      "bytes": 3032
+    },
+    {
+      "path": "src/phase16_semantic/omics.py",
+      "sha256": "e5270d318ae16fd8a83975308d6ebaac6a1213e46fdfbc62606aa7131826d970",
+      "bytes": 6689
+    },
+    {
+      "path": "src/phase16_semantic/prompts.py",
+      "sha256": "96d47a80de7ccaea18cb609a952847217b488a32b42a1a3935d34ffb671bc5cf",
+      "bytes": 5563
+    },
+    {
+      "path": "src/phase16_semantic/runtime.py",
+      "sha256": "9097f3c6cd5e19e18a9edadbe98b052448b9f6a971820739c6f8bb514a4c02d7",
+      "bytes": 5848
+    },
+    {
+      "path": "scripts/ablate_phase16_semantic_inference.py",
+      "sha256": "13d04d924063e989dd5e576a095aca743de2d146b5d3021c0aa96ea0d55baf7f",
+      "bytes": 3633
+    },
+    {
+      "path": "scripts/audit_phase16_mechanisms.py",
+      "sha256": "90d6f4b46cab5df35f6bd4c20f2d21727c09e19a0152eeac0f2d8bad22fd8245",
+      "bytes": 3419
+    },
+    {
+      "path": "scripts/audit_phase16_semantic_retrieval.py",
+      "sha256": "affd38befa21909dba1be0b984a2592a2e7c80b9c97139629b9e303193b4c179",
+      "bytes": 3188
+    },
+    {
+      "path": "scripts/compare_phase16_direct.py",
+      "sha256": "fe0f669f9fcb6208149bff163ef0fdc92e80a419b0070eee888de4dc16bb6d37",
+      "bytes": 3901
+    },
+    {
+      "path": "scripts/execute_phase16_semantic.py",
+      "sha256": "d1c4a9726488ae16d1e4efb91389a3e7bc1b4ad584ccf705eb8083d7331800e8",
+      "bytes": 2167
+    },
+    {
+      "path": "scripts/finalize_phase16_tables.py",
+      "sha256": "b29dd6c97ead3952c46b1c0948d35a3ac2e36ea17c05579067166407db5e1d28",
+      "bytes": 4579
+    },
+    {
+      "path": "scripts/gate_phase16_semantic.py",
+      "sha256": "098ed43458d3149cecba153699c989bd3159e31648feb417e0f4dd1238723f8d",
+      "bytes": 4011
+    },
+    {
+      "path": "scripts/launch_phase16_mil_two_stage.py",
+      "sha256": "58237ed574e9ad4b694bb280bd3de3f2ba65253798ec29a3c2c294ade3a6210f",
+      "bytes": 1504
+    },
+    {
+      "path": "scripts/launch_phase16_omics.py",
+      "sha256": "af780aeed81728580a00fdacefe053853d4bdfa85db1d822d0df9d0fbd8fd018",
+      "bytes": 2495
+    },
+    {
+      "path": "scripts/launch_phase16_semantic.py",
+      "sha256": "32eff96371f0306206dedaa9c8e330e9b7b8fecd41cc4e9955c651e092eb64ee",
+      "bytes": 2375
+    },
+    {
+      "path": "scripts/pipeline_phase16_authorized.py",
+      "sha256": "4bce8bb356eaac06791243446098d148677e7798ba5d393618b483d9e93f5b36",
+      "bytes": 3492
+    },
+    {
+      "path": "scripts/prepare_phase16_semantic.py",
+      "sha256": "4180fb8322850f84f34cfbce6700c9f26157791046e0999c6b8f256e3c9be427",
+      "bytes": 5842
+    },
+    {
+      "path": "scripts/publish_phase16_authorized.py",
+      "sha256": "f5312a80b8ccfbddd4be0984a82259d93a34dbeaf18b8b3025a7cf8efc86f2ca",
+      "bytes": 4280
+    },
+    {
+      "path": "scripts/replay_phase16_semantic_queries.py",
+      "sha256": "8bc71ecc51b43dc2aaa329eefbccf9214316d786a751192eb6aad7b3ecd52235",
+      "bytes": 4839
+    },
+    {
+      "path": "scripts/report_phase16_authorized.py",
+      "sha256": "0a85697738c158368e44d6a46f094ce4046cf09c1c4fd0f3d607dafabb89cd90",
+      "bytes": 20947
+    },
+    {
+      "path": "scripts/run_phase16_mil_two_stage.py",
+      "sha256": "52d80ee6f0a0a34f964a407cefb67b6e332687ac4f6a3018b35906de60945074",
+      "bytes": 5820
+    },
+    {
+      "path": "scripts/run_phase16_omics.py",
+      "sha256": "c006dbbfd017ae9ba738dd9040ad6b6341829a0ca67a961fca21b97ee1cf7311",
+      "bytes": 5442
+    },
+    {
+      "path": "scripts/run_phase16_semantic.py",
+      "sha256": "8b403592c5cea5ff3bd269888b234832fcaf7504f8fcaa6d4ce07160920f8d90",
+      "bytes": 4285
+    },
+    {
+      "path": "scripts/validate_phase16_mil_two_stage.py",
+      "sha256": "e5a41ff276e156e7b7604690307cb7a5161fee9e569ba75b00885f279d4e30a9",
+      "bytes": 8575
+    },
+    {
+      "path": "scripts/validate_phase16_omics_independent.py",
+      "sha256": "ef2625948f85887cf852b888075f2dc1cc0f7d8c8ad1bafff1bdcd9bdd64041f",
+      "bytes": 14638
+    },
+    {
+      "path": "scripts/validate_phase16_semantic_independent.py",
+      "sha256": "452b19f046d5c975bbea063037f2c1ba01a541ac8461f1114a6ab8b0ca7ac323",
+      "bytes": 14053
+    },
+    {
+      "path": "scripts/watch_phase16_omics_evaluate.py",
+      "sha256": "136894d4273d509caba105694a38c3c56363d15ac86387b6891d82afa5310652",
+      "bytes": 528
+    },
+    {
+      "path": "scripts/watch_phase16_semantic_evaluate.py",
+      "sha256": "9186fb3c0ed50f6d90154ac3f1b455ee6f1cf01206b34f9603dab124f72503d8",
+      "bytes": 1088
+    },
+    {
+      "path": "reports/phase16_semantic_routing/README.md",
+      "sha256": "0577ba0139eec279ea1336f93ecf38f1ef55a7d85fecd46423011bebe6dee6da",
+      "bytes": 422
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/AGGREGATE_METRICS.csv",
+      "sha256": "1105e17bdabbb028427d2a150a73bc79b3c483ca9019728c7733281f89da16f8",
+      "bytes": 10044
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/BOOTSTRAP_DSS.json",
+      "sha256": "91515e0f1206fe874b17b27207395d0a1efbcefebea4fb9fc5716c89bb2e6acc",
+      "bytes": 302
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/BOOTSTRAP_PFI.json",
+      "sha256": "5bc6e59df0a423b46ad92df649bb0fc4eaafd5ac717d4f58c20660b287dc253a",
+      "bytes": 302
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/BUG_LOG.csv",
+      "sha256": "8547353060ae1b1cd90f07b1330b4bf41a1abe5c1b4e6338f0241bfa3c8f42d0",
+      "bytes": 464
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/DECISION.md",
+      "sha256": "12e50ccc752eaddbc152ae1813abbd5a733bfbcae53edba84591c01d404cf68f",
+      "bytes": 1069
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/DIRECT_COMPARISON_AUDIT.json",
+      "sha256": "6a4464ac3a8e5d1bc203bc0bfa253475fbdf9fd2c37981948149f7f7dc9dedb0",
+      "bytes": 276
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/DIRECT_PAIRED_COMPARISONS.csv",
+      "sha256": "0ebb051d27ed9b281cf59dd7669b3e1aa55be955f6fe488659f97a667bd17a53",
+      "bytes": 10632
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/ENVIRONMENT.json",
+      "sha256": "f96979d95569c22df9d24c42e754c3adabbdf28c0e0e0c70ac87fc5fca4e6bee",
+      "bytes": 331
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/FAULT_INJECTIONS.csv",
+      "sha256": "353dd5255c2c4384eb2bf2fe3fe2a10d5fb0d24ecf46d6027b07ac0d3853dcfa",
+      "bytes": 342
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/FINAL_INDEPENDENT_AUDIT.json",
+      "sha256": "4d00ef5ffefff287f3a3bf1937c40b90fdfcaec90466b14220d1b6accdee6353",
+      "bytes": 349
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/FOLD_METRICS.csv",
+      "sha256": "900ece3ee7376cedfa7096e77b893b1e321eaa34ff64caf52fd7fd06bde414d1",
+      "bytes": 146666
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/G1_COVERAGE.csv",
+      "sha256": "38ad5264947b101d846aa8f384d643d65d3904d46a89024e2359f99ef60993e4",
+      "bytes": 90360
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/G1_PROMPT_RETRIEVAL.csv",
+      "sha256": "5a94deeb93da33dec4e90a4f149384c5caadcaf353f8d97ffea1d1cf7d746355",
+      "bytes": 12830
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/G5/INDEPENDENT_AUDIT.json",
+      "sha256": "2c1e38f641a71925eb78272aa44cb52716d013e0acfd0c71165cc9bab6cdea46",
+      "bytes": 559
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/G5/MODEL_SUMMARY.csv",
+      "sha256": "c52dd080caa0fc4976d25f6a6b293b1f8e2a3e082f5a4a61da70fd1947993281",
+      "bytes": 17915
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/G5/PAIRED_COMPARISONS.csv",
+      "sha256": "5c89f1fe44cf12fefb3d354f38654e1513a6a8f905f82592df4bab9186a6ae8f",
+      "bytes": 13456
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/G5/TRAINING_DIAGNOSTICS.csv",
+      "sha256": "c7a5d37ddfe70a32e2f02c0db55db6a925598409d460d02b77b90a993850389b",
+      "bytes": 5558454
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/G5/UNIFIED_FOLD_METRICS.csv",
+      "sha256": "5409beb1fb4a7a1ad95127a8c1bb924b644578eb781f04d76280a81dd6196f4e",
+      "bytes": 175097
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/G5/UNIFIED_SEED_OOF_METRICS.csv",
+      "sha256": "ed3854288b7fe56d08ed94d90e8ecb585e7c601fa940736e299f6e01f9260e28",
+      "bytes": 18136
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/G5_PILOT_GATE.json",
+      "sha256": "3c6d531ff20707271f24c5ddd1e9e7282044d70c07d962574dc39dfc6e2f126f",
+      "bytes": 181
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/HARD_GATES.json",
+      "sha256": "42d3237136601df7828f9c34b2d23ea81b5ab812c1aa0c83050ba814cdb1acf0",
+      "bytes": 1130
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/INDEPENDENT_AUDIT.json",
+      "sha256": "94151981ad8465f29014c65f2834a13a8e89a0fb0f2973b05d3d6dbb586367f9",
+      "bytes": 376
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/MECHANISM_AUDIT.json",
+      "sha256": "928159678dc095ca04667961baa5d10e97600e1338d2af5dbedc5e0fb09adc9c",
+      "bytes": 207
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/MIL/FOLD_METRICS.csv",
+      "sha256": "2589c61422a92f42a3defdf8fa93fde779bffcba6cfc0be03e7beb43ace07891",
+      "bytes": 13219
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/MIL/INDEPENDENT_AUDIT.json",
+      "sha256": "7cdb2fb722d0e53f8ac76ca9f4b0b4e5edcccffbefd7644127d45d55558a37f3",
+      "bytes": 331
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/MIL/MODEL_SUMMARY.csv",
+      "sha256": "6b5cbc13a3eafd06dae2e97bcd8581b18c22a27e73bc54d570d25baafb81ff0a",
+      "bytes": 2242
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/MIL/PAIRED_COMPARISONS.csv",
+      "sha256": "ef55d3aa60448e8ea27bb4d9e75d2127a02bea52df6dc2289d218feab4486ae5",
+      "bytes": 1918
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/MIL/SEED_OOF_METRICS.csv",
+      "sha256": "20be9949e0de9a7653e9b42b6d7471615c60446c183da318bc33195b86d213fb",
+      "bytes": 1417
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/MISSING_BLOCK_SENSITIVITY.csv",
+      "sha256": "4a1b256f3b0c98c8089ff22412371c330667553eeb3cba85a3fbb346bfd73927",
+      "bytes": 89046
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/MODEL_ACCESS.json",
+      "sha256": "b6996e167eb3fa90524f44b956f4433766f15e2abedbdca0c963d9aa7ba151cd",
+      "bytes": 323
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/MODEL_SUMMARY.csv",
+      "sha256": "707d6e7426424e1e30f8b673aadf6fc9b43591fa3cf8a2f43c8b9cd2ee9ee6c4",
+      "bytes": 35581
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/OFFICIAL_LOAD_AUDIT.json",
+      "sha256": "17d60c218d6fc90fb432836d42607ea476d5ac1a3d7bfec33cf5befd105d6b91",
+      "bytes": 267
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/OMICS_ONLY_INDEPENDENT_GRADIENTS.csv",
+      "sha256": "3dd1e0a1f6718f38eab94b53e09d208f135307e149164455ea4a2d8f5f4e651d",
+      "bytes": 5541
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/OMICS_ONLY_SELECTION.csv",
+      "sha256": "ef6350da6b4f25c93cddc04dcb1900c585d08aca0700dd380de5ae4b7285bdce",
+      "bytes": 1652
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/PAIRED_COMPARISONS.csv",
+      "sha256": "5bfb691b73324ec1beea37616b5978c1fb23f2e127fc58b24141c6053fc3d9cf",
+      "bytes": 22914
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/PROMPT_INFERENCE_ABLATION_FOLD.csv",
+      "sha256": "9ba8d3c48015daa5d1b4c13a7322a5dbe5babe900ee7639a35ff0fb31f38ea5c",
+      "bytes": 55624
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/PROMPT_INFERENCE_ABLATION_SEED.csv",
+      "sha256": "04050c5f69fb9022eabd1b1aed8e3f4ba9c3728761a90cca606d173186c05a47",
+      "bytes": 4283
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/QUERY_REPLAY_AUDIT.json",
+      "sha256": "408077c3e7a48f61f4214ec170d30e7242595ddfeab09b928bfe109ef46850e2",
+      "bytes": 502
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/QUERY_REPLAY_SAMPLES.csv",
+      "sha256": "c1c971651f761906108702f34638c3a4689a34c0a7502cbe3f4c1699826496fd",
+      "bytes": 19495
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/REPRODUCE.md",
+      "sha256": "b6346cbaf2a854219d731c45096c73edcbbf33045fb2d322397314b53edf6be6",
+      "bytes": 1336
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/RESULTS.md",
+      "sha256": "e69b8bb85553055375fa2f7d5f41a055d266af42fbafcdb39b9e1729e293694b",
+      "bytes": 15170
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/RETRIEVAL_AUDIT.json",
+      "sha256": "034916fe0deaf2ad2298c5896f9083c1eb7a77bd0c7a12e67e3ee6d7a29146fb",
+      "bytes": 194
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/RISK_COMPONENTS.csv",
+      "sha256": "d6998c1867a1b38545943834c57e06eb279096e451684fd8c5fca5f02c21bd0a",
+      "bytes": 77479
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/SEED_OOF_METRICS.csv",
+      "sha256": "6ac7d8f4b1911ea2fb91a8b7a12b5afb36d8a67dd17e806d772c1f7cb753e685",
+      "bytes": 11287
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/SPACE_COMPATIBILITY.json",
+      "sha256": "b882b0b7f7e369d887bf1c8782820fabf2b0ecb6f41a4b1d5b1d95b4e8bc9f04",
+      "bytes": 673
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/TRAINING_DIAGNOSTICS.csv",
+      "sha256": "ebfc105b0c9b1a2cd62807424d42722688caeed3d1523b5bd6f9878807459962",
+      "bytes": 6319543
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/UNIFIED_FOLD_METRICS.csv",
+      "sha256": "a017c2d05092674ffc97a19c5001dd947e61be29536f6ccba976496fbc284270",
+      "bytes": 187048
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/UNIFIED_MODEL_SUMMARY.csv",
+      "sha256": "5d58a08cc3a25a4e9e1dc5053198f421038bc661e92ed2307045993f6a0614db",
+      "bytes": 61337
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/UNIFIED_SEED_OOF_METRICS.csv",
+      "sha256": "70b2aa96d774103da13051d4b64c0ea9f1cae39fefca94f45153b850ef6905ff",
+      "bytes": 18888
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/WRONG_PROMPT_FALLBACKS.csv",
+      "sha256": "7879803df4a75c72888b1dc3451dac968e3baa5a58e74d4ceee9027d5fe4a46a",
+      "bytes": 3640
+    },
+    {
+      "path": "reports/phase16_semantic_routing/semantic_completion/decision.json",
+      "sha256": "a6fa44b37643439f048433234e594fd2ddfa687a174e5a3ec57bd7e43d7a1417",
+      "bytes": 1059
+    }
+  ],
+  "previous_unchanged_public_files": 56,
+  "parent_commit": "a19eb457bc8f7fcbf11ffaf752f00c5aa0d8cf61",
+  "private_data_public": false,
+  "private_model_weights_sha256": "95bd4caba9df4ed44eb81d60f3103ffc135296cf6b952efedd83cc32d0fcfd9d",
+  "private_text_replay_capsule_sha256": "580003d0e033317104314c6575e69e41762e69b9216bfd58551da63a9f19ba1c",
+  "private_data_locations": [
+    "/root/phase16_semantic_private",
+    "/root/phase16_omics_private",
+    "/root/phase16_mil_private"
+  ],
+  "training_sources": {
+    "semantic": "c851125ae8d73fcf5d015e436448721469c6c0e5b3ddbd2fb1d492cf1ff72911",
+    "omics": "0db7ea927b2a9c312db0f7468957ed6f70f271d4776777a5e44bc85b1f300041",
+    "MIL": "800b74519fc9f8ea1ffb98b1d18903000873ba0a86ca9330e6cb96723104c392"
+  }
+}

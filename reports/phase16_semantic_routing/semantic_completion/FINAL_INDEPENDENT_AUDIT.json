@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "arms": 50,
+  "outer_fold_evaluations": 750,
+  "actual_new_outer_fits_cumulative": 690,
+  "historical_references": 60,
+  "new_outer_fits_this_authorized_batch": 540,
+  "all_final_metric_records": 1500,
+  "all_final_sksurv_max_error": 8.881784197001252e-16,
+  "patient_level_data_public": false,
+  "G4": "BLOCKED_RAW_WSI_QA"
+}

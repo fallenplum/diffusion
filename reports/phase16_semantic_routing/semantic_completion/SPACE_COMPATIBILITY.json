@@ -1,0 +1,21 @@
+{
+  "status": "PASS_OFFICIAL_INTERFACE",
+  "weights_sha256": "95bd4caba9df4ed44eb81d60f3103ffc135296cf6b952efedd83cc32d0fcfd9d",
+  "projection_shape": [
+    768,
+    768
+  ],
+  "projection_replay_error": 0.0,
+  "repeat_text_error": 0.0,
+  "image_dim": 768,
+  "text_dim": 768,
+  "patches_checked": 1024,
+  "text_similarity_sd": 0.1468743234872818,
+  "TITAN_text_raw_CONCH_cosine_used": false,
+  "original_source_encoder": "TRIDENT conch_v15;H5provenance/SHA",
+  "raw_image_pixel_reextraction_check": "NOT_AVAILABLE_NO_WSI;official existing-feature API verified",
+  "sources": [
+    "https://github.com/mahmoodlab/LIMIT",
+    "https://huggingface.co/MahmoodLab/CONCH-Z"
+  ]
+}

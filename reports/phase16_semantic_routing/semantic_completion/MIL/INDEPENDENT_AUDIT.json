@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source": "800b74519fc9f8ea1ffb98b1d18903000873ba0a86ca9330e6cb96723104c392",
+  "new_outer_replays": 30,
+  "extra_StageA_role_fits": 60,
+  "deployment_capacity_matched": true,
+  "StageA_validation_labels_used": false,
+  "StageB_attention_frozen_verified": true,
+  "max_replay_error": 2.384185791015625e-07
+}

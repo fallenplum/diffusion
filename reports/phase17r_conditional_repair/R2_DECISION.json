@@ -1,0 +1,495 @@
+{
+  "source": "2c06cbe6c270466f43512cd8d97c0f95c38f673c849cd3441084c240fed21b86",
+  "decision_utc": "2026-10-16T11:15:43.088387+00:00",
+  "stage": "R2",
+  "R1": {
+    "inner_cells": 60,
+    "R3_gate": {
+      "run": false,
+      "state_relative_L2_median": 0.0005966690368950367,
+      "state_effect_cells": 5,
+      "relative_risk_drift_median": 0.0005438520100115145,
+      "predictive_checks": [
+        {
+          "comparator": "R1_S6_noDirect",
+          "mean_inner_Harrell_gain": -0.001222344456667875,
+          "seed_gains": [
+            -0.001833516685001757,
+            0.0,
+            -0.001833516685001868
+          ],
+          "positive_seeds": 0,
+          "positive_cells": 6,
+          "pass": false
+        },
+        {
+          "comparator": "R1_A3_noDirect",
+          "mean_inner_Harrell_gain": 0.0033003300330033034,
+          "seed_gains": [
+            0.011001100110011097,
+            0.0025669233590025486,
+            -0.003667033370003736
+          ],
+          "positive_seeds": 2,
+          "positive_cells": 7,
+          "pass": false
+        },
+        {
+          "comparator": "WRONG_CONTEXT",
+          "mean_inner_Harrell_gain": 0.0001222344456667986,
+          "seed_gains": [
+            0.0003667033370003958,
+            0.0,
+            0.0
+          ],
+          "positive_seeds": 1,
+          "positive_cells": 1,
+          "pass": false
+        }
+      ],
+      "reasons": [
+        "state median below threshold",
+        "state effect not repeated in12cells",
+        "risk insensitive to patient context",
+        "predictive gate failed against R1_S6_noDirect",
+        "predictive gate failed against R1_A3_noDirect",
+        "predictive gate failed against WRONG_CONTEXT"
+      ],
+      "scope": "overlapping inner-validation engineering gate, not external significance"
+    }
+  },
+  "R2": {
+    "run": true,
+    "trigger_population": "R1_A8_noDirect inner-train first32",
+    "g_relative_L2_median": 0.11841607093811035,
+    "delta_over_base_RMS_median": 0.003566124476492405,
+    "B_condition_over_base_RMS_median": 0.0170126985758543,
+    "h_relative_L2_median": 0.0005966690368950367,
+    "selected": [
+      {
+        "arm": "R2_A8",
+        "seed": 31,
+        "fold": 1,
+        "scale": 1.0,
+        "selected_epoch": 21
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 31,
+        "fold": 2,
+        "scale": 0.25,
+        "selected_epoch": 15
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 31,
+        "fold": 3,
+        "scale": 1.0,
+        "selected_epoch": 18
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 31,
+        "fold": 4,
+        "scale": 1.0,
+        "selected_epoch": 15
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 31,
+        "fold": 5,
+        "scale": 0.25,
+        "selected_epoch": 18
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 47,
+        "fold": 1,
+        "scale": 1.0,
+        "selected_epoch": 18
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 47,
+        "fold": 2,
+        "scale": 0.25,
+        "selected_epoch": 12
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 47,
+        "fold": 3,
+        "scale": 0.25,
+        "selected_epoch": 13
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 47,
+        "fold": 4,
+        "scale": 0.25,
+        "selected_epoch": 17
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 47,
+        "fold": 5,
+        "scale": 0.25,
+        "selected_epoch": 17
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 83,
+        "fold": 1,
+        "scale": 0.25,
+        "selected_epoch": 14
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 83,
+        "fold": 2,
+        "scale": 1.0,
+        "selected_epoch": 11
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 83,
+        "fold": 3,
+        "scale": 0.25,
+        "selected_epoch": 20
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 83,
+        "fold": 4,
+        "scale": 1.0,
+        "selected_epoch": 17
+      },
+      {
+        "arm": "R2_A8",
+        "seed": 83,
+        "fold": 5,
+        "scale": 1.0,
+        "selected_epoch": 18
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 31,
+        "fold": 1,
+        "scale": 0.25,
+        "selected_epoch": 20
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 31,
+        "fold": 2,
+        "scale": 0.25,
+        "selected_epoch": 14
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 31,
+        "fold": 3,
+        "scale": 0.25,
+        "selected_epoch": 15
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 31,
+        "fold": 4,
+        "scale": 0.25,
+        "selected_epoch": 14
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 31,
+        "fold": 5,
+        "scale": 0.25,
+        "selected_epoch": 17
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 47,
+        "fold": 1,
+        "scale": 1.0,
+        "selected_epoch": 16
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 47,
+        "fold": 2,
+        "scale": 0.25,
+        "selected_epoch": 12
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 47,
+        "fold": 3,
+        "scale": 0.25,
+        "selected_epoch": 13
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 47,
+        "fold": 4,
+        "scale": 0.25,
+        "selected_epoch": 17
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 47,
+        "fold": 5,
+        "scale": 1.0,
+        "selected_epoch": 16
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 83,
+        "fold": 1,
+        "scale": 0.25,
+        "selected_epoch": 14
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 83,
+        "fold": 2,
+        "scale": 0.25,
+        "selected_epoch": 11
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 83,
+        "fold": 3,
+        "scale": 0.25,
+        "selected_epoch": 19
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 83,
+        "fold": 4,
+        "scale": 1.0,
+        "selected_epoch": 16
+      },
+      {
+        "arm": "R2_FiLM",
+        "seed": 83,
+        "fold": 5,
+        "scale": 0.25,
+        "selected_epoch": 17
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 31,
+        "fold": 1,
+        "scale": 0.25,
+        "selected_epoch": 21
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 31,
+        "fold": 2,
+        "scale": 0.25,
+        "selected_epoch": 14
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 31,
+        "fold": 3,
+        "scale": 0.25,
+        "selected_epoch": 15
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 31,
+        "fold": 4,
+        "scale": 1.0,
+        "selected_epoch": 15
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 31,
+        "fold": 5,
+        "scale": 1.0,
+        "selected_epoch": 19
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 47,
+        "fold": 1,
+        "scale": 1.0,
+        "selected_epoch": 17
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 47,
+        "fold": 2,
+        "scale": 0.25,
+        "selected_epoch": 12
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 47,
+        "fold": 3,
+        "scale": 0.25,
+        "selected_epoch": 13
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 47,
+        "fold": 4,
+        "scale": 1.0,
+        "selected_epoch": 17
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 47,
+        "fold": 5,
+        "scale": 1.0,
+        "selected_epoch": 17
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 83,
+        "fold": 1,
+        "scale": 0.25,
+        "selected_epoch": 14
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 83,
+        "fold": 2,
+        "scale": 1.0,
+        "selected_epoch": 11
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 83,
+        "fold": 3,
+        "scale": 0.25,
+        "selected_epoch": 19
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 83,
+        "fold": 4,
+        "scale": 1.0,
+        "selected_epoch": 16
+      },
+      {
+        "arm": "R2_Input",
+        "seed": 83,
+        "fold": 5,
+        "scale": 0.25,
+        "selected_epoch": 18
+      }
+    ],
+    "R3_gate": {
+      "run": false,
+      "state_relative_L2_median": 0.0006385059095919132,
+      "state_effect_cells": 6,
+      "relative_risk_drift_median": 0.000806191150082296,
+      "predictive_checks": [
+        {
+          "comparator": "R2_FiLM",
+          "mean_inner_Harrell_gain": 0.003911502261337259,
+          "seed_gains": [
+            0.006233956729006174,
+            -0.001833516685001757,
+            0.007334066740007361
+          ],
+          "positive_seeds": 2,
+          "positive_cells": 11,
+          "pass": false
+        },
+        {
+          "comparator": "R2_Input",
+          "mean_inner_Harrell_gain": 0.0002444688913335972,
+          "seed_gains": [
+            0.0014668133480014722,
+            -0.005500550055005493,
+            0.0047671433810048125
+          ],
+          "positive_seeds": 2,
+          "positive_cells": 7,
+          "pass": false
+        },
+        {
+          "comparator": "WRONG_CONTEXT",
+          "mean_inner_Harrell_gain": 0.00036670333700043284,
+          "seed_gains": [
+            0.001833516685001868,
+            -0.0003667033370002848,
+            -0.0003667033370002848
+          ],
+          "positive_seeds": 1,
+          "positive_cells": 2,
+          "pass": false
+        }
+      ],
+      "reasons": [
+        "state median below threshold",
+        "state effect not repeated in12cells",
+        "risk insensitive to patient context",
+        "predictive gate failed against R2_FiLM",
+        "predictive gate failed against R2_Input",
+        "predictive gate failed against WRONG_CONTEXT"
+      ],
+      "scope": "overlapping inner-validation engineering gate, not external significance"
+    }
+  },
+  "R3": {
+    "run": false,
+    "state_relative_L2_median": 0.0006385059095919132,
+    "state_effect_cells": 6,
+    "relative_risk_drift_median": 0.000806191150082296,
+    "predictive_checks": [
+      {
+        "comparator": "R2_FiLM",
+        "mean_inner_Harrell_gain": 0.003911502261337259,
+        "seed_gains": [
+          0.006233956729006174,
+          -0.001833516685001757,
+          0.007334066740007361
+        ],
+        "positive_seeds": 2,
+        "positive_cells": 11,
+        "pass": false
+      },
+      {
+        "comparator": "R2_Input",
+        "mean_inner_Harrell_gain": 0.0002444688913335972,
+        "seed_gains": [
+          0.0014668133480014722,
+          -0.005500550055005493,
+          0.0047671433810048125
+        ],
+        "positive_seeds": 2,
+        "positive_cells": 7,
+        "pass": false
+      },
+      {
+        "comparator": "WRONG_CONTEXT",
+        "mean_inner_Harrell_gain": 0.00036670333700043284,
+        "seed_gains": [
+          0.001833516685001868,
+          -0.0003667033370002848,
+          -0.0003667033370002848
+        ],
+        "positive_seeds": 1,
+        "positive_cells": 2,
+        "pass": false
+      }
+    ],
+    "reasons": [
+      "state median below threshold",
+      "state effect not repeated in12cells",
+      "risk insensitive to patient context",
+      "predictive gate failed against R2_FiLM",
+      "predictive gate failed against R2_Input",
+      "predictive gate failed against WRONG_CONTEXT"
+    ],
+    "scope": "overlapping inner-validation engineering gate, not external significance"
+  },
+  "R3_base_arm": "R2_A8",
+  "architecture_decisions_locked_before_outer": true,
+  "outer_files_present_at_decision": 0
+}

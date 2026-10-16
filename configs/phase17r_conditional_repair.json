@@ -1,0 +1,19 @@
+{
+  "version": "phase17r_exploratory_sequential_v1",
+  "parent_commit": "16d335f48bd82fd351e4b869e2b2ed4cb87d8a34",
+  "parent_training_source": "9794e29e99fd65a6465ed1af6932bcecc48a4bab92e1a7ab5618bb201637599e",
+  "private_root": "/root/autodl-tmp/phase17r_ssd_private",
+  "seeds": [31,47,83], "folds": [1,2,3,4,5], "patch_budget": 512,
+  "training": {"max_epochs":160,"minimum_epoch":1,"learning_rate":0.001,"weight_decay":0.01,"dropout":0.25,"gradient_clip":5.0,"microbatch_patients":128,"early_stopping_patience":40,"validation_ema_alpha":0.2,"direct_l2":1.0,"anchor_lambda":10.0,"schedule":"constant; outer refit exact inner-selected epochs"},
+  "R1": ["R1_A8_full","R1_A8_noDirect","R1_A3_noDirect","R1_S6_noDirect"],
+  "R2": {"models":["R2_A8","R2_FiLM","R2_Input"],"scales":[0.25,1.0],"selection":"lowest inner EMA validation full-risk Efron loss; ties prefer smaller scale; separately for each model/outer-fold/seed","normalization":"parameter-free LayerNorm of cross-modal context before all adapters","bounds":"delta logit and B additive correction each bounded by chosen scale; not a bound on final risk","adapter_parameters":1664,"common_write_gate":true},
+  "R2_trigger": {"g_relative_L2_median_at_least":0.05,"weak_update_any":{"delta_over_base_preactivation_RMS_median_below":0.001,"B_condition_over_base_B_RMS_median_below":0.001,"state_relative_L2_median_below":0.001},"population":"first32 inner-training patients, label-blind row order; selected R1_A8_noDirect checkpoints"},
+  "R3_gate": {"state_relative_L2_median_at_least":0.01,"state_relative_L2_at_least_0.001_cells":12,"wrong_context_relative_risk_drift_median_at_least":0.01,"mean_inner_Harrell_gain_at_least":0.005,"positive_seeds_at_least":2,"positive_cells_at_least":9,"comparators_R1":["R1_S6_noDirect","R1_A3_noDirect"],"comparators_R2":["R2_FiLM","R2_Input"],"must_beat_wrong_condition":true,"note":"overlapping inner validation partitions: a descriptive engineering gate, not independent OOF inference"},
+  "R3": {"only_if_gate_passes":true,"comparison":"forward versus reverse WSI order, retrained with identical parameters and compute; no bidirectional model unless separately registered","selection":"same fold-local training and epoch selection","stop_if_R1_R2_fail":true},
+  "primary_comparisons": [["R1_A8_noDirect","R1_A8_full"],["R1_A8_noDirect","R1_A3_noDirect"],["R1_A8_noDirect","R1_S6_noDirect"],["R2_A8","R2_FiLM"],["R2_A8","R2_Input"],["R2_A8","R1_A8_noDirect"]],
+  "bootstrap": {"draws":20000,"seed":171909,"family_tests_maximum":12,"sampling":"shared patient counts within fixed outer folds; seeds averaged after each seed within-fold pair aggregation; fixed outer-train IPCW"},
+  "endpoint":"DSS", "secondary":"PFI frozen transfer, no selection",
+  "scope":"new exploratory repair on repeatedly developed cohort; no claim of external confirmation; no outer scores read before staged architecture decisions",
+  "privacy":"only anonymous aggregate tables and code published; checkpoints, OOF, patient arrays private",
+  "controls":"all noDirect models retain own RNA/CNA trainable pathway token late main effects; wrong context swaps only molecular state context in partition, never own late evidence"
+}

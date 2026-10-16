@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "source": "2c06cbe6c270466f43512cd8d97c0f95c38f673c849cd3441084c240fed21b86",
+  "short_fits": 4,
+  "checkpoint_saved": false,
+  "rows": [
+    {
+      "arm": "R1_A8_noDirect",
+      "actual_training_runs": 2,
+      "epochs_each": 2,
+      "outer_event_and_time_actually_mutated": true,
+      "maximum_parameter_error": 0.0,
+      "selection_and_train_curves_identical": true,
+      "predictions_identical": true
+    },
+    {
+      "arm": "R2_A8",
+      "actual_training_runs": 2,
+      "epochs_each": 2,
+      "outer_event_and_time_actually_mutated": true,
+      "maximum_parameter_error": 0.0,
+      "selection_and_train_curves_identical": true,
+      "predictions_identical": true
+    }
+  ],
+  "preprocessing": "parent artifact hash locks plus inner/outer fit-index assertions at each real training call"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "private_dataset_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+  "matches_parent_audited_dataset": true,
+  "patients": 512,
+  "DSS_events": 65,
+  "visual_cache_source": "parent locked hashes checked before training",
+  "preprocessing": "per-call parent cache hashes and fit-index checks; no feature change in repair"
+}

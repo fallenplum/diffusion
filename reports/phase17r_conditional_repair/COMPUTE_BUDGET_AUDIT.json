@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "arm": "R2_A8",
+      "adapter_parameters": 1664,
+      "adapter_linear_MACs_per_valid_patch": 1664,
+      "dropout": 0.25,
+      "weight_decay": 0.01,
+      "candidate_scales": [
+        0.25,
+        1.0
+      ],
+      "max_epochs": 160
+    },
+    {
+      "arm": "R2_FiLM",
+      "adapter_parameters": 1664,
+      "adapter_linear_MACs_per_valid_patch": 1536,
+      "dropout": 0.25,
+      "weight_decay": 0.01,
+      "candidate_scales": [
+        0.25,
+        1.0
+      ],
+      "max_epochs": 160
+    },
+    {
+      "arm": "R2_Input",
+      "adapter_parameters": 1664,
+      "adapter_linear_MACs_per_valid_patch": 1664,
+      "dropout": 0.25,
+      "weight_decay": 0.01,
+      "candidate_scales": [
+        0.25,
+        1.0
+      ],
+      "max_epochs": 160
+    }
+  ],
+  "shared_visual_projection_MACs_per_patch": 98304,
+  "maximum_adapter_linear_MAC_difference": 128,
+  "difference_over_shared_visual_MACs": 0.0013020833333333333,
+  "SSM_shape_identical": [
+    512,
+    64,
+    16
+  ],
+  "common_write_gate": true,
+  "full_FLOPs_claim": false,
+  "timing_scope": "training and diagnostic timings collected under four simultaneous GPU tasks; not isolated speed ranking",
+  "scope": "near matched linear arithmetic,exact adapter parameter count,common regularization/search budget;nonlinear operation types differ"
+}

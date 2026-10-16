@@ -1,0 +1,127 @@
+{
+  "source": "2c06cbe6c270466f43512cd8d97c0f95c38f673c849cd3441084c240fed21b86",
+  "decision_utc": "2026-10-16T10:39:32.691493+00:00",
+  "stage": "R1",
+  "R1": {
+    "inner_cells": 60,
+    "R3_gate": {
+      "run": false,
+      "state_relative_L2_median": 0.0005966690368950367,
+      "state_effect_cells": 5,
+      "relative_risk_drift_median": 0.0005438520100115145,
+      "predictive_checks": [
+        {
+          "comparator": "R1_S6_noDirect",
+          "mean_inner_Harrell_gain": -0.001222344456667875,
+          "seed_gains": [
+            -0.001833516685001757,
+            0.0,
+            -0.001833516685001868
+          ],
+          "positive_seeds": 0,
+          "positive_cells": 6,
+          "pass": false
+        },
+        {
+          "comparator": "R1_A3_noDirect",
+          "mean_inner_Harrell_gain": 0.0033003300330033034,
+          "seed_gains": [
+            0.011001100110011097,
+            0.0025669233590025486,
+            -0.003667033370003736
+          ],
+          "positive_seeds": 2,
+          "positive_cells": 7,
+          "pass": false
+        },
+        {
+          "comparator": "WRONG_CONTEXT",
+          "mean_inner_Harrell_gain": 0.0001222344456667986,
+          "seed_gains": [
+            0.0003667033370003958,
+            0.0,
+            0.0
+          ],
+          "positive_seeds": 1,
+          "positive_cells": 1,
+          "pass": false
+        }
+      ],
+      "reasons": [
+        "state median below threshold",
+        "state effect not repeated in12cells",
+        "risk insensitive to patient context",
+        "predictive gate failed against R1_S6_noDirect",
+        "predictive gate failed against R1_A3_noDirect",
+        "predictive gate failed against WRONG_CONTEXT"
+      ],
+      "scope": "overlapping inner-validation engineering gate, not external significance"
+    }
+  },
+  "R2": {
+    "run": true,
+    "trigger_population": "R1_A8_noDirect inner-train first32",
+    "g_relative_L2_median": 0.11841607093811035,
+    "delta_over_base_RMS_median": 0.003566124476492405,
+    "B_condition_over_base_RMS_median": 0.0170126985758543,
+    "h_relative_L2_median": 0.0005966690368950367,
+    "selected": [],
+    "R3_gate": null
+  },
+  "R3": {
+    "run": false,
+    "state_relative_L2_median": 0.0005966690368950367,
+    "state_effect_cells": 5,
+    "relative_risk_drift_median": 0.0005438520100115145,
+    "predictive_checks": [
+      {
+        "comparator": "R1_S6_noDirect",
+        "mean_inner_Harrell_gain": -0.001222344456667875,
+        "seed_gains": [
+          -0.001833516685001757,
+          0.0,
+          -0.001833516685001868
+        ],
+        "positive_seeds": 0,
+        "positive_cells": 6,
+        "pass": false
+      },
+      {
+        "comparator": "R1_A3_noDirect",
+        "mean_inner_Harrell_gain": 0.0033003300330033034,
+        "seed_gains": [
+          0.011001100110011097,
+          0.0025669233590025486,
+          -0.003667033370003736
+        ],
+        "positive_seeds": 2,
+        "positive_cells": 7,
+        "pass": false
+      },
+      {
+        "comparator": "WRONG_CONTEXT",
+        "mean_inner_Harrell_gain": 0.0001222344456667986,
+        "seed_gains": [
+          0.0003667033370003958,
+          0.0,
+          0.0
+        ],
+        "positive_seeds": 1,
+        "positive_cells": 1,
+        "pass": false
+      }
+    ],
+    "reasons": [
+      "state median below threshold",
+      "state effect not repeated in12cells",
+      "risk insensitive to patient context",
+      "predictive gate failed against R1_S6_noDirect",
+      "predictive gate failed against R1_A3_noDirect",
+      "predictive gate failed against WRONG_CONTEXT"
+    ],
+    "scope": "overlapping inner-validation engineering gate, not external significance"
+  },
+  "R3_base_arm": "R1_A8_noDirect",
+  "architecture_decisions_locked_before_outer": false,
+  "outer_files_present_at_decision": 0
+}

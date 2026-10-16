@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "selected_checkpoints": 60,
+  "state_targets": 60,
+  "patient_risk_targets": 60,
+  "first_training_patients_per_checkpoint": 1,
+  "label_blind_z_variance_patients_per_checkpoint": 32,
+  "historical_weights_unchanged": true,
+  "new_model_fits": 0
+}

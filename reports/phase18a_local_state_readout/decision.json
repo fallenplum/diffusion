@@ -1,0 +1,148 @@
+{
+  "status": "STOP_CUSTOM_S6_READOUT_NOT_SUPPORTED",
+  "readout_helpful_direction_gate": false,
+  "condition_direction_and_seed_gate": false,
+  "strong_reference_no_mean_harm": false,
+  "reasons": [
+    "L0-F0 and L1-F1 are not both positive in both Harrell and Uno60",
+    "L1-L0 and DID fail positive two-metric means and/or at least two positive seeds per metric",
+    "L1 does not preserve both-metric mean performance against all locked strong references"
+  ],
+  "primary_checks": [
+    {
+      "comparison": "L0-F0",
+      "metric": "Harrell",
+      "mean_delta": -0.0018034972163413,
+      "positive_seeds": 1,
+      "direction_positive": false,
+      "Bonferroni8_positive": false
+    },
+    {
+      "comparison": "L0-F0",
+      "metric": "Uno60",
+      "mean_delta": -0.0085376407782432,
+      "positive_seeds": 1,
+      "direction_positive": false,
+      "Bonferroni8_positive": false
+    },
+    {
+      "comparison": "L1-F1",
+      "metric": "Harrell",
+      "mean_delta": -0.0052536658041244,
+      "positive_seeds": 1,
+      "direction_positive": false,
+      "Bonferroni8_positive": false
+    },
+    {
+      "comparison": "L1-F1",
+      "metric": "Uno60",
+      "mean_delta": -0.0095029928485463,
+      "positive_seeds": 1,
+      "direction_positive": false,
+      "Bonferroni8_positive": false
+    },
+    {
+      "comparison": "L1-L0",
+      "metric": "Harrell",
+      "mean_delta": -0.0001568258448991,
+      "positive_seeds": 1,
+      "direction_positive": false,
+      "Bonferroni8_positive": false
+    },
+    {
+      "comparison": "L1-L0",
+      "metric": "Uno60",
+      "mean_delta": 6.498593372172845e-05,
+      "positive_seeds": 1,
+      "direction_positive": true,
+      "Bonferroni8_positive": false
+    },
+    {
+      "comparison": "DID=(L1-L0)-(F1-F0)",
+      "metric": "Harrell",
+      "mean_delta": -0.0034501685877831,
+      "positive_seeds": 0,
+      "direction_positive": false,
+      "Bonferroni8_positive": false
+    },
+    {
+      "comparison": "DID=(L1-L0)-(F1-F0)",
+      "metric": "Uno60",
+      "mean_delta": -0.0009653520703031,
+      "positive_seeds": 1,
+      "direction_positive": false,
+      "Bonferroni8_positive": false
+    }
+  ],
+  "strong_reference_checks": [
+    {
+      "reference": "ANCHOR_CS",
+      "metric": "Harrell",
+      "L1_minus_reference": -0.028855955461460137,
+      "no_mean_harm": false
+    },
+    {
+      "reference": "ANCHOR_CS",
+      "metric": "Uno60",
+      "L1_minus_reference": -0.01000390151399655,
+      "no_mean_harm": false
+    },
+    {
+      "reference": "R1_A3_noDirect",
+      "metric": "Harrell",
+      "L1_minus_reference": -0.013173370971536147,
+      "no_mean_harm": false
+    },
+    {
+      "reference": "R1_A3_noDirect",
+      "metric": "Uno60",
+      "L1_minus_reference": -0.021164530133848003,
+      "no_mean_harm": false
+    }
+  ],
+  "corrected_positive_primary_statistics": [],
+  "condition_both_metrics_and_DID_corrected_positive": false,
+  "external_confirmation": false,
+  "confirmed_new_mechanism": false,
+  "non_significance_is_not_equivalence": true,
+  "stop_after_phase18a": true,
+  "phase18b_started": false,
+  "source": "3eafc2c455e53e71adc39fa305952ad616d7d87f235d56a894502c4e4a3572a0",
+  "parent_commit": "760a6a88feb9b731f8a935c98a8a79c4ca300943",
+  "generated_utc": "2026-10-16T15:32:33.352258+00:00",
+  "counts": {
+    "new_formal_inner_fits": 30,
+    "new_formal_outer_fits": 30,
+    "new_formal_model_fits": 60,
+    "diagnostic_short_fits": 4,
+    "diagnostic_short_optimizer_steps": 8,
+    "total_new_neural_fits_including_diagnostics": 64,
+    "historical_primary_inner_references": 30,
+    "historical_primary_outer_references": 30,
+    "historical_A3_outer_references": 15,
+    "historical_CONCH32_outer_references": 15,
+    "evaluation_reference_count": 90,
+    "historical_frozen_readout_probes_completed": 60,
+    "superseded_probe_records_in_incomplete_batch": 4,
+    "phase18b_fits": 0,
+    "completed_anchor_audit_re_solves": 195,
+    "anchor_audit_re_solve_scope": "75 historical replays + 60 completed historical probes + 60 new replays; excludes training/short-fit/superseded underlying solver calls",
+    "anchor_re_solves_produce_new_neural_weights_or_new_OOF": false,
+    "historical_references_and_frozen_probes_are_not_new_neural_training": true
+  },
+  "all_primary_95_intervals_cover_zero": true,
+  "evidence_gates": {
+    "INDEPENDENT_VALIDATION.json": "PASS",
+    "CHECKPOINT_REPLAY.json": "PASS",
+    "HISTORICAL_REUSE_AUDIT.json": "PASS",
+    "OPERATOR_PARITY.json": "PASS",
+    "DATA_LEAKAGE_AUDIT.json": "PASS",
+    "HISTORICAL_READOUT_PROBE_AUDIT.json": "PASS",
+    "BOOTSTRAP_AUDIT.json": "PASS",
+    "FIT_AND_REFERENCE_COUNTS.json": "PASS",
+    "EVALUATION_MATH_AUDIT.json": "PASS",
+    "CONTRAST_POINT_AUDIT.json": "PASS",
+    "PARENT_PUBLISHED_METRIC_PARITY.json": "PASS",
+    "PROBE_COVERAGE_AUDIT.json": "PASS"
+  }
+}

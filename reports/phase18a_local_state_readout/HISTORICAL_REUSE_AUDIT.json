@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "source": "2c06cbe6c270466f43512cd8d97c0f95c38f673c849cd3441084c240fed21b86",
+  "primary_reference_cells": 60,
+  "primary_outer_references": 30,
+  "secondary_outer_references": 15,
+  "total_audited_checkpoints": 75,
+  "new_model_fits": 0,
+  "replayed": true,
+  "maximum_replay_error": 0.0,
+  "software": {
+    "status": "PASS",
+    "python": "3.12.3",
+    "packages": {
+      "torch": "2.5.1+cu124",
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "scipy": "1.14.1",
+      "scikit-learn": "1.5.2",
+      "scikit-survival": "0.23.1",
+      "matplotlib": "3.9.2",
+      "h5py": "3.16.0"
+    },
+    "torch_CUDA": "12.4",
+    "GPU": "NVIDIA GeForce RTX 4080 SUPER",
+    "note": "package/Python/CUDA versions match saved Phase17R environment; replay separately checks arithmetic"
+  },
+  "dataset_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+  "visual_hashes": {
+    "u": "47d92f155f219fbcb25a4390a2c739321de574b11d54fbdba6387471ae8d4c26",
+    "conch": "52b59b66509bc9171eb4057f4f54c1917132adf14738755c1b8d2fff74599b90",
+    "mask": "1237321e263139ad1c5f9c1c38f25a70dcc3c00814f15bb8ffb688a441b379dc",
+    "owner": "79adbc019a929b566c323741236e68f4fd1fb96b9a0c7b10fdf36da1ca56929f",
+    "coords": "c20d96f8571f41fe03cd72b198b68f2337e2bb4f3e26c7913c1a00dc3417554a",
+    "local_row": "1178b44dcfafaf77ce7be90612129115bc6387ff2d6422a15734b6359d0c5535"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source": "3eafc2c455e53e71adc39fa305952ad616d7d87f235d56a894502c4e4a3572a0",
+  "new_model_fits": 60,
+  "primary_historical_outer_references": 30,
+  "model_seed_vectors": 27,
+  "fold_metric_rows": 135,
+  "independently_checked_against_sksurv": true,
+  "Clinical_S32_anchor": "independent fold-local reconstruction/stationarity and bitwise equality across all arms/seeds",
+  "PFI": "same frozen DSS risks; no PFI optimization or selection",
+  "risk_ensembling": false,
+  "DID": "four complete C values recomputed in each of 20000 shared patient resamples"
+}

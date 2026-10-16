@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "training_source": "3eafc2c455e53e71adc39fa305952ad616d7d87f235d56a894502c4e4a3572a0",
+  "server_actual_tests": 5,
+  "failures_errors_skips": 0,
+  "junit_sha256": "bd75c85a7b9aa9c4dc9bdfc5ef5222c10e740cc0cea49ea4ef9c00ddb5e3ef9e",
+  "test_source_sha256": "1bea4ab2a20aff9ed07499436414f57437d82b861a40e01abf548b07ece0bb93",
+  "evaluator_sha256": "14d831adef1de3278a07a42410b591e2dce38a048f9dcd420216e57c485fe0f6",
+  "test_names": [
+    "test_shared_patient_counts_equal_explicit_replication",
+    "test_did_is_four_complete_c_values_per_draw",
+    "test_event_ties_and_padding_not_comparable_self_pairs",
+    "test_seeds_averaged_after_c_not_risk",
+    "test_public_gradient_diagnostics_omit_single_patient_risk"
+  ],
+  "coverage": [
+    "explicit replicated-patient oracle",
+    "four-complete-C DID per draw",
+    "event/censor ties and absence of self comparable pairs",
+    "seed C averaging rather than risk averaging",
+    "public diagnostic exclusion of one-patient target value"
+  ],
+  "utc": "2026-10-16T15:12:48.699232+00:00"
+}

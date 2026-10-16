@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "new_inner_fits": 30,
+  "new_outer_fits": 30,
+  "historical_primary_inner_references": 30,
+  "historical_primary_outer_references": 30,
+  "historical_A3_outer_references": 15,
+  "historical_CONCH32_frozen_outer_references": 15,
+  "evaluation_reference_count": 90,
+  "new_model_fits": 60,
+  "not_counted_as_new_training": "historical references, frozen wrong/SSMoff/gamma1, label-blind diagnostics and replay"
+}

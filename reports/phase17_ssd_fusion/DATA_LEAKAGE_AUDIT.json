@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "feature_outer_label_mutation": "PASS",
+  "split_local_derangements": "PASS",
+  "complete_training_checkpoint_mutation_test": {
+    "status": "PASS",
+    "epochs_each": 2,
+    "outer_labels_actually_replaced": true,
+    "max_parameter_difference": 0.0,
+    "identical_selection_and_curves": true
+  },
+  "RNA_missing_patients": 203,
+  "RNA_missing_columns": 3024,
+  "patient_OOF_public": false
+}

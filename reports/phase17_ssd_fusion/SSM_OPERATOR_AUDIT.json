@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "implementation": "conditional S6 exact ZOH;torch CUDA reverse cumulative sum,NOT Mamba2 SSD kernel",
+  "scan_checks": [
+    {
+      "N": 1,
+      "batch": 1,
+      "dtype": "float64",
+      "forward_max": 0.0,
+      "gradient_max": 0.0,
+      "m0_hold_error": 0.0
+    },
+    {
+      "N": 16,
+      "batch": 1,
+      "dtype": "float64",
+      "forward_max": 6.661338147750939e-16,
+      "gradient_max": 3.552713678800501e-15,
+      "m0_hold_error": 0.0
+    },
+    {
+      "N": 128,
+      "batch": 1,
+      "dtype": "float64",
+      "forward_max": 4.440892098500626e-16,
+      "gradient_max": 3.552713678800501e-15,
+      "m0_hold_error": 0.0
+    },
+    {
+      "N": 512,
+      "batch": 1,
+      "dtype": "float64",
+      "forward_max": 2.220446049250313e-16,
+      "gradient_max": 8.881784197001252e-15,
+      "m0_hold_error": 0.0
+    },
+    {
+      "N": 512,
+      "batch": 2,
+      "input_dtype": "torch.float32",
+      "accumulator": "float32",
+      "forward_max": 7.748603820800781e-06
+    },
+    {
+      "N": 512,
+      "batch": 2,
+      "input_dtype": "torch.float16",
+      "accumulator": "float32",
+      "forward_max": 6.556510925292969e-07
+    },
+    {
+      "N": 512,
+      "batch": 2,
+      "input_dtype": "torch.bfloat16",
+      "accumulator": "float32",
+      "forward_max": 5.4836273193359375e-06
+    }
+  ],
+  "finite_difference": true,
+  "conditional_parameter_gradients": {
+    "log_A": 0.0003697544161695987,
+    "gamma": 0.007439984939992428,
+    "visual.0.weight": 0.055506058037281036,
+    "visual.0.bias": 0.0022394044790416956,
+    "visual.1.weight": 0.0010661123087629676,
+    "visual.1.bias": 0.0013690558262169361,
+    "clinical.weight": 0.06847511976957321,
+    "clinical.bias": 0.013376514427363873,
+    "molecular.logits": 5.73291617911309e-06,
+    "molecular.slot": 0.00745261088013649,
+    "molecular.evidence.0.weight": 0.012222224846482277,
+    "molecular.evidence.0.bias": 0.010081063956022263,
+    "molecular.evidence.2.weight": 0.023015223443508148,
+    "molecular.evidence.2.bias": 0.02981044538319111,
+    "q.weight": 1.475574322284956e-06,
+    "k.weight": 1.465839318370854e-06,
+    "v.weight": 1.2935746781295165e-05,
+    "attn_out.weight": 1.5349538443842903e-05,
+    "u.weight": 0.008547206409275532,
+    "u.bias": 0.0005547876935452223,
+    "dt.weight": 0.0035314958076924086,
+    "dt.bias": 0.00032436512992717326,
+    "B.weight": 0.007404370233416557,
+    "B.bias": 0.0009266753331758082,
+    "C.weight": 0.005218536127358675,
+    "C.bias": 0.0024080006405711174,
+    "delta_down.weight": 6.273645794863114e-06,
+    "delta_up.weight": 1.629592770768795e-05,
+    "B_down.weight": 1.4031606042408384e-05,
+    "B_up.weight": 5.476466685649939e-05,
+    "write.weight": 0.000629595888312906,
+    "write.bias": 3.0442170100286603e-06,
+    "readout.weight": 0.028435666114091873,
+    "late.weight": 5.015242099761963,
+    "direct.weight": 33.39291000366211
+  },
+  "g_gradient_norm": 2.0005714759463444e-05,
+  "m1_zero_U_vanilla_error": 0.0,
+  "tied_Efron_error": 2.220446049250313e-16,
+  "missing_mask": "executed;all-CNA missing batch row",
+  "CUDA": "12.4",
+  "torch": "2.5.1+cu124"
+}

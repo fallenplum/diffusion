@@ -1,0 +1,25 @@
+{
+  "methods": [
+    {
+      "method": "MGCT",
+      "status": "PASS",
+      "forward_shape": [
+        2
+      ],
+      "parameters": 6318385,
+      "parameters_with_gradient": 4736559,
+      "batched_port_output_error": 0.0,
+      "batched_port_gradient_error": 0.0
+    },
+    {
+      "method": "MambaMIL",
+      "status": "PASS",
+      "forward_shape": [
+        2
+      ],
+      "parameters": 4491052,
+      "parameters_with_gradient": 4491052
+    }
+  ],
+  "source": "pinned official repositories;feature/Cox/clinical adapters disclosed"
+}

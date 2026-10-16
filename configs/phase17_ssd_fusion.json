@@ -1,0 +1,21 @@
+{
+  "version": "phase17_conditional_s6_v1",
+  "parent_commit": "7dca7cf9d72b61517baa85b7493b1f6ea750460d",
+  "private_root": "/root/autodl-tmp/phase17_ssd_private",
+  "seeds": [31,47,83], "folds": [1,2,3,4,5],
+  "inner_diagnosis": {"seed":31,"folds":[1,2],"patch_budget":128},
+  "formal_patch_budget":512,
+  "model":{"d":64,"state_dim":16,"rank":8,"qk":16,"pathway_subtokens":2,"visual":"area_matched_UNI2h_only","gamma_init":0.1,"gate_init":0.9},
+  "training":{"max_epochs":160,"minimum_epoch":16,"validation_ema_alpha":0.2,"learning_rate":0.001,"weight_decay":0.001,"dropout":0.1,"gradient_clip":5.0,"microbatch_patients":128,"schedule":"constant;final refit exact inner-selected epoch","loss":"full-risk-set Efron;all patient risks collected before loss","RNA_direct_l2":1.0,"anchor_lambda":10.0},
+  "ridge_grid":[0.01,0.1,1.0,10.0],
+  "arms":["A0","A1","A2","A3","A4","A5","A6","A7","A8","A9","A10","A11_NO_S32","A11_NO_CLIN"],
+  "primary_comparisons":[["A8","A3"],["A8","A7"]],
+  "metrics":["within-fold Harrell","within-fold Uno60"],
+  "bootstrap":{"draws":20000,"seed":170991,"sampling":"patient multinomial independently within each fixed outer fold;shared counts across arms and seeds","primary_family_tests":4,"IPCW":"outer-train censoring KM;frozen within bootstrap"},
+  "wrong_context":"split-local derangement;prefer cancer+Stage strata,merge singleton to cancer then partition;own direct RNA/CNA unchanged",
+  "ordering":"coordinate x,y per WSI;equal WSI patient aggregation;no biological-time interpretation",
+  "repairs":{"maximum":2,"outer_cells_each_maximum":15,"basis":"inner training/validation only"},
+  "scope":"candidate-pool-limited;geometry-only-validation;repeatedly developed cohort,not external confirmation",
+  "secondary":"PFI valid510,event129;evaluate frozen DSS risks,no PFI selection",
+  "privacy":"patient arrays/OOF/checkpoints stay private;public aggregate tables only"
+}

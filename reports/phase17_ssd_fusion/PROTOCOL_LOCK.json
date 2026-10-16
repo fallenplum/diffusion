@@ -1,0 +1,37 @@
+{
+  "status": "LOCKED_BEFORE_OUTER",
+  "training_source": "9794e29e99fd65a6465ed1af6932bcecc48a4bab92e1a7ab5618bb201637599e",
+  "files": {
+    "configs/phase17_ssd_fusion.json": "279af29732fdd6a0041002a4927425abc2758b08d79fdcd559a58b5048367d1e",
+    "src/phase17_ssd/__init__.py": "242c763fe3da081ac0fd10f330990098115b4bd7d71f7fc528da6acd8f5434bb",
+    "src/phase17_ssd/data.py": "c20e4aa87c899533d24aa32647816328d3e60db6c301e9e38200bf4c0fe34786",
+    "src/phase17_ssd/losses.py": "631241f056c572136440a60feb8cfbee4c254059b52886ea135fa31a14715b75",
+    "src/phase17_ssd/model.py": "28ae4b4a127019e255af4b88da0c3e2d673644f09ed7e0a94d25ff30558a5594",
+    "src/phase17_ssd/omics.py": "fc5eee86f273389003c69da1eeea7fb5c72c518fbe30db60d4dd918cbe6309eb",
+    "src/phase17_ssd/ssm.py": "a8a07ce26c745bc7238dd02423060582afb90a52ee29eed5bc5d9af7ece16c90",
+    "src/phase17_ssd/train.py": "0a93dbd9239857ee0e43d7db24f73cbb4955c51908ca455ee35db81f5f0ab91f",
+    "scripts/run_phase17.py": "78fedc83dcd941b71d5d1f6199fb54eca8286f7013562844b36017ce77a432d5",
+    "scripts/run_phase17_paper.py": "b6cb471a80a6c3d9c8d749e37b2b3523b15f67975601d21839d849685c432586",
+    "scripts/phase17_paper_models.py": "65831a2889b3b890c2b404ea8568f44f37b40e56b76e3f66e5908d18a05f6a9a",
+    "scripts/run_phase17_simple.py": "27fa6cb369659cef12c14ae08944acaa018adffa2dc05c0173b13ebdb53748b4",
+    "scripts/validate_phase17_independent.py": "2f050cc7a58b7082f5fbcdbc455a3fd127bc2e8812bc47dc0770baad2834fbb7"
+  },
+  "registry_sha256": "4666af2b306a0cd952c902c3ae16109328f3b1ccac2c974a486a18571e0f1689",
+  "primary": [
+    [
+      "A8",
+      "A3"
+    ],
+    [
+      "A8",
+      "A7"
+    ]
+  ],
+  "outer_predictions": 0,
+  "paper_baselines": [
+    "MGCT adapted",
+    "MambaMIL with late adapter"
+  ],
+  "TransSurv": "BLOCKED:no verifiable official implementation/multiscale inputs",
+  "time_unix": 1792134345.4434197
+}

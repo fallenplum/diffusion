@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "toy_Harrell_error": 0.0,
+  "toy_Uno_error": 2.220446049250313e-16,
+  "bootstrap_duplicate_expansion_checks": 200,
+  "maximum_count_weight_vs_expanded_sample_error": 2.220446049250313e-16,
+  "risk_direction": "higher risk means earlier event",
+  "KM": "reverse censoring Kaplan-Meier with training event tie adjustment"
+}

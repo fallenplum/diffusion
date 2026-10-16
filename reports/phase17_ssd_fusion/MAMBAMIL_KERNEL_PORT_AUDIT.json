@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "N": 1,
+      "forward_max_error": 9.313225746154785e-10,
+      "gradient_max_error": 4.656612873077393e-10,
+      "reference": "literal causal depthwise conv + Euler input selective recurrence + gated D skip"
+    },
+    {
+      "N": 16,
+      "forward_max_error": 1.7881393432617188e-07,
+      "gradient_max_error": 9.5367431640625e-07,
+      "reference": "literal causal depthwise conv + Euler input selective recurrence + gated D skip"
+    },
+    {
+      "N": 128,
+      "forward_max_error": 2.2351741790771484e-08,
+      "gradient_max_error": 1.7881393432617188e-07,
+      "reference": "literal causal depthwise conv + Euler input selective recurrence + gated D skip"
+    },
+    {
+      "N": 512,
+      "forward_max_error": 5.960464477539063e-08,
+      "gradient_max_error": 5.364418029785156e-07,
+      "reference": "literal causal depthwise conv + Euler input selective recurrence + gated D skip"
+    }
+  ],
+  "scope": "ported original SRMamba fast helper uses official released causal_conv1d and selective_scan kernels;SR reordering unchanged",
+  "exact_ZOH_used": false
+}

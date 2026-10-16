@@ -1,0 +1,57 @@
+{
+  "status": "MECHANISM_NOT_SUPPORTED",
+  "training_source": "9794e29e99fd65a6465ed1af6932bcecc48a4bab92e1a7ab5618bb201637599e",
+  "actual_outer_neural_cells": 165,
+  "actual_outer_paper_cells": 30,
+  "actual_outer_simple_fits": 10,
+  "actual_inner_neural_cells": 165,
+  "actual_inner_paper_cells": 30,
+  "actual_prelock_cells": 34,
+  "actual_inner_simple_candidate_fits": 20,
+  "actual_label_mutation_training_checks": 6,
+  "all_outer_fits": 205,
+  "counts": {
+    "pilot": 22,
+    "repair_inner": 4,
+    "tuning": 6,
+    "inner": 165,
+    "outer": 165,
+    "paper_pilot": 2,
+    "paper_inner": 30,
+    "paper_outer": 30
+  },
+  "formal_wall_hours": 1.3716626713011,
+  "primary_all_corrected_lower_gt0": false,
+  "TransSurv": "BLOCKED;official code and multiscale features unavailable",
+  "external_confirmation": false,
+  "stage_source_hashes": {
+    "pilot": [
+      "b4de29024f5a26b7dee999ba5f19caa76e2e2e43d2f9fa90e1e08f332efed844"
+    ],
+    "repair_inner": [
+      "9794e29e99fd65a6465ed1af6932bcecc48a4bab92e1a7ab5618bb201637599e",
+      "deeeb00b9948023cb1eeb4939394ba46e5ea3afbfea030db32c10139cedbdec2"
+    ],
+    "tuning": [
+      "deeeb00b9948023cb1eeb4939394ba46e5ea3afbfea030db32c10139cedbdec2"
+    ],
+    "inner": [
+      "9794e29e99fd65a6465ed1af6932bcecc48a4bab92e1a7ab5618bb201637599e"
+    ],
+    "outer": [
+      "9794e29e99fd65a6465ed1af6932bcecc48a4bab92e1a7ab5618bb201637599e"
+    ],
+    "paper_pilot": [
+      "deeeb00b9948023cb1eeb4939394ba46e5ea3afbfea030db32c10139cedbdec2"
+    ],
+    "paper_inner": [
+      "9794e29e99fd65a6465ed1af6932bcecc48a4bab92e1a7ab5618bb201637599e"
+    ],
+    "paper_outer": [
+      "9794e29e99fd65a6465ed1af6932bcecc48a4bab92e1a7ab5618bb201637599e"
+    ]
+  },
+  "secondary_PFI_new_fits": 0,
+  "new_inner_optimizer_fits_total": 249,
+  "new_neural_short_label_mutation_checks": 6
+}

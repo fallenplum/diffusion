@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "method": "A8",
+      "patients_per_microbatch": 128,
+      "N": 512,
+      "forward_backward_seconds": 0.42371618695324287,
+      "peak_allocated_MB": 3680.69189453125,
+      "finite": true
+    },
+    {
+      "method": "MGCT",
+      "patients_per_microbatch": 128,
+      "N": 512,
+      "forward_backward_seconds": 0.11653295700671151,
+      "peak_allocated_MB": 3646.2919921875,
+      "finite": true
+    },
+    {
+      "method": "MambaMIL",
+      "patients_per_microbatch": 32,
+      "N": 512,
+      "forward_backward_seconds": 0.2855396769591607,
+      "peak_allocated_MB": 2652.22265625,
+      "finite": true
+    }
+  ],
+  "scope": "synthetic full512 budget;no OOF or smoke checkpoints retained"
+}

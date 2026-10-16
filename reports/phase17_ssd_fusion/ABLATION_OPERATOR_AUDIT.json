@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "real_forward_differences_after_nonzero_adapter_activation": {
+    "A8-A7": 3.3759818039366674e-05,
+    "A7-A5": 1.122979695860997e-06,
+    "A7-A6": 7.255895368828841e-07,
+    "A3-A2": 0.0001172587455308717,
+    "A4-A2": 3.6194835121248006e-05,
+    "A8-A9": 9.251970976746973e-07,
+    "A8-A10": 1.2501923426101041e-07
+  },
+  "parameter_counts": [
+    {
+      "arm": "A2",
+      "registered_parameters": 171802,
+      "elements_in_tensors_with_grad": 154009,
+      "nonzero_gradient_entries": 132505
+    },
+    {
+      "arm": "A3",
+      "registered_parameters": 171802,
+      "elements_in_tensors_with_grad": 168345,
+      "nonzero_gradient_entries": 146841
+    },
+    {
+      "arm": "A4",
+      "registered_parameters": 171802,
+      "elements_in_tensors_with_grad": 165913,
+      "nonzero_gradient_entries": 144408
+    },
+    {
+      "arm": "A5",
+      "registered_parameters": 171802,
+      "elements_in_tensors_with_grad": 165273,
+      "nonzero_gradient_entries": 143769
+    },
+    {
+      "arm": "A6",
+      "registered_parameters": 171802,
+      "elements_in_tensors_with_grad": 164889,
+      "nonzero_gradient_entries": 143385
+    },
+    {
+      "arm": "A7",
+      "registered_parameters": 171802,
+      "elements_in_tensors_with_grad": 165913,
+      "nonzero_gradient_entries": 144409
+    },
+    {
+      "arm": "A8",
+      "registered_parameters": 171802,
+      "elements_in_tensors_with_grad": 166042,
+      "nonzero_gradient_entries": 144538
+    },
+    {
+      "arm": "A9",
+      "registered_parameters": 171802,
+      "elements_in_tensors_with_grad": 166042,
+      "nonzero_gradient_entries": 144538
+    },
+    {
+      "arm": "A10",
+      "registered_parameters": 171802,
+      "elements_in_tensors_with_grad": 166042,
+      "nonzero_gradient_entries": 144538
+    },
+    {
+      "arm": "A11_NO_CLIN",
+      "registered_parameters": 171802,
+      "elements_in_tensors_with_grad": 166042,
+      "nonzero_gradient_entries": 128794
+    }
+  ],
+  "FiLM_adapter_parameters": 1664,
+  "delta_B_adapter_parameters": 1664,
+  "note": "registered common mother graph includes inactive branches;gradient-bearing tensors and actually nonzero entries reported separately;synthetic checks are not survival performance"
+}

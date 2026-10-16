@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "selected_patch_ID_sets_rechecked": 519,
+  "patients": 512,
+  "patches": 253982,
+  "minimum_norm": 0.9999579787254333,
+  "maximum_norm": 1.000048041343689,
+  "zero_vectors": 0,
+  "minimum_patient_patches": 91,
+  "maximum_patient_patches": 512,
+  "normalization_precision": "float16 persisted;float32 network input",
+  "raw_WSI_QA": false
+}

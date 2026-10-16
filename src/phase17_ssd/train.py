@@ -89,6 +89,7 @@ def train_cell(arm,seed,fold,role,budget,epochs=None):
             if ep>=min(tc['minimum_epoch'],length) and ema<best-1e-8:best=ema;best_epoch=ep;best_state={k:v.detach().cpu().clone() for k,v in model.state_dict().items()}
         history.append(row)
         if ep==1 or ep%20==0:print('TRAIN',arm,seed,fold,role,ep,round(row['train_loss'],5),row.get('validation_Harrell','NA'),round(time.monotonic()-start,1),flush=True)
+        if role=='inner' and ep-best_epoch>=tc.get('early_stopping_patience',10000):break
     if role=='inner':model.load_state_dict(best_state)
     else:best_epoch=length
     model.eval()
@@ -98,7 +99,10 @@ def train_cell(arm,seed,fold,role,budget,epochs=None):
     summary={'registered_parameters':registered,'last_step_gradient_parameters':active,'gradient_norms':gradients,'seconds':time.monotonic()-start,'peak_GPU_MB':torch.cuda.max_memory_allocated()/2**20,'gamma':float(model.gamma.detach())}
     states={'m':[],'dt':[],'B':[],'conditional_delta':[],'conditional_B':[],'g':[],'h':[],'ssm_risk':[]}
     for q in diag:
-        for key in states:states[key].append(q[key].float().reshape(-1).numpy())
+        for key in states:
+            value=q[key]
+            if key in ['m','dt','B','conditional_delta','conditional_B','g']:value=value[q['valid_mask']]
+            states[key].append(value.float().reshape(-1).numpy())
     mechanism={}
     for key,items in states.items():
         a=np.concatenate(items);mechanism.update({key+'_mean':float(a.mean()),key+'_std':float(a.std()),key+'_absmax':float(abs(a).max())})

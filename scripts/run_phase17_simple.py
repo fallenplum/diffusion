@@ -12,7 +12,9 @@ from src.phase10_trimodal.data import digest
 
 def feature(fold,role):
     d=parent.load();part=parent.splits(d,'DSS',fold);fit=part['inner_train' if role=='inner' else 'outer_train'];f,a=molecular_features(d,fold,role)
-    u=np.load('/root/phase16_prompt_rna_diagnostic_private/PAIRED_VISUAL.npz')['U'];u,st=scale(u,fit);pca=PCA(32,svd_solver='full').fit(u[fit]);v,vs=scale(pca.transform(u),fit)
+    raw=np.load(P/'visual/u.npy',mmap_mode='r');mask=np.load(P/'visual/mask.npy');owner=np.load(P/'visual/owner.npy');u=np.zeros((512,1536));count=np.bincount(owner)
+    for k,pi in enumerate(owner):u[pi]+=np.asarray(raw[k,mask[k]],np.float32).mean(0)/count[pi]
+    u,st=scale(u,fit);pca=PCA(32,svd_solver='full').fit(u[fit]);v,vs=scale(pca.transform(u),fit)
     return {'CS':np.c_[f['C'],f['S']],'V':v,'O':np.c_[f['R'],f['G'],f['L']]}, {'omics':a,'visual_components':pca.components_,'visual_scale':st,'PC_scale':vs}
 
 def main():

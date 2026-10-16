@@ -1,0 +1,658 @@
+{
+  "status": "PASS",
+  "scope": "public artifact checksum/privacy/completion gates;not a claim that missing TransSurv was run",
+  "training_source": "9794e29e99fd65a6465ed1af6932bcecc48a4bab92e1a7ab5618bb201637599e",
+  "public_files": [
+    {
+      "path": "configs/phase17_ssd_fusion.json",
+      "bytes": 2638,
+      "sha256": "279af29732fdd6a0041002a4927425abc2758b08d79fdcd559a58b5048367d1e"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/ABLATION_OPERATOR_AUDIT.json",
+      "bytes": 2240,
+      "sha256": "6126552e81483745b5a7a346d5348ed1f56bee5cdab31d8a0a623b849bb4404d"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/ABLATION_REGISTRY.csv",
+      "bytes": 1640,
+      "sha256": "4666af2b306a0cd952c902c3ae16109328f3b1ccac2c974a486a18571e0f1689"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/ANCHOR_ELEMENTWISE_AUDIT.csv",
+      "bytes": 7204,
+      "sha256": "47c40d1dc9a11fe3abd8a2bd4c153faf5637e20e271a69f6162dc16478e6910d"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/AVAILABLE_MODEL_AUDIT.json",
+      "bytes": 325,
+      "sha256": "8b9f477091e58badbd9377bebb630af371a26e19e4791b0c159379bc03df3f64"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/BOOTSTRAP_AUDIT.json",
+      "bytes": 388,
+      "sha256": "85228348a7a27348ebbf88c81bb807ef944af3dde8ea17b819c0e8922c05e0cd"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/BUG_LOG.csv",
+      "bytes": 1495,
+      "sha256": "135297c7ac0f187e4706bf9730c23e37a995979f4217ee8e615ad944dfab38eb"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/CHECKPOINT_REPLAY.csv",
+      "bytes": 6683,
+      "sha256": "0c03c9a122e3639d4ac3d495d25c43023d05bf079d9e367ad6bef47ba1666387"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/CHECKPOINT_REPLAY.json",
+      "bytes": 184,
+      "sha256": "464b9b93558ec5213f9baa5b3f9761f6287fa4e8d650dbf20fd5696e0e4a038e"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/COMPUTE_ABLATION.csv",
+      "bytes": 4881,
+      "sha256": "91a69a0dc030ed8dbf999406d9637810dd0e2ea9b07495a04f271431941d3006"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/CONTEXT_STATE_AUDIT.csv",
+      "bytes": 7298,
+      "sha256": "83379e1fad959e21acb3609a1fe0d8033593f2387ab05ee570ac2fce4ef07823"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/DATA_LEAKAGE_AUDIT.json",
+      "bytes": 419,
+      "sha256": "25c3756ffe071fc10214ad234ccd2c8a2d37135fe82468282f3907e09f632e11"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/DECISION.md",
+      "bytes": 282,
+      "sha256": "afa7fbda1e4ccac3d36ced217c15d3ba7ed8c6e6ea3eb6e0ccb8f7fd3db9de09"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/DETAILED_MECHANISM_AUDIT.json",
+      "bytes": 206,
+      "sha256": "e2c8cd36ad596c44545f922227920d32a2f1b5b79f4d63c8662e0f4f4348a5a2"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/DEVICE_MONITOR.csv",
+      "bytes": 10557,
+      "sha256": "74b1a7c0c2b3f30f9b42ea33260e8bd91baf6beca43cfc1cf6af53bd24a46928"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/ENVIRONMENT.json",
+      "bytes": 1279,
+      "sha256": "e1ae498d29e1612219ee7315d20086a7e3e5ca61e5ecfbc0c235b570f0a94998"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/EVALUATION_AMENDMENT.json",
+      "bytes": 840,
+      "sha256": "0c190d7d83d05aff25a27a4413381ff46282824bc6e3a77bfaa663c062490b62"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/EXECUTION_COUNTS.json",
+      "bytes": 1833,
+      "sha256": "d137c9b5739f49dac50fa2cc74bb9e3d18f3d047d7e1785224a837228962ba22"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/FIGURE_VISUAL_QA.json",
+      "bytes": 423,
+      "sha256": "04fa7d5912cd73d39c5258962173a12e5267d77f233c1b57b0eb171314ac39e7"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/FOLD_METRICS.csv",
+      "bytes": 28056,
+      "sha256": "136afed3b8e9eb290e1ce391c0f252dab0dcd38e3d88ec1df095bec79959ad8b"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/FROZEN_INTERVENTION_FOLD_METRICS.csv",
+      "bytes": 8426,
+      "sha256": "75d18d3a87b4fe5d5af6a1d70bb8deeae48462a7a8b8ea5464fe1b9906334eee"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/FROZEN_INTERVENTION_SEED_METRICS.csv",
+      "bytes": 938,
+      "sha256": "6abdefa238f2387a55812db54ef4ff34b9b7b68ca80134f61e5e197d7030e5f6"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/FROZEN_INTERVENTION_SUMMARY.csv",
+      "bytes": 284,
+      "sha256": "f63c91112c7acbd4e1574eda457fb020028e165d58dcf9ea12e123d074b20c31"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/FULL_BUDGET_AUDIT.json",
+      "bytes": 749,
+      "sha256": "2805bfde199461225ec9f9435a6e7da02ab769022770a5e70ae3a20d35f23daa"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/GATE_HISTOGRAM.csv",
+      "bytes": 100164,
+      "sha256": "7db08f7672764d3da4c771a99e3ab87ecb28b6ce22a9829e3544e833736d9819"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/HISTORICAL_IMMUTABILITY_AUDIT.json",
+      "bytes": 884,
+      "sha256": "5725d607c62b37e2c94c648a204deb36dcce942d29d78f54426c5b4602e09020"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/HISTORICAL_REFERENCE_AUDIT.csv",
+      "bytes": 3093,
+      "sha256": "65396bbf6038d8fd61a9463a90252082a012ed7b9a41bfb8472cedf3154979f3"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/INDEPENDENT_PREPROCESSING.csv",
+      "bytes": 640,
+      "sha256": "4744defffcffbc53b10c61b0250f0da848cf57bacfc7378bcfaf30256f4da40e"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/INDEPENDENT_VALIDATION.json",
+      "bytes": 301,
+      "sha256": "fd9e01d7960c402fbcc352447ec6c786b5dfba7db55d0fd52e1880726aa09f4c"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/INNER_DIAGNOSIS.md",
+      "bytes": 4732,
+      "sha256": "8058024ecc343727a4b215971a2b7ddb4831a9a8e25c90a3e2d59c72d3febce9"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/INNER_HYPERPARAMETER_SELECTION.csv",
+      "bytes": 635,
+      "sha256": "a3427db8774b6f599c023cb13f4b623a225a518abf9b1c92933a7ea1bfc3f104"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/INNER_PILOT_DIAGNOSTICS.csv",
+      "bytes": 14703,
+      "sha256": "08b197514e4a57a75872c00cefd559573f9f2a862c9d7dbe9a5103a6bd958c7e"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/INNER_SELECTION_REPAIR.csv",
+      "bytes": 224,
+      "sha256": "d2514568eb592cfc036d6b9e16d379500d072573824773dcea82edbf358f7335"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/INPUT_AUDIT.md",
+      "bytes": 2158,
+      "sha256": "89f223400d6e61c25d654b185275399e5ff26838699ba6a33977b9d8f3cfe59e"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/LITERATURE_BASELINES.md",
+      "bytes": 3283,
+      "sha256": "9f8050953f4b53a3c8538eb5e5cc147379d6430c871b8e9848355fed63451dd0"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/LONG_RANGE_STATE_GRADIENT.csv",
+      "bytes": 18131,
+      "sha256": "c2c9ea3efb73c62c7546bb12a9097253102359de70ee1a9aee7c139f074fdd37"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/MAMBAMIL_KERNEL_PORT_AUDIT.json",
+      "bytes": 1128,
+      "sha256": "f8b76bc2be6b69f9a8c95f0927510b043f488a50457f8c2294aff558574425e6"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/MODEL_CELL_SUMMARY.csv",
+      "bytes": 35147,
+      "sha256": "fa0c6eafb0e1fdeaa5a9a3ef43a983a418a8f2d016a7c9dc93e576d63c5f5b4d"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/MODEL_SUMMARY.csv",
+      "bytes": 1093,
+      "sha256": "cc0cab487a89f360e0854a8e1a3e99b1957aba5182498f14bf8a2bbcfdf63c3b"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/MODULE_INTERVENTIONS.csv",
+      "bytes": 130218,
+      "sha256": "94871e1bb4c8a2da44eee0916593f6128842b890a36679fc4697d759907fff60"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/MODULE_MECHANISM.csv",
+      "bytes": 74650,
+      "sha256": "f8f1c8dcd457b9a4064b6ed7cccaf91c7e7c9510d146ba47038403d31fae6dfc"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/ORDER_SENSITIVITY.csv",
+      "bytes": 32403,
+      "sha256": "c49da0599df6b62ad175759dd4539c79cda40c6c8e8dc8d9c678c7fa3c253013"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/PAIRED_COMPARISONS.csv",
+      "bytes": 4982,
+      "sha256": "0f436d6623cbf8e8ddf9d344e00bf3b946aaaca99707c3d15013f52a541f0c4c"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/PAPER_IMPLEMENTATION_AUDIT.json",
+      "bytes": 544,
+      "sha256": "73856d0c4fb8aa6248ecac37b8312cc6c79740985ee3afc023d34ce3c3440b28"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/PFI_FOLD_METRICS.csv",
+      "bytes": 28283,
+      "sha256": "abcbfc672f77daf7cde1fed3e10a2b961df4b618b4a3d26437acb3beccd92011"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/PFI_SEED_OOF_METRICS.csv",
+      "bytes": 5240,
+      "sha256": "d79ce617030b98cf5662d627db146ad303a1e390aed1ae3a15575f7986de4508"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/PFI_SUMMARY.csv",
+      "bytes": 768,
+      "sha256": "129000832e3e80992ce5b3d3d966461f4e1307b395bf0e37ef53b01413d86ef8"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/PREPROCESSING_AUDIT.json",
+      "bytes": 245,
+      "sha256": "646a73254b98a1a97464caa9b44aa004d68fa67c2b48e2507ad88ac94a19835a"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/PROTOCOL_LOCK.json",
+      "bytes": 1885,
+      "sha256": "363047096ff33237b1e0a0a8667371e892cf5d3b232cf777874f9df6aeb6ab26"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/PUBLICATION_SCOPE_AUDIT.json",
+      "bytes": 1459,
+      "sha256": "07f397d5b0b2876811abb10d8286baf236653b37872ea02b301f4d404d0b7f68"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/REPRODUCE.md",
+      "bytes": 4431,
+      "sha256": "d55566a80f59d7fbaa63dbf8ef0a9c569a3077a0d187ae960a3678b438691def"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/RESULTS.md",
+      "bytes": 10622,
+      "sha256": "594fc17f527e466d79ad6aa13ce8ba15d3a2edd89c52879bac8e9fdc7a8f27eb"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/RNA_MISSING_PATTERN_METRICS.csv",
+      "bytes": 100100,
+      "sha256": "49aa1fd1ee2881158a3d553529d65f8a1404ce99eb8462d5e8307de77fda31eb"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/RNA_MISSING_PATTERN_SEED.csv",
+      "bytes": 7301,
+      "sha256": "54cee63ba7f8f3ad4920c531d3afab59a88e1796afdfddfb31eadc7a3527b41f"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/RNA_MISSING_PATTERN_SUMMARY.csv",
+      "bytes": 452,
+      "sha256": "be4febb1512701a3e876f375d0b0d65b0e87b4bdb4dc9599d9b6f2c32f036bc6"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/SEED_OOF_METRICS.csv",
+      "bytes": 5243,
+      "sha256": "a13aaace39fb04b0f03ebdf5f76ba9ba408c4feed381d011621abbfc9be9369c"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/SIMPLE_CHECKPOINT_REPLAY.csv",
+      "bytes": 628,
+      "sha256": "ea413280240b2930b836046eb03ace3bfe3dbacdda65dee4c5ac4a096127cba5"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/SIMPLE_CHECKPOINT_REPLAY.json",
+      "bytes": 222,
+      "sha256": "3e4ba2cdcf79309bb02bd4e262b1a05688116b51338e5caa2590a88d446d9f81"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/SSM_OPERATOR_AUDIT.json",
+      "bytes": 3150,
+      "sha256": "bbeaa6d1911847bbaf5a5f194a2f12e8db3fbd0d6c5597ff35c51cc0aaa74217"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/STATE_CHANGE_CURVES.csv",
+      "bytes": 726281,
+      "sha256": "09738eda6b3f9d1060a20d0f60e3df3a42b70b475461dfa2b73432e1102c4935"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/STATISTICAL_OPERATOR_AUDIT.json",
+      "bytes": 346,
+      "sha256": "fe737836af43b2b9817aff21b2bcf299797bd413d954106eb6a423a9f313e701"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/SUBGROUP_AUDIT.json",
+      "bytes": 212,
+      "sha256": "ca629cda0416f74fc593794f4cd0761d6fe126fcea7c434ddf25a546b9e192a6"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/SUMMARY.csv",
+      "bytes": 1414,
+      "sha256": "5dce4a425f399b1d5ce0258f21efb0db1e4be3d0c5a03ceef257acabe8fbae29"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/TRAINING_CURVES.csv",
+      "bytes": 1335986,
+      "sha256": "feed363b36ee5bc2d74c78af7ff06925522f32703b7e55ffda2f209fe8cb3a90"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/TRAINING_DIAGNOSTICS.csv",
+      "bytes": 40464,
+      "sha256": "e683f365dffb75933a69fdf64f920d79d6e4d7e54dd12b32c6451549a3510472"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/VISUAL_AUDIT.json",
+      "bytes": 957,
+      "sha256": "f26d586211a2a5d279cd6068e1eb34259a584259623247a3b78af98c2ecccc78"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/VISUAL_CACHE_INDEPENDENT_AUDIT.json",
+      "bytes": 364,
+      "sha256": "c61c08c04d3b0ec9f9adec8be9787ce6cb68f9f7ec3753a870fc8c6b46129e19"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/VISUAL_COVERAGE.csv",
+      "bytes": 20180,
+      "sha256": "beefaa9cbde03241d006bcb177d84305883c4a6afc832074a885b0dcc489b8aa"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/WRONG_CONTEXT_STRATA_AUDIT.csv",
+      "bytes": 3339,
+      "sha256": "daaa6f07dc3843a7f92616fc93bac339997b7dcd3cfe1543043fea5ad83d1a8d"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/decision.json",
+      "bytes": 823,
+      "sha256": "86eeb1bfef2a3f62854b1471db3470932172acb7747a816d0971060cd60c9f3b"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/01_training.png",
+      "bytes": 175161,
+      "sha256": "b7d8f6f7668eec5a55ba023a85af3a7b0cd67ac72abd7ec9f64bf9e5f4af9363"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/01_training.svg",
+      "bytes": 30060,
+      "sha256": "5a693361daf4dc02a2e6455ee7647fec181d09f628c29212183034f0e0de1b1d"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/02_gates.png",
+      "bytes": 82848,
+      "sha256": "566326cf7403c64407f508cb1cb2ed727c843ddf72eee73d69c9dbe8bb2db26b"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/02_gates.svg",
+      "bytes": 42236,
+      "sha256": "16a472c2e3e382e25f4793fb1e46559ca7ba2e53ea68aa07a239fe480476c7f5"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/03_propagation.png",
+      "bytes": 77145,
+      "sha256": "5a7942976b9548261fb9c7c4c9dce5d005cd4c2589a9292af79534cede607018"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/03_propagation.svg",
+      "bytes": 35064,
+      "sha256": "bcd0797724d209bb67018b154b82c6ec34c754c43d43bf6e9b6dad3ec284ac81"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/04_state_gradient.png",
+      "bytes": 91780,
+      "sha256": "5993a6e951899761a54eeee884b20947fecb4c6ee12081995db8ce9047254cd1"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/04_state_gradient.svg",
+      "bytes": 15479,
+      "sha256": "a969f5404192020a2c1828206cc7d705d1a785d57b0bfa30432758022310d4ea"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/05_order.png",
+      "bytes": 77956,
+      "sha256": "66de565e3ff2c0d66d826e0611d3c6b621591edd48f86043a7d57518dc29b530"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/05_order.svg",
+      "bytes": 20423,
+      "sha256": "799f6022b821b6959eb79978a57d5b5ec3910e66217360998d52fd4cdaa8e65c"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/06_primary_intervals.png",
+      "bytes": 64184,
+      "sha256": "f73d9664f8cca8279a5fed0ac261c6484b60105d9dcb8c8690467d65fd4c7898"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/06_primary_intervals.svg",
+      "bytes": 8998,
+      "sha256": "e2b68a95944a00237e87862bb9255be1e9deacc450e4663431fce76ce3adfe65"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/07_compute.png",
+      "bytes": 71642,
+      "sha256": "c0039cb7de795b911e8d390d9b8f629cf0f329f44513209f75f1f0c947e0a9bb"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/07_compute.svg",
+      "bytes": 16536,
+      "sha256": "320edf5f8b4cb8755869719328ae25901cb16ab3a8effda49748231fbf2b2262"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/CAPTIONS.md",
+      "bytes": 574,
+      "sha256": "18cade283b7c54a674a644d081f2660663d0838bf74afd94ef43632f1ee268a5"
+    },
+    {
+      "path": "reports/phase17_ssd_fusion/figures/FIGURE_CONTRACT.json",
+      "bytes": 1002,
+      "sha256": "9724d329f51a364b4962a511170df6de0bac0708e493b9e6eb260dd87f5fa813"
+    },
+    {
+      "path": "scripts/audit_phase17_ablations.py",
+      "bytes": 2725,
+      "sha256": "1a29023298567ea9490722d1ae064be3bc4666bfeee6eb7dffc41c690c34cab2"
+    },
+    {
+      "path": "scripts/audit_phase17_budget.py",
+      "bytes": 1615,
+      "sha256": "b18c078be8d1e924b7eca3c33b0968d9166627459d15a1e2da40b2297df4f252"
+    },
+    {
+      "path": "scripts/audit_phase17_inputs.py",
+      "bytes": 3505,
+      "sha256": "495b9e25b198be7fbc5e825c5b377650e1e5eb3e1e063503c6c4247cb37240af"
+    },
+    {
+      "path": "scripts/audit_phase17_mamba_port.py",
+      "bytes": 2257,
+      "sha256": "a46995feec0a65ba828029e5d71d0d69702e2cd2ba2ce3bb42f24373b72e539c"
+    },
+    {
+      "path": "scripts/audit_phase17_operator.py",
+      "bytes": 6231,
+      "sha256": "800e056dda4cbc5fd913cd2231c43ace1a6e93bb0d76fdfa2e77c9cfac3955cb"
+    },
+    {
+      "path": "scripts/audit_phase17_papers.py",
+      "bytes": 2326,
+      "sha256": "40c01a924acdba84341f77c99590156dea8c7ac65725ccdb34b755d0a6cd8fa1"
+    },
+    {
+      "path": "scripts/audit_phase17_preprocessing.py",
+      "bytes": 3555,
+      "sha256": "69a9605d6a9c9740c35d4f7ada57847a882afde8a70bd27ce03b7446c1ac023d"
+    },
+    {
+      "path": "scripts/audit_phase17_statistics.py",
+      "bytes": 1882,
+      "sha256": "f7e6f5a2b3c8bd919338d068c04b98671c14463dab2cff06abfcd3100dc7b9b0"
+    },
+    {
+      "path": "scripts/audit_phase17_subgroups.py",
+      "bytes": 3976,
+      "sha256": "d876f99500cd429b9e252673bb384da4364c29cd1cc9ee31b6f18004efa9b17d"
+    },
+    {
+      "path": "scripts/audit_phase17_training_leakage.py",
+      "bytes": 1403,
+      "sha256": "15a6d3b1b99f5a74fe7fed6d5989aeadcc3b2d588cbe64f4a37220628f9d31b9"
+    },
+    {
+      "path": "scripts/check_phase17_film.py",
+      "bytes": 569,
+      "sha256": "bbe428fcf66eeef5731ae02569a17bf795654866e588617b96d1de3e05849e63"
+    },
+    {
+      "path": "scripts/diagnose_phase17_inner.py",
+      "bytes": 3233,
+      "sha256": "9b54aa8dfa19d9fc1905777c0524ebf3b8383d424f64a5fd8538c369c4c9b7db"
+    },
+    {
+      "path": "scripts/diagnose_phase17_mechanism.py",
+      "bytes": 5662,
+      "sha256": "436baf2b636db9f6957e055e18b21004de7953aac791b21522844741585a816e"
+    },
+    {
+      "path": "scripts/finalize_phase17_evidence.py",
+      "bytes": 7644,
+      "sha256": "dd6a95c08244e2c863cb7d23285ed930fcbd8e34f019eb3c21f6537b3f69bc72"
+    },
+    {
+      "path": "scripts/lock_phase17.py",
+      "bytes": 5944,
+      "sha256": "8b0d1ed9bbe1b5a84549f21e87119fff2bae8fac0e4fc88a9e91648329dedd08"
+    },
+    {
+      "path": "scripts/package_phase17.py",
+      "bytes": 6028,
+      "sha256": "f7018f8c72932100c790b52652a4864fc2bd0deca655a7bd505eaee89dd97cba"
+    },
+    {
+      "path": "scripts/phase17_paper_models.py",
+      "bytes": 6509,
+      "sha256": "65831a2889b3b890c2b404ea8568f44f37b40e56b76e3f66e5908d18a05f6a9a"
+    },
+    {
+      "path": "scripts/phase17_prelock_jobs.py",
+      "bytes": 954,
+      "sha256": "3e15b0c702217ea824a6fc2cec6dbd07835df868827e1b1aa58fb49503928798"
+    },
+    {
+      "path": "scripts/plot_phase17.py",
+      "bytes": 7675,
+      "sha256": "bfd52c825865ac496de118d7a584f574985fd3a982921516c8117b52f2e400b6"
+    },
+    {
+      "path": "scripts/prepare_phase17_paper_dependencies.py",
+      "bytes": 1466,
+      "sha256": "4e9a245d3fda3387468ac5e3842bc2c9d7cc9613b86bd7f9c484c011a95c550d"
+    },
+    {
+      "path": "scripts/publish_phase17.py",
+      "bytes": 3616,
+      "sha256": "f3116f7f61b1768d2015105b160273753d8ff1521131a1e69877c8e18c41dca9"
+    },
+    {
+      "path": "scripts/replay_phase17.py",
+      "bytes": 7157,
+      "sha256": "0d3cf05a22710afaf0b70b75ccece2e3a07d30fb076f1c478a1dd1e8eaeacd32"
+    },
+    {
+      "path": "scripts/replay_phase17_simple.py",
+      "bytes": 3547,
+      "sha256": "cda8a62e1d90ecde3af5202607204af34156b9fb3b143052640bfa2c612ef77b"
+    },
+    {
+      "path": "scripts/report_phase17.py",
+      "bytes": 13082,
+      "sha256": "5bbd17be3c90c82040b81e48cf68e28029ba3334e558e5b5ef6c7ffac81b7947"
+    },
+    {
+      "path": "scripts/run_phase17.py",
+      "bytes": 2015,
+      "sha256": "78fedc83dcd941b71d5d1f6199fb54eca8286f7013562844b36017ce77a432d5"
+    },
+    {
+      "path": "scripts/run_phase17_paper.py",
+      "bytes": 4929,
+      "sha256": "b6cb471a80a6c3d9c8d749e37b2b3523b15f67975601d21839d849685c432586"
+    },
+    {
+      "path": "scripts/run_phase17_simple.py",
+      "bytes": 3255,
+      "sha256": "27fa6cb369659cef12c14ae08944acaa018adffa2dc05c0173b13ebdb53748b4"
+    },
+    {
+      "path": "scripts/schedule_phase17.py",
+      "bytes": 2304,
+      "sha256": "d81403e40d813bd88baea24a2fe784d8a673a58a72899f0435123d4ed5efaba9"
+    },
+    {
+      "path": "scripts/schedule_phase17_formal.py",
+      "bytes": 4023,
+      "sha256": "9773a6f332ed1e0708773bcb7e39f823f8a2cf30e722f2bd64df35d757ae75e1"
+    },
+    {
+      "path": "scripts/schedule_phase17_tuning.py",
+      "bytes": 967,
+      "sha256": "cba237cb184addfd46cc04d69b2ea382c277b5cc2a9206cdc37ddade308da4fc"
+    },
+    {
+      "path": "scripts/tune_phase17_inner.py",
+      "bytes": 1083,
+      "sha256": "3eec54f1510c033fcee1e3e33b0fde31d6324b061aa45851a1fe7331ddb3be8c"
+    },
+    {
+      "path": "scripts/validate_phase17_independent.py",
+      "bytes": 13006,
+      "sha256": "53fd7066fccc70145a5c7f2d65537efa72641fafa994604cb8632ad312fb778f"
+    },
+    {
+      "path": "src/phase17_ssd/__init__.py",
+      "bytes": 58,
+      "sha256": "242c763fe3da081ac0fd10f330990098115b4bd7d71f7fc528da6acd8f5434bb"
+    },
+    {
+      "path": "src/phase17_ssd/data.py",
+      "bytes": 8309,
+      "sha256": "c20e4aa87c899533d24aa32647816328d3e60db6c301e9e38200bf4c0fe34786"
+    },
+    {
+      "path": "src/phase17_ssd/losses.py",
+      "bytes": 497,
+      "sha256": "631241f056c572136440a60feb8cfbee4c254059b52886ea135fa31a14715b75"
+    },
+    {
+      "path": "src/phase17_ssd/model.py",
+      "bytes": 4915,
+      "sha256": "28ae4b4a127019e255af4b88da0c3e2d673644f09ed7e0a94d25ff30558a5594"
+    },
+    {
+      "path": "src/phase17_ssd/omics.py",
+      "bytes": 1423,
+      "sha256": "fc5eee86f273389003c69da1eeea7fb5c72c518fbe30db60d4dd918cbe6309eb"
+    },
+    {
+      "path": "src/phase17_ssd/ssm.py",
+      "bytes": 1694,
+      "sha256": "a8a07ce26c745bc7238dd02423060582afb90a52ee29eed5bc5d9af7ece16c90"
+    },
+    {
+      "path": "src/phase17_ssd/train.py",
+      "bytes": 8251,
+      "sha256": "0a93dbd9239857ee0e43d7db24f73cbb4955c51908ca455ee35db81f5f0ab91f"
+    }
+  ],
+  "private_assets_excluded": [
+    "patient arrays",
+    "OOF vectors",
+    "checkpoints",
+    "original H5/coords",
+    "weights",
+    "third-party private checkouts"
+  ],
+  "gate_files": [
+    "SSM_OPERATOR_AUDIT",
+    "DATA_LEAKAGE_AUDIT",
+    "STATISTICAL_OPERATOR_AUDIT",
+    "PREPROCESSING_AUDIT",
+    "ABLATION_OPERATOR_AUDIT",
+    "MAMBAMIL_KERNEL_PORT_AUDIT",
+    "FULL_BUDGET_AUDIT",
+    "HISTORICAL_IMMUTABILITY_AUDIT",
+    "VISUAL_CACHE_INDEPENDENT_AUDIT",
+    "INDEPENDENT_VALIDATION",
+    "CHECKPOINT_REPLAY",
+    "SIMPLE_CHECKPOINT_REPLAY",
+    "DETAILED_MECHANISM_AUDIT",
+    "SUBGROUP_AUDIT",
+    "FIGURE_VISUAL_QA"
+  ],
+  "paper_baseline_target": "PARTIAL:MGCT and MambaMIL15cells each;TransSurv BLOCKED"
+}

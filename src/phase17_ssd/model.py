@@ -32,6 +32,11 @@ class ConditionalS6(nn.Module):
         nn.init.zeros_(self.direct.weight);nn.init.normal_(self.readout.weight,std=.02)
         nn.init.normal_(self.late.weight,std=.002)
         nn.init.constant_(self.dt.bias,-3.)
+        # Preserve prior RNG consumption for every common module, then replace
+        # the FiLM comparator with rank8:512+1024+128 =1664 active parameters,
+        # exactly the two low-rank delta/B adapters combined.
+        del self.film
+        self.film_down=nn.Linear(d,r,bias=False);self.film_up=nn.Linear(r,2*d)
 
     def forward(self,visual,mask,clinical,r,g,l,rm,cm,anchor,context_index=None,context_omics=None,gate_override=None,order=None,diagnostic=False,module_off=False):
         # One batch row is one WSI. Patient aggregation happens outside.
@@ -54,7 +59,7 @@ class ConditionalS6(nn.Module):
         sx=x
         if self.arm=='A3':sx=x+self.attn_input(gx)
         if self.arm=='A4':
-            scale,bias=self.film(gx).chunk(2,-1);sx=x*(1+.1*torch.tanh(scale))+.1*bias
+            scale,bias=self.film_up(F.silu(self.film_down(gx))).chunk(2,-1);sx=x*(1+.1*torch.tanh(scale))+.1*bias
         dd=self.delta_up(F.silu(self.delta_down(gx))) if self.arm in ['A5','A7','A8','A9','A10','A11_NO_S32','A11_NO_CLIN'] else torch.zeros_like(x)
         bb=self.B_up(F.silu(self.B_down(gx))) if self.arm in ['A6','A7','A8','A9','A10','A11_NO_S32','A11_NO_CLIN'] else torch.zeros(*x.shape[:2],16,device=x.device)
         m=torch.sigmoid(self.write(torch.cat([x,gx],-1))) if self.arm in ['A8','A9','A10','A11_NO_S32','A11_NO_CLIN'] else torch.ones(*x.shape[:2],1,device=x.device)
@@ -70,4 +75,4 @@ class ConditionalS6(nn.Module):
         ssm=self.readout(y).squeeze(-1)
         risk=anchor+self.direct(own).squeeze(-1)+self.late(late).squeeze(-1)+(0 if module_off else self.gamma*ssm)
         if not diagnostic:return risk
-        return risk,{'m':m,'dt':dt,'B':B,'conditional_delta':dd,'conditional_B':bb,'g':gx,'attention':attention,'h':h,'ssm_risk':self.gamma*ssm,'direct_risk':self.direct(own).squeeze(-1),'u':u,'A':A,'Cpool':Cpool}
+        return risk,{'valid_mask':mask,'m':m,'dt':dt,'B':B,'conditional_delta':dd,'conditional_B':bb,'g':gx,'attention':attention,'h':h,'ssm_risk':self.gamma*ssm,'direct_risk':self.direct(own).squeeze(-1),'u':u,'A':A,'Cpool':Cpool}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "figures_checked": [
+    "01_training",
+    "02_gates",
+    "03_propagation",
+    "04_state_gradient",
+    "05_order",
+    "06_primary_intervals",
+    "07_compute"
+  ],
+  "checks": [
+    "actual PNG rendered and visually inspected",
+    "no clipped titles,axes or intervals",
+    "source aggregate CSV exists",
+    "no synthetic histology or fabricated data"
+  ],
+  "backend": "Python/matplotlib"
+}

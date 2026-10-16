@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "fit_local_banks": 10,
+  "no_fabricated_membership": true,
+  "all_512_genes_true_members": true,
+  "sources": "raw RNA/CNA independently recomputed;group JSON;literal trainfit clinical coding;no outcome gene selection"
+}

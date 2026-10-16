@@ -1,0 +1,8 @@
+stage,issue,impact,repair,affected_formal_cells
+preflight,CUDA cumsum rejected under deterministic algorithms,training aborted before first epoch,use deterministic parallel doubling on dt before state broadcast,0
+implementation_review,wrong context also changed late molecular main effect,negative control would confound state context and late main effect,late molecular main effect always uses own patient;only state context swapped,0
+inner_diagnosis,minimum epoch16 excluded validation optima at epoch1-6 in22/22 inner cells,inner model selection forced overfit epochs,shared pre-formal protocol repair minimum epoch1 and recheck two A8 inner folds,0
+diagnostic_review,padded tokens included in gate distribution,inflated gate variance and false low-retain mass,exclude invalid padding from token-level statistics;training unchanged,0
+evaluation,historical float64 replay differed2.22e-16 from saved fit,overstrict exact-zero reference check stopped evaluator;no training error,verify source SHA and permit1e-9 numeric replay tolerance;all risk rankings unchanged,0
+diagnostic,float32 tiny wrong-context effect3e-9 below absolute1e-8 synthetic threshold,path check threshold confused nonzero path with effect magnitude,"double precision path test and finite difference;actual small effect reported,not promoted to mechanism support",0
+reporting,RNA_direct_off name covered joint RNA+CNA head,label could be read as RNA-only deletion,rename Omics_direct_off;all numeric predictions unchanged,0

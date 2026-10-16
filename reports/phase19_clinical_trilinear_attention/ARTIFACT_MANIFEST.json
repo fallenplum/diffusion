@@ -1,0 +1,430 @@
+{
+  "status": "PASS",
+  "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+  "formal_new_neural_fits": 300,
+  "unique_convex_reference_fits": 20,
+  "primary_family_tests": 12,
+  "bootstrap_draws": 20000,
+  "scientific_decision": "MECHANISM_NOT_SUPPORTED_IN_THIS_ARCHITECTURE",
+  "private_training_done_sha256": "b8db557f2d876d6701829145f3fb3a42d6f6638cc41a24498321475f5a3da29d",
+  "private_evaluation_done_sha256": "9fecdd6cdd83f522ed61f9a6a7926cdcea4fcdf94663d700c51e9656cc074db5",
+  "private_smoke_ledger_sha256": "a9fef9acb654af4a7ae464426d3aeb77ec16d2c44fdaf4c1770296220b839d3d",
+  "public_files": [
+    {
+      "path": "configs/phase19_baseline_sources.json",
+      "bytes": 3710,
+      "sha256": "9221f2a60b494109fa4741a5cf1fafd53e24fe99dddba159955d34c50e8cedfc"
+    },
+    {
+      "path": "configs/phase19_clinical_trilinear_attention.json",
+      "bytes": 4725,
+      "sha256": "7cc7349f8a8016ec485c28d80ea1b8540a53bd1469bef0e8a9f409d07ce31d46"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/ATTENTION_MECHANISM.csv",
+      "bytes": 75753,
+      "sha256": "bc96e646c87008d073b6c894b4d49580a3b6c0adf144dc90c17ead2d643316e9"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/BASELINE_SOURCE_REGISTRY.csv",
+      "bytes": 5191,
+      "sha256": "246c40c785319366bf12bdcd858045614a4f856eb98efb9425c7e0cbc0ada13a"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/BOOTSTRAP_AUDIT.json",
+      "bytes": 1862,
+      "sha256": "e2359d1d7349845b6178855af464127c1924a07d95f4bb912f60085c2c2b9809"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/BUDGET_AUDIT.json",
+      "bytes": 385,
+      "sha256": "54b4e65bea01d7f60aa6d367d93590bd9301fd4637a593f3b197a207a3c9cbba"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/BUDGET_VERIFICATION.json",
+      "bytes": 2646,
+      "sha256": "980fe8e84f5210c698088ed7238f7387d729ef69f2c3787df65a158ad7dcd636"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/CELL_MANIFEST.csv",
+      "bytes": 56082,
+      "sha256": "7cd10f237d8872f09c7b930d8859bdf695422cc7c31b78cd8fc6316190f60607"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/CHECKPOINT_REPLAY.csv",
+      "bytes": 56456,
+      "sha256": "f431abdf2f7da810e47bf05daa33fdf0126d7b5c70cffd8e192bb4d54432b751"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/CHECKPOINT_REPLAY.json",
+      "bytes": 244,
+      "sha256": "1abb50730585de9941c7c1801a57abe96a93ab5a03a492261c5ec2c8e89eb827"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/CHECKPOINT_REPLAY_0.csv",
+      "bytes": 14226,
+      "sha256": "e40f8a451d9c852cf1a0457ba766ed38d405b119aa3fa1f71ae12a613ba045d0"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/CHECKPOINT_REPLAY_1.csv",
+      "bytes": 14223,
+      "sha256": "30de0aacafac8b62e4a6d1a38bee2f238a37b7c1a51f5d4b3d25f0d235f9b51a"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/CHECKPOINT_REPLAY_2.csv",
+      "bytes": 14221,
+      "sha256": "44ba4894b231ac1ac213bbf3867dc337e09ec1224a5d507197ffebe0d424acd7"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/CHECKPOINT_REPLAY_3.csv",
+      "bytes": 14217,
+      "sha256": "45af3f4cab49a51587d4ccfc29190464b77508acd637cc5fdd1f958bf03dfe9d"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/COMPUTE_PROFILE.csv",
+      "bytes": 23708,
+      "sha256": "77f663061784a305d609e49ccb3ecabec6410a5ca6212792e4494e8c2c3b721e"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/CONTRAST_POINT_AUDIT.json",
+      "bytes": 7507,
+      "sha256": "bb52b7a514c40f7079b16a3b76c9dd12d43de1ad571b4466dc1de4779b93497e"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/CONVEX_REFERENCE_AUDIT.csv",
+      "bytes": 2397,
+      "sha256": "f5d8d167905afbf0ae5172ef0a443c83b7ad4118d94039e468d661f6f53624ff"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/DATA_AUDIT.json",
+      "bytes": 126660,
+      "sha256": "81bccf0b02dc52900ea224e04a152c64d768fbcce2e04cfa129c6ff513ee948b"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/DATA_LEAKAGE_AUDIT.json",
+      "bytes": 413,
+      "sha256": "9cc8fde41f796650531ade49d9d659a925b499ac5485b0d9ce5ec4bfde7b717f"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/DECISION.md",
+      "bytes": 1405,
+      "sha256": "e6c1599c522a98de241759a6edf64b2fdbefbc929e72af24252a562ff5b852b4"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/ENVIRONMENT.json",
+      "bytes": 1239,
+      "sha256": "c2ef76bd980cbe6f27a69a5f5233c51cd9cd0e80e31424ab8c3ece8c293e3698"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/EPOCH_SELECTION_LOCK.json",
+      "bytes": 27345,
+      "sha256": "dfa4a7398708ccf0de3793d451cc5acf08c8f8b7414ec97f284bb9f4eb5e258c"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/EVALUATION_MATH_AUDIT.json",
+      "bytes": 1103,
+      "sha256": "d6bf98a2b07efa737ee1d1fb2aa685e52a81bbc1c9487dbc02b07c057ea10563"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/EXECUTION_COUNTS.json",
+      "bytes": 4900,
+      "sha256": "8a5d07d80015188e8ecc3eecca3c26fc5e3f797668b54db1d7f7aa9f5d4b2c2e"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/FAILURE_LOG.md",
+      "bytes": 2720,
+      "sha256": "e66cda072dc3b63bb7bd213941fe88a455b0938f258fc95bcca1529d2be09cc1"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/FEATURE_RECONSTRUCTION.csv",
+      "bytes": 6925,
+      "sha256": "c9d63d52d5d56f70d785e5c88011aad90dacd658e405b7632c5e6995818ca097"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/FEATURE_RECONSTRUCTION_0.csv",
+      "bytes": 1861,
+      "sha256": "d9b4557026132589d1b6878265f20ed756d4a7b81383081fe8398a9167a0e4d3"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/FEATURE_RECONSTRUCTION_1.csv",
+      "bytes": 1861,
+      "sha256": "8fcda0a28e1dde49beabdc277d4e3f68c2c48a2e9c123c5244055a5477e0135d"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/FEATURE_RECONSTRUCTION_2.csv",
+      "bytes": 1861,
+      "sha256": "10c41d926643c3b62d89f0a7e66d1d24b5ecc7cfc293f75129be24813719b5ed"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/FEATURE_RECONSTRUCTION_3.csv",
+      "bytes": 1861,
+      "sha256": "4d4c3b138a505b364c79e26c7d82032a1595873ac813ebc503edb05a121cf612"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/FIT_AND_REFERENCE_COUNTS.json",
+      "bytes": 482,
+      "sha256": "8205440149f1f7759c684a4fa7a008dae63ca921e01d5c430247c9cf18ce3073"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/FOLD_METRICS.csv",
+      "bytes": 28328,
+      "sha256": "5f1702974951cee15abddb752835984da94e628443bd2bb14f46a589746152c7"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/GPU_PROFILE.csv",
+      "bytes": 516,
+      "sha256": "70b93b453cd4b1a8f2a790a0ff5c94f8f53b89f962efe819d07b1caee18e1833"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/GPU_PROFILE.json",
+      "bytes": 1512,
+      "sha256": "c3c2bae00e6ed0e7d297005663c733ca4fbc109d0fe973c9b169c560d26e0d53"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/HISTORICAL_LOCAL_REFERENCE_AUDIT.csv",
+      "bytes": 3080,
+      "sha256": "8518fc33b566b4c44d5a6bf8e8bd81a03d3bb6143790fc321ab31cb488882b22"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/INDEPENDENT_VALIDATION.json",
+      "bytes": 645,
+      "sha256": "df589f6592b4d6a95959f79f9a6247b9e44803d738dec9f3245456a2d44dfc91"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/LITERATURE_AND_BASELINE_AUDIT.md",
+      "bytes": 15794,
+      "sha256": "9cd960444aa9e59783bfdabb79fb127a6db6d7432840cdccc6c61bc44fa69776"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/MMP_TOKEN_DIAGNOSTICS.csv",
+      "bytes": 202210,
+      "sha256": "4df74c96c75cef1f542f6e30acf61b4e2752d26fd132110077cae0d49d4fe738"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/MMP_TOKEN_DIAGNOSTICS.json",
+      "bytes": 35884,
+      "sha256": "8349773a3ee98aa08680b018537411aa7ac86a783605f8ca365327e1b26c6809"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/NATIVE_QUALIFICATION.json",
+      "bytes": 3012,
+      "sha256": "d426de8b8de19ea7e96300c25f46eea2c6ad1e56b5cf9eb38871dddbc6f6a298"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/NATIVE_SOURCE_AUDIT.json",
+      "bytes": 399,
+      "sha256": "564b098a0ef8886b5c4a2a476e92328e5feb7df76df69331ae86739a292ed5b7"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/OPERATOR_AND_PIPELINE_TESTS.json",
+      "bytes": 1142,
+      "sha256": "da1d6e8b09628559e61fd1d65b7dfe5814829934885460b69d27a2181d3fbb8d"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/PAIRED_COMPARISONS.csv",
+      "bytes": 8223,
+      "sha256": "fea46ef68fa23a6a5362c2e021fa5313a3c390471ffe8c1d70b233c28be8b980"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/PARENT_IMMUTABILITY_AUDIT.json",
+      "bytes": 309,
+      "sha256": "6153e020a7ec0df4d1d53b755b22735c5edc458abd892130959900105d3df78b"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/PFI_FOLD_METRICS.csv",
+      "bytes": 28551,
+      "sha256": "2b53154b0dd378fa17569375c07ce1df248c56da9b26b0ac05ac7bf100d706fa"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/PFI_SEED_METRICS.csv",
+      "bytes": 5373,
+      "sha256": "18c049eb567100652c307385de36f123bd05299ba17ecbb72f555f91ba3726d6"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/PFI_SUMMARY.csv",
+      "bytes": 1442,
+      "sha256": "ba55320c70a59731b93cfa13d8a64dea0074c6f98d71d153406c2827e62f4658"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/PROBE_COVERAGE_AUDIT.json",
+      "bytes": 18106,
+      "sha256": "def3d537e138516ac6aabdd5eace70e7ebef35ce8bd27208ad6dfcee3e07da09"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/PROTOCOL.md",
+      "bytes": 8627,
+      "sha256": "88d7f7f0074eb58462c8b9dae7adfdf64770ffd8bab400c08a1c3c13c7a85681"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/PROTOCOL_LOCK.json",
+      "bytes": 8529,
+      "sha256": "c63afaeaccfdfa7dadcb2b13fd122f9f7c3f998e0d21eb7a01ac0463a3d0ef01"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/PUBLICATION_SCOPE_AUDIT.json",
+      "bytes": 1209,
+      "sha256": "3d28b8c1aefa10e3f5963f6c698162dbb92dbcf592a5a76690186259cb784697"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/REPORT_INPUT_AUDIT.json",
+      "bytes": 2556,
+      "sha256": "4efcea0584584ceebf08c02dc89ab19525ba62237bf43937ced65c9e40f3e511"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/REPRODUCE.md",
+      "bytes": 3644,
+      "sha256": "b76234704c21007db043c4539c66d18dc0ee805278631127ca28ed47063ae8aa"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/RESULTS.md",
+      "bytes": 34043,
+      "sha256": "6799dc2e0d444fa85387e06ceb949e2b15cb0861c97a732ed5ca8ac7a896d7f9"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/SEED_METRICS.csv",
+      "bytes": 5327,
+      "sha256": "9b1634a957f59cae95af5fd5c7b4db7f5510625b0e86b3a9fbefa4eeeaecdd13"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/SEED_PAIRED_CONTRASTS.csv",
+      "bytes": 4970,
+      "sha256": "ed1988308714c846a1a4c9915568d1ed90ac066bceee922b862102bf4455a112"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/SUMMARY.csv",
+      "bytes": 1445,
+      "sha256": "9deacf926a88ab375dd3c1aba5b69f4b880cac865ae75f86ebc66d2ad7becaa3"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/TRAINING_CURVES.csv",
+      "bytes": 3220589,
+      "sha256": "660550b0e5ead3e8aca566bed42cdf3de0ed7a8fe3ea3329187d2b67135bc4e3"
+    },
+    {
+      "path": "reports/phase19_clinical_trilinear_attention/decision.json",
+      "bytes": 3910,
+      "sha256": "7a04a9672394d77c003c153da84eac4a9eb84bb8d12cab0cd6fb6424476a59ea"
+    },
+    {
+      "path": "scripts/diagnose_phase19.py",
+      "bytes": 15690,
+      "sha256": "d9853e8f87cac638012def0daf65f68bd1dcecf7e42d449b0d4f271b589d9224"
+    },
+    {
+      "path": "scripts/package_phase19.py",
+      "bytes": 29896,
+      "sha256": "ff86dc0dbf0375bcb5129f4970d98e09f653da68926f9071206efa0922705ea4"
+    },
+    {
+      "path": "scripts/prepare_phase19.py",
+      "bytes": 9112,
+      "sha256": "363b2d1435ad062c3dfb7dcc5eff553da2c2eab4ea3670b632ee6d227b4781b3"
+    },
+    {
+      "path": "scripts/publish_phase19.py",
+      "bytes": 5767,
+      "sha256": "da241c17311e9f88d0c1c27347db45cde8a0d45fc46e980a73f69e6e86b124f2"
+    },
+    {
+      "path": "scripts/report_phase19.py",
+      "bytes": 46074,
+      "sha256": "80c75b4fdc4777e5b1248b2f620738bbf3c10deec2a8fda03aef7f4d75d31d6f"
+    },
+    {
+      "path": "scripts/run_phase19.py",
+      "bytes": 2979,
+      "sha256": "6dcb6077cee2d16cb3daf41af583062c412ce5d571907f1f0919dd1c849e460a"
+    },
+    {
+      "path": "scripts/schedule_phase19.py",
+      "bytes": 5091,
+      "sha256": "2cb314ddafbf2945ea63517ebd952af374f9d0be40b5cc5ccedd90c3888cacc6"
+    },
+    {
+      "path": "scripts/start_phase19.py",
+      "bytes": 1271,
+      "sha256": "aa73fae58feb799e43577cef6b74f13b68696121ef31a14d55284a83cb3db382"
+    },
+    {
+      "path": "scripts/validate_phase19.py",
+      "bytes": 41294,
+      "sha256": "04c29bf54688e59fb3493e3787f2fa89a96a54e752f65c3ba2a0ea9e2e8f4be1"
+    },
+    {
+      "path": "src/phase19_attention/__init__.py",
+      "bytes": 82,
+      "sha256": "ecb7b386e0e9ff129d29cfa2673325507fa1ea65e96f515ac375410978bfcb30"
+    },
+    {
+      "path": "src/phase19_attention/attention.py",
+      "bytes": 6022,
+      "sha256": "68b9de0b8c3ae63a568a212813c3725bed9af9bbc12ccc0fb61101a211db49f4"
+    },
+    {
+      "path": "src/phase19_attention/baselines.py",
+      "bytes": 20830,
+      "sha256": "428ee593b24748685e9e42b9a3f33c381dad2371e24975f7b6af8ba028df52ba"
+    },
+    {
+      "path": "src/phase19_attention/data.py",
+      "bytes": 21874,
+      "sha256": "70dc110888e5c4471c1d4249128fa24a108651228341db62188cf9783459d58b"
+    },
+    {
+      "path": "src/phase19_attention/model.py",
+      "bytes": 7418,
+      "sha256": "85c6b9063b3e9039a5bbcf1e878e0e500540ad777757a2cd91f7d25834238ee9"
+    },
+    {
+      "path": "src/phase19_attention/train.py",
+      "bytes": 17346,
+      "sha256": "e96387af7b46bc3af6c407f5773fdac5e43b0adcf8c880a59a70e2244bea3e4b"
+    },
+    {
+      "path": "tests/test_phase19_attention.py",
+      "bytes": 14082,
+      "sha256": "416a8d6f6e7085faa1973b144583e7755ac165ecf488cfc86c8232429e6d9880"
+    },
+    {
+      "path": "tests/test_phase19_baselines.py",
+      "bytes": 11440,
+      "sha256": "2185319112e4f348ff8021f20413a690dce9c333e82ba5675ac8deb1bdd11e97"
+    },
+    {
+      "path": "tests/test_phase19_data.py",
+      "bytes": 9644,
+      "sha256": "b1f72b4ae47705d945ae55bcba8b1ae4ab98b5c123b44c75683b5c018104c8d7"
+    },
+    {
+      "path": "tests/test_phase19_evaluation.py",
+      "bytes": 3382,
+      "sha256": "f2037b8818f8a5ec9a4d80cc8d8aaa92c1ed1ceffd8d8f155b64b9b09731d95b"
+    },
+    {
+      "path": "tests/test_phase19_model.py",
+      "bytes": 5993,
+      "sha256": "6d995a2b23ca08e6b06ce0a1bff25f0efb2d70b426320cdb6052ee237f68933a"
+    },
+    {
+      "path": "tests/test_phase19_training.py",
+      "bytes": 11250,
+      "sha256": "da4ba73e4f6e040b83a65aaadf986938692f7244310344d60a60f9286bd667f8"
+    }
+  ],
+  "parent_commit": "099f3d8cd0815a1f994f22b5ce5801b1f4621105",
+  "branch": "research/phase19-clinical-trilinear-attention",
+  "MMP_unique_successful_current_source_cache_products": 10,
+  "MMP_failed_or_retried_producer_attempt_count": "not recorded; not inferred from successful cache products",
+  "private_excluded": [
+    "patient OOF and risks",
+    "trained weights",
+    "raw matrices",
+    "patient/gene identifiers",
+    "donor mappings",
+    "prototype/PCA states",
+    "foundation tokens",
+    "upstream source vendor",
+    "credentials"
+  ],
+  "no_automatic_followup_training": true
+}

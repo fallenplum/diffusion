@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+  "short_fit_diagnostics": [
+    {
+      "arm": "MGCT",
+      "summary": {
+        "registered_parameters": 6384016,
+        "last_step_gradient_parameters": 4802190,
+        "discriminator_parameters": 0,
+        "actual_epochs": 2,
+        "selected_epoch": 2,
+        "hit_maximum": false,
+        "seconds": 2.743774342990946,
+        "peak_GPU_MiB": 3270.08740234375,
+        "last_step_gradients": {
+          "main_gradient": 2.7609758377075195,
+          "visual_gradient": 0.0,
+          "molecular_gradient": 0.0,
+          "clinical_factor_gradient": 0.0,
+          "path_factor_gradient": 0.0,
+          "omics_factor_gradient": 0.0,
+          "qk_gradient": 0.0,
+          "readout_gradient": 0.0,
+          "native_gradient": 0.042029808281770116,
+          "clinical_nonintercept_gradient": 0.0,
+          "CP_global_intercept_gradient": 0.0
+        },
+        "discriminator_optimizer_steps": 0
+      },
+      "finite_risk": true
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "summary": {
+        "registered_parameters": 2524813,
+        "last_step_gradient_parameters": 2524811,
+        "discriminator_parameters": 11969,
+        "actual_epochs": 2,
+        "selected_epoch": 2,
+        "hit_maximum": false,
+        "seconds": 7.248095221002586,
+        "peak_GPU_MiB": 2365.82861328125,
+        "last_step_gradients": {
+          "main_gradient": 1.6452988386154175,
+          "visual_gradient": 0.0,
+          "molecular_gradient": 0.0,
+          "clinical_factor_gradient": 0.0,
+          "path_factor_gradient": 0.0,
+          "omics_factor_gradient": 0.0,
+          "qk_gradient": 0.0,
+          "readout_gradient": 0.0,
+          "native_gradient": 0.3578715660896322,
+          "clinical_nonintercept_gradient": 0.0,
+          "CP_global_intercept_gradient": 0.0
+        },
+        "discriminator_optimizer_steps": 2
+      },
+      "finite_risk": true
+    },
+    {
+      "arm": "MMP",
+      "summary": {
+        "registered_parameters": 2170505,
+        "last_step_gradient_parameters": 2170505,
+        "discriminator_parameters": 0,
+        "actual_epochs": 2,
+        "selected_epoch": 2,
+        "hit_maximum": false,
+        "seconds": 1.202831500035245,
+        "peak_GPU_MiB": 2434.5595703125,
+        "last_step_gradients": {
+          "main_gradient": 0.9175383448600769,
+          "visual_gradient": 0.0,
+          "molecular_gradient": 0.0,
+          "clinical_factor_gradient": 0.0,
+          "path_factor_gradient": 0.0,
+          "omics_factor_gradient": 0.0,
+          "qk_gradient": 0.0,
+          "readout_gradient": 0.0,
+          "native_gradient": 0.43358341904176567,
+          "clinical_nonintercept_gradient": 0.0,
+          "CP_global_intercept_gradient": 0.0
+        },
+        "discriminator_optimizer_steps": 0
+      },
+      "finite_risk": true
+    }
+  ],
+  "native_protocol_reproduction": false,
+  "smoke_checkpoints_or_predictions_persisted": false
+}

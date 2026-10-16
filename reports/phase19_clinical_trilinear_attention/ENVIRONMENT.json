@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+  "python_version": "3.12.3",
+  "python_executable": "/root/miniconda3/bin/python",
+  "operating_system": "Linux",
+  "machine": "x86_64",
+  "torch_version": "2.5.1+cu124",
+  "torch_compiled_cuda_version": "12.4",
+  "packages": {
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "scikit-survival": "0.23.1",
+    "einops": "0.8.2"
+  },
+  "GPU": [
+    {
+      "name": "NVIDIA GeForce RTX 4080 SUPER",
+      "driver_version": "595.71.05",
+      "memory_total_MiB": 32760.0
+    }
+  ],
+  "locked_training_settings": {
+    "provenance": "hash-locked train.py::seed_all and configured GPU launch",
+    "deterministic_algorithms": true,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "report_process_settings": {
+    "deterministic_algorithms": false,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "scope": "report-time actual package/GPU information; locked training settings and current report-process flags separately identified; no environment dump"
+}

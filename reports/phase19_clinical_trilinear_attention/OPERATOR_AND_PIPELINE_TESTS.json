@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "command": [
+    "/root/miniconda3/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_phase19_attention.py",
+    "tests/test_phase19_data.py",
+    "tests/test_phase19_model.py",
+    "tests/test_phase19_training.py",
+    "tests/test_phase19_baselines.py",
+    "--basetemp",
+    "/root/autodl-tmp/phase19_attention_private/pytest_workspace"
+  ],
+  "stdout_summary": "........................................................                 [100%]\n56 passed in 6.30s\n",
+  "training_source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+  "test_files": {
+    "tests/test_phase19_attention.py": "416a8d6f6e7085faa1973b144583e7755ac165ecf488cfc86c8232429e6d9880",
+    "tests/test_phase19_data.py": "b1f72b4ae47705d945ae55bcba8b1ae4ab98b5c123b44c75683b5c018104c8d7",
+    "tests/test_phase19_model.py": "6d995a2b23ca08e6b06ce0a1bff25f0efb2d70b426320cdb6052ee237f68933a",
+    "tests/test_phase19_training.py": "da4ba73e4f6e040b83a65aaadf986938692f7244310344d60a60f9286bd667f8",
+    "tests/test_phase19_baselines.py": "2185319112e4f348ff8021f20413a690dce9c333e82ba5675ac8deb1bdd11e97"
+  }
+}

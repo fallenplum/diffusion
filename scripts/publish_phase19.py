@@ -1,0 +1,102 @@
+"""Publish only a completed, hashed, privacy-checked Phase19 allowlist.
+
+Explicit invocation is required. No force-add, force-push, training or historical
+mutation. A successful push is verified against the fetched remote commit/blobs.
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from scripts.package_phase19 import (
+    BRANCH, PARENT, P, R, allowed_path, audit_parent_immutability,
+    audit_public_file, read, require, safe_path, verify_completion,
+)
+from src.phase19_attention.data import write
+from src.phase10_trimodal.data import digest
+
+SSH = 'ssh -i /root/.ssh/id_ed25519_github -o StrictHostKeyChecking=accept-new'
+REMOTE = 'git@github.com:fallenplum/diffusion.git'
+
+
+def git(*args):
+    return subprocess.check_output(['git','-c','core.sshCommand='+SSH,*args],cwd=ROOT)
+
+
+def names(*args):
+    return {p.decode('utf-8') for p in git(*args,'-z').split(b'\0') if p}
+
+
+def main():
+    require(git('branch','--show-current').decode().strip() == BRANCH, 'wrong target branch')
+    require(git('remote','get-url','origin').decode().strip() == REMOTE, 'wrong target repository')
+    completion = verify_completion()
+    parent, legacy = audit_parent_immutability()
+    manifest_path = R/'ARTIFACT_MANIFEST.json'
+    manifest = read(manifest_path)
+    require(all(manifest.get(key) == value for key,value in completion.items()),
+            'publication manifest completion/scientific-decision receipts changed')
+    require(manifest['status'] == 'PASS' and manifest['source'] == completion['source']
+            and manifest['branch'] == BRANCH and manifest['parent_commit'] == PARENT,
+            'publication manifest differs from complete current experiment')
+    require(manifest['private_training_done_sha256'] == completion['private_training_done_sha256']
+            and manifest['private_smoke_ledger_sha256'] == completion['private_smoke_ledger_sha256'],
+            'completion ledgers changed after packaging')
+    require(read(R/'PARENT_IMMUTABILITY_AUDIT.json') == parent, 'parent immutability evidence changed')
+    scope = read(R/'PUBLICATION_SCOPE_AUDIT.json')
+    require(scope['status'] == 'PASS' and scope['unchanged_inherited_violations'] == legacy,
+            'legacy exception list changed')
+    rows = manifest['public_files'] + [audit_public_file(manifest_path)]
+    paths = [row['path'] for row in rows]
+    require(len(paths) == len(set(paths)) and all(allowed_path(p) for p in paths), 'duplicate/out-of-scope public paths')
+    for row in rows:
+        actual = audit_public_file(safe_path(row['path']))
+        require(actual == row, 'public artifact bytes changed after packaging: '+row['path'])
+    allowed = set(paths)
+    # Reject unrelated staged or tracked working changes, and unrelated earlier
+    # commits on the publication branch. Untracked user files are not staged.
+    for command in [('diff','--cached','--name-only'),('diff','--name-only'),
+                    ('diff','--name-only',PARENT,'HEAD')]:
+        require(not names(*command)-allowed, 'unrelated change outside publication allowlist')
+    git('add','--',*paths)
+    require(not names('diff','--cached','--name-only')-allowed, 'staged files outside allowlist')
+    # Git filters/line-ending conversion must not silently change source bytes.
+    for row in rows:
+        staged = git('show',':'+row['path'])
+        require(hashlib.sha256(staged).hexdigest() == row['sha256'], 'staged bytes differ from audited public artifact')
+    check = subprocess.run(['git','diff','--cached','--check'],cwd=ROOT,capture_output=True,text=True)
+    require(check.returncode == 0, 'new publication whitespace check failed: '+check.stdout+check.stderr)
+    guard = subprocess.run([sys.executable,'scripts/check_protected_data.py'],cwd=ROOT,capture_output=True,text=True)
+    require(guard.returncode == 1 and set(json.loads(guard.stdout)['violations']) == {row['path'] for row in legacy},
+            'full repository guard differs from exactly five unchanged legacy ZIP exceptions')
+    for row in legacy:
+        require(hashlib.sha256(git('show',':'+row['path'])).hexdigest() == row['sha256'],
+                'legacy protected file staged bytes changed')
+    if names('diff','--cached','--name-only'):
+        print(git('commit','-m','Evaluate clinical-conditioned low-rank patch-pathway attention with pinned baselines').decode(),flush=True)
+    commit = git('rev-parse','HEAD').decode().strip()
+    print(git('push','origin','HEAD:refs/heads/'+BRANCH).decode(),flush=True)
+    remote = git('ls-remote','origin','refs/heads/'+BRANCH).decode().split()[0]
+    require(remote == commit, 'remote branch does not identify the published commit')
+    git('fetch','--no-tags','origin','refs/heads/'+BRANCH)
+    fetched = git('rev-parse','FETCH_HEAD').decode().strip()
+    require(fetched == commit, 'fetched remote commit differs from local publication')
+    for row in rows:
+        actual = hashlib.sha256(git('show','FETCH_HEAD:'+row['path'])).hexdigest()
+        require(actual == row['sha256'], 'remote blob SHA256 differs: '+row['path'])
+    result = {'status':'PASS','branch':BRANCH,'commit':commit,'remote_commit':remote,
+              'fetched_remote_commit':fetched,'verified_public_blobs':len(rows),
+              'source':completion['source'],'public_manifest_sha256':digest(manifest_path),
+              'no_patient_level_files_uploaded':True,'force_push_used':False,
+              'legacy_exceptions':'exactly five unchanged inherited ZIPs; no whole-repository privacy PASS claim'}
+    write(P/'GITHUB_PUSH_VERIFIED.json',result)
+    print(json.dumps(result),flush=True)
+
+
+if __name__ == '__main__':
+    main()

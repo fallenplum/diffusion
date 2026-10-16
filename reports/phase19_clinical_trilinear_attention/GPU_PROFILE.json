@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "role": "inner",
+      "samples": 238,
+      "sampled_interval_seconds": 2389.246047258377,
+      "maximum_running_workers": 8,
+      "maximum_configured_workers_limit": 8,
+      "GPU_utilization_percent_time_weighted_mean": 93.51548245848839,
+      "GPU_utilization_percent_sample_maximum": 100.0,
+      "GPU_utilization_percent_sample_median": 99.0,
+      "whole_GPU_memory_MiB_time_weighted_mean": 18744.821438932926,
+      "whole_GPU_memory_MiB_sample_maximum": 25469.0,
+      "whole_GPU_memory_MiB_sample_median": 19133.0
+    },
+    {
+      "role": "outer",
+      "samples": 87,
+      "sampled_interval_seconds": 866.7585079669952,
+      "maximum_running_workers": 8,
+      "maximum_configured_workers_limit": 8,
+      "GPU_utilization_percent_time_weighted_mean": 86.26867528984236,
+      "GPU_utilization_percent_sample_maximum": 100.0,
+      "GPU_utilization_percent_sample_median": 99.0,
+      "whole_GPU_memory_MiB_time_weighted_mean": 16384.41046928387,
+      "whole_GPU_memory_MiB_sample_maximum": 29247.0,
+      "whole_GPU_memory_MiB_sample_median": 17187.0
+    }
+  ],
+  "weighting": "left-held observed value over adjacent scheduler timestamps; final sample has no assumed duration",
+  "scope": "whole card; sampled inner/outer intervals, not all preparation/replay or end-to-end wall time; can include concurrent processes",
+  "memory_unit": "MiB=bytes/2^20; occupancy is not scientific validity",
+  "no_dummy_allocation_to_inflate_occupancy": true
+}

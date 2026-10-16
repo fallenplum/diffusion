@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+  "rows": [
+    {
+      "arm": "A0",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    },
+    {
+      "arm": "A1",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 18.0,
+      "actual_epoch_median": 58.0
+    },
+    {
+      "arm": "A2",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    },
+    {
+      "arm": "A3",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    },
+    {
+      "arm": "A4",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    },
+    {
+      "arm": "A5",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    },
+    {
+      "arm": "A6",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 11.0,
+      "actual_epoch_median": 51.0
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 9.0,
+      "actual_epoch_median": 49.0
+    },
+    {
+      "arm": "MGCT",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 10.0,
+      "actual_epoch_median": 50.0
+    },
+    {
+      "arm": "MMP",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 8.0,
+      "actual_epoch_median": 48.0
+    }
+  ],
+  "mechanism_budget_sufficient": true,
+  "all_method_budgets_sufficient": true,
+  "original_preouter_status": "PASS",
+  "original_preouter_audit_preserved": true,
+  "interpretation": "locked patience/cap adequacy only; not proof of global convergence; unresolved budget is not mechanism no-go"
+}

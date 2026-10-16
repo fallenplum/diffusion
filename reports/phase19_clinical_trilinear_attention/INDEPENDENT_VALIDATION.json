@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+  "model_seed_vectors": 51,
+  "outer_fold_metric_rows": 255,
+  "independent_sksurv_Harrell_Uno60_each_fold": true,
+  "risk_ensembling": false,
+  "primary_tests": 12,
+  "OOF": "only current full five-fold fresh outer fits, deterministic convex fits, qualified frozen LOCAL reference",
+  "old_125_inner_pilot_fits_counted_as_OOF": false,
+  "PFI": "frozen DSS predictions; no PFI fitting or selection",
+  "Clinical_FiLM": "CP trilinear score is equivalent to diagonal Clinical scaling of latent query/key; no independent FiLM innovation claim"
+}

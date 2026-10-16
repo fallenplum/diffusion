@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+  "new_formal_inner_neural_fits": 150,
+  "new_formal_outer_neural_fits": 150,
+  "new_formal_neural_fits": 300,
+  "formal_generator_optimizer_steps": 10908,
+  "formal_discriminator_optimizer_steps": 910,
+  "unique_current_source_convex_fits": 20,
+  "convex_seed_role_metric_references": 60,
+  "historical_LOCAL_outer_metric_references": 15,
+  "old_125_inner_pilot_new_fits_or_OOF": 0,
+  "smoke_attempts_recorded": 5,
+  "smoke_real_short_fits_with_generator_steps": 5,
+  "smoke_returned_successfully": 5,
+  "smoke_failed_after_generator_steps": 0,
+  "smoke_generator_optimizer_steps": 10,
+  "smoke_discriminator_optimizer_steps": 2,
+  "all_recorded_real_neural_fits": 305,
+  "all_recorded_generator_optimizer_steps": 10918,
+  "all_recorded_discriminator_optimizer_steps": 912,
+  "verified_completed_MMP_prototype_cache_producers_current_source": 10,
+  "verified_completed_MMP_prototype_cache_producers_other_source": 0,
+  "MMP_internal_kmeans_initializations_current_source": 10,
+  "MMP_fit_attempt_ledger_available": false,
+  "MMP_failed_or_aborted_attempt_count": "NOT_RECORDED",
+  "MMP_prototype_cache_audit": [
+    {
+      "role": "inner",
+      "fold": 1,
+      "current_source": true,
+      "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+      "cache_sha256": "3b6814541b7e96b93e3c8ca2feb94b5a87272638a0a9995235afba46dd7dd3b8",
+      "n_init": 1,
+      "prototype_count": 16
+    },
+    {
+      "role": "inner",
+      "fold": 2,
+      "current_source": true,
+      "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+      "cache_sha256": "9aaacebfb1b3bd7691f90474a9ea50e23a904939c3dccaa8cd7580a2525893f2",
+      "n_init": 1,
+      "prototype_count": 16
+    },
+    {
+      "role": "inner",
+      "fold": 3,
+      "current_source": true,
+      "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+      "cache_sha256": "b16c162591be0609d76e4c101656e079f9ce6adeff6c763ee1d3dce3b0c9ebe2",
+      "n_init": 1,
+      "prototype_count": 16
+    },
+    {
+      "role": "inner",
+      "fold": 4,
+      "current_source": true,
+      "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+      "cache_sha256": "2bd382d36cb2e7724aad1ec49a3a6f2596eb57e7e24f18c2422e26239789dfd5",
+      "n_init": 1,
+      "prototype_count": 16
+    },
+    {
+      "role": "inner",
+      "fold": 5,
+      "current_source": true,
+      "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+      "cache_sha256": "403e98bb54b419af0eb109839008f27cbc0aa1f451610c4cf7ce7ecee3a6c04d",
+      "n_init": 1,
+      "prototype_count": 16
+    },
+    {
+      "role": "outer",
+      "fold": 1,
+      "current_source": true,
+      "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+      "cache_sha256": "46f4f95ce47d5dfcf69204e54195bebd2a62c2589485667cba6b6853239c406d",
+      "n_init": 1,
+      "prototype_count": 16
+    },
+    {
+      "role": "outer",
+      "fold": 2,
+      "current_source": true,
+      "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+      "cache_sha256": "602db8c558cf12b6b11cbe4eb06fbabd654fab197d5c6df85c6fc961be782993",
+      "n_init": 1,
+      "prototype_count": 16
+    },
+    {
+      "role": "outer",
+      "fold": 3,
+      "current_source": true,
+      "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+      "cache_sha256": "3a0b03bf6246ec84bda89b2ccf1ef3c8082033f3e73f0e57eb1171a06de9525e",
+      "n_init": 1,
+      "prototype_count": 16
+    },
+    {
+      "role": "outer",
+      "fold": 4,
+      "current_source": true,
+      "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+      "cache_sha256": "cae2484210a91a0f8da96d151409eaaa9f828d47137307d0b12e1e5a9104b450",
+      "n_init": 1,
+      "prototype_count": 16
+    },
+    {
+      "role": "outer",
+      "fold": 5,
+      "current_source": true,
+      "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+      "cache_sha256": "3fc7590c7f1cbb9cf11fd747b80a07905daded14f259483ec1556a73c53290cf",
+      "n_init": 1,
+      "prototype_count": 16
+    }
+  ],
+  "clustering_scope": "verified completed fit-only KMeans cache producers only, not all attempts; three seed consumers reuse them; frozen per-WSI PANTHER EM is not another cross-patient KMeans fit",
+  "fit_definition": "neural fit counted once if generator optimizer stepped; D optimizer steps separate; deterministic convex and unsupervised prototype fits separate",
+  "prior_stage_training_recounted_as_new": false,
+  "formal_failed_task_receipt_present": false,
+  "formal_fit_count_scope": "300 complete checkpoint+receipt fits; partial failed formal attempts, if any, require their own execution evidence and are not inferred as zero"
+}

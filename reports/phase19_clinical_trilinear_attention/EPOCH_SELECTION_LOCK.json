@@ -1,0 +1,1057 @@
+{
+  "status": "ALL150_INNER_SELECTIONS_LOCKED",
+  "source": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+  "selections": [
+    {
+      "arm": "A3",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "e028ac757bef61f5efa5e8b8b023a6d3e36af78429e031d419af8ddbdd79b194"
+    },
+    {
+      "arm": "A1",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 14,
+      "checkpoint_sha256": "28d55dae93ee1f5ed2c1ddfb7e4283f60f9b721e5efc3dd8a7c065c38bdb4a6c"
+    },
+    {
+      "arm": "A4",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "1235d40ccb5726b3fa41321f4035267bf270723f1c70d91b918801b0cc713616"
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 15,
+      "checkpoint_sha256": "e8ede2fec834db1d1b9ae194bfb8f6753fa5d32dcf42395bec9750985687888c"
+    },
+    {
+      "arm": "A0",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "432453ebaf91a2a882d12a0d89c68df7b34899d664ea6ff465be6d0761b1ef8c"
+    },
+    {
+      "arm": "A4",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 11,
+      "checkpoint_sha256": "13dc0d68b0e6aaccb495b614e7cbf0e55e05007a3e6b90ff9d4d8f033e87ae22"
+    },
+    {
+      "arm": "A2",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 16,
+      "checkpoint_sha256": "c6e1eb1424eb2182160d645058b5c474842db49ab7d61052ad5b5ea13fe478c9"
+    },
+    {
+      "arm": "A0",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "fa8e2f39e9fb2415c1179f3e106a7d41155f22592ca5dc444c831e1f7c01f7aa"
+    },
+    {
+      "arm": "A4",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 16,
+      "checkpoint_sha256": "460a69d81128ac12966ba98121e18039e021640eed0fcf0deae7747bee9556f4"
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "973b89e6a58d9a58f683bb34e6eb2a903eb2fbfb311d184d63d7948850233038"
+    },
+    {
+      "arm": "A3",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 16,
+      "checkpoint_sha256": "bc38a068f388ccb594fbe4735e608974ad2eceb957e97b8805ad01e1ae6c396f"
+    },
+    {
+      "arm": "A2",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "ae46c2f8fbc28208063ec07f5c834f469709c17e3d271692765c97adadbdce61"
+    },
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "9256c7cdbf1f593979b2d4f64dc7159354a1467b39323d53900685f7d3472aa8"
+    },
+    {
+      "arm": "MMP",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 8,
+      "checkpoint_sha256": "2e77bbe8d38c2e28da263ab98b5ad74c04ecd7d5eddf78d95071b561f4fb6c02"
+    },
+    {
+      "arm": "A6",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 9,
+      "checkpoint_sha256": "c784d51a5fa0fb00f741f9ee67064d78e839dff42abf1d4384a4131ade61ae10"
+    },
+    {
+      "arm": "A3",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "e803b163e09ec54ec28a94d87d39e7b653267b999d19df7a467612aac4addc01"
+    },
+    {
+      "arm": "A0",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 13,
+      "checkpoint_sha256": "8ec9ad879b8c6968ca5efec99a1d765e7433f041c9d90f3a70780b4821afc0ab"
+    },
+    {
+      "arm": "A6",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "dfb8350a4e4596d2aba8f88ff6a59725b7713841ce14beab717821f520e0b121"
+    },
+    {
+      "arm": "A2",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 13,
+      "checkpoint_sha256": "e9623111e727818a4a70136ff894001d81c350420ec0567149a185f14e0b19ad"
+    },
+    {
+      "arm": "A4",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "69926fd2c563b0965f45bdb8105efd623d3cbda44910ac973247118e05681e6f"
+    },
+    {
+      "arm": "A1",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 13,
+      "checkpoint_sha256": "4f53a170d930bf466f4df3ca3cabcbc2508bb4bb48cf920a3b532f615beb063c"
+    },
+    {
+      "arm": "A0",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 11,
+      "checkpoint_sha256": "d4555460c45589b04aed3c3b76064e49e63dc37e926a052b677db69613ef8665"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 11,
+      "checkpoint_sha256": "97ac00a321108b0babd23360eedb78b16922ac307cbb514632b3c2a867e00fb1"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 14,
+      "checkpoint_sha256": "d3cbc0f592d9f2d424f48447df1412e6cb4c29838b073e96a8c6f11740378b40"
+    },
+    {
+      "arm": "A3",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 13,
+      "checkpoint_sha256": "86c9a095b07051d6618ced606080ab66402b4b9a78c0e3695faa4c53ce25bb94"
+    },
+    {
+      "arm": "MMP",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "71990107b12226b0c5f20bab2d979ed3edc274622a4bd84313ef4e1502b31643"
+    },
+    {
+      "arm": "A6",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 9,
+      "checkpoint_sha256": "9e04409cff5bb362900d3d022e5952deb288960c8ad1771e8967e822732f3dc9"
+    },
+    {
+      "arm": "A6",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "0ad1002db80cfbde53cf0848e63b52eec4693cd816626fd6edb5abef85c4d934"
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 13,
+      "checkpoint_sha256": "d8a0b5e7f553066dcb1f779cca2e9ba6c450e8d8a37c7a8cbc996b677d00b481"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 9,
+      "checkpoint_sha256": "dafc0faf705636a6df28cbde47c279b3f642d357b0141810c27c171847ef5770"
+    },
+    {
+      "arm": "A4",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 13,
+      "checkpoint_sha256": "8033c19156808dee97c50cbe8fd29ac91e02aa5ec833ebed123f755f74f3396f"
+    },
+    {
+      "arm": "A0",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "8d4f3deea1f5a932ea43945a02f36531aad9972145e8cbc2d0447ebdf382e52f"
+    },
+    {
+      "arm": "MMP",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 8,
+      "checkpoint_sha256": "7a2b9b638b04331c80dcb6f3de1d3b1e89d1a915cf4305bde78ad235e94b551d"
+    },
+    {
+      "arm": "A1",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 19,
+      "checkpoint_sha256": "ed11e16e373f579966e445e201de98d4c886ff1e654555c1872596b4382891fc"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 8,
+      "checkpoint_sha256": "c42bfa9701b96db30ac411a0c3efd2ce3f47199f523c7dc7e077e7346480b093"
+    },
+    {
+      "arm": "A1",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 12,
+      "checkpoint_sha256": "a5bde69b4fdcb806dfaced970609a161d5217ad02aba4ffc09802c6732c805b5"
+    },
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 12,
+      "checkpoint_sha256": "ed2376808143a737d01bd55b60c38d12ebc1706e79cfa79a49ddf0aa7fd53169"
+    },
+    {
+      "arm": "A0",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 8,
+      "checkpoint_sha256": "36b023040b3264fa549446eef302d7478b19a5d720a25a322fa32b9c00cf9a57"
+    },
+    {
+      "arm": "A1",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 8,
+      "checkpoint_sha256": "81422a389318fd293db72f6372d0acaccbead43286fc0c8a9aff6eeafcca5c97"
+    },
+    {
+      "arm": "A2",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 11,
+      "checkpoint_sha256": "eb898ef2998d84956a27e0e26b1ad7582b6983d35dd9889cd7fc487556b16924"
+    },
+    {
+      "arm": "A1",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "1141682d7a247f8e9f0b56b102b539fff3ceae24c776c95bfe67d438ca8cbc9b"
+    },
+    {
+      "arm": "A3",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 16,
+      "checkpoint_sha256": "f037d6ddaf2387025f8a543d290cac9a72581b3a0cd3f19dadc0f8192487819a"
+    },
+    {
+      "arm": "A2",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 16,
+      "checkpoint_sha256": "f15ac3ef9e172ed2e542afad977b7c8c437ed22ab005dede2deda51aab851a12"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "b3d53c2b819a7efb2438736c03a48845e4c4f48ad8fb9a118a65eed11b8ad60c"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 11,
+      "checkpoint_sha256": "4b8c764d30fcbddbdff500f6168ed11761c9187c8a085c449b154b1b5cdcb256"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 10,
+      "checkpoint_sha256": "537a1e3c5eab3a61396515fcfc173ec0e0a460f5af87bf631679178f3672344a"
+    },
+    {
+      "arm": "A4",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 16,
+      "checkpoint_sha256": "4f9a537c02b55287482db4e449b8c0ea153f8075981a673731a31ca929fa9b04"
+    },
+    {
+      "arm": "A2",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "fbac253452b37036a8dc0e26d63364352df0812ee154ad5d869ef309ce03a6ea"
+    },
+    {
+      "arm": "A6",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 11,
+      "checkpoint_sha256": "bf6391e1e327274405c223e8e44d23a2be551ae3ef23e3d98d1d80a6dc12893a"
+    },
+    {
+      "arm": "MMP",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "c4ae45ffa0a36e501258ecdbc4dfda5869de4c131d612163549954d26a7ccd7c"
+    },
+    {
+      "arm": "MMP",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 8,
+      "checkpoint_sha256": "4bba93e7d523f09d0861f3d5bdfb99589555b21ca0338cd33d05ac31558d48e4"
+    },
+    {
+      "arm": "A3",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 11,
+      "checkpoint_sha256": "524ca16d65fc11e274ae1c547f264547d6ec82acdd321132753114ae11c546e4"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 9,
+      "checkpoint_sha256": "5f17210dea958e675b6513d2d2a45d0e91b96af0b4430225b8c1762b51c91e2e"
+    },
+    {
+      "arm": "MMP",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 8,
+      "checkpoint_sha256": "18d4bac472712abd6e3320683e9bf1f719e78451671ae4cb90d88dbf04733da9"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 13,
+      "checkpoint_sha256": "f76668674555a6e8e6c163759968742856d2e36e9315e525baba69208c0f4ea3"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "b4a3a60c728c8087935937e40dd381608ee831781740d4b83ed718e49ac27ddd"
+    },
+    {
+      "arm": "A1",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 19,
+      "checkpoint_sha256": "21c680b8075caa5c2425a70e29feb7839e9acea33bea9b1d82dbcef3e9568ee4"
+    },
+    {
+      "arm": "A6",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "cc8c45d590b003688b27055d60b939556e605d8642b6f2a8a1ebc1e9b16e3daf"
+    },
+    {
+      "arm": "A1",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 22,
+      "checkpoint_sha256": "6625af3f8d4d1e7593f85ab171f43a606abcad8ea9e59909533b402e1d1a0237"
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 11,
+      "checkpoint_sha256": "349eda3d9f3045b39710971f68394675e3a7508f66a404746c8cba3077c28bc4"
+    },
+    {
+      "arm": "A2",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "8db0f041ff566bb8c748d34c5bac7a800437fe88ef54b160f141628c0e4ec47a"
+    },
+    {
+      "arm": "MMP",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "69608e4f55d0fd5faff5c3781aa13de0d098eebc935336ce24771ae6b68c00ea"
+    },
+    {
+      "arm": "A0",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 31,
+      "checkpoint_sha256": "4872c51319fe282fd1b335d572219637c1a28c9d07667af2149756b5d658e882"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "3e45cb58296dde85c4fca91ab75f44d1a108ebb1887bc1bec86307d93dcf184c"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "447e54f2a12c7c1a977a55ab5b2517e90e0aeb84a28f1e4b150081352ff34755"
+    },
+    {
+      "arm": "A3",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "762b307c5c13a86ed7de9c9e8ecf8597ed4def810bd34d92a6849d671053c7f8"
+    },
+    {
+      "arm": "A2",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 34,
+      "checkpoint_sha256": "bf45c6f14b46239f0380ddd3312cffde838f4990e814741cb1b86e5cdbf4e6ef"
+    },
+    {
+      "arm": "A1",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 16,
+      "checkpoint_sha256": "82fc75b66033b9d0489cba9063b1d2671114ca83697a84a6f8b30d2d706f8058"
+    },
+    {
+      "arm": "A0",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 31,
+      "checkpoint_sha256": "1955cde78b198ac1ccb8cfca25d526e4e106ec9c51846febe644218d9bb05b07"
+    },
+    {
+      "arm": "A4",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "da6ba00a55cfafc03dd3f6849ae612ad9473088e345195149691a208fcdc4185"
+    },
+    {
+      "arm": "A3",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 38,
+      "checkpoint_sha256": "290370eb9229bed6b26c521def69b0a0c368d0c6313bf9bf82fbd5dc8a066427"
+    },
+    {
+      "arm": "A2",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 29,
+      "checkpoint_sha256": "61a1a563d91985911dc993bfc2bf1c48b7bc19fd6a8056376dc5481a0d272120"
+    },
+    {
+      "arm": "A3",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 30,
+      "checkpoint_sha256": "aeb8d29506e7f1065c2f294636a325130f3e128259bd339099009d877d626da0"
+    },
+    {
+      "arm": "A6",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 9,
+      "checkpoint_sha256": "93c238df84c785fef6b61a3865cfd4826fa402c22ce2589603fa0d935ab7da52"
+    },
+    {
+      "arm": "A4",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 35,
+      "checkpoint_sha256": "e14043094601669c4848e25726624d7dd2632f14d5dd968ee3737dab7d71910d"
+    },
+    {
+      "arm": "A4",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 28,
+      "checkpoint_sha256": "9d6419830729e30d1b4309b0bd8a04529a658a8ad98056e70916edd2ea0fde3f"
+    },
+    {
+      "arm": "A6",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 21,
+      "checkpoint_sha256": "20f26a6e5b4caf667a24c55a3e589f73383889e0fd360ebfa70b1fa3ea5806f9"
+    },
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "740cc91c28445e7060475fe7ba5218a71660414cfe123d9ca99736e152721b21"
+    },
+    {
+      "arm": "A6",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 11,
+      "checkpoint_sha256": "34388f6489a9e18c994579f1fd0a42c18d993095d70bd69a40b5fe26ee7de721"
+    },
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 30,
+      "checkpoint_sha256": "7ab006440779de51b30d9e6fbee9c26f5c49b0fa081b652a3f5ad9852eec00cc"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 11,
+      "checkpoint_sha256": "ee4160cf4fb3368965d0ca28419ae565a6e24fa0b1be8a75be32e7c7bc9cc958"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 8,
+      "checkpoint_sha256": "7795170b385c059be5ee0b4dabdfccb354dfd17de634f88bcf5842b3077ea8bd"
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 38,
+      "checkpoint_sha256": "86cda77552a1ba3318e1d17142ba7b258970488f3dd7f4d121777c6806de47bf"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 12,
+      "checkpoint_sha256": "f24527b6b6e620554345713cd7b7e8dea72d458ea182832ef5e412b4aafc5eaa"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 10,
+      "checkpoint_sha256": "45cce570f053975bb1ec5802d3b236c9a29dc685c82a765050e59cfa9b4551dc"
+    },
+    {
+      "arm": "MMP",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 9,
+      "checkpoint_sha256": "35a945346a8fcb1cd6212c928b2dab6cae08c8e29a91d52381738d72aec2dd77"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 10,
+      "checkpoint_sha256": "65e1ca66c8bc8e6f2038bfbd2c7c13ddc70b20fdbba0b34457fe15587a47d23c"
+    },
+    {
+      "arm": "A0",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 30,
+      "checkpoint_sha256": "696c74afb44f13e87d57ce5c7f98030cb0b74d92efbe5755f516246ab2fe7f3f"
+    },
+    {
+      "arm": "MMP",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 8,
+      "checkpoint_sha256": "e93728afc5ef54d325a69135ad4ac876002e1fda0d904aece0c15680f6337d97"
+    },
+    {
+      "arm": "A1",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 28,
+      "checkpoint_sha256": "7f904357484a9b231de433524cab2f28355acf1f48060dfc7eb483dc6b34819b"
+    },
+    {
+      "arm": "MMP",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 8,
+      "checkpoint_sha256": "375a57f3ffc1818290b50bc279b784bd6485778110ea58ce9e26e18c8d7ebfa0"
+    },
+    {
+      "arm": "A2",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 27,
+      "checkpoint_sha256": "71f4a9374820c10c8145ba8ee483a7e82cf9a209794853a628324265896451fc"
+    },
+    {
+      "arm": "A0",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 24,
+      "checkpoint_sha256": "0e93d6b687e958e5dc359fd19dde3613d20febda459c402c29df6f7e631c8fbc"
+    },
+    {
+      "arm": "A4",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 27,
+      "checkpoint_sha256": "e7a789e8519eaac8014cbae5757a9a7f2a6fcb45f6663b88c79b0ce749fe58c4"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 11,
+      "checkpoint_sha256": "4c23b45072c80d27799fbcee290ec8e9acd4209e6859c6510c49a5bc8df1c2b5"
+    },
+    {
+      "arm": "A3",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 33,
+      "checkpoint_sha256": "125d352f9c95f7bb03ac8531f20d6d994cf5d9eb8e09093886e940c56bacebd0"
+    },
+    {
+      "arm": "A1",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 12,
+      "checkpoint_sha256": "1fc3ab776947010b24f5c45679cbb4216373db81622611f23332f5eef57c744e"
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 28,
+      "checkpoint_sha256": "bce89daf7eac238e5076afe2ec3936d6afe0c34077688c3bd7775e2ab787965d"
+    },
+    {
+      "arm": "A0",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "d84ab9c4689cb79502d87e7fb44d12bc6bea84719eba08a1e494c276ece82498"
+    },
+    {
+      "arm": "A6",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 17,
+      "checkpoint_sha256": "4ce56cb759a6c992facdd604951ae9fcd28b173725f6781af45af77f69abb244"
+    },
+    {
+      "arm": "A2",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 19,
+      "checkpoint_sha256": "67a05ba90dae119a641f71acb929ee60e3d0709bf7cb38db71e8b5e6bda2a59f"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 12,
+      "checkpoint_sha256": "ce01c5bc69b2f5240be68e7ff86e1565e87ca41ad695f42394739621034c8751"
+    },
+    {
+      "arm": "A3",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 19,
+      "checkpoint_sha256": "b0b3202b2e78360c652abc8ba68467dce061f49dbaa4a847285bb9cd5990c3cc"
+    },
+    {
+      "arm": "A6",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 8,
+      "checkpoint_sha256": "db8c9ad30267c7fb59e9728653b510e33be6a6d43314dfa9294d5ee832e9d4d6"
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 12,
+      "checkpoint_sha256": "6ba72be649b09958d9b7857a55e3e2759100e7a425b952efc0b2f98eb3d930ca"
+    },
+    {
+      "arm": "A4",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 19,
+      "checkpoint_sha256": "01d94e7c185f8d43d496719e11c87587a78cab082165a1e83c3f7d3dc4049872"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 13,
+      "checkpoint_sha256": "6101f4b350c391bb55947a46b74520a450cf532ed0cf40df3ff30ad22a8bdd3d"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 10,
+      "checkpoint_sha256": "0c0cf243a2f62e91d49cab70e99243baceaa2770ff73e11f39c1fabf21092430"
+    },
+    {
+      "arm": "A0",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 11,
+      "checkpoint_sha256": "153b7cc171608dfe7c734290db93213e86e91802ae16fbfab4d949c16044a948"
+    },
+    {
+      "arm": "MMP",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 8,
+      "checkpoint_sha256": "c177e00eae492b2a88f0648562b8845e170897cf0aa9d4a1968ff1b9aa4692b3"
+    },
+    {
+      "arm": "A2",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 12,
+      "checkpoint_sha256": "55d553c8476b1205396b46a844724104e8737ea55650cec5c48295aa683d456a"
+    },
+    {
+      "arm": "A3",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 12,
+      "checkpoint_sha256": "f80767ebc8440a5fe4a27dab55beb5a89580d2f607ef1afb37864c7213e483b3"
+    },
+    {
+      "arm": "A1",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 21,
+      "checkpoint_sha256": "f44f9d5130a5e7ffce052f0bcf80df3a6f4584b5eb3ed513e760c6f3b76c8f7b"
+    },
+    {
+      "arm": "A4",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 12,
+      "checkpoint_sha256": "e23d6df715dd4db297119d63b807500c4bf8e4a679e0b85a9fa2272e0a482f7c"
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 11,
+      "checkpoint_sha256": "6eba44cf6afcdb52b5eca0bcff59dd7c630f421e85e857c5348936cd34a8d323"
+    },
+    {
+      "arm": "A6",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 22,
+      "checkpoint_sha256": "16dad20bcd2468d25606e9683a80a3522f296c9071ed6cace0806e90d79c5cee"
+    },
+    {
+      "arm": "MMP",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 8,
+      "checkpoint_sha256": "176559e3e8fcf864c3834e8694529bce32e0628c3ba8264fc9b7c2fcc6ea6651"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 10,
+      "checkpoint_sha256": "a9f3960a6254c5c05d32bc2dee55c63f071828150726613831122c575624cffd"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 9,
+      "checkpoint_sha256": "c6d39f92f68d2881edc3eb787e94cb6dd8e7bf59e0846d8436d729678fbaebb9"
+    },
+    {
+      "arm": "A0",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 36,
+      "checkpoint_sha256": "88f0de3592a7a19def36b149cc38b1387196dd80261eda6869c1e1517e5178d7"
+    },
+    {
+      "arm": "A1",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 27,
+      "checkpoint_sha256": "d056f1754ccf660a38da8177e011f366615ca03d2c16d469a75fd37a9aa90cfa"
+    },
+    {
+      "arm": "A2",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 35,
+      "checkpoint_sha256": "71f38d47a803d9915bfcdffbc75a85ed4b87878f65758208b0c7b287bca0b81a"
+    },
+    {
+      "arm": "A3",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 35,
+      "checkpoint_sha256": "1ca533ebf1f8692133c72c1081a6c5f38448bc7105b9a938bf9fbcdf1b97ebc1"
+    },
+    {
+      "arm": "A6",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 23,
+      "checkpoint_sha256": "2aaa6d7c4b3fa9dd62dbb3541396429978a628d4ad4c7c4e2e680a1e0d47504a"
+    },
+    {
+      "arm": "A4",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 34,
+      "checkpoint_sha256": "88ca6961d348996d42f2dbce7204ebb3f0027a42a47ffd16a4396955f72cdeb6"
+    },
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 36,
+      "checkpoint_sha256": "aabd5048614a988d7d6ae8343e1b6df77242065b7e1a786b3fb4122d792a3bfd"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 8,
+      "checkpoint_sha256": "1adad4ff32ced85e59ac186175f077e4c122a682122010a20dc51cd5c9d80d37"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 16,
+      "checkpoint_sha256": "ef93c1dd6af6b1636167d6eefccabac0803b3e6e8734c4e9657c201685b06c90"
+    },
+    {
+      "arm": "MMP",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 8,
+      "checkpoint_sha256": "3bc4cc9c607ad9e88d4b69ba36c0ef9060fc77b101e5d626a16d0312113e47ae"
+    },
+    {
+      "arm": "A1",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 18,
+      "checkpoint_sha256": "3162f480c629dee0bde70c7cdbfc229ca585498e831ccd77c2640e714c7d5854"
+    },
+    {
+      "arm": "A0",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 28,
+      "checkpoint_sha256": "d1510b3ccb1e1b01de89dc7ceb358e4b43db0883ed31b8950295eb35da79f863"
+    },
+    {
+      "arm": "A2",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 27,
+      "checkpoint_sha256": "190d35c76b7b1acd77e92c2c3951b11ee5ce5069f3f2f7b9f187db2de41cffaa"
+    },
+    {
+      "arm": "A3",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 28,
+      "checkpoint_sha256": "11876c38c394793e2f4e1d00e9b840096e2b4512d5e2e1de3e93e394de99afc3"
+    },
+    {
+      "arm": "A4",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 27,
+      "checkpoint_sha256": "5918c91461d0c3a31df314b25386fd2d88a0228e7efe17ebc3c6f07fed37fa40"
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 28,
+      "checkpoint_sha256": "e465041a717abc4735a38e33e52f25d82650598a9c2b7d46e64f01142b57c827"
+    },
+    {
+      "arm": "A6",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 22,
+      "checkpoint_sha256": "353e6462d3c2c0320453a271d1a33a85ad73031fc1d1e8e5c5708a539e4c8293"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 11,
+      "checkpoint_sha256": "951df1542a02b7040c25dd33750c9537a63c9d98f8ebc2fde56c8d95c2ac036c"
+    },
+    {
+      "arm": "MMP",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 8,
+      "checkpoint_sha256": "e84a7267ff2cce56616c23f1fc7afd24007c1388f8726b04166fc0e8577af5e4"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 9,
+      "checkpoint_sha256": "782904da8b81f465bb90b167b61b554a59ce9e2cdde70541e11d9e652aab0d67"
+    },
+    {
+      "arm": "A0",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 29,
+      "checkpoint_sha256": "2ba66eadfc68f67ecc21a2dbf62c185551beca8e5fe43efe6d6311ab5bf91996"
+    },
+    {
+      "arm": "A1",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 36,
+      "checkpoint_sha256": "bb960caf9e14287e997c0ffb29379293703521aa3620687c90e400c9dfd71f5b"
+    },
+    {
+      "arm": "A2",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 36,
+      "checkpoint_sha256": "6f78659470c70a5653b423536f8aec49bf511885e1ba9d03617877932e0c4db9"
+    },
+    {
+      "arm": "A3",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 39,
+      "checkpoint_sha256": "5cd99d547d6e98411af3c3e35c80a3cd60c8b9118687ad859b8bb37aed070129"
+    },
+    {
+      "arm": "A4",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 36,
+      "checkpoint_sha256": "404aa51345e06f15442eb80540aaaa330bf7826c3b7bc80222a0102b03c75b97"
+    },
+    {
+      "arm": "A6",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 21,
+      "checkpoint_sha256": "893464c3ed4a1ecdda9822dc7b05bf2c7478a4b2a9a4440d84226aef69efe6c7"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 8,
+      "checkpoint_sha256": "0ac91cca86173e2e095abae178367a7b5395fcd4604bb3523ae76a8336475a74"
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 35,
+      "checkpoint_sha256": "53795bd7586ee6d9628ad2a49eb96290693b158679b9a61a162dce0b1e3a9463"
+    },
+    {
+      "arm": "MGCT",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 9,
+      "checkpoint_sha256": "424b4d3c5ffbfde848b137579bf433e33ae4165d8e9e20c110bc38dffab06a4e"
+    },
+    {
+      "arm": "MMP",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 8,
+      "checkpoint_sha256": "ce6e12c9ec0d76be4556cd321ac7733211e77d85464a4464ae395e27381d7e63"
+    },
+    {
+      "arm": "CAMR_REPAIRED",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 8,
+      "checkpoint_sha256": "c7b3ac25a07c3f2809b3b3930e754ff60c42f93b05bbed0bef1dc17779900ad8"
+    }
+  ],
+  "no_outer_scores_used": true
+}

@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "source": "f78fe314faa221de4145b28155a9e130b90caf475893e245c247043324782ab9",
+  "evaluator_sha256": "f44d91793983bad95b34c84ba5a92f3b7e872a62cc9b11549d45dacb8b80b717",
+  "budget_source": "43490d4a42d421b2f0757d68414008c1dd136812e4a3c0c042cf2d3fcf27b06a",
+  "stage": "budget160_sensitivity",
+  "role": "INNER_ONLY_FEASIBILITY_NOT_OOF",
+  "checkpoint_replay_device": "cuda",
+  "counts": {
+    "real_neural_training_cells_this_stage": 32,
+    "real_baseline_only_convex_fits_this_stage": 0,
+    "neural_initialization_ridge_solver_calls_this_stage": 32,
+    "total_ridge_solver_calls_this_stage": 32,
+    "real_completed_model_cells_this_stage": 32,
+    "selected_model_cells_for_evaluation": 84,
+    "original40_references_without_refit": 52,
+    "cumulative_neural_training_cells": 113,
+    "cumulative_baseline_only_convex_fits": 3,
+    "cumulative_ridge_solver_calls": 116,
+    "convex_baseline_evaluation_references": 9,
+    "extra_convex_references_without_refit": 6,
+    "metric_cells": 90,
+    "checkpoint_replays": 84,
+    "outer_fits": 0,
+    "outer_prediction_vectors": 0,
+    "patient_OOF_files": 0
+  },
+  "immutable_partition_checks": [
+    {
+      "fold": 1,
+      "fit_patients": 327,
+      "validation_patients": 82,
+      "outer_test_patients_never_predicted_here": 103
+    },
+    {
+      "fold": 3,
+      "fit_patients": 328,
+      "validation_patients": 82,
+      "outer_test_patients_never_predicted_here": 102
+    },
+    {
+      "fold": 5,
+      "fit_patients": 328,
+      "validation_patients": 82,
+      "outer_test_patients_never_predicted_here": 102
+    }
+  ],
+  "unique_inner_validation_patients": 204,
+  "sum_inner_validation_rows_before_seed_repetition": 246,
+  "overlapping_inner_patients_not_treated_as_independent": true,
+  "no_confidence_intervals_or_p_values_computed": true,
+  "no_cross_fold_risk_ranking_or_risk_ensembling": true,
+  "IPCW_estimator": "independent reverse KM fitted on each exact inner-train, tau60",
+  "metrics_verified_against_sksurv": true,
+  "maximum_sksurv_difference": 2.220446049250313e-16,
+  "all_selected_checkpoints_replayed": true,
+  "maximum_checkpoint_risk_error": 0.0,
+  "both_complete_reference_nulls_exact_zero": true,
+  "all_interaction_risks_within_fixed_point25_bound": true,
+  "epoch_EMA_and_stopping_rules_recomputed": true,
+  "formal_outer_evaluation": "NOT STARTED",
+  "stage_decision": "STOP_CURRENT_INTERACTION_PILOT",
+  "evidence_boundary": "PASS certifies this technical audit, not biological validity, efficacy, equivalence, or external generalization"
+}

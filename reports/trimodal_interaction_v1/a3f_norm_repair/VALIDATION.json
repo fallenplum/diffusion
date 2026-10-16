@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source": "f78fe314faa221de4145b28155a9e130b90caf475893e245c247043324782ab9",
+  "implementation_source": "72f0362bd26af732936f1f27b3299bdfd01655ca12cc5b94dc6814b5d7361395",
+  "cells": 9,
+  "official_RMSNorm_affine_parameters": 32,
+  "actual_RMSNorm_affine_scale_updated": true,
+  "maximum_checkpoint_risk_error": 0.0,
+  "maximum_sksurv_difference": 1.1102230246251565e-16,
+  "all_reference_DSS_data_preprocessing_unchanged": true,
+  "no_outer_evaluation": true,
+  "no_confidence_intervals_or_p_values": true
+}

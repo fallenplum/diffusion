@@ -1,0 +1,205 @@
+{
+  "decision": "STOP_CURRENT_INTERACTION_PILOT",
+  "scope": "exploratory overlapping inner validation; not OOF, independent confirmation, or efficacy inference",
+  "original40_decision": "BUDGET_UNRESOLVED",
+  "budget160_original_A3_decision": "STOP_CURRENT_INTERACTION_PILOT",
+  "final_basis": "budget160 with A5-A3 replaced by A5-A3F affine bugfix; all original comparisons retained",
+  "budget_gate_pass": true,
+  "effective_budget_per_arm": [
+    {
+      "arm": "A1",
+      "neural_cells": 9,
+      "hit_maximum_cells": 1,
+      "hit_maximum_fraction": 0.1111111111111111,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A2",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A4",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A5",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A6",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A7",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "F0",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "PR",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A3F",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    }
+  ],
+  "A5_query_and_gate_gradient_pass": true,
+  "all_effective_primary_comparisons_pass": false,
+  "effective_primary_comparisons": [
+    {
+      "comparison": "A5-A1",
+      "each_seed_gain_pass": false,
+      "seed_deltas": {
+        "31": 0.0006112469437652,
+        "47": 0.0042787286063569,
+        "83": -0.0024449877750611
+      },
+      "positive_inner_cells": 4,
+      "inner_cells": 9,
+      "positive_inner_cell_fraction": 0.4444444444444444,
+      "pass": false
+    },
+    {
+      "comparison": "A5-A2",
+      "each_seed_gain_pass": false,
+      "seed_deltas": {
+        "31": -0.0012224938875305,
+        "47": 0.0036674816625916,
+        "83": 0.0018337408312958
+      },
+      "positive_inner_cells": 6,
+      "inner_cells": 9,
+      "positive_inner_cell_fraction": 0.6666666666666666,
+      "pass": false
+    },
+    {
+      "comparison": "A5-A3F",
+      "each_seed_gain_pass": false,
+      "seed_deltas": {
+        "31": -0.0012224938875305,
+        "47": 0.0006112469437652,
+        "83": 0.0006112469437652
+      },
+      "positive_inner_cells": 4,
+      "inner_cells": 9,
+      "positive_inner_cell_fraction": 0.4444444444444444,
+      "pass": false
+    },
+    {
+      "comparison": "A5-A7",
+      "each_seed_gain_pass": true,
+      "seed_deltas": {
+        "31": 0.0030562347188263,
+        "47": 0.0042787286063569,
+        "83": 0.0012224938875304
+      },
+      "positive_inner_cells": 4,
+      "inner_cells": 9,
+      "positive_inner_cell_fraction": 0.4444444444444444,
+      "pass": false
+    },
+    {
+      "comparison": "A4-A2",
+      "each_seed_gain_pass": false,
+      "seed_deltas": {
+        "31": -0.0006112469437652,
+        "47": -0.0030562347188263,
+        "83": 0.0012224938875305
+      },
+      "positive_inner_cells": 4,
+      "inner_cells": 9,
+      "positive_inner_cell_fraction": 0.4444444444444444,
+      "pass": false
+    }
+  ],
+  "budget_amendment_after_observing_inner_cap40": true,
+  "A3F_bugfix_not_best_of_original_and_repair": true,
+  "original_training_source": "f78fe314faa221de4145b28155a9e130b90caf475893e245c247043324782ab9",
+  "budget160_source": "43490d4a42d421b2f0757d68414008c1dd136812e4a3c0c042cf2d3fcf27b06a",
+  "A3F_implementation_source": "72f0362bd26af732936f1f27b3299bdfd01655ca12cc5b94dc6814b5d7361395",
+  "aggregate_report_input_sha256": {
+    "ARM_SUMMARY.csv": "fba26e319ffd32c55c8618154519c4c6814b117ea9f2e3b9fc6348d2df0c225e",
+    "PAIRED_INNER_DIAGNOSTICS.csv": "5efc31e5278ab0bcb7b46096d85c6733f2dcac2287c3066614ce04633ff9aaea",
+    "STAGE_DECISION.json": "14c86836635e7a46a3b6f87c3f58b83998ea905ea629cb5ae5654c61911bfd32",
+    "EXECUTION_COUNTS.json": "2c80f2120a5bfb0ef86193c0f76abc127c24869746c4cb1202fd014cb7aa5837",
+    "VALIDATION.json": "1ba2ba40fd80e63a2d05ee13c2d2270e8c94e7d9c8624f717708954372c7706d",
+    "QUERY_REPRESENTATION_AUDIT.json": "85f2b046c3ba817fa3d903c928fca3882f201ad9bd7cdb165de769ced02114e6",
+    "QUERY_REPRESENTATION_AUDIT.csv": "626801017e3ae82043da300a3e6ffd329f12975806fe717578ec16b28d4862d7",
+    "budget160/ARM_SUMMARY.csv": "99c60adeb861e227dc2f29f0d3fd7e1b8a6ff3ee61f0f1a1a34a24916bea4c5d",
+    "budget160/PAIRED_INNER_DIAGNOSTICS.csv": "85ed0661d6d7e4e3b7a5f124a53295fd9536bed51f7b96265adf055b8d3dc515",
+    "budget160/STAGE_DECISION.json": "940d38f983f162b463141c7a28e9f0bba847918d8a53b44d76e6c48c6cc7a003",
+    "budget160/EXECUTION_COUNTS.json": "ef7346a02e586569af3fddbe27559a4c557fcf98335c9cb67865e14ded354591",
+    "budget160/VALIDATION.json": "aeb4e5ae579b70ef7499dfc0e3ad9adfe599af197384424b81c1ea735ba5b912",
+    "budget160/QUERY_REPRESENTATION_AUDIT.json": "aca49c3bccd5d7359f4cec413a77783c283ba854ce9b184ba96769967bc86ec3",
+    "budget160/QUERY_REPRESENTATION_AUDIT.csv": "7ea9c8d1df24a0a2d5f6597d6791691eb875573106efc9c1ccb1901f7fcefa19",
+    "a3f_norm_repair/ARM_SUMMARY.csv": "3fab5f6f8b0e5f09d75458089699d04f2eb17485c91556e00ccf3862fc4bfd5a",
+    "a3f_norm_repair/PAIRED_INNER_DIAGNOSTICS.csv": "cbff1508cf3e182b4b4742336fa1c5b660e7d1f0e6bca28a2d2f8347e04f4945",
+    "a3f_norm_repair/STAGE_DECISION.json": "c768d63e731f5dcc62c82ae72e6d226ec1f7d3eb4c4c25125ebdcad59ff10ac5",
+    "a3f_norm_repair/EXECUTION_COUNTS.json": "8e5bd734e1c041038bd9363d9d9debbc731a61e287fc2fafaa6ab2f8b5b75dc1",
+    "a3f_norm_repair/VALIDATION.json": "761019897bfa026ec080990973626a342bcbb25cb45964dc5f4fe1ae4e2f90cf"
+  },
+  "report_script_sha256": "9ff4793f44cb748b98065b99a8af21ebb019e560e8311c4bd31db31c6a5ad30b",
+  "counts": {
+    "original40_real_neural_cells": 81,
+    "baseline_only_convex_cells": 3,
+    "original40_real_model_cells": 84,
+    "original40_neural_ridge_initializations": 81,
+    "original40_total_ridge_solver_calls": 84,
+    "budget160_new_real_neural_cells": 32,
+    "budget160_original40_references": 52,
+    "A3F_new_real_neural_cells": 9,
+    "total_real_model_cells_all_stages": 125,
+    "total_real_neural_cells_all_stages": 122,
+    "total_ridge_solver_calls_all_stages": 125,
+    "convex_baseline_metric_references_per_stage": 9,
+    "extra_convex_references_without_new_fit_per_stage": 6,
+    "outer_fits": 0,
+    "patient_OOF_files": 0,
+    "original40_prefix_max_error_in160": 0.0,
+    "replay_and_query_probes_are_not_new_fits": true
+  },
+  "outer_evaluation": "NOT_STARTED",
+  "no_confidence_intervals_or_p_values": true,
+  "does_not_establish_RNA_redundancy_or_absence_of_biological_interaction": true,
+  "confidence": {
+    "completed_artifact_and_operator_checks": "高（以真实审计为限）",
+    "engineering_followup_decision": "中（内层重复患者、有限预算及选择暴露）",
+    "external_prognostic_or_biological_mechanism": "低（未做独立外部/形态确认）"
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "status": "PASS",
+  "scope": "label-blind mechanism diagnostics; no predictive efficacy inference",
+  "training_source": "f78fe314faa221de4145b28155a9e130b90caf475893e245c247043324782ab9",
+  "audit_script_sha256": "55a6dc7e5db6a700240ae673670e93529ddfc3429eda6fbfab7fd89f8686e496",
+  "training_schedule": "budget160_sensitivity",
+  "budget_source": "43490d4a42d421b2f0757d68414008c1dd136812e4a3c0c042cf2d3fcf27b06a",
+  "preprocessing_original_audit_reuse_sha256": "85f2b046c3ba817fa3d903c928fca3882f201ad9bd7cdb165de769ced02114e6",
+  "cells": 27,
+  "arms": [
+    "A2",
+    "A5",
+    "A7"
+  ],
+  "probe_patients_maximum_per_cell": 32,
+  "probe_selection": "first inner-training rows; no outcome/score-based selection",
+  "own_main_effect_unchanged_under_wrong_context": true,
+  "risk_arrays_persisted": false,
+  "outer_test_probes": 0,
+  "all_mixed_reference_risks_exact_zero": true,
+  "mixed_row_sum_error_global_max": 7.802736945450306e-07,
+  "A7_pregate_norm_match_error_global_max": 7.450580596923828e-09,
+  "arm_summary": {
+    "A2": {
+      "query_matched_wrong_cosine_mean": {
+        "median_across_cells": 0.7497712969779968,
+        "min_across_cells": 0.6277784705162048,
+        "max_across_cells": 0.9288216829299927
+      },
+      "query_matched_wrong_relative_L2_mean": {
+        "median_across_cells": 0.6958240270614624,
+        "min_across_cells": 0.37359726428985596,
+        "max_across_cells": 0.8539419174194336
+      },
+      "query_RNA_scale1p1_relative_L2_mean": {
+        "median_across_cells": 0.035223592072725296,
+        "min_across_cells": 0.026408057659864426,
+        "max_across_cells": 0.03796593099832535
+      },
+      "pre_LayerNorm_RNA_scale1p1_relative_L2_mean": {
+        "median_across_cells": 0.06548549979925156,
+        "min_across_cells": 0.05734080821275711,
+        "max_across_cells": 0.07161183655261993
+      },
+      "query_gene_identity_ablation_relative_L2_mean": {
+        "median_across_cells": 0.03492940589785576,
+        "min_across_cells": 0.030822904780507088,
+        "max_across_cells": 0.04084756225347519
+      },
+      "mixed_to_ordinary_message_norm_mean": {
+        "median_across_cells": 0.0037343415897339582,
+        "min_across_cells": 0.002733111847192049,
+        "max_across_cells": 0.029612556099891663
+      },
+      "interaction_to_main_SD": {
+        "median_across_cells": 0.03856278154661639,
+        "min_across_cells": 0.024676889333710646,
+        "max_across_cells": 0.07891303037529343
+      },
+      "matched_wrong_total_risk_abs_mean": {
+        "median_across_cells": 0.002146268729120493,
+        "min_across_cells": 0.0013561161467805505,
+        "max_across_cells": 0.01287831924855709
+      }
+    },
+    "A5": {
+      "query_matched_wrong_cosine_mean": {
+        "median_across_cells": 0.5720991492271423,
+        "min_across_cells": 0.4148673117160797,
+        "max_across_cells": 0.8125132918357849
+      },
+      "query_matched_wrong_relative_L2_mean": {
+        "median_across_cells": 0.9217161536216736,
+        "min_across_cells": 0.6099357008934021,
+        "max_across_cells": 1.0749545097351074
+      },
+      "query_RNA_scale1p1_relative_L2_mean": {
+        "median_across_cells": 0.03847967088222504,
+        "min_across_cells": 0.03354723006486893,
+        "max_across_cells": 0.04087306186556816
+      },
+      "pre_LayerNorm_RNA_scale1p1_relative_L2_mean": {
+        "median_across_cells": 0.07413037121295929,
+        "min_across_cells": 0.0665789246559143,
+        "max_across_cells": 0.08275450766086578
+      },
+      "query_gene_identity_ablation_relative_L2_mean": {
+        "median_across_cells": 0.04108584672212601,
+        "min_across_cells": 0.030378058552742004,
+        "max_across_cells": 0.07712488621473312
+      },
+      "mixed_to_ordinary_message_norm_mean": {
+        "median_across_cells": 0.06947295367717743,
+        "min_across_cells": 0.004685506224632263,
+        "max_across_cells": 0.9443387389183044
+      },
+      "interaction_to_main_SD": {
+        "median_across_cells": 0.009550040472100422,
+        "min_across_cells": 0.00010655430632832833,
+        "max_across_cells": 0.09943003326191466
+      },
+      "matched_wrong_total_risk_abs_mean": {
+        "median_across_cells": 0.002853250131011009,
+        "min_across_cells": 3.223493695259094e-05,
+        "max_across_cells": 0.031215956434607506
+      }
+    },
+    "A7": {
+      "query_matched_wrong_cosine_mean": {
+        "median_across_cells": 0.7572805881500244,
+        "min_across_cells": 0.672711968421936,
+        "max_across_cells": 0.8884468078613281
+      },
+      "query_matched_wrong_relative_L2_mean": {
+        "median_across_cells": 0.6830139756202698,
+        "min_across_cells": 0.4756765067577362,
+        "max_across_cells": 0.7995599508285522
+      },
+      "query_RNA_scale1p1_relative_L2_mean": {
+        "median_across_cells": 0.034883320331573486,
+        "min_across_cells": 0.030638396739959717,
+        "max_across_cells": 0.03817743808031082
+      },
+      "pre_LayerNorm_RNA_scale1p1_relative_L2_mean": {
+        "median_across_cells": 0.06635677069425583,
+        "min_across_cells": 0.06116395443677902,
+        "max_across_cells": 0.0717305988073349
+      },
+      "query_gene_identity_ablation_relative_L2_mean": {
+        "median_across_cells": 0.0265142060816288,
+        "min_across_cells": 0.016036417335271835,
+        "max_across_cells": 0.032176725566387177
+      },
+      "mixed_to_ordinary_message_norm_mean": {
+        "median_across_cells": 0.004371932707726955,
+        "min_across_cells": 0.0030645853839814663,
+        "max_across_cells": 0.007404131814837456
+      },
+      "interaction_to_main_SD": {
+        "median_across_cells": 0.00012296060802713968,
+        "min_across_cells": 9.113643415834827e-05,
+        "max_across_cells": 0.0012843875198272764
+      },
+      "matched_wrong_total_risk_abs_mean": {
+        "median_across_cells": 0.00012791843619197607,
+        "min_across_cells": 6.248237332329154e-05,
+        "max_across_cells": 0.0012237242190167308
+      }
+    }
+  },
+  "preprocessing_actual_source_replay": [
+    {
+      "fold": 1,
+      "status": "PASS",
+      "fit_patient_count": 327,
+      "valid_patient_count": 82,
+      "PCA_fit_sample_count": 5232,
+      "PCA_max_samples_per_patient": 16,
+      "PCA_fit_partition_hash": "9e66d9868c4b0bf5b3af99f9aef94094f8c8b44b332844cc00b3229de4ed7ff3",
+      "PCA_source_samples_hash": "d2708a5c075ef42756953faab08310ed6d457470c2b78ec42e36a7d8a637340d",
+      "PCA_fit_row_manifest_hash": "3531729d6cda5b163a842514bfcd6c17d7af7f7ab2bad14111c085c67ba5a3d7",
+      "PCA_replayed_components_hash": "0d08ec6509f7011850e5a68310c0c16cf78b82f73ad1ad6e71a71ed1db52e62e",
+      "PCA_component_replay_absmax": 0.0,
+      "PCA_mean_replay_absmax": 0.0,
+      "LOCAL_PCA_replay_absmax": 0.0,
+      "reference_replay_absmax": 0.0,
+      "cache_sha256": "79e4891bd6b87bc599963961d4051e896f20d18e28631b94770c8b016c63e4f0",
+      "heldout_patients_in_PCA_fit": 0,
+      "inactive_features_zero": true,
+      "reused_original_audit_sha256": "85f2b046c3ba817fa3d903c928fca3882f201ad9bd7cdb165de769ced02114e6"
+    },
+    {
+      "fold": 3,
+      "status": "PASS",
+      "fit_patient_count": 328,
+      "valid_patient_count": 82,
+      "PCA_fit_sample_count": 5248,
+      "PCA_max_samples_per_patient": 16,
+      "PCA_fit_partition_hash": "04c80fe1c100a6a88dee28281abc4e85ef96b71bb57eaf9d0e06feacdb071015",
+      "PCA_source_samples_hash": "8afdb3b2a0a35d00e2f4b97c846fdfe3192e370da83e184617704b4d47cf86b4",
+      "PCA_fit_row_manifest_hash": "52e4347f54e9584593a6e4abb7e948a8d58ec7562f73581bc25fc4fc20fb787f",
+      "PCA_replayed_components_hash": "c519a8f9d161fd84b249b27193c86dba5f82c7c2437378bef585295921580ec6",
+      "PCA_component_replay_absmax": 0.0,
+      "PCA_mean_replay_absmax": 0.0,
+      "LOCAL_PCA_replay_absmax": 0.0,
+      "reference_replay_absmax": 0.0,
+      "cache_sha256": "c48f3a9264d8d875f1dffa7e841023ceabed92511ded0d2cd429928dd0efa784",
+      "heldout_patients_in_PCA_fit": 0,
+      "inactive_features_zero": true,
+      "reused_original_audit_sha256": "85f2b046c3ba817fa3d903c928fca3882f201ad9bd7cdb165de769ced02114e6"
+    },
+    {
+      "fold": 5,
+      "status": "PASS",
+      "fit_patient_count": 328,
+      "valid_patient_count": 82,
+      "PCA_fit_sample_count": 5248,
+      "PCA_max_samples_per_patient": 16,
+      "PCA_fit_partition_hash": "51939f124bbac82707fc1cef7947093957d328c914055f3c44687e7a35415db7",
+      "PCA_source_samples_hash": "601fed88da33cc378574e011f3029837e2dc54c68bfd051c458d45f66e3add28",
+      "PCA_fit_row_manifest_hash": "29e7ade14cb021c788690aab21d3ce2258f28ffebf58188937c5d074bf12079c",
+      "PCA_replayed_components_hash": "5111378b5a05a23c137b55315af8a19cfd616e755286b18afb435f013ab74182",
+      "PCA_component_replay_absmax": 0.0,
+      "PCA_mean_replay_absmax": 0.0,
+      "LOCAL_PCA_replay_absmax": 0.0,
+      "reference_replay_absmax": 0.0,
+      "cache_sha256": "b16b9e7d87aad201c568fc104268b44e7005fea5843db79ac64471282392a643",
+      "heldout_patients_in_PCA_fit": 0,
+      "inactive_features_zero": true,
+      "reused_original_audit_sha256": "85f2b046c3ba817fa3d903c928fca3882f201ad9bd7cdb165de769ced02114e6"
+    }
+  ],
+  "checkpoint_receipts": [
+    {
+      "arm": "A2",
+      "seed": 31,
+      "fold": 1,
+      "checkpoint_sha256": "fce1c9368bfe68394f1d9fc236c389f9967b4a465336112f34b840fa1bda03de",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 1,
+      "checkpoint_sha256": "ac3a62bbf3d7f395b02b52e45e394a5d5ddc68cf398b17e6c808673869e23a29",
+      "reused_cap40_checkpoint": false
+    },
+    {
+      "arm": "A7",
+      "seed": 31,
+      "fold": 1,
+      "checkpoint_sha256": "960473c86196500495c03414cdb1691c6d6f018d4995c2de9ce2d445637375fb",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A2",
+      "seed": 47,
+      "fold": 1,
+      "checkpoint_sha256": "4e73f1fe36d249d05b0a82053001ba738aec71a368e69f1210d9bd218001beb2",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 1,
+      "checkpoint_sha256": "35a92d59fc62c0428e36bb1daf1e10cbe913a5cd9992fcb1d19a476b9c542fab",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A7",
+      "seed": 47,
+      "fold": 1,
+      "checkpoint_sha256": "938ab8701d175384f9d8d3a869b1ecee19776c1fa00c413e5a0847fac948cc70",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A2",
+      "seed": 83,
+      "fold": 1,
+      "checkpoint_sha256": "813f3ac5cf2cc2df8395b77ed5ac1a29bba24743c46a249065f646f51330c29e",
+      "reused_cap40_checkpoint": false
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 1,
+      "checkpoint_sha256": "a92b5aec924cef9e053e457939ae1681020b9d221ca0bab37458c01b2c8b3984",
+      "reused_cap40_checkpoint": false
+    },
+    {
+      "arm": "A7",
+      "seed": 83,
+      "fold": 1,
+      "checkpoint_sha256": "953b56de5118fd6296f4c12a9ce4c36f12c9047b05d2b84a04530bad3f08b954",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A2",
+      "seed": 31,
+      "fold": 3,
+      "checkpoint_sha256": "617a4789d345bf8a93c6099d80a2950e8d72c1468cf530050bc06622711d3ec9",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 3,
+      "checkpoint_sha256": "f6b561b63d93950f31f0e1d9b4edad73444a249cff03f569b8075fad95a95d61",
+      "reused_cap40_checkpoint": false
+    },
+    {
+      "arm": "A7",
+      "seed": 31,
+      "fold": 3,
+      "checkpoint_sha256": "0b57a2b6a7c557e7ecc26d1d984c6ace075428328ff08f1d2c9f551301c92a58",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A2",
+      "seed": 47,
+      "fold": 3,
+      "checkpoint_sha256": "d007e844a2dbb25933dfa93cba37de25fe30c3ce83257754ea044fb8fe7a356f",
+      "reused_cap40_checkpoint": false
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 3,
+      "checkpoint_sha256": "9a943cbb0be0b9158c88d880de9d98be945b991e1e216133bef21dc42a86f663",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A7",
+      "seed": 47,
+      "fold": 3,
+      "checkpoint_sha256": "c4c54b7f969d7df626ea37e54a41d8c6518839bdc4859461d2fe401a2b6e7f27",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A2",
+      "seed": 83,
+      "fold": 3,
+      "checkpoint_sha256": "ae5653607a5128d8c954b3f2ee1081cc6f7d2aa1eb19fa144589ddb68ba55bca",
+      "reused_cap40_checkpoint": false
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 3,
+      "checkpoint_sha256": "ab5a017e6f8cc570f4cc167e9421c52909a08fbf93a4b16294bd035087457ec7",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A7",
+      "seed": 83,
+      "fold": 3,
+      "checkpoint_sha256": "3dee7398d7e8b80b8c23b71d931ae9c7f32a2449db321cfaa18465a9a9c06c63",
+      "reused_cap40_checkpoint": false
+    },
+    {
+      "arm": "A2",
+      "seed": 31,
+      "fold": 5,
+      "checkpoint_sha256": "98227014478647c698fbc8d26f1b2ed1126f80cb54901a3f2f39295fb91324c8",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 5,
+      "checkpoint_sha256": "267466053408ff17fff7d71ffcece51b2e2ac48e6c99f309bc2e7e13f7528837",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A7",
+      "seed": 31,
+      "fold": 5,
+      "checkpoint_sha256": "a525eaf51cf95050007bb6d03a78422733d9883fd7cd0c67913d08dd5e9ee068",
+      "reused_cap40_checkpoint": false
+    },
+    {
+      "arm": "A2",
+      "seed": 47,
+      "fold": 5,
+      "checkpoint_sha256": "3bffd022c7e83706179a9622949866da6754cf378cdf410b382e7341c37348f9",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 5,
+      "checkpoint_sha256": "951cceb5b06d35d076977dbae447427bed10e76f673ab480db22c36e87517991",
+      "reused_cap40_checkpoint": false
+    },
+    {
+      "arm": "A7",
+      "seed": 47,
+      "fold": 5,
+      "checkpoint_sha256": "859518fc94cc56bd9cb5ad4289a716fd862431777e3c2cf412489d82217839b5",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A2",
+      "seed": 83,
+      "fold": 5,
+      "checkpoint_sha256": "623ce6ff9b829cb69a6d47a9d1cb6fe981a9c67665da137fce4be0f11d5f249e",
+      "reused_cap40_checkpoint": true
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 5,
+      "checkpoint_sha256": "ca126122de976c921a5ead239aa4cfd47443884103d81b219516fb5a039e9f41",
+      "reused_cap40_checkpoint": false
+    },
+    {
+      "arm": "A7",
+      "seed": 83,
+      "fold": 5,
+      "checkpoint_sha256": "73eecfa2065834e86c0add321e03fe2cda451402923c43a72083b6ee09b4586e",
+      "reused_cap40_checkpoint": false
+    }
+  ],
+  "interpretation": [
+    "Raw RNA512 linear main effect preserves a direct information path; it does not prove that the query retains the same prognostic ranking information.",
+    "Per-token LayerNorm can reduce amplitude information. The 1.1 RNA scaling probe measures representation sensitivity, not RNA prognostic sufficiency.",
+    "Wrong-context query changes and nonzero mixed messages are operator diagnostics, not evidence of patient-specific predictive benefit.",
+    "A7 norm matching is checked before its gate using A7 own learned parameters; post-gate norms need not match A5 or the ordinary attention message.",
+    "All statistics use frozen first32 inner-training rows without survival labels; no independent morphology or raw-WSI semantic validation is supplied."
+  ]
+}

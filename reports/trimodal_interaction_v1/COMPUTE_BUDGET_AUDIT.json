@@ -1,0 +1,423 @@
+{
+  "status": "PASS",
+  "scope": "actual architecture counts and observed resource accounting; not compute-matched superiority",
+  "operator_counts": [
+    {
+      "arm": "A0",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 0,
+      "computed_score_elements_per_patient_forward": 0,
+      "QK_dot_product_FLOPs_approx": 0,
+      "AV_FLOPs_approx": 0,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    },
+    {
+      "arm": "A1",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 12,
+      "computed_score_elements_per_patient_forward": 786432,
+      "QK_dot_product_FLOPs_approx": 25165824,
+      "AV_FLOPs_approx": 16777216,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    },
+    {
+      "arm": "A2",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 8,
+      "computed_score_elements_per_patient_forward": 524288,
+      "QK_dot_product_FLOPs_approx": 16777216,
+      "AV_FLOPs_approx": 8388608,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    },
+    {
+      "arm": "A3",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 8,
+      "computed_score_elements_per_patient_forward": 524288,
+      "QK_dot_product_FLOPs_approx": 16777216,
+      "AV_FLOPs_approx": 8388608,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    },
+    {
+      "arm": "A3F",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 8,
+      "computed_score_elements_per_patient_forward": 524288,
+      "QK_dot_product_FLOPs_approx": 16777216,
+      "AV_FLOPs_approx": 8388608,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    },
+    {
+      "arm": "A4",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 16,
+      "computed_score_elements_per_patient_forward": 1048576,
+      "QK_dot_product_FLOPs_approx": 33554432,
+      "AV_FLOPs_approx": 8388608,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    },
+    {
+      "arm": "A5",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 16,
+      "computed_score_elements_per_patient_forward": 1048576,
+      "QK_dot_product_FLOPs_approx": 33554432,
+      "AV_FLOPs_approx": 8388608,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    },
+    {
+      "arm": "A6",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 16,
+      "computed_score_elements_per_patient_forward": 1048576,
+      "QK_dot_product_FLOPs_approx": 33554432,
+      "AV_FLOPs_approx": 8388608,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    },
+    {
+      "arm": "A7",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 16,
+      "computed_score_elements_per_patient_forward": 1048576,
+      "QK_dot_product_FLOPs_approx": 33554432,
+      "AV_FLOPs_approx": 16777216,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    },
+    {
+      "arm": "F0",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 8,
+      "computed_score_elements_per_patient_forward": 524288,
+      "QK_dot_product_FLOPs_approx": 16777216,
+      "AV_FLOPs_approx": 8388608,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    },
+    {
+      "arm": "PR",
+      "G": 512,
+      "N": 128,
+      "score_head_map_count": 8,
+      "computed_score_elements_per_patient_forward": 524288,
+      "QK_dot_product_FLOPs_approx": 16777216,
+      "AV_FLOPs_approx": 8388608,
+      "scope": "QK/AV multiply-adds only; not end-to-end or training FLOPs"
+    }
+  ],
+  "actual_arm_summary_records": [
+    {
+      "stage": "original40",
+      "arm": "A0",
+      "registered_parameters_mean": 616.0,
+      "gradient_active_parameters_mean": 616.0,
+      "seconds_mean_concurrent_run": 0.096851040997232,
+      "model_allocator_peak_MiB_max": 33.21484375,
+      "real_training_cells_this_stage": 3,
+      "selected_model_cells": 3
+    },
+    {
+      "stage": "original40",
+      "arm": "A1",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 47080.0,
+      "seconds_mean_concurrent_run": 19.47592725499352,
+      "model_allocator_peak_MiB_max": 173.23095703125,
+      "real_training_cells_this_stage": 9,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "original40",
+      "arm": "A2",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 46952.0,
+      "seconds_mean_concurrent_run": 12.787551677669398,
+      "model_allocator_peak_MiB_max": 152.16748046875,
+      "real_training_cells_this_stage": 9,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "original40",
+      "arm": "A3",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 47016.0,
+      "seconds_mean_concurrent_run": 13.385069017337324,
+      "model_allocator_peak_MiB_max": 128.04345703125,
+      "real_training_cells_this_stage": 9,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "original40",
+      "arm": "A4",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 46952.0,
+      "seconds_mean_concurrent_run": 23.620410736786045,
+      "model_allocator_peak_MiB_max": 260.8662109375,
+      "real_training_cells_this_stage": 9,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "original40",
+      "arm": "A5",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 55208.0,
+      "seconds_mean_concurrent_run": 24.975536993213204,
+      "model_allocator_peak_MiB_max": 260.96923828125,
+      "real_training_cells_this_stage": 9,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "original40",
+      "arm": "A6",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 55208.0,
+      "seconds_mean_concurrent_run": 24.106160705327056,
+      "model_allocator_peak_MiB_max": 260.96923828125,
+      "real_training_cells_this_stage": 9,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "original40",
+      "arm": "A7",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 55208.0,
+      "seconds_mean_concurrent_run": 20.77419896411529,
+      "model_allocator_peak_MiB_max": 215.533203125,
+      "real_training_cells_this_stage": 9,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "original40",
+      "arm": "F0",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 46952.0,
+      "seconds_mean_concurrent_run": 12.522776329669998,
+      "model_allocator_peak_MiB_max": 152.16748046875,
+      "real_training_cells_this_stage": 9,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "original40",
+      "arm": "PR",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 46120.0,
+      "seconds_mean_concurrent_run": 11.711883661013822,
+      "model_allocator_peak_MiB_max": 150.14892578125,
+      "real_training_cells_this_stage": 9,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "budget160_sensitivity",
+      "arm": "A0",
+      "registered_parameters_mean": 616.0,
+      "gradient_active_parameters_mean": 616.0,
+      "seconds_mean_concurrent_run": 0.096851040997232,
+      "model_allocator_peak_MiB_max": 33.21484375,
+      "real_training_cells_this_stage": 0,
+      "selected_model_cells": 3
+    },
+    {
+      "stage": "budget160_sensitivity",
+      "arm": "A1",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 47080.0,
+      "seconds_mean_concurrent_run": 46.05595101621778,
+      "model_allocator_peak_MiB_max": 173.23095703125,
+      "real_training_cells_this_stage": 4,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "budget160_sensitivity",
+      "arm": "A2",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 46952.0,
+      "seconds_mean_concurrent_run": 19.832488163115663,
+      "model_allocator_peak_MiB_max": 152.16748046875,
+      "real_training_cells_this_stage": 3,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "budget160_sensitivity",
+      "arm": "A3",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 47016.0,
+      "seconds_mean_concurrent_run": 21.12354272722991,
+      "model_allocator_peak_MiB_max": 128.04345703125,
+      "real_training_cells_this_stage": 3,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "budget160_sensitivity",
+      "arm": "A4",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 46952.0,
+      "seconds_mean_concurrent_run": 30.536046548675383,
+      "model_allocator_peak_MiB_max": 260.8662109375,
+      "real_training_cells_this_stage": 3,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "budget160_sensitivity",
+      "arm": "A5",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 55208.0,
+      "seconds_mean_concurrent_run": 43.312781704221074,
+      "model_allocator_peak_MiB_max": 260.96923828125,
+      "real_training_cells_this_stage": 5,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "budget160_sensitivity",
+      "arm": "A6",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 55208.0,
+      "seconds_mean_concurrent_run": 34.23923796765868,
+      "model_allocator_peak_MiB_max": 260.96923828125,
+      "real_training_cells_this_stage": 4,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "budget160_sensitivity",
+      "arm": "A7",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 55208.0,
+      "seconds_mean_concurrent_run": 23.64586850033892,
+      "model_allocator_peak_MiB_max": 215.533203125,
+      "real_training_cells_this_stage": 3,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "budget160_sensitivity",
+      "arm": "F0",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 46952.0,
+      "seconds_mean_concurrent_run": 19.23699740910929,
+      "model_allocator_peak_MiB_max": 152.16748046875,
+      "real_training_cells_this_stage": 3,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "budget160_sensitivity",
+      "arm": "PR",
+      "registered_parameters_mean": 55464.0,
+      "gradient_active_parameters_mean": 46120.0,
+      "seconds_mean_concurrent_run": 20.974511577120413,
+      "model_allocator_peak_MiB_max": 150.14892578125,
+      "real_training_cells_this_stage": 4,
+      "selected_model_cells": 9
+    },
+    {
+      "stage": "A3F_affine_bugfix",
+      "arm": "A3F",
+      "registered_parameters_mean": 55496.0,
+      "gradient_active_parameters_mean": 47048.0,
+      "seconds_mean_concurrent_run": 18.64976112311706,
+      "model_allocator_peak_MiB_max": 128.60791015625,
+      "real_training_cells_this_stage": 9,
+      "selected_model_cells": 9
+    }
+  ],
+  "resource_telemetry": {
+    "original40_scheduler": {
+      "scope": "original40 scheduler samples; device total while queue active",
+      "samples": 72,
+      "first_sample_unix": 1792158056.149493,
+      "last_sample_unix": 1792158771.385749,
+      "sample_span_seconds": 715.2362561225891,
+      "memory_MiB_mean": 1309.4722222222222,
+      "memory_MiB_median": 1321.0,
+      "memory_MiB_max_sampled": 1982.0,
+      "GPU_utilization_percent_mean": 60.77777777777778,
+      "GPU_utilization_percent_median": 71.0,
+      "GPU_utilization_percent_p10": 7.200000000000001,
+      "GPU_utilization_percent_p90": 98.0,
+      "GPU_utilization_percent_max_sampled": 99.0,
+      "aggregation": "unweighted arithmetic statistics over observed device samples",
+      "not_model_allocator_peak": true,
+      "not_complete_wall_clock_time_weighted_utilization": true
+    },
+    "monitor_remaining40": {
+      "scope": "monitor started during stage40: only remaining40 portion",
+      "samples": 16,
+      "first_sample_unix": 1792158706.003542,
+      "last_sample_unix": 1792158781.9721785,
+      "sample_span_seconds": 75.96863651275635,
+      "memory_MiB_mean": 1086.6875,
+      "memory_MiB_median": 1081.0,
+      "memory_MiB_max_sampled": 1886.0,
+      "GPU_utilization_percent_mean": 47.5625,
+      "GPU_utilization_percent_median": 55.0,
+      "GPU_utilization_percent_p10": 3.0,
+      "GPU_utilization_percent_p90": 95.0,
+      "GPU_utilization_percent_max_sampled": 97.0,
+      "aggregation": "unweighted arithmetic statistics over observed device samples",
+      "not_model_allocator_peak": true,
+      "not_complete_wall_clock_time_weighted_utilization": true
+    },
+    "monitor_budget160": {
+      "scope": "monitor samples after budget160 lock; not an isolated per-model speed experiment",
+      "samples": 72,
+      "first_sample_unix": 1792158787.0218139,
+      "last_sample_unix": 1792159147.3405335,
+      "sample_span_seconds": 360.318719625473,
+      "memory_MiB_mean": 2720.347222222222,
+      "memory_MiB_median": 2818.0,
+      "memory_MiB_max_sampled": 3958.0,
+      "GPU_utilization_percent_mean": 91.18055555555556,
+      "GPU_utilization_percent_median": 99.0,
+      "GPU_utilization_percent_p10": 90.2,
+      "GPU_utilization_percent_p90": 99.0,
+      "GPU_utilization_percent_max_sampled": 100.0,
+      "aggregation": "unweighted arithmetic statistics over observed device samples",
+      "not_model_allocator_peak": true,
+      "not_complete_wall_clock_time_weighted_utilization": true
+    },
+    "limitations": [
+      "Periodic samples may miss true device peaks and include other GPU processes.",
+      "The second monitor began during original40; it does not cover the entire original run.",
+      "Training per-cell allocator peaks come from ARM_SUMMARY, not these device samples.",
+      "The monitor stops at budget160 DONE; it does not measure a later A3F repair run.",
+      "Low allocated memory is reported honestly; capacity occupancy is not itself useful computation."
+    ]
+  },
+  "fit_accounting": {
+    "original40_real_neural_cells": 81,
+    "baseline_only_convex_cells": 3,
+    "original40_real_model_cells": 84,
+    "original40_neural_ridge_initializations": 81,
+    "original40_total_ridge_solver_calls": 84,
+    "budget160_new_real_neural_cells": 32,
+    "budget160_original40_references": 52,
+    "A3F_new_real_neural_cells": 9,
+    "total_real_model_cells_all_stages": 125,
+    "total_real_neural_cells_all_stages": 122,
+    "total_ridge_solver_calls_all_stages": 125,
+    "convex_baseline_metric_references_per_stage": 9,
+    "extra_convex_references_without_new_fit_per_stage": 6,
+    "outer_fits": 0,
+    "patient_OOF_files": 0,
+    "original40_prefix_max_error_in160": 0.0,
+    "replay_and_query_probes_are_not_new_fits": true
+  },
+  "redundant_initial_A11_in_actual_forward_included": true,
+  "official_diff_crossattention_heads": 2,
+  "ordinary_attention_heads": 4,
+  "full_model_FLOPs_computed": false,
+  "all_arms_compute_matched": false,
+  "training_memory_method": "exact two-pass full-risk Efron gradient with fixed parameters and dropout0; microbatch activations discarded between backward calls",
+  "limitations": [
+    "All operators register unused comparison-specific parameters; active count is gradient-defined for the saved summary and is not proof of predictive use.",
+    "Runtime is measured during concurrent jobs; reused original40 references retain their original runtime, not new budget160 compute.",
+    "Ridge initialization and preprocessing may lie outside the per-cell neural timer; do not interpret its sum as total wall time.",
+    "Attention score counts are architectural execution counts, not empirical efficacy or histological evidence.",
+    "Exact two-pass saves activation memory but repeats forward work; no padding or dummy allocations were used to raise memory occupancy."
+  ]
+}

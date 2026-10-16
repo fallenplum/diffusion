@@ -1,0 +1,79 @@
+{
+  "maximum_epochs": 160,
+  "stage": "budget160_sensitivity",
+  "all_relevant_arms_pass": true,
+  "per_arm": [
+    {
+      "arm": "A1",
+      "neural_cells": 9,
+      "hit_maximum_cells": 1,
+      "hit_maximum_fraction": 0.1111111111111111,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A2",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A3",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A4",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A5",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A6",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A7",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "F0",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "PR",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    }
+  ]
+}

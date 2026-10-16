@@ -1,0 +1,15 @@
+{
+  "decision": "REPAIRED_COMPARISON_NOT_SUPPORTED",
+  "budget_gate_pass": true,
+  "maximum_epoch_fraction": 0.0,
+  "primary_comparisons": [
+    {
+      "comparison": "A5-A3F",
+      "each_seed_delta_above_locked_threshold": false,
+      "positive_cells": 4,
+      "required_fraction": 0.6666666666666666,
+      "pass": false
+    }
+  ],
+  "scope": "one repaired primary comparator, not whole model success"
+}

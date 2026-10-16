@@ -1,0 +1,8 @@
+{
+  "version":"A3F_official_head_RMSNorm_affine_repair_v1",
+  "reason":"Official multihead_diffattn.py line67 uses elementwise_affine=True; initial adapted A3 omitted32 affine scale weights. Preserve its results, correct this omission in a separately sourced arm.",
+  "arm":"A3F", "max_epochs":160,
+  "other_settings":"identical data, seed, architecture, full-risk loss, selection, regularization and schedule to budget160; only head RMSNorm affine=True",
+  "primary_comparison":"A5-A3F replaces defective A5-A3 for final engineering gate; original comparison retained and labelled deficient",
+  "scope":"inner-only correction; not full native language-model replication or compute-matched efficacy confirmation"
+}

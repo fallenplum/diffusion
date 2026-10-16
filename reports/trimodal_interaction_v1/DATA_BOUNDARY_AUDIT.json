@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "folds": [
+    {
+      "fold": 1,
+      "fit": 327,
+      "validation": 82,
+      "events_fit": 41,
+      "events_validation": 11,
+      "outer_labels_exposed": false
+    },
+    {
+      "fold": 3,
+      "fit": 328,
+      "validation": 82,
+      "events_fit": 42,
+      "events_validation": 11,
+      "outer_labels_exposed": false
+    },
+    {
+      "fold": 5,
+      "fit": 328,
+      "validation": 82,
+      "events_fit": 41,
+      "events_validation": 11,
+      "outer_labels_exposed": false
+    }
+  ],
+  "source": "f78fe314faa221de4145b28155a9e130b90caf475893e245c247043324782ab9",
+  "scope": "Current wrapper rejects held-out indices; historical cohort was previously explored; not an external validation"
+}

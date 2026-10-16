@@ -1,0 +1,23 @@
+{
+  "version": "trimodal_conditional_interaction_feasibility_v1",
+  "parent_commit": "760a6a88feb9b731f8a935c98a8a79c4ca300943",
+  "parent_training_source": "9794e29e99fd65a6465ed1af6932bcecc48a4bab92e1a7ab5618bb201637599e",
+  "private_root": "/root/autodl-tmp/trimodal_interaction_v1_private",
+  "scope": "Exploratory inner-only feasibility; no outer-test evaluation, no confirmatory CI, no SOTA claim",
+  "seeds": [31,47,83], "folds": [1,3,5],
+  "arms": ["A0","A1","A2","A3","A4","A5","A6","A7","F0","PR"],
+  "patch_budget": 128, "patch_pca_dimension": 64,
+  "RNA": "training-local frozen Hallmark-enriched512; measured mask and gene identity retained; linear main effect shared across arms",
+  "visual": "one frozen CONCHv1.5 backbone; fixed geometry subset of audited512 cache; no RNA ROI selection",
+  "main_effect": "joint trainable Clinical+S32+LOCAL_CONCH_PCA32+RNA512 linear Cox; convex ridge initialization; common fixed block L2=1; no teacher or stacking",
+  "reference": "mean of complete C,R,RM input on exact training partition; missingness is part of RNA reference; not a biological counterfactual",
+  "training": {"max_epochs":40,"minimum_epoch":8,"early_stopping_patience":12,"learning_rate":0.001,"weight_decay":0.01,"main_effect_l2":1.0,"microbatch_patients":16,"gradient_clip":5.0,"dropout":0.0,"attention_dropout":0.0,"hidden":64,"heads":4,"interaction_risk_bound":0.25},
+  "selection": "minimum inner validation full-risk Efron loss EMA(alpha=.2); same maximum schedule in every neural arm; no outer labels read",
+  "primary_endpoint": "DSS; other endpoint labels are not used",
+  "primary_contrasts": [["A5","A1"],["A5","A2"],["A5","A3"],["A5","A7"],["A4","A2"]],
+  "secondary": [["A5","A4"],["A5","A6"],["A2","F0"],["A5","A0"],["A5","PR"]],
+  "gate": {"scope":"engineering follow-up decision on overlapping inner partitions; not independent efficacy inference","budget_sufficient_max_cap_fraction":0.2,"required_each_seed_mean_Harrell_gain":0.0,"required_primary_positive_cell_fraction":0.6666666666666666,"require_all_primary_comparisons":true,"require_nonzero_conditional_gradients":true},
+  "formal_evaluation": "NOT STARTED. Future outer matrix must be preregistered independently; global inner results have selection exposure and cannot validate the chosen architecture on this cohort without disclosure.",
+  "compute_matching": "common hidden/head/patch/gene/schedule; measured parameter and attention-score counts reported; operators differ in FLOPs, therefore this pilot cannot establish compute-matched superiority",
+  "privacy": "patient data, predictions, selected genes, permutations and trained weights remain private; only anonymous aggregate tables and code are published"
+}

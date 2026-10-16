@@ -1,0 +1,185 @@
+{
+  "decision": "STOP_CURRENT_INTERACTION_PILOT",
+  "scope": "locked engineering decision; overlapping inner validation; not independent efficacy inference",
+  "budget_gate_pass": true,
+  "maximum_epoch_fraction": 0.012345679012345678,
+  "maximum_epoch_fraction_per_arm": [
+    {
+      "arm": "A1",
+      "neural_cells": 9,
+      "hit_maximum_cells": 1,
+      "hit_maximum_fraction": 0.1111111111111111,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A2",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A3",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A4",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A5",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A6",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "A7",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "F0",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    },
+    {
+      "arm": "PR",
+      "neural_cells": 9,
+      "hit_maximum_cells": 0,
+      "hit_maximum_fraction": 0.0,
+      "maximum_epochs": 160,
+      "budget_gate_pass": true
+    }
+  ],
+  "budget_gate_aggregation": "every relevant neural arm must pass separately; pooled fraction is descriptive only",
+  "nonzero_A5_query_and_gate_gradients_pass": true,
+  "primary_comparisons": [
+    {
+      "comparison": "A5-A1",
+      "each_seed_delta_above_locked_threshold": false,
+      "positive_cells": 4,
+      "required_fraction": 0.6666666666666666,
+      "pass": false
+    },
+    {
+      "comparison": "A5-A2",
+      "each_seed_delta_above_locked_threshold": false,
+      "positive_cells": 6,
+      "required_fraction": 0.6666666666666666,
+      "pass": false
+    },
+    {
+      "comparison": "A5-A3",
+      "each_seed_delta_above_locked_threshold": false,
+      "positive_cells": 4,
+      "required_fraction": 0.6666666666666666,
+      "pass": false
+    },
+    {
+      "comparison": "A5-A7",
+      "each_seed_delta_above_locked_threshold": true,
+      "positive_cells": 4,
+      "required_fraction": 0.6666666666666666,
+      "pass": false
+    },
+    {
+      "comparison": "A4-A2",
+      "each_seed_delta_above_locked_threshold": false,
+      "positive_cells": 4,
+      "required_fraction": 0.6666666666666666,
+      "pass": false
+    }
+  ],
+  "gradient_path_checks": [
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 1,
+      "query_path_nonzero": true,
+      "gate_path_nonzero": true
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 1,
+      "query_path_nonzero": true,
+      "gate_path_nonzero": true
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 1,
+      "query_path_nonzero": true,
+      "gate_path_nonzero": true
+    },
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 3,
+      "query_path_nonzero": true,
+      "gate_path_nonzero": true
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 3,
+      "query_path_nonzero": true,
+      "gate_path_nonzero": true
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 3,
+      "query_path_nonzero": true,
+      "gate_path_nonzero": true
+    },
+    {
+      "arm": "A5",
+      "seed": 31,
+      "fold": 5,
+      "query_path_nonzero": true,
+      "gate_path_nonzero": true
+    },
+    {
+      "arm": "A5",
+      "seed": 47,
+      "fold": 5,
+      "query_path_nonzero": true,
+      "gate_path_nonzero": true
+    },
+    {
+      "arm": "A5",
+      "seed": 83,
+      "fold": 5,
+      "query_path_nonzero": true,
+      "gate_path_nonzero": true
+    }
+  ],
+  "does_not_imply_RNA_redundancy_or_no_biological_interaction": true
+}

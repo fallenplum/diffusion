@@ -1,0 +1,79 @@
+{
+  "maximum_epochs": 40,
+  "stage": "original40",
+  "all_relevant_arms_pass": false,
+  "per_arm": [
+    {
+      "arm": "A1",
+      "neural_cells": 9,
+      "hit_maximum_cells": 4,
+      "hit_maximum_fraction": 0.4444444444444444,
+      "maximum_epochs": 40,
+      "budget_gate_pass": false
+    },
+    {
+      "arm": "A2",
+      "neural_cells": 9,
+      "hit_maximum_cells": 3,
+      "hit_maximum_fraction": 0.3333333333333333,
+      "maximum_epochs": 40,
+      "budget_gate_pass": false
+    },
+    {
+      "arm": "A3",
+      "neural_cells": 9,
+      "hit_maximum_cells": 3,
+      "hit_maximum_fraction": 0.3333333333333333,
+      "maximum_epochs": 40,
+      "budget_gate_pass": false
+    },
+    {
+      "arm": "A4",
+      "neural_cells": 9,
+      "hit_maximum_cells": 3,
+      "hit_maximum_fraction": 0.3333333333333333,
+      "maximum_epochs": 40,
+      "budget_gate_pass": false
+    },
+    {
+      "arm": "A5",
+      "neural_cells": 9,
+      "hit_maximum_cells": 5,
+      "hit_maximum_fraction": 0.5555555555555556,
+      "maximum_epochs": 40,
+      "budget_gate_pass": false
+    },
+    {
+      "arm": "A6",
+      "neural_cells": 9,
+      "hit_maximum_cells": 4,
+      "hit_maximum_fraction": 0.4444444444444444,
+      "maximum_epochs": 40,
+      "budget_gate_pass": false
+    },
+    {
+      "arm": "A7",
+      "neural_cells": 9,
+      "hit_maximum_cells": 3,
+      "hit_maximum_fraction": 0.3333333333333333,
+      "maximum_epochs": 40,
+      "budget_gate_pass": false
+    },
+    {
+      "arm": "F0",
+      "neural_cells": 9,
+      "hit_maximum_cells": 3,
+      "hit_maximum_fraction": 0.3333333333333333,
+      "maximum_epochs": 40,
+      "budget_gate_pass": false
+    },
+    {
+      "arm": "PR",
+      "neural_cells": 9,
+      "hit_maximum_cells": 4,
+      "hit_maximum_fraction": 0.4444444444444444,
+      "maximum_epochs": 40,
+      "budget_gate_pass": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "budget_source": "43490d4a42d421b2f0757d68414008c1dd136812e4a3c0c042cf2d3fcf27b06a",
+  "original_source": "f78fe314faa221de4145b28155a9e130b90caf475893e245c247043324782ab9",
+  "config": {
+    "version": "inner_budget160_sensitivity_v1",
+    "scope": "Exploratory inner-only budget repair; does not alter the original40 experiment or access outer labels",
+    "trigger": "Any neural primary/control arm has more than20percent of9cells reaching max40; inspect curves before interpreting mechanism",
+    "max_epochs": 160,
+    "all_other_settings": "exactly original locked configuration including early stopping/minimum epoch and seeds",
+    "reuse_rule": "actual_epochs<40 stopped by the same patience rule and is exactly the result under max160; reuse as reference, no retraining",
+    "rerun_rule": "actual_epochs==40 re-fit from identical initialization, compare first40 training and validation history, select with same EMA rule; preserve original checkpoint",
+    "budget_unresolved": "if any relevant arm remains above20percent hitting160, do not claim convergence or reject mechanism",
+    "selection_exposure": "This budget sensitivity was added after seeing one inner40cap cell. It is not independently confirmatory and is reported separately. No outer performance informed the amendment."
+  },
+  "original_cells_complete_before_budget_repair": true
+}

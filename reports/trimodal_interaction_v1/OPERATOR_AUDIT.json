@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "actual_test_process_exit": 0,
+  "stdout": ".......................................                                  [100%]\n39 passed in 3.27s",
+  "stderr": "",
+  "tests": 39,
+  "tests_sha256": "91665cf70c42223eb29ae0f8181aee711f95f214206ce0b3495802873d5bc9bc",
+  "training_source": "f78fe314faa221de4145b28155a9e130b90caf475893e245c247043324782ab9",
+  "seconds": 4.09050989151001,
+  "scope": "synthetic operator, gradient and fail-closed checks; not real-data biological efficacy"
+}

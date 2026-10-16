@@ -1,0 +1,30 @@
+{
+  "kind": "isolated_original_router_autograd_probe_not_full_native_model",
+  "source_revision": "4ae3c4d7027c07848cd631f89a17f7a094b8e898",
+  "source_sha256": "82273fa610e8d0f64c8473819c085cac7f702f06ca24b60d0a5a6ae1cab4311a",
+  "original_ast_classes_unchanged": [
+    "DiffSoftmax",
+    "Gating_network",
+    "MoAME",
+    "RMSNorm"
+  ],
+  "experts": "CPU linear stubs to isolate control flow only",
+  "router_parameter_tensors": 8,
+  "router_all_grad_None": true,
+  "expert_nonzero_gradient_tensors": 1,
+  "router_gradients": {
+    "routing_network.fc1.0.weight": null,
+    "routing_network.fc1.0.bias": null,
+    "routing_network.fc1.1.weight": null,
+    "routing_network.fc2.0.weight": null,
+    "routing_network.fc2.0.bias": null,
+    "routing_network.fc2.1.weight": null,
+    "routing_network.clsfer.weight": null,
+    "routing_network.clsfer.bias": null
+  },
+  "expert_gradients": {
+    "CroMamFusion.w.weight": null,
+    "CroAttFusion.w.weight": 5.079919338226318,
+    "StackedMamFusion.w.weight": null
+  }
+}

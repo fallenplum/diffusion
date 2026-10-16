@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "fold": 1,
+  "role": "inner",
+  "source": "f78fe314faa221de4145b28155a9e130b90caf475893e245c247043324782ab9",
+  "dataset_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+  "fit_n": 327,
+  "validation_or_test_n": 82,
+  "active_n": 409,
+  "fit_hash": "9e66d9868c4b0bf5b3af99f9aef94094f8c8b44b332844cc00b3229de4ed7ff3",
+  "valid_hash": "64f56d9762173ddd84bc8fad80a13467bf958efe4e048e36959b7fd8ec480199",
+  "feature_shapes": {
+    "C": [
+      512,
+      41
+    ],
+    "S": [
+      512,
+      32
+    ],
+    "R": [
+      512,
+      512
+    ],
+    "RM": [
+      512,
+      512
+    ],
+    "P": [
+      512,
+      128,
+      64
+    ],
+    "PM": [
+      512,
+      128
+    ],
+    "LOCAL32": [
+      512,
+      32
+    ],
+    "X": [
+      512,
+      617
+    ]
+  },
+  "fit_feature_hashes": {
+    "C": "e4ea5edbed31a15da2bc539f5f43cdba56f6a806d825cd9bb379f022d2731675",
+    "S": "e26365ee7b3f19568c92682ece2c233e82c09ba6a4bce44bda44b2fedf2063ee",
+    "R": "f0d867799851ac100d79e66c9b1231578724776c1245765c15e1774eb633ee53",
+    "RM": "9f050f6b2bc6eafddf71acc0561f2b463409536b9be0712de66f9a228c63af50",
+    "P": "670d8965a7923dfd34a08f807f2b0de79c01cd5266c0711abe455dc5628f3393",
+    "PM": "b4bacf338bf4ce32f25def60137a2eb314d487ddbe8e7a151e90107e7bcf216b",
+    "LOCAL32": "7bb53151aa9c0153a96f79b9acc6a18c7cacebf74f354eb7984e0a8889a5d2e2",
+    "X": "d21a78d3bd29cbdf08ede5832fb7cd23db220131a4a11821522ed8dbee381657"
+  },
+  "valid_feature_hashes": {
+    "C": "314ce25bd764c07fe11f2b3fcc78a81efd10676dc5998badacfc0eb43a9e0ca4",
+    "S": "2f02f214458d2cb414e50a390c4e16bffb012da1be10800c5770046098ea2726",
+    "R": "bd427a0ca72f5193b86a8d42d14dcb76f7b241e7b090857193d3d38472c3e3bc",
+    "RM": "d55b8fa4a2d0681bcda6b0be94c8696d8893df5150897d8c328063d6b40d89c4",
+    "P": "36973a04c10bf97c9df3d1732ec0c3e3f0cbe86504fe8992aa14100b99db8746",
+    "PM": "dc668705e76abb068d9fbc21c5ae56a8e5e0c6c0efe1029c40fd3b4a65613728",
+    "LOCAL32": "1e0d0b8a3f49b1a7cf92ba5ccd30ee3a4c7e5ac4ac8623a5e081644dccb3d0f4",
+    "X": "8e5570eb27389232a435af7b94c0b42be46e367c744aeaf3f8305d8f7ab7d153"
+  },
+  "RNA_gene_identity_hash": "0a95ebf3f87b93dca12846679fb7c1fa0326fc8297fc126aabd6582e975c12d8",
+  "RNA_selection_hash": "0a95ebf3f87b93dca12846679fb7c1fa0326fc8297fc126aabd6582e975c12d8",
+  "RNA_preprocessing_sha256": "868b5b6d2889a7dd14d636835dee4aaddb1e59bfec04f69a3c464b9d955dec3f",
+  "RNA_missing_fit": 0,
+  "RNA_missing_validation_or_test": 0,
+  "CNA_included": false,
+  "patch_backbone": "frozen CONCH v1.5 only",
+  "patch_budget_per_patient": 128,
+  "patches_per_active_patient_min": 91,
+  "patches_per_active_patient_max": 128,
+  "patch_PCA_dimensions": 64,
+  "patch_PCA_fit_samples": 5232,
+  "patch_PCA_components_hash": "0d08ec6509f7011850e5a68310c0c16cf78b82f73ad1ad6e71a71ed1db52e62e",
+  "patch_PCA_mean_hash": "6d189dfe66d2206558bda48d8e1a31e126d54d838f3da235ed4938830418ac21",
+  "patch_PCA_explained_variance_ratio_sum": 0.9874573349952698,
+  "LOCAL_PCA_components_hash": "1448c483caf9c7d4b574513c869d54e5ccb4053af6422898b50076897e71a852",
+  "reference_hashes": {
+    "C": "29646fc8229c025a193ec37dbb2b456916c44b00baf8beb4f6e620ff0d672480",
+    "R": "aef49cc7c41868a1d1ee9ecd0af604c2b2d5190b90e9cacc4f8740826d7b22ef",
+    "RM": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+  },
+  "geometry_selection_hash": "7fdd2397b0ddd96f627614437ea25babc579f1e9f159edddea4ec543f09e1a18",
+  "reference_definition": "mean of this exact fit partition; no patient counterfactual claim",
+  "LOCAL_definition": "historical LOCAL mean; fit scale, fit full PCA32, fit scale",
+  "clinical_definition": "six legal parent fields plus explicit age-missing indicator",
+  "clinical_difference_from_historical_LOCAL": "historical LOCAL omitted extra age-missing indicator",
+  "inner_outer_test_feature_transform": false,
+  "geometry_QA": "candidate-pool limited; no raw WSI or histological validation",
+  "visual_sources": {
+    "visual_receipt_sha256": "f26d586211a2a5d279cd6068e1eb34259a584259623247a3b78af98c2ecccc78",
+    "visual_hashes": {
+      "conch": "52b59b66509bc9171eb4057f4f54c1917132adf14738755c1b8d2fff74599b90",
+      "mask": "1237321e263139ad1c5f9c1c38f25a70dcc3c00814f15bb8ffb688a441b379dc",
+      "owner": "79adbc019a929b566c323741236e68f4fd1fb96b9a0c7b10fdf36da1ca56929f",
+      "coords": "c20d96f8571f41fe03cd72b198b68f2337e2bb4f3e26c7913c1a00dc3417554a",
+      "local_row": "1178b44dcfafaf77ce7be90612129115bc6387ff2d6422a15734b6359d0c5535"
+    },
+    "LOCAL_npz_sha256": "4898df75eb03539e85ef394772fe2bda991bfbe325154cc3241426e168c39194",
+    "LOCAL_metadata_sha256": "2ea0e870ae876a59023270a3f5939b3a602dda3f8a8e2247a2597a2f6351c601",
+    "dataset_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1"
+  },
+  "cache_sha256": "79e4891bd6b87bc599963961d4051e896f20d18e28631b94770c8b016c63e4f0",
+  "wrong_fit_hash": "a880ca0e2b3210fd02cba17152c98e622ea859248addeabd2abc82128483716d",
+  "wrong_valid_hash": "31709a81f24932ed471d7741208d90ae2bbb6e04a61e22997e912448274097d1",
+  "wrong_control": "partition-local cancer/stage-stratified derangement; own RNA main effect retained"
+}

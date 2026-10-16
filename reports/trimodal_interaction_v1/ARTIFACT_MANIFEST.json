@@ -1,0 +1,421 @@
+{
+  "status": "PASS",
+  "source": "f78fe314faa221de4145b28155a9e130b90caf475893e245c247043324782ab9",
+  "public_files": [
+    {
+      "path": "configs/trimodal_diff_norm_repair.json",
+      "bytes": 715,
+      "sha256": "1a33212cf6fabfff8163d4b731a91562fe3c84d0ab36dafa22d6aebc70d4f65f"
+    },
+    {
+      "path": "configs/trimodal_interaction_budget160.json",
+      "bytes": 1087,
+      "sha256": "d6ec9a6d08d865d727f55296614e857e1601394acd98bc8d36052464a7db1041"
+    },
+    {
+      "path": "configs/trimodal_interaction_v1.json",
+      "bytes": 2714,
+      "sha256": "f8aee33e5b14a8b485c287ec36d901729d30d414eabaeb7db859bd3e5cc7acc0"
+    },
+    {
+      "path": "docs/literature_mechanism_matrix.md",
+      "bytes": 11907,
+      "sha256": "e042f2724da2cbc3669bc06b528f20e919abced9466e8316a6a59f87f70197ef"
+    },
+    {
+      "path": "docs/novelty_ledger.md",
+      "bytes": 8832,
+      "sha256": "82bbbd1df1861095457845a96307c4edd5fc7379020740c50147dd784e01dd75"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/ARM_SUMMARY.csv",
+      "bytes": 2631,
+      "sha256": "fba26e319ffd32c55c8618154519c4c6814b117ea9f2e3b9fc6348d2df0c225e"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/BUDGET_AUDIT.json",
+      "bytes": 1879,
+      "sha256": "01e2e4befebedef7d1885ed711e8bc19b163d20d8604a29a885e1e8ce20287ea"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/CHECKPOINT_AUDIT.csv",
+      "bytes": 16931,
+      "sha256": "7291120af9560f41c87664dae94cdb4a7691bb7355dfc647fe9fc89933014f69"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/COMPUTE_BUDGET_AUDIT.json",
+      "bytes": 15806,
+      "sha256": "5002b0130aeb9ade90949a9638907f84ea084071dda76be0b1123774f47f0044"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/DATA_BOUNDARY_AUDIT.json",
+      "bytes": 735,
+      "sha256": "4070bf529398f9795e65e06519c0849b3498c6b144bf2f7da23fa8efd5035a63"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/DATA_FOLD1_AUDIT.json",
+      "bytes": 5146,
+      "sha256": "68cf0423d6486c74adca708a0ee35b9f63c76029fd484cb5e526c07b475e304d"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/DATA_FOLD3_AUDIT.json",
+      "bytes": 5146,
+      "sha256": "bc5cac1a92cc351ecdf0d091aebb54797dc1b62aaaf3cf7964117fac152ed346"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/DATA_FOLD5_AUDIT.json",
+      "bytes": 5147,
+      "sha256": "dee0efc4d4e0c7ec738e8ce642e45bf8c6828153ab8a47724aa4ba6bc1f9b20b"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/ENVIRONMENT.json",
+      "bytes": 290,
+      "sha256": "ee011686a939f29f5820b0365cd382d0a1135b751da33f8ade2f1400cc4266cf"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/EVIDENCE_BOUNDARIES.md",
+      "bytes": 1721,
+      "sha256": "13f2077dbc27f8a7112f112e13c2a283253daf7e32f8dae70db8db1e4b6debb5"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/EXECUTION_COUNTS.json",
+      "bytes": 688,
+      "sha256": "2c80f2120a5bfb0ef86193c0f76abc127c24869746c4cb1202fd014cb7aa5837"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/FOLD_METRICS.csv",
+      "bytes": 16978,
+      "sha256": "f079d45c76ae1ab892b5010c7cd8b995f38928901c2d8459e340a80f181012e4"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/MDCS_ROUTER_ISOLATED_PROBE.json",
+      "bytes": 1017,
+      "sha256": "ba86340e484b9f7a07e55cc6d05bbb87c29a1e5dc4cd5cf1841af01295830a48"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/OPERATOR_AUDIT.json",
+      "bytes": 509,
+      "sha256": "93630963a99d6a46833402d9492c3385be7193c0c659fd370d3412cdb8a26d66"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/PAIRED_INNER_DIAGNOSTICS.csv",
+      "bytes": 5657,
+      "sha256": "5efc31e5278ab0bcb7b46096d85c6733f2dcac2287c3066614ce04633ff9aaea"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/PARENT_IMMUTABILITY_AUDIT.json",
+      "bytes": 271,
+      "sha256": "4252330574ee0c9f04d24e8a76981611f39239ca57c322fc093ac54368162b02"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/PROTOCOL.md",
+      "bytes": 11187,
+      "sha256": "d116270f5f7b72b21e9fb4a57045a73ce1c579dd98a306dfa8f8c9d90c865f9e"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/PROTOCOL_LOCK.json",
+      "bytes": 3679,
+      "sha256": "82c45a7a6e6ea72592401d890f7daa3466f10fa9d14c271275573a3805eeb707"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/PUBLICATION_SCOPE_AUDIT.json",
+      "bytes": 1167,
+      "sha256": "307e7bd81a84cf831956bf10df1803eacdec87297201d6ac2951a916ffd70587"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/QUERY_AUDIT_INTERPRETATION.md",
+      "bytes": 1200,
+      "sha256": "4853e785e5aa53f3016d2eae7f2601d09a57affa48536f8b260a1958c1600b80"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/QUERY_REPRESENTATION_AUDIT.csv",
+      "bytes": 36515,
+      "sha256": "626801017e3ae82043da300a3e6ffd329f12975806fe717578ec16b28d4862d7"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/QUERY_REPRESENTATION_AUDIT.json",
+      "bytes": 14982,
+      "sha256": "85f2b046c3ba817fa3d903c928fca3882f201ad9bd7cdb165de769ced02114e6"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/READING_REVIEW.md",
+      "bytes": 6290,
+      "sha256": "b71d094328826838ec8e8738c4ec283e97e5efbef1e710acaf7bf83849639b7e"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/REPRODUCE.md",
+      "bytes": 3301,
+      "sha256": "757008eb1779a49fa85530a866addaf6c05f25be1fea5ac5e264ff2f3e1729ed"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/RESULTS.md",
+      "bytes": 16917,
+      "sha256": "4af690d9ba3a7d9dc9fac53018d263a7f0a1f7b3b954e02ab457ed5453e2bd78"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/SEED_INNER_METRICS.csv",
+      "bytes": 4194,
+      "sha256": "5a547a2f5cc2e3cc45fad3bd830dfa72a6a4f0109977c36e9ea81da7439ae1de"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/SOURCE_REVISIONS.json",
+      "bytes": 1841,
+      "sha256": "51b28315a5eba4057cde719f334f1df9128bec54d253cb98c63f2c5d16fb98d3"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/STAGE_DECISION.json",
+      "bytes": 4491,
+      "sha256": "14c86836635e7a46a3b6f87c3f58b83998ea905ea629cb5ae5654c61911bfd32"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/TRAINING_CURVES.csv",
+      "bytes": 481209,
+      "sha256": "02097887e84e7d46610f0876c9b15b472fb7f18eb872aee0adf290bfacea4976"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/VALIDATION.json",
+      "bytes": 2466,
+      "sha256": "1ba2ba40fd80e63a2d05ee13c2d2270e8c94e7d9c8624f717708954372c7706d"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/a3f_norm_repair/ARM_SUMMARY.csv",
+      "bytes": 589,
+      "sha256": "3fab5f6f8b0e5f09d75458089699d04f2eb17485c91556e00ccf3862fc4bfd5a"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/a3f_norm_repair/CHECKPOINT_AUDIT.csv",
+      "bytes": 924,
+      "sha256": "54d08688e01eec6c638d9df99b9f614c6e71b07ff0e0c545b32290cbe8c53dcb"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/a3f_norm_repair/EXECUTION_COUNTS.json",
+      "bytes": 299,
+      "sha256": "8e5bd734e1c041038bd9363d9d9debbc731a61e287fc2fafaa6ab2f8b5b75dc1"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/a3f_norm_repair/FOLD_METRICS.csv",
+      "bytes": 1901,
+      "sha256": "d02a140ab0b272ca04fb0335382ad3ddb599bbdb83e9dd1fbe0bf896b3f33eef"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/a3f_norm_repair/PAIRED_INNER_DIAGNOSTICS.csv",
+      "bytes": 914,
+      "sha256": "cbff1508cf3e182b4b4742336fa1c5b660e7d1f0e6bca28a2d2f8347e04f4945"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/a3f_norm_repair/PROTOCOL_LOCK.json",
+      "bytes": 940,
+      "sha256": "916ccfcbda3806d9ed3b8636acaa5cedcf7571a7af253ac7b0a0f271f9221c85"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/a3f_norm_repair/SEED_INNER_METRICS.csv",
+      "bytes": 158,
+      "sha256": "deae1fa67232f019061d924c355f8cac77619d829b10448e9a8db767418f8596"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/a3f_norm_repair/STAGE_DECISION.json",
+      "bytes": 409,
+      "sha256": "c768d63e731f5dcc62c82ae72e6d226ec1f7d3eb4c4c25125ebdcad59ff10ac5"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/a3f_norm_repair/TRAINING_CURVES.csv",
+      "bytes": 60447,
+      "sha256": "d50751177882726b4a7db6388e0a3bd5497368daa3cb3b84a8398f614fc68941"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/a3f_norm_repair/VALIDATION.json",
+      "bytes": 534,
+      "sha256": "761019897bfa026ec080990973626a342bcbb25cb45964dc5f4fe1ae4e2f90cf"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/ARM_SUMMARY.csv",
+      "bytes": 2508,
+      "sha256": "99c60adeb861e227dc2f29f0d3fd7e1b8a6ff3ee61f0f1a1a34a24916bea4c5d"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/BUDGET_AUDIT.json",
+      "bytes": 1770,
+      "sha256": "6008d9f643d01e79fd1ccf156436d03ef34b698acb491c4369bcb2f12e2ff209"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/CHECKPOINT_AUDIT.csv",
+      "bytes": 22202,
+      "sha256": "59902906d78d765b1152d9fd018594950d38246ffd7a37dc6432caeaee56c5fe"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/EXECUTION_COUNTS.json",
+      "bytes": 691,
+      "sha256": "ef7346a02e586569af3fddbe27559a4c557fcf98335c9cb67865e14ded354591"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/FOLD_METRICS.csv",
+      "bytes": 16956,
+      "sha256": "de62454dad7bf4e588ccfc93044844751e96bb49e4225a3ba0d118771d07d26f"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/PAIRED_INNER_DIAGNOSTICS.csv",
+      "bytes": 5755,
+      "sha256": "85ed0661d6d7e4e3b7a5f124a53295fd9536bed51f7b96265adf055b8d3dc515"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/PROTOCOL_LOCK.json",
+      "bytes": 1364,
+      "sha256": "b69e0ada25e7d3bd13866475bd1246df1767c4e25b290126ac977f60cd899612"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/QUERY_AUDIT_INTERPRETATION.md",
+      "bytes": 1200,
+      "sha256": "4853e785e5aa53f3016d2eae7f2601d09a57affa48536f8b260a1958c1600b80"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/QUERY_REPRESENTATION_AUDIT.csv",
+      "bytes": 36471,
+      "sha256": "7ea9c8d1df24a0a2d5f6597d6791691eb875573106efc9c1ccb1901f7fcefa19"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/QUERY_REPRESENTATION_AUDIT.json",
+      "bytes": 15410,
+      "sha256": "aca49c3bccd5d7359f4cec413a77783c283ba854ce9b184ba96769967bc86ec3"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/SEED_INNER_METRICS.csv",
+      "bytes": 4196,
+      "sha256": "eb4f194fec7c6ddbed8dff140d5920dd6db0ca052f89eae873efcffd61049eef"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/STAGE_DECISION.json",
+      "bytes": 4384,
+      "sha256": "940d38f983f162b463141c7a28e9f0bba847918d8a53b44d76e6c48c6cc7a003"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/TRAINING_CURVES.csv",
+      "bytes": 676870,
+      "sha256": "ff222dae664205f0e10504a99582a456c4ee032b365a7f1894c7df6b4ac502ff"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/TRIGGER.json",
+      "bytes": 408,
+      "sha256": "1fdec361426ad1ceb06cadc4995e79a0ac646e0ea0f9bb2838f2bfc531057689"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/budget160/VALIDATION.json",
+      "bytes": 2555,
+      "sha256": "aeb4e5ae579b70ef7499dfc0e3ad9adfe599af197384424b81c1ea735ba5b912"
+    },
+    {
+      "path": "reports/trimodal_interaction_v1/decision.json",
+      "bytes": 7738,
+      "sha256": "5124a745cc508a66c754d8118ddd0265e430cfaa3bef4063e2fef76bbbe266d6"
+    },
+    {
+      "path": "scripts/audit_trimodal_environment.py",
+      "bytes": 1528,
+      "sha256": "d4c1e9d3251a45f262d59fae799fe0f6c5db2ced161c044492b10797d5fcde93"
+    },
+    {
+      "path": "scripts/audit_trimodal_query.py",
+      "bytes": 22239,
+      "sha256": "55a6dc7e5db6a700240ae673670e93529ddfc3429eda6fbfab7fd89f8686e496"
+    },
+    {
+      "path": "scripts/extend_trimodal_budget.py",
+      "bytes": 5059,
+      "sha256": "455e43bed6fd6d70742894a4dcc0a7b4a27ddb1bd825dff08d1912f1ce802acf"
+    },
+    {
+      "path": "scripts/monitor_trimodal_resources.py",
+      "bytes": 1019,
+      "sha256": "e9c9ea9778252bc63fd35dca2c79f96751817175b43b1679c7f9b2d5c6ad8373"
+    },
+    {
+      "path": "scripts/package_trimodal_interaction.py",
+      "bytes": 3579,
+      "sha256": "edf3ec44be0a18e779944e8ff34e28788f46e06e22f45915bc091ef633d2dc1e"
+    },
+    {
+      "path": "scripts/prepare_trimodal_interaction.py",
+      "bytes": 2162,
+      "sha256": "3c200de4ae001426499d0b71ee6d3a220ea0338ff54c90909483e094543389ca"
+    },
+    {
+      "path": "scripts/publish_trimodal_interaction.py",
+      "bytes": 2766,
+      "sha256": "6b04d406ce87f3ede8c74050aa7583d31993c48a389ac0de967b6b88e9bdc993"
+    },
+    {
+      "path": "scripts/repair_trimodal_diff_norm.py",
+      "bytes": 9245,
+      "sha256": "20fbc15cb67411a540130645e9dcb5b6c60bab05f83705d8a201a60af42d89d4"
+    },
+    {
+      "path": "scripts/report_trimodal_interaction.py",
+      "bytes": 43555,
+      "sha256": "9ff4793f44cb748b98065b99a8af21ebb019e560e8311c4bd31db31c6a5ad30b"
+    },
+    {
+      "path": "scripts/run_trimodal_interaction.py",
+      "bytes": 1389,
+      "sha256": "1b86919f005fe846c82669f15329f51dfb9b7a5e0ef67f881a5d5c7bc87f8eda"
+    },
+    {
+      "path": "scripts/schedule_trimodal_interaction.py",
+      "bytes": 2289,
+      "sha256": "87ef6caa35f80709e1bbdb2eb15c05cbcc8f486d854dafb793326450a9620d83"
+    },
+    {
+      "path": "scripts/start_trimodal_budget.py",
+      "bytes": 801,
+      "sha256": "be217300da57ca1cd5a06c374871eb2db69c42858776a9ed15e1ea532ffc843d"
+    },
+    {
+      "path": "scripts/start_trimodal_diff_norm.py",
+      "bytes": 702,
+      "sha256": "2249e6b717bf012ec9fd3bde716e48ea52895a94e6b6bcb6c5efc47a84c4be33"
+    },
+    {
+      "path": "scripts/start_trimodal_interaction.py",
+      "bytes": 525,
+      "sha256": "e29242bced3ef253141ffd88e3c182eacfc580d396bcaa04db7ff9e9eccba4a0"
+    },
+    {
+      "path": "scripts/validate_trimodal_interaction.py",
+      "bytes": 32779,
+      "sha256": "f44d91793983bad95b34c84ba5a92f3b7e872a62cc9b11549d45dacb8b80b717"
+    },
+    {
+      "path": "src/trimodal_interaction/__init__.py",
+      "bytes": 66,
+      "sha256": "e893119ae81b3223cc5e315932917ccc72bb9a7a41ee1bac43d877d7d840cb36"
+    },
+    {
+      "path": "src/trimodal_interaction/data.py",
+      "bytes": 19483,
+      "sha256": "31e41122e811a13c22a54e38c848c8516540fe8cb07b1b2d9c3b3d2fec965dbe"
+    },
+    {
+      "path": "src/trimodal_interaction/model.py",
+      "bytes": 6700,
+      "sha256": "13d1de724832bd6f721d25db43b1a490421f382dcbb7581c0e5311ef884ba183"
+    },
+    {
+      "path": "src/trimodal_interaction/train.py",
+      "bytes": 6042,
+      "sha256": "a562fbd8b066f17b060c1e0663f6aac3056805ed587196f85899ec1c0515dff1"
+    },
+    {
+      "path": "tests/test_trimodal_interaction.py",
+      "bytes": 14049,
+      "sha256": "91665cf70c42223eb29ae0f8181aee711f95f214206ce0b3495802873d5bc9bc"
+    }
+  ],
+  "scope": "completed exploratory inner-only40 plus160 budget sensitivity; no formal outer inference",
+  "private_exclusions": [
+    "patient data",
+    "risks",
+    "checkpoints",
+    "preprocessing fit states",
+    "gene identities",
+    "permutations",
+    "tokens"
+  ]
+}

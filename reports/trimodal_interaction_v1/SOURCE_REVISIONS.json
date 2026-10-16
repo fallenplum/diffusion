@@ -1,0 +1,71 @@
+{
+  "diff": {
+    "revision": "31c5b904ca1bf2afb4c234a6675c683a4e5fc7cd",
+    "core_files": [
+      {
+        "path": "Diff-Transformer/multihead_diffattn.py",
+        "blob_sha": "34c0bd6fc1018456be971757346812dbd72d88da"
+      }
+    ]
+  },
+  "gated": {
+    "revision": "f4c2a5f6ffd6ec709e0c60072c95ed4f5ce5b5d2",
+    "core_files": [
+      {
+        "path": "modeling_qwen3.py",
+        "blob_sha": "4adc88d5c4f21091224e0689156fc16614cd9688"
+      }
+    ]
+  },
+  "mdcs": {
+    "revision": "4ae3c4d7027c07848cd631f89a17f7a094b8e898",
+    "core_files": [
+      {
+        "path": "main.py",
+        "blob_sha": "707030cb0eb19e9d01a6cb72c586c1fe8b6a3f7e"
+      },
+      {
+        "path": "models/MDCS_MoAME/MDCS_MoAME.py",
+        "blob_sha": "56174af1e0f54c09f034bb362ad0e4680ad0be20"
+      },
+      {
+        "path": "models/MDCS_MoAME/engine.py",
+        "blob_sha": "9610e9ac36cdc8e6063b979a43b9ef5ae03ef82d"
+      }
+    ]
+  },
+  "slot": {
+    "revision": "02051a2083add7b427727e0200e4263516903561",
+    "core_files": [
+      {
+        "path": "models/SlotSPE.py",
+        "blob_sha": "1833587c97851ea7f6892bc87e61f3b2a1dc65cf"
+      },
+      {
+        "path": "models/slot_attention.py",
+        "blob_sha": "b7f3e593b923dfa9bd15da02ba2a80a1b648eed8"
+      },
+      {
+        "path": "models/transformer.py",
+        "blob_sha": "af938c2df5223231d5187548659d87cdd4d1d4da"
+      },
+      {
+        "path": "utils/core_utils.py",
+        "blob_sha": "27a224645c4d36f2175fcca831101621c136be49"
+      }
+    ]
+  },
+  "copula": {
+    "revision": "7e80bacf9e883d24a94a156506f0e72881080331",
+    "core_files": []
+  },
+  "i2moe": {
+    "revision": "75b578e1f7ec20ebe990f6e6e5680b1a8860046f",
+    "core_files": [
+      {
+        "path": "src/imoe/InteractionMoE.py",
+        "blob_sha": "ce5f4f3bd8f7a09260c50a5e1e0338fc993b9040"
+      }
+    ]
+  }
+}

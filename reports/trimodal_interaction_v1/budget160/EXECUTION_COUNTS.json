@@ -1,0 +1,19 @@
+{
+  "real_neural_training_cells_this_stage": 32,
+  "real_baseline_only_convex_fits_this_stage": 0,
+  "neural_initialization_ridge_solver_calls_this_stage": 32,
+  "total_ridge_solver_calls_this_stage": 32,
+  "real_completed_model_cells_this_stage": 32,
+  "selected_model_cells_for_evaluation": 84,
+  "original40_references_without_refit": 52,
+  "cumulative_neural_training_cells": 113,
+  "cumulative_baseline_only_convex_fits": 3,
+  "cumulative_ridge_solver_calls": 116,
+  "convex_baseline_evaluation_references": 9,
+  "extra_convex_references_without_refit": 6,
+  "metric_cells": 90,
+  "checkpoint_replays": 84,
+  "outer_fits": 0,
+  "outer_prediction_vectors": 0,
+  "patient_OOF_files": 0
+}

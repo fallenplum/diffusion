@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "source": "d30dcdc413d57d25aeb041b6ea5ac83835580cad117530ea699d33f35940aaef",
+  "tests_passed": 25,
+  "test_stdout": ".........................                                                [100%]\n25 passed in 3.72s\n",
+  "test_files": {
+    "tests/test_phase21_diagnostics.py": "a9f782f183984aab70e79efa4af03ddc8b8498260cfab71ba905cef5dfdc60fa",
+    "tests/test_phase21_evaluation.py": "8d18520a42a7f08049c4a570e17de6b3319e9d78238686873be701f16396af23",
+    "tests/test_phase21_operator.py": "a35d067bea90e172983da23682395b3b460078c8427c852253d5c0af258cc261"
+  },
+  "real_short_fits": 2,
+  "short_steps": 4,
+  "outer_endpoint_poisoning": "history,selection,weights,risks bitwise identical",
+  "same_parameter_layout_and_same_initialization": "tested P16/S16/DIRECT",
+  "new_forward_AST": "only conservative_update symbol replaced by direct_update",
+  "training_schedule": "identical inherited training configuration and Efron loop",
+  "summary": {
+    "registered_parameters": 86080,
+    "last_step_gradient_parameters": 86080,
+    "discriminator_parameters": 0,
+    "discriminator_optimizer_steps": 0,
+    "actual_epochs": 2,
+    "selected_epoch": 2,
+    "hit_maximum": false,
+    "seconds": 7.580608349991962,
+    "peak_GPU_MiB": 2580.95458984375,
+    "last_step_gradients": {
+      "visual_gradient": 0.021120667385442216,
+      "molecular_gradient": 0.0008767417036512816,
+      "p_value_gradient": 0.003977055661380291,
+      "o_value_gradient": 0.0005202667671255767,
+      "head_gradient": 0.038272773215342865,
+      "pair_attention_gradient": 0.0011745164713098959,
+      "Up_gradient": 1.3420622963167261e-05,
+      "Uo_gradient": 3.886068043357227e-06,
+      "Uc_gradient": 1.2658394553000107e-05,
+      "wg_gradient": 5.258606961433543e-06,
+      "wd_gradient": 2.7253274765826063e-06,
+      "correction_head_gradient": 1.8908505808212794e-05
+    },
+    "main_trainable": false
+  },
+  "smoke_weights_or_patient_predictions_persisted": false
+}

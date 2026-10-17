@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "source": "d30dcdc413d57d25aeb041b6ea5ac83835580cad117530ea699d33f35940aaef",
+  "evaluator_sha256": "8b74d0696f33b7c3c3825eee7fe6f5e53deb5c72d4721709500ea19171648c90",
+  "checkpoints": 30,
+  "partition_views": 60,
+  "fit_views": 30,
+  "heldout_views": 30,
+  "diagnostic_model_forward_calls": 465,
+  "diagnostic_operator_calls": 2790,
+  "additional_gradient_calls": 0,
+  "new_training_fits": 0,
+  "optimizer_calls": 0,
+  "model_values_unchanged": true,
+  "sampling_uses_DSS_outcomes": false,
+  "diagnostic_routine_reads_endpoints": false,
+  "raw_risks_maps_indices_public": false,
+  "diagnostic_CSV_sha256": "b6ca375db5857754b9ca9cb77e93e881c7d0085a6d3a746d1d4a3e21cccfbe39"
+}

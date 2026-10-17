@@ -1,0 +1,37 @@
+{
+  "version": "phase21_relative_attention_operator_control_v1",
+  "parent_commit": "5b2bb3645b125ca09e2e6825706978fc691981f4",
+  "branch": "research/phase21-relative-attention-audit",
+  "seeds": [31, 47, 83],
+  "folds": [1, 2, 3, 4, 5],
+  "new_arms": ["DIRECT"],
+  "reused_arms": ["P16", "S16"],
+  "new_formal_fits": 30,
+  "reused_formal_models": 60,
+  "hidden": 32,
+  "tokenizer": {"filters": 16},
+  "selective": {},
+  "update": {
+    "direct": "w=a0*g;mu=sum(w*delta)/sum(w);v=g*(delta-mu);a1=(1-rho)*a0+rho*normalize(a0*exp(v));rho=.5",
+    "empty_selected_mass": "exact identity",
+    "no_variance_amplification": true,
+    "same_selector_kernel_encoder_values_head_and_risk_cap": true,
+    "risk_formula": "frozen_J0+unchanged_bounded_pair_head+unchanged_bounded_correction_head",
+    "interpretation": "global conditional-logit normalization vs selected-mass conservation; first-order equivalent at delta=0, both ignore a common row offset; unselected entries can change only through global normalizer"
+  },
+  "training": {
+    "max_epochs": 160, "minimum_epoch": 8, "early_stopping_patience": 40,
+    "validation_ema_alpha": 0.2, "learning_rate": 0.001, "weight_decay": 0.01,
+    "microbatch_patients": 32, "gradient_clip": 5.0, "dropout": 0.1
+  },
+  "selection": "exact inherited inner-loss-EMA schedule; all15 DIRECT inner epochs locked before any new outer refit; fresh same-seed outer initialization; original controls retain their original independently selected epochs",
+  "primary_contrasts": {"DIRECT-S16": {"DIRECT":1,"S16":-1}, "DIRECT-P16": {"DIRECT":1,"P16":-1}},
+  "bootstrap": {"draws":20000,"seed":210017,"primary_family_tests":4,"object":"mean of three complete-seed within-fold ratio C; no risk ensemble; one shared within-fold patient bootstrap"},
+  "repair_damage": "heldout comparable pairs only; credit0,.5,1 with abs risk difference<=1e-8 ties; repair=sum positive credit change,damage=sum negative credit change; report both divided by all comparable weight and conditional baseline-error/correct weight; net must equal C delta",
+  "baselines": ["within-checkpoint off vs matched, isolates local operator", "DIRECT vs reused independently trained S16/P16, includes backbone optimization differences", "frozen J0 shared practical anchor"],
+  "frozen_diagnostics": "all30 original S16 checkpoints; all fit and all heldout patients label-blind attention diagnostics; one attention block, two directions, stage-by-stage not fictitious depth",
+  "no_outer_error_supervision": true,
+  "endpoints": {"primary":"DSS512patients65events","secondary":"PFI frozen DSS risk transfer only"},
+  "scope": "finite exploratory operator audit in repeatedly developed cohort; no selector ablation, no encoder/head/gate changes, no automatic scaling or budget expansion",
+  "privacy": "patient risks/checkpoints/maps/identifiers/selected gene lists/donor indices/credentials private; anonymous aggregate reports and source only"
+}

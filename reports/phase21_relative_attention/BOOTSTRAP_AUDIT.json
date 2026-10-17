@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "source": "d30dcdc413d57d25aeb041b6ea5ac83835580cad117530ea699d33f35940aaef",
+  "draws_requested": 20000,
+  "draws_valid": 20000,
+  "zero_denominator_draws": 0,
+  "comparable_pairs": 4251,
+  "risk_tie_tolerance": 1e-08,
+  "shared_patient_count_matrices": [
+    {
+      "fold": 1,
+      "patients": 103,
+      "draws": 20000,
+      "counts_sha256": "6832a9ca2a942d0b1bc7c51a582b4062f3b0d2ea471f94487647736d47cc2fb7",
+      "shared_comparison_seed_vectors": 30
+    },
+    {
+      "fold": 2,
+      "patients": 103,
+      "draws": 20000,
+      "counts_sha256": "987fad047560cb7c50ff7171b251c29d0c5ed657be596ef876312cb1444baf3b",
+      "shared_comparison_seed_vectors": 30
+    },
+    {
+      "fold": 3,
+      "patients": 102,
+      "draws": 20000,
+      "counts_sha256": "950be54827b16e3fb9909fc10e5c69d29f383a7f8c370e9baaaa223035f653a9",
+      "shared_comparison_seed_vectors": 30
+    },
+    {
+      "fold": 4,
+      "patients": 102,
+      "draws": 20000,
+      "counts_sha256": "5870cd2e9056223e149441f4bcbd26055c73b6bd1b7353054fe1c7e7fb586fc4",
+      "shared_comparison_seed_vectors": 30
+    },
+    {
+      "fold": 5,
+      "patients": 102,
+      "draws": 20000,
+      "counts_sha256": "61463e23dfa6ccee5ff77e11d418f37e9d11ae417be73f6be424683fe24c225f",
+      "shared_comparison_seed_vectors": 30
+    }
+  ],
+  "within_fold_only": true,
+  "risk_ensembling": false,
+  "patient_or_pair_details_returned": false,
+  "IPCW": "provided frozen outer-train weights, event-owner i only; never refitted",
+  "uncertainty_scope": "fixed fitted models; no refitting or model-selection uncertainty",
+  "identity": "repair-damage = C1-C0 in every complete seed and patient draw",
+  "primary_family_tests": 4,
+  "primary_comparisons": [
+    "DIRECT-S16",
+    "DIRECT-P16"
+  ],
+  "seconds": 4.362301221990492
+}

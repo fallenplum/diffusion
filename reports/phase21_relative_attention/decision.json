@@ -1,0 +1,120 @@
+{
+  "status": "COMPLETE",
+  "source": "d30dcdc413d57d25aeb041b6ea5ac83835580cad117530ea699d33f35940aaef",
+  "operator_comparison": "NOT_SUPPORTED_IN_THIS_OPERATOR_CONTROL",
+  "primary_directional_gate": false,
+  "primary_corrected_interval_gate": false,
+  "primary_negative_corrected_intervals": [
+    {
+      "comparison": "DIRECT-P16",
+      "metric": "Uno60",
+      "delta": -0.00330820872133,
+      "Bonferroni_low": -0.0088342121144387,
+      "Bonferroni_high": -0.0001610702887525
+    }
+  ],
+  "optimization_budget_gate": true,
+  "new_formal_neural_fits": 30,
+  "qualified_reused_control_models": 60,
+  "mechanism_chain": "common components dominate many rows and are removed by the operator; centered variation and message survival are nonzero; no proof that removed common variation contained extra DSS information",
+  "direct_scope": "same first-order centered response; tests higher-order normalization, does not restore a common row offset",
+  "local_correction_pair_credit_status": "OBSERVED_PAIR_CREDIT_CHANGES_REPAIR_AND_DAMAGE_REPORTED_SEPARATELY",
+  "local_correction_points": [
+    {
+      "comparison": "DIRECT-OWN_OFF",
+      "metric": "Harrell",
+      "repair": 0.0004704775346977,
+      "damage": 0.000392064612248,
+      "net": 7.84129224496197e-05
+    },
+    {
+      "comparison": "DIRECT-OWN_OFF",
+      "metric": "Uno60",
+      "repair": 0.0003682646410738,
+      "damage": 0.0003535614520827,
+      "net": 1.4703188991120408e-05
+    },
+    {
+      "comparison": "S16-OWN_OFF",
+      "metric": "Harrell",
+      "repair": 0.0,
+      "damage": 0.0,
+      "net": 0.0
+    },
+    {
+      "comparison": "S16-OWN_OFF",
+      "metric": "Uno60",
+      "repair": 0.0,
+      "damage": 0.0,
+      "net": 0.0
+    }
+  ],
+  "patient_conditioning_points": [
+    {
+      "comparison": "DIRECT-DIRECT__WRONG_C",
+      "metric": "Harrell",
+      "repair": 0.0002352387673488,
+      "damage": 0.0002352387673488,
+      "net": 0.0
+    },
+    {
+      "comparison": "DIRECT-DIRECT__WRONG_C",
+      "metric": "Uno60",
+      "repair": 0.0002147667857347,
+      "damage": 0.000204929371661,
+      "net": 9.837414073735646e-06
+    },
+    {
+      "comparison": "DIRECT-DIRECT__WRONG_O",
+      "metric": "Harrell",
+      "repair": 0.0002352387673488,
+      "damage": 7.84129224496197e-05,
+      "net": 0.0001568258448992
+    },
+    {
+      "comparison": "DIRECT-DIRECT__WRONG_O",
+      "metric": "Uno60",
+      "repair": 0.0001900347860169,
+      "damage": 3.3339675085378665e-05,
+      "net": 0.0001566951109315
+    },
+    {
+      "comparison": "S16-S16__WRONG_C",
+      "metric": "Harrell",
+      "repair": 0.0,
+      "damage": 0.0,
+      "net": 0.0
+    },
+    {
+      "comparison": "S16-S16__WRONG_C",
+      "metric": "Uno60",
+      "repair": 0.0,
+      "damage": 0.0,
+      "net": 0.0
+    },
+    {
+      "comparison": "S16-S16__WRONG_O",
+      "metric": "Harrell",
+      "repair": 0.0,
+      "damage": 0.0,
+      "net": 0.0
+    },
+    {
+      "comparison": "S16-S16__WRONG_O",
+      "metric": "Uno60",
+      "repair": 0.0,
+      "damage": 0.0,
+      "net": 0.0
+    }
+  ],
+  "removed_common_component_incremental_DSS_information": "NOT_MEASURED",
+  "no_new_selector_encoder_head_or_scale_search": true,
+  "no_external_confirmation": true,
+  "next_step": "stop this finite operator matrix; do not expand selector, capacity or scaling from outer outcomes",
+  "not_concluded": [
+    "RNA lacks complementary information",
+    "65 events are the unique bottleneck",
+    "attention equals morphology truth",
+    "all conditional information vanished"
+  ]
+}

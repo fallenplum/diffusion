@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "source": "d30dcdc413d57d25aeb041b6ea5ac83835580cad117530ea699d33f35940aaef",
+  "rows": [
+    {
+      "fit_classification": "new_DIRECT_fit",
+      "actual_fit_source": "d30dcdc413d57d25aeb041b6ea5ac83835580cad117530ea699d33f35940aaef",
+      "models": 30
+    },
+    {
+      "fit_classification": "qualified_reused_Phase20_control",
+      "actual_fit_source": "d1d7f8176f18417b8107767700f68ec0292181c3a0e76fce37894e06cc0c3192",
+      "models": 42
+    },
+    {
+      "fit_classification": "qualified_reused_Phase20_control",
+      "actual_fit_source": "e7b6383cfc23e4fbb8f94419a88bff5db1113babcb967672f87e0f13c74ba548",
+      "models": 18
+    }
+  ],
+  "new_neural_fits": 30,
+  "reused_neural_models": 60,
+  "new_convex_or_feature_fits": 0,
+  "phase20_source": "e7b6383cfc23e4fbb8f94419a88bff5db1113babcb967672f87e0f13c74ba548",
+  "phase20_publication_manifest_sha256": "539566092acf5f5b985f49990406b1eebea5b270db96757e34d3d5e875201a45"
+}

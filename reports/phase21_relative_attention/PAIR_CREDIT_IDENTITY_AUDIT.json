@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "source": "d30dcdc413d57d25aeb041b6ea5ac83835580cad117530ea699d33f35940aaef",
+  "rows": [
+    {
+      "comparison": "DIRECT-DIRECT__WRONG_C",
+      "metric": "Harrell",
+      "net_delta": 0.0,
+      "complete_seed_C_difference": 0.0,
+      "error": 0.0
+    },
+    {
+      "comparison": "DIRECT-DIRECT__WRONG_C",
+      "metric": "Uno60",
+      "net_delta": 9.837414073735646e-06,
+      "complete_seed_C_difference": 9.837414073787798e-06,
+      "error": 5.215181856244727e-17
+    },
+    {
+      "comparison": "DIRECT-DIRECT__WRONG_O",
+      "metric": "Harrell",
+      "net_delta": 0.0001568258448992394,
+      "complete_seed_C_difference": 0.00015682584489921472,
+      "error": 2.4665599424045226e-17
+    },
+    {
+      "comparison": "DIRECT-DIRECT__WRONG_O",
+      "metric": "Uno60",
+      "net_delta": 0.00015669511093156286,
+      "complete_seed_C_difference": 0.00015669511093156321,
+      "error": 3.5236570605778894e-19
+    },
+    {
+      "comparison": "DIRECT-J0",
+      "metric": "Harrell",
+      "net_delta": -0.008311769779659688,
+      "complete_seed_C_difference": -0.008311769779659675,
+      "error": 1.214306433183765e-17
+    },
+    {
+      "comparison": "DIRECT-J0",
+      "metric": "Uno60",
+      "net_delta": -0.007487708090398316,
+      "complete_seed_C_difference": -0.0074877080903983,
+      "error": 1.5612511283791264e-17
+    },
+    {
+      "comparison": "DIRECT-OWN_OFF",
+      "metric": "Harrell",
+      "net_delta": 7.84129224496197e-05,
+      "complete_seed_C_difference": 7.841292244962587e-05,
+      "error": 6.179952383167375e-18
+    },
+    {
+      "comparison": "DIRECT-OWN_OFF",
+      "metric": "Uno60",
+      "net_delta": 1.4703188991120408e-05,
+      "complete_seed_C_difference": 1.4703188991179358e-05,
+      "error": 5.895010499711029e-17
+    },
+    {
+      "comparison": "DIRECT-P16",
+      "metric": "Harrell",
+      "net_delta": -0.004155884889829844,
+      "complete_seed_C_difference": -0.004155884889829875,
+      "error": 3.122502256758253e-17
+    },
+    {
+      "comparison": "DIRECT-P16",
+      "metric": "Uno60",
+      "net_delta": -0.0033082087213300465,
+      "complete_seed_C_difference": -0.003308208721330049,
+      "error": 2.6020852139652106e-18
+    },
+    {
+      "comparison": "DIRECT-S16",
+      "metric": "Harrell",
+      "net_delta": -0.0010977809142946756,
+      "complete_seed_C_difference": -0.0010977809142946882,
+      "error": 1.2576745200831851e-17
+    },
+    {
+      "comparison": "DIRECT-S16",
+      "metric": "Uno60",
+      "net_delta": -0.004607906528014954,
+      "complete_seed_C_difference": -0.0046079065280149045,
+      "error": 4.9439619065339e-17
+    },
+    {
+      "comparison": "P16-OWN_OFF",
+      "metric": "Harrell",
+      "net_delta": 0.0,
+      "complete_seed_C_difference": 0.0,
+      "error": 0.0
+    },
+    {
+      "comparison": "P16-OWN_OFF",
+      "metric": "Uno60",
+      "net_delta": 0.0,
+      "complete_seed_C_difference": 0.0,
+      "error": 0.0
+    },
+    {
+      "comparison": "S16-OWN_OFF",
+      "metric": "Harrell",
+      "net_delta": 0.0,
+      "complete_seed_C_difference": 0.0,
+      "error": 0.0
+    },
+    {
+      "comparison": "S16-OWN_OFF",
+      "metric": "Uno60",
+      "net_delta": 0.0,
+      "complete_seed_C_difference": 0.0,
+      "error": 0.0
+    },
+    {
+      "comparison": "S16-S16__WRONG_C",
+      "metric": "Harrell",
+      "net_delta": 0.0,
+      "complete_seed_C_difference": 0.0,
+      "error": 0.0
+    },
+    {
+      "comparison": "S16-S16__WRONG_C",
+      "metric": "Uno60",
+      "net_delta": 0.0,
+      "complete_seed_C_difference": 0.0,
+      "error": 0.0
+    },
+    {
+      "comparison": "S16-S16__WRONG_O",
+      "metric": "Harrell",
+      "net_delta": 0.0,
+      "complete_seed_C_difference": 0.0,
+      "error": 0.0
+    },
+    {
+      "comparison": "S16-S16__WRONG_O",
+      "metric": "Uno60",
+      "net_delta": 0.0,
+      "complete_seed_C_difference": 0.0,
+      "error": 0.0
+    }
+  ],
+  "risk_tie_tolerance": 1e-08,
+  "repair_damage_include_tie_half_credit": true,
+  "denominator": "all comparable pair weight; conditional point rates are ratios of mean-seed credit masses, not means of seed-specific ratios or strict-wrong/correct-only rates",
+  "conditional_rate_intervals_provided": false,
+  "pair_comparisons": 10,
+  "training_used_outer_error_groups": false,
+  "no_patient_pair_details_public": true
+}

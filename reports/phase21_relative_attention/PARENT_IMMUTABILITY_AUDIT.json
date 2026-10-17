@@ -1,0 +1,11 @@
+{
+  "all_inherited_tracked_bytes_unchanged": true,
+  "inherited_tracked_files_verified": 2362,
+  "parent_commit": "5b2bb3645b125ca09e2e6825706978fc691981f4",
+  "parent_is_HEAD_ancestor": true,
+  "parent_public_manifest_files_verified": 89,
+  "parent_public_manifest_sha256": "539566092acf5f5b985f49990406b1eebea5b270db96757e34d3d5e875201a45",
+  "private_parent_inventory_sha256": "83e5c0bb682a0ee9afd852f1e632dd27dcd0c76615eeb39e6687e252e1b98b0f",
+  "status": "PASS",
+  "verification": "every inherited file SHA256 and Git blob identity; exact parent path set"
+}

@@ -1,0 +1,2957 @@
+{
+  "actual_fit_source": "d1d7f8176f18417b8107767700f68ec0292181c3a0e76fce37894e06cc0c3192",
+  "anchor_bitwise_identical": true,
+  "arm": "S16",
+  "audit_source": "c6fcae2a02a35f8b28884ece09c5cc47156d8a8618ac0343afbc350acc5b0acd",
+  "checkpoint_sha256": "4af1fa583413cc23f03d07f02a7f35c16b35e5b3d744f2e109243958e2c6907b",
+  "constantC_bitwise_identical": true,
+  "constantC_equals_off": true,
+  "diagnostic_routine_reads_endpoints": false,
+  "diagnostics": {
+    "additional_gradient_calls": 0,
+    "additional_model_forward_calls": 14,
+    "additional_operator_calls": 84,
+    "fit": {
+      "Taylor_scope": "rho*a0*gate*(delta-weighted_mean); first-order approximation, not assumed exact",
+      "additional_gradient_calls": 0,
+      "additional_model_forward_calls": 11,
+      "additional_operator_calls": 66,
+      "arm": "S16",
+      "batches": 11,
+      "centered_delta_scope": "subtract selected a0*gate-weighted row mean without clipping; test invariance of original update",
+      "checks": {
+        "head_input_reconstruction_max_error": 0.0,
+        "head_projection_reconstruction_max_error": 0.0,
+        "op_centered_delta_invariance_max_error": 9.313225746154785e-10,
+        "op_constant_only_map_max_error": 0.0,
+        "op_map_probability_sum_max_error": 6.042682798579335e-09,
+        "op_numeric_absolute_tolerance": 3.814697265625e-06,
+        "op_recomputed_map_max_error": 0.0,
+        "po_centered_delta_invariance_max_error": 7.450580596923828e-09,
+        "po_constant_only_map_max_error": 0.0,
+        "po_map_probability_sum_max_error": 1.6763806343078613e-08,
+        "po_numeric_absolute_tolerance": 3.814697265625e-06,
+        "po_recomputed_map_max_error": 0.0,
+        "risk_branch_reconstruction_max_error": 0.0
+      },
+      "constant_delta_scope": "original update evaluated with its weighted row mean only; recorded numerical residual, never relabeled literal zero",
+      "fit_WSIs": 330,
+      "fit_patients": 327,
+      "fold": 2,
+      "metrics": {
+        "chain_actual_patient_correction_risk": {
+          "SD": 1.0495544844959168e-05,
+          "count": 327,
+          "max": 3.095180727541447e-05,
+          "mean": -6.3602811880879e-07,
+          "min": -0.00015834750956855714
+        },
+        "chain_actual_patient_correction_risk_absolute": {
+          "SD": 9.803376297282838e-06,
+          "count": 327,
+          "max": 0.00015834750956855714,
+          "mean": 3.8019477290380303e-06,
+          "min": 3.015510952053546e-09
+        },
+        "chain_bounded_correction_risk_WSI": {
+          "SD": 1.0450875495267478e-05,
+          "count": 330,
+          "max": 3.095180727541447e-05,
+          "mean": -6.138915583565843e-07,
+          "min": -0.00015834750956855714
+        },
+        "chain_bounded_correction_risk_absolute_WSI": {
+          "SD": 9.761197684217901e-06,
+          "count": 330,
+          "max": 0.00015834750956855714,
+          "mean": 3.7837390545098104e-06,
+          "min": 3.015510952053546e-09
+        },
+        "chain_bounded_correction_risk_absolute_patient": {
+          "SD": 9.803376297282838e-06,
+          "count": 327,
+          "max": 0.00015834750956855714,
+          "mean": 3.8019477290380303e-06,
+          "min": 3.015510952053546e-09
+        },
+        "chain_bounded_correction_risk_patient": {
+          "SD": 1.0495544844959168e-05,
+          "count": 327,
+          "max": 3.095180727541447e-05,
+          "mean": -6.360281188087899e-07,
+          "min": -0.00015834750956855714
+        },
+        "chain_head_projection_Cauchy_bound_WSI": {
+          "SD": 0.0002641554580347729,
+          "count": 330,
+          "max": 0.0037185382645945433,
+          "mean": 0.00014816157469028823,
+          "min": 6.872063749368604e-06
+        },
+        "chain_head_projection_Cauchy_bound_patient": {
+          "SD": 0.0002651440479418504,
+          "count": 327,
+          "max": 0.0037185382645945433,
+          "mean": 0.0001487880415496407,
+          "min": 6.872063749368604e-06
+        },
+        "chain_head_projection_WSI": {
+          "SD": 6.0235918306757095e-05,
+          "count": 330,
+          "max": 0.00017839751671999693,
+          "mean": -3.538298973163971e-06,
+          "min": -0.0009126707445830107
+        },
+        "chain_head_projection_absolute_WSI": {
+          "SD": 5.626080972938141e-05,
+          "count": 330,
+          "max": 0.0009126707445830107,
+          "mean": 2.1808408985438373e-05,
+          "min": 1.738055743771838e-08
+        },
+        "chain_head_projection_absolute_patient": {
+          "SD": 5.6503915446278025e-05,
+          "count": 327,
+          "max": 0.0009126707445830107,
+          "mean": 2.191335867317976e-05,
+          "min": 1.738055743771838e-08
+        },
+        "chain_head_projection_efficiency_WSI": {
+          "SD": 0.08337893521754407,
+          "count": 330,
+          "max": 0.37814849724820815,
+          "mean": 0.14432041164261478,
+          "min": 0.0009707020994084376
+        },
+        "chain_head_projection_efficiency_patient": {
+          "SD": 0.08323697594642447,
+          "count": 327,
+          "max": 0.37814849724820815,
+          "mean": 0.14402944484670308,
+          "min": 0.0009707020994084376
+        },
+        "chain_head_projection_patient": {
+          "SD": 6.0493379927670574e-05,
+          "count": 327,
+          "max": 0.00017839751671999693,
+          "mean": -3.6658878905473754e-06,
+          "min": -0.0009126707445830107
+        },
+        "chain_message_L2_after_both_query_averages_WSI": {
+          "SD": 0.0017012850537614652,
+          "count": 330,
+          "max": 0.023949130631107433,
+          "mean": 0.0009542300372577161,
+          "min": 4.425931393686273e-05
+        },
+        "chain_message_L2_after_both_query_averages_patient": {
+          "SD": 0.0017076520364682506,
+          "count": 327,
+          "max": 0.023949130631107433,
+          "mean": 0.0009582647776807321,
+          "min": 4.425931393686273e-05
+        },
+        "chain_message_L2_after_patient_WSI_average": {
+          "SD": 0.0017076979419021845,
+          "count": 327,
+          "max": 0.023949130631107433,
+          "mean": 0.0009579571209407372,
+          "min": 4.425931393686273e-05
+        },
+        "chain_patient_WSI_average_survival_ratio": {
+          "SD": 0.006256316372246833,
+          "count": 327,
+          "max": 1.0,
+          "mean": 0.9995127200621793,
+          "min": 0.9107848787965426
+        },
+        "chain_tanh_survival_ratio_WSI": {
+          "SD": 2.356080457693621e-08,
+          "count": 330,
+          "max": 0.9999999999999998,
+          "mean": 0.9999999987863717,
+          "min": 0.9999997223441298
+        },
+        "chain_tanh_survival_ratio_patient": {
+          "SD": 2.356080457693621e-08,
+          "count": 327,
+          "max": 0.9999999999999998,
+          "mean": 0.9999999987756526,
+          "min": 0.9999997223441298
+        },
+        "op_TV_over_rho_mass_centered_RMS_WSI": {
+          "SD": 0.01917008142649003,
+          "count": 330,
+          "max": 0.45322356314330237,
+          "mean": 0.3987392238589211,
+          "min": 0.3352214300786012
+        },
+        "op_TV_over_rho_mass_centered_RMS_patient": {
+          "SD": 0.01921505149918448,
+          "count": 327,
+          "max": 0.45322356314330237,
+          "mean": 0.3987619616088225,
+          "min": 0.3352214300786012
+        },
+        "op_TV_over_rho_mass_centered_RMS_query": {
+          "SD": 0.021489833320714847,
+          "count": 7920,
+          "max": 0.47171537843462163,
+          "mean": 0.398739223858921,
+          "min": 0.2824338602448784
+        },
+        "op_actual_change_L1_WSI": {
+          "SD": 0.0007305909908665014,
+          "count": 330,
+          "max": 0.005379134512622841,
+          "mean": 0.000725789061493398,
+          "min": 2.721204373301589e-05
+        },
+        "op_actual_change_L1_patient": {
+          "SD": 0.0007324274296317272,
+          "count": 327,
+          "max": 0.005379134512622841,
+          "mean": 0.0007283041223312059,
+          "min": 2.721204373301589e-05
+        },
+        "op_actual_change_L1_query": {
+          "SD": 0.0007489370236299947,
+          "count": 7920,
+          "max": 0.00844113156927051,
+          "mean": 0.0007257890614933978,
+          "min": 2.006327486014925e-05
+        },
+        "op_attention_TV_WSI": {
+          "SD": 0.0003652954954332507,
+          "count": 330,
+          "max": 0.0026895672563114204,
+          "mean": 0.000362894530746699,
+          "min": 1.3606021866507945e-05
+        },
+        "op_attention_TV_patient": {
+          "SD": 0.0003662137148158636,
+          "count": 327,
+          "max": 0.0026895672563114204,
+          "mean": 0.00036415206116560293,
+          "min": 1.3606021866507945e-05
+        },
+        "op_attention_TV_query": {
+          "SD": 0.0003744685118149974,
+          "count": 7920,
+          "max": 0.004220565784635255,
+          "mean": 0.0003628945307466989,
+          "min": 1.0031637430074625e-05
+        },
+        "op_centered_energy_fraction_WSI": {
+          "SD": 0.26257862844361424,
+          "count": 330,
+          "max": 0.9946052096707504,
+          "mean": 0.22024862931424233,
+          "min": 0.0006362343641536015
+        },
+        "op_centered_energy_fraction_patient": {
+          "SD": 0.26302360342348396,
+          "count": 327,
+          "max": 0.9946052096707504,
+          "mean": 0.2221511879096361,
+          "min": 0.0006362343641536015
+        },
+        "op_centered_energy_fraction_query": {
+          "SD": 0.28471248186568426,
+          "count": 7920,
+          "max": 0.9999999995275642,
+          "mean": 0.22024862931424233,
+          "min": 0.0004343403137188943
+        },
+        "op_common_energy_fraction_WSI": {
+          "SD": 0.26257862844361435,
+          "count": 330,
+          "max": 0.9993637656358465,
+          "mean": 0.7797513706857576,
+          "min": 0.005394790329249611
+        },
+        "op_common_energy_fraction_patient": {
+          "SD": 0.26302360342348424,
+          "count": 327,
+          "max": 0.9993637656358465,
+          "mean": 0.7778488120903638,
+          "min": 0.005394790329249611
+        },
+        "op_common_energy_fraction_query": {
+          "SD": 0.28471248186568454,
+          "count": 7920,
+          "max": 0.9995656596862809,
+          "mean": 0.7797513706857576,
+          "min": 4.724357214110179e-10
+        },
+        "op_conservative_reference_Z_WSI": {
+          "SD": 0.10625656293033876,
+          "count": 330,
+          "max": 1.356461982123869,
+          "mean": 0.9961638964560049,
+          "min": 0.6646528910557981
+        },
+        "op_conservative_reference_Z_patient": {
+          "SD": 0.10615742546437515,
+          "count": 327,
+          "max": 1.356461982123869,
+          "mean": 0.9962030164599812,
+          "min": 0.6646528910557981
+        },
+        "op_conservative_reference_Z_query": {
+          "SD": 0.10667813658146677,
+          "count": 7920,
+          "max": 1.3850328272089538,
+          "mean": 0.9961638964560049,
+          "min": 0.6579656388544208
+        },
+        "op_delta_message_L2_after_query_average_WSI": {
+          "SD": 0.0011063087674083201,
+          "count": 330,
+          "max": 0.010106781348788719,
+          "mean": 0.0007350941760015145,
+          "min": 1.2358358645176968e-05
+        },
+        "op_delta_message_L2_after_query_average_patient": {
+          "SD": 0.001109587802513858,
+          "count": 327,
+          "max": 0.010106781348788719,
+          "mean": 0.0007374192284638123,
+          "min": 1.2358358645176968e-05
+        },
+        "op_delta_message_L2_before_query_average_WSI": {
+          "SD": 0.001105868637978854,
+          "count": 330,
+          "max": 0.01011189259926971,
+          "mean": 0.0007499759589588993,
+          "min": 1.3290635543965643e-05
+        },
+        "op_delta_message_L2_before_query_average_patient": {
+          "SD": 0.0011091422811234394,
+          "count": 327,
+          "max": 0.01011189259926971,
+          "mean": 0.0007523682994034962,
+          "min": 1.3290635543965643e-05
+        },
+        "op_delta_message_L2_before_query_average_query": {
+          "SD": 0.0011449576157491407,
+          "count": 7920,
+          "max": 0.01326750193718165,
+          "mean": 0.0007499759589588994,
+          "min": 7.546099542391353e-06
+        },
+        "op_delta_message_triangle_bound_WSI": {
+          "SD": 0.0032010417450904207,
+          "count": 330,
+          "max": 0.023500898353161503,
+          "mean": 0.0031038783876525837,
+          "min": 0.00011008549495984904
+        },
+        "op_delta_message_triangle_bound_patient": {
+          "SD": 0.003209527403102394,
+          "count": 327,
+          "max": 0.023500898353161503,
+          "mean": 0.003117335916116689,
+          "min": 0.00011008549495984904
+        },
+        "op_delta_message_triangle_bound_query": {
+          "SD": 0.0032931646098021696,
+          "count": 7920,
+          "max": 0.04271338951224104,
+          "mean": 0.0031038783876525837,
+          "min": 7.637226884807396e-05
+        },
+        "op_eligible_count_WSI": {
+          "SD": 67.09523650876501,
+          "count": 330,
+          "max": 512.0,
+          "mean": 493.1878787878788,
+          "min": 91.0
+        },
+        "op_eligible_count_patient": {
+          "SD": 59.68883419881314,
+          "count": 327,
+          "max": 512.0,
+          "mean": 495.8858307849134,
+          "min": 91.0
+        },
+        "op_eligible_count_query": {
+          "SD": 67.09523650876501,
+          "count": 7920,
+          "max": 512.0,
+          "mean": 493.1878787878788,
+          "min": 91.0
+        },
+        "op_head_projection_abs_before_query_average_WSI": {
+          "SD": 2.0891590583649815e-05,
+          "count": 330,
+          "max": 0.00017784287539749735,
+          "mean": 1.2574696608732751e-05,
+          "min": 1.588832798660178e-07
+        },
+        "op_head_projection_abs_before_query_average_patient": {
+          "SD": 2.097469730533954e-05,
+          "count": 327,
+          "max": 0.00017784287539749735,
+          "mean": 1.262531421126953e-05,
+          "min": 1.588832798660178e-07
+        },
+        "op_head_projection_abs_before_query_average_query": {
+          "SD": 2.1989495398418274e-05,
+          "count": 7920,
+          "max": 0.0003214378375560045,
+          "mean": 1.2574696608732751e-05,
+          "min": 1.0947474038403016e-09
+        },
+        "op_head_projection_before_query_average_WSI": {
+          "SD": 2.3830306599230766e-05,
+          "count": 330,
+          "max": 0.00017784287539749735,
+          "mean": 4.826352540069166e-06,
+          "min": -0.00010226311678707134
+        },
+        "op_head_projection_before_query_average_patient": {
+          "SD": 2.393272648256308e-05,
+          "count": 327,
+          "max": 0.00017784287539749735,
+          "mean": 4.807679942930514e-06,
+          "min": -0.00010226311678707134
+        },
+        "op_head_projection_before_query_average_query": {
+          "SD": 2.4866990646994286e-05,
+          "count": 7920,
+          "max": 0.0003214378375560045,
+          "mean": 4.826352540069166e-06,
+          "min": -0.0001415798906236887
+        },
+        "op_message_over_triangle_bound_WSI": {
+          "SD": 0.1325187308103873,
+          "count": 330,
+          "max": 0.7112221777282217,
+          "mean": 0.2191881827862482,
+          "min": 0.03267985693318874
+        },
+        "op_message_over_triangle_bound_patient": {
+          "SD": 0.13280792140311057,
+          "count": 327,
+          "max": 0.7112221777282217,
+          "mean": 0.21884883844828548,
+          "min": 0.03267985693318874
+        },
+        "op_message_over_triangle_bound_query": {
+          "SD": 0.13728740226897743,
+          "count": 7920,
+          "max": 0.74426635129464,
+          "mean": 0.21918818278624816,
+          "min": 0.027087220727710342
+        },
+        "op_query_average_survival_ratio_WSI": {
+          "SD": 0.0922213012538677,
+          "count": 330,
+          "max": 0.9998882793221909,
+          "mean": 0.9518013103985615,
+          "min": 0.398054716840207
+        },
+        "op_query_average_survival_ratio_patient": {
+          "SD": 0.09258003667422147,
+          "count": 327,
+          "max": 0.9998882793221909,
+          "mean": 0.9516707390641344,
+          "min": 0.398054716840207
+        },
+        "op_raw_delta_row_SD_WSI": {
+          "SD": 0.010608691401248777,
+          "count": 330,
+          "max": 0.07732703951176152,
+          "mean": 0.018008568937532544,
+          "min": 0.004164444372320038
+        },
+        "op_raw_delta_row_SD_patient": {
+          "SD": 0.010625534947111484,
+          "count": 327,
+          "max": 0.07732703951176152,
+          "mean": 0.01804637502407791,
+          "min": 0.004164444372320038
+        },
+        "op_raw_delta_row_SD_query": {
+          "SD": 0.010752178857546148,
+          "count": 7920,
+          "max": 0.08789237439005293,
+          "mean": 0.01800856893753254,
+          "min": 0.003486778681002972
+        },
+        "op_raw_delta_row_mean_WSI": {
+          "SD": 0.11158451870933857,
+          "count": 330,
+          "max": 0.3066539118141615,
+          "mean": -0.015204203169406693,
+          "min": -0.4081475513715607
+        },
+        "op_raw_delta_row_mean_patient": {
+          "SD": 0.11144423728787743,
+          "count": 327,
+          "max": 0.3066539118141615,
+          "mean": -0.015136348598578372,
+          "min": -0.4081475513715607
+        },
+        "op_raw_delta_row_mean_query": {
+          "SD": 0.11195852012485712,
+          "count": 7920,
+          "max": 0.32386043743463233,
+          "mean": -0.015204203169406696,
+          "min": -0.41845182346878573
+        },
+        "op_selected_mass_WSI": {
+          "SD": 0.05584741317981069,
+          "count": 330,
+          "max": 0.3196142300799932,
+          "mean": 0.1012543212592171,
+          "min": 0.00580531424344836
+        },
+        "op_selected_mass_patient": {
+          "SD": 0.056008512766315285,
+          "count": 327,
+          "max": 0.3196142300799932,
+          "mean": 0.10130014199702476,
+          "min": 0.00580531424344836
+        },
+        "op_selected_mass_query": {
+          "SD": 0.05743442875450471,
+          "count": 7920,
+          "max": 0.7308348764925086,
+          "mean": 0.10125432125921709,
+          "min": 0.004451471031288179
+        },
+        "op_taylor_absolute_error_L1_WSI": {
+          "SD": 1.8598888261768115e-05,
+          "count": 330,
+          "max": 0.00019338585104266399,
+          "mean": 1.0225801803530068e-05,
+          "min": 1.1949383206143072e-07
+        },
+        "op_taylor_absolute_error_L1_patient": {
+          "SD": 1.866636262737755e-05,
+          "count": 327,
+          "max": 0.00019338585104266399,
+          "mean": 1.0285900330449507e-05,
+          "min": 1.1949383206143072e-07
+        },
+        "op_taylor_absolute_error_L1_query": {
+          "SD": 1.933851257820247e-05,
+          "count": 7920,
+          "max": 0.00033598327683716266,
+          "mean": 1.0225801803530068e-05,
+          "min": 8.652708657510349e-08
+        },
+        "op_taylor_change_L1_WSI": {
+          "SD": 0.0007322792759325291,
+          "count": 330,
+          "max": 0.005395159899643967,
+          "mean": 0.0007263229351912856,
+          "min": 2.722260596861412e-05
+        },
+        "op_taylor_change_L1_patient": {
+          "SD": 0.0007341229826632352,
+          "count": 327,
+          "max": 0.005395159899643967,
+          "mean": 0.000728835734189784,
+          "min": 2.722260596861412e-05
+        },
+        "op_taylor_change_L1_query": {
+          "SD": 0.0007507109512953841,
+          "count": 7920,
+          "max": 0.008538708873126006,
+          "mean": 0.0007263229351912855,
+          "min": 2.0066950294879754e-05
+        },
+        "op_taylor_covariance_efficiency_WSI": {
+          "SD": 0.15343100503524235,
+          "count": 330,
+          "max": 0.8194511833885029,
+          "mean": 0.4082918948071696,
+          "min": 0.1537112463511693
+        },
+        "op_taylor_covariance_efficiency_patient": {
+          "SD": 0.15355978810954776,
+          "count": 327,
+          "max": 0.8194511833885029,
+          "mean": 0.40833927572705997,
+          "min": 0.1537112463511693
+        },
+        "op_taylor_covariance_efficiency_query": {
+          "SD": 0.16310543824071277,
+          "count": 7920,
+          "max": 0.8647491425479353,
+          "mean": 0.4082918948071697,
+          "min": 0.09997628891225703
+        },
+        "op_taylor_message_Cauchy_bound_WSI": {
+          "SD": 0.0017560915607148745,
+          "count": 330,
+          "max": 0.012838018740306064,
+          "mean": 0.0015720280814679978,
+          "min": 5.81823619060459e-05
+        },
+        "op_taylor_message_Cauchy_bound_patient": {
+          "SD": 0.0017610215160754879,
+          "count": 327,
+          "max": 0.012838018740306064,
+          "mean": 0.0015768255248859205,
+          "min": 5.81823619060459e-05
+        },
+        "op_taylor_message_Cauchy_bound_query": {
+          "SD": 0.0017904326533986865,
+          "count": 7920,
+          "max": 0.01673530917695054,
+          "mean": 0.0015720280814679978,
+          "min": 4.500522360495931e-05
+        },
+        "op_taylor_message_L2_WSI": {
+          "SD": 0.0011070287920737956,
+          "count": 330,
+          "max": 0.010059359034439523,
+          "mean": 0.0007509804175915934,
+          "min": 1.3298005468468377e-05
+        },
+        "op_taylor_message_L2_patient": {
+          "SD": 0.0011102962127165935,
+          "count": 327,
+          "max": 0.010059359034439523,
+          "mean": 0.0007533666491883205,
+          "min": 1.3298005468468377e-05
+        },
+        "op_taylor_message_L2_query": {
+          "SD": 0.0011455258861833237,
+          "count": 7920,
+          "max": 0.013263345848791347,
+          "mean": 0.0007509804175915935,
+          "min": 7.5482628955079775e-06
+        },
+        "op_taylor_message_error_L2_WSI": {
+          "SD": 1.7175429179027557e-05,
+          "count": 330,
+          "max": 0.000179984676826013,
+          "mean": 7.893427654511049e-06,
+          "min": 3.166907354729231e-08
+        },
+        "op_taylor_message_error_L2_patient": {
+          "SD": 1.7242696045084287e-05,
+          "count": 327,
+          "max": 0.000179984676826013,
+          "mean": 7.943868961259231e-06,
+          "min": 3.166907354729231e-08
+        },
+        "op_taylor_message_error_L2_query": {
+          "SD": 1.9196223853267805e-05,
+          "count": 7920,
+          "max": 0.00040914029707187107,
+          "mean": 7.893427654511047e-06,
+          "min": 2.4888120021861824e-08
+        },
+        "op_taylor_relative_error_L1_WSI": {
+          "SD": 0.005788463157442557,
+          "count": 330,
+          "max": 0.040623367789573886,
+          "mean": 0.010589558999628292,
+          "min": 0.002228376392569819
+        },
+        "op_taylor_relative_error_L1_patient": {
+          "SD": 0.005796632522863519,
+          "count": 327,
+          "max": 0.040623367789573886,
+          "mean": 0.010625832282871816,
+          "min": 0.002228376392569819
+        },
+        "op_taylor_relative_error_L1_query": {
+          "SD": 0.005934296671581629,
+          "count": 7920,
+          "max": 0.046297293857313584,
+          "mean": 0.01058955899962829,
+          "min": 0.0017132933490178065
+        },
+        "op_weighted_centered_RMS_WSI": {
+          "SD": 0.01097290388774596,
+          "count": 330,
+          "max": 0.07747120044374611,
+          "mean": 0.018034353623757302,
+          "min": 0.003202198992820164
+        },
+        "op_weighted_centered_RMS_patient": {
+          "SD": 0.010988777577387117,
+          "count": 327,
+          "max": 0.07747120044374611,
+          "mean": 0.01809781974349603,
+          "min": 0.003202198992820164
+        },
+        "op_weighted_centered_RMS_query": {
+          "SD": 0.011172848025147009,
+          "count": 7920,
+          "max": 0.08538981623656332,
+          "mean": 0.018034353623757306,
+          "min": 0.0027109731629462942
+        },
+        "op_weighted_centered_variance_WSI": {
+          "SD": 0.0006681986226087943,
+          "count": 330,
+          "max": 0.006026710870155864,
+          "mean": 0.00045007044361975975,
+          "min": 1.0346947926009028e-05
+        },
+        "op_weighted_centered_variance_patient": {
+          "SD": 0.000670414218621962,
+          "count": 327,
+          "max": 0.006026710870155864,
+          "mean": 0.00045283155345728147,
+          "min": 1.0346947926009028e-05
+        },
+        "op_weighted_centered_variance_query": {
+          "SD": 0.0006845254616941485,
+          "count": 7920,
+          "max": 0.007291420716914052,
+          "mean": 0.00045007044361975975,
+          "min": 7.349375490215035e-06
+        },
+        "op_weighted_delta_mean_WSI": {
+          "SD": 0.1116209901520623,
+          "count": 330,
+          "max": 0.3046436963786185,
+          "mean": -0.010140131959790036,
+          "min": -0.4085756687369751
+        },
+        "op_weighted_delta_mean_patient": {
+          "SD": 0.11150539536676563,
+          "count": 327,
+          "max": 0.3046436963786185,
+          "mean": -0.010090445161860728,
+          "min": -0.4085756687369751
+        },
+        "op_weighted_delta_mean_query": {
+          "SD": 0.11201338039520023,
+          "count": 7920,
+          "max": 0.32562845811074637,
+          "mean": -0.010140131959790036,
+          "min": -0.41864682398639147
+        },
+        "op_weighted_raw_second_moment_WSI": {
+          "SD": 0.022837405763795317,
+          "count": 330,
+          "max": 0.1671044251830993,
+          "mean": 0.01309989010734154,
+          "min": 7.293744259335797e-05
+        },
+        "op_weighted_raw_second_moment_patient": {
+          "SD": 0.022892819575707105,
+          "count": 327,
+          "max": 0.1671044251830993,
+          "mean": 0.013077169670296884,
+          "min": 7.293744259335797e-05
+        },
+        "op_weighted_raw_second_moment_query": {
+          "SD": 0.022916122236492305,
+          "count": 7920,
+          "max": 0.1753536366089294,
+          "mean": 0.01309989010734154,
+          "min": 2.9692660482624084e-05
+        },
+        "op_weighted_value_centered_RMS_WSI": {
+          "SD": 0.5286641411587755,
+          "count": 330,
+          "max": 3.3386443266789527,
+          "mean": 1.7121345892164286,
+          "min": 0.6196944072510044
+        },
+        "op_weighted_value_centered_RMS_patient": {
+          "SD": 0.530688583910739,
+          "count": 327,
+          "max": 3.3386443266789527,
+          "mean": 1.7109827946101128,
+          "min": 0.6196944072510044
+        },
+        "op_weighted_value_centered_RMS_query": {
+          "SD": 0.5325032037308423,
+          "count": 7920,
+          "max": 3.5466418260946524,
+          "mean": 1.7121345892164284,
+          "min": 0.5856300069169214
+        },
+        "op_zero_selected_mass_WSI": {
+          "SD": 0.0,
+          "count": 330,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "op_zero_selected_mass_patient": {
+          "SD": 0.0,
+          "count": 327,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "op_zero_selected_mass_query": {
+          "SD": 0.0,
+          "count": 7920,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "op_zero_weighted_delta_energy_WSI": {
+          "SD": 0.0,
+          "count": 330,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "op_zero_weighted_delta_energy_patient": {
+          "SD": 0.0,
+          "count": 327,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "op_zero_weighted_delta_energy_query": {
+          "SD": 0.0,
+          "count": 7920,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_TV_over_rho_mass_centered_RMS_WSI": {
+          "SD": 0.025160448071251704,
+          "count": 330,
+          "max": 0.4662484486701055,
+          "mean": 0.40034124757160916,
+          "min": 0.3093719700524572
+        },
+        "po_TV_over_rho_mass_centered_RMS_patient": {
+          "SD": 0.02512708530547412,
+          "count": 327,
+          "max": 0.4662484486701055,
+          "mean": 0.40050998034955376,
+          "min": 0.3093719700524572
+        },
+        "po_TV_over_rho_mass_centered_RMS_query": {
+          "SD": 0.03629030426834581,
+          "count": 162752,
+          "max": 0.49515724129373645,
+          "mean": 0.40060448374061636,
+          "min": 0.20341998341568868
+        },
+        "po_actual_change_L1_WSI": {
+          "SD": 0.0006502512772548003,
+          "count": 330,
+          "max": 0.009926866824571334,
+          "mean": 0.0007149087832642578,
+          "min": 0.0001362735186819504
+        },
+        "po_actual_change_L1_patient": {
+          "SD": 0.0006527291550138754,
+          "count": 327,
+          "max": 0.009926866824571334,
+          "mean": 0.0007168055304908035,
+          "min": 0.0001362735186819504
+        },
+        "po_actual_change_L1_query": {
+          "SD": 0.0006966926203307419,
+          "count": 162752,
+          "max": 0.014866054058074951,
+          "mean": 0.0007195140106882616,
+          "min": 4.7888606786727905e-05
+        },
+        "po_attention_TV_WSI": {
+          "SD": 0.00032512563862740015,
+          "count": 330,
+          "max": 0.004963433412285667,
+          "mean": 0.0003574543916321289,
+          "min": 6.81367593409752e-05
+        },
+        "po_attention_TV_patient": {
+          "SD": 0.0003263645775069377,
+          "count": 327,
+          "max": 0.004963433412285667,
+          "mean": 0.00035840276524540173,
+          "min": 6.81367593409752e-05
+        },
+        "po_attention_TV_query": {
+          "SD": 0.00034834631016537095,
+          "count": 162752,
+          "max": 0.007433027029037476,
+          "mean": 0.0003597570053441308,
+          "min": 2.3944303393363953e-05
+        },
+        "po_centered_energy_fraction_WSI": {
+          "SD": 0.13977544211449427,
+          "count": 330,
+          "max": 0.6497216871540292,
+          "mean": 0.10266071775049891,
+          "min": 0.0001289560784522454
+        },
+        "po_centered_energy_fraction_patient": {
+          "SD": 0.14009043122607795,
+          "count": 327,
+          "max": 0.6497216871540292,
+          "mean": 0.10357056281356695,
+          "min": 0.0001289560784522454
+        },
+        "po_centered_energy_fraction_query": {
+          "SD": 0.21665940451704835,
+          "count": 162752,
+          "max": 0.999999973239279,
+          "mean": 0.10350364564968467,
+          "min": 4.5771273412793554e-06
+        },
+        "po_common_energy_fraction_WSI": {
+          "SD": 0.13977544211449397,
+          "count": 330,
+          "max": 0.9998710439215477,
+          "mean": 0.8973392822495011,
+          "min": 0.35027831284597083
+        },
+        "po_common_energy_fraction_patient": {
+          "SD": 0.1400904312260787,
+          "count": 327,
+          "max": 0.9998710439215477,
+          "mean": 0.896429437186433,
+          "min": 0.35027831284597083
+        },
+        "po_common_energy_fraction_query": {
+          "SD": 0.21665940451704785,
+          "count": 162752,
+          "max": 0.9999954228726586,
+          "mean": 0.8964963543503154,
+          "min": 2.6760721156451053e-08
+        },
+        "po_conservative_reference_Z_WSI": {
+          "SD": 0.10444548977177044,
+          "count": 330,
+          "max": 1.3476208861107255,
+          "mean": 0.988475837578729,
+          "min": 0.6651399620292633
+        },
+        "po_conservative_reference_Z_patient": {
+          "SD": 0.10433138796411412,
+          "count": 327,
+          "max": 1.3476208861107255,
+          "mean": 0.9884948443393342,
+          "min": 0.6651399620292633
+        },
+        "po_conservative_reference_Z_query": {
+          "SD": 0.10684304121754776,
+          "count": 162752,
+          "max": 1.4454993633725006,
+          "mean": 0.9882998705276376,
+          "min": 0.6423602926396073
+        },
+        "po_delta_message_L2_after_query_average_WSI": {
+          "SD": 0.0013737918897424118,
+          "count": 330,
+          "max": 0.023611982148097187,
+          "mean": 0.0003915853743427165,
+          "min": 1.7963807176688367e-05
+        },
+        "po_delta_message_L2_after_query_average_patient": {
+          "SD": 0.0013798439958741112,
+          "count": 327,
+          "max": 0.023611982148097187,
+          "mean": 0.00039399247002885483,
+          "min": 1.7963807176688367e-05
+        },
+        "po_delta_message_L2_before_query_average_WSI": {
+          "SD": 0.0013788694136732038,
+          "count": 330,
+          "max": 0.023675196241177303,
+          "mean": 0.00043216676351036853,
+          "min": 2.3937121383987278e-05
+        },
+        "po_delta_message_L2_before_query_average_patient": {
+          "SD": 0.0013849752073196934,
+          "count": 327,
+          "max": 0.023675196241177303,
+          "mean": 0.000434408766755091,
+          "min": 2.3937121383987278e-05
+        },
+        "po_delta_message_L2_before_query_average_query": {
+          "SD": 0.0014435238689694202,
+          "count": 162752,
+          "max": 0.035927068770787524,
+          "mean": 0.00043711448755175245,
+          "min": 6.388162401878996e-06
+        },
+        "po_delta_message_triangle_bound_WSI": {
+          "SD": 0.00176919976039802,
+          "count": 330,
+          "max": 0.030023176553117356,
+          "mean": 0.0007814614244530616,
+          "min": 8.622256248252703e-05
+        },
+        "po_delta_message_triangle_bound_patient": {
+          "SD": 0.0017770192342519934,
+          "count": 327,
+          "max": 0.030023176553117356,
+          "mean": 0.0007842837620012086,
+          "min": 8.622256248252703e-05
+        },
+        "po_delta_message_triangle_bound_query": {
+          "SD": 0.001853529107229809,
+          "count": 162752,
+          "max": 0.04609158295959857,
+          "mean": 0.0007882734971110548,
+          "min": 3.353236072335748e-05
+        },
+        "po_eligible_count_WSI": {
+          "SD": 0.0,
+          "count": 330,
+          "max": 24.0,
+          "mean": 24.0,
+          "min": 24.0
+        },
+        "po_eligible_count_patient": {
+          "SD": 0.0,
+          "count": 327,
+          "max": 24.0,
+          "mean": 24.0,
+          "min": 24.0
+        },
+        "po_eligible_count_query": {
+          "SD": 0.0,
+          "count": 162752,
+          "max": 24.0,
+          "mean": 24.0,
+          "min": 24.0
+        },
+        "po_head_projection_abs_before_query_average_WSI": {
+          "SD": 5.04299661245815e-05,
+          "count": 330,
+          "max": 0.0008614056402826975,
+          "mean": 1.3288137860048639e-05,
+          "min": 4.6221785614947164e-07
+        },
+        "po_head_projection_abs_before_query_average_patient": {
+          "SD": 5.065334913367891e-05,
+          "count": 327,
+          "max": 0.0008614056402826975,
+          "mean": 1.3370102871667777e-05,
+          "min": 4.6221785614947164e-07
+        },
+        "po_head_projection_abs_before_query_average_query": {
+          "SD": 5.2930982863779896e-05,
+          "count": 162752,
+          "max": 0.001336776651442051,
+          "mean": 1.3445354186543222e-05,
+          "min": 5.056222107668873e-11
+        },
+        "po_head_projection_before_query_average_WSI": {
+          "SD": 5.119572498889697e-05,
+          "count": 330,
+          "max": 8.862384381025379e-05,
+          "mean": -8.364651836733571e-06,
+          "min": -0.000861136756665104
+        },
+        "po_head_projection_before_query_average_patient": {
+          "SD": 5.1417203672252755e-05,
+          "count": 327,
+          "max": 8.862384381025379e-05,
+          "mean": -8.473568163104445e-06,
+          "min": -0.000861136756665104
+        },
+        "po_head_projection_before_query_average_query": {
+          "SD": 5.394431755945379e-05,
+          "count": 162752,
+          "max": 0.00017842267698142678,
+          "mean": -8.513348293836066e-06,
+          "min": -0.001336776651442051
+        },
+        "po_message_over_triangle_bound_WSI": {
+          "SD": 0.09684607755850534,
+          "count": 330,
+          "max": 0.7942702073934178,
+          "mean": 0.4646684120714131,
+          "min": 0.2424505077894391
+        },
+        "po_message_over_triangle_bound_patient": {
+          "SD": 0.097009093897535,
+          "count": 327,
+          "max": 0.7942702073934178,
+          "mean": 0.46536792693514495,
+          "min": 0.2424505077894391
+        },
+        "po_message_over_triangle_bound_query": {
+          "SD": 0.12231361939982774,
+          "count": 162752,
+          "max": 0.8743502162551164,
+          "mean": 0.4660020926292035,
+          "min": 0.12402871917179903
+        },
+        "po_query_average_survival_ratio_WSI": {
+          "SD": 0.1645248875825757,
+          "count": 330,
+          "max": 0.9997021093711795,
+          "mean": 0.8353425472001306,
+          "min": 0.22487895511511657
+        },
+        "po_query_average_survival_ratio_patient": {
+          "SD": 0.1643666341402072,
+          "count": 327,
+          "max": 0.9997021093711795,
+          "mean": 0.8366473487139566,
+          "min": 0.22487895511511657
+        },
+        "po_raw_delta_row_SD_WSI": {
+          "SD": 0.005150630995339123,
+          "count": 330,
+          "max": 0.058778620240765744,
+          "mean": 0.008618922056414966,
+          "min": 0.0019196691343866304
+        },
+        "po_raw_delta_row_SD_patient": {
+          "SD": 0.005168226335710975,
+          "count": 327,
+          "max": 0.058778620240765744,
+          "mean": 0.008640705366862546,
+          "min": 0.0019196691343866304
+        },
+        "po_raw_delta_row_SD_query": {
+          "SD": 0.00554364438373102,
+          "count": 162752,
+          "max": 0.07343416195642677,
+          "mean": 0.008694969870819571,
+          "min": 0.0007222977734454929
+        },
+        "po_raw_delta_row_mean_WSI": {
+          "SD": 0.11158451870933855,
+          "count": 330,
+          "max": 0.30665391181416146,
+          "mean": -0.015204203169406693,
+          "min": -0.4081475513715608
+        },
+        "po_raw_delta_row_mean_patient": {
+          "SD": 0.11144423728787742,
+          "count": 327,
+          "max": 0.30665391181416146,
+          "mean": -0.015136348598578375,
+          "min": -0.4081475513715608
+        },
+        "po_raw_delta_row_mean_query": {
+          "SD": 0.11370385640763035,
+          "count": 162752,
+          "max": 0.3701859725018342,
+          "mean": -0.01537772601770067,
+          "min": -0.4445171505212784
+        },
+        "po_selected_mass_WSI": {
+          "SD": 0.020254134309387887,
+          "count": 330,
+          "max": 0.38164374243503046,
+          "mean": 0.2687563269561293,
+          "min": 0.2106616485109083
+        },
+        "po_selected_mass_patient": {
+          "SD": 0.02033779270479856,
+          "count": 327,
+          "max": 0.38164374243503046,
+          "mean": 0.26876817197659303,
+          "min": 0.2106616485109083
+        },
+        "po_selected_mass_query": {
+          "SD": 0.022056652419680575,
+          "count": 162752,
+          "max": 0.43038776982575655,
+          "mean": 0.2686531284533493,
+          "min": 0.18291205904097296
+        },
+        "po_taylor_absolute_error_L1_WSI": {
+          "SD": 1.644678639201364e-05,
+          "count": 330,
+          "max": 0.000286789828290665,
+          "mean": 4.6470408995253145e-06,
+          "min": 1.028345557176977e-07
+        },
+        "po_taylor_absolute_error_L1_patient": {
+          "SD": 1.6519683528556793e-05,
+          "count": 327,
+          "max": 0.000286789828290665,
+          "mean": 4.672884817967003e-06,
+          "min": 1.028345557176977e-07
+        },
+        "po_taylor_absolute_error_L1_query": {
+          "SD": 1.7401468144329012e-05,
+          "count": 162752,
+          "max": 0.00046575424701284564,
+          "mean": 4.71301378001407e-06,
+          "min": 1.6638042992150003e-08
+        },
+        "po_taylor_change_L1_WSI": {
+          "SD": 0.0006401522821282145,
+          "count": 330,
+          "max": 0.009695267164585502,
+          "mean": 0.000714070003845111,
+          "min": 0.00013612101010424828
+        },
+        "po_taylor_change_L1_patient": {
+          "SD": 0.0006425761249148225,
+          "count": 327,
+          "max": 0.009695267164585502,
+          "mean": 0.0007159611893942924,
+          "min": 0.00013612101010424828
+        },
+        "po_taylor_change_L1_query": {
+          "SD": 0.000686726040552207,
+          "count": 162752,
+          "max": 0.014662220027728682,
+          "mean": 0.0007186329698072311,
+          "min": 4.7894987659644464e-05
+        },
+        "po_taylor_covariance_efficiency_WSI": {
+          "SD": 0.10283623880907874,
+          "count": 330,
+          "max": 0.8882050063226836,
+          "mean": 0.47563093353216235,
+          "min": 0.2649913162463874
+        },
+        "po_taylor_covariance_efficiency_patient": {
+          "SD": 0.10286503281734026,
+          "count": 327,
+          "max": 0.8882050063226836,
+          "mean": 0.4765123017039565,
+          "min": 0.2649913162463874
+        },
+        "po_taylor_covariance_efficiency_query": {
+          "SD": 0.13233636057186446,
+          "count": 162752,
+          "max": 0.9529500532258327,
+          "mean": 0.4772488188646818,
+          "min": 0.08036724392892111
+        },
+        "po_taylor_message_Cauchy_bound_WSI": {
+          "SD": 0.001586634704783607,
+          "count": 330,
+          "max": 0.026747537635138582,
+          "mean": 0.0007549197277647569,
+          "min": 6.776398840601881e-05
+        },
+        "po_taylor_message_Cauchy_bound_patient": {
+          "SD": 0.001593655280669618,
+          "count": 327,
+          "max": 0.026747537635138582,
+          "mean": 0.0007574461506913294,
+          "min": 6.776398840601881e-05
+        },
+        "po_taylor_message_Cauchy_bound_query": {
+          "SD": 0.0016574963462461514,
+          "count": 162752,
+          "max": 0.04050900674963151,
+          "mean": 0.0007608677518861486,
+          "min": 2.8362157823345007e-05
+        },
+        "po_taylor_message_L2_WSI": {
+          "SD": 0.0013467092341500795,
+          "count": 330,
+          "max": 0.023057043858358266,
+          "mean": 0.00043012234852194694,
+          "min": 2.3928003361602187e-05
+        },
+        "po_taylor_message_L2_patient": {
+          "SD": 0.001352665693503305,
+          "count": 327,
+          "max": 0.023057043858358266,
+          "mean": 0.00043234871854972107,
+          "min": 2.3928003361602187e-05
+        },
+        "po_taylor_message_L2_query": {
+          "SD": 0.001411047660397749,
+          "count": 162752,
+          "max": 0.03548589339229289,
+          "mean": 0.0004349892163300471,
+          "min": 6.390079484696959e-06
+        },
+        "po_taylor_message_error_L2_WSI": {
+          "SD": 3.5389890509751865e-05,
+          "count": 330,
+          "max": 0.0006355912051215446,
+          "mean": 4.190247404937712e-06,
+          "min": 2.1032640835100038e-08
+        },
+        "po_taylor_message_error_L2_patient": {
+          "SD": 3.555036905414555e-05,
+          "count": 327,
+          "max": 0.0006355912051215446,
+          "mean": 4.22117985670059e-06,
+          "min": 2.1032640835100038e-08
+        },
+        "po_taylor_message_error_L2_query": {
+          "SD": 3.806607014294043e-05,
+          "count": 162752,
+          "max": 0.0011568705302243756,
+          "mean": 4.302999614518607e-06,
+          "min": 2.2802018276288948e-09
+        },
+        "po_taylor_relative_error_L1_WSI": {
+          "SD": 0.0030528538912360506,
+          "count": 330,
+          "max": 0.029259449498628506,
+          "mean": 0.004067817342664876,
+          "min": 0.0006407483728377131
+        },
+        "po_taylor_relative_error_L1_patient": {
+          "SD": 0.003065969616041149,
+          "count": 327,
+          "max": 0.029259449498628506,
+          "mean": 0.004073710729100107,
+          "min": 0.0006407483728377131
+        },
+        "po_taylor_relative_error_L1_query": {
+          "SD": 0.003439262469935368,
+          "count": 162752,
+          "max": 0.05371744743120294,
+          "mean": 0.004090771691115726,
+          "min": 0.00021490261859658948
+        },
+        "po_weighted_centered_RMS_WSI": {
+          "SD": 0.00575249779837732,
+          "count": 330,
+          "max": 0.08548298496355314,
+          "mean": 0.006652450223104366,
+          "min": 0.0012394267738645285
+        },
+        "po_weighted_centered_RMS_patient": {
+          "SD": 0.005775173592292,
+          "count": 327,
+          "max": 0.08548298496355314,
+          "mean": 0.006668484288191813,
+          "min": 0.0012394267738645285
+        },
+        "po_weighted_centered_RMS_query": {
+          "SD": 0.006134714556460451,
+          "count": 162752,
+          "max": 0.11909858247073743,
+          "mean": 0.006698724479129944,
+          "min": 0.0004895940781234076
+        },
+        "po_weighted_centered_variance_WSI": {
+          "SD": 0.00041614726511021434,
+          "count": 330,
+          "max": 0.007492531039517691,
+          "mean": 8.110906112499755e-05,
+          "min": 1.5967433797228488e-06
+        },
+        "po_weighted_centered_variance_patient": {
+          "SD": 0.0004180177052704353,
+          "count": 327,
+          "max": 0.007492531039517691,
+          "mean": 8.160146348616974e-05,
+          "min": 1.5967433797228488e-06
+        },
+        "po_weighted_centered_variance_query": {
+          "SD": 0.000441081820031348,
+          "count": 162752,
+          "max": 0.014184472346539044,
+          "mean": 8.250763233654249e-05,
+          "min": 2.3970236133350937e-07
+        },
+        "po_weighted_delta_mean_WSI": {
+          "SD": 0.11116551495389992,
+          "count": 330,
+          "max": 0.2981424266705848,
+          "mean": -0.017812138536372066,
+          "min": -0.4078549300747101
+        },
+        "po_weighted_delta_mean_patient": {
+          "SD": 0.11104286745191266,
+          "count": 327,
+          "max": 0.2981424266705848,
+          "mean": -0.017780982195781034,
+          "min": -0.4078549300747101
+        },
+        "po_weighted_delta_mean_query": {
+          "SD": 0.11339604227485381,
+          "count": 162752,
+          "max": 0.36842868830777226,
+          "mean": -0.018022197529316067,
+          "min": -0.4426190513668743
+        },
+        "po_weighted_raw_second_moment_WSI": {
+          "SD": 0.024174720922557954,
+          "count": 330,
+          "max": 0.166539563398162,
+          "mean": 0.013197251388480212,
+          "min": 5.2825010545520176e-05
+        },
+        "po_weighted_raw_second_moment_patient": {
+          "SD": 0.024232698409401406,
+          "count": 327,
+          "max": 0.166539563398162,
+          "mean": 0.01317168033659466,
+          "min": 5.2825010545520176e-05
+        },
+        "po_weighted_raw_second_moment_query": {
+          "SD": 0.024788817869212745,
+          "count": 162752,
+          "max": 0.1959378172721557,
+          "mean": 0.013265969639722656,
+          "min": 1.5974441452899827e-06
+        },
+        "po_weighted_value_centered_RMS_WSI": {
+          "SD": 0.25323033937094913,
+          "count": 330,
+          "max": 2.502344156999503,
+          "mean": 0.7121495635685573,
+          "min": 0.3727362468168962
+        },
+        "po_weighted_value_centered_RMS_patient": {
+          "SD": 0.25430032842420186,
+          "count": 327,
+          "max": 2.502344156999503,
+          "mean": 0.7118238275556503,
+          "min": 0.3727362468168962
+        },
+        "po_weighted_value_centered_RMS_query": {
+          "SD": 0.2557913312456552,
+          "count": 162752,
+          "max": 2.7082537406270726,
+          "mean": 0.7124156093001814,
+          "min": 0.2588222545238426
+        },
+        "po_zero_selected_mass_WSI": {
+          "SD": 0.0,
+          "count": 330,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_zero_selected_mass_patient": {
+          "SD": 0.0,
+          "count": 327,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_zero_selected_mass_query": {
+          "SD": 0.0,
+          "count": 162752,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_zero_weighted_delta_energy_WSI": {
+          "SD": 0.0,
+          "count": 330,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_zero_weighted_delta_energy_patient": {
+          "SD": 0.0,
+          "count": 327,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_zero_weighted_delta_energy_query": {
+          "SD": 0.0,
+          "count": 162752,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        }
+      },
+      "optimizer_steps": 0,
+      "partition": "fit",
+      "privacy": {
+        "endpoint_arrays_read": false,
+        "new_probe_fits": 0,
+        "patient_indices_returned": false,
+        "persistent_hooks": false,
+        "raw_maps_returned": false,
+        "raw_patient_risks_returned": false
+      },
+      "role": "inner",
+      "scope": "frozen fit-only label-blind diagnostic; query/WSI/patient moments separately named; ratio undefined cases omitted with explicit counts",
+      "seed": 31,
+      "status": "PASS"
+    },
+    "heldout": {
+      "Taylor_scope": "rho*a0*gate*(delta-weighted_mean); first-order approximation, not assumed exact",
+      "additional_gradient_calls": 0,
+      "additional_model_forward_calls": 3,
+      "additional_operator_calls": 18,
+      "arm": "S16",
+      "batches": 3,
+      "centered_delta_scope": "subtract selected a0*gate-weighted row mean without clipping; test invariance of original update",
+      "checks": {
+        "head_input_reconstruction_max_error": 0.0,
+        "head_projection_reconstruction_max_error": 0.0,
+        "op_centered_delta_invariance_max_error": 4.656612873077393e-10,
+        "op_constant_only_map_max_error": 0.0,
+        "op_map_probability_sum_max_error": 4.802132025361061e-09,
+        "op_numeric_absolute_tolerance": 3.814697265625e-06,
+        "op_recomputed_map_max_error": 0.0,
+        "po_centered_delta_invariance_max_error": 7.450580596923828e-09,
+        "po_constant_only_map_max_error": 0.0,
+        "po_map_probability_sum_max_error": 1.4901161193847656e-08,
+        "po_numeric_absolute_tolerance": 3.814697265625e-06,
+        "po_recomputed_map_max_error": 0.0,
+        "risk_branch_reconstruction_max_error": 0.0
+      },
+      "constant_delta_scope": "original update evaluated with its weighted row mean only; recorded numerical residual, never relabeled literal zero",
+      "fold": 2,
+      "heldout_WSIs": 83,
+      "heldout_patients": 82,
+      "metrics": {
+        "chain_actual_patient_correction_risk": {
+          "SD": 6.01817562415451e-06,
+          "count": 82,
+          "max": 3.081809336435981e-05,
+          "mean": -1.6887073198879866e-07,
+          "min": -2.5625677153584547e-05
+        },
+        "chain_actual_patient_correction_risk_absolute": {
+          "SD": 5.0502178097090835e-06,
+          "count": 82,
+          "max": 3.081809336435981e-05,
+          "mean": 3.2775379847969946e-06,
+          "min": 2.022068557039347e-08
+        },
+        "chain_bounded_correction_risk_WSI": {
+          "SD": 6.01506077134949e-06,
+          "count": 83,
+          "max": 3.081809336435981e-05,
+          "mean": -1.00461010583991e-07,
+          "min": -2.5625677153584547e-05
+        },
+        "chain_bounded_correction_risk_absolute_WSI": {
+          "SD": 5.02710909332266e-06,
+          "count": 83,
+          "max": 3.081809336435981e-05,
+          "mean": 3.304424709614021e-06,
+          "min": 2.022068557039347e-08
+        },
+        "chain_bounded_correction_risk_absolute_patient": {
+          "SD": 5.0502178097090835e-06,
+          "count": 82,
+          "max": 3.081809336435981e-05,
+          "mean": 3.2775379847969946e-06,
+          "min": 2.022068557039347e-08
+        },
+        "chain_bounded_correction_risk_patient": {
+          "SD": 6.01817562415451e-06,
+          "count": 82,
+          "max": 3.081809336435981e-05,
+          "mean": -1.6887073198879866e-07,
+          "min": -2.5625677153584547e-05
+        },
+        "chain_head_projection_Cauchy_bound_WSI": {
+          "SD": 0.00019553346999089664,
+          "count": 83,
+          "max": 0.0014674810288365695,
+          "mean": 0.00013647984866375153,
+          "min": 1.2481908063748601e-05
+        },
+        "chain_head_projection_Cauchy_bound_patient": {
+          "SD": 0.00019599103793079516,
+          "count": 82,
+          "max": 0.0014674810288365695,
+          "mean": 0.00013505065451697922,
+          "min": 1.2481908063748601e-05
+        },
+        "chain_head_projection_WSI": {
+          "SD": 3.466911920400523e-05,
+          "count": 83,
+          "max": 0.00017762681818567216,
+          "mean": -5.790291594846156e-07,
+          "min": -0.0001476992038078606
+        },
+        "chain_head_projection_absolute_WSI": {
+          "SD": 2.897484338940594e-05,
+          "count": 83,
+          "max": 0.00017762681818567216,
+          "mean": 1.904577516690924e-05,
+          "min": 1.1654634590740898e-07
+        },
+        "chain_head_projection_absolute_patient": {
+          "SD": 2.910803552990369e-05,
+          "count": 82,
+          "max": 0.00017762681818567216,
+          "mean": 1.8890807643024677e-05,
+          "min": 1.1654634590740898e-07
+        },
+        "chain_head_projection_efficiency_WSI": {
+          "SD": 0.09123991778340466,
+          "count": 83,
+          "max": 0.33846451816293194,
+          "mean": 0.14766807548246638,
+          "min": 0.002890021200224233
+        },
+        "chain_head_projection_efficiency_patient": {
+          "SD": 0.09173250980296338,
+          "count": 82,
+          "max": 0.33846451816293194,
+          "mean": 0.14788376142868062,
+          "min": 0.002890021200224233
+        },
+        "chain_head_projection_patient": {
+          "SD": 3.4687072333261785e-05,
+          "count": 82,
+          "max": 0.00017762681818567216,
+          "mean": -9.733235653983705e-07,
+          "min": -0.0001476992038078606
+        },
+        "chain_message_L2_after_both_query_averages_WSI": {
+          "SD": 0.0012593272631218472,
+          "count": 83,
+          "max": 0.009451266158238932,
+          "mean": 0.0008789942422492061,
+          "min": 8.038934265929435e-05
+        },
+        "chain_message_L2_after_both_query_averages_patient": {
+          "SD": 0.0012622742152803268,
+          "count": 82,
+          "max": 0.009451266158238932,
+          "mean": 0.0008697895615701984,
+          "min": 8.038934265929435e-05
+        },
+        "chain_message_L2_after_patient_WSI_average": {
+          "SD": 0.0012621903195846125,
+          "count": 82,
+          "max": 0.009451266158238932,
+          "mean": 0.0008696499186161491,
+          "min": 8.038934265929435e-05
+        },
+        "chain_patient_WSI_average_survival_ratio": {
+          "SD": 0.0007692517231315834,
+          "count": 82,
+          "max": 1.0,
+          "mean": 0.9999145275863073,
+          "min": 0.9929912620771914
+        },
+        "chain_tanh_survival_ratio_WSI": {
+          "SD": 0.0,
+          "count": 83,
+          "max": 0.9999999999999954,
+          "mean": 0.9999999995992391,
+          "min": 0.9999999894829047
+        },
+        "chain_tanh_survival_ratio_patient": {
+          "SD": 1.4901161193847656e-08,
+          "count": 82,
+          "max": 0.9999999999999954,
+          "mean": 0.999999999598535,
+          "min": 0.9999999894829047
+        },
+        "op_TV_over_rho_mass_centered_RMS_WSI": {
+          "SD": 0.020102167829883628,
+          "count": 83,
+          "max": 0.4482470810003815,
+          "mean": 0.39942791325124527,
+          "min": 0.3036768126914828
+        },
+        "op_TV_over_rho_mass_centered_RMS_patient": {
+          "SD": 0.020057149295136155,
+          "count": 82,
+          "max": 0.4482470810003815,
+          "mean": 0.39914896026490054,
+          "min": 0.3036768126914828
+        },
+        "op_TV_over_rho_mass_centered_RMS_query": {
+          "SD": 0.022129106917083474,
+          "count": 1992,
+          "max": 0.47232462810396714,
+          "mean": 0.39942791325124527,
+          "min": 0.2761004094701455
+        },
+        "op_actual_change_L1_WSI": {
+          "SD": 0.000698286699663109,
+          "count": 83,
+          "max": 0.0039417882993196445,
+          "mean": 0.0007004731225070503,
+          "min": 5.730362499889452e-05
+        },
+        "op_actual_change_L1_patient": {
+          "SD": 0.000700082544415782,
+          "count": 82,
+          "max": 0.0039417882993196445,
+          "mean": 0.0006953810674077445,
+          "min": 5.730362499889452e-05
+        },
+        "op_actual_change_L1_query": {
+          "SD": 0.0007054383337689438,
+          "count": 1992,
+          "max": 0.00426781119313091,
+          "mean": 0.0007004731225070503,
+          "min": 4.611372423823923e-05
+        },
+        "op_attention_TV_WSI": {
+          "SD": 0.0003491433498315545,
+          "count": 83,
+          "max": 0.0019708941496598222,
+          "mean": 0.0003502365612535251,
+          "min": 2.865181249944726e-05
+        },
+        "op_attention_TV_patient": {
+          "SD": 0.000350041272207891,
+          "count": 82,
+          "max": 0.0019708941496598222,
+          "mean": 0.0003476905337038723,
+          "min": 2.865181249944726e-05
+        },
+        "op_attention_TV_query": {
+          "SD": 0.0003527191668844719,
+          "count": 1992,
+          "max": 0.002133905596565455,
+          "mean": 0.0003502365612535251,
+          "min": 2.3056862119119614e-05
+        },
+        "op_centered_energy_fraction_WSI": {
+          "SD": 0.24903876728718632,
+          "count": 83,
+          "max": 0.9321980047022665,
+          "mean": 0.21393433613410695,
+          "min": 0.0012710051974783086
+        },
+        "op_centered_energy_fraction_patient": {
+          "SD": 0.2504306374383577,
+          "count": 82,
+          "max": 0.9321980047022665,
+          "mean": 0.21469919525325062,
+          "min": 0.0012710051974783086
+        },
+        "op_centered_energy_fraction_query": {
+          "SD": 0.27483010025020665,
+          "count": 1992,
+          "max": 0.9999998729452177,
+          "mean": 0.21393433613410695,
+          "min": 0.000832351995330941
+        },
+        "op_common_energy_fraction_WSI": {
+          "SD": 0.24903876728718632,
+          "count": 83,
+          "max": 0.9987289948025216,
+          "mean": 0.786065663865893,
+          "min": 0.06780199529773343
+        },
+        "op_common_energy_fraction_patient": {
+          "SD": 0.2504306374383577,
+          "count": 82,
+          "max": 0.9987289948025216,
+          "mean": 0.7853008047467493,
+          "min": 0.06780199529773343
+        },
+        "op_common_energy_fraction_query": {
+          "SD": 0.27483010025020665,
+          "count": 1992,
+          "max": 0.9991676480046687,
+          "mean": 0.786065663865893,
+          "min": 1.2705478224363645e-07
+        },
+        "op_conservative_reference_Z_WSI": {
+          "SD": 0.10889193497062946,
+          "count": 83,
+          "max": 1.299868597801711,
+          "mean": 0.9807922403758808,
+          "min": 0.74934584260061
+        },
+        "op_conservative_reference_Z_patient": {
+          "SD": 0.10911996309720395,
+          "count": 82,
+          "max": 1.299868597801711,
+          "mean": 0.9797258296650364,
+          "min": 0.74934584260061
+        },
+        "op_conservative_reference_Z_query": {
+          "SD": 0.10933913615252686,
+          "count": 1992,
+          "max": 1.3268890302129568,
+          "mean": 0.9807922403758808,
+          "min": 0.7416391717005484
+        },
+        "op_delta_message_L2_after_query_average_WSI": {
+          "SD": 0.0011333275202408165,
+          "count": 83,
+          "max": 0.009450741242451233,
+          "mean": 0.0006991057338076909,
+          "min": 2.34540173410478e-05
+        },
+        "op_delta_message_L2_after_query_average_patient": {
+          "SD": 0.0011333816125038672,
+          "count": 82,
+          "max": 0.009450741242451233,
+          "mean": 0.0006878040054043143,
+          "min": 2.34540173410478e-05
+        },
+        "op_delta_message_L2_before_query_average_WSI": {
+          "SD": 0.0011345853951305058,
+          "count": 83,
+          "max": 0.00945231469060003,
+          "mean": 0.0007092881943844972,
+          "min": 2.403288993525834e-05
+        },
+        "op_delta_message_L2_before_query_average_patient": {
+          "SD": 0.0011347308144138953,
+          "count": 82,
+          "max": 0.00945231469060003,
+          "mean": 0.0006980884129706086,
+          "min": 2.403288993525834e-05
+        },
+        "op_delta_message_L2_before_query_average_query": {
+          "SD": 0.00115580448580449,
+          "count": 1992,
+          "max": 0.011960394307789366,
+          "mean": 0.0007092881943844972,
+          "min": 1.976518825394124e-05
+        },
+        "op_delta_message_triangle_bound_WSI": {
+          "SD": 0.00315560784125732,
+          "count": 83,
+          "max": 0.01829332187089311,
+          "mean": 0.00301371613063751,
+          "min": 0.0002643888870488625
+        },
+        "op_delta_message_triangle_bound_patient": {
+          "SD": 0.0031697812107141614,
+          "count": 82,
+          "max": 0.01829332187089311,
+          "mean": 0.003000164520567654,
+          "min": 0.0002643888870488625
+        },
+        "op_delta_message_triangle_bound_query": {
+          "SD": 0.0031841167059183505,
+          "count": 1992,
+          "max": 0.019837316249048772,
+          "mean": 0.00301371613063751,
+          "min": 0.00021299611073929988
+        },
+        "op_eligible_count_WSI": {
+          "SD": 70.09907552190656,
+          "count": 83,
+          "max": 512.0,
+          "mean": 491.4096385542169,
+          "min": 152.0
+        },
+        "op_eligible_count_patient": {
+          "SD": 65.21227521553335,
+          "count": 82,
+          "max": 512.0,
+          "mean": 494.280487804878,
+          "min": 152.0
+        },
+        "op_eligible_count_query": {
+          "SD": 70.09907552190656,
+          "count": 1992,
+          "max": 512.0,
+          "mean": 491.4096385542169,
+          "min": 152.0
+        },
+        "op_head_projection_abs_before_query_average_WSI": {
+          "SD": 2.2551944023947028e-05,
+          "count": 83,
+          "max": 0.00018025675914638364,
+          "mean": 1.2572771562349782e-05,
+          "min": 4.2492736914330936e-07
+        },
+        "op_head_projection_abs_before_query_average_patient": {
+          "SD": 2.2619819899044787e-05,
+          "count": 82,
+          "max": 0.00018025675914638364,
+          "mean": 1.2400231195677816e-05,
+          "min": 4.2492736914330936e-07
+        },
+        "op_head_projection_abs_before_query_average_query": {
+          "SD": 2.3119870936385867e-05,
+          "count": 1992,
+          "max": 0.0002309026604052633,
+          "mean": 1.2572771562349783e-05,
+          "min": 6.893969839438796e-10
+        },
+        "op_head_projection_before_query_average_WSI": {
+          "SD": 2.5187505396296622e-05,
+          "count": 83,
+          "max": 0.00018025675914638364,
+          "mean": 5.642391850489174e-06,
+          "min": -3.997467304846699e-05
+        },
+        "op_head_projection_before_query_average_patient": {
+          "SD": 2.521898713158347e-05,
+          "count": 82,
+          "max": 0.00018025675914638364,
+          "mean": 5.385334658062807e-06,
+          "min": -3.997467304846699e-05
+        },
+        "op_head_projection_before_query_average_query": {
+          "SD": 2.5705377473978177e-05,
+          "count": 1992,
+          "max": 0.0002309026604052633,
+          "mean": 5.642391850489174e-06,
+          "min": -7.337865827139467e-05
+        },
+        "op_message_over_triangle_bound_WSI": {
+          "SD": 0.14546783403540914,
+          "count": 83,
+          "max": 0.7613379795520737,
+          "mean": 0.23234388704039222,
+          "min": 0.04485115729550173
+        },
+        "op_message_over_triangle_bound_patient": {
+          "SD": 0.14525520975570352,
+          "count": 82,
+          "max": 0.7613379795520737,
+          "mean": 0.23045606107203315,
+          "min": 0.04485115729550173
+        },
+        "op_message_over_triangle_bound_query": {
+          "SD": 0.1490199039666184,
+          "count": 1992,
+          "max": 0.7900540603862903,
+          "mean": 0.23234388704039216,
+          "min": 0.041948415111670107
+        },
+        "op_query_average_survival_ratio_WSI": {
+          "SD": 0.04653533156162036,
+          "count": 83,
+          "max": 0.9998335383236487,
+          "mean": 0.9675692734909714,
+          "min": 0.7849742589324402
+        },
+        "op_query_average_survival_ratio_patient": {
+          "SD": 0.04668832876104717,
+          "count": 82,
+          "max": 0.9998335383236487,
+          "mean": 0.9671867482018616,
+          "min": 0.7849742589324402
+        },
+        "op_raw_delta_row_SD_WSI": {
+          "SD": 0.010258157550481433,
+          "count": 83,
+          "max": 0.05479520643052644,
+          "mean": 0.01880667320499811,
+          "min": 0.00507258954113753
+        },
+        "op_raw_delta_row_SD_patient": {
+          "SD": 0.01024865730893078,
+          "count": 82,
+          "max": 0.05479520643052644,
+          "mean": 0.018673855669044687,
+          "min": 0.00507258954113753
+        },
+        "op_raw_delta_row_SD_query": {
+          "SD": 0.010380741692446587,
+          "count": 1992,
+          "max": 0.05859656134255244,
+          "mean": 0.018806673204998108,
+          "min": 0.00462252888898978
+        },
+        "op_raw_delta_row_mean_WSI": {
+          "SD": 0.1129358983181262,
+          "count": 83,
+          "max": 0.2631819354343558,
+          "mean": -0.031098328907326077,
+          "min": -0.28243099176324904
+        },
+        "op_raw_delta_row_mean_patient": {
+          "SD": 0.1132670866049196,
+          "count": 82,
+          "max": 0.2631819354343558,
+          "mean": -0.03208346198559716,
+          "min": -0.28243099176324904
+        },
+        "op_raw_delta_row_mean_query": {
+          "SD": 0.11332036684719397,
+          "count": 1992,
+          "max": 0.28297019383171573,
+          "mean": -0.031098328907326073,
+          "min": -0.2941536675207317
+        },
+        "op_selected_mass_WSI": {
+          "SD": 0.05646384312186773,
+          "count": 83,
+          "max": 0.25008027746346667,
+          "mean": 0.0942598914985699,
+          "min": 0.009418572633022185
+        },
+        "op_selected_mass_patient": {
+          "SD": 0.05668991766475706,
+          "count": 82,
+          "max": 0.25008027746346667,
+          "mean": 0.09419052823001368,
+          "min": 0.009418572633022185
+        },
+        "op_selected_mass_query": {
+          "SD": 0.05678585904149533,
+          "count": 1992,
+          "max": 0.2637651564173211,
+          "mean": 0.09425989149856989,
+          "min": 0.008350085692441667
+        },
+        "op_taylor_absolute_error_L1_WSI": {
+          "SD": 1.5072855051848955e-05,
+          "count": 83,
+          "max": 0.00010361542899120709,
+          "mean": 9.604846520979614e-06,
+          "min": 3.7276683155209027e-07
+        },
+        "op_taylor_absolute_error_L1_patient": {
+          "SD": 1.5143351991231922e-05,
+          "count": 82,
+          "max": 0.00010361542899120709,
+          "mean": 9.539151344362418e-06,
+          "min": 3.7276683155209027e-07
+        },
+        "op_taylor_absolute_error_L1_query": {
+          "SD": 1.5276202707245087e-05,
+          "count": 1992,
+          "max": 0.00011596342130914535,
+          "mean": 9.604846520979612e-06,
+          "min": 2.5441643416405245e-07
+        },
+        "op_taylor_change_L1_WSI": {
+          "SD": 0.0007005740096056108,
+          "count": 83,
+          "max": 0.00395843709933699,
+          "mean": 0.0007011912931383471,
+          "min": 5.744720916835822e-05
+        },
+        "op_taylor_change_L1_patient": {
+          "SD": 0.0007023984344864108,
+          "count": 82,
+          "max": 0.00395843709933699,
+          "mean": 0.000696108646488088,
+          "min": 5.744720916835822e-05
+        },
+        "op_taylor_change_L1_query": {
+          "SD": 0.0007077771583984369,
+          "count": 1992,
+          "max": 0.004289555476140375,
+          "mean": 0.0007011912931383471,
+          "min": 4.623605579181951e-05
+        },
+        "op_taylor_covariance_efficiency_WSI": {
+          "SD": 0.14810523949729534,
+          "count": 83,
+          "max": 0.8535388585285394,
+          "mean": 0.4121788420454738,
+          "min": 0.1849459746726898
+        },
+        "op_taylor_covariance_efficiency_patient": {
+          "SD": 0.14764985581583367,
+          "count": 82,
+          "max": 0.8535388585285394,
+          "mean": 0.4100200153874354,
+          "min": 0.1849459746726898
+        },
+        "op_taylor_covariance_efficiency_query": {
+          "SD": 0.15629891236677232,
+          "count": 1992,
+          "max": 0.9042496460983664,
+          "mean": 0.41217884204547384,
+          "min": 0.11876021343152957
+        },
+        "op_taylor_message_Cauchy_bound_WSI": {
+          "SD": 0.0017171922775129878,
+          "count": 83,
+          "max": 0.011150769072722997,
+          "mean": 0.0015179847267901892,
+          "min": 9.153624738266809e-05
+        },
+        "op_taylor_message_Cauchy_bound_patient": {
+          "SD": 0.0017193979697242008,
+          "count": 82,
+          "max": 0.011150769072722997,
+          "mean": 0.001503228957625609,
+          "min": 9.153624738266809e-05
+        },
+        "op_taylor_message_Cauchy_bound_query": {
+          "SD": 0.0017374091431621897,
+          "count": 1992,
+          "max": 0.013949708849689466,
+          "mean": 0.0015179847267901894,
+          "min": 7.243826610588636e-05
+        },
+        "op_taylor_message_L2_WSI": {
+          "SD": 0.0011417556788162328,
+          "count": 83,
+          "max": 0.009532055606792843,
+          "mean": 0.0007099519375913025,
+          "min": 2.4128665122532392e-05
+        },
+        "op_taylor_message_L2_patient": {
+          "SD": 0.001141978556592267,
+          "count": 82,
+          "max": 0.009532055606792843,
+          "mean": 0.0006987706125295849,
+          "min": 2.4128665122532392e-05
+        },
+        "op_taylor_message_L2_query": {
+          "SD": 0.0011630708020639801,
+          "count": 1992,
+          "max": 0.012090350210096431,
+          "mean": 0.0007099519375913023,
+          "min": 1.9840886749063646e-05
+        },
+        "op_taylor_message_error_L2_WSI": {
+          "SD": 1.283440335753921e-05,
+          "count": 83,
+          "max": 8.503141312239378e-05,
+          "mean": 7.113868419842746e-06,
+          "min": 8.939728963032757e-08
+        },
+        "op_taylor_message_error_L2_patient": {
+          "SD": 1.2911089537215342e-05,
+          "count": 82,
+          "max": 8.503141312239378e-05,
+          "mean": 7.132737704992291e-06,
+          "min": 8.939728963032757e-08
+        },
+        "op_taylor_message_error_L2_query": {
+          "SD": 1.3699330691214231e-05,
+          "count": 1992,
+          "max": 0.00017546248138983742,
+          "mean": 7.113868419842746e-06,
+          "min": 4.505946549448292e-08
+        },
+        "op_taylor_relative_error_L1_WSI": {
+          "SD": 0.005840087803932311,
+          "count": 83,
+          "max": 0.029685914370005145,
+          "mean": 0.010962945142339612,
+          "min": 0.002741463702386398
+        },
+        "op_taylor_relative_error_L1_patient": {
+          "SD": 0.005870055770723904,
+          "count": 82,
+          "max": 0.029685914370005145,
+          "mean": 0.010935280810355148,
+          "min": 0.002741463702386398
+        },
+        "op_taylor_relative_error_L1_query": {
+          "SD": 0.00596360110587215,
+          "count": 1992,
+          "max": 0.03206237678983525,
+          "mean": 0.010962945142339614,
+          "min": 0.002527688635368065
+        },
+        "op_weighted_centered_RMS_WSI": {
+          "SD": 0.009976120596607631,
+          "count": 83,
+          "max": 0.051077709323539756,
+          "mean": 0.018380996674018775,
+          "min": 0.005172419813818248
+        },
+        "op_weighted_centered_RMS_patient": {
+          "SD": 0.009995123825857698,
+          "count": 82,
+          "max": 0.051077709323539756,
+          "mean": 0.018281167432691366,
+          "min": 0.005172419813818248
+        },
+        "op_weighted_centered_RMS_query": {
+          "SD": 0.01013488301931882,
+          "count": 1992,
+          "max": 0.05752455727066791,
+          "mean": 0.018380996674018775,
+          "min": 0.004746996154831425
+        },
+        "op_weighted_centered_variance_WSI": {
+          "SD": 0.000526966502477609,
+          "count": 83,
+          "max": 0.002631866432111399,
+          "mean": 0.00044057689254556635,
+          "min": 2.680247387853262e-05
+        },
+        "op_weighted_centered_variance_patient": {
+          "SD": 0.0005293106523336063,
+          "count": 82,
+          "max": 0.002631866432111399,
+          "mean": 0.00043729683101056895,
+          "min": 2.680247387853262e-05
+        },
+        "op_weighted_centered_variance_query": {
+          "SD": 0.0005375447772749785,
+          "count": 1992,
+          "max": 0.003309074689186352,
+          "mean": 0.00044057689254556635,
+          "min": 2.2533972493984338e-05
+        },
+        "op_weighted_delta_mean_WSI": {
+          "SD": 0.11459119725084696,
+          "count": 83,
+          "max": 0.262146988193262,
+          "mean": -0.02608177272471135,
+          "min": -0.28866147305421747
+        },
+        "op_weighted_delta_mean_patient": {
+          "SD": 0.11483493183382482,
+          "count": 82,
+          "max": 0.262146988193262,
+          "mean": -0.027199936317048794,
+          "min": -0.28866147305421747
+        },
+        "op_weighted_delta_mean_query": {
+          "SD": 0.1150051091872153,
+          "count": 1992,
+          "max": 0.28280386369347915,
+          "mean": -0.026081772724711346,
+          "min": -0.2989371354685189
+        },
+        "op_weighted_raw_second_moment_WSI": {
+          "SD": 0.02143983256258314,
+          "count": 83,
+          "max": 0.083538082570541,
+          "mean": 0.014347010900172374,
+          "min": 9.660685321191322e-05
+        },
+        "op_weighted_raw_second_moment_patient": {
+          "SD": 0.021545594610225198,
+          "count": 82,
+          "max": 0.083538082570541,
+          "mean": 0.014459645543387276,
+          "min": 9.660685321191322e-05
+        },
+        "op_weighted_raw_second_moment_query": {
+          "SD": 0.021529553439117,
+          "count": 1992,
+          "max": 0.08945258603568984,
+          "mean": 0.014347010900172373,
+          "min": 2.70038174921823e-05
+        },
+        "op_weighted_value_centered_RMS_WSI": {
+          "SD": 0.5355460232472447,
+          "count": 83,
+          "max": 3.265776299159967,
+          "mean": 1.774626816468582,
+          "min": 0.5568847478793673
+        },
+        "op_weighted_value_centered_RMS_patient": {
+          "SD": 0.5379013010213175,
+          "count": 82,
+          "max": 3.265776299159967,
+          "mean": 1.7713432537215021,
+          "min": 0.5568847478793673
+        },
+        "op_weighted_value_centered_RMS_query": {
+          "SD": 0.5386051887518919,
+          "count": 1992,
+          "max": 3.8190462477201423,
+          "mean": 1.774626816468582,
+          "min": 0.5447278645069623
+        },
+        "op_zero_selected_mass_WSI": {
+          "SD": 0.0,
+          "count": 83,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "op_zero_selected_mass_patient": {
+          "SD": 0.0,
+          "count": 82,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "op_zero_selected_mass_query": {
+          "SD": 0.0,
+          "count": 1992,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "op_zero_weighted_delta_energy_WSI": {
+          "SD": 0.0,
+          "count": 83,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "op_zero_weighted_delta_energy_patient": {
+          "SD": 0.0,
+          "count": 82,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "op_zero_weighted_delta_energy_query": {
+          "SD": 0.0,
+          "count": 1992,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_TV_over_rho_mass_centered_RMS_WSI": {
+          "SD": 0.024795521315899537,
+          "count": 83,
+          "max": 0.45430842657228704,
+          "mean": 0.40281616772502954,
+          "min": 0.3164819560729353
+        },
+        "po_TV_over_rho_mass_centered_RMS_patient": {
+          "SD": 0.024806920613393593,
+          "count": 82,
+          "max": 0.45430842657228704,
+          "mean": 0.4025289909705862,
+          "min": 0.3164819560729353
+        },
+        "po_TV_over_rho_mass_centered_RMS_query": {
+          "SD": 0.036796036680734646,
+          "count": 40787,
+          "max": 0.49182717304313106,
+          "mean": 0.4027151949479754,
+          "min": 0.22438249906570654
+        },
+        "po_actual_change_L1_WSI": {
+          "SD": 0.000453328244006212,
+          "count": 83,
+          "max": 0.0034983218138222583,
+          "mean": 0.0006643848934162151,
+          "min": 0.00020397435218910687
+        },
+        "po_actual_change_L1_patient": {
+          "SD": 0.00045594286511604367,
+          "count": 82,
+          "max": 0.0034983218138222583,
+          "mean": 0.0006656293621058713,
+          "min": 0.00020397435218910687
+        },
+        "po_actual_change_L1_query": {
+          "SD": 0.0004975918379746721,
+          "count": 40787,
+          "max": 0.0046460628509521484,
+          "mean": 0.0006669292175948202,
+          "min": 5.5423006415367126e-05
+        },
+        "po_attention_TV_WSI": {
+          "SD": 0.000226664122003106,
+          "count": 83,
+          "max": 0.0017491609069111291,
+          "mean": 0.00033219244670810755,
+          "min": 0.00010198717609455343
+        },
+        "po_attention_TV_patient": {
+          "SD": 0.00022797143255802183,
+          "count": 82,
+          "max": 0.0017491609069111291,
+          "mean": 0.00033281468105293563,
+          "min": 0.00010198717609455343
+        },
+        "po_attention_TV_query": {
+          "SD": 0.00024879591898733605,
+          "count": 40787,
+          "max": 0.0023230314254760742,
+          "mean": 0.0003334646087974101,
+          "min": 2.7711503207683563e-05
+        },
+        "po_centered_energy_fraction_WSI": {
+          "SD": 0.14827461307071824,
+          "count": 83,
+          "max": 0.6912683783113616,
+          "mean": 0.10028808466466017,
+          "min": 0.00023929161769198543
+        },
+        "po_centered_energy_fraction_patient": {
+          "SD": 0.14916259103992432,
+          "count": 82,
+          "max": 0.6912683783113616,
+          "mean": 0.10049150551547856,
+          "min": 0.00023929161769198543
+        },
+        "po_centered_energy_fraction_query": {
+          "SD": 0.2205901211966088,
+          "count": 40787,
+          "max": 0.9999999962617224,
+          "mean": 0.10112313954255063,
+          "min": 5.628729338284029e-06
+        },
+        "po_common_energy_fraction_WSI": {
+          "SD": 0.14827461307071868,
+          "count": 83,
+          "max": 0.999760708382308,
+          "mean": 0.8997119153353398,
+          "min": 0.30873162168863844
+        },
+        "po_common_energy_fraction_patient": {
+          "SD": 0.14916259103992452,
+          "count": 82,
+          "max": 0.999760708382308,
+          "mean": 0.8995084944845214,
+          "min": 0.30873162168863844
+        },
+        "po_common_energy_fraction_query": {
+          "SD": 0.22059012119660876,
+          "count": 40787,
+          "max": 0.9999943712706617,
+          "mean": 0.8988768604574494,
+          "min": 3.738277723242493e-09
+        },
+        "po_conservative_reference_Z_WSI": {
+          "SD": 0.10513951115953916,
+          "count": 83,
+          "max": 1.2891775792274938,
+          "mean": 0.9734792068897403,
+          "min": 0.7497941140135824
+        },
+        "po_conservative_reference_Z_patient": {
+          "SD": 0.10546207731613377,
+          "count": 82,
+          "max": 1.2891775792274938,
+          "mean": 0.9725819108001424,
+          "min": 0.7497941140135824
+        },
+        "po_conservative_reference_Z_query": {
+          "SD": 0.10885917271088652,
+          "count": 40787,
+          "max": 1.3210262158809414,
+          "mean": 0.9724117772549703,
+          "min": 0.7297833411970314
+        },
+        "po_delta_message_L2_after_query_average_WSI": {
+          "SD": 0.0006894820369564349,
+          "count": 83,
+          "max": 0.004749170748584243,
+          "mean": 0.0003316179414411023,
+          "min": 1.970410859795481e-05
+        },
+        "po_delta_message_L2_after_query_average_patient": {
+          "SD": 0.0006933867096878878,
+          "count": 82,
+          "max": 0.004749170748584243,
+          "mean": 0.00033380343461445177,
+          "min": 1.970410859795481e-05
+        },
+        "po_delta_message_L2_before_query_average_WSI": {
+          "SD": 0.0006858576743937261,
+          "count": 83,
+          "max": 0.004786862714257458,
+          "mean": 0.0003800931192470317,
+          "min": 6.447719708677061e-05
+        },
+        "po_delta_message_L2_before_query_average_patient": {
+          "SD": 0.0006896152338080344,
+          "count": 82,
+          "max": 0.004786862714257458,
+          "mean": 0.00038270920791109395,
+          "min": 6.447719708677061e-05
+        },
+        "po_delta_message_L2_before_query_average_query": {
+          "SD": 0.0007273069379746868,
+          "count": 40787,
+          "max": 0.007900788991030602,
+          "mean": 0.00038517497430602183,
+          "min": 1.0497405596585802e-05
+        },
+        "po_delta_message_triangle_bound_WSI": {
+          "SD": 0.0009021139231585904,
+          "count": 83,
+          "max": 0.006582652385431932,
+          "mean": 0.0006856288312476961,
+          "min": 0.00016928010998519904
+        },
+        "po_delta_message_triangle_bound_patient": {
+          "SD": 0.000906937689298035,
+          "count": 82,
+          "max": 0.006582652385431932,
+          "mean": 0.0006894279219409122,
+          "min": 0.00016928010998519904
+        },
+        "po_delta_message_triangle_bound_query": {
+          "SD": 0.0009536164556730366,
+          "count": 40787,
+          "max": 0.010224799991741978,
+          "mean": 0.0006934598633071708,
+          "min": 4.2781904123955806e-05
+        },
+        "po_eligible_count_WSI": {
+          "SD": 0.0,
+          "count": 83,
+          "max": 24.0,
+          "mean": 24.0,
+          "min": 24.0
+        },
+        "po_eligible_count_patient": {
+          "SD": 0.0,
+          "count": 82,
+          "max": 24.0,
+          "mean": 24.0,
+          "min": 24.0
+        },
+        "po_eligible_count_query": {
+          "SD": 0.0,
+          "count": 40787,
+          "max": 24.0,
+          "mean": 24.0,
+          "min": 24.0
+        },
+        "po_head_projection_abs_before_query_average_WSI": {
+          "SD": 2.1552786496667746e-05,
+          "count": 83,
+          "max": 0.0001525188194264615,
+          "mean": 1.1266035000192276e-05,
+          "min": 5.997340042362964e-07
+        },
+        "po_head_projection_abs_before_query_average_patient": {
+          "SD": 2.1673608781105887e-05,
+          "count": 82,
+          "max": 0.0001525188194264615,
+          "mean": 1.133861973361255e-05,
+          "min": 5.997340042362964e-07
+        },
+        "po_head_projection_abs_before_query_average_query": {
+          "SD": 2.3475044312790208e-05,
+          "count": 40787,
+          "max": 0.00027932444936595857,
+          "mean": 1.1388687021087998e-05,
+          "min": 2.567617229942698e-10
+        },
+        "po_head_projection_before_query_average_WSI": {
+          "SD": 2.317721167270631e-05,
+          "count": 83,
+          "max": 4.9291439463337695e-05,
+          "mean": -6.22142119632416e-06,
+          "min": -0.0001525188194264615
+        },
+        "po_head_projection_before_query_average_patient": {
+          "SD": 2.3284339404575784e-05,
+          "count": 82,
+          "max": 4.9291439463337695e-05,
+          "mean": -6.3586584127212275e-06,
+          "min": -0.0001525188194264615
+        },
+        "po_head_projection_before_query_average_query": {
+          "SD": 2.5282296814082298e-05,
+          "count": 40787,
+          "max": 8.97754289326258e-05,
+          "mean": -6.448671596259667e-06,
+          "min": -0.00027932444936595857
+        },
+        "po_message_over_triangle_bound_WSI": {
+          "SD": 0.10873278406397668,
+          "count": 83,
+          "max": 0.807025232215876,
+          "mean": 0.4727588559567843,
+          "min": 0.2895032220661241
+        },
+        "po_message_over_triangle_bound_patient": {
+          "SD": 0.10933142038725358,
+          "count": 82,
+          "max": 0.807025232215876,
+          "mean": 0.47315902734503595,
+          "min": 0.2895032220661241
+        },
+        "po_message_over_triangle_bound_query": {
+          "SD": 0.13512705571876998,
+          "count": 40787,
+          "max": 0.8359529967338645,
+          "mean": 0.47225723917659,
+          "min": 0.13767677387208704
+        },
+        "po_query_average_survival_ratio_WSI": {
+          "SD": 0.21159497416000764,
+          "count": 83,
+          "max": 0.9989868099656448,
+          "mean": 0.799116111584709,
+          "min": 0.049013224512652664
+        },
+        "po_query_average_survival_ratio_patient": {
+          "SD": 0.21240072175898206,
+          "count": 82,
+          "max": 0.9989868099656448,
+          "mean": 0.7976413336846461,
+          "min": 0.049013224512652664
+        },
+        "po_raw_delta_row_SD_WSI": {
+          "SD": 0.00513291912340115,
+          "count": 83,
+          "max": 0.034081829824269036,
+          "mean": 0.008763762149732164,
+          "min": 0.002482307229453636
+        },
+        "po_raw_delta_row_SD_patient": {
+          "SD": 0.005160927684647738,
+          "count": 82,
+          "max": 0.034081829824269036,
+          "mean": 0.008744061414799737,
+          "min": 0.002482307229453636
+        },
+        "po_raw_delta_row_SD_query": {
+          "SD": 0.005508366830804593,
+          "count": 40787,
+          "max": 0.03897285095458472,
+          "mean": 0.008708274381094012,
+          "min": 0.0008923235559465338
+        },
+        "po_raw_delta_row_mean_WSI": {
+          "SD": 0.1129358983181262,
+          "count": 83,
+          "max": 0.26318193543435575,
+          "mean": -0.031098328907326077,
+          "min": -0.28243099176324904
+        },
+        "po_raw_delta_row_mean_patient": {
+          "SD": 0.1132670866049196,
+          "count": 82,
+          "max": 0.26318193543435575,
+          "mean": -0.03208346198559715,
+          "min": -0.28243099176324904
+        },
+        "po_raw_delta_row_mean_query": {
+          "SD": 0.11654040459745572,
+          "count": 40787,
+          "max": 0.28734538704156876,
+          "mean": -0.032431937438676485,
+          "min": -0.32512547944982845
+        },
+        "po_selected_mass_WSI": {
+          "SD": 0.01826805365816108,
+          "count": 83,
+          "max": 0.3146780513234635,
+          "mean": 0.265864452124862,
+          "min": 0.20247526203565025
+        },
+        "po_selected_mass_patient": {
+          "SD": 0.0183719670291755,
+          "count": 82,
+          "max": 0.3146780513234635,
+          "mean": 0.265808535832205,
+          "min": 0.20247526203565025
+        },
+        "po_selected_mass_query": {
+          "SD": 0.02038073131240989,
+          "count": 40787,
+          "max": 0.3421215728158131,
+          "mean": 0.26590589356896693,
+          "min": 0.1840846072882414
+        },
+        "po_taylor_absolute_error_L1_WSI": {
+          "SD": 1.1156030583124127e-05,
+          "count": 83,
+          "max": 8.30465677202956e-05,
+          "mean": 4.447427116410848e-06,
+          "min": 2.337488674300945e-07
+        },
+        "po_taylor_absolute_error_L1_patient": {
+          "SD": 1.121902987915424e-05,
+          "count": 82,
+          "max": 8.30465677202956e-05,
+          "mean": 4.4835182244088784e-06,
+          "min": 2.337488674300945e-07
+        },
+        "po_taylor_absolute_error_L1_query": {
+          "SD": 1.21502336617375e-05,
+          "count": 40787,
+          "max": 0.00017386272098225182,
+          "mean": 4.532395982264953e-06,
+          "min": 1.796550796779952e-08
+        },
+        "po_taylor_change_L1_WSI": {
+          "SD": 0.00044991183034435826,
+          "count": 83,
+          "max": 0.0034767673207619053,
+          "mean": 0.0006634367861423269,
+          "min": 0.00020394181273903765
+        },
+        "po_taylor_change_L1_patient": {
+          "SD": 0.0004525070997609733,
+          "count": 82,
+          "max": 0.0034767673207619053,
+          "mean": 0.0006646703279403063,
+          "min": 0.00020394181273903765
+        },
+        "po_taylor_change_L1_query": {
+          "SD": 0.000494211729890263,
+          "count": 40787,
+          "max": 0.004652412758801206,
+          "mean": 0.0006659436172397798,
+          "min": 5.5420711540112605e-05
+        },
+        "po_taylor_covariance_efficiency_WSI": {
+          "SD": 0.11107191830225027,
+          "count": 83,
+          "max": 0.8048664521869149,
+          "mean": 0.49217114219668456,
+          "min": 0.2723615118797338
+        },
+        "po_taylor_covariance_efficiency_patient": {
+          "SD": 0.11167113214406439,
+          "count": 82,
+          "max": 0.8048664521869149,
+          "mean": 0.49171971645650786,
+          "min": 0.2723615118797338
+        },
+        "po_taylor_covariance_efficiency_query": {
+          "SD": 0.14212161095673917,
+          "count": 40787,
+          "max": 0.8728239086320677,
+          "mean": 0.4912178507173234,
+          "min": 0.1156193407818599
+        },
+        "po_taylor_message_Cauchy_bound_WSI": {
+          "SD": 0.0009183963186274337,
+          "count": 83,
+          "max": 0.006853858305754057,
+          "mean": 0.0006711652513488304,
+          "min": 0.0001496224254377406
+        },
+        "po_taylor_message_Cauchy_bound_patient": {
+          "SD": 0.0009231096716251498,
+          "count": 82,
+          "max": 0.006853858305754057,
+          "mean": 0.0006755641388143772,
+          "min": 0.0001496224254377406
+        },
+        "po_taylor_message_Cauchy_bound_query": {
+          "SD": 0.0009655982950449279,
+          "count": 40787,
+          "max": 0.010195251065895534,
+          "mean": 0.0006786487958587038,
+          "min": 3.0763228894121725e-05
+        },
+        "po_taylor_message_L2_WSI": {
+          "SD": 0.000678088638898478,
+          "count": 83,
+          "max": 0.004781636296618043,
+          "mean": 0.00037869144004661206,
+          "min": 6.453633728242758e-05
+        },
+        "po_taylor_message_L2_patient": {
+          "SD": 0.0006817994472812382,
+          "count": 82,
+          "max": 0.004781636296618043,
+          "mean": 0.0003812911554250545,
+          "min": 6.453633728242758e-05
+        },
+        "po_taylor_message_L2_query": {
+          "SD": 0.0007199290094823916,
+          "count": 40787,
+          "max": 0.007897417483872873,
+          "mean": 0.00038370858595869,
+          "min": 1.0495425307193283e-05
+        },
+        "po_taylor_message_error_L2_WSI": {
+          "SD": 1.3839625159956767e-05,
+          "count": 83,
+          "max": 0.00011747476968000192,
+          "mean": 3.318803116651306e-06,
+          "min": 7.395060493192847e-08
+        },
+        "po_taylor_message_error_L2_patient": {
+          "SD": 1.3919598893822296e-05,
+          "count": 82,
+          "max": 0.00011747476968000192,
+          "mean": 3.3561529117097676e-06,
+          "min": 7.395060493192847e-08
+        },
+        "po_taylor_message_error_L2_query": {
+          "SD": 1.4443122965588375e-05,
+          "count": 40787,
+          "max": 0.0001940063434222704,
+          "mean": 3.4185238392805125e-06,
+          "min": 3.814277801640176e-09
+        },
+        "po_taylor_relative_error_L1_WSI": {
+          "SD": 0.004076709402055061,
+          "count": 83,
+          "max": 0.028904256694521645,
+          "mean": 0.004044729079321826,
+          "min": 0.000970843923118624
+        },
+        "po_taylor_relative_error_L1_patient": {
+          "SD": 0.004098141249781456,
+          "count": 82,
+          "max": 0.028904256694521645,
+          "mean": 0.004062896223719027,
+          "min": 0.000970843923118624
+        },
+        "po_taylor_relative_error_L1_query": {
+          "SD": 0.004429923131858266,
+          "count": 40787,
+          "max": 0.03742151722003093,
+          "mean": 0.004068067259572921,
+          "min": 0.0001931033638360501
+        },
+        "po_weighted_centered_RMS_WSI": {
+          "SD": 0.004736155808416375,
+          "count": 83,
+          "max": 0.03542708473809382,
+          "mean": 0.006329703175732937,
+          "min": 0.0018937592366006504
+        },
+        "po_weighted_centered_RMS_patient": {
+          "SD": 0.004762263844007559,
+          "count": 82,
+          "max": 0.03542708473809382,
+          "mean": 0.006347239273347665,
+          "min": 0.0018937592366006504
+        },
+        "po_weighted_centered_RMS_query": {
+          "SD": 0.005118751987815076,
+          "count": 40787,
+          "max": 0.04892605793504018,
+          "mean": 0.006355913623540315,
+          "min": 0.0005618571728685149
+        },
+        "po_weighted_centered_variance_WSI": {
+          "SD": 0.00015529730387341467,
+          "count": 83,
+          "max": 0.0012838293384220523,
+          "mean": 6.540929572436855e-05,
+          "min": 4.075718874740943e-06
+        },
+        "po_weighted_centered_variance_patient": {
+          "SD": 0.0001561765064797132,
+          "count": 82,
+          "max": 0.0012838293384220523,
+          "mean": 6.59033498138432e-05,
+          "min": 4.075718874740943e-06
+        },
+        "po_weighted_centered_variance_query": {
+          "SD": 0.00016713424770189097,
+          "count": 40787,
+          "max": 0.002393759145062908,
+          "mean": 6.659925990266617e-05,
+          "min": 3.156834827038002e-07
+        },
+        "po_weighted_delta_mean_WSI": {
+          "SD": 0.11164905460335328,
+          "count": 83,
+          "max": 0.253933588850462,
+          "mean": -0.03323103249612358,
+          "min": -0.2880132200456655
+        },
+        "po_weighted_delta_mean_patient": {
+          "SD": 0.11198621416115859,
+          "count": 82,
+          "max": 0.253933588850462,
+          "mean": -0.03419152193723057,
+          "min": -0.2880132200456655
+        },
+        "po_weighted_delta_mean_query": {
+          "SD": 0.11534799083654734,
+          "count": 40787,
+          "max": 0.2783942275776077,
+          "mean": -0.034518949837136347,
+          "min": -0.31505378472449497
+        },
+        "po_weighted_raw_second_moment_WSI": {
+          "SD": 0.02185674746448543,
+          "count": 83,
+          "max": 0.08306452594997318,
+          "mean": 0.01409509951785663,
+          "min": 0.00013716321459653568
+        },
+        "po_weighted_raw_second_moment_patient": {
+          "SD": 0.021954911326440167,
+          "count": 82,
+          "max": 0.08306452594997318,
+          "mean": 0.014230648013585248,
+          "min": 0.00013716321459653568
+        },
+        "po_weighted_raw_second_moment_query": {
+          "SD": 0.02268065713829246,
+          "count": 40787,
+          "max": 0.09935122241765508,
+          "mean": 0.01456331614778961,
+          "min": 1.4477388018652469e-06
+        },
+        "po_weighted_value_centered_RMS_WSI": {
+          "SD": 0.22676449740904947,
+          "count": 83,
+          "max": 1.539397191904381,
+          "mean": 0.695389170396471,
+          "min": 0.3651418614976258
+        },
+        "po_weighted_value_centered_RMS_patient": {
+          "SD": 0.22676819810835297,
+          "count": 82,
+          "max": 1.539397191904381,
+          "mean": 0.6981341917636046,
+          "min": 0.3651418614976258
+        },
+        "po_weighted_value_centered_RMS_query": {
+          "SD": 0.228424451438227,
+          "count": 40787,
+          "max": 1.7198442149095754,
+          "mean": 0.6986538074530273,
+          "min": 0.3091804689925801
+        },
+        "po_zero_selected_mass_WSI": {
+          "SD": 0.0,
+          "count": 83,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_zero_selected_mass_patient": {
+          "SD": 0.0,
+          "count": 82,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_zero_selected_mass_query": {
+          "SD": 0.0,
+          "count": 40787,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_zero_weighted_delta_energy_WSI": {
+          "SD": 0.0,
+          "count": 83,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_zero_weighted_delta_energy_patient": {
+          "SD": 0.0,
+          "count": 82,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "po_zero_weighted_delta_energy_query": {
+          "SD": 0.0,
+          "count": 40787,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        }
+      },
+      "optimizer_steps": 0,
+      "partition": "heldout",
+      "privacy": {
+        "endpoint_arrays_read": false,
+        "new_probe_fits": 0,
+        "patient_indices_returned": false,
+        "persistent_hooks": false,
+        "raw_maps_returned": false,
+        "raw_patient_risks_returned": false
+      },
+      "role": "inner",
+      "scope": "frozen heldout label-blind diagnostic; original fitted weights and preprocessing fixed; shallow partition view only, no fitting, epoch selection or endpoint access; query/WSI/patient moments separately named; undefined ratios omitted with explicit counts",
+      "seed": 31,
+      "status": "PASS"
+    },
+    "heldout_partition_view_only": true,
+    "optimizer_steps": 0,
+    "original_partition_unchanged": true,
+    "original_preprocessing_unchanged": true
+  },
+  "existing_Data_loads_protected_endpoints": true,
+  "fit_patients": 327,
+  "fold": 2,
+  "heldout_WSIs": 83,
+  "heldout_patients": 82,
+  "main_dtype": "float64",
+  "matched_primary_bitwise_identical": true,
+  "model_gradients_created": false,
+  "model_values_unchanged": true,
+  "new_training_fits": 0,
+  "off_bitwise_identical": true,
+  "optimizer_calls": 0,
+  "original_receipt_sha256": "3c89e9b9e8cbc1e7d4daa0dcddf7e0b926f4503cfe7fc9296afbb81d4b018f30",
+  "parent_runtime_source": "e7b6383cfc23e4fbb8f94419a88bff5db1113babcb967672f87e0f13c74ba548",
+  "prediction_vectors_replayed": 4,
+  "raw_risks_indices_maps_public": false,
+  "role": "inner",
+  "sampling_uses_DSS_outcomes": false,
+  "seconds": 5.439541588013526,
+  "seed": 31,
+  "selected_epoch": 9,
+  "status": "PASS"
+}

@@ -1,0 +1,147 @@
+{
+  "status": "LOCKED_BEFORE_FIRST_NEW_FORMAL_FIT",
+  "source": "d30dcdc413d57d25aeb041b6ea5ac83835580cad117530ea699d33f35940aaef",
+  "unix_time": 1792221423.6987016,
+  "configuration": {
+    "version": "phase21_relative_attention_operator_control_v1",
+    "parent_commit": "5b2bb3645b125ca09e2e6825706978fc691981f4",
+    "branch": "research/phase21-relative-attention-audit",
+    "seeds": [
+      31,
+      47,
+      83
+    ],
+    "folds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "new_arms": [
+      "DIRECT"
+    ],
+    "reused_arms": [
+      "P16",
+      "S16"
+    ],
+    "new_formal_fits": 30,
+    "reused_formal_models": 60,
+    "hidden": 32,
+    "tokenizer": {
+      "filters": 16
+    },
+    "selective": {},
+    "update": {
+      "direct": "w=a0*g;mu=sum(w*delta)/sum(w);v=g*(delta-mu);a1=(1-rho)*a0+rho*normalize(a0*exp(v));rho=.5",
+      "empty_selected_mass": "exact identity",
+      "no_variance_amplification": true,
+      "same_selector_kernel_encoder_values_head_and_risk_cap": true,
+      "risk_formula": "frozen_J0+unchanged_bounded_pair_head+unchanged_bounded_correction_head",
+      "interpretation": "global conditional-logit normalization vs selected-mass conservation; first-order equivalent at delta=0, both ignore a common row offset; unselected entries can change only through global normalizer"
+    },
+    "training": {
+      "max_epochs": 160,
+      "minimum_epoch": 8,
+      "early_stopping_patience": 40,
+      "validation_ema_alpha": 0.2,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "microbatch_patients": 32,
+      "gradient_clip": 5.0,
+      "dropout": 0.1
+    },
+    "selection": "exact inherited inner-loss-EMA schedule; all15 DIRECT inner epochs locked before any new outer refit; fresh same-seed outer initialization; original controls retain their original independently selected epochs",
+    "primary_contrasts": {
+      "DIRECT-S16": {
+        "DIRECT": 1,
+        "S16": -1
+      },
+      "DIRECT-P16": {
+        "DIRECT": 1,
+        "P16": -1
+      }
+    },
+    "bootstrap": {
+      "draws": 20000,
+      "seed": 210017,
+      "primary_family_tests": 4,
+      "object": "mean of three complete-seed within-fold ratio C; no risk ensemble; one shared within-fold patient bootstrap"
+    },
+    "repair_damage": "heldout comparable pairs only; credit0,.5,1 with abs risk difference<=1e-8 ties; repair=sum positive credit change,damage=sum negative credit change; report both divided by all comparable weight and conditional baseline-error/correct weight; net must equal C delta",
+    "baselines": [
+      "within-checkpoint off vs matched, isolates local operator",
+      "DIRECT vs reused independently trained S16/P16, includes backbone optimization differences",
+      "frozen J0 shared practical anchor"
+    ],
+    "frozen_diagnostics": "all30 original S16 checkpoints; all fit and all heldout patients label-blind attention diagnostics; one attention block, two directions, stage-by-stage not fictitious depth",
+    "no_outer_error_supervision": true,
+    "endpoints": {
+      "primary": "DSS512patients65events",
+      "secondary": "PFI frozen DSS risk transfer only"
+    },
+    "scope": "finite exploratory operator audit in repeatedly developed cohort; no selector ablation, no encoder/head/gate changes, no automatic scaling or budget expansion",
+    "privacy": "patient risks/checkpoints/maps/identifiers/selected gene lists/donor indices/credentials private; anonymous aggregate reports and source only"
+  },
+  "training_files": {
+    "configs/phase10_molecular_groups.json": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+    "configs/phase11_semantic_anchored.json": "0afa4f38031fe32b0bdac850888601c681b9ad5ac74993badd56f73e5b7b3cad",
+    "configs/phase12_c4_confirmation.json": "efa991598eba000f5e51766ddac05b607d8eb42928a28fce4a634fb432e0dfcb",
+    "configs/phase13_rna_information_audit.json": "578008942a04fab3d05cc9e1e08d41f7b4517980a5aee541fa9e3471a904bb06",
+    "configs/phase17_ssd_fusion.json": "279af29732fdd6a0041002a4927425abc2758b08d79fdcd559a58b5048367d1e",
+    "configs/phase17r_conditional_repair.json": "36c0c077b136130282bf6af074574c6f1d47093be4a2fe53414d3e0365703255",
+    "configs/phase19_baseline_sources.json": "9221f2a60b494109fa4741a5cf1fafd53e24fe99dddba159955d34c50e8cedfc",
+    "configs/phase19_clinical_trilinear_attention.json": "7cc7349f8a8016ec485c28d80ea1b8540a53bd1469bef0e8a9f409d07ce31d46",
+    "scripts/run_phase19.py": "6dcb6077cee2d16cb3daf41af583062c412ce5d571907f1f0919dd1c849e460a",
+    "src/phase10_trimodal/data.py": "9e23aefb8b1a82b56525ce5cd7e37d8c5d8324054c8059c243633936021039ea",
+    "src/phase10_trimodal/features.py": "535f4f589168c120bee00a2306190d5bdc315c7412830ff043cda3a27619c919",
+    "src/phase10_trimodal/math.py": "e744e652590e9103ba0b376a7b4c232652789d72b5bb1976e511144bc07c417b",
+    "src/phase13_rna/__init__.py": "ce94f014d5bcee7ddded8e0cc749a2a8397bf514a4c30e76668ebd75cfc666d7",
+    "src/phase13_rna/data.py": "91a119631ca68253cafc200bc6b80919cde4cf4e130a50e6936cb66a68827c63",
+    "src/phase13_rna/math.py": "0be06b393c86b2125198c3553bf07c87da3bc70890c809cfc134ef628f9bebfe",
+    "src/phase17_ssd/__init__.py": "242c763fe3da081ac0fd10f330990098115b4bd7d71f7fc528da6acd8f5434bb",
+    "src/phase17_ssd/data.py": "c20e4aa87c899533d24aa32647816328d3e60db6c301e9e38200bf4c0fe34786",
+    "src/phase17_ssd/losses.py": "631241f056c572136440a60feb8cfbee4c254059b52886ea135fa31a14715b75",
+    "src/phase19_attention/__init__.py": "ecb7b386e0e9ff129d29cfa2673325507fa1ea65e96f515ac375410978bfcb30",
+    "src/phase19_attention/attention.py": "68b9de0b8c3ae63a568a212813c3725bed9af9bbc12ccc0fb61101a211db49f4",
+    "src/phase19_attention/baselines.py": "428ee593b24748685e9e42b9a3f33c381dad2371e24975f7b6af8ba028df52ba",
+    "src/phase19_attention/data.py": "70dc110888e5c4471c1d4249128fa24a108651228341db62188cf9783459d58b",
+    "src/phase19_attention/model.py": "85c6b9063b3e9039a5bbcf1e878e0e500540ad777757a2cd91f7d25834238ee9",
+    "src/phase19_attention/train.py": "e96387af7b46bc3af6c407f5773fdac5e43b0adcf8c880a59a70e2244bea3e4b",
+    "tests/test_phase19_attention.py": "416a8d6f6e7085faa1973b144583e7755ac165ecf488cfc86c8232429e6d9880",
+    "tests/test_phase19_baselines.py": "2185319112e4f348ff8021f20413a690dce9c333e82ba5675ac8deb1bdd11e97",
+    "tests/test_phase19_data.py": "b1f72b4ae47705d945ae55bcba8b1ae4ab98b5c123b44c75683b5c018104c8d7",
+    "tests/test_phase19_model.py": "6d995a2b23ca08e6b06ce0a1bff25f0efb2d70b426320cdb6052ee237f68933a",
+    "tests/test_phase19_training.py": "da4ba73e4f6e040b83a65aaadf986938692f7244310344d60a60f9286bd667f8",
+    "configs/phase20_selective_attention.json": "bd650a9bca14443e097ea6c559b8dacafcc91dc9e10944de74aaaf8cc2298efa",
+    "scripts/run_phase20.py": "3c70b059da5c16e3eaa27ed6ac0cc5d4db68dde50ac5b1f8ee9a99a74dc4f09d",
+    "src/phase20_selective/__init__.py": "32cafbddeafad38c56f851e7d3838e63d333474c3b2adaa7afac971db2319580",
+    "src/phase20_selective/data.py": "e21b7565d80a330f3a9aec1baec7910184f6dc9f5f296ff58ee809b482ae9b8d",
+    "src/phase20_selective/diagnostics.py": "36441221178267721f24cf5647d0a6d9ed16f0fab82ef1b320552d1a01d45335",
+    "src/phase20_selective/model.py": "c89b283639d490430c72c61bb27217ae29017c2c42ccf0f3094b1c1d790ff41b",
+    "src/phase20_selective/operators.py": "c84850ed8a0e822c45878ea60c1cd45d57deaec85ccdad862be9c43ddec0da0f",
+    "src/phase20_selective/provenance.py": "0d17201e2ae965a159afbedae2f5f8d35b0584a9829b8f4fb3c1a052114fadf7",
+    "src/phase20_selective/train.py": "d6f8e01871df2eaabc8d9efc86133ee9a50ce36a8ecf82ae9251f27d8a3e7fa6",
+    "tests/test_phase20_data.py": "9e147d2b4543f2f77733a35be003d077748408c35635fa12c5c003799c583c4b",
+    "tests/test_phase20_diagnostics.py": "98d52cca368106cd68ae6fa768423d8da6b1de8004f56481674d157d54e46ec1",
+    "tests/test_phase20_model.py": "ccab9c376a52628e50dfff13eb71480d82cd6315606a8258995ab0f2b1c131c2",
+    "tests/test_phase20_operators.py": "b8309ea519a96bd1684c5fead2c3a91b5f0a6318a7efb0536c3916c170dabc2f",
+    "tests/test_phase20_training.py": "97a4b6078d02bcf434e0b8d9f6edd550e8f1ca5e5102120d1544b9befb0be705",
+    "configs/phase21_relative_attention.json": "b7cf7dca9fab9594f9adfcecdc78086309176e14b0a21e0375634c7534b563f8",
+    "scripts/prepare_phase21.py": "ab27e27164a22c5a86a0eb9af9d5cc7f525fddce660eb2503456ebfd52fcec25",
+    "scripts/run_phase21.py": "1a78050c84b7e2ca86c7bad291bd05a9a628239ae63c2583a8c97a79769b806f",
+    "scripts/schedule_phase21.py": "e4121e425d8a52e2e7f429afc4f7efb3532baa0f57f6dff4f0172cc8c9ec17c2",
+    "scripts/start_phase21.py": "04fbb3b804eaade0ae2e02fec1d12e30c81075d4ad758ab062b8f2cb98f283e5",
+    "src/phase21_relative/__init__.py": "feffe061e022efdc57bbf0a2023deed7cd2892b451408fe161d0a9c4a0b06f4b",
+    "src/phase21_relative/data.py": "fd6b5227e9340ba7fd4f114ae7ee2fece7ac511ee65842cb194377ae0c1ac09e",
+    "src/phase21_relative/diagnostics.py": "b4863ffe680f96e5ff7406e68974fb5a72a6c6d586aa32e6b68ca8764bae6745",
+    "src/phase21_relative/evaluation.py": "e498bac66353b347c6b94ac30621a2d31dc852c1b805f726f4f60c58d3504d6d",
+    "src/phase21_relative/model.py": "ff048aaa5785e8aac494f95b3a0e9f630b1bdec03081c37863e0459a83aaea83",
+    "src/phase21_relative/operators.py": "1d3be8af63af6cfb13855418987c3bfb14975f368ea726a36ce76ec3bf38e8c2",
+    "src/phase21_relative/train.py": "103ecac7cd2d04072ec6accf7b3d42813f08f1dd1e37d4dbc1206ab2db68968b",
+    "tests/test_phase21_diagnostics.py": "a9f782f183984aab70e79efa4af03ddc8b8498260cfab71ba905cef5dfdc60fa",
+    "tests/test_phase21_evaluation.py": "8d18520a42a7f08049c4a570e17de6b3319e9d78238686873be701f16396af23",
+    "tests/test_phase21_operator.py": "a35d067bea90e172983da23682395b3b460078c8427c852253d5c0af258cc261"
+  },
+  "qualification_sha256": "2b8ef1f94995bcb2eea632f07dbda46ce8e9c8b00390939bd90f303982c16b04"
+}

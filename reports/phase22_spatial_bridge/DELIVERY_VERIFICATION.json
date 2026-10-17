@@ -1,0 +1,131 @@
+{
+  "artifacts": {
+    "A_test_completed": true,
+    "A_test_selected_arm_only": true,
+    "B_validation_and_test_completed": true,
+    "all_private_archives_hash_verified": true,
+    "private_archives": {
+      "final_evaluation": {
+        "archive_members_verified_without_extracting_small_files": true,
+        "archive_sha256": "f5439744cd667f5d856d508fc11ac42683a0c6a06d17e7678630b15df1b1bc4d",
+        "compressed_bytes": 490135393,
+        "files": 1748,
+        "server_working_files_retained": true,
+        "status": "COMPLETE_HASH_VERIFIED",
+        "uncompressed_bytes": 496913011
+      },
+      "frozen_training": {
+        "archive_sha256": "4ade20a55faddb1c3646a217dfb93bc9f90ae109b8448d12dc3acd93c5830ef3",
+        "compressed_bytes": 237640277,
+        "files": 133,
+        "server_working_files_retained": true,
+        "status": "COMPLETE_HASH_VERIFIED",
+        "uncompressed_bytes": 246710861
+      }
+    },
+    "server_frequent_assets_retained": true
+  },
+  "credentials_public": false,
+  "formal_fits": 9,
+  "historical_bytes_unchanged": true,
+  "limitations": [
+    "precommit_receipt_does_not_claim_its_own_commit_or_remote_push",
+    "only_three_test_donors",
+    "B_gate_not_supported;stage_C_not_unlocked",
+    "fixed_100_step_large_lambda_numerical_failures_retained_not_scientific_rejection"
+  ],
+  "parent": {
+    "all_inherited_tracked_bytes_unchanged": true,
+    "branch": "research/phase22-spatially-grounded-assimilation",
+    "inherited_tracked_files_verified": 2508,
+    "new_tracked_and_staged_paths_within_allowlist": true,
+    "parent_commit": "dd9bddd943ab1484a224f28fe456bc34d0a96d1f",
+    "private_parent_snapshot_sha256": "7dfe32a4ed2af2dfe7a5c605e7a80663021e97b2366cd5f237a1e81812f9b634",
+    "status": "PASS"
+  },
+  "patient_level_outputs_public": false,
+  "privacy": {
+    "credentials_public": false,
+    "failed_state_arrays_public": false,
+    "gene_lists_public": false,
+    "identifiers_public": false,
+    "position_arrays_public": false,
+    "weights_public": false
+  },
+  "publication": {
+    "branch": "research/phase22-spatially-grounded-assimilation",
+    "final_manifest_separate_from_this_precommit_receipt": true,
+    "formal_A_B_sources_match_run_hashes": true,
+    "local_files_audited_before_this_report": 46,
+    "push_status_not_claimed_by_this_precommit_receipt": true,
+    "server_public_bytes_before_this_receipt_update": 647054,
+    "server_public_files_audited": 47,
+    "status": "SERVER_ALLOWLIST_PARENT_AND_FROZEN_SOURCE_IDENTITY_PASS"
+  },
+  "schema_version": "phase22_precommit_delivery_verification_v1",
+  "scope": "actual_frozen_A_B_artifacts_and_anonymous_release_candidate",
+  "source_hashes": {
+    "configs/phase22_spatial_bridge_runtime.json": "95351234c909d3b0cdfe3ebd1f179800f433f07df324f835fcd2893839a545cf",
+    "scripts/download_phase22.py": "0f110c861104254aee5efca9dbb478347e59676b2d58f02d561b0d0a8eb044c7",
+    "scripts/evaluate_phase22_external_spatial.py": "2e398ef72b85093e07126bd7261c4c2b784dc07a0e27093649ab2528d9390be4",
+    "scripts/extract_phase22_uni2.py": "4218ecdb3d5572be53ef7cee698604296257f599a83816bff5d329b8e719dcf6",
+    "scripts/fetch_phase22_assets.py": "0f05137be9d7f51be7d606f0a244d3e2408981337cfc9dec8f68272d9c9a30f6",
+    "scripts/orchestrate_phase22_a.py": "48f688f639d7a57ad1e0847e718883c387b87703d3c00fc228b757dee08efeb1",
+    "scripts/package_phase22.py": "c06c91d9a9d3a6c5abb889bafccaf4ef0c353e08caff3f3ff67f970232f084a9",
+    "scripts/phase22_working_copy.py": "81a07b1b550785f8a073f7fc8bbf87348bb7accb40adfec3a5279eb30d26a4d3",
+    "scripts/qualify_phase22_spatial_data.py": "47ab9e40d51e1aa74c460a4f626e94db293aee2605492cd4556a5951f6d2efd3",
+    "scripts/report_phase22_results.py": "c7c7e0be1499971df2f6e17e91932c97c4c39956e4c5582f2acdabbfcdffc786",
+    "scripts/run_phase22_external_spatial.py": "e2ec0a270157168f5de1512a0ad5370bcc5093ff9b33d0bac1d67600069e4df6",
+    "scripts/run_phase22_sampling_audit.py": "ec3f44982eb0d9161091174f2cd1416768120a28d6099ab20a812e0b6eb79948",
+    "scripts/validate_phase22_artifacts.py": "1a67f4e4a310355ed08be823b518f42364b70cb392aa724e5a8fc9355d2203b4",
+    "src/phase22_spatial_bridge/__init__.py": "b1def0b5eb30c03c568a65486d4c963e0f6abacef0bc29937b6b03e83125c184",
+    "src/phase22_spatial_bridge/data_contract.py": "a2546b425738271cbafdb99c7fcaa6d29aa8f9c025321ae2a70f3271db7d6c33",
+    "src/phase22_spatial_bridge/measurement_scale.py": "acf25f1ae4e833c684d32a22564fe2cc23626ada4732b08fa785d91be7e027b9",
+    "src/phase22_spatial_bridge/molecular_dictionary.py": "7901d16067b464d8494488e6a65e642af1680a63191af9241fe42307774c5ca8",
+    "src/phase22_spatial_bridge/partial_measurement_projection.py": "bda865ee93a747dc0f1b82a8e2c4e4248b58a294f4acf5dd78c4c6ab34202bd2",
+    "src/phase22_spatial_bridge/sampling_simulation.py": "416db8666680691fb484cb1dcc83356c3251ad6559b0e914afc591a5b3d4f4b5",
+    "src/phase22_spatial_bridge/spatial_encoder.py": "4a55a2e9a9e08640098f206be9e5abf2a1527ca1a837b11c7f2d78df9cc56eca",
+    "src/phase22_spatial_bridge/strank_objective.py": "976aa7e7abd4d517afad4ce936373f8be78436068344d81ad3d07a43a628852f",
+    "tests/test_phase22_data_contract.py": "04672163272f14d420ab391d9e0c3fc8dc50d1b0656057e65ba5bd976340a36c",
+    "tests/test_phase22_dictionary_qualification.py": "774f926d2ae7d72c488d37ea3016ca20f010b7fa2cdfdc5034eb90dc2a734f20",
+    "tests/test_phase22_external_encoder.py": "6cabb322012487a3fd783bab4591b6526cb77aa974f020a75ecae0d1e16ec5ed",
+    "tests/test_phase22_measurement_scale.py": "9bafbd6f99f307a7fdf712fa3a032c891e9e8e976d75700ffb3031daf5635d10",
+    "tests/test_phase22_projection.py": "fe9dbd8a7628a64750dd5e529436d28e5c092e959470fda3ead9a239f8f2bb17",
+    "tests/test_phase22_sampling_report.py": "83b26c12b9a068aa36deaaffe61d62d01c9ca9602f0e312b92ee589ed063e161",
+    "tests/test_phase22_sampling_simulation.py": "f12b54086a726c577346e7a6ff18d720705a9b4876259dc9fca16e5835240b25",
+    "tests/test_phase22_strank.py": "a21e5f160db8dac11324ab20ecf2b59bda5d7e96f8e9b36ba7990eae3c167866"
+  },
+  "status": "PASS_PRECOMMIT_ARTIFACT_VERIFICATION",
+  "tests": {
+    "cross_report_consistency": {
+      "checks": 71,
+      "public_report_and_frozen_protocol_values_equal": true,
+      "status": "PASS"
+    },
+    "dictionary_budget_repair_targeted_followup": {
+      "counted_as_additional_unique_tests": false,
+      "status": "PASS",
+      "tests": 3
+    },
+    "independent_A_replay": {
+      "cells": 9,
+      "status": "PASS_INDEPENDENT_REPLAY",
+      "test_expression_read": false
+    },
+    "independent_B_recalculation": {
+      "B1_spatial_rank_invariance": true,
+      "failed_states_hash_verified": 448,
+      "maximum_absolute_statistic_difference": 0,
+      "paired_point_and_bootstrap_intervals_equal": true,
+      "status": "PASS",
+      "test_cells": 180,
+      "validation_cells": 1056
+    },
+    "phase22_suite": {
+      "default_TEMP_workaround": "workspace_basetemp;cacheprovider_disabled",
+      "result": "115 passed in 18.20s",
+      "status": "PASS",
+      "unique_tests": 115
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "phase22_external_st_qualification_public_v1",
+  "qualification_status": "PASS_EXTERNAL_ST_DATA_CONTRACT",
+  "source_repository": "MahmoodLab/hest",
+  "source_revision": "7e8d5a0b0aace41d8c8ec0f6ecea80e4ad2a61ec",
+  "locked_split_sha": "ca560935440e117c5d70d55ce14ea1c5f524bbad2f2ab261d0bf7ef7a63a08fa",
+  "planned_sections": 16,
+  "sections_ready": 16,
+  "sections_pending": 0,
+  "sections_failed": 0,
+  "ready_sections_by_split": {
+    "train": 8,
+    "validation": 4,
+    "test": 4
+  },
+  "ready_donors_by_split": {
+    "train": 4,
+    "validation": 2,
+    "test": 3
+  },
+  "ready_sections_by_assay": {
+    "Visium": 13,
+    "Xenium": 3
+  },
+  "fixed_gene_count": 378,
+  "gene_contract": {
+    "rule": "exact_named_measurement_vocabulary_intersection_target_finite_gene_metadata_no_expression_value_selection",
+    "panel_json_sha256": "410de908eb55a098e65489f31179801558c72d601ae5a608d1f08dfe790678eb",
+    "target_gene_json_sha256": "02e21d15ad12f77ae9ad6168fb5d95d55236bd863ac7487d5220778ccbaf5a37",
+    "panel_named_genes": 419,
+    "panel_control_names_excluded": 0,
+    "selected_genes": 378,
+    "panel_provenance_notes": [
+      "Exact symbols only; alias reconciliation not performed",
+      "Visium validation documents stored matrix var vocabulary, not proven independent assay panel inventory",
+      "Control and deprecated removal by names requires official panel confirmation",
+      "No TCGA expression or DSS accessed"
+    ],
+    "alias_reconciliation": false
+  },
+  "missing_downloads_are_resumable": true,
+  "donor_identity_split_checked": true,
+  "exact_duplicate_source_files_crossing_splits": 0,
+  "actual_spatial_or_survival_model_fits": 0,
+  "survival_outcomes_read": false,
+  "historical_embeddings_reused": false,
+  "UNI2_feature_extraction_qualification": "SEPARATE_REQUIRED_GATE",
+  "original_WSI_image_sha": "NOT_AVAILABLE_PATCH_DERIVATIVES_VERIFIED_INSTEAD",
+  "known_foundation_pretraining_overlap": "UNKNOWN_NOT_VERIFIED",
+  "license_status": "SOURCE_DECLARATIONS_RECORDED_VERSION_AND_WEIGHT_LICENSE_ARE_SEPARATE",
+  "local_ST_data_qualification_is_not_TCGA_bulk_assay_qualification": true,
+  "integer_native_crop_tolerance": "abs(actual_um-112)<=0.5*source_mpp+1e-6",
+  "image_and_expression_capture_footprints_recorded_separately": true,
+  "failure_categories": {},
+  "data_locations": "private_E_disk_runtime_only"
+}

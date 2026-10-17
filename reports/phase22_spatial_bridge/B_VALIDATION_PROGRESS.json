@@ -1,0 +1,44 @@
+{
+  "actual_new_cells_this_invocation": 1056,
+  "all_failures_retained": true,
+  "completed_cells": 1056,
+  "expected_cells": 1056,
+  "formal_model_fits": 0,
+  "not_converged_cells": 448,
+  "pending_cells": 0,
+  "plan_sha256": "761c963780fd48ccf89140ed8bab4fdadf36abde8ad4a902e1b5a354fb4600ce",
+  "projection_solver_calls": 960,
+  "projection_solver_iterations": 50655,
+  "schema": "phase22_sampling_audit_v2",
+  "serial_section_real_overlap_evaluated": false,
+  "solver_max_iterations": 100,
+  "source_measurement_eligibility": {
+    "by_assay": {
+      "Visium": {
+        "eligible_donors": 2,
+        "eligible_sections": 4,
+        "ineligible_donors": 0,
+        "ineligible_sections": 0,
+        "ineligible_status": null,
+        "projection_evaluated_in_assay": true,
+        "source_donors": 2,
+        "source_sections": 4,
+        "unmeasured_dictionary_gene_count_by_ineligible_section": []
+      }
+    },
+    "eligible_assays": [
+      "Visium"
+    ],
+    "eligible_sections": 4,
+    "fixed_train_dictionary_preserved": true,
+    "fully_ineligible_assays": [],
+    "gate_generalization_to_ineligible_assays": false,
+    "ineligible_sections": 0,
+    "no_zero_imputation_or_test_gene_reselection": true,
+    "policy": "full_fixed_dictionary_required_for_B;test_only_partial_sections_ineligible;validation_partial_is_error",
+    "source_sections": 4
+  },
+  "stage": "validation",
+  "status": "COMPLETE",
+  "synthetic_same_view_and_subdomain_only": true
+}

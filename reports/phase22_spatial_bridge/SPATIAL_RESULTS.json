@@ -1,0 +1,1945 @@
+{
+  "A_gate": "PASS_CANDIDATE",
+  "candidate_only": true,
+  "independent_external_confirmation": false,
+  "limitations": [
+    "two_source_studies_and_two_validation_donors",
+    "three_test_donors_not_three_independent_research_studies",
+    "initialization_seeds_do_not_increase_independent_donor_count",
+    "unknown_foundation_model_pretraining_overlap",
+    "sampled_training_regions_versus_full_section_validation_and_test",
+    "A_partial_measurement_uses_measured_gene_composition;B_requires_full_fixed_dictionary",
+    "fixed_model_donor_bootstrap_is_not_full_pipeline_retraining_uncertainty",
+    "no_TCGA_assay_transform_or_target_image_footprint_qualification_implied"
+  ],
+  "no_DSS_or_PFI": true,
+  "schema_version": "phase22_spatial_results_v1",
+  "scope": "external_ST_A_only",
+  "selected_arm": "A1",
+  "selection": {
+    "A_gate": "PASS_CANDIDATE",
+    "DSS_or_PFI_used": false,
+    "candidate_only": true,
+    "complexity_rule": "retain_A1_if_each_seed_A1_minus_A0_positive; retain_A2_only_after_A1_and_each_seed_A2_minus_A1_positive",
+    "data_qualification_sha256": "31e80fe72f09496215099746d660d34ac63fead093f9bb3ca3fcf385584e3a03",
+    "delta_A1_minus_A0": [
+      0.002852186981838617,
+      0.006955858679367752,
+      0.0026843413068182165
+    ],
+    "delta_A2_minus_A1": [
+      0.0021107685810174415,
+      -0.00020135712222031643,
+      0.002905076056430214
+    ],
+    "dictionary_npz_sha256": "67c66f76a40d7b0ee4cddf4b6fe38264483fd1deb6f50ded5c4b66c5512fe2b5",
+    "gate_is_not_statistical_significance": true,
+    "gate_metric": "donor_equal_within_section_gene_Spearman",
+    "gate_rule": "selected_arm_all_three_initialization_seeds_positive",
+    "independent_external_confirmation": false,
+    "limitations": [
+      "two_validation_donors",
+      "two_studies_total",
+      "unknown_UNI2_pretraining_overlap",
+      "fixed_model_selection_not_retraining_uncertainty"
+    ],
+    "retained_A1": true,
+    "retained_A2": false,
+    "selected_arm": "A1",
+    "selected_seeds": [
+      31,
+      47,
+      83
+    ],
+    "source_hashes": {
+      "scripts/evaluate_phase22_external_spatial.py": "2e398ef72b85093e07126bd7261c4c2b784dc07a0e27093649ab2528d9390be4",
+      "scripts/run_phase22_external_spatial.py": "e2ec0a270157168f5de1512a0ad5370bcc5093ff9b33d0bac1d67600069e4df6",
+      "src/phase22_spatial_bridge/measurement_scale.py": "acf25f1ae4e833c684d32a22564fe2cc23626ada4732b08fa785d91be7e027b9",
+      "src/phase22_spatial_bridge/molecular_dictionary.py": "7901d16067b464d8494488e6a65e642af1680a63191af9241fe42307774c5ca8",
+      "src/phase22_spatial_bridge/spatial_encoder.py": "4a55a2e9a9e08640098f206be9e5abf2a1527ca1a837b11c7f2d78df9cc56eca",
+      "src/phase22_spatial_bridge/strank_objective.py": "976aa7e7abd4d517afad4ce936373f8be78436068344d81ad3d07a43a628852f"
+    },
+    "split_lock_sha256": "ca560935440e117c5d70d55ce14ea1c5f524bbad2f2ab261d0bf7ef7a63a08fa",
+    "test_used_for_selection": false,
+    "validation_scores_by_seed": {
+      "A0": [
+        0.11781392501501484,
+        0.11537675723449409,
+        0.1167185282986153
+      ],
+      "A1": [
+        0.12066611199685345,
+        0.12233261591386184,
+        0.11940286960543352
+      ],
+      "A2": [
+        0.1227768805778709,
+        0.12213125879164152,
+        0.12230794566186373
+      ]
+    }
+  },
+  "status": "COMPLETE",
+  "test": {
+    "aggregate": [
+      {
+        "arm": "A1",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 374.0,
+            "mean": 376.6666666666667,
+            "upper95": 378.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.11359299576496505,
+            "mean": 0.19577383427726727,
+            "upper95": 0.23704334708813626
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 5.4664144064355495,
+            "mean": 5.644883783769662,
+            "upper95": 5.854124686199815
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3417.0,
+            "mean": 3617.5,
+            "upper95": 3815.5
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 5.991277239905785e-05,
+            "mean": 7.126461775327414e-05,
+            "upper95": 9.025544519035758e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.29586504842352795,
+            "mean": 0.34258670132956937,
+            "upper95": 0.37606027166340245
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 374.0,
+            "mean": 376.6666666666667,
+            "upper95": 378.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.48951529632317836,
+            "mean": 0.5325093975239792,
+            "upper95": 0.5707280609903178
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.757546004194967,
+            "mean": 4.803058194513358,
+            "upper95": 4.861243362615021
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3417.0,
+            "mean": 3617.5,
+            "upper95": 3815.5
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2.2290487646334952e-05,
+            "mean": 2.8588520973001072e-05,
+            "upper95": 4.020308915329042e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.4958921927897686,
+            "mean": 0.5306364964863007,
+            "upper95": 0.565911306042885
+          }
+        },
+        "seed": 31,
+        "split": "test"
+      },
+      {
+        "arm": "A1",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 374.0,
+            "mean": 376.6666666666667,
+            "upper95": 378.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.1867496532847813,
+            "mean": 0.24623104853586786,
+            "upper95": 0.27923125160428836
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 5.307237584378468,
+            "mean": 5.502248428467117,
+            "upper95": 5.62608371173111
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3417.0,
+            "mean": 3617.5,
+            "upper95": 3815.5
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 5.416120764372641e-05,
+            "mean": 7.027708269956999e-05,
+            "upper95": 9.412801624207922e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.36217859463473495,
+            "mean": 0.3738672037606849,
+            "upper95": 0.3919673916220878
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 374.0,
+            "mean": 376.6666666666667,
+            "upper95": 378.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.48951529632317836,
+            "mean": 0.5325093975239792,
+            "upper95": 0.5707280609903178
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.757546004194967,
+            "mean": 4.803058194513358,
+            "upper95": 4.861243362615021
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3417.0,
+            "mean": 3617.5,
+            "upper95": 3815.5
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2.2290487646334952e-05,
+            "mean": 2.8588520973001072e-05,
+            "upper95": 4.020308915329042e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.4958921927897686,
+            "mean": 0.5306364964863007,
+            "upper95": 0.565911306042885
+          }
+        },
+        "seed": 47,
+        "split": "test"
+      },
+      {
+        "arm": "A1",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 374.0,
+            "mean": 376.6666666666667,
+            "upper95": 378.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.19525061078770908,
+            "mean": 0.23710018039893746,
+            "upper95": 0.26169081928080595
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 5.397001747550381,
+            "mean": 5.632068166343721,
+            "upper95": 5.795670197349668
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3417.0,
+            "mean": 3617.5,
+            "upper95": 3815.5
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 6.571789488654455e-05,
+            "mean": 8.03920826906391e-05,
+            "upper95": 0.00010579831156644688
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.35849477177534556,
+            "mean": 0.3677745977356333,
+            "upper95": 0.38167770177438687
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 374.0,
+            "mean": 376.6666666666667,
+            "upper95": 378.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.48951529632317836,
+            "mean": 0.5325093975239792,
+            "upper95": 0.5707280609903178
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.757546004194967,
+            "mean": 4.803058194513358,
+            "upper95": 4.861243362615021
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3417.0,
+            "mean": 3617.5,
+            "upper95": 3815.5
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2.2290487646334952e-05,
+            "mean": 2.8588520973001072e-05,
+            "upper95": 4.020308915329042e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.4958921927897686,
+            "mean": 0.5306364964863007,
+            "upper95": 0.565911306042885
+          }
+        },
+        "seed": 83,
+        "split": "test"
+      }
+    ],
+    "context_scope": "FULL_SECTION_GRAPH",
+    "gene_metric_unit": "composition_on_measured_dictionary_genes",
+    "initialization_seeds_not_independent_donors": true,
+    "no_DSS_or_PFI": true,
+    "no_ST_test_model_selection": true,
+    "oracle_role": "fixed_D_expression_reconstruction_reference_not_image_input_nor_ranking_upper_bound",
+    "split": "test",
+    "status": "COMPLETE",
+    "zero_count_spots_excluded_from_spatial_metrics": true
+  },
+  "validation": {
+    "aggregate": [
+      {
+        "arm": "A0",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0718161425358853,
+            "mean": 0.11781392501501484,
+            "upper95": 0.16381170749414437
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.239943300869593,
+            "mean": 4.757455410716231,
+            "upper95": 5.274967520562869
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.006342596940245e-05,
+            "mean": 4.2628507924059094e-05,
+            "upper95": 4.519358987871574e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.23493684286241906,
+            "mean": 0.2619507367866012,
+            "upper95": 0.2889646307107833
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.22849543113235118,
+            "mean": 0.25087287354441384,
+            "upper95": 0.2732503159564765
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.9830556567036757,
+            "mean": 4.375206892593527,
+            "upper95": 4.767358128483377
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.3136318592689466e-05,
+            "mean": 1.7052792239712366e-05,
+            "upper95": 2.0969265886735266e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.32079183922160104,
+            "mean": 0.33935631518549025,
+            "upper95": 0.3579207911493794
+          }
+        },
+        "seed": 31,
+        "split": "validation"
+      },
+      {
+        "arm": "A0",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.06953420234344708,
+            "mean": 0.11537675723449409,
+            "upper95": 0.16121931212554108
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.262414651287402,
+            "mean": 4.756854743029998,
+            "upper95": 5.251294834772594
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.950134696908493e-05,
+            "mean": 4.1816817085696406e-05,
+            "upper95": 4.4132287202307886e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.23298679043116838,
+            "mean": 0.25971829269618446,
+            "upper95": 0.28644979496120054
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.22849543113235118,
+            "mean": 0.25087287354441384,
+            "upper95": 0.2732503159564765
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.9830556567036757,
+            "mean": 4.375206892593527,
+            "upper95": 4.767358128483377
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.3136318592689466e-05,
+            "mean": 1.7052792239712366e-05,
+            "upper95": 2.0969265886735266e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.32079183922160104,
+            "mean": 0.33935631518549025,
+            "upper95": 0.3579207911493794
+          }
+        },
+        "seed": 47,
+        "split": "validation"
+      },
+      {
+        "arm": "A0",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.07159638908564023,
+            "mean": 0.1167185282986153,
+            "upper95": 0.16184066751159037
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.2902836816904095,
+            "mean": 4.7651756638061435,
+            "upper95": 5.240067645921878
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.943116854270214e-05,
+            "mean": 4.161743766307086e-05,
+            "upper95": 4.380370678343958e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.23314849545977503,
+            "mean": 0.2597991562541255,
+            "upper95": 0.28644981704847594
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.22849543113235118,
+            "mean": 0.25087287354441384,
+            "upper95": 0.2732503159564765
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.9830556567036757,
+            "mean": 4.375206892593527,
+            "upper95": 4.767358128483377
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.3136318592689466e-05,
+            "mean": 1.7052792239712366e-05,
+            "upper95": 2.0969265886735266e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.32079183922160104,
+            "mean": 0.33935631518549025,
+            "upper95": 0.3579207911493794
+          }
+        },
+        "seed": 83,
+        "split": "validation"
+      },
+      {
+        "arm": "A1",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.07516153865861969,
+            "mean": 0.12066611199685345,
+            "upper95": 0.16617068533508722
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.182931267610174,
+            "mean": 4.707065886474241,
+            "upper95": 5.2312005053383075
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.848525518185905e-05,
+            "mean": 4.132503477245669e-05,
+            "upper95": 4.416481436305433e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.2316150304036491,
+            "mean": 0.26104331919588997,
+            "upper95": 0.2904716079881309
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.22849543113235118,
+            "mean": 0.25087287354441384,
+            "upper95": 0.2732503159564765
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.9830556567036757,
+            "mean": 4.375206892593527,
+            "upper95": 4.767358128483377
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.3136318592689466e-05,
+            "mean": 1.7052792239712366e-05,
+            "upper95": 2.0969265886735266e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.32079183922160104,
+            "mean": 0.33935631518549025,
+            "upper95": 0.3579207911493794
+          }
+        },
+        "seed": 31,
+        "split": "validation"
+      },
+      {
+        "arm": "A1",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.07425009000517477,
+            "mean": 0.12233261591386184,
+            "upper95": 0.1704151418225489
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.194602243666703,
+            "mean": 4.72173882240003,
+            "upper95": 5.248875401133357
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.9459837629147334e-05,
+            "mean": 4.155072864179187e-05,
+            "upper95": 4.36416196544364e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.23010080746849232,
+            "mean": 0.260760771751362,
+            "upper95": 0.29142073603423163
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.22849543113235118,
+            "mean": 0.25087287354441384,
+            "upper95": 0.2732503159564765
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.9830556567036757,
+            "mean": 4.375206892593527,
+            "upper95": 4.767358128483377
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.3136318592689466e-05,
+            "mean": 1.7052792239712366e-05,
+            "upper95": 2.0969265886735266e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.32079183922160104,
+            "mean": 0.33935631518549025,
+            "upper95": 0.3579207911493794
+          }
+        },
+        "seed": 47,
+        "split": "validation"
+      },
+      {
+        "arm": "A1",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.07936624816301249,
+            "mean": 0.11940286960543352,
+            "upper95": 0.15943949104785454
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.207620726714138,
+            "mean": 4.726136520338805,
+            "upper95": 5.244652313963472
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.417170759364864e-05,
+            "mean": 4.427184338438013e-05,
+            "upper95": 4.4371979175111625e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.23506462959718205,
+            "mean": 0.260887136863053,
+            "upper95": 0.28670964412892386
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.22849543113235118,
+            "mean": 0.25087287354441384,
+            "upper95": 0.2732503159564765
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.9830556567036757,
+            "mean": 4.375206892593527,
+            "upper95": 4.767358128483377
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.3136318592689466e-05,
+            "mean": 1.7052792239712366e-05,
+            "upper95": 2.0969265886735266e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.32079183922160104,
+            "mean": 0.33935631518549025,
+            "upper95": 0.3579207911493794
+          }
+        },
+        "seed": 83,
+        "split": "validation"
+      },
+      {
+        "arm": "A2",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.07980549080984556,
+            "mean": 0.1227768805778709,
+            "upper95": 0.16574827034589623
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.185401191982195,
+            "mean": 4.696257398480533,
+            "upper95": 5.207113604978872
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.758249563496909e-05,
+            "mean": 3.967039572040915e-05,
+            "upper95": 4.1758295805849205e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.2359517932592763,
+            "mean": 0.2633864212906606,
+            "upper95": 0.29082104932204494
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.22849543113235118,
+            "mean": 0.25087287354441384,
+            "upper95": 0.2732503159564765
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.9830556567036757,
+            "mean": 4.375206892593527,
+            "upper95": 4.767358128483377
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.3136318592689466e-05,
+            "mean": 1.7052792239712366e-05,
+            "upper95": 2.0969265886735266e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.32079183922160104,
+            "mean": 0.33935631518549025,
+            "upper95": 0.3579207911493794
+          }
+        },
+        "seed": 31,
+        "split": "validation"
+      },
+      {
+        "arm": "A2",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.07644560729743897,
+            "mean": 0.12213125879164152,
+            "upper95": 0.16781691028584406
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.222890129878465,
+            "mean": 4.750286418053312,
+            "upper95": 5.277682706228158
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.097097972051001e-05,
+            "mean": 4.535497958292584e-05,
+            "upper95": 4.973897944534168e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.23101936429203151,
+            "mean": 0.2605463005206674,
+            "upper95": 0.2900732367493033
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.22849543113235118,
+            "mean": 0.25087287354441384,
+            "upper95": 0.2732503159564765
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.9830556567036757,
+            "mean": 4.375206892593527,
+            "upper95": 4.767358128483377
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.3136318592689466e-05,
+            "mean": 1.7052792239712366e-05,
+            "upper95": 2.0969265886735266e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.32079183922160104,
+            "mean": 0.33935631518549025,
+            "upper95": 0.3579207911493794
+          }
+        },
+        "seed": 47,
+        "split": "validation"
+      },
+      {
+        "arm": "A2",
+        "metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.07587040604022376,
+            "mean": 0.12230794566186373,
+            "upper95": 0.1687454852835037
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.205404894941109,
+            "mean": 4.735646164440302,
+            "upper95": 5.265887433939495
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 4.2855646825018415e-05,
+            "mean": 4.417939738393801e-05,
+            "upper95": 4.550314794285761e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.23383405583736858,
+            "mean": 0.2619827686027547,
+            "upper95": 0.2901314813681409
+          }
+        },
+        "oracle_metrics": {
+          "constant_prediction_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.0,
+            "mean": 0.0,
+            "upper95": 0.0
+          },
+          "eligible_spatial_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 369.5,
+            "mean": 373.25,
+            "upper95": 377.0
+          },
+          "excluded_constant_truth_genes": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.0,
+            "mean": 4.75,
+            "upper95": 8.5
+          },
+          "gene_spearman": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.22849543113235118,
+            "mean": 0.25087287354441384,
+            "upper95": 0.2732503159564765
+          },
+          "mean_composition_NLL": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 3.9830556567036757,
+            "mean": 4.375206892593527,
+            "upper95": 4.767358128483377
+          },
+          "positive_count_spots": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 2059.5,
+            "mean": 2176.75,
+            "upper95": 2294.0
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 1.3136318592689466e-05,
+            "mean": 1.7052792239712366e-05,
+            "upper95": 2.0969265886735266e-05
+          },
+          "top20_precision": {
+            "bootstrap_repeats": 2000,
+            "bootstrap_unit": "donor",
+            "donors": 2,
+            "inference": "DIRECTIONAL_SMALL_DONOR_SAMPLE_NOT_CONFIRMATORY",
+            "lower95": 0.32079183922160104,
+            "mean": 0.33935631518549025,
+            "upper95": 0.3579207911493794
+          }
+        },
+        "seed": 83,
+        "split": "validation"
+      }
+    ],
+    "context_scope": "FULL_SECTION_GRAPH",
+    "gene_metric_unit": "composition_on_measured_dictionary_genes",
+    "initialization_seeds_not_independent_donors": true,
+    "no_DSS_or_PFI": true,
+    "no_ST_test_model_selection": true,
+    "oracle_role": "fixed_D_expression_reconstruction_reference_not_image_input_nor_ranking_upper_bound",
+    "split": "validation",
+    "status": "COMPLETE",
+    "zero_count_spots_excluded_from_spatial_metrics": true
+  }
+}

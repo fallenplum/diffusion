@@ -1,0 +1,881 @@
+{
+  "C_gate": {
+    "bulk_mean_error_cannot_pass_gate": true,
+    "evaluated_assays": [
+      "Xenium"
+    ],
+    "generalization_to_ineligible_assays": false,
+    "minimum_paired_donors_per_primary_comparison": 3,
+    "not_evaluated_assays": [
+      "Visium"
+    ],
+    "primary_family": "three_local_contrasts_times_two_metrics",
+    "reasons": [
+      "B3_minus_B1: spatially_centered_MSE_robust_positive_increment_not_demonstrated",
+      "B3_minus_B4: spatially_centered_MSE_robust_positive_increment_not_demonstrated",
+      "B3_minus_B4: within_tissue_gene_Spearman_robust_positive_increment_not_demonstrated"
+    ],
+    "stage_C_automatically_unlocked": false,
+    "stage_C_still_requires": [
+      "TCGA_assay_transform_qualification",
+      "target_image_footprint_qualification",
+      "root_protocol_review"
+    ],
+    "status": "NOT_SUPPORTED_UNDER_LOCKED_EXTERNAL_AUDIT",
+    "synthetic_sampling_not_measured_human_overlap": true,
+    "wrong_bulk_compared_on_paired_available_support_only": true
+  },
+  "arms": {
+    "B0": {
+      "cells": 36,
+      "metrics": {
+        "hotspot_recall_q90": {
+          "donor_equal_mean": 0.25116242272571004,
+          "donors": 3
+        },
+        "spatially_centered_MSE": {
+          "donor_equal_mean": 6.244882048430713e-05,
+          "donors": 3
+        },
+        "within_tissue_gene_Spearman": {
+          "donor_equal_mean": 0.23093664880679152,
+          "donors": 3
+        }
+      },
+      "not_converged_cells": 0,
+      "prediction_row_mass_diagnostics": {
+        "largest_scenario_max_mass": 1.0000000000000004,
+        "mean_of_scenario_mean_mass": 1.0,
+        "smallest_scenario_min_mass": 0.9999999999999997
+      },
+      "wrong_bulk_unavailable_cells": 0
+    },
+    "B1": {
+      "cells": 36,
+      "metrics": {
+        "hotspot_recall_q90": {
+          "donor_equal_mean": 0.25116242272571004,
+          "donors": 3
+        },
+        "spatially_centered_MSE": {
+          "donor_equal_mean": 4.855344680812959e-05,
+          "donors": 3
+        },
+        "within_tissue_gene_Spearman": {
+          "donor_equal_mean": 0.23093664880679152,
+          "donors": 3
+        }
+      },
+      "not_converged_cells": 0,
+      "prediction_row_mass_diagnostics": {
+        "largest_scenario_max_mass": 1.9276733248296134,
+        "mean_of_scenario_mean_mass": 1.0,
+        "smallest_scenario_min_mass": 0.5366921739538103
+      },
+      "wrong_bulk_unavailable_cells": 0
+    },
+    "B2": {
+      "cells": 36,
+      "metrics": {
+        "hotspot_recall_q90": {
+          "donor_equal_mean": 0.25116242272571004,
+          "donors": 3
+        },
+        "spatially_centered_MSE": {
+          "donor_equal_mean": 6.244882048430713e-05,
+          "donors": 3
+        },
+        "within_tissue_gene_Spearman": {
+          "donor_equal_mean": 0.23093664880679152,
+          "donors": 3
+        }
+      },
+      "not_converged_cells": 0,
+      "prediction_row_mass_diagnostics": {
+        "largest_scenario_max_mass": 1.0000000000000004,
+        "mean_of_scenario_mean_mass": 1.0,
+        "smallest_scenario_min_mass": 0.9999999999999997
+      },
+      "wrong_bulk_unavailable_cells": 0
+    },
+    "B3": {
+      "cells": 36,
+      "metrics": {
+        "hotspot_recall_q90": {
+          "donor_equal_mean": 0.2517144383260929,
+          "donors": 3
+        },
+        "spatially_centered_MSE": {
+          "donor_equal_mean": 6.0755384064432144e-05,
+          "donors": 3
+        },
+        "within_tissue_gene_Spearman": {
+          "donor_equal_mean": 0.2348401472170534,
+          "donors": 3
+        }
+      },
+      "not_converged_cells": 0,
+      "prediction_row_mass_diagnostics": {
+        "largest_scenario_max_mass": 1.0000000000000004,
+        "mean_of_scenario_mean_mass": 1.0,
+        "smallest_scenario_min_mass": 0.9999999999999994
+      },
+      "wrong_bulk_unavailable_cells": 0
+    },
+    "B4": {
+      "cells": 36,
+      "metrics": {
+        "hotspot_recall_q90": {
+          "donor_equal_mean": 0.2516238701826761,
+          "donors": 3
+        },
+        "spatially_centered_MSE": {
+          "donor_equal_mean": 6.0581954584849644e-05,
+          "donors": 3
+        },
+        "within_tissue_gene_Spearman": {
+          "donor_equal_mean": 0.23489815416770587,
+          "donors": 3
+        }
+      },
+      "not_converged_cells": 0,
+      "prediction_row_mass_diagnostics": {
+        "largest_scenario_max_mass": 1.0000000000000004,
+        "mean_of_scenario_mean_mass": 1.0,
+        "smallest_scenario_min_mass": 0.9999999999999994
+      },
+      "wrong_bulk_unavailable_cells": 0
+    }
+  },
+  "descriptive_assay_strata": {
+    "Visium": {
+      "B4_support": {
+        "evaluable_cells": 0,
+        "status": "NOT_EVALUATED_INELIGIBLE_MEASUREMENT"
+      },
+      "arms": {},
+      "donors": 0,
+      "measurement_eligibility": {
+        "eligible_donors": 0,
+        "eligible_sections": 0,
+        "ineligible_donors": 1,
+        "ineligible_sections": 1,
+        "ineligible_status": "INELIGIBLE_PARTIAL_MEASUREMENT",
+        "projection_evaluated_in_assay": false,
+        "source_donors": 1,
+        "source_sections": 1,
+        "unmeasured_dictionary_gene_count_by_ineligible_section": [
+          8
+        ]
+      },
+      "paired_local_contrasts": {},
+      "primary_gate_recomputed_in_this_stratum": false,
+      "role": "not_evaluated_no_projection_or_wrong_bulk_control",
+      "sections": 0,
+      "status": "INELIGIBLE_PARTIAL_MEASUREMENT"
+    },
+    "Xenium": {
+      "B4_support": {
+        "different_assay_bulk_substitution_allowed": false,
+        "evaluable_cells": 36,
+        "evaluable_donors": 3,
+        "evaluable_sections": 3,
+        "unavailable_cells": 0,
+        "unavailable_donors": 0,
+        "unavailable_reason": null,
+        "unavailable_sections": 0
+      },
+      "arms": {
+        "B0": {
+          "cells": 36,
+          "metrics": {
+            "hotspot_recall_q90": {
+              "donor_equal_mean": 0.25116242272571004,
+              "donors": 3
+            },
+            "spatially_centered_MSE": {
+              "donor_equal_mean": 6.244882048430713e-05,
+              "donors": 3
+            },
+            "within_tissue_gene_Spearman": {
+              "donor_equal_mean": 0.23093664880679152,
+              "donors": 3
+            }
+          },
+          "not_converged_cells": 0,
+          "prediction_row_mass_diagnostics": {
+            "largest_scenario_max_mass": 1.0000000000000004,
+            "mean_of_scenario_mean_mass": 1.0,
+            "smallest_scenario_min_mass": 0.9999999999999997
+          },
+          "wrong_bulk_unavailable_cells": 0
+        },
+        "B1": {
+          "cells": 36,
+          "metrics": {
+            "hotspot_recall_q90": {
+              "donor_equal_mean": 0.25116242272571004,
+              "donors": 3
+            },
+            "spatially_centered_MSE": {
+              "donor_equal_mean": 4.855344680812959e-05,
+              "donors": 3
+            },
+            "within_tissue_gene_Spearman": {
+              "donor_equal_mean": 0.23093664880679152,
+              "donors": 3
+            }
+          },
+          "not_converged_cells": 0,
+          "prediction_row_mass_diagnostics": {
+            "largest_scenario_max_mass": 1.9276733248296134,
+            "mean_of_scenario_mean_mass": 1.0,
+            "smallest_scenario_min_mass": 0.5366921739538103
+          },
+          "wrong_bulk_unavailable_cells": 0
+        },
+        "B2": {
+          "cells": 36,
+          "metrics": {
+            "hotspot_recall_q90": {
+              "donor_equal_mean": 0.25116242272571004,
+              "donors": 3
+            },
+            "spatially_centered_MSE": {
+              "donor_equal_mean": 6.244882048430713e-05,
+              "donors": 3
+            },
+            "within_tissue_gene_Spearman": {
+              "donor_equal_mean": 0.23093664880679152,
+              "donors": 3
+            }
+          },
+          "not_converged_cells": 0,
+          "prediction_row_mass_diagnostics": {
+            "largest_scenario_max_mass": 1.0000000000000004,
+            "mean_of_scenario_mean_mass": 1.0,
+            "smallest_scenario_min_mass": 0.9999999999999997
+          },
+          "wrong_bulk_unavailable_cells": 0
+        },
+        "B3": {
+          "cells": 36,
+          "metrics": {
+            "hotspot_recall_q90": {
+              "donor_equal_mean": 0.2517144383260929,
+              "donors": 3
+            },
+            "spatially_centered_MSE": {
+              "donor_equal_mean": 6.0755384064432144e-05,
+              "donors": 3
+            },
+            "within_tissue_gene_Spearman": {
+              "donor_equal_mean": 0.2348401472170534,
+              "donors": 3
+            }
+          },
+          "not_converged_cells": 0,
+          "prediction_row_mass_diagnostics": {
+            "largest_scenario_max_mass": 1.0000000000000004,
+            "mean_of_scenario_mean_mass": 1.0,
+            "smallest_scenario_min_mass": 0.9999999999999994
+          },
+          "wrong_bulk_unavailable_cells": 0
+        },
+        "B4": {
+          "cells": 36,
+          "metrics": {
+            "hotspot_recall_q90": {
+              "donor_equal_mean": 0.2516238701826761,
+              "donors": 3
+            },
+            "spatially_centered_MSE": {
+              "donor_equal_mean": 6.0581954584849644e-05,
+              "donors": 3
+            },
+            "within_tissue_gene_Spearman": {
+              "donor_equal_mean": 0.23489815416770587,
+              "donors": 3
+            }
+          },
+          "not_converged_cells": 0,
+          "prediction_row_mass_diagnostics": {
+            "largest_scenario_max_mass": 1.0000000000000004,
+            "mean_of_scenario_mean_mass": 1.0,
+            "smallest_scenario_min_mass": 0.9999999999999994
+          },
+          "wrong_bulk_unavailable_cells": 0
+        }
+      },
+      "donors": 3,
+      "interval_scope": "fixed_models_and_count_thinning_partition_donor_bootstrap_only",
+      "measurement_eligibility": {
+        "eligible_donors": 3,
+        "eligible_sections": 3,
+        "ineligible_donors": 0,
+        "ineligible_sections": 0,
+        "ineligible_status": null,
+        "projection_evaluated_in_assay": true,
+        "source_donors": 3,
+        "source_sections": 3,
+        "unmeasured_dictionary_gene_count_by_ineligible_section": []
+      },
+      "paired_local_contrasts": {
+        "B3_minus_B1": {
+          "hotspot_recall_q90": {
+            "bootstrap_replicates": 20000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "fixed_model_interval_not_full_pipeline_uncertainty": true,
+            "matched_scenario_cells": 36,
+            "metric_role": "supporting_localization_not_in_primary_family",
+            "ordinary_95_interval": [
+              4.4698562555955945e-05,
+              0.001470826506220102
+            ],
+            "point": 0.0005520156003828713,
+            "six_primary_comparison_Bonferroni_interval": null,
+            "status": "EVALUATED",
+            "three_initialization_seed_deltas": {
+              "31": -0.00011035186113161899,
+              "47": 0.00046480261291028296,
+              "83": 0.0013015960493699408
+            },
+            "valid_paired_scenario_cells": 36
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_replicates": 20000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "fixed_model_interval_not_full_pipeline_uncertainty": true,
+            "matched_scenario_cells": 36,
+            "metric_role": "primary_local_metric",
+            "ordinary_95_interval": [
+              6.884255987857231e-06,
+              1.6113990372045386e-05
+            ],
+            "point": 1.2201937256302545e-05,
+            "six_primary_comparison_Bonferroni_interval": [
+              6.884255987857231e-06,
+              1.6113990372045386e-05
+            ],
+            "status": "EVALUATED",
+            "three_initialization_seed_deltas": {
+              "31": 8.359136763990026e-06,
+              "47": 1.1336762907996338e-05,
+              "83": 1.69099120969213e-05
+            },
+            "valid_paired_scenario_cells": 36
+          },
+          "within_tissue_gene_Spearman": {
+            "bootstrap_replicates": 20000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "fixed_model_interval_not_full_pipeline_uncertainty": true,
+            "matched_scenario_cells": 36,
+            "metric_role": "primary_local_metric",
+            "ordinary_95_interval": [
+              0.0011903791534314256,
+              0.006527598557803382
+            ],
+            "point": 0.003903498410261904,
+            "six_primary_comparison_Bonferroni_interval": [
+              0.0011903791534314256,
+              0.006527598557803382
+            ],
+            "status": "EVALUATED",
+            "three_initialization_seed_deltas": {
+              "31": 0.0033701589086743886,
+              "47": 0.003302658659677863,
+              "83": 0.00503767766243346
+            },
+            "valid_paired_scenario_cells": 36
+          }
+        },
+        "B3_minus_B2": {
+          "hotspot_recall_q90": {
+            "bootstrap_replicates": 20000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "fixed_model_interval_not_full_pipeline_uncertainty": true,
+            "matched_scenario_cells": 36,
+            "metric_role": "supporting_localization_not_in_primary_family",
+            "ordinary_95_interval": [
+              4.4698562555955945e-05,
+              0.001470826506220102
+            ],
+            "point": 0.0005520156003828713,
+            "six_primary_comparison_Bonferroni_interval": null,
+            "status": "EVALUATED",
+            "three_initialization_seed_deltas": {
+              "31": -0.00011035186113161899,
+              "47": 0.00046480261291028296,
+              "83": 0.0013015960493699408
+            },
+            "valid_paired_scenario_cells": 36
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_replicates": 20000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "fixed_model_interval_not_full_pipeline_uncertainty": true,
+            "matched_scenario_cells": 36,
+            "metric_role": "primary_local_metric",
+            "ordinary_95_interval": [
+              -2.9764428942880776e-06,
+              -6.37825200863534e-07
+            ],
+            "point": -1.6934364198750026e-06,
+            "six_primary_comparison_Bonferroni_interval": [
+              -2.9764428942880776e-06,
+              -6.37825200863534e-07
+            ],
+            "status": "EVALUATED",
+            "three_initialization_seed_deltas": {
+              "31": -9.356151362932813e-07,
+              "47": -1.9145143206713e-06,
+              "83": -2.2301798026604105e-06
+            },
+            "valid_paired_scenario_cells": 36
+          },
+          "within_tissue_gene_Spearman": {
+            "bootstrap_replicates": 20000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "fixed_model_interval_not_full_pipeline_uncertainty": true,
+            "matched_scenario_cells": 36,
+            "metric_role": "primary_local_metric",
+            "ordinary_95_interval": [
+              0.0011903791534314256,
+              0.006527598557803382
+            ],
+            "point": 0.003903498410261904,
+            "six_primary_comparison_Bonferroni_interval": [
+              0.0011903791534314256,
+              0.006527598557803382
+            ],
+            "status": "EVALUATED",
+            "three_initialization_seed_deltas": {
+              "31": 0.0033701589086743886,
+              "47": 0.003302658659677863,
+              "83": 0.00503767766243346
+            },
+            "valid_paired_scenario_cells": 36
+          }
+        },
+        "B3_minus_B4": {
+          "hotspot_recall_q90": {
+            "bootstrap_replicates": 20000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "fixed_model_interval_not_full_pipeline_uncertainty": true,
+            "matched_scenario_cells": 36,
+            "metric_role": "supporting_localization_not_in_primary_family",
+            "ordinary_95_interval": [
+              -0.00030398599241499014,
+              0.0004041348291154989
+            ],
+            "point": 9.056814341673602e-05,
+            "six_primary_comparison_Bonferroni_interval": null,
+            "status": "EVALUATED",
+            "three_initialization_seed_deltas": {
+              "31": 0.00010463546455510842,
+              "47": -1.965500032594103e-05,
+              "83": 0.00018672396602096666
+            },
+            "valid_paired_scenario_cells": 36
+          },
+          "spatially_centered_MSE": {
+            "bootstrap_replicates": 20000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "fixed_model_interval_not_full_pipeline_uncertainty": true,
+            "matched_scenario_cells": 36,
+            "metric_role": "primary_local_metric",
+            "ordinary_95_interval": [
+              -5.145992444463164e-07,
+              5.448806530759218e-07
+            ],
+            "point": 1.7342947958249474e-07,
+            "six_primary_comparison_Bonferroni_interval": [
+              -5.145992444463164e-07,
+              5.448806530759218e-07
+            ],
+            "status": "EVALUATED",
+            "three_initialization_seed_deltas": {
+              "31": -6.607038201034413e-08,
+              "47": 4.957626201708922e-07,
+              "83": 9.059620058696102e-08
+            },
+            "valid_paired_scenario_cells": 36
+          },
+          "within_tissue_gene_Spearman": {
+            "bootstrap_replicates": 20000,
+            "bootstrap_unit": "donor",
+            "donors": 3,
+            "fixed_model_interval_not_full_pipeline_uncertainty": true,
+            "matched_scenario_cells": 36,
+            "metric_role": "primary_local_metric",
+            "ordinary_95_interval": [
+              -0.0017515609888004158,
+              0.0023966646161702188
+            ],
+            "point": -5.8006950652481994e-05,
+            "six_primary_comparison_Bonferroni_interval": [
+              -0.0017515609888004158,
+              0.0023966646161702188
+            ],
+            "status": "EVALUATED",
+            "three_initialization_seed_deltas": {
+              "31": 0.0006148622688684028,
+              "47": -0.00041536733902318895,
+              "83": -0.0003735157818026506
+            },
+            "valid_paired_scenario_cells": 36
+          }
+        }
+      },
+      "primary_gate_recomputed_in_this_stratum": false,
+      "role": "descriptive_assay_stratum_not_an_additional_primary_test_or_gate",
+      "sections": 3,
+      "studies": 1
+    }
+  },
+  "limitations": [
+    "two_source_studies_not_three_study_confirmation",
+    "only_three_test_donors",
+    "test_assay_domain_shift",
+    "frozen_backbone_pretraining_overlap_unknown",
+    "synthetic_overlap_not_measured_human_overlap",
+    "no_real_serial_section_registration_evaluated",
+    "one_pseudobulk_per_synthetic_section_component_not_real_patient_multislide_bulk",
+    "no_TCGAbulk_scale_qualification_implied",
+    "partial_measurement_test_sections_excluded_from_B_without_refitting_dictionary_or_imputation",
+    "B_gate_does_not_generalize_to_ineligible_assays"
+  ],
+  "output_contracts": {
+    "B0_B2_B3_B4": "fixed_dictionary_row_compositions_compared_to_evaluation_count_div_exposure",
+    "B1": "gene_rescaled_non_simplex_relative_abundance_profile_no_row_renormalization",
+    "B1_rank_invariance": "exact_average_rank_equality_checked_per_gene_per_scenario",
+    "bulk_mean_MSE": "auxiliary_only_not_selection_or_mechanism_gate",
+    "centered_MSE": "within_region_gene_centered_relative_abundances_same_evaluation_exposure_target"
+  },
+  "paired_local_contrasts": {
+    "B3_minus_B1": {
+      "hotspot_recall_q90": {
+        "bootstrap_replicates": 20000,
+        "bootstrap_unit": "donor",
+        "donors": 3,
+        "fixed_model_interval_not_full_pipeline_uncertainty": true,
+        "matched_scenario_cells": 36,
+        "metric_role": "supporting_localization_not_in_primary_family",
+        "ordinary_95_interval": [
+          4.4698562555955945e-05,
+          0.001470826506220102
+        ],
+        "point": 0.0005520156003828713,
+        "six_primary_comparison_Bonferroni_interval": null,
+        "status": "EVALUATED",
+        "three_initialization_seed_deltas": {
+          "31": -0.00011035186113161899,
+          "47": 0.00046480261291028296,
+          "83": 0.0013015960493699408
+        },
+        "valid_paired_scenario_cells": 36
+      },
+      "spatially_centered_MSE": {
+        "bootstrap_replicates": 20000,
+        "bootstrap_unit": "donor",
+        "donors": 3,
+        "fixed_model_interval_not_full_pipeline_uncertainty": true,
+        "matched_scenario_cells": 36,
+        "metric_role": "primary_local_metric",
+        "ordinary_95_interval": [
+          6.884255987857231e-06,
+          1.6113990372045386e-05
+        ],
+        "point": 1.2201937256302545e-05,
+        "six_primary_comparison_Bonferroni_interval": [
+          6.884255987857231e-06,
+          1.6113990372045386e-05
+        ],
+        "status": "EVALUATED",
+        "three_initialization_seed_deltas": {
+          "31": 8.359136763990026e-06,
+          "47": 1.1336762907996338e-05,
+          "83": 1.69099120969213e-05
+        },
+        "valid_paired_scenario_cells": 36
+      },
+      "within_tissue_gene_Spearman": {
+        "bootstrap_replicates": 20000,
+        "bootstrap_unit": "donor",
+        "donors": 3,
+        "fixed_model_interval_not_full_pipeline_uncertainty": true,
+        "matched_scenario_cells": 36,
+        "metric_role": "primary_local_metric",
+        "ordinary_95_interval": [
+          0.0011903791534314256,
+          0.006527598557803382
+        ],
+        "point": 0.003903498410261904,
+        "six_primary_comparison_Bonferroni_interval": [
+          0.0011903791534314256,
+          0.006527598557803382
+        ],
+        "status": "EVALUATED",
+        "three_initialization_seed_deltas": {
+          "31": 0.0033701589086743886,
+          "47": 0.003302658659677863,
+          "83": 0.00503767766243346
+        },
+        "valid_paired_scenario_cells": 36
+      }
+    },
+    "B3_minus_B2": {
+      "hotspot_recall_q90": {
+        "bootstrap_replicates": 20000,
+        "bootstrap_unit": "donor",
+        "donors": 3,
+        "fixed_model_interval_not_full_pipeline_uncertainty": true,
+        "matched_scenario_cells": 36,
+        "metric_role": "supporting_localization_not_in_primary_family",
+        "ordinary_95_interval": [
+          4.4698562555955945e-05,
+          0.001470826506220102
+        ],
+        "point": 0.0005520156003828713,
+        "six_primary_comparison_Bonferroni_interval": null,
+        "status": "EVALUATED",
+        "three_initialization_seed_deltas": {
+          "31": -0.00011035186113161899,
+          "47": 0.00046480261291028296,
+          "83": 0.0013015960493699408
+        },
+        "valid_paired_scenario_cells": 36
+      },
+      "spatially_centered_MSE": {
+        "bootstrap_replicates": 20000,
+        "bootstrap_unit": "donor",
+        "donors": 3,
+        "fixed_model_interval_not_full_pipeline_uncertainty": true,
+        "matched_scenario_cells": 36,
+        "metric_role": "primary_local_metric",
+        "ordinary_95_interval": [
+          -2.9764428942880776e-06,
+          -6.37825200863534e-07
+        ],
+        "point": -1.6934364198750026e-06,
+        "six_primary_comparison_Bonferroni_interval": [
+          -2.9764428942880776e-06,
+          -6.37825200863534e-07
+        ],
+        "status": "EVALUATED",
+        "three_initialization_seed_deltas": {
+          "31": -9.356151362932813e-07,
+          "47": -1.9145143206713e-06,
+          "83": -2.2301798026604105e-06
+        },
+        "valid_paired_scenario_cells": 36
+      },
+      "within_tissue_gene_Spearman": {
+        "bootstrap_replicates": 20000,
+        "bootstrap_unit": "donor",
+        "donors": 3,
+        "fixed_model_interval_not_full_pipeline_uncertainty": true,
+        "matched_scenario_cells": 36,
+        "metric_role": "primary_local_metric",
+        "ordinary_95_interval": [
+          0.0011903791534314256,
+          0.006527598557803382
+        ],
+        "point": 0.003903498410261904,
+        "six_primary_comparison_Bonferroni_interval": [
+          0.0011903791534314256,
+          0.006527598557803382
+        ],
+        "status": "EVALUATED",
+        "three_initialization_seed_deltas": {
+          "31": 0.0033701589086743886,
+          "47": 0.003302658659677863,
+          "83": 0.00503767766243346
+        },
+        "valid_paired_scenario_cells": 36
+      }
+    },
+    "B3_minus_B4": {
+      "hotspot_recall_q90": {
+        "bootstrap_replicates": 20000,
+        "bootstrap_unit": "donor",
+        "donors": 3,
+        "fixed_model_interval_not_full_pipeline_uncertainty": true,
+        "matched_scenario_cells": 36,
+        "metric_role": "supporting_localization_not_in_primary_family",
+        "ordinary_95_interval": [
+          -0.00030398599241499014,
+          0.0004041348291154989
+        ],
+        "point": 9.056814341673602e-05,
+        "six_primary_comparison_Bonferroni_interval": null,
+        "status": "EVALUATED",
+        "three_initialization_seed_deltas": {
+          "31": 0.00010463546455510842,
+          "47": -1.965500032594103e-05,
+          "83": 0.00018672396602096666
+        },
+        "valid_paired_scenario_cells": 36
+      },
+      "spatially_centered_MSE": {
+        "bootstrap_replicates": 20000,
+        "bootstrap_unit": "donor",
+        "donors": 3,
+        "fixed_model_interval_not_full_pipeline_uncertainty": true,
+        "matched_scenario_cells": 36,
+        "metric_role": "primary_local_metric",
+        "ordinary_95_interval": [
+          -5.145992444463164e-07,
+          5.448806530759218e-07
+        ],
+        "point": 1.7342947958249474e-07,
+        "six_primary_comparison_Bonferroni_interval": [
+          -5.145992444463164e-07,
+          5.448806530759218e-07
+        ],
+        "status": "EVALUATED",
+        "three_initialization_seed_deltas": {
+          "31": -6.607038201034413e-08,
+          "47": 4.957626201708922e-07,
+          "83": 9.059620058696102e-08
+        },
+        "valid_paired_scenario_cells": 36
+      },
+      "within_tissue_gene_Spearman": {
+        "bootstrap_replicates": 20000,
+        "bootstrap_unit": "donor",
+        "donors": 3,
+        "fixed_model_interval_not_full_pipeline_uncertainty": true,
+        "matched_scenario_cells": 36,
+        "metric_role": "primary_local_metric",
+        "ordinary_95_interval": [
+          -0.0017515609888004158,
+          0.0023966646161702188
+        ],
+        "point": -5.8006950652481994e-05,
+        "six_primary_comparison_Bonferroni_interval": [
+          -0.0017515609888004158,
+          0.0023966646161702188
+        ],
+        "status": "EVALUATED",
+        "three_initialization_seed_deltas": {
+          "31": 0.0006148622688684028,
+          "47": -0.00041536733902318895,
+          "83": -0.0003735157818026506
+        },
+        "valid_paired_scenario_cells": 36
+      }
+    }
+  },
+  "progress": {
+    "actual_new_cells_this_invocation": 180,
+    "all_failures_retained": true,
+    "completed_cells": 180,
+    "expected_cells": 180,
+    "formal_model_fits": 0,
+    "not_converged_cells": 0,
+    "pending_cells": 0,
+    "plan_sha256": "565c3a750ab2e163814bfae63cc3f4cc913eb5aedabd7921ed2e996c2ab4d788",
+    "projection_solver_calls": 108,
+    "projection_solver_iterations": 1362,
+    "schema": "phase22_sampling_audit_v2",
+    "serial_section_real_overlap_evaluated": false,
+    "solver_max_iterations": 100,
+    "source_measurement_eligibility": {
+      "by_assay": {
+        "Visium": {
+          "eligible_donors": 0,
+          "eligible_sections": 0,
+          "ineligible_donors": 1,
+          "ineligible_sections": 1,
+          "ineligible_status": "INELIGIBLE_PARTIAL_MEASUREMENT",
+          "projection_evaluated_in_assay": false,
+          "source_donors": 1,
+          "source_sections": 1,
+          "unmeasured_dictionary_gene_count_by_ineligible_section": [
+            8
+          ]
+        },
+        "Xenium": {
+          "eligible_donors": 3,
+          "eligible_sections": 3,
+          "ineligible_donors": 0,
+          "ineligible_sections": 0,
+          "ineligible_status": null,
+          "projection_evaluated_in_assay": true,
+          "source_donors": 3,
+          "source_sections": 3,
+          "unmeasured_dictionary_gene_count_by_ineligible_section": []
+        }
+      },
+      "eligible_assays": [
+        "Xenium"
+      ],
+      "eligible_sections": 3,
+      "fixed_train_dictionary_preserved": true,
+      "fully_ineligible_assays": [
+        "Visium"
+      ],
+      "gate_generalization_to_ineligible_assays": false,
+      "ineligible_sections": 1,
+      "no_zero_imputation_or_test_gene_reselection": true,
+      "policy": "full_fixed_dictionary_required_for_B;test_only_partial_sections_ineligible;validation_partial_is_error",
+      "source_sections": 4
+    },
+    "stage": "test",
+    "status": "COMPLETE",
+    "synthetic_same_view_and_subdomain_only": true
+  },
+  "schema": "phase22_sampling_audit_v2",
+  "source_measurement_eligibility": {
+    "by_assay": {
+      "Visium": {
+        "eligible_donors": 0,
+        "eligible_sections": 0,
+        "ineligible_donors": 1,
+        "ineligible_sections": 1,
+        "ineligible_status": "INELIGIBLE_PARTIAL_MEASUREMENT",
+        "projection_evaluated_in_assay": false,
+        "source_donors": 1,
+        "source_sections": 1,
+        "unmeasured_dictionary_gene_count_by_ineligible_section": [
+          8
+        ]
+      },
+      "Xenium": {
+        "eligible_donors": 3,
+        "eligible_sections": 3,
+        "ineligible_donors": 0,
+        "ineligible_sections": 0,
+        "ineligible_status": null,
+        "projection_evaluated_in_assay": true,
+        "source_donors": 3,
+        "source_sections": 3,
+        "unmeasured_dictionary_gene_count_by_ineligible_section": []
+      }
+    },
+    "eligible_assays": [
+      "Xenium"
+    ],
+    "eligible_sections": 3,
+    "fixed_train_dictionary_preserved": true,
+    "fully_ineligible_assays": [
+      "Visium"
+    ],
+    "gate_generalization_to_ineligible_assays": false,
+    "ineligible_sections": 1,
+    "no_zero_imputation_or_test_gene_reselection": true,
+    "policy": "full_fixed_dictionary_required_for_B;test_only_partial_sections_ineligible;validation_partial_is_error",
+    "source_sections": 4
+  },
+  "status": "COMPLETE",
+  "validation_selection_sha256": "b00d3b4eb0b6e1fbd98b4990b9d3bb5848d44247498e76e471f6fc6015295927"
+}

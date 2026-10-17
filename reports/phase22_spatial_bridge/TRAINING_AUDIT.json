@@ -1,0 +1,631 @@
+{
+  "schema_version": "phase22_external_A_training_audit_v1",
+  "status": "PASS_NINE_FORMAL_FITS_AND_INDEPENDENT_REPLAY",
+  "scope": "external_ST_training_and_validation_only; no_test_metric_or_survival_claim",
+  "source_hashes": {
+    "scripts/run_phase22_external_spatial.py": "e2ec0a270157168f5de1512a0ad5370bcc5093ff9b33d0bac1d67600069e4df6",
+    "scripts/evaluate_phase22_external_spatial.py": "2e398ef72b85093e07126bd7261c4c2b784dc07a0e27093649ab2528d9390be4",
+    "src/phase22_spatial_bridge/spatial_encoder.py": "4a55a2e9a9e08640098f206be9e5abf2a1527ca1a837b11c7f2d78df9cc56eca",
+    "src/phase22_spatial_bridge/molecular_dictionary.py": "7901d16067b464d8494488e6a65e642af1680a63191af9241fe42307774c5ca8",
+    "src/phase22_spatial_bridge/measurement_scale.py": "acf25f1ae4e833c684d32a22564fe2cc23626ada4732b08fa785d91be7e027b9",
+    "src/phase22_spatial_bridge/strank_objective.py": "976aa7e7abd4d517afad4ce936373f8be78436068344d81ad3d07a43a628852f"
+  },
+  "configuration_sha256": "95351234c909d3b0cdfe3ebd1f179800f433f07df324f835fcd2893839a545cf",
+  "data_qualification_sha256": "31e80fe72f09496215099746d660d34ac63fead093f9bb3ca3fcf385584e3a03",
+  "split_lock_sha256": "ca560935440e117c5d70d55ce14ea1c5f524bbad2f2ab261d0bf7ef7a63a08fa",
+  "dictionary_sha256": "67c66f76a40d7b0ee4cddf4b6fe38264483fd1deb6f50ded5c4b66c5512fe2b5",
+  "dictionary": {
+    "status": "PASS_TRAIN_ONLY_DICTIONARY",
+    "seed": 31,
+    "states": 32,
+    "genes": 378,
+    "training_donors": 4,
+    "profiles_per_donor": 1376,
+    "total_profiles": 5504,
+    "iterations": 740,
+    "max_iterations": 1000,
+    "tolerance": 0.00001,
+    "converged": true,
+    "reconstruction_error": 66.842968211578
+  },
+  "schedule": {
+    "max_epochs": 100,
+    "min_epochs": 10,
+    "patience": 15,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "regions_per_donor": 8,
+    "region_spots": 256,
+    "radius_um": 300,
+    "neighbor_cap": 16,
+    "threads": 2,
+    "relative_training_domain": "sampled_256_spot_same_section_region",
+    "relative_validation_domain": "full_section",
+    "epoch_selection": "minimum_validation_donor_equal_arm_objective"
+  },
+  "fits": [
+    {
+      "arm": "A0",
+      "seed": 31,
+      "actual_epochs": 57,
+      "selected_epoch": 42,
+      "optimizer_steps": 1824,
+      "optimizer_steps_per_epoch": 32,
+      "zero_count_regions_skipped": 0,
+      "parameters": 49184,
+      "stop_reason": "LOCKED_VALIDATION_PATIENCE_15",
+      "stopped_at_maximum_epoch_budget": false,
+      "process_attempts": 1,
+      "interrupted_attempts": 0,
+      "training_sampled_region_losses": {
+        "objective": {
+          "first_epoch": 4.846160378818622,
+          "selected_epoch": 4.331465236176025,
+          "final_epoch": 4.308089814823676,
+          "relative_first_to_final_decrease": 0.11103028417027232,
+          "final_minus_selected": -0.023375421352349157
+        },
+        "composition": {
+          "first_epoch": 4.846160378818622,
+          "selected_epoch": 4.331465236176025,
+          "final_epoch": 4.308089814823676,
+          "relative_first_to_final_decrease": 0.11103028417027232,
+          "final_minus_selected": -0.023375421352349157
+        },
+        "relative": {
+          "first_epoch": 5.377416218039845,
+          "selected_epoch": 5.240230059402,
+          "final_epoch": 5.319353970171344,
+          "relative_first_to_final_decrease": 0.01079742491825674,
+          "final_minus_selected": 0.07912391076934355
+        }
+      },
+      "validation": {
+        "first_objective": 4.924655083039152,
+        "selected_objective": 4.737234682519629,
+        "final_objective": 4.760160239992535,
+        "final_minus_selected_objective": 0.022925557472905922,
+        "first_gene_spearman": 0.0886651061709346,
+        "selected_gene_spearman": 0.11781392501501484,
+        "final_gene_spearman": 0.11600933837755979,
+        "selected_spatially_centered_MSE": 0.000042628507924059094
+      },
+      "selected_checkpoint_sha256": "d8535f4bc605ac3662c026ffcdf1a435e7b70e548f78f9008dd7247999b181c2",
+      "done_receipt_sha256": "30f8f5c59741260cec5c11f3c8cd95f2d5603d30e4bf0c4a899b25d7a5a16b92",
+      "curve_receipt_sha256": "420cb122952f92a16ad4ad3e4eba615e9dcaa5fd7d09a86fdf8c27f5ca491a2f"
+    },
+    {
+      "arm": "A0",
+      "seed": 47,
+      "actual_epochs": 40,
+      "selected_epoch": 25,
+      "optimizer_steps": 1280,
+      "optimizer_steps_per_epoch": 32,
+      "zero_count_regions_skipped": 0,
+      "parameters": 49184,
+      "stop_reason": "LOCKED_VALIDATION_PATIENCE_15",
+      "stopped_at_maximum_epoch_budget": false,
+      "process_attempts": 1,
+      "interrupted_attempts": 0,
+      "training_sampled_region_losses": {
+        "objective": {
+          "first_epoch": 4.876267255325892,
+          "selected_epoch": 4.323502377566973,
+          "final_epoch": 4.294118969840751,
+          "relative_first_to_final_decrease": 0.1193839990721007,
+          "final_minus_selected": -0.029383407726221833
+        },
+        "composition": {
+          "first_epoch": 4.876267255325892,
+          "selected_epoch": 4.323502377566973,
+          "final_epoch": 4.294118969840751,
+          "relative_first_to_final_decrease": 0.1193839990721007,
+          "final_minus_selected": -0.029383407726221833
+        },
+        "relative": {
+          "first_epoch": 5.373510610972517,
+          "selected_epoch": 5.3101245476418235,
+          "final_epoch": 5.2817556181929035,
+          "relative_first_to_final_decrease": 0.017075427857582093,
+          "final_minus_selected": -0.02836892944892
+        }
+      },
+      "validation": {
+        "first_objective": 4.963632610434031,
+        "selected_objective": 4.736678378116471,
+        "final_objective": 4.775971684692023,
+        "final_minus_selected_objective": 0.0392933065755523,
+        "first_gene_spearman": 0.06594515541121851,
+        "selected_gene_spearman": 0.11537675723449409,
+        "final_gene_spearman": 0.11458434504717659,
+        "selected_spatially_centered_MSE": 0.000041816817085696406
+      },
+      "selected_checkpoint_sha256": "bb2613a4f4f43e0cad38007bd0d0f7829eeecc301f18366497142286d0ab29e7",
+      "done_receipt_sha256": "95fe2fd8b2a16f580b4b8ff7fe44553952e45186b0121da9a0bf7791fda80fef",
+      "curve_receipt_sha256": "d57c28ce03d521cf8089aa476b8c3a843d862f1f52679edc45ac3e8420206dcf"
+    },
+    {
+      "arm": "A0",
+      "seed": 83,
+      "actual_epochs": 37,
+      "selected_epoch": 22,
+      "optimizer_steps": 1184,
+      "optimizer_steps_per_epoch": 32,
+      "zero_count_regions_skipped": 0,
+      "parameters": 49184,
+      "stop_reason": "LOCKED_VALIDATION_PATIENCE_15",
+      "stopped_at_maximum_epoch_budget": false,
+      "process_attempts": 1,
+      "interrupted_attempts": 0,
+      "training_sampled_region_losses": {
+        "objective": {
+          "first_epoch": 4.853092054198775,
+          "selected_epoch": 4.344653332798342,
+          "final_epoch": 4.343081338760247,
+          "relative_first_to_final_decrease": 0.10508984988184586,
+          "final_minus_selected": -0.001571994038094715
+        },
+        "composition": {
+          "first_epoch": 4.853092054198775,
+          "selected_epoch": 4.344653332798342,
+          "final_epoch": 4.343081338760247,
+          "relative_first_to_final_decrease": 0.10508984988184586,
+          "final_minus_selected": -0.001571994038094715
+        },
+        "relative": {
+          "first_epoch": 5.388605600119857,
+          "selected_epoch": 5.307092678688187,
+          "final_epoch": 5.309198654822895,
+          "relative_first_to_final_decrease": 0.014736084098490324,
+          "final_minus_selected": 0.0021059761347075323
+        }
+      },
+      "validation": {
+        "first_objective": 4.9790319992670975,
+        "selected_objective": 4.7434769864510935,
+        "final_objective": 4.751425563554049,
+        "final_minus_selected_objective": 0.00794857710295549,
+        "first_gene_spearman": 0.07422384931389234,
+        "selected_gene_spearman": 0.1167185282986153,
+        "final_gene_spearman": 0.11657699640896915,
+        "selected_spatially_centered_MSE": 0.00004161743766307086
+      },
+      "selected_checkpoint_sha256": "8034c71b2e22078028782b733bc60881836fcd5d4dc0bd2ac9c05f44edc5cc5b",
+      "done_receipt_sha256": "13b61d4b019d0b2281d39aac220529e5edf1cd70fe00ae4ac6833357f1aeb6c4",
+      "curve_receipt_sha256": "ed3306468308dfa6ac2ae20d8681d294375d89a66ee7fe6157ec79546779ba3f"
+    },
+    {
+      "arm": "A1",
+      "seed": 31,
+      "actual_epochs": 38,
+      "selected_epoch": 23,
+      "optimizer_steps": 1216,
+      "optimizer_steps_per_epoch": 32,
+      "zero_count_regions_skipped": 0,
+      "parameters": 466536,
+      "stop_reason": "LOCKED_VALIDATION_PATIENCE_15",
+      "stopped_at_maximum_epoch_budget": false,
+      "process_attempts": 1,
+      "interrupted_attempts": 0,
+      "training_sampled_region_losses": {
+        "objective": {
+          "first_epoch": 4.8189192953952364,
+          "selected_epoch": 4.336252523951656,
+          "final_epoch": 4.379762612992637,
+          "relative_first_to_final_decrease": 0.09113177778723959,
+          "final_minus_selected": 0.043510089040980304
+        },
+        "composition": {
+          "first_epoch": 4.8189192953952364,
+          "selected_epoch": 4.336252523951656,
+          "final_epoch": 4.379762612992637,
+          "relative_first_to_final_decrease": 0.09113177778723959,
+          "final_minus_selected": 0.043510089040980304
+        },
+        "relative": {
+          "first_epoch": 5.373362629652783,
+          "selected_epoch": 5.295495759418675,
+          "final_epoch": 5.267320593573767,
+          "relative_first_to_final_decrease": 0.019734762640776556,
+          "final_minus_selected": -0.028175165844908534
+        }
+      },
+      "validation": {
+        "first_objective": 5.04878600152664,
+        "selected_objective": 4.673222444585363,
+        "final_objective": 4.813843076264669,
+        "final_minus_selected_objective": 0.1406206316793055,
+        "first_gene_spearman": 0.06486907840479181,
+        "selected_gene_spearman": 0.12066611199685345,
+        "final_gene_spearman": 0.12187826498629088,
+        "selected_spatially_centered_MSE": 0.00004132503477245669
+      },
+      "selected_checkpoint_sha256": "76c6689f90851ea650e96b2d462f336a04d818341c420c997a985fc72de01e53",
+      "done_receipt_sha256": "df3b6b96bf7bf29c54f70d99351f4fec2f98957f31154e4950c9ae1bb7c54456",
+      "curve_receipt_sha256": "621bb593738dc0662ee4b7efe61d9231aa640ca480e8ef5ef6e4db144fe35fb8"
+    },
+    {
+      "arm": "A1",
+      "seed": 47,
+      "actual_epochs": 74,
+      "selected_epoch": 59,
+      "optimizer_steps": 2368,
+      "optimizer_steps_per_epoch": 32,
+      "zero_count_regions_skipped": 0,
+      "parameters": 466536,
+      "stop_reason": "LOCKED_VALIDATION_PATIENCE_15",
+      "stopped_at_maximum_epoch_budget": false,
+      "process_attempts": 1,
+      "interrupted_attempts": 0,
+      "training_sampled_region_losses": {
+        "objective": {
+          "first_epoch": 4.886636716799216,
+          "selected_epoch": 4.298122707087788,
+          "final_epoch": 4.310579359809818,
+          "relative_first_to_final_decrease": 0.11788421983754904,
+          "final_minus_selected": 0.012456652722030448
+        },
+        "composition": {
+          "first_epoch": 4.886636716799216,
+          "selected_epoch": 4.298122707087788,
+          "final_epoch": 4.310579359809818,
+          "relative_first_to_final_decrease": 0.11788421983754904,
+          "final_minus_selected": 0.012456652722030448
+        },
+        "relative": {
+          "first_epoch": 5.373266259663106,
+          "selected_epoch": 5.276165178516177,
+          "final_epoch": 5.225528640051886,
+          "relative_first_to_final_decrease": 0.02749493743131263,
+          "final_minus_selected": -0.05063653846429084
+        }
+      },
+      "validation": {
+        "first_objective": 4.957022017431099,
+        "selected_objective": 4.688968258100269,
+        "final_objective": 4.7612303238597,
+        "final_minus_selected_objective": 0.07226206575943106,
+        "first_gene_spearman": 0.08240104313200397,
+        "selected_gene_spearman": 0.12233261591386184,
+        "final_gene_spearman": 0.12578383820054218,
+        "selected_spatially_centered_MSE": 0.00004155072864179187
+      },
+      "selected_checkpoint_sha256": "43e26b5cf0bf7a0ddd24e86d8d8c292d08ec37cf57eeaf54dbc0d8c47c2e6f36",
+      "done_receipt_sha256": "ccb77cf752ba881328e9ef620c3d55081cb8e3abfd7aa3d924c8fada84016b52",
+      "curve_receipt_sha256": "cc0cf6fedf693a99adc52859cd3e43a81140f6ab5f14bff1e87f4e439eb03fd7"
+    },
+    {
+      "arm": "A1",
+      "seed": 83,
+      "actual_epochs": 46,
+      "selected_epoch": 31,
+      "optimizer_steps": 1472,
+      "optimizer_steps_per_epoch": 32,
+      "zero_count_regions_skipped": 0,
+      "parameters": 466536,
+      "stop_reason": "LOCKED_VALIDATION_PATIENCE_15",
+      "stopped_at_maximum_epoch_budget": false,
+      "process_attempts": 1,
+      "interrupted_attempts": 0,
+      "training_sampled_region_losses": {
+        "objective": {
+          "first_epoch": 4.795052900085413,
+          "selected_epoch": 4.372519145587769,
+          "final_epoch": 4.382152949700216,
+          "relative_first_to_final_decrease": 0.08610957146642588,
+          "final_minus_selected": 0.009633804112446853
+        },
+        "composition": {
+          "first_epoch": 4.795052900085413,
+          "selected_epoch": 4.372519145587769,
+          "final_epoch": 4.382152949700216,
+          "relative_first_to_final_decrease": 0.08610957146642588,
+          "final_minus_selected": 0.009633804112446853
+        },
+        "relative": {
+          "first_epoch": 5.3918004936341415,
+          "selected_epoch": 5.311506210273344,
+          "final_epoch": 5.303468126717734,
+          "relative_first_to_final_decrease": 0.016382721693930975,
+          "final_minus_selected": -0.00803808355561042
+        }
+      },
+      "validation": {
+        "first_objective": 5.139025796490001,
+        "selected_objective": 4.711668051489898,
+        "final_objective": 4.786543978946315,
+        "final_minus_selected_objective": 0.07487592745641702,
+        "first_gene_spearman": 0.07570002030346511,
+        "selected_gene_spearman": 0.11940286960543352,
+        "final_gene_spearman": 0.11584433967861679,
+        "selected_spatially_centered_MSE": 0.00004427184338438013
+      },
+      "selected_checkpoint_sha256": "c7652b4bc35de66a07d8053abc8ecebfa58ca5ca86c360fcf5cdd86708792b93",
+      "done_receipt_sha256": "60484ce3c984bf8d7766fe86fe610beb87b34e7613b131d24f2fefdbbde321c7",
+      "curve_receipt_sha256": "910a2e7db833157d8060eb76137ae16046fe0895be26f2ef7457971a3c2e4c08"
+    },
+    {
+      "arm": "A2",
+      "seed": 31,
+      "actual_epochs": 31,
+      "selected_epoch": 16,
+      "optimizer_steps": 992,
+      "optimizer_steps_per_epoch": 32,
+      "zero_count_regions_skipped": 0,
+      "parameters": 466536,
+      "stop_reason": "LOCKED_VALIDATION_PATIENCE_15",
+      "stopped_at_maximum_epoch_budget": false,
+      "process_attempts": 1,
+      "interrupted_attempts": 0,
+      "training_sampled_region_losses": {
+        "objective": {
+          "first_epoch": 10.16715464380303,
+          "selected_epoch": 9.695012202967893,
+          "final_epoch": 9.680956669717926,
+          "relative_first_to_final_decrease": 0.04782045627499595,
+          "final_minus_selected": -0.014055533249967667
+        },
+        "composition": {
+          "first_epoch": 4.799118494282378,
+          "selected_epoch": 4.398643539929618,
+          "final_epoch": 4.396677659916474,
+          "relative_first_to_final_decrease": 0.0838572406256207,
+          "final_minus_selected": -0.00196588001314435
+        },
+        "relative": {
+          "first_epoch": 5.3680361495206546,
+          "selected_epoch": 5.296368663038275,
+          "final_epoch": 5.284279009801449,
+          "relative_first_to_final_decrease": 0.0156029388376389,
+          "final_minus_selected": -0.012089653236825981
+        }
+      },
+      "validation": {
+        "first_objective": 12.512284078806038,
+        "selected_objective": 12.1270529954058,
+        "final_objective": 12.243066848857982,
+        "final_minus_selected_objective": 0.1160138534521824,
+        "first_gene_spearman": 0.07695118406484844,
+        "selected_gene_spearman": 0.1227768805778709,
+        "final_gene_spearman": 0.1270198326570768,
+        "selected_spatially_centered_MSE": 0.00003967039572040915
+      },
+      "selected_checkpoint_sha256": "39cfb9d74085b7b1f8481d64e0fa99b366d02b95a0b7b1e6e6be68b002f01834",
+      "done_receipt_sha256": "2d81c698ee02688ce7e7477a96caa9eb37a4533a93a5cb02fedc0cd7f10a1101",
+      "curve_receipt_sha256": "343d9a23aa50a8051d1fa2a9dc8d50bb03f4e48648089b0b0391ac9e59addc8e"
+    },
+    {
+      "arm": "A2",
+      "seed": 47,
+      "actual_epochs": 39,
+      "selected_epoch": 24,
+      "optimizer_steps": 1248,
+      "optimizer_steps_per_epoch": 32,
+      "zero_count_regions_skipped": 0,
+      "parameters": 466536,
+      "stop_reason": "LOCKED_VALIDATION_PATIENCE_15",
+      "stopped_at_maximum_epoch_budget": false,
+      "process_attempts": 1,
+      "interrupted_attempts": 0,
+      "training_sampled_region_losses": {
+        "objective": {
+          "first_epoch": 10.240403448661395,
+          "selected_epoch": 9.698218143120268,
+          "final_epoch": 9.575681327583085,
+          "relative_first_to_final_decrease": 0.06491171216161416,
+          "final_minus_selected": -0.12253681553718287
+        },
+        "composition": {
+          "first_epoch": 4.872386625227026,
+          "selected_epoch": 4.394632633159794,
+          "final_epoch": 4.313823281976506,
+          "relative_first_to_final_decrease": 0.11463855112780463,
+          "final_minus_selected": -0.08080935118328725
+        },
+        "relative": {
+          "first_epoch": 5.368016823434367,
+          "selected_epoch": 5.30358550996047,
+          "final_epoch": 5.261858045606578,
+          "relative_first_to_final_decrease": 0.019776163398808052,
+          "final_minus_selected": -0.041727464353892074
+        }
+      },
+      "validation": {
+        "first_objective": 12.414485178858445,
+        "selected_objective": 12.20566598318064,
+        "final_objective": 12.210980600144676,
+        "final_minus_selected_objective": 0.005314616964035679,
+        "first_gene_spearman": 0.08564672259579534,
+        "selected_gene_spearman": 0.12213125879164152,
+        "final_gene_spearman": 0.12477874017966906,
+        "selected_spatially_centered_MSE": 0.00004535497958292584
+      },
+      "selected_checkpoint_sha256": "5063c6717a952a727ddb8da07652d1499a9012b56f881d8b2962b6da99b97f79",
+      "done_receipt_sha256": "4901e196cdb09cc76fa5fa2acaf323d857d216cd76869d2c2238765fa0a01c34",
+      "curve_receipt_sha256": "1c4b27c66ce8dcd253c19e103232837e9d6592c507fb10f9ed2e4cf7bb832f77"
+    },
+    {
+      "arm": "A2",
+      "seed": 83,
+      "actual_epochs": 37,
+      "selected_epoch": 22,
+      "optimizer_steps": 1184,
+      "optimizer_steps_per_epoch": 32,
+      "zero_count_regions_skipped": 0,
+      "parameters": 466536,
+      "stop_reason": "LOCKED_VALIDATION_PATIENCE_15",
+      "stopped_at_maximum_epoch_budget": false,
+      "process_attempts": 1,
+      "interrupted_attempts": 0,
+      "training_sampled_region_losses": {
+        "objective": {
+          "first_epoch": 10.16336258960329,
+          "selected_epoch": 9.609288693262915,
+          "final_epoch": 9.593453853639547,
+          "relative_first_to_final_decrease": 0.05607482080258917,
+          "final_minus_selected": -0.01583483962336807
+        },
+        "composition": {
+          "first_epoch": 4.778704236621114,
+          "selected_epoch": 4.323453208332503,
+          "final_epoch": 4.311613598118417,
+          "relative_first_to_final_decrease": 0.09774420331837971,
+          "final_minus_selected": -0.011839610214085639
+        },
+        "relative": {
+          "first_epoch": 5.384658352982176,
+          "selected_epoch": 5.285835484930411,
+          "final_epoch": 5.281840255521131,
+          "relative_first_to_final_decrease": 0.019094637156339005,
+          "final_minus_selected": -0.003995229409279766
+        }
+      },
+      "validation": {
+        "first_objective": 12.625502526048765,
+        "selected_objective": 12.196626140779513,
+        "final_objective": 12.231186919894128,
+        "final_minus_selected_objective": 0.034560779114615414,
+        "first_gene_spearman": 0.08259458037180653,
+        "selected_gene_spearman": 0.12230794566186373,
+        "final_gene_spearman": 0.12200176499548171,
+        "selected_spatially_centered_MSE": 0.00004417939738393801
+      },
+      "selected_checkpoint_sha256": "180bc0a11d63493583c256f5c762878c2c19b28f787a8ceb106252c7dad77a5f",
+      "done_receipt_sha256": "13e9d882a4a751980d988c3751b2df446991a3605b771faa8d3ca5efccb259e0",
+      "curve_receipt_sha256": "dc5a599c8766610002aae072174184002d658c20a2f9b8f52dc0edd7119095f1"
+    }
+  ],
+  "expected_fits": 9,
+  "completed_fits": 9,
+  "formal_fits": 9,
+  "actual_formal_fits": 9,
+  "smoke_fits": {
+    "in_memory_single_update_runs": 1,
+    "weights_or_results_persisted": false,
+    "counted_as_formal_fits": false,
+    "evidence_scope": "root_execution_stdout_record; no_persistent_smoke_artifact_to_replay"
+  },
+  "exploratory_fits": 0,
+  "survival_fits": 0,
+  "optimizer_steps": {
+    "committed_total": 12768,
+    "recorded_update_events": 12768,
+    "total_training_epochs": 399,
+    "per_epoch": 32,
+    "skipped_regions": 0
+  },
+  "failed_attempts": {
+    "formal_training_cells": 0,
+    "preprocessing_excluded_from_formal_model_count": {
+      "BF16_full_cohort_gate": "FAILED; final_frozen_features_uniform_FP32",
+      "UNI2_batch1536_fragmentation_OOM": "FAILED_PREPROCESSING_ATTEMPT; not_a_spatial_model_fit",
+      "NMF_max500": "FAILED_NUMERICAL_QUALIFICATION; repaired_train_only_max1000; no_A_model_fit"
+    }
+  },
+  "interrupted_attempts": 0,
+  "training_curves_private": true,
+  "test_read_during_training": false,
+  "DSS_or_PFI_used": false,
+  "selected_arm": "A1",
+  "selection": {
+    "selected_arm": "A1",
+    "A_gate": "PASS_CANDIDATE",
+    "candidate_only": true,
+    "retained_A1": true,
+    "retained_A2": false,
+    "complexity_rule": "retain_A1_if_each_seed_A1_minus_A0_positive; retain_A2_only_after_A1_and_each_seed_A2_minus_A1_positive",
+    "gate_rule": "selected_arm_all_three_initialization_seeds_positive",
+    "test_used_for_selection": false,
+    "DSS_or_PFI_used": false
+  },
+  "validation": {
+    "arm_initialization_summary": {
+      "A0": {
+        "mean_gene_spearman": 0.1166364035160414,
+        "initialization_sample_std": 0.0012206576332193706
+      },
+      "A1": {
+        "mean_gene_spearman": 0.12080053250538293,
+        "initialization_sample_std": 0.001469491412963117
+      },
+      "A2": {
+        "mean_gene_spearman": 0.12240536167712539,
+        "initialization_sample_std": 0.00033365293754977646
+      }
+    },
+    "paired_seed_deltas": [
+      {
+        "seed": 31,
+        "A1_minus_A0": 0.002852186981838617,
+        "A2_minus_A1": 0.0021107685810174415
+      },
+      {
+        "seed": 47,
+        "A1_minus_A0": 0.006955858679367752,
+        "A2_minus_A1": -0.00020135712222031643
+      },
+      {
+        "seed": 83,
+        "A1_minus_A0": 0.0026843413068182165,
+        "A2_minus_A1": 0.002905076056430214
+      }
+    ],
+    "training_donors": 4,
+    "validation_donors": 2,
+    "training_sections": 8,
+    "validation_sections": 4,
+    "diagnostics": {
+      "all_cells_first_to_final_sampled_training_objective_decreased": true,
+      "cells_final_validation_loss_worse_than_selected": 9,
+      "cells_sampled_training_loss_continued_down_with_validation_loss_up": 6,
+      "cells_final_gene_spearman_above_loss_selected_checkpoint": 4,
+      "final_minus_selected_validation_objective_range": {
+        "minimum": 0.005314616964035679,
+        "maximum": 0.1406206316793055
+      },
+      "actual_epoch_range": {
+        "minimum": 31,
+        "maximum": 74
+      },
+      "selected_epoch_range": {
+        "minimum": 16,
+        "maximum": 59
+      },
+      "cells_reaching_maximum_epoch_budget": 0,
+      "cells_stopped_at_locked_patience": 9,
+      "budget_assessment": "ADEQUATE_FOR_LOCKED_VALIDATION_LOSS_STOPPING_RULE; not_global_or_rank_optimum_convergence",
+      "loss_interpretation": "A0/A1 total objective is composition; A2 adds relative loss. Absolute training-to-validation gaps also reflect sampled-region versus full-section domains.",
+      "overfitting_interpretation": "Six cells show continued sampled-training objective decrease with worsening heldout objective; all nine heldout objectives are worse at termination than their selected minima. Sampling and dropout prevent treating this as a controlled full-training-set generalization-gap measurement.",
+      "epoch_metric_alignment": "Four cells have higher terminal validation Spearman than the loss-selected checkpoint. The prelocked minimum-loss checkpoint is retained; no post-hoc rank-based epoch replacement."
+    }
+  },
+  "limitations": [
+    "Four training donors and two validation donors; three random initializations are not independent patients.",
+    "Only the prelocked validation-loss stopping schedule was qualified; mathematical global convergence and ranking-optimal epochs are not established.",
+    "Training losses average sampled 256-spot regions with dropout; validation uses deterministic full-section context.",
+    "A2 mean validation Spearman is higher but one paired initialization delta is negative; the prelocked all-three-positive retention rule selects A1.",
+    "Training completion and independent replay do not establish external ST-test success, weak-correction success, or DSS/PFI benefit."
+  ],
+  "verification": {
+    "independent_audit_sha256": "7d62950e7320a929f12ba513fbaefc2671cf3018dc1eae7a4d5af0e940255b9b",
+    "independent_replay_status": "PASS_INDEPENDENT_REPLAY",
+    "independent_replayed_fits": 9,
+    "maximum_absolute_replay_errors": {
+      "gene_spearman": 1.3877787807814457e-17,
+      "spatially_centered_MSE": 6.776263578034403e-21,
+      "composition": 1.7763568394002505e-15,
+      "relative": 1.7763568394002505e-15,
+      "objective": 1.7763568394002505e-15
+    },
+    "all_selected_epochs_match_first_validation_objective_minimum": true,
+    "all_step_journals_match_committed_steps_without_repeats": true,
+    "all_scheduler_children_exit_zero": true,
+    "all_source_hashes_match_current_frozen_sources": true,
+    "all_fit_data_split_dictionary_hashes_identical": true,
+    "local_independent_audit_copy_sha256": "7d62950e7320a929f12ba513fbaefc2671cf3018dc1eae7a4d5af0e940255b9b",
+    "configuration_hash_scope": "local_public_runtime_lock_file; formal_runner_executes_its_frozen_source_schedule_not_this_JSON",
+    "public_configuration_numeric_schedule_and_dictionary_budget_match_execution": true,
+    "formal_smoke_and_preprocessing_counts_separated": true,
+    "full_private_curves_or_patient_arrays_published": false
+  }
+}

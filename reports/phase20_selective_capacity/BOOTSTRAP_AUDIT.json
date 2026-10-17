@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "source": "e7b6383cfc23e4fbb8f94419a88bff5db1113babcb967672f87e0f13c74ba548",
+  "draws": 20000,
+  "valid": 20000,
+  "zero_denominator_draws": 0,
+  "primary_family_tests": 14,
+  "shared_patient_count_matrices": [
+    {
+      "fold": 1,
+      "patients": 103,
+      "draws": 20000,
+      "counts_sha256": "87bfbf635dea043e1f0aa5ecb961aa819883e9ef930441967c8de86df4d04d14",
+      "one_shared_count_matrix_for_model_seed_vectors": 60
+    },
+    {
+      "fold": 2,
+      "patients": 103,
+      "draws": 20000,
+      "counts_sha256": "b207b4b13e73b8dbc61eba6df86efd41a6430e7e449929af30a2e172ed73d430",
+      "one_shared_count_matrix_for_model_seed_vectors": 60
+    },
+    {
+      "fold": 3,
+      "patients": 102,
+      "draws": 20000,
+      "counts_sha256": "b43f5809c5f6cfaad26348dc995eec2527826123cd6274991cb0ca65502807f9",
+      "one_shared_count_matrix_for_model_seed_vectors": 60
+    },
+    {
+      "fold": 4,
+      "patients": 102,
+      "draws": 20000,
+      "counts_sha256": "14f96a39a2e904156616e01c8889fd3a1303bf3f939adfc3cdb41abf988ed61a",
+      "one_shared_count_matrix_for_model_seed_vectors": 60
+    },
+    {
+      "fold": 5,
+      "patients": 102,
+      "draws": 20000,
+      "counts_sha256": "2772591407534e58071bf33fb9a73df850aee634bd9ba32c2919b822977c29a7",
+      "one_shared_count_matrix_for_model_seed_vectors": 60
+    }
+  ],
+  "minimum_H_denominator": 2241.0,
+  "minimum_U_denominator": 5285.092260168739,
+  "sampling": "one within-fold patient multinomial count matrix shared all models and algorithm seeds",
+  "pair_weight": "count_i*count_j",
+  "IPCW": "frozen corresponding outer-train reverse KM, tau60",
+  "risk_ensembling": false,
+  "uncertainty_scope": "fixed fitted models; excludes refitting and repeated researcher selection",
+  "previous_neural_models_counted_as_current_OOF": false
+}

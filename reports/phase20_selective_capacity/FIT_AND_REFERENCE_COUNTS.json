@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "source": "e7b6383cfc23e4fbb8f94419a88bff5db1113babcb967672f87e0f13c74ba548",
+  "new_inner_neural_fits": 135,
+  "new_outer_neural_fits": 135,
+  "actual_fit_source_counts": {
+    "d1d7f8176f18417b8107767700f68ec0292181c3a0e76fce37894e06cc0c3192": 189,
+    "e7b6383cfc23e4fbb8f94419a88bff5db1113babcb967672f87e0f13c74ba548": 81
+  },
+  "retained_pre_audit_repair_formal_fits": 189,
+  "post_audit_repair_formal_fits": 81,
+  "new_unique_convex_models": 0,
+  "qualified_inherited_unique_convex_models": 20,
+  "convex_seed_role_references": 60,
+  "historical_LOCAL_outer_references": 15,
+  "previous_neural_models_counted_as_new_fit_or_OOF": 0,
+  "new_native_method_fits": 0,
+  "new_PCA_or_KMeans_fits": 0
+}

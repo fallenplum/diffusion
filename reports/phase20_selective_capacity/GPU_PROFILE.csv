@@ -1,0 +1,3 @@
+role,samples,sampled_interval_seconds,wall_clock_span_seconds,observed_interval_count,maximum_counted_interval_seconds,excluded_unknown_gap_count,excluded_unknown_gap_seconds,zero_length_interval_count,maximum_running_workers,GPU_percent_time_weighted_mean,GPU_percent_maximum,memory_MiB_time_weighted_mean,memory_MiB_maximum
+inner,608,6113.829223155975,6113.829223155975,607,60.0,0,0.0,0,8,97.9809341084498,100.0,22367.765394836133,24413.0
+outer,337,3363.3213045597076,30763.11203980446,334,60.0,2,27399.79073524475,0,8,95.7279038435721,100.0,24957.170757933825,28971.0

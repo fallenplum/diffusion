@@ -1,0 +1,2204 @@
+{
+  "status": "PASS",
+  "source": "e7b6383cfc23e4fbb8f94419a88bff5db1113babcb967672f87e0f13c74ba548",
+  "new_formal_inner_neural_fits": 135,
+  "new_formal_outer_neural_fits": 135,
+  "new_formal_neural_fits": 270,
+  "formal_generator_optimizer_steps": 14140,
+  "completed_formal_actual_fit_source_counts": {
+    "d1d7f8176f18417b8107767700f68ec0292181c3a0e76fce37894e06cc0c3192": 189,
+    "e7b6383cfc23e4fbb8f94419a88bff5db1113babcb967672f87e0f13c74ba548": 81
+  },
+  "retained_pre_audit_repair_formal_fits": 189,
+  "completed_post_audit_repair_formal_fits": 81,
+  "formal_attempts_recorded": 286,
+  "formal_real_fit_attempts_with_generator_steps": 279,
+  "formal_zero_committed_step_interrupted_attempts": 7,
+  "formal_real_fit_attempts_lower_bound": 279,
+  "formal_real_fit_attempts_upper_bound": 286,
+  "formal_all_attempt_generator_optimizer_steps": 14336,
+  "formal_interrupted_attempts_with_step_commit_uncertainty": 15,
+  "formal_all_attempt_generator_optimizer_steps_lower_bound": 14336,
+  "formal_all_attempt_generator_optimizer_steps_upper_bound": 14351,
+  "formal_failed_or_unfinished_attempts_with_generator_steps": 9,
+  "formal_partial_attempt_generator_optimizer_steps": 196,
+  "formal_attempt_ledger_audit": [
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "bc20ef469e5e39dc4837d7bb5e1944d494e1f9d32f45cdd675b3b4e05058cee4",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "a2d041565a0e7e4a00bb68bf49ae6d994049bff4476258dbe90a1c3063845260",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "6ec507333ba450cbccb4b69e6eeae696bd942edfd5afd8ce67f5b5410f46762e",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "c5a4d151d5cbb0b3b0a481291f003d24602e663fa55150858a176fe6aa9e87a5",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "39718e41b1bd9d175829e212ceb6d6098d66137f15c5cade44f7d350adca04ac",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "90c2db0216d30a81bbf9cfe114414eacfdd32c49874d502ac94f9666a17888b8",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "d8aee4449a4acefb245e474cc66e193373e41a4e061baded87c9dad2aa3518a9",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "65dfebdf3a4f307f8a92cf80df164dbe8ff6210a2211618cb0b8e0d4c6662c08",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "45fff06e1de40405977d210b617e42bd11a43d33cb276bf48ed3110a0bcb6d2e",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "fad29c01a93893be92a3217e0bcebb8595cafd03b22b108076885595d0565a8e",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "78f74bb9612eb4c11a7834d249157d9b4652feebef53695c1c9be132bad53fc8",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "1da26a1938d6241b52365dcaa355fa855a31462f617b1249b04c1ca19fda272b",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "a9e0f49cf14ff1f6bc8b3d564b80bb464b7d0c0b8caee249d284ef7c40d65512",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "697a74e2b17792025f7d870988ada80b20dfbf76f8f78397938951b71bb75e40",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "inner",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "2fdcf1b77f5bb8297dd9b365f5d040d47283f2c0480a75165739daf0dde1dcc2",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "f6788568981bf954cd9b7edfaa32b36e9ce0a8e1bc3a8826a92677d0019c650c",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "75866b5e94dd165e952c8c827c658250f34b349a531516fcad70eea3f66e5c7e",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "77e8bb70fac04df915ccaeae0e5005303bca875b51cc5345114dcd1a2743dc3c",
+      "attempts": 3
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "1a8bd588d42183a4b69d9d05eb677aeb7a874a4e93c81e7000cd6f8044b644ec",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "6ecaf8b2c21a01656bdff04a555799804425a44a3fa48354fe7c91676dbd4f42",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "f315b1e5f556faa7b7a1485d4d8dc0dd75e6d8fad671772a326951810c87b531",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "3ce2ce36f07ea2c645d811bf238e1736ce095e16e7c2f032f7569814fe3ab570",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "ba9f4fd28d2a2b852c866e39d7ba25c71d0bac64b96bc25128a16e940322f18f",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "fe0855bd91ade1f25594f1212ec58dec7f4f94fb6c2603626564e85996bb13f6",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "41cc3ebaba128b46bfe75592e90cb97bac46fe5dd2dd29b1ae1aaf56b5f56f05",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "04b400ea5fba1924b0d297185b60802ce6f0d76732d54a4628caff08315462b8",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "091c3136284b68be5176b16fd867ee0569bdcfbabcee98f48eac3874982d970f",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "821b7896fd9e52b4645c92d00bb97be016cf129398ffea4cb63e7495c6c99200",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "82cc7724db777c7abc0a20931dd4105952b6b65ee2f140bb4d9994678fad4d11",
+      "attempts": 1
+    },
+    {
+      "arm": "L0",
+      "role": "outer",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "5a07abf11787ccd92bb040d27380697864ffe71f3573867ad85a5bc334652fea",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "18e8075e2989006109b47d25ba6de9d8c0700801bc2d814257f0de2e477c224a",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "2ee2e0ef921aaff05e2c4e2752d06948feec573c73434c916ee82df3d4f960f1",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "24c4c461da6390c6dde423654a4349ab06a4de7e6156d27322cdee544b2bb9d5",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "43f3b8f6c31ce1eb6a777b99fa19a6f838c15cfa57e586f2b70a6bcd1931d393",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "21fcb280c0eac691ab7d3c9322d5260b37f5bd3d965508bf2013a9e4c702c7f2",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "914cdc222b27458ab95930e3197677aedd469c55053a30a306635f09e3b15b52",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "19f21ae6e9e95cb9f76883358bd725058e21b768f6086617c86031002d1c5edd",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "ec469cc780d2209cd3810164c4db08dea25d3f89560ebe718ce2ded5bf8e7974",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "ef2a3cb500284a96caa54a28208dd7348d18f115d112811d5550d3699fee3e3e",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "6838c7e35f4fa19fc9017db6b101d63574b50dfc726eef06129e10e775290121",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "839d65222912eb06740a2fa314cd8004b238a026553853e239eb2117ee832ef6",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "a4946bd23b834bf355fd5c8eb6e16d5be6644f2e5d87f40d84570f91b6532a14",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "752808818ea2d305eb4442596a0ddbf928957ad61a6aff90cdbc4a727cbcb006",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "302fbb047f16e54cb979763b7ecf16097cac1d2eb26cdb92e36ac391aa04ce76",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "inner",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "095e031b7d7035d8a652b5d878bdae8d74eb281ff00effdc30a6f6ce31616d0b",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "38ebcc2daafe8528f13bef7281a3abfc4e30fc651392c5fad27ffa42fdf81d0e",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "fd0254508ea0340ef7ae4a202ae9d0f73ef5dfbe7762837af094931590efef11",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "f744d0dc485cbf767378f544ee8b6dfb05f607ea8ebccd1bba66911813dbf658",
+      "attempts": 3
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "ed66817f1b6d36c6dbbfa952a7b785c1876aa6ead775a35cd82e7af93ebbb681",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "6c340ef4dc1d734a6b3124e19dc8f7ccd7e8de8f8fa0b4158b4c31f78798dcea",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "f5b9b8091a3dc4fe0b0233b7731f22063d63a739f0b537ce8d5cfdba1fd6f1a6",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "5cae34011b30d5e76b7af258cabda8161e957c6a647fc964cff5f222433a4bfb",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "16e0e6fa8558893f7bb3373b83717e8209eaab9e4595926b1897915274450511",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "4254c4378cdc094f41bf2f25d9c047ac1e9cf3f064ca967db9176e85079720a5",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "1b18afbc65c31ae321a618da8454d0f4e7f7093f02a55ce044de6d7ffee26fbd",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "fed6c7800d5447936e56f5fdc0beaa4e6b187de60849ddfe150f11154c1ad750",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "e3f5759e7b7621a3b379587bc32fad83eb672d305d84ebc7d5bc2c0d49b8e36f",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "c4697724ffc529b7a48428b5b295b457a3c05dfa2727fa8160acbb8aa6de6d20",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "22ad730dc65039561ba92403bbcb0939c1662a833fa0de1f5f136d9fa9d36f3d",
+      "attempts": 1
+    },
+    {
+      "arm": "P1",
+      "role": "outer",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "83b572ed98fd437c0d882f8075d4f9dcb66d6c1a002ceba96a69b32d02fe6631",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "6eec6eee53bf0f2ad06f5343633bf59bb77b1b7826f8aabab52b0fb1feb6ff0a",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "a5d636b12c37cb8efd982832a7b16403fb5ed46185f83ead59ca741fc48765dc",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "238bac52abff31f79811516c716828a4d2d735957a2b19e862b5dd1c3beb2121",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "e9c4c47a8c5fad5a00f3e184a2c792a4c9603e9ffd2b23642ab779a814a73516",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "c414d2bbf91a2bf4d468509e75ffc7a5294fe3966625a56b020fcf7e83e33c45",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "2ecfa01db3586f11c17fd4b9c7b8a4db667cf0de939894d515604568b1b342b0",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "348f0db2db924dd494a67b9ecfeab79ec40731bd6e1cd51e1618b49fbd76179e",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "a6bf4bdc53c8d750f696eeecafb23a2f2cd5368013681fe302a08d8054ce3d57",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "5a0c1d4a70387a9dfd3a08b530fb0cef9b87877ef7b2358edc96043ce3157c59",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "41319187f54a04a4ec1545f9d292909fefcfe9d57476473a0ada337819b7fa70",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "0bce6443dc0eb5f218aab9b43915c8c73e50737ab84ec525425fd8a005154437",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "c4f8482b06306157b18448019c09c3db0a14ce8cd4cc483b7f3db7c88c8d23c1",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "8639c67f2f63f596c364de293bcc04a709c74d266c6d423ad1f2bbfc41b96f66",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "5a262d6fbe20caa4c7d62b269f35387cbd4627441a927e6d616714630f68f604",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "ef995768977a8db112582c145009dd9ae7b93828700932682f0d7714a736befb",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "2dc9b2cc1bfe6216edc5008e2545334648b6885adc481e85bf983891f797b5b9",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "d13ef8979b117db98b220c7ad768239222bc2f4f2b41299105739b2ffd9635b8",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "c579d6b3968c0143b4123712da7a73d69771aa5302c09e0729f5e8ae4f497f41",
+      "attempts": 3
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "91c543c9f790450bec4dc83e3b34453a4099673b1a3644bce62444b5d960baf6",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "c22884e4eca01240f9bbb447c9ce791c3136ec135cc1c602314c46d539cb40e7",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "c4c00f8339b95c54ad445999212a33300bcd257fd0ce1c791c7785e5db9ea375",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "6240b48033860ae04fec55f280828ff18d84a84b9af66d733132a3f72dc61e88",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "8d5b43b5d469e41a5154cae09e835fc841d6ca01f11b92e81567783e3344d4e7",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "0e3f3455aa16744f53bcf7de76c5da8f9d381e168dd318d13e95e04439fb9240",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "c5c1201c1154226d08f630387904755a8800dd35fd6a55a0d9c7f94cc456c546",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "dbde9e2bc8452f376d7668df6392aee7a8e980139a4c8a2b5451ea142e9f7b59",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "1621b994f084543f0e0524ffe8895c9c2f300ad9413a067ae1d921aff896e7fc",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "cb0c91f358dbb52c38af9971de9220dce1ccd774ab98e79d649c38c196a75a8c",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "27f3d07b3598a37105683e9ae27417d7d335c2db853866ef9eaa7978bec65d5b",
+      "attempts": 1
+    },
+    {
+      "arm": "P16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "262b93f6853373c11742a757eff4a851a85705350627c75dea65567aef9e0b1d",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "801dd056fb6330ab8a1774e988d6d81df202dc54a9307f246d57d610202b2135",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "30e6a6f36d24fd71ad32b2a58b469c06dbcfe201c12a3363cb5e9d842a726059",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "f44ca56042d2e6597de386b18d91a065263d6fda42435c0ac4154f204b8309e9",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "aba089321838dc791c66097566b5ebf3d7007abb490172b223f3683d246bc939",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "46ee8bff3050634d5bb96b9d11e6f5544224b793cf7f4ba7fd974eb1526d4946",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "5a8d0e3e2f8b17d552dc747f1d656679f8838b80ed0df37d704cc32d9e64c1de",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "e975602874548f6196cb629ceaed93ae95726d0739cdccb5f8c53ac11addac9d",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "6cefd938836334b2fc5263e2cb5aab4f0b3533620552b29420f10d5cdf7540e8",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "f76b21c0454e7343f826ebb3b9e2bd2547ed70a4be86c648fb2f1941c8684497",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "53b6fa4f52e63762d9fb009ceb5c74ac614740810311dc4dfeda410ae5b8ee4e",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "84e2df592d512535c19f78e62c9784a532a568a73e1274b336e19b155e333754",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "9acb4e5f22f98ce210460286734bd068eb327b167eeb7c4575d7036f3cd4b95f",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "e4cf1b3d95f19cad8eda5e547dea8ae3cc11201e6085f32ed7f4afe9f941f9af",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "52e46f73d97cd40f19dc2e8778d533c885dffa508da2ae3b6838d39caa585390",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "inner",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "ec5e582fca66fb3e7034ca533a397e15d1d60d84a9e0b020b376f07177b4c126",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "92206b08010eb45cf034f9efe59ffc90770f30b0349d026398ef0232bbd603d4",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "d2cc83df0aa8b7d6ffb7b67b488fa33d34ffcd3bb06b439c38273f1b0c8fed84",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "10c6a874c4151ec9281b500b7f82bd6c9b7a310601fb16e6b339075376279c00",
+      "attempts": 3
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "50e439e8921fbf6d8e2cde84b2525c52758e03906fc67b903b9b5ffc326fc150",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "8d019e78f9a2a3f3398e02a3368499da6079cdd122148336ce4749092ca5d7c4",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "09c84bd29708f9a4d1bd2e55102b05227ef95594176d289e922fdf204a6c5364",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "dfd1cb2e54c044a7f3c547b4465436008549a24b5bffa353e20bf362d628045b",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "b6a17b277fbb68dadde480faf78ead221ad7a49b31c39da8186e02f0530881fd",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "470bedaa4397c53488908e6b01eb41f34957a196eb3355f1b91fb57a7ab76231",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "8cfed56b83499a1f9e271c8e3e059b1affd7637c0a51d37b2f2c5ac90e93a280",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "f6e9249b6e3d767a93160ef94a7b630270b086d8a55566e1348bea948aff8fe4",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "e0c31ffc6b1982568bb9bda611c0c9f085c72c9c32d4482463b8ba1a13ed4a67",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "1ea7cee39d34b5bcbc51b51ac20c689ba93ca9160e261526919d63334826343c",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "2268d47fc56484be2f2875475ae054be2a0c78522104fd7569420adb66ef0497",
+      "attempts": 1
+    },
+    {
+      "arm": "S1",
+      "role": "outer",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "9ead658228f2ae1df9b21cb1689741d7a7d230ec10414edd12f193e186061de4",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "38e81157901aeee7da15d594b35733e9e28e25c2ff854cd1b9b9e6c10dc34b33",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "0bddd2ad06697cfd716fcc0d02c4e9fed4f4826c80633b27ee97188ef4f2445d",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "8838b470ae72a9f2725b73ab59001725efc9cfb85986ebd97094e96b416e2481",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "656231761f5c47ac1ca519a9f599263911c99c3c884c3f031ef8debade8a2c35",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "4be592541ed21b8e82627738e12dd1625e0dbb81267488f8585ed2eac01cbe8e",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "99390c2592871f236a8f4349fbc2b0e374fb9db81bbec16bde11389e761a76cb",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "e17a7e08b8c3a1d4e3c3a3ba21a655e182bb0aea38f5fbf236366885d2f7906c",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "d0f34cc0a7129531791cf311b8e2a14d78c14216fb5e1e71cebd90cfcc1bcaa1",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "74406c241c683feba7ad747385de195b55f16e80a5e26628b69fcee6ada91937",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "5b658e62d097484ec22d20ee5672b8fe969a0febb8f17a6cee7cb9527d61501d",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "dfdf9d356d1f34f5261f64a1ae09672e7019b2096fc17c2f6efe5817be1da3d5",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "85a48fb9fa1358d35cafd61ac023f132b0a78919b5ff6b90cc8b4ace30e8413c",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "c99c95e8776649da7a4039d7036142491748fa9d95050eee0d1245c86c6f60fa",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "8a065ac660baa4bb9688a6fd551cea61dbd59e871b56183c8a687c1aa6cfa7d7",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "cc7352103274a980203636d1981c7580c3ddd9b42081a38b4e138df88a1fd740",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "38a8575bcc60aff1e13828da1fa5a072168718f3d555485fa9040c14abbaedba",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "46c34ce4d63e9917754c6665523a4573ff352ac88b01ccb151d9dd24bf38498b",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "8d871e2c00fdc5eac70940a4ff8aa95bebac4125baae389d5bc74012264f29be",
+      "attempts": 3
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "ebca351900e378074341586865c3364a184280851c7a70887a3c757f069b44c5",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "c89e57a4296e1c8d6c77243ad8216f4d5e9ecb5b57157eb7e6adecc7d0a07e8b",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "c586ad2bc83b2b2b18ebbe8e2618f470872fb12d35ebe8838b62bb856a4c873a",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "64ca6e7c86d79cc5f709f47cf779cd1131f69582cbd0791c0cedf9fc83acea63",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "5209f6da32cc2c6fc8296262669a6a2891fe7349891954f2c90ab0f7e8ec9a01",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "28a179519c1148012294329c3f3f92397938cc8af60d618075e879f2c87384e5",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "794f6484b773ddaebdaef3035f27158038e103ae1250df37d0e57f87da28e4f1",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "3cdb6c31eebf8bbfbf1017cb2b2417c738cda520b9b41a1c4061679198df022f",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "fb9b18fc004c690e26bdb0383afc5ccbc0cffb599a3cfd0119fc55b4cf18d449",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "c615b60eab84a9e6182fe17ec7c93b38db35756a907f742523187252c642d757",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "1e31a0f83dd6d41c4b71fb82b8a0fe6e21b68f51a62c25054abb293493cfffc9",
+      "attempts": 1
+    },
+    {
+      "arm": "S16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "ec9f95298267437308fa577bea4f8f12857aa2afa1b6a64c1d06308268c099c3",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "289ab6614d9d52f2e12100259ef5c8b6e82c1e1aded77ad63840d3c2bc82b391",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "37b9f225d61eb4d8e2ad2acc0009e796358a71df6b3bc03a17ab052468bc0dd5",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "2b3ace897229ce8f38b05495081006c57dc20e85d470c7bfd7df710d8b6cff6a",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "38fee56f20dbd09e59120a3a59c7663a15fc671ea235ed4957699a6900277643",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "661d7c913f9eb598337f4a3a2489454c8ddcc200208231b8171decec78ca6988",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "7a01cb9feb6c251f74122b86b13c783e3f5346e85062732878e67f92983138e7",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "98c544661328f5e99cfe4a1df165fb926f377cb291f3d88aee1aeaffab1b0158",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "4db5b1e36aea2aeaa3a42170589b84b5e9c443ca28cd6fc2f7398215453d13da",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "eb36a7c2b4d0aaf1c780d9ff562e6478276d140826cdc199618c21d825e3f7db",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "5264bd87da94006d2e6520f585e3148816aa35a0cbfb23052a4442a76b1ed854",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "7a7f62ba454b2cb0a3dd8b59b3eee84bf7484567a22f3e2ff7ba975b97c24d57",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "37dfcc69b0f0f50d1bba924b115f634fe856717b30b04ea4e140cbe60a0f33ed",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "148b87e9f5f573c059ebc759a8672fd9549ff3a2c9a310fc33cf38b42be63101",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "7e8d3180f424436269f1a33d267d2a41d6f0a61925573bda5d9c00011629fc2d",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "6b9e0673c0cb8d9deffff8cef24af03c538086d10c8e26dd802d83ca6c40e70b",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "bf7493e1b6465417b47d5398a848ec46e6e6dd7de318e37db2b8e18235efacaf",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "eaf32dee19c352f1b3df66c9cecb591f2cfbacdb09412fa0c409e912ca7115d3",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "5871c0260a0803a0ceeffc8c434ee9369d795bc8e636ddcc12a8d84f36e36b93",
+      "attempts": 3
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "7dad0087bfd5983d9f65f8742534f25fd67be454ffa0235c5d6fb8ff20e5d0fa",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "5c6cdfbfb850b02a45189675a708c9e7e5b398e30a92ab3e5d2e16920b60b0fa",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "9f5968f4bb9aee39323d2bf7931ee2bb67989b221d01c8536dfa0bde3dfcc202",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "acdeec34e7bb5ca45d1de14d635c77f2761d0720888594de0ebb494a0ded44d2",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "14eff43c3b4fb219841474a8258591c6ba1d8d7d139011a0ad4129af36fa473e",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "eca5a72266c26aaa5884b11c835d3b81333f3605f06dc95efa798364bc654f47",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "f81d3cc310bc9b0c570440d186bfc5b95704999dd8b330b7b3319a75803805ba",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "dd3ccf9a6c39dcf62447ba5a57176e2f3d65b450431f54bbf56db841ff50bdfb",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "e051d510123d8547666ca8cd52eaafaa492ffb6259f77ace55f556536ede637e",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "95aaa473d62884d5cf43688a6a559a08597d71c7c7c1025618dad979d8b0157e",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "ff4eee6fd05924618af5c70e9e56b965d53345fcf3732467f80e4d0bef0df8d7",
+      "attempts": 1
+    },
+    {
+      "arm": "D16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "70be6f4f6737f2fab1e8af0f3428e4c276dd2d4717163e2765cdbaf24af21705",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "90ef8720cfb2b21d6fe690ea33d9878227afcc96b8c3e5fab4c7a969c22bd181",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "3ba01a781e1545f18cf4c10d676669e7cdbbc0f74a1a9c3ec443fe0505e98737",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "e2c1b9b2371edcb4ac47aa405d7df9aa16627a93ac50703f7fcee022c42be1bf",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "7b51a0895990fa2b1ae174f88ed97215705124dc5deefc87239d8b1f558a2cfd",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "c73403417f522cb0126148953b89606133f603e9883c11b4ba4840db8c79cbcc",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "783446dee8442873e1d4abf3343f1fb0704173326891f25873fb595bc06d7390",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "d7cf39ca0286c9454abca467206a4bcc0adfa4b00d1a8552cd9c1a1cb95ea63a",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "8de3ab010cb2c6af5d3dcafe2dc96804eaf2afab1bb61153b442decd96253996",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "1e6b8dd6987294eb7632daf029563debc48ceadd97454bf371c721248dd2451f",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "4149afe9f4499559b466a98e5d0c9a1987b1927e3cac4acef0648758c3f810bd",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "7c57c69ec4824f9b28d5ba9cf89741dc74aaa0b15b5a380cf5bfda288abbb5c1",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "9f707409aa755264e5390a55b89ef3da46e1bfdb3403b5e3650b2d064736a238",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "60ba828d5bb29baeb9b09a7bfe572bf39153af9491e7e9df0d60fe2467dcb4b8",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "9ff4ae5d7b56c947fef15f3ac4bdd45678e76aa940f4499bc7a0c33b8625c65b",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "0708bb90813ebed40c4bb89f854fe6425de4809ff8a40e5d0ce091ee48cc574a",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "c6e963378cca87b0d135b7784591b27169bdccf826d8cd8bc5f1df36e90067dd",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "52f78b61457fb530d24163a4d29946c79b5634bdc81a6abd40e14279ca140c09",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "a1302f883d68b0ff8c2119426990ae4ad4aff26c4a66e195e9ccbcb91c0324a4",
+      "attempts": 3
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "12d3e342fda7b98a0f7c9054a6b6d7252a214b7f3479e06422a3ff2f87f64b30",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "affd4dfc1e5f4a1cef0e027dfc07afb445bb8f44740b1621aa170e268aed0a7f",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "15184664cc9a35275fda07942c8058319502be027b8f378956140ad69287cb90",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "465502f3ffb1e056d337e0fc6a6f0ea7161530a0a5e1009ab573019bb673038d",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "fa37d68ccef63b7f8ba3fffea68cb9c52460b5891b023a152a24cff9965339d0",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "0e36a81c056c550395649ad1ff2cf10dca69fcf257894881491baf44fcc86332",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "8c739c3c5225cd51a6352aff34f91fac66c27c472f165a6dacbef292429c46fc",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "fa1224b7b2c35f9965c6a0a9d8f4a648dfd009fa3fac499d964f005038935366",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "f8d6f8b0a3b2087981c5f92ec02d225ac25ed47d5afbee6ab1f7f7575fbc31c4",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "3b5132091e3ca11d0e439ffad0b781783941bd5060f375eabb580854d61a5cdb",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "6835d79a8822c9ec7851075e3928d09b02fb864dadf938efb74621ddd9580bd9",
+      "attempts": 1
+    },
+    {
+      "arm": "F16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "a54d7368f08d0413e2a0a99d33e200df6ad909681c09bb816d6321e4d31c963b",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "4a77227cbc6d792e621ae13782752abf1c907eff247b4fde457bf62a6ede6f00",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "b4eff8e915aebd4edb2d0a5198df2946fbbabc50d3e70bb62c875dc575fabf68",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "14215b56ce10bcf9dddc1c19fdf5b029620ea94a9efb387126968d29883d4ec2",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "a7c872a3856b9124c80686174446d362e0c1e266e94896bedde9c5fd5cceaa8d",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "dee9060691156ec0ddb3349c54d5f9575439e4fc0f48afd915d9d9bce4c25a95",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "a00a0e6281f45f30e5b7d956149bdaed372975ac39eaeaf70430d2e709863d7d",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "611e6242cfcce5e241368e33999f69a349b7bf7cfe60d4882167782a5bde3d32",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "7322650876df54d031c0afc87f3ed79ee1e5972cffe43f6b162a3e4307f5bb58",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "ebd2d6b6d355184b41c36652bbe4c733196fd6c16db99ffad9f5fd6dcb370e97",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "3553b33f51bf3aaba361575809d4fd074ab04c74ccb582060469a94e50de10c6",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "e2a6fb63e7008e2deffd2e3f61d2005dce039a534e17dda1e5703b72e5f07bab",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "7408ef5f8044a757950fb0c7b1dda3cfdc4303a59d919dcb8663290e778d9583",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "2e143ac41f0cb0faecb01b94ea441263057409a42b30751ea1163d565dcdafb3",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "c8d169b69d11584ad859a14b2f619991d86ddf32b2c3f5abe7788b9a7e4709ca",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "dd096095767a799eddd9a98c6d6735059d9cfa0ed8f14b704660429c19f9797f",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "4dce20c0a5fbfa6b489afc3ef4af65b22a14e57267d037c7fa818baa6bcd447a",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "8cf2b139c0a9d080e10ba175ab0849c66a39fed66785043b1eb048bb41ceb4ad",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "e7f2424ef93388c4d84c99a4f002b4bb4ff4d49aaaa31202e64da4b49fd8d76b",
+      "attempts": 3
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "e53591d71dd428045343a1925f87076495712a5f5f8a6b4b53b6653c6346c41d",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "c54ae4de4541a32b024052ac0646ff46954baaf0c224138bbbf8d45357fa2931",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "399ecf59a25cd43e558f29c5272ab015f25778f4733587767549bc82b4cf9253",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "b271a3b9a38d0ec84a8e8015912de3620999fba827469758183f063744fb93c5",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "2178e79944bc9f4cfe99cd1a9c707caa57c99662a8832430c1e87153ae23c42b",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "a494f9e6599cb367aab38b68066d11b1fd9c4e172175124c189bd0006d58d21c",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "487e5c4dde0c0e8c67b548568d5343f69cc9fe066b5a5345e668a3abd3f321db",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "407c71981f801ca308360691d365111b747e713c2b924916d9fd87a9f0d4f530",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "eddc53a495f20deb4200d9a3f3ecd43d2f66e8216f1f5773f17390d7a32b6c67",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "e7637b0a83e12f7bc293e085de4d572abb175bbce276f2540abb346d24800f29",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "a583e6df3e5f0528b3c9d60f4056c22e936d74f7715c184ad644bfdf942870c0",
+      "attempts": 1
+    },
+    {
+      "arm": "WC16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "5e67235d9732ddfd7b530fb45f93faf559397e3102a797a33311b506ff972fa9",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "fa8203b0c0508d1f63deacf73718fcd35be629d13b3c3b32e403a833f6096999",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "da2a0e73765feac1e861d09f37ce3ee65a7e4a13dbf312c2f1a5eca324f48ff1",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "156228cff0819c8422824beccbb5a439dc4fa3861de88d0b2f0d80cdb703d1ef",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "ac47b4a859dfe56c834aff5e6b52e6b11f7aef601444b6a14d117b5e23d0ca7d",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "8dac390b75597d9aa7254fc45b9bb3601af6db860d8c16ec4fcaccd809366e5a",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "738fb026a313fe9e4915e69ac000ff8b886983cdf83025fa102517644b556724",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "9e48266c01e7a3e3005dc645f693f704154a6a9d57cf5fdadc4187f7c271378d",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "53bc8319477d577ff2f25d4de43a63ad5abeeebecf382873231e3472391807b5",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "7bb8e183df4adf087b0abde927e333ef30b5a003e87196eeb09ff681e9789979",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "4e4e6a3d12578c9e976d9341e64759267b59f8d0aa5e01491c527b9157c783d0",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "012d6f8f210253c0be715e9d97b83dfc0c23605d0013622b5b943124d5f8e269",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "4b0903d05edd0604da6142833b05b16a1d48f8ddb10c17b0c0a384a68c03497f",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "f06caecc9886a04397a517143d09e5f1e12a0ed9041cb2c8336b4d40475be754",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "639a2d60ac120592608f8e6043c7d2c174591c06e564016bc3918a4f1683086f",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "inner",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "fa76274d783e15df357b54e8c631ef8ac50a058c3d74d0c28089f2a23d0ef0eb",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 1,
+      "ledger_sha256": "478e202974c507f153afa1134ac6679b9d4ae8f74a4e9f6b709af3b2ea045a36",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 2,
+      "ledger_sha256": "59e737018be99f52236de1d019851c543129d90460b2f8d530cd3e510488ef31",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 3,
+      "ledger_sha256": "6eb10e94944a0d2683d0cdcf54e4a10cc65243f081afa423f304a86937d20660",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 4,
+      "ledger_sha256": "11e95118de4bcfd0b1da6380ad1b3abbeb171c980ee9187e0e42f7ad9f914655",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 31,
+      "fold": 5,
+      "ledger_sha256": "44231825143ccaa381af1dfe0c4e073ec43228f7173163dffe1f2bdcb73b1868",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 1,
+      "ledger_sha256": "696efc6772eab68678d825e6262ffd68a64f1cdb4c83de25348695244bd36d2b",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 2,
+      "ledger_sha256": "0c456d13bb5ec3c5f53566c304d95527b8ee3e9e03ae2b97863c80b896dd2d79",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 3,
+      "ledger_sha256": "f0410d0105793fa15c206899e0edddec634216e8807f96ad21595a9f9b7a962f",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 4,
+      "ledger_sha256": "04aedebf7e484b3f3ec1d538a257625fde52458617166cdcc97be3c2ee641636",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 47,
+      "fold": 5,
+      "ledger_sha256": "d7d1a438640570ad9239b1737a75b1246332cc89208f0d9f384b1149849d169e",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 1,
+      "ledger_sha256": "72dba9b0c77dfd63976ec4679b0b306e775f9a5a4d7d6c592c59e61066d76c49",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 2,
+      "ledger_sha256": "57a6b60b18eb3db34d3bb9de98ee9828a4db0ef32590d9135dc1568cff2d7ca6",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 3,
+      "ledger_sha256": "ac13478e94b9ba3c9c0b1d28e4450f59e29ac1a5b456461bd9523400e4230af4",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 4,
+      "ledger_sha256": "91ca285a24d14f9b31b27e38823161d49655f3742843f0b4b5a2995fb08ed66c",
+      "attempts": 1
+    },
+    {
+      "arm": "WO16",
+      "role": "outer",
+      "seed": 83,
+      "fold": 5,
+      "ledger_sha256": "73731756df5bca5b924434ca5674ff8c978ba53e9f2a318f81d2e18d7c1bdb06",
+      "attempts": 1
+    }
+  ],
+  "formal_discriminator_optimizer_steps": 0,
+  "new_convex_fits": 0,
+  "qualified_inherited_unique_convex_models": 20,
+  "new_native_fits": 0,
+  "new_PCA_or_KMeans_fits": 0,
+  "previous_neural_fits_counted_as_current": 0,
+  "smoke_attempts_recorded": 5,
+  "smoke_real_short_fits_with_generator_steps": 5,
+  "smoke_generator_optimizer_steps": 10,
+  "smoke_discriminator_optimizer_steps": 0,
+  "all_recorded_real_neural_fits": 284,
+  "all_real_neural_fits_lower_bound": 284,
+  "all_real_neural_fits_upper_bound": 291,
+  "all_recorded_generator_optimizer_steps": 14346,
+  "all_recorded_generator_optimizer_steps_lower_bound": 14346,
+  "all_recorded_generator_optimizer_steps_upper_bound": 14361,
+  "scope": "completed/failed callbacks are exact; committed interrupted-attempt steps are a lower bound, with at most one uncommitted optimizer step per interrupted attempt; positive-step real fits counted separately"
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "role": "inner",
+      "samples": 608,
+      "sampled_interval_seconds": 6113.829223155975,
+      "wall_clock_span_seconds": 6113.829223155975,
+      "observed_interval_count": 607,
+      "maximum_counted_interval_seconds": 60.0,
+      "excluded_unknown_gap_count": 0,
+      "excluded_unknown_gap_seconds": 0.0,
+      "zero_length_interval_count": 0,
+      "maximum_running_workers": 8,
+      "GPU_percent_time_weighted_mean": 97.9809341084498,
+      "GPU_percent_maximum": 100.0,
+      "memory_MiB_time_weighted_mean": 22367.765394836133,
+      "memory_MiB_maximum": 24413.0
+    },
+    {
+      "role": "outer",
+      "samples": 337,
+      "sampled_interval_seconds": 3363.3213045597076,
+      "wall_clock_span_seconds": 30763.11203980446,
+      "observed_interval_count": 334,
+      "maximum_counted_interval_seconds": 60.0,
+      "excluded_unknown_gap_count": 2,
+      "excluded_unknown_gap_seconds": 27399.79073524475,
+      "zero_length_interval_count": 0,
+      "maximum_running_workers": 8,
+      "GPU_percent_time_weighted_mean": 95.7279038435721,
+      "GPU_percent_maximum": 100.0,
+      "memory_MiB_time_weighted_mean": 24957.170757933825,
+      "memory_MiB_maximum": 28971.0
+    }
+  ],
+  "scope": "whole-card observed intervals only; nominal 10-second sampling; left-held weights only when 0<gap<=60 seconds; longer gaps unknown and excluded, never imputed; maxima use actual sampled values"
+}

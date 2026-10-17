@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "source": "e7b6383cfc23e4fbb8f94419a88bff5db1113babcb967672f87e0f13c74ba548",
+  "rows": [
+    {
+      "arm": "D16",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    },
+    {
+      "arm": "F16",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    },
+    {
+      "arm": "L0",
+      "inner_cells": 15,
+      "cap_fraction": 0.06666666666666667,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 33.0,
+      "actual_epoch_median": 73.0
+    },
+    {
+      "arm": "P1",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 16.0,
+      "actual_epoch_median": 56.0
+    },
+    {
+      "arm": "P16",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    },
+    {
+      "arm": "S1",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 15.0,
+      "actual_epoch_median": 55.0
+    },
+    {
+      "arm": "S16",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    },
+    {
+      "arm": "WC16",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    },
+    {
+      "arm": "WO16",
+      "inner_cells": 15,
+      "cap_fraction": 0.0,
+      "maximum_cap_fraction": 0.2,
+      "budget_gate_pass": true,
+      "selected_epoch_median": 17.0,
+      "actual_epoch_median": 57.0
+    }
+  ],
+  "mechanism_budget_sufficient": true,
+  "original_preouter_audit_preserved": true,
+  "interpretation": "prelocked patience/cap gate only, not global convergence"
+}

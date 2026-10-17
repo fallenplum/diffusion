@@ -1,0 +1,952 @@
+{
+  "status": "ALL135_INNER_SELECTIONS_LOCKED",
+  "source": "d1d7f8176f18417b8107767700f68ec0292181c3a0e76fce37894e06cc0c3192",
+  "selections": [
+    {
+      "arm": "L0",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 33,
+      "checkpoint_sha256": "4a1885b25c9c5a5c5fc39c08e5e6e1fd2994149559df7fa592cc26503c00d2a1"
+    },
+    {
+      "arm": "WO16",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "0c7f3bf3216f1a04d3529f918a2c9c275661af5e7334f986d024d53fba42fca1"
+    },
+    {
+      "arm": "WC16",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "9b6d9083a796125a4a381e74ce5e33c962f7fef928de22047756e8d7d4b38cef"
+    },
+    {
+      "arm": "P1",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 14,
+      "checkpoint_sha256": "88ea92206e381e10ff3ef057112e25f2c6cdf9d8980f6a7823ff15f1f74aa543"
+    },
+    {
+      "arm": "F16",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "1677c65c3ef1d0fe64c301b98332652ab6d3470f7549a4e1c52f3ac8ab28d73f"
+    },
+    {
+      "arm": "P16",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "710d43759df8f85783dcdfaba149a2a07d75bb8a06ef1fe3981241142995d8bf"
+    },
+    {
+      "arm": "S1",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 14,
+      "checkpoint_sha256": "1c8854e9f3e5852a9accc9e7daf5f34ca3896906db45d63f1d9f59002e3f4585"
+    },
+    {
+      "arm": "D16",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "15780510bf17966ff7de57a2dbe25f2cd205bf082338c403e8bc75aaa2e91831"
+    },
+    {
+      "arm": "L0",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 9,
+      "checkpoint_sha256": "eb3bc8883cdfbb2ac68ca709f052792de552630015edab4b387a795607deab3d"
+    },
+    {
+      "arm": "S16",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "9a452af3ca28f4c97d902bc980d80dbfb7f64aab8acb1491487c3b72160f693c"
+    },
+    {
+      "arm": "P16",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 9,
+      "checkpoint_sha256": "4a1882e51cd0c81fa69164ea8508f967f17fddbb8c2fc1a4f4bab66d31c8cec0"
+    },
+    {
+      "arm": "L0",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 14,
+      "checkpoint_sha256": "fb067b8b219f2e7ea52c69ada7ecb622b1955bd84bdb6f179687b2d75054d18c"
+    },
+    {
+      "arm": "S16",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "0a701aaf24eaeb0312cd68e5e9cf92331944f37cc155b8188b45aeed9219034d"
+    },
+    {
+      "arm": "F16",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "c9acba06c38d76b4eded6f7b2f90090546f79f45dc85777a58ef3e17ed1c5f3d"
+    },
+    {
+      "arm": "D16",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "47ad76f05b69f3fa2d8df575ce223c090d19a6264ad08557fbeba74a3f3ba4de"
+    },
+    {
+      "arm": "WC16",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "50f76a8fd6059ce56bb39c4810caa82eb090f9e4384669b24553b12d58b25978"
+    },
+    {
+      "arm": "F16",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "7d3a39e4237de4716609e356af31717f3406e470c1ac6544beaa787e3553c2a6"
+    },
+    {
+      "arm": "WO16",
+      "seed": 31,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "4400f179dce6ea678eb9b66d6e65050775940313db77a96e0a9fedb166979057"
+    },
+    {
+      "arm": "S1",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 27,
+      "checkpoint_sha256": "a019b8f9ca0d692683b1eb689697842678662c8d865a163c12e9cd0cbcfd490e"
+    },
+    {
+      "arm": "P16",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "ee029cfe0a81474067de89b3269c74a4e1b3a2be7b0ecb4c67df72839498034b"
+    },
+    {
+      "arm": "S16",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "8f531eff2587d281232fa9ce7caef41bff36d2e58547cda70c169cb03d7f3b9b"
+    },
+    {
+      "arm": "P1",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 48,
+      "checkpoint_sha256": "92e200749ffa834c3ac1c9eea9303d54d3131d48b48d2228c753738476abe89a"
+    },
+    {
+      "arm": "WC16",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "826509c20b53f4cf9988823287ae4d9e2673c97b1088b60782ceed179e97f9d8"
+    },
+    {
+      "arm": "L0",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 28,
+      "checkpoint_sha256": "e4ec237b8197fac35b0115ba0a31ce8ad6d2520ee177a2339c39135c7cb1037c"
+    },
+    {
+      "arm": "P1",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 9,
+      "checkpoint_sha256": "e4228689157ae00bd55a80416bb44f71f20eedcb87bcc139161b22f900ed1ebf"
+    },
+    {
+      "arm": "D16",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "c3fc5bda5fba46381602a0f9ba118b1433a06cfc21d8c36d317153cb31461638"
+    },
+    {
+      "arm": "S1",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 48,
+      "checkpoint_sha256": "d0a9a79fc1b58369ffe913a7a519daed0ccaef51a9d4f68a547fecbb7c03ed73"
+    },
+    {
+      "arm": "WO16",
+      "seed": 47,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "4cbc3dfafefb8f0a1cbd8e9f08c2de7ec2350e5459ac080c96a75c54cc2f503b"
+    },
+    {
+      "arm": "P16",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 17,
+      "checkpoint_sha256": "c6171c174e9523c0fc9a081ac3c73a8a4c40cbe2082922a1bf91b34af111376f"
+    },
+    {
+      "arm": "L0",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 13,
+      "checkpoint_sha256": "caa6519274e62d3a7d005b16d821ee4906df01647c3402220c660d4644228afc"
+    },
+    {
+      "arm": "P1",
+      "seed": 83,
+      "fold": 1,
+      "epoch": 27,
+      "checkpoint_sha256": "7eb68d198a6973a4193d83be1a222da61c1d8e99afa6c022f4adeced514d42c0"
+    },
+    {
+      "arm": "D16",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "093af25153a65e4d8eefd374928e75a8c177070a49df41cdaec3108aa3b93f49"
+    },
+    {
+      "arm": "S1",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 9,
+      "checkpoint_sha256": "9555bd5c286d25569fab6bbd3225d854b544dbf69361b4b4a3e859d53aada378"
+    },
+    {
+      "arm": "WC16",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "abcd906ef3d788193aeb5b690a463dd06e2b9634680bddc449d9209e91630fcd"
+    },
+    {
+      "arm": "S16",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 9,
+      "checkpoint_sha256": "4af1fa583413cc23f03d07f02a7f35c16b35e5b3d744f2e109243958e2c6907b"
+    },
+    {
+      "arm": "WO16",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "23bccb1ded5e2211054b68febde90b06235199e972783f3e496f1b1d91ce055d"
+    },
+    {
+      "arm": "D16",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 9,
+      "checkpoint_sha256": "d40901d7fb0388effcc84c4d1d95e4d6978bc0e1c3a4c07790bf4f87faf0a8c5"
+    },
+    {
+      "arm": "WC16",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 9,
+      "checkpoint_sha256": "0558738ab6e1f6ff463e9cdfc4d4a4384431d74cb3d3c92615b4640fbfa684c1"
+    },
+    {
+      "arm": "L0",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 62,
+      "checkpoint_sha256": "50e5b77f35bdbd0f759c92a8612f9332e7df85b0c82080027e50b061e3bc70f4"
+    },
+    {
+      "arm": "WO16",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 9,
+      "checkpoint_sha256": "1580dcd9e7755c313969d1aaa7113e5acb7428ac0e0c525e1d55bfe14c1ba7b3"
+    },
+    {
+      "arm": "P1",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 44,
+      "checkpoint_sha256": "77c8760e1a477b1a787feaad4e7eaba9293152395a18d8f07bbf5b1983269757"
+    },
+    {
+      "arm": "F16",
+      "seed": 31,
+      "fold": 2,
+      "epoch": 9,
+      "checkpoint_sha256": "57a664a389ae6929c50478f57e694c548a945be149509ff3e030f9ee29df2f3b"
+    },
+    {
+      "arm": "P1",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 13,
+      "checkpoint_sha256": "78b3db51d67b8b26475172f8457a31085b2a83643bf06af6e7e9627088317450"
+    },
+    {
+      "arm": "S1",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 47,
+      "checkpoint_sha256": "1bbfab32b9c5417fde94e05f022a998a72269b28e0d7e64e347dda1905519918"
+    },
+    {
+      "arm": "P16",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "f669b428d40570436ee8b9784f484b18472113f056d4350f4e4b7a251aca212f"
+    },
+    {
+      "arm": "WO16",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 64,
+      "checkpoint_sha256": "4a01e0fd724904c7f9137fb5ea5403868ce851f8d993f835add89ff3ae96c90a"
+    },
+    {
+      "arm": "S1",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 13,
+      "checkpoint_sha256": "b3480b21661b2ec94860923d52ed71f59dc7abbca41a258f66b093d6614e46d4"
+    },
+    {
+      "arm": "S16",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "3d65aa366b4de0b33d6f3ada7a0b3ec0a915cc7479c582c02d43066ac724c6c3"
+    },
+    {
+      "arm": "P16",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 75,
+      "checkpoint_sha256": "26fae1c06b285815e670c4ea000bcde960759358a0d90e4823f690ce499e5c61"
+    },
+    {
+      "arm": "D16",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "609dd02ab70d8af34a2e18c616edbd700460c234ca54f1a6cd7f9f9db066afe9"
+    },
+    {
+      "arm": "L0",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "2f651ffe6ded448796bfe15571d6e064f3eaa1937e22df01af9ab65cf30cecca"
+    },
+    {
+      "arm": "L0",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 44,
+      "checkpoint_sha256": "31ea0ce2596e163afb603cbeb2090a47f3b5a255bf50fb950cd99cc0f017dc2c"
+    },
+    {
+      "arm": "F16",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "c8c46ead351b735d2612e658140e8b56291e455ffa9072958fd7034e7c81757e"
+    },
+    {
+      "arm": "S16",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 64,
+      "checkpoint_sha256": "680119632b63bd7067a6a841341fc46f5d31ba7e1af06cfcd05833b0fc279a8d"
+    },
+    {
+      "arm": "WC16",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "92b75742990f252b043df5672f0e42fafe027e9b7e8b39d549dcee8dd51d97b2"
+    },
+    {
+      "arm": "WO16",
+      "seed": 47,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "6c31cc3e032b5443b4855185f5a0a076ae6baaa83b941343442192c627de1f6c"
+    },
+    {
+      "arm": "P1",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 32,
+      "checkpoint_sha256": "b9ec3d98f25e23bdbed1ba4a70c5494ce76e01b520df12ac14559274e81d7cd0"
+    },
+    {
+      "arm": "F16",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 63,
+      "checkpoint_sha256": "1ce336cf574b56cb84bf386e2bcd2805eb21b8fd650df3163b689c67e23c5b69"
+    },
+    {
+      "arm": "P1",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 15,
+      "checkpoint_sha256": "142eeaa2c3ecf2d9c3864666b137925960b3ef032e98b861d081efd890d929b1"
+    },
+    {
+      "arm": "P16",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "735b72ec2ed1430626941a9a94afef41e75cc343e8869fe599241db52eedb24b"
+    },
+    {
+      "arm": "WC16",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 66,
+      "checkpoint_sha256": "a96ba0828114b32a0b9b9c84169ebe394cafc22acc4740ced616abe6f3589ced"
+    },
+    {
+      "arm": "S1",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 15,
+      "checkpoint_sha256": "74c12b87910ab4c5be404139f7dbf1334d3c56802d5e477f78c48e70d927eb9b"
+    },
+    {
+      "arm": "D16",
+      "seed": 31,
+      "fold": 3,
+      "epoch": 71,
+      "checkpoint_sha256": "b08e33d0e38ff672ae6a5ae0e41db1f9aea53c9f0ed5306e05fb5c77795218e2"
+    },
+    {
+      "arm": "S16",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "b7d97465daf307020858b365d144dca93e55c577c335e046b6aa39e110a79367"
+    },
+    {
+      "arm": "F16",
+      "seed": 83,
+      "fold": 2,
+      "epoch": 14,
+      "checkpoint_sha256": "db458a92f1932b6e72df607055efd5e181810135a69457b1deab3ee8fc5a88d5"
+    },
+    {
+      "arm": "D16",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 24,
+      "checkpoint_sha256": "63b4b676abdac24947d1fe0913d42b206056e2f9394fcd789f562af048532eed"
+    },
+    {
+      "arm": "P16",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 48,
+      "checkpoint_sha256": "a003b4b5d657c9fe3c93c1d70398418eed58ffa5eea07f335b9beefbd6375321"
+    },
+    {
+      "arm": "F16",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 24,
+      "checkpoint_sha256": "63fe44df5206eccfff3a4ba5bb83812dd465d9a884d08fbd45f4dbf03c8f9954"
+    },
+    {
+      "arm": "D16",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 48,
+      "checkpoint_sha256": "a57cfded6430500b8d96a39d97572467f05a379557d5039fc3ecef2e5239018f"
+    },
+    {
+      "arm": "S16",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 56,
+      "checkpoint_sha256": "6011e0f7dd1bd8f35edb6dd2debcad55d47e2fb187a5d08e299cbf257daa865a"
+    },
+    {
+      "arm": "WC16",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 24,
+      "checkpoint_sha256": "bf019ef3e1663561121e3662b677001dad825daa585bffd7b524bbfd26865b16"
+    },
+    {
+      "arm": "S1",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 71,
+      "checkpoint_sha256": "ab69b1998a078b892320f27ca14bbc032b0a11a5d70b0eb24f5ae8932f5cc66a"
+    },
+    {
+      "arm": "F16",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "c2b23f83d6b3de782fe91a5734f7f09f44e1a31449e2aac76e1c1116d0fe1f36"
+    },
+    {
+      "arm": "L0",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 70,
+      "checkpoint_sha256": "32013fc9a6158e3f3ec2976c4779e5dbaaba1150c2561a845bb282568206fa61"
+    },
+    {
+      "arm": "P1",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 28,
+      "checkpoint_sha256": "de22d9e9c96f6a94a8d28d21ffb1bb7ca8d26f6b8c847bff3bc1b14c4a72f488"
+    },
+    {
+      "arm": "S1",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 65,
+      "checkpoint_sha256": "405513be2b61c98c6aa444b80824a17ded77fc97b8d73bffab852708994f3959"
+    },
+    {
+      "arm": "WO16",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 49,
+      "checkpoint_sha256": "a89587c3cdb26cda51b2f0fb20858595a3a61351359925cf4f06b68b9f6258a6"
+    },
+    {
+      "arm": "P1",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 14,
+      "checkpoint_sha256": "dff0af34f15ab489a1ff59ce07e524c7271c683615cc811947f6ef77d11bf39b"
+    },
+    {
+      "arm": "WC16",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 74,
+      "checkpoint_sha256": "0ef5ba2b165d2d5c356ca8c3d55699dcc32d18eaf2d0f7265836818b55172976"
+    },
+    {
+      "arm": "F16",
+      "seed": 47,
+      "fold": 3,
+      "epoch": 79,
+      "checkpoint_sha256": "e99fcafc784448a5cfc10c04c663da15e5d1ab1e02579d3888cde827afeab408"
+    },
+    {
+      "arm": "P16",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "665b17dc4eed89c82b32b51bba74cc64529601d4c22ef7c6bc630f27a95707ef"
+    },
+    {
+      "arm": "L0",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 24,
+      "checkpoint_sha256": "bd110cdd6b5fcfad124f53c0c07df7c1bf0e26a7304943d0f75681e4b31be492"
+    },
+    {
+      "arm": "S1",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 29,
+      "checkpoint_sha256": "3b7581c619dbf55de900c62367f51bf298b4acf069bb8a10095e1d784cb84db8"
+    },
+    {
+      "arm": "WO16",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 24,
+      "checkpoint_sha256": "0082cc84d80e208bc1cb8b38d271f0ca4140887e8e8b341d152c4e826d016007"
+    },
+    {
+      "arm": "S16",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 42,
+      "checkpoint_sha256": "bfff4692e723b69bb941db559a7c7dcf382a32745a5ab9429229a9836f38d646"
+    },
+    {
+      "arm": "P16",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 86,
+      "checkpoint_sha256": "95a537f4538e77e828203966d9f1b0dbf72a02b710d6a71061da0f5244900565"
+    },
+    {
+      "arm": "L0",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 66,
+      "checkpoint_sha256": "b86c56d461863393b224405672507b83b586d1517db29190b95062ecbc7ad48a"
+    },
+    {
+      "arm": "D16",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 42,
+      "checkpoint_sha256": "16c1f7446ad3d8e67b67a8c18c284e84b6f16b830baf39bf2731b9267c6d35ba"
+    },
+    {
+      "arm": "S1",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 14,
+      "checkpoint_sha256": "ee5268bb17474ad4669a7c473f83d114984e405662aa32b544b08bc1e9e8ea81"
+    },
+    {
+      "arm": "F16",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 42,
+      "checkpoint_sha256": "ea5accb4f94ae5242d5552f390ea11f69bd131e8c8dcaece9e4687c4045092e8"
+    },
+    {
+      "arm": "P16",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 24,
+      "checkpoint_sha256": "b5bae521467d2739bf0d31a33d1cc6be973d55ca40e9b50963f03d56ed68ff80"
+    },
+    {
+      "arm": "S16",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "a030af03387c28ea6f3b46fe74856a7fb64583372cb9b0ab290eef2726cca417"
+    },
+    {
+      "arm": "WC16",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 81,
+      "checkpoint_sha256": "75cf0a0d075b0f886bbbf9d43d0d82c05a8ec3a091e33968a894a6fb107beaee"
+    },
+    {
+      "arm": "D16",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "c70af7f81e07bd39bb16bf96f89a7fad1efc547402f23e6e2b79ada6a89f6653"
+    },
+    {
+      "arm": "WO16",
+      "seed": 83,
+      "fold": 3,
+      "epoch": 91,
+      "checkpoint_sha256": "069593a7e4afff70d2ac50d383f5193e8d9c1a969aa182917e544199e430b673"
+    },
+    {
+      "arm": "L0",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 49,
+      "checkpoint_sha256": "b405eea522b834ae3479702068c5836fd4ad2f7510e15b4d5cb43a16bce9cf57"
+    },
+    {
+      "arm": "P1",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 66,
+      "checkpoint_sha256": "b1cbe995817d839696622b8d763387552540262e23c3e0246c9fab3fed871716"
+    },
+    {
+      "arm": "S16",
+      "seed": 31,
+      "fold": 4,
+      "epoch": 24,
+      "checkpoint_sha256": "c97c37c511fd48dd0f30c8690aa9391f2568c1ae352bb1610e2e85c79c819ba8"
+    },
+    {
+      "arm": "WO16",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 25,
+      "checkpoint_sha256": "d1073714fcbfe277693916475adae04f003919f037b05e862566c5810f5863b6"
+    },
+    {
+      "arm": "WC16",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "80fc0f8e8cb868141e36d84cd67edf6a23630a7c8912d0ed1bc471cd93062c9d"
+    },
+    {
+      "arm": "P16",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 30,
+      "checkpoint_sha256": "09849ec89b8045f627366d0a0f3f3f259bd551413c7e712b105da416337ffe0a"
+    },
+    {
+      "arm": "P1",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 16,
+      "checkpoint_sha256": "640477dd0b66651fb5f24e729d83dd918dae6a554b763e1937e779e5cc76380e"
+    },
+    {
+      "arm": "S1",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 15,
+      "checkpoint_sha256": "4adc414185ceb515c47450dece6c45379dbcc3e26db7003493a5ff4de065cdad"
+    },
+    {
+      "arm": "WO16",
+      "seed": 47,
+      "fold": 4,
+      "epoch": 17,
+      "checkpoint_sha256": "99bbd002d2b7a3c55b1fc94bebea97a7e53ce7877a40e99f0449e4abc58fa17a"
+    },
+    {
+      "arm": "D16",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 96,
+      "checkpoint_sha256": "bbeee3398bb2657ddb2159b28ff7fd5732ba7199dbdb8f1af686717e16da33f3"
+    },
+    {
+      "arm": "S1",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 16,
+      "checkpoint_sha256": "e069fa01e6e60410c161c7d8bd8bc733c1e689b239f6c1f4d0474d96a057774c"
+    },
+    {
+      "arm": "S16",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 30,
+      "checkpoint_sha256": "41fbe916f64b4b132311848b0801b75414d20c103242e1886a818c446c2e8608"
+    },
+    {
+      "arm": "P16",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 66,
+      "checkpoint_sha256": "9ab6334bd41e1836dfe34f01a62b67f86d0a3ce196ec09ed0ac291048037e6b9"
+    },
+    {
+      "arm": "S16",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 66,
+      "checkpoint_sha256": "c3446457573ac6228a8d0c2e8fd076bf01492a99233a72dd6cade6c235392b44"
+    },
+    {
+      "arm": "F16",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 30,
+      "checkpoint_sha256": "19896f35f375bad904c1d275a31fcaa715734583f3d84f640e3f6a6000dac2ab"
+    },
+    {
+      "arm": "L0",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 112,
+      "checkpoint_sha256": "0bf80ff2caaa84493a30c18b2c508316622e40943b3c76a35be10b0644e27299"
+    },
+    {
+      "arm": "P16",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 25,
+      "checkpoint_sha256": "24ea0cbe844c3220580dd58347dc34427915ad9f4000ab49eb50aee9595f5a95"
+    },
+    {
+      "arm": "WO16",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 30,
+      "checkpoint_sha256": "7ac00ac96c5f486834b1007df7cffbfdfc54e3b6bb83245eac8c7f1c557b2f23"
+    },
+    {
+      "arm": "F16",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 63,
+      "checkpoint_sha256": "d2a95ea7320cfc57c0258f24fe36f3a6c1805b9485b958fd7452d4a4f4660a0f"
+    },
+    {
+      "arm": "P1",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 13,
+      "checkpoint_sha256": "0ba27631e8fb5b3a7ff23fcdbfad64cb82331e4092e2c854b329b8e8577adfae"
+    },
+    {
+      "arm": "D16",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 65,
+      "checkpoint_sha256": "8dc7811e1c5cf21b70eadd4a20705d7453658ce558eae49047b42a62c071bdf2"
+    },
+    {
+      "arm": "WC16",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 67,
+      "checkpoint_sha256": "2a0b7067cb1deab265749a7a601ef9c912c36856c5c4fc51398b396c589001f2"
+    },
+    {
+      "arm": "P16",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 16,
+      "checkpoint_sha256": "be526d743258f91fa4c7d9b9666ffc02062977e1a19b4529a667da8ddcc73787"
+    },
+    {
+      "arm": "WO16",
+      "seed": 83,
+      "fold": 4,
+      "epoch": 66,
+      "checkpoint_sha256": "50d1056d6e54e6b0e3364d78c35747fcc1a30e56e4ada2319dda5cde11e38cdb"
+    },
+    {
+      "arm": "D16",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 16,
+      "checkpoint_sha256": "48308fb4d586cbf7c5be7a0ff313a4a3635f87f1ef08c2eb7bba309b7c094c88"
+    },
+    {
+      "arm": "P1",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 79,
+      "checkpoint_sha256": "d34f7ce263e3b0585e679cc32a7dcb42241b18cfbe73c575319713ec02a5689e"
+    },
+    {
+      "arm": "L0",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 160,
+      "checkpoint_sha256": "c1e834857d21ac737110e4361c3ee333a6be55ee311663495fdfcdd722f68fd5"
+    },
+    {
+      "arm": "L0",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 18,
+      "checkpoint_sha256": "a3d6f5f4655691e5c972b5963d4d44f4afc99d08019656edc4e1768e8b036228"
+    },
+    {
+      "arm": "F16",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 16,
+      "checkpoint_sha256": "5616ca1bf95b34cf8018ecaa3f9f6e0da655474e32f877ab5cc152131eb65451"
+    },
+    {
+      "arm": "S1",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 8,
+      "checkpoint_sha256": "64bafb2493a29727e06362660a6bbbb0481408b1fc0a6b021f1850fc20bdde46"
+    },
+    {
+      "arm": "WC16",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 67,
+      "checkpoint_sha256": "01d925a8449f19a545e25c067e4dacb67b6b5e899eb33d3b505da9d2fc92597f"
+    },
+    {
+      "arm": "D16",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 25,
+      "checkpoint_sha256": "ee31797af32bb55b594771eddc15d206062ceb186863617d99ea5244b3db686c"
+    },
+    {
+      "arm": "S16",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 25,
+      "checkpoint_sha256": "c17874e5bc23baddb534cd58e492bc197219fc8bec7b43749c1f02a6998ff72c"
+    },
+    {
+      "arm": "P1",
+      "seed": 47,
+      "fold": 5,
+      "epoch": 15,
+      "checkpoint_sha256": "2f8f5aa949cc32c2af86bf0c32dd430b2c1553adaaa55a6c259d86c4f11e984a"
+    },
+    {
+      "arm": "S1",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 13,
+      "checkpoint_sha256": "5894de329b005f63140b93b86f161b584e28f9ea77108c7a1c1282456a5b0e3b"
+    },
+    {
+      "arm": "WC16",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 25,
+      "checkpoint_sha256": "8f1723de84d01395e1946fa82cb5a0e2776fc4701577b28844abf2ad1794588e"
+    },
+    {
+      "arm": "S16",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 16,
+      "checkpoint_sha256": "ec5e211d355f9cf0d2323f6bc2433b82068b5815879a7ecce998c80199549db1"
+    },
+    {
+      "arm": "F16",
+      "seed": 31,
+      "fold": 5,
+      "epoch": 25,
+      "checkpoint_sha256": "30e8aee01f1aca00dccf883dab1a7695d04cd180d49d51df97bad04afc59be67"
+    },
+    {
+      "arm": "WC16",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 16,
+      "checkpoint_sha256": "234ff4a39c055a3a1ec2270e9a263adda555fb8f4e1ac1de94537087233a4919"
+    },
+    {
+      "arm": "WO16",
+      "seed": 83,
+      "fold": 5,
+      "epoch": 16,
+      "checkpoint_sha256": "e47b6e7c3f09efe2ac6c603f5f9821d6f34495981875dad1c55f32c0e51521da"
+    }
+  ],
+  "no_outer_scores_used": true
+}

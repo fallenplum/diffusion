@@ -1,0 +1,249 @@
+{
+  "GPU_total_MiB": 32760,
+  "MAIN_replay_sha256": "ccced20f131d6a302cbe31e7ffaf5baf96a5cd6de681fcef5cec0e777dfdc4d7",
+  "cell_rows": [
+    {
+      "checkpoint_sha256": "79590a450cf43dddb12c9aa4b78068f3d2312089dbf0bd620497849c4f595ab8",
+      "fold": 1,
+      "seed": 31,
+      "training_seconds": {
+        "ATTN": 121.9700931099942,
+        "COMP": 122.33972314791754,
+        "QUERY": 88.68322853604332
+      },
+      "wall_seconds": 343.30851389397867
+    },
+    {
+      "checkpoint_sha256": "c8853557000cded836567d042bf109250f803ba2d17ef4cf1de1799a5b2530e2",
+      "fold": 1,
+      "seed": 47,
+      "training_seconds": {
+        "ATTN": 122.0554271430592,
+        "COMP": 122.2059663727996,
+        "QUERY": 89.84517619095277
+      },
+      "wall_seconds": 344.20773659902625
+    },
+    {
+      "checkpoint_sha256": "4c268d83fb3c0dce96c9186b548f5a40bc9891db9e9c4b5004cfeb540f7c3f1a",
+      "fold": 2,
+      "seed": 31,
+      "training_seconds": {
+        "ATTN": 123.18659849173855,
+        "COMP": 122.10179648111807,
+        "QUERY": 90.80556509969756
+      },
+      "wall_seconds": 346.123303926026
+    },
+    {
+      "checkpoint_sha256": "7f9aea059b13069b6366ea7ba1d4d0b19a1ff9dfef63e0206ff263768080958e",
+      "fold": 2,
+      "seed": 47,
+      "training_seconds": {
+        "ATTN": 122.76627248863224,
+        "COMP": 122.47952830110444,
+        "QUERY": 91.21128885709913
+      },
+      "wall_seconds": 346.06237782596145
+    },
+    {
+      "checkpoint_sha256": "742f1422f8fa7da1914ff531f3f2bd3f7ec0cfcd2583c46f8a62fe9caffac447",
+      "fold": 3,
+      "seed": 31,
+      "training_seconds": {
+        "ATTN": 122.09477718692506,
+        "COMP": 121.77025778905954,
+        "QUERY": 91.0208764601266
+      },
+      "wall_seconds": 344.9173244489939
+    },
+    {
+      "checkpoint_sha256": "c9e4ed3698b6b87309ef62eb9a57643dfcf35dba6791986341e1a2b8d441ede2",
+      "fold": 3,
+      "seed": 47,
+      "training_seconds": {
+        "ATTN": 122.52088854205795,
+        "COMP": 121.48344528320013,
+        "QUERY": 91.32595269568264
+      },
+      "wall_seconds": 345.0014438700164
+    }
+  ],
+  "cells": 6,
+  "continuous_GPU_average_or_peak_claimed": false,
+  "convex_gradients_independently_recomputed_here": false,
+  "evaluation_guard_hardening_targeted_tests": 16,
+  "existing_private_fit_label_bytes_deserialized": true,
+  "fold_main_distribution": [
+    {
+      "CP_parameters": 104,
+      "RNA_parameters": 512,
+      "fold": 1,
+      "main_distribution": {
+        "CP": {
+          "CF_SD": 0.38288799034162213,
+          "CF_mean": 0.006467759672225438,
+          "CF_to_fullfit_SD_ratio": 1.0168495840984202,
+          "Pearson": 0.9314542587523538,
+          "Pearson_defined": true,
+          "alignment_applied": false,
+          "fullfit_SD": 0.37654339081144045,
+          "fullfit_mean": 0.0,
+          "gap_RMS": 0.14087975486066232
+        },
+        "RNA": {
+          "CF_SD": 0.5151353692829614,
+          "CF_mean": -0.003342610085636702,
+          "CF_to_fullfit_SD_ratio": 1.0131571041219167,
+          "Pearson": 0.7576723263040422,
+          "Pearson_defined": true,
+          "alignment_applied": false,
+          "fullfit_SD": 0.5084456963161889,
+          "fullfit_mean": 2.200074984578292e-16,
+          "gap_RMS": 0.356365064594277
+        },
+        "sum": {
+          "CF_SD": 0.6784966614003418,
+          "CF_mean": 0.0031251495865887323,
+          "CF_to_fullfit_SD_ratio": 0.9184044430350407,
+          "Pearson": 0.8238115108932452,
+          "Pearson_defined": true,
+          "alignment_applied": false,
+          "fullfit_SD": 0.7387776339127037,
+          "fullfit_mean": 1.9556222085140373e-16,
+          "gap_RMS": 0.4245885034626372
+        }
+      },
+      "maximum_saved_optimizer_gradient": 7.750011192519946e-08,
+      "new_convex_fits": 7,
+      "prepared_sha256": "2b34e2ff7a9c38133c903a137896fec34fd274a970b1059c19ef2e82531657a0",
+      "reused_full_CP": 1
+    },
+    {
+      "CP_parameters": 101,
+      "RNA_parameters": 512,
+      "fold": 2,
+      "main_distribution": {
+        "CP": {
+          "CF_SD": 0.4537470023444854,
+          "CF_mean": 0.014836634482231412,
+          "CF_to_fullfit_SD_ratio": 0.9971650181085507,
+          "Pearson": 0.9569732321993422,
+          "Pearson_defined": true,
+          "alignment_applied": false,
+          "fullfit_SD": 0.45503702406765617,
+          "fullfit_mean": -4.345827130031194e-17,
+          "gap_RMS": 0.13412460038533322
+        },
+        "RNA": {
+          "CF_SD": 0.5315139913259093,
+          "CF_mean": 0.019491201768323953,
+          "CF_to_fullfit_SD_ratio": 1.0931980964673131,
+          "Pearson": 0.7448873836406839,
+          "Pearson_defined": true,
+          "alignment_applied": false,
+          "fullfit_SD": 0.48620098502138365,
+          "fullfit_mean": -1.358070978134748e-17,
+          "gap_RMS": 0.36645179771202296
+        },
+        "sum": {
+          "CF_SD": 0.7734825806310517,
+          "CF_mean": 0.03432783625055538,
+          "CF_to_fullfit_SD_ratio": 0.9521694109166431,
+          "Pearson": 0.8484437049484995,
+          "Pearson_defined": true,
+          "alignment_applied": false,
+          "fullfit_SD": 0.8123371448011846,
+          "fullfit_mean": -5.975512303792891e-17,
+          "gap_RMS": 0.4394796881632691
+        }
+      },
+      "maximum_saved_optimizer_gradient": 5.363447891371109e-08,
+      "new_convex_fits": 7,
+      "prepared_sha256": "844955c6c1c65e8c6b210edb11b459201bb858ca2597c29dae94e6cace6dedb2",
+      "reused_full_CP": 1
+    },
+    {
+      "CP_parameters": 103,
+      "RNA_parameters": 512,
+      "fold": 3,
+      "main_distribution": {
+        "CP": {
+          "CF_SD": 0.44807232746220826,
+          "CF_mean": -0.0033730453309222938,
+          "CF_to_fullfit_SD_ratio": 0.9843756649435512,
+          "Pearson": 0.9388501612699927,
+          "Pearson_defined": true,
+          "alignment_applied": false,
+          "fullfit_SD": 0.4551842791521089,
+          "fullfit_mean": -3.8587019758313365e-17,
+          "gap_RMS": 0.1581317382327047
+        },
+        "RNA": {
+          "CF_SD": 0.511512364779711,
+          "CF_mean": 0.028449347911872536,
+          "CF_to_fullfit_SD_ratio": 1.013975858660815,
+          "Pearson": 0.7584967366732385,
+          "Pearson_defined": true,
+          "alignment_applied": false,
+          "fullfit_SD": 0.5044620741319019,
+          "fullfit_mean": -4.197184605290226e-17,
+          "gap_RMS": 0.3542504683970944
+        },
+        "sum": {
+          "CF_SD": 0.770009155570262,
+          "CF_mean": 0.02507630258095024,
+          "CF_to_fullfit_SD_ratio": 0.9230439804634302,
+          "Pearson": 0.8584108058712526,
+          "Pearson_defined": true,
+          "alignment_applied": false,
+          "fullfit_SD": 0.8342063562168138,
+          "fullfit_mean": -7.311224796312007e-17,
+          "gap_RMS": 0.4320286531405142
+        }
+      },
+      "maximum_saved_optimizer_gradient": 5.298386729357674e-12,
+      "new_convex_fits": 7,
+      "prepared_sha256": "92727fd7efdeda56fd1ae4e061339febb4bb058bea8cc36dd7fd89fcad9b8b17",
+      "reused_full_CP": 1
+    }
+  ],
+  "formal_epochs": 1440,
+  "formal_failed_cells": 0,
+  "formal_neural_fits": 18,
+  "formal_optimizer_steps": 1440,
+  "gpu_name": "NVIDIA GeForce RTX 4080 SUPER",
+  "maximum_saved_convex_optimizer_gradient": 7.750011192519946e-08,
+  "model_slots": 24,
+  "neural_replay_sha256": "43a837278afefb28dc9720ae94a479a441f711b61eba62a5305853dbdba944a7",
+  "neural_seeds_share_prepared_main": true,
+  "new_convex_fits": 21,
+  "new_endpoint_API_calls_here": 0,
+  "new_fits_or_neural_forward_calls_here": 0,
+  "numerical_module_test_counts": {
+    "data": 11,
+    "initial_evaluation": 27,
+    "model": 31,
+    "training": 4
+  },
+  "outer_started": false,
+  "parent_commit": "91032779b2df9e5e6dea668274a76607247810db",
+  "patient_arrays_weights_or_identifiers_public": false,
+  "reused_full_CP_models": 3,
+  "short_optimizer_steps": 12,
+  "short_qualification_models": 6,
+  "short_weights_or_arrays_saved": false,
+  "source": "c4c29b105b3780a11ca8edc32c3a78bde8302ffd59f3c7eefd50a0fa4c13096c",
+  "status": "COMPLETE_FORMAL_PROTOTYPE_ACCOUNTING",
+  "targeted_tests_partly_overlap_initial_tests": true,
+  "training_point_GPU_used_MiB": 11176,
+  "training_point_GPU_utilization_percent": 99,
+  "training_population_SD_diagnostic_targeted_recheck": 1,
+  "versions": {
+    "numpy": "2.1.3",
+    "python": "3.12.3",
+    "scipy": "1.14.1",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu124"
+  }
+}

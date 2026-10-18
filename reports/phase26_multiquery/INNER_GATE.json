@@ -1,0 +1,118 @@
+{
+  "status": "PROTOTYPE_NOT_ADMITTED",
+  "decision": "STOP",
+  "classification": "STOP",
+  "source": "c4c29b105b3780a11ca8edc32c3a78bde8302ffd59f3c7eefd50a0fa4c13096c",
+  "stage": "prototype",
+  "primary_tests": [
+    {
+      "comparison": "ATTN-QUERY",
+      "metric": "Harrell",
+      "mean_seed_delta": -0.004373177842565579,
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "ATTN-QUERY",
+      "metric": "Uno60",
+      "mean_seed_delta": -0.003134280739896189,
+      "positive_seeds": 1,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "COMP-ATTN",
+      "metric": "Harrell",
+      "mean_seed_delta": 0.00320699708454808,
+      "positive_seeds": 2,
+      "seeds": 2,
+      "pass": true
+    },
+    {
+      "comparison": "COMP-ATTN",
+      "metric": "Uno60",
+      "mean_seed_delta": 0.007217820280593645,
+      "positive_seeds": 2,
+      "seeds": 2,
+      "pass": true
+    }
+  ],
+  "main_effect_guards": [
+    {
+      "comparison": "COMP-M0",
+      "metric": "Harrell",
+      "mean_seed_delta": -0.0020408163265306367,
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "COMP-M0",
+      "metric": "Uno60",
+      "mean_seed_delta": -0.0030017139164617013,
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "COMP-CP",
+      "metric": "Harrell",
+      "mean_seed_delta": -0.013702623906705513,
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "COMP-CP",
+      "metric": "Uno60",
+      "mean_seed_delta": 0.047973772731604025,
+      "positive_seeds": 2,
+      "seeds": 2,
+      "pass": true
+    }
+  ],
+  "frozen_query_guards": [
+    {
+      "comparison": "COMP-COMP_VALUE_OFF",
+      "mean_seed_deltas": {
+        "Harrell": -0.0002915451895043608,
+        "Uno60": 0.00883875484542579
+      },
+      "pass": false
+    },
+    {
+      "comparison": "COMP-COMP_WRONG_RNA_QUERY",
+      "mean_seed_deltas": {
+        "Harrell": -0.0017492711370262204,
+        "Uno60": 0.0013166503891527404
+      },
+      "pass": false
+    },
+    {
+      "comparison": "COMP-COMP_WRONG_C_QUERY",
+      "mean_seed_deltas": {
+        "Harrell": -0.0011661807580174988,
+        "Uno60": -0.00244927103840642
+      },
+      "pass": false
+    },
+    {
+      "comparison": "COMP-COMP_C_MEAN_QUERY",
+      "mean_seed_deltas": {
+        "Harrell": -0.0002915451895043608,
+        "Uno60": 0.00022970124837479178
+      },
+      "pass": false
+    }
+  ],
+  "outer_admitted": false,
+  "outer_automatically_started": false,
+  "separate_full_protocol_required_even_after_GO": true,
+  "automatic_hyperparameter_or_architecture_search": false,
+  "alternate_outer_candidate_allowed": false,
+  "confirmatory_confidence_intervals": false,
+  "receipt_fingerprint": "2884c44cff5995dd57c446c40c6e2dac7a586705ebd322b2a70147c96a517531",
+  "evaluator_sha256": "0130f6d4d06ced97fece16a9f9bed82a26ea33a5ac3361b28b1002af09c2e680",
+  "scope": "overlapping_inner_partition_diagnostic;not_confirmed_generalization_or_medical_causality"
+}

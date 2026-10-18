@@ -1,0 +1,13 @@
+{
+  "data_tests_passed": 11,
+  "evaluation_tests_passed": 27,
+  "local_full_legacy_environment_reproduction_claimed": false,
+  "model_tests_passed": 31,
+  "new_real_data_fits_in_unit_tests": 0,
+  "same_checkpoint_gradient_vs_plain_microbatch_parity": true,
+  "source": "c4c29b105b3780a11ca8edc32c3a78bde8302ffd59f3c7eefd50a0fa4c13096c",
+  "status": "PASS_NUMERICAL_MODULE_TESTS",
+  "training_denominator_targeted_recheck_passed": 1,
+  "training_tests_passed": 4,
+  "unique_tests_passed": 73
+}

@@ -1,0 +1,5073 @@
+{
+  "cell_rows": [
+    {
+      "fold": 1,
+      "head_sha256": "5a60d2e58c1ad08719c12252093c5e401a58ebc1ce4002ea3363d2d727e3a769",
+      "new_convex_fits": 3,
+      "seed": 31,
+      "wall_seconds": 2.0031676039798185
+    },
+    {
+      "fold": 1,
+      "head_sha256": "06f52f109cdc23b43f8d7e5b10df88b5d2b65688d31a0993956e9069bcf27711",
+      "new_convex_fits": 3,
+      "seed": 47,
+      "wall_seconds": 2.015771004022099
+    },
+    {
+      "fold": 2,
+      "head_sha256": "34012f3936812e69d2dec2dfa68b296d3a2f15a31d5939190c05d93d2a1aef7b",
+      "new_convex_fits": 3,
+      "seed": 31,
+      "wall_seconds": 2.008332761004567
+    },
+    {
+      "fold": 2,
+      "head_sha256": "51c6ea0b9cd4c375da6b49d0e78fc5df1537fbf52c5a55c319b5cb0c413209fc",
+      "new_convex_fits": 3,
+      "seed": 47,
+      "wall_seconds": 2.013608015025966
+    },
+    {
+      "fold": 3,
+      "head_sha256": "73c9e01c06c942ab1e187f7cd3360a2e9d40fa7b478c7b02524556afd42c6a70",
+      "new_convex_fits": 3,
+      "seed": 31,
+      "wall_seconds": 2.01711170503404
+    },
+    {
+      "fold": 3,
+      "head_sha256": "e64573ea0805f4a4eda3176ad6db304e85768f18af22dd1b41d56048b87b76ff",
+      "new_convex_fits": 3,
+      "seed": 47,
+      "wall_seconds": 1.99537000793498
+    }
+  ],
+  "feature_rows": [
+    {
+      "feature_audit": {
+        "aggregation": "equal_WSI_mean_then_flatten",
+        "arms": {
+          "ATTN": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 85,
+              "deranged_WSI_count": 85,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 8.526512829121202e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 4.440892098500626e-16
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "COMP": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 85,
+              "deranged_WSI_count": 85,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 9.094947017729282e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 5.551115123125783e-16
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "QUERY": {
+            "QUERY_controls_exact_matched": true,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 85,
+              "deranged_WSI_count": 85,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          }
+        },
+        "distribution_tolerance": 1e-06,
+        "endpoint_API_reads": 0,
+        "feature_width": 256,
+        "fit_patients": 327,
+        "fit_representation_crossfitted": false,
+        "fold": 1,
+        "maximum_old_risk_error": 0.0,
+        "new_neural_training_steps": 0,
+        "new_predictor_fits": 0,
+        "old_risk_tolerance": 1e-07,
+        "old_risk_vectors_replayed": 15,
+        "overlap_definition": "soft_slot_overlap_Gram;no_topk_tie_or_medical_truth_claim",
+        "patient_batch_size": 32,
+        "permutation_seed": "270117 + fold*1000 + seed*10 + active_view_slide_index",
+        "seed": 31,
+        "slot_shape": [
+          8,
+          32
+        ],
+        "source": "c4c29b105b3780a11ca8edc32c3a78bde8302ffd59f3c7eefd50a0fa4c13096c",
+        "spatial_control": "both_matched_round_weights_frozen;Value_rows_unchanged",
+        "stage": "prototype",
+        "status": "PASS_FROZEN_SLOT_EXTRACTION",
+        "valid_patients": 82
+      },
+      "feature_sha256": "454bc70073111efc9456425dbd6ec9c79193bb5f00472b9bf9d788ce7aae1c7e",
+      "fold": 1,
+      "seed": 31,
+      "wall_seconds": 11.988344078999944
+    },
+    {
+      "feature_audit": {
+        "aggregation": "equal_WSI_mean_then_flatten",
+        "arms": {
+          "ATTN": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 85,
+              "deranged_WSI_count": 85,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 9.094947017729282e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 1.1102230246251565e-16
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "COMP": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 85,
+              "deranged_WSI_count": 85,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 8.526512829121202e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 1.1102230246251565e-16
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "QUERY": {
+            "QUERY_controls_exact_matched": true,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 85,
+              "deranged_WSI_count": 85,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          }
+        },
+        "distribution_tolerance": 1e-06,
+        "endpoint_API_reads": 0,
+        "feature_width": 256,
+        "fit_patients": 327,
+        "fit_representation_crossfitted": false,
+        "fold": 1,
+        "maximum_old_risk_error": 0.0,
+        "new_neural_training_steps": 0,
+        "new_predictor_fits": 0,
+        "old_risk_tolerance": 1e-07,
+        "old_risk_vectors_replayed": 15,
+        "overlap_definition": "soft_slot_overlap_Gram;no_topk_tie_or_medical_truth_claim",
+        "patient_batch_size": 32,
+        "permutation_seed": "270117 + fold*1000 + seed*10 + active_view_slide_index",
+        "seed": 47,
+        "slot_shape": [
+          8,
+          32
+        ],
+        "source": "c4c29b105b3780a11ca8edc32c3a78bde8302ffd59f3c7eefd50a0fa4c13096c",
+        "spatial_control": "both_matched_round_weights_frozen;Value_rows_unchanged",
+        "stage": "prototype",
+        "status": "PASS_FROZEN_SLOT_EXTRACTION",
+        "valid_patients": 82
+      },
+      "feature_sha256": "a1c775c233f12d3203e3bc6b0886af8a370b987a7c2af81b0fbcf3e0a8d077f0",
+      "fold": 1,
+      "seed": 47,
+      "wall_seconds": 11.619147156947292
+    },
+    {
+      "feature_audit": {
+        "aggregation": "equal_WSI_mean_then_flatten",
+        "arms": {
+          "ATTN": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 83,
+              "deranged_WSI_count": 83,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 9.094947017729282e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 4.85722573273506e-17
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "COMP": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 83,
+              "deranged_WSI_count": 83,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 9.094947017729282e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 4.85722573273506e-17
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "QUERY": {
+            "QUERY_controls_exact_matched": true,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 83,
+              "deranged_WSI_count": 83,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          }
+        },
+        "distribution_tolerance": 1e-06,
+        "endpoint_API_reads": 0,
+        "feature_width": 256,
+        "fit_patients": 327,
+        "fit_representation_crossfitted": false,
+        "fold": 2,
+        "maximum_old_risk_error": 0.0,
+        "new_neural_training_steps": 0,
+        "new_predictor_fits": 0,
+        "old_risk_tolerance": 1e-07,
+        "old_risk_vectors_replayed": 15,
+        "overlap_definition": "soft_slot_overlap_Gram;no_topk_tie_or_medical_truth_claim",
+        "patient_batch_size": 32,
+        "permutation_seed": "270117 + fold*1000 + seed*10 + active_view_slide_index",
+        "seed": 31,
+        "slot_shape": [
+          8,
+          32
+        ],
+        "source": "c4c29b105b3780a11ca8edc32c3a78bde8302ffd59f3c7eefd50a0fa4c13096c",
+        "spatial_control": "both_matched_round_weights_frozen;Value_rows_unchanged",
+        "stage": "prototype",
+        "status": "PASS_FROZEN_SLOT_EXTRACTION",
+        "valid_patients": 82
+      },
+      "feature_sha256": "15bbc1ced44054e4adb110349c890b075cc8158249e83d7ddd95681cf6aac62c",
+      "fold": 2,
+      "seed": 31,
+      "wall_seconds": 11.92871045297943
+    },
+    {
+      "feature_audit": {
+        "aggregation": "equal_WSI_mean_then_flatten",
+        "arms": {
+          "ATTN": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 83,
+              "deranged_WSI_count": 83,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 9.094947017729282e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 2.7755575615628914e-17
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "COMP": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 83,
+              "deranged_WSI_count": 83,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 9.094947017729282e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 2.0816681711721685e-17
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "QUERY": {
+            "QUERY_controls_exact_matched": true,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 83,
+              "deranged_WSI_count": 83,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          }
+        },
+        "distribution_tolerance": 1e-06,
+        "endpoint_API_reads": 0,
+        "feature_width": 256,
+        "fit_patients": 327,
+        "fit_representation_crossfitted": false,
+        "fold": 2,
+        "maximum_old_risk_error": 0.0,
+        "new_neural_training_steps": 0,
+        "new_predictor_fits": 0,
+        "old_risk_tolerance": 1e-07,
+        "old_risk_vectors_replayed": 15,
+        "overlap_definition": "soft_slot_overlap_Gram;no_topk_tie_or_medical_truth_claim",
+        "patient_batch_size": 32,
+        "permutation_seed": "270117 + fold*1000 + seed*10 + active_view_slide_index",
+        "seed": 47,
+        "slot_shape": [
+          8,
+          32
+        ],
+        "source": "c4c29b105b3780a11ca8edc32c3a78bde8302ffd59f3c7eefd50a0fa4c13096c",
+        "spatial_control": "both_matched_round_weights_frozen;Value_rows_unchanged",
+        "stage": "prototype",
+        "status": "PASS_FROZEN_SLOT_EXTRACTION",
+        "valid_patients": 82
+      },
+      "feature_sha256": "8707af92f6973c8a4492ba396a1164cbfda123653752bd12168d6a871977ea1b",
+      "fold": 2,
+      "seed": 47,
+      "wall_seconds": 12.02102531993296
+    },
+    {
+      "feature_audit": {
+        "aggregation": "equal_WSI_mean_then_flatten",
+        "arms": {
+          "ATTN": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 84,
+              "deranged_WSI_count": 84,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 7.958078640513122e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 5.551115123125783e-17
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "COMP": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 84,
+              "deranged_WSI_count": 84,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 9.094947017729282e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 4.718447854656915e-16
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "QUERY": {
+            "QUERY_controls_exact_matched": true,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 84,
+              "deranged_WSI_count": 84,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          }
+        },
+        "distribution_tolerance": 1e-06,
+        "endpoint_API_reads": 0,
+        "feature_width": 256,
+        "fit_patients": 328,
+        "fit_representation_crossfitted": false,
+        "fold": 3,
+        "maximum_old_risk_error": 0.0,
+        "new_neural_training_steps": 0,
+        "new_predictor_fits": 0,
+        "old_risk_tolerance": 1e-07,
+        "old_risk_vectors_replayed": 15,
+        "overlap_definition": "soft_slot_overlap_Gram;no_topk_tie_or_medical_truth_claim",
+        "patient_batch_size": 32,
+        "permutation_seed": "270117 + fold*1000 + seed*10 + active_view_slide_index",
+        "seed": 31,
+        "slot_shape": [
+          8,
+          32
+        ],
+        "source": "c4c29b105b3780a11ca8edc32c3a78bde8302ffd59f3c7eefd50a0fa4c13096c",
+        "spatial_control": "both_matched_round_weights_frozen;Value_rows_unchanged",
+        "stage": "prototype",
+        "status": "PASS_FROZEN_SLOT_EXTRACTION",
+        "valid_patients": 82
+      },
+      "feature_sha256": "c59f2054da7d24af45ff388635eca3438f269120785ddc96f2c791e2e11df79c",
+      "fold": 3,
+      "seed": 31,
+      "wall_seconds": 11.688080696039833
+    },
+    {
+      "feature_audit": {
+        "aggregation": "equal_WSI_mean_then_flatten",
+        "arms": {
+          "ATTN": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 84,
+              "deranged_WSI_count": 84,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 9.094947017729282e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 6.938893903907228e-17
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "COMP": {
+            "QUERY_controls_exact_matched": false,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": true,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 84,
+              "deranged_WSI_count": 84,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {
+                "assignment_row_fraction": 0.0,
+                "effective_patch_count": 9.094947017729282e-13,
+                "entropy": 1.7763568394002505e-15,
+                "row_mass": 0.0,
+                "row_weight_multiset": 0.0,
+                "slot_mass": 0.0,
+                "soft_slot_overlap_gram": 8.326672684688674e-17
+              },
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": true,
+              "routing_calls": 6,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          },
+          "QUERY": {
+            "QUERY_controls_exact_matched": true,
+            "fit": {
+              "WSI_count": 0,
+              "deranged_WSI_count": 0,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 11,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            },
+            "model_state_unchanged": true,
+            "old_risk_errors": {
+              "FIT_MATCHED": 0.0,
+              "RNA_MEAN_QUERY": 0.0,
+              "VALID_MATCHED": 0.0,
+              "VALUE_OFF": 0.0,
+              "WRONG_RNA_QUERY": 0.0
+            },
+            "old_risk_vectors_replayed": 5,
+            "valid": {
+              "WSI_count": 84,
+              "deranged_WSI_count": 84,
+              "inputs_unchanged": true,
+              "maximum_distribution_error": {},
+              "own_RNA_initial_slots_unchanged": true,
+              "patient_batches": 3,
+              "probability_distribution_claim": false,
+              "routing_calls": 0,
+              "single_patch_unpermuted_WSI_count": 0,
+              "values_unchanged": true
+            }
+          }
+        },
+        "distribution_tolerance": 1e-06,
+        "endpoint_API_reads": 0,
+        "feature_width": 256,
+        "fit_patients": 328,
+        "fit_representation_crossfitted": false,
+        "fold": 3,
+        "maximum_old_risk_error": 0.0,
+        "new_neural_training_steps": 0,
+        "new_predictor_fits": 0,
+        "old_risk_tolerance": 1e-07,
+        "old_risk_vectors_replayed": 15,
+        "overlap_definition": "soft_slot_overlap_Gram;no_topk_tie_or_medical_truth_claim",
+        "patient_batch_size": 32,
+        "permutation_seed": "270117 + fold*1000 + seed*10 + active_view_slide_index",
+        "seed": 47,
+        "slot_shape": [
+          8,
+          32
+        ],
+        "source": "c4c29b105b3780a11ca8edc32c3a78bde8302ffd59f3c7eefd50a0fa4c13096c",
+        "spatial_control": "both_matched_round_weights_frozen;Value_rows_unchanged",
+        "stage": "prototype",
+        "status": "PASS_FROZEN_SLOT_EXTRACTION",
+        "valid_patients": 82
+      },
+      "feature_sha256": "f6e2c0b0d3722c47dc19db205d9f10824b2faf12e86e3e3091e86dab6de15b6c",
+      "fold": 3,
+      "seed": 47,
+      "wall_seconds": 11.803574849967845
+    }
+  ],
+  "head_rows": [
+    {
+      "PCA_explained_variance_ratio": 0.7722776074039197,
+      "arm": "QUERY",
+      "coefficient_norm": 0.20305060594918858,
+      "fit_DSS_censored_mean_correction": -0.06410073595134651,
+      "fit_DSS_event_mean_correction": 0.44714171907524647,
+      "fit_Pearson_correction_DSS_indicator": 0.8337768143371455,
+      "fit_correction": {
+        "Pearson_delta_base": 0.40710972324666905,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.29926544594945353,
+        "SD_delta_over_SD_base": 0.2992654459494535,
+        "delta": {
+          "IQR": 0.1790003971722048,
+          "RMS": 0.20305060594918867,
+          "SD": 0.20305060594918867,
+          "abs_q95": 0.4683869033279848,
+          "count": 327,
+          "mean": 1.7962797761258345e-18,
+          "median": -0.03912151362452459,
+          "q05": -0.25416957762880094,
+          "q95": 0.4683869033279848
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 4.583489551204775e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 2.1094237467877974e-15,
+      "fold": 1,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.772650630529766,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7759542459281362,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6241.0,
+          "defined": true,
+          "logistic_loss": 0.499339243722739
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7980902297259895,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 5767.0,
+          "defined": true,
+          "logistic_loss": 0.477754488868977
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5801713586291309,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 474.0,
+          "defined": true,
+          "logistic_loss": 0.6902467572763308
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.333016722948795,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8728086534875047,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 7020.0,
+          "defined": true,
+          "logistic_loss": 0.3647786203052029
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9065873235538334,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6551.0,
+          "defined": true,
+          "logistic_loss": 0.32715952867397496
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5740514075887393,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 469.0,
+          "defined": true,
+          "logistic_loss": 0.6975026792124892
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.60374624015385,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8256869327365411,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6641.0,
+          "defined": true,
+          "logistic_loss": 0.4404813166699201
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8534458898422363,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6167.0,
+          "defined": true,
+          "logistic_loss": 0.4122419546601909
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5801713586291309,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 474.0,
+          "defined": true,
+          "logistic_loss": 0.6902458575295319
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.772650630529766,
+          "gradient_max": 1.8310975904094746,
+          "gradient_norm": 2.2929352050680705,
+          "iteration": 0,
+          "objective": 4.772650630529766,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.340102239039865,
+          "gradient_max": 0.043180995773203446,
+          "gradient_norm": 0.09540498783910809,
+          "iteration": 1,
+          "objective": 4.539576758299273,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.33294712155318,
+          "gradient_max": 0.0009124407885690577,
+          "gradient_norm": 0.002119812555509961,
+          "iteration": 2,
+          "objective": 4.539164669603944,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.33301610541427,
+          "gradient_max": 2.1951646371167616e-05,
+          "gradient_norm": 4.1516815158856994e-05,
+          "iteration": 3,
+          "objective": 4.539164465909703,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.33301675326703,
+          "gradient_max": 2.96976165096996e-07,
+          "gradient_norm": 6.472379097107193e-07,
+          "iteration": 4,
+          "objective": 4.539164465830477,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.333016722948795,
+          "gradient_max": 4.7141002768036344e-09,
+          "gradient_norm": 9.950855355370975e-09,
+          "iteration": 5,
+          "objective": 4.539164465830458,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.333016722948795,
+          "gradient_max": 4.7141002768036344e-09,
+          "gradient_norm": 9.950855355370975e-09,
+          "iteration": 5,
+          "objective": 4.539164465830458,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.333016722948795,
+        "gradient_max": 4.7141002768036344e-09,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.539164465830458,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 31,
+      "valid_correction": {
+        "Pearson_delta_base": 0.5773083764261014,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.22197854686062193,
+        "SD_delta_over_SD_base": 0.21004946882730485,
+        "delta": {
+          "IQR": 0.23395773170990675,
+          "RMS": 0.15061170294743131,
+          "SD": 0.1494305330463722,
+          "abs_q95": 0.3076920740662405,
+          "count": 82,
+          "mean": 0.01882553739478267,
+          "median": 0.0187028595646951,
+          "q05": -0.20050899483259726,
+          "q95": 0.24302497290138383
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.9362196032460638,
+      "arm": "ATTN",
+      "coefficient_norm": 0.1859103338796722,
+      "fit_DSS_censored_mean_correction": -0.05508918682130189,
+      "fit_DSS_event_mean_correction": 0.38428066904615465,
+      "fit_Pearson_correction_DSS_indicator": 0.7826253646059695,
+      "fit_correction": {
+        "Pearson_delta_base": 0.37935350617629754,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.27400331417397655,
+        "SD_delta_over_SD_base": 0.2740033141739765,
+        "delta": {
+          "IQR": 0.16565704860889557,
+          "RMS": 0.18591033387967204,
+          "SD": 0.18591033387967204,
+          "abs_q95": 0.43086466650221406,
+          "count": 327,
+          "mean": 3.629184006144085e-18,
+          "median": -0.05910404036078412,
+          "q05": -0.1971482981907194,
+          "q95": 0.43086466650221406
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 1.358070978134748e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.9984014443252818e-15,
+      "fold": 1,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.772650630529766,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7759542459281362,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6241.0,
+          "defined": true,
+          "logistic_loss": 0.499339243722739
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7980902297259895,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 5767.0,
+          "defined": true,
+          "logistic_loss": 0.477754488868977
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5801713586291309,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 474.0,
+          "defined": true,
+          "logistic_loss": 0.6902467572763308
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.407603448553531,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8672137262215591,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6975.0,
+          "defined": true,
+          "logistic_loss": 0.3800157939283368
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8991143094381401,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6497.0,
+          "defined": true,
+          "logistic_loss": 0.3451284253280071
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5850673194614443,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 478.0,
+          "defined": true,
+          "logistic_loss": 0.6885789830421465
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.613494214035768,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8224543080939948,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6615.0,
+          "defined": true,
+          "logistic_loss": 0.44348278684833636
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8499861610849709,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6142.0,
+          "defined": true,
+          "logistic_loss": 0.415596750543486
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5789473684210527,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 473.0,
+          "defined": true,
+          "logistic_loss": 0.6901223196988241
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.772650630529766,
+          "gradient_max": 1.8706966811072077,
+          "gradient_norm": 2.0620997895174358,
+          "iteration": 0,
+          "objective": 4.772650630529766,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.414025928975235,
+          "gradient_max": 0.04521807389099952,
+          "gradient_norm": 0.08781929885981385,
+          "iteration": 1,
+          "objective": 4.580746189096936,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.4074929834068675,
+          "gradient_max": 0.005126140862784373,
+          "gradient_norm": 0.010667296908289938,
+          "iteration": 2,
+          "objective": 4.5804211501616106,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.40757499774695,
+          "gradient_max": 0.00014737256853747382,
+          "gradient_norm": 0.00029526959143922216,
+          "iteration": 3,
+          "objective": 4.580416713705022,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.4076033145687665,
+          "gradient_max": 1.4888863009990955e-05,
+          "gradient_norm": 3.0565671243369844e-05,
+          "iteration": 4,
+          "objective": 4.580416709813113,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.407603421832576,
+          "gradient_max": 2.3056654668840437e-07,
+          "gradient_norm": 3.513136347311315e-07,
+          "iteration": 5,
+          "objective": 4.580416709769793,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.407603448553531,
+          "gradient_max": 6.712393196828259e-09,
+          "gradient_norm": 1.2783354091402713e-08,
+          "iteration": 6,
+          "objective": 4.580416709769787,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.407603448553531,
+          "gradient_max": 6.712393196828259e-09,
+          "gradient_norm": 1.2783354091402713e-08,
+          "iteration": 6,
+          "objective": 4.580416709769787,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.407603448553531,
+        "gradient_max": 6.712393196828259e-09,
+        "iterations": 6,
+        "newton_polish_steps": 0,
+        "objective": 4.580416709769787,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 31,
+      "valid_correction": {
+        "Pearson_delta_base": 0.4185672583167332,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2442715779896025,
+        "SD_delta_over_SD_base": 0.23296581751428205,
+        "delta": {
+          "IQR": 0.18506458921876487,
+          "RMS": 0.16573745014093852,
+          "SD": 0.1657333697966377,
+          "abs_q95": 0.3433069166369468,
+          "count": 82,
+          "mean": 0.0011629768144801626,
+          "median": -0.047869842044432565,
+          "q05": -0.19720259841271867,
+          "q95": 0.3433069166369468
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.9216628585443796,
+      "arm": "COMP",
+      "coefficient_norm": 0.18583637330262934,
+      "fit_DSS_censored_mean_correction": -0.0530855065505991,
+      "fit_DSS_event_mean_correction": 0.37030377740174014,
+      "fit_Pearson_correction_DSS_indicator": 0.7544601969462085,
+      "fit_correction": {
+        "Pearson_delta_base": 0.4026781606821945,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2738943076286973,
+        "SD_delta_over_SD_base": 0.27389430762869726,
+        "delta": {
+          "IQR": 0.18750501489468718,
+          "RMS": 0.1858363733026293,
+          "SD": 0.1858363733026293,
+          "abs_q95": 0.4309351002590518,
+          "count": 327,
+          "mean": -3.696438773694371e-18,
+          "median": -0.04905443815519195,
+          "q05": -0.2025768168780962,
+          "q95": 0.4309351002590518
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 6.79035489067374e-19,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.7763568394002505e-15,
+      "fold": 1,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.772650630529766,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7759542459281362,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6241.0,
+          "defined": true,
+          "logistic_loss": 0.499339243722739
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7980902297259895,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 5767.0,
+          "defined": true,
+          "logistic_loss": 0.477754488868977
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5801713586291309,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 474.0,
+          "defined": true,
+          "logistic_loss": 0.6902467572763308
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.409420882914085,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8697003605619794,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6995.0,
+          "defined": true,
+          "logistic_loss": 0.3774598975914704
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9006365900913368,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6508.0,
+          "defined": true,
+          "logistic_loss": 0.3438876970637036
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5960832313341493,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 487.0,
+          "defined": true,
+          "logistic_loss": 0.6743910126632493
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.612579969323285,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8236976252642049,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6625.0,
+          "defined": true,
+          "logistic_loss": 0.44296752693259406
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8510932742872959,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6150.0,
+          "defined": true,
+          "logistic_loss": 0.4152744198959379
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5813953488372093,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 475.0,
+          "defined": true,
+          "logistic_loss": 0.6879006865982943
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.772650630529766,
+          "gradient_max": 1.8697135549140012,
+          "gradient_norm": 2.0447857292918057,
+          "iteration": 0,
+          "objective": 4.772650630529766,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.414469604312359,
+          "gradient_max": 0.04121621111570262,
+          "gradient_norm": 0.05502480060446331,
+          "iteration": 1,
+          "objective": 4.582231007237337,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.409358889262066,
+          "gradient_max": 0.0023814271216694854,
+          "gradient_norm": 0.004236317923366781,
+          "iteration": 2,
+          "objective": 4.582097403934297,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.409406902442168,
+          "gradient_max": 6.289733343961545e-05,
+          "gradient_norm": 0.00013606509079675363,
+          "iteration": 3,
+          "objective": 4.582096671916783,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.409420879775113,
+          "gradient_max": 3.70127560125888e-06,
+          "gradient_norm": 6.854131704220153e-06,
+          "iteration": 4,
+          "objective": 4.582096671127623,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.409420895292988,
+          "gradient_max": 2.4477025306612887e-07,
+          "gradient_norm": 3.737212087053873e-07,
+          "iteration": 5,
+          "objective": 4.582096671125462,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.409420882914085,
+          "gradient_max": 4.440892098500626e-16,
+          "gradient_norm": 5.544606093969278e-16,
+          "iteration": 1,
+          "objective": 4.582096671125456,
+          "phase": "Newton_polish"
+        },
+        {
+          "cox": 4.409420882914085,
+          "gradient_max": 4.440892098500626e-16,
+          "gradient_norm": 5.544606093969278e-16,
+          "iteration": 6,
+          "objective": 4.582096671125456,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.409420882914085,
+        "gradient_max": 4.440892098500626e-16,
+        "iterations": 5,
+        "newton_polish_steps": 1,
+        "objective": 4.582096671125456,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 31,
+      "valid_correction": {
+        "Pearson_delta_base": 0.5702883865071768,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2380430527159421,
+        "SD_delta_over_SD_base": 0.226602610805309,
+        "delta": {
+          "IQR": 0.2557986592857949,
+          "RMS": 0.16151141653731227,
+          "SD": 0.16120654392216782,
+          "abs_q95": 0.3175463241857759,
+          "count": 82,
+          "mean": 0.009919065911635543,
+          "median": 0.004203160028236952,
+          "q05": -0.2098554228106048,
+          "q95": 0.31724534768189877
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.8400929268124568,
+      "arm": "QUERY",
+      "coefficient_norm": 0.2052052521401383,
+      "fit_DSS_censored_mean_correction": -0.06469835009033803,
+      "fit_DSS_event_mean_correction": 0.45131044209357757,
+      "fit_Pearson_correction_DSS_indicator": 0.8327139144198356,
+      "fit_correction": {
+        "Pearson_delta_base": 0.37077652293945584,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.302441063920075,
+        "SD_delta_over_SD_base": 0.30244106392007497,
+        "delta": {
+          "IQR": 0.19366212726783608,
+          "RMS": 0.2052052521401383,
+          "SD": 0.2052052521401383,
+          "abs_q95": 0.47184166703554964,
+          "count": 327,
+          "mean": 1.7328420091217678e-18,
+          "median": -0.05193114244714492,
+          "q05": -0.23432775790288973,
+          "q95": 0.47184166703554964
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 1.358070978134748e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.5543122344752192e-15,
+      "fold": 1,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.772650630529766,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7759542459281362,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6241.0,
+          "defined": true,
+          "logistic_loss": 0.499339243722739
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7980902297259895,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 5767.0,
+          "defined": true,
+          "logistic_loss": 0.477754488868977
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5801713586291309,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 474.0,
+          "defined": true,
+          "logistic_loss": 0.6902467572763308
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.323770210214218,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8838741763023747,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 7109.0,
+          "defined": true,
+          "logistic_loss": 0.35514951253193877
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9186271796291171,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6638.0,
+          "defined": true,
+          "logistic_loss": 0.3184969356517076
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.576499388004896,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 471.0,
+          "defined": true,
+          "logistic_loss": 0.6793251802633349
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.608191983171339,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8255626010195201,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6640.0,
+          "defined": true,
+          "logistic_loss": 0.4407140806039687
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8533075006919457,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6166.0,
+          "defined": true,
+          "logistic_loss": 0.4126730382321652
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5801713586291309,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 474.0,
+          "defined": true,
+          "logistic_loss": 0.6887245728667006
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.772650630529766,
+          "gradient_max": 2.1174440790343607,
+          "gradient_norm": 2.3165287768287985,
+          "iteration": 0,
+          "objective": 4.772650630529766,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.33086322997117,
+          "gradient_max": 0.07464342049117179,
+          "gradient_norm": 0.11174978175316613,
+          "iteration": 1,
+          "objective": 4.534858393516293,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.323558956452838,
+          "gradient_max": 0.0032494002422653323,
+          "gradient_norm": 0.005237952094220424,
+          "iteration": 2,
+          "objective": 4.5343173580104805,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.323768216067566,
+          "gradient_max": 6.20865688146649e-05,
+          "gradient_norm": 0.00010800247301117328,
+          "iteration": 3,
+          "objective": 4.534316188279998,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.323770276086695,
+          "gradient_max": 3.5751904128578094e-06,
+          "gradient_norm": 6.501813949402207e-06,
+          "iteration": 4,
+          "objective": 4.534316187745656,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.323770210214218,
+          "gradient_max": 1.0075550005428369e-08,
+          "gradient_norm": 2.007994808618129e-08,
+          "iteration": 5,
+          "objective": 4.534316187743706,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.323770210214218,
+          "gradient_max": 1.0075550005428369e-08,
+          "gradient_norm": 2.007994808618129e-08,
+          "iteration": 5,
+          "objective": 4.534316187743706,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.323770210214218,
+        "gradient_max": 1.0075550005428369e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.534316187743706,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 47,
+      "valid_correction": {
+        "Pearson_delta_base": 0.4651279036527564,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.1878488424562283,
+        "SD_delta_over_SD_base": 0.17914997020095683,
+        "delta": {
+          "IQR": 0.17573465420899304,
+          "RMS": 0.12745481245446968,
+          "SD": 0.12744843246607016,
+          "abs_q95": 0.22315563727345827,
+          "count": 82,
+          "mean": 0.0012752567371309947,
+          "median": 0.006808370104364136,
+          "q05": -0.20232860012264342,
+          "q95": 0.1939257297880464
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.9410493396858982,
+      "arm": "ATTN",
+      "coefficient_norm": 0.20794731137622904,
+      "fit_DSS_censored_mean_correction": -0.06605309982019303,
+      "fit_DSS_event_mean_correction": 0.46076064752622453,
+      "fit_Pearson_correction_DSS_indicator": 0.8389401553723667,
+      "fit_correction": {
+        "Pearson_delta_base": 0.3648466452888611,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.3064824386122235,
+        "SD_delta_over_SD_base": 0.30648243861222346,
+        "delta": {
+          "IQR": 0.16906650210437257,
+          "RMS": 0.20794731137622885,
+          "SD": 0.20794731137622885,
+          "abs_q95": 0.4881544502198434,
+          "count": 327,
+          "mean": -1.0600812914421095e-18,
+          "median": -0.07086180925885888,
+          "q05": -0.2056824208829837,
+          "q95": 0.4881544502198434
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 1.782468158801857e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 4.54173516643551e-15,
+      "fold": 1,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.772650630529766,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7759542459281362,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6241.0,
+          "defined": true,
+          "logistic_loss": 0.499339243722739
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7980902297259895,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 5767.0,
+          "defined": true,
+          "logistic_loss": 0.477754488868977
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5801713586291309,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 474.0,
+          "defined": true,
+          "logistic_loss": 0.6902467572763308
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.306824649204002,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8869824692279,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 7134.0,
+          "defined": true,
+          "logistic_loss": 0.35159648493773116
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9211181843343482,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6656.0,
+          "defined": true,
+          "logistic_loss": 0.31489084126061173
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5850673194614443,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 478.0,
+          "defined": true,
+          "logistic_loss": 0.6762415047796707
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.6093936401081725,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8254382693024991,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6639.0,
+          "defined": true,
+          "logistic_loss": 0.44107836730898126
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8531691115416551,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6165.0,
+          "defined": true,
+          "logistic_loss": 0.413078502752761
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5801713586291309,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 474.0,
+          "defined": true,
+          "logistic_loss": 0.6887246601893334
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.772650630529766,
+          "gradient_max": 2.0577210168889257,
+          "gradient_norm": 2.39541442748357,
+          "iteration": 0,
+          "objective": 4.772650630529766,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.316265458595898,
+          "gradient_max": 0.09716037110168019,
+          "gradient_norm": 0.1548274493654598,
+          "iteration": 1,
+          "objective": 4.524067432075283,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.306433523599778,
+          "gradient_max": 0.003207403710312917,
+          "gradient_norm": 0.00614046434494013,
+          "iteration": 2,
+          "objective": 4.523036698376134,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.306826121883532,
+          "gradient_max": 9.372257058659628e-05,
+          "gradient_norm": 0.00019987564690361492,
+          "iteration": 3,
+          "objective": 4.523035072579253,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.306824890758992,
+          "gradient_max": 3.2164136056986314e-06,
+          "gradient_norm": 7.751366315226397e-06,
+          "iteration": 4,
+          "objective": 4.523035070749786,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.306824649204002,
+          "gradient_max": 3.518602875729471e-08,
+          "gradient_norm": 8.065565983873676e-08,
+          "iteration": 5,
+          "objective": 4.523035070747014,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.306824649204002,
+          "gradient_max": 3.518602875729471e-08,
+          "gradient_norm": 8.065565983873676e-08,
+          "iteration": 5,
+          "objective": 4.523035070747014,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.306824649204002,
+        "gradient_max": 3.518602875729471e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.523035070747014,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 47,
+      "valid_correction": {
+        "Pearson_delta_base": 0.49159848435053094,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.25922382514186126,
+        "SD_delta_over_SD_base": 0.242970353321897,
+        "delta": {
+          "IQR": 0.195727010308193,
+          "RMS": 0.17588249991417887,
+          "SD": 0.17285066043755115,
+          "abs_q95": 0.3389218770713434,
+          "count": 82,
+          "mean": 0.03251619538573855,
+          "median": 0.007288686331122341,
+          "q05": -0.15444497444689864,
+          "q95": 0.3389218770713434
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.9375501118808351,
+      "arm": "COMP",
+      "coefficient_norm": 0.21174076710922587,
+      "fit_DSS_censored_mean_correction": -0.06970338162873511,
+      "fit_DSS_event_mean_correction": 0.4862235889223959,
+      "fit_Pearson_correction_DSS_indicator": 0.8694416767266329,
+      "fit_correction": {
+        "Pearson_delta_base": 0.332436310303054,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.31207341046043824,
+        "SD_delta_over_SD_base": 0.3120734104604382,
+        "delta": {
+          "IQR": 0.1668920592955025,
+          "RMS": 0.21174076710922585,
+          "SD": 0.21174076710922585,
+          "abs_q95": 0.5136615563276573,
+          "count": 327,
+          "mean": -3.576049216320627e-18,
+          "median": -0.059254395515823344,
+          "q05": -0.24779363415809016,
+          "q95": 0.5136615563276573
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 3.39517744533687e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.3322676295501878e-15,
+      "fold": 1,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.772650630529766,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7759542459281362,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6241.0,
+          "defined": true,
+          "logistic_loss": 0.499339243722739
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7980902297259895,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 5767.0,
+          "defined": true,
+          "logistic_loss": 0.477754488868977
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5801713586291309,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 474.0,
+          "defined": true,
+          "logistic_loss": 0.6902467572763308
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.294529512709983,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8934477185129927,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 7186.0,
+          "defined": true,
+          "logistic_loss": 0.3442339553101403
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9272073069471354,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6700.0,
+          "defined": true,
+          "logistic_loss": 0.30691856552597696
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.594859241126071,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 486.0,
+          "defined": true,
+          "logistic_loss": 0.6742719070608924
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.60782369881828,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8259355961705831,
+          "count": 8043,
+          "credit_den": 8043,
+          "credit_num": 6643.0,
+          "defined": true,
+          "logistic_loss": 0.4405239915805366
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8537226681428176,
+          "count": 7226,
+          "credit_den": 7226,
+          "credit_num": 6169.0,
+          "defined": true,
+          "logistic_loss": 0.4124614555203362
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5801713586291309,
+          "count": 817,
+          "credit_den": 817,
+          "credit_num": 474.0,
+          "defined": true,
+          "logistic_loss": 0.6887245859146962
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.772650630529766,
+          "gradient_max": 1.617922985775738,
+          "gradient_norm": 2.3882506608531804,
+          "iteration": 0,
+          "objective": 4.772650630529766,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.3039465581058005,
+          "gradient_max": 0.05308693171921153,
+          "gradient_norm": 0.10309356448875456,
+          "iteration": 1,
+          "objective": 4.51916884866349,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.294325137665085,
+          "gradient_max": 0.003449129122680552,
+          "gradient_norm": 0.006066382028758606,
+          "iteration": 2,
+          "objective": 4.518701823858274,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.294516555948739,
+          "gradient_max": 7.370739840784069e-05,
+          "gradient_norm": 0.00014159618319349248,
+          "iteration": 3,
+          "objective": 4.51870027589361,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.294529679537191,
+          "gradient_max": 4.309386031020601e-06,
+          "gradient_norm": 9.232886388832639e-06,
+          "iteration": 4,
+          "objective": 4.518700274993923,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.294529512709983,
+          "gradient_max": 4.992907598477814e-08,
+          "gradient_norm": 9.611879846464757e-08,
+          "iteration": 5,
+          "objective": 4.51870027499,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.294529512709983,
+          "gradient_max": 4.992907598477814e-08,
+          "gradient_norm": 9.611879846464757e-08,
+          "iteration": 5,
+          "objective": 4.51870027499,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.294529512709983,
+        "gradient_max": 4.992907598477814e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.51870027499,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 47,
+      "valid_correction": {
+        "Pearson_delta_base": 0.48751243290936197,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2622601652390562,
+        "SD_delta_over_SD_base": 0.24761400704542044,
+        "delta": {
+          "IQR": 0.21717509149166855,
+          "RMS": 0.17794264653300162,
+          "SD": 0.17615418534081753,
+          "abs_q95": 0.3667027438609371,
+          "count": 82,
+          "mean": 0.025165222869699636,
+          "median": 0.006129589001927443,
+          "q05": -0.2182931355012873,
+          "q95": 0.3654082284269472
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.6784966614003418,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.8003557456751911,
+      "arm": "QUERY",
+      "coefficient_norm": 0.20807988039546754,
+      "fit_DSS_censored_mean_correction": -0.06471326677955583,
+      "fit_DSS_event_mean_correction": 0.46431768914331306,
+      "fit_Pearson_correction_DSS_indicator": 0.833055981541957,
+      "fit_correction": {
+        "Pearson_delta_base": 0.35206227694474046,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.26901689269550716,
+        "SD_delta_over_SD_base": 0.26901689269550716,
+        "delta": {
+          "IQR": 0.20462048567905614,
+          "RMS": 0.2080798803954676,
+          "SD": 0.2080798803954676,
+          "abs_q95": 0.4989822880097942,
+          "count": 327,
+          "mean": -3.6236722458869766e-18,
+          "median": -0.03693511634005997,
+          "q05": -0.2495276285953223,
+          "q95": 0.4989822880097942
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 0.0,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.5543122344752192e-15,
+      "fold": 2,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.839665712626891,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7734339792699414,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 6865.0,
+          "defined": true,
+          "logistic_loss": 0.4776014731941079
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7889670492410218,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6393.0,
+          "defined": true,
+          "logistic_loss": 0.45605399783748235
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.610608020698577,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 472.0,
+          "defined": true,
+          "logistic_loss": 0.7034736501860056
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.380404877698514,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8755069851284363,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7771.0,
+          "defined": true,
+          "logistic_loss": 0.33957647430008614
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9004072565716401,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 7296.0,
+          "defined": true,
+          "logistic_loss": 0.30629612134695217
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.6144890038809832,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 475.0,
+          "defined": true,
+          "logistic_loss": 0.6884389581024719
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.670135666202225,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8186119873817035,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7266.0,
+          "defined": true,
+          "logistic_loss": 0.42207108443147606
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8384548932494138,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6794.0,
+          "defined": true,
+          "logistic_loss": 0.3952262437778936
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.610608020698577,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 472.0,
+          "defined": true,
+          "logistic_loss": 0.703473081606092
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.839665712626891,
+          "gradient_max": 1.9917860780327197,
+          "gradient_norm": 2.328219381836486,
+          "iteration": 0,
+          "objective": 4.839665712626891,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.386703795633895,
+          "gradient_max": 0.051289731383403536,
+          "gradient_norm": 0.10792789261230853,
+          "iteration": 1,
+          "objective": 4.597400118363967,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.380199814823704,
+          "gradient_max": 0.0023177996183739447,
+          "gradient_norm": 0.00506677639149984,
+          "iteration": 2,
+          "objective": 4.5968921673684635,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.380403067942099,
+          "gradient_max": 5.1193555875961305e-05,
+          "gradient_norm": 0.00011910077311174645,
+          "iteration": 3,
+          "objective": 4.5968910614800595,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.380404973463735,
+          "gradient_max": 3.1028947413691554e-06,
+          "gradient_norm": 5.883301809920207e-06,
+          "iteration": 4,
+          "objective": 4.596891060827085,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.380404877698514,
+          "gradient_max": 1.33817182335072e-08,
+          "gradient_norm": 2.4070090286815962e-08,
+          "iteration": 5,
+          "objective": 4.596891060825475,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.380404877698514,
+          "gradient_max": 1.33817182335072e-08,
+          "gradient_norm": 2.4070090286815962e-08,
+          "iteration": 5,
+          "objective": 4.596891060825475,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.380404877698514,
+        "gradient_max": 1.33817182335072e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.596891060825475,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 31,
+      "valid_correction": {
+        "Pearson_delta_base": 0.5361742641110253,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.1961097677054056,
+        "SD_delta_over_SD_base": 0.19483753403809523,
+        "delta": {
+          "IQR": 0.17064866929476732,
+          "RMS": 0.15168748921173322,
+          "SD": 0.14631223658995346,
+          "abs_q95": 0.2786919264624267,
+          "count": 82,
+          "mean": -0.040022791099636905,
+          "median": -0.06424502417926488,
+          "q05": -0.23098520140646225,
+          "q95": 0.16952259602375958
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.9365877548970519,
+      "arm": "ATTN",
+      "coefficient_norm": 0.19905025825637496,
+      "fit_DSS_censored_mean_correction": -0.061949515166804865,
+      "fit_DSS_event_mean_correction": 0.4444877713218248,
+      "fit_Pearson_correction_DSS_indicator": 0.8336545390291259,
+      "fit_correction": {
+        "Pearson_delta_base": 0.3241508738850416,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2573429101583363,
+        "SD_delta_over_SD_base": 0.2573429101583363,
+        "delta": {
+          "IQR": 0.12860148668221857,
+          "RMS": 0.19905025825637487,
+          "SD": 0.19905025825637487,
+          "abs_q95": 0.4814774578327875,
+          "count": 327,
+          "mean": -5.320324549014519e-18,
+          "median": -0.061974340397695116,
+          "q05": -0.18410904671655912,
+          "q95": 0.4814774578327875
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 4.0742129344042444e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 3.567631113978906e-15,
+      "fold": 2,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.839665712626891,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7734339792699414,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 6865.0,
+          "defined": true,
+          "logistic_loss": 0.4776014731941079
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7889670492410218,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6393.0,
+          "defined": true,
+          "logistic_loss": 0.45605399783748235
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.610608020698577,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 472.0,
+          "defined": true,
+          "logistic_loss": 0.7034736501860056
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.4148045436766505,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8667192429022083,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7693.0,
+          "defined": true,
+          "logistic_loss": 0.3508292737589533
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8916450697272615,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 7225.0,
+          "defined": true,
+          "logistic_loss": 0.3164667980321407
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.6054333764553687,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 468.0,
+          "defined": true,
+          "logistic_loss": 0.7110351480336782
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.67876324711275,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8154574132492114,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7238.0,
+          "defined": true,
+          "logistic_loss": 0.42468083986434124
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8348759718622732,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6765.0,
+          "defined": true,
+          "logistic_loss": 0.3982211824886088
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.6119016817593791,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 473.0,
+          "defined": true,
+          "logistic_loss": 0.7020451396257378
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.839665712626891,
+          "gradient_max": 2.0914574081031563,
+          "gradient_norm": 2.26774500218819,
+          "iteration": 0,
+          "objective": 4.839665712626891,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.4233295217215325,
+          "gradient_max": 0.06106162838076079,
+          "gradient_norm": 0.08139605746025211,
+          "iteration": 1,
+          "objective": 4.613210994594602,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.414688408081389,
+          "gradient_max": 0.001667535117564456,
+          "gradient_norm": 0.002454885849955013,
+          "iteration": 2,
+          "objective": 4.612909839791086,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.41480499347705,
+          "gradient_max": 4.356965551001457e-05,
+          "gradient_norm": 5.862523993046548e-05,
+          "iteration": 3,
+          "objective": 4.612909570387712,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.414804604091043,
+          "gradient_max": 5.687438905666031e-07,
+          "gradient_norm": 1.2608973391498044e-06,
+          "iteration": 4,
+          "objective": 4.61290957023637,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.4148045436766505,
+          "gradient_max": 2.1938533406595795e-08,
+          "gradient_norm": 3.769516365651513e-08,
+          "iteration": 5,
+          "objective": 4.612909570236298,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.4148045436766505,
+          "gradient_max": 2.1938533406595795e-08,
+          "gradient_norm": 3.769516365651513e-08,
+          "iteration": 5,
+          "objective": 4.612909570236298,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.4148045436766505,
+        "gradient_max": 2.1938533406595795e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.612909570236298,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 31,
+      "valid_correction": {
+        "Pearson_delta_base": 0.5224443266335552,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.21618791933565581,
+        "SD_delta_over_SD_base": 0.2226758899393928,
+        "delta": {
+          "IQR": 0.16589723968141928,
+          "RMS": 0.1672175897490007,
+          "SD": 0.16721730570312338,
+          "abs_q95": 0.39095079199371696,
+          "count": 82,
+          "mean": -0.00030821235094652795,
+          "median": -0.044173009455902426,
+          "q05": -0.17359917193263996,
+          "q95": 0.39095079199371696
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.8827592815283557,
+      "arm": "COMP",
+      "coefficient_norm": 0.19238132675147063,
+      "fit_DSS_censored_mean_correction": -0.059719466683066054,
+      "fit_DSS_event_mean_correction": 0.42848717345099896,
+      "fit_Pearson_correction_DSS_indicator": 0.8315032630598646,
+      "fit_correction": {
+        "Pearson_delta_base": 0.4130557560256736,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.24872095580292852,
+        "SD_delta_over_SD_base": 0.24872095580292852,
+        "delta": {
+          "IQR": 0.16491683627067608,
+          "RMS": 0.1923813267514709,
+          "SD": 0.1923813267514709,
+          "abs_q95": 0.44423319001116307,
+          "count": 327,
+          "mean": -6.002680601872491e-18,
+          "median": -0.05179820973918853,
+          "q05": -0.2081618047041916,
+          "q95": 0.44423319001116307
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 6.79035489067374e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.0142725354429165e-14,
+      "fold": 2,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.839665712626891,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7734339792699414,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 6865.0,
+          "defined": true,
+          "logistic_loss": 0.4776014731941079
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7889670492410218,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6393.0,
+          "defined": true,
+          "logistic_loss": 0.45605399783748235
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.610608020698577,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 472.0,
+          "defined": true,
+          "logistic_loss": 0.7034736501860056
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.450246535748347,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8662685894547093,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7689.0,
+          "defined": true,
+          "logistic_loss": 0.35410806446495435
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8902875478217944,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 7214.0,
+          "defined": true,
+          "logistic_loss": 0.32114231988945646
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.6144890038809832,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 475.0,
+          "defined": true,
+          "logistic_loss": 0.6996726547563638
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.673281261018637,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8177106804867057,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7258.0,
+          "defined": true,
+          "logistic_loss": 0.42296348705044035
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8374676045908923,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6786.0,
+          "defined": true,
+          "logistic_loss": 0.39620373629172384
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.610608020698577,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 472.0,
+          "defined": true,
+          "logistic_loss": 0.7034735263749932
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.839665712626891,
+          "gradient_max": 2.0474677812005075,
+          "gradient_norm": 2.118530911588996,
+          "iteration": 0,
+          "objective": 4.839665712626891,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.4549557908058315,
+          "gradient_max": 0.026024599869429413,
+          "gradient_norm": 0.04673200463982673,
+          "iteration": 1,
+          "objective": 4.635398241253146,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.450215707732585,
+          "gradient_max": 0.0012669661578448704,
+          "gradient_norm": 0.0022277271133757555,
+          "iteration": 2,
+          "objective": 4.635299612801797,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.450238566114114,
+          "gradient_max": 8.994916800976471e-05,
+          "gradient_norm": 0.00017331502462329773,
+          "iteration": 3,
+          "objective": 4.635299411401157,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.450246591726874,
+          "gradient_max": 1.7464509803541417e-06,
+          "gradient_norm": 3.6952082326562045e-06,
+          "iteration": 4,
+          "objective": 4.635299410162251,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.450246538778279,
+          "gradient_max": 1.6926906229453031e-07,
+          "gradient_norm": 3.359511811581239e-07,
+          "iteration": 5,
+          "objective": 4.635299410161632,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.450246535748347,
+          "gradient_max": 4.440892098500626e-16,
+          "gradient_norm": 5.333421362080053e-16,
+          "iteration": 1,
+          "objective": 4.635299410161627,
+          "phase": "Newton_polish"
+        },
+        {
+          "cox": 4.450246535748347,
+          "gradient_max": 4.440892098500626e-16,
+          "gradient_norm": 5.333421362080053e-16,
+          "iteration": 6,
+          "objective": 4.635299410161627,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.450246535748347,
+        "gradient_max": 4.440892098500626e-16,
+        "iterations": 5,
+        "newton_polish_steps": 1,
+        "objective": 4.635299410161627,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 31,
+      "valid_correction": {
+        "Pearson_delta_base": 0.5827199888745317,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.21889976409951958,
+        "SD_delta_over_SD_base": 0.22543545738522813,
+        "delta": {
+          "IQR": 0.19944161139349964,
+          "RMS": 0.16931515443522485,
+          "SD": 0.1692895885772335,
+          "abs_q95": 0.3069270980925366,
+          "count": 82,
+          "mean": -0.0029422305781569708,
+          "median": -0.03515689614165016,
+          "q05": -0.21746129545172393,
+          "q95": 0.2839259533399492
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.7812223359801602,
+      "arm": "QUERY",
+      "coefficient_norm": 0.20699423971257638,
+      "fit_DSS_censored_mean_correction": -0.0659049535315394,
+      "fit_DSS_event_mean_correction": 0.47286804158879514,
+      "fit_Pearson_correction_DSS_indicator": 0.8528462631581518,
+      "fit_correction": {
+        "Pearson_delta_base": 0.3384661556490142,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.26761331786385995,
+        "SD_delta_over_SD_base": 0.26761331786385995,
+        "delta": {
+          "IQR": 0.17302919740938683,
+          "RMS": 0.2069942397125763,
+          "SD": 0.2069942397125763,
+          "abs_q95": 0.4829093513089738,
+          "count": 327,
+          "mean": -8.769580562228643e-18,
+          "median": -0.04431728153533465,
+          "q05": -0.24775603985584468,
+          "q95": 0.4829093513089738
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 1.0864567825077985e-17,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.7763568394002505e-15,
+      "fold": 2,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.839665712626891,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7734339792699414,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 6865.0,
+          "defined": true,
+          "logistic_loss": 0.4776014731941079
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7889670492410218,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6393.0,
+          "defined": true,
+          "logistic_loss": 0.45605399783748235
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.610608020698577,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 472.0,
+          "defined": true,
+          "logistic_loss": 0.7034736501860056
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.383156156481874,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8721270842721947,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7741.0,
+          "defined": true,
+          "logistic_loss": 0.3427469312795155
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8979390349253363,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 7276.0,
+          "defined": true,
+          "logistic_loss": 0.3077759539764097
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.6015523932729625,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 465.0,
+          "defined": true,
+          "logistic_loss": 0.7093314449755906
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.670623997629946,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8182739972960793,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7263.0,
+          "defined": true,
+          "logistic_loss": 0.4222902279182428
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8380846600024682,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6791.0,
+          "defined": true,
+          "logistic_loss": 0.39546625401717317
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.610608020698577,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 472.0,
+          "defined": true,
+          "logistic_loss": 0.7034734886172946
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.839665712626891,
+          "gradient_max": 2.0376975393646872,
+          "gradient_norm": 2.3323846166888833,
+          "iteration": 0,
+          "objective": 4.839665712626891,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.390373502298247,
+          "gradient_max": 0.04650169088223621,
+          "gradient_norm": 0.08765651354780526,
+          "iteration": 1,
+          "objective": 4.597727112731765,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.383000055398322,
+          "gradient_max": 0.0019045479297582907,
+          "gradient_norm": 0.004060487704253096,
+          "iteration": 2,
+          "objective": 4.597389941772257,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.383151452780325,
+          "gradient_max": 5.26301819844012e-05,
+          "gradient_norm": 0.00011372898868048485,
+          "iteration": 3,
+          "objective": 4.59738923344853,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.3831562573578,
+          "gradient_max": 2.4814938183684992e-06,
+          "gradient_norm": 5.000797894239471e-06,
+          "iteration": 4,
+          "objective": 4.597389232853971,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.383156156481874,
+          "gradient_max": 1.7942350272193153e-08,
+          "gradient_norm": 3.9581303440471614e-08,
+          "iteration": 5,
+          "objective": 4.597389232852811,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.383156156481874,
+          "gradient_max": 1.7942350272193153e-08,
+          "gradient_norm": 3.9581303440471614e-08,
+          "iteration": 5,
+          "objective": 4.597389232852811,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.383156156481874,
+        "gradient_max": 1.7942350272193153e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.597389232852811,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 47,
+      "valid_correction": {
+        "Pearson_delta_base": 0.5595799785584549,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.1868947038451494,
+        "SD_delta_over_SD_base": 0.19187181954281501,
+        "delta": {
+          "IQR": 0.16452026162642025,
+          "RMS": 0.14455979783642228,
+          "SD": 0.14408514865726155,
+          "abs_q95": 0.26988392891134916,
+          "count": 82,
+          "mean": -0.011704917211245896,
+          "median": -0.022906861564780667,
+          "q05": -0.19396942366847078,
+          "q95": 0.24576337572226006
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.9206061676821359,
+      "arm": "ATTN",
+      "coefficient_norm": 0.20799936618820974,
+      "fit_DSS_censored_mean_correction": -0.0668283157922414,
+      "fit_DSS_event_mean_correction": 0.47949316580933193,
+      "fit_Pearson_correction_DSS_indicator": 0.8606160819313986,
+      "fit_correction": {
+        "Pearson_delta_base": 0.3180243000432511,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2689127995856251,
+        "SD_delta_over_SD_base": 0.2689127995856251,
+        "delta": {
+          "IQR": 0.1490423099182868,
+          "RMS": 0.20799936618821008,
+          "SD": 0.20799936618821008,
+          "abs_q95": 0.5181176596345576,
+          "count": 327,
+          "mean": -7.171155876099173e-18,
+          "median": -0.06859792100030454,
+          "q05": -0.18904415182278395,
+          "q95": 0.5181176596345576
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 6.111319401606367e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.7118807327364926e-14,
+      "fold": 2,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.839665712626891,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7734339792699414,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 6865.0,
+          "defined": true,
+          "logistic_loss": 0.4776014731941079
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7889670492410218,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6393.0,
+          "defined": true,
+          "logistic_loss": 0.45605399783748235
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.610608020698577,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 472.0,
+          "defined": true,
+          "logistic_loss": 0.7034736501860056
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.37902137647552,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.876408292023434,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7779.0,
+          "defined": true,
+          "logistic_loss": 0.33738062695570026
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9013945452301617,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 7304.0,
+          "defined": true,
+          "logistic_loss": 0.30318016288492144
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.6144890038809832,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 475.0,
+          "defined": true,
+          "logistic_loss": 0.6958882082823764
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.676344007864533,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8163587201442091,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7246.0,
+          "defined": true,
+          "logistic_loss": 0.4238824647340084
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8358632605207947,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6773.0,
+          "defined": true,
+          "logistic_loss": 0.39734662686816186
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.6119016817593791,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 473.0,
+          "defined": true,
+          "logistic_loss": 0.7020453291931997
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.839665712626891,
+          "gradient_max": 2.2064459023858514,
+          "gradient_norm": 2.3378017951707952,
+          "iteration": 0,
+          "objective": 4.839665712626891,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.387945528993219,
+          "gradient_max": 0.04736956118216984,
+          "gradient_norm": 0.0712720181014339,
+          "iteration": 1,
+          "objective": 4.595571890773742,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.378915898062575,
+          "gradient_max": 0.0007254059443748406,
+          "gradient_norm": 0.0017723547097283497,
+          "iteration": 2,
+          "objective": 4.59534019752731,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.379020954217658,
+          "gradient_max": 3.150898751222431e-05,
+          "gradient_norm": 7.658552674711339e-05,
+          "iteration": 3,
+          "objective": 4.5953400583981665,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.379021532060011,
+          "gradient_max": 1.1291585213374367e-06,
+          "gradient_norm": 2.2066670621021155e-06,
+          "iteration": 4,
+          "objective": 4.5953400581492145,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.37902137647552,
+          "gradient_max": 6.015442652329561e-08,
+          "gradient_norm": 1.0438909144922617e-07,
+          "iteration": 5,
+          "objective": 4.595340058149005,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.37902137647552,
+          "gradient_max": 6.015442652329561e-08,
+          "gradient_norm": 1.0438909144922617e-07,
+          "iteration": 5,
+          "objective": 4.595340058149005,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.37902137647552,
+        "gradient_max": 6.015442652329561e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.595340058149005,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 47,
+      "valid_correction": {
+        "Pearson_delta_base": 0.4771154096947762,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.23673167718010787,
+        "SD_delta_over_SD_base": 0.24374493209242834,
+        "delta": {
+          "IQR": 0.18732713935985748,
+          "RMS": 0.1831078285823869,
+          "SD": 0.183038993733808,
+          "abs_q95": 0.38400493344531017,
+          "count": 82,
+          "mean": -0.005020324797438441,
+          "median": -0.0631794126401839,
+          "q05": -0.18954289558275458,
+          "q95": 0.38400493344531017
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.8598443251256231,
+      "arm": "COMP",
+      "coefficient_norm": 0.20166258857104263,
+      "fit_DSS_censored_mean_correction": -0.061235743344209434,
+      "fit_DSS_event_mean_correction": 0.4393664584947027,
+      "fit_Pearson_correction_DSS_indicator": 0.8133746058367521,
+      "fit_correction": {
+        "Pearson_delta_base": 0.30621717420629097,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.26072027169185197,
+        "SD_delta_over_SD_base": 0.26072027169185197,
+        "delta": {
+          "IQR": 0.17914522335401836,
+          "RMS": 0.2016625885710426,
+          "SD": 0.2016625885710426,
+          "abs_q95": 0.48329948724083116,
+          "count": 327,
+          "mean": 8.041353927292137e-19,
+          "median": -0.03338567237508455,
+          "q05": -0.2368348364887933,
+          "q95": 0.48329948724083116
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 0.0,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 2.0822819391038897e-14,
+      "fold": 2,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.839665712626891,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7734339792699414,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 6865.0,
+          "defined": true,
+          "logistic_loss": 0.4776014731941079
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.7889670492410218,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6393.0,
+          "defined": true,
+          "logistic_loss": 0.45605399783748235
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.610608020698577,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 472.0,
+          "defined": true,
+          "logistic_loss": 0.7034736501860056
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.404002532847484,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8693105002253267,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7716.0,
+          "defined": true,
+          "logistic_loss": 0.34769804506432944
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8927557694680982,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 7234.0,
+          "defined": true,
+          "logistic_loss": 0.3146261570198044
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.6235446313065977,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 482.0,
+          "defined": true,
+          "logistic_loss": 0.6943752880459425
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.676350961578834,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8162460567823344,
+          "count": 8876,
+          "credit_den": 8876,
+          "credit_num": 7245.0,
+          "defined": true,
+          "logistic_loss": 0.42388359266207865
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8357398494384796,
+          "count": 8103,
+          "credit_den": 8103,
+          "credit_num": 6772.0,
+          "defined": true,
+          "logistic_loss": 0.39734804456548295
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.6119016817593791,
+          "count": 773,
+          "credit_den": 773,
+          "credit_num": 473.0,
+          "defined": true,
+          "logistic_loss": 0.7020434196047889
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.839665712626891,
+          "gradient_max": 2.0819107878079155,
+          "gradient_norm": 2.300211781229442,
+          "iteration": 0,
+          "objective": 4.839665712626891,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.410835357527641,
+          "gradient_max": 0.06317704950624692,
+          "gradient_norm": 0.13345434549021504,
+          "iteration": 1,
+          "objective": 4.608112206295485,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.403761251217749,
+          "gradient_max": 0.0026816452428730653,
+          "gradient_norm": 0.005467992415210965,
+          "iteration": 2,
+          "objective": 4.6073428117118675,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.404001899553097,
+          "gradient_max": 9.674760620864697e-05,
+          "gradient_norm": 0.00015485954847634112,
+          "iteration": 3,
+          "objective": 4.607341532094376,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.4040027033558395,
+          "gradient_max": 3.5699551593770806e-06,
+          "gradient_norm": 7.414578051897559e-06,
+          "iteration": 4,
+          "objective": 4.607341530995893,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.404002532847484,
+          "gradient_max": 2.780083967202085e-08,
+          "gradient_norm": 5.595662108644392e-08,
+          "iteration": 5,
+          "objective": 4.607341530993351,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.404002532847484,
+          "gradient_max": 2.780083967202085e-08,
+          "gradient_norm": 5.595662108644392e-08,
+          "iteration": 5,
+          "objective": 4.607341530993351,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.404002532847484,
+        "gradient_max": 2.780083967202085e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.607341530993351,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 47,
+      "valid_correction": {
+        "Pearson_delta_base": 0.42232673056933984,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.21570351890220146,
+        "SD_delta_over_SD_base": 0.22099796384599954,
+        "delta": {
+          "IQR": 0.23948665550994142,
+          "RMS": 0.16684291445167362,
+          "SD": 0.16595727579785363,
+          "abs_q95": 0.27938036372122416,
+          "count": 82,
+          "mean": -0.017168014226567784,
+          "median": -0.03223193804069958,
+          "q05": -0.23800258551381193,
+          "q95": 0.27366721360671015
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.7734825806310517,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.8340581803324615,
+      "arm": "QUERY",
+      "coefficient_norm": 0.20372637304200522,
+      "fit_DSS_censored_mean_correction": -0.0682602657999223,
+      "fit_DSS_event_mean_correction": 0.46481990520899474,
+      "fit_Pearson_correction_DSS_indicator": 0.8743374747011574,
+      "fit_correction": {
+        "Pearson_delta_base": 0.3392528754710625,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2645765593412033,
+        "SD_delta_over_SD_base": 0.2645765593412032,
+        "delta": {
+          "IQR": 0.1664295753901857,
+          "RMS": 0.20372637304200522,
+          "SD": 0.20372637304200522,
+          "abs_q95": 0.49580710891718216,
+          "count": 328,
+          "mean": 1.7793813173193823e-18,
+          "median": -0.05082324358157014,
+          "q05": -0.2162470886600617,
+          "q95": 0.49580710891718216
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 1.0154478883766675e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.1102230246251565e-15,
+      "fold": 3,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.821884553212985,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7844408427876823,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7260.0,
+          "defined": true,
+          "logistic_loss": 0.48220064526758405
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8087132484228068,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 6794.0,
+          "defined": true,
+          "logistic_loss": 0.45656781884094366
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5456674473067916,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 466.0,
+          "defined": true,
+          "logistic_loss": 0.7343568218603316
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.3798067640369105,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8790923824959481,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 8136.0,
+          "defined": true,
+          "logistic_loss": 0.34470726685928965
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9132246161171289,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7672.0,
+          "defined": true,
+          "logistic_loss": 0.3047768381194137
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5433255269320844,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 464.0,
+          "defined": true,
+          "logistic_loss": 0.7375123392757976
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.655161382632799,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8248514316585629,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7634.0,
+          "defined": true,
+          "logistic_loss": 0.4257644853438406
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8532317581240328,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7168.0,
+          "defined": true,
+          "logistic_loss": 0.39439473934252145
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5456674473067916,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 466.0,
+          "defined": true,
+          "logistic_loss": 0.7343560967689954
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.821884553212985,
+          "gradient_max": 2.112699508214768,
+          "gradient_norm": 2.292690509159783,
+          "iteration": 0,
+          "objective": 4.821884553212985,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.388171287959561,
+          "gradient_max": 0.04696830410419195,
+          "gradient_norm": 0.08069403386336439,
+          "iteration": 1,
+          "objective": 4.587626842199758,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.379729784099408,
+          "gradient_max": 0.0013166835790668907,
+          "gradient_norm": 0.002075175048475247,
+          "iteration": 2,
+          "objective": 4.587329134594213,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.379805122621062,
+          "gradient_max": 3.0137215236591963e-05,
+          "gradient_norm": 6.103849621525403e-05,
+          "iteration": 3,
+          "objective": 4.587328939567115,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.379806878086386,
+          "gradient_max": 8.513098846418821e-07,
+          "gradient_norm": 1.558578967928432e-06,
+          "iteration": 4,
+          "objective": 4.58732893940127,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.3798067640369105,
+          "gradient_max": 1.526254178596531e-08,
+          "gradient_norm": 3.517140184155715e-08,
+          "iteration": 5,
+          "objective": 4.587328939401162,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.3798067640369105,
+          "gradient_max": 1.526254178596531e-08,
+          "gradient_norm": 3.517140184155715e-08,
+          "iteration": 5,
+          "objective": 4.587328939401162,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.3798067640369105,
+        "gradient_max": 1.526254178596531e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.587328939401162,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 31,
+      "valid_correction": {
+        "Pearson_delta_base": 0.26252737721919966,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2144827234971234,
+        "SD_delta_over_SD_base": 0.22151138403459114,
+        "delta": {
+          "IQR": 0.21447600485774682,
+          "RMS": 0.16515366080442997,
+          "SD": 0.16514910789321557,
+          "abs_q95": 0.32855627419992167,
+          "count": 82,
+          "mean": 0.0012263112083610854,
+          "median": -0.030276455483907644,
+          "q05": -0.22489823930686845,
+          "q95": 0.32855627419992167
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.9455595905419172,
+      "arm": "ATTN",
+      "coefficient_norm": 0.19528726861727855,
+      "fit_DSS_censored_mean_correction": -0.062483844629324096,
+      "fit_DSS_event_mean_correction": 0.42548522771396885,
+      "fit_Pearson_correction_DSS_indicator": 0.8349340717474154,
+      "fit_correction": {
+        "Pearson_delta_base": 0.3488286480759032,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2536168137801567,
+        "SD_delta_over_SD_base": 0.25361681378015666,
+        "delta": {
+          "IQR": 0.17823408938245555,
+          "RMS": 0.19528726861727883,
+          "SD": 0.19528726861727883,
+          "abs_q95": 0.45179638439729886,
+          "count": 328,
+          "mean": 1.7346144899241349e-18,
+          "median": -0.07030475754827825,
+          "q05": -0.18315269364160908,
+          "q95": 0.45179638439729886
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 6.769652589177784e-19,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 6.0966675562460154e-15,
+      "fold": 3,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.821884553212985,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7844408427876823,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7260.0,
+          "defined": true,
+          "logistic_loss": 0.48220064526758405
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8087132484228068,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 6794.0,
+          "defined": true,
+          "logistic_loss": 0.45656781884094366
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5456674473067916,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 466.0,
+          "defined": true,
+          "logistic_loss": 0.7343568218603316
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.417720190126057,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.868503511615343,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 8038.0,
+          "defined": true,
+          "logistic_loss": 0.35651039394718054
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9006070705868349,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7566.0,
+          "defined": true,
+          "logistic_loss": 0.31830654312877943
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5526932084309133,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 472.0,
+          "defined": true,
+          "logistic_loss": 0.7323307109558318
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.659901124445202,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8235548352242031,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7622.0,
+          "defined": true,
+          "logistic_loss": 0.42723558345246015
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8515652898464469,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7154.0,
+          "defined": true,
+          "logistic_loss": 0.39612314259027653
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5480093676814989,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 468.0,
+          "defined": true,
+          "logistic_loss": 0.7332960233625354
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.821884553212985,
+          "gradient_max": 2.066801914787477,
+          "gradient_norm": 2.1776386714837654,
+          "iteration": 0,
+          "objective": 4.821884553212985,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.424669642434395,
+          "gradient_max": 0.027453652519220384,
+          "gradient_norm": 0.06499774410182864,
+          "iteration": 1,
+          "objective": 4.608599134756668,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.417654423208139,
+          "gradient_max": 0.0011358587896573846,
+          "gradient_norm": 0.001865452186777862,
+          "iteration": 2,
+          "objective": 4.6084059311718315,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.41771588939228,
+          "gradient_max": 4.478748589301085e-05,
+          "gradient_norm": 8.483710323550658e-05,
+          "iteration": 3,
+          "objective": 4.608405776855159,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.4177203389368165,
+          "gradient_max": 8.891704385838306e-07,
+          "gradient_norm": 1.7464936991881402e-06,
+          "iteration": 4,
+          "objective": 4.60840577654618,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.417720190126057,
+          "gradient_max": 5.026982063949248e-08,
+          "gradient_norm": 8.460887324505747e-08,
+          "iteration": 5,
+          "objective": 4.608405776546043,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.417720190126057,
+          "gradient_max": 5.026982063949248e-08,
+          "gradient_norm": 8.460887324505747e-08,
+          "iteration": 5,
+          "objective": 4.608405776546043,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.417720190126057,
+        "gradient_max": 5.026982063949248e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.608405776546043,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 31,
+      "valid_correction": {
+        "Pearson_delta_base": 0.45129729427782417,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2525366988321983,
+        "SD_delta_over_SD_base": 0.2591827240592339,
+        "delta": {
+          "IQR": 0.1823455707670824,
+          "RMS": 0.19445557021828258,
+          "SD": 0.19323519577229364,
+          "abs_q95": 0.4174528504333615,
+          "count": 82,
+          "mean": 0.02175150348276581,
+          "median": -0.038220236121668416,
+          "q05": -0.1929798910396941,
+          "q95": 0.4174528504333615
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.8823563785003858,
+      "arm": "COMP",
+      "coefficient_norm": 0.20441703329771657,
+      "fit_DSS_censored_mean_correction": -0.06834442103134325,
+      "fit_DSS_event_mean_correction": 0.46539296226105165,
+      "fit_Pearson_correction_DSS_indicator": 0.872457658131453,
+      "fit_correction": {
+        "Pearson_delta_base": 0.3091895842883053,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.26547351004719827,
+        "SD_delta_over_SD_base": 0.2654735100471982,
+        "delta": {
+          "IQR": 0.16544454972881698,
+          "RMS": 0.20441703329771657,
+          "SD": 0.20441703329771657,
+          "abs_q95": 0.48079935807059954,
+          "count": 328,
+          "mean": -4.1846487252475173e-19,
+          "median": -0.05910901453114498,
+          "q05": -0.21280489912497555,
+          "q95": 0.48079935807059954
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 2.030895776753335e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 5.317993700162215e-15,
+      "fold": 3,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.821884553212985,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7844408427876823,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7260.0,
+          "defined": true,
+          "logistic_loss": 0.48220064526758405
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8087132484228068,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 6794.0,
+          "defined": true,
+          "logistic_loss": 0.45656781884094366
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5456674473067916,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 466.0,
+          "defined": true,
+          "logistic_loss": 0.7343568218603316
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.377228349472689,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8785521339816316,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 8131.0,
+          "defined": true,
+          "logistic_loss": 0.34272450766764606
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9122723485299369,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7664.0,
+          "defined": true,
+          "logistic_loss": 0.3030948694469515
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5468384074941453,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 467.0,
+          "defined": true,
+          "logistic_loss": 0.7325706325997939
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.655633728700711,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.824527282549973,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7631.0,
+          "defined": true,
+          "logistic_loss": 0.42591518880087176
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8528746577788359,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7165.0,
+          "defined": true,
+          "logistic_loss": 0.39455937683896886
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5456674473067916,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 466.0,
+          "defined": true,
+          "logistic_loss": 0.734369727784415
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.821884553212985,
+          "gradient_max": 2.1894015352903504,
+          "gradient_norm": 2.2960650101589235,
+          "iteration": 0,
+          "objective": 4.821884553212985,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.385638035178972,
+          "gradient_max": 0.04883101651572819,
+          "gradient_norm": 0.07697614215788931,
+          "iteration": 1,
+          "objective": 4.5864327339094135,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.377156518812592,
+          "gradient_max": 0.0010291099819213778,
+          "gradient_norm": 0.0016708183589810082,
+          "iteration": 2,
+          "objective": 4.586160093086147,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.377229520258522,
+          "gradient_max": 1.270813600112719e-05,
+          "gradient_norm": 3.0076323365442148e-05,
+          "iteration": 3,
+          "objective": 4.5861599670240585,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.377228373473293,
+          "gradient_max": 3.12661888872412e-07,
+          "gradient_norm": 6.95507283694995e-07,
+          "iteration": 4,
+          "objective": 4.586159966983909,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.377228349472688,
+          "gradient_max": 9.969527314801496e-09,
+          "gradient_norm": 2.1492702555236235e-08,
+          "iteration": 5,
+          "objective": 4.586159966983887,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.377228349472688,
+          "gradient_max": 9.969527314801496e-09,
+          "gradient_norm": 2.1492702555236235e-08,
+          "iteration": 5,
+          "objective": 4.586159966983887,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.377228349472688,
+        "gradient_max": 9.969527314801496e-09,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.586159966983887,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 31,
+      "valid_correction": {
+        "Pearson_delta_base": 0.4472632874582508,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.17726728351979007,
+        "SD_delta_over_SD_base": 0.18277673615621715,
+        "delta": {
+          "IQR": 0.1519767985060696,
+          "RMS": 0.13649743129330777,
+          "SD": 0.1362702646249511,
+          "abs_q95": 0.3089437468203981,
+          "count": 82,
+          "mean": -0.00787170430828467,
+          "median": -0.02299126313698535,
+          "q05": -0.18076752184507364,
+          "q95": 0.30519959966308
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.8716440151718023,
+      "arm": "QUERY",
+      "coefficient_norm": 0.1953913089857252,
+      "fit_DSS_censored_mean_correction": -0.06261537459943659,
+      "fit_DSS_event_mean_correction": 0.42638088417711567,
+      "fit_Pearson_correction_DSS_indicator": 0.8362461129822952,
+      "fit_correction": {
+        "Pearson_delta_base": 0.308838825206669,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2537519295352015,
+        "SD_delta_over_SD_base": 0.2537519295352015,
+        "delta": {
+          "IQR": 0.18799516699604382,
+          "RMS": 0.19539130898572513,
+          "SD": 0.19539130898572513,
+          "abs_q95": 0.44379364029114504,
+          "count": 328,
+          "mean": -1.765751380759718e-17,
+          "median": -0.051200872667484326,
+          "q05": -0.22763854107377712,
+          "q95": 0.44379364029114504
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 1.4893235696191125e-17,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.9117751925292626e-15,
+      "fold": 3,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.821884553212985,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7844408427876823,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7260.0,
+          "defined": true,
+          "logistic_loss": 0.48220064526758405
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8087132484228068,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 6794.0,
+          "defined": true,
+          "logistic_loss": 0.45656781884094366
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5456674473067916,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 466.0,
+          "defined": true,
+          "logistic_loss": 0.7343568218603316
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.417028368971836,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8720691518098326,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 8071.0,
+          "defined": true,
+          "logistic_loss": 0.35293538413588454
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9050113081775979,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7603.0,
+          "defined": true,
+          "logistic_loss": 0.3146821632831255
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5480093676814989,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 468.0,
+          "defined": true,
+          "logistic_loss": 0.7292413658502042
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.65685375767706,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.824527282549973,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7631.0,
+          "defined": true,
+          "logistic_loss": 0.42615264795008084
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8528746577788359,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7165.0,
+          "defined": true,
+          "logistic_loss": 0.3948223137649445
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5456674473067916,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 466.0,
+          "defined": true,
+          "logistic_loss": 0.7343565560172123
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.821884553212985,
+          "gradient_max": 1.9362524378228274,
+          "gradient_norm": 2.182704179761343,
+          "iteration": 0,
+          "objective": 4.821884553212985,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.423361107425757,
+          "gradient_max": 0.02600644059856705,
+          "gradient_norm": 0.06612761179873665,
+          "iteration": 1,
+          "objective": 4.608119916587167,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.4170044191014695,
+          "gradient_max": 0.0007803357004151773,
+          "gradient_norm": 0.0015421418535956292,
+          "iteration": 2,
+          "objective": 4.6079172963711805,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.417028638461174,
+          "gradient_max": 1.6115764081860856e-05,
+          "gradient_norm": 2.8317173436883284e-05,
+          "iteration": 3,
+          "objective": 4.607917187143096,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.41702839034068,
+          "gradient_max": 5.257085696763752e-07,
+          "gradient_norm": 1.0260223821988326e-06,
+          "iteration": 4,
+          "objective": 4.607917187107658,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.417028368971837,
+          "gradient_max": 8.967159015327297e-09,
+          "gradient_norm": 1.896756162785226e-08,
+          "iteration": 5,
+          "objective": 4.6079171871076126,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.417028368971837,
+          "gradient_max": 8.967159015327297e-09,
+          "gradient_norm": 1.896756162785226e-08,
+          "iteration": 5,
+          "objective": 4.6079171871076126,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.417028368971837,
+        "gradient_max": 8.967159015327297e-09,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.6079171871076126,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 47,
+      "valid_correction": {
+        "Pearson_delta_base": 0.44514311643326265,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.19927921976827015,
+        "SD_delta_over_SD_base": 0.20563882971490488,
+        "delta": {
+          "IQR": 0.22656173382652722,
+          "RMS": 0.15344682373646634,
+          "SD": 0.1533152321883288,
+          "abs_q95": 0.2855892578280358,
+          "count": 82,
+          "mean": -0.006353526095720233,
+          "median": -0.01855459514623692,
+          "q05": -0.22315768158530994,
+          "q95": 0.23109115242770553
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.9174272050922467,
+      "arm": "ATTN",
+      "coefficient_norm": 0.2076413996731623,
+      "fit_DSS_censored_mean_correction": -0.06816270442755126,
+      "fit_DSS_event_mean_correction": 0.46415555872094444,
+      "fit_Pearson_correction_DSS_indicator": 0.8566259704808571,
+      "fit_correction": {
+        "Pearson_delta_base": 0.2757539959791752,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.269660949056359,
+        "SD_delta_over_SD_base": 0.26966094905635896,
+        "delta": {
+          "IQR": 0.16149747032238726,
+          "RMS": 0.20764139967316242,
+          "SD": 0.20764139967316242,
+          "abs_q95": 0.4976159985275839,
+          "count": 328,
+          "mean": 3.2791632759855028e-18,
+          "median": -0.06632144177209182,
+          "q05": -0.19568685747244075,
+          "q95": 0.4976159985275839
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 2.030895776753335e-18,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 1.6746603685080918e-14,
+      "fold": 3,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.821884553212985,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7844408427876823,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7260.0,
+          "defined": true,
+          "logistic_loss": 0.48220064526758405
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8087132484228068,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 6794.0,
+          "defined": true,
+          "logistic_loss": 0.45656781884094366
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5456674473067916,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 466.0,
+          "defined": true,
+          "logistic_loss": 0.7343568218603316
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.365939115351814,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.8890329551593733,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 8228.0,
+          "defined": true,
+          "logistic_loss": 0.3320870977834108
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9216759909534579,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7743.0,
+          "defined": true,
+          "logistic_loss": 0.2948691979117496
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5679156908665105,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 485.0,
+          "defined": true,
+          "logistic_loss": 0.6982083821181004
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.6628032884074795,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8243111831442463,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7629.0,
+          "defined": true,
+          "logistic_loss": 0.426540071728638
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8525175574336389,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7162.0,
+          "defined": true,
+          "logistic_loss": 0.3957164826700174
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5468384074941453,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 467.0,
+          "defined": true,
+          "logistic_loss": 0.7297590081238036
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.821884553212985,
+          "gradient_max": 2.169099585267826,
+          "gradient_norm": 2.305996042751481,
+          "iteration": 0,
+          "objective": 4.821884553212985,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.373835396673588,
+          "gradient_max": 0.041992128607019064,
+          "gradient_norm": 0.07770956810813309,
+          "iteration": 1,
+          "objective": 4.581790232798308,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.365871516747053,
+          "gradient_max": 0.0009885175501919696,
+          "gradient_norm": 0.0019680750597057934,
+          "iteration": 2,
+          "objective": 4.58151404274078,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.36593555903269,
+          "gradient_max": 2.5402484770897793e-05,
+          "gradient_norm": 4.564048788578913e-05,
+          "iteration": 3,
+          "objective": 4.581513869733792,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.365939199096145,
+          "gradient_max": 4.4528428883028326e-07,
+          "gradient_norm": 1.018698581719615e-06,
+          "iteration": 4,
+          "objective": 4.581513869643008,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.365939115351814,
+          "gradient_max": 1.702974974926441e-08,
+          "gradient_norm": 3.4803339333877805e-08,
+          "iteration": 5,
+          "objective": 4.581513869642964,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.365939115351814,
+          "gradient_max": 1.702974974926441e-08,
+          "gradient_norm": 3.4803339333877805e-08,
+          "iteration": 5,
+          "objective": 4.581513869642964,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.365939115351814,
+        "gradient_max": 1.702974974926441e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.581513869642964,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 47,
+      "valid_correction": {
+        "Pearson_delta_base": 0.48101595066165337,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.22136487329193222,
+        "SD_delta_over_SD_base": 0.22809828484463587,
+        "delta": {
+          "IQR": 0.21196449904667508,
+          "RMS": 0.17045297915643876,
+          "SD": 0.17006001031613624,
+          "abs_q95": 0.32553347740245725,
+          "count": 82,
+          "mean": 0.011567670231337512,
+          "median": -0.020900388812173376,
+          "q05": -0.18607469854036493,
+          "q95": 0.32553347740245725
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    },
+    {
+      "PCA_explained_variance_ratio": 0.9164704640868133,
+      "arm": "COMP",
+      "coefficient_norm": 0.20150060450082968,
+      "fit_DSS_censored_mean_correction": -0.06556254925790347,
+      "fit_DSS_event_mean_correction": 0.4464497401847713,
+      "fit_Pearson_correction_DSS_indicator": 0.8490589608701377,
+      "fit_correction": {
+        "Pearson_delta_base": 0.315092896428784,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.26168598521611086,
+        "SD_delta_over_SD_base": 0.2616859852161108,
+        "delta": {
+          "IQR": 0.17496011686481347,
+          "RMS": 0.20150060450082957,
+          "SD": 0.20150060450082957,
+          "abs_q95": 0.48294603665923314,
+          "count": 328,
+          "mean": 0.0,
+          "median": -0.06962428689490062,
+          "q05": -0.20403906186404527,
+          "q95": 0.48294603665923314
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      },
+      "fit_correction_mean_zero_error": 0.0,
+      "fit_only_pair_loss_not_Efron_additive_decomposition": true,
+      "fit_standardized_PC_covariance_max_error": 3.9694995374220866e-15,
+      "fold": 3,
+      "input_fit_rank": 256,
+      "main_Efron_NLL": 4.821884553212985,
+      "main_pair": {
+        "ALL": {
+          "Harrell": 0.7844408427876823,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7260.0,
+          "defined": true,
+          "logistic_loss": 0.48220064526758405
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8087132484228068,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 6794.0,
+          "defined": true,
+          "logistic_loss": 0.45656781884094366
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5456674473067916,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 466.0,
+          "defined": true,
+          "logistic_loss": 0.7343568218603316
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "new_Efron_NLL": 4.390911851187148,
+      "new_pair": {
+        "ALL": {
+          "Harrell": 0.875958941112912,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 8107.0,
+          "defined": true,
+          "logistic_loss": 0.3463179987133706
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.9096536126651589,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7642.0,
+          "defined": true,
+          "logistic_loss": 0.30792149621094544
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.544496487119438,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 465.0,
+          "defined": true,
+          "logistic_loss": 0.7240334759064309
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "old_Efron_NLL": 4.65970217338285,
+      "old_pair": {
+        "ALL": {
+          "Harrell": 0.8235548352242031,
+          "count": 9255,
+          "credit_den": 9255,
+          "credit_num": 7622.0,
+          "defined": true,
+          "logistic_loss": 0.4271029451170717
+        },
+        "EVENT_CENSOR": {
+          "Harrell": 0.8515652898464469,
+          "count": 8401,
+          "credit_den": 8401,
+          "credit_num": 7154.0,
+          "defined": true,
+          "logistic_loss": 0.3959774232180453
+        },
+        "EVENT_EVENT": {
+          "Harrell": 0.5480093676814989,
+          "count": 854,
+          "credit_den": 854,
+          "credit_num": 468.0,
+          "defined": true,
+          "logistic_loss": 0.733292066280679
+        },
+        "risk_tie_tolerance": 1e-08,
+        "scope": "descriptive_comparable_pairs_not_a_new_training_objective"
+      },
+      "optimization_history": [
+        {
+          "cox": 4.821884553212985,
+          "gradient_max": 2.0368142822900994,
+          "gradient_norm": 2.253319357048055,
+          "iteration": 0,
+          "objective": 4.821884553212985,
+          "phase": "initial"
+        },
+        {
+          "cox": 4.398564442563019,
+          "gradient_max": 0.045345548266291,
+          "gradient_norm": 0.07145543680947541,
+          "iteration": 1,
+          "objective": 4.594158616477845,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.39086252509853,
+          "gradient_max": 0.0007577031523619826,
+          "gradient_norm": 0.0014419041464003943,
+          "iteration": 2,
+          "objective": 4.593924413715665,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.390910853600822,
+          "gradient_max": 1.9613704785780006e-05,
+          "gradient_norm": 3.24882755388833e-05,
+          "iteration": 3,
+          "objective": 4.593924319304532,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.390911900799695,
+          "gradient_max": 4.439610693518503e-07,
+          "gradient_norm": 8.800359598041749e-07,
+          "iteration": 4,
+          "objective": 4.593924319258181,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.390911851187148,
+          "gradient_max": 1.4109644730364579e-08,
+          "gradient_norm": 2.3882001857070842e-08,
+          "iteration": 5,
+          "objective": 4.593924319258147,
+          "phase": "L_BFGS_B"
+        },
+        {
+          "cox": 4.390911851187148,
+          "gradient_max": 1.4109644730364579e-08,
+          "gradient_norm": 2.3882001857070842e-08,
+          "iteration": 5,
+          "objective": 4.593924319258147,
+          "phase": "final"
+        }
+      ],
+      "optimizer": {
+        "cox": 4.390911851187148,
+        "gradient_max": 1.4109644730364579e-08,
+        "iterations": 5,
+        "newton_polish_steps": 0,
+        "objective": 4.593924319258147,
+        "parameters": 16,
+        "penalty": 10.0,
+        "status": "CONVERGED"
+      },
+      "parameter_count": 16,
+      "seed": 47,
+      "valid_correction": {
+        "Pearson_delta_base": 0.47356409849468434,
+        "Pearson_delta_base_status": "DEFINED",
+        "RMS_delta_over_reference_SD": 0.2441416600748791,
+        "SD_delta_over_SD_base": 0.24892230543074712,
+        "delta": {
+          "IQR": 0.1809378139008164,
+          "RMS": 0.1879913135137796,
+          "SD": 0.18558548065498431,
+          "abs_q95": 0.3413626027054238,
+          "count": 82,
+          "mean": 0.029979381693000517,
+          "median": -0.02693809726874657,
+          "q05": -0.19509855697575407,
+          "q95": 0.3413626027054238
+        },
+        "ratio_status": {
+          "RMS_delta_over_reference_SD": "DEFINED",
+          "SD_delta_over_SD_base": "DEFINED"
+        },
+        "reference_SD": 0.770009155570262,
+        "zero_SD": {
+          "base": false,
+          "delta": false,
+          "reference": false
+        }
+      }
+    }
+  ],
+  "lambda": 10,
+  "main_effect_refits": 0,
+  "new_convex_heads": 18,
+  "new_fits_or_forward_calls_here": 0,
+  "new_neural_steps": 0,
+  "new_valid_endpoint_reads_here": 0,
+  "optimization_history_is_fit_only_not_validation_selection": true,
+  "pair_logistic_loss_is_not_additive_Efron_decomposition": true,
+  "patient_arrays_or_weights_public": false,
+  "rank": 16,
+  "source": "71a26be63273a0aa6a5f3c29aedbe98ea64b52d1b4dd3c45fbff1a2059c4f548",
+  "status": "COMPLETE_FROZEN_READOUT_FIT_DIAGNOSTICS",
+  "training_fit_representation_is_supervised_in_sample": true
+}

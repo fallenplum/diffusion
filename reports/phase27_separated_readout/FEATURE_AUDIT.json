@@ -1,0 +1,628 @@
+{
+  "audit_script_sha256": "a8cce130ee6f6b996e5e0bb3ddf017f3a37a0990981490af99424734dab4ef58",
+  "cells": 6,
+  "distribution_tolerance": 1e-06,
+  "encoder_forward_calls": 0,
+  "endpoint_API_reads": 0,
+  "extraction_disclosed_legacy_fit_label_bytes_deserialized_unused": true,
+  "fit_feature_matrices": 18,
+  "fit_representation_crossfitted": false,
+  "forbidden_API_call_counts": {
+    "PCA_fit": 0,
+    "Phase25.Data": 0,
+    "Phase25.fit_labels": 0,
+    "Phase26.Data": 0,
+    "Phase26.fit_labels": 0,
+    "encoder_forward": 0,
+    "endpoints": 0,
+    "feature_extraction": 0,
+    "legacy_forward": 0,
+    "legacy_prepared_label_payload_load": 0,
+    "legacy_ridge_fit": 0,
+    "neural_training": 0,
+    "new_Cox_fit": 0,
+    "new_PCA_fit": 0,
+    "optimizer_construction": 0,
+    "prepare": 0,
+    "prepared_label_payload_load": 0,
+    "splits": 0
+  },
+  "frozen_neural_models_referenced": 18,
+  "inherited_evidence": {
+    "main_report_sha256": "ccced20f131d6a302cbe31e7ffaf5baf96a5cd6de681fcef5cec0e777dfdc4d7",
+    "main_script_sha256": "adcc5377a85db9397c2cbb56f47c8807b453be1d85056b51ddd9a13ff513c03f",
+    "neural_report_sha256": "43a837278afefb28dc9720ae94a479a441f711b61eba62a5305853dbdba944a7",
+    "neural_script_sha256": "eab368262dd6862bbd3ea551b141b72c7851d4cdf14dfae49ee78efa1dd41c9d",
+    "raw_main_or_encoder_replay_repeated_here": false
+  },
+  "legacy_source": "c4c29b105b3780a11ca8edc32c3a78bde8302ffd59f3c7eefd50a0fa4c13096c",
+  "maximum_distribution_error": 9.094947017729282e-13,
+  "maximum_old_risk_error": 0.0,
+  "model_state_unchanged_scope": "SHA_unchanged_original_files_and_source_bound_extraction_runtime_flags;no_new_encoder_forward",
+  "new_neural_training_steps": 0,
+  "new_predictor_fits": 0,
+  "old_risk_tolerance": 1e-07,
+  "old_risk_vectors_replayed_at_extraction": 90,
+  "overlap_interpretation": "soft_Gram_only_no_topk_tie_claim",
+  "prepared_label_payloads_deserialized_here": 0,
+  "private_feature_matrices_checked": 108,
+  "raw_weights_arrays_risks_indices_or_labels_published": false,
+  "rows": [
+    {
+      "arms": {
+        "ATTN": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 8.526512829121202e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 4.440892098500626e-16
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 85,
+            "deranged_WSI_count": 85,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "COMP": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 9.094947017729282e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 5.551115123125783e-16
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 85,
+            "deranged_WSI_count": 85,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "QUERY": {
+          "QUERY_controls_exact_matched": true,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {},
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 85,
+            "deranged_WSI_count": 85,
+            "routing_calls": 0,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        }
+      },
+      "feature_receipt_sha256": "55b585db001a14823dc700187ec3ea3f70ab2ebc9d14cc09682e90eab8a7901e",
+      "feature_sha256": "454bc70073111efc9456425dbd6ec9c79193bb5f00472b9bf9d788ce7aae1c7e",
+      "fit_patients": 327,
+      "fold": 1,
+      "legacy_checkpoint_sha256": "79590a450cf43dddb12c9aa4b78068f3d2312089dbf0bd620497849c4f595ab8",
+      "maximum_distribution_error": 9.094947017729282e-13,
+      "old_risk_max_error": 0.0,
+      "old_risk_vectors_replayed_at_extraction": 15,
+      "prepared_sha256": "2b34e2ff7a9c38133c903a137896fec34fd274a970b1059c19ef2e82531657a0",
+      "seed": 31,
+      "valid_patients": 82
+    },
+    {
+      "arms": {
+        "ATTN": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 9.094947017729282e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 4.85722573273506e-17
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 83,
+            "deranged_WSI_count": 83,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "COMP": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 9.094947017729282e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 4.85722573273506e-17
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 83,
+            "deranged_WSI_count": 83,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "QUERY": {
+          "QUERY_controls_exact_matched": true,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {},
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 83,
+            "deranged_WSI_count": 83,
+            "routing_calls": 0,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        }
+      },
+      "feature_receipt_sha256": "75f7016b04d7e5aff9ee9b16b9cf66019d5b3821d0660516c02eb4c68b6f7895",
+      "feature_sha256": "15bbc1ced44054e4adb110349c890b075cc8158249e83d7ddd95681cf6aac62c",
+      "fit_patients": 327,
+      "fold": 2,
+      "legacy_checkpoint_sha256": "4c268d83fb3c0dce96c9186b548f5a40bc9891db9e9c4b5004cfeb540f7c3f1a",
+      "maximum_distribution_error": 9.094947017729282e-13,
+      "old_risk_max_error": 0.0,
+      "old_risk_vectors_replayed_at_extraction": 15,
+      "prepared_sha256": "844955c6c1c65e8c6b210edb11b459201bb858ca2597c29dae94e6cace6dedb2",
+      "seed": 31,
+      "valid_patients": 82
+    },
+    {
+      "arms": {
+        "ATTN": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            328,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 7.958078640513122e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 5.551115123125783e-17
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 84,
+            "deranged_WSI_count": 84,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "COMP": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            328,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 9.094947017729282e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 4.718447854656915e-16
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 84,
+            "deranged_WSI_count": 84,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "QUERY": {
+          "QUERY_controls_exact_matched": true,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            328,
+            256
+          ],
+          "maximum_distribution_errors": {},
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 84,
+            "deranged_WSI_count": 84,
+            "routing_calls": 0,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        }
+      },
+      "feature_receipt_sha256": "792183255a1004ee8672ee30f7bc403bccfd993c43f8d4b96fa7fa05ad846e29",
+      "feature_sha256": "c59f2054da7d24af45ff388635eca3438f269120785ddc96f2c791e2e11df79c",
+      "fit_patients": 328,
+      "fold": 3,
+      "legacy_checkpoint_sha256": "742f1422f8fa7da1914ff531f3f2bd3f7ec0cfcd2583c46f8a62fe9caffac447",
+      "maximum_distribution_error": 9.094947017729282e-13,
+      "old_risk_max_error": 0.0,
+      "old_risk_vectors_replayed_at_extraction": 15,
+      "prepared_sha256": "92727fd7efdeda56fd1ae4e061339febb4bb058bea8cc36dd7fd89fcad9b8b17",
+      "seed": 31,
+      "valid_patients": 82
+    },
+    {
+      "arms": {
+        "ATTN": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 9.094947017729282e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 1.1102230246251565e-16
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 85,
+            "deranged_WSI_count": 85,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "COMP": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 8.526512829121202e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 1.1102230246251565e-16
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 85,
+            "deranged_WSI_count": 85,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "QUERY": {
+          "QUERY_controls_exact_matched": true,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {},
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 85,
+            "deranged_WSI_count": 85,
+            "routing_calls": 0,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        }
+      },
+      "feature_receipt_sha256": "aeeb56871450cea8319491de4f06f1e04a78bf8973dffc862ca059abe0c5c1ad",
+      "feature_sha256": "a1c775c233f12d3203e3bc6b0886af8a370b987a7c2af81b0fbcf3e0a8d077f0",
+      "fit_patients": 327,
+      "fold": 1,
+      "legacy_checkpoint_sha256": "c8853557000cded836567d042bf109250f803ba2d17ef4cf1de1799a5b2530e2",
+      "maximum_distribution_error": 9.094947017729282e-13,
+      "old_risk_max_error": 0.0,
+      "old_risk_vectors_replayed_at_extraction": 15,
+      "prepared_sha256": "2b34e2ff7a9c38133c903a137896fec34fd274a970b1059c19ef2e82531657a0",
+      "seed": 47,
+      "valid_patients": 82
+    },
+    {
+      "arms": {
+        "ATTN": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 9.094947017729282e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 2.7755575615628914e-17
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 83,
+            "deranged_WSI_count": 83,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "COMP": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 9.094947017729282e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 2.0816681711721685e-17
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 83,
+            "deranged_WSI_count": 83,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "QUERY": {
+          "QUERY_controls_exact_matched": true,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            327,
+            256
+          ],
+          "maximum_distribution_errors": {},
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 83,
+            "deranged_WSI_count": 83,
+            "routing_calls": 0,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        }
+      },
+      "feature_receipt_sha256": "4a8077570fcda8dbcb66a3fccb22c95b9d4e86816190bb80f69f07100478b94b",
+      "feature_sha256": "8707af92f6973c8a4492ba396a1164cbfda123653752bd12168d6a871977ea1b",
+      "fit_patients": 327,
+      "fold": 2,
+      "legacy_checkpoint_sha256": "7f9aea059b13069b6366ea7ba1d4d0b19a1ff9dfef63e0206ff263768080958e",
+      "maximum_distribution_error": 9.094947017729282e-13,
+      "old_risk_max_error": 0.0,
+      "old_risk_vectors_replayed_at_extraction": 15,
+      "prepared_sha256": "844955c6c1c65e8c6b210edb11b459201bb858ca2597c29dae94e6cace6dedb2",
+      "seed": 47,
+      "valid_patients": 82
+    },
+    {
+      "arms": {
+        "ATTN": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            328,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 9.094947017729282e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 6.938893903907228e-17
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 84,
+            "deranged_WSI_count": 84,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "COMP": {
+          "QUERY_controls_exact_matched": false,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            328,
+            256
+          ],
+          "maximum_distribution_errors": {
+            "assignment_row_fraction": 0.0,
+            "effective_patch_count": 9.094947017729282e-13,
+            "entropy": 1.7763568394002505e-15,
+            "row_mass": 0.0,
+            "row_weight_multiset": 0.0,
+            "slot_mass": 0.0,
+            "soft_slot_overlap_gram": 8.326672684688674e-17
+          },
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 84,
+            "deranged_WSI_count": 84,
+            "routing_calls": 6,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        },
+        "QUERY": {
+          "QUERY_controls_exact_matched": true,
+          "extraction_recorded_model_state_unchanged": true,
+          "fit_shape": [
+            328,
+            256
+          ],
+          "maximum_distribution_errors": {},
+          "old_risk_max_error": 0.0,
+          "valid_controls": 5,
+          "valid_shape_each_control": [
+            82,
+            256
+          ],
+          "valid_spatial_counts": {
+            "WSI_count": 84,
+            "deranged_WSI_count": 84,
+            "routing_calls": 0,
+            "single_patch_unpermuted_WSI_count": 0
+          }
+        }
+      },
+      "feature_receipt_sha256": "f8ab6bb46627cbf2e400fdf0b9e25400989019879d81c7ab8ba7daf5ceeef906",
+      "feature_sha256": "f6e2c0b0d3722c47dc19db205d9f10824b2faf12e86e3e3091e86dab6de15b6c",
+      "fit_patients": 328,
+      "fold": 3,
+      "legacy_checkpoint_sha256": "c9e4ed3698b6b87309ef62eb9a57643dfcf35dba6791986341e1a2b8d441ede2",
+      "maximum_distribution_error": 9.094947017729282e-13,
+      "old_risk_max_error": 0.0,
+      "old_risk_vectors_replayed_at_extraction": 15,
+      "prepared_sha256": "92727fd7efdeda56fd1ae4e061339febb4bb058bea8cc36dd7fd89fcad9b8b17",
+      "seed": 47,
+      "valid_patients": 82
+    }
+  ],
+  "source": "71a26be63273a0aa6a5f3c29aedbe98ea64b52d1b4dd3c45fbff1a2059c4f548",
+  "spatial_interpretation": "frozen_two_round_routing_correspondence_not_natural_query_or_medical_truth",
+  "stage": "prototype",
+  "status": "PASS",
+  "valid_feature_matrices_by_control": {
+    "MATCHED": 18,
+    "PATCH_PERMUTE": 18,
+    "RNA_MEAN_QUERY": 18,
+    "VALUE_OFF": 18,
+    "WRONG_RNA_QUERY": 18
+  },
+  "wall_seconds": 1.229259466053918
+}

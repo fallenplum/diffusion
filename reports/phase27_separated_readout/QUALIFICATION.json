@@ -1,0 +1,13 @@
+{
+  "evaluation_isolation_failclosed_synthetic_only": true,
+  "evaluation_tests": 34,
+  "feature_tests": 10,
+  "fit_pipeline_tests": 1,
+  "full_ancestor_source_verified_on_server": true,
+  "initial_unique_tests_passed": 56,
+  "local_full_legacy_environment_reproduction_claimed": false,
+  "math_tests": 11,
+  "source": "71a26be63273a0aa6a5f3c29aedbe98ea64b52d1b4dd3c45fbff1a2059c4f548",
+  "status": "PASS_NUMERICAL_AND_ISOLATION_TESTS",
+  "tests_real_data_fits": 0
+}

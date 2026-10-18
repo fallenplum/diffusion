@@ -1,0 +1,64 @@
+{
+  "alpha_selected": false,
+  "independent_performance_evidence": false,
+  "manifest_self_excluded": true,
+  "new_training_fits": 0,
+  "parent_commit": "1a367f74cc764c2b460a12e56e96d7fecc005985",
+  "parent_verification": {
+    "git_parent_blobs_verified": 2669,
+    "inherited_tracked_files": 2669,
+    "parent_all2669verified": true,
+    "parent_commit": "1a367f74cc764c2b460a12e56e96d7fecc005985",
+    "parent_snapshot_sha256": "8ef76d776354fb3a30bf01fc7987aac6b26e64fcbad553477a0fe0ed62fac5e6",
+    "status": "PASS",
+    "working_tree_files_verified": 2669
+  },
+  "public_files": [
+    {
+      "bytes": 1306,
+      "path": "configs/phase25_b_scale_diagnostic.json",
+      "sha256": "b0c36b60e028eef4020edeb3ecdc80409a98a8bc4d20a89fdbe01570da658692"
+    },
+    {
+      "bytes": 125521,
+      "path": "reports/phase25_b_scale_diagnostic/DIAGNOSTIC.json",
+      "sha256": "49003f27a69d744433ee451e1af6b860cf17d9f06389def18039b722c0c9f15f"
+    },
+    {
+      "bytes": 2588,
+      "path": "reports/phase25_b_scale_diagnostic/PROTOCOL.md",
+      "sha256": "0badec50eae1bebce12f953a36860f9af6da54a3c7fa3665c4e049c5b5fed8e7"
+    },
+    {
+      "bytes": 7769,
+      "path": "reports/phase25_b_scale_diagnostic/RESULTS.md",
+      "sha256": "d248927c20ded47d3e180f3a3cc410147c9a61f9e78b80f5bc1a9841cc93e40f"
+    },
+    {
+      "bytes": 15596,
+      "path": "scripts/audit_phase25_b_scale.py",
+      "sha256": "56957e463f660240b7ca5d8b118834f44422963be11e40eb5bff04f4ba3a2b9d"
+    },
+    {
+      "bytes": 3270,
+      "path": "scripts/publish_phase25_scale.py",
+      "sha256": "ec979d86f2370acb36f8a6a7f692405f584d5998d36a9f9589ef145008037372"
+    },
+    {
+      "bytes": 7708,
+      "path": "src/phase25_scale_diagnostic.py",
+      "sha256": "8b567cad656164879ee93d0d27d93b65f14050f819fe5de5c1ea677ae17e7509"
+    },
+    {
+      "bytes": 3808,
+      "path": "tests/test_phase25_scale_diagnostic.py",
+      "sha256": "140581396790be46f25cf6d6edb46b3a9545476e0ab775481bb1cdd88f53965d"
+    }
+  ],
+  "schema": "phase25_frozen_scale_anonymous_manifest_v1",
+  "scope": "only_appended_frozen_scale_diagnostic;not_a_new_model_or_gate",
+  "status": "PASS",
+  "total_bytes": 167566,
+  "total_files": 8,
+  "training_source": "91cad3e88814d92d9f43b3ebf8c0962d11098b3fa80a8ea81c275a6b83f2884c"
+}

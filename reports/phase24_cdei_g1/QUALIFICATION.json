@@ -1,0 +1,35 @@
+{
+  "status": "PASS_NUMERICAL_ONLY",
+  "source": "8234bca2b7fad388d3862d4d7be940f7e76f291bac516754b1e45fa5639bd18b",
+  "tests": {
+    "passed": 80,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 8,
+    "seconds": 22.85,
+    "command": "python -m pytest tests/test_phase24_cdei_g1_model.py tests/test_phase24_cdei_g1_train.py tests/test_phase24_cdei_g1_evaluation.py -q -p no:cacheprovider --basetemp <fresh-directory>"
+  },
+  "source_hashes": {
+    "src/phase24_cdei_g1/evaluation.py": "79da7faecda86bded32dd0adc5fc58be2b032a16fcf28f9d25781bbd7a180a9a",
+    "src/phase24_cdei_g1/model.py": "9c85ab2125114c2a861ce8147408c4068438dd48f4054c44597f9f589cdf6fcb",
+    "src/phase24_cdei_g1/runtime.py": "9a3560e474e716a97e77641f7820f93ab0780e8ca50ff1f39bf7f0ca8341bc90",
+    "src/phase24_cdei_g1/train.py": "65e248b3cd6d45f85dd0878f08b5028da3387464203cb9d4a737f16084ecd0f0",
+    "src/phase24_cdei_g1/__init__.py": "e812e7ec9ce50a162f87204492209fac944b085f4057487c385a4c3c159db5b5",
+    "tests/test_phase24_cdei_g1_evaluation.py": "fd14fba956a31cb010ec8c98eab91e12b966992e37406b68ea6b8cefdf98c070",
+    "tests/test_phase24_cdei_g1_model.py": "ce250855c1ac86b63cc27ad06d3b4619679cd5cf0514ff2eda61f42fe4db00e6",
+    "tests/test_phase24_cdei_g1_train.py": "65920852385231b7d509563d5ab476ce016ab9bc69144c53c70936bc9d99c035",
+    "configs/phase24_cdei_g1.json": "9c03adec344ac61376bd2f4fbca00d73f9e582de52883adf47196841077e1cb4"
+  },
+  "versions": {
+    "python": "3.11.14",
+    "torch": "2.4.1+cu121",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "sklearn": "1.7.2"
+  },
+  "scope": "synthetic_operator_fullgradient_fitonly_training_checkpoint_parity_and_independent_evaluator",
+  "real_training_completion_claimed": false,
+  "fitted_synthetic_weights_saved": false,
+  "pytest_temporary_mock_receipts_and_arrays": true,
+  "real_smoke_weights_and_arrays_saved": false
+}

@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "source": "8234bca2b7fad388d3862d4d7be940f7e76f291bac516754b1e45fa5639bd18b",
+  "formal_fits": 0,
+  "short_models_completed": 8,
+  "kernel_updates": 16,
+  "persistent_weights_arrays": false,
+  "runs": [
+    {
+      "LOCAL_CTRL_parameters_equal": true,
+      "LOCAL_parameter_count": 85672,
+      "all_arms_same_backbone_initialization": true,
+      "kernel_updates": 8,
+      "peak_GPU_reserved_bytes": 3072327680,
+      "poisoned_nonfit_DSS": false,
+      "run": 1,
+      "selection_label_calls_in_training": 0,
+      "short_models": 4,
+      "state_sha256": "ac1ab1c67847d0069d1cd4bc778a15cc50c7263244dbd2e420f37212543b620b",
+      "wall_seconds": 22.192768628010526
+    },
+    {
+      "LOCAL_CTRL_parameters_equal": true,
+      "LOCAL_parameter_count": 85672,
+      "all_arms_same_backbone_initialization": true,
+      "kernel_updates": 8,
+      "peak_GPU_reserved_bytes": 2929721344,
+      "poisoned_nonfit_DSS": true,
+      "run": 2,
+      "selection_label_calls_in_training": 0,
+      "short_models": 4,
+      "state_sha256": "ac1ab1c67847d0069d1cd4bc778a15cc50c7263244dbd2e420f37212543b620b",
+      "wall_seconds": 20.79395059403032
+    }
+  ],
+  "wall_seconds": 108.58086305297911,
+  "heldout_poison_all_numeric_state_exact": true,
+  "qualification_weights_or_arrays_saved": 0,
+  "shape_audit": {
+    "rows": [
+      {
+        "clinical_dim": 41,
+        "common_slots": 24,
+        "fold": 1,
+        "role": "inner"
+      },
+      {
+        "clinical_dim": 38,
+        "common_slots": 24,
+        "fold": 2,
+        "role": "inner"
+      },
+      {
+        "clinical_dim": 40,
+        "common_slots": 24,
+        "fold": 3,
+        "role": "inner"
+      },
+      {
+        "clinical_dim": 41,
+        "common_slots": 24,
+        "fold": 4,
+        "role": "inner"
+      },
+      {
+        "clinical_dim": 39,
+        "common_slots": 24,
+        "fold": 5,
+        "role": "inner"
+      },
+      {
+        "clinical_dim": 41,
+        "common_slots": 24,
+        "fold": 1,
+        "role": "outer"
+      },
+      {
+        "clinical_dim": 39,
+        "common_slots": 24,
+        "fold": 2,
+        "role": "outer"
+      },
+      {
+        "clinical_dim": 41,
+        "common_slots": 24,
+        "fold": 3,
+        "role": "outer"
+      },
+      {
+        "clinical_dim": 41,
+        "common_slots": 24,
+        "fold": 4,
+        "role": "outer"
+      },
+      {
+        "clinical_dim": 40,
+        "common_slots": 24,
+        "fold": 5,
+        "role": "outer"
+      }
+    ]
+  },
+  "versions": {
+    "python": "3.12.3",
+    "torch": "2.5.1+cu124",
+    "cuda_runtime": "12.4",
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "sklearn": "1.5.2",
+    "OS": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35"
+  }
+}

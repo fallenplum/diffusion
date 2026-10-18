@@ -1,0 +1,114 @@
+{
+  "CP_only_guard_fits": 3,
+  "R0_shared_across_neural_seeds": true,
+  "actual_convex_fits": 15,
+  "cell_rows": [
+    {
+      "fold": 1,
+      "optimizer_steps": 240,
+      "peak_GPU_reserved_bytes": 1468006400,
+      "seed": 31,
+      "wall_seconds": 268.80880641937256
+    },
+    {
+      "fold": 1,
+      "optimizer_steps": 240,
+      "peak_GPU_reserved_bytes": 1468006400,
+      "seed": 47,
+      "wall_seconds": 269.42134046554565
+    },
+    {
+      "fold": 2,
+      "optimizer_steps": 240,
+      "peak_GPU_reserved_bytes": 1468006400,
+      "seed": 31,
+      "wall_seconds": 269.77643299102783
+    },
+    {
+      "fold": 2,
+      "optimizer_steps": 240,
+      "peak_GPU_reserved_bytes": 1468006400,
+      "seed": 47,
+      "wall_seconds": 269.86337399482727
+    },
+    {
+      "fold": 3,
+      "optimizer_steps": 240,
+      "peak_GPU_reserved_bytes": 1409286144,
+      "seed": 31,
+      "wall_seconds": 269.45818543434143
+    },
+    {
+      "fold": 3,
+      "optimizer_steps": 240,
+      "peak_GPU_reserved_bytes": 1409286144,
+      "seed": 47,
+      "wall_seconds": 269.39329648017883
+    }
+  ],
+  "cell_seconds_sum": 1616.7214357852936,
+  "completed_cells": 6,
+  "crossfit_R0_teachers": 9,
+  "epochs_each": 80,
+  "failed_real_qualification_attempts": 1,
+  "failed_real_qualification_optimizer_steps": 0,
+  "formal_failures": 0,
+  "formal_neural_optimizer_steps": 1440,
+  "fullfit_R0": 3,
+  "historical_tracked_files_preserved": 2621,
+  "independent_raw_main_replay_report_sha256": "a7cdf47cc678d148881b672bf536d6e456904dca56c792d323c9173a67223d9d",
+  "independent_saved_neural_replay": {
+    "CP_reference_slots": 6,
+    "R0_reference_slots": 6,
+    "cells": 6,
+    "fit_and_valid_risk_vectors": 36,
+    "forbidden_method_call_counts": {
+      "Data.fit_labels": 0,
+      "PCA.fit": 0,
+      "src.phase10_trimodal.math.fit_ridge": 0,
+      "src.phase13_rna.data.endpoints": 0,
+      "src.phase25_local.data.build_prepared": 0,
+      "src.phase25_local.data.fit_preprocessor": 0,
+      "src.phase25_local.data.fit_ridge": 0,
+      "src.phase25_local.data.prepare": 0,
+      "src.phase25_local.train.run_cell": 0,
+      "src.phase25_local.train.train_arm": 0
+    },
+    "frozen_query_risk_vectors": 54,
+    "max_absolute_error": 0.0,
+    "neural_models": 18,
+    "new_fits": 0,
+    "report_sha256": "438fdecd4a3a626c835c6c8a9860283bb90875a2bb6b092619f98aa91f87891b",
+    "script_sha256": "df339ad905a10816a93cd9338e3daa0c86354626bdce1c5a892449b8e5fe0de8"
+  },
+  "main_derived_before_interface_fix_source": "97b6ab2c56eeece704a311218745e685790d87c9c5870d82f3a2eaa6dc2ca2d4",
+  "main_payload_reused_unchanged": true,
+  "model_slots": 24,
+  "neural_models_trained": 18,
+  "observed_GPU": {
+    "scope": "single_observation_during_six_workers_not_run_average",
+    "total_MiB": 32760,
+    "used_MiB": 10436,
+    "utilization_percent": 99
+  },
+  "outer_evaluation_admitted_at_accounting": false,
+  "outer_models_trained": 0,
+  "parent_commit": "58eaf1db947593cf8ff872d8ac2644b01b191441",
+  "privacy": "only_new_anonymous_aggregate_artifacts;patient_arrays_and_weights_private",
+  "qualification_failure_reason": "CUDA_labels_into_numpy_Efron_weight_interface;CPU_numpy_labels_repair_only",
+  "qualification_short_weights_or_arrays_saved": false,
+  "source": "91cad3e88814d92d9f43b3ebf8c0962d11098b3fa80a8ea81c275a6b83f2884c",
+  "source_metadata_rebinding_new_convex_fits": 0,
+  "status": "COMPLETE_FORMAL_PROTOTYPE_ACCOUNTING",
+  "successful_real_short_models": 6,
+  "successful_real_short_optimizer_steps": 12,
+  "versions": {
+    "OS": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "cuda_runtime": "12.4",
+    "numpy": "2.1.3",
+    "python": "3.12.3",
+    "scipy": "1.14.1",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu124"
+  }
+}

@@ -1,0 +1,661 @@
+{
+  "PCA_bases_reused_with_hash_scope_and_orthogonality_checks_not_refitted": true,
+  "absolute_tolerance": 1e-10,
+  "complete_teacher_or_full_preprocessing_states_checked": 12,
+  "crossfit_fullfit_scale_shift_reported_not_assumed_solved": true,
+  "endpoint_API_reads": 0,
+  "endpoint_and_fitter_APIs_hard_blocked": true,
+  "fit_crossfit_offset_vectors_replayed": 3,
+  "full_CP_valid_vectors_replayed": 3,
+  "full_R0_valid_vectors_replayed": 3,
+  "fullfit_fit_diagnostic_vectors_replayed": 3,
+  "fullfit_rows": [
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 2616
+      },
+      "CP_nominal_parameters": 104,
+      "PCA_refitted": false,
+      "R0_nominal_parameters": 648,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 2616
+      },
+      "canonical_split_sha256": "5a48834c9116f4b859b5f7d048ef25ea8663c317acd215d5ddd084fa42a074e2",
+      "complete_fit_state_sha256": "3361a428fd1792ce9c9089bb06dc92129d34af2ede261e67d3952a95a5800046",
+      "constant_fit_columns": 16,
+      "constant_fit_columns_by_block": {
+        "CNA_coverage8": 8,
+        "CNA_gain8": 0,
+        "CNA_loss8": 0,
+        "Clinical": 0,
+        "GLOBAL_MATCHED_CONCH32": 0,
+        "HALL512": 0,
+        "RNA_coverage8": 8,
+        "S32": 0
+      },
+      "crossfit_fullfit_RMS_difference": 0.38721962668707993,
+      "crossfit_fullfit_risk_correlation": 0.8284343846787255,
+      "crossfit_risk_SD": 0.6203153815764577,
+      "crossfit_to_fullfit_SD_ratio": 0.9058403870946616,
+      "fit_RNA_all512_retained": true,
+      "fit_patients": 327,
+      "fold": 1,
+      "fullfit_in_sample_risk_SD": 0.6847954566985253,
+      "nominal_columns_by_block": {
+        "CNA_coverage8": 8,
+        "CNA_gain8": 8,
+        "CNA_loss8": 8,
+        "Clinical": 40,
+        "GLOBAL_MATCHED_CONCH32": 32,
+        "HALL512": 512,
+        "RNA_coverage8": 8,
+        "S32": 32
+      },
+      "nonconstant_fit_columns": 632,
+      "prepared_sha256": "344bd9617b37e65701b737f92c4fddda534186ef67fcc0cab9da97a52ecd9e32",
+      "raw_statistics_and_scope_checked": true,
+      "receipt_sha256": "0e884e51745c954ad6bed70fbedc0f1d9988e6f5c90acf48993bbe71448d38ca",
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 327
+      },
+      "valid_patients": 82
+    },
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 2616
+      },
+      "CP_nominal_parameters": 101,
+      "PCA_refitted": false,
+      "R0_nominal_parameters": 645,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 2616
+      },
+      "canonical_split_sha256": "14ef09702f9ee05f2b95745a8605982a2e1d1a4df4d4d5b00ba3c5218e30875e",
+      "complete_fit_state_sha256": "b95469e8c45fa0d2b26e6a95ca6856f8838732703f7a35c0e6ceca36cfa00654",
+      "constant_fit_columns": 16,
+      "constant_fit_columns_by_block": {
+        "CNA_coverage8": 8,
+        "CNA_gain8": 0,
+        "CNA_loss8": 0,
+        "Clinical": 0,
+        "GLOBAL_MATCHED_CONCH32": 0,
+        "HALL512": 0,
+        "RNA_coverage8": 8,
+        "S32": 0
+      },
+      "crossfit_fullfit_RMS_difference": 0.4054391540091739,
+      "crossfit_fullfit_risk_correlation": 0.8267740792098545,
+      "crossfit_risk_SD": 0.6743742830930091,
+      "crossfit_to_fullfit_SD_ratio": 0.965713767864353,
+      "fit_RNA_all512_retained": true,
+      "fit_patients": 327,
+      "fold": 2,
+      "fullfit_in_sample_risk_SD": 0.6983169397950777,
+      "nominal_columns_by_block": {
+        "CNA_coverage8": 8,
+        "CNA_gain8": 8,
+        "CNA_loss8": 8,
+        "Clinical": 37,
+        "GLOBAL_MATCHED_CONCH32": 32,
+        "HALL512": 512,
+        "RNA_coverage8": 8,
+        "S32": 32
+      },
+      "nonconstant_fit_columns": 629,
+      "prepared_sha256": "f3c7656a1edfda780c026547af16b91e1853987951c884f66fe8fa9c2a3c7860",
+      "raw_statistics_and_scope_checked": true,
+      "receipt_sha256": "fae437ac5c2b4c8d8e6c4bdc8531e2f1468935ee41ee740d9ab7c59b7b1969d4",
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 327
+      },
+      "valid_patients": 82
+    },
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 2624
+      },
+      "CP_nominal_parameters": 103,
+      "PCA_refitted": false,
+      "R0_nominal_parameters": 647,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 2624
+      },
+      "canonical_split_sha256": "fc8a15016b8df83897051d57fac3e06b00a7f4927bfcd102c41fff1e678cae29",
+      "complete_fit_state_sha256": "ddbe157fad6dd66616b03b3edcfb9d0603748c1ccaf8a4ee98dad05f17848290",
+      "constant_fit_columns": 16,
+      "constant_fit_columns_by_block": {
+        "CNA_coverage8": 8,
+        "CNA_gain8": 0,
+        "CNA_loss8": 0,
+        "Clinical": 0,
+        "GLOBAL_MATCHED_CONCH32": 0,
+        "HALL512": 0,
+        "RNA_coverage8": 8,
+        "S32": 0
+      },
+      "crossfit_fullfit_RMS_difference": 0.42585764258762326,
+      "crossfit_fullfit_risk_correlation": 0.8212574158165186,
+      "crossfit_risk_SD": 0.6795516034150768,
+      "crossfit_to_fullfit_SD_ratio": 0.9263374655028163,
+      "fit_RNA_all512_retained": true,
+      "fit_patients": 328,
+      "fold": 3,
+      "fullfit_in_sample_risk_SD": 0.733589678407551,
+      "nominal_columns_by_block": {
+        "CNA_coverage8": 8,
+        "CNA_gain8": 8,
+        "CNA_loss8": 8,
+        "Clinical": 39,
+        "GLOBAL_MATCHED_CONCH32": 32,
+        "HALL512": 512,
+        "RNA_coverage8": 8,
+        "S32": 32
+      },
+      "nonconstant_fit_columns": 631,
+      "prepared_sha256": "dc427601a8b0edf639c98c21952a6f13881260d24d8de2166f3b52964640b1f6",
+      "raw_statistics_and_scope_checked": true,
+      "receipt_sha256": "a4646153c388a5fdac812b66a3b6daa97cc3ca258cbd708de01dca1d12142087",
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 328
+      },
+      "valid_patients": 82
+    }
+  ],
+  "heldout_labels_read": false,
+  "heldout_main_offset_vectors_checked": 3,
+  "maximum_fullfit_feature_replay_error": 0.0,
+  "maximum_raw_statistic_check_error": 3.552713678800501e-15,
+  "maximum_risk_replay_error": 0.0,
+  "new_PCA_fits": 0,
+  "new_predictor_fits": 0,
+  "patient_features_weights_predictions_indices_and_gene_lists_public": false,
+  "prepared_cells": 3,
+  "replay_script_sha256": "d4cf8dd062d88ae73503c19d3d7300713679def9951717eb37cc353acc0c36d8",
+  "source": "91cad3e88814d92d9f43b3ebf8c0962d11098b3fa80a8ea81c275a6b83f2884c",
+  "status": "PASS_NO_FIT_MAIN_REPLAY",
+  "stored_convex_fits_referenced": 15,
+  "teacher_held_risk_vectors_replayed": 9,
+  "teacher_rows": [
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "PCA_refitted": false,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "complete_fit_state_sha256": "8c2a30b97006d6bb230a832b30afffbea17e1c460ae2fb033b1d56c86df9e3dd",
+      "constant_fit_columns": 16,
+      "fit_patients": 218,
+      "fold": 1,
+      "held_patients": 109,
+      "nominal_parameters": 646,
+      "raw_statistics_and_scope_checked": true,
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 218
+      },
+      "teacher": 0
+    },
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "PCA_refitted": false,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "complete_fit_state_sha256": "9af1d733b52c2ab348d9182ab056ac76995906df8b984aa56864c3d053c545e6",
+      "constant_fit_columns": 16,
+      "fit_patients": 218,
+      "fold": 1,
+      "held_patients": 109,
+      "nominal_parameters": 647,
+      "raw_statistics_and_scope_checked": true,
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 218
+      },
+      "teacher": 1
+    },
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "PCA_refitted": false,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "complete_fit_state_sha256": "7d99bd59d05eb9f5e0d167b913355e19a89474e7446cf167846c16beddc553e9",
+      "constant_fit_columns": 16,
+      "fit_patients": 218,
+      "fold": 1,
+      "held_patients": 109,
+      "nominal_parameters": 643,
+      "raw_statistics_and_scope_checked": true,
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 218
+      },
+      "teacher": 2
+    },
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "PCA_refitted": false,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "complete_fit_state_sha256": "037631c22051a06fc4a2210c59c6455e2c51fceb651eaa3198e03ab0bb44a72c",
+      "constant_fit_columns": 16,
+      "fit_patients": 218,
+      "fold": 2,
+      "held_patients": 109,
+      "nominal_parameters": 644,
+      "raw_statistics_and_scope_checked": true,
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 218
+      },
+      "teacher": 0
+    },
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "PCA_refitted": false,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "complete_fit_state_sha256": "27b638682232a983d85fd5b0708e9b22ccf8abfa54ec738454a40d11b93c2780",
+      "constant_fit_columns": 16,
+      "fit_patients": 218,
+      "fold": 2,
+      "held_patients": 109,
+      "nominal_parameters": 645,
+      "raw_statistics_and_scope_checked": true,
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 218
+      },
+      "teacher": 1
+    },
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "PCA_refitted": false,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "complete_fit_state_sha256": "0311e9a74bac212761d567dd281238963ff4a8a81837db1075be034249d20261",
+      "constant_fit_columns": 16,
+      "fit_patients": 218,
+      "fold": 2,
+      "held_patients": 109,
+      "nominal_parameters": 643,
+      "raw_statistics_and_scope_checked": true,
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 218
+      },
+      "teacher": 2
+    },
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "PCA_refitted": false,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1744
+      },
+      "complete_fit_state_sha256": "c11958efa8a0809056a59bf4e7ab98e2e2af3ebc7539b911b1ce1a1907dbf631",
+      "constant_fit_columns": 16,
+      "fit_patients": 218,
+      "fold": 3,
+      "held_patients": 110,
+      "nominal_parameters": 647,
+      "raw_statistics_and_scope_checked": true,
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 218
+      },
+      "teacher": 0
+    },
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1752
+      },
+      "PCA_refitted": false,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1752
+      },
+      "complete_fit_state_sha256": "e3950ab876b0f3b4af81bb981879fe6af6b36bdcab795ce350ba3ad6d8074ebd",
+      "constant_fit_columns": 16,
+      "fit_patients": 219,
+      "fold": 3,
+      "held_patients": 109,
+      "nominal_parameters": 645,
+      "raw_statistics_and_scope_checked": true,
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 219
+      },
+      "teacher": 1
+    },
+    {
+      "CNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1752
+      },
+      "PCA_refitted": false,
+      "RNA_fallback_nonHall_genes": 0,
+      "RNA_program_coverage_train": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 1752
+      },
+      "complete_fit_state_sha256": "768983cfe37da3f8c1c987d552ef9bc02d8da18d96444e9bd282844ab5210c26",
+      "constant_fit_columns": 16,
+      "fit_patients": 219,
+      "fold": 3,
+      "held_patients": 109,
+      "nominal_parameters": 644,
+      "raw_statistics_and_scope_checked": true,
+      "selected_RNA_genes": 512,
+      "selected_RNA_observed_fraction_by_gene": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 512
+      },
+      "selected_RNA_observed_fraction_by_patient": {
+        "SD": 0.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 219
+      },
+      "teacher": 2
+    }
+  ],
+  "version": "phase25_main_raw_covariate_saved_state_replay_v1"
+}

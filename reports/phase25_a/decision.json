@@ -1,0 +1,15 @@
+{
+  "status": "AUDIT_COMPLETE_WITH_EXPLICIT_IDENTIFICATION_LIMITS",
+  "small_prototype_allowed": true,
+  "parent_commit": "58eaf1db947593cf8ff872d8ac2644b01b191441",
+  "new_training_fits": 0,
+  "new_bootstrap_replicates": 0,
+  "CONCH_risk_component_and_fold_local_PC_audit": "PASS_FROZEN_ACCOUNTING_NOT_REFITTED_CAUSALITY",
+  "C4_query_only_interventions": "PASS_REPLAY_AND_PAIRING_RESPONSE;VALUE_OFF_METRICS_SPLIT",
+  "SCALAR": "PASS_LINEAGE_AND_POSITIVE_DIRECTION;CONDITIONAL_GENERALIZATION_NOT_CONFIRMED",
+  "FiLM": "CURRENT_PREDICTION_AUDIT_PASS;OLD_CI_UNPAIRED_AND_CROSS_FOLD;WEIGHT_REPLAY_UNAVAILABLE",
+  "SPO": "CURRENT_PREDICTION_AUDIT_PASS;ADDITIVE_SEPARATE_ENCODERS;OLD_CI_DIFFERENT_ESTIMAND;WEIGHTS_UNAVAILABLE",
+  "historical_positive_points_are_not_confirmed_medical_mechanisms": true,
+  "no_historical_model_retraining_or_architecture_search": true,
+  "protected_patient_arrays_or_weights_public": false
+}

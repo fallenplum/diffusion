@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source": "f6659b92737042032a0c64bc681ca108814c6aeb2e811bff4d486655a1573f0e",
+  "qualification_short_fits_completed": 2,
+  "kernel_optimizer_steps": 4,
+  "conditional_head_solves_completed": 16,
+  "formal_fits_in_qualification": 0,
+  "persistent_weight_or_array_writes": 0,
+  "poison_test": {
+    "actual_nonfit_endpoint_loader_changed": true,
+    "all_kernel_reference_features_scalers_weights_risks_identical": true,
+    "selection_label_calls_during_training": 0
+  },
+  "peak_GPU_reserved_bytes": 3047161856,
+  "kernel_parameters": 84104,
+  "warmup_head_parameters": 1056,
+  "wall_seconds": 24.671685241977684
+}

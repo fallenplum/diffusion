@@ -1,0 +1,110 @@
+{
+  "status": "NOT_SUPPORTED_IN_THIS_FIXED_KERNEL_READOUT",
+  "source": "f6659b92737042032a0c64bc681ca108814c6aeb2e811bff4d486655a1573f0e",
+  "role": "inner",
+  "receipt_fingerprint": "98f02954f5b38d18b4376968b968edf8b09fcee5ae2eee970d270c9906f86f36",
+  "evaluator_sha256": "8dd0b7eaee8b5c7908d18e79679e8fa736cd4839dc41cc36632646abbb3a51de",
+  "mechanism_tests": [
+    {
+      "comparison": "DUAL-REL",
+      "metric": "Harrell",
+      "mean_seed_delta": 0.000611172228333956,
+      "positive_seeds": 2,
+      "seeds": 3,
+      "pass": true
+    },
+    {
+      "comparison": "DUAL-REL",
+      "metric": "Uno60",
+      "mean_seed_delta": 0.0018382384341545748,
+      "positive_seeds": 3,
+      "seeds": 3,
+      "pass": true
+    },
+    {
+      "comparison": "DUAL-ADD",
+      "metric": "Harrell",
+      "mean_seed_delta": 0.0011001100110011504,
+      "positive_seeds": 2,
+      "seeds": 3,
+      "pass": true
+    },
+    {
+      "comparison": "DUAL-ADD",
+      "metric": "Uno60",
+      "mean_seed_delta": 0.004930705847705719,
+      "positive_seeds": 3,
+      "seeds": 3,
+      "pass": true
+    },
+    {
+      "comparison": "DUAL-NO_C",
+      "metric": "Harrell",
+      "mean_seed_delta": 0.0003667033370003588,
+      "positive_seeds": 2,
+      "seeds": 3,
+      "pass": true
+    },
+    {
+      "comparison": "DUAL-NO_C",
+      "metric": "Uno60",
+      "mean_seed_delta": -0.0008379775366186282,
+      "positive_seeds": 1,
+      "seeds": 3,
+      "pass": false
+    },
+    {
+      "comparison": "DUAL-WRONG_O",
+      "metric": "Harrell",
+      "mean_seed_delta": 0.0011001100110011135,
+      "positive_seeds": 3,
+      "seeds": 3,
+      "pass": true
+    },
+    {
+      "comparison": "DUAL-WRONG_O",
+      "metric": "Uno60",
+      "mean_seed_delta": 0.002027778679232095,
+      "positive_seeds": 3,
+      "seeds": 3,
+      "pass": true
+    },
+    {
+      "comparison": "DUAL-WRONG_C",
+      "metric": "Harrell",
+      "mean_seed_delta": 0.0002444688913335602,
+      "positive_seeds": 2,
+      "seeds": 3,
+      "pass": true
+    },
+    {
+      "comparison": "DUAL-WRONG_C",
+      "metric": "Uno60",
+      "mean_seed_delta": 0.00012187598652146914,
+      "positive_seeds": 2,
+      "seeds": 3,
+      "pass": true
+    }
+  ],
+  "anchor_noninferiority_screen": [
+    {
+      "comparison": "DUAL-J0",
+      "metric": "Harrell",
+      "mean_seed_delta": 0.015401540154015403,
+      "pass": true
+    },
+    {
+      "comparison": "DUAL-J0",
+      "metric": "Uno60",
+      "mean_seed_delta": -0.022707985211535792,
+      "pass": false
+    }
+  ],
+  "criterion": "all five DUAL-control comparisons: both metrics mean>0 and positive in at least 2/3 seeds; DUAL-J0 both metric means>=0",
+  "outer_admitted": false,
+  "confirmatory_confidence_intervals": false,
+  "inner_validation_overlap_allowed": true,
+  "scope": "diagnostic fixed-kernel screen; not proof about all end-to-end CDEI designs",
+  "endpoint": "DSS",
+  "automatic_architecture_or_hyperparameter_search": false
+}

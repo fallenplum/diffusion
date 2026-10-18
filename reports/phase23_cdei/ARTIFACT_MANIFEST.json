@@ -1,0 +1,226 @@
+{
+  "configuration_sha256": "b278c29ae5011991cdba1a53966fe43dcabfe484174158f73fe4b133922c1e63",
+  "evaluator_files": {
+    "scripts/evaluate_phase23_cdei.py": "f7a279f5516121a2a41439ca137e40b7d203d1264d3fa17c18255f21893dc840",
+    "src/phase10_trimodal/reference.py": "a5b05d2c11a8aeb3b1ecffcf799746f90610382179b40f27564cbc7df7e25e07",
+    "src/phase13_rna/data.py": "91a119631ca68253cafc200bc6b80919cde4cf4e130a50e6936cb66a68827c63",
+    "src/phase21_relative/evaluation.py": "e498bac66353b347c6b94ac30621a2d31dc852c1b805f726f4f60c58d3504d6d",
+    "src/phase23_cdei/evaluation.py": "d0a8f1166a30cbecd066ae0d3422ba50597325f9d874302cf23e98897f9fde16"
+  },
+  "evaluator_sha256": "8dd0b7eaee8b5c7908d18e79679e8fa736cd4839dc41cc36632646abbb3a51de",
+  "git_index_mutated": false,
+  "manifest_self_excluded": true,
+  "mechanism_conclusion": "read_RESULTS_and_decision;technical_PASS_is_not_mechanism_support",
+  "parent_all2556verified": true,
+  "parent_commit": "0c851828894c5ee6a2ed04985bbf1aa8f1be7899",
+  "parent_verification": {
+    "git_parent_blobs_verified": 2556,
+    "inherited_tracked_files": 2556,
+    "parent_all2556verified": true,
+    "parent_commit": "0c851828894c5ee6a2ed04985bbf1aa8f1be7899",
+    "parent_snapshot_sha256": "9cf6f89248f5694d2686f76f460822be9ffdea3dc96b848419eae4de438f021a",
+    "status": "PASS",
+    "working_tree_files_verified": 2556
+  },
+  "patient_level_arrays_or_weights_public": false,
+  "public_files": [
+    {
+      "bytes": 5736,
+      "path": "configs/phase23_cdei_g0.json",
+      "sha256": "b278c29ae5011991cdba1a53966fe43dcabfe484174158f73fe4b133922c1e63"
+    },
+    {
+      "bytes": 2958,
+      "path": "reports/phase23_cdei/INNER_GATE.json",
+      "sha256": "6ee678bc0723aff690cc820313df3bf802171a4a146c776325676080db8f8af3"
+    },
+    {
+      "bytes": 213145,
+      "path": "reports/phase23_cdei/INNER_RESULTS.json",
+      "sha256": "57debf91b61b2d918bae37e651d5f3f96a17900d743d6a4d67511a9b7f99acc4"
+    },
+    {
+      "bytes": 13168,
+      "path": "reports/phase23_cdei/LITERATURE_AUDIT.md",
+      "sha256": "0580a2f54ac0824bcfa5effe540eab9d013ed60d5a1c46711c3f65a0de026591"
+    },
+    {
+      "bytes": 573744,
+      "path": "reports/phase23_cdei/MECHANISM_AUDIT.json",
+      "sha256": "e8e02d2ddda42d1380d86294c7f56deb81e9d49b8a6fb799003c8dae0c8e49f7"
+    },
+    {
+      "bytes": 6885,
+      "path": "reports/phase23_cdei/PROTOCOL.md",
+      "sha256": "6103bb7188f56fb13a22d9175d5321b9ffa21d51583b8681a8e088cb3fb6e70c"
+    },
+    {
+      "bytes": 4232,
+      "path": "reports/phase23_cdei/QUALIFICATION.json",
+      "sha256": "9b3f42fbc99add832251b7a08e36d3a4ac29ab0f1a16d603ec46b32ccc9a6460"
+    },
+    {
+      "bytes": 639,
+      "path": "reports/phase23_cdei/REAL_DATA_QUALIFICATION_PUBLIC.json",
+      "sha256": "e4b59b4c3190a1cea9a3878d4af3ecd529dad18bdf262e161a73b0cc6d49eb5c"
+    },
+    {
+      "bytes": 8184,
+      "path": "reports/phase23_cdei/RESULTS.md",
+      "sha256": "b99684825a96873ec38c56fa51859531eabf10a1fb79bcdc0e96163329fc4426"
+    },
+    {
+      "bytes": 1259,
+      "path": "reports/phase23_cdei/RUN_AUDIT.json",
+      "sha256": "ab42ae8db816eaf75c305a8a8bf55a9b88b804fb5bc6c56a7b8c8a1c4cc11f70"
+    },
+    {
+      "bytes": 1269,
+      "path": "reports/phase23_cdei/decision.json",
+      "sha256": "4ab4b1f6395c8f1cc94ece79da89b3e17833684ef2596fb10476c90cd3098a51"
+    },
+    {
+      "bytes": 16318,
+      "path": "scripts/diagnose_phase23_cdei.py",
+      "sha256": "afd4560a476d40f718158bc5e18e7f8da57c41814598c644c6a1a88dc811fe9d"
+    },
+    {
+      "bytes": 4228,
+      "path": "scripts/evaluate_phase23_cdei.py",
+      "sha256": "f7a279f5516121a2a41439ca137e40b7d203d1264d3fa17c18255f21893dc840"
+    },
+    {
+      "bytes": 15538,
+      "path": "scripts/publish_phase23_cdei.py",
+      "sha256": "040a29f453989d805ba361fa6882ebd980e3c805aa75bc2c977ef62b1eb789b1"
+    },
+    {
+      "bytes": 7393,
+      "path": "scripts/qualify_phase23_cdei.py",
+      "sha256": "4b616ece406a7193d34a13805f2095a2fc3aa52643800f0aae585ab3057b9317"
+    },
+    {
+      "bytes": 14973,
+      "path": "scripts/qualify_phase23_cdei_real.py",
+      "sha256": "c4e0cf409da80a2a201fcd2e4e230aa0bd694a435da056f41cc86f220c997c06"
+    },
+    {
+      "bytes": 4564,
+      "path": "scripts/run_phase23_cdei.py",
+      "sha256": "0ca25514ab23728ef9135d3d2c556fad29ebbcb9707505aebc90c5de4287596b"
+    },
+    {
+      "bytes": 6585,
+      "path": "scripts/schedule_phase23_cdei.py",
+      "sha256": "99a5ab69682e75377ec4979b3111449be113783a2601146e613fd97c3f9fa485"
+    },
+    {
+      "bytes": 67,
+      "path": "src/phase23_cdei/__init__.py",
+      "sha256": "5282b23f79c82f61dc5a8cc61f55bb5059e60b940dffe8a59813bce3488ebeb9"
+    },
+    {
+      "bytes": 14064,
+      "path": "src/phase23_cdei/data.py",
+      "sha256": "c4a3e0359351c91ab12ee0d044d19c0de3ae51835d972370ab159f66c4814a2c"
+    },
+    {
+      "bytes": 32392,
+      "path": "src/phase23_cdei/evaluation.py",
+      "sha256": "d0a8f1166a30cbecd066ae0d3422ba50597325f9d874302cf23e98897f9fde16"
+    },
+    {
+      "bytes": 4193,
+      "path": "src/phase23_cdei/features.py",
+      "sha256": "6c3d1c29aaa6dafc5f821beaabaca5f9f086d0ddd74d51701851c7bb59c01055"
+    },
+    {
+      "bytes": 8748,
+      "path": "src/phase23_cdei/model.py",
+      "sha256": "29139afe40cf7945993871c559d4a287dd0f47814939cab3b8419f3a4413c161"
+    },
+    {
+      "bytes": 8176,
+      "path": "src/phase23_cdei/operators.py",
+      "sha256": "4db9cfba506173838e7cdeac65413eb3aee7f3bcfa08dc575eaa9e80e5b06b31"
+    },
+    {
+      "bytes": 5037,
+      "path": "src/phase23_cdei/readout.py",
+      "sha256": "91928cc940d16c1111893a87227fe145a1ce1219bebba280b009d69162036a2d"
+    },
+    {
+      "bytes": 13168,
+      "path": "src/phase23_cdei/reference.py",
+      "sha256": "2d311ade362106970ec2a0c42160a382b9710d52ebd3d8c0ebc75120d8a6351a"
+    },
+    {
+      "bytes": 4459,
+      "path": "src/phase23_cdei/runtime.py",
+      "sha256": "bfbd59b0eaa7a94c44ff025af3050138fc80ef0c1b13195943fa9ad0b2c1e1d5"
+    },
+    {
+      "bytes": 9858,
+      "path": "src/phase23_cdei/train.py",
+      "sha256": "02182baba12d5900424d6b0cf168dd529c42ff67440836cc2032f210f8a067e2"
+    },
+    {
+      "bytes": 13415,
+      "path": "src/phase23_cdei/warmup.py",
+      "sha256": "52bba1ce4dc77691fe5eaaeaf6f8a181cf673fcb86e29fd2a85630aeea06e2e5"
+    },
+    {
+      "bytes": 10339,
+      "path": "tests/test_phase23_cdei_data.py",
+      "sha256": "396e9e3fb1d5395059be62eec5c790c48955d95fe92051610fe1b23ef8210439"
+    },
+    {
+      "bytes": 14042,
+      "path": "tests/test_phase23_cdei_evaluation.py",
+      "sha256": "f0757cf37c646a3fa1160a41b3e2929561b4274ea0ee0d6ffd70fb9ad67d6b00"
+    },
+    {
+      "bytes": 2516,
+      "path": "tests/test_phase23_cdei_features.py",
+      "sha256": "c5bc1dedac3a9b8d20a2e60a043650da10a75f2060194166506da17b0da91af1"
+    },
+    {
+      "bytes": 5219,
+      "path": "tests/test_phase23_cdei_model.py",
+      "sha256": "c23e51a974c0c8cdcf47e99db3e4f54feb655231f7d26be91c88a66fb25063b7"
+    },
+    {
+      "bytes": 15902,
+      "path": "tests/test_phase23_cdei_operators.py",
+      "sha256": "061d5391d1c22920b1df6e7f51d5da1ffb0115328643c6dec37bd8c9f86b9cbf"
+    },
+    {
+      "bytes": 3182,
+      "path": "tests/test_phase23_cdei_readout.py",
+      "sha256": "3756e8e72377841cf84e3c93fa551d546c4a5482eceb9ebedd62b88edb5b47d5"
+    },
+    {
+      "bytes": 14904,
+      "path": "tests/test_phase23_cdei_reference.py",
+      "sha256": "ecaf6b0bda6596d68fafcd1081fb226e2ecaa6eb1d21663b9f7555efdac14756"
+    },
+    {
+      "bytes": 11290,
+      "path": "tests/test_phase23_cdei_train.py",
+      "sha256": "2e372d81d2e4ca8911606a8a11aed43c2cce18dada572dd9ddf88f2c8f7728f6"
+    },
+    {
+      "bytes": 8450,
+      "path": "tests/test_phase23_cdei_warmup.py",
+      "sha256": "510b99cba9f027583756877e0376c2fd5e8de737935892399b55245b854a625f"
+    }
+  ],
+  "publisher_sha256": "040a29f453989d805ba361fa6882ebd980e3c805aa75bc2c977ef62b1eb789b1",
+  "schema": "phase23_cdei_anonymous_manifest_v1",
+  "scientific_completion_claimed_by_publication_audit": false,
+  "scope": "explicit_new_Phase23_text_files_only_no_whole_repository_privacy_claim",
+  "status": "PASS",
+  "total_bytes": 1100239,
+  "total_files": 38,
+  "training_source": "f6659b92737042032a0c64bc681ca108814c6aeb2e811bff4d486655a1573f0e"
+}

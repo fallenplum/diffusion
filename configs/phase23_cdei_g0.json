@@ -1,0 +1,129 @@
+{
+  "version": "phase23_cdei_fixed_kernel_feasibility_v1",
+  "hypothesis_status": "LOCKED_UNTESTED",
+  "execution_status": "READY_FOR_REAL_DATA_QUALIFICATION",
+  "parent_commit": "0c851828894c5ee6a2ed04985bbf1aa8f1be7899",
+  "planned_branch": "research/phase23-cdei-fixed-kernel-audit",
+  "cohort": "inherited512_patient_DSS65_events;all10_role_fold_cache_and_J0_lineages_verified",
+  "seeds": [
+    31,
+    47,
+    83
+  ],
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "hidden": 32,
+  "rank": 4,
+  "tokenizer": "inherited_class_SignedPathwayTokens;new_weights;RNA8_CNA_gain8_CNA_loss8;16_filters",
+  "kernel": "unchanged_Phase19_CP_score_law;not_Phase20_pairwise_logit_sum",
+  "kernel_reference_policy": "fresh_fit_only_kernel_then_freeze_all_encoder_and_score_weights;never_use_old_outer_kernel_in_inner",
+  "kernel_training_schedule": {
+    "epochs": 80,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "gradient_clip": 5.0,
+    "microbatch_patients": 32,
+    "full_patient_risk_set": true,
+    "optimizer": "AdamW",
+    "dropout": 0.1,
+    "head": "64_16_SiLU_Dropout01_1_tanh_times_frozen_anchor_SD",
+    "epoch_selection": "fixed_final_epoch_no_validation_access"
+  },
+  "reference": {
+    "unit": "patient_equal_not_slide_equal",
+    "source": "exact_current_fit_partition_only",
+    "clinical_reference": "fixed_full_fit_mean",
+    "null_score": "mean_train_donor_raw_score_per_omics_slot;exact_linear_kernel_mean_not_mean_exp",
+    "train_query": "leave_self_out;paired_wrong_omics_comparisons_use_common_exclusion_union_i_j",
+    "heldout_query": "all_fit_donors_only;no_heldout_reference_features",
+    "missing": "slot_mask_and_reference_count;never_impute_unmeasured_as_observed_zero",
+    "kernel_state_sha_required": true
+  },
+  "evidence": {
+    "tau": 1.0,
+    "relative": "softmax_original_s_over_omics;retain_original_reverse_relative_path",
+    "absolute": "tau_logmeanexp_of_s_minus_null;not_LME_s_minus_LME_null",
+    "decomposition": "residual_row_mean_plus_centered_residual_LME",
+    "pooling": "WSI_patch_mean_and_population_SD_then_equal_WSI_patient_mean",
+    "fully_unavailable": "data_qualification_failure;no_silent_patient_exclusion",
+    "per_patient_centering_before_absolute": false
+  },
+  "readout": {
+    "base": "inherited_exact_role_fold_frozen_J0;coefficient_one;no_scalar_stacking",
+    "relative_dimensions": 64,
+    "extra_dimensions": 2,
+    "penalty": 10.0,
+    "objective": "complete_fit_patient_Efron_Cox_plus_half_lambda_L2",
+    "preprocessing": "fit_only_standardization;all_arms_same_locked_solver",
+    "gradient_gate": 1e-07,
+    "solver_budget": "LBFGS1000;at_most30_Newton_polish_steps;line_search40",
+    "capacity_claim": "DUAL_ADD_NO_C_WRONG_O_WRONG_C_MEAN_CENTERED_each66_linear_coefficients;REL64;actual_rank_reported"
+  },
+  "required_controls": {
+    "REL": "matched_relative64_only",
+    "DUAL": "matched_relative64_plus_calibrated_absolute_mean_SD2",
+    "ADD": "matched_relative64_plus_fit_only_PCA2_of_separate_C_Pmean_Otokens_masks;no_cross_modal_products",
+    "NO_C": "DUAL_absolute_context_uses_training_Clinical_mean;own_relative_and_main_unchanged",
+    "WRONG_O": "DUAL_absolute_omics_only_wrong;own_relative_and_main_unchanged;shared_reference_exclusions",
+    "WRONG_C": "DUAL_absolute_Clinical_only_wrong;own_relative_and_main_unchanged",
+    "MEAN": "relative64_plus_row_mean_residual_pool2",
+    "CENTERED": "relative64_plus_centered_LME_pool2"
+  },
+  "wrong_pairing": "partition_local_cancer_x_full_raw_RNA_missing_pattern;zero_self;no_outcome_matching;pattern_proxy_not_verified_platform;common_own_donor_observed_slot_intersection",
+  "primary_mechanism_comparisons": [
+    "DUAL-REL",
+    "DUAL-ADD",
+    "DUAL-NO_C",
+    "DUAL-WRONG_O",
+    "DUAL-WRONG_C"
+  ],
+  "readout_decomposition_comparisons": [
+    "DUAL-MEAN",
+    "DUAL-CENTERED"
+  ],
+  "conditional_execution": "inner_only_first;no_outer_fit_or_test_selection_before_all15_inner_receipts_and_gate_lock",
+  "formal_matrix_lock_status": "LOCKED_BEFORE_FIRST_REAL_DATA_QUALIFICATION_FIT",
+  "endpoints": {
+    "primary": "DSS",
+    "secondary": "PFI_transfer_of_frozen_DSS_risks_only;no_PFI_training_or_selection"
+  },
+  "evaluation": "inherit_within_fold_Harrell_and_repaired_Uno60;shared_patient_paired_bootstrap;repair_minus_damage_equals_C_delta",
+  "novelty": "UNKNOWN_NOT_ESTABLISHED",
+  "automatic_model_rank_depth_temperature_search": false,
+  "patient_fits_so_far": 0,
+  "privacy": "all_patient_tokens_reference_banks_masks_indices_risks_weights_and_credentials_private",
+  "inner_gate": {
+    "all15_complete_before_endpoint_read": true,
+    "primary_contrasts": [
+      "DUAL-REL",
+      "DUAL-ADD",
+      "DUAL-NO_C",
+      "DUAL-WRONG_O",
+      "DUAL-WRONG_C"
+    ],
+    "metrics": [
+      "Harrell",
+      "Uno60"
+    ],
+    "require_each_contrast_metric_mean_over3seeds_positive": true,
+    "require_positive_seed_count_at_least": 2,
+    "require_DUAL_minus_J0_both_metric_means_nonnegative": true,
+    "inner_CI": "not_confirmatory;overlapping_validation_partitions;no_unique_OOF_claim",
+    "failure_action": "stop_fixed_kernel_branch_no_outer_fit"
+  },
+  "upstream_sources": {
+    "phase19": "ce14bd3053f51bbf277d21392419da70c41208581bb9580d78ca546f953873d5",
+    "phase20": "e7b6383cfc23e4fbb8f94419a88bff5db1113babcb967672f87e0f13c74ba548"
+  },
+  "outer_evaluation": {
+    "bootstrap_repetitions": 20000,
+    "primary_multiplicity": "Bonferroni10_for5contrasts_x2metrics",
+    "aggregation": "sum_within_fold_numerators_denominators_per_seed_then_mean3seeds;not_risk_ensemble",
+    "secondary_endpoint": "PFI_on_fixed_DSS_risks_only"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS_COMPLETED_INNER_ACCOUNTING",
+  "source": "f6659b92737042032a0c64bc681ca108814c6aeb2e811bff4d486655a1573f0e",
+  "parent_commit": "0c851828894c5ee6a2ed04985bbf1aa8f1be7899",
+  "branch": "research/phase23-cdei-fixed-kernel-audit",
+  "formal_inner_cells": 15,
+  "formal_outer_cells": 0,
+  "formal_kernel_updates": 1200,
+  "formal_conditional_readout_fits": 120,
+  "superseded_interface_attempts": 12,
+  "superseded_kernel_updates": 93,
+  "superseded_completed_formal_cells": 0,
+  "superseded_validation_metrics_read": false,
+  "numerical_qualification_real_short_fits_total": 4,
+  "qualification_kernel_updates_total": 8,
+  "qualification_head_solves_total": 32,
+  "qualification_weights_arrays_persisted": false,
+  "actual_cell_seconds": {
+    "minimum": 145.8493794290116,
+    "maximum": 212.72989926702576,
+    "sum": 2964.695240210858
+  },
+  "six_worker_GPU_observation": {
+    "utilization_percent": 99,
+    "used_MiB": 19578,
+    "total_MiB": 32760
+  },
+  "saved_readout_replay_max_error": 0.0,
+  "saved_readout_replay_all_exact": true,
+  "no_encoder_feature_replay_claim": true,
+  "inner_endpoint_evaluation_only_after_15_complete_receipts": true,
+  "historical_file_change_count": 0,
+  "private_raw_arrays_not_in_public_scope": true
+}

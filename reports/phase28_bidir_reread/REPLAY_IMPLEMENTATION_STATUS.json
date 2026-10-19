@@ -1,0 +1,54 @@
+{
+  "current_stage": "pretraining_source_qualification_preparation",
+  "date": "2026-10-20",
+  "future_independent_replay_stage": {
+    "H5_payload_passes_or_models_executed_in_this_stage": 0,
+    "additional_to_original_INPUT_audit": true,
+    "cost_interpretation": "One additional complete sequential read of all registered H5 bytes, plus separate model inference; no download, raw feature cache, or timing/speed estimate is claimed.",
+    "execution_authorized_now": false,
+    "planned_exact_external_reference_vectors": 90,
+    "planned_full_H5_byte_SHA_passes": 1,
+    "planned_original_H5_bytes_per_full_pass": 20545482072,
+    "planned_original_H5_files": 520,
+    "planned_saved_model_risk_vectors": 300,
+    "purpose": "Recheck original feature payload fingerprints after the intervening formal training period before independent saved-model inference.",
+    "require_all_formal_neural_models_complete": 30
+  },
+  "implementation_sha256": {
+    "scripts/evaluate_phase28.py": "0276bd7128dde9b5492508f10911d00cddb0699acfcd109500ef1d7a89771789",
+    "scripts/replay_phase28.py": "b9c0e10ca8b8b06ed161087f0fc0e32aaf33b88c5aa0588a51eba0d8e34e76b4",
+    "src/phase28_reread/evaluation.py": "a81ef3d3f49d2f07246880bda8c469a7f3610beb8a0cabdaa61b89fcf3f0df15",
+    "src/phase28_reread/replay.py": "0e2eeecff274cf8e630313d71d76648626a88acd2f20a25c1a3af5d3de2d4233",
+    "tests/test_phase28_evaluation.py": "51e842533e700901f30d8b4c3a05e6bc532dcb81ed29439d908a095894849b8d",
+    "tests/test_phase28_replay.py": "0a52b881986c18bfbf69b2d117df81e698c5412de85dd68943fb02dd214015e9"
+  },
+  "original_INPUT_stage_full_H5_fingerprint": {
+    "evidence_report_sha256": "e5ec65cf0ef18ad8a6d2755f44d69f84c6c0563cee3bdde2e3654bad55fba823",
+    "phase": "original input audit before formal model training",
+    "reported_H5_files": 520,
+    "reported_bytes": 20545482072
+  },
+  "patient_arrays_weights_paths_identifiers_or_credentials_public": false,
+  "real_checkpoint_replay_models_executed": 0,
+  "real_new_predictor_fits_executed_by_this_task": 0,
+  "real_valid_endpoint_reads_executed": 0,
+  "source_identity_boundary": "Training runtime source excludes evaluator/replay/report bytes to avoid a certificate cycle; replay/evaluator code SHA is independently bound by their reports.",
+  "status": "IMPLEMENTED_SYNTHETIC_ONLY_REAL_REPLAY_NOT_EXECUTED",
+  "synthetic_tests": {
+    "coverage": "16 gate/withinfold tests;15 synthetic artifact/replay tests",
+    "first_run": {
+      "cause": "Windows sandbox system Temp directory ACL",
+      "fixture_setup_environment_errors": 13,
+      "passed": 18
+    },
+    "real_patient_data_used": false,
+    "targeted_recovery_run": {
+      "deselected_already_passed_tests": 2,
+      "passed": 13,
+      "seconds": 33.66,
+      "workspace_fresh_basetemp_used": true
+    },
+    "unique_tests_passed": 31
+  },
+  "training_closure_modified_by_this_integration_task": false
+}

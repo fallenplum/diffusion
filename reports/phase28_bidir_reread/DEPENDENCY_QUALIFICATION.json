@@ -1,0 +1,118 @@
+{
+  "CUDA": "12.4",
+  "GPU": "NVIDIA GeForce RTX 4080 SUPER",
+  "complete_Efron_gradcache_check": {
+    "RNG_restored_per_microbatch": true,
+    "all_synthetic_risk_set_used": true,
+    "cached_vs_plain_risk_max_error": 0.0,
+    "dropout": 0.2,
+    "microbatches": 3,
+    "parameter_gradient_max_error": 5.820766091346741e-11,
+    "rng_replayed_risk_max_error": 0.0,
+    "synthetic_examples": 6,
+    "weights_unchanged": true
+  },
+  "core": {
+    "d_conv": 4,
+    "d_inner": 256,
+    "d_model": 128,
+    "d_state": 16,
+    "expand": 2,
+    "use_fast_path": false
+  },
+  "core_sequence_check": {
+    "forward_max_absolute_error": 2.3283064365386963e-09,
+    "gradient_max_absolute_error": 3.725290298461914e-09,
+    "output_shape": [
+      2,
+      11,
+      128
+    ],
+    "parameters": 116480,
+    "sequence_output_only": true,
+    "weights_unchanged": true
+  },
+  "custom_S6_substitute": false,
+  "last_state_used_for_objective": false,
+  "new_optimizer_steps": 0,
+  "normal_fresh_process_import": true,
+  "official_Mamba_commit": "95d8aba8a8c75aedcaa6143713b11e745e7cd0d9",
+  "official_causal_conv1d_commit": "82867a9d2e6907cc0f637ac6aff318f696838548",
+  "official_modules": {
+    "causal_conv1d": {
+      "filename": "__init__.py",
+      "sha256": "5c741ba2da8feb8007634a0259559a9feee5afb8640a4a757fc1e913ff8a4298"
+    },
+    "causal_conv1d.causal_conv1d_interface": {
+      "filename": "causal_conv1d_interface.py",
+      "sha256": "7286f93996561532dac8452de1e75bd44a31baf5acbb3ad4fd48b87fbc7fdc94"
+    },
+    "causal_conv1d_cuda": {
+      "filename": "causal_conv1d_cuda.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "ac8ce3550175e716b150c091588a0e973062bd5ff2e695effff89fbe19ad9a84"
+    },
+    "mamba_ssm": {
+      "filename": "__init__.py",
+      "sha256": "35040319bf473eb1bb812b8d6cbeb69c52db402a7e1c6c22298e5e1eefc523bf"
+    },
+    "mamba_ssm.modules.mamba_simple": {
+      "filename": "mamba_simple.py",
+      "sha256": "a17e4c51b582dc0d4d690a649eba521cd0c1ee3dc8f0473a0967cdc9ec0874e3"
+    },
+    "mamba_ssm.ops.selective_scan_interface": {
+      "filename": "selective_scan_interface.py",
+      "sha256": "c79f4432536402fe4d6c1026ccf8d5fc0aaa62b790e9a622295aee14ac45dbcc"
+    },
+    "selective_scan_cuda": {
+      "filename": "selective_scan_cuda.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "121468203d74596fa68ff048eef1542ce30f5d01ca8f35054b406d0fb3ad1c52"
+    }
+  },
+  "official_script_path": "scripts/qualify_phase28_official_mamba.py",
+  "official_script_sha256": "50467efb0c20b7a97564b2e34538d7b6278c5a20ea2536057d5df0c2eee5b70a",
+  "packages": {
+    "causal-conv1d": "1.5.0.post8",
+    "huggingface-hub": "0.36.0",
+    "mamba-ssm": "2.2.4",
+    "tokenizers": "0.19.1",
+    "transformers": "4.44.2"
+  },
+  "patient_data_or_endpoint_reads": 0,
+  "scan_checks": [
+    {
+      "forward_max_absolute_error": 6.984919309616089e-10,
+      "gradient_max_absolute_error": 6.984919309616089e-10,
+      "length": 1,
+      "reference": "official selective_scan_ref; exp(delta*A), delta*B*u"
+    },
+    {
+      "forward_max_absolute_error": 9.313225746154785e-10,
+      "gradient_max_absolute_error": 9.313225746154785e-10,
+      "length": 7,
+      "reference": "official selective_scan_ref; exp(delta*A), delta*B*u"
+    },
+    {
+      "forward_max_absolute_error": 1.1641532182693481e-09,
+      "gradient_max_absolute_error": 1.1641532182693481e-09,
+      "length": 16,
+      "reference": "official selective_scan_ref; exp(delta*A), delta*B*u"
+    }
+  ],
+  "script_path": "scripts/qualify_phase28.py",
+  "script_sha256": "b6bf9236023a5b3ccb26a67a9a4f20a310484d6b08d1a2d9c7060d6bdaebaff4",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "source_files": {
+    "configs/phase28_bidir_reread.json": "fd31e25fcbc54f977a4470a031b336f73b174e75cf97c982346ca96829102d24",
+    "scripts/run_phase28.py": "b61410c979630633b3dfb8ee59724802e3dccbde294c71f4ca7182d0cd4bd1a1",
+    "src/phase28_reread/__init__.py": "d3d662860b428aa2332956fc44f13d3d889bd8ae5d3718f4f976559a9c97078a",
+    "src/phase28_reread/data.py": "bc184c0ceddebfa1c584bd254bfb2c50ac599099efc65ea090a94c72290031e7",
+    "src/phase28_reread/model.py": "db1c7fe58332287caaad72d30868232850c500dad734e8d5f1f3c5aee95a7f87",
+    "src/phase28_reread/runtime.py": "0ae2dc01798357f756ce92929bd578044fb175f3a6c487cddd1d5d40d24b0fe3",
+    "src/phase28_reread/spatial.py": "f4d779290aa0ddcf242879f068bc497aaa2f94d791582db2b13b73aa123e425f",
+    "src/phase28_reread/train.py": "3bf20af9e03c6556e434bc80186062bb828075077ba5e93eb6c9de6994085287",
+    "src/phase28_reread/training_math.py": "7b30b6d5995f847355676723d816b0c7d1b04b0973d6b38e6d782d861c235736"
+  },
+  "source_kind": "official_release_wheels",
+  "status": "PASS_OFFICIAL_CUDA_SEQUENCE_AND_FULL_EFRON_GRADCACHE",
+  "torch": "2.5.1+cu124"
+}

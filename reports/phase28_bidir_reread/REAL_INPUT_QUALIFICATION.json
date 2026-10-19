@@ -1,0 +1,157 @@
+{
+  "CUDA_compute_seconds": 2.1009274969110265,
+  "CUDA_peak_allocated_bytes": 1776057344,
+  "CUDA_peak_reserved_bytes": 1841299456,
+  "H5_payload_full_SHA_repeated": false,
+  "OFF_exact_same_main_and_frozen_offset": true,
+  "aggregate_weighting": "equal_patient_weight_for_three_geometry_selected_examples",
+  "arm": "C11",
+  "bound_absolute_tolerance": 1e-06,
+  "canonical_feature_arrays_constructor_scope": "existing_Data_loads512_feature_rows;only_fit_used_for_selection_and_forward",
+  "central_feature_array_read_counts": {
+    "cancer_type": 1,
+    "cna_gene_symbols": 1,
+    "cna_genes": 1,
+    "folds": 1,
+    "patient_ids": 1,
+    "rna_gene_symbols": 1,
+    "rna_genes": 1
+  },
+  "cross_gradient_minimum_effect_threshold_applied": false,
+  "endpoint_array_reads": 0,
+  "finite_both_cross_direction_autograd": true,
+  "finite_encoded_and_detail_tensors": true,
+  "fit_label_bytes_deserialized_by_existing_constructor_then_deleted": true,
+  "fit_label_getter_calls": 0,
+  "fold": 1,
+  "forbidden_API_call_counts": {
+    "Data.fit_labels": 0,
+    "Optimizer.__init__": 0,
+    "array_or_weight_save": 0,
+    "forbidden_central_NPZ_array": 0,
+    "training_entrypoint": 0
+  },
+  "formal_initialization_unchanged": true,
+  "latent_per_coordinate_update_bound": 0.1,
+  "model_weights_unchanged": true,
+  "new_optimizer_steps": 0,
+  "new_predictor_fits": 0,
+  "new_weights_raw_arrays_or_patient_IDs_saved": false,
+  "not_DSS_increment_or_histology_validation": true,
+  "patients": 3,
+  "prepared_sha256": "2b34e2ff7a9c38133c903a137896fec34fd274a970b1059c19ef2e82531657a0",
+  "qualification_receipt_sha256": {
+    "DEPENDENCY_QUALIFICATION.json": "eb2057bae5d50631a8e828148298eca7f8db6f44e0114c1aeae8ea18280af851",
+    "INPUT_AUDIT.json": "e5ec65cf0ef18ad8a6d2755f44d69f84c6c0563cee3bdde2e3654bad55fba823",
+    "NUMERICAL_QUALIFICATION.json": "1b1653f5a6237aaeb859473b1eb7060fd7c3d755638dacb95f48055480da4be8"
+  },
+  "script_path": "scripts/probe_phase28_real_inputs.py",
+  "script_sha256": "01b31a0843924c99a9dc810e006e66b7f5e70018490962a1e9b37aa46f3a220f",
+  "seed": 31,
+  "selection": "fit_only_selected_original_Patch_count_min_lower_median_max;canonical_index_tiebreak",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "source_files": {
+    "configs/phase28_bidir_reread.json": "fd31e25fcbc54f977a4470a031b336f73b174e75cf97c982346ca96829102d24",
+    "scripts/run_phase28.py": "b61410c979630633b3dfb8ee59724802e3dccbde294c71f4ca7182d0cd4bd1a1",
+    "src/phase28_reread/__init__.py": "d3d662860b428aa2332956fc44f13d3d889bd8ae5d3718f4f976559a9c97078a",
+    "src/phase28_reread/data.py": "bc184c0ceddebfa1c584bd254bfb2c50ac599099efc65ea090a94c72290031e7",
+    "src/phase28_reread/model.py": "db1c7fe58332287caaad72d30868232850c500dad734e8d5f1f3c5aee95a7f87",
+    "src/phase28_reread/runtime.py": "0ae2dc01798357f756ce92929bd578044fb175f3a6c487cddd1d5d40d24b0fe3",
+    "src/phase28_reread/spatial.py": "f4d779290aa0ddcf242879f068bc497aaa2f94d791582db2b13b73aa123e425f",
+    "src/phase28_reread/train.py": "3bf20af9e03c6556e434bc80186062bb828075077ba5e93eb6c9de6994085287",
+    "src/phase28_reread/training_math.py": "7b30b6d5995f847355676723d816b0c7d1b04b0973d6b38e6d782d861c235736"
+  },
+  "stage": "input_qualification_only",
+  "statistics": {
+    "Ep_to_gene_interaction_gradient_L2": {
+      "count": 3,
+      "maximum": 1.8979109750908654e-09,
+      "mean": 9.299483749307293e-10,
+      "minimum": 3.484593615873159e-10
+    },
+    "RNA_to_path_interaction_gradient_L2": {
+      "count": 3,
+      "maximum": 2.552323579261753e-08,
+      "mean": 1.692166308126618e-08,
+      "minimum": 8.361879621516591e-09
+    },
+    "WSIs": {
+      "count": 3,
+      "maximum": 2.0,
+      "mean": 1.3333333333333333,
+      "minimum": 1.0
+    },
+    "all_molecular_to_path_interaction_gradient_L2": {
+      "count": 3,
+      "maximum": 4.0341941030039067e-08,
+      "mean": 3.024902508356132e-08,
+      "minimum": 1.9230109863794147e-08
+    },
+    "gene_reread_attention_TV_maximum": {
+      "count": 3,
+      "maximum": 0.007470283657312393,
+      "mean": 0.003736285880828897,
+      "minimum": 0.0010726677719503641
+    },
+    "gene_reread_attention_TV_mean": {
+      "count": 3,
+      "maximum": 0.006734263841752653,
+      "mean": 0.003183038496372094,
+      "minimum": 0.0009380473682001508
+    },
+    "gene_token_update_RMS": {
+      "count": 3,
+      "maximum": 2.9663809628442106e-05,
+      "mean": 1.4009360416371059e-05,
+      "minimum": 4.641391739842893e-06
+    },
+    "initial_gene_correction_RMS_across_three_patients": 1.6810595812999737e-08,
+    "initial_interaction_RMS_across_three_patients": 9.264079419169191e-07,
+    "initial_path_correction_RMS_across_three_patients": 9.301853951695318e-07,
+    "latent_update_maximum_absolute": {
+      "count": 3,
+      "maximum": 0.00032379996264353395,
+      "mean": 0.00020881650076868633,
+      "minimum": 0.0001091467565856874
+    },
+    "path_reread_attention_TV_maximum": {
+      "count": 3,
+      "maximum": 0.013225540518760681,
+      "mean": 0.01076501856247584,
+      "minimum": 0.0068869441747665405
+    },
+    "path_reread_attention_TV_mean": {
+      "count": 3,
+      "maximum": 0.00782286780528151,
+      "mean": 0.006616104330998741,
+      "minimum": 0.004988586636803423
+    },
+    "path_token_update_RMS": {
+      "count": 3,
+      "maximum": 2.4006018399753536e-05,
+      "mean": 1.9586267105705e-05,
+      "minimum": 1.363354441925684e-05
+    },
+    "path_tokens": {
+      "count": 3,
+      "maximum": 248.0,
+      "mean": 116.66666666666667,
+      "minimum": 24.0
+    },
+    "selected_Patches": {
+      "count": 3,
+      "maximum": 17570.0,
+      "mean": 7533.333333333333,
+      "minimum": 527.0
+    },
+    "valid_gene_tokens": {
+      "count": 3,
+      "maximum": 108.0,
+      "mean": 108.0,
+      "minimum": 108.0
+    }
+  },
+  "status": "PASS_THREE_REAL_FIT_INPUTS_FORWARD_AND_CROSS_GRADIENTS",
+  "valid_patient_forward_calls": 0,
+  "wall_seconds": 33.70791253098287
+}

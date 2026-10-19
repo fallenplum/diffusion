@@ -1,0 +1,231 @@
+{
+  "branch": "research/phase28-bidirectional-evidence-reread",
+  "contains_patient_arrays_weights_or_identifiers": false,
+  "files": [
+    {
+      "bytes": 5597,
+      "path": "configs/phase28_bidir_reread.json",
+      "sha256": "fd31e25fcbc54f977a4470a031b336f73b174e75cf97c982346ca96829102d24"
+    },
+    {
+      "bytes": 4791,
+      "path": "reports/phase28_bidir_reread/DEPENDENCY_QUALIFICATION.json",
+      "sha256": "eb2057bae5d50631a8e828148298eca7f8db6f44e0114c1aeae8ea18280af851"
+    },
+    {
+      "bytes": 27775,
+      "path": "reports/phase28_bidir_reread/IMPLEMENTATION_REVIEW.json",
+      "sha256": "d689c5389fc4a1f105d6e58be6b60d15db37c529b3101d7fbfe57a76935186b9"
+    },
+    {
+      "bytes": 14671,
+      "path": "reports/phase28_bidir_reread/INPUT_AUDIT.json",
+      "sha256": "e5ec65cf0ef18ad8a6d2755f44d69f84c6c0563cee3bdde2e3654bad55fba823"
+    },
+    {
+      "bytes": 6325,
+      "path": "reports/phase28_bidir_reread/INPUT_FINDINGS.md",
+      "sha256": "07bf164d21538744f9bcc0d10d34bc68282dece2ffd245167cd0377200df3af7"
+    },
+    {
+      "bytes": 19051,
+      "path": "reports/phase28_bidir_reread/NUMERICAL_QUALIFICATION.json",
+      "sha256": "1b1653f5a6237aaeb859473b1eb7060fd7c3d755638dacb95f48055480da4be8"
+    },
+    {
+      "bytes": 319,
+      "path": "reports/phase28_bidir_reread/PARENT_AUDIT.json",
+      "sha256": "a294a2468601c81ebb69150d18d7cdd0936f69d2d07bc5de044d9ebbe00fa759"
+    },
+    {
+      "bytes": 8108,
+      "path": "reports/phase28_bidir_reread/PROTOCOL.md",
+      "sha256": "e499fbfa9853d10dee231dd0864d44acac0e161b22caf554ce31e58679eef59e"
+    },
+    {
+      "bytes": 5972,
+      "path": "reports/phase28_bidir_reread/REAL_INPUT_QUALIFICATION.json",
+      "sha256": "7e9b4d5eb2e75ec826b4c0ca616fe5ce5e185e0bef460e9196fdd6fcf2855d6b"
+    },
+    {
+      "bytes": 2957,
+      "path": "reports/phase28_bidir_reread/REPLAY_IMPLEMENTATION_STATUS.json",
+      "sha256": "a48988ab8e0b68948fbc0b4bfa058b20428f5b70f0fa4b78ebe45dd69e814ef8"
+    },
+    {
+      "bytes": 7802,
+      "path": "reports/phase28_bidir_reread/RESULTS.md",
+      "sha256": "714d98178b7e5d792e809fd78ead78eb931ccc24e3729e5b4b8fba2358e5f149"
+    },
+    {
+      "bytes": 2895,
+      "path": "reports/phase28_bidir_reread/RUNBOOK.md",
+      "sha256": "c06376caa14092dfa20447d9185c1852c8acde55ba76ca1d5f295352ca78ca7b"
+    },
+    {
+      "bytes": 1791,
+      "path": "reports/phase28_bidir_reread/SOURCE_LOCK.json",
+      "sha256": "f65fa7a72036dae69bfffa536a15ceedd1f9130f420dc2b0e4e30c05302f903c"
+    },
+    {
+      "bytes": 2946,
+      "path": "reports/phase28_bidir_reread/SYNTHETIC_PERFORMANCE_PRELOCK.json",
+      "sha256": "4ea8e623009171aff9657b119b7b4ee004f0e2d48f5e7631a8c5094b4737c5c1"
+    },
+    {
+      "bytes": 1361,
+      "path": "reports/phase28_bidir_reread/SYNTHETIC_TESTS.json",
+      "sha256": "36238cef54174c14897558af36ed75751062b348b681c19c07783bab6d06a077"
+    },
+    {
+      "bytes": 915,
+      "path": "reports/phase28_bidir_reread/decision.json",
+      "sha256": "ecd99fffbb721fcff39cc84f7edcf81cc0b151d2faff927b24db350cbbfeb953"
+    },
+    {
+      "bytes": 17612,
+      "path": "scripts/audit_phase28_inputs.py",
+      "sha256": "6ee3f91d58c188a26c4397653ec6bdeba74ff3825013ece2584e43305b250a88"
+    },
+    {
+      "bytes": 5773,
+      "path": "scripts/benchmark_phase28_official.py",
+      "sha256": "af2b60803af74b1f708b53cccda4c29cd71c73b16f725ecb2142064fd6c5d76d"
+    },
+    {
+      "bytes": 3324,
+      "path": "scripts/evaluate_phase28.py",
+      "sha256": "0276bd7128dde9b5492508f10911d00cddb0699acfcd109500ef1d7a89771789"
+    },
+    {
+      "bytes": 14092,
+      "path": "scripts/probe_phase28_real_inputs.py",
+      "sha256": "01b31a0843924c99a9dc810e006e66b7f5e70018490962a1e9b37aa46f3a220f"
+    },
+    {
+      "bytes": 4328,
+      "path": "scripts/publish_phase28.py",
+      "sha256": "a1b0ce0a0e7e742d3a84eb0c112e188655fda41e67ce8fc2d50092172a28a15e"
+    },
+    {
+      "bytes": 10216,
+      "path": "scripts/qualify_phase28.py",
+      "sha256": "b6bf9236023a5b3ccb26a67a9a4f20a310484d6b08d1a2d9c7060d6bdaebaff4"
+    },
+    {
+      "bytes": 9509,
+      "path": "scripts/qualify_phase28_official_mamba.py",
+      "sha256": "50467efb0c20b7a97564b2e34538d7b6278c5a20ea2536057d5df0c2eee5b70a"
+    },
+    {
+      "bytes": 1486,
+      "path": "scripts/replay_phase28.py",
+      "sha256": "b9c0e10ca8b8b06ed161087f0fc0e32aaf33b88c5aa0588a51eba0d8e34e76b4"
+    },
+    {
+      "bytes": 1120,
+      "path": "scripts/run_phase28.py",
+      "sha256": "b61410c979630633b3dfb8ee59724802e3dccbde294c71f4ca7182d0cd4bd1a1"
+    },
+    {
+      "bytes": 7197,
+      "path": "scripts/supplement_phase28_geometry.py",
+      "sha256": "4b310363ea9de272926127f567a07a7becd1e22a9b740dd846ee06f0fc2e55a6"
+    },
+    {
+      "bytes": 2174,
+      "path": "scripts/test_phase28.py",
+      "sha256": "34b992caf27de74bb69a86b59ac07df8b1ae5151b107c64938b4e6c29b896221"
+    },
+    {
+      "bytes": 71,
+      "path": "src/phase28_reread/__init__.py",
+      "sha256": "d3d662860b428aa2332956fc44f13d3d889bd8ae5d3718f4f976559a9c97078a"
+    },
+    {
+      "bytes": 23338,
+      "path": "src/phase28_reread/data.py",
+      "sha256": "bc184c0ceddebfa1c584bd254bfb2c50ac599099efc65ea090a94c72290031e7"
+    },
+    {
+      "bytes": 35714,
+      "path": "src/phase28_reread/evaluation.py",
+      "sha256": "a81ef3d3f49d2f07246880bda8c469a7f3610beb8a0cabdaa61b89fcf3f0df15"
+    },
+    {
+      "bytes": 18370,
+      "path": "src/phase28_reread/model.py",
+      "sha256": "db1c7fe58332287caaad72d30868232850c500dad734e8d5f1f3c5aee95a7f87"
+    },
+    {
+      "bytes": 18573,
+      "path": "src/phase28_reread/replay.py",
+      "sha256": "0e2eeecff274cf8e630313d71d76648626a88acd2f20a25c1a3af5d3de2d4233"
+    },
+    {
+      "bytes": 16006,
+      "path": "src/phase28_reread/runtime.py",
+      "sha256": "0ae2dc01798357f756ce92929bd578044fb175f3a6c487cddd1d5d40d24b0fe3"
+    },
+    {
+      "bytes": 14395,
+      "path": "src/phase28_reread/spatial.py",
+      "sha256": "f4d779290aa0ddcf242879f068bc497aaa2f94d791582db2b13b73aa123e425f"
+    },
+    {
+      "bytes": 17179,
+      "path": "src/phase28_reread/train.py",
+      "sha256": "3bf20af9e03c6556e434bc80186062bb828075077ba5e93eb6c9de6994085287"
+    },
+    {
+      "bytes": 12805,
+      "path": "src/phase28_reread/training_math.py",
+      "sha256": "7b30b6d5995f847355676723d816b0c7d1b04b0973d6b38e6d782d861c235736"
+    },
+    {
+      "bytes": 12144,
+      "path": "tests/test_phase28_data.py",
+      "sha256": "4c554e45c8c7b2c30aef04754d35c351a36378c89676ec6e3d76731c5d957cdf"
+    },
+    {
+      "bytes": 6815,
+      "path": "tests/test_phase28_evaluation.py",
+      "sha256": "51e842533e700901f30d8b4c3a05e6bc532dcb81ed29439d908a095894849b8d"
+    },
+    {
+      "bytes": 8897,
+      "path": "tests/test_phase28_model.py",
+      "sha256": "ad20d581f486433a4a8e040a4bbbd6f22c5c39f5d4155049a1b9e9d26806d57f"
+    },
+    {
+      "bytes": 5723,
+      "path": "tests/test_phase28_pipeline.py",
+      "sha256": "bec34d11d537df6b94b59831a70426398d29ee53c82844fa255c0bd83a17a3b8"
+    },
+    {
+      "bytes": 14883,
+      "path": "tests/test_phase28_replay.py",
+      "sha256": "0a52b881986c18bfbf69b2d117df81e698c5412de85dd68943fb02dd214015e9"
+    },
+    {
+      "bytes": 14676,
+      "path": "tests/test_phase28_runtime.py",
+      "sha256": "78e37468adfff876331dd84299815d2bd94bebd0c6c26ea912cdf2725c172789"
+    },
+    {
+      "bytes": 7783,
+      "path": "tests/test_phase28_spatial.py",
+      "sha256": "5159415c7a75edf839209f07097fc18696cf6ab9e036d9324ad7710026cb417f"
+    },
+    {
+      "bytes": 10024,
+      "path": "tests/test_phase28_training_math.py",
+      "sha256": "ca49d21ea2f9a0df2394001b3c9790c2c66fae5c1baeee1492ae9c84f750365f"
+    }
+  ],
+  "inherited_files_verified_unchanged": 2738,
+  "licensed_GMT_added": false,
+  "parent_commit": "d8f837bb97cdccea8960b0a4b1648a1a56b55a14",
+  "scope": "no-semantic core implementation and qualification only",
+  "status": "PASS"
+}

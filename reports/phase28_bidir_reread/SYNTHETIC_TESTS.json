@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 162
+  },
+  "no_real_patient_training_or_endpoint_evaluation": true,
+  "script_path": "scripts/test_phase28.py",
+  "script_sha256": "34b992caf27de74bb69a86b59ac07df8b1ae5151b107c64938b4e6c29b896221",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "status": "PASS",
+  "synthetic_only": true,
+  "test_files_sha256": {
+    "tests/test_phase28_data.py": "4c554e45c8c7b2c30aef04754d35c351a36378c89676ec6e3d76731c5d957cdf",
+    "tests/test_phase28_evaluation.py": "51e842533e700901f30d8b4c3a05e6bc532dcb81ed29439d908a095894849b8d",
+    "tests/test_phase28_model.py": "ad20d581f486433a4a8e040a4bbbd6f22c5c39f5d4155049a1b9e9d26806d57f",
+    "tests/test_phase28_pipeline.py": "bec34d11d537df6b94b59831a70426398d29ee53c82844fa255c0bd83a17a3b8",
+    "tests/test_phase28_replay.py": "0a52b881986c18bfbf69b2d117df81e698c5412de85dd68943fb02dd214015e9",
+    "tests/test_phase28_runtime.py": "78e37468adfff876331dd84299815d2bd94bebd0c6c26ea912cdf2725c172789",
+    "tests/test_phase28_spatial.py": "5159415c7a75edf839209f07097fc18696cf6ab9e036d9324ad7710026cb417f",
+    "tests/test_phase28_training_math.py": "ca49d21ea2f9a0df2394001b3c9790c2c66fae5c1baeee1492ae9c84f750365f"
+  },
+  "wall_seconds": 13.48443575296551,
+  "weights_or_raw_arrays_exported": false
+}

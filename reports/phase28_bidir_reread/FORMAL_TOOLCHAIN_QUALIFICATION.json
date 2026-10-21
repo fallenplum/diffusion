@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 98
+  },
+  "new_patient_training_fits": 0,
+  "original_P0_qualification_reports_unchanged": true,
+  "patient_or_validation_endpoint_accesses": 0,
+  "script_path": "scripts/qualify_phase28_execution.py",
+  "script_sha256": "dc3aa1cb225263b1cc34d3767519e9129353d12092d2e6f7b6817ad9cb559c21",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "status": "PASS",
+  "synthetic_only": true,
+  "test_files_sha256": {
+    "scripts/test_phase28_concurrency.py": "79830bf09a6d1d43cb6d80c6cd767156178ae81ca76bd158b7c60ab66aa6b303",
+    "scripts/test_phase28_diagnostics.py": "b9fc64e05442d8b6f252812f6b5d9c72a7bb97b7e7f5a99782fb9a597d0c33c4",
+    "tests/test_phase28_budget_readout.py": "0dde7e108f974aadad7918da0e2172b68033d4ca1595832c0b0c39b37fee54c5",
+    "tests/test_phase28_formal_publish.py": "5d18b44ab7d66a7d7fece15e381c7ef1582a7afa16624011ce3a801aba815b7d",
+    "tests/test_phase28_formal_report.py": "c306b1cabc5372cd2a0fe691b7b66a98cb21a2367adb84b89ebce93b639401fe"
+  },
+  "wall_seconds": 16.86118323705159
+}

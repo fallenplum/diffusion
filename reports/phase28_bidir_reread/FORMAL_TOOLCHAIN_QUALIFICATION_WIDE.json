@@ -1,0 +1,48 @@
+{
+  "P0_receipt_sha256_unchanged": {
+    "DEPENDENCY_QUALIFICATION.json": "eb2057bae5d50631a8e828148298eca7f8db6f44e0114c1aeae8ea18280af851",
+    "INPUT_AUDIT.json": "e5ec65cf0ef18ad8a6d2755f44d69f84c6c0563cee3bdde2e3654bad55fba823",
+    "NUMERICAL_QUALIFICATION.json": "1b1653f5a6237aaeb859473b1eb7060fd7c3d755638dacb95f48055480da4be8"
+  },
+  "counts": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 158
+  },
+  "initial_auxiliary_receipt_retained_with_its_original_test_hashes": true,
+  "initial_auxiliary_receipt_sha256": "6feea06312f14a17cdef2b94a20676b15eb9d5f2b9b3b63d742b04bc315d126c",
+  "new_patient_training_fits": 0,
+  "original_P0_qualification_reports_unchanged": true,
+  "patient_or_validation_endpoint_accesses": 0,
+  "previous_FINAL_receipt_sha256": "d35cd051f1830a00fe44225d9d366d3341684810e7e869de9273eb1c1d6dd4b8",
+  "python_version": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "revision": "WIDE",
+  "script_path": "scripts/qualify_phase28_execution.py",
+  "script_sha256": "17d89224d98f31247ab317452b083be648f906062b6c344e46b5a1a6f893ed15",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "status": "PASS",
+  "synthetic_only": true,
+  "test_files_sha256": {
+    "scripts/test_phase28_concurrency.py": "ca4966f0910d4abdfbe518856ecb4f21d3646a7dd89d1f9d197608e414d15ec7",
+    "scripts/test_phase28_diagnostics.py": "b9fc64e05442d8b6f252812f6b5d9c72a7bb97b7e7f5a99782fb9a597d0c33c4",
+    "tests/test_phase28_budget_readout.py": "0dde7e108f974aadad7918da0e2172b68033d4ca1595832c0b0c39b37fee54c5",
+    "tests/test_phase28_formal_publish.py": "08dfb0d8a9fae724326aa9dd4744e93c9ffef64301fa1c18fc791de22fc765e7",
+    "tests/test_phase28_formal_report.py": "c306b1cabc5372cd2a0fe691b7b66a98cb21a2367adb84b89ebce93b639401fe",
+    "tests/test_phase28_mechanism_report.py": "ca4b6ad723bb399df1c32aa0ce398476a461895c72987ea85eaf2097ba0fad13",
+    "tests/test_phase28_wide_concurrency.py": "43f9809404c4ce96a9dc1b575c87ae84416ae857e73d24b88c9fdfcd2c8faa78"
+  },
+  "tool_files_sha256": {
+    "scripts/audit_phase28_budget_readout.py": "5ca0ca6c56b66cba02b10a14f246a2cc3ce04f57c40da439781cd7e6b8f60d46",
+    "scripts/coordinate_phase28.py": "c3ab57a286652baa049bfe2aaedd1b8edd23f01742e1efdf8fabae5e9403a8d8",
+    "scripts/diagnose_phase28.py": "6fa3fd8a0c77427865186e0e6c4f004ffdff50d191b9cd8604f08f310b08055e",
+    "scripts/monitor_phase28.py": "184c685aa1fde2c570bdb961a0f2d8b530103b177952ebc4c08c2da1ed671591",
+    "scripts/publish_phase28_formal.py": "e9aced9b2d592a0a88373739ecb86c05a71b4cdf1d29024185c178e910999f80",
+    "scripts/qualify_phase28_execution.py": "17d89224d98f31247ab317452b083be648f906062b6c344e46b5a1a6f893ed15",
+    "scripts/report_phase28_formal.py": "8c5333b3ebb69dac90b9f1455ad23447317cdde1e193ec5fbbd50cd8a4418779",
+    "scripts/report_phase28_mechanism.py": "39a665cf90cac09022306021d53004bc51151d1be0c898983216a7d81de2ddbd",
+    "scripts/tune_phase28_concurrency.py": "1f69914cb08e176021e08b9a14e64e67ff597990b4a37f490690ac835135ebb8",
+    "scripts/tune_phase28_wide_concurrency.py": "7c27c135bc90b98b18a96785fa0a24ee9d2d1f5b658d44b35444448f3af28a02"
+  },
+  "wall_seconds": 31.138586112996563
+}

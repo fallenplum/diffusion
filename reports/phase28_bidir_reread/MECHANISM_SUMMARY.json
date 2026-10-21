@@ -1,0 +1,4767 @@
+{
+  "MECHANISM_RESULTS_md_sha256": "a67b5f27837e679d2b28463bdaa0fe81039d488d482ee3fd206f2eaf9727f32b",
+  "aggregation": "within_cell_existing_equal_WSI_then_three_fit_examples;equal_six_cells_per_arm;available_cell_denominator_explicit",
+  "arms": [
+    {
+      "all_fit_interaction_RMS": {
+        "SD_between_cells": 0.0,
+        "available_cells": 6,
+        "expected_cells": 6,
+        "maximum_cell": 0.0,
+        "mean_equal_cells": 0.0,
+        "minimum_cell": 0.0
+      },
+      "arm": "C00",
+      "cells_equal_weighted": 6,
+      "frozen_fit_example_risk_response_RMS": {
+        "BOTH_WRONG": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "CONSTANT_VALUES": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "GENE_WRONG": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "OFF": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "PATH_WRONG": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        }
+      },
+      "gene_update_enabled": false,
+      "gradient_sensitivities": {
+        "isolated_gene_context_to_path_risk_L2": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "isolated_path_context_to_gene_risk_L2": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "original_Ep_to_gene_risk_L2": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "original_RNA_to_path_risk_L2": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        }
+      },
+      "last10_parameter_gradient_norms": {
+        "delta_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.2361328083751507e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.0248638256123794e-05,
+            "mean_equal_cells": 2.6324964178106954e-05,
+            "minimum_cell": 2.191543423143134e-05
+          }
+        },
+        "delta_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.344646488698764e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.23452907482962e-05,
+            "mean_equal_cells": 2.7838348322935125e-05,
+            "minimum_cell": 2.2868975229263625e-05
+          }
+        },
+        "gate_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.2531582793571551e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00014344632312134737,
+            "mean_equal_cells": 0.0001273200207550032,
+            "minimum_cell": 0.00010938287233621244
+          }
+        },
+        "gate_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.2007473218958147e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00014234261277162305,
+            "mean_equal_cells": 0.00012728744981330275,
+            "minimum_cell": 0.00011059877823452104
+          }
+        },
+        "gene_evidence": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.38129063715458217,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.0981806031851782,
+            "mean_equal_cells": 0.2897166563395874,
+            "minimum_cell": 0.02292005238428233
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.3812904098156101,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.0981833914560641,
+            "mean_equal_cells": 0.28971899444896604,
+            "minimum_cell": 0.022924320100493355
+          }
+        },
+        "gene_query": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.005041108500842283,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.01382562600440288,
+            "mean_equal_cells": 0.002570685706114438,
+            "minimum_cell": 4.260796134832459e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.005038970134415495,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.013828255652547344,
+            "mean_equal_cells": 0.0025775812629390588,
+            "minimum_cell": 5.5258579037723e-05
+          }
+        },
+        "gene_read": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.27219090213941305,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.7874399030719587,
+            "mean_equal_cells": 0.21692651347355216,
+            "minimum_cell": 0.021022705866964572
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.27218807864214484,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.7874401681129942,
+            "mean_equal_cells": 0.2169309333981108,
+            "minimum_cell": 0.02103149642865971
+          }
+        },
+        "main_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.1405408571354109,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.4114069177403512,
+            "mean_equal_cells": 0.1278090608471645,
+            "minimum_cell": 0.011140914397596749
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.14054092016376435,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.41140763137422975,
+            "mean_equal_cells": 0.12780728786577497,
+            "minimum_cell": 0.011140264902024428
+          }
+        },
+        "main_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.2655393019699282,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.151876599458396,
+            "mean_equal_cells": 0.681767664212703,
+            "minimum_cell": 0.3513792146529767
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.2753282696120996,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.1552886382033827,
+            "mean_equal_cells": 0.6763122234186806,
+            "minimum_cell": 0.35467724570027864
+          }
+        },
+        "path_project": {
+          "data_gradient_L2": {
+            "SD_between_cells": 5.023031559838338,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 27.97533913177957,
+            "mean_equal_cells": 19.67873394165993,
+            "minimum_cell": 11.953167168172174
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 5.0230315571572275,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 27.975339147493894,
+            "mean_equal_cells": 19.67873395904768,
+            "minimum_cell": 11.953167191749502
+          }
+        },
+        "path_query": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.6366484433854859,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.8284412602911675,
+            "mean_equal_cells": 0.8861862043968243,
+            "minimum_cell": 0.1845311299431024
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.6366475052640683,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.8284413562557003,
+            "mean_equal_cells": 0.8861880337199158,
+            "minimum_cell": 0.18453248086932178
+          }
+        },
+        "path_read": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.2906965329968362,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.133504542237606,
+            "mean_equal_cells": 0.6857183846890474,
+            "minimum_cell": 0.30374027849242247
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.2907063756093951,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.1334987056380026,
+            "mean_equal_cells": 0.685702539458545,
+            "minimum_cell": 0.30368252415897884
+          }
+        },
+        "rho_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.2238568874611216e-08,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 9.065133284213315e-08,
+            "mean_equal_cells": 6.41955763648097e-08,
+            "minimum_cell": 5.4156713875319054e-08
+          }
+        },
+        "rho_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.001453710224540019,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.011681148981421108,
+            "mean_equal_cells": 0.008936587715444201,
+            "minimum_cell": 0.007513641649441795
+          }
+        },
+        "routing": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 2.4856831150937514e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0004838508045175719,
+            "mean_equal_cells": 0.0004547790843488704,
+            "minimum_cell": 0.00042067578878489387
+          }
+        },
+        "set_block": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.06226033621917572,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.18332037612179242,
+            "mean_equal_cells": 0.05845641757109072,
+            "minimum_cell": 0.00860905754105909
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.06224543766745766,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.1833572985536135,
+            "mean_equal_cells": 0.05849189751661432,
+            "minimum_cell": 0.008670385136936553
+          }
+        },
+        "spatial": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.860640029548263,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.5227125282216063,
+            "mean_equal_cells": 2.242330999384944,
+            "minimum_cell": 1.2425287482109888
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.8606454101967802,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.5227091924702245,
+            "mean_equal_cells": 2.2423210496122983,
+            "minimum_cell": 1.2425220443363434
+          }
+        },
+        "ug": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.2924691138670597e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.219170844798737e-05,
+            "mean_equal_cells": 2.740787643355606e-05,
+            "minimum_cell": 2.305066420754107e-05
+          }
+        },
+        "up": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 2.9129811011337226e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.117927837500707e-05,
+            "mean_equal_cells": 2.660012745687499e-05,
+            "minimum_cell": 2.2774103150435573e-05
+          }
+        }
+      },
+      "path_update_enabled": false,
+      "read_risk_associations": {
+        "gene": null,
+        "path": null
+      },
+      "rounds": [
+        {
+          "gene": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.00024262786299916693,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.000918931865029948,
+              "mean_equal_cells": 0.0004852637621740887,
+              "minimum_cell": 0.00017794885486138644
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.0002881918615202638,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0012092839714131075,
+                "mean_equal_cells": 0.0008619431479400876,
+                "minimum_cell": 0.0004406829098396558
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.0002881918615202638,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0012092839714131075,
+                "mean_equal_cells": 0.0008619431479400876,
+                "minimum_cell": 0.0004406829098396558
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 1.0,
+                "mean_equal_cells": 1.0,
+                "minimum_cell": 1.0
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0009315506068596291,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.501771665360767,
+                "mean_equal_cells": 0.5002810136686221,
+                "minimum_cell": 0.4989981511593394
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": false
+          },
+          "path": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.11244952537598404,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.33131729205685445,
+              "mean_equal_cells": 0.15766937590464647,
+              "minimum_cell": 0.02071161185005945
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.0037734984651617196,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.010378987311358084,
+                "mean_equal_cells": 0.005389064106955524,
+                "minimum_cell": 0.0013129321272846385
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.003884473329444993,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.010614221168718232,
+                "mean_equal_cells": 0.005535014745331024,
+                "minimum_cell": 0.0013666113468337787
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.00648817023236686,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.9806891025641026,
+                "mean_equal_cells": 0.9728011416825565,
+                "minimum_cell": 0.9647976558169002
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0018815913928235087,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5029677722156093,
+                "mean_equal_cells": 0.4999337016600485,
+                "minimum_cell": 0.4967034306406058
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": false
+          },
+          "round": 1,
+          "routing": {
+            "gene_target_null_probability_mean": {
+              "SD_between_cells": 0.009281226784904482,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.04801624635205091,
+              "mean_equal_cells": 0.03819832340354804,
+              "minimum_cell": 0.024318267470374133
+            },
+            "path_target_null_probability_mean": {
+              "SD_between_cells": 0.027223308803155526,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.08926192337394707,
+              "mean_equal_cells": 0.03310151740711322,
+              "minimum_cell": 0.01042503786946262
+            }
+          }
+        },
+        {
+          "gene": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.00024262786299916693,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.000918931865029948,
+              "mean_equal_cells": 0.0004852637621740887,
+              "minimum_cell": 0.00017794885486138644
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.0002881918615202638,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0012092839714131075,
+                "mean_equal_cells": 0.0008619431479400876,
+                "minimum_cell": 0.0004406829098396558
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.0002881918615202638,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0012092839714131075,
+                "mean_equal_cells": 0.0008619431479400876,
+                "minimum_cell": 0.0004406829098396558
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 1.0,
+                "mean_equal_cells": 1.0,
+                "minimum_cell": 1.0
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0009315506068596291,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.501771665360767,
+                "mean_equal_cells": 0.5002810136686221,
+                "minimum_cell": 0.4989981511593394
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": false
+          },
+          "path": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.11244952537598404,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.33131729205685445,
+              "mean_equal_cells": 0.15766937590464647,
+              "minimum_cell": 0.02071161185005945
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.0037734984651617196,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.010378987311358084,
+                "mean_equal_cells": 0.005389064106955524,
+                "minimum_cell": 0.0013129321272846385
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.003884473329444993,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.010614221168718232,
+                "mean_equal_cells": 0.005535014745331024,
+                "minimum_cell": 0.0013666113468337787
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.00648817023236686,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.9806891025641026,
+                "mean_equal_cells": 0.9728011416825565,
+                "minimum_cell": 0.9647976558169002
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0018815913928235087,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5029677722156093,
+                "mean_equal_cells": 0.4999337016600485,
+                "minimum_cell": 0.4967034306406058
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": false
+          },
+          "round": 2,
+          "routing": {
+            "gene_target_null_probability_mean": {
+              "SD_between_cells": 0.009281226784904482,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.04801624635205091,
+              "mean_equal_cells": 0.03819832340354804,
+              "minimum_cell": 0.024318267470374133
+            },
+            "path_target_null_probability_mean": {
+              "SD_between_cells": 0.027223308803155526,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.08926192337394707,
+              "mean_equal_cells": 0.03310151740711322,
+              "minimum_cell": 0.01042503786946262
+            }
+          }
+        }
+      ]
+    },
+    {
+      "all_fit_interaction_RMS": {
+        "SD_between_cells": 0.0025200152382562654,
+        "available_cells": 6,
+        "expected_cells": 6,
+        "maximum_cell": 0.007679838426356153,
+        "mean_equal_cells": 0.0025668604493135974,
+        "minimum_cell": 0.00015073727477820268
+      },
+      "arm": "C10",
+      "cells_equal_weighted": 6,
+      "frozen_fit_example_risk_response_RMS": {
+        "BOTH_WRONG": {
+          "SD_between_cells": 0.003977939831080778,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.010190191078643438,
+          "mean_equal_cells": 0.003612244752683721,
+          "minimum_cell": 1.834140174531546e-05
+        },
+        "CONSTANT_VALUES": {
+          "SD_between_cells": 0.00205463620315071,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.006365348589488012,
+          "mean_equal_cells": 0.002599465262589286,
+          "minimum_cell": 0.0001386995551577243
+        },
+        "GENE_WRONG": {
+          "SD_between_cells": 0.003977939831080778,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.010190191078643438,
+          "mean_equal_cells": 0.003612244752683721,
+          "minimum_cell": 1.834140174531546e-05
+        },
+        "OFF": {
+          "SD_between_cells": 0.00205463620315071,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.006365348589488012,
+          "mean_equal_cells": 0.002599465262589286,
+          "minimum_cell": 0.0001386995551577243
+        },
+        "PATH_WRONG": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        }
+      },
+      "gene_update_enabled": false,
+      "gradient_sensitivities": {
+        "isolated_gene_context_to_path_risk_L2": {
+          "SD_between_cells": 2.1469922706807655e-06,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 6.920530657927597e-06,
+          "mean_equal_cells": 2.41160765621703e-06,
+          "minimum_cell": 5.084326623906237e-07
+        },
+        "isolated_path_context_to_gene_risk_L2": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "original_Ep_to_gene_risk_L2": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "original_RNA_to_path_risk_L2": {
+          "SD_between_cells": 8.095971057622157e-07,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 2.603727440658902e-06,
+          "mean_equal_cells": 1.1226365842016104e-06,
+          "minimum_cell": 3.015447229122047e-07
+        }
+      },
+      "last10_parameter_gradient_norms": {
+        "delta_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.74385982869178e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.465054874349074e-05,
+            "mean_equal_cells": 2.7880712898603683e-05,
+            "minimum_cell": 2.320204313316288e-05
+          }
+        },
+        "delta_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.00011155904449483961,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00034677189824345293,
+            "mean_equal_cells": 0.00015770228176735648,
+            "minimum_cell": 2.8374154192058528e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 7.814153102044895e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00036344205269206806,
+            "mean_equal_cells": 0.0002122538459423107,
+            "minimum_cell": 0.0001481118061761135
+          }
+        },
+        "gate_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.364743070589329e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00015889572065239652,
+            "mean_equal_cells": 0.0001336695533492619,
+            "minimum_cell": 0.00011506508681965212
+          }
+        },
+        "gate_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 9.408879980705111e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00034930494883184625,
+            "mean_equal_cells": 0.0001477423651148723,
+            "minimum_cell": 5.3547459766896505e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 8.195136717208602e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00039701222103491414,
+            "mean_equal_cells": 0.0002359125781243137,
+            "minimum_cell": 0.00014798221094006422
+          }
+        },
+        "gene_evidence": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.23066382282783401,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.6769747951863597,
+            "mean_equal_cells": 0.23916965928406556,
+            "minimum_cell": 0.020156439305778144
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.23066285544091375,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.6769763412151535,
+            "mean_equal_cells": 0.23917150267839848,
+            "minimum_cell": 0.020161835354255753
+          }
+        },
+        "gene_query": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0019017206458355766,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.005446214935936231,
+            "mean_equal_cells": 0.0013541171076858751,
+            "minimum_cell": 2.6473746781399084e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.0019027560529762883,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.005460080540373247,
+            "mean_equal_cells": 0.0013642053888371292,
+            "minimum_cell": 3.9209807288500904e-05
+          }
+        },
+        "gene_read": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.1767744993063523,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.5110571206259866,
+            "mean_equal_cells": 0.19044928047992485,
+            "minimum_cell": 0.019106683869398754
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.176771800672364,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.5110572098440902,
+            "mean_equal_cells": 0.19045264815310928,
+            "minimum_cell": 0.01911685583537656
+          }
+        },
+        "main_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.15421059640561594,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.456964247545117,
+            "mean_equal_cells": 0.1697747361544185,
+            "minimum_cell": 0.010452082517349711
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.15420996279158208,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.4569630846376097,
+            "mean_equal_cells": 0.16977373922717223,
+            "minimum_cell": 0.01045197753119847
+          }
+        },
+        "main_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.08827727234936339,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.680724439839737,
+            "mean_equal_cells": 0.5738647136224774,
+            "minimum_cell": 0.4034148481924175
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.10095708195843156,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.7252961073555124,
+            "mean_equal_cells": 0.5827319727923066,
+            "minimum_cell": 0.4075280413244231
+          }
+        },
+        "path_project": {
+          "data_gradient_L2": {
+            "SD_between_cells": 3.8142800130299137,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 28.732028689638163,
+            "mean_equal_cells": 21.754580820704973,
+            "minimum_cell": 17.210964780713816
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.8142800109785076,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 28.73202870082992,
+            "mean_equal_cells": 21.754580835144125,
+            "minimum_cell": 17.210964798459088
+          }
+        },
+        "path_query": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.5554750589125627,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 2.0985420998668154,
+            "mean_equal_cells": 0.9773453945281202,
+            "minimum_cell": 0.5109216342609192
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.5554771773083251,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 2.098546866640593,
+            "mean_equal_cells": 0.9773454737465895,
+            "minimum_cell": 0.5109183447034661
+          }
+        },
+        "path_read": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.24496261317701834,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.2778752548332943,
+            "mean_equal_cells": 0.776358618480256,
+            "minimum_cell": 0.48449865508430623
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.24496821238371846,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.2778682927896754,
+            "mean_equal_cells": 0.7763513593403548,
+            "minimum_cell": 0.4844672286955457
+          }
+        },
+        "rho_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 9.433830732264755e-09,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 8.133515212018703e-08,
+            "mean_equal_cells": 6.601225692644066e-08,
+            "minimum_cell": 5.5152970215934574e-08
+          }
+        },
+        "rho_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.011909405876335608,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.030964440227352997,
+            "mean_equal_cells": 0.014883654167297073,
+            "minimum_cell": 0.00217956823478731
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.009799137461630246,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.032641033811070794,
+            "mean_equal_cells": 0.019851740796402822,
+            "minimum_cell": 0.00845495584821031
+          }
+        },
+        "routing": {
+          "data_gradient_L2": {
+            "SD_between_cells": 7.469727894677487e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0002648573388681325,
+            "mean_equal_cells": 0.00016640527245933822,
+            "minimum_cell": 7.628067066512559e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 6.442126281144029e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0006836838851654467,
+            "mean_equal_cells": 0.0005620689183981079,
+            "minimum_cell": 0.0004837568696880306
+          }
+        },
+        "set_block": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.054706712758089256,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.15581514090578638,
+            "mean_equal_cells": 0.06633957874062758,
+            "minimum_cell": 0.008989561671298576
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.05468410885049898,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.155815021782083,
+            "mean_equal_cells": 0.06635981180914795,
+            "minimum_cell": 0.009058610850148321
+          }
+        },
+        "spatial": {
+          "data_gradient_L2": {
+            "SD_between_cells": 1.1215810817406695,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 4.724785020635226,
+            "mean_equal_cells": 2.821253507819512,
+            "minimum_cell": 1.4839652805888597
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.1215851557952263,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 4.7247956766220955,
+            "mean_equal_cells": 2.8212543866943762,
+            "minimum_cell": 1.48395045227771
+          }
+        },
+        "ug": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.333367295755783e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.479446185815876e-05,
+            "mean_equal_cells": 2.892739316060612e-05,
+            "minimum_cell": 2.389470386623528e-05
+          }
+        },
+        "up": {
+          "data_gradient_L2": {
+            "SD_between_cells": 9.266757390817107e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00025950063876857966,
+            "mean_equal_cells": 7.046764437234447e-05,
+            "minimum_cell": 1.219065221778158e-06
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 5.2796343488722194e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0002642952828035682,
+            "mean_equal_cells": 0.00015049502714965836,
+            "minimum_cell": 0.00011190769734190115
+          }
+        }
+      },
+      "path_update_enabled": true,
+      "read_risk_associations": {
+        "gene": null,
+        "path": {
+          "round2_TV_vs_wrong_context_risk_RMS": {
+            "Pearson_r": 0.5347438684468437,
+            "causal_or_performance_evidence": false,
+            "cells": 6,
+            "descriptive_only_nonindependent_cells": true,
+            "reason": null
+          },
+          "round2_token_change_vs_all_fit_interaction_RMS": {
+            "Pearson_r": 0.6108703842134813,
+            "causal_or_performance_evidence": false,
+            "cells": 6,
+            "descriptive_only_nonindependent_cells": true,
+            "reason": null
+          }
+        }
+      },
+      "rounds": [
+        {
+          "gene": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.0004249870564217426,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0013624791214605358,
+              "mean_equal_cells": 0.00048763875811795625,
+              "minimum_cell": 0.0001311298531689408
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.0006622183336764199,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0021195924317357877,
+                "mean_equal_cells": 0.0008404967020677434,
+                "minimum_cell": 0.00019259639459140787
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.0006622183336764199,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0021195924317357877,
+                "mean_equal_cells": 0.0008404967020677434,
+                "minimum_cell": 0.00019259639459140787
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 1.0,
+                "mean_equal_cells": 1.0,
+                "minimum_cell": 1.0
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0013205210480795062,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5030029688532073,
+                "mean_equal_cells": 0.5013465122677867,
+                "minimum_cell": 0.4996069158423106
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": false
+          },
+          "path": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.012844528077847613,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.04666354201646927,
+              "mean_equal_cells": 0.03217392848247904,
+              "minimum_cell": 0.009421575798145456
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.013172822858274088,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.08530115708708763,
+              "mean_equal_cells": 0.06489549069519047,
+              "minimum_cell": 0.04522306513455179
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 5.924668908593006,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 18.428936926076094,
+              "mean_equal_cells": 9.644279401362118,
+              "minimum_cell": 1.1531213107497091
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.31652925353587924,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.8573826652175436,
+                "mean_equal_cells": 0.4649122916835939,
+                "minimum_cell": 0.0553478298545951
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.32600586856902414,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.8811622108803828,
+                "mean_equal_cells": 0.47928934812806645,
+                "minimum_cell": 0.05722560079496194
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.00648817023236686,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.9806891025641026,
+                "mean_equal_cells": 0.9728011416825565,
+                "minimum_cell": 0.9647976558169002
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.029814226759344878,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5006226460606066,
+                "mean_equal_cells": 0.4723741626051203,
+                "minimum_cell": 0.40928325663589193
+              }
+            },
+            "operative_raw_read_TV_all_valid": {
+              "SD_between_cells": 0.31652925353587924,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.8573826652175436,
+              "mean_equal_cells": 0.4649122916835939,
+              "minimum_cell": 0.0553478298545951
+            },
+            "operative_raw_read_TV_at_least_two_candidates": {
+              "SD_between_cells": 0.32600586856902414,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.8811622108803828,
+              "mean_equal_cells": 0.47928934812806645,
+              "minimum_cell": 0.05722560079496194
+            },
+            "raw_evidence_reread_used_as_delta_input": true,
+            "update_enabled": true
+          },
+          "round": 1,
+          "routing": {
+            "gene_target_null_probability_mean": {
+              "SD_between_cells": 0.11784095468929524,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.34963217005687325,
+              "mean_equal_cells": 0.11277772948335767,
+              "minimum_cell": 2.1699763390415806e-05
+            },
+            "path_target_null_probability_mean": {
+              "SD_between_cells": 0.22618168645581943,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.6255050254125999,
+              "mean_equal_cells": 0.3270804955650182,
+              "minimum_cell": 0.07802814297603917
+            }
+          }
+        },
+        {
+          "gene": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.00042517411799137254,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.00136271516787042,
+              "mean_equal_cells": 0.0004874188254514685,
+              "minimum_cell": 0.00013124130229336714
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.0006626940510332621,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0021203039127781435,
+                "mean_equal_cells": 0.0008397663612679189,
+                "minimum_cell": 0.00019293424299385263
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.0006626940510332621,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0021203039127781435,
+                "mean_equal_cells": 0.0008397663612679189,
+                "minimum_cell": 0.00019293424299385263
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 1.0,
+                "mean_equal_cells": 1.0,
+                "minimum_cell": 1.0
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0013216721342853754,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5030044317712582,
+                "mean_equal_cells": 0.5013508895448496,
+                "minimum_cell": 0.4996086811872463
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": false
+          },
+          "path": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.012844497019059105,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.04666425757643397,
+              "mean_equal_cells": 0.032174496684537514,
+              "minimum_cell": 0.009421933704417382
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.01317532344349153,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.08529702698191007,
+              "mean_equal_cells": 0.06490189960873441,
+              "minimum_cell": 0.04521250228087107
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 5.924599071709031,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 18.428708144208017,
+              "mean_equal_cells": 9.64487978399659,
+              "minimum_cell": 1.1531752709089806
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.31652486375395344,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.8573594611448546,
+                "mean_equal_cells": 0.4649270643251855,
+                "minimum_cell": 0.05535007125805493
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.32600074495495945,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.8811378434734207,
+                "mean_equal_cells": 0.47930448733187164,
+                "minimum_cell": 0.05722801001146006
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.00648817023236686,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.9806891025641026,
+                "mean_equal_cells": 0.9728011416825565,
+                "minimum_cell": 0.9647976558169002
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.029821291156329525,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5006232261146214,
+                "mean_equal_cells": 0.47237445748954204,
+                "minimum_cell": 0.4092634814252012
+              }
+            },
+            "operative_raw_read_TV_all_valid": {
+              "SD_between_cells": 0.31652486375395344,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.8573594611448546,
+              "mean_equal_cells": 0.4649270643251855,
+              "minimum_cell": 0.05535007125805493
+            },
+            "operative_raw_read_TV_at_least_two_candidates": {
+              "SD_between_cells": 0.32600074495495945,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.8811378434734207,
+              "mean_equal_cells": 0.47930448733187164,
+              "minimum_cell": 0.05722801001146006
+            },
+            "raw_evidence_reread_used_as_delta_input": true,
+            "update_enabled": true
+          },
+          "round": 2,
+          "routing": {
+            "gene_target_null_probability_mean": {
+              "SD_between_cells": 0.1178513423134095,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.349599904591712,
+              "mean_equal_cells": 0.11287809922699467,
+              "minimum_cell": 2.1704223483957608e-05
+            },
+            "path_target_null_probability_mean": {
+              "SD_between_cells": 0.22619305904788084,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.6255254985437272,
+              "mean_equal_cells": 0.32711428656807934,
+              "minimum_cell": 0.07802076767190384
+            }
+          }
+        }
+      ]
+    },
+    {
+      "all_fit_interaction_RMS": {
+        "SD_between_cells": 8.149400449982986e-10,
+        "available_cells": 6,
+        "expected_cells": 6,
+        "maximum_cell": 2.298789987201632e-09,
+        "mean_equal_cells": 5.018602424575341e-10,
+        "minimum_cell": 3.3243709052228367e-11
+      },
+      "arm": "C01",
+      "cells_equal_weighted": 6,
+      "frozen_fit_example_risk_response_RMS": {
+        "BOTH_WRONG": {
+          "SD_between_cells": 1.0021539357673977e-09,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 2.7338113731600762e-09,
+          "mean_equal_cells": 4.936541299697147e-10,
+          "minimum_cell": 1.0554319297037006e-11
+        },
+        "CONSTANT_VALUES": {
+          "SD_between_cells": 8.645449709301033e-10,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 2.4173823972008557e-09,
+          "mean_equal_cells": 5.07207296482072e-10,
+          "minimum_cell": 2.0579515874459978e-11
+        },
+        "GENE_WRONG": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "OFF": {
+          "SD_between_cells": 8.645449709301033e-10,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 2.4173823972008557e-09,
+          "mean_equal_cells": 5.07207296482072e-10,
+          "minimum_cell": 2.0579515874459978e-11
+        },
+        "PATH_WRONG": {
+          "SD_between_cells": 1.0021539357673977e-09,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 2.7338113731600762e-09,
+          "mean_equal_cells": 4.936541299697147e-10,
+          "minimum_cell": 1.0554319297037006e-11
+        }
+      },
+      "gene_update_enabled": true,
+      "gradient_sensitivities": {
+        "isolated_gene_context_to_path_risk_L2": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "isolated_path_context_to_gene_risk_L2": {
+          "SD_between_cells": 7.329718434830048e-12,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 2.0743451665223023e-11,
+          "mean_equal_cells": 4.388159177070256e-12,
+          "minimum_cell": 3.944552805661743e-13
+        },
+        "original_Ep_to_gene_risk_L2": {
+          "SD_between_cells": 2.325614004469006e-12,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 6.606327133736895e-12,
+          "mean_equal_cells": 1.4228176963023285e-12,
+          "minimum_cell": 1.1391079069674236e-13
+        },
+        "original_RNA_to_path_risk_L2": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        }
+      },
+      "last10_parameter_gradient_norms": {
+        "delta_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 3.5889099666298927e-09,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.1652496687455561e-08,
+            "mean_equal_cells": 4.4373773854744154e-09,
+            "minimum_cell": 1.0845021219758787e-09
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.7642877933038614e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.315377068811657e-05,
+            "mean_equal_cells": 2.7438876323472257e-05,
+            "minimum_cell": 2.1959877646088357e-05
+          }
+        },
+        "delta_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.928590513101629e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.47821212235303e-05,
+            "mean_equal_cells": 2.8967889059762068e-05,
+            "minimum_cell": 2.2383936702326624e-05
+          }
+        },
+        "gate_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 1.006849996812332e-10,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.0795773864042434e-10,
+            "mean_equal_cells": 9.890857900463372e-11,
+            "minimum_cell": 8.99663095206248e-12
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.4075750512704657e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00015318822618857434,
+            "mean_equal_cells": 0.0001319471822886944,
+            "minimum_cell": 0.00010979627086501412
+          }
+        },
+        "gate_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.3945724664727816e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0001539384316629958,
+            "mean_equal_cells": 0.0001319425024600126,
+            "minimum_cell": 0.00010984873537486542
+          }
+        },
+        "gene_evidence": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.39221387421954773,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.1538876009609023,
+            "mean_equal_cells": 0.2943861890625707,
+            "minimum_cell": 0.019968292883610312
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.39221252839948506,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.1538866555825722,
+            "mean_equal_cells": 0.2943883060744114,
+            "minimum_cell": 0.019971967127922895
+          }
+        },
+        "gene_query": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.003953457411538496,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.010921314636028606,
+            "mean_equal_cells": 0.002091345004391161,
+            "minimum_cell": 6.756232858873623e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.003949451055486359,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.010918949564893723,
+            "mean_equal_cells": 0.0020974110274589917,
+            "minimum_cell": 8.020990481989753e-05
+          }
+        },
+        "gene_read": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.27699497748837343,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.8217977253768243,
+            "mean_equal_cells": 0.21779982483701446,
+            "minimum_cell": 0.01654028584257622
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.276992871651576,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.8217983853908487,
+            "mean_equal_cells": 0.21780387161569512,
+            "minimum_cell": 0.016551639260835395
+          }
+        },
+        "main_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.1539973705398492,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.45644697467899575,
+            "mean_equal_cells": 0.1224134300917993,
+            "minimum_cell": 0.013051816180574372
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.15399500126360235,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.4564438604927826,
+            "mean_equal_cells": 0.12241881787000232,
+            "minimum_cell": 0.013050521437805463
+          }
+        },
+        "main_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.14173788825457764,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.7190423258175832,
+            "mean_equal_cells": 0.42861605474418146,
+            "minimum_cell": 0.2862337637583983
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.16819357964572976,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.7777196679147593,
+            "mean_equal_cells": 0.42675101260029846,
+            "minimum_cell": 0.2461641037808399
+          }
+        },
+        "path_project": {
+          "data_gradient_L2": {
+            "SD_between_cells": 5.963517009897808,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 28.5012273319786,
+            "mean_equal_cells": 19.900252536567525,
+            "minimum_cell": 13.518981422313782
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 5.9635170060236895,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 28.501227343655824,
+            "mean_equal_cells": 19.90025255279284,
+            "minimum_cell": 13.518981442956274
+          }
+        },
+        "path_query": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.5478873868333357,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.603907312767756,
+            "mean_equal_cells": 0.9225213229824386,
+            "minimum_cell": 0.1360698698237401
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.5478868796412218,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.6039070849282573,
+            "mean_equal_cells": 0.9225200454169055,
+            "minimum_cell": 0.13606881934965984
+          }
+        },
+        "path_read": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.2706552537163153,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.9925194840203974,
+            "mean_equal_cells": 0.6997644917333932,
+            "minimum_cell": 0.2603213778105313
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.2706581211131467,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.992519332398032,
+            "mean_equal_cells": 0.6997592912537943,
+            "minimum_cell": 0.26029968675947945
+          }
+        },
+        "rho_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 1.3025400699763414e-09,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 4.706717943325258e-09,
+            "mean_equal_cells": 2.4947527174981133e-09,
+            "minimum_cell": 9.693305345188702e-10
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.2623082300281498e-08,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 9.343981948649938e-08,
+            "mean_equal_cells": 6.921012725334196e-08,
+            "minimum_cell": 5.55994150699443e-08
+          }
+        },
+        "rho_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.002033490238910241,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.013218864186218777,
+            "mean_equal_cells": 0.009322211084940232,
+            "minimum_cell": 0.007478403655758176
+          }
+        },
+        "routing": {
+          "data_gradient_L2": {
+            "SD_between_cells": 1.0010116878076516e-09,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.1922176762433733e-09,
+            "mean_equal_cells": 1.04634882233731e-09,
+            "minimum_cell": 2.398724866667934e-10
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 2.9577109112586613e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0005099592949851727,
+            "mean_equal_cells": 0.0004639343840982661,
+            "minimum_cell": 0.0004153174991475271
+          }
+        },
+        "set_block": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.06418953249162142,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.1961267400545145,
+            "mean_equal_cells": 0.058934442186422825,
+            "minimum_cell": 0.008127534098632146
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.0641695595060015,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.1961262200906666,
+            "mean_equal_cells": 0.05897458538253211,
+            "minimum_cell": 0.00820028760267649
+          }
+        },
+        "spatial": {
+          "data_gradient_L2": {
+            "SD_between_cells": 1.2473705594885327,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 4.9155037144106295,
+            "mean_equal_cells": 2.474451449795249,
+            "minimum_cell": 1.0495818019371816
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.2473780021415237,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 4.915509258199817,
+            "mean_equal_cells": 2.4744443013779445,
+            "minimum_cell": 1.0495762929202381
+          }
+        },
+        "ug": {
+          "data_gradient_L2": {
+            "SD_between_cells": 6.6547516886266265e-09,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 2.078773610640365e-08,
+            "mean_equal_cells": 6.565596013690122e-09,
+            "minimum_cell": 9.641069865727266e-10
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.5901735752202014e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.329610727869306e-05,
+            "mean_equal_cells": 2.8513473845432902e-05,
+            "minimum_cell": 2.264947072158315e-05
+          }
+        },
+        "up": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0,
+            "mean_equal_cells": 0.0,
+            "minimum_cell": 0.0
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 2.895238506877882e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.089045608267068e-05,
+            "mean_equal_cells": 2.768729289678294e-05,
+            "minimum_cell": 2.316012418198092e-05
+          }
+        }
+      },
+      "path_update_enabled": false,
+      "read_risk_associations": {
+        "gene": {
+          "round2_TV_vs_wrong_context_risk_RMS": {
+            "Pearson_r": 0.9038276306097248,
+            "causal_or_performance_evidence": false,
+            "cells": 6,
+            "descriptive_only_nonindependent_cells": true,
+            "reason": null
+          },
+          "round2_token_change_vs_all_fit_interaction_RMS": {
+            "Pearson_r": 0.9488450208421962,
+            "causal_or_performance_evidence": false,
+            "cells": 6,
+            "descriptive_only_nonindependent_cells": true,
+            "reason": null
+          }
+        },
+        "path": null
+      },
+      "rounds": [
+        {
+          "gene": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 5.352939364601474e-07,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 1.8842244825020104e-06,
+              "mean_equal_cells": 7.838733423271631e-07,
+              "minimum_cell": 2.2295767333659068e-07
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 2.3060843752374047e-06,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 8.349520233726556e-06,
+              "mean_equal_cells": 3.6415143327417354e-06,
+              "minimum_cell": 1.4467377932684637e-06
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.0005067493239193204,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.001780445429514877,
+              "mean_equal_cells": 0.0007074796574879702,
+              "minimum_cell": 0.00018492136644090396
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.0005848336814743738,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.002340704301461278,
+                "mean_equal_cells": 0.0011535023980889082,
+                "minimum_cell": 0.0004577005769713224
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.0005848336814743738,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.002340704301461278,
+                "mean_equal_cells": 0.0011535023980889082,
+                "minimum_cell": 0.0004577005769713224
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 1.0,
+                "mean_equal_cells": 1.0,
+                "minimum_cell": 1.0
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0009422902956855701,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5018779333734046,
+                "mean_equal_cells": 0.5004016000163308,
+                "minimum_cell": 0.4990880646136371
+              }
+            },
+            "operative_raw_read_TV_all_valid": {
+              "SD_between_cells": 0.0005848336814743738,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.002340704301461278,
+              "mean_equal_cells": 0.0011535023980889082,
+              "minimum_cell": 0.0004577005769713224
+            },
+            "operative_raw_read_TV_at_least_two_candidates": {
+              "SD_between_cells": 0.0005848336814743738,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.002340704301461278,
+              "mean_equal_cells": 0.0011535023980889082,
+              "minimum_cell": 0.0004577005769713224
+            },
+            "raw_evidence_reread_used_as_delta_input": true,
+            "update_enabled": true
+          },
+          "path": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.1390048822243163,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.38267094846494837,
+              "mean_equal_cells": 0.19293139419389205,
+              "minimum_cell": 0.02260604128886438
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.004243156819880015,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.012025226962375906,
+                "mean_equal_cells": 0.006188065042458447,
+                "minimum_cell": 0.0012590064255835838
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.004379349399418931,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.012354578479218422,
+                "mean_equal_cells": 0.006363141778202196,
+                "minimum_cell": 0.0013150651957100359
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.00648817023236686,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.9806891025641026,
+                "mean_equal_cells": 0.9728011416825565,
+                "minimum_cell": 0.9647976558169002
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0020250990413965206,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5033399944347996,
+                "mean_equal_cells": 0.49998201650095536,
+                "minimum_cell": 0.49660253786622555
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": false
+          },
+          "round": 1,
+          "routing": {
+            "gene_target_null_probability_mean": {
+              "SD_between_cells": 0.007230892135773909,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.04457414073669811,
+              "mean_equal_cells": 0.03410390108576337,
+              "minimum_cell": 0.023132336013292034
+            },
+            "path_target_null_probability_mean": {
+              "SD_between_cells": 0.02166524847647566,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0638995515068256,
+              "mean_equal_cells": 0.03566717024879685,
+              "minimum_cell": 0.010940961139736407
+            }
+          }
+        },
+        {
+          "gene": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 5.352939521023083e-07,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 1.8842243518069594e-06,
+              "mean_equal_cells": 7.838731406040345e-07,
+              "minimum_cell": 2.2295763868974244e-07
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 2.3060834531686653e-06,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 8.34951955160553e-06,
+              "mean_equal_cells": 3.6415134706165495e-06,
+              "minimum_cell": 1.4467392333017415e-06
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.0005067493571665469,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0017804453745400054,
+              "mean_equal_cells": 0.0007074795281994061,
+              "minimum_cell": 0.0001849213408569181
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.0005848337304667689,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0023407042910413883,
+                "mean_equal_cells": 0.0011535022536551612,
+                "minimum_cell": 0.0004577005242879997
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.0005848337304667689,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0023407042910413883,
+                "mean_equal_cells": 0.0011535022536551612,
+                "minimum_cell": 0.0004577005242879997
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 1.0,
+                "mean_equal_cells": 1.0,
+                "minimum_cell": 1.0
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0009422900133407396,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5018779335609626,
+                "mean_equal_cells": 0.5004016003394671,
+                "minimum_cell": 0.4990880657706042
+              }
+            },
+            "operative_raw_read_TV_all_valid": {
+              "SD_between_cells": 0.0005848337304667689,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0023407042910413883,
+              "mean_equal_cells": 0.0011535022536551612,
+              "minimum_cell": 0.0004577005242879997
+            },
+            "operative_raw_read_TV_at_least_two_candidates": {
+              "SD_between_cells": 0.0005848337304667689,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0023407042910413883,
+              "mean_equal_cells": 0.0011535022536551612,
+              "minimum_cell": 0.0004577005242879997
+            },
+            "raw_evidence_reread_used_as_delta_input": true,
+            "update_enabled": true
+          },
+          "path": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.0,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0,
+              "mean_equal_cells": 0.0,
+              "minimum_cell": 0.0
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.13900488665734684,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.3826710350989577,
+              "mean_equal_cells": 0.19293138100584048,
+              "minimum_cell": 0.022606017148706133
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.004243156141846647,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.012025226942932931,
+                "mean_equal_cells": 0.0061880645782829875,
+                "minimum_cell": 0.0012590058960411472
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.00437934869212466,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.01235457843548834,
+                "mean_equal_cells": 0.006363141307444583,
+                "minimum_cell": 0.0013150646729982373
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.00648817023236686,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.9806891025641026,
+                "mean_equal_cells": 0.9728011416825565,
+                "minimum_cell": 0.9647976558169002
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.002025099242784631,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.503339994979108,
+                "mean_equal_cells": 0.4999820165546744,
+                "minimum_cell": 0.49660253784403535
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": false
+          },
+          "round": 2,
+          "routing": {
+            "gene_target_null_probability_mean": {
+              "SD_between_cells": 0.007230892934970109,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.04457414704549232,
+              "mean_equal_cells": 0.03410390372446538,
+              "minimum_cell": 0.023132336807018445
+            },
+            "path_target_null_probability_mean": {
+              "SD_between_cells": 0.02166524672505028,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.06389955420380472,
+              "mean_equal_cells": 0.03566716749405186,
+              "minimum_cell": 0.010940961256589435
+            }
+          }
+        }
+      ]
+    },
+    {
+      "all_fit_interaction_RMS": {
+        "SD_between_cells": 0.0008796764698890615,
+        "available_cells": 6,
+        "expected_cells": 6,
+        "maximum_cell": 0.002650634138841569,
+        "mean_equal_cells": 0.0016481855670771076,
+        "minimum_cell": 8.219927778094434e-05
+      },
+      "arm": "C11",
+      "cells_equal_weighted": 6,
+      "frozen_fit_example_risk_response_RMS": {
+        "BOTH_WRONG": {
+          "SD_between_cells": 0.00337714994668325,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.009324211686503372,
+          "mean_equal_cells": 0.0019845173156670536,
+          "minimum_cell": 1.4276715495585402e-05
+        },
+        "CONSTANT_VALUES": {
+          "SD_between_cells": 0.0014390312108326366,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.004756356961564032,
+          "mean_equal_cells": 0.00191620539609021,
+          "minimum_cell": 5.572332396970862e-05
+        },
+        "GENE_WRONG": {
+          "SD_between_cells": 0.0033771495527047013,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.009324210612870937,
+          "mean_equal_cells": 0.0019845171448623464,
+          "minimum_cell": 1.4276715495585402e-05
+        },
+        "OFF": {
+          "SD_between_cells": 0.0014390312108326366,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.004756356961564032,
+          "mean_equal_cells": 0.00191620539609021,
+          "minimum_cell": 5.572332396970862e-05
+        },
+        "PATH_WRONG": {
+          "SD_between_cells": 4.888183213104882e-10,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 1.3442483478915547e-09,
+          "mean_equal_cells": 2.5596040726681145e-10,
+          "minimum_cell": 0.0
+        }
+      },
+      "gene_update_enabled": true,
+      "gradient_sensitivities": {
+        "isolated_gene_context_to_path_risk_L2": {
+          "SD_between_cells": 1.1718713637754635e-06,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 3.826764714499891e-06,
+          "mean_equal_cells": 1.6000645975994272e-06,
+          "minimum_cell": 4.95247525764499e-07
+        },
+        "isolated_path_context_to_gene_risk_L2": {
+          "SD_between_cells": 9.98969642277129e-12,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 2.896457994976185e-11,
+          "mean_equal_cells": 7.404287863741149e-12,
+          "minimum_cell": 6.135235622868004e-13
+        },
+        "original_Ep_to_gene_risk_L2": {
+          "SD_between_cells": 5.9577367749796656e-12,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 1.680530044635706e-11,
+          "mean_equal_cells": 3.6305730455224646e-12,
+          "minimum_cell": 2.7074030756673264e-13
+        },
+        "original_RNA_to_path_risk_L2": {
+          "SD_between_cells": 2.1486941344512394e-06,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 5.5313295033848755e-06,
+          "mean_equal_cells": 2.313499493454106e-06,
+          "minimum_cell": 3.237417525349799e-07
+        }
+      },
+      "last10_parameter_gradient_norms": {
+        "delta_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 8.425262935531138e-09,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 2.4365311491043846e-08,
+            "mean_equal_cells": 6.4693693655577984e-09,
+            "minimum_cell": 7.74800341622755e-10
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.3061447297539948e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.443789432907012e-05,
+            "mean_equal_cells": 2.8200729280148512e-05,
+            "minimum_cell": 2.476534658103731e-05
+          }
+        },
+        "delta_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.00012617266898526182,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0004154416113418476,
+            "mean_equal_cells": 0.0001432702457116631,
+            "minimum_cell": 3.347708508635726e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 9.85002215772706e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00042125181199148776,
+            "mean_equal_cells": 0.00020136446619669384,
+            "minimum_cell": 0.00014771913159918637
+          }
+        },
+        "gate_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 1.8048540036568515e-10,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 5.230876109137215e-10,
+            "mean_equal_cells": 1.421955380043647e-10,
+            "minimum_cell": 7.8231649528399e-12
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.1728509765556453e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00015836543728795977,
+            "mean_equal_cells": 0.000135119714847451,
+            "minimum_cell": 0.00012158314926322494
+          }
+        },
+        "gate_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 2.639170137607073e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00015120573397503249,
+            "mean_equal_cells": 0.00011220551155233212,
+            "minimum_cell": 8.433991213101447e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 2.9770086112418084e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00025594120519558734,
+            "mean_equal_cells": 0.00020950042045863934,
+            "minimum_cell": 0.00017745757593449032
+          }
+        },
+        "gene_evidence": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.22675279873413004,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.6896900530151964,
+            "mean_equal_cells": 0.19510771190357654,
+            "minimum_cell": 0.027907761902673918
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.22675172783469247,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.6896898836693994,
+            "mean_equal_cells": 0.195109040016237,
+            "minimum_cell": 0.027911623058610495
+          }
+        },
+        "gene_query": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0031989752524795322,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.008857748932462012,
+            "mean_equal_cells": 0.001717521686098407,
+            "minimum_cell": 4.1282604860658225e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.003199248138955359,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.008864359494379663,
+            "mean_equal_cells": 0.00172323481397245,
+            "minimum_cell": 5.214359701919205e-05
+          }
+        },
+        "gene_read": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.17107258020276545,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.522442886225911,
+            "mean_equal_cells": 0.1576853191511866,
+            "minimum_cell": 0.024597886966824488
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.17107038266459454,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.5224429378517976,
+            "mean_equal_cells": 0.15768884777579376,
+            "minimum_cell": 0.024606863693250873
+          }
+        },
+        "main_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.14665066321224543,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.4451782170269164,
+            "mean_equal_cells": 0.12882499170559084,
+            "minimum_cell": 0.015949031504487975
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.14664840957977474,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.44517189265476176,
+            "mean_equal_cells": 0.12882224095275932,
+            "minimum_cell": 0.01595121692553388
+          }
+        },
+        "main_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.16102933876644038,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.8078514152772278,
+            "mean_equal_cells": 0.5154730570632385,
+            "minimum_cell": 0.35527198419934547
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.18635257051610385,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.8528905621988058,
+            "mean_equal_cells": 0.5170631943883547,
+            "minimum_cell": 0.2940232832382076
+          }
+        },
+        "path_project": {
+          "data_gradient_L2": {
+            "SD_between_cells": 5.203221522371325,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 27.27981059096025,
+            "mean_equal_cells": 19.847840619989913,
+            "minimum_cell": 13.37304914051656
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 5.20322151791192,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 27.279810597354253,
+            "mean_equal_cells": 19.847840635792533,
+            "minimum_cell": 13.373049161661152
+          }
+        },
+        "path_query": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.400070320195331,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.5665668111236721,
+            "mean_equal_cells": 0.8379340790544338,
+            "minimum_cell": 0.40629298557936255
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.4000701857263932,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.5665714567403435,
+            "mean_equal_cells": 0.8379371740053504,
+            "minimum_cell": 0.4062970066705338
+          }
+        },
+        "path_read": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.1181682013358326,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.8628171663004792,
+            "mean_equal_cells": 0.6595336487814384,
+            "minimum_cell": 0.48178393488110044
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.11817562412068583,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.8628368923030214,
+            "mean_equal_cells": 0.6595343391421901,
+            "minimum_cell": 0.48178962897107097
+          }
+        },
+        "rho_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 3.3535718306913043e-09,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.009038498465666e-08,
+            "mean_equal_cells": 3.4024769158102884e-09,
+            "minimum_cell": 8.038119216874625e-10
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.101009354595622e-08,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 8.760943563951842e-08,
+            "mean_equal_cells": 7.040654339860587e-08,
+            "minimum_cell": 5.601774214981569e-08
+          }
+        },
+        "rho_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.00684582381325605,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.020092863259467957,
+            "mean_equal_cells": 0.008994619932199573,
+            "minimum_cell": 0.0020932982837533463
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.005600792696226649,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0239694306616108,
+            "mean_equal_cells": 0.014626061490810027,
+            "minimum_cell": 0.0088327548590564
+          }
+        },
+        "routing": {
+          "data_gradient_L2": {
+            "SD_between_cells": 7.222892016354592e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0002354333965680243,
+            "mean_equal_cells": 7.95701905292669e-05,
+            "minimum_cell": 2.4595468161058454e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 3.6442332269039845e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0005987362448418998,
+            "mean_equal_cells": 0.0005416523769708107,
+            "minimum_cell": 0.00047437767012845934
+          }
+        },
+        "set_block": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.049646748935616006,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.1525289823770682,
+            "mean_equal_cells": 0.0530160750164515,
+            "minimum_cell": 0.010282567877263163
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.049625157598637636,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.15250703074768723,
+            "mean_equal_cells": 0.05302583851581894,
+            "minimum_cell": 0.01034944452312944
+          }
+        },
+        "spatial": {
+          "data_gradient_L2": {
+            "SD_between_cells": 1.1394049454484747,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 4.518304305504603,
+            "mean_equal_cells": 2.3805629480195853,
+            "minimum_cell": 0.9737955424905389
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.1394166991017445,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 4.518315649014772,
+            "mean_equal_cells": 2.380550794956567,
+            "minimum_cell": 0.973743238732051
+          }
+        },
+        "ug": {
+          "data_gradient_L2": {
+            "SD_between_cells": 1.404681479518596e-08,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 4.1077526802398354e-08,
+            "mean_equal_cells": 1.0459653042891372e-08,
+            "minimum_cell": 7.926422102182398e-10
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 2.85100127268171e-06,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 3.458136365891553e-05,
+            "mean_equal_cells": 2.925792432149458e-05,
+            "minimum_cell": 2.5458521341936106e-05
+          }
+        },
+        "up": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.00010605415556594002,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0002937291562823819,
+            "mean_equal_cells": 6.310465568641688e-05,
+            "minimum_cell": 1.3955501935380865e-06
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 6.98222373677746e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0002982407865335094,
+            "mean_equal_cells": 0.0001490832603556981,
+            "minimum_cell": 8.809335824808144e-05
+          }
+        }
+      },
+      "path_update_enabled": true,
+      "read_risk_associations": {
+        "gene": {
+          "round2_TV_vs_wrong_context_risk_RMS": {
+            "Pearson_r": -0.11827389481024997,
+            "causal_or_performance_evidence": false,
+            "cells": 6,
+            "descriptive_only_nonindependent_cells": true,
+            "reason": null
+          },
+          "round2_token_change_vs_all_fit_interaction_RMS": {
+            "Pearson_r": 0.05325658439304841,
+            "causal_or_performance_evidence": false,
+            "cells": 6,
+            "descriptive_only_nonindependent_cells": true,
+            "reason": null
+          }
+        },
+        "path": {
+          "round2_TV_vs_wrong_context_risk_RMS": {
+            "Pearson_r": 0.08131588476107093,
+            "causal_or_performance_evidence": false,
+            "cells": 6,
+            "descriptive_only_nonindependent_cells": true,
+            "reason": null
+          },
+          "round2_token_change_vs_all_fit_interaction_RMS": {
+            "Pearson_r": 0.27485373097378557,
+            "causal_or_performance_evidence": false,
+            "cells": 6,
+            "descriptive_only_nonindependent_cells": true,
+            "reason": null
+          }
+        }
+      },
+      "rounds": [
+        {
+          "gene": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 4.709261046638955e-07,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 1.5437855538100118e-06,
+              "mean_equal_cells": 5.759992692584829e-07,
+              "minimum_cell": 1.4172193859329662e-07
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 1.9440876809072476e-06,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 6.469283145330944e-06,
+              "mean_equal_cells": 2.5228623221428766e-06,
+              "minimum_cell": 5.79896527537945e-07
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.00035152842553237777,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.001160166862063722,
+              "mean_equal_cells": 0.0004906891350043432,
+              "minimum_cell": 0.00010110273749321394
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.0005825957012374749,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0019533797319946857,
+                "mean_equal_cells": 0.0008287549539878688,
+                "minimum_cell": 0.00019863376010781158
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.0005825957012374749,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0019533797319946857,
+                "mean_equal_cells": 0.0008287549539878688,
+                "minimum_cell": 0.00019863376010781158
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 1.0,
+                "mean_equal_cells": 1.0,
+                "minimum_cell": 1.0
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0018682386684635611,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5031479508889102,
+                "mean_equal_cells": 0.5005687487614915,
+                "minimum_cell": 0.4972182899328339
+              }
+            },
+            "operative_raw_read_TV_all_valid": {
+              "SD_between_cells": 0.0005825957012374749,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0019533797319946857,
+              "mean_equal_cells": 0.0008287549539878688,
+              "minimum_cell": 0.00019863376010781158
+            },
+            "operative_raw_read_TV_at_least_two_candidates": {
+              "SD_between_cells": 0.0005825957012374749,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0019533797319946857,
+              "mean_equal_cells": 0.0008287549539878688,
+              "minimum_cell": 0.00019863376010781158
+            },
+            "raw_evidence_reread_used_as_delta_input": true,
+            "update_enabled": true
+          },
+          "path": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.015071060626993196,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.04751953345728315,
+              "mean_equal_cells": 0.029827701336066492,
+              "minimum_cell": 0.004619396801066268
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.01921860550912368,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.08647201334436734,
+              "mean_equal_cells": 0.06220725227009367,
+              "minimum_cell": 0.02532067708671093
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 5.051379002729287,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 13.710374218772591,
+              "mean_equal_cells": 7.974224097504114,
+              "minimum_cell": 0.5369490651374922
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.28798133844329793,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.8324040298358694,
+                "mean_equal_cells": 0.3908164834933964,
+                "minimum_cell": 0.027381785885714036
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.2976789324837527,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.8551310700967206,
+                "mean_equal_cells": 0.4034548490578617,
+                "minimum_cell": 0.02831681813241192
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.00648817023236686,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.9806891025641026,
+                "mean_equal_cells": 0.9728011416825565,
+                "minimum_cell": 0.9647976558169002
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.029870062706649755,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5149227447207938,
+                "mean_equal_cells": 0.47628824924528906,
+                "minimum_cell": 0.42392622899902155
+              }
+            },
+            "operative_raw_read_TV_all_valid": {
+              "SD_between_cells": 0.28798133844329793,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.8324040298358694,
+              "mean_equal_cells": 0.3908164834933964,
+              "minimum_cell": 0.027381785885714036
+            },
+            "operative_raw_read_TV_at_least_two_candidates": {
+              "SD_between_cells": 0.2976789324837527,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.8551310700967206,
+              "mean_equal_cells": 0.4034548490578617,
+              "minimum_cell": 0.02831681813241192
+            },
+            "raw_evidence_reread_used_as_delta_input": true,
+            "update_enabled": true
+          },
+          "round": 1,
+          "routing": {
+            "gene_target_null_probability_mean": {
+              "SD_between_cells": 0.14695253862002314,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.35945847208403253,
+              "mean_equal_cells": 0.14241161516142645,
+              "minimum_cell": 3.2468712774017145e-22
+            },
+            "path_target_null_probability_mean": {
+              "SD_between_cells": 0.31357882034750156,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.8318866259332998,
+              "mean_equal_cells": 0.3317710803099221,
+              "minimum_cell": 0.029500208090721205
+            }
+          }
+        },
+        {
+          "gene": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 4.715148153555054e-07,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 1.545224203041695e-06,
+              "mean_equal_cells": 5.757950677756115e-07,
+              "minimum_cell": 1.4148552303411702e-07
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 1.9458326688443694e-06,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 6.4743344789045904e-06,
+              "mean_equal_cells": 2.522101234431504e-06,
+              "minimum_cell": 5.821189055232878e-07
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.0003518896019461958,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0011612071908824499,
+              "mean_equal_cells": 0.0004904550070454905,
+              "minimum_cell": 0.0001008631827748596
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.0005831539470640288,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.001954616689343109,
+                "mean_equal_cells": 0.0008280464938340363,
+                "minimum_cell": 0.00019780070430369732
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.0005831539470640288,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.001954616689343109,
+                "mean_equal_cells": 0.0008280464938340363,
+                "minimum_cell": 0.00019780070430369732
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 1.0,
+                "mean_equal_cells": 1.0,
+                "minimum_cell": 1.0
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.0018687565226477624,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5031532908259476,
+                "mean_equal_cells": 0.5005740729585068,
+                "minimum_cell": 0.4972260334129433
+              }
+            },
+            "operative_raw_read_TV_all_valid": {
+              "SD_between_cells": 0.0005831539470640288,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.001954616689343109,
+              "mean_equal_cells": 0.0008280464938340363,
+              "minimum_cell": 0.00019780070430369732
+            },
+            "operative_raw_read_TV_at_least_two_candidates": {
+              "SD_between_cells": 0.0005831539470640288,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.001954616689343109,
+              "mean_equal_cells": 0.0008280464938340363,
+              "minimum_cell": 0.00019780070430369732
+            },
+            "raw_evidence_reread_used_as_delta_input": true,
+            "update_enabled": true
+          },
+          "path": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.015070253673496233,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.04751777890334145,
+              "mean_equal_cells": 0.02982855597267643,
+              "minimum_cell": 0.004619452960463565
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.019218167543416275,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.08646583805481593,
+              "mean_equal_cells": 0.062215599162435097,
+              "minimum_cell": 0.025321995839476585
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 5.0509959818489,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 13.709962724310335,
+              "mean_equal_cells": 7.974093034112492,
+              "minimum_cell": 0.536957913263907
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.2879612239161991,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.8323592518410553,
+                "mean_equal_cells": 0.3908066066630341,
+                "minimum_cell": 0.027382201080052126
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.29765819823654543,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.8550841148949783,
+                "mean_equal_cells": 0.4034445340334778,
+                "minimum_cell": 0.028317260878081035
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.00648817023236686,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.9806891025641026,
+                "mean_equal_cells": 0.9728011416825565,
+                "minimum_cell": 0.9647976558169002
+              }
+            },
+            "delta_input_type": "conditional_minus_base_evidence_read",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.029856116802707732,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5149056401566093,
+                "mean_equal_cells": 0.47629488376405976,
+                "minimum_cell": 0.4239566545268178
+              }
+            },
+            "operative_raw_read_TV_all_valid": {
+              "SD_between_cells": 0.2879612239161991,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.8323592518410553,
+              "mean_equal_cells": 0.3908066066630341,
+              "minimum_cell": 0.027382201080052126
+            },
+            "operative_raw_read_TV_at_least_two_candidates": {
+              "SD_between_cells": 0.29765819823654543,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.8550841148949783,
+              "mean_equal_cells": 0.4034445340334778,
+              "minimum_cell": 0.028317260878081035
+            },
+            "raw_evidence_reread_used_as_delta_input": true,
+            "update_enabled": true
+          },
+          "round": 2,
+          "routing": {
+            "gene_target_null_probability_mean": {
+              "SD_between_cells": 0.14690898138715616,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.3593236979015266,
+              "mean_equal_cells": 0.1424175787972493,
+              "minimum_cell": 3.270949585116833e-22
+            },
+            "path_target_null_probability_mean": {
+              "SD_between_cells": 0.3135537734592457,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.8318505348866773,
+              "mean_equal_cells": 0.3318091883165107,
+              "minimum_cell": 0.029490747370229758
+            }
+          }
+        }
+      ]
+    },
+    {
+      "all_fit_interaction_RMS": {
+        "SD_between_cells": 0.019500110784391584,
+        "available_cells": 6,
+        "expected_cells": 6,
+        "maximum_cell": 0.060896856654836684,
+        "mean_equal_cells": 0.025812588135585585,
+        "minimum_cell": 0.006466266550690703
+      },
+      "arm": "DIRECT",
+      "cells_equal_weighted": 6,
+      "frozen_fit_example_risk_response_RMS": {
+        "BOTH_WRONG": {
+          "SD_between_cells": 0.011673405718702153,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.03340481801771339,
+          "mean_equal_cells": 0.007866250647909486,
+          "minimum_cell": 0.00019246982483462737
+        },
+        "CONSTANT_VALUES": {
+          "SD_between_cells": 0.0,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0,
+          "mean_equal_cells": 0.0,
+          "minimum_cell": 0.0
+        },
+        "GENE_WRONG": {
+          "SD_between_cells": 0.0018516633232721566,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.005085155141562842,
+          "mean_equal_cells": 0.0009930227162127036,
+          "minimum_cell": 8.680032184488939e-06
+        },
+        "OFF": {
+          "SD_between_cells": 0.01907266397266985,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.061111827322214915,
+          "mean_equal_cells": 0.023810684806430477,
+          "minimum_cell": 0.005802912410033046
+        },
+        "PATH_WRONG": {
+          "SD_between_cells": 0.011454714348343015,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.0328573442971731,
+          "mean_equal_cells": 0.007912670885892642,
+          "minimum_cell": 0.00015977253955201917
+        }
+      },
+      "gene_update_enabled": true,
+      "gradient_sensitivities": {
+        "isolated_gene_context_to_path_risk_L2": {
+          "SD_between_cells": 8.823506516246335e-06,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 2.566291247794231e-05,
+          "mean_equal_cells": 6.591435521261939e-06,
+          "minimum_cell": 2.032976558921722e-07
+        },
+        "isolated_path_context_to_gene_risk_L2": {
+          "SD_between_cells": 1.0192856604145997e-05,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 3.0042261049840783e-05,
+          "mean_equal_cells": 1.1639415297748824e-05,
+          "minimum_cell": 8.074072415110875e-07
+        },
+        "original_Ep_to_gene_risk_L2": {
+          "SD_between_cells": 1.4177087650975748e-05,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 3.9090688579961564e-05,
+          "mean_equal_cells": 1.4673471446241527e-05,
+          "minimum_cell": 2.737325143310597e-07
+        },
+        "original_RNA_to_path_risk_L2": {
+          "SD_between_cells": 5.2094553197596306e-05,
+          "available_cells": 6,
+          "expected_cells": 6,
+          "maximum_cell": 0.00014240093683359927,
+          "mean_equal_cells": 2.6406303614747995e-05,
+          "minimum_cell": 5.025425199977128e-08
+        }
+      },
+      "last10_parameter_gradient_norms": {
+        "delta_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0008987707700162344,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0028609142993981486,
+            "mean_equal_cells": 0.0009534494844533488,
+            "minimum_cell": 0.0002746762373566671
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.0008967101623713965,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0028678173283548025,
+            "mean_equal_cells": 0.0009581841985339944,
+            "minimum_cell": 0.00029711166077695114
+          }
+        },
+        "delta_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 4.63496427796115e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00013603042748374505,
+            "mean_equal_cells": 5.275836399139057e-05,
+            "minimum_cell": 6.682676396473842e-06
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.5145578263895525e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00021895262436684212,
+            "mean_equal_cells": 0.00019915141208310544,
+            "minimum_cell": 0.00017037185485367816
+          }
+        },
+        "gate_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0007043326632605962,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.001875457580596733,
+            "mean_equal_cells": 0.000787358763029018,
+            "minimum_cell": 0.00014402869569554047
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.0006862407508370824,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0018705707776595112,
+            "mean_equal_cells": 0.0008207181661182032,
+            "minimum_cell": 0.00020181118192465203
+          }
+        },
+        "gate_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 1.8517140866953047e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 7.980885460179874e-05,
+            "mean_equal_cells": 5.5290302710897846e-05,
+            "minimum_cell": 2.706489753992618e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 2.7241590643497577e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.000358292953754412,
+            "mean_equal_cells": 0.00031954183094351556,
+            "minimum_cell": 0.0002759619822231139
+          }
+        },
+        "gene_evidence": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.29408841461931057,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.8307589316810438,
+            "mean_equal_cells": 0.178771828676115,
+            "minimum_cell": 0.011038438786337718
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.2940862203909918,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.8307595358754934,
+            "mean_equal_cells": 0.1787766032537622,
+            "minimum_cell": 0.011051175534021218
+          }
+        },
+        "gene_query": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0011266280920888385,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0031000899377708626,
+            "mean_equal_cells": 0.0005855186325009103,
+            "minimum_cell": 1.1092034827385962e-05
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.0011222831491390002,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.0030990024223971555,
+            "mean_equal_cells": 0.0005935832676533079,
+            "minimum_cell": 2.9531813454718006e-05
+          }
+        },
+        "gene_read": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.19966983671295513,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.5661580178433722,
+            "mean_equal_cells": 0.12359538536794802,
+            "minimum_cell": 0.008827503916264365
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.19966426267850246,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.5661587593105173,
+            "mean_equal_cells": 0.12360660939709968,
+            "minimum_cell": 0.00885383990788317
+          }
+        },
+        "main_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.13677241479577384,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.4033760097138943,
+            "mean_equal_cells": 0.11861074882174083,
+            "minimum_cell": 0.011767053860634053
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.13677431263123688,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.40338277646484555,
+            "mean_equal_cells": 0.11861331688996653,
+            "minimum_cell": 0.0117701863715743
+          }
+        },
+        "main_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.22506363685549155,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.958345419953486,
+            "mean_equal_cells": 0.5020562899656014,
+            "minimum_cell": 0.2956409664178369
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.24640681595894612,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.9790983345081141,
+            "mean_equal_cells": 0.48886582494388664,
+            "minimum_cell": 0.23771252368575904
+          }
+        },
+        "path_project": {
+          "data_gradient_L2": {
+            "SD_between_cells": 5.43436950976683,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 26.3193036786764,
+            "mean_equal_cells": 19.678492832259376,
+            "minimum_cell": 10.338874495910236
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 5.434369504037025,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 26.31930369187569,
+            "mean_equal_cells": 19.678492849169434,
+            "minimum_cell": 10.338874526019962
+          }
+        },
+        "path_query": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.4278305420792861,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.5390975295012805,
+            "mean_equal_cells": 0.8631325227157717,
+            "minimum_cell": 0.23605239584246437
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.4278319013302092,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.5391027608874626,
+            "mean_equal_cells": 0.8631323466372408,
+            "minimum_cell": 0.23604957437409016
+          }
+        },
+        "path_read": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.23764858254054425,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.039918979704495,
+            "mean_equal_cells": 0.6804476748545869,
+            "minimum_cell": 0.406104868059695
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.23765838373546355,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 1.039918989701225,
+            "mean_equal_cells": 0.6804337025629632,
+            "minimum_cell": 0.4060921784007441
+          }
+        },
+        "rho_gene": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.003453057427764539,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.010333436073165352,
+            "mean_equal_cells": 0.0033829921419155523,
+            "minimum_cell": 0.00034913261967286347
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.0034493733882185,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.010319733226255543,
+            "mean_equal_cells": 0.0033864441545846187,
+            "minimum_cell": 0.0003498486647862376
+          }
+        },
+        "rho_path": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.006953438872614715,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.02027013093440922,
+            "mean_equal_cells": 0.0071758175535884434,
+            "minimum_cell": 0.001986194009958091
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.005380727132641223,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.023526534414657126,
+            "mean_equal_cells": 0.012741765863145701,
+            "minimum_cell": 0.008297821416766748
+          }
+        },
+        "routing": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.0035544880034421794,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.010258969601763961,
+            "mean_equal_cells": 0.0040231530701137505,
+            "minimum_cell": 0.0005698823257672133
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.003477342409818122,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.010312117954939321,
+            "mean_equal_cells": 0.004176278673308513,
+            "minimum_cell": 0.0008732598567289405
+          }
+        },
+        "set_block": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.05334964930764198,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.15700214101510848,
+            "mean_equal_cells": 0.04286492669304537,
+            "minimum_cell": 0.0046338067077970994
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.053331866074403746,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.1570483717314228,
+            "mean_equal_cells": 0.04293441732159642,
+            "minimum_cell": 0.004805741027624344
+          }
+        },
+        "spatial": {
+          "data_gradient_L2": {
+            "SD_between_cells": 1.6436670625327696,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 5.827899033099287,
+            "mean_equal_cells": 2.6898614296925683,
+            "minimum_cell": 0.9360761989664258
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.6436681929840926,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 5.827889367242834,
+            "mean_equal_cells": 2.6898446245290977,
+            "minimum_cell": 0.9360246304152708
+          }
+        },
+        "ug": {
+          "data_gradient_L2": {
+            "SD_between_cells": 0.001990570741326673,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.006275169089405082,
+            "mean_equal_cells": 0.002156134440036724,
+            "minimum_cell": 0.0004952850207951617
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 0.001992237468396797,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.006290677660782983,
+            "mean_equal_cells": 0.0021671052536825033,
+            "minimum_cell": 0.0005020594591248424
+          }
+        },
+        "up": {
+          "data_gradient_L2": {
+            "SD_between_cells": 3.0172367913756523e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 7.748492832149539e-05,
+            "mean_equal_cells": 2.3827403050739286e-05,
+            "minimum_cell": 5.877733766996134e-07
+          },
+          "norm_difference_is_not_regularizer_gradient_norm": true,
+          "total_including_L2_gradient_L2": {
+            "SD_between_cells": 1.851699945186728e-05,
+            "available_cells": 6,
+            "expected_cells": 6,
+            "maximum_cell": 0.00023288164000314558,
+            "mean_equal_cells": 0.00020183971125084594,
+            "minimum_cell": 0.00017824381506721367
+          }
+        }
+      },
+      "path_update_enabled": true,
+      "read_risk_associations": {
+        "gene": null,
+        "path": null
+      },
+      "rounds": [
+        {
+          "gene": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.016663182618993192,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0777170579661483,
+              "mean_equal_cells": 0.048600030037665144,
+              "minimum_cell": 0.02163848520961857
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.013461519623467762,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0863514393568039,
+              "mean_equal_cells": 0.06297500845458773,
+              "minimum_cell": 0.04223910222450892
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 13.342273821519067,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 35.68216709130981,
+              "mean_equal_cells": 20.618112808363133,
+              "minimum_cell": 1.6002935652264618
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.1578946994810964,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.46075179391069176,
+                "mean_equal_cells": 0.2066732202533205,
+                "minimum_cell": 0.008737041112639147
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.1578946994810964,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.46075179391069176,
+                "mean_equal_cells": 0.2066732202533205,
+                "minimum_cell": 0.008737041112639147
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 1.0,
+                "mean_equal_cells": 1.0,
+                "minimum_cell": 1.0
+              }
+            },
+            "delta_input_type": "projected_cross_modal_message",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.10527160109254761,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.7757502839480882,
+                "mean_equal_cells": 0.5451008154865241,
+                "minimum_cell": 0.46056601277086884
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": true
+          },
+          "path": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.008201709353670974,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.055739723427306036,
+              "mean_equal_cells": 0.045571257929412995,
+              "minimum_cell": 0.02968186555825179
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.0028500564428860543,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.09796130905548732,
+              "mean_equal_cells": 0.09539007843920477,
+              "minimum_cell": 0.08938785973522399
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.8613011113070791,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 3.2020453278019834,
+              "mean_equal_cells": 2.035073606682687,
+              "minimum_cell": 0.822598765825774
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.14626566781671635,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5492306992631509,
+                "mean_equal_cells": 0.3864004604830427,
+                "minimum_cell": 0.15586172041759835
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.15161733673168562,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5644418475198053,
+                "mean_equal_cells": 0.3971668382401065,
+                "minimum_cell": 0.15914710903053136
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.00648817023236686,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.9806891025641026,
+                "mean_equal_cells": 0.9728011416825565,
+                "minimum_cell": 0.9647976558169002
+              }
+            },
+            "delta_input_type": "projected_cross_modal_message",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.03729931024225248,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5190637558301403,
+                "mean_equal_cells": 0.48464545416225446,
+                "minimum_cell": 0.4046630153399479
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": true
+          },
+          "round": 1,
+          "routing": {
+            "gene_target_null_probability_mean": {
+              "SD_between_cells": 0.10386733091078734,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.2979323279216803,
+              "mean_equal_cells": 0.11713485172677596,
+              "minimum_cell": 0.0002278070904349778
+            },
+            "path_target_null_probability_mean": {
+              "SD_between_cells": 0.09501023989990424,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.5625500366334314,
+              "mean_equal_cells": 0.37418381663466077,
+              "minimum_cell": 0.2696438956783697
+            }
+          }
+        },
+        {
+          "gene": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.016649421219162533,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.0777291600197058,
+              "mean_equal_cells": 0.048622765233134045,
+              "minimum_cell": 0.021647963320751886
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.013449528090262917,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.08634502937396367,
+              "mean_equal_cells": 0.06296381602684657,
+              "minimum_cell": 0.042259556551774345
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 13.335483375807655,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 35.69707953793875,
+              "mean_equal_cells": 20.625496463349553,
+              "minimum_cell": 1.6008757347065121
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.15781863506724603,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.4607671969282774,
+                "mean_equal_cells": 0.20671376624166649,
+                "minimum_cell": 0.008740973053787501
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.15781863506724603,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.4607671969282774,
+                "mean_equal_cells": 0.20671376624166649,
+                "minimum_cell": 0.008740973053787501
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 1.0,
+                "mean_equal_cells": 1.0,
+                "minimum_cell": 1.0
+              }
+            },
+            "delta_input_type": "projected_cross_modal_message",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.1053266106162487,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.7758710901238554,
+                "mean_equal_cells": 0.5450567570986866,
+                "minimum_cell": 0.46057147381649016
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": true
+          },
+          "path": {
+            "anchored_token_change_RMS": {
+              "SD_between_cells": 0.008238421864931128,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.055767801220202105,
+              "mean_equal_cells": 0.045569527823500176,
+              "minimum_cell": 0.029589055301229388
+            },
+            "anchored_token_change_max_abs": {
+              "SD_between_cells": 0.00289701462887793,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.09796589364608128,
+              "mean_equal_cells": 0.09537611839671929,
+              "minimum_cell": 0.08925753997431861
+            },
+            "computed_delta_input_RMS": {
+              "SD_between_cells": 0.8649767345276612,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 3.2200573992221115,
+              "mean_equal_cells": 2.0384740839453444,
+              "minimum_cell": 0.8210447799695499
+            },
+            "computed_read_diagnostics_not_necessarily_used": {
+              "TV_mean_all_valid_queries": {
+                "SD_between_cells": 0.1465990933277899,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5495235068244962,
+                "mean_equal_cells": 0.3864138596745232,
+                "minimum_cell": 0.15610143771006038
+              },
+              "TV_mean_queries_ge2_candidates": {
+                "SD_between_cells": 0.15197936570268847,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5647417857259537,
+                "mean_equal_cells": 0.397170459021214,
+                "minimum_cell": 0.15939173926942127
+              },
+              "at_least_two_candidate_example_count_per_cell": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 3.0,
+                "mean_equal_cells": 3.0,
+                "minimum_cell": 3.0
+              },
+              "eligible_query_fraction_ge2_candidates": {
+                "SD_between_cells": 0.00648817023236686,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.9806891025641026,
+                "mean_equal_cells": 0.9728011416825565,
+                "minimum_cell": 0.9647976558169002
+              }
+            },
+            "delta_input_type": "projected_cross_modal_message",
+            "gate": {
+              "fraction_gt_point99": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "fraction_lt_point01": {
+                "SD_between_cells": 0.0,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.0,
+                "mean_equal_cells": 0.0,
+                "minimum_cell": 0.0
+              },
+              "mean": {
+                "SD_between_cells": 0.03728546485486352,
+                "available_cells": 6,
+                "expected_cells": 6,
+                "maximum_cell": 0.5190710710099923,
+                "mean_equal_cells": 0.48465737159140687,
+                "minimum_cell": 0.40470734955398013
+              }
+            },
+            "operative_raw_read_TV_all_valid": null,
+            "operative_raw_read_TV_at_least_two_candidates": null,
+            "raw_evidence_reread_used_as_delta_input": false,
+            "update_enabled": true
+          },
+          "round": 2,
+          "routing": {
+            "gene_target_null_probability_mean": {
+              "SD_between_cells": 0.10400808521398762,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.2985356780471142,
+              "mean_equal_cells": 0.11706354934297947,
+              "minimum_cell": 0.0002260498811906812
+            },
+            "path_target_null_probability_mean": {
+              "SD_between_cells": 0.09480634343219463,
+              "available_cells": 6,
+              "expected_cells": 6,
+              "maximum_cell": 0.5626261222686396,
+              "mean_equal_cells": 0.3743737416357436,
+              "minimum_cell": 0.26954840737213925
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "checkpoint_bindings": [
+    {
+      "arm": "C00",
+      "checkpoint_sha256": "ca58c0bb607a46c21c414dde7a787ae02b71ffc8837dffef3ddf483e1f6fd51f",
+      "fold": 1,
+      "seed": 31
+    },
+    {
+      "arm": "C01",
+      "checkpoint_sha256": "44cf22a010af474bc20f1fd78fa7ee17de57c207f664d9d92a8afb20b359b701",
+      "fold": 1,
+      "seed": 31
+    },
+    {
+      "arm": "C10",
+      "checkpoint_sha256": "cb1a7dfdd330e2fe5be08d1196eadb81daebd0bc523535d25c1aaed1da1eb57b",
+      "fold": 1,
+      "seed": 31
+    },
+    {
+      "arm": "C11",
+      "checkpoint_sha256": "75bef0674b595fbef7b468fc6ed50a872d613785f9b90f12ebbbc63b7e4cb205",
+      "fold": 1,
+      "seed": 31
+    },
+    {
+      "arm": "DIRECT",
+      "checkpoint_sha256": "395a12c944897675dc38dc0d9e6b7ea05d310e89a6a64894e79453052885fbd1",
+      "fold": 1,
+      "seed": 31
+    },
+    {
+      "arm": "C00",
+      "checkpoint_sha256": "65a2875bfb494770c486f8d2e66cd7d9f80afbcb4edce5dec34d599f6d5d350f",
+      "fold": 2,
+      "seed": 31
+    },
+    {
+      "arm": "C01",
+      "checkpoint_sha256": "a64e45f261fa9196a15fbaea165eddfc6d4ffa8af2ff2cd825a3d8eb3fcd89e9",
+      "fold": 2,
+      "seed": 31
+    },
+    {
+      "arm": "C10",
+      "checkpoint_sha256": "41bb56b86f05a05bddd8a79592609f767bd6e323a7fe3547c762597a9d79a143",
+      "fold": 2,
+      "seed": 31
+    },
+    {
+      "arm": "C11",
+      "checkpoint_sha256": "dd5313e0ec2c605f6d7e6b471b50ed1dadea5a6291b66cfa969771078602507d",
+      "fold": 2,
+      "seed": 31
+    },
+    {
+      "arm": "DIRECT",
+      "checkpoint_sha256": "cefc82fed3e888be7f0430b253ce85821214ecb9e1d759d4b59b94d135236ffe",
+      "fold": 2,
+      "seed": 31
+    },
+    {
+      "arm": "C00",
+      "checkpoint_sha256": "6eaa2f93d73a1e2b9cdc615312ae51e61a723e6e6784de3d99f9905e4be3f800",
+      "fold": 3,
+      "seed": 31
+    },
+    {
+      "arm": "C01",
+      "checkpoint_sha256": "6c9b986843790cc82fb8d17c825728df19862b4358c5e819ddd1df3e69fbbcd8",
+      "fold": 3,
+      "seed": 31
+    },
+    {
+      "arm": "C10",
+      "checkpoint_sha256": "c45ecb4c8322a029c8be406b13de0e725f693a6a9fd94d8c7bac16d1e6b95f4e",
+      "fold": 3,
+      "seed": 31
+    },
+    {
+      "arm": "C11",
+      "checkpoint_sha256": "cf83db5b8ed1adbce24554b08646ceffd56b76328ec103012a26e401efe33b7e",
+      "fold": 3,
+      "seed": 31
+    },
+    {
+      "arm": "DIRECT",
+      "checkpoint_sha256": "1f46b518714ef97f2bc08b76524174aac6237015923018e137898dbccb4155dd",
+      "fold": 3,
+      "seed": 31
+    },
+    {
+      "arm": "C00",
+      "checkpoint_sha256": "74fc4284e1cbc961baf5a05d06e42c3d4fc5fad196d0d738819a7f94e44ed9c0",
+      "fold": 1,
+      "seed": 47
+    },
+    {
+      "arm": "C01",
+      "checkpoint_sha256": "892c961618e045badc0eee129a8955525058394cf90859c28d74eedc6388fb6d",
+      "fold": 1,
+      "seed": 47
+    },
+    {
+      "arm": "C10",
+      "checkpoint_sha256": "a8a046616bfcf4e5375c7904c19c2ac3e59b1c99bc2ddb7385099eccd21a2df0",
+      "fold": 1,
+      "seed": 47
+    },
+    {
+      "arm": "C11",
+      "checkpoint_sha256": "93e33a4594e38ac50f587a897c5203d5a756f2243f9d8658804cfbd5438657cf",
+      "fold": 1,
+      "seed": 47
+    },
+    {
+      "arm": "DIRECT",
+      "checkpoint_sha256": "fec774be65d8a072c849e83a7f8e4085a446e068bbeb190adcc131f5eb441911",
+      "fold": 1,
+      "seed": 47
+    },
+    {
+      "arm": "C00",
+      "checkpoint_sha256": "4f5b7af69d044b8f63d0572a892e1b9e68d8fb991ebe5f779773678d0ce50572",
+      "fold": 2,
+      "seed": 47
+    },
+    {
+      "arm": "C01",
+      "checkpoint_sha256": "bab73d80c53a0d8dc912a985e67613940041bd453c3f60c17956f146368bcd8f",
+      "fold": 2,
+      "seed": 47
+    },
+    {
+      "arm": "C10",
+      "checkpoint_sha256": "b2bcb3dd6fe9ab21938d8b8d0da27db6a34f9f025ebb1fdcfcab702ada149e6f",
+      "fold": 2,
+      "seed": 47
+    },
+    {
+      "arm": "C11",
+      "checkpoint_sha256": "36b249a02caddf4ac1046765136d845f3c31c499b4ef30775c5a31f691e6b267",
+      "fold": 2,
+      "seed": 47
+    },
+    {
+      "arm": "DIRECT",
+      "checkpoint_sha256": "60ae5b06c3c906c9b3c5f66935a8c28c443ba6f5647f7f1c9e4eb61af3061197",
+      "fold": 2,
+      "seed": 47
+    },
+    {
+      "arm": "C00",
+      "checkpoint_sha256": "5807bcaa5d2001f6bbc5712b101cedeb74fb7ac525af4ca71626df7d4b1c1424",
+      "fold": 3,
+      "seed": 47
+    },
+    {
+      "arm": "C01",
+      "checkpoint_sha256": "8898430bbe77882d6d87c4b5642c75e94ee51654d570742773eb1aca97adfb2b",
+      "fold": 3,
+      "seed": 47
+    },
+    {
+      "arm": "C10",
+      "checkpoint_sha256": "599faea4c1b797abab922b27644c9e992fb82fe4efc160e6b4a8c3b96fcda156",
+      "fold": 3,
+      "seed": 47
+    },
+    {
+      "arm": "C11",
+      "checkpoint_sha256": "aeccf7c0260ec389be820c3431b05715048b6de27ff1ac6a8d9df4905e5b54ac",
+      "fold": 3,
+      "seed": 47
+    },
+    {
+      "arm": "DIRECT",
+      "checkpoint_sha256": "dd541b8daa9bbb96b4e78ff81541297045947bc3c66b991dfcd8a85ac7f70c34",
+      "fold": 3,
+      "seed": 47
+    }
+  ],
+  "diagnostic_script_path": "scripts/diagnose_phase28.py",
+  "diagnostic_script_sha256": "6fa3fd8a0c77427865186e0e6c4f004ffdff50d191b9cd8604f08f310b08055e",
+  "effectiveness_or_histology_or_causality_claimed": false,
+  "endpoint_loaders_called": 0,
+  "history_reports": 30,
+  "input_report_sha256": {
+    "INNER_RESULTS.json": "c10380d9a1bb449bf9eaa16aafa1c4482cbf6265eba799d8f173bd143d412d6f",
+    "diagnostics/seed31_fold1_C00_history.json": "f0208252d6d67e749dbfe9cd26fed729e5dceaf2d0e71ca8bd2600b02382fec5",
+    "diagnostics/seed31_fold1_C00_mechanism.json": "f5670903069fd7a2defce15a9ca97288eb2b64d8f6326650ae5530fd951c504c",
+    "diagnostics/seed31_fold1_C01_history.json": "e6f1476b0bcc8443fc54a748e9ef8da747eaa438f0d52e1c3f767431d9cb4402",
+    "diagnostics/seed31_fold1_C01_mechanism.json": "ab3ba2a37205b9f3db6eaa56efe27493616628a46f20ac6c52d0f699f0475f09",
+    "diagnostics/seed31_fold1_C10_history.json": "07ad0bf0f13ec2d73b076b0db1503082c9a117cb7e506472fde6e63cf70b473f",
+    "diagnostics/seed31_fold1_C10_mechanism.json": "4e1d6c13420c441091fd93ee513a60ce05d6c83f04a41810be8f3ff82ae43d27",
+    "diagnostics/seed31_fold1_C11_history.json": "9cce549ded1159f8d7a5c44191b5f5ec96bb0528956aaabff405bed2687049aa",
+    "diagnostics/seed31_fold1_C11_mechanism.json": "bca4f29fa9c817971a9eeadc2772fbcbe9bc57e630430e3e5ebc9a15aab52c1d",
+    "diagnostics/seed31_fold1_DIRECT_history.json": "ae190ed51fbc6501a31bc1a92743f1b40986a3f04451638bc4a5e512dc7217e7",
+    "diagnostics/seed31_fold1_DIRECT_mechanism.json": "a2c01b3c6048aa199884990aa3e1014633dc75b345c982c9cbf66cf8bf311adc",
+    "diagnostics/seed31_fold2_C00_history.json": "2c49ba50162b8a73be18adac41dde344281f9761a9277e428dec0362697d5e3c",
+    "diagnostics/seed31_fold2_C00_mechanism.json": "5dce70b828d8d59bc00a6aa7b6c8164cc611add1bc94a44c7d812a0d2893ab32",
+    "diagnostics/seed31_fold2_C01_history.json": "42f38cd649460e336835c08fe8054304dd09bab9e5bfc354794567ed9ab8ee17",
+    "diagnostics/seed31_fold2_C01_mechanism.json": "55b131135ac749e7940263e0a6c648a140c41e5f1c8bf3df7473b87e3ee7493f",
+    "diagnostics/seed31_fold2_C10_history.json": "266d51e9874033ec633d8d1cb87192b29cb7238ff6b0f30a572bd68055ce9369",
+    "diagnostics/seed31_fold2_C10_mechanism.json": "bd100765c5b909467cc3beb1cb48bad15f4134b462787b32f29135e79ec74b75",
+    "diagnostics/seed31_fold2_C11_history.json": "78d665b30095de3bf4cbb611d97d13e8dc440a6e76acc07c29dc6d34139f4731",
+    "diagnostics/seed31_fold2_C11_mechanism.json": "ec8d53cee3d3f9329993c43da4af5b6202e1c899f0ba86550cf915d931fa6fd3",
+    "diagnostics/seed31_fold2_DIRECT_history.json": "116ba1919faade9478e6307758af882692d13c57fd8ea1fb6b75f95f6668656d",
+    "diagnostics/seed31_fold2_DIRECT_mechanism.json": "7fe6cf44713e29a9ddf86b836552c86d131b023d84188f79ea7207c304ba816e",
+    "diagnostics/seed31_fold3_C00_history.json": "00c4f17d0bf30cd27b8095e824ec657d2f05feb2ac4e32d900c5843fd9e451e3",
+    "diagnostics/seed31_fold3_C00_mechanism.json": "a7e83369658bdf952bf0e56db8eb9bae43b4997d6bdbd55b02a9807e9c23bae0",
+    "diagnostics/seed31_fold3_C01_history.json": "f441dbbefefde688917d4c6c307f7654a4423de91b4ac8e785d56c96b6545a6c",
+    "diagnostics/seed31_fold3_C01_mechanism.json": "2c902f6d32a5a06d8743fb5c191a195a3de4572fdaaeebbf22d17307bb6fed1f",
+    "diagnostics/seed31_fold3_C10_history.json": "20014d21a768d15ae100c5c727f4d79c92a94478f0d6935aab79e3adca8ad6db",
+    "diagnostics/seed31_fold3_C10_mechanism.json": "94ee6f6dacd7ab7e6a685b381c29bfe47803a9368add6a7a1495daabb7501e50",
+    "diagnostics/seed31_fold3_C11_history.json": "ddd784f33a226696222d656e4cfc63d25b469105958c4466e1462c177c9fc5a8",
+    "diagnostics/seed31_fold3_C11_mechanism.json": "20daba12343527a5e493ee2e8a0f4f74eeb2d464811f655af793d090419d3949",
+    "diagnostics/seed31_fold3_DIRECT_history.json": "818f775c49cb6e8e0c5827ff4a0a87f860747a12c83bb8d57502928cd86ba9f9",
+    "diagnostics/seed31_fold3_DIRECT_mechanism.json": "b0620107fa90555b754dfc1baad4cee68c836fd32fd98635e8e208c9646ff2e7",
+    "diagnostics/seed47_fold1_C00_history.json": "7d180c34851ab6261f91157b62518d6b89ddc0ceebb1937f94dd9293fe04256b",
+    "diagnostics/seed47_fold1_C00_mechanism.json": "456415b485997afebc0bdc375a8d4712e1ce5b3d77c40a2bfe093aca1af22654",
+    "diagnostics/seed47_fold1_C01_history.json": "54d1ac9acf89de9777917295b02e6aa2ba96e67e9ef3cfae8db18fbc0be8e119",
+    "diagnostics/seed47_fold1_C01_mechanism.json": "eecca5fc2f1e810c57f5d48cc7430aee5be2c3bca4133ba3246292ca7296e435",
+    "diagnostics/seed47_fold1_C10_history.json": "070baf2037d51098b696737a1c401f2971bf139ed96a6c580025998e8540a2fd",
+    "diagnostics/seed47_fold1_C10_mechanism.json": "1c0883779b19f96922d6a0aff73e5cafad67af300ef21dedb2a0886d1be2d069",
+    "diagnostics/seed47_fold1_C11_history.json": "f1050a22ca9db34ff280197b96bb1e097b516d4438e6aedf60f2d7ea2fd4973c",
+    "diagnostics/seed47_fold1_C11_mechanism.json": "32fbbdf85f98b0e8488b286fdac92be9b207728094ebc79fbfbf24858ea6611d",
+    "diagnostics/seed47_fold1_DIRECT_history.json": "3cfc8e7d40c47ecddf75c7b160317891abec810e7c9b32d4286b7a7c0354285e",
+    "diagnostics/seed47_fold1_DIRECT_mechanism.json": "e8f058dba093597308b46ae0c58abd33ca727bd51bef004738bd311ebbda49f0",
+    "diagnostics/seed47_fold2_C00_history.json": "3790e05626a01b25c3d735e34d17374c71bedd49c8dac8ab7ae42dad6a2a581f",
+    "diagnostics/seed47_fold2_C00_mechanism.json": "c59bc7425976f90d69ecd385865c697239878a0c5859ff0e266dc4b72bc1c9d5",
+    "diagnostics/seed47_fold2_C01_history.json": "ac3b42e9caa2e551b1df58be02eac081772e59272889ff33e7c62de52a53f8e5",
+    "diagnostics/seed47_fold2_C01_mechanism.json": "af63efb5eb23ce96fbdc4c981f832e1b572cad01d1b8c73b918c67fa4f541902",
+    "diagnostics/seed47_fold2_C10_history.json": "0d3ea2f69791297714f304f95f2965d85bd639ee8eb63d40db1c553e96c56875",
+    "diagnostics/seed47_fold2_C10_mechanism.json": "9b0baafadcc6d11eb19d427bd7e062efc7388872ed52fe012b255fc163cc6a65",
+    "diagnostics/seed47_fold2_C11_history.json": "0d6271749cf37ff433da2295e6bc92bf253623f9cb26b5a60e479e1958e0ac54",
+    "diagnostics/seed47_fold2_C11_mechanism.json": "22f375c25ba232934e6063e7f86e6e4cc6eb23663ab5e679ad2d928057811eeb",
+    "diagnostics/seed47_fold2_DIRECT_history.json": "9491fa5f5a2339bb3455e74213dd0e8ded76034dca8120228824505768923490",
+    "diagnostics/seed47_fold2_DIRECT_mechanism.json": "b949398441aeeab7257159c4f3acbc1daa8dc42ff1893d2a8a0eeca25580133b",
+    "diagnostics/seed47_fold3_C00_history.json": "4bddad51e0eceaab9fdf25a7cbec9fa4c61ef78972abf0205b97b2f04f9a6f5f",
+    "diagnostics/seed47_fold3_C00_mechanism.json": "862b991e3e93db293270318cb96031e51e0fb7cfeb3e86fa0416366b91d9db7b",
+    "diagnostics/seed47_fold3_C01_history.json": "c9dffd6307f25d972702ef1f2379e5f3260c46d3bc7ff8b42ebd4e5e1b8d1edf",
+    "diagnostics/seed47_fold3_C01_mechanism.json": "23710d1df9bd42b5cc8cadcd187beda47b7bdbc08f65df8dbd08b0e66784d55b",
+    "diagnostics/seed47_fold3_C10_history.json": "a5efff25f13d96383a36ab0b9b01b972afecfd2120d17d1abd0da2da61d06d50",
+    "diagnostics/seed47_fold3_C10_mechanism.json": "fa1a28e40cab1cd257d20876daf89ba4acf34e3a06cef16960c326bc5710545a",
+    "diagnostics/seed47_fold3_C11_history.json": "1c53066ae040491daf5cf6cc0b19bb9a3750ef4cd451ca4ec92a0abfa76f882d",
+    "diagnostics/seed47_fold3_C11_mechanism.json": "37aa0d11b440c62f2aa3e7ff33387c4cd58b49c20b876405ffd26bd01cdb56d3",
+    "diagnostics/seed47_fold3_DIRECT_history.json": "ad40aa88334477fd7277b547466f31a5e0ea93e9d37449aece77bd36acb47c01",
+    "diagnostics/seed47_fold3_DIRECT_mechanism.json": "c20612a5f1eb85bde6dc9ca4816c97ce317b1b40b175e3d767a84c434d4af96c"
+  },
+  "mechanism_reports": 30,
+  "models": 30,
+  "new_forward_calls": 0,
+  "new_scientific_gate": false,
+  "new_training_steps": 0,
+  "norm_difference_used_as_regularizer_gradient_norm": false,
+  "original_FORMAL_DELIVERY_contract_modified": false,
+  "patient_arrays_or_checkpoints_published": false,
+  "schema": "phase28_anonymous_mechanism_summary_v1",
+  "script_path": "scripts/report_phase28_mechanism.py",
+  "script_sha256": "39a665cf90cac09022306021d53004bc51151d1be0c898983216a7d81de2ddbd",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "stage": "prototype",
+  "status": "COMPLETE_SIXTY_POSTFIT_DIAGNOSTICS"
+}

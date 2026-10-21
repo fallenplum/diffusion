@@ -1,0 +1,55 @@
+{
+  "P0_receipt_sha256_unchanged": {
+    "DEPENDENCY_QUALIFICATION.json": "eb2057bae5d50631a8e828148298eca7f8db6f44e0114c1aeae8ea18280af851",
+    "INPUT_AUDIT.json": "e5ec65cf0ef18ad8a6d2755f44d69f84c6c0563cee3bdde2e3654bad55fba823",
+    "NUMERICAL_QUALIFICATION.json": "1b1653f5a6237aaeb859473b1eb7060fd7c3d755638dacb95f48055480da4be8"
+  },
+  "counts": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 163
+  },
+  "initial_auxiliary_receipt_retained_with_its_original_test_hashes": true,
+  "initial_auxiliary_receipt_sha256": "6feea06312f14a17cdef2b94a20676b15eb9d5f2b9b3b63d742b04bc315d126c",
+  "new_patient_training_fits": 0,
+  "original_P0_qualification_reports_unchanged": true,
+  "patient_or_validation_endpoint_accesses": 0,
+  "preserved_evaluation_report_sha256": {
+    "INNER_GATE.json": "085bad412cb0d29473425ebf4d4652425148b15614b911a945c4875c23e0bf92",
+    "INNER_RESULTS.json": "c10380d9a1bb449bf9eaa16aafa1c4482cbf6265eba799d8f173bd143d412d6f",
+    "REPLAY_AUDIT.json": "628b1225c0f667f444b5398f3b3cbb964922d38b0c0f674fea00dc2d163373a2",
+    "decision.json": "401e1d3572077f95749be5da37644658cd9b366614196bb3ee3349f76c3f80a1"
+  },
+  "previous_FINAL_receipt_sha256": "d35cd051f1830a00fe44225d9d366d3341684810e7e869de9273eb1c1d6dd4b8",
+  "previous_WIDE_receipt_sha256": "091f9715f55409d9cee94230326b45a7cceb6d6b3b4bd5bdb673c6fe356a4fa1",
+  "python_version": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "revision": "POSTFIT",
+  "script_path": "scripts/qualify_phase28_execution.py",
+  "script_sha256": "5219eb9ef95a2d4861431a8604f5dc8444689ae2cfffe644ae865ee75909a243",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "status": "PASS",
+  "synthetic_only": true,
+  "test_files_sha256": {
+    "scripts/test_phase28_concurrency.py": "ca4966f0910d4abdfbe518856ecb4f21d3646a7dd89d1f9d197608e414d15ec7",
+    "scripts/test_phase28_diagnostics.py": "b9fc64e05442d8b6f252812f6b5d9c72a7bb97b7e7f5a99782fb9a597d0c33c4",
+    "tests/test_phase28_budget_readout.py": "d6305a233afedf37708118c50ed411feb1f0b131795a4b82ea2aeb5df3c5d213",
+    "tests/test_phase28_formal_publish.py": "08dfb0d8a9fae724326aa9dd4744e93c9ffef64301fa1c18fc791de22fc765e7",
+    "tests/test_phase28_formal_report.py": "c306b1cabc5372cd2a0fe691b7b66a98cb21a2367adb84b89ebce93b639401fe",
+    "tests/test_phase28_mechanism_report.py": "ca4b6ad723bb399df1c32aa0ce398476a461895c72987ea85eaf2097ba0fad13",
+    "tests/test_phase28_wide_concurrency.py": "f60c27f8552e22e2ecd79f84ee6f6185651264dc2479a379dd5d4cefafc0badc"
+  },
+  "tool_files_sha256": {
+    "scripts/audit_phase28_budget_readout.py": "c3319c3d31e5719a2693ae66f2d8a92e87441def032626dd52210e67de891169",
+    "scripts/coordinate_phase28.py": "c3ab57a286652baa049bfe2aaedd1b8edd23f01742e1efdf8fabae5e9403a8d8",
+    "scripts/diagnose_phase28.py": "6fa3fd8a0c77427865186e0e6c4f004ffdff50d191b9cd8604f08f310b08055e",
+    "scripts/monitor_phase28.py": "184c685aa1fde2c570bdb961a0f2d8b530103b177952ebc4c08c2da1ed671591",
+    "scripts/publish_phase28_formal.py": "065724a00a7302dadca770252b5b018055c6fe0a793ab5ed4856608835ad6514",
+    "scripts/qualify_phase28_execution.py": "5219eb9ef95a2d4861431a8604f5dc8444689ae2cfffe644ae865ee75909a243",
+    "scripts/report_phase28_formal.py": "8c5333b3ebb69dac90b9f1455ad23447317cdde1e193ec5fbbd50cd8a4418779",
+    "scripts/report_phase28_mechanism.py": "39a665cf90cac09022306021d53004bc51151d1be0c898983216a7d81de2ddbd",
+    "scripts/tune_phase28_concurrency.py": "1f69914cb08e176021e08b9a14e64e67ff597990b4a37f490690ac835135ebb8",
+    "scripts/tune_phase28_wide_concurrency.py": "7c27c135bc90b98b18a96785fa0a24ee9d2d1f5b658d44b35444448f3af28a02"
+  },
+  "wall_seconds": 31.00408205902204
+}

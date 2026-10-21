@@ -1,0 +1,23 @@
+{
+  "phase": "Phase28",
+  "status": "USER_AUTHORIZED_LOCKED_FORMAL_EXECUTION",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "authorization": "execute the prelocked thirty formal fits; long parallel execution allowed",
+  "planned_neural_fits": 30,
+  "epochs_each": 80,
+  "planned_optimizer_steps": 2400,
+  "new_anchor_fits": 0,
+  "validation_outcome_based_budget_or_concurrency_selection": false,
+  "concurrency_changes_only_execution_not_the_model_or_loss": true,
+  "maximum_parallel_under_initial_qualification": 8,
+  "container_CPU_quota_cores": 16,
+  "container_memory_limit_GiB": 62,
+  "physical_GPU_memory_MiB": 32760,
+  "host_RAM_not_used_to_set_concurrency": true,
+  "incomplete_before_checkpoint_not_silently_restarted": true,
+  "source_bound_checkpoint_resume_only": true,
+  "P0_decision_preserved_before_formal_evaluation": true,
+  "independent_replay_required_before_once_only_evaluation": true,
+  "outer_experiment_automatically_started": false,
+  "patient_arrays_models_and_credentials_public": false
+}

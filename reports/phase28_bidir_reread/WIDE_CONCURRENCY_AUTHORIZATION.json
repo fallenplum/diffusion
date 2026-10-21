@@ -1,0 +1,13 @@
+{
+  "status": "USER_AUTHORIZED_EXECUTION_ONLY_CONCURRENCY_EXTENSION",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "authorization": "increase parallelism where resources permit to reduce total runtime",
+  "original_initial_cap": 8,
+  "next_parallel": 12,
+  "maximum_parallel": 13,
+  "planned_formal_fits_unchanged": 30,
+  "epochs_each_unchanged": 80,
+  "training_source_or_protocol_changed": false,
+  "existing_workers_restarted_or_terminated": false,
+  "formal_P0_and_previous_auxiliary_qualifications_preserved": true
+}

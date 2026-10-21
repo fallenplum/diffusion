@@ -1,0 +1,190 @@
+{
+  "allocation_not_the_optimization_target": true,
+  "decisions": [
+    {
+      "admission": {
+        "projected_GPU_bytes": 25853165568.0,
+        "projected_cgroup_bytes": 43372732416.0,
+        "reasons": [],
+        "requested": 12,
+        "reserved_GPU_bytes": 4294967296,
+        "reserved_cgroup_bytes": 8589934592,
+        "safe": true
+      },
+      "after": 12,
+      "before": 8,
+      "reason": "user_authorized_memory_qualified_extension"
+    },
+    {
+      "admission": {
+        "projected_GPU_bytes": 27797749760,
+        "projected_cgroup_bytes": 44403516074.666664,
+        "reasons": [],
+        "requested": 13,
+        "reserved_GPU_bytes": 4294967296,
+        "reserved_cgroup_bytes": 8589934592,
+        "safe": true
+      },
+      "after": 13,
+      "before": 12,
+      "reason": "throughput_not_decreased"
+    }
+  ],
+  "existing_workers_signaled": 0,
+  "labels_checkpoints_patient_arrays_or_cox_loss_used": false,
+  "max_parallel": 13,
+  "new_training_cells": 0,
+  "reason": "cap13_reached",
+  "schema": "phase28_user_authorized_wide_concurrency_v1",
+  "script_path": "scripts/tune_phase28_wide_concurrency.py",
+  "script_sha256": "7c27c135bc90b98b18a96785fa0a24ee9d2d1f5b658d44b35444448f3af28a02",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "stages": [
+    {
+      "GPU_memory_peak_bytes": 17235443712,
+      "GPU_utilization_sample_mean": 51.172413793103445,
+      "cgroup_memory_peak_bytes": 28915154944,
+      "different_cells_and_non_synchronous_intervals_limit_comparability": true,
+      "estimator": "sum_worker_complete_commit_interval_rates",
+      "exact_speedup_or_optimality_claimed": false,
+      "first_live_observation_discarded": false,
+      "historical_warm_roster_metadata": true,
+      "minimum_complete_intervals_per_process": 2,
+      "parallel": 8,
+      "sampling_timestamp_resolution_seconds": 20,
+      "throughput_estimated_epochs_per_hour": 112.98461538461538,
+      "workload_metadata": {
+        "arms": [
+          {
+            "arm": "C00",
+            "processes": 2
+          },
+          {
+            "arm": "C01",
+            "processes": 2
+          },
+          {
+            "arm": "C10",
+            "processes": 2
+          },
+          {
+            "arm": "C11",
+            "processes": 1
+          },
+          {
+            "arm": "DIRECT",
+            "processes": 1
+          }
+        ],
+        "partitions": [
+          {
+            "fold": "1",
+            "processes": 8
+          }
+        ]
+      }
+    },
+    {
+      "GPU_memory_peak_bytes": 25650266112,
+      "GPU_utilization_sample_mean": 71.27906976744185,
+      "cgroup_memory_peak_bytes": 41364500480,
+      "different_cells_and_non_synchronous_intervals_limit_comparability": true,
+      "estimator": "sum_worker_complete_commit_interval_rates",
+      "exact_speedup_or_optimality_claimed": false,
+      "first_live_observation_discarded": true,
+      "historical_warm_roster_metadata": false,
+      "minimum_complete_intervals_per_process": 1,
+      "parallel": 12,
+      "ratio_to_previous_estimate": 1.4322106940277242,
+      "sampling_timestamp_resolution_seconds": 20,
+      "throughput_estimated_epochs_per_hour": 161.81777441445547,
+      "workload_metadata": {
+        "arms": [
+          {
+            "arm": "C00",
+            "processes": 3
+          },
+          {
+            "arm": "C01",
+            "processes": 2
+          },
+          {
+            "arm": "C10",
+            "processes": 3
+          },
+          {
+            "arm": "C11",
+            "processes": 2
+          },
+          {
+            "arm": "DIRECT",
+            "processes": 2
+          }
+        ],
+        "partitions": [
+          {
+            "fold": "1",
+            "processes": 10
+          },
+          {
+            "fold": "2",
+            "processes": 2
+          }
+        ]
+      }
+    },
+    {
+      "GPU_memory_peak_bytes": 27713863680,
+      "GPU_utilization_sample_mean": 76.34146341463415,
+      "cgroup_memory_peak_bytes": 43555782656,
+      "different_cells_and_non_synchronous_intervals_limit_comparability": true,
+      "estimator": "sum_worker_complete_commit_interval_rates",
+      "exact_speedup_or_optimality_claimed": false,
+      "first_live_observation_discarded": true,
+      "historical_warm_roster_metadata": false,
+      "minimum_complete_intervals_per_process": 1,
+      "parallel": 13,
+      "ratio_to_previous_estimate": 1.0668117988174306,
+      "sampling_timestamp_resolution_seconds": 20,
+      "throughput_estimated_epochs_per_hour": 172.62911100371844,
+      "workload_metadata": {
+        "arms": [
+          {
+            "arm": "C00",
+            "processes": 3
+          },
+          {
+            "arm": "C01",
+            "processes": 3
+          },
+          {
+            "arm": "C10",
+            "processes": 3
+          },
+          {
+            "arm": "C11",
+            "processes": 2
+          },
+          {
+            "arm": "DIRECT",
+            "processes": 2
+          }
+        ],
+        "partitions": [
+          {
+            "fold": "1",
+            "processes": 10
+          },
+          {
+            "fold": "2",
+            "processes": 3
+          }
+        ]
+      }
+    }
+  ],
+  "started_utc": "2026-10-20T03:44:59Z",
+  "status": "COMPLETE_MAXIMUM_QUALIFIED",
+  "target": 13,
+  "training_source_changed": false
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SYNTHETIC_POSTFIT_DIAGNOSTIC_OPERATORS",
+  "version": "phase28_postfit_diagnostics_v1",
+  "training_source_not_modified": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "diagnostic_script_path": "scripts/diagnose_phase28.py",
+  "diagnostic_script_sha256": "6fa3fd8a0c77427865186e0e6c4f004ffdff50d191b9cd8604f08f310b08055e",
+  "test_script_path": "scripts/test_phase28_diagnostics.py",
+  "test_script_sha256": "b9fc64e05442d8b6f252812f6b5d9c72a7bb97b7e7f5a99782fb9a597d0c33c4",
+  "latest_final_script_run": {"tests": 14, "passed": 14, "failed": 0, "combined_with_12_concurrency_tests_seconds": 11.22},
+  "multiple_runs_not_added_as_additional_unique_tests": true,
+  "scope": ["eighty_epoch_history_and_pre_step_boundary", "fit_risk_decomposition", "singleton_read_identifiability", "safe_empty_mask_accounting", "five_direction_switch_arms", "original_evidence_cross_gradients", "isolated_route_context_gradients", "raw_score_common_energy_and_null_mass", "two_round_risk_state_lineage", "three_example_anonymous_aggregation", "nonfinite_input_rejection"],
+  "real_patient_data_reads": 0,
+  "real_patient_training": false,
+  "new_optimizer_steps": 0,
+  "weights_or_raw_arrays_saved": false,
+  "real_checkpoint_diagnostics_executed": false,
+  "formal_input_and_official_CUDA_qualification_not_replaced_by_this_test": true,
+  "existing_locked_qualification_receipts_unchanged": true
+}

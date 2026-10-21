@@ -1,0 +1,31 @@
+{
+  "bootstrap_draws": 0,
+  "confirmation_claimed": false,
+  "endpoint_loaders_called": 0,
+  "epochs_each": 80,
+  "existing_P0_reports_overwritten": false,
+  "independent_replay_report_sha256": "628b1225c0f667f444b5398f3b3cbb964922d38b0c0f674fea00dc2d163373a2",
+  "neural_models": 30,
+  "new_gate_or_rescaling_search": false,
+  "new_predictor_fits": 0,
+  "optimizer_steps": 2400,
+  "outer_started": false,
+  "patient_level_artifacts_published": false,
+  "receipt_fingerprint": "2b96e08ae7e317f26d1f93c043937ca53f946fb18d2c8211c3d3a623aecbb7d4",
+  "report_sha256": {
+    "BUDGET_READOUT_AUDIT.json": "4033e67fedc72854703196f161bfd6841986a2a9d2da70c7ff32da8cad6db438",
+    "INNER_GATE.json": "085bad412cb0d29473425ebf4d4652425148b15614b911a945c4875c23e0bf92",
+    "INNER_RESULTS.json": "c10380d9a1bb449bf9eaa16aafa1c4482cbf6265eba799d8f173bd143d412d6f",
+    "RESULTS_FORMAL.md": "6a63c711364937936ff86c3b986d66b408293170fbdc7ec6c90d674ef2bc69ca",
+    "decision.json": "401e1d3572077f95749be5da37644658cd9b366614196bb3ee3349f76c3f80a1"
+  },
+  "schema": "phase28_formal_delivery_v1",
+  "scientific_decision": "STOP",
+  "script_path": "scripts/report_phase28_formal.py",
+  "script_sha256": "8c5333b3ebb69dac90b9f1455ad23447317cdde1e193ec5fbbd50cd8a4418779",
+  "seed_partition_cells": 6,
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "source_commit_not_assumed": true,
+  "stage": "prototype",
+  "status": "COMPLETE_INNER_FORMAL_REPORTS"
+}

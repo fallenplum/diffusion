@@ -1,0 +1,326 @@
+{
+  "status": "PROTOTYPE_NOT_ADMITTED",
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "stage": "prototype",
+  "decision": "STOP",
+  "classification": "STOP",
+  "candidate": "C11",
+  "primary_tests": [
+    {
+      "comparison": "C11-C00",
+      "metric": "Harrell",
+      "mean_seed_delta": 0.004373177842565579,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": -0.006997084548104993
+        },
+        {
+          "seed": 47,
+          "delta": 0.01574344023323615
+        }
+      ],
+      "positive_seeds": 1,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "C11-C00",
+      "metric": "Uno60",
+      "mean_seed_delta": 0.003414263634414716,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": -0.0007492787628859965
+        },
+        {
+          "seed": 47,
+          "delta": 0.007577806031715428
+        }
+      ],
+      "positive_seeds": 1,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "C11-DIRECT",
+      "metric": "Harrell",
+      "mean_seed_delta": -0.0026239067055393583,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": -0.005247813411078717
+        },
+        {
+          "seed": 47,
+          "delta": 0.0
+        }
+      ],
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "C11-DIRECT",
+      "metric": "Uno60",
+      "mean_seed_delta": -0.005667288811954552,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": -0.0020267709237226095
+        },
+        {
+          "seed": 47,
+          "delta": -0.009307806700186494
+        }
+      ],
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    }
+  ],
+  "main_effect_guards": [
+    {
+      "comparison": "C11-M0",
+      "metric": "Harrell",
+      "mean_seed_delta": -0.11428571428571432,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": -0.12536443148688048
+        },
+        {
+          "seed": 47,
+          "delta": -0.10320699708454817
+        }
+      ],
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "C11-M0",
+      "metric": "Uno60",
+      "mean_seed_delta": -0.14902997535472717,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": -0.15615671011891685
+        },
+        {
+          "seed": 47,
+          "delta": -0.1419032405905375
+        }
+      ],
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "C11-CP",
+      "metric": "Harrell",
+      "mean_seed_delta": -0.1259475218658892,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": -0.13702623906705536
+        },
+        {
+          "seed": 47,
+          "delta": -0.11486880466472305
+        }
+      ],
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "C11-CP",
+      "metric": "Uno60",
+      "mean_seed_delta": -0.09805448870666145,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": -0.10518122347085113
+        },
+        {
+          "seed": 47,
+          "delta": -0.09092775394247177
+        }
+      ],
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    }
+  ],
+  "frozen_pairing_guards": [
+    {
+      "comparison": "C11-C11_GENE_MEAN",
+      "mean_seed_deltas": {
+        "Harrell": 0.0,
+        "Uno60": 0.0
+      },
+      "pass": false
+    },
+    {
+      "comparison": "C11-C11_GENE_WRONG",
+      "mean_seed_deltas": {
+        "Harrell": 0.0,
+        "Uno60": 0.0
+      },
+      "pass": false
+    },
+    {
+      "comparison": "C11-C11_PATH_MEAN",
+      "mean_seed_deltas": {
+        "Harrell": 0.0,
+        "Uno60": 0.0
+      },
+      "pass": false
+    },
+    {
+      "comparison": "C11-C11_PATH_WRONG",
+      "mean_seed_deltas": {
+        "Harrell": 0.0,
+        "Uno60": 0.0
+      },
+      "pass": false
+    },
+    {
+      "comparison": "C11-C11_BOTH_WRONG",
+      "mean_seed_deltas": {
+        "Harrell": 0.0,
+        "Uno60": 0.0
+      },
+      "pass": false
+    },
+    {
+      "comparison": "C11-C11_CONSTANT_VALUES",
+      "mean_seed_deltas": {
+        "Harrell": 0.0,
+        "Uno60": 0.0
+      },
+      "pass": false
+    }
+  ],
+  "direction_comparisons_diagnostic_only": [
+    {
+      "comparison": "C11-C10",
+      "metric": "Harrell",
+      "mean_seed_delta": -0.0023323615160349975,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": -0.001749271137026276
+        },
+        {
+          "seed": 47,
+          "delta": -0.002915451895043719
+        }
+      ],
+      "positive_seeds": 0,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "C11-C10",
+      "metric": "Uno60",
+      "mean_seed_delta": 0.0005526351593034828,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": 0.006590655291925707
+        },
+        {
+          "seed": 47,
+          "delta": -0.005485384973318741
+        }
+      ],
+      "positive_seeds": 1,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "C11-C01",
+      "metric": "Harrell",
+      "mean_seed_delta": -0.0017492711370262204,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": -0.004081632653061162
+        },
+        {
+          "seed": 47,
+          "delta": 0.0005830903790087216
+        }
+      ],
+      "positive_seeds": 1,
+      "seeds": 2,
+      "pass": false
+    },
+    {
+      "comparison": "C11-C01",
+      "metric": "Uno60",
+      "mean_seed_delta": -0.0027065314937531615,
+      "seed_deltas": [
+        {
+          "seed": 31,
+          "delta": 0.004508675968804554
+        },
+        {
+          "seed": 47,
+          "delta": -0.009921738956310877
+        }
+      ],
+      "positive_seeds": 1,
+      "seeds": 2,
+      "pass": false
+    }
+  ],
+  "factorial_contrasts_diagnostic_only": [
+    {
+      "metric": "Harrell",
+      "formula": "C11-C10-C01+C00",
+      "seed_contrasts": [
+        {
+          "seed": 31,
+          "value": 0.0011661807580175543
+        },
+        {
+          "seed": 47,
+          "value": -0.018075801749271148
+        }
+      ],
+      "mean_seed_contrast": -0.008454810495626797,
+      "diagnostic_only": true,
+      "biological_synergy_claimed": false
+    },
+    {
+      "metric": "Uno60",
+      "formula": "C11-C10-C01+C00",
+      "seed_contrasts": [
+        {
+          "seed": 31,
+          "value": 0.011848610023616257
+        },
+        {
+          "seed": 47,
+          "value": -0.022984929961345046
+        }
+      ],
+      "mean_seed_contrast": -0.005568159968864395,
+      "diagnostic_only": true,
+      "biological_synergy_claimed": false
+    }
+  ],
+  "OFF_and_WHOLE_OMICS_WRONG_are_diagnostic_only": true,
+  "outer_admitted": false,
+  "outer_automatically_started": false,
+  "separate_new_protocol_required": true,
+  "automatic_alternate_arm_promotion": false,
+  "automatic_hyperparameter_or_architecture_search": false,
+  "confirmatory_confidence_intervals": false,
+  "receipt_fingerprint": "2b96e08ae7e317f26d1f93c043937ca53f946fb18d2c8211c3d3a623aecbb7d4",
+  "evaluator_sha256": "8d08c066acb9b6b6148b5ccc7c183fdbc5eb56673b04e0f2e7ac98e1a5854add",
+  "scope": "repeated_inner_DSS_architecture_screen_not_independent_confirmation_or_medical_causality"
+}

@@ -1,0 +1,329 @@
+{
+  "failure": "audit promoted serialized scalar heads before summing; locked model sums Float32 heads before promotion",
+  "model_order_reconstruction_error_max": 0.0,
+  "models": 30,
+  "naive_Float64_main_reconstruction_error_max": 7.510185241699219e-06,
+  "new_budget_script_sha256": "c3319c3d31e5719a2693ae66f2d8a92e87441def032626dd52210e67de891169",
+  "new_endpoint_requests": 0,
+  "new_forward_calls": 0,
+  "new_optimizer_steps": 0,
+  "new_training_fits": 0,
+  "old_budget_script_sha256": "5ca0ca6c56b66cba02b10a14f246a2cc3ce04f57c40da439781cd7e6b8f60d46",
+  "original_absolute_tolerance": 1e-06,
+  "preserved_evaluation_report_sha256": {
+    "INNER_GATE.json": "085bad412cb0d29473425ebf4d4652425148b15614b911a945c4875c23e0bf92",
+    "INNER_RESULTS.json": "c10380d9a1bb449bf9eaa16aafa1c4482cbf6265eba799d8f173bd143d412d6f",
+    "REPLAY_AUDIT.json": "628b1225c0f667f444b5398f3b3cbb964922d38b0c0f674fea00dc2d163373a2",
+    "decision.json": "401e1d3572077f95749be5da37644658cd9b366614196bb3ee3349f76c3f80a1"
+  },
+  "previous_WIDE_qualification_preserved_sha256": "091f9715f55409d9cee94230326b45a7cceb6d6b3b4bd5bdb673c6fe356a4fa1",
+  "regression_tests": "tests/test_phase28_budget_readout.py Float32-order and nonrepresentable-component cases",
+  "repair": "reproduce (Float32_path_head + Float32_gene_head).double() before Float64 offset addition",
+  "rows": [
+    {
+      "arm": "C00",
+      "fold": 1,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 7.510185241699219e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C10",
+      "fold": 1,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 6.973743438720703e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C01",
+      "fold": 1,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 6.9141387939453125e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C11",
+      "fold": 1,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 7.3909759521484375e-06,
+      "seed": 31
+    },
+    {
+      "arm": "DIRECT",
+      "fold": 1,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 7.450580596923828e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C00",
+      "fold": 2,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.337860107421875e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C10",
+      "fold": 2,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.516674041748047e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C01",
+      "fold": 2,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.5762786865234375e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C11",
+      "fold": 2,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.814697265625e-06,
+      "seed": 31
+    },
+    {
+      "arm": "DIRECT",
+      "fold": 2,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.337860107421875e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C00",
+      "fold": 3,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.814697265625e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C10",
+      "fold": 3,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.814697265625e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C01",
+      "fold": 3,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 7.033348083496094e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C11",
+      "fold": 3,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.814697265625e-06,
+      "seed": 31
+    },
+    {
+      "arm": "DIRECT",
+      "fold": 3,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.606081008911133e-06,
+      "seed": 31
+    },
+    {
+      "arm": "C00",
+      "fold": 1,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.7550926208496094e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C10",
+      "fold": 1,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 4.887580871582031e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C01",
+      "fold": 1,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.546476364135742e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C11",
+      "fold": 1,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 5.841255187988281e-06,
+      "seed": 47
+    },
+    {
+      "arm": "DIRECT",
+      "fold": 1,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.6954879760742188e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C00",
+      "fold": 2,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 1.430511474609375e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C10",
+      "fold": 2,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 1.7881393432617188e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C01",
+      "fold": 2,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 1.7881393432617188e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C11",
+      "fold": 2,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 1.8477439880371094e-06,
+      "seed": 47
+    },
+    {
+      "arm": "DIRECT",
+      "fold": 2,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.6656856536865234e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C00",
+      "fold": 3,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.814697265625e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C10",
+      "fold": 3,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 4.351139068603516e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C01",
+      "fold": 3,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.814697265625e-06,
+      "seed": 47
+    },
+    {
+      "arm": "C11",
+      "fold": 3,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 3.6954879760742188e-06,
+      "seed": 47
+    },
+    {
+      "arm": "DIRECT",
+      "fold": 3,
+      "head_components_exact_float32": true,
+      "model_order_fit_main_error": 0.0,
+      "model_order_valid_main_error": 0.0,
+      "model_order_valid_risk_error": 0.0,
+      "naive_fit_main_error": 7.271766662597656e-06,
+      "seed": 47
+    }
+  ],
+  "source": "0ccd4897d30e654ebcb3f55d4891a3b76312f5e6a28dcc30070520000fc5372b",
+  "source_expression": "src/phase28_reread/model.py read_encoded learned_main and interaction",
+  "status": "PASS_NUMERIC_POSTPROCESS_REPAIR",
+  "tolerance_relaxed": false,
+  "training_source_or_weights_changed": false
+}

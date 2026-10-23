@@ -1,0 +1,14 @@
+{
+  "schema_version": "sami_stage_a_private_backup_v1",
+  "status": "VERIFIED_IDENTICAL_SHA256",
+  "artifact_role": "completed_models_OOF_cell_receipts_logs_and_test_qualification",
+  "archive_bytes": 17491442,
+  "archive_sha256": "efaff7e462dc1713ebe0ee5d6e3cea3890c0bd13ad16aa0818d71f679550d14d",
+  "source_role": "user_authorized_compute_server_private_directory",
+  "destination_role": "user_E_drive_private_backup_directory",
+  "source_and_destination_hashes_equal": true,
+  "server_original_models_and_OOF_retained": true,
+  "prepared_features_and_manifest_already_retained_on_E_drive": true,
+  "private_archive_in_git": false,
+  "patient_or_spot_arrays_published": false
+}

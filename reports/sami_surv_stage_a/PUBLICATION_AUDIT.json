@@ -1,0 +1,31 @@
+{
+  "schema_version": "sami_stage_a_publication_audit_v1",
+  "status": "PASS",
+  "publication_performed": false,
+  "exact_allowlist": true,
+  "expected_files": 21,
+  "scanned_files": 21,
+  "failures": [],
+  "failed_files": 0,
+  "identity_field_unique_counts": {
+    "unique_donor_count": 6,
+    "unique_section_count": 12,
+    "unique_barcode_count": 3634
+  },
+  "exact_forbidden_strings": 3718,
+  "private_manifest_sha256": "6f40062efacecc8a43a17ae6fa34ffa22f3b7b98ab2a5db874e1ab5a691da27f",
+  "private_prepared_sha256": "f067dfff45ff7c75ec4b61c93567b8218e11fedc9d68c2338e393935151e177e",
+  "arrays_accessed": [
+    "donor",
+    "section",
+    "barcodes"
+  ],
+  "feature_label_risk_arrays_accessed": false,
+  "private_arrays_exported": false,
+  "raw_patients_or_weights_exported": false,
+  "receipt_recursion_exclusion": [
+    "PUBLIC_MANIFEST.json",
+    "PUBLICATION_AUDIT.json"
+  ],
+  "public_manifest_sha256": "34d5e3a4dbbc2a5609c4815bc387f6dcb815a067d9a453edf021daeb9c025ec8"
+}

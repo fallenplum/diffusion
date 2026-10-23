@@ -1,0 +1,69 @@
+{
+  "schema_version": "sami_stage_a_execution_v1",
+  "status": "COMPLETE_INDEPENDENTLY_AUDITED",
+  "lineage": {
+    "config_sha256": "39b64d613a2624162db964c2b5619b7d096ddd2b6dbf7330a996d35d63ed6c9d",
+    "prepared_manifest_sha256": "6f40062efacecc8a43a17ae6fa34ffa22f3b7b98ab2a5db874e1ab5a691da27f",
+    "prepared_npz_sha256": "f067dfff45ff7c75ec4b61c93567b8218e11fedc9d68c2338e393935151e177e",
+    "source_sha256": "75b6d9e547b210f1326bcffe321c5232e63eead79a3484bb69b5567b7b6fb7ea"
+  },
+  "formal_fit_count": 96,
+  "inner_selection_fits": 90,
+  "final_outer_fits": 6,
+  "formal_retry_count": 0,
+  "failed_cells": 0,
+  "formal_device": "CPU",
+  "threads_per_worker": 2,
+  "schedule": "outer_00_first_then_five_remaining_outer_folds_concurrently",
+  "gpu_used_for_formal_fits": false,
+  "python_version": "3.12.3",
+  "numpy_version": "2.1.3",
+  "scipy_version": "1.14.1",
+  "full_server_synthetic_tests": {
+    "tests": 71,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "junit_sha256": "230966dabaadebec17e48c5969f13ae3f20eb95b74132b5ce7adbb8d408b7c1e",
+  "fit_elapsed_seconds": {
+    "min": 1.1191545389592648,
+    "median": 2.0218492060666904,
+    "max": 5.002320958999917
+  },
+  "total_cell_fit_elapsed_seconds": 242.62501836405136,
+  "wall_span_first_start_to_last_cell_complete_seconds": 120.71139788627625,
+  "wall_span_includes_launch_and_monitoring_gaps": true,
+  "optimizer_iterations": {
+    "min": 21.0,
+    "median": 34.5,
+    "max": 99.0
+  },
+  "final_gradient_inf": {
+    "min": 1.4553099343264729e-07,
+    "median": 7.068851900081559e-07,
+    "max": 1.6969358504401167e-06
+  },
+  "accepted_gradient_inf": 1e-05,
+  "regularization_candidates": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "selected_C": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "allocated_parameters": 4611,
+  "regularized_parameters": 4608,
+  "original_results_sha256": "962a8263554b7453b20ac1f96aae545684051fd2c3fb6fad11aa358565ed1fb0",
+  "independent_audit_sha256": "7d59742987e24d569a8959d1d7dc5f2c59670367789b476f84b07c1c83078e36",
+  "summarizer_sha256": "9cfe325947eab5c12cb65b63c557edc95ed90f979d4b92385927048bb8a8f058",
+  "DSS_accessed": false,
+  "old_ST_test_accessed": false,
+  "raw_arrays_and_models_not_published": true
+}

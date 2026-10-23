@@ -1,0 +1,199 @@
+{
+  "schema_version": "sami_stage_a_annotation_audit_public_v1",
+  "status": "PASS_PREPARED_FROZEN_TISSUE3",
+  "prepared_manifest_sha256": "6f40062efacecc8a43a17ae6fa34ffa22f3b7b98ab2a5db874e1ab5a691da27f",
+  "prepared_data_sha256": "f067dfff45ff7c75ec4b61c93567b8218e11fedc9d68c2338e393935151e177e",
+  "protocol_sha256": "39b64d613a2624162db964c2b5619b7d096ddd2b6dbf7330a996d35d63ed6c9d",
+  "label_mapping_sha256": "1e213fb24f7006c2672013d3f32dc8f712e76e921a3dfe89f5739eebf2abf940",
+  "annotation_archive": {
+    "bytes": 702660,
+    "md5": "92882eb0db7c2cacc5077cb5fc9578fd",
+    "sha256": "2468ad1208468277eaa7693cbaf92735e76d52207e87d534e0ac8fe77fcacb47"
+  },
+  "source": "https://zenodo.org/records/7760264",
+  "classes": [
+    "tumor",
+    "stroma",
+    "tumor_stroma_mixed"
+  ],
+  "sections": 12,
+  "donors": 6,
+  "annotated_spots": 17392,
+  "primary_spots": 13011,
+  "excluded_spots": 4381,
+  "feature_dimension": 1536,
+  "exact_barcode_join_sections": 12,
+  "duplicate_barcodes_within_section": 0,
+  "missing_annotation_barcodes": 0,
+  "missing_feature_barcodes": 0,
+  "source_feature_receipt_and_sha_verified_sections": 12,
+  "elementwise_coordinate_barcode_checks": 12,
+  "raw_label_coverage": {
+    "": {
+      "spots": 5,
+      "donors": 3,
+      "sections": 3
+    },
+    "IC aggragate_stroma or muscularis": {
+      "spots": 8,
+      "donors": 1,
+      "sections": 1
+    },
+    "IC aggreates_stroma or muscularis": {
+      "spots": 1,
+      "donors": 1,
+      "sections": 1
+    },
+    "IC aggregate submucosa": {
+      "spots": 15,
+      "donors": 1,
+      "sections": 1
+    },
+    "IC aggregate_muscularis or stroma": {
+      "spots": 10,
+      "donors": 1,
+      "sections": 1
+    },
+    "IC aggregate_stroma or muscularis": {
+      "spots": 23,
+      "donors": 2,
+      "sections": 2
+    },
+    "IC aggregate_submucosa": {
+      "spots": 23,
+      "donors": 2,
+      "sections": 2
+    },
+    "IC aggregregate_submucosa": {
+      "spots": 32,
+      "donors": 1,
+      "sections": 1
+    },
+    "epitehlium&submucosa": {
+      "spots": 59,
+      "donors": 1,
+      "sections": 1
+    },
+    "epithelium&submucosa": {
+      "spots": 1821,
+      "donors": 3,
+      "sections": 5
+    },
+    "exclude": {
+      "spots": 1109,
+      "donors": 5,
+      "sections": 10
+    },
+    "muscularis_IC med to high": {
+      "spots": 87,
+      "donors": 2,
+      "sections": 4
+    },
+    "non neo epithelium": {
+      "spots": 717,
+      "donors": 3,
+      "sections": 6
+    },
+    "stroma desmoplastic_IC low": {
+      "spots": 65,
+      "donors": 1,
+      "sections": 1
+    },
+    "stroma desmoplastic_IC med to high": {
+      "spots": 34,
+      "donors": 1,
+      "sections": 1
+    },
+    "stroma_desmoplastic_IC low": {
+      "spots": 161,
+      "donors": 1,
+      "sections": 1
+    },
+    "stroma_desmoplastic_IC med to high": {
+      "spots": 131,
+      "donors": 1,
+      "sections": 1
+    },
+    "stroma_fibroblastic_IC high": {
+      "spots": 3015,
+      "donors": 6,
+      "sections": 11
+    },
+    "stroma_fibroblastic_IC low": {
+      "spots": 102,
+      "donors": 1,
+      "sections": 2
+    },
+    "stroma_fibroblastic_IC med": {
+      "spots": 1390,
+      "donors": 5,
+      "sections": 9
+    },
+    "stroma_fibroblastic_IC_high": {
+      "spots": 226,
+      "donors": 1,
+      "sections": 1
+    },
+    "stroma_fibroblastic_IC_med": {
+      "spots": 113,
+      "donors": 1,
+      "sections": 1
+    },
+    "submucosa": {
+      "spots": 471,
+      "donors": 3,
+      "sections": 5
+    },
+    "tumor": {
+      "spots": 4040,
+      "donors": 6,
+      "sections": 12
+    },
+    "tumor&stroma": {
+      "spots": 651,
+      "donors": 1,
+      "sections": 1
+    },
+    "tumor&stroma IC med to high": {
+      "spots": 205,
+      "donors": 1,
+      "sections": 1
+    },
+    "tumor&stroma_IC low": {
+      "spots": 71,
+      "donors": 1,
+      "sections": 2
+    },
+    "tumor&stroma_IC med to high": {
+      "spots": 2807,
+      "donors": 6,
+      "sections": 10
+    }
+  },
+  "primary_class_counts": {
+    "tumor": 4040,
+    "stroma": 5237,
+    "tumor_stroma_mixed": 3734
+  },
+  "primary_class_donors": {
+    "tumor": 6,
+    "stroma": 6,
+    "tumor_stroma_mixed": 6
+  },
+  "exclusion_counts": {
+    "EXCLUDE_EPITHELIUM_SUBMUCOSA_MIXTURE": 1880,
+    "EXCLUDE_IMMUNE_AGGREGATE": 112,
+    "EXCLUDE_MUSCULARIS": 87,
+    "EXCLUDE_NON_NEOPLASTIC_EPITHELIUM": 717,
+    "EXCLUDE_SOURCE_PATHOLOGIST": 1109,
+    "EXCLUDE_SUBMUCOSA": 471,
+    "EXCLUDE_UNLABELED": 5
+  },
+  "original_ST_test_arrays_read": false,
+  "expression_array_accessed": false,
+  "DSS_read": false,
+  "actual_model_fits": 0,
+  "source_raw_files_modified": false,
+  "tissue_labels_are_cell_source_truth": false,
+  "source_cells_and_features_private": true
+}

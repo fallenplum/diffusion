@@ -1,0 +1,410 @@
+{
+  "schema_version": "sami_stage_a_sections_v1",
+  "class_order": [
+    "tumor",
+    "stroma",
+    "tumor_stroma_mixed"
+  ],
+  "section_count": 12,
+  "sections": [
+    {
+      "outer_fold": 0,
+      "section_within_fold": 0,
+      "n_spots": 1140,
+      "class_counts": [
+        373,
+        396,
+        371
+      ],
+      "class_recall": [
+        0.9142091152815014,
+        0.3686868686868687,
+        0.6253369272237197
+      ],
+      "accuracy": 0.6307017543859649,
+      "confusion_counts": [
+        [
+          341,
+          0,
+          32
+        ],
+        [
+          8,
+          146,
+          242
+        ],
+        [
+          133,
+          6,
+          232
+        ]
+      ]
+    },
+    {
+      "outer_fold": 0,
+      "section_within_fold": 1,
+      "n_spots": 844,
+      "class_counts": [
+        337,
+        249,
+        258
+      ],
+      "class_recall": [
+        0.9198813056379822,
+        0.40160642570281124,
+        0.6976744186046512
+      ],
+      "accuracy": 0.6990521327014217,
+      "confusion_counts": [
+        [
+          310,
+          0,
+          27
+        ],
+        [
+          4,
+          100,
+          145
+        ],
+        [
+          76,
+          2,
+          180
+        ]
+      ]
+    },
+    {
+      "outer_fold": 1,
+      "section_within_fold": 0,
+      "n_spots": 1802,
+      "class_counts": [
+        627,
+        524,
+        651
+      ],
+      "class_recall": [
+        0.13875598086124402,
+        0.9866412213740458,
+        0.2488479262672811
+      ],
+      "accuracy": 0.42508324084350724,
+      "confusion_counts": [
+        [
+          87,
+          470,
+          70
+        ],
+        [
+          0,
+          517,
+          7
+        ],
+        [
+          28,
+          461,
+          162
+        ]
+      ]
+    },
+    {
+      "outer_fold": 1,
+      "section_within_fold": 1,
+      "n_spots": 2317,
+      "class_counts": [
+        672,
+        728,
+        917
+      ],
+      "class_recall": [
+        0.14136904761904762,
+        0.9903846153846154,
+        0.19520174482006544
+      ],
+      "accuracy": 0.4294346137246439,
+      "confusion_counts": [
+        [
+          95,
+          473,
+          104
+        ],
+        [
+          0,
+          721,
+          7
+        ],
+        [
+          39,
+          699,
+          179
+        ]
+      ]
+    },
+    {
+      "outer_fold": 2,
+      "section_within_fold": 0,
+      "n_spots": 851,
+      "class_counts": [
+        232,
+        408,
+        211
+      ],
+      "class_recall": [
+        0.8017241379310345,
+        0.9313725490196079,
+        0.6587677725118484
+      ],
+      "accuracy": 0.8284371327849589,
+      "confusion_counts": [
+        [
+          186,
+          0,
+          46
+        ],
+        [
+          4,
+          380,
+          24
+        ],
+        [
+          37,
+          35,
+          139
+        ]
+      ]
+    },
+    {
+      "outer_fold": 2,
+      "section_within_fold": 1,
+      "n_spots": 240,
+      "class_counts": [
+        43,
+        156,
+        41
+      ],
+      "class_recall": [
+        0.6976744186046512,
+        0.9743589743589743,
+        0.7560975609756098
+      ],
+      "accuracy": 0.8875,
+      "confusion_counts": [
+        [
+          30,
+          1,
+          12
+        ],
+        [
+          0,
+          152,
+          4
+        ],
+        [
+          2,
+          8,
+          31
+        ]
+      ]
+    },
+    {
+      "outer_fold": 3,
+      "section_within_fold": 0,
+      "n_spots": 1162,
+      "class_counts": [
+        698,
+        50,
+        414
+      ],
+      "class_recall": [
+        0.8252148997134671,
+        0.7,
+        0.036231884057971016
+      ],
+      "accuracy": 0.5387263339070568,
+      "confusion_counts": [
+        [
+          576,
+          120,
+          2
+        ],
+        [
+          11,
+          35,
+          4
+        ],
+        [
+          317,
+          82,
+          15
+        ]
+      ]
+    },
+    {
+      "outer_fold": 3,
+      "section_within_fold": 1,
+      "n_spots": 665,
+      "class_counts": [
+        375,
+        70,
+        220
+      ],
+      "class_recall": [
+        0.7973333333333333,
+        0.4857142857142857,
+        0.4863636363636364
+      ],
+      "accuracy": 0.6616541353383458,
+      "confusion_counts": [
+        [
+          299,
+          15,
+          61
+        ],
+        [
+          7,
+          34,
+          29
+        ],
+        [
+          77,
+          36,
+          107
+        ]
+      ]
+    },
+    {
+      "outer_fold": 4,
+      "section_within_fold": 0,
+      "n_spots": 283,
+      "class_counts": [
+        162,
+        74,
+        47
+      ],
+      "class_recall": [
+        0.9012345679012346,
+        0.8783783783783784,
+        0.8085106382978723
+      ],
+      "accuracy": 0.8798586572438163,
+      "confusion_counts": [
+        [
+          146,
+          0,
+          16
+        ],
+        [
+          0,
+          65,
+          9
+        ],
+        [
+          7,
+          2,
+          38
+        ]
+      ]
+    },
+    {
+      "outer_fold": 4,
+      "section_within_fold": 1,
+      "n_spots": 649,
+      "class_counts": [
+        235,
+        209,
+        205
+      ],
+      "class_recall": [
+        0.8297872340425532,
+        0.937799043062201,
+        0.7121951219512195
+      ],
+      "accuracy": 0.827426810477658,
+      "confusion_counts": [
+        [
+          195,
+          0,
+          40
+        ],
+        [
+          0,
+          196,
+          13
+        ],
+        [
+          45,
+          14,
+          146
+        ]
+      ]
+    },
+    {
+      "outer_fold": 5,
+      "section_within_fold": 0,
+      "n_spots": 1305,
+      "class_counts": [
+        165,
+        959,
+        181
+      ],
+      "class_recall": [
+        0.793939393939394,
+        0.9363920750782064,
+        0.5193370165745856
+      ],
+      "accuracy": 0.8605363984674329,
+      "confusion_counts": [
+        [
+          131,
+          1,
+          33
+        ],
+        [
+          12,
+          898,
+          49
+        ],
+        [
+          27,
+          60,
+          94
+        ]
+      ]
+    },
+    {
+      "outer_fold": 5,
+      "section_within_fold": 1,
+      "n_spots": 1753,
+      "class_counts": [
+        121,
+        1414,
+        218
+      ],
+      "class_recall": [
+        0.768595041322314,
+        0.7029702970297029,
+        0.5642201834862385
+      ],
+      "accuracy": 0.6902452937820879,
+      "confusion_counts": [
+        [
+          93,
+          0,
+          28
+        ],
+        [
+          211,
+          994,
+          209
+        ],
+        [
+          49,
+          46,
+          123
+        ]
+      ]
+    }
+  ],
+  "missing_class_recall": null,
+  "identity_keys_published": false,
+  "note": "Ordinal groups only. Within-section spot summaries, not independent confidence intervals."
+}

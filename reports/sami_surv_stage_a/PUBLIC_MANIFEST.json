@@ -1,0 +1,117 @@
+{
+  "schema_version": "sami_stage_a_public_file_manifest_v1",
+  "status": "PASS_CONTENT_AUDIT",
+  "files": [
+    {
+      "path": "src/sami_surv/annotations.py",
+      "bytes": 15401,
+      "sha256": "e368194efac792c58a801d66cf97980e3a0bbb403178671e942562ac8ca30c9d"
+    },
+    {
+      "path": "src/sami_surv/morphology.py",
+      "bytes": 9315,
+      "sha256": "457ff15ebf5236bef5aa117be1e5c3791298cac0620c91b0f7c3fec37bb5eb0e"
+    },
+    {
+      "path": "scripts/prepare_sami_stage_a.py",
+      "bytes": 8689,
+      "sha256": "cfb71f84f6168036a3833e3f9aa590692df20bb7e61f9be830521e808d8686b9"
+    },
+    {
+      "path": "scripts/run_sami_stage_a.py",
+      "bytes": 20492,
+      "sha256": "51981d59294f03e51b0e451ca064f230e101543a59f988b157e93f330c70d93a"
+    },
+    {
+      "path": "scripts/audit_sami_stage_a.py",
+      "bytes": 16191,
+      "sha256": "cb3cb017c9a2c0d0ab5c89fbb507357cfff52812d310288d021f075d5ee72dfc"
+    },
+    {
+      "path": "scripts/summarize_sami_stage_a.py",
+      "bytes": 13506,
+      "sha256": "9cfe325947eab5c12cb65b63c557edc95ed90f979d4b92385927048bb8a8f058"
+    },
+    {
+      "path": "scripts/verify_sami_stage_a_publication.py",
+      "bytes": 22221,
+      "sha256": "b1715290c07a5918a9e6eca2b30668bfe9b4af09a93ed0dac26bf5d264ddf762"
+    },
+    {
+      "path": "tests/test_sami_annotations.py",
+      "bytes": 15905,
+      "sha256": "54b473aeeb9639c5727ed21df6c924909915ea372527cb2b30f7c678ddf6400e"
+    },
+    {
+      "path": "tests/test_sami_morphology.py",
+      "bytes": 10781,
+      "sha256": "fa6042c8713f6d219ce83ed72c699940299deb6a2fc3cf4f5d34af16cbb8b4de"
+    },
+    {
+      "path": "tests/test_sami_independent_audit.py",
+      "bytes": 7532,
+      "sha256": "ac772960d6ccb703d5fc7106a4b54547c20d8aa354aaf1414068045ff634cee9"
+    },
+    {
+      "path": "configs/sami_surv_stage_a_v1.json",
+      "bytes": 8425,
+      "sha256": "39b64d613a2624162db964c2b5619b7d096ddd2b6dbf7330a996d35d63ed6c9d"
+    },
+    {
+      "path": "reports/sami_surv_stage_a/PROTOCOL.md",
+      "bytes": 10352,
+      "sha256": "6134d4a0226fe0a0486ef3f4fbc7cf1dd026a89ed6e3458926e8b3f1c083952b"
+    },
+    {
+      "path": "reports/sami_surv_stage_a/DATA_AUDIT.json",
+      "bytes": 4918,
+      "sha256": "9e8f692612f1907a0cf3ce1cd1a43e7800f046f0e424bc582272f0c952fbfa2c"
+    },
+    {
+      "path": "reports/sami_surv_stage_a/SOURCE_LOCK_GUARD_REPAIR.json",
+      "bytes": 1883,
+      "sha256": "9569e15f6d27669a613982e0b71c2605fd6a5ccc549df0a3724973ef4db5c59b"
+    },
+    {
+      "path": "reports/sami_surv_stage_a/RESULTS.json",
+      "bytes": 21820,
+      "sha256": "962a8263554b7453b20ac1f96aae545684051fd2c3fb6fad11aa358565ed1fb0"
+    },
+    {
+      "path": "reports/sami_surv_stage_a/INDEPENDENT_AUDIT.json",
+      "bytes": 6387,
+      "sha256": "7d59742987e24d569a8959d1d7dc5f2c59670367789b476f84b07c1c83078e36"
+    },
+    {
+      "path": "reports/sami_surv_stage_a/EXECUTION_AUDIT.json",
+      "bytes": 2240,
+      "sha256": "a89ad1afc40b4271018e1a357ed321f4c347ffcb9b8d06da449d4dcab64ca7ba"
+    },
+    {
+      "path": "reports/sami_surv_stage_a/RESULTS.md",
+      "bytes": 5255,
+      "sha256": "7cf53212fec680720bc5e64296351ecde11c7b91b4ee718999cc8c59aa06e276"
+    },
+    {
+      "path": "reports/sami_surv_stage_a/decision.json",
+      "bytes": 1616,
+      "sha256": "77eb8859eb9a7e4bdc68e9a9a22d9920d0e2b5702fcb8ba456c447a4d837e7dd"
+    },
+    {
+      "path": "reports/sami_surv_stage_a/ANONYMOUS_SECTION_METRICS.json",
+      "bytes": 6758,
+      "sha256": "77e3e7f86b399e24d86165314fa849dce785d0b9f8eae5359ce646aa7d526e6f"
+    },
+    {
+      "path": "reports/sami_surv_stage_a/BACKUP_RECEIPT.json",
+      "bytes": 680,
+      "sha256": "a701dfc8e1d9f3da6191a1100ec8ab4b5489c0ab926a1818d1672e62597f0a55"
+    }
+  ],
+  "recursion_excluded_receipts": [
+    "PUBLIC_MANIFEST.json",
+    "PUBLICATION_AUDIT.json"
+  ],
+  "source_verifier_sha256": "b1715290c07a5918a9e6eca2b30668bfe9b4af09a93ed0dac26bf5d264ddf762",
+  "public_files_only": true
+}

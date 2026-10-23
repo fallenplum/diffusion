@@ -1,0 +1,899 @@
+{
+  "OOF_private_sha256": "8c1e1fce3b0ef22a3330b23c680404002f6822cc9f5c280d25c27d4fbe47821c",
+  "PCA_direction_provenance": "saved_direction_source_hash_and_receipt_bound; train_scaler_orthogonality_sign_whitening_and_transform_replayed",
+  "PCA_directions_refitted": false,
+  "TCGA_DSS_arrays_read": false,
+  "all_target_remaps_current_train_only": true,
+  "audit_script_sha256": "023b89352cd9d9ba23ec3fce738b32df4b8349d003982f057c4cf5d2295b9128",
+  "complete_spot_coverage": 13011,
+  "gate_distribution_diagnostics": [
+    {
+      "heldout": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.7875110644242065,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.9955935406260714,
+          "mean_max_probability": 0.506974945780051,
+          "mean_probability": [
+            0.3667441399810104,
+            0.34028892121978344,
+            0.29296693879920566
+          ],
+          "std_across_spots": [
+            0.16157169839107538,
+            0.16665802804547394,
+            0.1084131093681882
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.7573156213830277,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.7964304909084174,
+          "mean_max_probability": 0.6068600082709451,
+          "mean_probability": [
+            0.4464337447169193,
+            0.10822221143702242,
+            0.4453440438460581
+          ],
+          "std_across_spots": [
+            0.2142057959691567,
+            0.16540546860313127,
+            0.14110728214734716
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      },
+      "outer_index": 0,
+      "train": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.9678819619325452,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.9712058939404993,
+          "mean_max_probability": 0.5223910842224708,
+          "mean_probability": [
+            0.33883685938067964,
+            0.3330372530652053,
+            0.3281258875541134
+          ],
+          "std_across_spots": [
+            0.17921383245431188,
+            0.16213476246866543,
+            0.15434576883306395
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.5146673958296186,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.7875703576039139,
+          "mean_max_probability": 0.6325791796023745,
+          "mean_probability": [
+            0.2606702530507474,
+            0.4472110334651358,
+            0.2921187134841152
+          ],
+          "std_across_spots": [
+            0.23908809205634818,
+            0.30920302158523616,
+            0.15340933339368443
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      }
+    },
+    {
+      "heldout": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.4187069021683576,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.8963486345419343,
+          "mean_max_probability": 0.5815779061103094,
+          "mean_probability": [
+            0.155974074991821,
+            0.46748309081144196,
+            0.3765428341967359
+          ],
+          "std_across_spots": [
+            0.07911663320022357,
+            0.1853940345506726,
+            0.20013389656509314
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.2162342942390276,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.6120958269149575,
+          "mean_max_probability": 0.7520939345099561,
+          "mean_probability": [
+            0.06812403677863382,
+            0.7119448516728485,
+            0.21993111154851763
+          ],
+          "std_across_spots": [
+            0.09844476786708214,
+            0.23057387327788423,
+            0.15099507427990516
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      },
+      "outer_index": 1,
+      "train": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.995022241514648,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.9772952367267748,
+          "mean_max_probability": 0.5182841501393006,
+          "mean_probability": [
+            0.33547079380315914,
+            0.3357926126237301,
+            0.3287365935731119
+          ],
+          "std_across_spots": [
+            0.15995027044367838,
+            0.1689799090284063,
+            0.16094430209919675
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.5579597420944185,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.8010096985351641,
+          "mean_max_probability": 0.6247400435709629,
+          "mean_probability": [
+            0.2770954491659183,
+            0.39918849376037047,
+            0.3237160570737103
+          ],
+          "std_across_spots": [
+            0.235094406379831,
+            0.3108691888469344,
+            0.16494674655491978
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      }
+    },
+    {
+      "heldout": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.8793212044581589,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 1.0046994264164868,
+          "mean_max_probability": 0.499880593008296,
+          "mean_probability": [
+            0.2369669061407036,
+            0.4627172371527825,
+            0.30031585670651406
+          ],
+          "std_across_spots": [
+            0.10716065221396394,
+            0.12522240488467873,
+            0.09232208186327781
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.3422602945558428,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.6783715035232152,
+          "mean_max_probability": 0.7017608622953418,
+          "mean_probability": [
+            0.17646479074982774,
+            0.557095283139314,
+            0.26643992611085804
+          ],
+          "std_across_spots": [
+            0.21062465756758594,
+            0.338758338005219,
+            0.17421198519152664
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      },
+      "outer_index": 2,
+      "train": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.9918159212166944,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.9764619491233268,
+          "mean_max_probability": 0.5143079967021049,
+          "mean_probability": [
+            0.33392433439043984,
+            0.33264524381820226,
+            0.3334304217913578
+          ],
+          "std_across_spots": [
+            0.16924386751770948,
+            0.15731770227723813,
+            0.15976140810665204
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.5109696659330538,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.7824507706971939,
+          "mean_max_probability": 0.6369118019037894,
+          "mean_probability": [
+            0.31349805075746956,
+            0.3853241764113792,
+            0.30117777283115094
+          ],
+          "std_across_spots": [
+            0.25910193434615125,
+            0.3198782219221473,
+            0.15268154080242907
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      }
+    },
+    {
+      "heldout": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.663419183348492,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.8988914029414588,
+          "mean_max_probability": 0.5758460935591608,
+          "mean_probability": [
+            0.27520988793452444,
+            0.5133888144033475,
+            0.21140129766212756
+          ],
+          "std_across_spots": [
+            0.19336348923917207,
+            0.16896973463099985,
+            0.10739523139658255
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.9341441367125154,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.9544517584934626,
+          "mean_max_probability": 0.537505648090099,
+          "mean_probability": [
+            0.5074134912453176,
+            0.20985739399943146,
+            0.28272911475525053
+          ],
+          "std_across_spots": [
+            0.13627126889573266,
+            0.1130939229842881,
+            0.11380151476688216
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      },
+      "outer_index": 3,
+      "train": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.9928123097662673,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.9578308167644982,
+          "mean_max_probability": 0.5338066462651065,
+          "mean_probability": [
+            0.34129254050189406,
+            0.3267192519761858,
+            0.3319882075219199
+          ],
+          "std_across_spots": [
+            0.1826839695903824,
+            0.17004172594900535,
+            0.17438813445755533
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.4849261121839885,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.728696552103897,
+          "mean_max_probability": 0.670095723416878,
+          "mean_probability": [
+            0.25999537675004686,
+            0.42852839241816715,
+            0.31147623083178705
+          ],
+          "std_across_spots": [
+            0.24557441305785332,
+            0.35003260674255365,
+            0.18326376164444344
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      }
+    },
+    {
+      "heldout": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.6741053305546516,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 1.0098000870300643,
+          "mean_max_probability": 0.49734262855965816,
+          "mean_probability": [
+            0.32971815334847854,
+            0.39723432837772,
+            0.2730475182738013
+          ],
+          "std_across_spots": [
+            0.12272703413294671,
+            0.16330883280966516,
+            0.09927740901216571
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.650163692510641,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.743495389103889,
+          "mean_max_probability": 0.6585452391699225,
+          "mean_probability": [
+            0.3981521516263582,
+            0.2553055365032765,
+            0.3465423118703656
+          ],
+          "std_across_spots": [
+            0.28647218294727633,
+            0.30925239884877587,
+            0.16811204847452788
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      },
+      "outer_index": 4,
+      "train": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.9874818509062682,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.9724906535817681,
+          "mean_max_probability": 0.5230322240693512,
+          "mean_probability": [
+            0.33714455878378813,
+            0.33277643234095705,
+            0.3300790088752538
+          ],
+          "std_across_spots": [
+            0.16872765144935392,
+            0.1726082175578333,
+            0.15695676217086102
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.4607273528043112,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.7776190864289757,
+          "mean_max_probability": 0.6377565869153947,
+          "mean_probability": [
+            0.26001166535379594,
+            0.4337979887268339,
+            0.30619034591937067
+          ],
+          "std_across_spots": [
+            0.22772329465414456,
+            0.3251251693740177,
+            0.16616266905828025
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      }
+    },
+    {
+      "heldout": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.4359404449118183,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.9373631401262587,
+          "mean_max_probability": 0.561451163958757,
+          "mean_probability": [
+            0.3791928325814252,
+            0.2870818030107687,
+            0.3337253644078055
+          ],
+          "std_across_spots": [
+            0.22266811066826633,
+            0.09049143001115759,
+            0.21300465660715298
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.3072616978697607,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.8315581441888541,
+          "mean_max_probability": 0.6104886526694835,
+          "mean_probability": [
+            0.1621167080951647,
+            0.554109040880697,
+            0.28377425102413845
+          ],
+          "std_across_spots": [
+            0.1434378537453652,
+            0.24078624422037959,
+            0.12555480401188507
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      },
+      "outer_index": 5,
+      "train": {
+        "random": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.9996988076194147,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.9709048428593191,
+          "mean_max_probability": 0.5245566729914358,
+          "mean_probability": [
+            0.33735542259614537,
+            0.3340929303261374,
+            0.3285516470777186
+          ],
+          "std_across_spots": [
+            0.1679105032786796,
+            0.1669162176099828,
+            0.1654191826458958
+          ],
+          "weighting": "donor_section_spot_equal"
+        },
+        "tissue": {
+          "calibrated_source_probability_claim": false,
+          "centered_covariance_effective_rank": 1.5893543146894173,
+          "effective_rank_rule": "exp_entropy_positive_covariance_eigenvalues_gt_1e-12;constant_zero",
+          "mean_entropy_nats": 0.7514653449292006,
+          "mean_max_probability": 0.6629667795602991,
+          "mean_probability": [
+            0.33696442923905295,
+            0.3624139507995231,
+            0.30062161996142545
+          ],
+          "std_across_spots": [
+            0.2767031919543972,
+            0.3327098234564055,
+            0.17201869992849558
+          ],
+          "weighting": "donor_section_spot_equal"
+        }
+      }
+    }
+  ],
+  "lineage": {
+    "config_sha256": "a6613a8a933772d1d414863fa6b233fca45d7a6f05d1151628507a237d7f36ee",
+    "manifest_sha256": "9cc2f840b8010eb1881831e971682780461607437bb220b1a6d7a0a39efafeb0",
+    "prepared_sha256": "b5a2a44862123f629314cb28ad66abae437d7d08e923fb6128f82f7e9059c025",
+    "program_sha256": "f8031c03cbb9ec2409d72c799129a6de74f080860afbc81cb30fb187d2560143",
+    "runtime": {
+      "numpy": "2.1.3",
+      "python": "3.12.3",
+      "scipy": "1.14.1",
+      "sklearn": "1.5.2"
+    },
+    "source_sha256": {
+      "scripts/run_sami_stage_b.py": "ad903143f36e02e4b4955918f44bf19640be45568b0267e33680a2dae0a04ab2",
+      "src/sami_surv/morphology.py": "457ff15ebf5236bef5aa117be1e5c3791298cac0620c91b0f7c3fec37bb5eb0e",
+      "src/sami_surv/program_metrics.py": "44e9aedf80167efae330720cb6ffb3e5886e5842d744cb2c468d5156a58b5a74",
+      "src/sami_surv/spatial_programs.py": "dc8033cf5cdee2b7449970c42d60fb4c019c8472646dc3046d23f5ab19a16af7"
+    }
+  },
+  "maxima_absolute_discrepancy": {
+    "PCA_train_scaler": 6.772360450213455e-15,
+    "PCA_transform_replay": 0.0,
+    "PCA_whitening": 0.0,
+    "aggregate_metrics": 3.552713678800501e-15,
+    "design_train_scaler": 2.609024107869118e-15,
+    "metrics_recompute": 1.4210854715202004e-14,
+    "outer_summary_metrics": 1.4210854715202004e-14,
+    "paired_intervals": 3.4416913763379853e-15,
+    "program_prediction_replay": 0.0,
+    "public_fold_metrics": 1.4210854715202004e-14,
+    "target_train_scaler": 2.3869795029440866e-15,
+    "teacher_probability_replay": 4.440892098500626e-16,
+    "teacher_train_scaler": 7.549516567451064e-15
+  },
+  "new_model_fits": 0,
+  "optimizer_steps": 0,
+  "original_ST_test_arrays_read": false,
+  "pca_diagnostics": [
+    {
+      "direction_refit": false,
+      "maximum_unit_variance_error": 1.0769163338864018e-14,
+      "outer_index": 0,
+      "raw_train_scaler_and_projected_train_variance_recomputed": true
+    },
+    {
+      "direction_refit": false,
+      "maximum_unit_variance_error": 1.0436096431476471e-14,
+      "outer_index": 1,
+      "raw_train_scaler_and_projected_train_variance_recomputed": true
+    },
+    {
+      "direction_refit": false,
+      "maximum_unit_variance_error": 7.66053886991358e-15,
+      "outer_index": 2,
+      "raw_train_scaler_and_projected_train_variance_recomputed": true
+    },
+    {
+      "direction_refit": false,
+      "maximum_unit_variance_error": 8.881784197001252e-15,
+      "outer_index": 3,
+      "raw_train_scaler_and_projected_train_variance_recomputed": true
+    },
+    {
+      "direction_refit": false,
+      "maximum_unit_variance_error": 8.659739592076221e-15,
+      "outer_index": 4,
+      "raw_train_scaler_and_projected_train_variance_recomputed": true
+    },
+    {
+      "direction_refit": false,
+      "maximum_unit_variance_error": 9.325873406851315e-15,
+      "outer_index": 5,
+      "raw_train_scaler_and_projected_train_variance_recomputed": true
+    }
+  ],
+  "plan_sha256": "5d1b36c8c745d8d97876fbb7230b56de4d5a3e0c8d3bc491e671bbe0899b3fae",
+  "regressor_diagnostics": [
+    {
+      "arm": "COMPOSITION",
+      "independently_recomputed_gradient_inf": 4.938992225806305e-07,
+      "outer_index": 0,
+      "standardized_design_rank": 4
+    },
+    {
+      "arm": "ADDITIVE",
+      "independently_recomputed_gradient_inf": 7.720512730039645e-07,
+      "outer_index": 0,
+      "standardized_design_rank": 68
+    },
+    {
+      "arm": "TISSUE_COND",
+      "independently_recomputed_gradient_inf": 6.562609715168866e-07,
+      "outer_index": 0,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "RANDOM_GATE",
+      "independently_recomputed_gradient_inf": 4.523734927035228e-07,
+      "outer_index": 0,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "WRONG_DONOR",
+      "independently_recomputed_gradient_inf": 6.690314115637885e-07,
+      "outer_index": 0,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "SPATIAL_SHUFFLE",
+      "independently_recomputed_gradient_inf": 7.737494798339085e-07,
+      "outer_index": 0,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "COMPOSITION",
+      "independently_recomputed_gradient_inf": 2.0855991303628325e-07,
+      "outer_index": 1,
+      "standardized_design_rank": 4
+    },
+    {
+      "arm": "ADDITIVE",
+      "independently_recomputed_gradient_inf": 6.81902015228341e-07,
+      "outer_index": 1,
+      "standardized_design_rank": 68
+    },
+    {
+      "arm": "TISSUE_COND",
+      "independently_recomputed_gradient_inf": 8.02058613995002e-07,
+      "outer_index": 1,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "RANDOM_GATE",
+      "independently_recomputed_gradient_inf": 4.7248273199722995e-07,
+      "outer_index": 1,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "WRONG_DONOR",
+      "independently_recomputed_gradient_inf": 7.438287926760795e-07,
+      "outer_index": 1,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "SPATIAL_SHUFFLE",
+      "independently_recomputed_gradient_inf": 6.972568562831202e-07,
+      "outer_index": 1,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "COMPOSITION",
+      "independently_recomputed_gradient_inf": 2.732772283408312e-07,
+      "outer_index": 2,
+      "standardized_design_rank": 4
+    },
+    {
+      "arm": "ADDITIVE",
+      "independently_recomputed_gradient_inf": 5.314457622639214e-07,
+      "outer_index": 2,
+      "standardized_design_rank": 68
+    },
+    {
+      "arm": "TISSUE_COND",
+      "independently_recomputed_gradient_inf": 9.77284066198611e-07,
+      "outer_index": 2,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "RANDOM_GATE",
+      "independently_recomputed_gradient_inf": 4.1197897288113364e-07,
+      "outer_index": 2,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "WRONG_DONOR",
+      "independently_recomputed_gradient_inf": 7.414324157220259e-07,
+      "outer_index": 2,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "SPATIAL_SHUFFLE",
+      "independently_recomputed_gradient_inf": 6.445087233114717e-07,
+      "outer_index": 2,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "COMPOSITION",
+      "independently_recomputed_gradient_inf": 3.028751984681527e-07,
+      "outer_index": 3,
+      "standardized_design_rank": 4
+    },
+    {
+      "arm": "ADDITIVE",
+      "independently_recomputed_gradient_inf": 3.3957654289482247e-07,
+      "outer_index": 3,
+      "standardized_design_rank": 68
+    },
+    {
+      "arm": "TISSUE_COND",
+      "independently_recomputed_gradient_inf": 8.235392962123445e-07,
+      "outer_index": 3,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "RANDOM_GATE",
+      "independently_recomputed_gradient_inf": 6.496367189658819e-07,
+      "outer_index": 3,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "WRONG_DONOR",
+      "independently_recomputed_gradient_inf": 5.276308557849459e-07,
+      "outer_index": 3,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "SPATIAL_SHUFFLE",
+      "independently_recomputed_gradient_inf": 8.328981634100549e-07,
+      "outer_index": 3,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "COMPOSITION",
+      "independently_recomputed_gradient_inf": 7.103564775429172e-07,
+      "outer_index": 4,
+      "standardized_design_rank": 4
+    },
+    {
+      "arm": "ADDITIVE",
+      "independently_recomputed_gradient_inf": 3.6576870855666195e-07,
+      "outer_index": 4,
+      "standardized_design_rank": 68
+    },
+    {
+      "arm": "TISSUE_COND",
+      "independently_recomputed_gradient_inf": 9.069323427457129e-07,
+      "outer_index": 4,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "RANDOM_GATE",
+      "independently_recomputed_gradient_inf": 3.89363902931171e-07,
+      "outer_index": 4,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "WRONG_DONOR",
+      "independently_recomputed_gradient_inf": 4.780688625632253e-07,
+      "outer_index": 4,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "SPATIAL_SHUFFLE",
+      "independently_recomputed_gradient_inf": 8.624377761662491e-07,
+      "outer_index": 4,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "COMPOSITION",
+      "independently_recomputed_gradient_inf": 2.704624843460901e-07,
+      "outer_index": 5,
+      "standardized_design_rank": 4
+    },
+    {
+      "arm": "ADDITIVE",
+      "independently_recomputed_gradient_inf": 3.4519783228737823e-07,
+      "outer_index": 5,
+      "standardized_design_rank": 68
+    },
+    {
+      "arm": "TISSUE_COND",
+      "independently_recomputed_gradient_inf": 5.229352307472082e-07,
+      "outer_index": 5,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "RANDOM_GATE",
+      "independently_recomputed_gradient_inf": 4.5512434035908933e-07,
+      "outer_index": 5,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "WRONG_DONOR",
+      "independently_recomputed_gradient_inf": 5.336563204179621e-07,
+      "outer_index": 5,
+      "standardized_design_rank": 132
+    },
+    {
+      "arm": "SPATIAL_SHUFFLE",
+      "independently_recomputed_gradient_inf": 7.624537475187729e-07,
+      "outer_index": 5,
+      "standardized_design_rank": 132
+    }
+  ],
+  "results_sha256": "1a4d8673e5209e413d15d35137f1501e67d7886e3a30281e8e5c0d2b1199995b",
+  "schema_version": "sami_stage_b_independent_run_audit_v1",
+  "statistical_scope": "descriptive_six_development_donor_OOF_not_external_confirmation_or_cell_source_truth",
+  "status": "PASS_INDEPENDENT_REPLAY",
+  "teacher_diagnostics": [
+    {
+      "independently_recomputed_gradient_inf": 8.826436690436998e-07,
+      "teacher_index": 0,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.637690096333406e-07,
+      "teacher_index": 1,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.405667535843654e-07,
+      "teacher_index": 2,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 7.061368834607867e-07,
+      "teacher_index": 3,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 5.43583514727857e-07,
+      "teacher_index": 4,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.130926959408538e-07,
+      "teacher_index": 5,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.054581039025824e-07,
+      "teacher_index": 6,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 8.066311326549596e-07,
+      "teacher_index": 7,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.252934640013115e-07,
+      "teacher_index": 8,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 5.015677788785741e-07,
+      "teacher_index": 9,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 8.59459992759784e-07,
+      "teacher_index": 10,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 8.54660786553732e-07,
+      "teacher_index": 11,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 5.005322733760489e-07,
+      "teacher_index": 12,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 5.063380733279568e-07,
+      "teacher_index": 13,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.139780855992301e-07,
+      "teacher_index": 14,
+      "training_donors": 4
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.404271940394214e-07,
+      "teacher_index": 15,
+      "training_donors": 5
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.840812975399444e-07,
+      "teacher_index": 16,
+      "training_donors": 5
+    },
+    {
+      "independently_recomputed_gradient_inf": 7.505643227223319e-07,
+      "teacher_index": 17,
+      "training_donors": 5
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.723903545582919e-07,
+      "teacher_index": 18,
+      "training_donors": 5
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.595949719984983e-07,
+      "teacher_index": 19,
+      "training_donors": 5
+    },
+    {
+      "independently_recomputed_gradient_inf": 9.887513535443243e-07,
+      "teacher_index": 20,
+      "training_donors": 5
+    }
+  ],
+  "teacher_recipient_and_outer_donor_disjoint": true,
+  "true_target_scaler_shared_before_control_remapping": true,
+  "verified_five_donor_teacher_models": 6,
+  "verified_four_donor_teacher_models": 15,
+  "verified_nonfitted_mean_references": 6,
+  "verified_outer_prediction_applications": 6,
+  "verified_outer_predictions": 42,
+  "verified_program_regressors": 36,
+  "verified_training_crossfit_applications": 30,
+  "verified_unique_teacher_models": 21
+}

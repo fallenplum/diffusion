@@ -1,0 +1,90 @@
+{
+  "schema_version": "sami_stage_b_external_program_source_replay_v1",
+  "status": "PASS_EXACT_SOURCE_REPLAY",
+  "audit_date": "2026-10-24",
+  "program_config_sha256": "f8031c03cbb9ec2409d72c799129a6de74f080860afbc81cb30fb187d2560143",
+  "experiment_config_sha256": "a6613a8a933772d1d414863fa6b233fca45d7a6f05d1151628507a237d7f36ee",
+  "replay_method": "Independent reopen of original XLSX files; exact signed column extraction or exact external cluster filtering and sorting; elementwise equality against serialized program genes and complete selected source rows.",
+  "sources": [
+    {
+      "file_name": "Joanito2022_41588_2022_1100_MOESM3_ESM.xlsx",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01100-4/MediaObjects/41588_2022_1100_MOESM3_ESM.xlsx",
+      "source_file_sha256": "d9ce341fe3698cea37b308ea2dcc747e25380103ccabbf3aba60e252817f1f9c",
+      "source_bytes": 357675,
+      "sheet": "Supplementary Table 14",
+      "worksheet_rows_including_header": 309,
+      "worksheet_columns": 4,
+      "header_exact": ["iCMS2_Up", "iCMS2_Down", "iCMS3_Up", "iCMS3_Down"],
+      "nonblank_column_counts": [308, 279, 74, 54],
+      "unique_genes_across_all_four_columns": 715,
+      "first_genes": ["CXCL14", "GBA2", "AL445524.1", "AQP8"],
+      "last_genes": ["SUPT20H", "ITLN1", "TM4SF4", "PHYH"],
+      "column_order_and_direction_preserved": true,
+      "formula_cells_or_implicit_header_inference_used": false,
+      "elementwise_replay_passed": true
+    },
+    {
+      "file_name": "Qi2022_41467_2022_29366_MOESM5_ESM.xlsx",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-29366-6/MediaObjects/41467_2022_29366_MOESM5_ESM.xlsx",
+      "source_file_sha256": "f2d5f8d90522b5ed3089cea949f1a6795db3d65d5c73a82105ea530fa303cefb",
+      "source_bytes": 4137233,
+      "header_exact": ["p_val", "avg_logFC", "pct.1", "pct.2", "p_val_adj", "cluster", "gene"],
+      "selection_rule": "Exact cluster; p_val_adj < 0.05 and avg_logFC > 0; descending avg_logFC then ascending gene; first 25; no target cohort information.",
+      "not_claimed_to_be_authors_exact_25_gene_signature": true,
+      "clusters": [
+        {
+          "program_id": "FAP_fibroblast_associated_top25",
+          "sheet": "MSC",
+          "worksheet_rows_including_header": 11798,
+          "cluster_exact": "FAP+ fibroblasts",
+          "source_cluster_rows": 1262,
+          "eligible_rows": 1261,
+          "selected_genes": 25,
+          "first_selected_gene": "MMP1",
+          "last_selected_gene": "CXCL6",
+          "rank26_gene": "MMP11",
+          "selection_rule_sha256": "36e880bdc2f753aa4475b717b88445b95b76e5a76d203d232b1702c990e8bd82",
+          "gene_order_and_source_row_fields_elementwise_equal": true
+        },
+        {
+          "program_id": "MARCO_macrophage_associated_top25",
+          "sheet": "Myeloid Cells",
+          "worksheet_rows_including_header": 14758,
+          "cluster_exact": "MARCO+ Macrophage",
+          "source_cluster_rows": 1572,
+          "eligible_rows": 1570,
+          "selected_genes": 25,
+          "first_selected_gene": "CXCL5",
+          "last_selected_gene": "HSD3B7",
+          "rank26_gene": "CD9",
+          "selection_rule_sha256": "412441efa9f2b0f12fbff9296ab226c1ce981fdacc3dceade4f330b11a38baa4",
+          "gene_order_and_source_row_fields_elementwise_equal": true
+        }
+      ],
+      "duplicate_gene_rows_in_selected_clusters": false,
+      "rank25_rank26_avg_logFC_ties": false,
+      "source_symbols_rewritten": false,
+      "elementwise_replay_passed": true
+    }
+  ],
+  "nomenclature_probe": {
+    "file_name": "Qi2022_41467_2022_29366_MOESM9_ESM.xlsx",
+    "source_file_sha256": "e32d1708174e0a46bc0ae2aad3c86b6e77b3189248338abf5d23b85c473a5981",
+    "source_bytes": 34709129,
+    "inspected_content": "Figure 6 worksheets only",
+    "figure6h_j_k_source_column": "MARCO+.Macrophage",
+    "article_narrative_name": "SPP1+ macrophages",
+    "direct_alias_mapping_verified": false,
+    "action": "Preserve exact supplementary-table MARCO-associated name; do not claim measured SPP1 macrophage activity.",
+    "author_exact25_gene_list_recovered": false
+  },
+  "scoring_contract_replayed": "Gene membership and signs only; the locked CP10K/log1p signed score is the current experiment definition, not a claim to replicate all source-paper normalization choices.",
+  "source_association_is_cell_source_ground_truth": false,
+  "source_association_is_cell_intrinsic_activity": false,
+  "target_expression_or_performance_used_for_gene_selection": false,
+  "target_survival_outcomes_read": false,
+  "original_ST_test_read": false,
+  "model_training_performed_by_this_source_audit": false,
+  "source_workbooks_modified": false,
+  "patient_identifiers_in_this_report": false
+}

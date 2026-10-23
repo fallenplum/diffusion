@@ -1,0 +1,35 @@
+{
+  "schema_version": "sami_stage_b_publication_audit_v1",
+  "status": "PASS",
+  "publication_performed": false,
+  "exact_allowlist": true,
+  "expected_files": 22,
+  "scanned_files": 22,
+  "failures": [],
+  "failed_files": 0,
+  "identity_field_unique_counts": {
+    "unique_donor_count": 6,
+    "unique_section_count": 12,
+    "unique_barcode_count": 3634
+  },
+  "exact_forbidden_strings": 3652,
+  "private_manifest_sha256": "9cc2f840b8010eb1881831e971682780461607437bb220b1a6d7a0a39efafeb0",
+  "private_prepared_sha256": "b5a2a44862123f629314cb28ad66abae437d7d08e923fb6128f82f7e9059c025",
+  "config_sha256": "a6613a8a933772d1d414863fa6b233fca45d7a6f05d1151628507a237d7f36ee",
+  "program_definition_sha256": "f8031c03cbb9ec2409d72c799129a6de74f080860afbc81cb30fb187d2560143",
+  "arrays_accessed": [
+    "donor",
+    "section",
+    "barcodes"
+  ],
+  "feature_label_expression_arrays_accessed": false,
+  "private_arrays_exported": false,
+  "raw_patients_or_weights_exported": false,
+  "external_gene_list_exception": "exact_SHA_bound_program_config_and_three_named_membership_fields_only",
+  "aggregate_QC_exception": "RESULTS_per_fold_arms_metrics_qc_associations_exact_four_program_schema_only",
+  "receipt_recursion_exclusion": [
+    "PUBLIC_MANIFEST.json",
+    "PUBLICATION_AUDIT.json"
+  ],
+  "public_manifest_sha256": "5b5873f08652996911d28073855eded287e23f95836add46380e2ab4a25bc0dc"
+}

@@ -1,0 +1,54 @@
+{
+  "status": "LOCKED_BEFORE_ADDITIONAL_FITS",
+  "outer_test_evaluated": false,
+  "post_hoc_exploratory": true,
+  "R4_selection_modified": false,
+  "source_lock_sha256": "c2a2805787a380fcdd1ec2dfbe48b8be182b33a01b665bd1d7a2b0cfa9761edc",
+  "selection_sha256": {
+    "INNER_REPORT_FOR_SELECTION.json": "35619619a912f5aea22b7af61ebd6df56613b6831c45d1351c3c61ff5e146e27",
+    "OUTER_SELECTION_LOCK.json": "cf334858e21e438fb49cd177f7b495968b4b731695e995a7eee5bba2e70ab33f"
+  },
+  "planner_sha256": "0f82843b88abd7215123e280828c415de7eb93152cd298ed1b8f6928553301cb",
+  "planned_neural_fits": 12,
+  "planned_teacher_refits": 0,
+  "prepared_reused_readonly": true,
+  "outer_performance_read_by_this_audit": false,
+  "schedule": {
+    "epochs": 80,
+    "evaluation_epochs": [
+      20,
+      40,
+      80
+    ],
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "full_riskset_gradient_cache": true,
+    "parameter_L2": 0.0001,
+    "risk_magnitude_penalty": 0.1
+  },
+  "constructor_gamma_audit": [
+    {
+      "variant": "O4_MATCHED_SUPPORT",
+      "stage": "R2",
+      "actual_base_arm": "O4",
+      "gamma": 0.3,
+      "same_membership_object_forwarded": true,
+      "original_O9_or_SHUFFLED_constructor_invoked": false
+    },
+    {
+      "variant": "F5_MATCHED_SUPPORT",
+      "stage": "R3",
+      "actual_base_arm": "F5",
+      "gamma": 0.1,
+      "same_membership_object_forwarded": true,
+      "original_O9_or_SHUFFLED_constructor_invoked": false
+    }
+  ],
+  "schema": "bgb_en_matched_support_launch_lock_v1",
+  "private_job_plan_sha256": "4b59f20115a28696ab683918caa62800f7d080c0684296ceeaf856195f771c00",
+  "public_plan_sha256": "77c6a4b64911c90b5d7daa21a533a58ad5702759c729365b8e0728e1393e9d25",
+  "source_lock_preserved_unchanged": true,
+  "additional_optimizer_fits_at_launch_lock": 0,
+  "GPU_calls": 0
+}

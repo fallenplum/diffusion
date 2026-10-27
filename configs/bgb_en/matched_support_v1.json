@@ -1,0 +1,27 @@
+{
+  "schema": "bgb_en_matched_support_null_v1",
+  "status": "POST_HOC_EXPLORATORY_ADDITION_NOT_R4_SELECTION",
+  "outer_fold": 1,
+  "partitions": [0, 1, 2],
+  "seeds": [31, 47],
+  "permutation_seed": 270199,
+  "permutation_scope": "true_GMT_nonempty_union_only_within_exact_current_train_RNA_and_CNA_measurement_mask_signature",
+  "variants": {
+    "O4_MATCHED_SUPPORT": {"stage": "R2", "base_arm": "O4"},
+    "F5_MATCHED_SUPPORT": {"stage": "R3", "base_arm": "F5"}
+  },
+  "epochs": 80,
+  "evaluation_epochs": [20, 40, 80],
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "new_neural_optimizer_fits": 12,
+  "new_teacher_fits": 0,
+  "new_preprocessing_fits": 0,
+  "analytical_RNA_decoder_fits": 12,
+  "core_results_retained": true,
+  "R4_selection_modified": false,
+  "outer_test_evaluated": false,
+  "values_and_gene_ID_not_permuted": true,
+  "same_permutation_for_O4_and_F5_and_both_seeds_within_each_partition": true,
+  "scientific_endpoint": "fixed_epoch80_with_Harrell_and_Uno60_reported_separately"
+}

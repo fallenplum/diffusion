@@ -1,0 +1,31 @@
+comparison,seed,status,completed_pairs,planned_pairs,delta_Harrell,delta_Uno60,interpretation_boundary
+CONCH_B128_P1_minus_CONCH_B512_P1,31,COMPLETE,3,3,-0.11652253072371421,-0.08073646063394124,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B128_P1_minus_CONCH_B512_P1,47,COMPLETE,3,3,-0.05484751934456078,-0.12693518637020862,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B128_P1_minus_CONCH_B512_P1,MEAN,COMPLETE,6,6,-0.0856850250341375,-0.10383582350207493,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B128_P3_minus_CONCH_B512_P3,31,COMPLETE,3,3,-0.023441055985434667,-0.1058461196365813,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B128_P3_minus_CONCH_B512_P3,47,COMPLETE,3,3,-0.016385980883022344,-0.09829160380740554,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B128_P3_minus_CONCH_B512_P3,MEAN,COMPLETE,6,6,-0.019913518434228505,-0.10206886172199342,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B1024_P1_minus_CONCH_B512_P1,31,COMPLETE,3,3,-0.07191624943104236,-0.02641709185121366,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B1024_P1_minus_CONCH_B512_P1,47,COMPLETE,3,3,-0.0493855257168867,-0.06925011572179351,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B1024_P1_minus_CONCH_B512_P1,MEAN,COMPLETE,6,6,-0.06065088757396453,-0.04783360378650359,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B1024_P3_minus_CONCH_B512_P3,31,COMPLETE,3,3,-0.03709604005461986,-0.06830759661675545,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B1024_P3_minus_CONCH_B512_P3,47,COMPLETE,3,3,0.010468821119708593,-0.008785960864858722,"CONCH same native grid, changed prelocked selected-patch budget"
+CONCH_B1024_P3_minus_CONCH_B512_P3,MEAN,COMPLETE,6,6,-0.013313609467455634,-0.038546778740807086,"CONCH same native grid, changed prelocked selected-patch budget"
+UNI2_B128_P1_minus_CONCH_B128_P1,31,COMPLETE,3,3,0.0714610832954028,-0.09858160020839712,"joint encoder, native grid and physical patch footprint change; not pure encoder"
+UNI2_B128_P1_minus_CONCH_B128_P1,47,COMPLETE,3,3,0.03004096495220754,-0.03585567396504341,"joint encoder, native grid and physical patch footprint change; not pure encoder"
+UNI2_B128_P1_minus_CONCH_B128_P1,MEAN,COMPLETE,6,6,0.050751024123805166,-0.06721863708672027,"joint encoder, native grid and physical patch footprint change; not pure encoder"
+UNI2_B128_P3_minus_CONCH_B128_P3,31,COMPLETE,3,3,0.026399635867091487,-0.057682069123857316,"joint encoder, native grid and physical patch footprint change; not pure encoder"
+UNI2_B128_P3_minus_CONCH_B128_P3,47,COMPLETE,3,3,0.04984069185252615,-0.037696975166631286,"joint encoder, native grid and physical patch footprint change; not pure encoder"
+UNI2_B128_P3_minus_CONCH_B128_P3,MEAN,COMPLETE,6,6,0.03812016385980882,-0.0476895221452443,"joint encoder, native grid and physical patch footprint change; not pure encoder"
+CONCH_B512_P3_minus_P1,31,COMPLETE,3,3,-0.03641329085116074,0.0036336135511639833,same selected patches and backbone inputs; spatial encoder architecture differs
+CONCH_B512_P3_minus_P1,47,COMPLETE,3,3,-0.03004096495220754,-0.018937448239200516,same selected patches and backbone inputs; spatial encoder architecture differs
+CONCH_B512_P3_minus_P1,MEAN,COMPLETE,6,6,-0.03322712790168414,-0.007651917344018266,same selected patches and backbone inputs; spatial encoder architecture differs
+CONCH_B128_P3_minus_P1,31,COMPLETE,3,3,0.056668183887118806,-0.021476045451476078,same selected patches and backbone inputs; spatial encoder architecture differs
+CONCH_B128_P3_minus_P1,47,COMPLETE,3,3,0.008420573509330898,0.009706134323602567,same selected patches and backbone inputs; spatial encoder architecture differs
+CONCH_B128_P3_minus_P1,MEAN,COMPLETE,6,6,0.03254437869822485,-0.005884955563936756,same selected patches and backbone inputs; spatial encoder architecture differs
+CONCH_B1024_P3_minus_P1,31,COMPLETE,3,3,-0.001593081474738245,-0.03825689121437781,same selected patches and backbone inputs; spatial encoder architecture differs
+CONCH_B1024_P3_minus_P1,47,COMPLETE,3,3,0.029813381884387757,0.04152670661773428,same selected patches and backbone inputs; spatial encoder architecture differs
+CONCH_B1024_P3_minus_P1,MEAN,COMPLETE,6,6,0.014110150204824756,0.0016349077016782343,same selected patches and backbone inputs; spatial encoder architecture differs
+UNI2_B128_P3_minus_P1,31,COMPLETE,3,3,0.011606736458807498,0.01942348563306373,same selected patches and backbone inputs; spatial encoder architecture differs
+UNI2_B128_P3_minus_P1,47,COMPLETE,3,3,0.028220300409649512,0.007864833122014692,same selected patches and backbone inputs; spatial encoder architecture differs
+UNI2_B128_P3_minus_P1,MEAN,COMPLETE,6,6,0.019913518434228505,0.013644159377539211,same selected patches and backbone inputs; spatial encoder architecture differs

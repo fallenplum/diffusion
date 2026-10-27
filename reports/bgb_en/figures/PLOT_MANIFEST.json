@@ -1,0 +1,195 @@
+{
+  "schema": "bgb_en_anonymous_plot_manifest_v1",
+  "status": "COMPLETE_AVAILABLE_FIGURES_ONLY",
+  "source_inner_report_state": "COMPLETE_CORE_INNER",
+  "scientific_completion_inferred": false,
+  "private_assets_read": false,
+  "plots": [
+    {
+      "name": "R1_PERFORMANCE_COST",
+      "files": [
+        {
+          "file": "R1_PERFORMANCE_COST.svg",
+          "sha256": "59bad489ae73347cdc363e61e5153a39027af87233948aee07d11426ad06780e",
+          "bytes": 110019
+        },
+        {
+          "file": "R1_PERFORMANCE_COST.png",
+          "sha256": "984f6765e7aefb42089a0f63649a1adb9db8f438327ad2980dab0f257600a1c2",
+          "bytes": 113236
+        }
+      ],
+      "source_files": [
+        {
+          "file": "R1_ARCH_ABLATION.csv",
+          "sha256": "53b79f87d24002df598e61e1e7885457564040db0dd0d2f3eee5eb6d070ead91"
+        }
+      ],
+      "rows_drawn": 10,
+      "scientific_scope": "Inner development summaries; no independent cohorts or uncertainty intervals"
+    },
+    {
+      "name": "R2_PERFORMANCE_COST",
+      "files": [
+        {
+          "file": "R2_PERFORMANCE_COST.svg",
+          "sha256": "8b5f354b1bbccc4406ee73ad9af63e1391cfd27dfc9d04d14cdc40b58d7e51e3",
+          "bytes": 116592
+        },
+        {
+          "file": "R2_PERFORMANCE_COST.png",
+          "sha256": "eb62a079b4be0d03184ec62e80882ea8e40149e9f3cf2757af434e3c77ea93b3",
+          "bytes": 132937
+        }
+      ],
+      "source_files": [
+        {
+          "file": "R2_RESULTS.csv",
+          "sha256": "c439a746f58dd4b810f89f160e9e27d4adfda88dd535b27749899f2514108231"
+        }
+      ],
+      "rows_drawn": 12,
+      "scientific_scope": "Inner development summaries; no independent cohorts or uncertainty intervals"
+    },
+    {
+      "name": "R3_PERFORMANCE_COST",
+      "files": [
+        {
+          "file": "R3_PERFORMANCE_COST.svg",
+          "sha256": "798064e6069957d8c848780ba351c80e733e815d1f8b3ac77e0f2c7096d70fb0",
+          "bytes": 121556
+        },
+        {
+          "file": "R3_PERFORMANCE_COST.png",
+          "sha256": "5f7cc8b5f851e798fef0b91b0e2a4bf3012584de669f97d56e7d1628699b1614",
+          "bytes": 129339
+        }
+      ],
+      "source_files": [
+        {
+          "file": "R3_MODEL_MATRIX.csv",
+          "sha256": "af29ee518f68cad87b29ed932341b6189a355f97568731e17cde57566455ea5e"
+        }
+      ],
+      "rows_drawn": 13,
+      "scientific_scope": "Inner development summaries; no independent cohorts or uncertainty intervals"
+    },
+    {
+      "name": "R2_RNA_RETENTION",
+      "files": [
+        {
+          "file": "R2_RNA_RETENTION.svg",
+          "sha256": "6f570b09a071c25eefcdee4a5fd2e57e6bcb2c7a304f4a91adde596de2639602",
+          "bytes": 32447
+        },
+        {
+          "file": "R2_RNA_RETENTION.png",
+          "sha256": "b25981c2c1b338ea68c212fd483d2a9263f10092d850813e7d1c4d0d16722e27",
+          "bytes": 70597
+        }
+      ],
+      "source_files": [
+        {
+          "file": "R2_RNA_RETENTION.csv",
+          "sha256": "b8200f1c4c538d75646738314a72099e74073bb67e337f743439270d7621db6b"
+        }
+      ],
+      "rows_drawn": 93,
+      "scientific_scope": "Decoder fit uses training rows; folds/seeds are not independent cohorts"
+    },
+    {
+      "name": "R3_MECHANISM_DELTAS",
+      "files": [
+        {
+          "file": "R3_MECHANISM_DELTAS.svg",
+          "sha256": "8f185a832c8b72ae87181916fa334c1aab2cd438e5b34963a6325027a180decb",
+          "bytes": 34014
+        },
+        {
+          "file": "R3_MECHANISM_DELTAS.png",
+          "sha256": "877cd04074646a85d9c83638583e4b50ee7c6fa9efa54f3bf3e72f713e4a0841",
+          "bytes": 71262
+        }
+      ],
+      "source_files": [
+        {
+          "file": "R3_MECHANISM_ABLATIONS.csv",
+          "sha256": "3121abca893e21b0e2de14a7946a0b1aef2a442454cadca4104c8d36f6a81668"
+        }
+      ],
+      "rows_drawn": 23,
+      "scientific_scope": "Paired inner comparisons with the original denominator aggregation; no p-values"
+    },
+    {
+      "name": "R3_PAIR_REPAIR_DAMAGE",
+      "files": [
+        {
+          "file": "R3_PAIR_REPAIR_DAMAGE.svg",
+          "sha256": "02e52d1c6b85e7cb988eeaea5586e1524344d88bbb5dd6f6d16c8f8a3f61f49f",
+          "bytes": 134875
+        },
+        {
+          "file": "R3_PAIR_REPAIR_DAMAGE.png",
+          "sha256": "e6a8d5e90a49ef51dc1ee2a2cf60ea6429fae5a20cf0fc87a42a9067bc7e8aca",
+          "bytes": 344032
+        }
+      ],
+      "source_files": [
+        {
+          "file": "R3_PAIRING_CONTROLS.csv",
+          "sha256": "02a69a57d14a23a1da7726ed0455733f8c84e155cf605927e36f836cd75d1c9d"
+        }
+      ],
+      "rows_drawn": 66,
+      "scientific_scope": "Exact direct saved-risk repair/damage, with each frozen control kept distinct"
+    },
+    {
+      "name": "R3_RISK_SHIFT_REPAIR_DAMAGE",
+      "files": [
+        {
+          "file": "R3_RISK_SHIFT_REPAIR_DAMAGE.svg",
+          "sha256": "55fc94079a42dd7717a3293e55a9f4fc17673c6982b0c5327fb71491e5e996bf",
+          "bytes": 29488
+        },
+        {
+          "file": "R3_RISK_SHIFT_REPAIR_DAMAGE.png",
+          "sha256": "301f8450c429b3b7693e90e4ac911fabf04dcfce9eb78a1553ce10bf10dc0393",
+          "bytes": 87109
+        }
+      ],
+      "source_files": [
+        {
+          "file": "R3_MODEL_MATRIX.csv",
+          "sha256": "af29ee518f68cad87b29ed932341b6189a355f97568731e17cde57566455ea5e"
+        }
+      ],
+      "rows_drawn": 11,
+      "scientific_scope": "Same common-F1 pair reference; magnitude alone does not establish useful interaction"
+    },
+    {
+      "name": "PATCH_THROUGHPUT",
+      "files": [
+        {
+          "file": "PATCH_THROUGHPUT.svg",
+          "sha256": "c73343097dfb912ad19312bbd7fc1fbc4ddcc7966d0d443c9b5127c5fc830146",
+          "bytes": 87513
+        },
+        {
+          "file": "PATCH_THROUGHPUT.png",
+          "sha256": "5bdda14a323e7fd1f26c50422ac74641cb94dbeec52118cfec682351a076c049",
+          "bytes": 372182
+        }
+      ],
+      "source_files": [
+        {
+          "file": "PATCH_THROUGHPUT_AUDIT.csv",
+          "sha256": "bd8176c4be45012f24166e277b3880ebf6a62dc50ec9cbc5fbee52777748d798"
+        }
+      ],
+      "rows_drawn": 297,
+      "scientific_scope": "PRIMARY actual COMPLETE visual units only; group by root/stage/arm/READY budget/dimension/selector. Points are units and black marks descriptive medians, not confidence intervals; whole-unit wall timers include driver overhead and concurrent resource contention."
+    }
+  ],
+  "skipped": [],
+  "plotting_source_sha256": "d8f6a3cc2b616b10f17f868a9c53ca8c3983fa8f97da7227dd11ad78f118317b"
+}

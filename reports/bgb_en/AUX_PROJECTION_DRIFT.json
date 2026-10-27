@@ -1,0 +1,1793 @@
+{
+  "schema": "bgb_en_aux_projection_parameter_drift_v1",
+  "status": "COMPLETE_PRELOCKED_F11_PROJECTION_DRIFT",
+  "completed_final80_F11_cells": 18,
+  "planned_final80_F11_cells": 18,
+  "source_projections": {
+    "TRUE": {
+      "source_group": "TRUE",
+      "source_transfer_sha256": "b37a8afdd4f87ec9058a0b85a21ecd209260f7ab5ea80408b191ae96f015f82c",
+      "source_fit_receipt_sha256": "e181fdb77a5d977b7dbe1bb6a1140dba7d8a4b56ba0539d316d80bea77248dd7",
+      "source_data_sha256": "b5a2a44862123f629314cb28ad66abae437d7d08e923fb6128f82f7e9059c025",
+      "source_manifest_sha256": "9cc2f840b8010eb1881831e971682780461607437bb220b1a6d7a0a39efafeb0",
+      "source_epochs": 20,
+      "source_donors": 6,
+      "input_normalization": "float32_per_row_L2_norm_division; reject_norm_le_1e-12",
+      "transferred_parameters": 98496
+    },
+    "WRONG_DONOR": {
+      "source_group": "WRONG_DONOR",
+      "source_transfer_sha256": "c99bc4bc3fa54c7682211115bf5c53d8b149c897615799f0012fd1a59fde9be3",
+      "source_fit_receipt_sha256": "6bba7ac68b839b9f014aa5f3d8e3c8404f89cc42231c727ae98708b4e670f4f7",
+      "source_data_sha256": "b5a2a44862123f629314cb28ad66abae437d7d08e923fb6128f82f7e9059c025",
+      "source_manifest_sha256": "9cc2f840b8010eb1881831e971682780461607437bb220b1a6d7a0a39efafeb0",
+      "source_epochs": 20,
+      "source_donors": 6,
+      "input_normalization": "float32_per_row_L2_norm_division; reject_norm_le_1e-12",
+      "transferred_parameters": 98496
+    },
+    "SPATIAL_SHUFFLE": {
+      "source_group": "SPATIAL_SHUFFLE",
+      "source_transfer_sha256": "9536d18f37ad824d4e87f8ca1bf68508a33356e12eee356f25d6bf94c5593828",
+      "source_fit_receipt_sha256": "4bb160b54ff53f381728c7e19014a7845b0d0b3b764cb26984d24037c46c70b3",
+      "source_data_sha256": "b5a2a44862123f629314cb28ad66abae437d7d08e923fb6128f82f7e9059c025",
+      "source_manifest_sha256": "9cc2f840b8010eb1881831e971682780461607437bb220b1a6d7a0a39efafeb0",
+      "source_epochs": 20,
+      "source_donors": 6,
+      "input_normalization": "float32_per_row_L2_norm_division; reject_norm_le_1e-12",
+      "transferred_parameters": 98496
+    }
+  },
+  "summary": [
+    {
+      "group": "TRUE",
+      "status": "COMPLETE",
+      "completed_cells": 6,
+      "planned_cells": 6,
+      "mean_delta_RMS": 0.014056901127498113,
+      "mean_relative_L2": 0.4633750772308569,
+      "mean_cosine": 0.8864596172345138
+    },
+    {
+      "group": "WRONG_DONOR",
+      "status": "COMPLETE",
+      "completed_cells": 6,
+      "planned_cells": 6,
+      "mean_delta_RMS": 0.01391346207481822,
+      "mean_relative_L2": 0.4594415213035359,
+      "mean_cosine": 0.8884436549076292
+    },
+    {
+      "group": "SPATIAL_SHUFFLE",
+      "status": "COMPLETE",
+      "completed_cells": 6,
+      "planned_cells": 6,
+      "mean_delta_RMS": 0.014009667346266788,
+      "mean_relative_L2": 0.4621455710691068,
+      "mean_cosine": 0.8869822984209361
+    }
+  ],
+  "cells": [
+    {
+      "group": "TRUE",
+      "arm": "F11_UNI2",
+      "partition": 0,
+      "seed": 31,
+      "final_epoch": 80,
+      "source_transfer_sha256": "b37a8afdd4f87ec9058a0b85a21ecd209260f7ab5ea80408b191ae96f015f82c",
+      "final_model_artifact_sha256": "5e53532b5d56e8133db80242919f4e2ffa00da1fcdca8ad770414fc847b4ae9d",
+      "complete_receipt_sha256": "343867d4b2ccdeecb349c42a7c3d13a107a87d6cea331fd32144310ffadee67f",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015458242476013047,
+          "final_RMS": 0.013043836307182078,
+          "delta_RMS": 0.00433115126254954,
+          "relative_L2": 0.2801839387155623,
+          "cosine": 0.9679382846912628,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f073ddc141cd707226d8eb4ce78e50624e4e507ddc34e99b7ad93eab00e6e27",
+          "final_tensor_sha256": "c2ffb515fe140b8ac7c49a6e168375ebfe462cd710a67bb4632ca02ce2170430"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016319271310638293,
+          "final_RMS": 0.01437265997642784,
+          "delta_RMS": 0.014024549120750943,
+          "relative_L2": 0.8593857442402192,
+          "cosine": 0.5887921929613985,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "220879847ae5982498ccd8aea24d5058a4cd1701e683b5f7f8394472300d87e9",
+          "final_tensor_sha256": "5a05f804c08860504e33044830d0e8761ce37d1174a9eacc80a6c37342d830de"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.00673241710451616,
+          "final_RMS": 0.014842222360922258,
+          "delta_RMS": 0.016652379949425644,
+          "relative_L2": 2.473462307951047,
+          "cosine": -0.05846818378906941,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fbc04c69f3fa222ad79acb72c93827d1fae7166c6e0c358ff9e30209b0e39aa1",
+          "final_tensor_sha256": "c333392e05955f44f4750c03096c15abd21972fd299864875fbd8a91c3abf04a"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0034645975874519,
+          "final_RMS": 0.9348728564373113,
+          "delta_RMS": 0.0689609475245135,
+          "relative_L2": 0.06872285050245985,
+          "cosine": 0.9999729321554872,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "bfb93dd912654f18bd9da7cf1556f65886b64eeeff66c587cf73ebc1877bd0f5",
+          "final_tensor_sha256": "32139aec7d3220d04f8067d83b1c9fe16906d1e8d9010afe4f794376421a6ee8"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030335902421646358,
+        "final_RMS": 0.027826557916371522,
+        "delta_RMS": 0.014127526648905415,
+        "relative_L2": 0.46570319394305026,
+        "cosine": 0.8855110872062621,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "64e248b69be1e7f0f1455a0a6a8dcb59966d1d5e8c509f84a9f4080c030f21c0",
+        "final_tensor_sha256": "7cd594aa5c60bee90417a7a62fcfe3d489a422d81fe056e578ad7fba68e0d754"
+      }
+    },
+    {
+      "group": "TRUE",
+      "arm": "F11_UNI2",
+      "partition": 0,
+      "seed": 47,
+      "final_epoch": 80,
+      "source_transfer_sha256": "b37a8afdd4f87ec9058a0b85a21ecd209260f7ab5ea80408b191ae96f015f82c",
+      "final_model_artifact_sha256": "456388ec51c9ef55147d651b3b2f2b8f7fac0c50cd6bd3c6dfb6724eff2096c6",
+      "complete_receipt_sha256": "65f981b842940aa14e8e648644351cd5f4ef380cf76dd6db6537a070f4d5b8ce",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015458242476013047,
+          "final_RMS": 0.013644163185022071,
+          "delta_RMS": 0.004918329705663207,
+          "relative_L2": 0.31816875128560734,
+          "cosine": 0.9504560962190209,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f073ddc141cd707226d8eb4ce78e50624e4e507ddc34e99b7ad93eab00e6e27",
+          "final_tensor_sha256": "f6ee35e19a233b33b1459936877e835d3c4f82b84f6425dd4d32431f6e83638a"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016319271310638293,
+          "final_RMS": 0.01422935599858355,
+          "delta_RMS": 0.013812513266071068,
+          "relative_L2": 0.846392771046517,
+          "cosine": 0.5986055892685809,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "220879847ae5982498ccd8aea24d5058a4cd1701e683b5f7f8394472300d87e9",
+          "final_tensor_sha256": "244433e6deda6737bef74da68fd40a2479246ccada241ec5ea11e89eba6c1a0a"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.00673241710451616,
+          "final_RMS": 0.01257598774008578,
+          "delta_RMS": 0.01473486425420754,
+          "relative_L2": 2.1886439930056136,
+          "cosine": -0.08052340287110951,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fbc04c69f3fa222ad79acb72c93827d1fae7166c6e0c358ff9e30209b0e39aa1",
+          "final_tensor_sha256": "b7cda01dcc3fa92147246edc8409a38ddf84310a69da73e16b077c9c423b924b"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0034645975874519,
+          "final_RMS": 0.9363030846914617,
+          "delta_RMS": 0.0677005770526268,
+          "relative_L2": 0.06746683163052666,
+          "cosine": 0.9999613115049446,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "bfb93dd912654f18bd9da7cf1556f65886b64eeeff66c587cf73ebc1877bd0f5",
+          "final_tensor_sha256": "ead2de3478f79d48b53e4a5a34ccc4c5223818b698c6274f8c242a36a7c7925c"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030335902421646358,
+        "final_RMS": 0.02778372717408761,
+        "delta_RMS": 0.013912173166097018,
+        "relative_L2": 0.4586042298240619,
+        "cosine": 0.8890453827433665,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "64e248b69be1e7f0f1455a0a6a8dcb59966d1d5e8c509f84a9f4080c030f21c0",
+        "final_tensor_sha256": "bf9a1907d734f86895aff53cbb636992f111773e6a8c1b834b8582730b44f973"
+      }
+    },
+    {
+      "group": "TRUE",
+      "arm": "F11_UNI2",
+      "partition": 1,
+      "seed": 31,
+      "final_epoch": 80,
+      "source_transfer_sha256": "b37a8afdd4f87ec9058a0b85a21ecd209260f7ab5ea80408b191ae96f015f82c",
+      "final_model_artifact_sha256": "00a9e8f7d06f933449bcba2fd77001d389524f3689bb6085b9cc92ff18b9978e",
+      "complete_receipt_sha256": "cbc519630b8cb41a0308e6e91f310dcb1e7d29858c8909888b2efb619b57eb51",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015458242476013047,
+          "final_RMS": 0.013425842272381886,
+          "delta_RMS": 0.005653811232326132,
+          "relative_L2": 0.3657473507159236,
+          "cosine": 0.932940780372731,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f073ddc141cd707226d8eb4ce78e50624e4e507ddc34e99b7ad93eab00e6e27",
+          "final_tensor_sha256": "29d2c4f39f70e8bc65652e3eda9269085a0dc33deed20b8f3b60309d784e6f42"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016319271310638293,
+          "final_RMS": 0.014185857136407772,
+          "delta_RMS": 0.014223423265617674,
+          "relative_L2": 0.8715722041060521,
+          "cosine": 0.5728901130747921,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "220879847ae5982498ccd8aea24d5058a4cd1701e683b5f7f8394472300d87e9",
+          "final_tensor_sha256": "a26934301fd0c969864a93f0d4365b29aa5da89bceaeb54a886f823ed3b53a3c"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.00673241710451616,
+          "final_RMS": 0.01261004159847102,
+          "delta_RMS": 0.014578332417005667,
+          "relative_L2": 2.1653935266765343,
+          "cosine": -0.0482306652443484,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fbc04c69f3fa222ad79acb72c93827d1fae7166c6e0c358ff9e30209b0e39aa1",
+          "final_tensor_sha256": "51ee062fcaca811eb712ac48f9c0d1f7e187d214cffd17eefbea4bf8e0c12741"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0034645975874519,
+          "final_RMS": 0.9344731299534661,
+          "delta_RMS": 0.06950057891118451,
+          "relative_L2": 0.06926061873859735,
+          "cosine": 0.9999624042562115,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "bfb93dd912654f18bd9da7cf1556f65886b64eeeff66c587cf73ebc1877bd0f5",
+          "final_tensor_sha256": "d7d225029ce83002b8d8efebf26ee8fb4587ccbfa38a871dafbe95801c2909c4"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030335902421646358,
+        "final_RMS": 0.027721366094126367,
+        "delta_RMS": 0.014325114049693407,
+        "relative_L2": 0.4722165126517433,
+        "cosine": 0.8820545421204304,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "64e248b69be1e7f0f1455a0a6a8dcb59966d1d5e8c509f84a9f4080c030f21c0",
+        "final_tensor_sha256": "18d2635173a91de17740c736b5e66bc17de047d5f8ad43896df1c37030c48446"
+      }
+    },
+    {
+      "group": "TRUE",
+      "arm": "F11_UNI2",
+      "partition": 1,
+      "seed": 47,
+      "final_epoch": 80,
+      "source_transfer_sha256": "b37a8afdd4f87ec9058a0b85a21ecd209260f7ab5ea80408b191ae96f015f82c",
+      "final_model_artifact_sha256": "30b84651a242acb7edba9876387057d43777d76513dd6bf94bdebef6f2f4ed55",
+      "complete_receipt_sha256": "4e3281a462ad9c7500dae957c43003214b2be6848d2e5b19902b26ae9e596431",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015458242476013047,
+          "final_RMS": 0.01394002000567451,
+          "delta_RMS": 0.005661570882134697,
+          "relative_L2": 0.3662493256215836,
+          "cosine": 0.9309744475783227,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f073ddc141cd707226d8eb4ce78e50624e4e507ddc34e99b7ad93eab00e6e27",
+          "final_tensor_sha256": "b335c67aa5a3f2485a95ca3e81c78f43d241aea18541b8423de6c35cbff2e101"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016319271310638293,
+          "final_RMS": 0.013644736555651966,
+          "delta_RMS": 0.01382960220908234,
+          "relative_L2": 0.8474399344085313,
+          "cosine": 0.5866013000607864,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "220879847ae5982498ccd8aea24d5058a4cd1701e683b5f7f8394472300d87e9",
+          "final_tensor_sha256": "543a811083289c8945779dd96ffb54869829509c6135eb632993cbfc4d9da93c"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.00673241710451616,
+          "final_RMS": 0.011508862728803372,
+          "delta_RMS": 0.013073813584046027,
+          "relative_L2": 1.9419197267614343,
+          "cosine": 0.04423426521176463,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fbc04c69f3fa222ad79acb72c93827d1fae7166c6e0c358ff9e30209b0e39aa1",
+          "final_tensor_sha256": "356b4775f315ac94e83d266a69239c449d4821b9888418317e898f3e205ad4b9"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0034645975874519,
+          "final_RMS": 0.9318040802010825,
+          "delta_RMS": 0.07201073813961846,
+          "relative_L2": 0.07176211130193133,
+          "cosine": 0.9999730936302379,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "bfb93dd912654f18bd9da7cf1556f65886b64eeeff66c587cf73ebc1877bd0f5",
+          "final_tensor_sha256": "ee74431372199613038aa0b41f2bd62d8f5ff8443ffc616e1e4ad0ca82836e20"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030335902421646358,
+        "final_RMS": 0.027389761483939797,
+        "delta_RMS": 0.013942251978976843,
+        "relative_L2": 0.45959575506243305,
+        "cosine": 0.8882487790974846,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "64e248b69be1e7f0f1455a0a6a8dcb59966d1d5e8c509f84a9f4080c030f21c0",
+        "final_tensor_sha256": "41f63c2fae9dddf6eea5072ce575d6714477a8e9c204b5c80b241be3199eaf66"
+      }
+    },
+    {
+      "group": "TRUE",
+      "arm": "F11_UNI2",
+      "partition": 2,
+      "seed": 31,
+      "final_epoch": 80,
+      "source_transfer_sha256": "b37a8afdd4f87ec9058a0b85a21ecd209260f7ab5ea80408b191ae96f015f82c",
+      "final_model_artifact_sha256": "9ba49df52ddffbd3a7f007a6c1dbc65fedfca027ff358f35e1d9b9426c62cfe9",
+      "complete_receipt_sha256": "a9c2d7df58c1bb033eda908df660f43b9594496591ff0b140cc26e057c1b3a3f",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015458242476013047,
+          "final_RMS": 0.012654478016901286,
+          "delta_RMS": 0.005243577700479015,
+          "relative_L2": 0.33920917650344856,
+          "cosine": 0.9498149103259154,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f073ddc141cd707226d8eb4ce78e50624e4e507ddc34e99b7ad93eab00e6e27",
+          "final_tensor_sha256": "c3a95672ad011610f15c81ad5adf0ed0fca7be141545f9f77604e29eb6eea354"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016319271310638293,
+          "final_RMS": 0.013621408818840774,
+          "delta_RMS": 0.014177138977526805,
+          "relative_L2": 0.8687360304062681,
+          "cosine": 0.5642819517086681,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "220879847ae5982498ccd8aea24d5058a4cd1701e683b5f7f8394472300d87e9",
+          "final_tensor_sha256": "6f943e82d58076feb526a41c2dd6a77b77fe35bad527c11e4b2095f5c1e77f80"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.00673241710451616,
+          "final_RMS": 0.015899826533802185,
+          "delta_RMS": 0.017741143613767087,
+          "relative_L2": 2.6351818876263895,
+          "cosine": -0.07762327569589379,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fbc04c69f3fa222ad79acb72c93827d1fae7166c6e0c358ff9e30209b0e39aa1",
+          "final_tensor_sha256": "28c70f28392d54cc4fd180f2db3a9d22ebc8d1825b42133908db6c599f457f9e"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0034645975874519,
+          "final_RMS": 0.9308323831495903,
+          "delta_RMS": 0.07287038033056754,
+          "relative_L2": 0.07261878546165342,
+          "cosine": 0.9999814498779749,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "bfb93dd912654f18bd9da7cf1556f65886b64eeeff66c587cf73ebc1877bd0f5",
+          "final_tensor_sha256": "6f26338a3aea0230eaff4ad8e60bfdc4efb83126e7075a379ebdf0e1e91fab62"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030335902421646358,
+        "final_RMS": 0.02735770763583522,
+        "delta_RMS": 0.014292382811595575,
+        "relative_L2": 0.4711375522291095,
+        "cosine": 0.8822763725265834,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "64e248b69be1e7f0f1455a0a6a8dcb59966d1d5e8c509f84a9f4080c030f21c0",
+        "final_tensor_sha256": "a488e76330d0b21017967b2fe8ec781d31faadd56ea8cc4e411634b9e23afad0"
+      }
+    },
+    {
+      "group": "TRUE",
+      "arm": "F11_UNI2",
+      "partition": 2,
+      "seed": 47,
+      "final_epoch": 80,
+      "source_transfer_sha256": "b37a8afdd4f87ec9058a0b85a21ecd209260f7ab5ea80408b191ae96f015f82c",
+      "final_model_artifact_sha256": "0cbebc6d37c3d97173af97d89325d897b9e126cf16c8dc5f1fb3ea2c73c09fe7",
+      "complete_receipt_sha256": "20bed9fa4b3046aa364f7481d5c51feb03d58b5891804c1981417ff92673d9d5",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015458242476013047,
+          "final_RMS": 0.013149607693463676,
+          "delta_RMS": 0.005243301202319938,
+          "relative_L2": 0.33919128972495444,
+          "cosine": 0.9454852361205949,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f073ddc141cd707226d8eb4ce78e50624e4e507ddc34e99b7ad93eab00e6e27",
+          "final_tensor_sha256": "48e7fc9343dc9f7c3dee46346e02e3975be7d7146cd011f62a89a6e25d8af3d1"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016319271310638293,
+          "final_RMS": 0.01373336180314531,
+          "delta_RMS": 0.013632209464716596,
+          "relative_L2": 0.835344250685382,
+          "cosine": 0.6003225055868692,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "220879847ae5982498ccd8aea24d5058a4cd1701e683b5f7f8394472300d87e9",
+          "final_tensor_sha256": "6f982d1577251f7e1d643d9ebfe840ff41b293f4894ee96b20e7a67e4473dc29"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.00673241710451616,
+          "final_RMS": 0.011809651721088912,
+          "delta_RMS": 0.0136305732375049,
+          "relative_L2": 2.0246180570662204,
+          "cosine": -0.006283765209147678,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fbc04c69f3fa222ad79acb72c93827d1fae7166c6e0c358ff9e30209b0e39aa1",
+          "final_tensor_sha256": "0094634a0951ad80d6b5da1929197fe240cb49cc8dde5298f8e9a33bd9dea8d0"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0034645975874519,
+          "final_RMS": 0.9333687148603175,
+          "delta_RMS": 0.07048269435590822,
+          "relative_L2": 0.07023934329657869,
+          "cosine": 0.9999709709131747,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "bfb93dd912654f18bd9da7cf1556f65886b64eeeff66c587cf73ebc1877bd0f5",
+          "final_tensor_sha256": "f994f651bd9880742f7f77d3a9927b3b0b4ab6bcb9e7ca2ba1ce85b8699252c9"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030335902421646358,
+        "final_RMS": 0.02746830136829318,
+        "delta_RMS": 0.013741958109720422,
+        "relative_L2": 0.4529932196747433,
+        "cosine": 0.8916215397129558,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "64e248b69be1e7f0f1455a0a6a8dcb59966d1d5e8c509f84a9f4080c030f21c0",
+        "final_tensor_sha256": "ebc603dac8020a62afc5983c30569158b9acb4a91bfdad5a07219fb187400d82"
+      }
+    },
+    {
+      "group": "WRONG_DONOR",
+      "arm": "F11_UNI2",
+      "partition": 0,
+      "seed": 31,
+      "final_epoch": 80,
+      "source_transfer_sha256": "c99bc4bc3fa54c7682211115bf5c53d8b149c897615799f0012fd1a59fde9be3",
+      "final_model_artifact_sha256": "bee0d43af60b98a1bac3829b24d261b209d88e54d6f0313506c77060d229da2a",
+      "complete_receipt_sha256": "adbdbe2b07b54dc8c0bcf1bad8edbedaed90e0fcd30788aa59cfa6d387fa8401",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015856771415116665,
+          "final_RMS": 0.01302003554671136,
+          "delta_RMS": 0.005190252615702755,
+          "relative_L2": 0.32732089527094743,
+          "cosine": 0.9542476925725875,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "863f3c1d126639bf4ba1ab2aceac8eb5f290f399fab23f2cfef4a6a6b1924aa3",
+          "final_tensor_sha256": "fdcf834739e6e2322c67c25aba4a18e85cb50561241026f766dce128ac045ea5"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016316611211544964,
+          "final_RMS": 0.013706437548374948,
+          "delta_RMS": 0.014176739436112069,
+          "relative_L2": 0.8688531737571338,
+          "cosine": 0.5658990649090558,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f7fdfd1d8dcc153c2038ebc10b483c5bc247614e442b7ce885c2884a2351641",
+          "final_tensor_sha256": "74387b05976a5650760222c35c7c2489768417e67a56ea2c939d6a037fbc7a8f"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.0035713060540214906,
+          "final_RMS": 0.016186709094489545,
+          "delta_RMS": 0.0167053558833123,
+          "relative_L2": 4.677660113868184,
+          "cosine": -0.0372367135268511,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fa572a473db27743763603cc036d3b78060544ba41d7b3c9e153495eb56ee3d1",
+          "final_tensor_sha256": "4dd9a0ed1ff52d3010ba27f08a444a32158dc0f2c28491ac6694efe42b594e58"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0010987442810186,
+          "final_RMS": 0.9280900512914222,
+          "delta_RMS": 0.07317777714742445,
+          "relative_L2": 0.0730974617293923,
+          "cosine": 0.9999866981186777,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "5d8a27161366b7279f83522ba9db5a189e7165662046569d24b22700cf0df951",
+          "final_tensor_sha256": "c8bd190aefb26873f4f57917373cb1ee547ae0e8dfce5d87faf7f7e4b406f940"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030283423307807915,
+        "final_RMS": 0.027339769021674443,
+        "delta_RMS": 0.01429218410209496,
+        "relative_L2": 0.4719474399187241,
+        "cosine": 0.8818748937274765,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "0f43a5b5183957d9bcd602d7cd2d9bd1f87b42bb9f69720a00549a41f833a499",
+        "final_tensor_sha256": "29979d556696df85014eb3d18fe4afb78a7c2b92139f91e6b6916101b38cb427"
+      }
+    },
+    {
+      "group": "WRONG_DONOR",
+      "arm": "F11_UNI2",
+      "partition": 0,
+      "seed": 47,
+      "final_epoch": 80,
+      "source_transfer_sha256": "c99bc4bc3fa54c7682211115bf5c53d8b149c897615799f0012fd1a59fde9be3",
+      "final_model_artifact_sha256": "e6ac6beebfbcd01bf59a96022d4818c97d71140e178ca931b633100388503dca",
+      "complete_receipt_sha256": "0dd93827bd4c22b0eb8581d0d1fa8b05aaae1afdf6a064718cf59bfadd9ac6d4",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015856771415116665,
+          "final_RMS": 0.013467495066246666,
+          "delta_RMS": 0.005432645610784155,
+          "relative_L2": 0.3426072980786666,
+          "cosine": 0.9442639044380918,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "863f3c1d126639bf4ba1ab2aceac8eb5f290f399fab23f2cfef4a6a6b1924aa3",
+          "final_tensor_sha256": "9675466e55d44a1cd69743ec78e37d95f57b18cea121f664b47606ec0788ca35"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016316611211544964,
+          "final_RMS": 0.014372708653418808,
+          "delta_RMS": 0.013828878443513019,
+          "relative_L2": 0.8475337350520599,
+          "cosine": 0.6003240692221062,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f7fdfd1d8dcc153c2038ebc10b483c5bc247614e442b7ce885c2884a2351641",
+          "final_tensor_sha256": "896154340f70a972f7ac0c882bd15611f59b178274fd1d85b563fdf924a9751d"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.0035713060540214906,
+          "final_RMS": 0.014987125784453732,
+          "delta_RMS": 0.01534749099927426,
+          "relative_L2": 4.297444903102641,
+          "cosine": 0.017026935720350585,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fa572a473db27743763603cc036d3b78060544ba41d7b3c9e153495eb56ee3d1",
+          "final_tensor_sha256": "c5d1733dcb20485f0b77caf56d749cf4f9390da81c86f2b5d6427f3d7cfe70cd"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0010987442810186,
+          "final_RMS": 0.935805436719875,
+          "delta_RMS": 0.06609166301447024,
+          "relative_L2": 0.06601912487857205,
+          "cosine": 0.9999440178584459,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "5d8a27161366b7279f83522ba9db5a189e7165662046569d24b22700cf0df951",
+          "final_tensor_sha256": "f05d63e2b6e8638cd6d82f7a073d7957722101ef17f235836390b2fe09bb1d61"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030283423307807915,
+        "final_RMS": 0.02784712542406653,
+        "delta_RMS": 0.013923921879764363,
+        "relative_L2": 0.4597869183493,
+        "cosine": 0.8885695173833504,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "0f43a5b5183957d9bcd602d7cd2d9bd1f87b42bb9f69720a00549a41f833a499",
+        "final_tensor_sha256": "014a326feef143e9cafc514c8a04b9267f3db603880e5f036c9392ab71f82b20"
+      }
+    },
+    {
+      "group": "WRONG_DONOR",
+      "arm": "F11_UNI2",
+      "partition": 1,
+      "seed": 31,
+      "final_epoch": 80,
+      "source_transfer_sha256": "c99bc4bc3fa54c7682211115bf5c53d8b149c897615799f0012fd1a59fde9be3",
+      "final_model_artifact_sha256": "fb79bb8ddb22463b24bdce10408e0c1de0fafa272161f9b75dcc68cbd008332c",
+      "complete_receipt_sha256": "bdcb91624303fa41d4017ca64ed18b628b0c8b45ed3d3febc42f4b353df05375",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015856771415116665,
+          "final_RMS": 0.013232611188957131,
+          "delta_RMS": 0.00613517180265583,
+          "relative_L2": 0.3869117894205761,
+          "cosine": 0.9267153636530951,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "863f3c1d126639bf4ba1ab2aceac8eb5f290f399fab23f2cfef4a6a6b1924aa3",
+          "final_tensor_sha256": "5a49b0273a292a776a3f6e74dc780ce1fe7b0dc11df9673b6909c608cbb40f38"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016316611211544964,
+          "final_RMS": 0.013986249044796895,
+          "delta_RMS": 0.014178237822259642,
+          "relative_L2": 0.8689450057023915,
+          "cosine": 0.5714618269075457,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f7fdfd1d8dcc153c2038ebc10b483c5bc247614e442b7ce885c2884a2351641",
+          "final_tensor_sha256": "32c69660863bb3e1e52eaea90845af314a78bd9efea86c98e1c147e109d0415b"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.0035713060540214906,
+          "final_RMS": 0.012593533956308299,
+          "delta_RMS": 0.013278276743087555,
+          "relative_L2": 3.7180450351309076,
+          "cosine": -0.05515584953636769,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fa572a473db27743763603cc036d3b78060544ba41d7b3c9e153495eb56ee3d1",
+          "final_tensor_sha256": "ffe6806ff6e835151f686c991c3db47687a5367d4b93fcad99d1e9642ccac054"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0010987442810186,
+          "final_RMS": 0.9317786312484188,
+          "delta_RMS": 0.06971979117571582,
+          "relative_L2": 0.06964327102996022,
+          "cosine": 0.9999702127644189,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "5d8a27161366b7279f83522ba9db5a189e7165662046569d24b22700cf0df951",
+          "final_tensor_sha256": "65ecc831d063875a79e104911b6e0da19768dc29fff3bba6107b884e0a535eca"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030283423307807915,
+        "final_RMS": 0.027560672111592535,
+        "delta_RMS": 0.014280337478778979,
+        "relative_L2": 0.4715562482362129,
+        "cosine": 0.8822745940073442,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "0f43a5b5183957d9bcd602d7cd2d9bd1f87b42bb9f69720a00549a41f833a499",
+        "final_tensor_sha256": "3a97d979cd54175346bd73ae58a674fb4224c625a97f184a5731ce7a3c1483d7"
+      }
+    },
+    {
+      "group": "WRONG_DONOR",
+      "arm": "F11_UNI2",
+      "partition": 1,
+      "seed": 47,
+      "final_epoch": 80,
+      "source_transfer_sha256": "c99bc4bc3fa54c7682211115bf5c53d8b149c897615799f0012fd1a59fde9be3",
+      "final_model_artifact_sha256": "d3bbf30ffa6b30f0c6379e98ffb1cff84e407106ffe83e574dcae130a9094a31",
+      "complete_receipt_sha256": "20d628c7514d6f96b3546c04a40eab13e274d35564043ce93c8c9baf5c159a24",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015856771415116665,
+          "final_RMS": 0.013844843320174926,
+          "delta_RMS": 0.006285332401965871,
+          "relative_L2": 0.3963815985878376,
+          "cosine": 0.9192437949591024,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "863f3c1d126639bf4ba1ab2aceac8eb5f290f399fab23f2cfef4a6a6b1924aa3",
+          "final_tensor_sha256": "c11aed1a885a8a6eb433c5b28de2b8f8e12a27cadf6ed2d0e4e0461f18589a57"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016316611211544964,
+          "final_RMS": 0.014172534801693363,
+          "delta_RMS": 0.013716263899901474,
+          "relative_L2": 0.8406319009548017,
+          "cosine": 0.6031554048292009,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f7fdfd1d8dcc153c2038ebc10b483c5bc247614e442b7ce885c2884a2351641",
+          "final_tensor_sha256": "f54d6b561f4c68eaabff5bbeeeca6355aa186552c0e3585a379be969455b23d1"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.0035713060540214906,
+          "final_RMS": 0.010389131711314616,
+          "delta_RMS": 0.011032239885618134,
+          "relative_L2": 3.089133140296171,
+          "cosine": -0.013772991551297189,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fa572a473db27743763603cc036d3b78060544ba41d7b3c9e153495eb56ee3d1",
+          "final_tensor_sha256": "ffd7c5062caff18cea2f234247749144aaea9ac94bb1d974d31633a38b804689"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0010987442810186,
+          "final_RMS": 0.9323637864909915,
+          "delta_RMS": 0.06919418744012149,
+          "relative_L2": 0.06911824416463154,
+          "cosine": 0.9999660692346308,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "5d8a27161366b7279f83522ba9db5a189e7165662046569d24b22700cf0df951",
+          "final_tensor_sha256": "cb44dd931d5f2420fafa21efd54c3af75054c6a6a48b3311ba122cf1c8d41bcf"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030283423307807915,
+        "final_RMS": 0.02766789899436486,
+        "delta_RMS": 0.013819729250626316,
+        "relative_L2": 0.4563463354244765,
+        "cosine": 0.8901130022022842,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "0f43a5b5183957d9bcd602d7cd2d9bd1f87b42bb9f69720a00549a41f833a499",
+        "final_tensor_sha256": "dccc1e074c57d0705df14868b4e320a5c5d6eef4f7bcd85bcbf507c2a1ea8565"
+      }
+    },
+    {
+      "group": "WRONG_DONOR",
+      "arm": "F11_UNI2",
+      "partition": 2,
+      "seed": 31,
+      "final_epoch": 80,
+      "source_transfer_sha256": "c99bc4bc3fa54c7682211115bf5c53d8b149c897615799f0012fd1a59fde9be3",
+      "final_model_artifact_sha256": "84cb4b4586e9d29e8ea84c80d8dd4fede72ab029e09cc070b642de88d0d40917",
+      "complete_receipt_sha256": "48ac5c8a6956404d7779f2acc3d6856f70e64462dc88782a9bf0d02ce6597013",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015856771415116665,
+          "final_RMS": 0.013351546864684254,
+          "delta_RMS": 0.004952339841759869,
+          "relative_L2": 0.31231703554978896,
+          "cosine": 0.9569002156672928,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "863f3c1d126639bf4ba1ab2aceac8eb5f290f399fab23f2cfef4a6a6b1924aa3",
+          "final_tensor_sha256": "49b7bb017536e024d94fefb669e993af3c64f919d3c0246ef0e37f587ca7e02b"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016316611211544964,
+          "final_RMS": 0.014308057889932143,
+          "delta_RMS": 0.013848633686338822,
+          "relative_L2": 0.8487444792788895,
+          "cosine": 0.5978943749611066,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f7fdfd1d8dcc153c2038ebc10b483c5bc247614e442b7ce885c2884a2351641",
+          "final_tensor_sha256": "ca800b966062c9bf909935eed6ddee06e30db267a800db19d091cc8a51691a90"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.0035713060540214906,
+          "final_RMS": 0.01392585523823759,
+          "delta_RMS": 0.014670804952370877,
+          "relative_L2": 4.107966309930433,
+          "cosine": -0.0859465795603074,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fa572a473db27743763603cc036d3b78060544ba41d7b3c9e153495eb56ee3d1",
+          "final_tensor_sha256": "f86fb9f8b3048b2a6f6d720c62343d1506e0fed8bd3099ec8f01e45487b0ae90"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0010987442810186,
+          "final_RMS": 0.931881952414213,
+          "delta_RMS": 0.06954160247425438,
+          "relative_L2": 0.0694652778974352,
+          "cosine": 0.9999758441871495,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "5d8a27161366b7279f83522ba9db5a189e7165662046569d24b22700cf0df951",
+          "final_tensor_sha256": "221357c19e163dfbf920a778a12b78b88a3d048652526891644fda50cafb9f2e"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030283423307807915,
+        "final_RMS": 0.027727754796009686,
+        "delta_RMS": 0.01395381369519687,
+        "relative_L2": 0.4607739869223831,
+        "cosine": 0.8879484239856176,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "0f43a5b5183957d9bcd602d7cd2d9bd1f87b42bb9f69720a00549a41f833a499",
+        "final_tensor_sha256": "e9334e9b827b9d9b8a0551a26079fac342accccbe5c55580680165b965e32010"
+      }
+    },
+    {
+      "group": "WRONG_DONOR",
+      "arm": "F11_UNI2",
+      "partition": 2,
+      "seed": 47,
+      "final_epoch": 80,
+      "source_transfer_sha256": "c99bc4bc3fa54c7682211115bf5c53d8b149c897615799f0012fd1a59fde9be3",
+      "final_model_artifact_sha256": "276e0753126828be2ce497655d681423591385f5818eb8423c7a1ccdf2f51eeb",
+      "complete_receipt_sha256": "961a40205a72884a154e208568571a4143fa1544def01bd6cd965b9275278fa8",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015856771415116665,
+          "final_RMS": 0.012946730483147957,
+          "delta_RMS": 0.005245967616992092,
+          "relative_L2": 0.33083453621529646,
+          "cosine": 0.9535985008806946,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "863f3c1d126639bf4ba1ab2aceac8eb5f290f399fab23f2cfef4a6a6b1924aa3",
+          "final_tensor_sha256": "8e50fb7acdf94984eda3ed95e1286edb737886619175b18e371e07b7a4f20632"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.016316611211544964,
+          "final_RMS": 0.013976185148286925,
+          "delta_RMS": 0.013096100076311188,
+          "relative_L2": 0.8026237744173815,
+          "cosine": 0.6359688083596337,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "1f7fdfd1d8dcc153c2038ebc10b483c5bc247614e442b7ce885c2884a2351641",
+          "final_tensor_sha256": "317e892dc5c9882b78b6c2eabd153bf4102ba8d534ad5cba5042533bd36a39f5"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.0035713060540214906,
+          "final_RMS": 0.013181525011107717,
+          "delta_RMS": 0.013606943149122034,
+          "relative_L2": 3.810074785889564,
+          "cosine": 0.014422933451587266,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "fa572a473db27743763603cc036d3b78060544ba41d7b3c9e153495eb56ee3d1",
+          "final_tensor_sha256": "f94449515e42be3f06b9106128f1c03f57711fa955bc2d345ea89dcb132f7fac"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0010987442810186,
+          "final_RMS": 0.931044866678355,
+          "delta_RMS": 0.0703211533236046,
+          "relative_L2": 0.07024397315981921,
+          "cosine": 0.9999798733334072,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "5d8a27161366b7279f83522ba9db5a189e7165662046569d24b22700cf0df951",
+          "final_tensor_sha256": "17f75f911881599b85d18b41663322740dd0c136c4b6eb2539acffc18af345e5"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030283423307807915,
+        "final_RMS": 0.02753954633273399,
+        "delta_RMS": 0.013210786042447839,
+        "relative_L2": 0.4362381989701187,
+        "cosine": 0.8998814981397025,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "0f43a5b5183957d9bcd602d7cd2d9bd1f87b42bb9f69720a00549a41f833a499",
+        "final_tensor_sha256": "c720b2caed86b4a86d468d42a1053e125b407ee73888b968285d7ffec4b85e8c"
+      }
+    },
+    {
+      "group": "SPATIAL_SHUFFLE",
+      "arm": "F11_UNI2",
+      "partition": 0,
+      "seed": 31,
+      "final_epoch": 80,
+      "source_transfer_sha256": "9536d18f37ad824d4e87f8ca1bf68508a33356e12eee356f25d6bf94c5593828",
+      "final_model_artifact_sha256": "6a2d4006e0e51bc0a4029948ba7e1f71829be7d3b023502272a3fc86a4774587",
+      "complete_receipt_sha256": "ea7092ea0c3855babe0e22d5aecb82e3540021a1162fc690d7057e8cc7610cf4",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015500031821055103,
+          "final_RMS": 0.012917503559048247,
+          "delta_RMS": 0.004675412965312022,
+          "relative_L2": 0.30163892689310373,
+          "cosine": 0.9620669664125736,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "74bb5cb3a442fff693a2d900385f7e1bc593f739f9610658f588c6d4a6c9d502",
+          "final_tensor_sha256": "3e3dea5ebc59e0658b30af2ddb91749f1d025d2504e18fa3ba9414cac03ef135"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.01631016165777214,
+          "final_RMS": 0.013576083641530392,
+          "delta_RMS": 0.01425804760148434,
+          "relative_L2": 0.8741818689877966,
+          "cosine": 0.5578322667326013,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "b06a18b217b9d8c434f1f9a2d063ee4d38f1457b75f4b01f1ac51d95b28fc7ae",
+          "final_tensor_sha256": "e155e6af03f7ff67d32f9d7a77f5ca1164ce6a521f47fbda7f92c4291a789201"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.006124869907848056,
+          "final_RMS": 0.015367788794859635,
+          "delta_RMS": 0.01677963584641267,
+          "relative_L2": 2.7395905707176267,
+          "cosine": -0.041822874674648625,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "250de6fa056a294aa763013412ff6238f0a311d80c795b4d345b3188e37f17d0",
+          "final_tensor_sha256": "fa645de2fc9b878ffee46ff97ff2a1fb2dadaa17dcc29dbd3fc0c130ee4afd12"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0026951481565844,
+          "final_RMS": 0.9294327425547269,
+          "delta_RMS": 0.07339842064884516,
+          "relative_L2": 0.07320113275085181,
+          "cosine": 0.9999892975253915,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "444ce573c5ef0b84a6606fc54dfe71a864653fc02753656fae4d135cb59c775f",
+          "final_tensor_sha256": "8a043c052cc5931703d8162ac3eec21733d01b650da7b30fa374878937504135"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030314403563053642,
+        "final_RMS": 0.027304131289200347,
+        "delta_RMS": 0.014373354867563897,
+        "relative_L2": 0.47414275651729315,
+        "cosine": 0.8806756232636797,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "349eeb98df6e37a78436caba1f24aba8df1cd739f5f561c78ab168f851062237",
+        "final_tensor_sha256": "7a69252caa301269bc181674e70f16be069f6cdc9f56c6bb9556785967187968"
+      }
+    },
+    {
+      "group": "SPATIAL_SHUFFLE",
+      "arm": "F11_UNI2",
+      "partition": 0,
+      "seed": 47,
+      "final_epoch": 80,
+      "source_transfer_sha256": "9536d18f37ad824d4e87f8ca1bf68508a33356e12eee356f25d6bf94c5593828",
+      "final_model_artifact_sha256": "14dd94f280c0adff04ae2533ab3221d464c911552f56a55c4d40c1584ad163ae",
+      "complete_receipt_sha256": "a81041dc58178b1f0678582d5acddc595e4fd5142f99a2e1a0c680864715a207",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015500031821055103,
+          "final_RMS": 0.013580450460980623,
+          "delta_RMS": 0.004941949843933874,
+          "relative_L2": 0.318834819243453,
+          "cosine": 0.9507403078274991,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "74bb5cb3a442fff693a2d900385f7e1bc593f739f9610658f588c6d4a6c9d502",
+          "final_tensor_sha256": "5e8c4db5ffd4cbf005457158cba75ed85b9ebeca6f48907aa72b38783b0fb00b"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.01631016165777214,
+          "final_RMS": 0.014040129750076047,
+          "delta_RMS": 0.013797427233741734,
+          "relative_L2": 0.8459405567673799,
+          "cosine": 0.5955926790315795,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "b06a18b217b9d8c434f1f9a2d063ee4d38f1457b75f4b01f1ac51d95b28fc7ae",
+          "final_tensor_sha256": "ecc15ccb39d8417b3cd1258bf6ca6159e5b2f1d316e11475ba47212326e56249"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.006124869907848056,
+          "final_RMS": 0.01407862217610156,
+          "delta_RMS": 0.015532655087875545,
+          "relative_L2": 2.5359975512251935,
+          "cosine": -0.03213358291708417,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "250de6fa056a294aa763013412ff6238f0a311d80c795b4d345b3188e37f17d0",
+          "final_tensor_sha256": "03be76389e561d4e0091898d4f49fd36ba0bbcee4cd9085c53c8154dc8a96f5c"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0026951481565844,
+          "final_RMS": 0.9332924726111352,
+          "delta_RMS": 0.06979817728726054,
+          "relative_L2": 0.06961056649728657,
+          "cosine": 0.9999705846768153,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "444ce573c5ef0b84a6606fc54dfe71a864653fc02753656fae4d135cb59c775f",
+          "final_tensor_sha256": "ac25433b2730cb2aa13bbba66cb7ae9e6a8cd5c801409970e3a5ac77847ccd31"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030314403563053642,
+        "final_RMS": 0.02762180596444019,
+        "delta_RMS": 0.013904535120095676,
+        "relative_L2": 0.4586775092300395,
+        "cosine": 0.8888824538569419,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "349eeb98df6e37a78436caba1f24aba8df1cd739f5f561c78ab168f851062237",
+        "final_tensor_sha256": "719f2b8c53886a0f9978f8903e1e74c20226f24137ad26b1a06fdec778480ee0"
+      }
+    },
+    {
+      "group": "SPATIAL_SHUFFLE",
+      "arm": "F11_UNI2",
+      "partition": 1,
+      "seed": 31,
+      "final_epoch": 80,
+      "source_transfer_sha256": "9536d18f37ad824d4e87f8ca1bf68508a33356e12eee356f25d6bf94c5593828",
+      "final_model_artifact_sha256": "49823bf952369936d377a5e245c2d7bf2e8406e27e7941f1b33bc3010d914505",
+      "complete_receipt_sha256": "b8e91c9cb7e29d219b15fdabc2e7f42278b97b33d9aaf2258bfbcc674b75819b",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015500031821055103,
+          "final_RMS": 0.013573904466422593,
+          "delta_RMS": 0.005814268807830348,
+          "relative_L2": 0.37511334653728245,
+          "cosine": 0.928478292912182,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "74bb5cb3a442fff693a2d900385f7e1bc593f739f9610658f588c6d4a6c9d502",
+          "final_tensor_sha256": "bd8351d1f8e3d362910da9d703ce0b4ed26f38d418f4ec28037e4f93f621487e"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.01631016165777214,
+          "final_RMS": 0.013818378348927931,
+          "delta_RMS": 0.014289348242196638,
+          "relative_L2": 0.8761009573064202,
+          "cosine": 0.56079398670843,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "b06a18b217b9d8c434f1f9a2d063ee4d38f1457b75f4b01f1ac51d95b28fc7ae",
+          "final_tensor_sha256": "ac436497a592589d7314775043e828e718eb069c33888753514869b06a5d7e20"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.006124869907848056,
+          "final_RMS": 0.012881935567778632,
+          "delta_RMS": 0.014470035292713387,
+          "relative_L2": 2.3625049201734583,
+          "cosine": -0.03753873595980035,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "250de6fa056a294aa763013412ff6238f0a311d80c795b4d345b3188e37f17d0",
+          "final_tensor_sha256": "a559322344e0471dc5311705f1bfdc239b06842496cdbb506294cd9fe58fb707"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0026951481565844,
+          "final_RMS": 0.9318709116605642,
+          "delta_RMS": 0.07118795088186605,
+          "relative_L2": 0.07099660451408615,
+          "cosine": 0.9999723604205288,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "444ce573c5ef0b84a6606fc54dfe71a864653fc02753656fae4d135cb59c775f",
+          "final_tensor_sha256": "b5d811696826aff0d6720f4ca68f2d310f859e31436677b404812e4d4f4cc131"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030314403563053642,
+        "final_RMS": 0.02747825738998355,
+        "delta_RMS": 0.014395774929060683,
+        "relative_L2": 0.4748823409676403,
+        "cosine": 0.8804335394285965,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "349eeb98df6e37a78436caba1f24aba8df1cd739f5f561c78ab168f851062237",
+        "final_tensor_sha256": "9b61f7b8a0f2194cb113f863313d947af2239dc62fee91e1a885e7f624ce79b4"
+      }
+    },
+    {
+      "group": "SPATIAL_SHUFFLE",
+      "arm": "F11_UNI2",
+      "partition": 1,
+      "seed": 47,
+      "final_epoch": 80,
+      "source_transfer_sha256": "9536d18f37ad824d4e87f8ca1bf68508a33356e12eee356f25d6bf94c5593828",
+      "final_model_artifact_sha256": "2dfe4080fceb08d966a5ca38b101e25f44d92f418ff63bc13005216ba0ae95a1",
+      "complete_receipt_sha256": "170505fe44d1c2a698897e4eba3b77cab7acc00d6c1b6db33a5890c09950e9e1",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015500031821055103,
+          "final_RMS": 0.013931860454132451,
+          "delta_RMS": 0.005561193042936718,
+          "relative_L2": 0.3587859113542234,
+          "cosine": 0.9340855275801208,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "74bb5cb3a442fff693a2d900385f7e1bc593f739f9610658f588c6d4a6c9d502",
+          "final_tensor_sha256": "42436b8a595f7924a7cb32ea69596f9bb4b2bd02066ee0af764afce385d26e58"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.01631016165777214,
+          "final_RMS": 0.013950987871364954,
+          "delta_RMS": 0.01351284903035536,
+          "relative_L2": 0.8284926485640439,
+          "cosine": 0.610993326371947,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "b06a18b217b9d8c434f1f9a2d063ee4d38f1457b75f4b01f1ac51d95b28fc7ae",
+          "final_tensor_sha256": "c03d03d3635e868794828d43d08474fca5deb3751f54b6576088833ea0b84689"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.006124869907848056,
+          "final_RMS": 0.011735561238556146,
+          "delta_RMS": 0.012440779318194565,
+          "relative_L2": 2.0311907853346676,
+          "cosine": 0.1423538160592739,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "250de6fa056a294aa763013412ff6238f0a311d80c795b4d345b3188e37f17d0",
+          "final_tensor_sha256": "ae1638944892bd031bf62aeeb1dfcb65f9799cb0cc114f97c88653572157f2f0"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0026951481565844,
+          "final_RMS": 0.9327916178157354,
+          "delta_RMS": 0.07041023709283402,
+          "relative_L2": 0.07022098114494767,
+          "cosine": 0.9999619921386558,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "444ce573c5ef0b84a6606fc54dfe71a864653fc02753656fae4d135cb59c775f",
+          "final_tensor_sha256": "12d22a038b071736215cd0ab444706d40d825d3781ccf3108a8eb66e6ea6c384"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030314403563053642,
+        "final_RMS": 0.027565078039299286,
+        "delta_RMS": 0.013622889757891197,
+        "relative_L2": 0.44938669928160485,
+        "cosine": 0.893477556255058,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "349eeb98df6e37a78436caba1f24aba8df1cd739f5f561c78ab168f851062237",
+        "final_tensor_sha256": "9dec0c337e24cb0234e56968fc8349332b14fa8678cf8c761817430139c70dd5"
+      }
+    },
+    {
+      "group": "SPATIAL_SHUFFLE",
+      "arm": "F11_UNI2",
+      "partition": 2,
+      "seed": 31,
+      "final_epoch": 80,
+      "source_transfer_sha256": "9536d18f37ad824d4e87f8ca1bf68508a33356e12eee356f25d6bf94c5593828",
+      "final_model_artifact_sha256": "0bd538de9ce6a469124b9b9e4a09f9b001693e2afee28ec8638a4857f10dd799",
+      "complete_receipt_sha256": "961a2fa11f0596232b0d3c0b2589e5ae73b0867b88892ec970d8a10c89fb3912",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015500031821055103,
+          "final_RMS": 0.012772987701427943,
+          "delta_RMS": 0.0050235950608833405,
+          "relative_L2": 0.32410224178116426,
+          "cosine": 0.9550470162574644,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "74bb5cb3a442fff693a2d900385f7e1bc593f739f9610658f588c6d4a6c9d502",
+          "final_tensor_sha256": "1a9b1236f052e34a20274efe0835857b2e38323d0afc4d81ce89d37207b5c2f2"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.01631016165777214,
+          "final_RMS": 0.014048023148545042,
+          "delta_RMS": 0.01405422897245343,
+          "relative_L2": 0.8616854490682679,
+          "cosine": 0.5801339060428693,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "b06a18b217b9d8c434f1f9a2d063ee4d38f1457b75f4b01f1ac51d95b28fc7ae",
+          "final_tensor_sha256": "c5d854cda4243d006be6ddab4a28d781ca3f2ddd8c2943d4694ca0e7364954c4"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.006124869907848056,
+          "final_RMS": 0.015825613680386305,
+          "delta_RMS": 0.017116805937237342,
+          "relative_L2": 2.7946399180339907,
+          "cosine": -0.02590000417277073,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "250de6fa056a294aa763013412ff6238f0a311d80c795b4d345b3188e37f17d0",
+          "final_tensor_sha256": "0e82db517769a7aa49df69bbd61328fd390e457ff19e336e8ed9bec32535687c"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0026951481565844,
+          "final_RMS": 0.9329782319274907,
+          "delta_RMS": 0.07010074697303144,
+          "relative_L2": 0.06991232290483194,
+          "cosine": 0.9999713165506178,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "444ce573c5ef0b84a6606fc54dfe71a864653fc02753656fae4d135cb59c775f",
+          "final_tensor_sha256": "edd2af31e69069f3caf7e6dfec62b287dae5047d801a444a36a61560338f6295"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030314403563053642,
+        "final_RMS": 0.02761927765193479,
+        "delta_RMS": 0.014161078658640917,
+        "relative_L2": 0.46714026977921647,
+        "cosine": 0.8845806560424838,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "349eeb98df6e37a78436caba1f24aba8df1cd739f5f561c78ab168f851062237",
+        "final_tensor_sha256": "b937f524c73abe1cf473a020a3faac4c2a5baca256e300d393b46e7497ef9e41"
+      }
+    },
+    {
+      "group": "SPATIAL_SHUFFLE",
+      "arm": "F11_UNI2",
+      "partition": 2,
+      "seed": 47,
+      "final_epoch": 80,
+      "source_transfer_sha256": "9536d18f37ad824d4e87f8ca1bf68508a33356e12eee356f25d6bf94c5593828",
+      "final_model_artifact_sha256": "6d7d75e3bff84d89932dd07a9532ce4c5980f93c8f76041fcaaaed102ac9be9b",
+      "complete_receipt_sha256": "6b8ca53756ba14a808ef3538f38734123bf361a5eec8e586aa86342082684599",
+      "teacher_origin_sha256": "bcdaf476a868c4b609de46bfe6f457d12c64a79dbccfe0e409cdcc149230b588",
+      "UNI2_cache_READY_sha256": "a5ad6d6a19fc9d0ef6fe3230a36805a55e14426e8ad60840414587621f490dff",
+      "source_projection_loaded_by_recorded_lineage": true,
+      "per_tensor": [
+        {
+          "tensor": "0.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.015500031821055103,
+          "final_RMS": 0.013248424827411724,
+          "delta_RMS": 0.00511453264384304,
+          "relative_L2": 0.32996917057263747,
+          "cosine": 0.948652041009115,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "74bb5cb3a442fff693a2d900385f7e1bc593f739f9610658f588c6d4a6c9d502",
+          "final_tensor_sha256": "3ce8bd58caaddc7b657e1ae3698ea491ab30db5ab375b8202b89f1da71316963"
+        },
+        {
+          "tensor": "0.weight",
+          "parameters": 98304,
+          "shape": [
+            64,
+            1536
+          ],
+          "source_RMS": 0.01631016165777214,
+          "final_RMS": 0.013876028295825946,
+          "delta_RMS": 0.01349528470259061,
+          "relative_L2": 0.827415753795415,
+          "cosine": 0.6107337002388671,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "b06a18b217b9d8c434f1f9a2d063ee4d38f1457b75f4b01f1ac51d95b28fc7ae",
+          "final_tensor_sha256": "fe8606c221040edef05d5a5a2336500f7225e4f6e943d66b4f874033f985ae02"
+        },
+        {
+          "tensor": "1.bias",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 0.006124869907848056,
+          "final_RMS": 0.012336717295493984,
+          "delta_RMS": 0.013412643705765864,
+          "relative_L2": 2.1898658922664915,
+          "cosine": 0.06491206636867478,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "250de6fa056a294aa763013412ff6238f0a311d80c795b4d345b3188e37f17d0",
+          "final_tensor_sha256": "9f1da65794eb08c45d6daa1e58defc2ebe2f13a9105e93c4ab2243eec7dd60d9"
+        },
+        {
+          "tensor": "1.weight",
+          "parameters": 64,
+          "shape": [
+            64
+          ],
+          "source_RMS": 1.0026951481565844,
+          "final_RMS": 0.9344761743118191,
+          "delta_RMS": 0.06871987393691445,
+          "relative_L2": 0.0685351615226754,
+          "cosine": 0.9999633975093104,
+          "relative_L2_status": "DEFINED",
+          "cosine_status": "DEFINED",
+          "source_tensor_sha256": "444ce573c5ef0b84a6606fc54dfe71a864653fc02753656fae4d135cb59c775f",
+          "final_tensor_sha256": "c698aa165fc957db99c4d919e4734ecaa8c1002b1d7538979a1beef0f44ecf3f"
+        }
+      ],
+      "all_projection_parameters": {
+        "parameters": 98496,
+        "shape": [
+          98496
+        ],
+        "source_RMS": 0.030314403563053642,
+        "final_RMS": 0.027564341027977557,
+        "delta_RMS": 0.01360037074434836,
+        "relative_L2": 0.4486438506388467,
+        "cosine": 0.8938439616788566,
+        "relative_L2_status": "DEFINED",
+        "cosine_status": "DEFINED",
+        "source_tensor_sha256": "349eeb98df6e37a78436caba1f24aba8df1cd739f5f561c78ab168f851062237",
+        "final_tensor_sha256": "444a9e0c208b65d43559c511775204358f6d7e1250e01b9b16c34334df051d7b"
+      }
+    }
+  ],
+  "F5_initialization_drift_audited": false,
+  "F5_boundary": "not constructed: exact F5 RNG initialization requires complete MechanismModel creation including preceding omics modules",
+  "measurement": "parameter RMS difference, source-relative L2 and cosine; concatenated statistics are parameter-count weighted",
+  "scientific_boundary": "parameter movement does not establish source semantic forgetting, preservation, medical mechanism or prognostic benefit",
+  "CPU_tensor_operations_only": true,
+  "model_construction_calls": 0,
+  "model_forward_calls": 0,
+  "optimizer_updates": 0,
+  "GPU_used": false,
+  "patient_arrays_exported": false,
+  "report_script_sha256": "c2537a8fab93fad987d855740642313f50af160504cfa605983dd4fc83f22162"
+}

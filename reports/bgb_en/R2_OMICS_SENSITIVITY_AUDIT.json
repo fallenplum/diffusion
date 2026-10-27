@@ -1,0 +1,56 @@
+{
+  "status": "COMPLETE",
+  "completed_neural_fits": 24,
+  "planned_neural_fits": 24,
+  "actual_upstream_anchor_refits": 0,
+  "analytical_risk_decoder_fits": 48,
+  "specification": {
+    "schema": "bgb_en_r2_sensitivity_v1",
+    "outer_fold": 1,
+    "inner_partitions": [
+      0,
+      1,
+      2
+    ],
+    "seeds": [
+      31,
+      47
+    ],
+    "epochs": 80,
+    "evaluation_epochs": [
+      20,
+      40,
+      80
+    ],
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "gamma": 0.3,
+    "sequence_backend_formal": "mamba",
+    "random_order_seed": 270901,
+    "random_orders": 4,
+    "variants": {
+      "O8_F2": {
+        "core_arm": "O8",
+        "factor_dimensions": 2
+      },
+      "O8_F8": {
+        "core_arm": "O8",
+        "factor_dimensions": 8
+      },
+      "O5_RANDOM_ORDERS": {
+        "core_arm": "O5",
+        "order_strategy": "four_fixed_independent_random_permutations"
+      },
+      "O6_RANDOM_ORDERS": {
+        "core_arm": "O6",
+        "order_strategy": "four_fixed_independent_random_permutations"
+      }
+    },
+    "expected_new_neural_fits": 24,
+    "expected_analytical_risk_decoder_fits": 48,
+    "direct_RNA512_anchor": "exact_existing_prepared_risk_no_refit",
+    "scientific_endpoint": "fixed_epoch80_no_validation_checkpoint_selection",
+    "outer_test_evaluated": false
+  },
+  "outer_test_evaluated": false
+}

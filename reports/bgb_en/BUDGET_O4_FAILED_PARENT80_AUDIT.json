@@ -1,0 +1,113 @@
+{
+  "schema": "bgb_en_budget_failed_parent80_cpu_audit_v1",
+  "status": "FAILED160_RECEIPT_RETAINED_CPU_DIAGNOSIS_ONLY",
+  "unit": {
+    "arm": "O4",
+    "partition": 0,
+    "seed": 47,
+    "epochs": 160
+  },
+  "failure_guard": "Same-initialization epoch80 risks exceeded the locked original80 replay tolerance",
+  "original_risk_tolerance": 2e-06,
+  "threshold_changed": false,
+  "failed_receipt_sha256": "a9e2b23498db4708216578ca24d5a592e424651da47735699e462f91819df64b",
+  "failed_model_saved": true,
+  "failed_model_sha256": "649c9e301efa998418da81a3993f95db14ebaef022a7ccb330d56120b6eb63c5",
+  "failed_COMPLETE_exists": false,
+  "failed_fit_actual_completed_optimizer_updates": 160,
+  "failed_artifact_actual_risk_decoder_fits": 2,
+  "original_parent_artifact_sha256": "6211fd05f4cf27400b2850dc3e655cab9fbd1c28a7534bd0da2af3eb7a84421f",
+  "paired320_artifact_sha256": "1d57b1dd80c5b558c8142acc26ade906fa9f65ec2480356526aee07e9f0404bf",
+  "paired320_receipt_sha256": "4fc70224cd83e42812f5464a69924dfa7f2765824c70c0ca9ca0e21ea270bc00",
+  "prepared_sha256": "b47735f22655602b76c0c94bfcd375da495daf7ec7fecf6254af3eb41b233348",
+  "parent80_comparisons": {
+    "original_parent80_to_new160_epoch80": {
+      "max_abs_risk_error": 2.7418136596679688e-06,
+      "RMS_risk_error": 4.79173337739903e-07,
+      "within_locked_tolerance": false,
+      "risk_tolerance": 2e-06,
+      "changed_pair_credits": 0,
+      "Harrell_change": 0.0,
+      "Uno60_change": 0.0,
+      "repaired_pair_credit": 0.0,
+      "damaged_pair_credit": 0.0,
+      "parent_Harrell": 0.6970227670753065,
+      "new_fit80_Harrell": 0.6970227670753065,
+      "parent_Uno60": 0.675326483788197,
+      "new_fit80_Uno60": 0.675326483788197
+    },
+    "original_parent80_to_new320_epoch80": {
+      "max_abs_risk_error": 6.109476089477539e-07,
+      "RMS_risk_error": 7.803338143559187e-08,
+      "within_locked_tolerance": true,
+      "risk_tolerance": 2e-06,
+      "changed_pair_credits": 0,
+      "Harrell_change": 0.0,
+      "Uno60_change": 0.0,
+      "repaired_pair_credit": 0.0,
+      "damaged_pair_credit": 0.0,
+      "parent_Harrell": 0.6970227670753065,
+      "new_fit80_Harrell": 0.6970227670753065,
+      "parent_Uno60": 0.675326483788197,
+      "new_fit80_Uno60": 0.675326483788197
+    },
+    "new320_epoch80_to_new160_epoch80": {
+      "max_abs_risk_error": 2.4437904357910156e-06,
+      "RMS_risk_error": 4.4690248230921416e-07,
+      "within_locked_tolerance": false,
+      "risk_tolerance": 2e-06,
+      "changed_pair_credits": 0,
+      "Harrell_change": 0.0,
+      "Uno60_change": 0.0,
+      "repaired_pair_credit": 0.0,
+      "damaged_pair_credit": 0.0,
+      "parent_Harrell": 0.6970227670753065,
+      "new_fit80_Harrell": 0.6970227670753065,
+      "parent_Uno60": 0.675326483788197,
+      "new_fit80_Uno60": 0.675326483788197
+    }
+  },
+  "initial_state_hash_comparison": {
+    "named_states": 19,
+    "new160_vs_new320_exact": true,
+    "changed_state_names": [],
+    "original_parent_initial_hashes_persisted": false,
+    "original_parent_exact_initial_state_not_inferred_from_seed": true
+  },
+  "epoch80_parameter_and_buffer_difference": {
+    "state_tensors": 19,
+    "changed_tensors": 16,
+    "state_elements": 50536,
+    "changed_elements": 10773,
+    "max_abs_state_error": 2.905726432800293e-07,
+    "RMS_state_error": 1.3133450873051485e-08
+  },
+  "failed_final160_inner_metrics": {
+    "Harrell": 0.6923525977816696,
+    "Uno60": 0.6765420639788231,
+    "Harrell_num": 1186.0,
+    "Harrell_den": 1713.0,
+    "Uno_num": 3031.382842207562,
+    "Uno_den": 4480.70120633689,
+    "repair": 0.044366608289550497,
+    "damage": 0.05837711617046118
+  },
+  "failed_final160_training_curve": {
+    "epoch": 160,
+    "cox_loss": 4.682891929000519,
+    "delta_train_SD": 0.28254732220861006,
+    "delta_valid_SD": 0.289309635953674,
+    "gradient_tensor_nonzero_ratio": 1.0
+  },
+  "failed_fit_metrics_are_not_promoted_to_qualified_budget_comparison": true,
+  "actual_audit_work": {
+    "model_constructions": 0,
+    "forwards": 0,
+    "backwards": 0,
+    "optimizers": 0,
+    "GPU_calls": 0
+  },
+  "report_script_sha256": "0eab90579aeeb5c6e51e58cf05e97c0f49aee1d52001a2f028b5288516032ab2",
+  "comparison_script_sha256": "f4636d03c94c4ab85ca480b3c445ea9c4a5e71c436f43f8af73354bb9910c63b",
+  "interpretation": "Same initialized new fits may diverge numerically under the inherited GPU backend. These CPU saved-array comparisons do not isolate a unique CUDA kernel cause or repair the original guard."
+}

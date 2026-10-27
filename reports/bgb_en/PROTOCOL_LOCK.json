@@ -1,0 +1,54 @@
+{
+  "status": "LOCKED_CORE_MATRIX_OUTER_TEST_NOT_EVALUATED",
+  "lineage": {
+    "source": {
+      "configs/bgb_en/prototype_v1.json": "7b8d725298fd7f03eaf182c43a784e48397e702aacc1db43c4a9442773429e66",
+      "scripts/bgb_en_run.py": "2999bd817536ad352e1aade5461af09b67ba7b7d8e7bcc0b1f77a5ee529b7c67",
+      "src/bgb_en/__init__.py": "6ded290386fb31f64c885c3b60885bafcb49c608b9a0d875eb6230138e579912",
+      "src/bgb_en/baselines.py": "2a00c4bcd2eca06c26a5ad5e0c636d2c2771bbf356df9d72a350fe8061e30d5a",
+      "src/bgb_en/data.py": "cebe55093915abeb2df38fee317b5af7e805f5714d43d3a56d3e67bc441bcd37",
+      "src/bgb_en/interaction.py": "d29d7c1eede19209dd4c5db84a38a7d231106d4a03c5db9564635d4ef8b31c3f",
+      "src/bgb_en/omics.py": "0e745187f58afc0b6badd4240ba05f56c3274741a4948ae5fed797ddaa53b6fd",
+      "src/bgb_en/pathology.py": "68ed98779ec2f4eb9972a26150fda550ae9aba70ef2be753fd8d90d842a43f26",
+      "src/bgb_en/protocol.py": "e06e7196eee72957dbde363bc4cb78b004ded62a62ada0fa0ffa3add7590394c",
+      "src/bgb_en/survival.py": "2f54ca3262438cb725421e5a062b8529eecdd5033a122038798c5af6b083d086",
+      "src/bgb_en/training.py": "04036634f61e0a349e2ee5ee11a642fe139c49a58a91fec5b7a1875b5bd7b513"
+    },
+    "cohort_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+    "endpoints_sha256": "91b5d15aa32489c825a8341aed8d9733281dc62386151c8c6246b6312975fd4e",
+    "GMT_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+    "legacy_group_sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+    "protocol_sha256": "7b8d725298fd7f03eaf182c43a784e48397e702aacc1db43c4a9442773429e66",
+    "patch_cache_receipts": {
+      "patch_grid": "3ef674c9a2e7be9287168e9c33ea1aa596c0ca96faf3ecbda822717f2a2a623f",
+      "patch_regions": "cd2a9e4d761657c298f0496eabba68a4ecadf194cb30078e7792896794f278a2",
+      "patch_rand": "0651f46e965f00243ef8426f4500fc44221b4d5419a986cb14a0a4580a4d13ae",
+      "patch_diverse": "487ec32b96d36e34b6130af255926210a398bbe236d994461e0106a919bb0858"
+    }
+  },
+  "config_sha256": "7b8d725298fd7f03eaf182c43a784e48397e702aacc1db43c4a9442773429e66",
+  "planned_unique_inner_units": {
+    "R1": 57,
+    "R2": 57,
+    "R3": 72
+  },
+  "planned_neural_fits": 162,
+  "planned_additional_convex_fits": 12,
+  "planned_upstream_anchor_and_teacher_fits": 39,
+  "deterministic_baseline_reference_cells": 12,
+  "seeds": [
+    31,
+    47
+  ],
+  "inner_partitions": 3,
+  "epochs_per_neural_fit": 80,
+  "outer_test_evaluated": false,
+  "full_riskset_Efron": true,
+  "IPCW_fit_partition_only": true,
+  "bootstrap": false,
+  "confidence_intervals": false,
+  "p_values": false,
+  "shared_patch_selector": "REGIONS512_qualified_from_coordinates_before_survival_fits",
+  "source_auxiliary_tracked_separately": true,
+  "interpretation": "exploratory_repeated_development_cohort_not_independent_confirmation"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS_SYNTHETIC_OUTPUT_AND_GRADIENT_EQUIVALENCE",
+  "date": "2026-10-27",
+  "synthetic_only": true,
+  "patient_data_reads": 0,
+  "optimizer_steps": 0,
+  "source_sha256": "0e745187f58afc0b6badd4240ba05f56c3274741a4948ae5fed797ddaa53b6fd",
+  "test_sha256": "d2cfa306b749d621328d686a35e9d0f361542d6452ff6d2869c8d245f29c827a",
+  "probe_sha256": "a5c9e021bf9060473d06e2df90310e3a98cfd1a43501f2f110b00dfbf51881c7",
+  "local_tests": {"passed": 20, "seconds": 7.19},
+  "server_tests": {"passed": 20, "seconds": 2.14, "torch": "2.5.1+cu124"},
+  "masked_diagonal_ssm_cpu": {
+    "dtype": "torch.float64",
+    "maximum_absolute_error": 2.220446049250313e-16,
+    "maximum_output_magnitude": 0.7866570456743517,
+    "machine_epsilon": 2.220446049250313e-16,
+    "test_atol": 1e-14,
+    "test_rtol": 1e-14,
+    "invalid_outputs_exact_zero": true,
+    "reason_for_non_bitwise_comparison": "Projection GEMM row shapes differ for compact and padded tensors; no change to the recurrence"
+  },
+  "official_mamba_cuda_equal_length_compaction": {
+    "backend": "mamba_ssm.Mamba",
+    "batch": 8,
+    "pathways": 50,
+    "width": 32,
+    "orders": 4,
+    "valid_lengths": [50, 50, 49, 49, 35, 35, 0, 50],
+    "comparison": "equal-length batched gather/scan/scatter versus original patientwise compact scan",
+    "maximum_output_error": 2.384185791015625e-7,
+    "maximum_input_gradient_error": 5.820766091346741e-11,
+    "maximum_parameter_gradient_error": 3.4924596548080444e-10,
+    "required_maximum_error": 1e-6,
+    "padded_outputs_exact_zero": true,
+    "weights_unchanged": true,
+    "batched_scan_calls": 12,
+    "legacy_scan_calls": 28,
+    "performance_claim": "NONE: the initial timing included cold CUDA/kernel setup and is not a fair throughput benchmark"
+  }
+}

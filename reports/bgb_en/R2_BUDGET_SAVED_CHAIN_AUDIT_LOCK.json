@@ -1,0 +1,410 @@
+{
+  "schema": "bgb_en_posthoc_saved_budget_chain_audit_lock_v1",
+  "status": "LOCKED_BEFORE_ZERO_FIT_DIAGNOSTIC_EXECUTION",
+  "audit_sources": {
+    "scripts/bgb_en_budget_saved_chain_audit.py": "0bdd2299c72506399cb5ecf99519972407eaba8fe206509770109c8eca5702c6",
+    "scripts/bgb_en_summarize_budget.py": "cb85bc817c7ed846ef298b355e9270e128488ce653e8822725f5c2cdfd0cc856",
+    "scripts/bgb_en_budget_retrain.py": "f4636d03c94c4ab85ca480b3c445ea9c4a5e71c436f43f8af73354bb9910c63b",
+    "scripts/bgb_en_anchor_cast_audit.py": "070de95e884b144d7874fee9b3004f0781789a02bb0eaeaadebf52f8acfee456",
+    "configs/bgb_en/budget_sensitivity_v1.json": "b5413c55371071e0658310943932a3d21bc653e22d37c5459ce49d0d440996d9",
+    "src/phase10_trimodal/math.py": "e744e652590e9103ba0b376a7b4c232652789d72b5bb1976e511144bc07c417b"
+  },
+  "core_source": {
+    "configs/bgb_en/prototype_v1.json": "7b8d725298fd7f03eaf182c43a784e48397e702aacc1db43c4a9442773429e66",
+    "scripts/bgb_en_run.py": "2999bd817536ad352e1aade5461af09b67ba7b7d8e7bcc0b1f77a5ee529b7c67",
+    "src/bgb_en/__init__.py": "6ded290386fb31f64c885c3b60885bafcb49c608b9a0d875eb6230138e579912",
+    "src/bgb_en/baselines.py": "2a00c4bcd2eca06c26a5ad5e0c636d2c2771bbf356df9d72a350fe8061e30d5a",
+    "src/bgb_en/data.py": "cebe55093915abeb2df38fee317b5af7e805f5714d43d3a56d3e67bc441bcd37",
+    "src/bgb_en/interaction.py": "d29d7c1eede19209dd4c5db84a38a7d231106d4a03c5db9564635d4ef8b31c3f",
+    "src/bgb_en/omics.py": "0e745187f58afc0b6badd4240ba05f56c3274741a4948ae5fed797ddaa53b6fd",
+    "src/bgb_en/pathology.py": "68ed98779ec2f4eb9972a26150fda550ae9aba70ef2be753fd8d90d842a43f26",
+    "src/bgb_en/protocol.py": "e06e7196eee72957dbde363bc4cb78b004ded62a62ada0fa0ffa3add7590394c",
+    "src/bgb_en/survival.py": "2f54ca3262438cb725421e5a062b8529eecdd5033a122038798c5af6b083d086",
+    "src/bgb_en/training.py": "04036634f61e0a349e2ee5ee11a642fe139c49a58a91fec5b7a1875b5bd7b513"
+  },
+  "assets_configuration_sha256": "5268b786101bb0aa97ff2b3e0fb67ab16d2970e8ef62b3a0d765bba5dd89c7da",
+  "endpoint_sha256": "91b5d15aa32489c825a8341aed8d9733281dc62386151c8c6246b6312975fd4e",
+  "cohort_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+  "GMT_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+  "prepared": [
+    {
+      "partition": 0,
+      "artifact_sha256": "b47735f22655602b76c0c94bfcd375da495daf7ec7fecf6254af3eb41b233348",
+      "receipt_sha256": "9666f51247c18ebdd6e13f7cff370da48bc89dfe79aa257c672db3e322470834"
+    },
+    {
+      "partition": 1,
+      "artifact_sha256": "be9bcf74c080ab4248d28eba37dacf7812e72f4503715a435250b6515b2a4a45",
+      "receipt_sha256": "c0d775660cac66a0f4ec09104d366795c4cb0d006c92d21ed45a01aff86297fc"
+    },
+    {
+      "partition": 2,
+      "artifact_sha256": "3e2da6496585a44a76728d8e4d90427b4c9c77b4082d741b0cc56ebd4443433e",
+      "receipt_sha256": "36afa9d42ca5108716160e775169ae5c4209173684af3919552171128d2ace12"
+    }
+  ],
+  "parent80_artifacts": [
+    {
+      "arm": "O3",
+      "partition": 0,
+      "seed": 31,
+      "artifact_sha256": "082b63dd3e7b907d51c760e23a056ff1ad9ce86f2edffb1d7818c5984f6d2daa",
+      "receipt_sha256": "2aabca33f39db40f014a2fdb5f0c969ce5035f8a9374d81a1804f8e13addde46"
+    },
+    {
+      "arm": "O3",
+      "partition": 0,
+      "seed": 47,
+      "artifact_sha256": "dffbb4a884e9f2d3d3f580f4a4aa0f7ddc84c9c2e2dfc905e9df6c9747103ff5",
+      "receipt_sha256": "9097618c416910365dfe7d1bfcc8d6db9adaeb39a6242bd972c57ab0473178cb"
+    },
+    {
+      "arm": "O4",
+      "partition": 0,
+      "seed": 31,
+      "artifact_sha256": "cf38170ee11b8812e4653c0830615ce2c3ce463ca9074bd41fd562637c4c1669",
+      "receipt_sha256": "ed6eb63b99d0b798d101ac59210a29e8b233d4bc1d1c0e03188899c1dbf5da69"
+    },
+    {
+      "arm": "O4",
+      "partition": 0,
+      "seed": 47,
+      "artifact_sha256": "6211fd05f4cf27400b2850dc3e655cab9fbd1c28a7534bd0da2af3eb7a84421f",
+      "receipt_sha256": "574d0ca6084307a99084598071be9709e69e5e7cbd0a38199dc72b5ab1b3a8ba"
+    },
+    {
+      "arm": "O3",
+      "partition": 1,
+      "seed": 31,
+      "artifact_sha256": "fbd179110ed1653208807002faded2357466449bf7f43acd049838ab4fd587a6",
+      "receipt_sha256": "79636053216fa7b07cb3626b18b8d08aac204ca002b6ee0a985c7bbe6c3af53f"
+    },
+    {
+      "arm": "O3",
+      "partition": 1,
+      "seed": 47,
+      "artifact_sha256": "15e35a8f9120f08166acad96f2cb69e8fa7f73d4b5f9a3113c0eb8858f212a9d",
+      "receipt_sha256": "d259a52342f357a679ee7b4caa769b109a25b376c52cbfcadacea77b209625cd"
+    },
+    {
+      "arm": "O4",
+      "partition": 1,
+      "seed": 31,
+      "artifact_sha256": "b30ce15b77caf7c2cc4dfdf0d172151662a803ac690c636d5cbc6ac2ea7ebbf3",
+      "receipt_sha256": "5fb7fc2e8f3ab301e7722aff7c5738f352a92cb024a2d0fa090494d05ae52706"
+    },
+    {
+      "arm": "O4",
+      "partition": 1,
+      "seed": 47,
+      "artifact_sha256": "4238d962ea83f95f785d2e6e4ab45ccee5d66bf56674f097a945362da94c4c62",
+      "receipt_sha256": "de130f7ad222d5c0d1bb8a634321c0ec4a95da2194066586e038bfa0853d9ed9"
+    },
+    {
+      "arm": "O3",
+      "partition": 2,
+      "seed": 31,
+      "artifact_sha256": "a1ed6e70bdfa989196c8ac0dc5fac538312301d144de978b3416e2f3649e0a4e",
+      "receipt_sha256": "275874dcbd4e43fde8d7d788743ac54e9f65b0ef5706fcaf5c2da70ee3b4a72d"
+    },
+    {
+      "arm": "O3",
+      "partition": 2,
+      "seed": 47,
+      "artifact_sha256": "077ce6f527d601e3c5562bfca13aa6a269de77ae9f5cda3c3bcad1262f7a21e2",
+      "receipt_sha256": "cae50277a1b2bd8e7fda29223e1dc8b03d57649d4437a05e5384442c48aa39bc"
+    },
+    {
+      "arm": "O4",
+      "partition": 2,
+      "seed": 31,
+      "artifact_sha256": "79e7855c1f46161c76c11a7ac08e683068054f5b547120a739ff6f647408694a",
+      "receipt_sha256": "56f9c1a6d366e7bacd129b0320a38fded258e1aa3f5a4149f5e37881eb5a785e"
+    },
+    {
+      "arm": "O4",
+      "partition": 2,
+      "seed": 47,
+      "artifact_sha256": "fc76c3f5d2afb0551b8871eeca99b04fe7d168f5d5200c5c2e1dc59660068bd4",
+      "receipt_sha256": "ee94e61703566bda7216749f984d52419d7d4b38609ee7fde603daa7ec401966"
+    }
+  ],
+  "models": [
+    {
+      "unit": "R2_newfit160_outer1_inner0_O3_seed31",
+      "arm": "O3",
+      "partition": 0,
+      "seed": 31,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "2d9b053b5e8ff725d3356ee7a4f0abeffb8ffda119938400de37ff96a1523b7a",
+      "START_sha256": "13328067ae4188262cd7ddcae4426b312f9bcb73d9835d22b1e3dee2cdd2902b",
+      "marker_sha256": "79ce3ec69d5e718f33dcdf6dad9b296790a1dcfc82d024d80675ac83a3b252d6"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner0_O3_seed31",
+      "arm": "O3",
+      "partition": 0,
+      "seed": 31,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "1c4e2a3607cdc2f66a8971205918c10d48a6710f5fe95179cfd4daf6e88cbf21",
+      "START_sha256": "6bd1e2cb910d7410f840211d638cb93f9f40ecc420b9063eaf2f26ee8169f93b",
+      "marker_sha256": "b8ccdd56f74914dcab7acee8b2060983d4ddf78cbadb8cac5380b16e90e92d40"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner0_O3_seed47",
+      "arm": "O3",
+      "partition": 0,
+      "seed": 47,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "aa0a6abcc48055d02b7742e5718633c26532eb9e5ba51a4d08f2f4dc3394034a",
+      "START_sha256": "5034f1a49ef02f2c61f839f1b8b6db79653458c0f241561258a9564c986071bb",
+      "marker_sha256": "d5ed6cc94be0b7582eb72f3d9a25510a6142db7653a243eb6cec106294b6a9f6"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner0_O3_seed47",
+      "arm": "O3",
+      "partition": 0,
+      "seed": 47,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "0363970915d92511e258fb7c3f39015b33a60a7911b8e0f931f1eb27fdcba31e",
+      "START_sha256": "de9dd29c21acbd88a17df6debbef6c78909b994fe5029fdd36fc34fbd40645ac",
+      "marker_sha256": "eac3af8bb24d0321254010e57fa2d87c2cabaa7e7a151af055437ef179dee278"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner1_O3_seed31",
+      "arm": "O3",
+      "partition": 1,
+      "seed": 31,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "602b6935db97b784b9739d032ea38951d338912749e5f056c0ade25dc342e1d8",
+      "START_sha256": "9a383f6fa024ad0efebc62abb3b7e95356fb5fb0fc08de06780eb7b7d6112382",
+      "marker_sha256": "050bab4a491960c1f9e807b20694443d20e31af54b141652acc4949a8d1cbb5d"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner1_O3_seed31",
+      "arm": "O3",
+      "partition": 1,
+      "seed": 31,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "888626707466caf6d8f4036f86dd9615bf71f842e7e09324fefaacea12ccfb38",
+      "START_sha256": "5ff2c08911bc4d2d0bbb3879d08ec44ca0f3c947a233b4421b1e6d64361ebd26",
+      "marker_sha256": "9a9d300081334a11eaee6fde2838c3b59361e19441c470cf3eb5d142beff39a5"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner1_O3_seed47",
+      "arm": "O3",
+      "partition": 1,
+      "seed": 47,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "fa52d4c6622d69de443e5bc3622d3e939aadb4067561f02331d63588b132ef5a",
+      "START_sha256": "1e17684572f733a3c120740b07af957f15c27d2d10e34cd97f5ed59a46739c72",
+      "marker_sha256": "44ec6e33e6a03d2ead0ab8595f90f35f885c5f15bd8dbafd9c4c453a7e40d7c7"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner1_O3_seed47",
+      "arm": "O3",
+      "partition": 1,
+      "seed": 47,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "15f1405d11bc4e3c2af39d339039e68964f94ba418d442f0ca954489b66b19c7",
+      "START_sha256": "25039a960902cf12beebdf92b36fb364d4589bb83ee167f30ed5b3d61c312d41",
+      "marker_sha256": "f577b92041f9ab16c967d11f673ed07ab0afd1a96818bfc0a929f3157516623a"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner2_O3_seed31",
+      "arm": "O3",
+      "partition": 2,
+      "seed": 31,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "1d10446453674747cc2208f6bd2dd64ed28cd8116c7fa5f25ef99b4f069d1251",
+      "START_sha256": "114e062bb53c2753a4fe54f7727534533b66ced0bde397f6f3769c71aa1a6938",
+      "marker_sha256": "5512bbf81041421576f23f884c9f879c2a075eefa2359ebfa48c87159b13ee86"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner2_O3_seed31",
+      "arm": "O3",
+      "partition": 2,
+      "seed": 31,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "ac6bfd3a9152f5933ee89fa36959c911b3e930fbbe566db7b5306531115e46b3",
+      "START_sha256": "2912fb97d06dd90b6177b2bb37fe0c6cd6843142706c3db77e194b9724f0f401",
+      "marker_sha256": "c33a0e183fdf9b70520ab567d082c0f22a238f0caa8ad791857fb75fc3ede318"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner2_O3_seed47",
+      "arm": "O3",
+      "partition": 2,
+      "seed": 47,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "73dc973afd826ff6e91614c410e91c9d58039e51423b2f77af543c3b390f7300",
+      "START_sha256": "04eecccf379a5ed676da5129779862abe2eed090389956bdba938e71dc769e29",
+      "marker_sha256": "160036de74aede04a11fa7ac932bd47120e100b168ac756b70acc43ab841f806"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner2_O3_seed47",
+      "arm": "O3",
+      "partition": 2,
+      "seed": 47,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "3794fbd83afaa1140a037df1fc09c7e4e55bf7b46623c46aeba6f9eda2e51628",
+      "START_sha256": "2b40c79ff9ab8d879e243219aa307b24b5b19f77098d9b1c7bff77abb58f310b",
+      "marker_sha256": "d575b8c8bef93b6baf8489b6c9fa7ceda061e3ba41dc3f3890167adbf70ebb6c"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner0_O4_seed31",
+      "arm": "O4",
+      "partition": 0,
+      "seed": 31,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "0db1006fcee38b913c28c92039c09aa1e6cb8d0add283be41f7bad8f06794222",
+      "START_sha256": "6cf633983969b6ce0de7ffedc0511449cb8baa788c65a3e8ca1342e6d75db730",
+      "marker_sha256": "8541785d52da4a492f06026d82ee086b1371693f22250307c431cc2c7398a2e5"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner0_O4_seed31",
+      "arm": "O4",
+      "partition": 0,
+      "seed": 31,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "c7cea09cb2c2cb02b2b2cf90464917c79f2778ea77f90a75829929dbf5041da2",
+      "START_sha256": "7e8572ea918b1d7357f5c61d57273231928a537ce7f2e4a02e6153ffdaebad59",
+      "marker_sha256": "e9a87514c7c895ee594122131f824098dccf00920f2041c828cf74719494f836"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner0_O4_seed47",
+      "arm": "O4",
+      "partition": 0,
+      "seed": 47,
+      "epochs": 160,
+      "original_role": "FAILED_PARENT80_NUMERICAL_GUARD",
+      "artifact_sha256": "649c9e301efa998418da81a3993f95db14ebaef022a7ccb330d56120b6eb63c5",
+      "START_sha256": "7d54963a834832d34a2680078a6272d3bc2d3371816e30da31aa7784dcfe55ab",
+      "marker_sha256": "a9e2b23498db4708216578ca24d5a592e424651da47735699e462f91819df64b"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner0_O4_seed47",
+      "arm": "O4",
+      "partition": 0,
+      "seed": 47,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "1d57b1dd80c5b558c8142acc26ade906fa9f65ec2480356526aee07e9f0404bf",
+      "START_sha256": "0df8dff6e382296128c221a19849bc28ae04264b1c4bb8f3075bb0f11ab3cee4",
+      "marker_sha256": "4fc70224cd83e42812f5464a69924dfa7f2765824c70c0ca9ca0e21ea270bc00"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner1_O4_seed31",
+      "arm": "O4",
+      "partition": 1,
+      "seed": 31,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "8a9cd8b142b6ad8741271ce66430d42194c3a8d734aa1123ec32a7528d21f653",
+      "START_sha256": "f34429dd765831879230e4e83186274d2ffc94f0bb8008e31189d0de1c65a45f",
+      "marker_sha256": "660eafd47827ca3499ce23eb617ffb01e06b7bf57070e691cdde7d40721b7c0f"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner1_O4_seed31",
+      "arm": "O4",
+      "partition": 1,
+      "seed": 31,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "5da817dc44cd80ed3396d14aec5c4bec86c08c3443c7dfc514f20fff463150fc",
+      "START_sha256": "17ddae247ed576de1c3ea928137ff3ebe78e7d53e5e3d14f4b85c75656c9f904",
+      "marker_sha256": "abe6b1b27f721dac3c6dfeb24b2dced5677e4977c0a54049728a876778687de0"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner1_O4_seed47",
+      "arm": "O4",
+      "partition": 1,
+      "seed": 47,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "cd3a5a4bc2b5798d667068565a742154621079837da325d5b8c9d5e6536bc302",
+      "START_sha256": "b597f2f513a60d2c98c6353e5690b1b194ae2910d776f12267b5c39c3e7c8d3f",
+      "marker_sha256": "1f20d9dc779634261bae40b3cadf461d59a9c49095d6e1cf4bb0473d839b8779"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner1_O4_seed47",
+      "arm": "O4",
+      "partition": 1,
+      "seed": 47,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "d98f2ae63168a6a40ec58dfca2882c2acdfeef2dc097dd20e63f6ddd89d5f6f3",
+      "START_sha256": "ca247b9ed5495d6e633de5b13b579a4c57d71ad6708b2600d15fab453119555a",
+      "marker_sha256": "9795e45df1b5260569d24627d2c24c564a9e82bd0b83f68ca51c0f1f8689a1a2"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner2_O4_seed31",
+      "arm": "O4",
+      "partition": 2,
+      "seed": 31,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "fe24ecf5153dc1e8262e99d4d2f688c99f3656995376b1e1b33e8d318b38d68d",
+      "START_sha256": "164b2c087cb217621a384e02749ea2ee391c57ddc445ebb4a210e132731f22c8",
+      "marker_sha256": "626f1eb0b7375feeac227dc5e4b6227e4c40e6416b1aea2727bebdbc0b80108c"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner2_O4_seed31",
+      "arm": "O4",
+      "partition": 2,
+      "seed": 31,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "c39e6bb1afbbb3e410f76a3301cdd29e01d482454c6bb946e839397ca36d9f41",
+      "START_sha256": "7c7b62e771488366e58b0ebdb8090974560a3e8e5cdf9826b7470f2cc1fa51d8",
+      "marker_sha256": "cb0f98ed3f9cfb38c8562042c7bdf19db14dadb221505660812d63fc4960d1dc"
+    },
+    {
+      "unit": "R2_newfit160_outer1_inner2_O4_seed47",
+      "arm": "O4",
+      "partition": 2,
+      "seed": 47,
+      "epochs": 160,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "3582ab95cc9e551b44f49b9d8ac2dfe779f4bab7ba0b2867102819af8028a900",
+      "START_sha256": "499b471e8637445920d3898b553bd735e4b5cf037fba8964317654c55e936c97",
+      "marker_sha256": "bff50b9cf766a92df43c570a8157223ec1dd2e7b79732104269a87a1eaecd52d"
+    },
+    {
+      "unit": "R2_newfit320_outer1_inner2_O4_seed47",
+      "arm": "O4",
+      "partition": 2,
+      "seed": 47,
+      "epochs": 320,
+      "original_role": "ORIGINAL_COMPLETE",
+      "artifact_sha256": "84a2041111903cf1d04d9816a8c0cbdd9395cd6b2f87dab315aabe910e1959af",
+      "START_sha256": "707f5d372375eb70774f314380a2893d776b7402de3bc5b144228abb8a14002b",
+      "marker_sha256": "68a79a07f391bb71771b87e63be901cdb10cddddee8ae3267c7717a1346a9b24"
+    }
+  ],
+  "intended_source_models": 24,
+  "original_COMPLETE_models": 23,
+  "original_FAILED_models": 1,
+  "comparison": "within each new fit own saved epoch80 to its own final160/320; all original-parent80 to new-own80 also retained",
+  "actual_weight_forward_scope": "one failed O4/p0/seed47 final160 CPU replay, validation batch8, original2e-6 guard retained",
+  "no_best_budget_selection": true,
+  "not_pre_registered_performance_confirmation": true,
+  "original_receipts_trainers_and_thresholds_modified": false,
+  "new_fits": 0,
+  "new_decoders": 0,
+  "GPU_calls": 0,
+  "R4_selection_or_budget_changed": false
+}

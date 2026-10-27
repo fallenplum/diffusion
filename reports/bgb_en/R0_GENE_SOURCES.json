@@ -1,0 +1,442 @@
+{
+  "schema": "bgb_en_R0_gene_sources_v1",
+  "status": "PASS",
+  "outcome_reads": 0,
+  "direct_RNA512": {
+    "source_sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+    "programs": 8,
+    "union_members": 977,
+    "canonical_RNA_union": 955,
+    "program_coverage": [
+      {
+        "program": "HALLMARK_G2M_CHECKPOINT",
+        "external_members": 189,
+        "canonical_RNA_overlap": 183,
+        "canonical_CNA_overlap": 189,
+        "RNA_CNA_overlap": 183
+      },
+      {
+        "program": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+        "external_members": 197,
+        "canonical_RNA_overlap": 193,
+        "canonical_CNA_overlap": 195,
+        "RNA_CNA_overlap": 193
+      },
+      {
+        "program": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+        "external_members": 197,
+        "canonical_RNA_overlap": 195,
+        "canonical_CNA_overlap": 197,
+        "RNA_CNA_overlap": 195
+      },
+      {
+        "program": "HALLMARK_HYPOXIA",
+        "external_members": 190,
+        "canonical_RNA_overlap": 188,
+        "canonical_CNA_overlap": 190,
+        "RNA_CNA_overlap": 188
+      },
+      {
+        "program": "HALLMARK_TGF_BETA_SIGNALING",
+        "external_members": 53,
+        "canonical_RNA_overlap": 53,
+        "canonical_CNA_overlap": 53,
+        "RNA_CNA_overlap": 53
+      },
+      {
+        "program": "HALLMARK_DNA_REPAIR",
+        "external_members": 146,
+        "canonical_RNA_overlap": 138,
+        "canonical_CNA_overlap": 146,
+        "RNA_CNA_overlap": 138
+      },
+      {
+        "program": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+        "external_members": 41,
+        "canonical_RNA_overlap": 41,
+        "canonical_CNA_overlap": 41,
+        "RNA_CNA_overlap": 41
+      },
+      {
+        "program": "HALLMARK_ANGIOGENESIS",
+        "external_members": 35,
+        "canonical_RNA_overlap": 35,
+        "canonical_CNA_overlap": 35,
+        "RNA_CNA_overlap": 35
+      }
+    ],
+    "selection_rule": "fit-local coverage>=0.90; descending fit SD inside eight-program union; legacy fallback explicit"
+  },
+  "pathway_tokens": {
+    "source_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+    "programs": 50,
+    "union_members": 4384,
+    "canonical_RNA_union": 4191,
+    "canonical_CNA_union": 4252,
+    "program_coverage": [
+      {
+        "program": "HALLMARK_ADIPOGENESIS",
+        "external_members": 200,
+        "canonical_RNA_overlap": 189,
+        "canonical_CNA_overlap": 193,
+        "RNA_CNA_overlap": 189
+      },
+      {
+        "program": "HALLMARK_ALLOGRAFT_REJECTION",
+        "external_members": 200,
+        "canonical_RNA_overlap": 195,
+        "canonical_CNA_overlap": 195,
+        "RNA_CNA_overlap": 195
+      },
+      {
+        "program": "HALLMARK_ANDROGEN_RESPONSE",
+        "external_members": 101,
+        "canonical_RNA_overlap": 97,
+        "canonical_CNA_overlap": 97,
+        "RNA_CNA_overlap": 97
+      },
+      {
+        "program": "HALLMARK_ANGIOGENESIS",
+        "external_members": 36,
+        "canonical_RNA_overlap": 36,
+        "canonical_CNA_overlap": 36,
+        "RNA_CNA_overlap": 36
+      },
+      {
+        "program": "HALLMARK_APICAL_JUNCTION",
+        "external_members": 200,
+        "canonical_RNA_overlap": 192,
+        "canonical_CNA_overlap": 192,
+        "RNA_CNA_overlap": 192
+      },
+      {
+        "program": "HALLMARK_APICAL_SURFACE",
+        "external_members": 44,
+        "canonical_RNA_overlap": 43,
+        "canonical_CNA_overlap": 43,
+        "RNA_CNA_overlap": 43
+      },
+      {
+        "program": "HALLMARK_APOPTOSIS",
+        "external_members": 161,
+        "canonical_RNA_overlap": 158,
+        "canonical_CNA_overlap": 159,
+        "RNA_CNA_overlap": 158
+      },
+      {
+        "program": "HALLMARK_BILE_ACID_METABOLISM",
+        "external_members": 112,
+        "canonical_RNA_overlap": 112,
+        "canonical_CNA_overlap": 112,
+        "RNA_CNA_overlap": 112
+      },
+      {
+        "program": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+        "external_members": 74,
+        "canonical_RNA_overlap": 72,
+        "canonical_CNA_overlap": 73,
+        "RNA_CNA_overlap": 72
+      },
+      {
+        "program": "HALLMARK_COAGULATION",
+        "external_members": 138,
+        "canonical_RNA_overlap": 136,
+        "canonical_CNA_overlap": 138,
+        "RNA_CNA_overlap": 136
+      },
+      {
+        "program": "HALLMARK_COMPLEMENT",
+        "external_members": 200,
+        "canonical_RNA_overlap": 195,
+        "canonical_CNA_overlap": 199,
+        "RNA_CNA_overlap": 195
+      },
+      {
+        "program": "HALLMARK_DNA_REPAIR",
+        "external_members": 150,
+        "canonical_RNA_overlap": 139,
+        "canonical_CNA_overlap": 147,
+        "RNA_CNA_overlap": 139
+      },
+      {
+        "program": "HALLMARK_E2F_TARGETS",
+        "external_members": 200,
+        "canonical_RNA_overlap": 186,
+        "canonical_CNA_overlap": 195,
+        "RNA_CNA_overlap": 186
+      },
+      {
+        "program": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+        "external_members": 200,
+        "canonical_RNA_overlap": 194,
+        "canonical_CNA_overlap": 196,
+        "RNA_CNA_overlap": 194
+      },
+      {
+        "program": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+        "external_members": 200,
+        "canonical_RNA_overlap": 191,
+        "canonical_CNA_overlap": 193,
+        "RNA_CNA_overlap": 191
+      },
+      {
+        "program": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+        "external_members": 200,
+        "canonical_RNA_overlap": 193,
+        "canonical_CNA_overlap": 194,
+        "RNA_CNA_overlap": 193
+      },
+      {
+        "program": "HALLMARK_FATTY_ACID_METABOLISM",
+        "external_members": 158,
+        "canonical_RNA_overlap": 153,
+        "canonical_CNA_overlap": 155,
+        "RNA_CNA_overlap": 153
+      },
+      {
+        "program": "HALLMARK_G2M_CHECKPOINT",
+        "external_members": 200,
+        "canonical_RNA_overlap": 184,
+        "canonical_CNA_overlap": 190,
+        "RNA_CNA_overlap": 184
+      },
+      {
+        "program": "HALLMARK_GLYCOLYSIS",
+        "external_members": 200,
+        "canonical_RNA_overlap": 195,
+        "canonical_CNA_overlap": 197,
+        "RNA_CNA_overlap": 195
+      },
+      {
+        "program": "HALLMARK_HEDGEHOG_SIGNALING",
+        "external_members": 36,
+        "canonical_RNA_overlap": 35,
+        "canonical_CNA_overlap": 35,
+        "RNA_CNA_overlap": 35
+      },
+      {
+        "program": "HALLMARK_HEME_METABOLISM",
+        "external_members": 200,
+        "canonical_RNA_overlap": 190,
+        "canonical_CNA_overlap": 193,
+        "RNA_CNA_overlap": 190
+      },
+      {
+        "program": "HALLMARK_HYPOXIA",
+        "external_members": 200,
+        "canonical_RNA_overlap": 190,
+        "canonical_CNA_overlap": 192,
+        "RNA_CNA_overlap": 190
+      },
+      {
+        "program": "HALLMARK_IL2_STAT5_SIGNALING",
+        "external_members": 199,
+        "canonical_RNA_overlap": 193,
+        "canonical_CNA_overlap": 194,
+        "RNA_CNA_overlap": 193
+      },
+      {
+        "program": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+        "external_members": 87,
+        "canonical_RNA_overlap": 87,
+        "canonical_CNA_overlap": 87,
+        "RNA_CNA_overlap": 87
+      },
+      {
+        "program": "HALLMARK_INFLAMMATORY_RESPONSE",
+        "external_members": 200,
+        "canonical_RNA_overlap": 197,
+        "canonical_CNA_overlap": 197,
+        "RNA_CNA_overlap": 197
+      },
+      {
+        "program": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+        "external_members": 97,
+        "canonical_RNA_overlap": 92,
+        "canonical_CNA_overlap": 95,
+        "RNA_CNA_overlap": 92
+      },
+      {
+        "program": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+        "external_members": 200,
+        "canonical_RNA_overlap": 194,
+        "canonical_CNA_overlap": 196,
+        "RNA_CNA_overlap": 194
+      },
+      {
+        "program": "HALLMARK_KRAS_SIGNALING_DN",
+        "external_members": 200,
+        "canonical_RNA_overlap": 188,
+        "canonical_CNA_overlap": 194,
+        "RNA_CNA_overlap": 188
+      },
+      {
+        "program": "HALLMARK_KRAS_SIGNALING_UP",
+        "external_members": 200,
+        "canonical_RNA_overlap": 193,
+        "canonical_CNA_overlap": 194,
+        "RNA_CNA_overlap": 193
+      },
+      {
+        "program": "HALLMARK_MITOTIC_SPINDLE",
+        "external_members": 199,
+        "canonical_RNA_overlap": 196,
+        "canonical_CNA_overlap": 197,
+        "RNA_CNA_overlap": 196
+      },
+      {
+        "program": "HALLMARK_MTORC1_SIGNALING",
+        "external_members": 200,
+        "canonical_RNA_overlap": 191,
+        "canonical_CNA_overlap": 194,
+        "RNA_CNA_overlap": 191
+      },
+      {
+        "program": "HALLMARK_MYC_TARGETS_V1",
+        "external_members": 200,
+        "canonical_RNA_overlap": 187,
+        "canonical_CNA_overlap": 193,
+        "RNA_CNA_overlap": 187
+      },
+      {
+        "program": "HALLMARK_MYC_TARGETS_V2",
+        "external_members": 58,
+        "canonical_RNA_overlap": 57,
+        "canonical_CNA_overlap": 57,
+        "RNA_CNA_overlap": 57
+      },
+      {
+        "program": "HALLMARK_MYOGENESIS",
+        "external_members": 200,
+        "canonical_RNA_overlap": 197,
+        "canonical_CNA_overlap": 197,
+        "RNA_CNA_overlap": 197
+      },
+      {
+        "program": "HALLMARK_NOTCH_SIGNALING",
+        "external_members": 32,
+        "canonical_RNA_overlap": 32,
+        "canonical_CNA_overlap": 32,
+        "RNA_CNA_overlap": 32
+      },
+      {
+        "program": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+        "external_members": 200,
+        "canonical_RNA_overlap": 182,
+        "canonical_CNA_overlap": 184,
+        "RNA_CNA_overlap": 182
+      },
+      {
+        "program": "HALLMARK_P53_PATHWAY",
+        "external_members": 200,
+        "canonical_RNA_overlap": 190,
+        "canonical_CNA_overlap": 192,
+        "RNA_CNA_overlap": 190
+      },
+      {
+        "program": "HALLMARK_PANCREAS_BETA_CELLS",
+        "external_members": 40,
+        "canonical_RNA_overlap": 40,
+        "canonical_CNA_overlap": 40,
+        "RNA_CNA_overlap": 40
+      },
+      {
+        "program": "HALLMARK_PEROXISOME",
+        "external_members": 104,
+        "canonical_RNA_overlap": 101,
+        "canonical_CNA_overlap": 104,
+        "RNA_CNA_overlap": 101
+      },
+      {
+        "program": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+        "external_members": 105,
+        "canonical_RNA_overlap": 104,
+        "canonical_CNA_overlap": 104,
+        "RNA_CNA_overlap": 104
+      },
+      {
+        "program": "HALLMARK_PROTEIN_SECRETION",
+        "external_members": 96,
+        "canonical_RNA_overlap": 95,
+        "canonical_CNA_overlap": 95,
+        "RNA_CNA_overlap": 95
+      },
+      {
+        "program": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+        "external_members": 49,
+        "canonical_RNA_overlap": 45,
+        "canonical_CNA_overlap": 47,
+        "RNA_CNA_overlap": 45
+      },
+      {
+        "program": "HALLMARK_SPERMATOGENESIS",
+        "external_members": 135,
+        "canonical_RNA_overlap": 131,
+        "canonical_CNA_overlap": 132,
+        "RNA_CNA_overlap": 131
+      },
+      {
+        "program": "HALLMARK_TGF_BETA_SIGNALING",
+        "external_members": 54,
+        "canonical_RNA_overlap": 54,
+        "canonical_CNA_overlap": 54,
+        "RNA_CNA_overlap": 54
+      },
+      {
+        "program": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+        "external_members": 200,
+        "canonical_RNA_overlap": 196,
+        "canonical_CNA_overlap": 197,
+        "RNA_CNA_overlap": 196
+      },
+      {
+        "program": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+        "external_members": 113,
+        "canonical_RNA_overlap": 105,
+        "canonical_CNA_overlap": 106,
+        "RNA_CNA_overlap": 105
+      },
+      {
+        "program": "HALLMARK_UV_RESPONSE_DN",
+        "external_members": 144,
+        "canonical_RNA_overlap": 137,
+        "canonical_CNA_overlap": 138,
+        "RNA_CNA_overlap": 137
+      },
+      {
+        "program": "HALLMARK_UV_RESPONSE_UP",
+        "external_members": 158,
+        "canonical_RNA_overlap": 152,
+        "canonical_CNA_overlap": 154,
+        "RNA_CNA_overlap": 152
+      },
+      {
+        "program": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+        "external_members": 42,
+        "canonical_RNA_overlap": 42,
+        "canonical_CNA_overlap": 42,
+        "RNA_CNA_overlap": 42
+      },
+      {
+        "program": "HALLMARK_XENOBIOTIC_METABOLISM",
+        "external_members": 200,
+        "canonical_RNA_overlap": 196,
+        "canonical_CNA_overlap": 196,
+        "RNA_CNA_overlap": 196
+      }
+    ]
+  },
+  "union_RNA_intersection": 953,
+  "legacy_programs_exactly_equal_to_same_named_Hallmark": {
+    "HALLMARK_G2M_CHECKPOINT": false,
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": false,
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE": false,
+    "HALLMARK_HYPOXIA": false,
+    "HALLMARK_TGF_BETA_SIGNALING": false,
+    "HALLMARK_DNA_REPAIR": false,
+    "HALLMARK_WNT_BETA_CATENIN_SIGNALING": false,
+    "HALLMARK_ANGIOGENESIS": false
+  },
+  "gene_membership_public": false,
+  "gene_selection_or_statistics_fits": 0
+}

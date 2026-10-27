@@ -1,0 +1,219 @@
+{
+  "schema": "bgb_en_R0_asset_audit_v1",
+  "status": "PASS_COHORT_AND_AVAILABLE_PATCH_ASSETS",
+  "cohort": {
+    "patients": 512,
+    "outer_folds": 5,
+    "DSS_events": 65,
+    "DSS_time_unit": "months",
+    "PFI_valid_patients": 510,
+    "PFI_valid_events": 129,
+    "clinical_fields": [
+      "AGE",
+      "SEX",
+      "AJCC_PATHOLOGIC_TUMOR_STAGE",
+      "PATH_T_STAGE",
+      "PATH_N_STAGE",
+      "PATH_M_STAGE"
+    ],
+    "S32_shape": [
+      512,
+      32
+    ],
+    "TITAN_shape": [
+      512,
+      768
+    ],
+    "UNI2_mean_shape": [
+      512,
+      1536
+    ],
+    "raw_RNA_missing_patterns": 2,
+    "hashes": {
+      "cohort_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+      "patient_order_sha256": "76a144d544b7461d669487625855dc7de65f115a6a2f65d7a20002b2a8e5008f",
+      "visual_sources_sha256": "4898df75eb03539e85ef394772fe2bda991bfbe325154cc3241426e168c39194",
+      "endpoints_sha256": "91b5d15aa32489c825a8341aed8d9733281dc62386151c8c6246b6312975fd4e"
+    },
+    "cohort_labels_used_for_model_selection": false,
+    "preprocessing_fits": 0,
+    "RNA_scale": "already log2(x+1); no additional transform in audit",
+    "CNA_scale": "continuous signed log2 dosage; gain/loss must be separate before centering",
+    "platform_identity": "unverified; exact missing-pattern proxy only",
+    "RNA": {
+      "shape": [
+        512,
+        20511
+      ],
+      "dtype": "float64",
+      "array_bytes": 84013056,
+      "observed_values": 9889587,
+      "missing_values": 612045,
+      "all_patients_measured_genes": 17496,
+      "any_patient_measured_genes": 20511,
+      "complete_patients": 309,
+      "zero_observation_genes": 0,
+      "observed_genes_per_patient": {
+        "min": 17496.0,
+        "median": 20511.0,
+        "max": 20511.0
+      },
+      "symbol_count": 20511,
+      "missing_is_not_expression_zero": true
+    },
+    "CNA": {
+      "shape": [
+        512,
+        25101
+      ],
+      "dtype": "float64",
+      "array_bytes": 102813696,
+      "observed_values": 12851452,
+      "missing_values": 260,
+      "all_patients_measured_genes": 25099,
+      "any_patient_measured_genes": 25101,
+      "complete_patients": 382,
+      "zero_observation_genes": 0,
+      "observed_genes_per_patient": {
+        "min": 25099.0,
+        "median": 25101.0,
+        "max": 25101.0
+      },
+      "symbol_count": 25101,
+      "missing_is_not_expression_zero": true
+    }
+  },
+  "model_fits": 0,
+  "patient_identifiers_public": false,
+  "private_paths_public": false,
+  "CONCH": {
+    "status": "PASS",
+    "patients": 512,
+    "slides": 519,
+    "patches": 1278642,
+    "feature_dim": 768,
+    "total_h5_bytes": 4075428024,
+    "all_native_rows_finite_checked": true,
+    "duplicate_coordinates": 0,
+    "source_h5_collection_sha256": "416bbbc6d9daf32329828888fb7d811175c8b037f2a7ec0fb81e512869401181",
+    "full_original_H5_hashes_verified": true,
+    "coordinate_attributes": {
+      "level0_magnification": [
+        "40"
+      ],
+      "overlap": [
+        "0"
+      ],
+      "patch_size": [
+        "512"
+      ],
+      "patch_size_level0": [
+        "1024"
+      ],
+      "target_magnification": [
+        "20"
+      ]
+    },
+    "coordinate_axis_step_mode_counts": {
+      "1024": 1038
+    },
+    "feature_norm_range": [
+      27.735088348388672,
+      27.910444259643555
+    ],
+    "volatile_candidate_cache_available": false,
+    "native_grid_pairing_to_UNI2": "distinct grids; no by-row pairing permitted",
+    "coordinate_step_counts": {
+      "1024": 519
+    },
+    "coordinate_step_source": "GCD of all positive native distinct XY differences, before selection"
+  },
+  "UNI2": {
+    "status": "PASS",
+    "patients": 512,
+    "slides": 520,
+    "patches": 3295129,
+    "feature_dim": 1536,
+    "total_h5_bytes": 20545482072,
+    "all_native_rows_finite_checked": true,
+    "original_H5_shape_support": "2D or singleton-leading 3D; shape retained in private source",
+    "coordinate_attributes": {
+      "level0_magnification": [
+        "40"
+      ],
+      "overlap": [
+        "0"
+      ],
+      "patch_size": [
+        "256"
+      ],
+      "patch_size_level0": [
+        "512"
+      ],
+      "target_magnification": [
+        "20"
+      ]
+    },
+    "feature_norm_range": [
+      9.48764419555664,
+      32.079708099365234
+    ],
+    "collection_fingerprint_sha256": "fb6945ab8ff9f7878ad2a1385b01ef0b0474e5cacc987ea9367994faa50d1cfd",
+    "fingerprint_type": "ordered full-H5 SHA256 collection",
+    "native_CONCH_grid_pairing": "distinct grids; no by-row pairing permitted"
+  },
+  "new_feature_only_cache": {
+    "schema": "bgb_en_native_patch_cache_v1",
+    "status": "COMPLETE",
+    "patients": 512,
+    "slides": 519,
+    "original_patches": 1278642,
+    "selected_patches": 257480,
+    "feature_shape": [
+      519,
+      512,
+      768
+    ],
+    "budget_per_patient": 512,
+    "selector": "GRID",
+    "seed": 270003,
+    "normalization": "float32 per-patch L2; full/selected mean float64",
+    "pooling": "slide means then equal patient slide average",
+    "outcome_reads": 0,
+    "source_inventory_sha256": "dcda616eb16078eb0d3f7a98a206ee5882608571ff2fe7699032b56d1e13da74",
+    "source_h5_collection_sha256": "416bbbc6d9daf32329828888fb7d811175c8b037f2a7ec0fb81e512869401181",
+    "coordinate_attributes": {
+      "level0_magnification": [
+        "40"
+      ],
+      "overlap": [
+        "0"
+      ],
+      "patch_size": [
+        "512"
+      ],
+      "patch_size_level0": [
+        "1024"
+      ],
+      "target_magnification": [
+        "20"
+      ]
+    },
+    "array_sha256": {
+      "features": "2d019faa1a8a0c8da279a99a5d5dca43627f7bfbdbf755321b6fd5b7c6839fab",
+      "coords": "d68593ccd81fe5e247367ba20fb1a0718b7c3f346d40e385c2199686f939950e",
+      "mask": "9e053cb3b630c7dd4e9c1214674fa63012d836e13996812b2ec41d814f59869f",
+      "rowids": "6a461755fdae426a16c203f468f566e91f5b6774620db7f7a8576adf4b5544b7",
+      "owner": "79adbc019a929b566c323741236e68f4fd1fb96b9a0c7b10fdf36da1ca56929f",
+      "quota": "8f00cbd8edc0001c0294d00151c8f7ab3812957d156d82292da3c6da766bb3ea",
+      "full_mean": "5eb0216b706d1e2d8bce533b9ab413632e7346360de44e4b63292d148679600d",
+      "selected_mean": "aca264df8ee81ff4a9be132b8b024f187c82548e0c69992416577c268ef9a19b",
+      "coordinate_step": "f76ff01cad464b8f5d941beb651904ce510070e25a3c329ac50ffde40a34052e"
+    },
+    "coordinate_step_counts": {
+      "1024": 519
+    },
+    "coordinate_step_source": "GCD of all positive native distinct XY differences, before selection"
+  },
+  "wall_seconds": 119.931325674057
+}

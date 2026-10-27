@@ -1,0 +1,36 @@
+{
+  "schema": "bgb_en_execution_ledger_private_input_example_v1",
+  "note": "Replace every placeholder in a PRIVATE copy. Never publish actual path bindings. State and expected_units describe scope, not completed execution.",
+  "roots": [
+    {"name": "core", "kind": "core", "path": "/private/core", "role": "PRIMARY", "state": "RUNNING", "expected_units": 186},
+    {"name": "original_F7", "kind": "archive", "path": "/private/archived_F7_original", "role": "HISTORICAL", "state": "CLOSED", "expected_units": 6},
+    {"name": "omics_extra", "kind": "extra", "path": "/private/omics_sensitivity", "state": "NOT_RUN", "expected_units": 24},
+    {"name": "path_extra", "kind": "extra", "path": "/private/path_budget", "state": "NOT_RUN", "expected_units": 36},
+    {"name": "aux_true", "kind": "extra", "path": "/private/auxiliary_TRUE", "state": "NOT_RUN", "expected_units": 12},
+    {"name": "aux_wrong", "kind": "extra", "path": "/private/auxiliary_WRONG_DONOR", "state": "NOT_RUN", "expected_units": 6},
+    {"name": "aux_spatial", "kind": "extra", "path": "/private/auxiliary_SPATIAL_SHUFFLE", "state": "NOT_RUN", "expected_units": 6},
+    {"name": "budget", "kind": "budget", "path": "/private/budget_160_320", "state": "NOT_RUN", "expected_units": 24},
+    {"name": "source_raw", "kind": "source", "path": "/private/external_v1", "state": "CLOSED", "expected_units": 7},
+    {"name": "source_true", "kind": "source", "path": "/private/external_v2_unitnorm", "state": "CLOSED", "expected_units": 7},
+    {"name": "source_wrong", "kind": "source", "path": "/private/external_v2_WRONG_DONOR", "state": "CLOSED", "expected_units": 1},
+    {"name": "source_spatial", "kind": "source", "path": "/private/external_v2_SPATIAL_SHUFFLE", "state": "CLOSED", "expected_units": 1},
+    {"name": "pca_original", "kind": "pca", "path": "/private/pca_geometry_original", "state": "CLOSED", "expected_units": 9},
+    {"name": "pca_precision", "kind": "pca", "path": "/private/pca_geometry_precision", "state": "NOT_RUN", "expected_units": 2},
+    {"name": "outer", "kind": "outer", "path": "/private/outer", "state": "NOT_RUN"}
+  ],
+  "failure_accounting": [
+    {"name": "original_PCA_failures", "root": "pca_original", "path": "/private/pca_geometry_precision/INITIAL_FAILURE_ACCOUNTING.json"}
+  ],
+  "schedulers": [
+    {"name": "core_schedule", "path": "/private/core/SCHEDULER_RECEIPT.json"},
+    {"name": "F7_recovery", "path": "/private/F7_recovery/QUEUE_RECEIPT.json"},
+    {"name": "additional_batch", "path": "/private/additional_logs/BATCH_RECEIPT.json"},
+    {"name": "budget_batch", "path": "/private/budget_logs/BATCH_RECEIPT.json"},
+    {"name": "outer_baselines", "path": "/private/outer/BASELINE_SCHEDULE.json"},
+    {"name": "outer_neural", "path": "/private/outer/NESTED_NEURAL_SCHEDULE.json"}
+  ],
+  "resources": [
+    {"name": "core_device_window", "path": "/private/core/resource_samples.csv"},
+    {"name": "additional_device_window", "path": "/private/additional_logs/resource_samples.csv"}
+  ]
+}

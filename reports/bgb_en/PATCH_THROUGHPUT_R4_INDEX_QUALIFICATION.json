@@ -1,0 +1,195 @@
+{
+  "schema": "bgb_en_R4_patch_index_qualification_v1",
+  "status": "PASS_12_SAVED_INDEX_CACHES_ONLY",
+  "prepared_bundles_verified": 12,
+  "partitions": [
+    {
+      "outer_fold": 2,
+      "inner_partition": 0,
+      "train_n": 272,
+      "validation_n": 137,
+      "prepared_bundle_sha256": "5f7e80b6d1c88d297aba90d52a1c74e34e142d1dce466aca9dd5a49286309c59",
+      "prepared_receipt_sha256": "eb94718645c6a0bc5e62200174ad83f261e8c4f3014ba1f35c8d5de395005349",
+      "private_index_payload_sha256": "ad38561531a67391a759e29c31f846c078387c754830a7733e471e7e87585a2b",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 2,
+      "inner_partition": 1,
+      "train_n": 273,
+      "validation_n": 136,
+      "prepared_bundle_sha256": "eaa10711c235dfa56cc2bb0a903bae3b7a90b45acee89079cdfc2d494b07bc45",
+      "prepared_receipt_sha256": "94ebdd4693392db7325a7177af831f1ab983af888d7a52b0e8d5fe5a40adcd6a",
+      "private_index_payload_sha256": "3e3eebe29e33b522a10409b431107ed71f4e24e3e449fb136e984cf6d601cfeb",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 2,
+      "inner_partition": 2,
+      "train_n": 273,
+      "validation_n": 136,
+      "prepared_bundle_sha256": "823eaa63b76a027f4b1b47b9b514f515063f96f95161fdbc9ff22f3d629f33ef",
+      "prepared_receipt_sha256": "4e779286c364c62b204f1764f4ec439420f59023c32f61db5f675a7e1ac1fbbc",
+      "private_index_payload_sha256": "f7e161d84502f5e9585c20b7309636903ed666e967d84e2ca9da72a8267836b7",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 3,
+      "inner_partition": 0,
+      "train_n": 273,
+      "validation_n": 137,
+      "prepared_bundle_sha256": "b9a461814173b85efef15a686833179df91d958f535cb0aab1e25001ad9bb8cf",
+      "prepared_receipt_sha256": "10518a7fcbfd6311d27a58eaab87193697b0b934398627ae9439d6bedab9857c",
+      "private_index_payload_sha256": "f6e7fe2dd50330e6b6044f3f89202006cd62808c58d37e36b4d0f30eb19816f0",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 3,
+      "inner_partition": 1,
+      "train_n": 273,
+      "validation_n": 137,
+      "prepared_bundle_sha256": "c627027bd3a19e0cd45fb27443e883c577109b12b853468c3b76ff710e74b584",
+      "prepared_receipt_sha256": "9983e2b3cb55f343902b8c810819cc51c6812f2a74e3c685e3bedc9bf5db1d8b",
+      "private_index_payload_sha256": "fa4a9e5603ec708c45b838d6aa523e320c880ed4973443aae2e20477520c9cd7",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 3,
+      "inner_partition": 2,
+      "train_n": 274,
+      "validation_n": 136,
+      "prepared_bundle_sha256": "b26ecaa3a079ff57dceea8d5175724eb34dacb4cb7925cf9c3207c11211f7235",
+      "prepared_receipt_sha256": "e1fc9dee3d85e11dd36faceb7d58b44f28e527cfb3f00ecbc7b1a4fd3d8b6e44",
+      "private_index_payload_sha256": "63e744926f510d255bc8f694ee32660a7a5f61fcf6fee14798158b6ef891d4c5",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 4,
+      "inner_partition": 0,
+      "train_n": 273,
+      "validation_n": 137,
+      "prepared_bundle_sha256": "227fea247ed601c6c5857d8719132fbd8b69ac994d355faa6ce22741ba6b9267",
+      "prepared_receipt_sha256": "abb4621fa9069ac181a887fc5fd90b5d9ba138be0c442aa8d875e848ae4c59cc",
+      "private_index_payload_sha256": "69d9cf85524e5c27650d3a4c43841b3971e2bfc4797b11583e9572e38d00537a",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 4,
+      "inner_partition": 1,
+      "train_n": 273,
+      "validation_n": 137,
+      "prepared_bundle_sha256": "be5c13afc47c9c346042b48ebcb874a2d99775beae934b63e8dd3ddfc40231b5",
+      "prepared_receipt_sha256": "9c889af24aeab10730ec60bceeecb4fe83e58dc51e74515d231e456c1734f580",
+      "private_index_payload_sha256": "410089fc4408b6953fc23cbee9d19f538ed85188baba647c0c187f928f34dc4b",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 4,
+      "inner_partition": 2,
+      "train_n": 274,
+      "validation_n": 136,
+      "prepared_bundle_sha256": "3e538c6bed79029769d46aac14dfac073f955f79cc7a25d27d023b9a9397ab60",
+      "prepared_receipt_sha256": "90dd1a3483872e0526ebc2af411b562021065f926184de3d37a6e0ad32389531",
+      "private_index_payload_sha256": "161cd19b343339789609ac6e8896c28139586723144abffef08aba3ef7bf45e0",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 5,
+      "inner_partition": 0,
+      "train_n": 273,
+      "validation_n": 137,
+      "prepared_bundle_sha256": "cc133f3deb01a96161f9d709b532c01fc31ddaba1bd7dbb4beafad189aceac40",
+      "prepared_receipt_sha256": "b284ae4660c203c9d5d16f67b9397f3926b293a9b81d67eb6de26761c6760a3b",
+      "private_index_payload_sha256": "49df3edd973af0294fbee4eb69981a50f28f9f31c52969772dc6a99c2aebebb7",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 5,
+      "inner_partition": 1,
+      "train_n": 273,
+      "validation_n": 137,
+      "prepared_bundle_sha256": "b0f63b037774f4752493e8c7bdb9dbbc6f69def9109093e104ffb2f6252b9e08",
+      "prepared_receipt_sha256": "6e5a6cf80bc639a090bc244aa545675315e483dadfa50c60817eac79417f6916",
+      "private_index_payload_sha256": "dfda20e127ec9662007a42e22e2127bd4ce4bb19cbaab235d2b1c167997249f2",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    },
+    {
+      "outer_fold": 5,
+      "inner_partition": 2,
+      "train_n": 274,
+      "validation_n": 136,
+      "prepared_bundle_sha256": "3e5be9b22b9c7162b654317e4d7785f2fd6984a9d32a89dfc41df1b185522698",
+      "prepared_receipt_sha256": "5ecd11cbc3a63fa7f335d17f84ea9f3b525e0313cccfefed29db7daed31b9224",
+      "private_index_payload_sha256": "9d7395bd09f8003bf76174af3c23aa3ee3d8142e6bb4b7d7408d55d0f14a884a",
+      "inner_union_equals_canonical_outer_train": true,
+      "outer_test_rows_in_inner": false
+    }
+  ],
+  "canonical_fold_access": {
+    "cohort_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+    "folds_array_sha256": "4db7904666c8fc8d8595df15c1a28cdc3bdaee9b25f2eb677bc6e5b8cdc5f65b",
+    "patient_order_sha256": "76a144d544b7461d669487625855dc7de65f115a6a2f65d7a20002b2a8e5008f",
+    "cohort_members_accessed": [
+      "folds"
+    ],
+    "patient_names_accessed": false,
+    "endpoint_or_measurement_members_accessed": false
+  },
+  "extraction": "CPU deserialize existing measurement-containing prepared bundle once, extract only train/valid; other arrays deserialized but not analyzed or exported",
+  "qualifies_future_completed_unit_counting_only": true,
+  "neural_throughput_created_from_plan": false,
+  "new_optimizer_updates": 0,
+  "model_forward_calls": 0,
+  "GPU_used": false,
+  "upstream_168_optimizations_already_in_original_plan_not_repeated": true,
+  "source_and_selection_guard": {
+    "status": "PASS_CORE_SOURCE_AND_SELECTION_UNCHANGED",
+    "before": {
+      "configs/bgb_en/prototype_v1.json": "7b8d725298fd7f03eaf182c43a784e48397e702aacc1db43c4a9442773429e66",
+      "scripts/bgb_en_run.py": "2999bd817536ad352e1aade5461af09b67ba7b7d8e7bcc0b1f77a5ee529b7c67",
+      "src/bgb_en/__init__.py": "6ded290386fb31f64c885c3b60885bafcb49c608b9a0d875eb6230138e579912",
+      "src/bgb_en/baselines.py": "2a00c4bcd2eca06c26a5ad5e0c636d2c2771bbf356df9d72a350fe8061e30d5a",
+      "src/bgb_en/data.py": "cebe55093915abeb2df38fee317b5af7e805f5714d43d3a56d3e67bc441bcd37",
+      "src/bgb_en/interaction.py": "d29d7c1eede19209dd4c5db84a38a7d231106d4a03c5db9564635d4ef8b31c3f",
+      "src/bgb_en/omics.py": "0e745187f58afc0b6badd4240ba05f56c3274741a4948ae5fed797ddaa53b6fd",
+      "src/bgb_en/pathology.py": "68ed98779ec2f4eb9972a26150fda550ae9aba70ef2be753fd8d90d842a43f26",
+      "src/bgb_en/protocol.py": "e06e7196eee72957dbde363bc4cb78b004ded62a62ada0fa0ffa3add7590394c",
+      "src/bgb_en/survival.py": "2f54ca3262438cb725421e5a062b8529eecdd5033a122038798c5af6b083d086",
+      "src/bgb_en/training.py": "04036634f61e0a349e2ee5ee11a642fe139c49a58a91fec5b7a1875b5bd7b513",
+      "reports/bgb_en/INNER_REPORT_FOR_SELECTION.json": "35619619a912f5aea22b7af61ebd6df56613b6831c45d1351c3c61ff5e146e27",
+      "reports/bgb_en/OUTER_SELECTION_LOCK.json": "cf334858e21e438fb49cd177f7b495968b4b731695e995a7eee5bba2e70ab33f",
+      "scripts/bgb_en_patch_throughput.py": "e600fac01f4b73e5098d63e90f5954f66fe73b7c967951883eba3209bd78c295",
+      "scripts/bgb_en_final_neural.py": "be3a3912ba2cb9788f73ce997561238110cfdc513bedf619dff8323de2afe782",
+      "scripts/bgb_en_nested.py": "341ad33f4d35b9d78e25b7e594f2d7346f8988b4ce8192d8fbbfeeeec72f604a"
+    },
+    "after": {
+      "configs/bgb_en/prototype_v1.json": "7b8d725298fd7f03eaf182c43a784e48397e702aacc1db43c4a9442773429e66",
+      "scripts/bgb_en_run.py": "2999bd817536ad352e1aade5461af09b67ba7b7d8e7bcc0b1f77a5ee529b7c67",
+      "src/bgb_en/__init__.py": "6ded290386fb31f64c885c3b60885bafcb49c608b9a0d875eb6230138e579912",
+      "src/bgb_en/baselines.py": "2a00c4bcd2eca06c26a5ad5e0c636d2c2771bbf356df9d72a350fe8061e30d5a",
+      "src/bgb_en/data.py": "cebe55093915abeb2df38fee317b5af7e805f5714d43d3a56d3e67bc441bcd37",
+      "src/bgb_en/interaction.py": "d29d7c1eede19209dd4c5db84a38a7d231106d4a03c5db9564635d4ef8b31c3f",
+      "src/bgb_en/omics.py": "0e745187f58afc0b6badd4240ba05f56c3274741a4948ae5fed797ddaa53b6fd",
+      "src/bgb_en/pathology.py": "68ed98779ec2f4eb9972a26150fda550ae9aba70ef2be753fd8d90d842a43f26",
+      "src/bgb_en/protocol.py": "e06e7196eee72957dbde363bc4cb78b004ded62a62ada0fa0ffa3add7590394c",
+      "src/bgb_en/survival.py": "2f54ca3262438cb725421e5a062b8529eecdd5033a122038798c5af6b083d086",
+      "src/bgb_en/training.py": "04036634f61e0a349e2ee5ee11a642fe139c49a58a91fec5b7a1875b5bd7b513",
+      "reports/bgb_en/INNER_REPORT_FOR_SELECTION.json": "35619619a912f5aea22b7af61ebd6df56613b6831c45d1351c3c61ff5e146e27",
+      "reports/bgb_en/OUTER_SELECTION_LOCK.json": "cf334858e21e438fb49cd177f7b495968b4b731695e995a7eee5bba2e70ab33f",
+      "scripts/bgb_en_patch_throughput.py": "e600fac01f4b73e5098d63e90f5954f66fe73b7c967951883eba3209bd78c295",
+      "scripts/bgb_en_final_neural.py": "be3a3912ba2cb9788f73ce997561238110cfdc513bedf619dff8323de2afe782",
+      "scripts/bgb_en_nested.py": "341ad33f4d35b9d78e25b7e594f2d7346f8988b4ce8192d8fbbfeeeec72f604a"
+    }
+  }
+}

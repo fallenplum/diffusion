@@ -1,0 +1,41 @@
+{
+  "schema": "bgb_en_F7_deterministic_runtime_lock_v1",
+  "arm": "F7",
+  "outer_fold": 1,
+  "inner_partitions": [0, 1, 2],
+  "seeds": [31, 47],
+  "required_new_fits": 6,
+  "epochs": 80,
+  "evaluation_epochs": [20, 40, 80],
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "gradient_cache_threshold": 0.00002,
+  "optimizer_resume": false,
+  "initialization": "original_seed_from_scratch_fresh_Adam",
+  "teacher_refits": 0,
+  "source_modification": false,
+  "backend": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "deterministic_algorithms": true,
+    "warn_only": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "matmul_precision": "highest"
+  },
+  "expected_original_failed": [
+    "R3_outer1_inner0_F7_seed47",
+    "R3_outer1_inner1_F7_seed47",
+    "R3_outer1_inner2_F7_seed31"
+  ],
+  "archive_policy": "root archives all six original cells, preserving every file SHA; wrapper never moves or deletes files",
+  "successful_original_fits": 3,
+  "failed_original_attempts": 3,
+  "failed_original_updates": null,
+  "failure_update_boundary": "old failure receipts do not persist epoch or optimizer state; unknown is not zero",
+  "qualification": "separate zero-optimizer CUDA forward diagnostic under this backend, matching each target seed/partition and frozen sources",
+  "scope": "F7 only; all six use the same backend; no mixing three old successes with three repaired fits",
+  "scientific_changes": "none: architecture, Top64, full Efron risk set, features, splits, loss, optimizer, epochs and 2e-5 rejection threshold remain fixed",
+  "audit_requirement": "new F7 checkpoints must be replayed with this explicit backend; other arms retain their inherited runtime"
+}

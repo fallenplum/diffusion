@@ -1,0 +1,1365 @@
+{
+  "CI_pvalues_or_model_epoch_selection": false,
+  "arithmetic_summaries": [
+    {
+      "Harrell": 0.8167956304050978,
+      "Uno60": 0.7835179820058394,
+      "arm": "B0",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8167956304050978,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3589.0,
+          "Uno60": 0.7835179820058394,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9997.064654482068,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8167956304050978,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3589.0,
+          "Uno60": 0.7835179820058394,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9997.064654482068,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8167956304050978,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3589.0,
+          "Uno60": 0.7835179820058394,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9997.064654482068,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8258989531178881,
+      "Uno60": 0.7878593629182392,
+      "arm": "B1",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7878593629182392,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10052.457213003681,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7878593629182392,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10052.457213003681,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7878593629182392,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10052.457213003681,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8239265665301169,
+      "Uno60": 0.7899143867751107,
+      "arm": "B2",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8247610377787893,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3624.0,
+          "Uno60": 0.7905511604665433,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10086.802403216523,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8236231224396905,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3619.0,
+          "Uno60": 0.7896926116870743,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10075.848005417756,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8233955393718707,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3618.0,
+          "Uno60": 0.7894993881717145,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10073.382627442803,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8251403428918221,
+      "Uno60": 0.7913058831122585,
+      "arm": "B3",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7912906161979965,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10096.237268690242,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8252162039144287,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3626.0,
+          "Uno60": 0.7914209623559071,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10097.900381724048,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8245334547109695,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3623.0,
+          "Uno60": 0.7912060707828718,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10095.15853661178,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8251403428918221,
+      "Uno60": 0.7913058831122585,
+      "arm": "B4",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7912906161979965,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10096.237268690242,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8252162039144287,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3626.0,
+          "Uno60": 0.7914209623559071,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10097.900381724048,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8245334547109695,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3623.0,
+          "Uno60": 0.7912060707828718,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10095.15853661178,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8251403428918221,
+      "Uno60": 0.7913058831122585,
+      "arm": "B5",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7912906161979965,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10096.237268690242,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8252162039144287,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3626.0,
+          "Uno60": 0.7914209623559071,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10097.900381724048,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8245334547109695,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3623.0,
+          "Uno60": 0.7912060707828718,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10095.15853661178,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8251403428918221,
+      "Uno60": 0.7913058831122585,
+      "arm": "B6",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7912906161979965,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10096.237268690242,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8252162039144287,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3626.0,
+          "Uno60": 0.7914209623559071,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10097.900381724048,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8245334547109695,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3623.0,
+          "Uno60": 0.7912060707828718,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10095.15853661178,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8251403428918221,
+      "Uno60": 0.7913058831122585,
+      "arm": "B7",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7912906161979965,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10096.237268690242,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8252162039144287,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3626.0,
+          "Uno60": 0.7914209623559071,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10097.900381724048,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8245334547109695,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3623.0,
+          "Uno60": 0.7912060707828718,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10095.15853661178,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8248368988013959,
+      "Uno60": 0.790706138118678,
+      "arm": "B8",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8254437869822485,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3627.0,
+          "Uno60": 0.7918979690222572,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10103.986606410192,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8247610377787893,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3624.0,
+          "Uno60": 0.7902821395605064,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10083.369910979174,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8243058716431497,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3622.0,
+          "Uno60": 0.7899383057732702,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10078.982866035296,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8251403428918221,
+      "Uno60": 0.7913058831122585,
+      "arm": "B9",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7912906161979965,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10096.237268690242,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8252162039144287,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3626.0,
+          "Uno60": 0.7914209623559071,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10097.900381724048,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8245334547109695,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3623.0,
+          "Uno60": 0.7912060707828718,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10095.15853661178,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8251403428918221,
+      "Uno60": 0.7913058831122585,
+      "arm": "B11",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7912906161979965,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10096.237268690242,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8252162039144287,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3626.0,
+          "Uno60": 0.7914209623559071,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10097.900381724048,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8245334547109695,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3623.0,
+          "Uno60": 0.7912060707828718,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10095.15853661178,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.8239265665301169,
+      "Uno60": 0.7899143867751107,
+      "arm": "B13",
+      "endpoint": "DSS",
+      "per_seed": [
+        {
+          "Harrell": 0.8247610377787893,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3624.0,
+          "Uno60": 0.7905511604665433,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10086.802403216523,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8236231224396905,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3619.0,
+          "Uno60": 0.7896926116870743,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10075.848005417756,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8233955393718707,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3618.0,
+          "Uno60": 0.7894993881717145,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10073.382627442803,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7070056367191994,
+      "Uno60": 0.6834470249341488,
+      "arm": "B0",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7070056367191994,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6146.0,
+          "Uno60": 0.6834470249341488,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12963.545108426593,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7070056367191994,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6146.0,
+          "Uno60": 0.6834470249341488,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12963.545108426593,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7070056367191994,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6146.0,
+          "Uno60": 0.6834470249341488,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12963.545108426593,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7110318647187392,
+      "Uno60": 0.6875076869000132,
+      "arm": "B1",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7110318647187392,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6181.0,
+          "Uno60": 0.6875076869000132,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13040.567280802905,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7110318647187392,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6181.0,
+          "Uno60": 0.6875076869000132,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13040.567280802905,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7110318647187392,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6181.0,
+          "Uno60": 0.6875076869000132,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13040.567280802905,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7102266191188312,
+      "Uno60": 0.6829671256435611,
+      "arm": "B2",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7103416542045324,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6175.0,
+          "Uno60": 0.6831034507317665,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12957.028232197446,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7101115840331301,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6173.0,
+          "Uno60": 0.6796199563871191,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12890.953709338653,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7102266191188312,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6174.0,
+          "Uno60": 0.6861779698117978,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13015.345358948483,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7104950343188006,
+      "Uno60": 0.6813022043115062,
+      "arm": "B3",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6802752168382874,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.382614735245,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7105717243759346,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6177.0,
+          "Uno60": 0.6802729423848016,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.339473161304,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6833584537114297,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12961.865099590299,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7104950343188006,
+      "Uno60": 0.6813022043115062,
+      "arm": "B4",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6802752168382874,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.382614735245,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7105717243759346,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6177.0,
+          "Uno60": 0.6802729423848016,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.339473161304,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6833584537114297,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12961.865099590299,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7104950343188006,
+      "Uno60": 0.6813022043115062,
+      "arm": "B5",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6802752168382874,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.382614735245,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7105717243759346,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6177.0,
+          "Uno60": 0.6802729423848016,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.339473161304,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6833584537114297,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12961.865099590299,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7104950343188006,
+      "Uno60": 0.6813022043115062,
+      "arm": "B6",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6802752168382874,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.382614735245,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7105717243759346,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6177.0,
+          "Uno60": 0.6802729423848016,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.339473161304,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6833584537114297,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12961.865099590299,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7104950343188006,
+      "Uno60": 0.6813022043115062,
+      "arm": "B7",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6802752168382874,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.382614735245,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7105717243759346,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6177.0,
+          "Uno60": 0.6802729423848016,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.339473161304,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6833584537114297,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12961.865099590299,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7103799992330995,
+      "Uno60": 0.6800852912024422,
+      "arm": "B8",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.710916829633038,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6180.0,
+          "Uno60": 0.6807594195461679,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12912.56691639467,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7103416542045324,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6175.0,
+          "Uno60": 0.6799346359103245,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12896.922514593407,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7098815138617278,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6171.0,
+          "Uno60": 0.6795618181508342,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12889.850949913112,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7104950343188006,
+      "Uno60": 0.6813022043115062,
+      "arm": "B9",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6802752168382874,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.382614735245,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7105717243759346,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6177.0,
+          "Uno60": 0.6802729423848016,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.339473161304,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6833584537114297,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12961.865099590299,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7104950343188006,
+      "Uno60": 0.6813022043115062,
+      "arm": "B11",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6802752168382874,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.382614735245,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7105717243759346,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6177.0,
+          "Uno60": 0.6802729423848016,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.339473161304,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6833584537114297,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12961.865099590299,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "Harrell": 0.7102266191188312,
+      "Uno60": 0.6829671256435611,
+      "arm": "B13",
+      "endpoint": "PFI_frozen_DSS_risk",
+      "per_seed": [
+        {
+          "Harrell": 0.7103416542045324,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6175.0,
+          "Uno60": 0.6831034507317665,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12957.028232197446,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7101115840331301,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6173.0,
+          "Uno60": 0.6796199563871191,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12890.953709338653,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7102266191188312,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6174.0,
+          "Uno60": 0.6861779698117978,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13015.345358948483,
+          "seed": 83
+        }
+      ]
+    }
+  ],
+  "clinical_boundary": {
+    "PFI_used_for_selection": false,
+    "no_confidence_or_causal_claim": true,
+    "no_new_outer_validation": true,
+    "primary": "DSS",
+    "repeated_seeds_are_not_independent_cohorts": true,
+    "secondary": "PFI_frozen_DSS_risk"
+  },
+  "comparisons": {
+    "B6_minus_B5": {
+      "Harrell_delta": 0.0,
+      "Uno60_delta": 0.0,
+      "candidate": "B6",
+      "complete": true,
+      "direct_Uno_damage": 0.0,
+      "direct_Uno_repair": 0.0,
+      "direct_credit_complete": true,
+      "direct_damage": 0.0,
+      "direct_repair": 0.0,
+      "per_seed": [
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 83
+        }
+      ],
+      "reference": "B5",
+      "small_positive_delta_below_0_003": false
+    },
+    "B7_minus_B1": {
+      "Harrell_delta": -0.0007586102260659366,
+      "Uno60_delta": 0.0034465201940192536,
+      "candidate": "B7",
+      "complete": true,
+      "direct_Uno_damage": 0.002607564170183237,
+      "direct_Uno_repair": 0.006054084364202553,
+      "direct_credit_complete": true,
+      "direct_damage": 0.004399939311181915,
+      "direct_repair": 0.003641329085116067,
+      "per_seed": [
+        {
+          "Harrell_delta": -0.000227583067819781,
+          "Uno60_delta": 0.0034312532797572404,
+          "direct_Uno_damage": 0.002332976192704141,
+          "direct_Uno_repair": 0.005764229472461486,
+          "direct_damage": 0.0038689121529358215,
+          "direct_repair": 0.0036413290851160674,
+          "seed": 31
+        },
+        {
+          "Harrell_delta": -0.000682749203459343,
+          "Uno60_delta": 0.003561599437667873,
+          "direct_Uno_damage": 0.0026374123724050612,
+          "direct_Uno_repair": 0.006199011810073087,
+          "direct_damage": 0.00432407828857533,
+          "direct_repair": 0.003641329085116067,
+          "seed": 47
+        },
+        {
+          "Harrell_delta": -0.001365498406918575,
+          "Uno60_delta": 0.0033467078646325366,
+          "direct_Uno_damage": 0.002852303945440509,
+          "direct_Uno_repair": 0.006199011810073087,
+          "direct_damage": 0.005006827492034593,
+          "direct_repair": 0.003641329085116067,
+          "seed": 83
+        }
+      ],
+      "reference": "B1",
+      "small_positive_delta_below_0_003": false
+    },
+    "B7_minus_B11": {
+      "Harrell_delta": 0.0,
+      "Uno60_delta": 0.0,
+      "candidate": "B7",
+      "complete": true,
+      "direct_Uno_damage": 0.0,
+      "direct_Uno_repair": 0.0,
+      "direct_credit_complete": true,
+      "direct_damage": 0.0,
+      "direct_repair": 0.0,
+      "per_seed": [
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 83
+        }
+      ],
+      "reference": "B11",
+      "small_positive_delta_below_0_003": false
+    },
+    "B7_minus_B13": {
+      "Harrell_delta": 0.0012137763617052766,
+      "Uno60_delta": 0.0013914963371477462,
+      "candidate": "B7",
+      "complete": true,
+      "direct_Uno_damage": 0.0011789140168387878,
+      "direct_Uno_repair": 0.0025704103539864903,
+      "direct_credit_complete": true,
+      "direct_damage": 0.0010620543164921864,
+      "direct_repair": 0.002275830678197542,
+      "per_seed": [
+        {
+          "Harrell_delta": 0.000910332271279013,
+          "Uno60_delta": 0.0007394557314531758,
+          "direct_Uno_damage": 0.0014690457923634413,
+          "direct_Uno_repair": 0.002208501523816578,
+          "direct_damage": 0.0013654984069185253,
+          "direct_repair": 0.002275830678197542,
+          "seed": 31
+        },
+        {
+          "Harrell_delta": 0.001593081474738245,
+          "Uno60_delta": 0.001728350668832812,
+          "direct_Uno_damage": 0.0011585681050674678,
+          "direct_Uno_repair": 0.0028869187739003427,
+          "direct_damage": 0.0009103322712790169,
+          "direct_repair": 0.0025034137460172965,
+          "seed": 47
+        },
+        {
+          "Harrell_delta": 0.001137915339098794,
+          "Uno60_delta": 0.0017066826111572508,
+          "direct_Uno_damage": 0.0009091281530854543,
+          "direct_Uno_repair": 0.0026158107642425504,
+          "direct_damage": 0.0009103322712790169,
+          "direct_repair": 0.002048247610377788,
+          "seed": 83
+        }
+      ],
+      "reference": "B13",
+      "small_positive_delta_below_0_003": true
+    },
+    "B7_minus_B3": {
+      "Harrell_delta": 0.0,
+      "Uno60_delta": 0.0,
+      "candidate": "B7",
+      "complete": true,
+      "direct_Uno_damage": 0.0,
+      "direct_Uno_repair": 0.0,
+      "direct_credit_complete": true,
+      "direct_damage": 0.0,
+      "direct_repair": 0.0,
+      "per_seed": [
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 83
+        }
+      ],
+      "reference": "B3",
+      "small_positive_delta_below_0_003": false
+    },
+    "B7_minus_B4": {
+      "Harrell_delta": 0.0,
+      "Uno60_delta": 0.0,
+      "candidate": "B7",
+      "complete": true,
+      "direct_Uno_damage": 0.0,
+      "direct_Uno_repair": 0.0,
+      "direct_credit_complete": true,
+      "direct_damage": 0.0,
+      "direct_repair": 0.0,
+      "per_seed": [
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 83
+        }
+      ],
+      "reference": "B4",
+      "small_positive_delta_below_0_003": false
+    },
+    "B7_minus_B5": {
+      "Harrell_delta": 0.0,
+      "Uno60_delta": 0.0,
+      "candidate": "B7",
+      "complete": true,
+      "direct_Uno_damage": 0.0,
+      "direct_Uno_repair": 0.0,
+      "direct_credit_complete": true,
+      "direct_damage": 0.0,
+      "direct_repair": 0.0,
+      "per_seed": [
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 83
+        }
+      ],
+      "reference": "B5",
+      "small_positive_delta_below_0_003": false
+    },
+    "B7_minus_B6": {
+      "Harrell_delta": 0.0,
+      "Uno60_delta": 0.0,
+      "candidate": "B7",
+      "complete": true,
+      "direct_Uno_damage": 0.0,
+      "direct_Uno_repair": 0.0,
+      "direct_credit_complete": true,
+      "direct_damage": 0.0,
+      "direct_repair": 0.0,
+      "per_seed": [
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 83
+        }
+      ],
+      "reference": "B6",
+      "small_positive_delta_below_0_003": false
+    },
+    "B7_minus_B8": {
+      "Harrell_delta": 0.00030344409042626364,
+      "Uno60_delta": 0.0005997449935805088,
+      "candidate": "B7",
+      "complete": true,
+      "direct_Uno_damage": 0.000940576678076588,
+      "direct_Uno_repair": 0.0015403216716571154,
+      "direct_credit_complete": true,
+      "direct_damage": 0.0008344712486724321,
+      "direct_repair": 0.001137915339098771,
+      "per_seed": [
+        {
+          "Harrell_delta": 0.000227583067819781,
+          "Uno60_delta": -0.0006073528242607207,
+          "direct_Uno_damage": 0.0007891219589531048,
+          "direct_Uno_repair": 0.00018176913469240643,
+          "direct_damage": 0.0004551661356395084,
+          "direct_repair": 0.0006827492034592626,
+          "seed": 31
+        },
+        {
+          "Harrell_delta": 0.00045516613563945096,
+          "Uno60_delta": 0.0011388227954006735,
+          "direct_Uno_damage": 0.0009966684524713902,
+          "direct_Uno_repair": 0.0021354912478721705,
+          "direct_damage": 0.0009103322712790169,
+          "direct_repair": 0.0013654984069185253,
+          "seed": 47
+        },
+        {
+          "Harrell_delta": 0.000227583067819781,
+          "Uno60_delta": 0.0012677650096015736,
+          "direct_Uno_damage": 0.0010359396228052688,
+          "direct_Uno_repair": 0.0023037046324067695,
+          "direct_damage": 0.001137915339098771,
+          "direct_repair": 0.0013654984069185253,
+          "seed": 83
+        }
+      ],
+      "reference": "B8",
+      "small_positive_delta_below_0_003": true
+    },
+    "B7_minus_B9": {
+      "Harrell_delta": 0.0,
+      "Uno60_delta": 0.0,
+      "candidate": "B7",
+      "complete": true,
+      "direct_Uno_damage": 0.0,
+      "direct_Uno_repair": 0.0,
+      "direct_credit_complete": true,
+      "direct_damage": 0.0,
+      "direct_repair": 0.0,
+      "per_seed": [
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell_delta": 0.0,
+          "Uno60_delta": 0.0,
+          "direct_Uno_damage": 0.0,
+          "direct_Uno_repair": 0.0,
+          "direct_damage": 0.0,
+          "direct_repair": 0.0,
+          "seed": 83
+        }
+      ],
+      "reference": "B9",
+      "small_positive_delta_below_0_003": false
+    }
+  },
+  "computation": {
+    "actual_neural_replays": 90,
+    "aggregation": "sum_three_within_partition_num_den_per_seed_then_equal_three_seed_mean",
+    "arms": 12,
+    "completed_no_partial_mean": true,
+    "direct_credit_rows": 90,
+    "endpoints": 2,
+    "fold_metric_rows": 216,
+    "formal_target_optimizer_updates": 7200,
+    "logical_rows": 108,
+    "per_seed_components_independently_rebuilt": 72,
+    "zero_fit_reference_replays": 18
+  },
+  "cross_partition_risk_ranking": false,
+  "independently_rebuilt_decision": {
+    "CI_or_pvalues_computed": false,
+    "PFI_used_for_selection": false,
+    "actual_optional_followup_required_before_external_stage": false,
+    "all_medical_ideas_rejected": false,
+    "biological_or_causal_mechanism_proven": false,
+    "complete_source_and_target_evidence": true,
+    "core_flags": {
+      "CORRECT_QUERY_BEATS_WRONG": false,
+      "DSS_BEATS_CP_SCALAR": false,
+      "ST_LOCAL_EVIDENCE_SUPPORTED": true,
+      "TRUE_GENE_REREAD_WORKS": false
+    },
+    "decision": "NOT_SUPPORTED",
+    "formal_target_matrix_denominator": 90,
+    "historical_outer_is_new_independent_validation": false,
+    "optional_activation_trigger": false,
+    "optional_followup": {
+      "B10": "NOT_ACTIVATED",
+      "B12": "NOT_ACTIVATED",
+      "B14": "NOT_ACTIVATED",
+      "B15": "TEXT_BLOCKED"
+    },
+    "optional_not_counted_as_failure": true,
+    "outer_start_allowed": false,
+    "preliminary_outer_criteria_met": false,
+    "raw_reread_attribution": {
+      "B7_vs_B5_also_changes_source_prior": false,
+      "reverse_B7_vs_B11": false,
+      "strict_same_source_no_prior_B6_vs_B5": false
+    },
+    "reverse_reread_condition": false,
+    "source_or_numeric_failure_is_not_performance_negative": true,
+    "strict_primary_comparisons": {
+      "B1": false,
+      "B3": false,
+      "B4": false,
+      "B5": false,
+      "B6": false,
+      "B8": true,
+      "B9": false
+    },
+    "wrong_ST_is_separate_from_wrong_patient_query": true
+  },
+  "input_sha256": {
+    "R6_4_INNER_MATRIX.json": "40d8f03390bcf981894f661486af1c81914172233eb7123c7bd33fe032bc0b8f",
+    "R6_MECHANISM_ABLATIONS.csv": "ed480c7cb74f603682c7f23a5920e717ae9ed445ccc7580f9f6bfac3e7d8d787",
+    "R6_SEED_FOLD.csv": "132100269574790692f40238cc41b23c60ce0b1c597480bd93e504048272e14b",
+    "config_sha256": "1982df2587ffa986a1c7cda242af09ce55c8e61343e66db75da51db00115dc8b",
+    "decision.json": "6341790902c1685fb11fed8309e2cee40c5d432d55b9217e656040142ecb9e61",
+    "source_decision_sha256": "0b2af32ab753ec84a83b1f91f16ebd13d54b91f4b0824ff0759fc33239506cb1"
+  },
+  "mechanism_boundary": {
+    "B7_minus_B5_also_changes_source_prior": true,
+    "biological_or_cell_source_ground_truth_proven": false,
+    "core_flags": {
+      "CORRECT_QUERY_BEATS_WRONG": false,
+      "DSS_BEATS_CP_SCALAR": false,
+      "ST_LOCAL_EVIDENCE_SUPPORTED": true,
+      "TRUE_GENE_REREAD_WORKS": false
+    },
+    "direct_credits_reconciled_but_original_patient_pairs_not_reexecuted": true,
+    "negative_gate_does_not_reject_all_medical_ideas": true,
+    "strict_same_source_no_prior_raw_gene_comparison": "B6_minus_B5",
+    "wrong_ST_and_wrong_patient_query_are_distinct": true
+  },
+  "model_forward_calls": 0,
+  "new_optimizer_fits": 0,
+  "original_label_correctness_or_medical_truth_independently_verified": false,
+  "outer_results": "NOT_RUN",
+  "overall_winner": null,
+  "private_artifacts_labels_models_or_individual_risks_read": false,
+  "reviewer_sha256": "d181e608a27bd4e215f68146a8924ccd7e8323ef958c25969d351b199a47b11e",
+  "schema": "bgb_en_r6_independent_anonymous_target_review_v1",
+  "status": "PASS_ANONYMOUS_ARITHMETIC_AND_CONTRACT_REVIEW",
+  "underlying_model_replay_not_reexecuted": true
+}

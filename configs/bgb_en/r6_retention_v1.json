@@ -1,0 +1,208 @@
+{
+  "CNA_enabled": false,
+  "Clinical_or_pathology_inputs": false,
+  "RNA_only": true,
+  "Set_or_Mamba_new_training_allowed": false,
+  "canonical_sources": {
+    "GMT_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+    "cohort_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+    "endpoints_sha256": "91b5d15aa32489c825a8341aed8d9733281dc62386151c8c6246b6312975fd4e",
+    "legacy_group_sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9"
+  },
+  "convex_seed_replicates": 1,
+  "equivalence": {
+    "approximate_equality_or_score_based_reuse": false,
+    "families": [
+      "FIXED_HALLMARK_SUM50",
+      "FIXED_HALLMARK_MEAN50"
+    ],
+    "representative": "FIXED_HALLMARK_SUM50",
+    "rule": "exact_array_equal_scaled_train_and_validation_features_and_masks"
+  },
+  "evaluation": {
+    "aggregate": "sum_within_partition_numerators_denominators_no_cross_partition_risk_sorting",
+    "bootstrap": false,
+    "confidence_intervals": false,
+    "outer_test_evaluated": false,
+    "p_values": false,
+    "primary_endpoint": "DSS",
+    "tau": 60.0,
+    "within_partition_Harrell_and_Uno60": true
+  },
+  "feature_source_microbatch": 128,
+  "historical_reference_audit_sha256": {
+    "reports/bgb_en/CHECKPOINT_AUDIT.json": "82c8178c31fd12a859af22c324394ca9780e8fe2a70edfe4634cb8d2d06b493b",
+    "reports/bgb_en/R2_PCA_GEOMETRY_REPLAY_AUDIT.json": "7175ecdc6b56c915724f31de4f61ec8db5713702fc4647bdc19f2e8908cc8423"
+  },
+  "historical_references": [
+    {
+      "artifact_sha256": "e2003528501a1b3b804972546773ed8d34aeaf8b481b4d74b83d0599e1ab92ef",
+      "cell": "R2_outer1_inner0_O0_seed31",
+      "container": "formal",
+      "historical_actual_replay": true,
+      "lambda_L2": 1.0,
+      "parameters": 512,
+      "partition": 0,
+      "receipt_sha256": "909555551dea9b051bf3a0cfbfe3dde3f3bc7d9a98ad034fbb663c78688bc463",
+      "reference": "LEGACY_RNA512_RIDGE"
+    },
+    {
+      "artifact_sha256": "61e4f04f7cf579dacb75b0593a7fd338f9a8c7a114d1aac5681db87fc1d9da69",
+      "cell": "R2_outer1_inner1_O0_seed31",
+      "container": "formal",
+      "historical_actual_replay": true,
+      "lambda_L2": 1.0,
+      "parameters": 512,
+      "partition": 1,
+      "receipt_sha256": "21a54eb2da1eaaed9a6524e318cf498b8030ccd76a5e4522c672be88ad94ea1c",
+      "reference": "LEGACY_RNA512_RIDGE"
+    },
+    {
+      "artifact_sha256": "607d183778a1a3b27abc4bacfd72b7599d961335192c6e38b13e1069d2887355",
+      "cell": "R2_outer1_inner2_O0_seed31",
+      "container": "formal",
+      "historical_actual_replay": true,
+      "lambda_L2": 1.0,
+      "parameters": 512,
+      "partition": 2,
+      "receipt_sha256": "0f26b423b478d9710b5d453879480092df4325692747820df262eb678e622b5b",
+      "reference": "LEGACY_RNA512_RIDGE"
+    },
+    {
+      "artifact_sha256": "db4cb792504dcb90f04ecbfd61960040fd4530adee6e73a1bf285ee11b1dc2fd",
+      "cell": "R2_outer1_inner0_O1_seed31",
+      "container": "formal",
+      "historical_actual_replay": true,
+      "lambda_L2": 10.0,
+      "parameters": 20511,
+      "partition": 0,
+      "receipt_sha256": "6ac28c7c4acfe61ea00230f1a633955d8177c26fed7166ff3b4e02e35c49d210",
+      "reference": "LEGACY_FULL_RNA20511_RIDGE"
+    },
+    {
+      "artifact_sha256": "025ba08e4d2a61867279933abc43dcb8a70234085f4575e77d524381ab5c38d0",
+      "cell": "R2_outer1_inner1_O1_seed31",
+      "container": "formal",
+      "historical_actual_replay": true,
+      "lambda_L2": 10.0,
+      "parameters": 20511,
+      "partition": 1,
+      "receipt_sha256": "ac0862d3236ec6a586a00a2941a1aaebbb3700787e4efe889532985202275b76",
+      "reference": "LEGACY_FULL_RNA20511_RIDGE"
+    },
+    {
+      "artifact_sha256": "dff6a1874943530d24ba793ff7970a7809f7ebf70e7f262664f41a773aee0031",
+      "cell": "R2_outer1_inner2_O1_seed31",
+      "container": "formal",
+      "historical_actual_replay": true,
+      "lambda_L2": 10.0,
+      "parameters": 20511,
+      "partition": 2,
+      "receipt_sha256": "87e1b9d16726ad112231a8bb163f2fc47b77c06737cb98ed18067e1a5673596e",
+      "reference": "LEGACY_FULL_RNA20511_RIDGE"
+    },
+    {
+      "artifact_sha256": "eab843bb63bc2e1c226ac30939642e41d253f3cb839d95aa54faf53b76e1a5a5",
+      "cell": "PCA256_UNWHITENED_p0",
+      "container": "pca_repair",
+      "historical_actual_replay": true,
+      "lambda_L2": 1.0,
+      "parameters": 256,
+      "partition": 0,
+      "receipt_sha256": "8e178e890fda14e56dcf8137c860ab0d618dd7c27969aae470193f67cac46c5a",
+      "reference": "LEGACY_RNA512_PCA256_UNWHITENED_GENE_L2"
+    },
+    {
+      "artifact_sha256": "cd1221162c297b2fdb8ed09fbcef7b6bad256021908e5f3c27561ea33a3878f8",
+      "cell": "PCA256_UNWHITENED_p1",
+      "container": "pca",
+      "historical_actual_replay": true,
+      "lambda_L2": 1.0,
+      "parameters": 256,
+      "partition": 1,
+      "receipt_sha256": "dd45d895fdd2e174507dd85a9db0b7f4d57435f6cd26b5c818b401c4edba51e2",
+      "reference": "LEGACY_RNA512_PCA256_UNWHITENED_GENE_L2"
+    },
+    {
+      "artifact_sha256": "bdcb250bef66b07f23a39ddda60ec2f1cb6358b2940e396be9f49cb17aa64850",
+      "cell": "PCA256_UNWHITENED_p2",
+      "container": "pca",
+      "historical_actual_replay": true,
+      "lambda_L2": 1.0,
+      "parameters": 256,
+      "partition": 2,
+      "receipt_sha256": "bfb5acba9c126d6b26e0c27393ee013e534257ab21bbd541836ab9236fd74ae3",
+      "reference": "LEGACY_RNA512_PCA256_UNWHITENED_GENE_L2"
+    }
+  ],
+  "launch_gate_required_before_target_label_loading": true,
+  "maximum_logical_Cox_cells": 18,
+  "maximum_new_optimizer_fits": 18,
+  "normalization_geometry": {
+    "learned_tokens_are_original_genes": false,
+    "legacy_PCA256": "unwhitened_orthonormal_PCA_of_RNA512_R_not_fullRNA_geneL2_equivalent_in_R512_coordinates",
+    "new_models": "L2_on_train_standardized_representation_coordinates_not_general_geneL2_equivalence",
+    "old_Set_Mamba": "historical_target_supervised_latent_with_RNA512_bypass_diagnostic_only_no_new_training"
+  },
+  "outer_fold": 1,
+  "partitions": [
+    0,
+    1,
+    2
+  ],
+  "prepared_artifact_sha256": {
+    "outer1_inner0": "b47735f22655602b76c0c94bfcd375da495daf7ec7fecf6254af3eb41b233348",
+    "outer1_inner1": "be9bcf74c080ab4248d28eba37dacf7812e72f4503715a435250b6515b2a4a45",
+    "outer1_inner2": "3e2da6496585a44a76728d8e4d90427b4c9c77b4082d741b0cc56ebd4443433e"
+  },
+  "prepared_receipt_sha256": {
+    "outer1_inner0": "9666f51247c18ebdd6e13f7cff370da48bc89dfe79aa257c672db3e322470834",
+    "outer1_inner1": "c0d775660cac66a0f4ec09104d366795c4cb0d006c92d21ed45a01aff86297fc",
+    "outer1_inner2": "36afa9d42ca5108716160e775169ae5c4209173684af3919552171128d2ace12"
+  },
+  "program_definition_sha256": "f8031c03cbb9ec2409d72c799129a6de74f080860afbc81cb30fb187d2560143",
+  "replay": {
+    "independent_gradient_max": 1e-06,
+    "independent_objective_max_abs_error": 1e-10,
+    "readout": "saved_float64_coefficients_with_independent_event_time_Efron_gradient",
+    "risk_max_abs_error": 1e-12
+  },
+  "representations": [
+    "FIXED_HALLMARK_SUM50",
+    "FIXED_HALLMARK_MEAN50",
+    "ST_GENE_UNION_RAW760",
+    "ST_SIGNED_PROGRAM_MEAN4",
+    "FROZEN_S7_FLAT256",
+    "FROZEN_S7_MEAN64"
+  ],
+  "scaler": {
+    "constant_or_train_unobserved_columns_scale": 1.0,
+    "imputation": "current_training_observed_median_with_missing_mask_preserved",
+    "minimum_SD": 1e-08,
+    "moments": "current_training_observed_values_only_population_SD",
+    "unmeasured_numeric_storage_after_scaling": 0.0
+  },
+  "schema": "bgb_en_r6_retention_v1",
+  "solver": {
+    "accepted_gradient_max": 1e-06,
+    "automatic_retry": false,
+    "family": "L-BFGS-B",
+    "ftol": 1e-15,
+    "gtol": 1e-09,
+    "hyperparameter_search": false,
+    "initial_coefficient": 0.0,
+    "lambda_L2": 1.0,
+    "maxiter": 2000,
+    "maxls": 50,
+    "objective": "full_train_riskset_Efron_mean_event_loss_plus_lambda_over2_coefL2"
+  },
+  "source_arm": "S7",
+  "source_complete_and_independent_replay_required": true,
+  "source_control": "MATCHED",
+  "source_full_seed": 31,
+  "source_full_three_controls_required": true,
+  "source_gene_topk": null,
+  "source_labels_used_for_TCGA_scaling": false,
+  "status": "RECIPE_LOCKED_BEFORE_ANY_RETENTION_FIT",
+  "target_gene_values": "original_partition_fitted_RNA_z_and_explicit_measured_mask_not_ST_scaler"
+}

@@ -1,0 +1,1082 @@
+{
+  "schema": "bgb_en_r6_source_pretrain_lock_v1",
+  "status": "LOCKED_BEFORE_SOURCE_FITS",
+  "upstream_commit": "ecd273d2036d98e40dd9e997dd45e8de9eba7947",
+  "source_code_sha256": {
+    "scripts/bgb_en_r6_pretrain.py": "5cc9d432818760d05679d9fad44acaea9252103e86960b0a7a69a4c228486d70",
+    "src/bgb_en/r6_source.py": "67765a19e51afe263fada8efee58734a107bfed0455a45740005361528a8afee",
+    "src/bgb_en/r6_source_model.py": "b8e58a49a778d8d0b44002d93ab52c5ba17f0d33d93d66a4d803be3872a76754",
+    "src/bgb_en/r6_omics.py": "cb1404f871717783a9ff817133b8cbc58ff26e2e9639ff7d989a8e28dc262a7f",
+    "src/bgb_en/external.py": "dfa1464ec5b05aadeb4007ce982f453d523b1e466d1733380860310b3dc19beb",
+    "scripts/bgb_en_r6_schedule_source.py": "6baa1f737bf336a73f5bfa008650df7e714abb57a5a29e9429a3934f8ef97d20"
+  },
+  "fixed_defaults": {
+    "epochs": 80,
+    "checkpoint_epochs": [
+      20,
+      40,
+      80
+    ],
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "parameter_L2": 0.0001,
+    "gradient_clip_norm": 5.0,
+    "source_microbatch": 128,
+    "tissue_CE_weight": 0.1,
+    "alignment_weight": 0.01,
+    "neighborhood_weight": 0.01,
+    "alignment_negatives": 8,
+    "alignment_temperature": 0.1,
+    "target_permutation_depth_quantiles": 4,
+    "full_output_replay_tolerance": 2e-06,
+    "training_spot_weights": "uniform",
+    "heldout_unit": "equal_donor",
+    "fixed_training_updates": 80,
+    "output_gradient_cache": "two_pass_deterministic_all_negative_key_gradients"
+  },
+  "source_cache_manifest_sha256": "ef611b45d8d821bd7489131f3bab60f3b314f28f5228b60f2c170044c58848d3",
+  "fresh_certificate_sha256": "ee3ac5010ddfa37b0f687cbb477f321c586a52d0838636d5638be897505de452",
+  "cells": [
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S0",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S1",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S2",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S3",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S5",
+      "control": "WRONG_DONOR",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S4",
+      "control": "RANDOM_GATE",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "PRIMARY"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S6",
+      "control": "WRONG_NEIGHBOR",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "SPATIAL"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 0,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 0,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 1,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 1,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 2,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 2,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 3,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 3,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 4,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 4,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 5,
+      "seed": 31,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_SPOT_ALIGNMENT",
+      "heldout_donor": 5,
+      "seed": 47,
+      "schedule_phase": "SPOT_ALIGNMENT"
+    },
+    {
+      "arm": "S7",
+      "control": "MATCHED",
+      "heldout_donor": -1,
+      "seed": 31,
+      "schedule_phase": "FULL_TRANSFER"
+    },
+    {
+      "arm": "S7",
+      "control": "WRONG_DONOR",
+      "heldout_donor": -1,
+      "seed": 31,
+      "schedule_phase": "FULL_TRANSFER"
+    },
+    {
+      "arm": "S7",
+      "control": "WITHIN_SECTION_TISSUE_DEPTH",
+      "heldout_donor": -1,
+      "seed": 31,
+      "schedule_phase": "FULL_TRANSFER"
+    }
+  ],
+  "maximum_source_workers": 8,
+  "logical_LODO_units": 144,
+  "optimized_LODO_units": 132,
+  "full_source_optimized_units": 3,
+  "actual_optimized_source_units": 135,
+  "source_ST_test_sections_used": false,
+  "source_DSS_or_PFI_loaded": false,
+  "transfer_family": "S7_fixed_a_priori_no_source_or_DSS_score_selection",
+  "full_source_seed": 31,
+  "source_gate_affects_claims_not_data_qualified_matrix_execution": true,
+  "source_development_donors_reused_not_new_external_confirmation": true
+}

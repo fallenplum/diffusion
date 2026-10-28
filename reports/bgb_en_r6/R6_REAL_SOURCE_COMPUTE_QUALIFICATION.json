@@ -1,0 +1,89 @@
+{
+  "TCGA_DSS_or_PFI_read": false,
+  "config_sha256": "49fa74f691027facbe2d980c2d813534bd7d12e73dd9541cae8b0d9841682597",
+  "device_name": "NVIDIA GeForce RTX 4080 SUPER",
+  "elapsed_seconds": 7.349326047115028,
+  "estimate_is_not_formal_runtime_or_parallel_throughput": true,
+  "estimated_serial_80_update_seconds_excludes_snapshots": 293.9730418846011,
+  "formal_source_fits": 0,
+  "heldout_spots_not_in_training": 1984,
+  "masked_gene_input_gradient_max_abs": 0.0,
+  "measured_gene_gradient_nonzero": true,
+  "model": "S7",
+  "peak_allocated_bytes": 375196160,
+  "peak_reserved_bytes": 484442112,
+  "performance_based_hyperparameter_choice": false,
+  "qualification_updates": 2,
+  "reported_device_total_bytes": 33796456448,
+  "saved_qualification_weights": false,
+  "schema": "bgb_en_r6_real_source_compute_qualification_v1",
+  "separate_qualification_optimizer_instances": 1,
+  "source_cache_manifest_sha256": "ef611b45d8d821bd7489131f3bab60f3b314f28f5228b60f2c170044c58848d3",
+  "source_test_sections_read": false,
+  "status": "PASS_TWO_REAL_SOURCE_GPU_UPDATES",
+  "steps": [
+    {
+      "complete_source_updates_represented": 1,
+      "component_audit": {
+        "alignment": 2.411674737930298,
+        "alignment_audit": {
+          "active_spot_programs": 44108,
+          "dense_N_squared_matrix": false,
+          "negatives_compare_same_program_only": true,
+          "no_valid_negative_anchors": false
+        },
+        "alignment_gene_rows_sha256": "38f0a3c972d2113a5221a58c461b733b3255439fd4c47bf421edce164e1f74e0",
+        "control": "MATCHED",
+        "joint_target_and_gene_sham": false,
+        "neighborhood": -0.0,
+        "neighborhood_audit": {
+          "active_spots": 0
+        },
+        "program_huber": 0.4244491755962372,
+        "program_target_is_wrong_donor": false,
+        "tissue_CE": 1.2145190238952637,
+        "tissue_truth_was_forward_input": false,
+        "training_spot_weights": "uniform"
+      },
+      "microbatches": 87,
+      "negative_key_gradients_included": true,
+      "objective": 0.5700178146362305,
+      "parameter_L2": 0.01506978739053011,
+      "preclip_gradient_norm": 0.5851169228553772,
+      "qualification_update": 1,
+      "replay_max_abs_error": 0.0
+    },
+    {
+      "complete_source_updates_represented": 1,
+      "component_audit": {
+        "alignment": 2.239058017730713,
+        "alignment_audit": {
+          "active_spot_programs": 44108,
+          "dense_N_squared_matrix": false,
+          "negatives_compare_same_program_only": true,
+          "no_valid_negative_anchors": false
+        },
+        "alignment_gene_rows_sha256": "38f0a3c972d2113a5221a58c461b733b3255439fd4c47bf421edce164e1f74e0",
+        "control": "MATCHED",
+        "joint_target_and_gene_sham": false,
+        "neighborhood": -0.0,
+        "neighborhood_audit": {
+          "active_spots": 0
+        },
+        "program_huber": 0.4236353933811188,
+        "program_target_is_wrong_donor": false,
+        "tissue_CE": 1.109125018119812,
+        "tissue_truth_was_forward_input": false,
+        "training_spot_weights": "uniform"
+      },
+      "microbatches": 87,
+      "negative_key_gradients_included": true,
+      "objective": 0.5569385290145874,
+      "parameter_L2": 0.015001954510807991,
+      "preclip_gradient_norm": 0.45523399114608765,
+      "qualification_update": 2,
+      "replay_max_abs_error": 0.0
+    }
+  ],
+  "training_source_spots": 11027
+}

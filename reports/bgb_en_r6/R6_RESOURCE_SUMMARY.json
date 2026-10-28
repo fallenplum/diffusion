@@ -1,0 +1,84 @@
+{
+  "cgroup_capacity_from_source_launch": {
+    "CPU_quota_equivalent_cores": 16.0,
+    "current_cgroup_available_memory_not_measured": true,
+    "memory_limit_GiB": 62.0,
+    "memory_limit_bytes": 66571993088,
+    "scope": "recorded_source_launch_cgroup_capacity_not_current_available_memory",
+    "source_launch_cpu_max_raw": "1600000 100000",
+    "source_launch_memory_max_raw": "66571993088"
+  },
+  "evidence_sha256": {
+    "source_resource_csv": "d64a77148f0f873764b6b22e5051bb9ce568f764f8d5f6e077ae37970c59bcc1",
+    "source_schedule_complete": "8848bf5d0a38260fe3df169805a50d9a074c66755edfc670abfa4c72f555b564",
+    "source_schedule_launch": "5518e6de40bfa9c4ea3b05e1cb90096245ba58b3b89a081c71f98040ecd32d70",
+    "target_resource_csv": "159de3d7e761e9f8f881bf9bbc3eb082e1e0a07cf56f4d6951ed0f20907264b8",
+    "target_schedule_complete": "c3f3e239159ebdbf15cbd93e1ff2c482919e21e8e9cd051f8cae8468172fe1dd"
+  },
+  "global_end_to_end_makespan_seconds": null,
+  "scheduler_elapsed_not_assumed_sum_of_jobs": true,
+  "scheduler_scopes": {
+    "source_elapsed_seconds": 4628.843631088734,
+    "target_elapsed_seconds": 7678.039385743905
+  },
+  "schema": "bgb_en_r6_resource_summary_v1",
+  "status": "COMPLETE_RECORDED_WINDOWS",
+  "summed_fit_seconds_are_not_walltime": true,
+  "summed_individual_durations": {
+    "retention_solver_seconds": 0.7788658235222101,
+    "source_fit_seconds": 32257.287032277323,
+    "source_random_reference_seconds": 39.26492306962609,
+    "target_fit_seconds": 26334.05912260292
+  },
+  "unsampled_or_historical_time_not_invented": true,
+  "windows": [
+    {
+      "device_samples_are_not_individual_process_peaks": true,
+      "elapsed_first_sample": 0.095,
+      "elapsed_last_sample": 4626.427,
+      "excluded_long_gap_seconds": 0.0,
+      "host_procfs_values_are_not_cgroup_or_process_available_resources": true,
+      "hostwide_CPU_util_time_weighted_mean_percent": 10.797644107048168,
+      "hostwide_RAM_available_min_MiB": 448998.63671875,
+      "may_include_queue_wait_or_idle": true,
+      "nominal_sample_interval_seconds": 5.084999999999809,
+      "observed_filesystem_available_min_MiB": 4365.51171875,
+      "observed_window_seconds": 4626.331999999999,
+      "resource_csv_sha256": "d64a77148f0f873764b6b22e5051bb9ce568f764f8d5f6e077ae37970c59bcc1",
+      "samples": 912,
+      "status": "OBSERVED_MONITOR_WINDOW_ONLY",
+      "supported_interpolation_seconds": 4626.331999999999,
+      "time_weighting": "trapezoidal_omit_gaps_over_three_median_intervals",
+      "unsampled_periods_not_inferred": true,
+      "visible_device_GPU_memory_peak_MiB": 6663.0,
+      "visible_device_GPU_total_MiB": 32760.0,
+      "visible_device_GPU_util_sample_max_percent": 100.0,
+      "visible_device_GPU_util_time_weighted_mean_percent": 96.00403883681501,
+      "window": "source"
+    },
+    {
+      "device_samples_are_not_individual_process_peaks": true,
+      "elapsed_first_sample": 0.065,
+      "elapsed_last_sample": 7685.013,
+      "excluded_long_gap_seconds": 0.0,
+      "host_procfs_values_are_not_cgroup_or_process_available_resources": true,
+      "hostwide_CPU_util_time_weighted_mean_percent": 9.575685259226375,
+      "hostwide_RAM_available_min_MiB": 407713.84375,
+      "may_include_queue_wait_or_idle": true,
+      "nominal_sample_interval_seconds": 5.087000000000444,
+      "observed_filesystem_available_min_MiB": 7828.390625,
+      "observed_window_seconds": 7684.948,
+      "resource_csv_sha256": "159de3d7e761e9f8f881bf9bbc3eb082e1e0a07cf56f4d6951ed0f20907264b8",
+      "samples": 1514,
+      "status": "OBSERVED_MONITOR_WINDOW_ONLY",
+      "supported_interpolation_seconds": 7684.948,
+      "time_weighting": "trapezoidal_omit_gaps_over_three_median_intervals",
+      "unsampled_periods_not_inferred": true,
+      "visible_device_GPU_memory_peak_MiB": 2473.0,
+      "visible_device_GPU_total_MiB": 32760.0,
+      "visible_device_GPU_util_sample_max_percent": 99.0,
+      "visible_device_GPU_util_time_weighted_mean_percent": 88.6189977472847,
+      "window": "target"
+    }
+  ]
+}

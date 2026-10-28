@@ -1,0 +1,15 @@
+{
+  "all_locked_source_fits_still_required": true,
+  "causality_or_cell_source_truth_established": false,
+  "confidence_statement": "该状态描述预锁方向证据；未计算置信区间、p值或独立外部泛化证据。",
+  "required_comparisons": [
+    "S4_vs_S5_WRONG_DONOR",
+    "S4_vs_S4_WITHIN_SECTION_TISSUE_DEPTH"
+  ],
+  "rule": "both_comparisons_have_positive_equal_donor_seed_Huber_negative_minus_true_and_within_tissue_rho_true_minus_negative",
+  "source_mechanism_only": true,
+  "source_score_dependent_execution_gate": false,
+  "status": "SUPPORTED",
+  "survival_benefit_established": false,
+  "target_outer_evaluation_authorized_by_this_report": false
+}

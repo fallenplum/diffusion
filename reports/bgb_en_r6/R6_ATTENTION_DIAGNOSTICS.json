@@ -1,0 +1,216 @@
+{
+  "activation_norm_scope": "existing raw target activations only, no added normalization or model calls; G0/context/Q/E/reverse norms equally average valid programs within patient then patients; E states were already aggregated equally over valid WSIs by the model; patch norms equally average patches within WSI, then valid WSIs within patient, then patients; ratios are itemwise delta/base L2 with zero denominators excluded and reported as None when empty; small amplitudes alone do not identify data scarcity or a unique failure mechanism",
+  "aggregation": "within_each_patient_equal_valid_WSI_then_equal_patients; null/empty_excluded_counts_reported",
+  "assignment_control": "default_trained_query_context; B9_wrong_query; preserve_own_WSI_value_multiset_not_same_index_assignment",
+  "attention_rank_definition": "exp(-sum(p*log(p))), p=sigma/sum(sigma), SVD_of_raw_real_patch_weight_matrix_per_WSI_no_null_no_centering",
+  "baseline_pair_credit_zero_change_already_verified": true,
+  "cases_selected_using_outcomes": false,
+  "completed_model_cells": 90,
+  "contract_sha256": "a6545f3e8fdbdb6e992c1310948b31a25845f57905b65eeb0064cb63483673ab",
+  "controls_per_cell": 5,
+  "diagnostic_forward_calls": 450,
+  "entropy_definition": "natural_log_patch_plus_null_entropy_separate_from_real_patch_conditional_entropy",
+  "fixed_first_valid_rows": 8,
+  "gene_N_eff_definition": "up/down_normalized_separately; exp(entropy) and inverse_sum_square; undefined_member_group=None",
+  "independent_patient_count_is_not_720": true,
+  "logical_object_sha256": "b944eea8c28d3b0014d11a2af2ac1b7d3d39b0ff0d8a956838d503be7c73da7f",
+  "medical_histology_or_causal_gene_truth_claimed": false,
+  "new_backward_calls": 0,
+  "new_optimizer_fits": 0,
+  "new_pair_credit_or_DSS_metric_recomputation": false,
+  "outcomes_used_for_new_performance": false,
+  "parameter_drift_scope": "all named_parameters(requires_grad=True), default de-duplicated shared parameters, grouped by first two name segments; fresh initial vs loaded final float64 norms; zero-initial relative drift=None; isolated L2 gradient norm=2e-4*final_L2 from 1e-4*sum(theta^2) only, excluding total/cross delta penalties; not a total gradient and not scope-matched to first-eight training microbatch pure-Cox gradient; do not subtract norms or infer optimization causality",
+  "private_identifiers_coordinates_values_indices_or_weights_exported": false,
+  "repeated_patient_evaluations": 720,
+  "replay_audit_sha256": "ae9e93714f5d145e168ef9e749042f7301bfc64f1f643bd43b54f2373f2f968e",
+  "rows_count": 90,
+  "rows_shards": [
+    {
+      "arm": "B2",
+      "bytes": 415730,
+      "file": "R6_ATTENTION_DIAGNOSTICS_B2.json",
+      "row_count": 9,
+      "row_positions": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "sha256": "31d5acf2715a8dadffcaa75944aafcb7d8ce2d9c056aa9528e6449919b7333a1"
+    },
+    {
+      "arm": "B3",
+      "bytes": 415353,
+      "file": "R6_ATTENTION_DIAGNOSTICS_B3.json",
+      "row_count": 9,
+      "row_positions": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "sha256": "f66772df43d96f02ff488d9e2621f6922e626d6ec3adda9065224e8349c718d0"
+    },
+    {
+      "arm": "B4",
+      "bytes": 429619,
+      "file": "R6_ATTENTION_DIAGNOSTICS_B4.json",
+      "row_count": 9,
+      "row_positions": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "sha256": "027a7c490b13e1b7556941288f8bbd05e63b4ba8c942d298942f825e14563010"
+    },
+    {
+      "arm": "B5",
+      "bytes": 480996,
+      "file": "R6_ATTENTION_DIAGNOSTICS_B5.json",
+      "row_count": 9,
+      "row_positions": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "sha256": "a4308158e9495a3533f777e551bc8b2e719c936ff1c5a210a2a4f7b2ff19a967"
+    },
+    {
+      "arm": "B6",
+      "bytes": 1316412,
+      "file": "R6_ATTENTION_DIAGNOSTICS_B6.json",
+      "row_count": 9,
+      "row_positions": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ],
+      "sha256": "5b5ec3ccf1ffe996c6fad4ca159f06f4280619ef260ad0bfdb115a89550885ca"
+    },
+    {
+      "arm": "B7",
+      "bytes": 1313077,
+      "file": "R6_ATTENTION_DIAGNOSTICS_B7.json",
+      "row_count": 9,
+      "row_positions": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "sha256": "beff6b44e37485fa18ebe8c2a8debedc517586d2475424b63cd5abfe7a48be79"
+    },
+    {
+      "arm": "B8",
+      "bytes": 1312867,
+      "file": "R6_ATTENTION_DIAGNOSTICS_B8.json",
+      "row_count": 9,
+      "row_positions": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "sha256": "be92c0f561f3ff6e90e9e3c3e6cf0574df1e51c1ea79f6d0f093188bee5067df"
+    },
+    {
+      "arm": "B9",
+      "bytes": 1313146,
+      "file": "R6_ATTENTION_DIAGNOSTICS_B9.json",
+      "row_count": 9,
+      "row_positions": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "sha256": "4e2574af788af2baea521f1dd8558ffec03c0844efe0c4d44842f3034654ca89"
+    },
+    {
+      "arm": "B11",
+      "bytes": 426322,
+      "file": "R6_ATTENTION_DIAGNOSTICS_B11.json",
+      "row_count": 9,
+      "row_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sha256": "526c97ec2711f5df2a70964dfc571c03dcd9aa0e958b37a1c8b3034441b7ea6a"
+    },
+    {
+      "arm": "B13",
+      "bytes": 1315792,
+      "file": "R6_ATTENTION_DIAGNOSTICS_B13.json",
+      "row_count": 9,
+      "row_positions": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sha256": "058daa4dda547bb6b7f0bfa6b4ecf1d3db2dff306d6923eecf97869a3229f149"
+    }
+  ],
+  "saved_train_mean_reused_after_actual_replay": true,
+  "schema": "bgb_en_r6_attention_diagnostics_v1",
+  "script_sha256": "43951b9fa1e65b9db909cdde7ba5159482856a7d5b89c1ccaf00d0dc9eb6ccbc",
+  "status": "COMPLETE_90_FIRST8_INFERENCE_DIAGNOSTICS",
+  "storage_schema": "bgb_en_r6_attention_diagnostics_sharded_index_v1",
+  "topk_definition": "stable_descending_weights_min(16,valid_patch_count); zero_real_mass_or_invalid_row=None",
+  "unique_probed_patients": 24
+}

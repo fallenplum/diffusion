@@ -1,0 +1,631 @@
+{
+  "additional_masked_entries_beyond_79_structural_columns": 324,
+  "aliases": 0,
+  "comparisons": [
+    {
+      "Harrell": -0.14406008192990438,
+      "Uno60": -0.057243540407349136,
+      "a": "ST_GENE_UNION_RAW760",
+      "b": "LEGACY_RNA512_RIDGE",
+      "paired_partition_deltas": [
+        {
+          "Harrell": -0.16462346760070057,
+          "Uno60": -0.1365200241339205,
+          "partition": 0
+        },
+        {
+          "Harrell": -0.15506035283194053,
+          "Uno60": 0.020098493196908596,
+          "partition": 1
+        },
+        {
+          "Harrell": -0.11471321695760595,
+          "Uno60": -0.08612411503373918,
+          "partition": 2
+        }
+      ]
+    },
+    {
+      "Harrell": -0.02116522530723719,
+      "Uno60": -0.189559278598387,
+      "a": "FROZEN_S7_FLAT256",
+      "b": "ST_GENE_UNION_RAW760",
+      "paired_partition_deltas": [
+        {
+          "Harrell": 0.026853473438412157,
+          "Uno60": -0.070718090155442,
+          "partition": 0
+        },
+        {
+          "Harrell": -0.13463324048282266,
+          "Uno60": -0.3988421142494363,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.0037406483790523026,
+          "Uno60": 0.04833487276151327,
+          "partition": 2
+        }
+      ]
+    },
+    {
+      "Harrell": -0.041420118343195256,
+      "Uno60": -0.21322326771569755,
+      "a": "ST_SIGNED_PROGRAM_MEAN4",
+      "b": "ST_GENE_UNION_RAW760",
+      "paired_partition_deltas": [
+        {
+          "Harrell": 0.04903677758318736,
+          "Uno60": -0.12472352761783156,
+          "partition": 0
+        },
+        {
+          "Harrell": -0.15970287836583102,
+          "Uno60": -0.3418844894965244,
+          "partition": 1
+        },
+        {
+          "Harrell": -0.05860349127182052,
+          "Uno60": -0.09275108702147222,
+          "partition": 2
+        }
+      ]
+    },
+    {
+      "Harrell": 0.06918525261720526,
+      "Uno60": 0.02233401138090385,
+      "a": "FROZEN_S7_FLAT256",
+      "b": "FROZEN_S7_MEAN64",
+      "paired_partition_deltas": [
+        {
+          "Harrell": 0.1319322825452423,
+          "Uno60": 0.09856340850727546,
+          "partition": 0
+        },
+        {
+          "Harrell": 0.014856081708449376,
+          "Uno60": -0.08007579756353733,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.03865336658354113,
+          "Uno60": 0.10856387891898334,
+          "partition": 2
+        }
+      ]
+    },
+    {
+      "Harrell": 0.000227583067819781,
+      "Uno60": 0.0025078162866850606,
+      "a": "LEGACY_RNA512_PCA256_UNWHITENED_GENE_L2",
+      "b": "LEGACY_RNA512_RIDGE",
+      "paired_partition_deltas": [
+        {
+          "Harrell": -0.0029188558085231353,
+          "Uno60": 0.0005004416300352643,
+          "partition": 0
+        },
+        {
+          "Harrell": -0.00371402042711233,
+          "Uno60": 0.002852691916376382,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.006234413965087282,
+          "Uno60": 0.005140413686250733,
+          "partition": 2
+        }
+      ]
+    }
+  ],
+  "count_summation_max_abs_error": 0.0,
+  "csv_max_abs_error": 0.0,
+  "current_pinned_source_files_checked": 24,
+  "direct_private_replay_values_reviewed": true,
+  "gradient_values_not_in_initial_public_report": true,
+  "hashes": {
+    "PROTOCOL_LOCK.json": "a8a952b2be09d95cc931eb932e5f6b3f77eb3b2cf547c3668ce3ef0a6b931a99",
+    "R6_2_OMICS_RETENTION.csv": "ba5381b9234fa9c8e813a54849db5dae9fba44cbcc7b319cdf3b66531ed3d9d7",
+    "R6_2_OMICS_RETENTION.json": "a53cebb315be0eabe8f240f3f84aac698c63f2a22cd9c4f97f2468d31f03006e",
+    "R6_2_OMICS_RETENTION.md": "b7ad0b0e8d7a7f05def2ce6848da5631a55036b56cd17af20d1e2394ed393645",
+    "R6_3_REAL_GENE_REREAD_AUDIT.json": "64094e6b63b651eb7fb250f0c9bcab3408c0a86e0c575abc21367553a84fdf47",
+    "R6_RETENTION_INDEPENDENT_REPLAY_AUDIT.json": "ce3245fc89dea9b4eead9aceeaf5a68121f368e51b79079c7b8e26116ccc7e24"
+  },
+  "historical_references": 9,
+  "independent_retention_lock_schema_and_contract_checked": true,
+  "independent_summation": "math.fsum_with_at_most_four_ULP_count_rounding",
+  "iteration_max": 76,
+  "iteration_min": 8,
+  "new_fits": 18,
+  "new_iterations": 609,
+  "new_logical_cells": 18,
+  "new_optimizers_or_model_forwards_run": 0,
+  "normalizations": [
+    {
+      "effective_training_columns": [
+        50,
+        50,
+        50
+      ],
+      "masked_entries": [
+        0,
+        0,
+        0
+      ],
+      "observed_feature_fraction": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "representation": "FIXED_HALLMARK_SUM50",
+      "unobserved_columns": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "effective_training_columns": [
+        50,
+        50,
+        50
+      ],
+      "masked_entries": [
+        0,
+        0,
+        0
+      ],
+      "observed_feature_fraction": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "representation": "FIXED_HALLMARK_MEAN50",
+      "unobserved_columns": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "effective_training_columns": [
+        681,
+        681,
+        681
+      ],
+      "masked_entries": [
+        32635,
+        32635,
+        32635
+      ],
+      "observed_feature_fraction": [
+        0.8950102946853686,
+        0.8950102946853686,
+        0.8950102946853686
+      ],
+      "representation": "ST_GENE_UNION_RAW760",
+      "unobserved_columns": [
+        79,
+        79,
+        79
+      ]
+    },
+    {
+      "effective_training_columns": [
+        4,
+        4,
+        4
+      ],
+      "masked_entries": [
+        0,
+        0,
+        0
+      ],
+      "observed_feature_fraction": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "representation": "ST_SIGNED_PROGRAM_MEAN4",
+      "unobserved_columns": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "effective_training_columns": [
+        256,
+        256,
+        256
+      ],
+      "masked_entries": [
+        0,
+        0,
+        0
+      ],
+      "observed_feature_fraction": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "representation": "FROZEN_S7_FLAT256",
+      "unobserved_columns": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "effective_training_columns": [
+        64,
+        64,
+        64
+      ],
+      "masked_entries": [
+        0,
+        0,
+        0
+      ],
+      "observed_feature_fraction": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "representation": "FROZEN_S7_MEAN64",
+      "unobserved_columns": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "numeric_replay_export_maxima": {
+    "independent_gradient_max": 1.0088731272617224e-07,
+    "independent_objective_error": 1.7763568394002505e-15,
+    "risk_max_abs_error": 0.0
+  },
+  "numeric_replay_rows_bound_to_published_hashes": 18,
+  "observed_primary_union_columns": 681,
+  "original_feature_alias_recomputed": false,
+  "partition_denominators": [
+    {
+      "Harrell_den": 1713.0,
+      "Uno_den": 4480.70120633689,
+      "partition": 0
+    },
+    {
+      "Harrell_den": 1077.0,
+      "Uno_den": 5594.874036451825,
+      "partition": 1
+    },
+    {
+      "Harrell_den": 1604.0,
+      "Uno_den": 2683.627333378275,
+      "partition": 2
+    }
+  ],
+  "raw_private_receipts_or_coefficients_read": false,
+  "real_patient_risk_metric_recomputation_performed": false,
+  "registered_union_columns": 760,
+  "retention_contract_sha256": "c374f6e68eb3e24e01cdc886019a089fd84c963d327d355d06b7a6b2d93132a3",
+  "row_ratio_max_abs_error": 0.0,
+  "schema": "independent_r6_retention_metadata_review_v1",
+  "status": "PASS_METADATA_ARITHMETIC_AND_FINITE_BUDGET",
+  "structurally_unavailable_union_columns": 79,
+  "summaries": [
+    {
+      "Harrell": 0.5534820209376422,
+      "Uno60": 0.5835443139309382,
+      "counts": {
+        "Harrell_den": 4394.0,
+        "Harrell_num": 2432.0,
+        "Uno_den": 12759.20257616699,
+        "Uno_num": 7445.560113615225
+      },
+      "lambda_L2": 1.0,
+      "naive_three_partition_mean": {
+        "Harrell": 0.5549845249081286,
+        "Uno60": 0.5685707872424649
+      },
+      "parameters": 50,
+      "partitions": [
+        {
+          "Harrell": 0.5405720957384705,
+          "Uno60": 0.5598146409765592,
+          "partition": 0
+        },
+        {
+          "Harrell": 0.564531104921077,
+          "Uno60": 0.6396007352581459,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.559850374064838,
+          "Uno60": 0.5062969854926896,
+          "partition": 2
+        }
+      ],
+      "representation": "FIXED_HALLMARK_SUM50"
+    },
+    {
+      "Harrell": 0.5493855257168867,
+      "Uno60": 0.5786221787249793,
+      "counts": {
+        "Harrell_den": 4394.0,
+        "Harrell_num": 2414.0,
+        "Uno_den": 12759.20257616699,
+        "Uno_num": 7382.757593415113
+      },
+      "lambda_L2": 1.0,
+      "naive_three_partition_mean": {
+        "Harrell": 0.5500856393566177,
+        "Uno60": 0.5635450953786955
+      },
+      "parameters": 50,
+      "partitions": [
+        {
+          "Harrell": 0.5423234092235844,
+          "Uno60": 0.5605197141943958,
+          "partition": 0
+        },
+        {
+          "Harrell": 0.5543175487465181,
+          "Uno60": 0.6314913789918977,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.5536159600997507,
+          "Uno60": 0.4986241929497927,
+          "partition": 2
+        }
+      ],
+      "representation": "FIXED_HALLMARK_MEAN50"
+    },
+    {
+      "Harrell": 0.5766954938552572,
+      "Uno60": 0.6503169891149473,
+      "counts": {
+        "Harrell_den": 4394.0,
+        "Harrell_num": 2534.0,
+        "Uno_den": 12759.20257616699,
+        "Uno_num": 8297.526202840596
+      },
+      "lambda_L2": 1.0,
+      "naive_three_partition_mean": {
+        "Harrell": 0.5840867420332259,
+        "Uno60": 0.6281355040199581
+      },
+      "parameters": 760,
+      "partitions": [
+        {
+          "Harrell": 0.5417396380618797,
+          "Uno60": 0.5481397798436716,
+          "partition": 0
+        },
+        {
+          "Harrell": 0.6369545032497679,
+          "Uno60": 0.7747312175272447,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.57356608478803,
+          "Uno60": 0.5615355146889581,
+          "partition": 2
+        }
+      ],
+      "representation": "ST_GENE_UNION_RAW760"
+    },
+    {
+      "Harrell": 0.535275375512062,
+      "Uno60": 0.43709372139924973,
+      "counts": {
+        "Harrell_den": 4394.0,
+        "Harrell_num": 2352.0,
+        "Uno_den": 12759.20257616699,
+        "Uno_num": 5576.967336103724
+      },
+      "lambda_L2": 1.0,
+      "naive_three_partition_mean": {
+        "Harrell": 0.5276635446817378,
+        "Uno60": 0.4416824693080154
+      },
+      "parameters": 4,
+      "partitions": [
+        {
+          "Harrell": 0.5907764156450671,
+          "Uno60": 0.42341625222584,
+          "partition": 0
+        },
+        {
+          "Harrell": 0.47725162488393685,
+          "Uno60": 0.43284672803072033,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.5149625935162094,
+          "Uno60": 0.4687844276674859,
+          "partition": 2
+        }
+      ],
+      "representation": "ST_SIGNED_PROGRAM_MEAN4"
+    },
+    {
+      "Harrell": 0.55553026854802,
+      "Uno60": 0.4607577105165603,
+      "counts": {
+        "Harrell_den": 4394.0,
+        "Harrell_num": 2441.0,
+        "Uno_den": 12759.20257616699,
+        "Uno_num": 5878.9009670117
+      },
+      "lambda_L2": 1.0,
+      "naive_three_partition_mean": {
+        "Harrell": 0.5494070358114398,
+        "Uno60": 0.48772706013883643
+      },
+      "parameters": 256,
+      "partitions": [
+        {
+          "Harrell": 0.5685931115002919,
+          "Uno60": 0.47742168968822957,
+          "partition": 0
+        },
+        {
+          "Harrell": 0.5023212627669452,
+          "Uno60": 0.37588910327780845,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.5773067331670823,
+          "Uno60": 0.6098703874504714,
+          "partition": 2
+        }
+      ],
+      "representation": "FROZEN_S7_FLAT256"
+    },
+    {
+      "Harrell": 0.48634501593081475,
+      "Uno60": 0.43842369913565643,
+      "counts": {
+        "Harrell_den": 4394.0,
+        "Harrell_num": 2137.0,
+        "Uno_den": 12759.20257616699,
+        "Uno_num": 5593.936791464329
+      },
+      "lambda_L2": 1.0,
+      "naive_three_partition_mean": {
+        "Harrell": 0.4875931255323622,
+        "Uno60": 0.44537656351792937
+      },
+      "parameters": 64,
+      "partitions": [
+        {
+          "Harrell": 0.4366608289550496,
+          "Uno60": 0.3788582811809541,
+          "partition": 0
+        },
+        {
+          "Harrell": 0.48746518105849584,
+          "Uno60": 0.4559649008413458,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.5386533665835411,
+          "Uno60": 0.5013065085314881,
+          "partition": 2
+        }
+      ],
+      "representation": "FROZEN_S7_MEAN64"
+    },
+    {
+      "Harrell": 0.7207555757851616,
+      "Uno60": 0.7075605295222964,
+      "counts": {
+        "Harrell_den": 4394.0,
+        "Harrell_num": 3167.0,
+        "Uno_den": 12759.20257616699,
+        "Uno_num": 9027.908131074964
+      },
+      "lambda_L2": 1.0,
+      "naive_three_partition_mean": {
+        "Harrell": 0.7288857544966415,
+        "Uno60": 0.6956507193435417
+      },
+      "parameters": 512,
+      "partitions": [
+        {
+          "Harrell": 0.7063631056625803,
+          "Uno60": 0.6846598039775921,
+          "partition": 0
+        },
+        {
+          "Harrell": 0.7920148560817084,
+          "Uno60": 0.7546327243303361,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.6882793017456359,
+          "Uno60": 0.6476596297226973,
+          "partition": 2
+        }
+      ],
+      "representation": "LEGACY_RNA512_RIDGE"
+    },
+    {
+      "Harrell": 0.6581702321347291,
+      "Uno60": 0.6926605805407045,
+      "counts": {
+        "Harrell_den": 4394.0,
+        "Harrell_num": 2892.0,
+        "Uno_den": 12759.20257616699,
+        "Uno_num": 8837.79666364428
+      },
+      "lambda_L2": 10.0,
+      "naive_three_partition_mean": {
+        "Harrell": 0.6640956915771006,
+        "Uno60": 0.679630252702944
+      },
+      "parameters": 20511,
+      "partitions": [
+        {
+          "Harrell": 0.6217162872154116,
+          "Uno60": 0.6695902437355808,
+          "partition": 0
+        },
+        {
+          "Harrell": 0.7047353760445683,
+          "Uno60": 0.7429361999869026,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.6658354114713217,
+          "Uno60": 0.6263643143863485,
+          "partition": 2
+        }
+      ],
+      "representation": "LEGACY_FULL_RNA20511_RIDGE"
+    },
+    {
+      "Harrell": 0.7209831588529814,
+      "Uno60": 0.7100683458089815,
+      "counts": {
+        "Harrell_den": 4394.0,
+        "Harrell_num": 3168.0,
+        "Uno_den": 12759.20257616699,
+        "Uno_num": 9059.90586710059
+      },
+      "lambda_L2": 1.0,
+      "naive_three_partition_mean": {
+        "Harrell": 0.7287529337397922,
+        "Uno60": 0.6984819017544294
+      },
+      "parameters": 256,
+      "partitions": [
+        {
+          "Harrell": 0.7034442498540572,
+          "Uno60": 0.6851602456076273,
+          "partition": 0
+        },
+        {
+          "Harrell": 0.7883008356545961,
+          "Uno60": 0.7574854162467125,
+          "partition": 1
+        },
+        {
+          "Harrell": 0.6945137157107232,
+          "Uno60": 0.652800043408948,
+          "partition": 2
+        }
+      ],
+      "representation": "LEGACY_RNA512_PCA256_UNWHITENED_GENE_L2"
+    }
+  ],
+  "summary_max_abs_error": 0.0,
+  "supplemental_gradient_values_verified": true,
+  "target_contract_sha256": "a6545f3e8fdbdb6e992c1310948b31a25845f57905b65eeb0064cb63483673ab",
+  "target_qualification_not_formal_fit": true,
+  "target_qualification_zero_updates": true,
+  "unknown_fit_cells": 0,
+  "weights_patient_arrays_endpoint_arrays_or_raw_genes_read": false
+}

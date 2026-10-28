@@ -1,0 +1,229 @@
+{
+  "status": "PASS_R6_TARGET_REAL_DATA_AND_SOURCE_TRANSFER",
+  "contract_sha256": "a6545f3e8fdbdb6e992c1310948b31a25845f57905b65eeb0064cb63483673ab",
+  "new_optimizer_updates": 0,
+  "new_neural_fits": 0,
+  "real_data_backward_passes": 2,
+  "source_teacher_or_scalar_fits": 0,
+  "cache_receipts": {
+    "MATCHED": "ce4d702a27673bf32a3c43e10a61729e0a5e52bc9f1d4fd9541dd53773794bd6",
+    "WRONG_DONOR": "a75ee98a3b49c9275f3255ab964499184645877cdec95112aa2c087ba9fcad3e",
+    "WITHIN_SECTION_TISSUE_DEPTH": "64ac25db09dd864068129ceaf67f1568ce6522688723558a7585e18117d39d71",
+    "RANDOM_NO_ST": "d1bae5b53c1a613ce7a53e19854fb295ec8cf500e84fbe4e9423912987825d84"
+  },
+  "parameter_budgets": [
+    {
+      "arm": "B2",
+      "registered": 144785,
+      "requires_grad": 30660,
+      "core": {
+        "registered": 114733,
+        "requires_grad": 672,
+        "frozen_foundation": 109069,
+        "shared_source_gene_stem_frozen": true,
+        "reverse_query_parameters": 0,
+        "unsupported_FLOP_equivalence_claimed": false
+      },
+      "Hallmark_only_unimodal_auxiliary": true,
+      "frozen_source_in_optimizer": false,
+      "same_effective_capacity_or_FLOPs_claimed": false
+    },
+    {
+      "arm": "B3",
+      "registered": 144785,
+      "requires_grad": 30660,
+      "core": {
+        "registered": 114733,
+        "requires_grad": 672,
+        "frozen_foundation": 109069,
+        "shared_source_gene_stem_frozen": true,
+        "reverse_query_parameters": 0,
+        "unsupported_FLOP_equivalence_claimed": false
+      },
+      "Hallmark_only_unimodal_auxiliary": true,
+      "frozen_source_in_optimizer": false,
+      "same_effective_capacity_or_FLOPs_claimed": false
+    },
+    {
+      "arm": "B4",
+      "registered": 144785,
+      "requires_grad": 31492,
+      "core": {
+        "registered": 114733,
+        "requires_grad": 1504,
+        "frozen_foundation": 109069,
+        "shared_source_gene_stem_frozen": true,
+        "reverse_query_parameters": 0,
+        "unsupported_FLOP_equivalence_claimed": false
+      },
+      "Hallmark_only_unimodal_auxiliary": true,
+      "frozen_source_in_optimizer": false,
+      "same_effective_capacity_or_FLOPs_claimed": false
+    },
+    {
+      "arm": "B5",
+      "registered": 144785,
+      "requires_grad": 35652,
+      "core": {
+        "registered": 114733,
+        "requires_grad": 5664,
+        "frozen_foundation": 109069,
+        "shared_source_gene_stem_frozen": true,
+        "reverse_query_parameters": 4096,
+        "unsupported_FLOP_equivalence_claimed": false
+      },
+      "Hallmark_only_unimodal_auxiliary": true,
+      "frozen_source_in_optimizer": false,
+      "same_effective_capacity_or_FLOPs_claimed": false
+    },
+    {
+      "arm": "B6",
+      "registered": 144785,
+      "requires_grad": 35652,
+      "core": {
+        "registered": 114733,
+        "requires_grad": 5664,
+        "frozen_foundation": 109069,
+        "shared_source_gene_stem_frozen": true,
+        "reverse_query_parameters": 4096,
+        "unsupported_FLOP_equivalence_claimed": false
+      },
+      "Hallmark_only_unimodal_auxiliary": true,
+      "frozen_source_in_optimizer": false,
+      "same_effective_capacity_or_FLOPs_claimed": false
+    },
+    {
+      "arm": "B7",
+      "registered": 144785,
+      "requires_grad": 35652,
+      "core": {
+        "registered": 114733,
+        "requires_grad": 5664,
+        "frozen_foundation": 109069,
+        "shared_source_gene_stem_frozen": true,
+        "reverse_query_parameters": 4096,
+        "unsupported_FLOP_equivalence_claimed": false
+      },
+      "Hallmark_only_unimodal_auxiliary": true,
+      "frozen_source_in_optimizer": false,
+      "same_effective_capacity_or_FLOPs_claimed": false
+    },
+    {
+      "arm": "B8",
+      "registered": 144785,
+      "requires_grad": 35652,
+      "core": {
+        "registered": 114733,
+        "requires_grad": 5664,
+        "frozen_foundation": 109069,
+        "shared_source_gene_stem_frozen": true,
+        "reverse_query_parameters": 4096,
+        "unsupported_FLOP_equivalence_claimed": false
+      },
+      "Hallmark_only_unimodal_auxiliary": true,
+      "frozen_source_in_optimizer": false,
+      "same_effective_capacity_or_FLOPs_claimed": false
+    },
+    {
+      "arm": "B9",
+      "registered": 144785,
+      "requires_grad": 35652,
+      "core": {
+        "registered": 114733,
+        "requires_grad": 5664,
+        "frozen_foundation": 109069,
+        "shared_source_gene_stem_frozen": true,
+        "reverse_query_parameters": 4096,
+        "unsupported_FLOP_equivalence_claimed": false
+      },
+      "Hallmark_only_unimodal_auxiliary": true,
+      "frozen_source_in_optimizer": false,
+      "same_effective_capacity_or_FLOPs_claimed": false
+    },
+    {
+      "arm": "B11",
+      "registered": 144785,
+      "requires_grad": 31492,
+      "core": {
+        "registered": 114733,
+        "requires_grad": 1504,
+        "frozen_foundation": 109069,
+        "shared_source_gene_stem_frozen": true,
+        "reverse_query_parameters": 0,
+        "unsupported_FLOP_equivalence_claimed": false
+      },
+      "Hallmark_only_unimodal_auxiliary": true,
+      "frozen_source_in_optimizer": false,
+      "same_effective_capacity_or_FLOPs_claimed": false
+    },
+    {
+      "arm": "B13",
+      "registered": 144785,
+      "requires_grad": 35652,
+      "core": {
+        "registered": 114733,
+        "requires_grad": 5664,
+        "frozen_foundation": 109069,
+        "shared_source_gene_stem_frozen": true,
+        "reverse_query_parameters": 4096,
+        "unsupported_FLOP_equivalence_claimed": false
+      },
+      "Hallmark_only_unimodal_auxiliary": true,
+      "frozen_source_in_optimizer": false,
+      "same_effective_capacity_or_FLOPs_claimed": false
+    }
+  ],
+  "repeated_forward": [
+    {
+      "arm": "B2",
+      "repeated_risk_max_abs_error": 0.0
+    },
+    {
+      "arm": "B3",
+      "repeated_risk_max_abs_error": 0.0
+    },
+    {
+      "arm": "B4",
+      "repeated_risk_max_abs_error": 0.0
+    },
+    {
+      "arm": "B5",
+      "repeated_risk_max_abs_error": 0.0
+    },
+    {
+      "arm": "B6",
+      "repeated_risk_max_abs_error": 0.0
+    },
+    {
+      "arm": "B7",
+      "repeated_risk_max_abs_error": 0.0
+    },
+    {
+      "arm": "B8",
+      "repeated_risk_max_abs_error": 0.0
+    },
+    {
+      "arm": "B9",
+      "repeated_risk_max_abs_error": 0.0
+    },
+    {
+      "arm": "B11",
+      "repeated_risk_max_abs_error": 0.0
+    },
+    {
+      "arm": "B13",
+      "repeated_risk_max_abs_error": 0.0
+    }
+  ],
+  "shared_target_initialization_sha256": "6398f38f4c1af8363f4d6218b4684a399f86f01a8261a9751caca4c8ac9db9f5",
+  "query_only_main_and_offset_exact": true,
+  "missing_gene_gradients_exact_zero": true,
+  "source_parameters_frozen": true,
+  "original_gene_values_in_dynamic_reread": true,
+  "upstream_replay_audit_sha256": "fcce2906203a494fc0b55b178d52e812a18196ddbb6fff6770b67e8a06f5ffef",
+  "peak_GPU_bytes": 276741632,
+  "elapsed_seconds": 58.64639771496877,
+  "outer_test_outcomes_used_for_training_selection_or_evaluation": false,
+  "outcome_blind_visual_cache_covers_canonical_cohort": true,
+  "raw_patient_arrays_or_weights_exported": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_OBSERVED_R5_V2_WINDOW",
+  "selected_matrix_version": "deterministic_v2",
+  "qualified_neural_fits": 108,
+  "qualified_updates": 8640,
+  "historical_unqualified_v1_neural_fits": 108,
+  "historical_unqualified_updates": 8640,
+  "all_R5_actual_neural_fits": 216,
+  "all_R5_actual_updates": 17280,
+  "teacher_fits_new": 0,
+  "window": {
+    "window": "v2_real_A4_pilot_then_full_schedule",
+    "samples": 838,
+    "observed_seconds": 4247.843,
+    "GPU_util_mean": 82.59785202863962,
+    "GPU_util_max": 99.0,
+    "GPU_memory_peak_MiB": 12458.0,
+    "sample_file_sha256": "b405766a339459473ce8b0632ecc0133c8a040b9066ae1397f5cfcfba990ce06",
+    "scope": "observed controller window; includes idle startup and saved-state replay; host CPU/RAM are not cgroup quota"
+  },
+  "v1_execution_separate_not_merged_with_final_performance": true
+}

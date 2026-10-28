@@ -1,0 +1,299 @@
+{
+  "decision": "R5_READOUT_STOP_R6_ELIGIBLE",
+  "R6_formal_start_eligible": true,
+  "selected_arm": "A5",
+  "hypotheses": {
+    "H5.1": "NOT_SUPPORTED",
+    "H5.2": "NOT_SUPPORTED",
+    "H5.3": "NOT_SUPPORTED"
+  },
+  "independent_external_confirmation": false,
+  "bootstrap": false,
+  "confidence_intervals": false,
+  "p_values": false,
+  "main_comparisons": {
+    "A1": {
+      "status": "COMPLETE",
+      "candidate": "A5",
+      "reference": "A1",
+      "delta_Harrell": 0.0003034440904261526,
+      "delta_Uno60": -0.001056372593574162,
+      "per_seed": [
+        {
+          "seed": 31,
+          "delta_Harrell": -0.003641329085116163,
+          "delta_Uno60": -0.0038221380824029483
+        },
+        {
+          "seed": 47,
+          "delta_Harrell": 0.00318616294947649,
+          "delta_Uno60": 0.0014722981342604191
+        },
+        {
+          "seed": 83,
+          "delta_Harrell": 0.001365498406918464,
+          "delta_Uno60": -0.0008192778325800676
+        }
+      ],
+      "positive_Harrell_seeds": 2,
+      "positive_Uno60_seeds": 1,
+      "nonnegative_Harrell_seeds": 2,
+      "nonnegative_Uno60_seeds": 1,
+      "weak_Harrell_direction": true,
+      "weak_Uno60_direction": true,
+      "direct_pair_repair_damage_not_inferred": true
+    },
+    "A2": {
+      "status": "COMPLETE",
+      "candidate": "A5",
+      "reference": "A2",
+      "delta_Harrell": 7.586102260648264e-05,
+      "delta_Uno60": -0.003266882536932414,
+      "per_seed": [
+        {
+          "seed": 31,
+          "delta_Harrell": -0.003641329085116163,
+          "delta_Uno60": -0.005037919552714709
+        },
+        {
+          "seed": 47,
+          "delta_Harrell": 0.002730996813837039,
+          "delta_Uno60": -0.0014381729918061525
+        },
+        {
+          "seed": 83,
+          "delta_Harrell": 0.001137915339098794,
+          "delta_Uno60": -0.003324555066276158
+        }
+      ],
+      "positive_Harrell_seeds": 2,
+      "positive_Uno60_seeds": 0,
+      "nonnegative_Harrell_seeds": 2,
+      "nonnegative_Uno60_seeds": 0,
+      "weak_Harrell_direction": true,
+      "weak_Uno60_direction": false,
+      "direct_pair_repair_damage_not_inferred": true
+    },
+    "A3": {
+      "status": "COMPLETE",
+      "candidate": "A5",
+      "reference": "A3",
+      "delta_Harrell": 0.0009103322712789019,
+      "delta_Uno60": -0.0032276133979325383,
+      "per_seed": [
+        {
+          "seed": 31,
+          "delta_Harrell": -0.00295857988165682,
+          "delta_Uno60": -0.0055849596334393015
+        },
+        {
+          "seed": 47,
+          "delta_Harrell": 0.003868912152935833,
+          "delta_Uno60": -0.0008963584034950012
+        },
+        {
+          "seed": 83,
+          "delta_Harrell": 0.001820664542558026,
+          "delta_Uno60": -0.0032015221568636454
+        }
+      ],
+      "positive_Harrell_seeds": 2,
+      "positive_Uno60_seeds": 0,
+      "nonnegative_Harrell_seeds": 2,
+      "nonnegative_Uno60_seeds": 0,
+      "weak_Harrell_direction": true,
+      "weak_Uno60_direction": false,
+      "direct_pair_repair_damage_not_inferred": true
+    },
+    "A8": {
+      "status": "COMPLETE",
+      "candidate": "A5",
+      "reference": "A8",
+      "delta_Harrell": 0.02730996813837039,
+      "delta_Uno60": 0.009796815469315101,
+      "per_seed": [
+        {
+          "seed": 31,
+          "delta_Harrell": 0.02799271734182973,
+          "delta_Uno60": 0.006821786040359767
+        },
+        {
+          "seed": 47,
+          "delta_Harrell": 0.022530723714155654,
+          "delta_Uno60": 0.004934110223521415
+        },
+        {
+          "seed": 83,
+          "delta_Harrell": 0.03140646335912611,
+          "delta_Uno60": 0.017634550144063788
+        }
+      ],
+      "positive_Harrell_seeds": 3,
+      "positive_Uno60_seeds": 3,
+      "nonnegative_Harrell_seeds": 3,
+      "nonnegative_Uno60_seeds": 3,
+      "weak_Harrell_direction": false,
+      "weak_Uno60_direction": false,
+      "direct_pair_repair_damage_not_inferred": true
+    }
+  },
+  "mechanism_comparisons": {
+    "WRONG_QUERY": {
+      "status": "COMPLETE",
+      "candidate": "A5",
+      "reference": "WRONG_QUERY",
+      "delta_Harrell": 0.0023516917008039595,
+      "delta_Uno60": -0.011264349298945042,
+      "per_seed": [
+        {
+          "seed": 31,
+          "delta_Harrell": -0.003186162949476601,
+          "delta_Uno60": -0.020133310858170606
+        },
+        {
+          "seed": 47,
+          "delta_Harrell": 0.005234410559854297,
+          "delta_Uno60": -0.010122444918895801
+        },
+        {
+          "seed": 83,
+          "delta_Harrell": 0.005006827492034627,
+          "delta_Uno60": -0.003537292119768942
+        }
+      ],
+      "positive_Harrell_seeds": 2,
+      "positive_Uno60_seeds": 0,
+      "nonnegative_Harrell_seeds": 2,
+      "nonnegative_Uno60_seeds": 0,
+      "weak_Harrell_direction": true,
+      "weak_Uno60_direction": false,
+      "direct_pair_repair_damage_not_inferred": true
+    },
+    "QUERY_MEAN": {
+      "status": "COMPLETE",
+      "candidate": "A5",
+      "reference": "QUERY_MEAN",
+      "delta_Harrell": -0.00030344409042637466,
+      "delta_Uno60": -0.006240797840444623,
+      "per_seed": [
+        {
+          "seed": 31,
+          "delta_Harrell": -0.005234410559854408,
+          "delta_Uno60": -0.010831372785312099
+        },
+        {
+          "seed": 47,
+          "delta_Harrell": 0.003413746017296271,
+          "delta_Uno60": -0.0023746400193112027
+        },
+        {
+          "seed": 83,
+          "delta_Harrell": 0.000910332271279013,
+          "delta_Uno60": -0.005516380716710789
+        }
+      ],
+      "positive_Harrell_seeds": 2,
+      "positive_Uno60_seeds": 0,
+      "nonnegative_Harrell_seeds": 2,
+      "nonnegative_Uno60_seeds": 0,
+      "weak_Harrell_direction": true,
+      "weak_Uno60_direction": false,
+      "direct_pair_repair_damage_not_inferred": true
+    },
+    "INTERACTION_OFF_RETRAIN": {
+      "status": "COMPLETE",
+      "candidate": "A5",
+      "reference": "INTERACTION_OFF_RETRAIN",
+      "delta_Harrell": 7.586102260648264e-05,
+      "delta_Uno60": -0.003266882536932414,
+      "per_seed": [
+        {
+          "seed": 31,
+          "delta_Harrell": -0.003641329085116163,
+          "delta_Uno60": -0.005037919552714709
+        },
+        {
+          "seed": 47,
+          "delta_Harrell": 0.002730996813837039,
+          "delta_Uno60": -0.0014381729918061525
+        },
+        {
+          "seed": 83,
+          "delta_Harrell": 0.001137915339098794,
+          "delta_Uno60": -0.003324555066276158
+        }
+      ],
+      "positive_Harrell_seeds": 2,
+      "positive_Uno60_seeds": 0,
+      "nonnegative_Harrell_seeds": 2,
+      "nonnegative_Uno60_seeds": 0,
+      "weak_Harrell_direction": true,
+      "weak_Uno60_direction": false,
+      "direct_pair_repair_damage_not_inferred": true
+    },
+    "ONEWAY_O2P_ONLY": {
+      "status": "COMPLETE",
+      "candidate": "A5",
+      "reference": "ONEWAY_O2P_ONLY",
+      "delta_Harrell": 0.00022758306781966997,
+      "delta_Uno60": -0.003868199592626187,
+      "per_seed": [
+        {
+          "seed": 31,
+          "delta_Harrell": -0.001365498406918575,
+          "delta_Uno60": -0.005742149194425283
+        },
+        {
+          "seed": 47,
+          "delta_Harrell": 0.00045516613563945096,
+          "delta_Uno60": -0.0024100946986189697
+        },
+        {
+          "seed": 83,
+          "delta_Harrell": 0.001593081474738245,
+          "delta_Uno60": -0.0034523548848341967
+        }
+      ],
+      "positive_Harrell_seeds": 2,
+      "positive_Uno60_seeds": 0,
+      "nonnegative_Harrell_seeds": 2,
+      "nonnegative_Uno60_seeds": 0,
+      "weak_Harrell_direction": true,
+      "weak_Uno60_direction": false,
+      "direct_pair_repair_damage_not_inferred": true
+    },
+    "ONEWAY_P2O_ONLY": {
+      "status": "COMPLETE",
+      "candidate": "A5",
+      "reference": "ONEWAY_P2O_ONLY",
+      "delta_Harrell": 0.0025792747686237405,
+      "delta_Uno60": -0.0015068787261152128,
+      "per_seed": [
+        {
+          "seed": 31,
+          "delta_Harrell": -0.000910332271279013,
+          "delta_Uno60": -0.00408547628171918
+        },
+        {
+          "seed": 47,
+          "delta_Harrell": 0.00591715976331364,
+          "delta_Uno60": 0.0027275509269407694
+        },
+        {
+          "seed": 83,
+          "delta_Harrell": 0.002730996813837039,
+          "delta_Uno60": -0.0031627108235673385
+        }
+      ],
+      "positive_Harrell_seeds": 2,
+      "positive_Uno60_seeds": 1,
+      "nonnegative_Harrell_seeds": 2,
+      "nonnegative_Uno60_seeds": 1,
+      "weak_Harrell_direction": true,
+      "weak_Uno60_direction": true,
+      "direct_pair_repair_damage_not_inferred": true
+    }
+  },
+  "very_small_deltas_remain_weak_directional_evidence": true,
+  "reason": "Complete prelocked development matrices; no new external confirmation"
+}

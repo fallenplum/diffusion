@@ -1,0 +1,398 @@
+{
+  "schema": "bgb_en_r5_report_source_audit_v1",
+  "status": "PASS_FROZEN_SOURCES_RECEIPTS_AND_AVAILABLE_INITIALIZATIONS",
+  "contract_sha256": "21ebbd65626d2fcdaf5023c184742527ba381b55091831975adda19873aa6e19",
+  "private_lock_file_sha256": "b6584aa0ae39e1b7886d48674ed631574b2dbe3e1640d794d2a54ac21d4763e4",
+  "sources": {
+    "configs/bgb_en/prototype_v1.json": "7b8d725298fd7f03eaf182c43a784e48397e702aacc1db43c4a9442773429e66",
+    "configs/bgb_en/r5_deterministic_runtime_v2.json": "12b28ff024658470a2f4ddccc55bdeec664a444c4b75c66bd34b2ade2054d5e1",
+    "configs/bgb_en/r5_main_v1.json": "3f11a62a85a0112af289aaeb264ebbaeaa8c1edc5eefcba0aadd52f94122b52e",
+    "configs/bgb_en/r5_mechanism_v1.json": "8f9908b8b617dbb2ebac042cc38e59761e0923ad841ed0d3d8c7fac820c100c3",
+    "scripts/bgb_en_r5_common.py": "2911278e73e4a8de7314dfc57b9f6f8faee5dd97793e92515580fbece94379dd",
+    "scripts/bgb_en_r5_deterministic_runtime.py": "3a4d08c81c3a39e32885684c3928cf1f1bffb95d8d128534c323cf822ecf71ee",
+    "scripts/bgb_en_r5_publication.py": "ebbb2dd815dc64b4fe1ed68090ccefd64367e5eea0d9eb552a6ac89051b60e5d",
+    "scripts/bgb_en_r5_qualify.py": "e1768d170cf84abff4bc97efffb817bd306e2fe71b7989614ced12e202669765",
+    "scripts/bgb_en_r5_replay.py": "98b152e01d90dd5f2d7292a3361732cd9358bdd9470a11ca4ffd765e88df6297",
+    "scripts/bgb_en_r5_report.py": "eed87501c266c6018086257546476bbfb9c51784a1cb4e08e150d8b7f4a25fe0",
+    "scripts/bgb_en_r5_report_recovery.py": "fc67219ae6d199838e6b19056198f8e143c2e1169bb8e028cd2a390252678f0f",
+    "scripts/bgb_en_r5_run.py": "ed0e7f6e44613bfc82e09c234af4dd0194ff295be5e3d136a3c5d5ef83dc00be",
+    "scripts/bgb_en_r5_schedule.py": "88aa536d3821b6b7418c4b09206fce563b38373a35689d5ebedc24b1dd1c374d",
+    "scripts/bgb_en_run.py": "2999bd817536ad352e1aade5461af09b67ba7b7d8e7bcc0b1f77a5ee529b7c67",
+    "src/bgb_en/__init__.py": "6ded290386fb31f64c885c3b60885bafcb49c608b9a0d875eb6230138e579912",
+    "src/bgb_en/baselines.py": "2a00c4bcd2eca06c26a5ad5e0c636d2c2771bbf356df9d72a350fe8061e30d5a",
+    "src/bgb_en/data.py": "cebe55093915abeb2df38fee317b5af7e805f5714d43d3a56d3e67bc441bcd37",
+    "src/bgb_en/interaction.py": "d29d7c1eede19209dd4c5db84a38a7d231106d4a03c5db9564635d4ef8b31c3f",
+    "src/bgb_en/omics.py": "0e745187f58afc0b6badd4240ba05f56c3274741a4948ae5fed797ddaa53b6fd",
+    "src/bgb_en/pathology.py": "68ed98779ec2f4eb9972a26150fda550ae9aba70ef2be753fd8d90d842a43f26",
+    "src/bgb_en/protocol.py": "e06e7196eee72957dbde363bc4cb78b004ded62a62ada0fa0ffa3add7590394c",
+    "src/bgb_en/r5_protocol.py": "7167059792baeb9ec18643f39a692d41da309057e8350ff48ecaf0007f36a6d3",
+    "src/bgb_en/r5_readout.py": "175cb0acf6483348f79bbc0ea3c4ca25aaff6163cfa8d3c924da130ff3f04ceb",
+    "src/bgb_en/r5_training.py": "05282eb24afdbe80ef3825de021646885806ecc839cbdf6bf5051c785f69d9ed",
+    "src/bgb_en/replay.py": "3ad8293b78121d82a95603a1ade38e64c8caebd44adf0110e79ae05d0275a23f",
+    "src/bgb_en/survival.py": "2f54ca3262438cb725421e5a062b8529eecdd5033a122038798c5af6b083d086",
+    "src/bgb_en/training.py": "04036634f61e0a349e2ee5ee11a642fe139c49a58a91fec5b7a1875b5bd7b513",
+    "src/phase10_trimodal/math.py": "e744e652590e9103ba0b376a7b4c232652789d72b5bb1976e511144bc07c417b",
+    "src/phase10_trimodal/reference.py": "a5b05d2c11a8aeb3b1ecffcf799746f90610382179b40f27564cbc7df7e25e07"
+  },
+  "complete_fit_payloads_SHA_verified": 108,
+  "baseline_references_qualified": 18,
+  "old_report_snapshot_sha256": "d7ec3440a1eb7c70cc4a5fb4d12f3b6672587326e6098d90211a463c100be697",
+  "old_formal_reports_unchanged_by_report": true,
+  "qualification_passed": true,
+  "replay_passed": true,
+  "model_deserializations": 0,
+  "new_optimizer_fits": 0,
+  "initialization_audit": {
+    "status": "PASS_AVAILABLE_SHARED_INITIALIZATION",
+    "fair": true,
+    "main_fair": true,
+    "mechanism_fair": true,
+    "main_families": [
+      {
+        "partition": 0,
+        "seed": 31,
+        "available_arms": 7,
+        "expected_arms": 7,
+        "shared_backbone_equal": true,
+        "complete_family": true
+      },
+      {
+        "partition": 0,
+        "seed": 47,
+        "available_arms": 7,
+        "expected_arms": 7,
+        "shared_backbone_equal": true,
+        "complete_family": true
+      },
+      {
+        "partition": 0,
+        "seed": 83,
+        "available_arms": 7,
+        "expected_arms": 7,
+        "shared_backbone_equal": true,
+        "complete_family": true
+      },
+      {
+        "partition": 1,
+        "seed": 31,
+        "available_arms": 7,
+        "expected_arms": 7,
+        "shared_backbone_equal": true,
+        "complete_family": true
+      },
+      {
+        "partition": 1,
+        "seed": 47,
+        "available_arms": 7,
+        "expected_arms": 7,
+        "shared_backbone_equal": true,
+        "complete_family": true
+      },
+      {
+        "partition": 1,
+        "seed": 83,
+        "available_arms": 7,
+        "expected_arms": 7,
+        "shared_backbone_equal": true,
+        "complete_family": true
+      },
+      {
+        "partition": 2,
+        "seed": 31,
+        "available_arms": 7,
+        "expected_arms": 7,
+        "shared_backbone_equal": true,
+        "complete_family": true
+      },
+      {
+        "partition": 2,
+        "seed": 47,
+        "available_arms": 7,
+        "expected_arms": 7,
+        "shared_backbone_equal": true,
+        "complete_family": true
+      },
+      {
+        "partition": 2,
+        "seed": 83,
+        "available_arms": 7,
+        "expected_arms": 7,
+        "shared_backbone_equal": true,
+        "complete_family": true
+      }
+    ],
+    "retrained_controls": [
+      {
+        "control": "INTERACTION_OFF_RETRAIN",
+        "partition": 0,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "INTERACTION_OFF_RETRAIN",
+        "partition": 0,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "INTERACTION_OFF_RETRAIN",
+        "partition": 0,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "INTERACTION_OFF_RETRAIN",
+        "partition": 1,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "INTERACTION_OFF_RETRAIN",
+        "partition": 1,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "INTERACTION_OFF_RETRAIN",
+        "partition": 1,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "INTERACTION_OFF_RETRAIN",
+        "partition": 2,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "INTERACTION_OFF_RETRAIN",
+        "partition": 2,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "INTERACTION_OFF_RETRAIN",
+        "partition": 2,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_O2P_ONLY",
+        "partition": 0,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_O2P_ONLY",
+        "partition": 0,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_O2P_ONLY",
+        "partition": 0,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_O2P_ONLY",
+        "partition": 1,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_O2P_ONLY",
+        "partition": 1,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_O2P_ONLY",
+        "partition": 1,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_O2P_ONLY",
+        "partition": 2,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_O2P_ONLY",
+        "partition": 2,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_O2P_ONLY",
+        "partition": 2,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_P2O_ONLY",
+        "partition": 0,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_P2O_ONLY",
+        "partition": 0,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_P2O_ONLY",
+        "partition": 0,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_P2O_ONLY",
+        "partition": 1,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_P2O_ONLY",
+        "partition": 1,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_P2O_ONLY",
+        "partition": 1,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_P2O_ONLY",
+        "partition": 2,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_P2O_ONLY",
+        "partition": 2,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "ONEWAY_P2O_ONLY",
+        "partition": 2,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "QUERY_MEAN",
+        "partition": 0,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "QUERY_MEAN",
+        "partition": 0,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "QUERY_MEAN",
+        "partition": 0,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "QUERY_MEAN",
+        "partition": 1,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "QUERY_MEAN",
+        "partition": 1,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "QUERY_MEAN",
+        "partition": 1,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "QUERY_MEAN",
+        "partition": 2,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "QUERY_MEAN",
+        "partition": 2,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "QUERY_MEAN",
+        "partition": 2,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "WRONG_QUERY",
+        "partition": 0,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "WRONG_QUERY",
+        "partition": 0,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "WRONG_QUERY",
+        "partition": 0,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "WRONG_QUERY",
+        "partition": 1,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "WRONG_QUERY",
+        "partition": 1,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "WRONG_QUERY",
+        "partition": 1,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "WRONG_QUERY",
+        "partition": 2,
+        "seed": 31,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "WRONG_QUERY",
+        "partition": 2,
+        "seed": 47,
+        "same_initial_full_state_as_matched": true
+      },
+      {
+        "control": "WRONG_QUERY",
+        "partition": 2,
+        "seed": 83,
+        "same_initial_full_state_as_matched": true
+      }
+    ],
+    "new_heads_not_required_to_share_full_state_across_different_modes": true
+  }
+}

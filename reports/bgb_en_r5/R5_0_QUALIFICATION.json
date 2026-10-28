@@ -1,0 +1,701 @@
+{
+  "schema": "bgb_en_r5_zero_fit_qualification_v1",
+  "status": "PASS_R5_REAL_DATA_AND_LEGACY_PARITY",
+  "contract_sha256": "21ebbd65626d2fcdaf5023c184742527ba381b55091831975adda19873aa6e19",
+  "qualification_source_sha256": "e1768d170cf84abff4bc97efffb817bd306e2fe71b7989614ced12e202669765",
+  "prepared_reuse": {
+    "prepared_receipt_sha256": "9666f51247c18ebdd6e13f7cff370da48bc89dfe79aa257c672db3e322470834",
+    "prepared_artifact_sha256": "b47735f22655602b76c0c94bfcd375da495daf7ec7fecf6254af3eb41b233348",
+    "train_hash": "7fb306db257aeddad345417bf3b2459af1461b495439802f0ea9a1e6edf3ad2c",
+    "valid_hash": "c9705897fff115c48524d122a9cfbb3db54783ba7ae87eb1ca92979222e8b474",
+    "train_n": 272,
+    "valid_n": 137,
+    "teachers_reused": 3,
+    "teacher_refits": 0,
+    "upstream_supervised_fits_reused_not_new": 14,
+    "risk_distribution": {
+      "CP": {
+        "crossfit_mean": 0.023704991525648502,
+        "fullfit_mean": 3.918434204559376e-17,
+        "crossfit_sd": 0.9341757377679332,
+        "fullfit_sd": 1.0,
+        "pearson": 0.8872823510425387,
+        "sd_ratio": 0.9341757377679332,
+        "RMS_gap": 0.4642100234486906,
+        "alignment": "each_teacher_own_train_mean_SD_not_heldout_moments"
+      },
+      "CS": {
+        "crossfit_mean": 0.01783746161529968,
+        "fullfit_mean": 5.224578939412501e-17,
+        "crossfit_sd": 0.9600027430746733,
+        "fullfit_sd": 1.0,
+        "pearson": 0.9095225167688102,
+        "sd_ratio": 0.9600027430746733,
+        "RMS_gap": 0.4190885583922548,
+        "alignment": "each_teacher_own_train_mean_SD_not_heldout_moments"
+      },
+      "RNA": {
+        "crossfit_mean": -0.003107218225795111,
+        "fullfit_mean": 1.959217102279688e-17,
+        "crossfit_sd": 0.7688364450106587,
+        "fullfit_sd": 1.0,
+        "pearson": 0.6211477501892143,
+        "sd_ratio": 0.7688364450106587,
+        "RMS_gap": 0.7974942493949675,
+        "alignment": "each_teacher_own_train_mean_SD_not_heldout_moments"
+      }
+    },
+    "scalar_beta": 0.07257929795308099
+  },
+  "legacy_parity": {
+    "status": "PASS_FULL_INNER_VALIDATION_LEGACY_REPLAY",
+    "patients": 137,
+    "risk_tolerance": 2e-06,
+    "changed_pair_credit_limit": 0,
+    "original_checkpoint": {
+      "receipt_sha256": "dca92460761b9151539cec503cb4808a3193401332a2ecdca3539c16da3ab621",
+      "artifact_sha256": "bc017cb3d80bd65d12d1645e7b24ae96a1fb644027f18ab9036da12956406363",
+      "epoch": 80,
+      "same_train_valid_and_teacher": true,
+      "checkpoint_read_only": true
+    },
+    "strict_backbone_load": {
+      "backbone_tensors": 38,
+      "new_readout_tensors": 0
+    },
+    "comparisons": [
+      {
+        "comparison": "old_forward_vs_saved",
+        "maximum_risk_error": 1.1920928955078125e-07,
+        "eligible_pairs": 1713,
+        "changed_pair_credits": 0,
+        "total_absolute_credit_change": 0.0
+      },
+      {
+        "comparison": "new_legacy_vs_old_forward",
+        "maximum_risk_error": 0.0,
+        "eligible_pairs": 1713,
+        "changed_pair_credits": 0,
+        "total_absolute_credit_change": 0.0
+      },
+      {
+        "comparison": "new_legacy_vs_saved",
+        "maximum_risk_error": 1.1920928955078125e-07,
+        "eligible_pairs": 1713,
+        "changed_pair_credits": 0,
+        "total_absolute_credit_change": 0.0
+      }
+    ],
+    "saved_old_risks_reused_not_refitted": true
+  },
+  "fresh_readouts": {
+    "status": "PASS_SEVEN_FRESH_READOUT_REAL_BATCHES",
+    "arm_count": 7,
+    "patients_per_arm": 8,
+    "identical_backbone_initialization": true,
+    "backbone_sha256": "b53bcfc543ee1bf4bc71c6626bacbd9846373f9a8be7520c907931709a413ed1",
+    "rows": [
+      {
+        "arm": "A2",
+        "seed": 31,
+        "patients": 8,
+        "backbone_sha256": "b53bcfc543ee1bf4bc71c6626bacbd9846373f9a8be7520c907931709a413ed1",
+        "parameter_budget": {
+          "registered": 93604,
+          "requires_grad": 82596,
+          "added_readout_registered": 0,
+          "added_readout_requires_grad": 0,
+          "legacy_directional_heads_diagnostic_only": false,
+          "gradient_active_count_not_inferred_from_requires_grad": true
+        },
+        "off_cross_exactly_zero": true,
+        "fixed_evidence_off_pooled_and_sham_exactly_unchanged": true,
+        "repeated_wrapper_main_maximum_error": 0.0,
+        "repeated_wrapper_sham_maximum_error": 0.0,
+        "optimizer_updates": 0,
+        "pure_Cox_gradient_probe": null,
+        "supported_operator_profile": {
+          "status": "NOT_REQUESTED",
+          "complete_operator_FLOPs_claimed": false
+        }
+      },
+      {
+        "arm": "A3",
+        "seed": 31,
+        "patients": 8,
+        "backbone_sha256": "b53bcfc543ee1bf4bc71c6626bacbd9846373f9a8be7520c907931709a413ed1",
+        "parameter_budget": {
+          "registered": 93604,
+          "requires_grad": 87268,
+          "added_readout_registered": 0,
+          "added_readout_requires_grad": 0,
+          "legacy_directional_heads_diagnostic_only": false,
+          "gradient_active_count_not_inferred_from_requires_grad": true
+        },
+        "off_cross_exactly_zero": true,
+        "fixed_evidence_off_pooled_and_sham_exactly_unchanged": true,
+        "repeated_wrapper_main_maximum_error": 0.0,
+        "repeated_wrapper_sham_maximum_error": 0.0,
+        "optimizer_updates": 0,
+        "pure_Cox_gradient_probe": null,
+        "supported_operator_profile": {
+          "status": "NOT_REQUESTED",
+          "complete_operator_FLOPs_claimed": false
+        }
+      },
+      {
+        "arm": "A4",
+        "seed": 31,
+        "patients": 8,
+        "backbone_sha256": "b53bcfc543ee1bf4bc71c6626bacbd9846373f9a8be7520c907931709a413ed1",
+        "parameter_budget": {
+          "registered": 93604,
+          "requires_grad": 87268,
+          "added_readout_registered": 0,
+          "added_readout_requires_grad": 0,
+          "legacy_directional_heads_diagnostic_only": false,
+          "gradient_active_count_not_inferred_from_requires_grad": true
+        },
+        "off_cross_exactly_zero": true,
+        "fixed_evidence_off_pooled_and_sham_exactly_unchanged": true,
+        "repeated_wrapper_main_maximum_error": 0.0,
+        "repeated_wrapper_sham_maximum_error": 0.0,
+        "optimizer_updates": 0,
+        "pure_Cox_gradient_probe": {
+          "scope": "first_train_microbatch_contribution_to_full_riskset_Cox_no_regularizers",
+          "patients": 8,
+          "groups_by_path": {
+            "cross_delta": {
+              "interaction.patch_project": {
+                "tensors": 3,
+                "nonzero": 3,
+                "L2_squared": 1.9906423631872727e-09
+              },
+              "interaction.omics_project": {
+                "tensors": 3,
+                "nonzero": 3,
+                "L2_squared": 4.084713463737427e-10
+              },
+              "interaction.pooled_path_head": {
+                "tensors": 1,
+                "nonzero": 0,
+                "L2_squared": 0.0
+              },
+              "interaction.pooled_omics_head": {
+                "tensors": 1,
+                "nonzero": 0,
+                "L2_squared": 0.0
+              },
+              "interaction.path_match": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 3.3757395750261265e-12
+              },
+              "interaction.omics_match": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 2.900383709245058e-12
+              },
+              "interaction.path_value": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 1.115978087717906e-09
+              },
+              "interaction.update_omics": {
+                "tensors": 2,
+                "nonzero": 2,
+                "L2_squared": 5.868332750291749e-09
+              },
+              "interaction.otop_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 3.697526729240508e-09
+              },
+              "interaction.omics_value": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 4.797201524908701e-10
+              },
+              "interaction.update_path": {
+                "tensors": 2,
+                "nonzero": 2,
+                "L2_squared": 5.404719553847581e-08
+              },
+              "interaction.ptoo_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 7.921340738903382e-08
+              }
+            },
+            "risk": {
+              "interaction.patch_project": {
+                "tensors": 3,
+                "nonzero": 3,
+                "L2_squared": 6.563285256389051e-07
+              },
+              "interaction.omics_project": {
+                "tensors": 3,
+                "nonzero": 3,
+                "L2_squared": 5.794046479268289e-07
+              },
+              "interaction.pooled_path_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 7.739285138086416e-06
+              },
+              "interaction.pooled_omics_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 1.4557292161043733e-05
+              },
+              "interaction.path_match": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 3.3757395750261265e-12
+              },
+              "interaction.omics_match": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 2.900383709245058e-12
+              },
+              "interaction.path_value": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 1.115978087717906e-09
+              },
+              "interaction.update_omics": {
+                "tensors": 2,
+                "nonzero": 2,
+                "L2_squared": 5.868332750291749e-09
+              },
+              "interaction.otop_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 3.697526729240508e-09
+              },
+              "interaction.omics_value": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 4.797201524908701e-10
+              },
+              "interaction.update_path": {
+                "tensors": 2,
+                "nonzero": 2,
+                "L2_squared": 5.404719553847581e-08
+              },
+              "interaction.ptoo_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 7.921340738903382e-08
+              }
+            }
+          },
+          "new_optimizer_updates": 0
+        },
+        "supported_operator_profile": {
+          "status": "NOT_REQUESTED",
+          "complete_operator_FLOPs_claimed": false
+        }
+      },
+      {
+        "arm": "A5",
+        "seed": 31,
+        "patients": 8,
+        "backbone_sha256": "b53bcfc543ee1bf4bc71c6626bacbd9846373f9a8be7520c907931709a413ed1",
+        "parameter_budget": {
+          "registered": 93604,
+          "requires_grad": 87268,
+          "added_readout_registered": 0,
+          "added_readout_requires_grad": 0,
+          "legacy_directional_heads_diagnostic_only": false,
+          "gradient_active_count_not_inferred_from_requires_grad": true
+        },
+        "off_cross_exactly_zero": true,
+        "fixed_evidence_off_pooled_and_sham_exactly_unchanged": true,
+        "repeated_wrapper_main_maximum_error": 0.0,
+        "repeated_wrapper_sham_maximum_error": 0.0,
+        "optimizer_updates": 0,
+        "pure_Cox_gradient_probe": null,
+        "supported_operator_profile": {
+          "status": "NOT_REQUESTED",
+          "complete_operator_FLOPs_claimed": false
+        }
+      },
+      {
+        "arm": "A6",
+        "seed": 31,
+        "patients": 8,
+        "backbone_sha256": "b53bcfc543ee1bf4bc71c6626bacbd9846373f9a8be7520c907931709a413ed1",
+        "parameter_budget": {
+          "registered": 93606,
+          "requires_grad": 87270,
+          "added_readout_registered": 2,
+          "added_readout_requires_grad": 2,
+          "legacy_directional_heads_diagnostic_only": false,
+          "gradient_active_count_not_inferred_from_requires_grad": true
+        },
+        "off_cross_exactly_zero": true,
+        "fixed_evidence_off_pooled_and_sham_exactly_unchanged": true,
+        "repeated_wrapper_main_maximum_error": 0.0,
+        "repeated_wrapper_sham_maximum_error": 0.0,
+        "optimizer_updates": 0,
+        "pure_Cox_gradient_probe": {
+          "scope": "first_train_microbatch_contribution_to_full_riskset_Cox_no_regularizers",
+          "patients": 8,
+          "groups_by_path": {
+            "cross_delta": {
+              "interaction.patch_project": {
+                "tensors": 3,
+                "nonzero": 3,
+                "L2_squared": 1.9906423631872727e-09
+              },
+              "interaction.omics_project": {
+                "tensors": 3,
+                "nonzero": 3,
+                "L2_squared": 4.084713463737427e-10
+              },
+              "interaction.pooled_path_head": {
+                "tensors": 1,
+                "nonzero": 0,
+                "L2_squared": 0.0
+              },
+              "interaction.pooled_omics_head": {
+                "tensors": 1,
+                "nonzero": 0,
+                "L2_squared": 0.0
+              },
+              "interaction.path_match": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 3.3757395750261265e-12
+              },
+              "interaction.omics_match": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 2.900383709245058e-12
+              },
+              "interaction.path_value": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 1.115978087717906e-09
+              },
+              "interaction.update_omics": {
+                "tensors": 2,
+                "nonzero": 2,
+                "L2_squared": 5.868332750291749e-09
+              },
+              "interaction.otop_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 3.697526729240508e-09
+              },
+              "interaction.omics_value": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 4.797201524908701e-10
+              },
+              "interaction.update_path": {
+                "tensors": 2,
+                "nonzero": 2,
+                "L2_squared": 5.404719553847581e-08
+              },
+              "interaction.ptoo_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 7.921340738903382e-08
+              },
+              "readout.a_o": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 5.392544483867612e-12
+              },
+              "readout.a_p": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 1.1089736984618015e-12
+              }
+            },
+            "risk": {
+              "interaction.patch_project": {
+                "tensors": 3,
+                "nonzero": 3,
+                "L2_squared": 6.563285256389051e-07
+              },
+              "interaction.omics_project": {
+                "tensors": 3,
+                "nonzero": 3,
+                "L2_squared": 5.794046479268289e-07
+              },
+              "interaction.pooled_path_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 7.739285138086416e-06
+              },
+              "interaction.pooled_omics_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 1.4557292161043733e-05
+              },
+              "interaction.path_match": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 3.3757395750261265e-12
+              },
+              "interaction.omics_match": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 2.900383709245058e-12
+              },
+              "interaction.path_value": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 1.115978087717906e-09
+              },
+              "interaction.update_omics": {
+                "tensors": 2,
+                "nonzero": 2,
+                "L2_squared": 5.868332750291749e-09
+              },
+              "interaction.otop_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 3.697526729240508e-09
+              },
+              "interaction.omics_value": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 4.797201524908701e-10
+              },
+              "interaction.update_path": {
+                "tensors": 2,
+                "nonzero": 2,
+                "L2_squared": 5.404719553847581e-08
+              },
+              "interaction.ptoo_head": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 7.921340738903382e-08
+              },
+              "readout.a_o": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 5.392544483867612e-12
+              },
+              "readout.a_p": {
+                "tensors": 1,
+                "nonzero": 1,
+                "L2_squared": 1.1089736984618015e-12
+              }
+            }
+          },
+          "new_optimizer_updates": 0
+        },
+        "supported_operator_profile": {
+          "status": "NOT_REQUESTED",
+          "complete_operator_FLOPs_claimed": false
+        }
+      },
+      {
+        "arm": "A7",
+        "seed": 31,
+        "patients": 8,
+        "backbone_sha256": "b53bcfc543ee1bf4bc71c6626bacbd9846373f9a8be7520c907931709a413ed1",
+        "parameter_budget": {
+          "registered": 93864,
+          "requires_grad": 87464,
+          "added_readout_registered": 260,
+          "added_readout_requires_grad": 260,
+          "legacy_directional_heads_diagnostic_only": true,
+          "gradient_active_count_not_inferred_from_requires_grad": true
+        },
+        "off_cross_exactly_zero": true,
+        "fixed_evidence_off_pooled_and_sham_exactly_unchanged": true,
+        "repeated_wrapper_main_maximum_error": 0.0,
+        "repeated_wrapper_sham_maximum_error": 0.0,
+        "optimizer_updates": 0,
+        "pure_Cox_gradient_probe": null,
+        "supported_operator_profile": {
+          "status": "NOT_REQUESTED",
+          "complete_operator_FLOPs_claimed": false
+        },
+        "summary_jacobian_L2_mean": 0.007906671613454819,
+        "summary_jacobian_L2_max": 0.007906671613454819,
+        "scalar_z_derivative_not_defined": true
+      },
+      {
+        "arm": "A8",
+        "seed": 31,
+        "patients": 8,
+        "backbone_sha256": "b53bcfc543ee1bf4bc71c6626bacbd9846373f9a8be7520c907931709a413ed1",
+        "parameter_budget": {
+          "registered": 98479,
+          "requires_grad": 87471,
+          "added_readout_registered": 4875,
+          "added_readout_requires_grad": 4875,
+          "legacy_directional_heads_diagnostic_only": false,
+          "gradient_active_count_not_inferred_from_requires_grad": true
+        },
+        "off_cross_exactly_zero": true,
+        "fixed_evidence_off_pooled_and_sham_exactly_unchanged": true,
+        "repeated_wrapper_main_maximum_error": 0.0,
+        "repeated_wrapper_sham_maximum_error": 0.0,
+        "optimizer_updates": 0,
+        "pure_Cox_gradient_probe": null,
+        "supported_operator_profile": {
+          "status": "NOT_REQUESTED",
+          "complete_operator_FLOPs_claimed": false
+        }
+      }
+    ],
+    "initialization_comparisons": [
+      {
+        "first": "A7",
+        "second": "A4",
+        "maximum_errors": {
+          "risk": 0.0,
+          "cross_delta": 1.4551915228366852e-11,
+          "main_delta": 0.0
+        },
+        "scope": "real_initial_batch_only_not_global_rank4_tanh_identity"
+      },
+      {
+        "first": "A7",
+        "second": "A3",
+        "maximum_errors": {
+          "risk": 0.0,
+          "cross_delta": 8.440110832452774e-10,
+          "main_delta": 0.0
+        },
+        "scope": "real_initial_batch_only_not_global_rank4_tanh_identity"
+      },
+      {
+        "first": "A8",
+        "second": "A2",
+        "maximum_errors": {
+          "risk": 0.0,
+          "cross_delta": 0.0,
+          "main_delta": 0.0
+        },
+        "scope": "real_initial_batch_only_not_global_rank4_tanh_identity"
+      }
+    ],
+    "A8_minus_A7_active_parameters": 7,
+    "whole_model_FLOPs_equivalence_claimed": false
+  },
+  "query_and_mask_qualification": {
+    "status": "PASS_REAL_QUERY_VALUE_AND_MASK_ISOLATION",
+    "patients": 8,
+    "pairing": {
+      "train": {
+        "n": 272,
+        "fixed_points": 0,
+        "priority": [
+          "RNA_finite_pattern",
+          "cancer",
+          "clinical_stage",
+          "platform"
+        ],
+        "integer_base": 273,
+        "exact_all_fields": 262,
+        "matched_counts": {
+          "RNA_finite_pattern": 272,
+          "cancer": 272,
+          "clinical_stage": 262,
+          "platform": 272
+        },
+        "mismatched_counts": {
+          "RNA_finite_pattern": 0,
+          "cancer": 0,
+          "clinical_stage": 10,
+          "platform": 0
+        },
+        "total_integer_cost": 2730,
+        "random_tie_break_total_bound": 0.125,
+        "seed": 270577,
+        "solver": "scipy.optimize.linear_sum_assignment",
+        "outcomes_accessed": false,
+        "partition_bijection": true,
+        "mapping_sha256": "08384d50e1fcbf4453d57ed25268706a2a31437da156d01dc6ef027b5b0df358"
+      },
+      "validation": {
+        "n": 137,
+        "fixed_points": 0,
+        "priority": [
+          "RNA_finite_pattern",
+          "cancer",
+          "clinical_stage",
+          "platform"
+        ],
+        "integer_base": 138,
+        "exact_all_fields": 128,
+        "matched_counts": {
+          "RNA_finite_pattern": 137,
+          "cancer": 137,
+          "clinical_stage": 128,
+          "platform": 137
+        },
+        "mismatched_counts": {
+          "RNA_finite_pattern": 0,
+          "cancer": 0,
+          "clinical_stage": 9,
+          "platform": 0
+        },
+        "total_integer_cost": 1242,
+        "random_tie_break_total_bound": 0.125,
+        "seed": 270578,
+        "solver": "scipy.optimize.linear_sum_assignment",
+        "outcomes_accessed": false,
+        "partition_bijection": true,
+        "mapping_sha256": "ac943a86aed06efa8cb4c795189958c6e10c95f93c18056a899418740719c5da"
+      }
+    },
+    "wrong_source_masks_used": true,
+    "own_initial_evidence_unchanged": true,
+    "exact_isolation_scope": "one_real_upstream_encoding_then_fixed_tensor_interaction_readout_controls",
+    "own_CP_RNA_offset_unchanged": true,
+    "wrong_query_cross_maximum_change": 1.547885585750919e-05,
+    "repeated_wrapper_query_main_maximum_error": 0.0,
+    "repeated_wrapper_query_pool_maximum_error": 0.0,
+    "repeated_wrapper_mean_risk_maximum_error": 0.0,
+    "independent_train_masked_mean_maximum_error": 1.7881393432617188e-07,
+    "query_mean_source_mask_equal_training_support": true,
+    "mean_detached": true,
+    "mean_constant_during_repeated_forward": true,
+    "mean_training_rows": 272,
+    "mean_training_hash": "7fb306db257aeddad345417bf3b2459af1461b495439802f0ea9a1e6edf3ad2c",
+    "input_gradient_target": "sum_cross_delta_without_survival_labels_separate_from_full_Cox_probes",
+    "missing_RNA_gradient_maximum": 0.0,
+    "padded_projected_patch_gradient_maximum": 0.0,
+    "observed_RNA_gradient_L1": 0.0017064911080524325,
+    "observed_projected_patch_gradient_L1": 0.005711818113923073,
+    "matched_other_patient_RNA_gradient_exactly_zero": true,
+    "actual_missing_RNA_entries_in_probe": 12060,
+    "actual_padded_projected_patch_entries_in_probe": 8206,
+    "optimizer_updates": 0
+  },
+  "derivative_curves": {
+    "points": 401,
+    "minimum": -20.0,
+    "maximum": 20.0,
+    "common_initial_scalar_slope": 0.05,
+    "legacy_absolute_cross_bound": 0.05,
+    "temp4_absolute_cross_bound": 0.2,
+    "linear_finite_absolute_bound": null,
+    "directional_scalar_coordinates_separate": true,
+    "rank4_scalar_z_curve_not_defined": true
+  },
+  "preserved_upstream_reports": {
+    "files": 143,
+    "manifest_sha256": "d7ec3440a1eb7c70cc4a5fb4d12f3b6672587326e6098d90211a463c100be697",
+    "unchanged": true
+  },
+  "floating_point_boundary": "fixed-evidence semantic equality is exact; repeated upstream CUDA index_add encodings and full legacy saved-risk replay use the prelocked 2e-6 risk gate, with zero changed saved pair credits; formal gradient cache remains 2e-5",
+  "device_kind": "cuda",
+  "peak_GPU_allocated_bytes": 2964229632,
+  "elapsed_seconds": 18.64971690112725,
+  "new_teacher_fits": 0,
+  "new_formal_fits": 0,
+  "optimizer_updates": 0,
+  "outer_test_accessed": false,
+  "patient_identifiers_risks_coordinates_or_weights_exported": false
+}

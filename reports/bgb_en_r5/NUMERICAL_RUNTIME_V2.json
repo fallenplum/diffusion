@@ -1,0 +1,26 @@
+{
+  "actual_runtime": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUBLAS_environment_set_before_torch_import": true,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "deterministic_warn_only": false,
+    "torch_cuda_build": "12.4",
+    "torch_threads": 2,
+    "torch_version": "2.5.1+cu124"
+  },
+  "complete_108_training_or_GPU_qualification_inferred": false,
+  "configuration": "configs/bgb_en/r5_deterministic_runtime_v2.json",
+  "configuration_sha256": "12b28ff024658470a2f4ddccc55bdeec664a444c4b75c66bd34b2ade2054d5e1",
+  "frozen_scientific_source_identical_to_parent": true,
+  "parent_failed_contract_sha256": "9d543b6b73861a163a40b8134a6e24f62094df91321c2202b11b6c0511cf123e",
+  "private_paths_or_patient_fields_present": false,
+  "report_entry_uses_schema_adapter_from_start": true,
+  "schema": "bgb_en_r5_numerical_runtime_certificate_v2",
+  "status": "PASS_ACTUAL_RUNTIME_SETTINGS_ONLY",
+  "wrapper": "scripts/bgb_en_r5_deterministic_runtime.py",
+  "wrapper_sha256": "3a4d08c81c3a39e32885684c3928cf1f1bffb95d8d128534c323cf822ecf71ee"
+}

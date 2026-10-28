@@ -1,0 +1,102 @@
+{
+  "changed_pair_credit_limit": 0,
+  "entrypoints": {
+    "publication": "scripts/bgb_en_r5_publication.py",
+    "qualify": "scripts/bgb_en_r5_qualify.py",
+    "replay": "scripts/bgb_en_r5_replay.py",
+    "report": "scripts/bgb_en_r5_report_recovery.py",
+    "run": "scripts/bgb_en_r5_run.py",
+    "schedule": "scripts/bgb_en_r5_schedule.py"
+  },
+  "full_matrix_retrained_after_runtime_change": true,
+  "new_teacher_fits": 0,
+  "numerical_risk_tolerance": 2e-06,
+  "old_neural_fits_or_selection_reused": false,
+  "parent_failed_contract_sha256": "9d543b6b73861a163a40b8134a6e24f62094df91321c2202b11b6c0511cf123e",
+  "parent_failed_lock": {
+    "bootstrap": false,
+    "confidence_intervals": false,
+    "contract_sha256": "9d543b6b73861a163a40b8134a6e24f62094df91321c2202b11b6c0511cf123e",
+    "data_fingerprints": {
+      "GMT_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+      "RNA_finite_mask_sha256": "293f10cc766e58c57a89d4ca45bfcef26832c1faf651e6c791f1d1aa29053b4b",
+      "cohort_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+      "endpoints_sha256": "91b5d15aa32489c825a8341aed8d9733281dc62386151c8c6246b6312975fd4e",
+      "legacy_group_sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+      "patch_regions_receipt_sha256": "cd2a9e4d761657c298f0496eabba68a4ecadf194cb30078e7792896794f278a2"
+    },
+    "main_config": "configs/bgb_en/r5_main_v1.json",
+    "maximum_finalists": 1,
+    "mechanism_config": "configs/bgb_en/r5_mechanism_v1.json",
+    "outer_test_used_for_selection": false,
+    "p_values": false,
+    "planned_main_neural_fits": 63,
+    "planned_mechanism_neural_fits": 45,
+    "prepared_receipt_sha256": {
+      "outer1_inner0": "9666f51247c18ebdd6e13f7cff370da48bc89dfe79aa257c672db3e322470834",
+      "outer1_inner1": "c0d775660cac66a0f4ec09104d366795c4cb0d006c92d21ed45a01aff86297fc",
+      "outer1_inner2": "36afa9d42ca5108716160e775169ae5c4209173684af3919552171128d2ace12"
+    },
+    "schema": "bgb_en_r5_protocol_lock_v1",
+    "sources": {
+      "configs/bgb_en/prototype_v1.json": "7b8d725298fd7f03eaf182c43a784e48397e702aacc1db43c4a9442773429e66",
+      "configs/bgb_en/r5_main_v1.json": "3f11a62a85a0112af289aaeb264ebbaeaa8c1edc5eefcba0aadd52f94122b52e",
+      "configs/bgb_en/r5_mechanism_v1.json": "8f9908b8b617dbb2ebac042cc38e59761e0923ad841ed0d3d8c7fac820c100c3",
+      "scripts/bgb_en_r5_common.py": "2911278e73e4a8de7314dfc57b9f6f8faee5dd97793e92515580fbece94379dd",
+      "scripts/bgb_en_r5_qualify.py": "e1768d170cf84abff4bc97efffb817bd306e2fe71b7989614ced12e202669765",
+      "scripts/bgb_en_r5_replay.py": "98b152e01d90dd5f2d7292a3361732cd9358bdd9470a11ca4ffd765e88df6297",
+      "scripts/bgb_en_r5_report.py": "eed87501c266c6018086257546476bbfb9c51784a1cb4e08e150d8b7f4a25fe0",
+      "scripts/bgb_en_r5_run.py": "ed0e7f6e44613bfc82e09c234af4dd0194ff295be5e3d136a3c5d5ef83dc00be",
+      "scripts/bgb_en_r5_schedule.py": "88aa536d3821b6b7418c4b09206fce563b38373a35689d5ebedc24b1dd1c374d",
+      "scripts/bgb_en_run.py": "2999bd817536ad352e1aade5461af09b67ba7b7d8e7bcc0b1f77a5ee529b7c67",
+      "src/bgb_en/__init__.py": "6ded290386fb31f64c885c3b60885bafcb49c608b9a0d875eb6230138e579912",
+      "src/bgb_en/baselines.py": "2a00c4bcd2eca06c26a5ad5e0c636d2c2771bbf356df9d72a350fe8061e30d5a",
+      "src/bgb_en/data.py": "cebe55093915abeb2df38fee317b5af7e805f5714d43d3a56d3e67bc441bcd37",
+      "src/bgb_en/interaction.py": "d29d7c1eede19209dd4c5db84a38a7d231106d4a03c5db9564635d4ef8b31c3f",
+      "src/bgb_en/omics.py": "0e745187f58afc0b6badd4240ba05f56c3274741a4948ae5fed797ddaa53b6fd",
+      "src/bgb_en/pathology.py": "68ed98779ec2f4eb9972a26150fda550ae9aba70ef2be753fd8d90d842a43f26",
+      "src/bgb_en/protocol.py": "e06e7196eee72957dbde363bc4cb78b004ded62a62ada0fa0ffa3add7590394c",
+      "src/bgb_en/r5_protocol.py": "7167059792baeb9ec18643f39a692d41da309057e8350ff48ecaf0007f36a6d3",
+      "src/bgb_en/r5_readout.py": "175cb0acf6483348f79bbc0ea3c4ca25aaff6163cfa8d3c924da130ff3f04ceb",
+      "src/bgb_en/r5_training.py": "05282eb24afdbe80ef3825de021646885806ecc839cbdf6bf5051c785f69d9ed",
+      "src/bgb_en/replay.py": "3ad8293b78121d82a95603a1ade38e64c8caebd44adf0110e79ae05d0275a23f",
+      "src/bgb_en/survival.py": "2f54ca3262438cb725421e5a062b8529eecdd5033a122038798c5af6b083d086",
+      "src/bgb_en/training.py": "04036634f61e0a349e2ee5ee11a642fe139c49a58a91fec5b7a1875b5bd7b513",
+      "src/phase10_trimodal/math.py": "e744e652590e9103ba0b376a7b4c232652789d72b5bb1976e511144bc07c417b",
+      "src/phase10_trimodal/reference.py": "a5b05d2c11a8aeb3b1ecffcf799746f90610382179b40f27564cbc7df7e25e07"
+    },
+    "status": "LOCKED_BEFORE_FORMAL_FITS",
+    "upstream_commit": "ecd273d2036d98e40dd9e997dd45e8de9eba7947"
+  },
+  "planned_main_neural_fits": 63,
+  "planned_mechanism_neural_fits": 45,
+  "private_directory_basename": "bgb_en_r5_deterministic_v2_private",
+  "public_runtime_receipt": "reports/bgb_en_r5/NUMERICAL_RUNTIME_V2.json",
+  "publication_additions": [
+    "scripts/bgb_en_r5_deterministic_runtime.py",
+    "configs/bgb_en/r5_deterministic_runtime_v2.json",
+    "tests/test_bgb_en_r5_deterministic_runtime.py",
+    "reports/bgb_en_r5/V1_REPLAY_FAILURE_SUMMARY.json",
+    "reports/bgb_en_r5/NUMERIC_RUNTIME_DIAGNOSIS.json",
+    "reports/bgb_en_r5/NUMERICAL_RUNTIME_V2.json"
+  ],
+  "runtime_settings": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "deterministic_warn_only": false,
+    "torch_threads": 2
+  },
+  "runtime_support_sources": {
+    "scripts/bgb_en_r5_publication.py": "ebbb2dd815dc64b4fe1ed68090ccefd64367e5eea0d9eb552a6ac89051b60e5d",
+    "scripts/bgb_en_r5_report_recovery.py": "fc67219ae6d199838e6b19056198f8e143c2e1169bb8e028cd2a390252678f0f"
+  },
+  "schema": "bgb_en_r5_deterministic_runtime_v2",
+  "scientific_interpretation": "Numerical runtime repair; previous failed protocol remains archived. All new 63 main fits precede new selection and all45 controls; success still requires actual108 checkpoint replay.",
+  "status": "LOCKED_NUMERICAL_RUNTIME_ONLY_BEFORE_ALL_NEW_R5_FITS",
+  "unchanged_scientific_source_required": true,
+  "upstream_prepared_bundles_reused": 3
+}

@@ -1,0 +1,200 @@
+{
+  "CI_or_pvalues_computed": false,
+  "GATE2_selected_from_validation": false,
+  "PFI_used_for_selection": false,
+  "all_99_executed_without_performance_adaptive_budget": true,
+  "all_medical_ideas_rejected": false,
+  "causal_biology_or_cell_source_truth_proven": false,
+  "complete_actual_checkpoint_replays": 297,
+  "complete_formal_fits": 99,
+  "gate_comparisons": [
+    {
+      "Uno_damage": 0.06679782704150586,
+      "Uno_repair": 0.03460936832963927,
+      "candidate": "GATE1",
+      "damage": 0.0646335912608102,
+      "delta_Harrell": -0.027158246093157312,
+      "delta_Uno60": -0.0321884587118666,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.08210892629901588,
+          "Uno_repair": 0.02624658694695278,
+          "damage": 0.0700955848884843,
+          "delta_Harrell": -0.038233955393718766,
+          "delta_Uno60": -0.055862339352063084,
+          "repair": 0.03186162949476559,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.06526605990688204,
+          "Uno_repair": 0.03352538739004174,
+          "damage": 0.0671370050068275,
+          "delta_Harrell": -0.032089212562585345,
+          "delta_Uno60": -0.03174067251684021,
+          "repair": 0.03504779244424215,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.05301849491861967,
+          "Uno_repair": 0.04405613065192329,
+          "damage": 0.0566681838871188,
+          "delta_Harrell": -0.011151570323167936,
+          "delta_Uno60": -0.008962364266696499,
+          "repair": 0.04551661356395084,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 0,
+      "question": "R7.4_interaction_vs_same_main_effects_retrained",
+      "reference": "ADD",
+      "repair": 0.037475345167652864,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": false
+    },
+    {
+      "Uno_damage": 0.06617978582121478,
+      "Uno_repair": 0.0374378473033675,
+      "candidate": "GATE1",
+      "damage": 0.0656197845546958,
+      "delta_Harrell": -0.02791685631922325,
+      "delta_Uno60": -0.028741938517847343,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.08071732057335304,
+          "Uno_repair": 0.0282862345010473,
+          "damage": 0.06986800182066455,
+          "delta_Harrell": -0.03846153846153855,
+          "delta_Uno60": -0.052431086072305844,
+          "repair": 0.03140646335912608,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.06344663130521942,
+          "Uno_repair": 0.035267558226047144,
+          "damage": 0.06804733727810651,
+          "delta_Harrell": -0.03277196176604469,
+          "delta_Uno60": -0.028179073079172334,
+          "repair": 0.035275375512061904,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.05437540558507187,
+          "Uno_repair": 0.04875974918300806,
+          "damage": 0.05894401456531634,
+          "delta_Harrell": -0.012517068730086511,
+          "delta_Uno60": -0.005615656402063962,
+          "repair": 0.04642694583522986,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 0,
+      "question": "R7.4_increment_over_frozen_CP_scalar",
+      "reference": "B1",
+      "repair": 0.03770292823547262,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": false
+    },
+    {
+      "Uno_damage": 0.027592759719231287,
+      "Uno_repair": 0.023872207206876293,
+      "candidate": "GATE1",
+      "damage": 0.025261720527992717,
+      "delta_Harrell": 0.0028068578364436325,
+      "delta_Uno60": -0.0037205525123550354,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": true,
+      "per_seed": [
+        {
+          "Uno_damage": 0.026442640850554953,
+          "Uno_repair": 0.029949032754593513,
+          "damage": 0.03072371415566682,
+          "delta_Harrell": -0.002275830678197588,
+          "delta_Uno60": 0.003506391904038564,
+          "repair": 0.028447883477469276,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.03007768581524136,
+          "Uno_repair": 0.021386826900585416,
+          "damage": 0.022530723714155668,
+          "delta_Harrell": 0.007282658170232104,
+          "delta_Uno60": -0.008690858914656041,
+          "repair": 0.029813381884387802,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.026257952491897545,
+          "Uno_repair": 0.020280761965449954,
+          "damage": 0.022530723714155668,
+          "delta_Harrell": 0.003413746017296382,
+          "delta_Uno60": -0.005977190526447629,
+          "repair": 0.02594446973145198,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 0,
+      "question": "R7.4_own_initial_molecular_context",
+      "reference": "GATE1_WRONG_RNA",
+      "repair": 0.028068578364436353,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": true
+    },
+    {
+      "Uno_damage": 0.08024881198881412,
+      "Uno_repair": 0.053706679410645254,
+      "candidate": "GATE1",
+      "damage": 0.059626763768775605,
+      "delta_Harrell": -0.00015172204521318733,
+      "delta_Uno60": -0.026542132578168842,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.11097209354729104,
+          "Uno_repair": 0.041871974713603564,
+          "damage": 0.07669549385525717,
+          "delta_Harrell": -0.026627218934911268,
+          "delta_Uno60": -0.0691001188336875,
+          "repair": 0.05006827492034593,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.07833676883079536,
+          "Uno_repair": 0.05606092184100787,
+          "damage": 0.05348202093764224,
+          "delta_Harrell": 0.005006827492034516,
+          "delta_Uno60": -0.022275846989787462,
+          "repair": 0.05848884842967683,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.05143757358835594,
+          "Uno_repair": 0.06318714167732434,
+          "damage": 0.0487027765134274,
+          "delta_Harrell": 0.02116522530723719,
+          "delta_Uno60": 0.01174956808896832,
+          "repair": 0.06986800182066455,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 1,
+      "question": "R7.4_own_initial_pathology_reverse_context",
+      "reference": "GATE1_WRONG_PATH",
+      "repair": 0.05947504172356244,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": true
+    }
+  ],
+  "independent_external_validation": false,
+  "outer_results": "NOT_RUN",
+  "primary_candidate": "GATE1",
+  "status": "CURRENT_GATE1_NOT_SUPPORTED"
+}

@@ -1,0 +1,101 @@
+{
+  "cgroup_capacity": {
+    "CPU_capacity_observation_sha256": "a941008f11c2525f15d2159a161edf4a61c99141ab891003df04dc7adaa12558",
+    "CPU_capacity_observation_unix_time": 1793204815.103323,
+    "CPU_quota_equivalent_cores": 16.0,
+    "CPU_quota_source": "current_cgroup_capacity_snapshot_not_current_available_CPU_or_training_utilization",
+    "CPU_whole_run_utilization_not_measured": true,
+    "memory_limit_bytes": 66571993088,
+    "scope": "capacity_not_available_or_headroom"
+  },
+  "cgroup_monitor": {
+    "earlier_training_window_not_observed_or_backfilled": true,
+    "excluded_long_gap_seconds": 0.0,
+    "monitor_started_formal_elapsed_seconds": 976.5567567725666,
+    "nominal_interval_seconds": 15.001024961471558,
+    "observed_window_seconds": 11940.783893823624,
+    "samples": 797,
+    "statistics": {
+      "cgroup_memory_current_bytes": {
+        "sample_max": 27625426944,
+        "sample_min": 16004870144,
+        "time_weighted_mean": 25243155365.688847
+      },
+      "cgroup_memory_limit_bytes": {
+        "sample_max": 66571993088,
+        "sample_min": 66571993088,
+        "time_weighted_mean": 66571993088.0
+      },
+      "data_disk_free_bytes": {
+        "sample_max": 13340389376,
+        "sample_min": 12651163648,
+        "time_weighted_mean": 12912418411.300861
+      }
+    },
+    "status": "PARTIAL_MONITOR_WINDOW_ONLY",
+    "supported_interpolation_seconds": 11940.783893823624,
+    "time_weighting": "trapezoidal_excluding_gaps_over_three_median_intervals",
+    "unsampled_intervals_not_backfilled": true
+  },
+  "contract_sha256": "66f35d52dfbec2002e89b1e3ac7b3114eea0447e82e6555406fc73380560811d",
+  "delivery_code_sha256": "1c6692c644c4489e9331d2e84b333dc9fca489eff3f399e8274179347339ca74",
+  "driver_monitor": {
+    "excluded_long_gap_seconds": 0.0,
+    "nominal_interval_seconds": 15.086548447608948,
+    "observed_window_seconds": 12908.664705991745,
+    "samples": 857,
+    "statistics": {
+      "disk_free_bytes": {
+        "sample_max": 13429710848,
+        "sample_min": 12651474944,
+        "time_weighted_mean": 12948929411.826643
+      },
+      "host_RAM_available_bytes": {
+        "sample_max": 452216172544,
+        "sample_min": 419735158784,
+        "time_weighted_mean": 440108232783.93384
+      },
+      "host_RAM_total_bytes": {
+        "sample_max": 540641218560,
+        "sample_min": 540641218560,
+        "time_weighted_mean": 540641218560.0
+      },
+      "visible_GPU0_free_MiB": {
+        "sample_max": 31932.0,
+        "sample_min": 28588.0,
+        "time_weighted_mean": 29222.236913647263
+      },
+      "visible_GPU0_total_MiB": {
+        "sample_max": 32760.0,
+        "sample_min": 32760.0,
+        "time_weighted_mean": 32760.0
+      },
+      "visible_GPU0_used_MiB": {
+        "sample_max": 3644.0,
+        "sample_min": 300.0,
+        "time_weighted_mean": 3009.7443975101005
+      },
+      "visible_GPU0_utilization_percent": {
+        "sample_max": 99.0,
+        "sample_min": 0.0,
+        "time_weighted_mean": 83.41017729063036
+      }
+    },
+    "supported_interpolation_seconds": 12908.664705991745,
+    "time_weighting": "trapezoidal_excluding_gaps_over_three_median_intervals",
+    "unsampled_intervals_not_backfilled": true
+  },
+  "driver_monitor_file": "RESOURCE_MONITOR.jsonl",
+  "host_psutil_RAM_is_not_container_available_memory": true,
+  "resource_metadata_sha256": {
+    "cgroup_resource_monitor": "23fb15c20c020934331a2ccbca276628da3aec40382cc290e4da591a420cdc20",
+    "driver_resource_monitor": "108d593b63eaccd08eb97073dc11efc77838b4fa1c5c746deed49b7153505d2f",
+    "resource_qualification": "3aa9a246575bd391483b14c78a44e74ecbb38025f91aa219571154bb82848d01"
+  },
+  "schedule_makespan_seconds": 12918.678791749757,
+  "schema": "bgb_en_r7_resource_summary_v1",
+  "status": "RECORDED_RESOURCE_WINDOWS_ONLY",
+  "sum_fit_seconds_is_not_walltime": true,
+  "sum_individual_fit_seconds": 61105.99320024531,
+  "visible_GPU_samples_are_not_per_process_peaks": true
+}

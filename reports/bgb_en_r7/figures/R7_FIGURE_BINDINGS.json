@@ -1,0 +1,471 @@
+{
+  "figure_count": 6,
+  "figures": [
+    {
+      "aggregation": "equal nine-cell mean at each epoch, divided by that series' equal nine-cell epoch-zero mean",
+      "axes": {
+        "unit": "dimensionless ratio to own epoch-zero mean; logarithmic Y",
+        "x": "Saved state epoch",
+        "x_scale": "linear",
+        "y": "Mean / own epoch-0 mean (log scale)",
+        "y_scale": "log"
+      },
+      "basename": "interface_trajectory",
+      "one_axes": true,
+      "outputs": [
+        {
+          "bytes": 66787,
+          "file": "interface_trajectory.svg",
+          "format": "SVG",
+          "sha256": "7d6b9fb5f82b07d70c7039591dbcb55cd81bad64b823739b59e32f7b28e96ce2"
+        },
+        {
+          "bytes": 159526,
+          "file": "interface_trajectory.png",
+          "format": "PNG",
+          "sha256": "80a391d102543ef6f4c1e18bd52d7288a07fd05173b8516bf80aa772c73e8a30"
+        }
+      ],
+      "pvalues": false,
+      "source_files": [
+        "R7_0_R6_INTERFACE_AUDIT.json"
+      ],
+      "source_table": "rows.quantities coordinate_RMS; cross_risk_SD scalar",
+      "uncertainty_intervals": false
+    },
+    {
+      "aggregation": "component-pooled per-seed values followed by equal three-seed mean",
+      "axes": {
+        "unit": "dimensionless concordance",
+        "x": "Harrell concordance",
+        "x_scale": "linear",
+        "y": "anonymous model or comparison code",
+        "y_scale": "linear"
+      },
+      "basename": "stage_Harrell",
+      "one_axes": true,
+      "outputs": [
+        {
+          "bytes": 56803,
+          "file": "stage_Harrell.svg",
+          "format": "SVG",
+          "sha256": "3d27e1802e78493b50c27a76a7235ea0cecf1b37fb5d7021ce6c9e2f5a0343f8"
+        },
+        {
+          "bytes": 86416,
+          "file": "stage_Harrell.png",
+          "format": "PNG",
+          "sha256": "0267dd0be4d45a67dcf091acad278ab2eb0842d1f01a13ef596652b8491bff4d"
+        }
+      ],
+      "pvalues": false,
+      "source_files": [
+        "R7_RESULTS.json"
+      ],
+      "source_table": "primary_DSS.per_seed concordance components",
+      "uncertainty_intervals": false
+    },
+    {
+      "aggregation": "component-pooled per-seed values followed by equal three-seed mean",
+      "axes": {
+        "unit": "dimensionless concordance",
+        "x": "Uno60 concordance",
+        "x_scale": "linear",
+        "y": "anonymous model or comparison code",
+        "y_scale": "linear"
+      },
+      "basename": "stage_Uno60",
+      "one_axes": true,
+      "outputs": [
+        {
+          "bytes": 60208,
+          "file": "stage_Uno60.svg",
+          "format": "SVG",
+          "sha256": "aa7fc46ce66b8c4be36d8996807951e47448a21c6bd441fc0fa26aa263891f7c"
+        },
+        {
+          "bytes": 87935,
+          "file": "stage_Uno60.png",
+          "format": "PNG",
+          "sha256": "653292b7e458a57554c8c095268963f5ebeec8020aaf0017f05be80d23e32361"
+        }
+      ],
+      "pvalues": false,
+      "source_files": [
+        "R7_RESULTS.json"
+      ],
+      "source_table": "primary_DSS.per_seed concordance components",
+      "uncertainty_intervals": false
+    },
+    {
+      "aggregation": "same-seed matched-minus-control after reported component pooling; equal seed mean",
+      "axes": {
+        "unit": "dimensionless delta concordance",
+        "x": "Delta concordance: matched minus retrained wrong context",
+        "x_scale": "linear",
+        "y": "anonymous model or comparison code",
+        "y_scale": "linear"
+      },
+      "basename": "query_pairing_deltas",
+      "one_axes": true,
+      "outputs": [
+        {
+          "bytes": 63938,
+          "file": "query_pairing_deltas.svg",
+          "format": "SVG",
+          "sha256": "d9f760e123d15e46c9a5c8139be4c2915f9a555129d9851286eb46c2a87c217e"
+        },
+        {
+          "bytes": 104007,
+          "file": "query_pairing_deltas.png",
+          "format": "PNG",
+          "sha256": "9c48a86bceef1b260d445ef200fe3f53ef84c2672a1e656a8d6ba4e1eb6c890f"
+        }
+      ],
+      "pvalues": false,
+      "source_files": [
+        "R7_RESULTS.json"
+      ],
+      "source_table": "primary_DSS per_seed and four fixed paired_comparisons",
+      "uncertainty_intervals": false
+    },
+    {
+      "aggregation": "saved per-cell ratio then equal nine-cell mean",
+      "axes": {
+        "unit": "dimensionless SD ratio; linear scale",
+        "x": "Cross-risk SD / frozen anchor-risk SD (linear scale)",
+        "x_scale": "linear",
+        "y": "anonymous model or comparison code",
+        "y_scale": "linear"
+      },
+      "basename": "interaction_risk_SD",
+      "one_axes": true,
+      "outputs": [
+        {
+          "bytes": 83023,
+          "file": "interaction_risk_SD.svg",
+          "format": "SVG",
+          "sha256": "09215703172ab658bb67608c006d34c06ef3ec61e76ddd5b18b024ee7a33c285"
+        },
+        {
+          "bytes": 119922,
+          "file": "interaction_risk_SD.png",
+          "format": "PNG",
+          "sha256": "bcf4f6271bff549220a3979dbbd37a07c1b8db568e5bd5c5a61285ad8fcc7b16"
+        }
+      ],
+      "pvalues": false,
+      "source_files": [
+        "R7_DIAGNOSTICS_ADD_p0.json",
+        "R7_DIAGNOSTICS_ADD_p1.json",
+        "R7_DIAGNOSTICS_ADD_p2.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p0.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p1.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p2.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p0.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p1.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p2.json",
+        "R7_DIAGNOSTICS_GATE1_p0.json",
+        "R7_DIAGNOSTICS_GATE1_p1.json",
+        "R7_DIAGNOSTICS_GATE1_p2.json",
+        "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p0.json",
+        "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p1.json",
+        "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p2.json",
+        "R7_DIAGNOSTICS_GATE2_p0.json",
+        "R7_DIAGNOSTICS_GATE2_p1.json",
+        "R7_DIAGNOSTICS_GATE2_p2.json",
+        "R7_DIAGNOSTICS_INDEP_p0.json",
+        "R7_DIAGNOSTICS_INDEP_p1.json",
+        "R7_DIAGNOSTICS_INDEP_p2.json",
+        "R7_DIAGNOSTICS_NORM_p0.json",
+        "R7_DIAGNOSTICS_NORM_p1.json",
+        "R7_DIAGNOSTICS_NORM_p2.json",
+        "R7_DIAGNOSTICS_RAW_p0.json",
+        "R7_DIAGNOSTICS_RAW_p1.json",
+        "R7_DIAGNOSTICS_RAW_p2.json",
+        "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p0.json",
+        "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p1.json",
+        "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p2.json",
+        "R7_DIAGNOSTICS_SLOT_p0.json",
+        "R7_DIAGNOSTICS_SLOT_p1.json",
+        "R7_DIAGNOSTICS_SLOT_p2.json",
+        "R7_RESULTS.json"
+      ],
+      "source_table": "rows.final_risk_diagnostics.validation.SD_cross_delta_over_offset",
+      "uncertainty_intervals": false
+    },
+    {
+      "aggregation": "saved mean of patient-level ratios; displayed available-cell values and their equal mean",
+      "axes": {
+        "unit": "dimensionless cancellation ratio; range 0 to 1",
+        "x": "Mean patient ratio: |sum(contributions)| / sum(|contributions|)",
+        "x_scale": "linear",
+        "y": "anonymous model or comparison code",
+        "y_scale": "linear"
+      },
+      "basename": "program_cancellation",
+      "one_axes": true,
+      "outputs": [
+        {
+          "bytes": 85690,
+          "file": "program_cancellation.svg",
+          "format": "SVG",
+          "sha256": "cd1bbf3855dd2ad636a5fe071c472ddcd3ad97675501cd29fd4327682f8b3c08"
+        },
+        {
+          "bytes": 129516,
+          "file": "program_cancellation.png",
+          "format": "PNG",
+          "sha256": "b536991061f9ec8454afcd38326922f6fb2a433dd2b476b57851244f9e0a2440"
+        }
+      ],
+      "pvalues": false,
+      "source_files": [
+        "R7_DIAGNOSTICS_ADD_p0.json",
+        "R7_DIAGNOSTICS_ADD_p1.json",
+        "R7_DIAGNOSTICS_ADD_p2.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p0.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p1.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p2.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p0.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p1.json",
+        "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p2.json",
+        "R7_DIAGNOSTICS_GATE1_p0.json",
+        "R7_DIAGNOSTICS_GATE1_p1.json",
+        "R7_DIAGNOSTICS_GATE1_p2.json",
+        "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p0.json",
+        "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p1.json",
+        "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p2.json",
+        "R7_DIAGNOSTICS_GATE2_p0.json",
+        "R7_DIAGNOSTICS_GATE2_p1.json",
+        "R7_DIAGNOSTICS_GATE2_p2.json",
+        "R7_DIAGNOSTICS_INDEP_p0.json",
+        "R7_DIAGNOSTICS_INDEP_p1.json",
+        "R7_DIAGNOSTICS_INDEP_p2.json",
+        "R7_DIAGNOSTICS_NORM_p0.json",
+        "R7_DIAGNOSTICS_NORM_p1.json",
+        "R7_DIAGNOSTICS_NORM_p2.json",
+        "R7_DIAGNOSTICS_RAW_p0.json",
+        "R7_DIAGNOSTICS_RAW_p1.json",
+        "R7_DIAGNOSTICS_RAW_p2.json",
+        "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p0.json",
+        "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p1.json",
+        "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p2.json",
+        "R7_DIAGNOSTICS_SLOT_p0.json",
+        "R7_DIAGNOSTICS_SLOT_p1.json",
+        "R7_DIAGNOSTICS_SLOT_p2.json",
+        "R7_RESULTS.json"
+      ],
+      "source_table": "rows.final_risk_diagnostics.validation.slot_contributions.*.absolute_sum_over_sum_absolute_mean",
+      "uncertainty_intervals": false
+    }
+  ],
+  "generator": {
+    "file": "scripts/bgb_en_r7_plot_diagnostics.py",
+    "sha256": "2ad72b0aea9f556f1297dd80ee39988387874155d27a9a90562972569ef1056c"
+  },
+  "limits": {
+    "no_CI_pvalues_or_model_selection": true,
+    "reused_training_probes_not_independent_patients": true
+  },
+  "readme": {
+    "bytes": 1714,
+    "file": "FIGURE_README.md",
+    "format": "Markdown",
+    "sha256": "819d466eb8e8c45c4b66144d0b54240d3ce9ffd36011bfff91de68a850ecbd8f"
+  },
+  "rendering": {
+    "backend": "Agg",
+    "matplotlib_version": "3.9.2",
+    "pair_saved_from_same_figure": true,
+    "svg_fonttype": "path",
+    "svg_hashsalt": "bgb_en_r7_anonymous_diagnostics_v1",
+    "svg_metadata_Date": null
+  },
+  "runtime": {
+    "backward_calls": 0,
+    "model_forwards": 0,
+    "model_patient_array_label_or_weight_files_read": false,
+    "optimizer_fits": 0,
+    "optimizer_updates": 0
+  },
+  "schema": "bgb_en_r7_figure_bindings_v1",
+  "source_files": [
+    {
+      "bytes": 136247,
+      "file": "R7_0_R6_INTERFACE_AUDIT.json",
+      "sha256": "f158c3b5a1a392cecb05ee865c9617e9d0afb8c572fbf96ec183632815c8434a"
+    },
+    {
+      "bytes": 156284,
+      "file": "R7_DIAGNOSTICS_ADD_p0.json",
+      "sha256": "20fd91780b5936e849875746d144e4f65c6b411b76fd9db1cc0d6cb30b69d570"
+    },
+    {
+      "bytes": 156335,
+      "file": "R7_DIAGNOSTICS_ADD_p1.json",
+      "sha256": "60e6f2670aabfd88ecf63ff518e9f62f908cd8cfdff1c89418e7f09c05350ef9"
+    },
+    {
+      "bytes": 156064,
+      "file": "R7_DIAGNOSTICS_ADD_p2.json",
+      "sha256": "b8ddccf9765d4ff55693e50eb4a2cb67cef8f3f5bc634a3058b9d3263eb10223"
+    },
+    {
+      "bytes": 406014,
+      "file": "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p0.json",
+      "sha256": "20610557b8674cddf5a70978fd89c335a41c696db33473965726b1cebedd08bb"
+    },
+    {
+      "bytes": 406277,
+      "file": "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p1.json",
+      "sha256": "8a6a1eb5a05eb83abcd4822dfccd2dbede0ae58759c0acab6bc8062c57654783"
+    },
+    {
+      "bytes": 405932,
+      "file": "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p2.json",
+      "sha256": "061d08d45ee01b0836b060008c2de966a6fcc9d2519b73eb87dd32d0d575e4d0"
+    },
+    {
+      "bytes": 406488,
+      "file": "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p0.json",
+      "sha256": "00bbef5fb692525778bcec95272e36f652c539b8a56db8affa410009914f3984"
+    },
+    {
+      "bytes": 406514,
+      "file": "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p1.json",
+      "sha256": "3877100a892cbf8801bb1fb48852f5f7f7bc585474913611987ceaba4b1b368e"
+    },
+    {
+      "bytes": 405951,
+      "file": "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p2.json",
+      "sha256": "40c507eb26784c0d4fa79fc869e705cbdab9a04c5c0dd56fb1008af39c6b3943"
+    },
+    {
+      "bytes": 406110,
+      "file": "R7_DIAGNOSTICS_GATE1_p0.json",
+      "sha256": "f6810472ea1aae9ae13cfc5f1c08917f7f65674dedd3286b953d04dbe02019b5"
+    },
+    {
+      "bytes": 406363,
+      "file": "R7_DIAGNOSTICS_GATE1_p1.json",
+      "sha256": "da0889004dd18f7f92f6ea64547c62666cc708423760f1b43e880500e2631605"
+    },
+    {
+      "bytes": 405844,
+      "file": "R7_DIAGNOSTICS_GATE1_p2.json",
+      "sha256": "84df5fda400dfadd60748d06c08efac827e6084ae65c0c0d9f198bbb5a590630"
+    },
+    {
+      "bytes": 458827,
+      "file": "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p0.json",
+      "sha256": "dc12a67b46a2feb5d4af00e3970a239c354e8953934dbf77d698051a9e28c90f"
+    },
+    {
+      "bytes": 459090,
+      "file": "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p1.json",
+      "sha256": "2fd036ba68a9f023fb5568cb47275c3cd79c0734e41cf674eb5d5bc2bff4d5cb"
+    },
+    {
+      "bytes": 458390,
+      "file": "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p2.json",
+      "sha256": "15b9ea120ace78b8e09311b97723910d9613af3a751bc82a60b19497f6636ac1"
+    },
+    {
+      "bytes": 458743,
+      "file": "R7_DIAGNOSTICS_GATE2_p0.json",
+      "sha256": "b90364ecd2e95abf52d9de3db221939f63aa2c8196581e68714f190e2dce950b"
+    },
+    {
+      "bytes": 458894,
+      "file": "R7_DIAGNOSTICS_GATE2_p1.json",
+      "sha256": "69c38095decdee514d281110d7029d63bb2384730044f70fc3e17f86063b2450"
+    },
+    {
+      "bytes": 458465,
+      "file": "R7_DIAGNOSTICS_GATE2_p2.json",
+      "sha256": "2d803ac4751dc75d00aabc462217551eb25c4598af917b29ce7688dd8d7b7534"
+    },
+    {
+      "bytes": 376233,
+      "file": "R7_DIAGNOSTICS_INDEP_p0.json",
+      "sha256": "a6dc9da5ce411be11a74142726df584bd7d873093d3091f0b88e7af51e7ff990"
+    },
+    {
+      "bytes": 376246,
+      "file": "R7_DIAGNOSTICS_INDEP_p1.json",
+      "sha256": "7da19e0253943f76629a2c43047413bde76ee3ba10714892da4a49ed18799384"
+    },
+    {
+      "bytes": 376117,
+      "file": "R7_DIAGNOSTICS_INDEP_p2.json",
+      "sha256": "0936f93e012c9fe4a39dc025154f9b6ee5b6f17372b697b47fa0c11b98619557"
+    },
+    {
+      "bytes": 376684,
+      "file": "R7_DIAGNOSTICS_NORM_p0.json",
+      "sha256": "588e2f7d4f63fa0652d9c11f33d1f4a515fb81004197adb682fb7ff5e2951a12"
+    },
+    {
+      "bytes": 376459,
+      "file": "R7_DIAGNOSTICS_NORM_p1.json",
+      "sha256": "e475bb1779ca59bb4a8e272cb1f290e655db0b3ed4fa8c4707b3d2f83127c01a"
+    },
+    {
+      "bytes": 376063,
+      "file": "R7_DIAGNOSTICS_NORM_p2.json",
+      "sha256": "f8b06e99e87640b9be3f5a33975c26c1f2c22ed608df8395146c8c2e616581f4"
+    },
+    {
+      "bytes": 223040,
+      "file": "R7_DIAGNOSTICS_RAW_p0.json",
+      "sha256": "5300e8ba4221e68d62bc73ee6fed5d12674be51614e0d3f28f66c579654a3e83"
+    },
+    {
+      "bytes": 223036,
+      "file": "R7_DIAGNOSTICS_RAW_p1.json",
+      "sha256": "514f9f5f9962b9e8d1d3f381f9575dc71611b534992a4142dc78343bdbc73979"
+    },
+    {
+      "bytes": 222669,
+      "file": "R7_DIAGNOSTICS_RAW_p2.json",
+      "sha256": "d5fb31fa7ef922091c37793d4c2c12cd156f83305a2d6bfb198e154e9332e74e"
+    },
+    {
+      "bytes": 377705,
+      "file": "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p0.json",
+      "sha256": "730e7c156052275cf760b05a7d6235cbf5c2ea14c29900dd2a303f2ec1ba66fd"
+    },
+    {
+      "bytes": 377791,
+      "file": "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p1.json",
+      "sha256": "cb56d993c8082c155535581afc1ee0a4cb822a96cfa626246b592fa515864db5"
+    },
+    {
+      "bytes": 377099,
+      "file": "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p2.json",
+      "sha256": "3d8e82532586ab692b30ba1f76f4ac442882ba424466a7569e4ca640f8f4145e"
+    },
+    {
+      "bytes": 377297,
+      "file": "R7_DIAGNOSTICS_SLOT_p0.json",
+      "sha256": "b126c306734dedea9349b17091e973b3a83e33570f613b0979ec9a5ca35e7a6d"
+    },
+    {
+      "bytes": 377518,
+      "file": "R7_DIAGNOSTICS_SLOT_p1.json",
+      "sha256": "b1f758dbe323db49137c4909dbc3055d72c6d43cb8fac4c23c3fa353992b4b81"
+    },
+    {
+      "bytes": 377052,
+      "file": "R7_DIAGNOSTICS_SLOT_p2.json",
+      "sha256": "5554cd3553c720d244da5b438a19bb184fc263d9e060bdf514e4dc7f28d0656c"
+    },
+    {
+      "bytes": 63600,
+      "file": "R7_RESULTS.json",
+      "sha256": "b8d3a8cfce9cc01d3bf8fae6378ba8cce6c5e45f2f33833dbd9ba5da78f38306"
+    }
+  ],
+  "status": "COMPLETE_6_ANONYMOUS_DIAGNOSTIC_FIGURES"
+}

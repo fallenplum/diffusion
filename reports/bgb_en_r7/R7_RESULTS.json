@@ -1,0 +1,1954 @@
+{
+  "budget": {
+    "diagnostics_optimizer_updates": 0,
+    "formal_neural_fits": 99,
+    "formal_optimizer_updates": 7920,
+    "source_refits": 0,
+    "teacher_or_beta_refits": 0,
+    "unsupervised_train_RMS_calibrations": 9,
+    "zero_fit_baseline_reference_rows": 18
+  },
+  "config_sha256": "afee1bf86fa3df6bc5aa7159ce5d6ddc4d66be66d0c722c8fa87449699673dbc",
+  "contract_sha256": "66f35d52dfbec2002e89b1e3ac7b3114eea0447e82e6555406fc73380560811d",
+  "decision": {
+    "CI_or_pvalues_computed": false,
+    "GATE2_selected_from_validation": false,
+    "PFI_used_for_selection": false,
+    "all_99_executed_without_performance_adaptive_budget": true,
+    "all_medical_ideas_rejected": false,
+    "causal_biology_or_cell_source_truth_proven": false,
+    "complete_actual_checkpoint_replays": 297,
+    "complete_formal_fits": 99,
+    "gate_comparisons": [
+      {
+        "Uno_damage": 0.06679782704150586,
+        "Uno_repair": 0.03460936832963927,
+        "candidate": "GATE1",
+        "damage": 0.0646335912608102,
+        "delta_Harrell": -0.027158246093157312,
+        "delta_Uno60": -0.0321884587118666,
+        "joint_directional_support": false,
+        "metric_status": "DEFINED",
+        "mixed_metric_direction": false,
+        "per_seed": [
+          {
+            "Uno_damage": 0.08210892629901588,
+            "Uno_repair": 0.02624658694695278,
+            "damage": 0.0700955848884843,
+            "delta_Harrell": -0.038233955393718766,
+            "delta_Uno60": -0.055862339352063084,
+            "repair": 0.03186162949476559,
+            "seed": 31
+          },
+          {
+            "Uno_damage": 0.06526605990688204,
+            "Uno_repair": 0.03352538739004174,
+            "damage": 0.0671370050068275,
+            "delta_Harrell": -0.032089212562585345,
+            "delta_Uno60": -0.03174067251684021,
+            "repair": 0.03504779244424215,
+            "seed": 47
+          },
+          {
+            "Uno_damage": 0.05301849491861967,
+            "Uno_repair": 0.04405613065192329,
+            "damage": 0.0566681838871188,
+            "delta_Harrell": -0.011151570323167936,
+            "delta_Uno60": -0.008962364266696499,
+            "repair": 0.04551661356395084,
+            "seed": 83
+          }
+        ],
+        "positive_both_seed_count": 0,
+        "question": "R7.4_interaction_vs_same_main_effects_retrained",
+        "reference": "ADD",
+        "repair": 0.037475345167652864,
+        "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+        "small_delta_is_weak_evidence": false
+      },
+      {
+        "Uno_damage": 0.06617978582121478,
+        "Uno_repair": 0.0374378473033675,
+        "candidate": "GATE1",
+        "damage": 0.0656197845546958,
+        "delta_Harrell": -0.02791685631922325,
+        "delta_Uno60": -0.028741938517847343,
+        "joint_directional_support": false,
+        "metric_status": "DEFINED",
+        "mixed_metric_direction": false,
+        "per_seed": [
+          {
+            "Uno_damage": 0.08071732057335304,
+            "Uno_repair": 0.0282862345010473,
+            "damage": 0.06986800182066455,
+            "delta_Harrell": -0.03846153846153855,
+            "delta_Uno60": -0.052431086072305844,
+            "repair": 0.03140646335912608,
+            "seed": 31
+          },
+          {
+            "Uno_damage": 0.06344663130521942,
+            "Uno_repair": 0.035267558226047144,
+            "damage": 0.06804733727810651,
+            "delta_Harrell": -0.03277196176604469,
+            "delta_Uno60": -0.028179073079172334,
+            "repair": 0.035275375512061904,
+            "seed": 47
+          },
+          {
+            "Uno_damage": 0.05437540558507187,
+            "Uno_repair": 0.04875974918300806,
+            "damage": 0.05894401456531634,
+            "delta_Harrell": -0.012517068730086511,
+            "delta_Uno60": -0.005615656402063962,
+            "repair": 0.04642694583522986,
+            "seed": 83
+          }
+        ],
+        "positive_both_seed_count": 0,
+        "question": "R7.4_increment_over_frozen_CP_scalar",
+        "reference": "B1",
+        "repair": 0.03770292823547262,
+        "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+        "small_delta_is_weak_evidence": false
+      },
+      {
+        "Uno_damage": 0.027592759719231287,
+        "Uno_repair": 0.023872207206876293,
+        "candidate": "GATE1",
+        "damage": 0.025261720527992717,
+        "delta_Harrell": 0.0028068578364436325,
+        "delta_Uno60": -0.0037205525123550354,
+        "joint_directional_support": false,
+        "metric_status": "DEFINED",
+        "mixed_metric_direction": true,
+        "per_seed": [
+          {
+            "Uno_damage": 0.026442640850554953,
+            "Uno_repair": 0.029949032754593513,
+            "damage": 0.03072371415566682,
+            "delta_Harrell": -0.002275830678197588,
+            "delta_Uno60": 0.003506391904038564,
+            "repair": 0.028447883477469276,
+            "seed": 31
+          },
+          {
+            "Uno_damage": 0.03007768581524136,
+            "Uno_repair": 0.021386826900585416,
+            "damage": 0.022530723714155668,
+            "delta_Harrell": 0.007282658170232104,
+            "delta_Uno60": -0.008690858914656041,
+            "repair": 0.029813381884387802,
+            "seed": 47
+          },
+          {
+            "Uno_damage": 0.026257952491897545,
+            "Uno_repair": 0.020280761965449954,
+            "damage": 0.022530723714155668,
+            "delta_Harrell": 0.003413746017296382,
+            "delta_Uno60": -0.005977190526447629,
+            "repair": 0.02594446973145198,
+            "seed": 83
+          }
+        ],
+        "positive_both_seed_count": 0,
+        "question": "R7.4_own_initial_molecular_context",
+        "reference": "GATE1_WRONG_RNA",
+        "repair": 0.028068578364436353,
+        "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+        "small_delta_is_weak_evidence": true
+      },
+      {
+        "Uno_damage": 0.08024881198881412,
+        "Uno_repair": 0.053706679410645254,
+        "candidate": "GATE1",
+        "damage": 0.059626763768775605,
+        "delta_Harrell": -0.00015172204521318733,
+        "delta_Uno60": -0.026542132578168842,
+        "joint_directional_support": false,
+        "metric_status": "DEFINED",
+        "mixed_metric_direction": false,
+        "per_seed": [
+          {
+            "Uno_damage": 0.11097209354729104,
+            "Uno_repair": 0.041871974713603564,
+            "damage": 0.07669549385525717,
+            "delta_Harrell": -0.026627218934911268,
+            "delta_Uno60": -0.0691001188336875,
+            "repair": 0.05006827492034593,
+            "seed": 31
+          },
+          {
+            "Uno_damage": 0.07833676883079536,
+            "Uno_repair": 0.05606092184100787,
+            "damage": 0.05348202093764224,
+            "delta_Harrell": 0.005006827492034516,
+            "delta_Uno60": -0.022275846989787462,
+            "repair": 0.05848884842967683,
+            "seed": 47
+          },
+          {
+            "Uno_damage": 0.05143757358835594,
+            "Uno_repair": 0.06318714167732434,
+            "damage": 0.0487027765134274,
+            "delta_Harrell": 0.02116522530723719,
+            "delta_Uno60": 0.01174956808896832,
+            "repair": 0.06986800182066455,
+            "seed": 83
+          }
+        ],
+        "positive_both_seed_count": 1,
+        "question": "R7.4_own_initial_pathology_reverse_context",
+        "reference": "GATE1_WRONG_PATH",
+        "repair": 0.05947504172356244,
+        "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+        "small_delta_is_weak_evidence": true
+      }
+    ],
+    "independent_external_validation": false,
+    "outer_results": "NOT_RUN",
+    "primary_candidate": "GATE1",
+    "status": "CURRENT_GATE1_NOT_SUPPORTED"
+  },
+  "diagnostic_index": {
+    "epochs_per_cell": [
+      20,
+      40,
+      60,
+      80
+    ],
+    "logical_cells": 99,
+    "parts": [
+      {
+        "bytes": 156284,
+        "file": "R7_DIAGNOSTICS_ADD_p0.json",
+        "rows": 3,
+        "sha256": "20fd91780b5936e849875746d144e4f65c6b411b76fd9db1cc0d6cb30b69d570"
+      },
+      {
+        "bytes": 156335,
+        "file": "R7_DIAGNOSTICS_ADD_p1.json",
+        "rows": 3,
+        "sha256": "60e6f2670aabfd88ecf63ff518e9f62f908cd8cfdff1c89418e7f09c05350ef9"
+      },
+      {
+        "bytes": 156064,
+        "file": "R7_DIAGNOSTICS_ADD_p2.json",
+        "rows": 3,
+        "sha256": "b8ddccf9765d4ff55693e50eb4a2cb67cef8f3f5bc634a3058b9d3263eb10223"
+      },
+      {
+        "bytes": 223040,
+        "file": "R7_DIAGNOSTICS_RAW_p0.json",
+        "rows": 3,
+        "sha256": "5300e8ba4221e68d62bc73ee6fed5d12674be51614e0d3f28f66c579654a3e83"
+      },
+      {
+        "bytes": 223036,
+        "file": "R7_DIAGNOSTICS_RAW_p1.json",
+        "rows": 3,
+        "sha256": "514f9f5f9962b9e8d1d3f381f9575dc71611b534992a4142dc78343bdbc73979"
+      },
+      {
+        "bytes": 222669,
+        "file": "R7_DIAGNOSTICS_RAW_p2.json",
+        "rows": 3,
+        "sha256": "d5fb31fa7ef922091c37793d4c2c12cd156f83305a2d6bfb198e154e9332e74e"
+      },
+      {
+        "bytes": 376684,
+        "file": "R7_DIAGNOSTICS_NORM_p0.json",
+        "rows": 3,
+        "sha256": "588e2f7d4f63fa0652d9c11f33d1f4a515fb81004197adb682fb7ff5e2951a12"
+      },
+      {
+        "bytes": 376459,
+        "file": "R7_DIAGNOSTICS_NORM_p1.json",
+        "rows": 3,
+        "sha256": "e475bb1779ca59bb4a8e272cb1f290e655db0b3ed4fa8c4707b3d2f83127c01a"
+      },
+      {
+        "bytes": 376063,
+        "file": "R7_DIAGNOSTICS_NORM_p2.json",
+        "rows": 3,
+        "sha256": "f8b06e99e87640b9be3f5a33975c26c1f2c22ed608df8395146c8c2e616581f4"
+      },
+      {
+        "bytes": 376233,
+        "file": "R7_DIAGNOSTICS_INDEP_p0.json",
+        "rows": 3,
+        "sha256": "a6dc9da5ce411be11a74142726df584bd7d873093d3091f0b88e7af51e7ff990"
+      },
+      {
+        "bytes": 376246,
+        "file": "R7_DIAGNOSTICS_INDEP_p1.json",
+        "rows": 3,
+        "sha256": "7da19e0253943f76629a2c43047413bde76ee3ba10714892da4a49ed18799384"
+      },
+      {
+        "bytes": 376117,
+        "file": "R7_DIAGNOSTICS_INDEP_p2.json",
+        "rows": 3,
+        "sha256": "0936f93e012c9fe4a39dc025154f9b6ee5b6f17372b697b47fa0c11b98619557"
+      },
+      {
+        "bytes": 377297,
+        "file": "R7_DIAGNOSTICS_SLOT_p0.json",
+        "rows": 3,
+        "sha256": "b126c306734dedea9349b17091e973b3a83e33570f613b0979ec9a5ca35e7a6d"
+      },
+      {
+        "bytes": 377518,
+        "file": "R7_DIAGNOSTICS_SLOT_p1.json",
+        "rows": 3,
+        "sha256": "b1f758dbe323db49137c4909dbc3055d72c6d43cb8fac4c23c3fa353992b4b81"
+      },
+      {
+        "bytes": 377052,
+        "file": "R7_DIAGNOSTICS_SLOT_p2.json",
+        "rows": 3,
+        "sha256": "5554cd3553c720d244da5b438a19bb184fc263d9e060bdf514e4dc7f28d0656c"
+      },
+      {
+        "bytes": 406110,
+        "file": "R7_DIAGNOSTICS_GATE1_p0.json",
+        "rows": 3,
+        "sha256": "f6810472ea1aae9ae13cfc5f1c08917f7f65674dedd3286b953d04dbe02019b5"
+      },
+      {
+        "bytes": 406363,
+        "file": "R7_DIAGNOSTICS_GATE1_p1.json",
+        "rows": 3,
+        "sha256": "da0889004dd18f7f92f6ea64547c62666cc708423760f1b43e880500e2631605"
+      },
+      {
+        "bytes": 405844,
+        "file": "R7_DIAGNOSTICS_GATE1_p2.json",
+        "rows": 3,
+        "sha256": "84df5fda400dfadd60748d06c08efac827e6084ae65c0c0d9f198bbb5a590630"
+      },
+      {
+        "bytes": 458743,
+        "file": "R7_DIAGNOSTICS_GATE2_p0.json",
+        "rows": 3,
+        "sha256": "b90364ecd2e95abf52d9de3db221939f63aa2c8196581e68714f190e2dce950b"
+      },
+      {
+        "bytes": 458894,
+        "file": "R7_DIAGNOSTICS_GATE2_p1.json",
+        "rows": 3,
+        "sha256": "69c38095decdee514d281110d7029d63bb2384730044f70fc3e17f86063b2450"
+      },
+      {
+        "bytes": 458465,
+        "file": "R7_DIAGNOSTICS_GATE2_p2.json",
+        "rows": 3,
+        "sha256": "2d803ac4751dc75d00aabc462217551eb25c4598af917b29ce7688dd8d7b7534"
+      },
+      {
+        "bytes": 377705,
+        "file": "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p0.json",
+        "rows": 3,
+        "sha256": "730e7c156052275cf760b05a7d6235cbf5c2ea14c29900dd2a303f2ec1ba66fd"
+      },
+      {
+        "bytes": 377791,
+        "file": "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p1.json",
+        "rows": 3,
+        "sha256": "cb56d993c8082c155535581afc1ee0a4cb822a96cfa626246b592fa515864db5"
+      },
+      {
+        "bytes": 377099,
+        "file": "R7_DIAGNOSTICS_SLOT_WRONG_RNA_p2.json",
+        "rows": 3,
+        "sha256": "3d8e82532586ab692b30ba1f76f4ac442882ba424466a7569e4ca640f8f4145e"
+      },
+      {
+        "bytes": 406488,
+        "file": "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p0.json",
+        "rows": 3,
+        "sha256": "00bbef5fb692525778bcec95272e36f652c539b8a56db8affa410009914f3984"
+      },
+      {
+        "bytes": 406514,
+        "file": "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p1.json",
+        "rows": 3,
+        "sha256": "3877100a892cbf8801bb1fb48852f5f7f7bc585474913611987ceaba4b1b368e"
+      },
+      {
+        "bytes": 405951,
+        "file": "R7_DIAGNOSTICS_GATE1_WRONG_RNA_p2.json",
+        "rows": 3,
+        "sha256": "40c507eb26784c0d4fa79fc869e705cbdab9a04c5c0dd56fb1008af39c6b3943"
+      },
+      {
+        "bytes": 406014,
+        "file": "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p0.json",
+        "rows": 3,
+        "sha256": "20610557b8674cddf5a70978fd89c335a41c696db33473965726b1cebedd08bb"
+      },
+      {
+        "bytes": 406277,
+        "file": "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p1.json",
+        "rows": 3,
+        "sha256": "8a6a1eb5a05eb83abcd4822dfccd2dbede0ae58759c0acab6bc8062c57654783"
+      },
+      {
+        "bytes": 405932,
+        "file": "R7_DIAGNOSTICS_GATE1_WRONG_PATH_p2.json",
+        "rows": 3,
+        "sha256": "061d08d45ee01b0836b060008c2de966a6fcc9d2519b73eb87dd32d0d575e4d0"
+      },
+      {
+        "bytes": 458827,
+        "file": "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p0.json",
+        "rows": 3,
+        "sha256": "dc12a67b46a2feb5d4af00e3970a239c354e8953934dbf77d698051a9e28c90f"
+      },
+      {
+        "bytes": 459090,
+        "file": "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p1.json",
+        "rows": 3,
+        "sha256": "2fd036ba68a9f023fb5568cb47275c3cd79c0734e41cf674eb5d5bc2bff4d5cb"
+      },
+      {
+        "bytes": 458390,
+        "file": "R7_DIAGNOSTICS_GATE2_WRONG_RNA_p2.json",
+        "rows": 3,
+        "sha256": "15b9ea120ace78b8e09311b97723910d9613af3a751bc82a60b19497f6636ac1"
+      }
+    ]
+  },
+  "no_cross_partition_risk_ranking": true,
+  "paired_comparisons": [
+    {
+      "Uno_damage": 0.04273155227525556,
+      "Uno_repair": 0.032265155094898204,
+      "candidate": "NORM",
+      "damage": 0.03421332119556972,
+      "delta_Harrell": -0.006524047944166278,
+      "delta_Uno60": -0.010466397180357356,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.03863629506361032,
+          "Uno_repair": 0.031190997960278737,
+          "damage": 0.026627218934911243,
+          "delta_Harrell": 0.00295857988165682,
+          "delta_Uno60": -0.007445297103331638,
+          "repair": 0.029585798816568046,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.03716037582570279,
+          "Uno_repair": 0.024531139875808947,
+          "damage": 0.040737369139736,
+          "delta_Harrell": -0.02162039144287664,
+          "delta_Uno60": -0.012629235949893736,
+          "repair": 0.019116977696859355,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.05239798593645356,
+          "Uno_repair": 0.041073327448606936,
+          "damage": 0.035275375512061904,
+          "delta_Harrell": -0.000910332271279013,
+          "delta_Uno60": -0.011324658487846695,
+          "repair": 0.034365043240782885,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 0,
+      "question": "R7.0_joint_scale_interfaces",
+      "reference": "RAW",
+      "repair": 0.02768927325140343,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": false
+    },
+    {
+      "Uno_damage": 0.04769184505287526,
+      "Uno_repair": 0.04150565261097129,
+      "candidate": "INDEP",
+      "damage": 0.03997875891367016,
+      "delta_Harrell": -0.00531027158246089,
+      "delta_Uno60": -0.006186192441903882,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.05514092946914315,
+          "Uno_repair": 0.030474624032346954,
+          "damage": 0.04597177969959035,
+          "delta_Harrell": -0.019572143832498945,
+          "delta_Uno60": -0.024666305436796154,
+          "repair": 0.02639963586709149,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.05478005605647712,
+          "Uno_repair": 0.031745129982157644,
+          "damage": 0.029585798816568046,
+          "delta_Harrell": 0.004779244424214846,
+          "delta_Uno60": -0.02303492607431934,
+          "repair": 0.034365043240782885,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.033154549633005514,
+          "Uno_repair": 0.06229720381840927,
+          "damage": 0.04437869822485207,
+          "delta_Harrell": -0.001137915339098794,
+          "delta_Uno60": 0.02914265418540385,
+          "repair": 0.0432407828857533,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 0,
+      "question": "R7.1_independent_reverse",
+      "reference": "NORM",
+      "repair": 0.034668487331209225,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": false
+    },
+    {
+      "Uno_damage": 0.03130977812760134,
+      "Uno_repair": 0.035723212795430594,
+      "candidate": "SLOT",
+      "damage": 0.028599605522682446,
+      "delta_Harrell": 0.004930966469428033,
+      "delta_Uno60": 0.004413434667829175,
+      "joint_directional_support": true,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.01985010751881066,
+          "Uno_repair": 0.023110330012176706,
+          "damage": 0.02230314064633591,
+          "delta_Harrell": 0.007055075102412434,
+          "delta_Uno60": 0.003260222493366105,
+          "repair": 0.029358215748748293,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.031263260342412176,
+          "Uno_repair": 0.062476096522711196,
+          "damage": 0.0323167956304051,
+          "delta_Harrell": 0.00591715976331364,
+          "delta_Uno60": 0.031212836180298797,
+          "repair": 0.03823395539371871,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.0428159665215812,
+          "Uno_repair": 0.021583211851403876,
+          "damage": 0.031178880291306325,
+          "delta_Harrell": 0.001820664542558026,
+          "delta_Uno60": -0.02123275467017738,
+          "repair": 0.03299954483386436,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 2,
+      "question": "R7.2_program_preserving_linear_readout",
+      "reference": "INDEP",
+      "repair": 0.03353057199211045,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": false
+    },
+    {
+      "Uno_damage": 0.03834547563314011,
+      "Uno_repair": 0.01839617187570558,
+      "candidate": "GATE1",
+      "damage": 0.03838567743893188,
+      "delta_Harrell": -0.020254893035958177,
+      "delta_Uno60": -0.019949303757434533,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.04417066510924076,
+          "Uno_repair": 0.01715970580393939,
+          "damage": 0.04528903049613109,
+          "delta_Harrell": -0.028675466545289074,
+          "delta_Uno60": -0.027010959305301396,
+          "repair": 0.016613563950842056,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.03863375437186284,
+          "Uno_repair": 0.011344407698936838,
+          "damage": 0.03823395539371871,
+          "delta_Harrell": -0.02116522530723719,
+          "delta_Uno60": -0.02728934667292593,
+          "repair": 0.017068730086481566,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.032232007418316715,
+          "Uno_repair": 0.026684402124240506,
+          "damage": 0.03163404642694583,
+          "delta_Harrell": -0.010923987255348155,
+          "delta_Uno60": -0.005547605294076274,
+          "repair": 0.020710059171597635,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 0,
+      "question": "R7.3_single_round_state_gate",
+      "reference": "SLOT",
+      "repair": 0.018130784402973752,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": false
+    },
+    {
+      "Uno_damage": 0.03770659244771236,
+      "Uno_repair": 0.06139292622147217,
+      "candidate": "GATE2",
+      "damage": 0.04741313912911546,
+      "delta_Harrell": 0.006448186921559684,
+      "delta_Uno60": 0.023686333773759727,
+      "joint_directional_support": true,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.04534670178334234,
+          "Uno_repair": 0.07527402627642739,
+          "damage": 0.05006827492034592,
+          "delta_Harrell": 0.012517068730086511,
+          "delta_Uno60": 0.029927324493084884,
+          "repair": 0.0625853436504324,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.03027630207055667,
+          "Uno_repair": 0.05881388233956025,
+          "damage": 0.04210286754665453,
+          "delta_Harrell": 0.009786071916249472,
+          "delta_Uno60": 0.02853758026900355,
+          "repair": 0.05188893946290396,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.03749677348923806,
+          "Uno_repair": 0.05009087004842886,
+          "damage": 0.05006827492034593,
+          "delta_Harrell": -0.00295857988165682,
+          "delta_Uno60": 0.01259409655919097,
+          "repair": 0.04710969503868912,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 2,
+      "question": "R7.3_shared_parameter_second_round",
+      "reference": "GATE1",
+      "repair": 0.05386132605067516,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": false
+    },
+    {
+      "Uno_damage": 0.06679782704150586,
+      "Uno_repair": 0.03460936832963927,
+      "candidate": "GATE1",
+      "damage": 0.0646335912608102,
+      "delta_Harrell": -0.027158246093157312,
+      "delta_Uno60": -0.0321884587118666,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.08210892629901588,
+          "Uno_repair": 0.02624658694695278,
+          "damage": 0.0700955848884843,
+          "delta_Harrell": -0.038233955393718766,
+          "delta_Uno60": -0.055862339352063084,
+          "repair": 0.03186162949476559,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.06526605990688204,
+          "Uno_repair": 0.03352538739004174,
+          "damage": 0.0671370050068275,
+          "delta_Harrell": -0.032089212562585345,
+          "delta_Uno60": -0.03174067251684021,
+          "repair": 0.03504779244424215,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.05301849491861967,
+          "Uno_repair": 0.04405613065192329,
+          "damage": 0.0566681838871188,
+          "delta_Harrell": -0.011151570323167936,
+          "delta_Uno60": -0.008962364266696499,
+          "repair": 0.04551661356395084,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 0,
+      "question": "R7.4_interaction_vs_same_main_effects_retrained",
+      "reference": "ADD",
+      "repair": 0.037475345167652864,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": false
+    },
+    {
+      "Uno_damage": 0.06617978582121478,
+      "Uno_repair": 0.0374378473033675,
+      "candidate": "GATE1",
+      "damage": 0.0656197845546958,
+      "delta_Harrell": -0.02791685631922325,
+      "delta_Uno60": -0.028741938517847343,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.08071732057335304,
+          "Uno_repair": 0.0282862345010473,
+          "damage": 0.06986800182066455,
+          "delta_Harrell": -0.03846153846153855,
+          "delta_Uno60": -0.052431086072305844,
+          "repair": 0.03140646335912608,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.06344663130521942,
+          "Uno_repair": 0.035267558226047144,
+          "damage": 0.06804733727810651,
+          "delta_Harrell": -0.03277196176604469,
+          "delta_Uno60": -0.028179073079172334,
+          "repair": 0.035275375512061904,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.05437540558507187,
+          "Uno_repair": 0.04875974918300806,
+          "damage": 0.05894401456531634,
+          "delta_Harrell": -0.012517068730086511,
+          "delta_Uno60": -0.005615656402063962,
+          "repair": 0.04642694583522986,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 0,
+      "question": "R7.4_increment_over_frozen_CP_scalar",
+      "reference": "B1",
+      "repair": 0.03770292823547262,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": false
+    },
+    {
+      "Uno_damage": 0.027592759719231287,
+      "Uno_repair": 0.023872207206876293,
+      "candidate": "GATE1",
+      "damage": 0.025261720527992717,
+      "delta_Harrell": 0.0028068578364436325,
+      "delta_Uno60": -0.0037205525123550354,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": true,
+      "per_seed": [
+        {
+          "Uno_damage": 0.026442640850554953,
+          "Uno_repair": 0.029949032754593513,
+          "damage": 0.03072371415566682,
+          "delta_Harrell": -0.002275830678197588,
+          "delta_Uno60": 0.003506391904038564,
+          "repair": 0.028447883477469276,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.03007768581524136,
+          "Uno_repair": 0.021386826900585416,
+          "damage": 0.022530723714155668,
+          "delta_Harrell": 0.007282658170232104,
+          "delta_Uno60": -0.008690858914656041,
+          "repair": 0.029813381884387802,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.026257952491897545,
+          "Uno_repair": 0.020280761965449954,
+          "damage": 0.022530723714155668,
+          "delta_Harrell": 0.003413746017296382,
+          "delta_Uno60": -0.005977190526447629,
+          "repair": 0.02594446973145198,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 0,
+      "question": "R7.4_own_initial_molecular_context",
+      "reference": "GATE1_WRONG_RNA",
+      "repair": 0.028068578364436353,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": true
+    },
+    {
+      "Uno_damage": 0.08024881198881412,
+      "Uno_repair": 0.053706679410645254,
+      "candidate": "GATE1",
+      "damage": 0.059626763768775605,
+      "delta_Harrell": -0.00015172204521318733,
+      "delta_Uno60": -0.026542132578168842,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.11097209354729104,
+          "Uno_repair": 0.041871974713603564,
+          "damage": 0.07669549385525717,
+          "delta_Harrell": -0.026627218934911268,
+          "delta_Uno60": -0.0691001188336875,
+          "repair": 0.05006827492034593,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.07833676883079536,
+          "Uno_repair": 0.05606092184100787,
+          "damage": 0.05348202093764224,
+          "delta_Harrell": 0.005006827492034516,
+          "delta_Uno60": -0.022275846989787462,
+          "repair": 0.05848884842967683,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.05143757358835594,
+          "Uno_repair": 0.06318714167732434,
+          "damage": 0.0487027765134274,
+          "delta_Harrell": 0.02116522530723719,
+          "delta_Uno60": 0.01174956808896832,
+          "repair": 0.06986800182066455,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 1,
+      "question": "R7.4_own_initial_pathology_reverse_context",
+      "reference": "GATE1_WRONG_PATH",
+      "repair": 0.05947504172356244,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": true
+    },
+    {
+      "Uno_damage": 0.017557763999353403,
+      "Uno_repair": 0.01106529128324143,
+      "candidate": "SLOT",
+      "damage": 0.013503262023972083,
+      "delta_Harrell": 0.001137915339098794,
+      "delta_Uno60": -0.006492472716111974,
+      "joint_directional_support": false,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": true,
+      "per_seed": [
+        {
+          "Uno_damage": 0.01799071289892289,
+          "Uno_repair": 0.011071180911525367,
+          "damage": 0.013199817933545745,
+          "delta_Harrell": 0.003413746017296271,
+          "delta_Uno60": -0.006919531987397476,
+          "repair": 0.016613563950842056,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.010020384985080547,
+          "Uno_repair": 0.012458888573398715,
+          "damage": 0.01137915339098771,
+          "delta_Harrell": -0.001365498406918464,
+          "delta_Uno60": 0.002438503588318097,
+          "repair": 0.010013654984069186,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.024662194114056776,
+          "Uno_repair": 0.009665804364800206,
+          "damage": 0.015930814747382796,
+          "delta_Harrell": 0.001365498406918464,
+          "delta_Uno60": -0.014996389749256545,
+          "repair": 0.01729631315430132,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 0,
+      "question": "R7.4_slot_initial_molecular_context",
+      "reference": "SLOT_WRONG_RNA",
+      "repair": 0.014641177363070853,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": true
+    },
+    {
+      "Uno_damage": 0.05012848824475327,
+      "Uno_repair": 0.06444480214341293,
+      "candidate": "GATE2",
+      "damage": 0.046957972993475955,
+      "delta_Harrell": 0.0037171901077226455,
+      "delta_Uno60": 0.014316313898659616,
+      "joint_directional_support": true,
+      "metric_status": "DEFINED",
+      "mixed_metric_direction": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.06280471070619804,
+          "Uno_repair": 0.06420728031615139,
+          "damage": 0.05348202093764224,
+          "delta_Harrell": 0.004324078288575284,
+          "delta_Uno60": 0.0014025696099533302,
+          "repair": 0.05780609922621757,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.05668124774202092,
+          "Uno_repair": 0.04722741072473487,
+          "damage": 0.04710969503868912,
+          "delta_Harrell": -0.014110150204824756,
+          "delta_Uno60": -0.009453837017286082,
+          "repair": 0.03299954483386436,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.03089950628604086,
+          "Uno_repair": 0.08189971538935255,
+          "damage": 0.040282203004096497,
+          "delta_Harrell": 0.02093764223941741,
+          "delta_Uno60": 0.05100020910331171,
+          "repair": 0.061219845243513885,
+          "seed": 83
+        }
+      ],
+      "positive_both_seed_count": 2,
+      "question": "R7.4_two_round_initial_molecular_context",
+      "reference": "GATE2_WRONG_RNA",
+      "repair": 0.05067516310119861,
+      "repair_damage_are_normalized_pair_credits_not_unique_patient_pair_counts": true,
+      "small_delta_is_weak_evidence": false
+    }
+  ],
+  "primary_DSS": {
+    "ADD": {
+      "Harrell": 0.8251403428918221,
+      "Uno60": 0.7913058831122585,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "ADD",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7912906161979965,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10096.237268690242,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8252162039144287,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3626.0,
+          "Uno60": 0.7914209623559071,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10097.900381724048,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8245334547109695,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3623.0,
+          "Uno60": 0.7912060707828718,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10095.15853661178,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "B0": {
+      "Harrell": 0.8167956304050978,
+      "Uno60": 0.7835179820058394,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "B0",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8167956304050978,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3589.0,
+          "Uno60": 0.7835179820058394,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9997.064654482068,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8167956304050978,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3589.0,
+          "Uno60": 0.7835179820058394,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9997.064654482068,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8167956304050978,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3589.0,
+          "Uno60": 0.7835179820058394,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9997.064654482068,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "B1": {
+      "Harrell": 0.8258989531178881,
+      "Uno60": 0.7878593629182392,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "B1",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7878593629182392,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10052.457213003681,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7878593629182392,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10052.457213003681,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7878593629182392,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10052.457213003681,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "GATE1": {
+      "Harrell": 0.7979820967986648,
+      "Uno60": 0.7591174244003919,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "GATE1",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7874374146563495,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3460.0,
+          "Uno60": 0.7354282768459334,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9383.478364518684,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7931269913518434,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3485.0,
+          "Uno60": 0.7596802898390669,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9692.914711177908,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8133818843878016,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3574.0,
+          "Uno60": 0.7822437065161753,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9980.805915371599,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "GATE1_WRONG_PATH": {
+      "Harrell": 0.798133818843878,
+      "Uno60": 0.7856595569785607,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "GATE1_WRONG_PATH",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8140646335912608,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3577.0,
+          "Uno60": 0.8045283956796209,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10265.140778754914,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7881201638598089,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3463.0,
+          "Uno60": 0.7819561368288543,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9977.136755476306,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7922166590805644,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3481.0,
+          "Uno60": 0.7704941384272069,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9830.890795941985,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "GATE1_WRONG_RNA": {
+      "Harrell": 0.7951752389622212,
+      "Uno60": 0.7628379769127469,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "GATE1_WRONG_RNA",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7897132453345471,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3470.0,
+          "Uno60": 0.7319218849418948,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9338.739599903623,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7858443331816113,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3453.0,
+          "Uno60": 0.7683711487537229,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9803.803140630891,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8099681383705052,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3559.0,
+          "Uno60": 0.7882208970426229,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10057.07010013489,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "GATE2": {
+      "Harrell": 0.8044302837202245,
+      "Uno60": 0.7828037581741516,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "GATE2",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.799954483386436,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3515.0,
+          "Uno60": 0.7653556013390183,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9765.327160288638,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8029130632680929,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3528.0,
+          "Uno60": 0.7882178701080704,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10057.03147886375,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8104233045061447,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3561.0,
+          "Uno60": 0.7948378030753662,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10141.496544634123,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "GATE2_WRONG_RNA": {
+      "Harrell": 0.8007130936125019,
+      "Uno60": 0.768487444275492,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "GATE2_WRONG_RNA",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7956304050978608,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3496.0,
+          "Uno60": 0.7639530317290649,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9747.431490508068,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8170232134729176,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3590.0,
+          "Uno60": 0.7976717071253565,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10177.65490048937,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7894856622667273,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3469.0,
+          "Uno60": 0.7438375939720545,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9490.774545258093,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "INDEP": {
+      "Harrell": 0.813306023365195,
+      "Uno60": 0.7746532934899972,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "INDEP",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8090578060992262,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3555.0,
+          "Uno60": 0.7591790136578687,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9686.518826835392,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8083750568957669,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3552.0,
+          "Uno60": 0.755756800331694,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9642.854113747871,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8224852071005917,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3614.0,
+          "Uno60": 0.8090240664804289,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10322.501953218183,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "NORM": {
+      "Harrell": 0.8186162949476559,
+      "Uno60": 0.7808394859319011,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "NORM",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8286299499317251,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3641.0,
+          "Uno60": 0.7838453190946648,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10001.241214709084,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8035958124715521,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3531.0,
+          "Uno60": 0.7787917264060134,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9936.761401857144,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8236231224396905,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3619.0,
+          "Uno60": 0.7798814122950251,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9950.664924859435,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "RAW": {
+      "Harrell": 0.8251403428918221,
+      "Uno60": 0.7913058831122585,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "RAW",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7912906161979965,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10096.237268690242,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8252162039144287,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3626.0,
+          "Uno60": 0.7914209623559071,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10097.900381724048,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8245334547109695,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3623.0,
+          "Uno60": 0.7912060707828718,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10095.15853661178,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "SLOT": {
+      "Harrell": 0.818236989834623,
+      "Uno60": 0.7790667281578264,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "SLOT",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8161128812016386,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3586.0,
+          "Uno60": 0.7624392361512348,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9728.116666071626,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8142922166590806,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3578.0,
+          "Uno60": 0.7869696365119928,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10041.105013549019,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8243058716431497,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3622.0,
+          "Uno60": 0.7877913118102515,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10051.588935131334,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "SLOT_WRONG_RNA": {
+      "Harrell": 0.8170990744955242,
+      "Uno60": 0.7855592008739384,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "SLOT_WRONG_RNA",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8126991351843423,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3571.0,
+          "Uno60": 0.7693587681386322,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9816.404376431099,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.815657715065999,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3584.0,
+          "Uno60": 0.7845311329236747,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10009.991652282957,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8229403732362313,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3616.0,
+          "Uno60": 0.8027877015595081,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10242.930909853252,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    }
+  },
+  "qualification_sha256": "0418092b6e0cf0441ddf4503bedadf1a19b95b3d12d0324be10af4686158b574",
+  "replay_sha256": "26ad494b7370ff13d8bd0531aa1ab89e524bc60e1af1b3cf62f129ed47f0ba1d",
+  "schema": "bgb_en_r7_complete_report_v1",
+  "secondary_PFI_frozen_DSS_risk": {
+    "ADD": {
+      "Harrell": 0.7104950343188006,
+      "Uno60": 0.6813022043115062,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "ADD",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6802752168382874,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.382614735245,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7105717243759346,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6177.0,
+          "Uno60": 0.6802729423848016,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.339473161304,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6833584537114297,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12961.865099590299,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "B0": {
+      "Harrell": 0.7070056367191994,
+      "Uno60": 0.6834470249341488,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "B0",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7070056367191994,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6146.0,
+          "Uno60": 0.6834470249341488,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12963.545108426593,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7070056367191994,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6146.0,
+          "Uno60": 0.6834470249341488,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12963.545108426593,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7070056367191994,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6146.0,
+          "Uno60": 0.6834470249341488,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12963.545108426593,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "B1": {
+      "Harrell": 0.7110318647187392,
+      "Uno60": 0.6875076869000132,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "B1",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7110318647187392,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6181.0,
+          "Uno60": 0.6875076869000132,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13040.567280802905,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7110318647187392,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6181.0,
+          "Uno60": 0.6875076869000132,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13040.567280802905,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7110318647187392,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6181.0,
+          "Uno60": 0.6875076869000132,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13040.567280802905,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "GATE1": {
+      "Harrell": 0.691821005406649,
+      "Uno60": 0.6425466692112933,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "GATE1",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.6712297250661452,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 5835.0,
+          "Uno60": 0.6341094166434281,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12027.714989508064,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.709191303347521,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6165.0,
+          "Uno60": 0.6660785332686299,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12634.101542273123,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.6950419878062809,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6042.0,
+          "Uno60": 0.6274520577218221,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 11901.438965859354,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "GATE1_WRONG_PATH": {
+      "Harrell": 0.6988381456344185,
+      "Uno60": 0.6643202430858466,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "GATE1_WRONG_PATH",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7065454963763949,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6142.0,
+          "Uno60": 0.6848111415171086,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12989.419515968359,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.6933164615207639,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6027.0,
+          "Uno60": 0.6400935249245575,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12141.22087190415,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.6966524790060968,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6056.0,
+          "Uno60": 0.6680560628158737,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12671.611096859906,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "GATE1_WRONG_RNA": {
+      "Harrell": 0.6900187890639978,
+      "Uno60": 0.651530867243419,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "GATE1_WRONG_RNA",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.6745657425514782,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 5864.0,
+          "Uno60": 0.6415917734446205,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12169.639478708885,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.6995283561486253,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6081.0,
+          "Uno60": 0.6642141899253478,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12598.73889067542,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.69596226849189,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6050.0,
+          "Uno60": 0.6487866383602888,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12306.110854661234,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "GATE2": {
+      "Harrell": 0.6871812569500364,
+      "Uno60": 0.6465555520255692,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "GATE2",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.6858391809501898,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 5962.0,
+          "Uno60": 0.6478003653979916,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12287.403341760444,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.6880248475785115,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 5981.0,
+          "Uno60": 0.6404087836762585,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12147.20066389885,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.687679742321408,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 5978.0,
+          "Uno60": 0.6514575070024576,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12356.771586010198,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "GATE2_WRONG_RNA": {
+      "Harrell": 0.6898270639211627,
+      "Uno60": 0.6414005936815698,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "GATE2_WRONG_RNA",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.6902105142068331,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6000.0,
+          "Uno60": 0.6171271428247459,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 11705.59715936117,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.704244794662372,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6122.0,
+          "Uno60": 0.6640353985301422,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12595.347595911982,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.6750258828942828,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 5868.0,
+          "Uno60": 0.6430392396898212,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12197.094853124177,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "INDEP": {
+      "Harrell": 0.7036696192338663,
+      "Uno60": 0.6652107864438203,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "INDEP",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7064304612906936,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6141.0,
+          "Uno60": 0.6551988387643773,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12427.736739550677,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.6898654089497297,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 5997.0,
+          "Uno60": 0.6631316323369597,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12578.205061984178,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7147129874611756,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6213.0,
+          "Uno60": 0.6773018882301237,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12846.984857297031,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "NORM": {
+      "Harrell": 0.7094597185474903,
+      "Uno60": 0.6663473900557249,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "NORM",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7181640400322098,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6243.0,
+          "Uno60": 0.6867611938491893,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13026.407885876262,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.6895203036926263,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 5994.0,
+          "Uno60": 0.6552799298492185,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12429.27486598605,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7206948119176348,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6265.0,
+          "Uno60": 0.6570010464687668,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12461.920809446741,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "RAW": {
+      "Harrell": 0.7104950343188006,
+      "Uno60": 0.6813022043115062,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "RAW",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6802752168382874,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.382614735245,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7105717243759346,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6177.0,
+          "Uno60": 0.6802729423848016,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12903.339473161304,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7104566892902335,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6176.0,
+          "Uno60": 0.6833584537114297,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12961.865099590299,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "SLOT": {
+      "Harrell": 0.7038229993481345,
+      "Uno60": 0.668515499858171,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "SLOT",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.696767514091798,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6057.0,
+          "Uno60": 0.6683209497073933,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12676.635441163951,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7097664787760267,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6170.0,
+          "Uno60": 0.6673491910358017,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12658.203233671504,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7049350051765788,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6128.0,
+          "Uno60": 0.6698763588313182,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12706.13826377409,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "SLOT_WRONG_RNA": {
+      "Harrell": 0.7035162391195982,
+      "Uno60": 0.6691013968836529,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "SLOT_WRONG_RNA",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.6935465316921661,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6029.0,
+          "Uno60": 0.6690891066826054,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12691.205754934026,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7094213735189233,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6167.0,
+          "Uno60": 0.6707310467429599,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12722.349886463151,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7075808121477051,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6151.0,
+          "Uno60": 0.6674840372253933,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12660.760980794097,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    }
+  },
+  "seed_means_are_not_independent_cohorts": true,
+  "status": "COMPLETE_99_FITS_297_CHECKPOINT_REPLAYS"
+}

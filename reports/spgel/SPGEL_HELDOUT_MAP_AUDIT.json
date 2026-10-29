@@ -1,0 +1,83 @@
+{
+  "schema": "spgel_anonymous_fixed_heldout_map_audit_v1",
+  "status": "PASS_ALL_12_SECTIONS_TWO_FIXED_MODELS_SAVED_LODO_EPOCH40_MAPS",
+  "rendering_script_SHA256": "bdbd81c7c98fe8db4ad2f5773f24b684be7e8461f6c003ee7a7062187632c7b0",
+  "source_contract_SHA256": "f3f3225b7640c25940aa2013e7a514f161aa2087af0c81abeb8b9db9851ea559",
+  "prior_actual_replay_audits": [
+    {
+      "stage": "pilot",
+      "SHA256": "32a2dca94572402cac844c1f0b995da35d387ddaaec2f20dc9f4f92bec0fb56d",
+      "replayed_models": 72,
+      "replayed_states": 192
+    },
+    {
+      "stage": "s4",
+      "SHA256": "426a6efa038912b3ca606d63148032098ff505b18ed74402c47be1c3cc0dfdb7",
+      "replayed_models": 2,
+      "replayed_states": 6
+    }
+  ],
+  "fixed_source_models_count": 2,
+  "fixed_epoch": 40,
+  "source_sections_count": 12,
+  "source_spots_per_model": 13011,
+  "private_PNG_count": 24,
+  "private_array_count": 24,
+  "saved_prediction_arrays_used": 12,
+  "PNG_SHA256": [
+    "3427f09bb47f69db4ddc328694ec86e94844cfe639899b0bbff96e528c98777f",
+    "7483632c4576683b8528d62c5eff2baf088d6e13fe32981a03b288141f18bf14",
+    "a7ea7494a454e9e14dd68dac60e2efdc240815b236fc0b364714a13669a80147",
+    "f42e94fbddd2dd6ff673fd954fe89f901cc58e6e8f736a17d8ee54086cb0d554",
+    "e63a1e3b8ebbca2cf74961c95ec37c40b211b0829c630b1032db638f6ee94061",
+    "38546527e3ae71d879e883ec17e73c7cb769ebd960c2d296d15dcea4f54d0fd8",
+    "eb14987628bf091d3ce1ced248961a1f8368fcf1dc773052db3a1159e312b4ae",
+    "86ab9dcaf24465a4f906cc5adf2c562a6a65144cd00d621f309bac765804ab47",
+    "457be4d91957f17e9ba2860b8b1929654ef0a6b9e0a56eac36b4a51ffe7a19fa",
+    "59be86fbfe5c1046736a05a1bd65f257201491c14aa5dec1fd607bd4ff13a6eb",
+    "4429de5991bf5477718d22bb61cb8f9e0ddc241b1e59af8b2b5319e3c32e18a4",
+    "6035cc61067e24865574f314fe260e6ffbac56b696105d1fda7e46d182079d25",
+    "dd105f10bc4fef06a72ad23ba2000a74036b49f0516942570bc517d6054d6823",
+    "08d9aabeabb29d3393dbb1ad262549948b50e48f88757e29f883e571bdd1b34e",
+    "922e9a32146a7b49f8df6ef31ca86becb7b5d4580ea8990a3b5a02cae1caac50",
+    "2c1462755a6a69804dc495e72bd34d42ab899dcc2e5b068a8823d9223d9d8332",
+    "eb83e7b9fe3eb2591f5a3c48c0b3b1eb86f4928d3a126c204e0eac77497da2f1",
+    "3b33173cc446bed71b1ff40512028c2ee1447524ee6ebc3eb86d8b02411ea999",
+    "4b47c57711e8dc6f3e3f1fd1d25bd1cd5989bdff9c05dc79a9cd7f58865ad6c0",
+    "5e84418b2bc7418ea1203b84dc584517dca1ec2b1bbb5498c8228d28271b47e4",
+    "648dbeda3b6730dfb556d4336c785e89d00631f67b5b731f402c8571234db41f",
+    "d304d6d7c38f8fe5f385cc269990f82f1326c320558ff67936a3c3fe325e6c20",
+    "46cd64f3325dc603e30a36ba0b5d5ffbfa3e88691f4ea373ff1a6ea38a8ed0f4",
+    "604850725ffe8983a3c625e591c91d54d4e3ce56eb946116f9374f1ab8d1b2e7"
+  ],
+  "saved_prediction_array_SHA256": [
+    "9e73a858110bfc3404dc313899ae479edbeaac6b73e3fa0a26098bdab2d48155",
+    "2d2c1914eb722e7318df80fbeadf4f782d4fd2c91d698258897368e9036e59b6",
+    "f5ec58bb3e49c19691fc280a56310a017d1be28801664b722ab56c107ba92522",
+    "bd92b1b9d33c75c7d70da11ef68a6feffc862fa3838075d82be2e92bdb550796",
+    "4691027bec4bb90f3c0eca55ede2704e531c5d202e81db75283ec9ff949db81c",
+    "57a8b614b9c7e058a1db60f3e0895cc819e1c42cb24480670c7d8b9104e72964",
+    "86ceca500c474336ca429aeae9ece5568a3ae193d7e540e952fe6607aacc0404",
+    "1fde4acbd71160c43ae3357845a1c9c431e14c8776f4ee5b1eb6d67f31b20dde",
+    "27b670817b25379507f87d50d74169c3ad97d47e36dbbf15bdb2fc15ab48ef4c",
+    "d09837a48f0f43da2cdb5bf145417e943b19082f0bc524f9121b95110c7781d9",
+    "533b71bad6694d50753d74a6a83e902bc6d42f8c51deb4b8a3db39f13e07a5ca",
+    "52bc42bca8be7349b8316e1a8231657d62da912b354c4a07466a050ba55adedb"
+  ],
+  "fixed_training_Z_color_limits": [
+    -3,
+    3
+  ],
+  "all_sections_included": true,
+  "model_or_epoch_or_section_selected_from_heldout": false,
+  "source_ST_program_proxy_is_cell_truth": false,
+  "source_full_fit_maps_are_not_used_as_heldout": true,
+  "independent_source_confirmation": false,
+  "public_contains_coordinates_images_or_spot_predictions": false,
+  "PNG_text_metadata_contains_paths_or_identifiers": false,
+  "TCGA_loaded": false,
+  "DSS_or_PFI_read": false,
+  "new_optimizer_fits": 0,
+  "new_optimizer_updates": 0,
+  "new_model_forward_calls": 0
+}

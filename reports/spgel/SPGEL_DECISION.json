@@ -1,0 +1,894 @@
+{
+  "schema": "spgel_source_development_decision_v1",
+  "status": "PILOT_COMPLETE_OFFICIAL_AND_INDEPENDENT_CONFIRMATION_PENDING",
+  "primary_candidate": "S_A5",
+  "selected_using_heldout_or_survival": false,
+  "pilot_optimizer_fits": 72,
+  "actual_pilot_state_replays": 192,
+  "S4_status": "COMPLETE_FIXED_S4_EXPORT_2_FITS_6_STATE_REPLAYS",
+  "independent_source_confirmation": "NOT_RUN",
+  "official_HVG_benchmark": "NOT_RUN",
+  "model_expansion_or_new_test_access_authorized_by_report": false,
+  "paired_comparisons": [
+    {
+      "candidate": "S_A5",
+      "reference": "S_A0",
+      "seed": 31,
+      "task": "task_A",
+      "metric": "primary_donor_four_program_Pearson",
+      "equal_donor_delta": {
+        "mean": 0.39152845955809007,
+        "defined_count": 6,
+        "expected_count": 6,
+        "undefined_count": 0,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": 0.5206118418265897
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": 0.055019727741640434
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": 0.6159185557446865
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": 0.14752301054789593
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": 0.5312549048531126
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": 0.47884271663461503
+        }
+      ],
+      "positive_donors": 6,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A0",
+      "seed": 31,
+      "task": "task_C",
+      "metric": "primary_four_program_AUPRC",
+      "equal_donor_delta": {
+        "mean": null,
+        "defined_count": 0,
+        "expected_count": 6,
+        "undefined_count": 6,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": null
+        }
+      ],
+      "positive_donors": 0,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A0",
+      "seed": 47,
+      "task": "task_A",
+      "metric": "primary_donor_four_program_Pearson",
+      "equal_donor_delta": {
+        "mean": 0.38543684014421314,
+        "defined_count": 6,
+        "expected_count": 6,
+        "undefined_count": 0,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": 0.502639191840755
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": 0.04002758679012325
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": 0.6309398316274587
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": 0.14919982382526106
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": 0.4686571414486729
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": 0.5211574653330077
+        }
+      ],
+      "positive_donors": 6,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A0",
+      "seed": 47,
+      "task": "task_C",
+      "metric": "primary_four_program_AUPRC",
+      "equal_donor_delta": {
+        "mean": null,
+        "defined_count": 0,
+        "expected_count": 6,
+        "undefined_count": 6,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": null
+        }
+      ],
+      "positive_donors": 0,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A1",
+      "seed": 31,
+      "task": "task_A",
+      "metric": "primary_donor_four_program_Pearson",
+      "equal_donor_delta": {
+        "mean": 0.0942289147927573,
+        "defined_count": 6,
+        "expected_count": 6,
+        "undefined_count": 0,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": 0.07761800323192192
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": 0.08816163800173217
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": 0.039846419108931275
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": 0.12556238891129826
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": 0.13686269889144947
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": 0.0973223406112107
+        }
+      ],
+      "positive_donors": 6,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A1",
+      "seed": 31,
+      "task": "task_C",
+      "metric": "primary_four_program_AUPRC",
+      "equal_donor_delta": {
+        "mean": null,
+        "defined_count": 0,
+        "expected_count": 6,
+        "undefined_count": 6,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": null
+        }
+      ],
+      "positive_donors": 0,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A1",
+      "seed": 47,
+      "task": "task_A",
+      "metric": "primary_donor_four_program_Pearson",
+      "equal_donor_delta": {
+        "mean": 0.05325503467287306,
+        "defined_count": 6,
+        "expected_count": 6,
+        "undefined_count": 0,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": 0.05540047637791212
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": 0.015563190412361233
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": 0.02923803883010012
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": 0.05079126223414379
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": 0.06629928226887838
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": 0.10223795791384271
+        }
+      ],
+      "positive_donors": 6,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A1",
+      "seed": 47,
+      "task": "task_C",
+      "metric": "primary_four_program_AUPRC",
+      "equal_donor_delta": {
+        "mean": null,
+        "defined_count": 0,
+        "expected_count": 6,
+        "undefined_count": 6,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": null
+        }
+      ],
+      "positive_donors": 0,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A2",
+      "seed": 31,
+      "task": "task_A",
+      "metric": "primary_donor_four_program_Pearson",
+      "equal_donor_delta": {
+        "mean": 0.053947569466706195,
+        "defined_count": 6,
+        "expected_count": 6,
+        "undefined_count": 0,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": 0.029049637100755643
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": 0.06112406773132084
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": 0.028464858992618858
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": 0.13299254102853658
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": 0.09433904449476022
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": -0.022284732547754982
+        }
+      ],
+      "positive_donors": 5,
+      "negative_donors": 1,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A2",
+      "seed": 31,
+      "task": "task_C",
+      "metric": "primary_four_program_AUPRC",
+      "equal_donor_delta": {
+        "mean": null,
+        "defined_count": 0,
+        "expected_count": 6,
+        "undefined_count": 6,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": null
+        }
+      ],
+      "positive_donors": 0,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A2",
+      "seed": 47,
+      "task": "task_A",
+      "metric": "primary_donor_four_program_Pearson",
+      "equal_donor_delta": {
+        "mean": 0.037700462201016534,
+        "defined_count": 6,
+        "expected_count": 6,
+        "undefined_count": 0,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": 0.018380451989670477
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": 0.050695806269810156
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": 0.0315696534839478
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": 0.06771429138777121
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": 0.04790911100347506
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": 0.00993345907142451
+        }
+      ],
+      "positive_donors": 6,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A2",
+      "seed": 47,
+      "task": "task_C",
+      "metric": "primary_four_program_AUPRC",
+      "equal_donor_delta": {
+        "mean": null,
+        "defined_count": 0,
+        "expected_count": 6,
+        "undefined_count": 6,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": null
+        }
+      ],
+      "positive_donors": 0,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A3",
+      "seed": 31,
+      "task": "task_A",
+      "metric": "primary_donor_four_program_Pearson",
+      "equal_donor_delta": {
+        "mean": 0.035060498494172594,
+        "defined_count": 6,
+        "expected_count": 6,
+        "undefined_count": 0,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": 0.01693031060380118
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": 0.062040818603507644
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": 0.013705293715945088
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": 0.09668514674721876
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": 0.09497753404636067
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": -0.07397611275179777
+        }
+      ],
+      "positive_donors": 5,
+      "negative_donors": 1,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A3",
+      "seed": 31,
+      "task": "task_C",
+      "metric": "primary_four_program_AUPRC",
+      "equal_donor_delta": {
+        "mean": null,
+        "defined_count": 0,
+        "expected_count": 6,
+        "undefined_count": 6,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": null
+        }
+      ],
+      "positive_donors": 0,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A3",
+      "seed": 47,
+      "task": "task_A",
+      "metric": "primary_donor_four_program_Pearson",
+      "equal_donor_delta": {
+        "mean": 0.05602480689184925,
+        "defined_count": 6,
+        "expected_count": 6,
+        "undefined_count": 0,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": -0.0037483636796626363
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": 0.04508211552504886
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": 0.035234735911058634
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": 0.14140101508913955
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": 0.11175594414486523
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": 0.006423394360645873
+        }
+      ],
+      "positive_donors": 5,
+      "negative_donors": 1,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A3",
+      "seed": 47,
+      "task": "task_C",
+      "metric": "primary_four_program_AUPRC",
+      "equal_donor_delta": {
+        "mean": null,
+        "defined_count": 0,
+        "expected_count": 6,
+        "undefined_count": 6,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": null
+        }
+      ],
+      "positive_donors": 0,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A4",
+      "seed": 31,
+      "task": "task_A",
+      "metric": "primary_donor_four_program_Pearson",
+      "equal_donor_delta": {
+        "mean": 0.013246039305592615,
+        "defined_count": 6,
+        "expected_count": 6,
+        "undefined_count": 0,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": -0.00732606285098597
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": 0.06901858824038982
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": -0.008123416478991285
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": 0.06620428698314534
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": 0.03258773796860226
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": -0.07288489802860448
+        }
+      ],
+      "positive_donors": 3,
+      "negative_donors": 3,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A4",
+      "seed": 31,
+      "task": "task_C",
+      "metric": "primary_four_program_AUPRC",
+      "equal_donor_delta": {
+        "mean": null,
+        "defined_count": 0,
+        "expected_count": 6,
+        "undefined_count": 6,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": null
+        }
+      ],
+      "positive_donors": 0,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A4",
+      "seed": 47,
+      "task": "task_A",
+      "metric": "primary_donor_four_program_Pearson",
+      "equal_donor_delta": {
+        "mean": 0.02915694412577116,
+        "defined_count": 6,
+        "expected_count": 6,
+        "undefined_count": 0,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": 0.03398222578939164
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": 0.037115227679288945
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": 0.028790389285347273
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": 0.023921960635418404
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": 0.06357906909937472
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": -0.012447207734193999
+        }
+      ],
+      "positive_donors": 5,
+      "negative_donors": 1,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    },
+    {
+      "candidate": "S_A5",
+      "reference": "S_A4",
+      "seed": 47,
+      "task": "task_C",
+      "metric": "primary_four_program_AUPRC",
+      "equal_donor_delta": {
+        "mean": null,
+        "defined_count": 0,
+        "expected_count": 6,
+        "undefined_count": 6,
+        "undefined_is_not_zero": true
+      },
+      "per_donor": [
+        {
+          "heldout_donor_code": 0,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 1,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 2,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 3,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 4,
+          "delta": null
+        },
+        {
+          "heldout_donor_code": 5,
+          "delta": null
+        }
+      ],
+      "positive_donors": 0,
+      "negative_donors": 0,
+      "tied_donors": 0,
+      "tests_or_independent_cohort_claimed": false
+    }
+  ]
+}

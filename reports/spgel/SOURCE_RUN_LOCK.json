@@ -1,0 +1,113 @@
+{
+  "schema": "spgel_source_run_lock_v1",
+  "status": "LOCKED_BEFORE_SPGEL_FITS",
+  "config_sha256": "0cf37169ed0b931c9d19aa64798b391abf4966a597604fe99c7b22079e7f36d7",
+  "sources": {
+    "configs/spgel/pilot_v1.json": "0cf37169ed0b931c9d19aa64798b391abf4966a597604fe99c7b22079e7f36d7",
+    "configs/spgel/s4_export_v1.json": "a0d480132af23d187616950c8100256ecb3b5e3f1ea34114eb668d894bfd854c",
+    "src/spgel/__init__.py": "d46e58b33b8292f3d37ff3897d0e44c5a219f80095f3d1bff6a0491d36e987d2",
+    "src/spgel/contracts.py": "bef41a7740598215f9d4114e4c3c8534b6a08b7ccb95873ef687c00dabab4517",
+    "src/spgel/geometry.py": "507c9f7384499328bb0af074c7ed12cd9672e09ff6e1577d56d20349e3c17e95",
+    "src/spgel/metrics.py": "3814e46eff468304d9b2037b1742c083ccc7ee2025d5d12b173b03f2becdcc76",
+    "src/spgel/models.py": "7d2c59e2e7c15973f299bcc8c0a03882b65dd34be15a186fa1ae28cdc6398f59",
+    "src/spgel/losses.py": "b1d02f6722da7eb4ee714a23732e38f7166752d22a527e01a28de97ef5c7c038",
+    "src/spgel/training.py": "f1347fd94762d8cf87ad1de30c4ad6fb31bebfc867ddac860c686cc8ba294083",
+    "src/spgel/interface.py": "582394e2cf4505b5271f063e3a15ad213f24a1c1921a701f633db137d3628bf8",
+    "scripts/spgel_source_fit.py": "e38da9ef597e53165eacdcd0caf45b19de5f1a3f2b439a583af2bf7d4034af26",
+    "scripts/spgel_source_replay.py": "65d67d1bd78bc4f67ca68cf8d6d42e9f9ff761f1ecadbcf89819e96ace1f3f77",
+    "scripts/spgel_source_qualify.py": "4c7b72782a22e067f41a99104d923e60bc117ac358a317e5415d4765a1fc2b35",
+    "scripts/spgel_source_export.py": "b92090c36e62da54b2347f51355404301372ab9f38cfa5ab35dd789b9c9d5c7f",
+    "scripts/spgel_source_report.py": "9b153223d7fc42675c69f88169b8970f4c6f2a2dc56594aaa316a4d6942b16e3",
+    "tests/test_spgel_contracts.py": "ea9e8ed190317a25bc960a9a9c6cf090a42663847c65323a5b7187c3bcbc05a8",
+    "tests/test_spgel_models.py": "2a68effd89c23f499bc657191a09d1231d755fbbdae00179afb59a5d9fbcc85d",
+    "tests/test_spgel_training.py": "fa23efd733690eb7365ce8c7eed174b0832206e5d9fd8dc0691f5fc669f7bea8",
+    "tests/test_spgel_interface.py": "fc1ef39e236b87edb3583138ce0213c93f9c2909cc4a4752e2919c3c5912281a",
+    "tests/test_spgel_report.py": "422702f854b5526316ebd3a2a29f1a3e99eb5c6c0e64f3917a09edabac689f7f"
+  },
+  "source_binding": {
+    "cache_manifest_sha256": "ef611b45d8d821bd7489131f3bab60f3b314f28f5228b60f2c170044c58848d3",
+    "source_arrays_sha256": "79482a3edf6c53bd62487a024d369c7eeb6ccf0a22d1d7302f46e1a20eb56a84",
+    "gene_counts_sha256": "b4229cb291d61c05c6d47ca67dafb81c0552f560012028073f846038c687f57d",
+    "fresh_requalification_sha256": "c67cb60255b25692e3da81510d53cf640df9f754518b11a40acf935060a1520c",
+    "rows": 13011,
+    "donors": 6,
+    "sections": 12,
+    "image_dim": 1536,
+    "registered_program_genes": 760,
+    "signed_membership_edges": 765,
+    "historically_used_development_source": true,
+    "original_ST_test_is_new_independent_confirmation": false
+  },
+  "program_order": [
+    "iCMS2",
+    "iCMS3",
+    "FAP_fibroblast_associated_top25",
+    "MARCO_macrophage_associated_top25"
+  ],
+  "primary_candidate": "S_A5",
+  "model_or_epoch_selection_from_heldout": false,
+  "pilot": {
+    "logical_cells": 72,
+    "neural_fits": 60,
+    "convex_fits": 12,
+    "actual_saved_states": 192,
+    "optimizer_updates": 52000
+  },
+  "s4": {
+    "neural_fits": 2,
+    "actual_saved_states": 6,
+    "optimizer_updates": 2080
+  },
+  "measured_budget": {
+    "pilot_logical_cells": 72,
+    "neural_fits": 60,
+    "convex_fits": 12,
+    "neural_optimizer_updates": 52000,
+    "actual_saved_states": 192,
+    "folds": [
+      {
+        "heldout_donor": 0,
+        "train_rows": 11027,
+        "heldout_rows": 1984,
+        "updates_per_neural_fit": 880
+      },
+      {
+        "heldout_donor": 1,
+        "train_rows": 8892,
+        "heldout_rows": 4119,
+        "updates_per_neural_fit": 720
+      },
+      {
+        "heldout_donor": 2,
+        "train_rows": 11920,
+        "heldout_rows": 1091,
+        "updates_per_neural_fit": 960
+      },
+      {
+        "heldout_donor": 3,
+        "train_rows": 11184,
+        "heldout_rows": 1827,
+        "updates_per_neural_fit": 880
+      },
+      {
+        "heldout_donor": 4,
+        "train_rows": 12079,
+        "heldout_rows": 932,
+        "updates_per_neural_fit": 960
+      },
+      {
+        "heldout_donor": 5,
+        "train_rows": 9953,
+        "heldout_rows": 3058,
+        "updates_per_neural_fit": 800
+      }
+    ],
+    "s4_neural_fits": 2,
+    "s4_neural_optimizer_updates": 2080,
+    "s4_saved_states": 6
+  },
+  "R8_or_DSS_used": false,
+  "official_HVG_or_new_source_in_this_lock": false,
+  "retrieval_query_sampler": "per_slide_min_128_row_equidistant_without_labels_full_slide_candidate_library",
+  "contract_sha256": "f3f3225b7640c25940aa2013e7a514f161aa2087af0c81abeb8b9db9851ea559"
+}

@@ -1,0 +1,243 @@
+{
+  "schema": "parallel_evidence_publication_manifest_v1",
+  "status": "PASS_EXPLICIT_FILES_AND_AUDIT_ONLY",
+  "line": "spgel",
+  "stage": "complete",
+  "scientific_contract_sha256": "f3f3225b7640c25940aa2013e7a514f161aa2087af0c81abeb8b9db9851ea559",
+  "actual_lock_file_sha256": "c4ff905a0684ba0a83d81552e51b9f423ce231078f046d81d0da518f33c4f243",
+  "files": [
+    {
+      "file": "configs/spgel/pilot_v1.json",
+      "sha256": "0cf37169ed0b931c9d19aa64798b391abf4966a597604fe99c7b22079e7f36d7",
+      "bytes": 4592
+    },
+    {
+      "file": "configs/spgel/s4_export_v1.json",
+      "sha256": "a0d480132af23d187616950c8100256ecb3b5e3f1ea34114eb668d894bfd854c",
+      "bytes": 1275
+    },
+    {
+      "file": "reports/spgel/REPRODUCE.md",
+      "sha256": "a88b7d126d804cf5445aa27430910cf04a4a159ba109c50583610d7531233a1a",
+      "bytes": 7652
+    },
+    {
+      "file": "reports/spgel/S0_DATA_REGISTRY.md",
+      "sha256": "79b509cce2aa26f930fa4ee8ee0d28932208867ae716e02446a70aaa4e671986",
+      "bytes": 13124
+    },
+    {
+      "file": "reports/spgel/S0_DELIVERY_BOUNDARY.md",
+      "sha256": "833fd10e1889765d821e1ca23606158665f4228c7df343ec1b68e2a5b71c781a",
+      "bytes": 18052
+    },
+    {
+      "file": "reports/spgel/S0_LITERATURE_BASELINES.md",
+      "sha256": "d3a4026fda738784928716e6c5fa1f58b5f3a2b9e1b1d61509df41b0e0148ea0",
+      "bytes": 12433
+    },
+    {
+      "file": "reports/spgel/S0_TASK_CONTRACT.json",
+      "sha256": "161548c9419a6b2adce065ce38e8c8a77b1077e7b8bdd9d16ac435ce63003628",
+      "bytes": 7542
+    },
+    {
+      "file": "reports/spgel/S3_CHECKPOINT_DIAGNOSTICS.json",
+      "sha256": "176188dae116846d335699030b012ca2f5ff155c77fb84484a1e0321d45969dc",
+      "bytes": 1083503
+    },
+    {
+      "file": "reports/spgel/S3_LOSSLESS_SERIALIZATION_AUDIT.json",
+      "sha256": "69cf4b222fbd4ecc9b7e1c925ec9ef8cfe2fa56172f340b3fbec20074d48c2ab",
+      "bytes": 1064
+    },
+    {
+      "file": "reports/spgel/S3_PER_DONOR.csv",
+      "sha256": "cb4cdd60c85427e4fadfa6ea0ebae2918cbc93c3b9fc129ed0cd08806ca636e2",
+      "bytes": 23444
+    },
+    {
+      "file": "reports/spgel/S3_PILOT_SUMMARY.json",
+      "sha256": "68c1d8a1fa4835633255a1f3a2fc33a789bb16c17ef6f1a0bef2d6b059536f4d",
+      "bytes": 1429950
+    },
+    {
+      "file": "reports/spgel/S3_PROGRAM_METRICS.csv",
+      "sha256": "89e32ed142318ed90ad8c4cd94a9154b768373d19f31c19cc7ee255f3b6884f8",
+      "bytes": 89087
+    },
+    {
+      "file": "reports/spgel/S3_RESULTS.md",
+      "sha256": "5a4cc7f2d4b5afd2d76caeb7b0f9067a6fa23779ca606054a8743bb7cecb569d",
+      "bytes": 2841
+    },
+    {
+      "file": "reports/spgel/SOURCE_PUBLICATION_AUDIT.json",
+      "sha256": "464c4a60520a3edb3341c9f546784f1c1e2cfae667956111ab705aaafead8b0d",
+      "bytes": 2213
+    },
+    {
+      "file": "reports/spgel/SOURCE_RUN_LOCK.json",
+      "sha256": "c4ff905a0684ba0a83d81552e51b9f423ce231078f046d81d0da518f33c4f243",
+      "bytes": 4776
+    },
+    {
+      "file": "reports/spgel/SPGEL_DECISION.json",
+      "sha256": "ee2f3b1f603b96e920943ae3e7f8ee42099594c839a521f019fd4de37a6e373d",
+      "bytes": 21276
+    },
+    {
+      "file": "reports/spgel/SPGEL_DECISION.md",
+      "sha256": "799447bd9def8966023ca48c124e24eb5d89b3b1fe3fd1b57763df2e78c4f351",
+      "bytes": 4433
+    },
+    {
+      "file": "reports/spgel/SPGEL_EXECUTION_LEDGER.json",
+      "sha256": "1b50e7b0a4945be50c0b91676320a3f054a3d9c52632c9f7f9122153688eca29",
+      "bytes": 9144
+    },
+    {
+      "file": "reports/spgel/SPGEL_FROZEN_DELIVERY_AUDIT.json",
+      "sha256": "336209054300f84a0cf7b56ce1559c36d216d41f06f26c3403eb6a6df4c65df6",
+      "bytes": 7575
+    },
+    {
+      "file": "reports/spgel/SPGEL_HELDOUT_MAP_AUDIT.json",
+      "sha256": "d0af8c84b50031f0ae449ef8d0597e0eea7fae8d9e2ea938c0162e4cb90dc749",
+      "bytes": 4158
+    },
+    {
+      "file": "reports/spgel/SPGEL_INDEPENDENT_ARITHMETIC_REVIEW.json",
+      "sha256": "d9939f7a09002f5b360029dfb5023f3d7cdc795d4bc3722ddf6d578aabbaa8dc",
+      "bytes": 873
+    },
+    {
+      "file": "reports/spgel/source_to_tcga_geometry_manifest.json",
+      "sha256": "2d81852e26476db7ee9e01094dccfec1b44e47be4dfc6fed1d091699ffa06d64",
+      "bytes": 2818
+    },
+    {
+      "file": "scripts/audit_transfer_geometry.py",
+      "sha256": "996a11e9d0237a198d1d99889292ff16625bf8c7dc3f49fcff9c0875afcdd70a",
+      "bytes": 5964
+    },
+    {
+      "file": "scripts/check_spgel_frozen_delivery.py",
+      "sha256": "bdbd81c7c98fe8db4ad2f5773f24b684be7e8461f6c003ee7a7062187632c7b0",
+      "bytes": 35353
+    },
+    {
+      "file": "scripts/parallel_evidence_publication.py",
+      "sha256": "7ee22f330fa326c08d05036e3860534af6943212840816b865c65031e4386fb6",
+      "bytes": 27831
+    },
+    {
+      "file": "scripts/shard_spgel_public_report.py",
+      "sha256": "4db98368cad5a695b8694311db18df07ac792ec459fab3b6294e10f161f12302",
+      "bytes": 6472
+    },
+    {
+      "file": "scripts/spgel_source_export.py",
+      "sha256": "b92090c36e62da54b2347f51355404301372ab9f38cfa5ab35dd789b9c9d5c7f",
+      "bytes": 6253
+    },
+    {
+      "file": "scripts/spgel_source_fit.py",
+      "sha256": "e38da9ef597e53165eacdcd0caf45b19de5f1a3f2b439a583af2bf7d4034af26",
+      "bytes": 1351
+    },
+    {
+      "file": "scripts/spgel_source_qualify.py",
+      "sha256": "4c7b72782a22e067f41a99104d923e60bc117ac358a317e5415d4765a1fc2b35",
+      "bytes": 1379
+    },
+    {
+      "file": "scripts/spgel_source_replay.py",
+      "sha256": "65d67d1bd78bc4f67ca68cf8d6d42e9f9ff761f1ecadbcf89819e96ace1f3f77",
+      "bytes": 1136
+    },
+    {
+      "file": "scripts/spgel_source_report.py",
+      "sha256": "9b153223d7fc42675c69f88169b8970f4c6f2a2dc56594aaa316a4d6942b16e3",
+      "bytes": 44639
+    },
+    {
+      "file": "scripts/verify_spgel_aggregate_tables.py",
+      "sha256": "1c8637f7faf23ca56636cb8e1b2ebeae4d1f98415fc52c7fa014838c905976af",
+      "bytes": 6688
+    },
+    {
+      "file": "src/spgel/__init__.py",
+      "sha256": "d46e58b33b8292f3d37ff3897d0e44c5a219f80095f3d1bff6a0491d36e987d2",
+      "bytes": 258
+    },
+    {
+      "file": "src/spgel/contracts.py",
+      "sha256": "bef41a7740598215f9d4114e4c3c8534b6a08b7ccb95873ef687c00dabab4517",
+      "bytes": 16408
+    },
+    {
+      "file": "src/spgel/geometry.py",
+      "sha256": "507c9f7384499328bb0af074c7ed12cd9672e09ff6e1577d56d20349e3c17e95",
+      "bytes": 4631
+    },
+    {
+      "file": "src/spgel/interface.py",
+      "sha256": "582394e2cf4505b5271f063e3a15ad213f24a1c1921a701f633db137d3628bf8",
+      "bytes": 9231
+    },
+    {
+      "file": "src/spgel/losses.py",
+      "sha256": "b1d02f6722da7eb4ee714a23732e38f7166752d22a527e01a28de97ef5c7c038",
+      "bytes": 7247
+    },
+    {
+      "file": "src/spgel/metrics.py",
+      "sha256": "3814e46eff468304d9b2037b1742c083ccc7ee2025d5d12b173b03f2becdcc76",
+      "bytes": 7527
+    },
+    {
+      "file": "src/spgel/models.py",
+      "sha256": "7d2c59e2e7c15973f299bcc8c0a03882b65dd34be15a186fa1ae28cdc6398f59",
+      "bytes": 18713
+    },
+    {
+      "file": "src/spgel/training.py",
+      "sha256": "f1347fd94762d8cf87ad1de30c4ad6fb31bebfc867ddac860c686cc8ba294083",
+      "bytes": 47397
+    },
+    {
+      "file": "tests/test_parallel_evidence_publication.py",
+      "sha256": "b2067f1bf92c539c4bd995f47c2e896a51f4154e104e1adf6b9c04431ac2ffd4",
+      "bytes": 13144
+    },
+    {
+      "file": "tests/test_spgel_contracts.py",
+      "sha256": "ea9e8ed190317a25bc960a9a9c6cf090a42663847c65323a5b7187c3bcbc05a8",
+      "bytes": 4809
+    },
+    {
+      "file": "tests/test_spgel_interface.py",
+      "sha256": "fc1ef39e236b87edb3583138ce0213c93f9c2909cc4a4752e2919c3c5912281a",
+      "bytes": 3458
+    },
+    {
+      "file": "tests/test_spgel_models.py",
+      "sha256": "2a68effd89c23f499bc657191a09d1231d755fbbdae00179afb59a5d9fbcc85d",
+      "bytes": 10067
+    },
+    {
+      "file": "tests/test_spgel_report.py",
+      "sha256": "422702f854b5526316ebd3a2a29f1a3e99eb5c6c0e64f3917a09edabac689f7f",
+      "bytes": 16116
+    },
+    {
+      "file": "tests/test_spgel_training.py",
+      "sha256": "fa23efd733690eb7365ce8c7eed174b0832206e5d9fd8dc0691f5fc669f7bea8",
+      "bytes": 6522
+    }
+  ],
+  "excludes_manifest_self_hash": true,
+  "git_operations": 0,
+  "old_reports_bytes_unchanged": true
+}

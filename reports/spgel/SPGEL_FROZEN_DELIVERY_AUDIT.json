@@ -1,0 +1,201 @@
+{
+  "schema": "spgel_actual_frozen_source_delivery_acceptance_v1",
+  "status": "PASS_TWO_ACTUAL_S4_ENCODERS_FULL_SOURCE_CONTEXT_AND_BOUNDARIES",
+  "acceptance_script_SHA256": "bdbd81c7c98fe8db4ad2f5773f24b684be7e8461f6c003ee7a7062187632c7b0",
+  "source_contract_SHA256": "f3f3225b7640c25940aa2013e7a514f161aa2087af0c81abeb8b9db9851ea559",
+  "source_export_complete_SHA256": "4d9458f4db06b7f024a04ce9b51ea6823cd66ca23b09b3dcd5b3ed04c7d18646",
+  "prior_actual_replay_audits": [
+    {
+      "stage": "pilot",
+      "SHA256": "32a2dca94572402cac844c1f0b995da35d387ddaaec2f20dc9f4f92bec0fb56d",
+      "replayed_models": 72,
+      "replayed_states": 192
+    },
+    {
+      "stage": "s4",
+      "SHA256": "426a6efa038912b3ca606d63148032098ff505b18ed74402c47be1c3cc0dfdb7",
+      "replayed_models": 2,
+      "replayed_states": 6
+    }
+  ],
+  "source_encoders_count": 2,
+  "source_sections_count": 12,
+  "source_spots_count": 13011,
+  "rows": [
+    {
+      "arm": "S_A5",
+      "source_manifest_SHA256": "1881387adf0edd70001ca6f4c74e51016d89b334149a744c42de96926e1c446f",
+      "exported_encoder_SHA256": "86263f9f324090ee0650dae1f3d97568ecd2fe176f9548edd307f58dffa8a704",
+      "original_checkpoint_SHA256": "d75fbbb4ac49f5ef5cdb39425f35e35e7484320ff2737773de419bf6f2f95a84",
+      "learned_state_SHA256": "daa2718939d85ef11b61f3f56357aa6cab5b4bc25ff903b9f98ebfe5b484b15f",
+      "source_scaler_SHA256": "5e6693f3595782ddfd39f69a4e59afecc8beb0be6e53baa02c4f62e79fc120fb",
+      "source_membership_SHA256": "51b41d5b0f93e0dfca92232b7495588bd134c53f07f5c7f25151874b5523b494",
+      "image_sections": 12,
+      "image_spots": 13011,
+      "private_map_dumps": [
+        {
+          "SHA256": "fb224a5f11053d9fbd3511e0b6d5408d7395944d5fff63c73419e47e03ad6fdb",
+          "rows": 1305
+        },
+        {
+          "SHA256": "85cabba4fe3ef900201f94d1e4809b6b678391f9b6ea8daf59892804bf9669d4",
+          "rows": 283
+        },
+        {
+          "SHA256": "007fcd04cbd7441cb8e1bd0289b930d6194606fa35ece5a2fc0b736f9bf3eef8",
+          "rows": 1162
+        },
+        {
+          "SHA256": "131c857b98bab0f31533e704d52d9eb756097668970cf6a463d39dc66e7516fa",
+          "rows": 1753
+        },
+        {
+          "SHA256": "00e8d83dee029f2151db72f89b222931e9c1b0fe7d8f3fededdd265dc88503ce",
+          "rows": 649
+        },
+        {
+          "SHA256": "6212b24227e8f18e1c2d034c0e48b04c00b69460b2f4da8733e08bf5a3c2575f",
+          "rows": 665
+        },
+        {
+          "SHA256": "1b947cb5ae332ae449010cb6cb99391fb226e2dd645434392fe02d648640bb7d",
+          "rows": 851
+        },
+        {
+          "SHA256": "514a9818cfc69c03e7fbc9410cb32d9946941734030b0acddeeee7d033ab67d9",
+          "rows": 240
+        },
+        {
+          "SHA256": "e44fdfa8e72d5bdde25a3ec57cc8127649e5d9e85b58b81c1bd949955aff7421",
+          "rows": 1802
+        },
+        {
+          "SHA256": "dcdfce2f175c9bd3de128f2249263e29606f65b26cde9fdf0614b1dbcea9ce33",
+          "rows": 2317
+        },
+        {
+          "SHA256": "9fe08bcda636eb034f70b1ce2fdda9417db6c243bb4f39fa71ce8e30d2a16fbe",
+          "rows": 1140
+        },
+        {
+          "SHA256": "88623ef89680dacf30f2ca480f7353fea218fbce42b62193fe392912c9ce51bb",
+          "rows": 844
+        }
+      ],
+      "image_API_gene_forward_calls": 0,
+      "maximum_errors": {
+        "image_prediction_z": 0.0,
+        "image_embedding": 0.0,
+        "image_program_map": 0.0
+      },
+      "source_conditional_maximum_errors": {
+        "source_gene_token": 0.0,
+        "conditional_image_read": 0.0,
+        "conditional_gene_read": 0.0,
+        "paired_scores": 0.0,
+        "route_original_window": 0.0
+      },
+      "source_conditional_batches": 32,
+      "padding_multislide": {
+        "maximum_error": 1.430511474609375e-06,
+        "batch_rows": 2,
+        "complete_sections": 2,
+        "padding_positions": 289
+      },
+      "all_exported_parameters_frozen": true,
+      "source_image_map_scope": "FULL_SOURCE_FIT_QA_NOT_HELDOUT",
+      "actual_TCGA_bulk_qualification": "NOT_RUN_SOURCE_SPOT_VALUES_NOT_PASSED_AS_BULK",
+      "new_optimizer_fits": 0,
+      "new_optimizer_updates": 0
+    },
+    {
+      "arm": "S_A1",
+      "source_manifest_SHA256": "83818d0393f3443b4a3cf58861b9c1af132e8e2e8d1c33423a24c94539ba0a5a",
+      "exported_encoder_SHA256": "ce7c5814cd67bb4dd806fe801951c891046e7c463e0922375380d43ba5f3336e",
+      "original_checkpoint_SHA256": "1200880b0580b407d7ef330e2e2add4171f8fba8a31187bcc2122a0da184da0a",
+      "learned_state_SHA256": "1c74d0922f852accf1cd6eedf75076f6369d181a58e57bca2c3be691c123840d",
+      "source_scaler_SHA256": "5e6693f3595782ddfd39f69a4e59afecc8beb0be6e53baa02c4f62e79fc120fb",
+      "source_membership_SHA256": "51b41d5b0f93e0dfca92232b7495588bd134c53f07f5c7f25151874b5523b494",
+      "image_sections": 12,
+      "image_spots": 13011,
+      "private_map_dumps": [
+        {
+          "SHA256": "13d6a7ca820d2a2ddec8814e5f6062298297f5bc7698767fe17aeaeb8c3bd346",
+          "rows": 1305
+        },
+        {
+          "SHA256": "8c858a51db82d7e8b8fb88bde03a1a73d71332fddddce096c3d3ec2bf1e47997",
+          "rows": 283
+        },
+        {
+          "SHA256": "c263ffa2fabc99f203551a2081039e4beb8a17f7400db90269fbf9e5c57e5a1a",
+          "rows": 1162
+        },
+        {
+          "SHA256": "09324fecec74d60e185853f6cf2e5b329341856c6b99c7c5edb415aeb9fdfd1c",
+          "rows": 1753
+        },
+        {
+          "SHA256": "e3bd8c9937be8fd265ef1d5e0f6d840d90fd24c0b324eed6a52566cd9a162276",
+          "rows": 649
+        },
+        {
+          "SHA256": "f4dbc49709f2ff7327e00c4899f2f740aff28eb995b1d8c49edcf5dda1507ec5",
+          "rows": 665
+        },
+        {
+          "SHA256": "c703cb45b5384a101f9437568c5291408691a3e89784d7a117ab1ac06fbe6018",
+          "rows": 851
+        },
+        {
+          "SHA256": "9f5d70f18b355484c418873414b9ec456db7b78bdcf0a5be09ca617ad201ed03",
+          "rows": 240
+        },
+        {
+          "SHA256": "4922f5eca8c1fcfc2d68bae66c577e4965d702574bac25328200ce07bc4c83aa",
+          "rows": 1802
+        },
+        {
+          "SHA256": "d618f02b3a14449f0d1a03c186fa050e22a8470c680c64905d91a9daa0993a62",
+          "rows": 2317
+        },
+        {
+          "SHA256": "2926c5627ef9a41600009b3240cac9f4d4f4f3352910ad40f8f0013c246f8f8a",
+          "rows": 1140
+        },
+        {
+          "SHA256": "00ea14e16442911e06a66aa1553bee0073219f2f2ad656875b1fcd1cbde91076",
+          "rows": 844
+        }
+      ],
+      "image_API_gene_forward_calls": 0,
+      "maximum_errors": {
+        "image_prediction_z": 0.0,
+        "image_embedding": 0.0,
+        "image_program_map": 0.0
+      },
+      "source_conditional_maximum_errors": {},
+      "source_conditional_batches": 0,
+      "padding_multislide": {
+        "maximum_error": 9.5367431640625e-07,
+        "batch_rows": 2,
+        "complete_sections": 2,
+        "padding_positions": 289
+      },
+      "all_exported_parameters_frozen": true,
+      "source_image_map_scope": "FULL_SOURCE_FIT_QA_NOT_HELDOUT",
+      "actual_TCGA_bulk_qualification": "NOT_RUN_SOURCE_SPOT_VALUES_NOT_PASSED_AS_BULK",
+      "new_optimizer_fits": 0,
+      "new_optimizer_updates": 0
+    }
+  ],
+  "new_optimizer_fits": 0,
+  "new_optimizer_updates": 0,
+  "TCGA_loaded": false,
+  "DSS_or_PFI_read": false,
+  "source_or_target_labels_selected_model": false,
+  "source_ST_measurements_used_only_for_source_acceptance": true,
+  "full_source_image_maps_are_heldout": false,
+  "public_contains_spot_predictions_coordinates_or_weights": false,
+  "TCGA_bulk_qualification": "NOT_RUN_REQUIRES_SEPARATE_TRAIN_ONLY_DOMAIN_CONTRACT"
+}

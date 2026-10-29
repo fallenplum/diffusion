@@ -1,0 +1,39 @@
+{
+  "schema": "parallel_evidence_publication_audit_v1",
+  "status": "PASS_EXPLICIT_ANONYMOUS_PREFLIGHT",
+  "line": "r8",
+  "stage": "complete",
+  "scientific_contract_sha256": "10cbf733685b0e95c8ab62b3bdf3f8f26ba4a4299d185e87ad965a86d20f1b27",
+  "actual_lock_file_sha256": "cde8cdca8cbe10ddf213b4b5072f0cdb4981290a9170f2c402a40644e63e8df7",
+  "explicit_input_allowlist_sha256": "7adf620b9ea9937051eca7d7ea5f4aa2c8d3379a565dc5396bb57b63797587cc",
+  "scanned_input_files": 38,
+  "scanned_input_bytes": 667077,
+  "completion": {
+    "actual_fits": 81,
+    "actual_saved_state_replays": 81,
+    "zero_fit_references": 18,
+    "independent_arithmetic_is_not_extra_model_replay": true
+  },
+  "denylist_provenance": {
+    "cohort_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+    "patient_order_sha256": "76a144d544b7461d669487625855dc7de65f115a6a2f65d7a20002b2a8e5008f",
+    "stage_b_sha256": "b5a2a44862123f629314cb28ad66abae437d7d08e923fb6128f82f7e9059c025"
+  },
+  "exact_identifier_group_counts": {
+    "barcodes_count": 3634,
+    "donor_count": 6,
+    "patient_count": 512,
+    "section_count": 12
+  },
+  "identifiers_or_private_paths_published": false,
+  "git_operations": 0,
+  "model_loads": 0,
+  "new_optimizer_fits": 0,
+  "historical_reports_snapshot": {
+    "files": 313,
+    "bytes": 52420340,
+    "tree_sha256": "67d273bf65f5ff8573895dcd488bad2c13e444e5723a1ad6baaf37efe5e2c669"
+  },
+  "old_reports_bytes_unchanged": true,
+  "administrative_script_sha256": "a03d7da22d2151c1e012161a5f21d1e539e5e26588b0fda0cc8f04b91c827479"
+}

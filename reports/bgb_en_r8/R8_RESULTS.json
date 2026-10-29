@@ -1,0 +1,2134 @@
+{
+  "SD_bound_applies_to_training_only": true,
+  "budget": {
+    "actual_convex_fits": 81,
+    "actual_saved_model_replays": 81,
+    "deterministic_unique_training_problems": 27,
+    "neural_fits": 0,
+    "neural_updates": 0,
+    "source_teacher_beta_refits": 0,
+    "unsupervised_PCA_fits": 60,
+    "zero_fit_references": 18
+  },
+  "config_sha256": "0c17d27329202dd0808870dfa2a90361392b083acc9cc1c1633dbdb7a1345414",
+  "contract_sha256": "10cbf733685b0e95c8ab62b3bdf3f8f26ba4a4299d185e87ad965a86d20f1b27",
+  "decision": {
+    "CI_or_pvalues_computed": false,
+    "PFI_used_for_selection": false,
+    "R8_9_bilinear_control_confirms_R8_5_patch_routing": false,
+    "R8_DSS_selects_source_model": false,
+    "actual_convex_fits": 81,
+    "all_fixed_primary_comparisons": [
+      {
+        "Uno_damage": 0.00641903124448929,
+        "Uno_repair": 0.0047239247223357685,
+        "candidate": "R8-6",
+        "damage": 0.007055075102412381,
+        "delta_Harrell": 0.0,
+        "delta_Uno60": -0.0016951065221536554,
+        "joint_directional_support": false,
+        "nominal_seed_repetitions_are_independent_random_evidence": false,
+        "per_seed": [
+          {
+            "Uno_damage": 0.00641903124448929,
+            "Uno_repair": 0.0047239247223357685,
+            "damage": 0.007055075102412381,
+            "delta_Harrell": 0.0,
+            "delta_Uno60": -0.0016951065221536554,
+            "repair": 0.007055075102412381,
+            "seed": 31
+          },
+          {
+            "Uno_damage": 0.00641903124448929,
+            "Uno_repair": 0.0047239247223357685,
+            "damage": 0.007055075102412381,
+            "delta_Harrell": 0.0,
+            "delta_Uno60": -0.0016951065221536554,
+            "repair": 0.007055075102412381,
+            "seed": 47
+          },
+          {
+            "Uno_damage": 0.00641903124448929,
+            "Uno_repair": 0.0047239247223357685,
+            "damage": 0.007055075102412381,
+            "delta_Harrell": 0.0,
+            "delta_Uno60": -0.0016951065221536554,
+            "repair": 0.007055075102412381,
+            "seed": 83
+          }
+        ],
+        "positive_nominal_seed_repetitions": 0,
+        "reference": "R8-1",
+        "repair": 0.007055075102412381,
+        "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+        "small_delta_is_weak_evidence": true,
+        "undefined_metric": false
+      },
+      {
+        "Uno_damage": 0.00265240025823729,
+        "Uno_repair": 0.002511200959609739,
+        "candidate": "R8-6",
+        "damage": 0.005006827492034593,
+        "delta_Harrell": -0.001365498406918464,
+        "delta_Uno60": -0.00014119929862754788,
+        "joint_directional_support": false,
+        "nominal_seed_repetitions_are_independent_random_evidence": false,
+        "per_seed": [
+          {
+            "Uno_damage": 0.00265240025823729,
+            "Uno_repair": 0.002511200959609739,
+            "damage": 0.005006827492034593,
+            "delta_Harrell": -0.001365498406918464,
+            "delta_Uno60": -0.00014119929862754788,
+            "repair": 0.0036413290851160674,
+            "seed": 31
+          },
+          {
+            "Uno_damage": 0.00265240025823729,
+            "Uno_repair": 0.002511200959609739,
+            "damage": 0.005006827492034593,
+            "delta_Harrell": -0.001365498406918464,
+            "delta_Uno60": -0.00014119929862754788,
+            "repair": 0.0036413290851160674,
+            "seed": 47
+          },
+          {
+            "Uno_damage": 0.00265240025823729,
+            "Uno_repair": 0.002511200959609739,
+            "damage": 0.005006827492034593,
+            "delta_Harrell": -0.001365498406918464,
+            "delta_Uno60": -0.00014119929862754788,
+            "repair": 0.0036413290851160674,
+            "seed": 83
+          }
+        ],
+        "positive_nominal_seed_repetitions": 0,
+        "reference": "R8-4",
+        "repair": 0.0036413290851160674,
+        "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+        "small_delta_is_weak_evidence": true,
+        "undefined_metric": false
+      },
+      {
+        "Uno_damage": 0.005401820881841251,
+        "Uno_repair": 0.011053996856108618,
+        "candidate": "R8-6",
+        "damage": 0.005461993627674101,
+        "delta_Harrell": 0.005006827492034627,
+        "delta_Uno60": 0.0056521759742674815,
+        "joint_directional_support": true,
+        "nominal_seed_repetitions_are_independent_random_evidence": false,
+        "per_seed": [
+          {
+            "Uno_damage": 0.005401820881841251,
+            "Uno_repair": 0.011053996856108618,
+            "damage": 0.005461993627674101,
+            "delta_Harrell": 0.005006827492034627,
+            "delta_Uno60": 0.0056521759742674815,
+            "repair": 0.010468821119708694,
+            "seed": 31
+          },
+          {
+            "Uno_damage": 0.005401820881841251,
+            "Uno_repair": 0.011053996856108618,
+            "damage": 0.005461993627674101,
+            "delta_Harrell": 0.005006827492034627,
+            "delta_Uno60": 0.0056521759742674815,
+            "repair": 0.010468821119708694,
+            "seed": 47
+          },
+          {
+            "Uno_damage": 0.005401820881841251,
+            "Uno_repair": 0.011053996856108618,
+            "damage": 0.005461993627674101,
+            "delta_Harrell": 0.005006827492034627,
+            "delta_Uno60": 0.0056521759742674815,
+            "repair": 0.010468821119708694,
+            "seed": 83
+          }
+        ],
+        "positive_nominal_seed_repetitions": 3,
+        "reference": "R8-8a_RANDOM_SOURCE",
+        "repair": 0.010468821119708694,
+        "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+        "small_delta_is_weak_evidence": false,
+        "undefined_metric": false
+      },
+      {
+        "Uno_damage": 0.0,
+        "Uno_repair": 0.00018791124811138988,
+        "candidate": "R8-6",
+        "damage": 0.0,
+        "delta_Harrell": 0.000227583067819781,
+        "delta_Uno60": 0.00018791124811146087,
+        "joint_directional_support": true,
+        "nominal_seed_repetitions_are_independent_random_evidence": false,
+        "per_seed": [
+          {
+            "Uno_damage": 0.0,
+            "Uno_repair": 0.00018791124811138988,
+            "damage": 0.0,
+            "delta_Harrell": 0.000227583067819781,
+            "delta_Uno60": 0.00018791124811146087,
+            "repair": 0.0002275830678197542,
+            "seed": 31
+          },
+          {
+            "Uno_damage": 0.0,
+            "Uno_repair": 0.00018791124811138988,
+            "damage": 0.0,
+            "delta_Harrell": 0.000227583067819781,
+            "delta_Uno60": 0.00018791124811146087,
+            "repair": 0.0002275830678197542,
+            "seed": 47
+          },
+          {
+            "Uno_damage": 0.0,
+            "Uno_repair": 0.00018791124811138988,
+            "damage": 0.0,
+            "delta_Harrell": 0.000227583067819781,
+            "delta_Uno60": 0.00018791124811146087,
+            "repair": 0.0002275830678197542,
+            "seed": 83
+          }
+        ],
+        "positive_nominal_seed_repetitions": 3,
+        "reference": "R8-8b_WRONG_PROGRAM",
+        "repair": 0.0002275830678197542,
+        "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+        "small_delta_is_weak_evidence": true,
+        "undefined_metric": false
+      },
+      {
+        "Uno_damage": 0.008348644250930662,
+        "Uno_repair": 0.006325793982334698,
+        "candidate": "R8-6",
+        "damage": 0.0061447428311333634,
+        "delta_Harrell": 0.000910332271279013,
+        "delta_Uno60": -0.0020228502685959437,
+        "joint_directional_support": false,
+        "nominal_seed_repetitions_are_independent_random_evidence": false,
+        "per_seed": [
+          {
+            "Uno_damage": 0.008348644250930662,
+            "Uno_repair": 0.006325793982334698,
+            "damage": 0.0061447428311333634,
+            "delta_Harrell": 0.000910332271279013,
+            "delta_Uno60": -0.0020228502685959437,
+            "repair": 0.007055075102412381,
+            "seed": 31
+          },
+          {
+            "Uno_damage": 0.008348644250930662,
+            "Uno_repair": 0.006325793982334698,
+            "damage": 0.0061447428311333634,
+            "delta_Harrell": 0.000910332271279013,
+            "delta_Uno60": -0.0020228502685959437,
+            "repair": 0.007055075102412381,
+            "seed": 47
+          },
+          {
+            "Uno_damage": 0.008348644250930662,
+            "Uno_repair": 0.006325793982334698,
+            "damage": 0.0061447428311333634,
+            "delta_Harrell": 0.000910332271279013,
+            "delta_Uno60": -0.0020228502685959437,
+            "repair": 0.007055075102412381,
+            "seed": 83
+          }
+        ],
+        "positive_nominal_seed_repetitions": 0,
+        "reference": "R8-9_WRONG_PATIENT",
+        "repair": 0.007055075102412381,
+        "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+        "small_delta_is_weak_evidence": true,
+        "undefined_metric": false
+      },
+      {
+        "Uno_damage": 0.003762412692650342,
+        "Uno_repair": 0.003250195257158509,
+        "candidate": "R8-6",
+        "damage": 0.005689576695493855,
+        "delta_Harrell": -0.002275830678197477,
+        "delta_Uno60": -0.0005122174354916798,
+        "joint_directional_support": false,
+        "nominal_seed_repetitions_are_independent_random_evidence": false,
+        "per_seed": [
+          {
+            "Uno_damage": 0.003762412692650342,
+            "Uno_repair": 0.003250195257158509,
+            "damage": 0.005689576695493855,
+            "delta_Harrell": -0.002275830678197477,
+            "delta_Uno60": -0.0005122174354916798,
+            "repair": 0.0034137460172963133,
+            "seed": 31
+          },
+          {
+            "Uno_damage": 0.003762412692650342,
+            "Uno_repair": 0.003250195257158509,
+            "damage": 0.005689576695493855,
+            "delta_Harrell": -0.002275830678197477,
+            "delta_Uno60": -0.0005122174354916798,
+            "repair": 0.0034137460172963133,
+            "seed": 47
+          },
+          {
+            "Uno_damage": 0.003762412692650342,
+            "Uno_repair": 0.003250195257158509,
+            "damage": 0.005689576695493855,
+            "delta_Harrell": -0.002275830678197477,
+            "delta_Uno60": -0.0005122174354916798,
+            "repair": 0.0034137460172963133,
+            "seed": 83
+          }
+        ],
+        "positive_nominal_seed_repetitions": 0,
+        "reference": "R8-10_NO_INTERACTION",
+        "repair": 0.0034137460172963133,
+        "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+        "small_delta_is_weak_evidence": true,
+        "undefined_metric": false
+      }
+    ],
+    "all_medical_ideas_rejected": false,
+    "all_nominal_seed_predictions_bitwise_identical": true,
+    "causal_biology_or_external_generalization_proven": false,
+    "independent_random_seed_evidence": false,
+    "new_SPGEL_source_used": false,
+    "new_outer_results": "NOT_RUN",
+    "nominal_seed_repetitions": 3,
+    "numerical_training_problems": 27,
+    "primary_candidate": "R8-6",
+    "status": "CURRENT_R8_6_NOT_SUPPORTED"
+  },
+  "diagnostic_index": [
+    {
+      "bytes": 23118,
+      "file": "R8_DIAGNOSTICS_R8-2.json",
+      "rows": 9,
+      "sha256": "f8d9a84b884346cfdcc7fbb84cb269f94f79157b9c96747e22b5d26784b90628"
+    },
+    {
+      "bytes": 23088,
+      "file": "R8_DIAGNOSTICS_R8-3.json",
+      "rows": 9,
+      "sha256": "fab917eebeb7bf3d2932344650b0c0c1450dc7db28aaa71554115ff285a72b1d"
+    },
+    {
+      "bytes": 23187,
+      "file": "R8_DIAGNOSTICS_R8-4.json",
+      "rows": 9,
+      "sha256": "3223ce70a89447fce7b878a0a979ced9bdcbb345bd89ffdc76f0bcadf2aa11bf"
+    },
+    {
+      "bytes": 31854,
+      "file": "R8_DIAGNOSTICS_R8-5.json",
+      "rows": 9,
+      "sha256": "b097878cf39bc4bc133e052364de08c0998e05bd29625b0b737218de848bf2c6"
+    },
+    {
+      "bytes": 58104,
+      "file": "R8_DIAGNOSTICS_R8-6.json",
+      "rows": 9,
+      "sha256": "8ab9702bfc07657884f97a362531b2f05ae2f5908d7dbf2a72764c2db1f15657"
+    },
+    {
+      "bytes": 58395,
+      "file": "R8_DIAGNOSTICS_R8-8a_RANDOM_SOURCE.json",
+      "rows": 9,
+      "sha256": "3c56e3aaf6bf4ba3b4be10f4cba3213f91e5727ab5ebe9b0fdc594ea329cdfce"
+    },
+    {
+      "bytes": 59802,
+      "file": "R8_DIAGNOSTICS_R8-8b_WRONG_PROGRAM.json",
+      "rows": 9,
+      "sha256": "5743b64b8cb85d1d7e76a5319cc03a635521e9e68c7144ce5f3038163b9b16cd"
+    },
+    {
+      "bytes": 58263,
+      "file": "R8_DIAGNOSTICS_R8-9_WRONG_PATIENT.json",
+      "rows": 9,
+      "sha256": "d34f3d44044fcec4434d8c754b828bd3593e47fd8bea999c0714db54e5b93bcf"
+    },
+    {
+      "bytes": 23262,
+      "file": "R8_DIAGNOSTICS_R8-10_NO_INTERACTION.json",
+      "rows": 9,
+      "sha256": "32c70320b740082572c6e3f8c27af6e3de07b2a1e61c48177d9fbfe33e2fc909"
+    }
+  ],
+  "legacy_global_container_loaded": true,
+  "new_features_fit_metrics_only_scoped_outer1_train409": true,
+  "outer_performance_evaluation": false,
+  "paired_comparisons": [
+    {
+      "Uno_damage": 0.008792188549160609,
+      "Uno_repair": 0.008749610297565547,
+      "candidate": "R8-2",
+      "damage": 0.009103322712790168,
+      "delta_Harrell": 0.00022758306781966997,
+      "delta_Uno60": -4.2578251595259964e-05,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.008792188549160609,
+          "Uno_repair": 0.008749610297565547,
+          "damage": 0.009103322712790168,
+          "delta_Harrell": 0.00022758306781966997,
+          "delta_Uno60": -4.2578251595259964e-05,
+          "repair": 0.009330905780609923,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.008792188549160609,
+          "Uno_repair": 0.008749610297565547,
+          "damage": 0.009103322712790168,
+          "delta_Harrell": 0.00022758306781966997,
+          "delta_Uno60": -4.2578251595259964e-05,
+          "repair": 0.009330905780609923,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.008792188549160609,
+          "Uno_repair": 0.008749610297565547,
+          "damage": 0.009103322712790168,
+          "delta_Harrell": 0.00022758306781966997,
+          "delta_Uno60": -4.2578251595259964e-05,
+          "repair": 0.009330905780609923,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-1",
+      "repair": 0.009330905780609923,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.013625317845744589,
+      "Uno_repair": 0.015158001035182531,
+      "candidate": "R8-3",
+      "damage": 0.013427401001365498,
+      "delta_Harrell": -0.001137915339098683,
+      "delta_Uno60": 0.001532683189438111,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.013625317845744589,
+          "Uno_repair": 0.015158001035182531,
+          "damage": 0.013427401001365498,
+          "delta_Harrell": -0.001137915339098683,
+          "delta_Uno60": 0.001532683189438111,
+          "repair": 0.012289485662266727,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.013625317845744589,
+          "Uno_repair": 0.015158001035182531,
+          "damage": 0.013427401001365498,
+          "delta_Harrell": -0.001137915339098683,
+          "delta_Uno60": 0.001532683189438111,
+          "repair": 0.012289485662266727,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.013625317845744589,
+          "Uno_repair": 0.015158001035182531,
+          "damage": 0.013427401001365498,
+          "delta_Harrell": -0.001137915339098683,
+          "delta_Uno60": 0.001532683189438111,
+          "repair": 0.012289485662266727,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-2",
+      "repair": 0.012289485662266727,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.007065852327877172,
+      "Uno_repair": 0.005511945104351202,
+      "candidate": "R8-4",
+      "damage": 0.007737824305871643,
+      "delta_Harrell": 0.001365498406918464,
+      "delta_Uno60": -0.0015539072235261076,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.007065852327877172,
+          "Uno_repair": 0.005511945104351202,
+          "damage": 0.007737824305871643,
+          "delta_Harrell": 0.001365498406918464,
+          "delta_Uno60": -0.0015539072235261076,
+          "repair": 0.009103322712790168,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.007065852327877172,
+          "Uno_repair": 0.005511945104351202,
+          "damage": 0.007737824305871643,
+          "delta_Harrell": 0.001365498406918464,
+          "delta_Uno60": -0.0015539072235261076,
+          "repair": 0.009103322712790168,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.007065852327877172,
+          "Uno_repair": 0.005511945104351202,
+          "damage": 0.007737824305871643,
+          "delta_Harrell": 0.001365498406918464,
+          "delta_Uno60": -0.0015539072235261076,
+          "repair": 0.009103322712790168,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-1",
+      "repair": 0.009103322712790168,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.00028906056810131886,
+      "Uno_repair": 0.00026389260939160846,
+      "candidate": "R8-5",
+      "damage": 0.0004551661356395084,
+      "delta_Harrell": 0.0,
+      "delta_Uno60": -2.5167958709770843e-05,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.00028906056810131886,
+          "Uno_repair": 0.00026389260939160846,
+          "damage": 0.0004551661356395084,
+          "delta_Harrell": 0.0,
+          "delta_Uno60": -2.5167958709770843e-05,
+          "repair": 0.0004551661356395084,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.00028906056810131886,
+          "Uno_repair": 0.00026389260939160846,
+          "damage": 0.0004551661356395084,
+          "delta_Harrell": 0.0,
+          "delta_Uno60": -2.5167958709770843e-05,
+          "repair": 0.0004551661356395084,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.00028906056810131886,
+          "Uno_repair": 0.00026389260939160846,
+          "damage": 0.0004551661356395084,
+          "delta_Harrell": 0.0,
+          "delta_Uno60": -2.5167958709770843e-05,
+          "repair": 0.0004551661356395084,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-3",
+      "repair": 0.0004551661356395084,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.00641903124448929,
+      "Uno_repair": 0.0047239247223357685,
+      "candidate": "R8-6",
+      "damage": 0.007055075102412381,
+      "delta_Harrell": 0.0,
+      "delta_Uno60": -0.0016951065221536554,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.00641903124448929,
+          "Uno_repair": 0.0047239247223357685,
+          "damage": 0.007055075102412381,
+          "delta_Harrell": 0.0,
+          "delta_Uno60": -0.0016951065221536554,
+          "repair": 0.007055075102412381,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.00641903124448929,
+          "Uno_repair": 0.0047239247223357685,
+          "damage": 0.007055075102412381,
+          "delta_Harrell": 0.0,
+          "delta_Uno60": -0.0016951065221536554,
+          "repair": 0.007055075102412381,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.00641903124448929,
+          "Uno_repair": 0.0047239247223357685,
+          "damage": 0.007055075102412381,
+          "delta_Harrell": 0.0,
+          "delta_Uno60": -0.0016951065221536554,
+          "repair": 0.007055075102412381,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-1",
+      "repair": 0.007055075102412381,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.00265240025823729,
+      "Uno_repair": 0.002511200959609739,
+      "candidate": "R8-6",
+      "damage": 0.005006827492034593,
+      "delta_Harrell": -0.001365498406918464,
+      "delta_Uno60": -0.00014119929862754788,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.00265240025823729,
+          "Uno_repair": 0.002511200959609739,
+          "damage": 0.005006827492034593,
+          "delta_Harrell": -0.001365498406918464,
+          "delta_Uno60": -0.00014119929862754788,
+          "repair": 0.0036413290851160674,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.00265240025823729,
+          "Uno_repair": 0.002511200959609739,
+          "damage": 0.005006827492034593,
+          "delta_Harrell": -0.001365498406918464,
+          "delta_Uno60": -0.00014119929862754788,
+          "repair": 0.0036413290851160674,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.00265240025823729,
+          "Uno_repair": 0.002511200959609739,
+          "damage": 0.005006827492034593,
+          "delta_Harrell": -0.001365498406918464,
+          "delta_Uno60": -0.00014119929862754788,
+          "repair": 0.0036413290851160674,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-4",
+      "repair": 0.0036413290851160674,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.005401820881841251,
+      "Uno_repair": 0.011053996856108618,
+      "candidate": "R8-6",
+      "damage": 0.005461993627674101,
+      "delta_Harrell": 0.005006827492034627,
+      "delta_Uno60": 0.0056521759742674815,
+      "joint_directional_support": true,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.005401820881841251,
+          "Uno_repair": 0.011053996856108618,
+          "damage": 0.005461993627674101,
+          "delta_Harrell": 0.005006827492034627,
+          "delta_Uno60": 0.0056521759742674815,
+          "repair": 0.010468821119708694,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.005401820881841251,
+          "Uno_repair": 0.011053996856108618,
+          "damage": 0.005461993627674101,
+          "delta_Harrell": 0.005006827492034627,
+          "delta_Uno60": 0.0056521759742674815,
+          "repair": 0.010468821119708694,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.005401820881841251,
+          "Uno_repair": 0.011053996856108618,
+          "damage": 0.005461993627674101,
+          "delta_Harrell": 0.005006827492034627,
+          "delta_Uno60": 0.0056521759742674815,
+          "repair": 0.010468821119708694,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 3,
+      "reference": "R8-8a_RANDOM_SOURCE",
+      "repair": 0.010468821119708694,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": false,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.0,
+      "Uno_repair": 0.00018791124811138988,
+      "candidate": "R8-6",
+      "damage": 0.0,
+      "delta_Harrell": 0.000227583067819781,
+      "delta_Uno60": 0.00018791124811146087,
+      "joint_directional_support": true,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.0,
+          "Uno_repair": 0.00018791124811138988,
+          "damage": 0.0,
+          "delta_Harrell": 0.000227583067819781,
+          "delta_Uno60": 0.00018791124811146087,
+          "repair": 0.0002275830678197542,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.0,
+          "Uno_repair": 0.00018791124811138988,
+          "damage": 0.0,
+          "delta_Harrell": 0.000227583067819781,
+          "delta_Uno60": 0.00018791124811146087,
+          "repair": 0.0002275830678197542,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.0,
+          "Uno_repair": 0.00018791124811138988,
+          "damage": 0.0,
+          "delta_Harrell": 0.000227583067819781,
+          "delta_Uno60": 0.00018791124811146087,
+          "repair": 0.0002275830678197542,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 3,
+      "reference": "R8-8b_WRONG_PROGRAM",
+      "repair": 0.0002275830678197542,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.008348644250930662,
+      "Uno_repair": 0.006325793982334698,
+      "candidate": "R8-6",
+      "damage": 0.0061447428311333634,
+      "delta_Harrell": 0.000910332271279013,
+      "delta_Uno60": -0.0020228502685959437,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.008348644250930662,
+          "Uno_repair": 0.006325793982334698,
+          "damage": 0.0061447428311333634,
+          "delta_Harrell": 0.000910332271279013,
+          "delta_Uno60": -0.0020228502685959437,
+          "repair": 0.007055075102412381,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.008348644250930662,
+          "Uno_repair": 0.006325793982334698,
+          "damage": 0.0061447428311333634,
+          "delta_Harrell": 0.000910332271279013,
+          "delta_Uno60": -0.0020228502685959437,
+          "repair": 0.007055075102412381,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.008348644250930662,
+          "Uno_repair": 0.006325793982334698,
+          "damage": 0.0061447428311333634,
+          "delta_Harrell": 0.000910332271279013,
+          "delta_Uno60": -0.0020228502685959437,
+          "repair": 0.007055075102412381,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-9_WRONG_PATIENT",
+      "repair": 0.007055075102412381,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.003762412692650342,
+      "Uno_repair": 0.003250195257158509,
+      "candidate": "R8-6",
+      "damage": 0.005689576695493855,
+      "delta_Harrell": -0.002275830678197477,
+      "delta_Uno60": -0.0005122174354916798,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.003762412692650342,
+          "Uno_repair": 0.003250195257158509,
+          "damage": 0.005689576695493855,
+          "delta_Harrell": -0.002275830678197477,
+          "delta_Uno60": -0.0005122174354916798,
+          "repair": 0.0034137460172963133,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.003762412692650342,
+          "Uno_repair": 0.003250195257158509,
+          "damage": 0.005689576695493855,
+          "delta_Harrell": -0.002275830678197477,
+          "delta_Uno60": -0.0005122174354916798,
+          "repair": 0.0034137460172963133,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.003762412692650342,
+          "Uno_repair": 0.003250195257158509,
+          "damage": 0.005689576695493855,
+          "delta_Harrell": -0.002275830678197477,
+          "delta_Uno60": -0.0005122174354916798,
+          "repair": 0.0034137460172963133,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-10_NO_INTERACTION",
+      "repair": 0.0034137460172963133,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    }
+  ],
+  "primary_DSS": {
+    "R8-0": {
+      "Harrell": 0.8167956304050978,
+      "Uno60": 0.7835179820058394,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-0",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8167956304050978,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3589.0,
+          "Uno60": 0.7835179820058394,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9997.064654482068,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8167956304050978,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3589.0,
+          "Uno60": 0.7835179820058394,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9997.064654482068,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8167956304050978,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3589.0,
+          "Uno60": 0.7835179820058394,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9997.064654482068,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-1": {
+      "Harrell": 0.8258989531178881,
+      "Uno60": 0.7878593629182392,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-1",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7878593629182392,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10052.457213003681,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7878593629182392,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10052.457213003681,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7878593629182392,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10052.457213003681,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-10_NO_INTERACTION": {
+      "Harrell": 0.8281747837960856,
+      "Uno60": 0.7866764738315772,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-10_NO_INTERACTION",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8281747837960856,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3639.0,
+          "Uno60": 0.7866764738315772,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10037.364491521825,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8281747837960856,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3639.0,
+          "Uno60": 0.7866764738315772,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10037.364491521825,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8281747837960856,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3639.0,
+          "Uno60": 0.7866764738315772,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10037.364491521825,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-2": {
+      "Harrell": 0.8261265361857077,
+      "Uno60": 0.787816784666644,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-2",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8261265361857077,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3630.0,
+          "Uno60": 0.787816784666644,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10051.91394846624,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8261265361857077,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3630.0,
+          "Uno60": 0.787816784666644,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10051.91394846624,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8261265361857077,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3630.0,
+          "Uno60": 0.787816784666644,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10051.91394846624,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-3": {
+      "Harrell": 0.8249886208466091,
+      "Uno60": 0.7893494678560821,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-3",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8249886208466091,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3625.0,
+          "Uno60": 0.7893494678560821,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10071.469763765364,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8249886208466091,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3625.0,
+          "Uno60": 0.7893494678560821,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10071.469763765364,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8249886208466091,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3625.0,
+          "Uno60": 0.7893494678560821,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10071.469763765364,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-4": {
+      "Harrell": 0.8272644515248065,
+      "Uno60": 0.7863054556947131,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-4",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8272644515248065,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3635.0,
+          "Uno60": 0.7863054556947131,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10032.630595954142,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8272644515248065,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3635.0,
+          "Uno60": 0.7863054556947131,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10032.630595954142,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8272644515248065,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3635.0,
+          "Uno60": 0.7863054556947131,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10032.630595954142,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-5": {
+      "Harrell": 0.8249886208466091,
+      "Uno60": 0.7893242998973723,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-5",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8249886208466091,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3625.0,
+          "Uno60": 0.7893242998973723,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10071.148640681758,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8249886208466091,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3625.0,
+          "Uno60": 0.7893242998973723,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10071.148640681758,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8249886208466091,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3625.0,
+          "Uno60": 0.7893242998973723,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10071.148640681758,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-6": {
+      "Harrell": 0.8258989531178881,
+      "Uno60": 0.7861642563960856,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-6",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7861642563960856,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10030.829005499341,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7861642563960856,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10030.829005499341,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8258989531178881,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3629.0,
+          "Uno60": 0.7861642563960856,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10030.829005499341,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-8a_RANDOM_SOURCE": {
+      "Harrell": 0.8208921256258535,
+      "Uno60": 0.7805120804218181,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-8a_RANDOM_SOURCE",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8208921256258535,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3607.0,
+          "Uno60": 0.7805120804218181,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9958.711747247518,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8208921256258535,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3607.0,
+          "Uno60": 0.7805120804218181,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9958.711747247518,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8208921256258535,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3607.0,
+          "Uno60": 0.7805120804218181,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 9958.711747247518,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-8b_WRONG_PROGRAM": {
+      "Harrell": 0.8256713700500683,
+      "Uno60": 0.7859763451479741,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-8b_WRONG_PROGRAM",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7859763451479741,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10028.431407818347,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7859763451479741,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10028.431407818347,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8256713700500683,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3628.0,
+          "Uno60": 0.7859763451479741,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10028.431407818347,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-9_WRONG_PATIENT": {
+      "Harrell": 0.8249886208466091,
+      "Uno60": 0.7881871066646815,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-9_WRONG_PATIENT",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.8249886208466091,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3625.0,
+          "Uno60": 0.7881871066646815,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10056.63896185761,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.8249886208466091,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3625.0,
+          "Uno60": 0.7881871066646815,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10056.63896185761,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.8249886208466091,
+          "Harrell_den": 4394.0,
+          "Harrell_num": 3625.0,
+          "Uno60": 0.7881871066646815,
+          "Uno_den": 12759.20257616699,
+          "Uno_num": 10056.63896185761,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    }
+  },
+  "qualification_sha256": "1d37b06ec106d171713a038f51f2b52f0003251db3963b061dc0794990d9d22f",
+  "rank2_is_2_by_2_dimension_bound_not_extra_low_rank_regularization": true,
+  "replay_sha256": "8a14b81cdbefabcdf3eefc8f4cb80ca9b26422cb8105f8fedc50af6e83aaf1d7",
+  "schema": "bgb_en_r8_complete_report_v1",
+  "secondary_PFI_frozen_DSS_risk": {
+    "R8-0": {
+      "Harrell": 0.7070056367191994,
+      "Uno60": 0.6834470249341488,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-0",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7070056367191994,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6146.0,
+          "Uno60": 0.6834470249341488,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12963.545108426593,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7070056367191994,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6146.0,
+          "Uno60": 0.6834470249341488,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12963.545108426593,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7070056367191994,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6146.0,
+          "Uno60": 0.6834470249341488,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12963.545108426593,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-1": {
+      "Harrell": 0.7110318647187392,
+      "Uno60": 0.6875076869000132,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-1",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7110318647187392,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6181.0,
+          "Uno60": 0.6875076869000132,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13040.567280802905,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7110318647187392,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6181.0,
+          "Uno60": 0.6875076869000132,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13040.567280802905,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7110318647187392,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6181.0,
+          "Uno60": 0.6875076869000132,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 13040.567280802905,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-10_NO_INTERACTION": {
+      "Harrell": 0.7101115840331301,
+      "Uno60": 0.6768871220712869,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-10_NO_INTERACTION",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7101115840331301,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6173.0,
+          "Uno60": 0.6768871220712869,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12839.117620169107,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7101115840331301,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6173.0,
+          "Uno60": 0.6768871220712869,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12839.117620169107,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7101115840331301,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6173.0,
+          "Uno60": 0.6768871220712869,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12839.117620169107,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-2": {
+      "Harrell": 0.7076958472334062,
+      "Uno60": 0.6792003802684125,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-2",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7076958472334062,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6152.0,
+          "Uno60": 0.6792003802684125,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12882.995237441295,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7076958472334062,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6152.0,
+          "Uno60": 0.6792003802684125,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12882.995237441295,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7076958472334062,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6152.0,
+          "Uno60": 0.6792003802684125,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12882.995237441295,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-3": {
+      "Harrell": 0.7088461980904176,
+      "Uno60": 0.6725377279264614,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-3",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7088461980904176,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6162.0,
+          "Uno60": 0.6725377279264614,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12756.61880880007,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7088461980904176,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6162.0,
+          "Uno60": 0.6725377279264614,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12756.61880880007,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7088461980904176,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6162.0,
+          "Uno60": 0.6725377279264614,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12756.61880880007,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-4": {
+      "Harrell": 0.7088461980904176,
+      "Uno60": 0.679298754722068,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-4",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7088461980904176,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6162.0,
+          "Uno60": 0.679298754722068,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12884.861192842305,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7088461980904176,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6162.0,
+          "Uno60": 0.679298754722068,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12884.861192842305,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7088461980904176,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6162.0,
+          "Uno60": 0.679298754722068,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12884.861192842305,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-5": {
+      "Harrell": 0.7089612331761187,
+      "Uno60": 0.6726973241082791,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-5",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7089612331761187,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6163.0,
+          "Uno60": 0.6726973241082791,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12759.646010948367,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7089612331761187,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6163.0,
+          "Uno60": 0.6726973241082791,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12759.646010948367,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7089612331761187,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6163.0,
+          "Uno60": 0.6726973241082791,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12759.646010948367,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-6": {
+      "Harrell": 0.7081559875762108,
+      "Uno60": 0.675242857052108,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-6",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7081559875762108,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6156.0,
+          "Uno60": 0.675242857052108,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12807.929389086548,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7081559875762108,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6156.0,
+          "Uno60": 0.675242857052108,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12807.929389086548,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7081559875762108,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6156.0,
+          "Uno60": 0.675242857052108,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12807.929389086548,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-8a_RANDOM_SOURCE": {
+      "Harrell": 0.7044748648337743,
+      "Uno60": 0.6816294685266611,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-8a_RANDOM_SOURCE",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7044748648337743,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6124.0,
+          "Uno60": 0.6816294685266611,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12929.069906083227,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7044748648337743,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6124.0,
+          "Uno60": 0.6816294685266611,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12929.069906083227,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7044748648337743,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6124.0,
+          "Uno60": 0.6816294685266611,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12929.069906083227,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-8b_WRONG_PROGRAM": {
+      "Harrell": 0.7080409524905096,
+      "Uno60": 0.675157734650151,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-8b_WRONG_PROGRAM",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7080409524905096,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6155.0,
+          "Uno60": 0.675157734650151,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12806.314797088562,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7080409524905096,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6155.0,
+          "Uno60": 0.675157734650151,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12806.314797088562,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7080409524905096,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6155.0,
+          "Uno60": 0.675157734650151,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12806.314797088562,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    },
+    "R8-9_WRONG_PATIENT": {
+      "Harrell": 0.7086161279190153,
+      "Uno60": 0.6784006410133376,
+      "aggregation": "within_partition_components_sum_per_seed_then_equal_three_seed_mean",
+      "arm": "R8-9_WRONG_PATIENT",
+      "complete_cells": 9,
+      "cross_partition_risk_ranking": false,
+      "expected_cells": 9,
+      "per_seed": [
+        {
+          "Harrell": 0.7086161279190153,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6160.0,
+          "Uno60": 0.6784006410133376,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12867.825874593982,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.7086161279190153,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6160.0,
+          "Uno60": 0.6784006410133376,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12867.825874593982,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.7086161279190153,
+          "Harrell_den": 8693.0,
+          "Harrell_num": 6160.0,
+          "Uno60": 0.6784006410133376,
+          "Uno_den": 18967.88578408934,
+          "Uno_num": 12867.825874593982,
+          "seed": 83
+        }
+      ],
+      "status": "COMPLETE_NINE_CELLS"
+    }
+  },
+  "secondary_paired_comparisons": [
+    {
+      "Uno_damage": 0.015498198644586953,
+      "Uno_repair": 0.007190892012986277,
+      "candidate": "R8-2",
+      "damage": 0.0118486138272173,
+      "delta_Harrell": -0.003336017485333076,
+      "delta_Uno60": -0.00830730663160073,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.015498198644586953,
+          "Uno_repair": 0.007190892012986277,
+          "damage": 0.0118486138272173,
+          "delta_Harrell": -0.003336017485333076,
+          "delta_Uno60": -0.00830730663160073,
+          "repair": 0.008512596341884275,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.015498198644586953,
+          "Uno_repair": 0.007190892012986277,
+          "damage": 0.0118486138272173,
+          "delta_Harrell": -0.003336017485333076,
+          "delta_Uno60": -0.00830730663160073,
+          "repair": 0.008512596341884275,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.015498198644586953,
+          "Uno_repair": 0.007190892012986277,
+          "damage": 0.0118486138272173,
+          "delta_Harrell": -0.003336017485333076,
+          "delta_Uno60": -0.00830730663160073,
+          "repair": 0.008512596341884275,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-1",
+      "repair": 0.008512596341884275,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": false,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.02152826573505479,
+      "Uno_repair": 0.01486561339310358,
+      "candidate": "R8-3",
+      "damage": 0.0159898769124583,
+      "delta_Harrell": 0.0011503508570114285,
+      "delta_Uno60": -0.00666265234195107,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.02152826573505479,
+          "Uno_repair": 0.01486561339310358,
+          "damage": 0.0159898769124583,
+          "delta_Harrell": 0.0011503508570114285,
+          "delta_Uno60": -0.00666265234195107,
+          "repair": 0.017140227769469687,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.02152826573505479,
+          "Uno_repair": 0.01486561339310358,
+          "damage": 0.0159898769124583,
+          "delta_Harrell": 0.0011503508570114285,
+          "delta_Uno60": -0.00666265234195107,
+          "repair": 0.017140227769469687,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.02152826573505479,
+          "Uno_repair": 0.01486561339310358,
+          "damage": 0.0159898769124583,
+          "delta_Harrell": 0.0011503508570114285,
+          "delta_Uno60": -0.00666265234195107,
+          "repair": 0.017140227769469687,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-2",
+      "repair": 0.017140227769469687,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.013431136993660501,
+      "Uno_repair": 0.005222204815715288,
+      "candidate": "R8-4",
+      "damage": 0.010123087541700219,
+      "delta_Harrell": -0.0021856666283216475,
+      "delta_Uno60": -0.00820893217794516,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.013431136993660501,
+          "Uno_repair": 0.005222204815715288,
+          "damage": 0.010123087541700219,
+          "delta_Harrell": -0.0021856666283216475,
+          "delta_Uno60": -0.00820893217794516,
+          "repair": 0.00793742091337858,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.013431136993660501,
+          "Uno_repair": 0.005222204815715288,
+          "damage": 0.010123087541700219,
+          "delta_Harrell": -0.0021856666283216475,
+          "delta_Uno60": -0.00820893217794516,
+          "repair": 0.00793742091337858,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.013431136993660501,
+          "Uno_repair": 0.005222204815715288,
+          "damage": 0.010123087541700219,
+          "delta_Harrell": -0.0021856666283216475,
+          "delta_Uno60": -0.00820893217794516,
+          "repair": 0.00793742091337858,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-1",
+      "repair": 0.00793742091337858,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.0004501951349976661,
+      "Uno_repair": 0.0006097913168154225,
+      "candidate": "R8-5",
+      "damage": 0.0005751754285056943,
+      "delta_Harrell": 0.00011503508570109844,
+      "delta_Uno60": 0.00015959618181771162,
+      "joint_directional_support": true,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.0004501951349976661,
+          "Uno_repair": 0.0006097913168154225,
+          "damage": 0.0005751754285056943,
+          "delta_Harrell": 0.00011503508570109844,
+          "delta_Uno60": 0.00015959618181771162,
+          "repair": 0.0006902105142068331,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.0004501951349976661,
+          "Uno_repair": 0.0006097913168154225,
+          "damage": 0.0005751754285056943,
+          "delta_Harrell": 0.00011503508570109844,
+          "delta_Uno60": 0.00015959618181771162,
+          "repair": 0.0006902105142068331,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.0004501951349976661,
+          "Uno_repair": 0.0006097913168154225,
+          "damage": 0.0005751754285056943,
+          "delta_Harrell": 0.00011503508570109844,
+          "delta_Uno60": 0.00015959618181771162,
+          "repair": 0.0006902105142068331,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 3,
+      "reference": "R8-3",
+      "repair": 0.0006902105142068331,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.017043423941066643,
+      "Uno_repair": 0.004778594093161348,
+      "candidate": "R8-6",
+      "damage": 0.009777982284596802,
+      "delta_Harrell": -0.00287587714252846,
+      "delta_Uno60": -0.012264829847905223,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.017043423941066643,
+          "Uno_repair": 0.004778594093161348,
+          "damage": 0.009777982284596802,
+          "delta_Harrell": -0.00287587714252846,
+          "delta_Uno60": -0.012264829847905223,
+          "repair": 0.006902105142068331,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.017043423941066643,
+          "Uno_repair": 0.004778594093161348,
+          "damage": 0.009777982284596802,
+          "delta_Harrell": -0.00287587714252846,
+          "delta_Uno60": -0.012264829847905223,
+          "repair": 0.006902105142068331,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.017043423941066643,
+          "Uno_repair": 0.004778594093161348,
+          "damage": 0.009777982284596802,
+          "delta_Harrell": -0.00287587714252846,
+          "delta_Uno60": -0.012264829847905223,
+          "repair": 0.006902105142068331,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-1",
+      "repair": 0.006902105142068331,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.00790434043762298,
+      "Uno_repair": 0.0038484427676629034,
+      "candidate": "R8-6",
+      "damage": 0.005406649027953526,
+      "delta_Harrell": -0.0006902105142068127,
+      "delta_Uno60": -0.004055897669960062,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.00790434043762298,
+          "Uno_repair": 0.0038484427676629034,
+          "damage": 0.005406649027953526,
+          "delta_Harrell": -0.0006902105142068127,
+          "delta_Uno60": -0.004055897669960062,
+          "repair": 0.004716438513746693,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.00790434043762298,
+          "Uno_repair": 0.0038484427676629034,
+          "damage": 0.005406649027953526,
+          "delta_Harrell": -0.0006902105142068127,
+          "delta_Uno60": -0.004055897669960062,
+          "repair": 0.004716438513746693,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.00790434043762298,
+          "Uno_repair": 0.0038484427676629034,
+          "damage": 0.005406649027953526,
+          "delta_Harrell": -0.0006902105142068127,
+          "delta_Uno60": -0.004055897669960062,
+          "repair": 0.004716438513746693,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-4",
+      "repair": 0.004716438513746693,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.014281540555710607,
+      "Uno_repair": 0.007894929081157414,
+      "candidate": "R8-6",
+      "damage": 0.006902105142068331,
+      "delta_Harrell": 0.0036811227424364823,
+      "delta_Uno60": -0.0063866114745531055,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.014281540555710607,
+          "Uno_repair": 0.007894929081157414,
+          "damage": 0.006902105142068331,
+          "delta_Harrell": 0.0036811227424364823,
+          "delta_Uno60": -0.0063866114745531055,
+          "repair": 0.010583227884504774,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.014281540555710607,
+          "Uno_repair": 0.007894929081157414,
+          "damage": 0.006902105142068331,
+          "delta_Harrell": 0.0036811227424364823,
+          "delta_Uno60": -0.0063866114745531055,
+          "repair": 0.010583227884504774,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.014281540555710607,
+          "Uno_repair": 0.007894929081157414,
+          "damage": 0.006902105142068331,
+          "delta_Harrell": 0.0036811227424364823,
+          "delta_Uno60": -0.0063866114745531055,
+          "repair": 0.010583227884504774,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-8a_RANDOM_SOURCE",
+      "repair": 0.010583227884504774,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": false,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.00011115658252764136,
+      "Uno_repair": 0.00019627898448459842,
+      "candidate": "R8-6",
+      "damage": 0.00011503508570113885,
+      "delta_Harrell": 0.00011503508570120946,
+      "delta_Uno60": 8.512240195690524e-05,
+      "joint_directional_support": true,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.00011115658252764136,
+          "Uno_repair": 0.00019627898448459842,
+          "damage": 0.00011503508570113885,
+          "delta_Harrell": 0.00011503508570120946,
+          "delta_Uno60": 8.512240195690524e-05,
+          "repair": 0.0002300701714022777,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.00011115658252764136,
+          "Uno_repair": 0.00019627898448459842,
+          "damage": 0.00011503508570113885,
+          "delta_Harrell": 0.00011503508570120946,
+          "delta_Uno60": 8.512240195690524e-05,
+          "repair": 0.0002300701714022777,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.00011115658252764136,
+          "Uno_repair": 0.00019627898448459842,
+          "damage": 0.00011503508570113885,
+          "delta_Harrell": 0.00011503508570120946,
+          "delta_Uno60": 8.512240195690524e-05,
+          "repair": 0.0002300701714022777,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 3,
+      "reference": "R8-8b_WRONG_PROGRAM",
+      "repair": 0.0002300701714022777,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.011396834400386743,
+      "Uno_repair": 0.008239050439157021,
+      "candidate": "R8-6",
+      "damage": 0.00805245599907972,
+      "delta_Harrell": -0.0004601403428045048,
+      "delta_Uno60": -0.0031577839612296765,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.011396834400386743,
+          "Uno_repair": 0.008239050439157021,
+          "damage": 0.00805245599907972,
+          "delta_Harrell": -0.0004601403428045048,
+          "delta_Uno60": -0.0031577839612296765,
+          "repair": 0.007592315656275164,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.011396834400386743,
+          "Uno_repair": 0.008239050439157021,
+          "damage": 0.00805245599907972,
+          "delta_Harrell": -0.0004601403428045048,
+          "delta_Uno60": -0.0031577839612296765,
+          "repair": 0.007592315656275164,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.011396834400386743,
+          "Uno_repair": 0.008239050439157021,
+          "damage": 0.00805245599907972,
+          "delta_Harrell": -0.0004601403428045048,
+          "delta_Uno60": -0.0031577839612296765,
+          "repair": 0.007592315656275164,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-9_WRONG_PATIENT",
+      "repair": 0.007592315656275164,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    },
+    {
+      "Uno_damage": 0.005439856806693481,
+      "Uno_repair": 0.003795591787514659,
+      "candidate": "R8-6",
+      "damage": 0.006556999884964915,
+      "delta_Harrell": -0.0019555964569193396,
+      "delta_Uno60": -0.0016442650191789143,
+      "joint_directional_support": false,
+      "nominal_seed_repetitions_are_independent_random_evidence": false,
+      "per_seed": [
+        {
+          "Uno_damage": 0.005439856806693481,
+          "Uno_repair": 0.003795591787514659,
+          "damage": 0.006556999884964915,
+          "delta_Harrell": -0.0019555964569193396,
+          "delta_Uno60": -0.0016442650191789143,
+          "repair": 0.004601403428045554,
+          "seed": 31
+        },
+        {
+          "Uno_damage": 0.005439856806693481,
+          "Uno_repair": 0.003795591787514659,
+          "damage": 0.006556999884964915,
+          "delta_Harrell": -0.0019555964569193396,
+          "delta_Uno60": -0.0016442650191789143,
+          "repair": 0.004601403428045554,
+          "seed": 47
+        },
+        {
+          "Uno_damage": 0.005439856806693481,
+          "Uno_repair": 0.003795591787514659,
+          "damage": 0.006556999884964915,
+          "delta_Harrell": -0.0019555964569193396,
+          "delta_Uno60": -0.0016442650191789143,
+          "repair": 0.004601403428045554,
+          "seed": 83
+        }
+      ],
+      "positive_nominal_seed_repetitions": 0,
+      "reference": "R8-10_NO_INTERACTION",
+      "repair": 0.004601403428045554,
+      "repair_damage_are_normalized_concordance_credits_not_patient_counts": true,
+      "small_delta_is_weak_evidence": true,
+      "undefined_metric": false
+    }
+  ],
+  "status": "COMPLETE_81_CONVEX_FITS_AND_ACTUAL_SAVED_MODEL_REPLAYS"
+}

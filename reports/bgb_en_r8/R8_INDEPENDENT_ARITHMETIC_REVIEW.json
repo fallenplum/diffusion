@@ -1,0 +1,27 @@
+{
+  "schema": "r8_independent_anonymous_arithmetic_review_v1",
+  "status": "PASS_INDEPENDENT_WITHIN_FOLD_WEIGHTED_ARITHMETIC_AND_PAIR_CREDIT_IDENTITY",
+  "contract_sha256": "10cbf733685b0e95c8ab62b3bdf3f8f26ba4a4299d185e87ad965a86d20f1b27",
+  "metadata_only": true,
+  "model_checkpoints_loaded": 0,
+  "new_optimizer_fits": 0,
+  "this_review_is_additional_model_replay": false,
+  "aggregate_rows_checked": 198,
+  "paired_endpoint_comparisons_checked": 20,
+  "maximum_absolute_arithmetic_error": 2.645453300864631e-16,
+  "within_partition_numerators_and_denominators_summed_before_seed_mean": true,
+  "cross_partition_patient_risk_ranking_used": false,
+  "deterministic_nominal_seeds_are_independent_evidence": false,
+  "primary_six_comparison_gate_passed": false,
+  "primary_candidate_minus_anchor": {
+    "Harrell": 0.0,
+    "Uno60": -0.0016951065221536554
+  },
+  "sources": {
+    "R8_RESULTS.json": "69b2b2c555917005fad425fbada007dd6b30f5d0d415a65a6a871a5a825124fb",
+    "R8_FOLD_METRICS.csv": "1b60885b335757d0bee4bc3dc604f187ebaef320665ea944107c01b68c9c1064",
+    "R8_PFI_FOLD_METRICS.csv": "8aef538576acd4a6a2aafd8caa229f2f637cbad74bdc62357d92a477ec79623d",
+    "R8_PROTOCOL_LOCK.json": "cde8cdca8cbe10ddf213b4b5072f0cdb4981290a9170f2c402a40644e63e8df7"
+  },
+  "reviewer_script_sha256": "5be31fedfdb2ccaf1da53fdb12956524a08f106af0b3f3b0d715ec338bdc8a81"
+}

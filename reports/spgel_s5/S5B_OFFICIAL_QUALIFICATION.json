@@ -1,0 +1,354 @@
+{
+  "schema": "spgel_s5b_official_implementation_qualification_v1",
+  "checked_date": "2026-10-29",
+  "status": "QUALIFIED_SOURCE_REVIEW_NOT_REPRODUCED",
+  "new_real_model_fits": 0,
+  "new_real_optimizer_steps": 0,
+  "real_arrays_or_weights_downloaded": 0,
+  "prior_scientific_files_modified": false,
+  "official_HVG_count": 50,
+  "source_evidence": [
+    {
+      "repository": "bowang-lab/BLEEP",
+      "commit": "23959670c7407510c1716a173184bdcc18833a35",
+      "file": "BLEEP_inference.ipynb",
+      "git_blob_sha": "1d1ffbd97fe48b37400ede358c8b3e4f8caa5237",
+      "bytes": 20217,
+      "url": "https://github.com/bowang-lab/BLEEP/blob/23959670c7407510c1716a173184bdcc18833a35/BLEEP_inference.ipynb"
+    },
+    {
+      "repository": "bowang-lab/BLEEP",
+      "commit": "23959670c7407510c1716a173184bdcc18833a35",
+      "file": "BLEEP_main.py",
+      "git_blob_sha": "8dae110fb2b635b7a7920ab039c7a95e6023368f",
+      "bytes": 7933,
+      "url": "https://github.com/bowang-lab/BLEEP/blob/23959670c7407510c1716a173184bdcc18833a35/BLEEP_main.py"
+    },
+    {
+      "repository": "bowang-lab/BLEEP",
+      "commit": "23959670c7407510c1716a173184bdcc18833a35",
+      "file": "LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "bytes": 11357,
+      "url": "https://github.com/bowang-lab/BLEEP/blob/23959670c7407510c1716a173184bdcc18833a35/LICENSE"
+    },
+    {
+      "repository": "bowang-lab/BLEEP",
+      "commit": "23959670c7407510c1716a173184bdcc18833a35",
+      "file": "README.md",
+      "git_blob_sha": "06604017db1268a62790882ee57a53678a35e016",
+      "bytes": 968,
+      "url": "https://github.com/bowang-lab/BLEEP/blob/23959670c7407510c1716a173184bdcc18833a35/README.md"
+    },
+    {
+      "repository": "bowang-lab/BLEEP",
+      "commit": "23959670c7407510c1716a173184bdcc18833a35",
+      "file": "config.py",
+      "git_blob_sha": "7a918d0a6793e66919fcd25d10f3e343aba262c5",
+      "bytes": 710,
+      "url": "https://github.com/bowang-lab/BLEEP/blob/23959670c7407510c1716a173184bdcc18833a35/config.py"
+    },
+    {
+      "repository": "bowang-lab/BLEEP",
+      "commit": "23959670c7407510c1716a173184bdcc18833a35",
+      "file": "dataset.py",
+      "git_blob_sha": "57ecd59bccae573dad6bdf1f63c7444dfea2315c",
+      "bytes": 2691,
+      "url": "https://github.com/bowang-lab/BLEEP/blob/23959670c7407510c1716a173184bdcc18833a35/dataset.py"
+    },
+    {
+      "repository": "bowang-lab/BLEEP",
+      "commit": "23959670c7407510c1716a173184bdcc18833a35",
+      "file": "models.py",
+      "git_blob_sha": "11ddb4ce2405be8f843fabb53e23ac366c3abc14",
+      "bytes": 10540,
+      "url": "https://github.com/bowang-lab/BLEEP/blob/23959670c7407510c1716a173184bdcc18833a35/models.py"
+    },
+    {
+      "repository": "bowang-lab/BLEEP",
+      "commit": "23959670c7407510c1716a173184bdcc18833a35",
+      "file": "modules.py",
+      "git_blob_sha": "58d109b7e425d6e2402f489b3188aa5ea558974e",
+      "bytes": 5233,
+      "url": "https://github.com/bowang-lab/BLEEP/blob/23959670c7407510c1716a173184bdcc18833a35/modules.py"
+    },
+    {
+      "repository": "bowang-lab/BLEEP",
+      "commit": "23959670c7407510c1716a173184bdcc18833a35",
+      "file": "preprocess.ipynb",
+      "git_blob_sha": "3c8a4f362d271fa0c028a659ef23ae2cd91fed3e",
+      "bytes": 6143,
+      "url": "https://github.com/bowang-lab/BLEEP/blob/23959670c7407510c1716a173184bdcc18833a35/preprocess.ipynb"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "README.md",
+      "git_blob_sha": "05e70bd1b6a43159ab60da72e659c002d34a7cdf",
+      "bytes": 7253,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/README.md"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "script/extract_features.sh",
+      "git_blob_sha": "ca012f1fa64d261b9d3291265771cb13875f270a",
+      "bytes": 1181,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/script/extract_features.sh"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "script/setup_configs.sh",
+      "git_blob_sha": "4da982db51f5348593312e38df1116f5bcc0a811",
+      "bytes": 328,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/script/setup_configs.sh"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "script/test_hest.sh",
+      "git_blob_sha": "4b5990ac5e6d8e9a703cb788387029ffaeccb279",
+      "bytes": 208,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/script/test_hest.sh"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "script/train_hest.sh",
+      "git_blob_sha": "29d525c2d645f19726ffea1dd1fcc818559f5760",
+      "bytes": 936,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/script/train_hest.sh"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/dataset/base_dataset.py",
+      "git_blob_sha": "d6143c5e69220ecda66e142fc30eaee535857d5f",
+      "bytes": 14814,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/dataset/base_dataset.py"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/dataset/data_interface.py",
+      "git_blob_sha": "d194f27ee947057f7f294d6a04b3deb1a08aa222",
+      "bytes": 4336,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/dataset/data_interface.py"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/dataset/tri_dataset.py",
+      "git_blob_sha": "d21c4148669dac4cbc932984fd1d176bc3f6bc65",
+      "bytes": 5735,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/dataset/tri_dataset.py"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/main.py",
+      "git_blob_sha": "2a4aec6d5a3dcb6d1a03f14c090a31bd74a26f6d",
+      "bytes": 7920,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/main.py"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/model/TRIPLEX/TRIPLEX.py",
+      "git_blob_sha": "33cc3be2f453caf3322bbb085cdac49e377485c4",
+      "bytes": 10857,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/model/TRIPLEX/TRIPLEX.py"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/model/TRIPLEX/module.py",
+      "git_blob_sha": "282dcb237e6e37d6772b0cdc74e1bae2643e1376",
+      "bytes": 23356,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/model/TRIPLEX/module.py"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/model/model_interface.py",
+      "git_blob_sha": "8a00e2b84186c06bb798b5eec0536cf845a9b455",
+      "bytes": 12214,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/model/model_interface.py"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/preprocess/README.md",
+      "git_blob_sha": "5d38b306712dbe020883f127625094cbe52c9c84",
+      "bytes": 1284,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/preprocess/README.md"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/preprocess/config/default.yaml",
+      "git_blob_sha": "425c899fed0d69870a63c8b18d7d13c5e8b6e945",
+      "bytes": 553,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/preprocess/config/default.yaml"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/preprocess/config/hest.yaml",
+      "git_blob_sha": "2c51fa8c8df3e831c9485333daec4dd62b64ec0a",
+      "bytes": 176,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/preprocess/config/hest.yaml"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/preprocess/extract_img_features.py",
+      "git_blob_sha": "a153c7472463aa137fab5b7442a377e24986cbab",
+      "bytes": 9978,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/preprocess/extract_img_features.py"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/preprocess/local_ckpts.json",
+      "git_blob_sha": "bf74c2661d58c8ab34f2723f57755b9e3dfecaf5",
+      "bytes": 316,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/preprocess/local_ckpts.json"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/preprocess/pipeline/preprocess.py",
+      "git_blob_sha": "44afa61b70443091644fdfbb1f326c931c7637bc",
+      "bytes": 6358,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/preprocess/pipeline/preprocess.py"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/preprocess/prepare_data.py",
+      "git_blob_sha": "a502bb5dca22d33e5160cdb63fadd78f8c76bf1e",
+      "bytes": 13233,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/preprocess/prepare_data.py"
+    },
+    {
+      "repository": "NEXGEM/TRIPLEX",
+      "commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+      "file": "src/utils/train_utils.py",
+      "git_blob_sha": "bcf3f049fa45c8e6d8346c7d49f72f53402e3567",
+      "bytes": 7094,
+      "url": "https://github.com/NEXGEM/TRIPLEX/blob/4750051b9a8ba1122c9d4a30a40943edc418a1c5/src/utils/train_utils.py"
+    }
+  ],
+  "asset_inventory": {
+    "method": "read_only_filename_inventory_of_existing_spatial_bridge_raw_and_feature_roots",
+    "E_data_volume_accessible": true,
+    "official_target_RGB_H5_files": 8,
+    "WSI_file_types_found_in_scoped_raw_root": 0,
+    "neighbor_named_H5_files": 0,
+    "global_named_feature_files": 0,
+    "real_image_or_expression_arrays_read_by_this_audit": false,
+    "inventory_does_not_assert_no_WSI_exists_anywhere_else": true
+  },
+  "papers": {
+    "BLEEP": {
+      "title": "Spatially Resolved Gene Expression Prediction from Histology Images via Bi-modal Contrastive Learning",
+      "venue": "NeurIPS 2023",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/df656d6ed77b565e8dcdfbf568aead0a-Abstract-Conference.html",
+      "primary_page_opened": true
+    },
+    "TRIPLEX": {
+      "title": "Accurate Spatial Gene Expression Prediction by Integrating Multi-Resolution Features",
+      "venue": "CVPR 2024",
+      "pages": "11591-11600",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Chung_Accurate_Spatial_Gene_Expression_Prediction_by_Integrating_Multi-Resolution_Features_CVPR_2024_paper.html",
+      "direct_open": "HTTP_403",
+      "primary_search_index_verified_title_authors_venue": true
+    }
+  },
+  "BLEEP": {
+    "repository": "bowang-lab/BLEEP",
+    "audited_commit": "23959670c7407510c1716a173184bdcc18833a35",
+    "license_status": "ROOT_APACHE_2_0_TEXT_READ",
+    "paperera_latest_commit_before_2024": "948ac07bbb7b180d55618060773d756863d42381",
+    "paperera_snapshot_audited": false,
+    "architecture": "trainable_ResNet50_2048_to_256_and_expression_to_256_soft_contrastive_model",
+    "native_expression_dimension_default": 3467,
+    "RGB_patch_pixels": 224,
+    "reference_prediction": "cosine_query_image_to_train_expression_embedding_top50_average",
+    "heldout_expression_in_reference_key_in_native_example": false,
+    "training_entry_default_epochs": 4,
+    "training_entry_inner_split": "pooled_training_sections_random_spot_80_20_seed42",
+    "checkpoint_selection": "minimum_internal_validation_contrastive_loss",
+    "provided_preprocessing": "per_section_HVG_union_and_joint_Harmony_including_all_four_sections",
+    "current_protocol_incompatibilities": [
+      "raw_Dataset_constructor_reads_whole_slide_paths_instead_of_existing_target_H5",
+      "Dataset_transform_requires_undefined_is_train_attribute",
+      "Dataset_getitem_permutates_already_CHW_tensor_to_WCH",
+      "native_HVG_Harmony_test_expression_access_not_allowed_in_current_train_only_contract",
+      "native_3467_gene_native_pipeline_is_not_current_fixed50_HVG_log1p_task",
+      "model_weights_and_dependency_installation_not_qualified"
+    ],
+    "existing_target_RGB_reuse": "possible_with_explicit_barcode_aligned_H5_adapter_and_declared_dataset_repairs_not_whole_image_native_loader",
+    "same_UNI2_replacement_is_strict_official_reproduction": false,
+    "status": "NOT_REPRODUCED_REQUIRES_EXPLICIT_INTERFACE_AND_PROTOCOL_REPAIR"
+  },
+  "TRIPLEX": {
+    "repository": "NEXGEM/TRIPLEX",
+    "audited_commit": "4750051b9a8ba1122c9d4a30a40943edc418a1c5",
+    "license_status": "NO_ROOT_LICENSE_OR_GENERAL_GRANT_FOUND_ONLY_NESTED_CLAM_LICENSE",
+    "paperera_latest_commit_before_2025": "a712c174b2261821403a4a6dfd45c7e6cf317224",
+    "paperera_snapshot_audited": false,
+    "authors_current_version_includes_2025_changes": true,
+    "requirements_read": [
+      "Python3.11",
+      "PyTorch2.4.1",
+      "Lightning2.4.0",
+      "CUDA12.1",
+      "HEST_and_flash_attention_dependencies"
+    ],
+    "target_branch": "trainable_CIGA_ResNet18_target_RGB",
+    "neighbor_branch": "5_by_5_tiles_from_continuous_1120_square_RGB_and_true_neighbor_masks",
+    "global_branch": "all_same_slide_spot_target_image_embeddings_plus_positions",
+    "existing_target_RGB_sufficient_for_target": true,
+    "existing_target_RGB_can_recompute_global_with_official_encoder": true,
+    "existing_target_RGB_sufficient_for_continuous_neighbor": false,
+    "neighbor_preprocessing_pixel_size_micrometers": 0.5,
+    "existing_UNI2_features_are_native_CIGA_embeddings": false,
+    "default_preprocessing_model": "cigar",
+    "dataset_loader_model_name_propagation": "train_global_passes_configured_name_but_neighbor_and_test_calls_default_to_uni_v1_requires_binding_probe",
+    "training_validation_contract": "fit_val_and_test_both_load_same_fold_phase_test_files",
+    "checkpoint_selection": "val_target_early_stopping_checkpointing_and_plateau_scheduler",
+    "naive_use_on_current_official_folds_would_select_on_outer_test": true,
+    "official_hest_train_script_present": true,
+    "referenced_config_hest_tree_files_present": false,
+    "CIGA_release_weight": {
+      "bytes": 92148628,
+      "url": "https://github.com/ozanciga/self-supervised-histopathology/releases/download/tenpercent/tenpercent_resnet18.ckpt",
+      "downloaded": false
+    },
+    "status": "NOT_REPRODUCED_NEIGHBOR_INPUT_AND_PROTOCOL_AND_LICENSE_QUALIFICATION_PENDING"
+  },
+  "execution_boundary": {
+    "code_review_is_training_evidence": false,
+    "no_new_Pearson_or_survival_result": true,
+    "local_BLEEP_probe_blocked_missing_torchvision": true,
+    "server_synthetic_dataset_probe_confirmed_contract_mismatch": true,
+    "no_optimizer_or_model_instantiated_in_probe": true,
+    "official_native_methods_and_frozen_UNI2_adaptations_must_be_separate_rows": true,
+    "test_labels_or_HPG_ranking_cannot_select_current_protocol_models": true
+  },
+  "next_minimum_steps": [
+    "fix_development_only_budget_and_fold_local_preprocessing_for_shared_feature_controls",
+    "BLEEP_keep_native_encoder_and_contrastive_operator_validate_explicit_H5_dataset_repairs_and_train_only_reference",
+    "TRIPLEX_first_qualify_missing_continuous_neighborhood_images_or_author_features_and_encoder_path_binding",
+    "pin_current_author_implementation_separately_from_original_paper_snapshot_and_resolve_repository_permission_before_redistribution",
+    "do_not_replace_original_encoders_or_multiscale_inputs_then_call_the_result_strict_reproduction"
+  ],
+  "confidence": {
+    "source_and_inventory_facts": "HIGH",
+    "native_real_forward_training_readiness": "UNQUALIFIED",
+    "comparative_performance": "NOT_EVALUATED"
+  }
+}

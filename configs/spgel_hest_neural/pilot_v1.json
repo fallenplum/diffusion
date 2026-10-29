@@ -1,0 +1,17 @@
+{
+  "schema": "spgel_hest_neural_fixed_recipe_v1",
+  "status": "REQUIRES_NEW_PREPARATION_QUALIFICATION_AND_RUN_LOCK",
+  "dataset_revision": "b039b5965ed7092f280d4f336da7972ef9a10e1a",
+  "tasks": ["COAD", "READ"],
+  "folds": [0, 1],
+  "seed": 1,
+  "arms": ["MLP", "SPATIAL_GNN", "IDENTITY_GNN"],
+  "budget": {"neural_fits": 12, "epochs_per_fit": 40, "optimizer_updates_per_fit": 40, "optimizer_updates_total": 480, "snapshot_epochs": [10, 20, 40], "actual_state_replays": 36, "new_unsupervised_PCA_reconstructions": 4, "new_Ridge_fits": 0, "automatic_retry_fits": 0},
+  "training": {"batch": "complete_official_train_partition_full_batch", "optimizer": "Adam", "learning_rate": 0.001, "weight_decay": 0.0001, "dropout": 0, "batch_normalization": false, "loss": "mean_squared_error_all_train_spots_and_50_genes", "training_target_dtype": "float32", "evaluation_target_dtype": "float64", "primary_epoch": 40, "test_epoch_or_configuration_selection": false},
+  "architecture": {"input": 256, "hidden": 128, "output": 50, "hidden_ReLU_count_all_arms": 2, "MLP": "ReLU(input)->ReLU(hidden)->linear_output", "graph": "ReLU(input)->ReLU(Wself*h+Wneighbour*A*h+b)->linear_output", "graph_identity_all_initial_parameters_equal": true, "all_arms_input_and_output_initial_parameters_equal": true, "parameter_matching": "graph_and_identity_exact_only_MLP_has_fewer_parameters"},
+  "graph": {"coordinate_units": "original_benchmark_pixels", "scope": "one_slide_and_one_official_partition", "maximum_neighbours_including_self": 16, "self_always_included": true, "mean_includes_self": true, "kth_ties": "gather_complete_boundary_then_distance_squared_then_original_within_slide_row_index", "undersized_slide": "use_actual_count_without_padding", "physical_radius_used": false, "RNA_or_target_used_to_build_edges": false},
+  "preprocessing": {"source": "saved_official_Ridge_unsupervised_StandardScaler_PCA256_only", "train": "saved_scaler_transform_then_fresh_PCA_fit_transform_for_US", "PCA_parameter_verification": "exact_array_equal_mean_components_singular_values_against_saved_PCA_or_stop", "test": "saved_unsupervised_pipeline_transform", "shared_cached_input_matrices_across_three_arms": true, "old_Ridge_train_US_was_persisted": false, "old_train_US_direct_bitwise_comparison_claimed": false, "supervised_Ridge_parameters_or_predictions_used": false, "after_PCA_dtype": "float32", "target_normalization": "official_log1p_only_no_library_normalization"},
+  "aggregation": {"upstream_split_round_digits": 4, "fold_mean_uses_rounded_split_return": true, "final_round_digits": 4, "full_precision_diagnostic_separate": true},
+  "scope": {"old_source_weights_used": false, "DSS_or_PFI_or_R8_read": false, "new_independent_cohort_claimed": false, "COAD_preview_identity": "UNCONFIRMED_OFFICIAL_SETTING_ONLY", "READ_identity": "TWO_KNOWN_DONORS_WITH_PRIOR_SOURCE_DEVELOPMENT_EXPOSURE"},
+  "runtime": {"device": "CPU", "maximum_parallel_workers": 2, "threads_per_process": 2, "expression_transferred_to_server": false, "real_zero_optimizer_full_batch_profile_required": true}
+}

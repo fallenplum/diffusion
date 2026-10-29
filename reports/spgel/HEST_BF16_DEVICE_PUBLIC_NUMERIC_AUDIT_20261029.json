@@ -1,0 +1,70 @@
+{
+  "schema": "hest_bf16_device_qualification_anonymous_numeric_projection_v1",
+  "status": "PASS_EXACT_NUMERIC_PROJECTION_BOUND_TO_PRIVATE_ORIGINAL_RECEIPT",
+  "source_receipt_sha256": "dfefd1b00711593b5a89c50b2ff3d9875ee13ed2818444ea9ea815484d023141",
+  "source_receipt_is_private": true,
+  "projection": {
+    "removed_top_level_field_names": [
+      "profile_official_sample_id"
+    ],
+    "substituted_values": false,
+    "numeric_fields_changed": 0,
+    "numeric_scalar_fields_preserved": 26,
+    "all_other_original_fields_and_values_preserved_exactly": true
+  },
+  "original_device_qualification_without_provider_identifier": {
+    "schema": "hest_official_uni2_BF16_device_qualification_v1",
+    "status": "PASS_REAL_BF16_FIXED_BATCH128_NO_OPTIMIZER",
+    "scope": "DEVICE_OPERATOR_QUALIFICATION_NOT_BENCHMARK_FEATURE",
+    "config_sha256": "a6dac53b274163f58d2f4b08613f55cb8131ddbfa2803660909f429ef7a5bc7e",
+    "extractor_sha256": "7fb5571cfa80a8ec1a345cabbb35f23b60d8b650d461e4e3b912e3542a0e7938",
+    "primary_source_SHA256": {
+      "benchmark.py": "02db96fe0cbe08202b22577cda97fd55820dfa97d359e7f9cb53cf88dc7b77d3",
+      "st_dataset.py": "cf0886ba5435c83e7bd4a36d6819e6be824c8c0de1393ba2be2c8b53422133f2",
+      "trident_load.py": "74189dfd5f1ec6ec46c87e830a2e1699c0f3f4717b0994a960a6915521a274fd"
+    },
+    "model_weight_sha256": "6e077eda234bebc595868d918d3458d9dd32a050199b0ff04443b2f46a0a3b1e",
+    "profile_RGB_payload_sha256": "bb58d74739c8d6177970b906be50b9e5948296b218684b3bd4b7aab93c86a2bf",
+    "profile_origin_patch_sha256": "2bd7394a3c3481f8c7c6ff429e2a4310f26d608361f93dcac24c7032e1a04d70",
+    "input_pixels": [
+      224,
+      224,
+      3
+    ],
+    "input_RGB_uint8": true,
+    "resize_center_crop_max_pixel_error": 0.0,
+    "model_parameter_dtype": "float32",
+    "forward_autocast_dtype": "bfloat16",
+    "actual_output_dtype": "torch.float32",
+    "stored_dtype": "float32_container_conversion_only_if_needed",
+    "raw_feature_dimension": 1536,
+    "row_L2_normalized": false,
+    "fixed_seed": 1,
+    "batch_size": 128,
+    "num_workers": 1,
+    "actual_repeat_max_error": 0.0,
+    "FP32_comparison_is_diagnostic_not_an_official_BF16_acceptance_threshold": true,
+    "current_FP32_BF16_cosine_min": 0.9998419284820557,
+    "current_FP32_BF16_cosine_mean": 0.9999046921730042,
+    "current_FP32_BF16_relative_L2_max": 0.017781466245651245,
+    "profile_seconds": 0.6579092829488218,
+    "profile_patches_per_second": 194.55569835751507,
+    "peak_GPU_allocated_bytes": 4827431936,
+    "runtime": {
+      "torch": "2.5.1+cu124",
+      "timm": "1.0.30",
+      "torchvision": "0.20.1+cu124",
+      "CUDA": "12.4",
+      "GPU": "NVIDIA GeForce RTX 4080 SUPER",
+      "matmul_TF32": false,
+      "cudnn_TF32": true,
+      "cudnn_benchmark": false,
+      "deterministic": false
+    },
+    "new_optimizer_fits": 0,
+    "new_optimizer_updates": 0,
+    "benchmark_features_saved": 0,
+    "clinical_RNA_or_survival_files_read": false
+  },
+  "fits_or_optimizer_updates_performed_by_this_projection": 0
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "hest_official_publication_source_audit_v1",
+  "status": "PASS_COMPLETE_METADATA_EVIDENCE_AND_ESTABLISHED_EXACT_IDENTIFIER_SCAN",
+  "base_git_commit": "8477be619105ba79827bb3c309c88249023f6a84",
+  "base_git_tree": "de8c924b1fdb5584d22ecbfaa4796e7862f039e9",
+  "denylist_sha256": "d73b70939a38277f8f9f693e9958afcc9435893cd05f5c1d6a6d08a100ffe867",
+  "inherited_scanner_sha256": "4c70929d57459a9e97774e6319bd455deedc29fbcedf077131c918c53db60e98",
+  "publication_script_sha256": "749baa890c546226e8e6c3aa518c1d7c244ab92d2aec44a5522d1e297352e2a5",
+  "completion_evidence": {
+    "schema": "hest_official_local_metadata_evidence_v1",
+    "status": "PASS_LOCAL_PRIVATE_JSON_AND_INDEPENDENT_ROOT_REVIEW_BINDINGS",
+    "dataset_revision": "b039b5965ed7092f280d4f336da7972ef9a10e1a",
+    "source_canonical_sha256": "0c33b463e556ea22d461bc7e2be7747dfa1d528ac815e62dbdc5534bc8b2ec3e",
+    "sources": {
+      "src/spgel_hest/__init__.py": "b1ae95bf2bd3fc114b809a7f7413fd59267c370fed2880e6b46f92dca72c8a54",
+      "src/spgel_hest/official.py": "432e33a7289ea7d76921b9de1024e9b8db42c2930094caddf6a1bc813d8ee5c2",
+      "src/spgel_hest/assets.py": "08090f94f28212b409cf946f3902b76e2e2efb17df5637e9b00d2f33c6db27dc",
+      "src/spgel_hest/execution.py": "0bc2c3a6ec093a08f97c74b6ce748f2a274eb3652919ae5e9f729d7c72b5d167",
+      "scripts/spgel_hest_ridge.py": "4fb5cd3d04538a35336b7bc6dd803d4c7d34d4801dbacdb3d464a38b4738f2d0",
+      "configs/spgel_hest/ridge_v1.json": "1ca6db091729be7207413d5c40c2057def8599d3202a0eb82e2d6a71fdc89a43",
+      "tests/test_spgel_hest_official.py": "0400511f2f8cbf28e634ed85a66d6a449cf5a2c6e1ac6a9ebe2fd2f3950dd092",
+      "tests/test_spgel_hest_assets.py": "d6e6a1de85c0cdb540b4d545ef946d5e1be59b485b3e4b9b77ef5a731d908a8e",
+      "tests/test_spgel_hest_execution.py": "6442b4524f116cfe077ebaaedcda4a5c84849b11355203e9f9d6b42fd8a32200",
+      "src/spgel_hest/NOTICE.md": "f93d62592b18f19f14a183c901e9b866924b53f69219e4d707095493fad37279",
+      "src/spgel_hest/HEST_LICENSE.md": "32b8056672bc415bbd3829a9a737d776795f6b73af61ce0934107ed81ee8a7a0"
+    },
+    "actual_features": 8,
+    "actual_feature_patches": 24058,
+    "actual_Ridge_fits": 4,
+    "actual_model_replays": 4,
+    "source_run_lock_sha256": "3338bad5621d425cd930d4788def0eb709a94e4672f15c060bae021d7cf7cc74",
+    "internal_contract_sha256": "6208259cb8ecd54e09a0801f7b9de4042f591775b6103c1da47afe1c65bc8ed6",
+    "actual_replay_sha256": "e9bb4c50ef3392044113b44f8a504aed90eba12958ab5d7a79f1651e634c7569",
+    "feature_qualification_original_sha256": "f923dd1d0fa9cc9e0e14f217a06e100d9381b6c67f93375a53111dad0d8dc30d",
+    "independent_root_review_sha256": "6ef3caaa893b5adc19adc8ae62f892510643672c77ebbebffad9a3e96d0c441e",
+    "public_report_sha256": "ec56731fc5faac9546c8dc513ca9e6312bd34661f4deb1e0a836432bc9a795b6",
+    "independent_review_script_sha256": "6bdfeb05e9f45267ca4aae3ff7539864a93be9603c9c23575d7dae12828eb026",
+    "evidence_sha256": {
+      "public_report": "ec56731fc5faac9546c8dc513ca9e6312bd34661f4deb1e0a836432bc9a795b6",
+      "run_lock": "3338bad5621d425cd930d4788def0eb709a94e4672f15c060bae021d7cf7cc74",
+      "actual_model_replay": "e9bb4c50ef3392044113b44f8a504aed90eba12958ab5d7a79f1651e634c7569",
+      "COAD_fold0_COMPLETE": "3dfe50923a76308091a03ad495371d77c796dd65c599de7c3255a593840a4086",
+      "COAD_fold1_COMPLETE": "106aa9fe76a081f08778813c8684a8b1b72ae0e9b36750cf62c7907bd405b245",
+      "READ_fold0_COMPLETE": "d0fa26f8fcc198590943878210c6c478d132ed1c3e02184ccc617eaced75d291",
+      "READ_fold1_COMPLETE": "2bbd85a0425f20676885ab101c8e9cd5a94617668d481e43db81d033357f6d0a"
+    },
+    "public_execution_ledger_sha256": "a3f725de34ca22ed97e47d849d41aceb315a5063fd21c94fcbecd49bdbf28b54",
+    "public_fold_CSV_sha256": "184f9c655371ce3d36a2ed71e783cf53ccbc9fb1a4fac7310a72fd562820155b",
+    "public_gene_CSV_sha256": "d791461450f686c68f0555f4a0c2ba4a1dc5ef424abc138d402e02c71e5cb98b",
+    "new_fits_by_publication": 0,
+    "model_or_prediction_arrays_read_by_publication": false,
+    "feature_or_label_arrays_transferred": false
+  },
+  "geo_projection": {
+    "original_raw_sha256": "a13af54caa72e3107b618faa32ac80d1f002a3f1b8046c332e472e81281f5232",
+    "byte_exact_reconstruction": true
+  },
+  "feature_projections": {
+    "original_artifacts": 3,
+    "actual_byte_exact_restores": 3,
+    "metadata_only_public_directory_requests": 2,
+    "projection_is_not_executable_science": true,
+    "projection_manifest_sha256": "941ed37d449c1238742801775fa5e24dd327187bab5ca562d8f6095f97946241",
+    "actual_restore_audit_sha256": "7684c4268377f3e0db757f584a303a86115d1ae5e387a36a7f7f2f658b6473bf",
+    "materializer_sha256": "52b8e9ff1c79772879eb85881a3eb55886967e0900163915888cad21144c052e",
+    "materializer_test_sha256": "406b388fb60ed5b71d23724df438c4bbf399944d67b36639ef5a150344e039d9",
+    "original_artifact_sha256": {
+      "scripts/extract_hest8_official_uni2_bf16.py": "7fb5571cfa80a8ec1a345cabbb35f23b60d8b650d461e4e3b912e3542a0e7938",
+      "configs/spgel/official8_uni2_bf16_v1.json": "a6dac53b274163f58d2f4b08613f55cb8131ddbfa2803660909f429ef7a5bc7e",
+      "reports/spgel/HEST_OFFICIAL8_BF16_FEATURE_QUALIFICATION_WITH_GEOMETRY_V2_20261029.json": "f923dd1d0fa9cc9e0e14f217a06e100d9381b6c67f93375a53111dad0d8dc30d"
+    }
+  },
+  "input_files": 39,
+  "input_bytes": 368076,
+  "old_scanner_or_scientific_sources_modified": false,
+  "existing_reports_overwritten": false,
+  "git_operations": 0,
+  "private_identifiers_exported": false
+}

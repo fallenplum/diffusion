@@ -1,0 +1,5 @@
+dataset,fold,seed,train_spots,test_spots,Pearson_mean_full_precision,Pearson_mean_official_round4,defined_genes,total_genes,coefficients,actual_PCA_solver,elapsed_seconds
+COAD,0,1,5079,10572,0.29803970873009755,0.298,50,50,12800,randomized,4.094000000040978
+COAD,1,1,10572,5079,0.3056074785685354,0.3056,50,50,12800,randomized,9.266000000061467
+READ,0,1,3819,4588,0.2601213267503306,0.2601,50,50,12800,randomized,4.452999999979511
+READ,1,1,4588,3819,0.18503625106800647,0.185,50,50,12800,randomized,7.015000000130385

@@ -1,0 +1,1249 @@
+{
+  "schema": "spgel_hest_official_ridge_report_v1",
+  "status": "COMPLETE_FOUR_OFFICIAL_RIDGE_FITS_AND_ACTUAL_REPLAYS",
+  "source_run_lock_file_sha256": "3338bad5621d425cd930d4788def0eb709a94e4672f15c060bae021d7cf7cc74",
+  "internal_contract_sha256": "6208259cb8ecd54e09a0801f7b9de4042f591775b6103c1da47afe1c65bc8ed6",
+  "upstream_commit": "3ddb5eaf5bd2a8133e0c0e8015816489a3d99dc3",
+  "dataset_revision": "b039b5965ed7092f280d4f336da7972ef9a10e1a",
+  "actual_Ridge_fits": 4,
+  "actual_replayed_models": 4,
+  "neural_fits": 0,
+  "source_weights_loaded": false,
+  "DSS_or_PFI_or_R8_read": false,
+  "independent_new_cohort_confirmation": false,
+  "tasks": {
+    "COAD": {
+      "official_rounded4_fold_aggregate": {
+        "pearson_corrs": [
+          {
+            "name": "TYMS",
+            "pearson_corrs": [
+              0.7688,
+              0.7988
+            ],
+            "mean": 0.7838,
+            "std": 0.015
+          },
+          {
+            "name": "CEACAM6",
+            "pearson_corrs": [
+              0.5919,
+              0.6454
+            ],
+            "mean": 0.6186,
+            "std": 0.0267
+          },
+          {
+            "name": "COL11A1",
+            "pearson_corrs": [
+              0.4943,
+              0.6817
+            ],
+            "mean": 0.588,
+            "std": 0.0937
+          },
+          {
+            "name": "MS4A1",
+            "pearson_corrs": [
+              0.5617,
+              0.6118
+            ],
+            "mean": 0.5867,
+            "std": 0.0251
+          },
+          {
+            "name": "BANK1",
+            "pearson_corrs": [
+              0.5578,
+              0.5764
+            ],
+            "mean": 0.5671,
+            "std": 0.0093
+          },
+          {
+            "name": "CCR7",
+            "pearson_corrs": [
+              0.5028,
+              0.6054
+            ],
+            "mean": 0.5541,
+            "std": 0.0513
+          },
+          {
+            "name": "SPIB",
+            "pearson_corrs": [
+              0.5327,
+              0.5667
+            ],
+            "mean": 0.5497,
+            "std": 0.017
+          },
+          {
+            "name": "CXCL13",
+            "pearson_corrs": [
+              0.5124,
+              0.5685
+            ],
+            "mean": 0.5404,
+            "std": 0.0281
+          },
+          {
+            "name": "FCRL1",
+            "pearson_corrs": [
+              0.5019,
+              0.531
+            ],
+            "mean": 0.5165,
+            "std": 0.0146
+          },
+          {
+            "name": "CCL20",
+            "pearson_corrs": [
+              0.5448,
+              0.4763
+            ],
+            "mean": 0.5105,
+            "std": 0.0342
+          },
+          {
+            "name": "CXCL10",
+            "pearson_corrs": [
+              0.4504,
+              0.4818
+            ],
+            "mean": 0.4661,
+            "std": 0.0157
+          },
+          {
+            "name": "TCL1A",
+            "pearson_corrs": [
+              0.404,
+              0.4327
+            ],
+            "mean": 0.4183,
+            "std": 0.0143
+          },
+          {
+            "name": "AREG",
+            "pearson_corrs": [
+              0.5001,
+              0.2926
+            ],
+            "mean": 0.3963,
+            "std": 0.1037
+          },
+          {
+            "name": "CHI3L2",
+            "pearson_corrs": [
+              0.4243,
+              0.3567
+            ],
+            "mean": 0.3905,
+            "std": 0.0338
+          },
+          {
+            "name": "TMIGD1",
+            "pearson_corrs": [
+              0.4386,
+              0.3153
+            ],
+            "mean": 0.377,
+            "std": 0.0616
+          },
+          {
+            "name": "HEPACAM2",
+            "pearson_corrs": [
+              0.3759,
+              0.3628
+            ],
+            "mean": 0.3694,
+            "std": 0.0066
+          },
+          {
+            "name": "RETNLB",
+            "pearson_corrs": [
+              0.3317,
+              0.3992
+            ],
+            "mean": 0.3654,
+            "std": 0.0338
+          },
+          {
+            "name": "DMBT1",
+            "pearson_corrs": [
+              0.192,
+              0.527
+            ],
+            "mean": 0.3595,
+            "std": 0.1675
+          },
+          {
+            "name": "MS4A12",
+            "pearson_corrs": [
+              0.4383,
+              0.2613
+            ],
+            "mean": 0.3498,
+            "std": 0.0885
+          },
+          {
+            "name": "NXPE4",
+            "pearson_corrs": [
+              0.5072,
+              0.1823
+            ],
+            "mean": 0.3448,
+            "std": 0.1624
+          },
+          {
+            "name": "IL1B",
+            "pearson_corrs": [
+              0.351,
+              0.3012
+            ],
+            "mean": 0.3261,
+            "std": 0.0249
+          },
+          {
+            "name": "UGT2B17",
+            "pearson_corrs": [
+              0.3313,
+              0.2825
+            ],
+            "mean": 0.3069,
+            "std": 0.0244
+          },
+          {
+            "name": "PI3",
+            "pearson_corrs": [
+              0.4133,
+              0.1992
+            ],
+            "mean": 0.3063,
+            "std": 0.1071
+          },
+          {
+            "name": "INSL5",
+            "pearson_corrs": [
+              0.3235,
+              0.2709
+            ],
+            "mean": 0.2972,
+            "std": 0.0263
+          },
+          {
+            "name": "ITLN1",
+            "pearson_corrs": [
+              0.2635,
+              0.2998
+            ],
+            "mean": 0.2817,
+            "std": 0.0181
+          },
+          {
+            "name": "AQP8",
+            "pearson_corrs": [
+              0.303,
+              0.2415
+            ],
+            "mean": 0.2722,
+            "std": 0.0307
+          },
+          {
+            "name": "LCN2",
+            "pearson_corrs": [
+              0.2325,
+              0.3081
+            ],
+            "mean": 0.2703,
+            "std": 0.0378
+          },
+          {
+            "name": "GUCA2B",
+            "pearson_corrs": [
+              0.3091,
+              0.2264
+            ],
+            "mean": 0.2677,
+            "std": 0.0413
+          },
+          {
+            "name": "CHGB",
+            "pearson_corrs": [
+              0.2667,
+              0.2543
+            ],
+            "mean": 0.2605,
+            "std": 0.0062
+          },
+          {
+            "name": "CLCA1",
+            "pearson_corrs": [
+              0.2781,
+              0.2306
+            ],
+            "mean": 0.2544,
+            "std": 0.0238
+          },
+          {
+            "name": "DUOX2",
+            "pearson_corrs": [
+              0.1989,
+              0.2463
+            ],
+            "mean": 0.2226,
+            "std": 0.0237
+          },
+          {
+            "name": "GCG",
+            "pearson_corrs": [
+              0.1887,
+              0.2498
+            ],
+            "mean": 0.2193,
+            "std": 0.0305
+          },
+          {
+            "name": "OLFM4",
+            "pearson_corrs": [
+              0.0775,
+              0.3561
+            ],
+            "mean": 0.2168,
+            "std": 0.1393
+          },
+          {
+            "name": "CA1",
+            "pearson_corrs": [
+              0.2076,
+              0.2142
+            ],
+            "mean": 0.2109,
+            "std": 0.0033
+          },
+          {
+            "name": "CD177",
+            "pearson_corrs": [
+              0.1797,
+              0.2298
+            ],
+            "mean": 0.2047,
+            "std": 0.0251
+          },
+          {
+            "name": "OTOP2",
+            "pearson_corrs": [
+              0.1983,
+              0.2072
+            ],
+            "mean": 0.2027,
+            "std": 0.0044
+          },
+          {
+            "name": "PRPH",
+            "pearson_corrs": [
+              0.1786,
+              0.2261
+            ],
+            "mean": 0.2024,
+            "std": 0.0237
+          },
+          {
+            "name": "SCGN",
+            "pearson_corrs": [
+              0.1732,
+              0.218
+            ],
+            "mean": 0.1956,
+            "std": 0.0224
+          },
+          {
+            "name": "CEACAM7",
+            "pearson_corrs": [
+              0.0996,
+              0.2724
+            ],
+            "mean": 0.186,
+            "std": 0.0864
+          },
+          {
+            "name": "CALB2",
+            "pearson_corrs": [
+              0.1896,
+              0.1803
+            ],
+            "mean": 0.185,
+            "std": 0.0047
+          },
+          {
+            "name": "MMP1",
+            "pearson_corrs": [
+              0.1167,
+              0.2416
+            ],
+            "mean": 0.1792,
+            "std": 0.0625
+          },
+          {
+            "name": "CLCA4",
+            "pearson_corrs": [
+              0.149,
+              0.1644
+            ],
+            "mean": 0.1567,
+            "std": 0.0077
+          },
+          {
+            "name": "CHGA",
+            "pearson_corrs": [
+              0.1064,
+              0.1582
+            ],
+            "mean": 0.1323,
+            "std": 0.0259
+          },
+          {
+            "name": "GATA2",
+            "pearson_corrs": [
+              0.2245,
+              0.0292
+            ],
+            "mean": 0.1268,
+            "std": 0.0977
+          },
+          {
+            "name": "CA4",
+            "pearson_corrs": [
+              0.1833,
+              0.0411
+            ],
+            "mean": 0.1122,
+            "std": 0.0711
+          },
+          {
+            "name": "SLC26A3",
+            "pearson_corrs": [
+              -0.057,
+              0.2332
+            ],
+            "mean": 0.0881,
+            "std": 0.1451
+          },
+          {
+            "name": "GUCA2A",
+            "pearson_corrs": [
+              0.0817,
+              0.0533
+            ],
+            "mean": 0.0675,
+            "std": 0.0142
+          },
+          {
+            "name": "SCG2",
+            "pearson_corrs": [
+              0.1155,
+              -0.141
+            ],
+            "mean": -0.0127,
+            "std": 0.1283
+          },
+          {
+            "name": "CTSE",
+            "pearson_corrs": [
+              -0.2388,
+              0.1136
+            ],
+            "mean": -0.0626,
+            "std": 0.1762
+          },
+          {
+            "name": "MMP3",
+            "pearson_corrs": [
+              -0.1748,
+              -0.3018
+            ],
+            "mean": -0.2383,
+            "std": 0.0635
+          }
+        ],
+        "pearson_mean": 0.3018,
+        "pearson_std": 0.0038,
+        "mean_per_split": [
+          0.298,
+          0.3056
+        ]
+      },
+      "full_precision_fold_pearson_mean": [
+        0.29803970873009755,
+        0.3056074785685354
+      ],
+      "supplementary": [
+        {
+          "MAE": 1.527723148070864,
+          "MSE": 4.57427617964124,
+          "median_per_gene_Pearson": 0.2905834580225618,
+          "defined_Pearson_genes": 50,
+          "total_genes": 50,
+          "mean_drops_undefined_genes": false,
+          "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+        },
+        {
+          "MAE": 1.1928288350636438,
+          "MSE": 2.6814886414094827,
+          "median_per_gene_Pearson": 0.2660766800107319,
+          "defined_Pearson_genes": 50,
+          "total_genes": 50,
+          "mean_drops_undefined_genes": false,
+          "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+        }
+      ],
+      "subgroup_metrics": [
+        {
+          "per_specimen": [
+            {
+              "specimen_index": 3,
+              "spots_count": 3620,
+              "donor_index": 2,
+              "donor_identity_known": true,
+              "full_precision_Pearson_mean": 0.35178642923334075,
+              "supplementary": {
+                "MAE": 1.3538853483898332,
+                "MSE": 3.8128605428254523,
+                "median_per_gene_Pearson": 0.33888289283284084,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            },
+            {
+              "specimen_index": 2,
+              "spots_count": 3535,
+              "donor_index": 1,
+              "donor_identity_known": true,
+              "full_precision_Pearson_mean": 0.3226553888638611,
+              "supplementary": {
+                "MAE": 1.6868212008935612,
+                "MSE": 5.198268867063092,
+                "median_per_gene_Pearson": 0.3497986268032851,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            },
+            {
+              "specimen_index": 1,
+              "spots_count": 3417,
+              "donor_index": 0,
+              "donor_identity_known": true,
+              "full_precision_Pearson_mean": 0.24219881352892592,
+              "supplementary": {
+                "MAE": 1.5472962291703936,
+                "MSE": 4.735385472950257,
+                "median_per_gene_Pearson": 0.2623749158370269,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            }
+          ],
+          "known_donors": [
+            {
+              "donor_index": 0,
+              "specimens_count": 1,
+              "spots_count": 3417,
+              "full_precision_Pearson_mean": 0.24219881352892592,
+              "supplementary": {
+                "MAE": 1.5472962291703936,
+                "MSE": 4.735385472950257,
+                "median_per_gene_Pearson": 0.2623749158370269,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            },
+            {
+              "donor_index": 1,
+              "specimens_count": 1,
+              "spots_count": 3535,
+              "full_precision_Pearson_mean": 0.3226553888638611,
+              "supplementary": {
+                "MAE": 1.6868212008935612,
+                "MSE": 5.198268867063092,
+                "median_per_gene_Pearson": 0.3497986268032851,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            },
+            {
+              "donor_index": 2,
+              "specimens_count": 1,
+              "spots_count": 3620,
+              "full_precision_Pearson_mean": 0.35178642923334075,
+              "supplementary": {
+                "MAE": 1.3538853483898332,
+                "MSE": 3.8128605428254523,
+                "median_per_gene_Pearson": 0.33888289283284084,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            }
+          ],
+          "unknown_donor_specimens_count": 0,
+          "unknown_donors_not_fabricated_as_distinct_patients": true,
+          "official_mean_replaced_by_subgroup_mean": false
+        },
+        {
+          "per_specimen": [
+            {
+              "specimen_index": 0,
+              "spots_count": 5079,
+              "donor_index": null,
+              "donor_identity_known": false,
+              "full_precision_Pearson_mean": 0.3056074785685354,
+              "supplementary": {
+                "MAE": 1.1928288350636438,
+                "MSE": 2.6814886414094827,
+                "median_per_gene_Pearson": 0.2660766800107319,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            }
+          ],
+          "known_donors": [],
+          "unknown_donor_specimens_count": 1,
+          "unknown_donors_not_fabricated_as_distinct_patients": true,
+          "official_mean_replaced_by_subgroup_mean": false
+        }
+      ],
+      "donor_separation_status": "COAD_IDENTITY_UNCONFIRMED",
+      "fixed_seed": 1,
+      "official_folds": 2,
+      "source_pretrained_weights_loaded": false
+    },
+    "READ": {
+      "official_rounded4_fold_aggregate": {
+        "pearson_corrs": [
+          {
+            "name": "CD177",
+            "pearson_corrs": [
+              0.6879,
+              0.4751
+            ],
+            "mean": 0.5815,
+            "std": 0.1064
+          },
+          {
+            "name": "GUCA2A",
+            "pearson_corrs": [
+              0.6802,
+              0.3507
+            ],
+            "mean": 0.5154,
+            "std": 0.1648
+          },
+          {
+            "name": "CA2",
+            "pearson_corrs": [
+              0.6706,
+              0.2591
+            ],
+            "mean": 0.4648,
+            "std": 0.2057
+          },
+          {
+            "name": "MMP28",
+            "pearson_corrs": [
+              0.5417,
+              0.3588
+            ],
+            "mean": 0.4502,
+            "std": 0.0914
+          },
+          {
+            "name": "PADI2",
+            "pearson_corrs": [
+              0.5488,
+              0.2949
+            ],
+            "mean": 0.4218,
+            "std": 0.1269
+          },
+          {
+            "name": "BTNL3",
+            "pearson_corrs": [
+              0.4564,
+              0.3637
+            ],
+            "mean": 0.4101,
+            "std": 0.0463
+          },
+          {
+            "name": "SLC26A3",
+            "pearson_corrs": [
+              0.5486,
+              0.2397
+            ],
+            "mean": 0.3942,
+            "std": 0.1545
+          },
+          {
+            "name": "MT1M",
+            "pearson_corrs": [
+              0.555,
+              0.221
+            ],
+            "mean": 0.388,
+            "std": 0.167
+          },
+          {
+            "name": "CLCA1",
+            "pearson_corrs": [
+              0.3683,
+              0.4002
+            ],
+            "mean": 0.3842,
+            "std": 0.0159
+          },
+          {
+            "name": "CA1",
+            "pearson_corrs": [
+              0.5568,
+              0.1837
+            ],
+            "mean": 0.3702,
+            "std": 0.1865
+          },
+          {
+            "name": "SMPDL3A",
+            "pearson_corrs": [
+              0.4535,
+              0.2468
+            ],
+            "mean": 0.3502,
+            "std": 0.1034
+          },
+          {
+            "name": "SECTM1",
+            "pearson_corrs": [
+              0.4979,
+              0.1758
+            ],
+            "mean": 0.3368,
+            "std": 0.161
+          },
+          {
+            "name": "MT1F",
+            "pearson_corrs": [
+              0.422,
+              0.1726
+            ],
+            "mean": 0.2973,
+            "std": 0.1247
+          },
+          {
+            "name": "EGLN3",
+            "pearson_corrs": [
+              0.3475,
+              0.1853
+            ],
+            "mean": 0.2664,
+            "std": 0.0811
+          },
+          {
+            "name": "PDE9A",
+            "pearson_corrs": [
+              0.3595,
+              0.1576
+            ],
+            "mean": 0.2586,
+            "std": 0.1009
+          },
+          {
+            "name": "SLC26A2",
+            "pearson_corrs": [
+              0.378,
+              0.1325
+            ],
+            "mean": 0.2552,
+            "std": 0.1227
+          },
+          {
+            "name": "MXI1",
+            "pearson_corrs": [
+              0.302,
+              0.1988
+            ],
+            "mean": 0.2504,
+            "std": 0.0516
+          },
+          {
+            "name": "LOX",
+            "pearson_corrs": [
+              0.1078,
+              0.3625
+            ],
+            "mean": 0.2351,
+            "std": 0.1273
+          },
+          {
+            "name": "UBD",
+            "pearson_corrs": [
+              0.2245,
+              0.2446
+            ],
+            "mean": 0.2346,
+            "std": 0.0101
+          },
+          {
+            "name": "APOC1",
+            "pearson_corrs": [
+              0.2296,
+              0.2163
+            ],
+            "mean": 0.2229,
+            "std": 0.0067
+          },
+          {
+            "name": "SPHK1",
+            "pearson_corrs": [
+              0.1545,
+              0.2899
+            ],
+            "mean": 0.2222,
+            "std": 0.0677
+          },
+          {
+            "name": "PLAAT3",
+            "pearson_corrs": [
+              0.2173,
+              0.2207
+            ],
+            "mean": 0.219,
+            "std": 0.0017
+          },
+          {
+            "name": "CLU",
+            "pearson_corrs": [
+              0.1454,
+              0.2913
+            ],
+            "mean": 0.2183,
+            "std": 0.073
+          },
+          {
+            "name": "LAMA3",
+            "pearson_corrs": [
+              0.2629,
+              0.1592
+            ],
+            "mean": 0.2111,
+            "std": 0.0519
+          },
+          {
+            "name": "PTGDS",
+            "pearson_corrs": [
+              0.1552,
+              0.2637
+            ],
+            "mean": 0.2094,
+            "std": 0.0542
+          },
+          {
+            "name": "MMP7",
+            "pearson_corrs": [
+              0.2262,
+              0.1891
+            ],
+            "mean": 0.2077,
+            "std": 0.0186
+          },
+          {
+            "name": "CXCL9",
+            "pearson_corrs": [
+              0.1476,
+              0.2597
+            ],
+            "mean": 0.2036,
+            "std": 0.056
+          },
+          {
+            "name": "ITGB2",
+            "pearson_corrs": [
+              0.1587,
+              0.2213
+            ],
+            "mean": 0.19,
+            "std": 0.0313
+          },
+          {
+            "name": "EFEMP1",
+            "pearson_corrs": [
+              0.106,
+              0.2633
+            ],
+            "mean": 0.1846,
+            "std": 0.0786
+          },
+          {
+            "name": "ANGPTL2",
+            "pearson_corrs": [
+              0.1177,
+              0.2129
+            ],
+            "mean": 0.1653,
+            "std": 0.0476
+          },
+          {
+            "name": "FRZB",
+            "pearson_corrs": [
+              0.1243,
+              0.1939
+            ],
+            "mean": 0.1591,
+            "std": 0.0348
+          },
+          {
+            "name": "CHI3L1",
+            "pearson_corrs": [
+              0.1752,
+              0.1352
+            ],
+            "mean": 0.1552,
+            "std": 0.02
+          },
+          {
+            "name": "CCL21",
+            "pearson_corrs": [
+              0.1367,
+              0.1675
+            ],
+            "mean": 0.1521,
+            "std": 0.0154
+          },
+          {
+            "name": "CXCL8",
+            "pearson_corrs": [
+              0.2481,
+              0.0507
+            ],
+            "mean": 0.1494,
+            "std": 0.0987
+          },
+          {
+            "name": "CCL14",
+            "pearson_corrs": [
+              0.1322,
+              0.1648
+            ],
+            "mean": 0.1485,
+            "std": 0.0163
+          },
+          {
+            "name": "SPP1",
+            "pearson_corrs": [
+              0.1476,
+              0.1474
+            ],
+            "mean": 0.1475,
+            "std": 0.0001
+          },
+          {
+            "name": "ADAMDEC1",
+            "pearson_corrs": [
+              0.2379,
+              0.0448
+            ],
+            "mean": 0.1414,
+            "std": 0.0965
+          },
+          {
+            "name": "P3H3",
+            "pearson_corrs": [
+              0.0661,
+              0.1965
+            ],
+            "mean": 0.1313,
+            "std": 0.0652
+          },
+          {
+            "name": "CEMIP",
+            "pearson_corrs": [
+              0.2076,
+              0.0479
+            ],
+            "mean": 0.1278,
+            "std": 0.0799
+          },
+          {
+            "name": "CXCL10",
+            "pearson_corrs": [
+              0.1148,
+              0.1026
+            ],
+            "mean": 0.1087,
+            "std": 0.0061
+          },
+          {
+            "name": "PRRG3",
+            "pearson_corrs": [
+              0.073,
+              0.1387
+            ],
+            "mean": 0.1058,
+            "std": 0.0328
+          },
+          {
+            "name": "IGHG4",
+            "pearson_corrs": [
+              0.0761,
+              0.1144
+            ],
+            "mean": 0.0953,
+            "std": 0.0192
+          },
+          {
+            "name": "HMOX1",
+            "pearson_corrs": [
+              0.124,
+              0.0274
+            ],
+            "mean": 0.0757,
+            "std": 0.0483
+          },
+          {
+            "name": "MMP9",
+            "pearson_corrs": [
+              0.1997,
+              -0.0524
+            ],
+            "mean": 0.0736,
+            "std": 0.126
+          },
+          {
+            "name": "SGK1",
+            "pearson_corrs": [
+              0.0186,
+              0.1056
+            ],
+            "mean": 0.0621,
+            "std": 0.0435
+          },
+          {
+            "name": "ITIH5",
+            "pearson_corrs": [
+              0.0293,
+              0.0753
+            ],
+            "mean": 0.0523,
+            "std": 0.023
+          },
+          {
+            "name": "IGHG2",
+            "pearson_corrs": [
+              0.0564,
+              0.0371
+            ],
+            "mean": 0.0467,
+            "std": 0.0096
+          },
+          {
+            "name": "TSPAN9",
+            "pearson_corrs": [
+              0.0574,
+              0.0163
+            ],
+            "mean": 0.0369,
+            "std": 0.0205
+          },
+          {
+            "name": "AC010883.3",
+            "pearson_corrs": [
+              0.0323,
+              0.0259
+            ],
+            "mean": 0.0291,
+            "std": 0.0032
+          },
+          {
+            "name": "TPSB2",
+            "pearson_corrs": [
+              0.1209,
+              -0.0989
+            ],
+            "mean": 0.011,
+            "std": 0.1099
+          }
+        ],
+        "pearson_mean": 0.2225,
+        "pearson_std": 0.0376,
+        "mean_per_split": [
+          0.2601,
+          0.185
+        ]
+      },
+      "full_precision_fold_pearson_mean": [
+        0.2601213267503306,
+        0.18503625106800647
+      ],
+      "supplementary": [
+        {
+          "MAE": 0.47703270569121836,
+          "MSE": 0.41806840445505694,
+          "median_per_gene_Pearson": 0.2036165312597003,
+          "defined_Pearson_genes": 50,
+          "total_genes": 50,
+          "mean_drops_undefined_genes": false,
+          "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+        },
+        {
+          "MAE": 0.42502037632319906,
+          "MSE": 0.43154915358378215,
+          "median_per_gene_Pearson": 0.18716407447772868,
+          "defined_Pearson_genes": 50,
+          "total_genes": 50,
+          "mean_drops_undefined_genes": false,
+          "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+        }
+      ],
+      "subgroup_metrics": [
+        {
+          "per_specimen": [
+            {
+              "specimen_index": 3,
+              "spots_count": 2203,
+              "donor_index": 1,
+              "donor_identity_known": true,
+              "full_precision_Pearson_mean": 0.2652410681665281,
+              "supplementary": {
+                "MAE": 0.4950072750928253,
+                "MSE": 0.4419995837412444,
+                "median_per_gene_Pearson": 0.20481500269819558,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            },
+            {
+              "specimen_index": 2,
+              "spots_count": 2385,
+              "donor_index": 1,
+              "donor_identity_known": true,
+              "full_precision_Pearson_mean": 0.25989772617987245,
+              "supplementary": {
+                "MAE": 0.46042978057937767,
+                "MSE": 0.395963419982323,
+                "median_per_gene_Pearson": 0.20647428213882302,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            }
+          ],
+          "known_donors": [
+            {
+              "donor_index": 1,
+              "specimens_count": 2,
+              "spots_count": 4588,
+              "full_precision_Pearson_mean": 0.2601213267503306,
+              "supplementary": {
+                "MAE": 0.47703270569121836,
+                "MSE": 0.41806840445505694,
+                "median_per_gene_Pearson": 0.2036165312597003,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            }
+          ],
+          "unknown_donor_specimens_count": 0,
+          "unknown_donors_not_fabricated_as_distinct_patients": true,
+          "official_mean_replaced_by_subgroup_mean": false
+        },
+        {
+          "per_specimen": [
+            {
+              "specimen_index": 1,
+              "spots_count": 2128,
+              "donor_index": 0,
+              "donor_identity_known": true,
+              "full_precision_Pearson_mean": 0.18062283652107566,
+              "supplementary": {
+                "MAE": 0.34349131544358535,
+                "MSE": 0.2850186237049302,
+                "median_per_gene_Pearson": 0.16987591474441935,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            },
+            {
+              "specimen_index": 0,
+              "spots_count": 1691,
+              "donor_index": 0,
+              "donor_identity_known": true,
+              "full_precision_Pearson_mean": 0.25699173442808976,
+              "supplementary": {
+                "MAE": 0.5276187450705779,
+                "MSE": 0.615947123768405,
+                "median_per_gene_Pearson": 0.2605688122806127,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            }
+          ],
+          "known_donors": [
+            {
+              "donor_index": 0,
+              "specimens_count": 2,
+              "spots_count": 3819,
+              "full_precision_Pearson_mean": 0.18503625106800647,
+              "supplementary": {
+                "MAE": 0.42502037632319906,
+                "MSE": 0.43154915358378215,
+                "median_per_gene_Pearson": 0.18716407447772868,
+                "defined_Pearson_genes": 50,
+                "total_genes": 50,
+                "mean_drops_undefined_genes": false,
+                "nonfinite_serialization": "IEEE_NaN_or_Inf_to_null_without_imputation_or_gene_dropping"
+              }
+            }
+          ],
+          "unknown_donor_specimens_count": 0,
+          "unknown_donors_not_fabricated_as_distinct_patients": true,
+          "official_mean_replaced_by_subgroup_mean": false
+        }
+      ],
+      "donor_separation_status": "READ_TWO_DONORS_VERIFIED_NO_CROSSING",
+      "fixed_seed": 1,
+      "official_folds": 2,
+      "source_pretrained_weights_loaded": false
+    }
+  },
+  "runtime": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "sklearn": "1.7.2",
+    "anndata": "0.10.9",
+    "h5py": "3.16.0",
+    "pandas": "2.1.4",
+    "joblib": "1.5.3",
+    "Ridge_default_tol": 0.0001
+  }
+}

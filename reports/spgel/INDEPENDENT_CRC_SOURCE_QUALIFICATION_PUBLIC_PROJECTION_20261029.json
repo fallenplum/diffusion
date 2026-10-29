@@ -1,0 +1,816 @@
+{
+  "schema": "independent_crc_source_identity_qualification_v1",
+  "date": "2026-10-29",
+  "status": "PARTIAL_TWO_DISTINCT_STUDY_CANDIDATES_NOT_YET_INDEPENDENT_IMAGE_EXPRESSION_TEST_READY",
+  "prior_E_permission_diagnosis_corrected": true,
+  "preexisting_original_GEO_files_found_in_audited_raw_metadata_directories": false,
+  "inventory_scope": "spatial_bridge raw/metadata and sami_surv raw only; filename and fixed study metadata checks; not exhaustive other drives",
+  "HEST_metadata_sha256": "5703d7169c7a31aa4cc74a900df9179326e0cc51bda617a1cf7ac179b6ed5d63",
+  "HEST_metadata_rows": 1276,
+  "HEST_exact_study_identity_token_hits": {
+    "gse267401": 0,
+    "gse283052": 0,
+    "s10238-024-01515": 0,
+    "isci.2025.114283": 0,
+    "orgares": 0,
+    "tanjak": 0,
+    "lille": 0,
+    "hybrid cells": 0
+  },
+  "zero_string_hits_do_not_prove_zero_shared_subjects": true,
+  "existing_Zenodo_data_version_aliases": {
+    "concept": "10.5281/zenodo.7551712",
+    "version": "10.5281/zenodo.7760264",
+    "associated_notebooks": "10.5281/zenodo.7744244",
+    "original_study_doi": "10.1038/s41698-023-00488-4",
+    "status": "NOT_INDEPENDENT_OF_EXISTING_HEST_SIX_DONOR_STUDY_DO_NOT_REDOWLOAD_AS_NEW_COHORT"
+  },
+  "new_fits": 0,
+  "model_loads": 0,
+  "DSS_or_R8_results_read": false,
+  "new_original_files_modified_or_deleted": false,
+  "new_raw_destination": "E_DRIVE_AUTHORIZED_CRC_QUALIFICATION_SUBDIRECTORY",
+  "downloads_limited_to_small_metadata_gene_lists_and_64KiB_HTTP206_fragments": true,
+  "full_RAW_tar_or_full_expression_or_full_image_downloads": 0,
+  "small_file_directory_total_bytes_at_receipt": 3355940,
+  "new_studies": {
+    "GSE267401": {
+      "status": "PARTIAL_NEW_STUDY_IDENTITY_AND_SMALL_ATTACHMENT_QUALIFICATION_ONLY",
+      "study_doi": "10.1007/s10238-024-01515-9",
+      "cohort_collection": "Mahidol/Siriraj, Thailand",
+      "assay": "Visium CytAssist FFPE",
+      "series_metadata_sha256": "c87238a8c64311d1376428564fe9d2350f16aa8b3cea56029682ff0bca993322",
+      "official_filelist_sha256": "9ddd38607f78498eaf74a492ecf3e6818a1a7dcdd6bceae2d5f6b102daef49bd",
+      "raw_tar_bytes": 376023040,
+      "raw_tar_downloaded": false,
+      "official_attachment_groups": {
+        "aligned": {
+          "files": 4,
+          "bytes": 12276520
+        },
+        "barcode_attachment_summary": {
+          "files": 4,
+          "bytes": 111574
+        },
+        "detected": {
+          "files": 4,
+          "bytes": 5744296
+        },
+        "features": {
+          "files": 4,
+          "bytes": 1191740
+        },
+        "matrix": {
+          "files": 4,
+          "bytes": 339267518
+        },
+        "scalefactors": {
+          "files": 4,
+          "bytes": 735
+        },
+        "hires": {
+          "files": 4,
+          "bytes": 15673461
+        },
+        "lowres": {
+          "files": 4,
+          "bytes": 1492824
+        },
+        "positions": {
+          "files": 4,
+          "bytes": 234262
+        }
+      },
+      "section_count": 4,
+      "explicit_GEO_patient_id_count": 2,
+      "within_study_donor_count_confirmed_by_explicit_metadata": true,
+      "distinct_sample_titles": 4,
+      "study_level_vs_existing_six_donor_source": "DISTINCT_PRIMARY_DOI_AND_COLLECTION_COHORT",
+      "study_level_exact_identity_hit_in_pinned_HEST_metadata": false,
+      "patient_level_nonoverlap_with_other_cohorts": "UNVERIFIED_NO_SUBJECT_CROSSWALK",
+      "foundation_model_pretraining_overlap": "UNKNOWN",
+      "gene_namespace_status": "HUMAN_ENSEMBL_ACTUALLY_READ_ZERO_MOUSE_ENSEMBL",
+      "alignment_assembly_verified_from_raw_reads": false,
+      "GEO_assembly_metadata": "mm10_CONFLICT_WITH_HUMAN_GENE_TABLE",
+      "image_registration_attachments_present_in_official_filelist": true,
+      "actual_image_registration_QA": "NOT_RUN_HEADER_SCALE_AND_POSITION_CHECKS_ONLY",
+      "native_112um_foundation_patch_ready": false,
+      "full_expression_matrix_downloaded": false,
+      "full_matrix_values_loaded": false,
+      "small_sections": [
+        {
+          "anonymous_section": "GSE267401_anonymous_section_0",
+          "attachments": [
+            {
+              "bytes": 27896,
+              "sha256": "87d92f1f8f0ff4261efa84f63c26f9c6c7939b9e6e5ad681e746c3699827954e",
+              "kind": "barcodes",
+              "rows": 4992,
+              "unique": 4992
+            },
+            {
+              "bytes": 297935,
+              "sha256": "47ab01a528d12d99ae627aab974fdd60811d9c71629d89617cd80263329b0968",
+              "kind": "features",
+              "rows": 37082,
+              "human_ensembl": 36601,
+              "mouse_ensembl": 0,
+              "other_rows": 481,
+              "other_prefixes": {
+                "DEPRECATED": 481
+              },
+              "feature_types": {
+                "Gene Expression": 37082
+              }
+            },
+            {
+              "bytes": 183,
+              "sha256": "3e5fbb7fb08227bd475cce812d4f028b1812bd2e73cb3db479f9b6e337e53bbc",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "regist_target_img_scalef",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 56901,
+              "sha256": "748d09639f9e29279443c619aed7f6e41560b17144a79fadf1a3e8e66adb8fe3",
+              "kind": "positions",
+              "rows": 4992,
+              "header": true,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 4690
+            }
+          ],
+          "barcode_alignment": {
+            "expression_barcode_subset_positions": true,
+            "shared": 4992
+          }
+        },
+        {
+          "anonymous_section": "GSE267401_anonymous_section_1",
+          "attachments": [
+            {
+              "bytes": 27886,
+              "sha256": "57fdd282b045e22ccf9948f16bc808696085ef322c562747fbe6d8594f797d1d",
+              "kind": "barcodes",
+              "rows": 4991,
+              "unique": 4991
+            },
+            {
+              "bytes": 297935,
+              "sha256": "47ab01a528d12d99ae627aab974fdd60811d9c71629d89617cd80263329b0968",
+              "kind": "features",
+              "rows": 37082,
+              "human_ensembl": 36601,
+              "mouse_ensembl": 0,
+              "other_rows": 481,
+              "other_prefixes": {
+                "DEPRECATED": 481
+              },
+              "feature_types": {
+                "Gene Expression": 37082
+              }
+            },
+            {
+              "bytes": 184,
+              "sha256": "1ac0efc6b8f7306c595a0cf30eb57dac2ad3489befc76174d517b123c16929ce",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "regist_target_img_scalef",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 57420,
+              "sha256": "7bb27fdede50d1746534c0d3ae172bd83fef70e662379afad0d77f8f9d1f4497",
+              "kind": "positions",
+              "rows": 4992,
+              "header": true,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 3884
+            }
+          ],
+          "barcode_alignment": {
+            "expression_barcode_subset_positions": true,
+            "shared": 4991
+          }
+        },
+        {
+          "anonymous_section": "GSE267401_anonymous_section_2",
+          "attachments": [
+            {
+              "bytes": 27896,
+              "sha256": "87d92f1f8f0ff4261efa84f63c26f9c6c7939b9e6e5ad681e746c3699827954e",
+              "kind": "barcodes",
+              "rows": 4992,
+              "unique": 4992
+            },
+            {
+              "bytes": 297935,
+              "sha256": "47ab01a528d12d99ae627aab974fdd60811d9c71629d89617cd80263329b0968",
+              "kind": "features",
+              "rows": 37082,
+              "human_ensembl": 36601,
+              "mouse_ensembl": 0,
+              "other_rows": 481,
+              "other_prefixes": {
+                "DEPRECATED": 481
+              },
+              "feature_types": {
+                "Gene Expression": 37082
+              }
+            },
+            {
+              "bytes": 184,
+              "sha256": "181a455fc23e3715e03361f645140f7ae924cbabc097137732da0d6a2335737f",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "regist_target_img_scalef",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 59889,
+              "sha256": "d9efc20d8e8d78307e6ad2fc716583cdf3e4e04c53d8e2c8649b1b8ecce9fa10",
+              "kind": "positions",
+              "rows": 4992,
+              "header": true,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 3721
+            }
+          ],
+          "barcode_alignment": {
+            "expression_barcode_subset_positions": true,
+            "shared": 4992
+          }
+        },
+        {
+          "anonymous_section": "GSE267401_anonymous_section_3",
+          "attachments": [
+            {
+              "bytes": 27896,
+              "sha256": "87d92f1f8f0ff4261efa84f63c26f9c6c7939b9e6e5ad681e746c3699827954e",
+              "kind": "barcodes",
+              "rows": 4992,
+              "unique": 4992
+            },
+            {
+              "bytes": 297935,
+              "sha256": "47ab01a528d12d99ae627aab974fdd60811d9c71629d89617cd80263329b0968",
+              "kind": "features",
+              "rows": 37082,
+              "human_ensembl": 36601,
+              "mouse_ensembl": 0,
+              "other_rows": 481,
+              "other_prefixes": {
+                "DEPRECATED": 481
+              },
+              "feature_types": {
+                "Gene Expression": 37082
+              }
+            },
+            {
+              "bytes": 184,
+              "sha256": "818588b85c9b488f5c9477c4800d97a2376935c9df5bec2e277e1e66e61ed96e",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "regist_target_img_scalef",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 60052,
+              "sha256": "bd133fa6b889c32d9ec77ccdb5670af0540826ce675aac490219d0a2cda2c30f",
+              "kind": "positions",
+              "rows": 4992,
+              "header": true,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 4757
+            }
+          ],
+          "barcode_alignment": {
+            "expression_barcode_subset_positions": true,
+            "shared": 4992
+          }
+        }
+      ],
+      "representative_HTTP206_header_probes": [
+        {
+          "requested_bytes": 65536,
+          "status": "PARTIAL_HEADER_ONLY",
+          "http_status": 206,
+          "content_range": "bytes 0-65535/83621050",
+          "downloaded_bytes": 65536,
+          "sha256": "2a542b35943f9aea88d04126f5cbe4946650170612074605946190bb4c74e35c",
+          "kind": "matrix_header",
+          "dimension_line": "37082 4992 22290298"
+        },
+        {
+          "requested_bytes": 65536,
+          "status": "PARTIAL_HEADER_ONLY",
+          "http_status": 206,
+          "content_range": "bytes 0-65535/3573888",
+          "downloaded_bytes": 65536,
+          "sha256": "3c8191b92c0a921d7fb0b9e3bddbf503cdaa035fbafb7da9a215d8ba743bb737",
+          "kind": "PNG_IHDR",
+          "image_width": 2000,
+          "image_height": 1345
+        }
+      ],
+      "original_tissue_ROI_annotation_files_verified": false,
+      "dataset_reuse_license_verified": false,
+      "training_or_independent_test_allowed": false,
+      "actual_gene_table": {
+        "rows": 37082,
+        "human_ensembl": 36601,
+        "mouse_ensembl": 0,
+        "DEPRECATED_rows": 481,
+        "all_four_gz_sha_equal": true,
+        "gz_sha256": "47ab01a528d12d99ae627aab974fdd60811d9c71629d89617cd80263329b0968"
+      },
+      "donor_pairing": "TWO_PATIENTS_EACH_PRIMARY_AND_METASTASIS_DO_NOT_SPLIT_PAIRED_TISSUES_ACROSS_DONOR_FOLDS"
+    },
+    "GSE283052": {
+      "status": "PARTIAL_NEW_STUDY_IDENTITY_AND_SMALL_ATTACHMENT_QUALIFICATION_ONLY",
+      "study_doi": "10.1016/j.isci.2025.114283",
+      "cohort_collection": "Lille OrgaRES, France",
+      "assay": "Visium fresh frozen",
+      "series_metadata_sha256": "786cd067f9783f332722b81b8aedfe603c0aa48e23ea09f9d3739dd29985208d",
+      "official_filelist_sha256": "53dca258b9f6bb2f6ff65bef439b36dd98cdb4db090828c0e34ac3b2891490bc",
+      "raw_tar_bytes": 700508160,
+      "raw_tar_downloaded": false,
+      "official_attachment_groups": {
+        "aligned": {
+          "files": 12,
+          "bytes": 17545001
+        },
+        "detected": {
+          "files": 12,
+          "bytes": 23451320
+        },
+        "matrix": {
+          "files": 12,
+          "bytes": 547686857
+        },
+        "scalefactors": {
+          "files": 12,
+          "bytes": 1927
+        },
+        "hires": {
+          "files": 12,
+          "bytes": 100525872
+        },
+        "lowres": {
+          "files": 12,
+          "bytes": 10502246
+        },
+        "positions": {
+          "files": 12,
+          "bytes": 722263
+        }
+      },
+      "section_count": 12,
+      "explicit_GEO_patient_id_count": null,
+      "within_study_donor_count_confirmed_by_explicit_metadata": false,
+      "distinct_sample_titles": 12,
+      "study_level_vs_existing_six_donor_source": "DISTINCT_PRIMARY_DOI_AND_COLLECTION_COHORT",
+      "study_level_exact_identity_hit_in_pinned_HEST_metadata": false,
+      "patient_level_nonoverlap_with_other_cohorts": "UNVERIFIED_NO_SUBJECT_CROSSWALK",
+      "foundation_model_pretraining_overlap": "UNKNOWN",
+      "gene_namespace_status": "HUMAN_ENSEMBL_ACTUALLY_READ_ZERO_MOUSE_ENSEMBL",
+      "alignment_assembly_verified_from_raw_reads": false,
+      "GEO_assembly_metadata": "GRCh38-2020-A",
+      "image_registration_attachments_present_in_official_filelist": true,
+      "actual_image_registration_QA": "NOT_RUN_HEADER_SCALE_AND_POSITION_CHECKS_ONLY",
+      "native_112um_foundation_patch_ready": false,
+      "full_expression_matrix_downloaded": false,
+      "full_matrix_values_loaded": false,
+      "small_sections": [
+        {
+          "anonymous_section": "GSE283052_anonymous_section_0",
+          "attachments": [
+            {
+              "bytes": 159,
+              "sha256": "b15ab1604dbbdb5b0cbfe05953ea68d26f24e436c5e8040bf5fc8f2f8ef4f8a4",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 58776,
+              "sha256": "0510bb3a10b16747f3060eb27804966d03fb7813ae34db17e06b9b96f73285aa",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 2771
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_1",
+          "attachments": [
+            {
+              "bytes": 162,
+              "sha256": "d2b087ae10b0dc7f0650afc909b642e07f5d981d4ef3f7e83315736f8d3c9b93",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 61498,
+              "sha256": "37be6a7aa2ded302ea54d2b26327d7cecf606e817f85753cbc5999fbfeebea79",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 2230
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_2",
+          "attachments": [
+            {
+              "bytes": 163,
+              "sha256": "7d8b53115b35b9c0396673f7c96356c801d9982bcb570c79b106f1f3b5af09b4",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 62179,
+              "sha256": "4918904d33bb045414d8c1151dfdb6eb31da4b6f30d1d5efbfd31c1c443b6d3e",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 947
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_3",
+          "attachments": [
+            {
+              "bytes": 161,
+              "sha256": "a757b04653971ee51695274c9c2b4d4539e42747700cb5d3fe1e63f602a6b1a3",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 60315,
+              "sha256": "6f76bef1b04a032b2f441858e2f595a756eabe4ba0954572f1c3fe74fb5f0817",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 2194
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_4",
+          "attachments": [
+            {
+              "bytes": 162,
+              "sha256": "45b9ef7ce32baff1e869c2133969a28f1d6b8f2deb587df8145a2c72387140ed",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 59271,
+              "sha256": "3761696b32cd3da110e852a65260b3ced078f275b3e0cb87be2d8171c9109722",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 2315
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_5",
+          "attachments": [
+            {
+              "bytes": 161,
+              "sha256": "8a0c517b518655c4d6e92d76b766ce5fc430cd17f0a04d1a91d8b5958272f12e",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 60928,
+              "sha256": "5598d7c4b9658160d66135f29135785b78ef18e3fe8b38d625faaad2106d1163",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 2465
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_6",
+          "attachments": [
+            {
+              "bytes": 163,
+              "sha256": "de127687c6cfe31677f636296fe77c3a9b32eb136c11b437f7b4a26872de2fff",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 58350,
+              "sha256": "c97391092dd3f89cabe18b88f295bfce9726138cedf23cf1f312deca48367349",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 2670
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_7",
+          "attachments": [
+            {
+              "bytes": 161,
+              "sha256": "167c2326e25815c61be38450842c9022a8d2229a16a41d8ba560beb2e2bbe95b",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 58290,
+              "sha256": "08f652a575e59078594cbac35c918f34dc2940854f99faec06089ea0d41738c7",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 1809
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_8",
+          "attachments": [
+            {
+              "bytes": 155,
+              "sha256": "9d471b244f52bc2e5895d51a770fdd7991f9cfcde91d08ae5c11bb55fe0ea674",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 58420,
+              "sha256": "a398a391715cc09b3a7a88541d8f0046bf308d122356c8a59aa43875dec20376",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 2715
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_9",
+          "attachments": [
+            {
+              "bytes": 160,
+              "sha256": "5ae8ead8a4e2435c14b571820eafd4d3b881bceec2def44f058831d73d5fa52e",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 61122,
+              "sha256": "f6ec32684c1dc3c84246d1e16aaa81bdc19a6d28930bf2fa519b2608321123f7",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 2224
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_10",
+          "attachments": [
+            {
+              "bytes": 158,
+              "sha256": "6c5d00ffd8867495466ddaf3059309d08bae74ffa440d5687b387659ebea6652",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 61309,
+              "sha256": "e24fabc83ea412736be3fa70c9c12a52480f0ac0c797775e9b97bc3be80be154",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 1691
+            }
+          ],
+          "barcode_alignment": null
+        },
+        {
+          "anonymous_section": "GSE283052_anonymous_section_11",
+          "attachments": [
+            {
+              "bytes": 162,
+              "sha256": "ad62da2457a97a6a55d8d7616fdbdd70af3ebba71373fba5d86082cdbdf3dd7b",
+              "kind": "scalefactors",
+              "keys": [
+                "fiducial_diameter_fullres",
+                "spot_diameter_fullres",
+                "tissue_hires_scalef",
+                "tissue_lowres_scalef"
+              ],
+              "positive_finite_values": true
+            },
+            {
+              "bytes": 61805,
+              "sha256": "4274266cc6b66f70d8f773784a4e0cb007fbf06e21888dffc7f0cb1815e3e5d3",
+              "kind": "positions",
+              "rows": 4992,
+              "header": false,
+              "column_count": 6,
+              "unique": 4992,
+              "in_tissue_rows": 2735
+            }
+          ],
+          "barcode_alignment": null
+        }
+      ],
+      "representative_HTTP206_header_probes": [
+        {
+          "requested_bytes": 65536,
+          "status": "PARTIAL_HEADER_ONLY",
+          "http_status": 206,
+          "content_range": "bytes 0-65535/59345207",
+          "downloaded_bytes": 65536,
+          "sha256": "e9cb6feb75a1af8014589769802eb0ac903bb9296e6e09e5d7b0ba3654de88dc",
+          "kind": "matrix_header",
+          "dimension_line": "36601 4992 15729017"
+        },
+        {
+          "requested_bytes": 65536,
+          "status": "PARTIAL_HEADER_ONLY",
+          "http_status": 206,
+          "content_range": "bytes 0-65535/9821389",
+          "downloaded_bytes": 65536,
+          "sha256": "7272becca5d59cb0d70e8a21940d805655e2c886f62c113fed83e047983f23f6",
+          "kind": "PNG_IHDR",
+          "image_width": 2000,
+          "image_height": 1987
+        }
+      ],
+      "original_tissue_ROI_annotation_files_verified": false,
+      "dataset_reuse_license_verified": false,
+      "training_or_independent_test_allowed": false,
+      "actual_gene_table": {
+        "rows": 36601,
+        "human_ensembl": 36601,
+        "mouse_ensembl": 0,
+        "gz_bytes": 294478,
+        "gz_sha256": "a698fb66875f9f5c2c19a83bd95193d2cef39168436495505041941b55c24a3f"
+      },
+      "donor_count_limitation": "TWELVE_PXX_SAMPLE_TITLES_BUT_NO_EXPLICIT_PATIENT_ID_FIELD_OR_VERIFIED_SECTION_TO_DONOR_CROSSWALK",
+      "matrix_column_to_barcode_mapping": "UNVERIFIED_NO_SEPARATE_BARCODES_ATTACHMENT_LISTED_DO_NOT_ASSUME_POSITION_FILE_ORDER"
+    }
+  },
+  "deferred_large_download_plan": {
+    "reason": "finish existing official eight-RGB download first; resolve matrix column identity and native image resolution before committing full fetch",
+    "two_RAW_archives_total_bytes": 1076531200,
+    "GSE283052_shared_features_extra_bytes": 294478,
+    "large_downloads_started": false,
+    "ETA": "NOT_ESTIMATED_NO_BULK_THROUGHPUT_MEASUREMENT"
+  },
+  "Google_search_attempt": "DIRECT_GOOGLE_URL_NOT_ACCESSIBLE_BY_TOOL_PRIMARY_GEO_AND_AUTHOR_PAPERS_VERIFIED",
+  "scientific_use_boundary": "metadata qualification is not model performance, external validation, causal cell-source attribution, or tissue annotation ground truth",
+  "public_projection_lineage": {
+    "schema": "lossless_aggregate_json_key_projection_v1",
+    "original_raw_sha256": "a13af54caa72e3107b618faa32ac80d1f002a3f1b8046c332e472e81281f5232",
+    "original_raw_bytes": 29096,
+    "original_canonical_semantic_sha256": "0230b665a18759cc8dd519045bf3f5b71a552f3e3e6c91f72650516dbdaaf2e5",
+    "rename": {
+      "parent": [
+        "new_studies",
+        "GSE267401",
+        "official_attachment_groups"
+      ],
+      "from": "barcodes",
+      "to": "barcode_attachment_summary"
+    },
+    "original_serialization": {
+      "indent": 2,
+      "ensure_ascii": false,
+      "newline": "CRLF",
+      "trailing_newline": true
+    },
+    "values_or_counts_removed": false,
+    "arrays_or_identifiers_added": false
+  }
+}

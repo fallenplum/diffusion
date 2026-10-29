@@ -1,0 +1,39 @@
+{
+  "schema": "hest_public_projection_actual_restore_audit_v1",
+  "status": "PASS_THREE_ACTUAL_IMMUTABLE_PUBLIC_METADATA_RESTORES_AND_THREE_NEGATIVE_GUARD_TESTS",
+  "public_directory_requests_in_successful_restore": 2,
+  "first_direct_request": "SSL_EOF_NO_OUTPUT_WRITTEN",
+  "successful_request_route": "USER_EXISTING_LOCAL_HTTPS_PROXY",
+  "raw_image_expression_weight_downloads": 0,
+  "original_files_modified": false,
+  "models_loaded": 0,
+  "new_fits": 0,
+  "scientific_results_changed": false,
+  "tests_passed": 3,
+  "artifacts": [
+    {
+      "original_file": "scripts/extract_hest8_official_uni2_bf16.py",
+      "original_sha256": "7fb5571cfa80a8ec1a345cabbb35f23b60d8b650d461e4e3b912e3542a0e7938",
+      "projection_file": "reports/spgel/HEST_EXTRACTOR_PUBLIC_PROJECTION_20261029.md",
+      "projection_sha256": "26983fe2c50e528c6fbc3b2e6f0b9ce6dff9137096126bb547efc59ac5394053",
+      "actual_restored_sha256": "7fb5571cfa80a8ec1a345cabbb35f23b60d8b650d461e4e3b912e3542a0e7938",
+      "byte_exact_equal": true
+    },
+    {
+      "original_file": "configs/spgel/official8_uni2_bf16_v1.json",
+      "original_sha256": "a6dac53b274163f58d2f4b08613f55cb8131ddbfa2803660909f429ef7a5bc7e",
+      "projection_file": "reports/spgel/HEST_CONFIG_PUBLIC_PROJECTION_20261029.md",
+      "projection_sha256": "93bb1bbc0ebb9af4858f96a28f71ecc1830ecb21161a84aa6ada24cfe9579782",
+      "actual_restored_sha256": "a6dac53b274163f58d2f4b08613f55cb8131ddbfa2803660909f429ef7a5bc7e",
+      "byte_exact_equal": true
+    },
+    {
+      "original_file": "reports/spgel/HEST_OFFICIAL8_BF16_FEATURE_QUALIFICATION_WITH_GEOMETRY_V2_20261029.json",
+      "original_sha256": "f923dd1d0fa9cc9e0e14f217a06e100d9381b6c67f93375a53111dad0d8dc30d",
+      "projection_file": "reports/spgel/HEST_FEATURE_QUALIFICATION_PUBLIC_PROJECTION_20261029.md",
+      "projection_sha256": "bc09b4d1cd529eaf5955d2ebc5b5271c125eb36aeb44110a7cd19767c72c5e79",
+      "actual_restored_sha256": "f923dd1d0fa9cc9e0e14f217a06e100d9381b6c67f93375a53111dad0d8dc30d",
+      "byte_exact_equal": true
+    }
+  ]
+}

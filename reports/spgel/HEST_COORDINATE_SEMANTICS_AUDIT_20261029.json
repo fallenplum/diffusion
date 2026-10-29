@@ -1,0 +1,289 @@
+{
+  "schema": "hest_official_provider_coordinate_semantics_audit_v1",
+  "date": "2026-10-29",
+  "status": "PASS_EIGHT_BARCODE_ALIGNED_PROVIDER_FIELD_RELATIONS_WITH_READ_UPPER_LEFT_ERRATUM",
+  "dataset_revision": "b039b5965ed7092f280d4f336da7972ef9a10e1a",
+  "samples_checked": 8,
+  "patches_checked": 24058,
+  "provider_obsm_spatial_equals_explicit_col_row_all_eight": true,
+  "maximum_obsm_vs_explicit_col_row_error": 0.0,
+  "all_resolved_relation_maximum_error": 0.0,
+  "rows": [
+    {
+      "anonymous_sample": "COAD_anonymous_sample_0",
+      "task": "COAD",
+      "expression_sha256_from_prior_fixed_version_qualification": "3f7d661dfd01b6e5ff0c50ed33c42c3ecc016b9c6ee48ea4fb933da2d9b69ddd",
+      "expression_full_SHA_recomputed_by_this_audit": false,
+      "official_patch_sha256_from_preexisting_full_download_QA": "2b55b02a95bb207194402cf408643011bcc27a3df92c80e03faeb4cf5d2c491b",
+      "official_patch_full_SHA_recomputed_by_this_audit": false,
+      "patches": 5079,
+      "expression_observations": 6138,
+      "barcodes_unique_and_subset_expression": true,
+      "provider_spatial_dtype": "float64",
+      "official_coords_dtype": "int64",
+      "provider_obsm_array_sha256": "2b6214ce857db485523ab4e274ed4da55f508866d77e1339cf729c1d8616f1f6",
+      "official_coords_array_sha256": "d5fb16e19ee406ea787b83871ed7b9a22d3ddfa49cdcdf3be6d888babf8bfe55",
+      "provider_spatial_vs_explicit_col_row": {
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "resolved_provider_field_relation": {
+        "formula": "trunc(provider_col_row - floor(img.patch_size * img.factor / 2))",
+        "integer_half_crop_pixels": 204,
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "stored_field_convention": "provider_fullres_col_row_center_minus_attribute_defined_half_crop_then_integer_truncation"
+    },
+    {
+      "anonymous_sample": "COAD_anonymous_sample_1",
+      "task": "COAD",
+      "expression_sha256_from_prior_fixed_version_qualification": "6fcc76df55b61c46e51fa7440d047da3930689f9a11bedd0ec493cbae052e31e",
+      "expression_full_SHA_recomputed_by_this_audit": false,
+      "official_patch_sha256_from_preexisting_full_download_QA": "60db06f90d56f092e244b697e5391a37ab42b581c437c11e458ff059c63c227d",
+      "official_patch_full_SHA_recomputed_by_this_audit": false,
+      "patches": 3417,
+      "expression_observations": 3997,
+      "barcodes_unique_and_subset_expression": true,
+      "provider_spatial_dtype": "float64",
+      "official_coords_dtype": "int64",
+      "provider_obsm_array_sha256": "d96a9b69344af87745b5eb3acc8d639fd65f53e2571195b3c9d47484b6175dbe",
+      "official_coords_array_sha256": "7f8cdd91da3bd53723e8e7a26ae1a846df319edbc8a2789825aad41837b6b4ec",
+      "provider_spatial_vs_explicit_col_row": {
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "resolved_provider_field_relation": {
+        "formula": "trunc(provider_col_row - floor(img.patch_size * img.factor / 2))",
+        "integer_half_crop_pixels": 224,
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "stored_field_convention": "provider_fullres_col_row_center_minus_attribute_defined_half_crop_then_integer_truncation"
+    },
+    {
+      "anonymous_sample": "COAD_anonymous_sample_2",
+      "task": "COAD",
+      "expression_sha256_from_prior_fixed_version_qualification": "1965dd1637efe4bcac72fbdb03d4d7b80060b33746b84ff0a1b556a966cda932",
+      "expression_full_SHA_recomputed_by_this_audit": false,
+      "official_patch_sha256_from_preexisting_full_download_QA": "2bd7394a3c3481f8c7c6ff429e2a4310f26d608361f93dcac24c7032e1a04d70",
+      "official_patch_full_SHA_recomputed_by_this_audit": false,
+      "patches": 3535,
+      "expression_observations": 4379,
+      "barcodes_unique_and_subset_expression": true,
+      "provider_spatial_dtype": "float64",
+      "official_coords_dtype": "int64",
+      "provider_obsm_array_sha256": "3f02dbdd721315bc5e8607b6cba42293a0bb850adc5ce8236a7ae6ef42347510",
+      "official_coords_array_sha256": "716fd4cb02e272a4493aeefe3a82b990daa9945942bb7281b95d60b9420bba34",
+      "provider_spatial_vs_explicit_col_row": {
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "resolved_provider_field_relation": {
+        "formula": "trunc(provider_col_row - floor(img.patch_size * img.factor / 2))",
+        "integer_half_crop_pixels": 204,
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "stored_field_convention": "provider_fullres_col_row_center_minus_attribute_defined_half_crop_then_integer_truncation"
+    },
+    {
+      "anonymous_sample": "COAD_anonymous_sample_3",
+      "task": "COAD",
+      "expression_sha256_from_prior_fixed_version_qualification": "c4e4189474973b35a20c30d470a45cc4b91231a185e637a0ce7e5b412df74349",
+      "expression_full_SHA_recomputed_by_this_audit": false,
+      "official_patch_sha256_from_preexisting_full_download_QA": "a17254609041016e0459da70993bb3df7d23288b5d2c195b03f4d2cb92f2ae38",
+      "official_patch_full_SHA_recomputed_by_this_audit": false,
+      "patches": 3620,
+      "expression_observations": 4009,
+      "barcodes_unique_and_subset_expression": true,
+      "provider_spatial_dtype": "float64",
+      "official_coords_dtype": "int64",
+      "provider_obsm_array_sha256": "82817ad55c2de0f2735e1c90679ee3ec3d4521de0a55e4716e8545770e16d067",
+      "official_coords_array_sha256": "2875c951f641351bb345ce5428790eb2d179624aa2142524cadd28d3ce99275c",
+      "provider_spatial_vs_explicit_col_row": {
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "resolved_provider_field_relation": {
+        "formula": "trunc(provider_col_row - floor(img.patch_size * img.factor / 2))",
+        "integer_half_crop_pixels": 204,
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "stored_field_convention": "provider_fullres_col_row_center_minus_attribute_defined_half_crop_then_integer_truncation"
+    },
+    {
+      "anonymous_sample": "READ_anonymous_sample_0",
+      "task": "READ",
+      "expression_sha256_from_prior_fixed_version_qualification": "27c444b5c1c9150aec3c7f5609bbb0ce24c9d8da8e4ea54ec4e45a92b4ea616e",
+      "expression_full_SHA_recomputed_by_this_audit": false,
+      "official_patch_sha256_from_preexisting_full_download_QA": "36186c62d13f29d22cc59d831b52114008ab623e5e28c2936d23805e52295e7d",
+      "official_patch_full_SHA_recomputed_by_this_audit": false,
+      "patches": 1691,
+      "expression_observations": 1691,
+      "barcodes_unique_and_subset_expression": true,
+      "provider_spatial_dtype": "float64",
+      "official_coords_dtype": "int64",
+      "provider_obsm_array_sha256": "ce36f7457f8052579a9cb59e96d93967acffbbde1c78dd3df7780653a2065108",
+      "official_coords_array_sha256": "6da66a807b5807dfe2e1bb70ae2e81d676e4942f6a0a5770f7e475a7ee234aa6",
+      "provider_spatial_vs_explicit_col_row": {
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "resolved_provider_field_relation": {
+        "formula": "trunc(provider_pxl_row_in_fullres,provider_pxl_col_in_fullres)",
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "stored_field_convention": "provider_spot_center_row_col_integer_pixels_not_upper_left",
+      "maximum_error_to_unrounded_swapped_provider_center": 0.9984999999996944
+    },
+    {
+      "anonymous_sample": "READ_anonymous_sample_1",
+      "task": "READ",
+      "expression_sha256_from_prior_fixed_version_qualification": "88d6272559c0074b6ea508777a067ee6629b935ce8b3baa5450036b9eb26e143",
+      "expression_full_SHA_recomputed_by_this_audit": false,
+      "official_patch_sha256_from_preexisting_full_download_QA": "f9e8486c3ed24c2cf5fb8c1fc85d5ebc5f20545978a8d604aac9ec478c5576b0",
+      "official_patch_full_SHA_recomputed_by_this_audit": false,
+      "patches": 2128,
+      "expression_observations": 2128,
+      "barcodes_unique_and_subset_expression": true,
+      "provider_spatial_dtype": "float64",
+      "official_coords_dtype": "int64",
+      "provider_obsm_array_sha256": "6371664cbaf768d894492055f5d27c19db01df3ed473a200e19eed1169a472ca",
+      "official_coords_array_sha256": "e9ce95e20dbb6a5af532763a1612ca582a4613320e9c9bb07e742fb75dba41dc",
+      "provider_spatial_vs_explicit_col_row": {
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "resolved_provider_field_relation": {
+        "formula": "trunc(provider_pxl_row_in_fullres,provider_pxl_col_in_fullres)",
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "stored_field_convention": "provider_spot_center_row_col_integer_pixels_not_upper_left",
+      "maximum_error_to_unrounded_swapped_provider_center": 0.9989999999997963
+    },
+    {
+      "anonymous_sample": "READ_anonymous_sample_2",
+      "task": "READ",
+      "expression_sha256_from_prior_fixed_version_qualification": "765314244a3631749f66d3a535374314e1112f140b9cea8de0ab76f3b86b7b14",
+      "expression_full_SHA_recomputed_by_this_audit": false,
+      "official_patch_sha256_from_preexisting_full_download_QA": "48476d43b5c91f7ef38bfb180bd8d950ef2fca88539eb7bc75f1c517b3b5f64d",
+      "official_patch_full_SHA_recomputed_by_this_audit": false,
+      "patches": 2385,
+      "expression_observations": 2385,
+      "barcodes_unique_and_subset_expression": true,
+      "provider_spatial_dtype": "float64",
+      "official_coords_dtype": "int64",
+      "provider_obsm_array_sha256": "c2e4e63f1ce32a84552edc4c1163f2fef75a4151aa2c04d50c7cbd4945905501",
+      "official_coords_array_sha256": "e926151936b8378defd76bb17b869611ed9cca49cdee11a2e4f9a1ed02d7c4b1",
+      "provider_spatial_vs_explicit_col_row": {
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "resolved_provider_field_relation": {
+        "formula": "trunc(provider_pxl_row_in_fullres,provider_pxl_col_in_fullres)",
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "stored_field_convention": "provider_spot_center_row_col_integer_pixels_not_upper_left",
+      "maximum_error_to_unrounded_swapped_provider_center": 0.9994999999998981
+    },
+    {
+      "anonymous_sample": "READ_anonymous_sample_3",
+      "task": "READ",
+      "expression_sha256_from_prior_fixed_version_qualification": "eaf67dc33c2c3ac247ddfc144a45e8e798ac12d8380ced63866e3b42b5ae7a8a",
+      "expression_full_SHA_recomputed_by_this_audit": false,
+      "official_patch_sha256_from_preexisting_full_download_QA": "0561b4b92b50adbe15160344f4ba7dec060392c4e3d7d7bc900238cefbff3bd4",
+      "official_patch_full_SHA_recomputed_by_this_audit": false,
+      "patches": 2203,
+      "expression_observations": 2203,
+      "barcodes_unique_and_subset_expression": true,
+      "provider_spatial_dtype": "float64",
+      "official_coords_dtype": "int64",
+      "provider_obsm_array_sha256": "da13d7c9d182c6c8c04d427dce0d0dddfc6e99444380a8865d86ad364d56ab00",
+      "official_coords_array_sha256": "77d2597de0bb39fea181ba33d5d37f932939d9b4ffec59a7ac787a1e0cdb574e",
+      "provider_spatial_vs_explicit_col_row": {
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "resolved_provider_field_relation": {
+        "formula": "trunc(provider_pxl_row_in_fullres,provider_pxl_col_in_fullres)",
+        "maximum_absolute_error": 0.0,
+        "exact_array_equal": true
+      },
+      "stored_field_convention": "provider_spot_center_row_col_integer_pixels_not_upper_left",
+      "maximum_error_to_unrounded_swapped_provider_center": 0.9994999999998981
+    }
+  ],
+  "coordinate_comparison_private_receipt_sha256": "a98db4edb1eabdcdbe8fe9bf56c2401ac6eaeb47cd2c7746586d62d3f304d106",
+  "array_values_or_barcodes_exported": false,
+  "primary_code": [
+    {
+      "file": "HESTData.py",
+      "bytes": 72770,
+      "sha256": "546260e7b94d7483f0ed80c290b69bedfadc3452526803adc532c3454e255e2c",
+      "git_blob": "c2a76194ab23c690c8383eb24752f9229c728146",
+      "commit": "3ddb5eaf5bd2a8133e0c0e8015816489a3d99dc3"
+    },
+    {
+      "file": "readers.py",
+      "bytes": 64273,
+      "sha256": "36db090a33c252b295a0537f8e3872ca7d9bc2d1def0bf0ce9796f20e5051d43",
+      "git_blob": "6d9b1cb7259abb3575dedc03b486001e7002371f",
+      "commit": "3ddb5eaf5bd2a8133e0c0e8015816489a3d99dc3"
+    },
+    {
+      "file": "trident_compat.py",
+      "bytes": 5071,
+      "sha256": "3c9874c15c9b4c8df03b897b808a86e069f838940f845547e59c425ca470c659",
+      "git_blob": "1aec76d2c3d870533f116d5ed9d859f5bedc1269",
+      "commit": "3ddb5eaf5bd2a8133e0c0e8015816489a3d99dc3"
+    }
+  ],
+  "current_primary_writer_is_proven_generator_of_archived_dataset": false,
+  "primary_writer_center_to_corner_lines": [
+    395,
+    416
+  ],
+  "primary_visium_reader_explicit_col_row_lines": [
+    444,
+    449
+  ],
+  "READ_upper_left_generic_attribute_qualified": false,
+  "official_RGB_crop_center_or_histologic_registration_independently_verified": false,
+  "coordinates_are_micrometers": false,
+  "spatial_GNN_physical_geometry_qualified": false,
+  "new_RAW_arrays_or_existing_attributes_modified": false,
+  "frozen_extractor_config_or_code_modified": false,
+  "new_fits": 0,
+  "model_loads": 0,
+  "X_expression_matrix_or_raw_X_bytes_read": false,
+  "full_H5AD_or_RGB_file_rehash_performed": false,
+  "server_transfers_of_RNA_or_obsm": 0,
+  "DSS_PFI_R8_results_read": false,
+  "initial_whole_H5AD_hash_attempt": "AUTOMATIC_APPROVAL_REJECTED_BEFORE_EXECUTION_REMOVED_THEN_AUTHORIZED_COORDINATE_ONLY_AUDIT_PASSED",
+  "Ridge_static_review": {
+    "status": "PASS_IMPLEMENTATION_AND_FREEZE_BYTES_ONLY_WAIT_ACTUAL_EIGHT_BF16_QUALIFICATION",
+    "source_files_checked": 11,
+    "source_canonical_sha256": "0c33b463e556ea22d461bc7e2be7747dfa1d528ac815e62dbdc5534bc8b2ec3e",
+    "owner_test_log_sha256": "6909d401dcf83733dbd999f67bf9bfd8db8b6cef022de3f80dc0b1c6149f5df9",
+    "owner_synthetic_tests_passed": 22,
+    "independent_tests_repeated": false,
+    "Partition_fields": [
+      "features",
+      "targets",
+      "barcodes",
+      "specimen_index",
+      "specimen_ids",
+      "donor_codes",
+      "genes"
+    ],
+    "coords_in_prediction_tensor": false,
+    "coords_read_purpose": "shape_and_finite_validation_only_not_returned_by_Partition",
+    "model_predict_input": "features_only_no_RNA_no_coordinates",
+    "real_Ridge_fits_started_in_freeze_receipt": 0
+  }
+}

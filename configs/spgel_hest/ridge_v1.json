@@ -1,0 +1,18 @@
+{
+  "schema": "spgel_hest_official_ridge_recipe_v1",
+  "status": "REQUIRES_NEW_DATA_FEATURE_QUALIFICATION_AND_SEPARATE_RUN_LOCK",
+  "upstream_commit": "3ddb5eaf5bd2a8133e0c0e8015816489a3d99dc3",
+  "dataset_revision": "b039b5965ed7092f280d4f336da7972ef9a10e1a",
+  "tasks": ["COAD", "READ"],
+  "folds": [0, 1],
+  "seed": 1,
+  "logical_fits": 4,
+  "method": "ridge",
+  "input": {"encoder": "UNI2-h", "dimension": 1536, "forward_precision": "bfloat16", "row_L2_normalized": false},
+  "targets": {"genes": 50, "selection": "official_var_50genes_order", "dtype": "float64", "normalization": "log1p_only_after_official_gene_and_barcode_selection", "library_normalization": false},
+  "preprocessing": {"fit_scope": "official_train_samples_only", "steps": ["StandardScaler", "PCA256"], "PCA_solver": "auto", "PCA_random_state": 1, "after_PCA_dtype": "float32", "silent_dimension_reduction": false},
+  "ridge": {"solver": "lsqr", "alpha": 0.0078125, "fit_intercept": false, "max_iter": 1000, "random_state": 1, "tol": "locked_sklearn_default"},
+  "aggregation": {"upstream_split_round_digits": 4, "fold_mean_uses_rounded_split_return": true, "final_round_digits": 4, "full_precision_diagnostic_separate": true, "undefined_correlations_imputed_or_dropped": false},
+  "scope": {"uses_old_source_pretrained_weights": false, "DSS_or_PFI_or_R8_read": false, "new_independent_cohort_claimed": false, "MLP_or_GNN_in_this_lock": false, "automatic_retry_fits": 0},
+  "runtime": {"threads_per_process": 2, "ridge_device": "CPU"}
+}

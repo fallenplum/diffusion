@@ -1,0 +1,147 @@
+{
+  "schema": "hest_official_ridge_execution_ledger_v1",
+  "status": "COMPLETE_FIXED_FOUR_RIDGE_FITS_AND_FOUR_ACTUAL_REPLAYS",
+  "actual_Ridge_fits": 4,
+  "actual_scaler_fits": 4,
+  "actual_PCA_fits": 4,
+  "actual_replayed_models": 4,
+  "neural_fits": 0,
+  "new_fits_during_replay": 0,
+  "automatic_retry_fits": 0,
+  "failed_cells": 0,
+  "workers": 2,
+  "threads_per_worker": 2,
+  "local_GPU_used": false,
+  "expression_clinical_or_labels_uploaded": false,
+  "all_model_outputs_and_spot_arrays_remain_local_private": true,
+  "actual_wall_seconds": 91.89100000006147,
+  "sum_fit_elapsed_seconds": 24.82800000021234,
+  "sum_fit_elapsed_is_not_parallel_wall": true,
+  "wall_includes_fresh_data_qualification_and_locked_fit_replay_report": true,
+  "sampled_peak_local_process_RSS_GiB": 2.112842559814453,
+  "sampled_peak_local_process_CPU_percent": 347.7,
+  "sampled_minimum_system_available_RAM_GiB": 6.412567138671875,
+  "sampled_peak_system_CPU_percent": 61.8,
+  "sampled_resource_interval_seconds": 1,
+  "lock_artifact": {
+    "basename": "HEST_RUN_LOCK.json",
+    "file_sha256": "3338bad5621d425cd930d4788def0eb709a94e4672f15c060bae021d7cf7cc74",
+    "internal_contract_sha256": "6208259cb8ecd54e09a0801f7b9de4042f591775b6103c1da47afe1c65bc8ed6",
+    "file_sha_and_internal_contract_are_distinct": true
+  },
+  "data_qualification": {
+    "basename": "HEST_ASSET_REQUALIFICATION_20261029.json",
+    "sha256": "fb7be31d91d94da7c5c537fef4ec841780ceddd95a6087ab1c28c260446cd5a3"
+  },
+  "authoritative_feature_qualification": {
+    "basename": "HEST_OFFICIAL8_BF16_FEATURE_QUALIFICATION_WITH_GEOMETRY_V2_20261029.json",
+    "sha256": "f923dd1d0fa9cc9e0e14f217a06e100d9381b6c67f93375a53111dad0d8dc30d",
+    "feature_files": 8,
+    "feature_rows": 24058,
+    "coordinates_are_not_Ridge_inputs": true
+  },
+  "runtime_assets_artifact": {
+    "basename": "RUNTIME_ASSETS.private.json",
+    "sha256": "7e775693cc74542d38a66a57b97a2dcec3b29b2679a4be17e61fbfed0fc919cc"
+  },
+  "actual_replay_artifact": {
+    "basename": "REPLAY_AUDIT.json",
+    "sha256": "e9bb4c50ef3392044113b44f8a504aed90eba12958ab5d7a79f1651e634c7569",
+    "new_Ridge_fits": 0,
+    "new_scaler_fits": 0,
+    "new_PCA_fits": 0
+  },
+  "report_artifact": {
+    "basename": "HEST_OFFICIAL_RIDGE_RESULTS_20261029.json",
+    "sha256": "ec56731fc5faac9546c8dc513ca9e6312bd34661f4deb1e0a836432bc9a795b6"
+  },
+  "code_frozen_files": 11,
+  "code_sources_canonical_sha256": "0c33b463e556ea22d461bc7e2be7747dfa1d528ac815e62dbdc5534bc8b2ec3e",
+  "synthetic_certification": {
+    "tests_passed": 22,
+    "real_official_data_used": false,
+    "separate_from_four_formal_fits": true,
+    "log_basename": "HEST_RIDGE_FINAL_SYNTHETIC_CERT_20261029.log",
+    "log_sha256": "6909d401dcf83733dbd999f67bf9bfd8db8b6cef022de3f80dc0b1c6149f5df9",
+    "previous_16_test_pause_evidence_preserved": true
+  },
+  "cells": [
+    {
+      "dataset": "COAD",
+      "fold": 0,
+      "seed": 1,
+      "train_rows": 5079,
+      "test_rows": 10572,
+      "fit_elapsed_seconds": 4.094000000040978,
+      "actual_PCA_solver": "randomized",
+      "coefficients": 12800,
+      "COMPLETE_sha256": "3dfe50923a76308091a03ad495371d77c796dd65c599de7c3255a593840a4086",
+      "model_sha256": "02f3836955f4352a7867b37e1e350dd67ba4bbd7e51730abed9cb53cf1309b93",
+      "predictions_sha256": "e99ea024abdb89e1c7d77ef1d5aa85b79c638253008141c40653e1b693d3f45f",
+      "replay_prediction_maximum_error": 0.0,
+      "donor_separation_status": "COAD_IDENTITY_UNCONFIRMED"
+    },
+    {
+      "dataset": "COAD",
+      "fold": 1,
+      "seed": 1,
+      "train_rows": 10572,
+      "test_rows": 5079,
+      "fit_elapsed_seconds": 9.266000000061467,
+      "actual_PCA_solver": "randomized",
+      "coefficients": 12800,
+      "COMPLETE_sha256": "106aa9fe76a081f08778813c8684a8b1b72ae0e9b36750cf62c7907bd405b245",
+      "model_sha256": "c17f46bcedec0c4ad5dca42c5b60f0e502549490b1e74db6cc597528f4b97711",
+      "predictions_sha256": "4d6dac47da488bda37d19e009d325993764358712e51932d4aba112a7f939d38",
+      "replay_prediction_maximum_error": 0.0,
+      "donor_separation_status": "COAD_IDENTITY_UNCONFIRMED"
+    },
+    {
+      "dataset": "READ",
+      "fold": 0,
+      "seed": 1,
+      "train_rows": 3819,
+      "test_rows": 4588,
+      "fit_elapsed_seconds": 4.452999999979511,
+      "actual_PCA_solver": "randomized",
+      "coefficients": 12800,
+      "COMPLETE_sha256": "d0fa26f8fcc198590943878210c6c478d132ed1c3e02184ccc617eaced75d291",
+      "model_sha256": "cbbaf4c4321948a062a9dd3f7f88d4a9e761b0a05e65cb824663d426811cceca",
+      "predictions_sha256": "f2904ed4467dd3aa1e1aef69c0d2be0a269b32880ce20f24b7f7541c6463c08d",
+      "replay_prediction_maximum_error": 0.0,
+      "donor_separation_status": "READ_TWO_DONORS_VERIFIED_NO_CROSSING"
+    },
+    {
+      "dataset": "READ",
+      "fold": 1,
+      "seed": 1,
+      "train_rows": 4588,
+      "test_rows": 3819,
+      "fit_elapsed_seconds": 7.015000000130385,
+      "actual_PCA_solver": "randomized",
+      "coefficients": 12800,
+      "COMPLETE_sha256": "2bbd85a0425f20676885ab101c8e9cd5a94617668d481e43db81d033357f6d0a",
+      "model_sha256": "c92b805c4e9872bcb747e671c31b69c0be6b193ea3a24bfdd3a2157103301a70",
+      "predictions_sha256": "a01b5473b22c240b20fcb777124cbdada226dc52a46d7d83ed7273e46680ee08",
+      "replay_prediction_maximum_error": 0.0,
+      "donor_separation_status": "READ_TWO_DONORS_VERIFIED_NO_CROSSING"
+    }
+  ],
+  "runtime": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "sklearn": "1.7.2",
+    "anndata": "0.10.9",
+    "h5py": "3.16.0",
+    "pandas": "2.1.4",
+    "joblib": "1.5.3",
+    "Ridge_default_tol": 0.0001
+  },
+  "old_source_pretrained_weights_used": false,
+  "old_source_74_fits_198_replays_or_original_Ridge_artifacts_mutated": false,
+  "COAD_identity_status": "COAD_IDENTITY_UNCONFIRMED",
+  "READ_identity_status": "READ_TWO_DONORS_VERIFIED_NO_CROSSING_WITH_HISTORICAL_RESEARCH_EXPOSURE",
+  "new_independent_cohort_confirmation": false,
+  "public_contains_patient_identifiers_private_paths_PIDs_argv_arrays_or_weights": false
+}

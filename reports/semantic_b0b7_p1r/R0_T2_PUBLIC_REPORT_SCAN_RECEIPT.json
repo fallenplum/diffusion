@@ -1,0 +1,146 @@
+{
+  "Git_writes": 0,
+  "established_denylist_sha256": "d73b70939a38277f8f9f693e9958afcc9435893cd05f5c1d6a6d08a100ffe867",
+  "files": [
+    {
+      "bytes": 6953,
+      "file": "configs/semantic_b0b7/p1r_t2_lock.json",
+      "sha256": "0e00416061ccb98b819c2446f980f7462c73355520e242bc76b967e1ae67f7b5"
+    },
+    {
+      "bytes": 804925,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B3_seed31.json",
+      "sha256": "0e804c8b4990afae92a8403b5e42cedf2b583ec6f7158cb33660319724f475c9"
+    },
+    {
+      "bytes": 805883,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B3_seed47.json",
+      "sha256": "2f6c6c96ea3b7e9bb3c430f268dd3ba6a9884abbd0275c3a79cfded2705c2683"
+    },
+    {
+      "bytes": 805057,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B3_seed83.json",
+      "sha256": "9f8d8dba4d84ff54abac8f8c072d797b4f810086f4245b9e76c7759f7f67cba2"
+    },
+    {
+      "bytes": 712667,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B4_MAP_SHUFFLE_seed31.json",
+      "sha256": "e63eee48bd78593a0b988888f8413c91c03ffb2d4dd6a7a5dc9cc44350e8341d"
+    },
+    {
+      "bytes": 710994,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B4_MAP_SHUFFLE_seed47.json",
+      "sha256": "c4ef725afa69fd370c5179d46cad6ec2a1f075b0e6b12f17ca5d02e85443aeea"
+    },
+    {
+      "bytes": 712525,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B4_MAP_SHUFFLE_seed83.json",
+      "sha256": "59136e637db6e54ea71e72ffdaf4b70a0458d1efc77b459671dc7b2d34851e6b"
+    },
+    {
+      "bytes": 711634,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B4_seed31.json",
+      "sha256": "2588fec1f01fd8b54b0b801ad8c5cc83c1dec042c6f4560292ca2cf57f845a13"
+    },
+    {
+      "bytes": 710718,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B4_seed47.json",
+      "sha256": "cde32ed98951920a87c8b9fc8558f7ce027dc33eb46d460b6666dbd6952fbc0d"
+    },
+    {
+      "bytes": 712085,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B4_seed83.json",
+      "sha256": "f61728854eb8f2a1af5d176bc5dad2e5010cfa8b1331c765bfb0da129cf63559"
+    },
+    {
+      "bytes": 712624,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B6a_seed31.json",
+      "sha256": "02305b16577534244bd8f8da5a3df56ffb5fbf38856402fbaece40010969ae9c"
+    },
+    {
+      "bytes": 711012,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B6a_seed47.json",
+      "sha256": "58b47e7107e19b06ba57faec3814c5930698dbdd0ae8d9d01ad925bc45d7023c"
+    },
+    {
+      "bytes": 711943,
+      "file": "reports/semantic_b0b7_p1r/01_R0_CELL_B6a_seed83.json",
+      "sha256": "cc0957fab3116e54f7a98655bee682927fd3d387eeebfd6235ecc32430c438ff"
+    },
+    {
+      "bytes": 13866,
+      "file": "reports/semantic_b0b7_p1r/01_SAVED_STATE_DIAGNOSTICS.json",
+      "sha256": "fd57fff90b1c991a6e28fcc1788051a3647eb805e20bdc41b7ed28c4a34d8a91"
+    },
+    {
+      "bytes": 1993,
+      "file": "reports/semantic_b0b7_p1r/01_SAVED_STATE_DIAGNOSTICS.md",
+      "sha256": "5d17a8772ca8f35be8bbc82b20582154297a901b837083d21072783e8f68e9d2"
+    },
+    {
+      "bytes": 443576,
+      "file": "reports/semantic_b0b7_p1r/02_TEXT_ROUTE_AND_INPUT_FAIRNESS.json",
+      "sha256": "fd4bea38f881a60800fa89b1d520ca28b873b7900afff5eeb45ff3b5e41309a5"
+    },
+    {
+      "bytes": 2566,
+      "file": "reports/semantic_b0b7_p1r/03_SLOT_READOUT_COMPARISON.csv",
+      "sha256": "42b715c10213d1f3d2749ba6f8bb7c2b1e475629dff2f32d4bc66514a3c9935d"
+    },
+    {
+      "bytes": 558175,
+      "file": "reports/semantic_b0b7_p1r/03_SLOT_READOUT_COMPARISON.json",
+      "sha256": "646e985d1144e33eef0f87718deb029f22d478e7f726f29ceb545acbb0aacfa1"
+    },
+    {
+      "bytes": 113374,
+      "file": "reports/semantic_b0b7_p1r/03_SLOT_READOUT_PROGRAM_METRICS.csv",
+      "sha256": "9bc664c529b7fc9098a3f612c885d54742dab68a8be8d8e5115e329f1162f5ab"
+    },
+    {
+      "bytes": 1404984,
+      "file": "reports/semantic_b0b7_p1r/04_R0_RELATION_MASS_AND_CONTRIBUTION.csv",
+      "sha256": "edaf423674922cc8d13496522346a6249a0d95cb180bca47ac2979ebe4da4cac"
+    },
+    {
+      "bytes": 96176,
+      "file": "reports/semantic_b0b7_p1r/05_AUXILIARY_LOSS_GRADIENT_AND_WEIGHT.csv",
+      "sha256": "d757350eaf321147e430ad336eb7f8ed8da8c5e28ae33f62b9bd89db6dbe3944"
+    },
+    {
+      "bytes": 865,
+      "file": "reports/semantic_b0b7_p1r/07_R0_T2_COMPUTE_LEDGER.csv",
+      "sha256": "197d6c3668f68ad567f449c058c5f0127edd9e0f1bd2931cbea3c05549fb43ec"
+    },
+    {
+      "bytes": 4145,
+      "file": "reports/semantic_b0b7_p1r/R0_T2_REPORT_BUILD_AUDIT.json",
+      "sha256": "e91a5e92bdbe1a4b093294786441f6f89292c2c6bbb439178dbf62fda5f47340"
+    },
+    {
+      "bytes": 10803,
+      "file": "scripts/semantic_b0b7_p1r_diagnostic_report.py",
+      "sha256": "cea06de3975132424aba45fe8a0b6aeaa4ba323d48d8b2fa7caf80fbc103b836"
+    },
+    {
+      "bytes": 32982,
+      "file": "scripts/semantic_b0b7_p1r_diagnostics.py",
+      "sha256": "99c339e6515d4f548f14788c44dea843987535875f8eeb11556a5c7d21976926"
+    },
+    {
+      "bytes": 6013,
+      "file": "tests/test_semantic_b0b7_p1r_diagnostics.py",
+      "sha256": "440c3066a3ce0ce5c67d9f6d622b5cb992a9970fc46d1324a47bfb02b5288d06"
+    }
+  ],
+  "initial_report_scan_import_failure": "current_source_checkout_did_not_contain_inherited_scanner; unchanged_historical_module_added_to_namespace_no_scientific_changes",
+  "new_fits_by_reporter": 0,
+  "new_model_forwards_by_reporter": 0,
+  "original_scanner_sha256": "4c70929d57459a9e97774e6319bd455deedc29fbcedf077131c918c53db60e98",
+  "patient_level_arrays_or_weights_exported": false,
+  "private_identifiers_exported": false,
+  "schema": "semantic_b0b7_p1r_r0_t2_public_scan_v1",
+  "source_R0_index_sha256": "1455452fc0afa529157c4a3b42bf99cd606f9635e58c130d82bbe987ae5d0d71",
+  "source_T2_sha256": "e63c8d37734e7456b46caf6278d7ebe99b8ca946b1eaa7f5f849afea455c7826",
+  "status": "PASS_ORIGINAL_RULES_AND_EXISTING_IDENTIFIER_REGISTRY"
+}

@@ -1,0 +1,194 @@
+{
+  "CI_computation": false,
+  "DSS_OS_PFI_read_or_used": false,
+  "T2_encoder_selection": "unchanged_original_Laux_six_states_bound_by_separate_T2_lock",
+  "T2_lock_sha256": "0e00416061ccb98b819c2446f980f7462c73355520e242bc76b967e1ae67f7b5",
+  "T4_R0_gradient_diagnosis_completed_before_this_lock": {
+    "actual_saved_state_replays": 48,
+    "interpretation": "raw_value_has_local_gradient_conflict_query_projection_mainly_aligned_no_global_conflict_claim",
+    "new_neural_fits": 0,
+    "separate_backward_calls": 96
+  },
+  "allow_derived_partition_payloads": false,
+  "allowed_input_sha256": [
+    "93d2419a95c129e72e360fc24748e4fef6c909a01830208ecef5fc2d7d0b1b6c",
+    "f480ce80574407141e610786fa9cb6c981cbff9691660966e30f3ba215727429",
+    "a6bcb789c9300e9367bf8cf7166b067ab8723adddd879663e47990171c4c81b7"
+  ],
+  "allowed_variant_names": [
+    "T1_TEXTLESS",
+    "T1_SCORE_ROUTE_CONTROL",
+    "T3_B3_DUAL_A050",
+    "T3_B4_DUAL_A050",
+    "T3_B3_DUAL_A075",
+    "T3_B4_DUAL_A075",
+    "T3_B4_DUAL_MAP_SHUFFLE_A050",
+    "T3_B4_DUAL_MAP_SHUFFLE_A075",
+    "T4_B3_LAMBDA000",
+    "T4_B4_LAMBDA000",
+    "T4_B3_LAMBDA003",
+    "T4_B4_LAMBDA003",
+    "ORIGINAL_B3",
+    "ORIGINAL_B4",
+    "T3_B4_DUAL_WRONG_AUX_A050",
+    "T3_B4_DUAL_WRONG_AUX_A075"
+  ],
+  "bootstrap_computation": false,
+  "branch": "research/semantic-b0b7-p1r",
+  "checkpoints": [
+    50,
+    100,
+    200,
+    400
+  ],
+  "date": "2026-10-31",
+  "development_new_neural_fits": 36,
+  "dual_fraction_selection": {
+    "candidates": [
+      0.5,
+      0.75
+    ],
+    "cells_per_fraction": 6,
+    "pooling": "B3_and_B4_three_seeds_equal_weight_Huber",
+    "tolerance": "mean_train_median_program_Huber_tolerance_across_both_fractions",
+    "uses_replication_or_DSS": false,
+    "within_tolerance": "higher_bidirectional_hard_gap_then_smaller_fraction"
+  },
+  "frozen_sources": {
+    "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+    "configs/semantic_b0b7/p1r_variants_v1.json": "223b22ce4e2371431a9884e190cdae76e699d3c1f3ba12f30d4ff9a3ee20085a",
+    "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+    "scripts/semantic_b0b7_p1r.py": "c7214fbd2a1a078825695ded9762b8be1e088e1c843f194fa6c31effa79a271e",
+    "scripts/semantic_b0b7_p1r_matrix.py": "17d0c5c7004e98384ae52820c7788ae0d6e016a0176f3c6016625689edb2389b",
+    "scripts/semantic_b0b7_p1r_prepare_partitions.py": "12cd65e906fe8f48f38f3316cf47c4216e9e05abd3ccf5636ba504c45eb1568c",
+    "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+    "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+    "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+    "src/semantic_b0b7/p1r_data.py": "0aaf475fec0c2e84a8e89a49313b02120d09328c1ae87059047c976617e87463",
+    "src/semantic_b0b7/p1r_models.py": "4b187bfab3331ec6fb40ff2d375ccda612713f8cb9376de47de1a202ed65aa93",
+    "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928"
+  },
+  "historical_neural_fits_reused_not_recounted": 6,
+  "historical_reference_selection": "P1R_only_reselect_four_exact_replayed_states_using_same_new_Huber_rule_preserve_old_Laux_choice",
+  "input": {
+    "CNA_transform": "gain_loss_before_observed_only_train_standardization",
+    "RNA_transform": "already_log2_no_second_log_observed_only_fit_statistics",
+    "clinical": "exact_six_baseline_fields_train_only_coding",
+    "cohort_covariates_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+    "measured_mask_preserved": true,
+    "outcome_blind_split_seed": 103001,
+    "outer_fold": 1,
+    "outer_train": 409,
+    "partition_sizes": [
+      [
+        272,
+        137
+      ],
+      [
+        273,
+        136
+      ],
+      [
+        273,
+        136
+      ]
+    ],
+    "patch_budget": 512,
+    "programs": 50,
+    "sealed_outer_test": 103,
+    "slots": 8
+  },
+  "no_800_extension": true,
+  "no_lower_lr_sensitivity": true,
+  "optimizer": {
+    "epochs": 400,
+    "learning_rate": 0.0003,
+    "name": "Adam",
+    "updates_per_patient_epoch": 1
+  },
+  "parent_branch": "research/semantic-complementarity-b0b7",
+  "parent_repository": "fallenplum/diffusion",
+  "parent_sha": "98f42e298975c39e9e3bde70f2250b2334caca8b",
+  "prompt_sha256": "1c9650a7fac3352a38fe19ba05dd13b43b3b160f5df38dd05b5af026912f8127",
+  "publication": "code_configs_anonymous_aggregates_hashes_only_original_denylist_scan_no_patient_arrays_weights_or_predictions",
+  "qualification": {
+    "p1r_model_and_runner_tests_passed": 15,
+    "partition_tests_passed": 3,
+    "scheduler_tests_passed": 9,
+    "software_tests_are_scientific_confirmation": false
+  },
+  "replication": {
+    "families": [
+      "ORIGINAL_B3",
+      "ORIGINAL_B4",
+      "DUAL_B3",
+      "DUAL_B4",
+      "DUAL_B4_MAP_SHUFFLE",
+      "DUAL_B6a_WRONG_AUX",
+      "LAMBDA003_B3",
+      "LAMBDA003_B4"
+    ],
+    "maximum_repair_structures": 2,
+    "new_encoder_per_partition": true,
+    "no_old_partition_encoder_reuse": true,
+    "partitions": [
+      1,
+      2
+    ],
+    "repair_candidates": [
+      "dual_selected_fraction",
+      "legacy_lambda_pair0.03"
+    ],
+    "seeds": [
+      31,
+      47,
+      83
+    ]
+  },
+  "replication_new_neural_fits": 48,
+  "replication_variants": [
+    {
+      "known_fraction": 0.5,
+      "lambda_pair": 0.1,
+      "name": "T3_B4_DUAL_WRONG_AUX_A050",
+      "query_mode": "true",
+      "relation_mode": "dual",
+      "score_route": "actual",
+      "source_arm": "B4",
+      "wrong_aux": true
+    },
+    {
+      "known_fraction": 0.75,
+      "lambda_pair": 0.1,
+      "name": "T3_B4_DUAL_WRONG_AUX_A075",
+      "query_mode": "true",
+      "relation_mode": "dual",
+      "score_route": "actual",
+      "source_arm": "B4",
+      "wrong_aux": true
+    }
+  ],
+  "resource_admission": {
+    "GPU_queue_shared_with_P2": false,
+    "maximum_parallel": 6,
+    "minimum_cgroup_free_GiB": 8,
+    "minimum_disk_reserve_GiB": 2,
+    "prior_real_6worker_peak_MiB": 23686
+  },
+  "schema": "semantic_b0b7_p1r_lock_v1",
+  "seeds": [
+    31,
+    47,
+    83
+  ],
+  "selection": {
+    "DSS_used": false,
+    "final_tie": "earlier_epoch",
+    "primary": "patient_equal_masked_program_Huber",
+    "tolerance": "0.01 * current_train_patient_equal_masked_Huber_of_per_program_train_median_predictions",
+    "within_tolerance": "higher_mean_bidirectional_hard_paired_gap"
+  },
+  "status": "LOCKED_BEFORE_P1R_OPTIMIZER",
+  "total_new_neural_fits": 84,
+  "user_request": "P1R_and_P2_no_CI"
+}

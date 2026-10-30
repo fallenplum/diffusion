@@ -1,0 +1,2904 @@
+{
+  "CI_computed": false,
+  "DSS_OS_PFI_or_time_events_accessed": false,
+  "checkpoint_selection_changed": false,
+  "definition": "eligible-anchor mean of reciprocal actual negative count plus one; never reciprocal of mean count",
+  "historical_reference_state_masks_checked": 24,
+  "master_lock_sha256": "cbbfa73f974773fdd86ba4730533f36e774c72586d8364255472c9307141ac5a",
+  "matrix_report_sha256": "acc1b78b3bfdaff7e14fedc970f40b2c522a78d68334adcc18a8283ca813f033",
+  "neural_model_forwards": 0,
+  "new_fit_state_masks_checked": 336,
+  "new_fits": 0,
+  "partitions": [
+    {
+      "derived_pair_valid_sha256": "c713a9be7d6cef81b3c640b4e7e4c7b5e1244506ac54faf3c66906d7ee87448e",
+      "input_sha256": "93d2419a95c129e72e360fc24748e4fef6c909a01830208ecef5fc2d7d0b1b6c",
+      "partition": 0,
+      "rows": [
+        {
+          "anchors": 137,
+          "anchors_covered": 134,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.11194029850746269,
+          "group": null,
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 15,
+              "negative_count": 4
+            },
+            {
+              "anchors": 12,
+              "negative_count": 5
+            },
+            {
+              "anchors": 7,
+              "negative_count": 6
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 22,
+              "negative_count": 10
+            },
+            {
+              "anchors": 27,
+              "negative_count": 26
+            },
+            {
+              "anchors": 29,
+              "negative_count": 28
+            }
+          ],
+          "negative_count_mean": 15.014925373134329,
+          "scope": "global"
+        },
+        {
+          "anchors": 137,
+          "anchors_covered": 134,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.11194029850746269,
+          "group": null,
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 15,
+              "negative_count": 4
+            },
+            {
+              "anchors": 12,
+              "negative_count": 5
+            },
+            {
+              "anchors": 7,
+              "negative_count": 6
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 22,
+              "negative_count": 10
+            },
+            {
+              "anchors": 27,
+              "negative_count": 26
+            },
+            {
+              "anchors": 29,
+              "negative_count": 28
+            }
+          ],
+          "negative_count_mean": 15.014925373134329,
+          "scope": "global"
+        },
+        {
+          "anchors": 137,
+          "anchors_covered": 137,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.007299270072992699,
+          "group": null,
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 137,
+              "negative_count": 136
+            }
+          ],
+          "negative_count_mean": 136.0,
+          "scope": "global"
+        },
+        {
+          "anchors": 137,
+          "anchors_covered": 137,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.007299270072992699,
+          "group": null,
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 137,
+              "negative_count": 136
+            }
+          ],
+          "negative_count_mean": 136.0,
+          "scope": "global"
+        },
+        {
+          "anchors": 20,
+          "anchors_covered": 20,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.14999999999999997,
+          "group": "I",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            }
+          ],
+          "negative_count_mean": 6.6,
+          "scope": "stage"
+        },
+        {
+          "anchors": 20,
+          "anchors_covered": 20,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.14999999999999997,
+          "group": "I",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            }
+          ],
+          "negative_count_mean": 6.6,
+          "scope": "stage"
+        },
+        {
+          "anchors": 20,
+          "anchors_covered": 20,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.05000000000000001,
+          "group": "I",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 20,
+              "negative_count": 19
+            }
+          ],
+          "negative_count_mean": 19.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 20,
+          "anchors_covered": 20,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.05000000000000001,
+          "group": "I",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 20,
+              "negative_count": 19
+            }
+          ],
+          "negative_count_mean": 19.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 50,
+          "anchors_covered": 50,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.08,
+          "group": "II",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            },
+            {
+              "anchors": 29,
+              "negative_count": 28
+            }
+          ],
+          "negative_count_mean": 19.24,
+          "scope": "stage"
+        },
+        {
+          "anchors": 50,
+          "anchors_covered": 50,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.08,
+          "group": "II",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            },
+            {
+              "anchors": 29,
+              "negative_count": 28
+            }
+          ],
+          "negative_count_mean": 19.24,
+          "scope": "stage"
+        },
+        {
+          "anchors": 50,
+          "anchors_covered": 50,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.02,
+          "group": "II",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 50,
+              "negative_count": 49
+            }
+          ],
+          "negative_count_mean": 49.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 50,
+          "anchors_covered": 50,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.02,
+          "group": "II",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 50,
+              "negative_count": 49
+            }
+          ],
+          "negative_count_mean": 49.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 46,
+          "anchors_covered": 45,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.06666666666666668,
+          "group": "III",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 7,
+              "negative_count": 6
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            },
+            {
+              "anchors": 27,
+              "negative_count": 26
+            }
+          ],
+          "negative_count_mean": 18.977777777777778,
+          "scope": "stage"
+        },
+        {
+          "anchors": 46,
+          "anchors_covered": 45,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.06666666666666668,
+          "group": "III",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 7,
+              "negative_count": 6
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            },
+            {
+              "anchors": 27,
+              "negative_count": 26
+            }
+          ],
+          "negative_count_mean": 18.977777777777778,
+          "scope": "stage"
+        },
+        {
+          "anchors": 46,
+          "anchors_covered": 46,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.021739130434782605,
+          "group": "III",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 46,
+              "negative_count": 45
+            }
+          ],
+          "negative_count_mean": 45.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 46,
+          "anchors_covered": 46,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.021739130434782605,
+          "group": "III",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 46,
+              "negative_count": 45
+            }
+          ],
+          "negative_count_mean": 45.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 14,
+          "anchors_covered": 14,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.2857142857142857,
+          "group": "IV",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            }
+          ],
+          "negative_count_mean": 3.142857142857143,
+          "scope": "stage"
+        },
+        {
+          "anchors": 14,
+          "anchors_covered": 14,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.2857142857142857,
+          "group": "IV",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            }
+          ],
+          "negative_count_mean": 3.142857142857143,
+          "scope": "stage"
+        },
+        {
+          "anchors": 14,
+          "anchors_covered": 14,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.07142857142857141,
+          "group": "IV",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 14,
+              "negative_count": 13
+            }
+          ],
+          "negative_count_mean": 13.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 14,
+          "anchors_covered": 14,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.07142857142857141,
+          "group": "IV",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 14,
+              "negative_count": 13
+            }
+          ],
+          "negative_count_mean": 13.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 7,
+          "anchors_covered": 5,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.2,
+          "group": "UNKNOWN",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 5,
+              "negative_count": 4
+            }
+          ],
+          "negative_count_mean": 4.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 7,
+          "anchors_covered": 5,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.2,
+          "group": "UNKNOWN",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 5,
+              "negative_count": 4
+            }
+          ],
+          "negative_count_mean": 4.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 7,
+          "anchors_covered": 7,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.14285714285714282,
+          "group": "UNKNOWN",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 7,
+              "negative_count": 6
+            }
+          ],
+          "negative_count_mean": 6.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 7,
+          "anchors_covered": 7,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.14285714285714282,
+          "group": "UNKNOWN",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 7,
+              "negative_count": 6
+            }
+          ],
+          "negative_count_mean": 6.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 85,
+          "anchors_covered": 84,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.09523809523809523,
+          "group": "0",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 7,
+              "negative_count": 6
+            },
+            {
+              "anchors": 27,
+              "negative_count": 26
+            },
+            {
+              "anchors": 29,
+              "negative_count": 28
+            }
+          ],
+          "negative_count_mean": 19.452380952380953,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 85,
+          "anchors_covered": 84,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.09523809523809523,
+          "group": "0",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 7,
+              "negative_count": 6
+            },
+            {
+              "anchors": 27,
+              "negative_count": 26
+            },
+            {
+              "anchors": 29,
+              "negative_count": 28
+            }
+          ],
+          "negative_count_mean": 19.452380952380953,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 85,
+          "anchors_covered": 85,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.01176470588235294,
+          "group": "0",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 85,
+              "negative_count": 84
+            }
+          ],
+          "negative_count_mean": 84.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 85,
+          "anchors_covered": 85,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.01176470588235294,
+          "group": "0",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 85,
+              "negative_count": 84
+            }
+          ],
+          "negative_count_mean": 84.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 52,
+          "anchors_covered": 50,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.14,
+          "group": "1",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 5,
+              "negative_count": 4
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 22,
+              "negative_count": 10
+            }
+          ],
+          "negative_count_mean": 7.56,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 52,
+          "anchors_covered": 50,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.14,
+          "group": "1",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 5,
+              "negative_count": 4
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 22,
+              "negative_count": 10
+            }
+          ],
+          "negative_count_mean": 7.56,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 52,
+          "anchors_covered": 52,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.019230769230769235,
+          "group": "1",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 52,
+              "negative_count": 51
+            }
+          ],
+          "negative_count_mean": 51.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 52,
+          "anchors_covered": 52,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.019230769230769235,
+          "group": "1",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 52,
+              "negative_count": 51
+            }
+          ],
+          "negative_count_mean": 51.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 108,
+          "anchors_covered": 107,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.08411214953271026,
+          "group": "COAD",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 5,
+              "negative_count": 4
+            },
+            {
+              "anchors": 12,
+              "negative_count": 5
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 22,
+              "negative_count": 10
+            },
+            {
+              "anchors": 27,
+              "negative_count": 26
+            },
+            {
+              "anchors": 29,
+              "negative_count": 28
+            }
+          ],
+          "negative_count_mean": 17.813084112149532,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 108,
+          "anchors_covered": 107,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.08411214953271026,
+          "group": "COAD",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 5,
+              "negative_count": 4
+            },
+            {
+              "anchors": 12,
+              "negative_count": 5
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 22,
+              "negative_count": 10
+            },
+            {
+              "anchors": 27,
+              "negative_count": 26
+            },
+            {
+              "anchors": 29,
+              "negative_count": 28
+            }
+          ],
+          "negative_count_mean": 17.813084112149532,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 108,
+          "anchors_covered": 108,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.009259259259259259,
+          "group": "COAD",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 108,
+              "negative_count": 107
+            }
+          ],
+          "negative_count_mean": 107.0,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 108,
+          "anchors_covered": 108,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.009259259259259259,
+          "group": "COAD",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 108,
+              "negative_count": 107
+            }
+          ],
+          "negative_count_mean": 107.0,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 29,
+          "anchors_covered": 27,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.22222222222222227,
+          "group": "READ",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 7,
+              "negative_count": 6
+            }
+          ],
+          "negative_count_mean": 3.925925925925926,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 29,
+          "anchors_covered": 27,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.22222222222222227,
+          "group": "READ",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 7,
+              "negative_count": 6
+            }
+          ],
+          "negative_count_mean": 3.925925925925926,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 29,
+          "anchors_covered": 29,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.03448275862068965,
+          "group": "READ",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 29,
+              "negative_count": 28
+            }
+          ],
+          "negative_count_mean": 28.0,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 29,
+          "anchors_covered": 29,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.03448275862068965,
+          "group": "READ",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 29,
+              "negative_count": 28
+            }
+          ],
+          "negative_count_mean": 28.0,
+          "scope": "cohort"
+        }
+      ]
+    },
+    {
+      "derived_pair_valid_sha256": "21c1a447fc7be4313ff9c294b38cfa471a309ffb6e13f0824e0ccc14bad5b7df",
+      "input_sha256": "f480ce80574407141e610786fa9cb6c981cbff9691660966e30f3ba215727429",
+      "partition": 1,
+      "rows": [
+        {
+          "anchors": 136,
+          "anchors_covered": 136,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.125,
+          "group": null,
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 1
+            },
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 12,
+              "negative_count": 3
+            },
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 16,
+              "negative_count": 7
+            },
+            {
+              "anchors": 20,
+              "negative_count": 9
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            },
+            {
+              "anchors": 12,
+              "negative_count": 11
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            },
+            {
+              "anchors": 24,
+              "negative_count": 23
+            }
+          ],
+          "negative_count_mean": 11.088235294117647,
+          "scope": "global"
+        },
+        {
+          "anchors": 136,
+          "anchors_covered": 136,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.125,
+          "group": null,
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 1
+            },
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 12,
+              "negative_count": 3
+            },
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 16,
+              "negative_count": 7
+            },
+            {
+              "anchors": 20,
+              "negative_count": 9
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            },
+            {
+              "anchors": 12,
+              "negative_count": 11
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            },
+            {
+              "anchors": 24,
+              "negative_count": 23
+            }
+          ],
+          "negative_count_mean": 11.088235294117647,
+          "scope": "global"
+        },
+        {
+          "anchors": 136,
+          "anchors_covered": 136,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.007352941176470588,
+          "group": null,
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 136,
+              "negative_count": 135
+            }
+          ],
+          "negative_count_mean": 135.0,
+          "scope": "global"
+        },
+        {
+          "anchors": 136,
+          "anchors_covered": 136,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.007352941176470588,
+          "group": null,
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 136,
+              "negative_count": 135
+            }
+          ],
+          "negative_count_mean": 135.0,
+          "scope": "global"
+        },
+        {
+          "anchors": 24,
+          "anchors_covered": 24,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.16666666666666666,
+          "group": "I",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 8,
+              "negative_count": 7
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            }
+          ],
+          "negative_count_mean": 6.666666666666667,
+          "scope": "stage"
+        },
+        {
+          "anchors": 24,
+          "anchors_covered": 24,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.16666666666666666,
+          "group": "I",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 8,
+              "negative_count": 7
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            }
+          ],
+          "negative_count_mean": 6.666666666666667,
+          "scope": "stage"
+        },
+        {
+          "anchors": 24,
+          "anchors_covered": 24,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.041666666666666664,
+          "group": "I",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 24,
+              "negative_count": 23
+            }
+          ],
+          "negative_count_mean": 23.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 24,
+          "anchors_covered": 24,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.041666666666666664,
+          "group": "I",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 24,
+              "negative_count": 23
+            }
+          ],
+          "negative_count_mean": 23.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 47,
+          "anchors_covered": 47,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.08510638297872339,
+          "group": "II",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 5,
+              "negative_count": 4
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 12,
+              "negative_count": 11
+            },
+            {
+              "anchors": 24,
+              "negative_count": 23
+            }
+          ],
+          "negative_count_mean": 15.617021276595745,
+          "scope": "stage"
+        },
+        {
+          "anchors": 47,
+          "anchors_covered": 47,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.08510638297872339,
+          "group": "II",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 5,
+              "negative_count": 4
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 12,
+              "negative_count": 11
+            },
+            {
+              "anchors": 24,
+              "negative_count": 23
+            }
+          ],
+          "negative_count_mean": 15.617021276595745,
+          "scope": "stage"
+        },
+        {
+          "anchors": 47,
+          "anchors_covered": 47,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.021276595744680857,
+          "group": "II",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 47,
+              "negative_count": 46
+            }
+          ],
+          "negative_count_mean": 46.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 47,
+          "anchors_covered": 47,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.021276595744680857,
+          "group": "II",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 47,
+              "negative_count": 46
+            }
+          ],
+          "negative_count_mean": 46.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 37,
+          "anchors_covered": 37,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.10810810810810809,
+          "group": "III",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 5,
+              "negative_count": 4
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            }
+          ],
+          "negative_count_mean": 11.567567567567568,
+          "scope": "stage"
+        },
+        {
+          "anchors": 37,
+          "anchors_covered": 37,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.10810810810810809,
+          "group": "III",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 5,
+              "negative_count": 4
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            }
+          ],
+          "negative_count_mean": 11.567567567567568,
+          "scope": "stage"
+        },
+        {
+          "anchors": 37,
+          "anchors_covered": 37,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.02702702702702702,
+          "group": "III",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 37,
+              "negative_count": 36
+            }
+          ],
+          "negative_count_mean": 36.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 37,
+          "anchors_covered": 37,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.02702702702702702,
+          "group": "III",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 37,
+              "negative_count": 36
+            }
+          ],
+          "negative_count_mean": 36.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 26,
+          "anchors_covered": 26,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.15384615384615385,
+          "group": "IV",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 8,
+              "negative_count": 7
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            }
+          ],
+          "negative_count_mean": 7.076923076923077,
+          "scope": "stage"
+        },
+        {
+          "anchors": 26,
+          "anchors_covered": 26,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.15384615384615385,
+          "group": "IV",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 8,
+              "negative_count": 7
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            }
+          ],
+          "negative_count_mean": 7.076923076923077,
+          "scope": "stage"
+        },
+        {
+          "anchors": 26,
+          "anchors_covered": 26,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.038461538461538464,
+          "group": "IV",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 26,
+              "negative_count": 25
+            }
+          ],
+          "negative_count_mean": 25.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 26,
+          "anchors_covered": 26,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.038461538461538464,
+          "group": "IV",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 26,
+              "negative_count": 25
+            }
+          ],
+          "negative_count_mean": 25.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 2,
+          "anchors_covered": 2,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.5,
+          "group": "UNKNOWN",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            }
+          ],
+          "negative_count_mean": 1.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 2,
+          "anchors_covered": 2,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.5,
+          "group": "UNKNOWN",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            }
+          ],
+          "negative_count_mean": 1.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 2,
+          "anchors_covered": 2,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.5,
+          "group": "UNKNOWN",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            }
+          ],
+          "negative_count_mean": 1.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 2,
+          "anchors_covered": 2,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.5,
+          "group": "UNKNOWN",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            }
+          ],
+          "negative_count_mean": 1.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 81,
+          "anchors_covered": 81,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.1111111111111111,
+          "group": "0",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 1
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            },
+            {
+              "anchors": 24,
+              "negative_count": 23
+            }
+          ],
+          "negative_count_mean": 13.753086419753087,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 81,
+          "anchors_covered": 81,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.1111111111111111,
+          "group": "0",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 1
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            },
+            {
+              "anchors": 24,
+              "negative_count": 23
+            }
+          ],
+          "negative_count_mean": 13.753086419753087,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 81,
+          "anchors_covered": 81,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.012345679012345678,
+          "group": "0",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 81,
+              "negative_count": 80
+            }
+          ],
+          "negative_count_mean": 80.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 81,
+          "anchors_covered": 81,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.012345679012345678,
+          "group": "0",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 81,
+              "negative_count": 80
+            }
+          ],
+          "negative_count_mean": 80.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 55,
+          "anchors_covered": 55,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.14545454545454545,
+          "group": "1",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 8,
+              "negative_count": 3
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 16,
+              "negative_count": 7
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 12,
+              "negative_count": 11
+            }
+          ],
+          "negative_count_mean": 7.163636363636364,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 55,
+          "anchors_covered": 55,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.14545454545454545,
+          "group": "1",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 8,
+              "negative_count": 3
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 16,
+              "negative_count": 7
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 12,
+              "negative_count": 11
+            }
+          ],
+          "negative_count_mean": 7.163636363636364,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 55,
+          "anchors_covered": 55,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.01818181818181818,
+          "group": "1",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 55,
+              "negative_count": 54
+            }
+          ],
+          "negative_count_mean": 54.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 55,
+          "anchors_covered": 55,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.01818181818181818,
+          "group": "1",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 55,
+              "negative_count": 54
+            }
+          ],
+          "negative_count_mean": 54.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 101,
+          "anchors_covered": 101,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.0792079207920792,
+          "group": "COAD",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 16,
+              "negative_count": 7
+            },
+            {
+              "anchors": 20,
+              "negative_count": 9
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            },
+            {
+              "anchors": 12,
+              "negative_count": 11
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            },
+            {
+              "anchors": 24,
+              "negative_count": 23
+            }
+          ],
+          "negative_count_mean": 13.782178217821782,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 101,
+          "anchors_covered": 101,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.0792079207920792,
+          "group": "COAD",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 16,
+              "negative_count": 7
+            },
+            {
+              "anchors": 20,
+              "negative_count": 9
+            },
+            {
+              "anchors": 11,
+              "negative_count": 10
+            },
+            {
+              "anchors": 12,
+              "negative_count": 11
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            },
+            {
+              "anchors": 24,
+              "negative_count": 23
+            }
+          ],
+          "negative_count_mean": 13.782178217821782,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 101,
+          "anchors_covered": 101,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.0099009900990099,
+          "group": "COAD",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 101,
+              "negative_count": 100
+            }
+          ],
+          "negative_count_mean": 100.0,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 101,
+          "anchors_covered": 101,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.0099009900990099,
+          "group": "COAD",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 101,
+              "negative_count": 100
+            }
+          ],
+          "negative_count_mean": 100.0,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 35,
+          "anchors_covered": 35,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.25714285714285706,
+          "group": "READ",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 1
+            },
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 12,
+              "negative_count": 3
+            },
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            }
+          ],
+          "negative_count_mean": 3.3142857142857145,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 35,
+          "anchors_covered": 35,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.25714285714285706,
+          "group": "READ",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 1
+            },
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 12,
+              "negative_count": 3
+            },
+            {
+              "anchors": 10,
+              "negative_count": 4
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            }
+          ],
+          "negative_count_mean": 3.3142857142857145,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 35,
+          "anchors_covered": 35,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.02857142857142857,
+          "group": "READ",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 35,
+              "negative_count": 34
+            }
+          ],
+          "negative_count_mean": 34.0,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 35,
+          "anchors_covered": 35,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.02857142857142857,
+          "group": "READ",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 35,
+              "negative_count": 34
+            }
+          ],
+          "negative_count_mean": 34.0,
+          "scope": "cohort"
+        }
+      ]
+    },
+    {
+      "derived_pair_valid_sha256": "21c1a447fc7be4313ff9c294b38cfa471a309ffb6e13f0824e0ccc14bad5b7df",
+      "input_sha256": "a6bcb789c9300e9367bf8cf7166b067ab8723adddd879663e47990171c4c81b7",
+      "partition": 2,
+      "rows": [
+        {
+          "anchors": 136,
+          "anchors_covered": 133,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.11278195488721802,
+          "group": null,
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 24,
+              "negative_count": 5
+            },
+            {
+              "anchors": 9,
+              "negative_count": 8
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 13,
+              "negative_count": 12
+            },
+            {
+              "anchors": 14,
+              "negative_count": 13
+            },
+            {
+              "anchors": 16,
+              "negative_count": 15
+            },
+            {
+              "anchors": 17,
+              "negative_count": 16
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            }
+          ],
+          "negative_count_mean": 11.007518796992482,
+          "scope": "global"
+        },
+        {
+          "anchors": 136,
+          "anchors_covered": 133,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.11278195488721802,
+          "group": null,
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 24,
+              "negative_count": 5
+            },
+            {
+              "anchors": 9,
+              "negative_count": 8
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 13,
+              "negative_count": 12
+            },
+            {
+              "anchors": 14,
+              "negative_count": 13
+            },
+            {
+              "anchors": 16,
+              "negative_count": 15
+            },
+            {
+              "anchors": 17,
+              "negative_count": 16
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            }
+          ],
+          "negative_count_mean": 11.007518796992482,
+          "scope": "global"
+        },
+        {
+          "anchors": 136,
+          "anchors_covered": 136,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.007352941176470588,
+          "group": null,
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 136,
+              "negative_count": 135
+            }
+          ],
+          "negative_count_mean": 135.0,
+          "scope": "global"
+        },
+        {
+          "anchors": 136,
+          "anchors_covered": 136,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.007352941176470588,
+          "group": null,
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 136,
+              "negative_count": 135
+            }
+          ],
+          "negative_count_mean": 135.0,
+          "scope": "global"
+        },
+        {
+          "anchors": 33,
+          "anchors_covered": 33,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.12121212121212122,
+          "group": "I",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 12,
+              "negative_count": 5
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            }
+          ],
+          "negative_count_mean": 11.272727272727273,
+          "scope": "stage"
+        },
+        {
+          "anchors": 33,
+          "anchors_covered": 33,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.12121212121212122,
+          "group": "I",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 12,
+              "negative_count": 5
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            }
+          ],
+          "negative_count_mean": 11.272727272727273,
+          "scope": "stage"
+        },
+        {
+          "anchors": 33,
+          "anchors_covered": 33,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.030303030303030304,
+          "group": "I",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 33,
+              "negative_count": 32
+            }
+          ],
+          "negative_count_mean": 32.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 33,
+          "anchors_covered": 33,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.030303030303030304,
+          "group": "I",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 33,
+              "negative_count": 32
+            }
+          ],
+          "negative_count_mean": 32.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 41,
+          "anchors_covered": 41,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.0975609756097561,
+          "group": "II",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 14,
+              "negative_count": 13
+            },
+            {
+              "anchors": 17,
+              "negative_count": 16
+            }
+          ],
+          "negative_count_mean": 12.097560975609756,
+          "scope": "stage"
+        },
+        {
+          "anchors": 41,
+          "anchors_covered": 41,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.0975609756097561,
+          "group": "II",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 14,
+              "negative_count": 13
+            },
+            {
+              "anchors": 17,
+              "negative_count": 16
+            }
+          ],
+          "negative_count_mean": 12.097560975609756,
+          "scope": "stage"
+        },
+        {
+          "anchors": 41,
+          "anchors_covered": 41,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.024390243902439025,
+          "group": "II",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 41,
+              "negative_count": 40
+            }
+          ],
+          "negative_count_mean": 40.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 41,
+          "anchors_covered": 41,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.024390243902439025,
+          "group": "II",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 41,
+              "negative_count": 40
+            }
+          ],
+          "negative_count_mean": 40.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 44,
+          "anchors_covered": 44,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.09090909090909091,
+          "group": "III",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 9,
+              "negative_count": 8
+            },
+            {
+              "anchors": 13,
+              "negative_count": 12
+            },
+            {
+              "anchors": 16,
+              "negative_count": 15
+            }
+          ],
+          "negative_count_mean": 11.318181818181818,
+          "scope": "stage"
+        },
+        {
+          "anchors": 44,
+          "anchors_covered": 44,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.09090909090909091,
+          "group": "III",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 9,
+              "negative_count": 8
+            },
+            {
+              "anchors": 13,
+              "negative_count": 12
+            },
+            {
+              "anchors": 16,
+              "negative_count": 15
+            }
+          ],
+          "negative_count_mean": 11.318181818181818,
+          "scope": "stage"
+        },
+        {
+          "anchors": 44,
+          "anchors_covered": 44,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.022727272727272728,
+          "group": "III",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 44,
+              "negative_count": 43
+            }
+          ],
+          "negative_count_mean": 43.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 44,
+          "anchors_covered": 44,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.022727272727272728,
+          "group": "III",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 44,
+              "negative_count": 43
+            }
+          ],
+          "negative_count_mean": 43.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 16,
+          "anchors_covered": 15,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.20000000000000004,
+          "group": "IV",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            }
+          ],
+          "negative_count_mean": 6.533333333333333,
+          "scope": "stage"
+        },
+        {
+          "anchors": 16,
+          "anchors_covered": 15,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.20000000000000004,
+          "group": "IV",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 3,
+              "negative_count": 2
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            }
+          ],
+          "negative_count_mean": 6.533333333333333,
+          "scope": "stage"
+        },
+        {
+          "anchors": 16,
+          "anchors_covered": 16,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.0625,
+          "group": "IV",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 16,
+              "negative_count": 15
+            }
+          ],
+          "negative_count_mean": 15.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 16,
+          "anchors_covered": 16,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.0625,
+          "group": "IV",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 16,
+              "negative_count": 15
+            }
+          ],
+          "negative_count_mean": 15.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 2,
+          "anchors_covered": 0,
+          "direction": "image_to_gene",
+          "exact_chance_mean": null,
+          "group": "UNKNOWN",
+          "mode": "hard",
+          "negative_count_histogram": [],
+          "negative_count_mean": null,
+          "scope": "stage"
+        },
+        {
+          "anchors": 2,
+          "anchors_covered": 0,
+          "direction": "gene_to_image",
+          "exact_chance_mean": null,
+          "group": "UNKNOWN",
+          "mode": "hard",
+          "negative_count_histogram": [],
+          "negative_count_mean": null,
+          "scope": "stage"
+        },
+        {
+          "anchors": 2,
+          "anchors_covered": 2,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.5,
+          "group": "UNKNOWN",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            }
+          ],
+          "negative_count_mean": 1.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 2,
+          "anchors_covered": 2,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.5,
+          "group": "UNKNOWN",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            }
+          ],
+          "negative_count_mean": 1.0,
+          "scope": "stage"
+        },
+        {
+          "anchors": 81,
+          "anchors_covered": 79,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.1012658227848101,
+          "group": "0",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 9,
+              "negative_count": 8
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 13,
+              "negative_count": 12
+            },
+            {
+              "anchors": 17,
+              "negative_count": 16
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            }
+          ],
+          "negative_count_mean": 11.873417721518987,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 81,
+          "anchors_covered": 79,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.1012658227848101,
+          "group": "0",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 9,
+              "negative_count": 8
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 13,
+              "negative_count": 12
+            },
+            {
+              "anchors": 17,
+              "negative_count": 16
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            }
+          ],
+          "negative_count_mean": 11.873417721518987,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 81,
+          "anchors_covered": 81,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.012345679012345678,
+          "group": "0",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 81,
+              "negative_count": 80
+            }
+          ],
+          "negative_count_mean": 80.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 81,
+          "anchors_covered": 81,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.012345679012345678,
+          "group": "0",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 81,
+              "negative_count": 80
+            }
+          ],
+          "negative_count_mean": 80.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 55,
+          "anchors_covered": 54,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.12962962962962962,
+          "group": "1",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 18,
+              "negative_count": 5
+            },
+            {
+              "anchors": 14,
+              "negative_count": 13
+            },
+            {
+              "anchors": 16,
+              "negative_count": 15
+            }
+          ],
+          "negative_count_mean": 9.74074074074074,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 55,
+          "anchors_covered": 54,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.12962962962962962,
+          "group": "1",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 18,
+              "negative_count": 5
+            },
+            {
+              "anchors": 14,
+              "negative_count": 13
+            },
+            {
+              "anchors": 16,
+              "negative_count": 15
+            }
+          ],
+          "negative_count_mean": 9.74074074074074,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 55,
+          "anchors_covered": 55,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.01818181818181818,
+          "group": "1",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 55,
+              "negative_count": 54
+            }
+          ],
+          "negative_count_mean": 54.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 55,
+          "anchors_covered": 55,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.01818181818181818,
+          "group": "1",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 55,
+              "negative_count": 54
+            }
+          ],
+          "negative_count_mean": 54.0,
+          "scope": "missing_pattern"
+        },
+        {
+          "anchors": 96,
+          "anchors_covered": 94,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.07446808510638296,
+          "group": "COAD",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 13,
+              "negative_count": 12
+            },
+            {
+              "anchors": 14,
+              "negative_count": 13
+            },
+            {
+              "anchors": 16,
+              "negative_count": 15
+            },
+            {
+              "anchors": 17,
+              "negative_count": 16
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            }
+          ],
+          "negative_count_mean": 13.574468085106384,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 96,
+          "anchors_covered": 94,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.07446808510638296,
+          "group": "COAD",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 6,
+              "negative_count": 5
+            },
+            {
+              "anchors": 10,
+              "negative_count": 9
+            },
+            {
+              "anchors": 13,
+              "negative_count": 12
+            },
+            {
+              "anchors": 14,
+              "negative_count": 13
+            },
+            {
+              "anchors": 16,
+              "negative_count": 15
+            },
+            {
+              "anchors": 17,
+              "negative_count": 16
+            },
+            {
+              "anchors": 18,
+              "negative_count": 17
+            }
+          ],
+          "negative_count_mean": 13.574468085106384,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 96,
+          "anchors_covered": 96,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.010416666666666666,
+          "group": "COAD",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 96,
+              "negative_count": 95
+            }
+          ],
+          "negative_count_mean": 95.0,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 96,
+          "anchors_covered": 96,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.010416666666666666,
+          "group": "COAD",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 96,
+              "negative_count": 95
+            }
+          ],
+          "negative_count_mean": 95.0,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 40,
+          "anchors_covered": 39,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.2051282051282051,
+          "group": "READ",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 18,
+              "negative_count": 5
+            },
+            {
+              "anchors": 9,
+              "negative_count": 8
+            }
+          ],
+          "negative_count_mean": 4.82051282051282,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 40,
+          "anchors_covered": 39,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.2051282051282051,
+          "group": "READ",
+          "mode": "hard",
+          "negative_count_histogram": [
+            {
+              "anchors": 2,
+              "negative_count": 1
+            },
+            {
+              "anchors": 6,
+              "negative_count": 2
+            },
+            {
+              "anchors": 4,
+              "negative_count": 3
+            },
+            {
+              "anchors": 18,
+              "negative_count": 5
+            },
+            {
+              "anchors": 9,
+              "negative_count": 8
+            }
+          ],
+          "negative_count_mean": 4.82051282051282,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 40,
+          "anchors_covered": 40,
+          "direction": "image_to_gene",
+          "exact_chance_mean": 0.025,
+          "group": "READ",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 40,
+              "negative_count": 39
+            }
+          ],
+          "negative_count_mean": 39.0,
+          "scope": "cohort"
+        },
+        {
+          "anchors": 40,
+          "anchors_covered": 40,
+          "direction": "gene_to_image",
+          "exact_chance_mean": 0.025,
+          "group": "READ",
+          "mode": "random",
+          "negative_count_histogram": [
+            {
+              "anchors": 40,
+              "negative_count": 39
+            }
+          ],
+          "negative_count_mean": 39.0,
+          "scope": "cohort"
+        }
+      ]
+    }
+  ],
+  "patient_identity_or_raw_pair_masks_exported": false,
+  "private_full_audit_sha256": "0d15840ec560aa8eda501fc09b4fe4a4189ddc81df3e2efb46c3ec4b8b7893f0",
+  "public_per_anchor_negative_count_histograms": true,
+  "schema": "semantic_b0b7_p1r_public_exact_retrieval_chance_v1",
+  "source_sha256": "0bb53357e24a4bd46952d80abf0139a278f55805bba7c8a04401e901bcf8473c",
+  "status": "COMPLETE_EXACT_CHANCE_WITH_ACTUAL_SAVED_MASK_VERIFICATION",
+  "support_binding_sha256": "62eea3ccc770b64eac4e6a61a9457c329d36d5ddd4b6f8ce0691e10ace5854ad"
+}

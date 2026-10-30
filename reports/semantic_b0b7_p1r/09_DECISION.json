@@ -1,0 +1,20 @@
+{
+  "schema": "semantic_b0b7_p1r_scientific_decision_v1",
+  "decision": "P1R_SEMANTIC_EVIDENCE",
+  "supported_path": "query_identity_for_program_prediction_given_shared_real_S32",
+  "supported_scope": "historically_developed_internal_cohort_auxiliary_task",
+  "full_explicit_text_necessity_established": false,
+  "medical_ground_truth_established": false,
+  "stable_true_relation_advantage_established": false,
+  "dual_channel_better_than_original_established": false,
+  "retrieval_gain_implies_program_gain": false,
+  "DSS_gain_established_by_P1R": false,
+  "slot_information_retention_direction": "six_of_six_Pearson_comparisons_positive_with_capacity_control",
+  "T2_ridge_upper_grid_boundary_chosen_in_all_final_heads": true,
+  "P2_main_known_fraction": 0.5,
+  "P2_main_lambda_pair": 0.1,
+  "P2_choice_uses_P1R_development_winner_or_DSS_results": false,
+  "P2_new_training_required_per_partition": true,
+  "P3_automatic_start_authorized": false,
+  "confidence_intervals_computed": false
+}

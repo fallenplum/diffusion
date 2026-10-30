@@ -1,0 +1,154 @@
+{
+  "CV_head_fit_families": 270,
+  "alpha_candidates_across_final_heads": 90,
+  "authority": "user_P1R_prompt_and_parent_execution_prelock",
+  "checkpoint_selection": "reuse_original_validation_Laux_then_lower_epoch_tie_no_reselection",
+  "clinical_budget": "same_frozen_encoder_clinical64_appended_unchanged_all_heads_not_polynomial_expanded",
+  "cohort_scope": {
+    "inner_partition": 0,
+    "outer_fold": 1,
+    "outer_test_patients_loaded": 0,
+    "previously_reused_development_validation": true,
+    "train_patients": 272,
+    "validation_patients": 137
+  },
+  "date": "2026-10-31",
+  "exact_parent_HEAD_to_be_recorded_in_00_PARENT_AND_GATES": true,
+  "execution_source_hash_binding": "separate_before_execution_manifest_binds_this_lock_and_new_diagnostics_source_avoids_self_hash_cycle",
+  "expected_final_refit_head_families": 18,
+  "expected_frozen_encoder_count": 6,
+  "expected_new_neural_fits": 0,
+  "heads": {
+    "T2_capacity_control": {
+      "clinical_features": 64,
+      "coefficients_including_50_intercepts": 28850,
+      "cross_product_selection": "default_rng(103031).choice(all_i_less_j_pairs_of_64,384,replace=False);selected_pair_indices_sorted",
+      "new_neural_parameters": 0,
+      "new_slot_information": false,
+      "operator": "training_standardized_mean64_then_concat_64_identity_64_squares_384_unique_unordered_cross_products",
+      "ridge_input_features": 576,
+      "selection_seed": 103031,
+      "visual_features": 512
+    },
+    "T2_keep_slots": {
+      "clinical_features": 64,
+      "coefficients_including_50_intercepts": 28850,
+      "ridge_input_features": 576,
+      "visual_features": 512
+    },
+    "T2_mean64": {
+      "clinical_features": 64,
+      "coefficients_including_50_intercepts": 6450,
+      "ridge_input_features": 128,
+      "visual_features": 64
+    }
+  },
+  "historical_program_head": "REPLAY_ONLY_COMMON_REFERENCE_SEPARATE_FROM_THREE_RIDGE_HEADS",
+  "linear_system_rhs_and_factorizations": "count_actual_including_CV_and_final_separately_not_claim_single_fit_per_program",
+  "metrics": [
+    "patient_equal_masked_Huber",
+    "across_patient_macro_Pearson",
+    "across_patient_macro_Spearman",
+    "per_program_n_and_coverage",
+    "per_program_prediction_to_target_SD_ratio",
+    "effective_training_feature_rank"
+  ],
+  "no_confidence_intervals": true,
+  "no_survival_data_reads": true,
+  "original_aggregate_sha256": "2a368d408726344fbeebf5b264ac0319c879c6b320267971fbaa198f633b1cb2",
+  "original_frozen_sources": {
+    "configs/phase6a_titan_crc_morphology_concepts.json": "3fc4ae7aeb34ec68f37a9667b1aa95c1c9a1ee479913dc7e6a6ca67b9f493d69",
+    "configs/semantic_b0b7/allowed_relations_v1.json": "cc086b414bb380706d24bfa1f7f94198975300ed60782c7c6b366c3765579d1a",
+    "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+    "scripts/semantic_b0b7_audit.py": "05fc683eec345084303c2bd474047c5f403a316ee75cad1cfd33aebb3a098fd1",
+    "scripts/semantic_b0b7_gate.py": "4d4b2d18b6935138beff1356367a3580d9f986bea6915bdae010c3753f583754",
+    "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+    "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+    "scripts/semantic_b0b7_titan_worker.py": "5831abcc92065efd684f53728262c0254f70ccb7041190f85b67a2bf5417fc55",
+    "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+    "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+    "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+    "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+    "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10"
+  },
+  "original_gate_sha256": "2282e18cbc697f352ac75923376e9db7460ec19c5d151d2cbdd08ae27de729cc",
+  "original_input_sha256": "93d2419a95c129e72e360fc24748e4fef6c909a01830208ecef5fc2d7d0b1b6c",
+  "parent_revision_reference_from_prompt": "98f42e298975c3",
+  "private_artifacts": "features_coefficients_OOF_predictions_validation_predictions_remain_server_only",
+  "prompt_sha256": "1c9650a7fac3352a38fe19ba05dd13b43b3b160f5df38dd05b5af026912f8127",
+  "ridge": {
+    "alphas": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "clinical_standardization": "same_subtrain_feature_center_scale_as_other_inputs",
+    "common_mask_support": true,
+    "fits_vs_validation": "137_only_final_heldout_reporting_never_alpha_choice",
+    "fold_algorithm": "sklearn.KFold(n_splits=3,shuffle=True,random_state=103031)",
+    "folds": 3,
+    "insufficient_program_support": "fail_closed_not_impute",
+    "intercept_penalized": false,
+    "objective": "measured_only_per_program_unweighted_squared_error_plus_alpha_times_coefficient_L2",
+    "polynomial_standardization": "mean64_center_scale_subtrain_only_then_expand512_then_Ridge_center_scale_subtrain_only",
+    "selection": "pooled_training_only_3fold_OOF_patient_equal_masked_Huber",
+    "solver": "float64_dual_ridge_group_identical_measured_masks",
+    "standardization": "feature_center_and_population_std_refit_in_each_subtrain_then_full272_only",
+    "tie_absolute_tolerance": 1e-12,
+    "tie_break": "larger_alpha"
+  },
+  "schema": "semantic_b0b7_p1r_t2_head_refit_lock_v1",
+  "scope": "REFIT_HEAD_ONLY_NO_NEURAL_OPTIMIZER_NO_SURVIVAL_LABELS",
+  "seeds": [
+    31,
+    47,
+    83
+  ],
+  "selected_frozen_encoders": [
+    {
+      "arm": "B3",
+      "epoch": 100,
+      "seed": 31,
+      "sha256": "892398f54381e08314aa06df252eccf8d9569ebb7b4364b5a591ff7a6cf88c8e"
+    },
+    {
+      "arm": "B3",
+      "epoch": 200,
+      "seed": 47,
+      "sha256": "9d72424ade7d12c3a2ef3a6abc983ecf3c093ca4122e7f1a6d70462be9f697c7"
+    },
+    {
+      "arm": "B3",
+      "epoch": 100,
+      "seed": 83,
+      "sha256": "2ba0a801294fc0205301ffdfdf8c9167ce5de43e02db6fead810473ee2aea2ce"
+    },
+    {
+      "arm": "B4",
+      "epoch": 100,
+      "seed": 31,
+      "sha256": "1c58f6873724ebea3b7eb2c61dd83bfa4a94def5f475ff796e24a4c29b5d37a4"
+    },
+    {
+      "arm": "B4",
+      "epoch": 50,
+      "seed": 47,
+      "sha256": "3d3d827a1eeca8693ff7a8e3bda3210d5e080bf4041f454afcb482d0a2f3aea9"
+    },
+    {
+      "arm": "B4",
+      "epoch": 100,
+      "seed": 83,
+      "sha256": "789f533d284bc3b29ec473749b8030041e6973c8cf6c80880ac64b771f0add4d"
+    }
+  ],
+  "target": {
+    "intercept": "per_program_training_observed_mean_no_target_scaling",
+    "missing_targets_never_zero_filled_as_observed": true,
+    "programs": 50,
+    "source": "same_original_measured_RNA50_and_target_mask",
+    "target_units": "unchanged_original_prepared_target_units"
+  }
+}

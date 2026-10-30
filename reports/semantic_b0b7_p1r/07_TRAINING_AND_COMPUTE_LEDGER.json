@@ -1,0 +1,22 @@
+{
+  "CI_computed": false,
+  "DSS_fits": 0,
+  "GPU_kernel_time_separately_instrumented": false,
+  "R0_actual_old_saved_state_replays": 48,
+  "R0_separate_loss_backward_calls": 96,
+  "T2_CV_Ridge_head_families": 270,
+  "T2_CV_scalar_system_rhs": 13500,
+  "T2_final_Ridge_head_families": 18,
+  "T2_final_scalar_system_rhs": 900,
+  "T2_saved_head_replays": 18,
+  "actual_matrix_makespan_seconds": 1404.7762392386794,
+  "actual_new_saved_checkpoint_replays": 336,
+  "historical_reference_encoder_fits_reused_not_recounted": 6,
+  "maximum_individual_peak_cuda_allocated_bytes": 3093498880,
+  "new_neural_fits": 84,
+  "new_neural_optimizer_updates": 33600,
+  "reference_new_model_forwards": 0,
+  "schema": "semantic_b0b7_p1r_full_cost_v1",
+  "source_matrix_report_sha256": "acc1b78b3bfdaff7e14fedc970f40b2c522a78d68334adcc18a8283ca813f033",
+  "sum_individual_fit_wall_seconds_includes_checkpoint_evaluation": 7693.5207031443715
+}

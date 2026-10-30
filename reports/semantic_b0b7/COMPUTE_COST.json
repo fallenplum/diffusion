@@ -1,0 +1,250 @@
+{
+  "schema": "semantic_b0b7_actual_cost_v1",
+  "date_completed": "2026-10-31",
+  "main_neural_fits": 12,
+  "main_optimizer_updates": 4800,
+  "actual_saved_state_replays": 48,
+  "Ridge_decoder_families": 3,
+  "scalar_program_linear_system_RHS": 150,
+  "DSS_fits": 0,
+  "actual_workers": 6,
+  "actual_queue_wall_seconds": 199.5769990608096,
+  "worker_loop_seconds": {
+    "min": 84.32565771788359,
+    "max": 93.50412350147963,
+    "sum": 1094.9637423604727,
+    "mean": 91.24697853003939
+  },
+  "zero_step_single_profile": {
+    "actual_forward_backward": true,
+    "actual_pair_support": {
+      "assigned_positive_excluded_from_negative_count": true,
+      "candidate_negative_pairs": 5680,
+      "gene_anchors_used": 271,
+      "gene_to_image": {
+        "anchors_used": 271,
+        "denominator_candidates_mean_on_used": 21.95940959409594,
+        "negative_count_max_on_used": 39,
+        "negative_count_mean_on_used": 20.95940959409594,
+        "negative_count_min_on_used": 1
+      },
+      "image_anchors_used": 271,
+      "image_to_gene": {
+        "anchors_used": 271,
+        "denominator_candidates_mean_on_used": 21.95940959409594,
+        "negative_count_max_on_used": 39,
+        "negative_count_mean_on_used": 20.95940959409594,
+        "negative_count_min_on_used": 1
+      }
+    },
+    "all_parameter_gradients_finite_nonzero": true,
+    "device_type": "cuda",
+    "dtype": "float32",
+    "frozen_sources": {
+      "configs/phase6a_titan_crc_morphology_concepts.json": "3fc4ae7aeb34ec68f37a9667b1aa95c1c9a1ee479913dc7e6a6ca67b9f493d69",
+      "configs/semantic_b0b7/allowed_relations_v1.json": "cc086b414bb380706d24bfa1f7f94198975300ed60782c7c6b366c3765579d1a",
+      "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+      "scripts/semantic_b0b7_audit.py": "05fc683eec345084303c2bd474047c5f403a316ee75cad1cfd33aebb3a098fd1",
+      "scripts/semantic_b0b7_gate.py": "4d4b2d18b6935138beff1356367a3580d9f986bea6915bdae010c3753f583754",
+      "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+      "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+      "scripts/semantic_b0b7_titan_worker.py": "5831abcc92065efd684f53728262c0254f70ccb7041190f85b67a2bf5417fc55",
+      "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+      "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+      "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+      "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+      "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10"
+    },
+    "full_train_batch_patients": 272,
+    "gate_sha256": "2282e18cbc697f352ac75923376e9db7460ec19c5d151d2cbdd08ae27de729cc",
+    "gradient_norms": {
+      "aligned_key.weight": {
+        "finite": true,
+        "l2": 1.9536710169631988e-05
+      },
+      "clinical_encoder.weight": {
+        "finite": true,
+        "l2": 0.023631181567907333
+      },
+      "gene_encoder.weight": {
+        "finite": true,
+        "l2": 1.058901071548462
+      },
+      "native_projection.weight": {
+        "finite": true,
+        "l2": 0.1313217431306839
+      },
+      "program_head.bias": {
+        "finite": true,
+        "l2": 0.010975897312164307
+      },
+      "program_head.weight": {
+        "finite": true,
+        "l2": 0.04079480096697807
+      },
+      "program_identity": {
+        "finite": true,
+        "l2": 0.0882788747549057
+      },
+      "query_projection.weight": {
+        "finite": true,
+        "l2": 1.9650304238894023e-05
+      },
+      "query_residual": {
+        "finite": true,
+        "l2": 1.644110852794256e-05
+      },
+      "raw_value.weight": {
+        "finite": true,
+        "l2": 0.41905543208122253
+      },
+      "score_projection.weight": {
+        "finite": true,
+        "l2": 0.30563050508499146
+      },
+      "titan_aligned_key.weight": {
+        "finite": true,
+        "l2": 0.0016759522259235382
+      },
+      "titan_query_projection.weight": {
+        "finite": true,
+        "l2": 0.0017969540785998106
+      },
+      "titan_query_residual": {
+        "finite": true,
+        "l2": 0.001775090699084103
+      },
+      "u.weight": {
+        "finite": true,
+        "l2": 0.4939514100551605
+      },
+      "unknown_logit": {
+        "finite": true,
+        "l2": 0.0017454848857596517
+      },
+      "v.weight": {
+        "finite": true,
+        "l2": 3.364715099334717
+      }
+    },
+    "hard_negative_support": {
+      "after": {
+        "anchors": 272,
+        "anchors_with_negative": 271,
+        "candidate_negative_pairs": 5680
+      },
+      "before": {
+        "anchors": 272,
+        "anchors_with_negative": 271,
+        "candidate_negative_pairs": 5950,
+        "mode": "matched"
+      },
+      "excluded_wrong_positive_candidates": 270,
+      "pairing_derangement": {
+        "anchors": 272,
+        "exact_all_three": 270,
+        "fallback_anchors": 2,
+        "preference_order": [
+          "stage",
+          "missing_pattern",
+          "cohort"
+        ],
+        "same_cohort": 270,
+        "same_missing_pattern": 272,
+        "same_stage": 272,
+        "scope_is_callers_current_train_partition_required": true,
+        "self_or_same_patient_pairs": 0
+      },
+      "same_exclusion_for_all_four_arms": true,
+      "wrong_assignment_sha256": "72c7d2de782f9997462ddf839f72458bf4ad9b4c45b06048dee36697625a9c3f"
+    },
+    "input_sha256": "93d2419a95c129e72e360fc24748e4fef6c909a01830208ecef5fc2d7d0b1b6c",
+    "loss": 0.4703834354877472,
+    "neither_checkpoint_nor_predictions_saved": true,
+    "optimizer_steps": 0,
+    "parameter_counts": {
+      "auxiliary_only_parameters": 6450,
+      "dss_trainable_in_this_module": 0,
+      "prediction_active_parameters_static": 304193,
+      "prediction_used_requires_path_audit": true,
+      "pretraining_trainable": 310643,
+      "total": 310643
+    },
+    "patients": 409,
+    "peak_cuda_allocated_bytes": 2163242496,
+    "runtime": {
+      "cublas_workspace_config": ":4096:8",
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "cudnn_tf32": false,
+      "deterministic_algorithms": true,
+      "matmul_tf32": false,
+      "torch_version": "2.5.1+cu124"
+    },
+    "schema": "semantic_b0b7_p1_actual_profile_v1",
+    "scientific_performance_evidence": false,
+    "seconds_forward_backward": 0.37183740735054016,
+    "status": "PASS",
+    "train_patients": 272,
+    "valid_patients": 137
+  },
+  "zero_step_full_residency_parallel_profile": {
+    "schema": "semantic_b0b7_zero_step_parallel_probe_full_v2",
+    "status": "PASS",
+    "groups": [
+      {
+        "workers": 6,
+        "completed_zero_step_workers": 6,
+        "optimizer_steps": 0,
+        "wall_seconds_including_startup_IO": 6.555178992450237,
+        "passes_per_second_including_startup_IO": 5.491840885117263,
+        "sum_timed_passes": 30,
+        "slowest_timed_worker_seconds": 0.9907532930374146,
+        "steady_slowest_worker_passes_per_second": 30.27999019617398,
+        "peak_gpu_used_mib": 23686,
+        "max_gpu_util_percent": 100,
+        "mean_gpu_util_percent": 32.083333333333336
+      },
+      {
+        "workers": 8,
+        "completed_zero_step_workers": 8,
+        "optimizer_steps": 0,
+        "wall_seconds_including_startup_IO": 6.8830714747309685,
+        "passes_per_second_including_startup_IO": 6.9736309111734345,
+        "sum_timed_passes": 40,
+        "slowest_timed_worker_seconds": 1.1135363951325417,
+        "steady_slowest_worker_passes_per_second": 35.92159194333194,
+        "peak_gpu_used_mib": 31581,
+        "max_gpu_util_percent": 100,
+        "mean_gpu_util_percent": 41.32
+      }
+    ],
+    "selected_workers": 6,
+    "rule": "maximum_actual_steady_throughput_with_observed_memory_reserve",
+    "optimizer_steps": 0,
+    "saved_model_weights": false,
+    "forward_backward_passes": 84
+  },
+  "memory_rule": "keep at least2048MiB reserve;8full-resident workers used31581MiB so selected6",
+  "production_continuous_GPU_telemetry_saved": false,
+  "official_preparation_success_seconds": 21.584222622215748,
+  "failed_environment_preparation_cost": "retained separately in failure lineage; zero neural fits and optimizer updates",
+  "future_same_size_worker_second_envelope": {
+    "per_400epoch_fit_min": 84.32565771788359,
+    "per_400epoch_fit_max": 93.50412350147963,
+    "assumptions": "same272train/137valid, hardware, architecture, objective, epoch budget and sixworker concurrency; not an unconditional runtime guarantee"
+  },
+  "future_main_matrix": {
+    "inner_units_upper_bound": 315,
+    "outer_final_units_upper_bound": 105,
+    "extra_controls_and_hyperparameter_candidates_not_included": true,
+    "pretraining_steps_if420independent400epoch_sources": 168000,
+    "max_steps_if_all_once_extended800": 336000,
+    "same_size420fit_sixworker_wall_hours_reference": [
+      1.6396655667366253,
+      1.8181357347509928
+    ],
+    "full_outer_train409patients_need_new_residency_profile": true,
+    "shared_Phase_A_sources_count_once": true
+  }
+}

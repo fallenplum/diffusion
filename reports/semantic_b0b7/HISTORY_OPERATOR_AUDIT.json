@@ -1,0 +1,478 @@
+{
+  "schema": "semantic_b0b7_history_operator_audit_v1",
+  "date": "2026-10-30",
+  "status": "COMPLETE_STATIC_REVIEW_LIVE_QUALIFICATION_PENDING",
+  "scope": "Read-only historical source and aggregate-report inspection; new B0-B7 proposal is not executed performance.",
+  "execution": {
+    "new_model_fits": 0,
+    "optimizer_updates": 0,
+    "model_forwards": 0,
+    "model_backwards": 0,
+    "patient_arrays_read": false,
+    "private_model_weights_read": false,
+    "historical_files_modified": false
+  },
+  "source_sha256": {
+    "B0_B7_语义条件互补三模态_严格实验方案_Codex.md": "da0a51f04418ed6cf5f2ed4b3542a16b0ce6cf71f0bcdd0d7d65e3d2f716b5bf",
+    "configs/phase6a_titan_crc_morphology_concepts.json": "3fc4ae7aeb34ec68f37a9667b1aa95c1c9a1ee479913dc7e6a6ca67b9f493d69",
+    "configs/phase7_p0_molecular_morphology_prior.json": "c55a9445ceb79980ef0631299906a3a8e4157b7b69d4e40a16f26108a84437b7",
+    "scripts/phase6a_titan_semantic_preflight.py": "60c91d79b7cdfe7fb08381cf716297003dfa006507a041ca3c6ee276660df8c1",
+    "scripts/phase6b_rna_conditioned_titan_concepts.py": "be4fac72baaedf60dbec54b0084315333d37981e84133391d8727897a92fe32b",
+    "scripts/phase6b_token_prompt_titan.py": "2e9da268f94ce8a3a0380b9be5e73c95201425c4fb7e8bc55a378da234bb8fb7",
+    "src/phase11_semantic/models.py": "a092178cbca23ef2ac3769ee57742da20f2978351d4f2eb57d545e705729421e",
+    "src/phase11_semantic/features.py": "a416822346286f7f75069b36ae71ed918602b98028d0d9c732bb76effc3a4438",
+    "src/phase16_semantic/runtime.py": "9097f3c6cd5e19e18a9edadbe98b052448b9f6a971820739c6f8bb514a4c02d7",
+    "src/phase16_semantic/prompts.py": "96d47a80de7ccaea18cb609a952847217b488a32b42a1a3935d34ffb671bc5cf",
+    "scripts/prepare_phase16_semantic.py": "4180fb8322850f84f34cfbce6700c9f26157791046e0999c6b8f256e3c9be427",
+    "src/phase19_attention/attention.py": "68b9de0b8c3ae63a568a212813c3725bed9af9bbc12ccc0fb61101a211db49f4",
+    "src/phase19_attention/model.py": "85c6b9063b3e9039a5bbcf1e878e0e500540ad777757a2cd91f7d25834238ee9",
+    "src/bgb_en/data.py": "cebe55093915abeb2df38fee317b5af7e805f5714d43d3a56d3e67bc441bcd37",
+    "src/bgb_en/protocol.py": "e06e7196eee72957dbde363bc4cb78b004ded62a62ada0fa0ffa3add7590394c",
+    "src/bgb_en/baselines.py": "2a00c4bcd2eca06c26a5ad5e0c636d2c2771bbf356df9d72a350fe8061e30d5a",
+    "src/bgb_en/survival.py": "2f54ca3262438cb725421e5a062b8529eecdd5033a122038798c5af6b083d086",
+    "src/bgb_en/r6_omics.py": "cb1404f871717783a9ff817133b8cbc58ff26e2e9639ff7d989a8e28dc262a7f",
+    "src/bgb_en/r6_survival.py": "901cd43dc9c9259db1c8a01f90e8dd6dc79bded9c9bc174e210dcc6f326799b5",
+    "src/bgb_en/r7_survival.py": "179e80e1fc4c988253497188a8bd19fcd51b38fe738fa37dc199b825ad2d97f6",
+    "src/bgb_en_r8/pipeline.py": "c851327f4a4eae94db36a9ca51fc234f891eda0e583278c91cb662c2839aae49",
+    "scripts/bgb_en_r8_common.py": "546bfb672e8b80d8cbab89dcd65d481233f4bd914d79456c6de8a84ae9025ad7",
+    "reports/phase6a_titan_semantic_preflight/RESULTS.md": "fe2d5ff672f438701809b46d6fd8ef41a7bfb5945e2f5798c9d39257b9fe192c",
+    "reports/phase6b_rna_conditioned_titan_concepts/RESULTS.md": "3da7abc1870e4d038c994658f983280eca7509bdc19d505277d85c95e27217aa",
+    "reports/phase6b_token_prompt_titan/RESULTS.md": "e9d4e7bc8b04a92d0aeb1e84d1d40cab2eedc66aa8001fc204d42f1ebc901def",
+    "reports/phase11_semantic_anchored_trimodal/DECISION.md": "7ab2b3939628cbb7198a990d489853e14b98b7d40b7a9e1d228bea04405b4a3d",
+    "reports/phase16_semantic_routing/semantic_completion/DECISION.md": "12e50ccc752eaddbc152ae1813abbd5a733bfbcae53edba84591c01d404cf68f",
+    "reports/phase16_semantic_routing/semantic_completion/SPACE_COMPATIBILITY.json": "b882b0b7f7e369d887bf1c8782820fabf2b0ecb6f41a4b1d5b1d95b4e8bc9f04",
+    "reports/phase19_clinical_trilinear_attention/DECISION.md": "e6c1599c522a98de241759a6edf64b2fdbefbc929e72af24252a562ff5b852b4",
+    "reports/bgb_en/R0_ASSET_AUDIT.md": "1f0baf60b82c9dcea991c7ed646dacfa1b299a78437f9f8e00e96322a3905e92",
+    "reports/bgb_en/R1_RESULTS.md": "aee7f28d5d48d2cfb3604ede7eaa18a06e3565808569ddd7e34370c811a61584",
+    "reports/bgb_en/R2_RESULTS.md": "9e61fd2514c3d6bbea29cedf995d29cfae03051396cead5eb7690dd066edd0ed",
+    "reports/bgb_en/R3_RESULTS.md": "7014163ea284ff7231daa8c2b6adca19f6c9cf4af919c420064c3fae59c536d1",
+    "reports/bgb_en/DECISION.md": "28da14b74cb88c383ce60032fdf661fc64fb3290bc249d5f8cffc85638a869cf",
+    "reports/bgb_en/R4_FINAL_RESULTS.md": "c930d57e06d4b4223475820ebf85c48578cc5d259822fdbac2498bdda2615ef5",
+    "reports/bgb_en/R4_PIPELINE_REVIEW.json": "abf5cb8e4b57f80bb7597b336663c0e3bc6b56a1b9a8e7a5258557ff33d3671b",
+    "reports/bgb_en_r5/REPRODUCE.md": "86d946c5c31a7e57273d6b1e1adef7f78c37e874235aaca510cf6163ff516d36",
+    "reports/bgb_en_r6/R6_0_DATA_QUALIFICATION.md": "39ed811de13709190c812b50a327c74c1676541968d864782e7c3f33f793007b",
+    "reports/bgb_en_r7/R7_CONCLUSION.md": "4f091adf604bddbf9f97734abfa8aef484097d09041333ffe5e5d76c1e85de82",
+    "reports/bgb_en_r8/R8_SOURCE_INTERFACE_AUDIT.md": "de8100d909e457eb707daa2761ae1bd94d6a722d68e2c2b966be671c33fc191a",
+    "reports/bgb_en_r8/R8_DECISION.md": "fe21c5c75b0ccff140c4da7aa273894dbb085d85b2d5b140de1543fdf0d075e3",
+    "reports/bgb_en_r8/R8_RESULTS.md": "70e905a4baa715878a4a751ac30652927fcda962aafdd7652c6a1805f8375b74"
+  },
+  "line_evidence": {
+    "R4_exact_source": {
+      "file": "reports/bgb_en/DECISION.md",
+      "sha256": "28da14b74cb88c383ce60032fdf661fc64fb3290bc249d5f8cffc85638a869cf",
+      "matching_lines": [
+        7,
+        14,
+        17,
+        19,
+        21,
+        32,
+        44,
+        58
+      ]
+    },
+    "anchor_crossfit": {
+      "file": "src/bgb_en/baselines.py",
+      "sha256": "2a00c4bcd2eca06c26a5ad5e0c636d2c2771bbf356df9d72a350fe8061e30d5a",
+      "matching_lines": [
+        5,
+        13,
+        18,
+        20,
+        27,
+        29,
+        32,
+        42,
+        44
+      ]
+    },
+    "anchor_scalar_loss": {
+      "file": "src/bgb_en/survival.py",
+      "sha256": "2f54ca3262438cb725421e5a062b8529eecdd5033a122038798c5af6b083d086",
+      "matching_lines": [
+        29,
+        34,
+        36,
+        43,
+        47
+      ]
+    },
+    "anchor_feature_construction": {
+      "file": "src/bgb_en/protocol.py",
+      "sha256": "e06e7196eee72957dbde363bc4cb78b004ded62a62ada0fa0ffa3add7590394c",
+      "matching_lines": [
+        34,
+        60,
+        66,
+        78,
+        86,
+        89,
+        97
+      ]
+    },
+    "raw_contract": {
+      "file": "src/bgb_en/data.py",
+      "sha256": "cebe55093915abeb2df38fee317b5af7e805f5714d43d3a56d3e67bc441bcd37",
+      "matching_lines": [
+        19,
+        20,
+        21,
+        22,
+        69,
+        80,
+        82,
+        110,
+        114,
+        126
+      ]
+    },
+    "conch_projection": {
+      "file": "scripts/prepare_phase16_semantic.py",
+      "sha256": "4180fb8322850f84f34cfbce6700c9f26157791046e0999c6b8f256e3c9be427",
+      "matching_lines": [
+        14,
+        16
+      ]
+    },
+    "conch_source_cache": {
+      "file": "src/phase16_semantic/runtime.py",
+      "sha256": "9097f3c6cd5e19e18a9edadbe98b052448b9f6a971820739c6f8bb514a4c02d7",
+      "matching_lines": [
+        10,
+        20,
+        34,
+        42,
+        48,
+        51
+      ]
+    },
+    "TITAN_projection": {
+      "file": "scripts/phase6a_titan_semantic_preflight.py",
+      "sha256": "60c91d79b7cdfe7fb08381cf716297003dfa006507a041ca3c6ee276660df8c1",
+      "matching_lines": [
+        227,
+        230,
+        236,
+        280,
+        282,
+        285,
+        321
+      ]
+    },
+    "phase11_operators": {
+      "file": "src/phase11_semantic/models.py",
+      "sha256": "a092178cbca23ef2ac3769ee57742da20f2978351d4f2eb57d545e705729421e",
+      "matching_lines": [
+        34,
+        41,
+        73,
+        76,
+        95,
+        97,
+        98,
+        105,
+        106,
+        107,
+        109,
+        110,
+        113,
+        116,
+        117
+      ]
+    },
+    "phase19_operators": {
+      "file": "src/phase19_attention/attention.py",
+      "sha256": "68b9de0b8c3ae63a568a212813c3725bed9af9bbc12ccc0fb61101a211db49f4",
+      "matching_lines": [
+        49,
+        50,
+        101,
+        103,
+        105,
+        106,
+        112,
+        113
+      ]
+    },
+    "R6_operators": {
+      "file": "src/bgb_en/r6_survival.py",
+      "sha256": "901cd43dc9c9259db1c8a01f90e8dd6dc79bded9c9bc174e210dcc6f326799b5",
+      "matching_lines": [
+        12,
+        93,
+        115,
+        116,
+        117,
+        211,
+        219,
+        228,
+        231,
+        241,
+        259,
+        260,
+        261,
+        262,
+        263,
+        267,
+        268,
+        269,
+        294
+      ]
+    },
+    "R8_status": {
+      "file": "reports/bgb_en_r8/R8_RESULTS.md",
+      "sha256": "70e905a4baa715878a4a751ac30652927fcda962aafdd7652c6a1805f8375b74",
+      "matching_lines": [
+        3,
+        8,
+        10,
+        13,
+        14,
+        17,
+        18,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35,
+        37,
+        38
+      ]
+    },
+    "old_prior": {
+      "file": "configs/phase7_p0_molecular_morphology_prior.json",
+      "sha256": "c55a9445ceb79980ef0631299906a3a8e4157b7b69d4e40a16f26108a84437b7",
+      "matching_lines": [
+        3,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        29
+      ]
+    }
+  },
+  "operator_comparisons": [
+    {
+      "history": "Phase6A",
+      "implemented": "Frozen TITAN slide encoding, official vision projection, 32 morphology phrases and two templates; static cosine descriptors.",
+      "new_B5_difference": "Reuses those frozen phrases; adds CONCH-local phrase read and train-side clinical-background residual interaction. No new concept vocabulary.",
+      "result": "519 slides/512 patients; official probability agreement error 1.49e-08; effective rank 4.4883. Concept versus native TITAN proxy superiority not established.",
+      "evidence": [
+        "reports/phase6a_titan_semantic_preflight/RESULTS.md",
+        "scripts/phase6a_titan_semantic_preflight.py"
+      ]
+    },
+    {
+      "history": "Phase6B_output_space",
+      "implemented": "Top512 RNA to 16D adapter, basis/gate produces text-vector delta after text encoding.",
+      "new_B5_difference": "Does not adapt the text embedding from RNA. Fixed text selects morphology; RNA remains separate molecular evidence.",
+      "result": "No stable superiority over static/additive on T/N/M/Stage; no survival endpoint read.",
+      "evidence": [
+        "scripts/phase6b_rna_conditioned_titan_concepts.py",
+        "reports/phase6b_rna_conditioned_titan_concepts/RESULTS.md"
+      ]
+    },
+    {
+      "history": "Phase6B_token_v2",
+      "implemented": "RNA-conditioned soft prompt inserted after BOS into the frozen TITAN text Transformer; corrected shifted CLS mask and official template averaging.",
+      "new_B5_difference": "No dynamic token prompt or TITAN Transformer updates. Query identity and residual complementarity are separate controlled operators.",
+      "result": "Three fixed epochs; patient-specific mechanism unconfirmed; v1 invalidated, preserved. Wrong RNA is frozen inference intervention, not real retraining.",
+      "evidence": [
+        "scripts/phase6b_token_prompt_titan.py",
+        "reports/phase6b_token_prompt_titan/RESULTS.md"
+      ]
+    },
+    {
+      "history": "Phase11",
+      "implemented": "S32 scalars become learned concept tokens plus identity; clinical tokens and RNA8 queries attend raw CONCH patches, bidirectional attention variants, learned anchor and nonlinear small correction.",
+      "new_B5_difference": "True frozen text prototypes replace score-token-only identity. Background mean estimators are outcome-free crossfit nuisance regressors, not clinical query injection.",
+      "result": "INCONCLUSIVE within repeatedly developed TCGA cohort.",
+      "evidence": [
+        "src/phase11_semantic/models.py",
+        "src/phase11_semantic/features.py",
+        "reports/phase11_semantic_anchored_trimodal/DECISION.md"
+      ]
+    },
+    {
+      "history": "Phase16",
+      "implemented": "Official CONCH-Z projection/text space; captions append clinical fields and low/typical/high RNA8 states; equal-budget round-robin concept retrieval followed by prediction.",
+      "new_B5_difference": "Fixed phrases and soft local read instead of patient-conditioned natural-language captions and discrete RNA states. Retains continuous measured molecular inputs and separately tests clinical residualization.",
+      "result": "NO_CONFIRMED_INCREMENT; official semantic interface passed; raw-WSI histology QA blocked.",
+      "evidence": [
+        "src/phase16_semantic/runtime.py",
+        "src/phase16_semantic/prompts.py",
+        "reports/phase16_semantic_routing/semantic_completion/DECISION.md"
+      ]
+    },
+    {
+      "history": "Phase19",
+      "implemented": "Shared score q(P)k(G)/sqrt(d) + sum_r a_r(P)b_r(G)c_r(C); row/column masked softmax. RNA, gain, loss separate weighted-scalar/coverage tokens.",
+      "new_B5_difference": "Clinical context estimates expected unimodal evidence and is subtracted before low-rank products; it does not directly rewrite every P-G score through a trilinear clinical term. Low-rank products themselves are reused mathematics.",
+      "result": "MECHANISM_NOT_SUPPORTED_IN_THIS_ARCHITECTURE, not rejection of all clinical conditioning.",
+      "evidence": [
+        "src/phase19_attention/attention.py",
+        "src/phase19_attention/model.py",
+        "reports/phase19_clinical_trilinear_attention/DECISION.md"
+      ]
+    },
+    {
+      "history": "R0_R4",
+      "implemented": "True-coordinate REGIONS pathology arm, fixed Hallmark50 tokens and separate old-union RNA512 direct risk, strong GRID-local CONCH/S32/clinical Cox anchor, honest same-teacher scalar risk.",
+      "new_B5_difference": "New local interaction may use REGIONS512 but exact historical B0 keeps GRID-local mean PCA32. Shared frozen source and new clinical-residual products require new train-local fits.",
+      "result": "R4 CP_SCALAR DSS 0.832667/0.812398 are historical fold-local counts; nested interaction versus CP_SCALAR +0.001490/-0.000559.",
+      "evidence": [
+        "reports/bgb_en/R0_ASSET_AUDIT.md",
+        "reports/bgb_en/DECISION.md",
+        "reports/bgb_en/R4_FINAL_RESULTS.md",
+        "src/bgb_en/baselines.py",
+        "src/bgb_en/protocol.py"
+      ]
+    },
+    {
+      "history": "R5",
+      "implemented": "Finite non-saturating/low-capacity readout attribution around fixed CP+RNA offset, 63-model core and 45 selected-control retrains described in local recovery/reproduction metadata.",
+      "new_B5_difference": "Not another readout-only repair; introduces pre-DSS semantic correspondence training and explicit crossfit clinical-background subtraction.",
+      "result": "Current local R5 folder contains recovery/reproduction metadata but no standalone final result table; do not infer new mechanism statistics from those files.",
+      "evidence": [
+        "reports/bgb_en_r5/REPRODUCE.md"
+      ]
+    },
+    {
+      "history": "R6",
+      "implemented": "Frozen S7 source with four programs, sparse original-gene value bank, RNA-conditioned original-patch reread and reverse original-gene reread; serial double-difference, no repeated state iteration.",
+      "new_B5_difference": "B5 is not original-gene bidirectional rereading; main defined inputs are fixed Hallmark50 tokens and text morphology reads. Do not import S7/ST weights into this new three-modal contract silently.",
+      "result": "Local R6 data-qualification reports predate training. Actual R6 saved-state existence is independently referenced by R7 9-cell/36-state interface audit and R8 locked source. Fresh source state bytes remain a live asset check.",
+      "evidence": [
+        "src/bgb_en/r6_survival.py",
+        "src/bgb_en/r6_omics.py",
+        "reports/bgb_en_r6/R6_0_DATA_QUALIFICATION.md",
+        "reports/bgb_en_r8/R8_SOURCE_INTERFACE_AUDIT.md"
+      ]
+    },
+    {
+      "history": "R7",
+      "implemented": "Train-RMS normalization, independent directions, separate program heads, gated one/two-round states, true wrong-query retrains.",
+      "new_B5_difference": "Avoids interpreting numerical activation as benefit; B5 pretrains without DSS and fits a small frozen-feature Cox readout with explicit capacity/pairing controls.",
+      "result": "99 fits/297 replays; numerical pathway activated but fixed GATE1 not supported; greater repair than damage not shown.",
+      "evidence": [
+        "src/bgb_en/r7_survival.py",
+        "reports/bgb_en_r7/R7_CONCLUSION.md"
+      ]
+    },
+    {
+      "history": "R8",
+      "implemented": "Frozen R6 source evidence, train-local PCA2 per program, low-capacity complete bilinear program states and frozen RNA-conditioned image read variants.",
+      "new_B5_difference": "B5 adds text-space queries and OOF clinical nuisance residualization, not merely a new name for bilinear readout.",
+      "result": "81 convex fits/replays; nominal deterministic seed duplicates not independent evidence; R8-6 not supported; no new outer training.",
+      "evidence": [
+        "src/bgb_en_r8/pipeline.py",
+        "reports/bgb_en_r8/R8_RESULTS.md",
+        "reports/bgb_en_r8/R8_DECISION.md"
+      ]
+    }
+  ],
+  "required_contract_clarifications": [
+    {
+      "id": "H01",
+      "severity": "HIGH",
+      "topic": "B0 visual recipe",
+      "finding": "R4 CP_STRONG LOCAL is frozen legacy outcome-blind GRID-local mean then train-local PCA32, not current REGIONS512.",
+      "resolution": "Rebuild historical B0 from exact LOCAL source; lock new REGIONS512 interaction input separately and keep B0_UNIFIED diagnostic distinct."
+    },
+    {
+      "id": "H02",
+      "severity": "HIGH",
+      "topic": "B0 RNA512 gene universe",
+      "finding": "Historical direct RNA512 uses the old fixed eight-program union (977 external/955 canonical), whereas new Hallmark50 has 4384 external/4191 RNA-mapped members. Same gene-set names do not imply identical member files.",
+      "resolution": "Pin both member/source hashes separately; do not replace historical direct-risk selection with current Hallmark50."
+    },
+    {
+      "id": "H03",
+      "severity": "HIGH",
+      "topic": "B3 null prototype geometry",
+      "finding": "Mutually orthogonal equal-norm query rows generally cannot simultaneously reproduce the nonorthogonal true-text Gram/singular spectrum.",
+      "resolution": "Explicitly define orthogonal random rotation in feature coordinates (T_random=T_text @ Q), preserving row norms/Gram/spectrum while breaking visual-language direction; otherwise report which matching requirement is relaxed. This is a preregistration clarification, not a score-driven choice."
+    },
+    {
+      "id": "H04",
+      "severity": "HIGH",
+      "topic": "Concept-to-Hallmark prior",
+      "finding": "Existing Phase7 prior has 15 candidate edges across 12 concepts and old molecular states; it is not a qualified 8-group by 50-Hallmark prior and its links are allowed associations, not morphology labels.",
+      "resolution": "Before G0 pass, audit/freeze the new mapping and evidence type without target outcomes. Unknown links remain unknown; no dense matrix generated from keyword matches."
+    },
+    {
+      "id": "H05",
+      "severity": "HIGH",
+      "topic": "Current server clone and live qualification",
+      "finding": "This static sub-audit has not read the current server private data, clone state, model bytes, target patient arrays, or current model forward/backward.",
+      "resolution": "Parent-owned live data/hash/geometry/model qualification must complete. Historical PASS files do not set present G0 PASS."
+    },
+    {
+      "id": "H06",
+      "severity": "MEDIUM",
+      "topic": "Current projection and text equivalence",
+      "finding": "Historical CONCH projection audit checked 1024 patches; TITAN historical official zero-shot agreement is strong. They do not by themselves satisfy this round repeated real-slide/text equivalence after asset migration.",
+      "resolution": "Rebind weights/source/template hashes and rerun agreed official interface checks on current real slides; never raw-CONCH-to-TITAN-text cosine."
+    },
+    {
+      "id": "H07",
+      "severity": "MEDIUM",
+      "topic": "Old R5/R6 report completeness",
+      "finding": "Local R5 recovery metadata and early R6 qualification are not complete standalone current result reports. Later R7/R8 records establish reused model/source lineage, not the missing final files themselves.",
+      "resolution": "Inspect cloned server old aggregate ledgers/checkpoints read-only if needed; do not rerun old matrices or fill absent history with inferred PASS."
+    }
+  ],
+  "technical_interfaces": {
+    "CONCH": "normalize(raw_CONCH @ official_visual_proj_contrast) with same-model normalized text; both768.",
+    "TITAN": "normalize(native_slide @ official_vision_encoder_proj) with own normalized TITAN text. Equal-weight slide aggregation is separate from patch budgeting.",
+    "clinical_background": "New train-side OOF no-DSS nuisance means are not implemented in historical Phase19 clinical trilinear score or old RNA caption.",
+    "anchor": "Historical exact CP+RNA scalar is train-local CP/RNA Cox teachers plus one-dimensional same-teacher held-out pairwise logistic calibration; B0 replication is distinct from new shared Efron Cox head."
+  },
+  "external_sources": [
+    {
+      "url": "https://huggingface.co/MahmoodLab/CONCH-Z",
+      "verified_on": "2026-10-30",
+      "supports": "Official existing-feature API projects 768-d CONCH v1.5 with 768x768 proj_contrast before same-model text cosine; no raw WSI needed for this interface."
+    },
+    {
+      "url": "https://huggingface.co/MahmoodLab/TITAN",
+      "verified_on": "2026-10-30",
+      "supports": "Official slide encoder consumes CONCH features, coords and per-slide level0 patch size; common 20x/40x examples differ. Historical current-cohort R0 measured all 519 hops as 1024."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26457759/",
+      "verified_on": "2026-10-30",
+      "supports": "Metadata and abstract for consensus molecular subtypes; candidate biological context, not per-patient morphology truth."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-021-22800-1",
+      "verified_on": "2026-10-30",
+      "supports": "Primary study cautions that mesenchymal/EMT bulk signatures can reflect stromal fibroblasts. Search result/full extracted text inspected after direct page fetch redirect failed."
+    }
+  ],
+  "confidence": {
+    "static_operator_and_provenance_description": "HIGH",
+    "current_server_asset_integrity": "NOT_ASSESSED_BY_THIS_SUBAUDIT",
+    "new_B5_mechanism_or_DSS_gain": "NOT_TESTED",
+    "novelty_in_literature": "NOT_ESTABLISHED_BY_THIS_AUDIT"
+  },
+  "limitations": [
+    "The same TCGA folds were historically developed repeatedly; future nested evaluation is internal development, not a new external confirmation.",
+    "Frozen text cosine is a model proxy, not independent ROI/cell-source or morphology ground truth.",
+    "Low-rank products, auxiliary paired contrastive loss, and residualization are not claimed as new mathematics.",
+    "A5 spatial-program outcomes and current target DSS tasks cannot be ranked by absolute PCC.",
+    "This review does not independently replay old private predictions, model weights or source donor-patient overlap."
+  ]
+}

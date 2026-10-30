@@ -1,0 +1,11 @@
+{
+  "schema": "semantic_b0b7_pretraining_failure_lineage_v1",
+  "events": [
+    {"stage": "P0_data_audit_initial", "cause": "historical TITAN download manifest uses filename while CONCH-Z uses file", "resolution": "accept both documented manifest fields and retain exact SHA checks", "neural_fits": 0, "optimizer_updates": 0, "scientific_metrics_generated": false},
+    {"stage": "P0_official_model_prepare_attempt1", "cause": "older TITAN runtime produced 48 unexpected LayerScale weight names and 48 missing gamma names loading CONCH-Z", "action": "stopped at strict complete-weight loading gate; no cache completion receipt produced", "resolution_status": "retry same unchanged official sources and weights with existing historical CONCH-Z runtime", "neural_fits": 0, "optimizer_updates": 0, "scientific_metrics_generated": false, "failed_directory_retained": true},
+    {"stage": "P1_static_pretraining_review", "cause": "assigned wrong positive can remove an additional hard negative and reduce B6a anchor coverage", "resolution": "before any real fit, use same seed-specific train-only negative support excluding wrong positives for every comparison arm; separately record actual support", "neural_fits_before_fix": 0, "scientific_metrics_generated_before_fix": false},
+    {"stage": "P0_official_model_prepare_attempt2", "cause": "new main runtime is missing einops_exts required by official TITAN source", "action": "stopped before TITAN numerical gate; CONCH exact loading and projection had already passed", "resolution": "reuse byte-identical existing pure Python einops_exts 0.0.4 in private dependency directory without global installation", "neural_fits": 0, "optimizer_updates": 0, "failed_directory_retained": true},
+    {"stage": "P0_official_model_prepare_attempt3", "cause": "legacy official Titan initialization is incompatible with Transformers5 all_tied_weights_keys loading protocol", "action": "stopped before TITAN numerical gate without modifying official model", "resolution_status": "separate existing CONCH and TITAN runtime processes preserving original sources and weights", "neural_fits": 0, "optimizer_updates": 0, "failed_directory_retained": true}
+  ],
+  "old_results_modified": false
+}

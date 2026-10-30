@@ -1,0 +1,26 @@
+{
+  "schema": "semantic_b0b7_P1_scientific_decision_v1",
+  "status": "P1_EVALUATED_FULL_DSS_MECHANISM_NOT_YET_EVALUATED",
+  "P1_text_query_increment": "NO_GAIN_IN_THIS_IMPLEMENTATION",
+  "P1_program_Pearson_B4_minus_B3": -0.005273772044681571,
+  "P1_program_Pearson_B4_minus_B6a": -0.0014545282122582122,
+  "P1_program_Pearson_B4_minus_shuffled_map": -0.00026518839728880095,
+  "seed_directions_for_all_three_program_comparisons": "one_positive_two_negative",
+  "pathology_Ridge_program_Pearson": 0.2400919828422388,
+  "pathology_clinical_Ridge_program_Pearson": 0.24716534823033856,
+  "clinical_Ridge_program_Pearson": 0.06757534459318516,
+  "calibration_counterexample": "Ridge patient_equal_Huber is worse than train_median; correlation alone is insufficient",
+  "pairing_auxiliary": "B4 minus B6a retrieval gap positive in all three seeds, but no unique true_text advantage",
+  "unknown_relation_mass_fraction_B4_range": [
+    0.8717610375123415,
+    0.8731670783650337
+  ],
+  "readout_bottleneck_candidate": "L_prog averages8learned slots before64Dvisual head while frozenRidge sees8x768plusglobalfeatures; requires a capacity-controlled followup to identify cause",
+  "saturation_or_insufficient_epochs_claim": "not supported as sole explanation: all twelve validationLaux worsened200to400 while training loss improved",
+  "DSS_gain": "NOT_EVALUATED",
+  "theory_or_idea_global_no_go": false,
+  "future_CI_computation": false,
+  "CI_is_advancement_gate": false,
+  "next_stage": "lock and qualify the minimum P2 DSS matrix with same-input strong baseline and mechanism controls; no retrospective modification of P1",
+  "independent_external_validation": false
+}

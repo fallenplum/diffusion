@@ -1,0 +1,285 @@
+{
+  "schema": "semantic_b0b7_p0_gate_v1",
+  "status": "PASS",
+  "scope": "P1_AUXILIARY_QUALIFICATION_ONLY",
+  "input_sha256": "93d2419a95c129e72e360fc24748e4fef6c909a01830208ecef5fc2d7d0b1b6c",
+  "frozen_sources": {
+    "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+    "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+    "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+    "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+    "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10",
+    "scripts/semantic_b0b7_gate.py": "4d4b2d18b6935138beff1356367a3580d9f986bea6915bdae010c3753f583754",
+    "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+    "scripts/semantic_b0b7_audit.py": "05fc683eec345084303c2bd474047c5f403a316ee75cad1cfd33aebb3a098fd1",
+    "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+    "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+    "configs/semantic_b0b7/allowed_relations_v1.json": "cc086b414bb380706d24bfa1f7f94198975300ed60782c7c6b366c3765579d1a",
+    "configs/phase6a_titan_crc_morphology_concepts.json": "3fc4ae7aeb34ec68f37a9667b1aa95c1c9a1ee479913dc7e6a6ca67b9f493d69",
+    "scripts/semantic_b0b7_titan_worker.py": "5831abcc92065efd684f53728262c0254f70ccb7041190f85b67a2bf5417fc55"
+  },
+  "source_sha256": "bf0de7a8c7b552634be4125cf4ce117f19a9d74e68a4ea65fa6813709b60d6a9",
+  "hard_gates": {
+    "data_endpoint_fold_alignment": {
+      "status": "PASS"
+    },
+    "official_text_alignment": {
+      "status": "PASS"
+    },
+    "prototype_and_relation_contract": {
+      "status": "PASS"
+    },
+    "real_forward_backward": {
+      "status": "PASS"
+    },
+    "outcome_blind_scope": {
+      "status": "PASS"
+    }
+  },
+  "probe_evidence": {
+    "optimizer_steps": 0,
+    "fits": 0,
+    "real_forward_backward_models": 10,
+    "actual_forward_backward": true,
+    "gradients_finite": true,
+    "input_sha256": "93d2419a95c129e72e360fc24748e4fef6c909a01830208ecef5fc2d7d0b1b6c",
+    "source_sha256": "bf0de7a8c7b552634be4125cf4ce117f19a9d74e68a4ea65fa6813709b60d6a9",
+    "initial_shared_parameter_identity_B3_B4": true,
+    "controls": [
+      {
+        "arm": "B1",
+        "parameters": {
+          "total": 310643,
+          "pretraining_trainable": 310643,
+          "auxiliary_only_parameters": 6707,
+          "prediction_active_parameters_static": 303936,
+          "dss_trainable_in_this_module": 0,
+          "prediction_used_requires_path_audit": true
+        },
+        "input_gradient_norms": {
+          "patch": 0.03085280954837799,
+          "omics": 0.010661518201231956,
+          "clinical": 0.0010942210210487247
+        },
+        "unused_or_nonfinite_gradient_tensors": 0,
+        "image_only_omics_swap_error": 0.0,
+        "text_query_real_input_perturbation": null,
+        "matched_loss_anchors": 271
+      },
+      {
+        "arm": "B2",
+        "parameters": {
+          "total": 343411,
+          "pretraining_trainable": 343411,
+          "auxiliary_only_parameters": 6450,
+          "prediction_active_parameters_static": 336961,
+          "dss_trainable_in_this_module": 0,
+          "prediction_used_requires_path_audit": true
+        },
+        "input_gradient_norms": {
+          "patch": 0.002540487563237548,
+          "omics": 0.005443529691547155,
+          "clinical": 0.0010942210210487247
+        },
+        "unused_or_nonfinite_gradient_tensors": 0,
+        "image_only_omics_swap_error": 0.0,
+        "text_query_real_input_perturbation": null,
+        "matched_loss_anchors": 271
+      },
+      {
+        "arm": "B2_MATCHED_1H",
+        "parameters": {
+          "total": 310643,
+          "pretraining_trainable": 310643,
+          "auxiliary_only_parameters": 6450,
+          "prediction_active_parameters_static": 304193,
+          "dss_trainable_in_this_module": 0,
+          "prediction_used_requires_path_audit": true
+        },
+        "input_gradient_norms": {
+          "patch": 0.0014127857284620404,
+          "omics": 0.003412185702472925,
+          "clinical": 0.0010942210210487247
+        },
+        "unused_or_nonfinite_gradient_tensors": 0,
+        "image_only_omics_swap_error": 0.0,
+        "text_query_real_input_perturbation": null,
+        "matched_loss_anchors": 271
+      },
+      {
+        "arm": "B2_MATCHED_4H",
+        "parameters": {
+          "total": 310643,
+          "pretraining_trainable": 310643,
+          "auxiliary_only_parameters": 6450,
+          "prediction_active_parameters_static": 304193,
+          "dss_trainable_in_this_module": 0,
+          "prediction_used_requires_path_audit": true
+        },
+        "input_gradient_norms": {
+          "patch": 0.0014129478950053453,
+          "omics": 0.003439292311668396,
+          "clinical": 0.0010942210210487247
+        },
+        "unused_or_nonfinite_gradient_tensors": 0,
+        "image_only_omics_swap_error": 0.0,
+        "text_query_real_input_perturbation": null,
+        "matched_loss_anchors": 271
+      },
+      {
+        "arm": "B3",
+        "parameters": {
+          "total": 310643,
+          "pretraining_trainable": 310643,
+          "auxiliary_only_parameters": 6450,
+          "prediction_active_parameters_static": 304193,
+          "dss_trainable_in_this_module": 0,
+          "prediction_used_requires_path_audit": true
+        },
+        "input_gradient_norms": {
+          "patch": 0.03085280954837799,
+          "omics": 0.010661518201231956,
+          "clinical": 0.0010942210210487247
+        },
+        "unused_or_nonfinite_gradient_tensors": 0,
+        "image_only_omics_swap_error": 0.0,
+        "text_query_real_input_perturbation": null,
+        "matched_loss_anchors": 271
+      },
+      {
+        "arm": "B4",
+        "parameters": {
+          "total": 310643,
+          "pretraining_trainable": 310643,
+          "auxiliary_only_parameters": 6450,
+          "prediction_active_parameters_static": 304193,
+          "dss_trainable_in_this_module": 0,
+          "prediction_used_requires_path_audit": true
+        },
+        "input_gradient_norms": {
+          "patch": 0.011502527631819248,
+          "omics": 0.013805907219648361,
+          "clinical": 0.0011075751390308142
+        },
+        "unused_or_nonfinite_gradient_tensors": 0,
+        "image_only_omics_swap_error": 0.0,
+        "text_query_real_input_perturbation": {
+          "operation": "replace_one_CONCH_group_with_another_real_group_only",
+          "patch_attention_max_delta": 0.007053815759718418,
+          "program_prediction_max_delta": 0.0005785524845123291,
+          "TITAN_query_evidence_max_delta": 0.0,
+          "omics_token_max_delta": 0.0
+        },
+        "matched_loss_anchors": 271
+      },
+      {
+        "arm": "B5",
+        "parameters": {
+          "total": 310643,
+          "pretraining_trainable": 310643,
+          "auxiliary_only_parameters": 6450,
+          "prediction_active_parameters_static": 304193,
+          "dss_trainable_in_this_module": 0,
+          "prediction_used_requires_path_audit": true
+        },
+        "input_gradient_norms": {
+          "patch": 0.011502527631819248,
+          "omics": 0.013805907219648361,
+          "clinical": 0.0011075751390308142
+        },
+        "unused_or_nonfinite_gradient_tensors": 0,
+        "image_only_omics_swap_error": 0.0,
+        "text_query_real_input_perturbation": null,
+        "matched_loss_anchors": 271
+      },
+      {
+        "arm": "B5_CLINICAL_CAPACITY_CONTROL",
+        "parameters": {
+          "total": 310643,
+          "pretraining_trainable": 310643,
+          "auxiliary_only_parameters": 6450,
+          "prediction_active_parameters_static": 304193,
+          "dss_trainable_in_this_module": 0,
+          "prediction_used_requires_path_audit": true
+        },
+        "input_gradient_norms": {
+          "patch": 0.011502527631819248,
+          "omics": 0.013805907219648361,
+          "clinical": 0.0011075751390308142
+        },
+        "unused_or_nonfinite_gradient_tensors": 0,
+        "image_only_omics_swap_error": 0.0,
+        "text_query_real_input_perturbation": null,
+        "matched_loss_anchors": 271
+      },
+      {
+        "arm": "B6a",
+        "parameters": {
+          "total": 310643,
+          "pretraining_trainable": 310643,
+          "auxiliary_only_parameters": 6450,
+          "prediction_active_parameters_static": 304193,
+          "dss_trainable_in_this_module": 0,
+          "prediction_used_requires_path_audit": true
+        },
+        "input_gradient_norms": {
+          "patch": 0.01164817251265049,
+          "omics": 0.013701722025871277,
+          "clinical": 0.0011075751390308142
+        },
+        "unused_or_nonfinite_gradient_tensors": 0,
+        "image_only_omics_swap_error": 0.0,
+        "text_query_real_input_perturbation": null,
+        "matched_loss_anchors": 271
+      },
+      {
+        "arm": "B7",
+        "parameters": {
+          "total": 310643,
+          "pretraining_trainable": 310643,
+          "auxiliary_only_parameters": 6450,
+          "prediction_active_parameters_static": 304193,
+          "dss_trainable_in_this_module": 0,
+          "prediction_used_requires_path_audit": true
+        },
+        "input_gradient_norms": {
+          "patch": 0.011502527631819248,
+          "omics": 0.013805907219648361,
+          "clinical": 0.0011075751390308142
+        },
+        "unused_or_nonfinite_gradient_tensors": 0,
+        "image_only_omics_swap_error": 0.0,
+        "text_query_real_input_perturbation": null,
+        "matched_loss_anchors": 271
+      }
+    ],
+    "matched_negative_support": {
+      "mode": "matched",
+      "anchors": 272,
+      "anchors_with_negative": 271,
+      "candidate_negative_pairs": 5950
+    },
+    "wrong_positive_mapping": {
+      "anchors": 272,
+      "self_or_same_patient_pairs": 0,
+      "same_stage": 272,
+      "same_missing_pattern": 272,
+      "same_cohort": 270,
+      "exact_all_three": 270,
+      "fallback_anchors": 2,
+      "preference_order": [
+        "stage",
+        "missing_pattern",
+        "cohort"
+      ],
+      "scope_is_callers_current_train_partition_required": true
+    },
+    "GPU_peak_allocated_bytes": 12777426432,
+    "seconds": 14.115371853113174
+  },
+  "data_audit_sha256": "3458c678fb8a02efa2ee46855cad09aff541af02c70e8e5cc8bace6ea3f9cca2",
+  "alignment_audit_sha256": "71115d98ce969bdb3737ce5059057a8c2383aa3a123000801fca735129c00efc",
+  "P2_DSS_authorized": false,
+  "P2_anchor_rebuild": "DEFERRED_NO_REAL_DSS_FIT_THIS_ROUND",
+  "scientific_mechanism_supported": false
+}

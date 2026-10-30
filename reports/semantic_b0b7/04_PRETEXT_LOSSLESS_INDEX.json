@@ -1,0 +1,1683 @@
+{
+  "all_original_json_fields_preserved": true,
+  "canonical_json_bytes": 7706904,
+  "canonical_json_sha256": "fce3c0b3f35b7c4b7f789793bf09ad9762257d28a1772a93b9a75935cf2e0541",
+  "encoding": "ordinary-structured-json-cells",
+  "no_patient_array_or_weight_conversion_performed": true,
+  "original_whitespace_and_utf8_bytes_preserved": true,
+  "parts": [
+    {
+      "arm": "B3",
+      "bytes": 1110959,
+      "cell_canonical_sha256": "01160d10cf946454e151b0569fa0eee78182910e6a6fb213392383819a7f84e4",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B3_seed031.json",
+      "ordinal": 0,
+      "seed": 31,
+      "sha256": "e22ea4c14422801a55248d72bed9396eb8f83b26ad86bb86153efbed5d15bfc3"
+    },
+    {
+      "arm": "B3",
+      "bytes": 1111517,
+      "cell_canonical_sha256": "b2bab5bd472824717cce0b59ad13fc13cb41dbeda17b2065b85b8de8ff91642d",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B3_seed047.json",
+      "ordinal": 1,
+      "seed": 47,
+      "sha256": "ab981af757178c32a119521650b737c4faee0971d825c9b693f25a5d9db4d6c2"
+    },
+    {
+      "arm": "B3",
+      "bytes": 1111120,
+      "cell_canonical_sha256": "86b262a5b45ca21aa85c2f6ef4812cabf9192faaf39efccd0a5f9678df046a46",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B3_seed083.json",
+      "ordinal": 2,
+      "seed": 83,
+      "sha256": "bcfdcdfd46614e3149b3bbf609cfc71c8025023290215e30844f83f02a74bbdc"
+    },
+    {
+      "arm": "B4",
+      "bytes": 1111114,
+      "cell_canonical_sha256": "2cdb7a5020acb3e00ec721adc54bcf7de25a17449e894b136f778ffbf7ca5c6a",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B4_seed031.json",
+      "ordinal": 3,
+      "seed": 31,
+      "sha256": "f2824f094852bb439db99ba1efbcceb7cd957519a2ce4339c2273015fb01c4de"
+    },
+    {
+      "arm": "B4",
+      "bytes": 1110684,
+      "cell_canonical_sha256": "e271a4d38b3dd52e63d57526a31ef655a9b6e950dace700f765f83519bee6f9d",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B4_seed047.json",
+      "ordinal": 4,
+      "seed": 47,
+      "sha256": "232906bdee5bbee1d044229985ab21e5889fbe0d92d3aa78539024ec62b00346"
+    },
+    {
+      "arm": "B4",
+      "bytes": 1110300,
+      "cell_canonical_sha256": "63d02256906b6bcb9f41346bf34c444dfdf59755a5c1c4231ef5d7a260a5cfaf",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B4_seed083.json",
+      "ordinal": 5,
+      "seed": 83,
+      "sha256": "279fb23bb27d2d2dce44c66a716316aed01a11cad7439f1e439fc7296d8cd0d6"
+    },
+    {
+      "arm": "B6a",
+      "bytes": 1111529,
+      "cell_canonical_sha256": "3a9e449410202503cefad457dd3860a822292810208f04e520dafcd006603176",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B6a_seed031.json",
+      "ordinal": 6,
+      "seed": 31,
+      "sha256": "8e4d34848db8bdd77c2c7c7a066e9f122205c2af8c13d1b05f11405eaf76dc9c"
+    },
+    {
+      "arm": "B6a",
+      "bytes": 1110869,
+      "cell_canonical_sha256": "2bed655aafd958a4cfccc7230dfa92d0b9886539cdfdb1169489703373feac7d",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B6a_seed047.json",
+      "ordinal": 7,
+      "seed": 47,
+      "sha256": "30917949653bbfcf6efe241d07bb7b059b663db3c0ed79da4dc59b60552d9c7a"
+    },
+    {
+      "arm": "B6a",
+      "bytes": 1110961,
+      "cell_canonical_sha256": "4750eecd26c34cae989c8348cb802d4fd01df1e238036bef7ba62c7fb42120e8",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B6a_seed083.json",
+      "ordinal": 8,
+      "seed": 83,
+      "sha256": "dfa395dfa669ee28878bd1c3203e2a19e80d99a0fe3dcee651635ccaf02d81c5"
+    },
+    {
+      "arm": "B4_MAP_SHUFFLE",
+      "bytes": 1111329,
+      "cell_canonical_sha256": "57e84980027d7fb333d7729a97aad928ab5af8916b19af53a765eefcc37a0c25",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B4_MAP_SHUFFLE_seed031.json",
+      "ordinal": 9,
+      "seed": 31,
+      "sha256": "e547a9cfc14ff89124cdd8cc7cdc6dbe559d1c029cdaea855717edede9caa934"
+    },
+    {
+      "arm": "B4_MAP_SHUFFLE",
+      "bytes": 1110636,
+      "cell_canonical_sha256": "f6207068c6ed250587e12d31df04c39c1bb721fe8f04bdf84c31d6798454d47f",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B4_MAP_SHUFFLE_seed047.json",
+      "ordinal": 10,
+      "seed": 47,
+      "sha256": "f8cdfd3a84ba5d6aedc3d56d23221d22098e045800326e10c77d96f906089f58"
+    },
+    {
+      "arm": "B4_MAP_SHUFFLE",
+      "bytes": 1110378,
+      "cell_canonical_sha256": "1a5043e8c728c10deee44c3ec6c8ce0cd40e66d747c03c53a4204e6d691ff321",
+      "file": "04_PRETEXT_LOSSLESS_CELL_B4_MAP_SHUFFLE_seed083.json",
+      "ordinal": 11,
+      "seed": 83,
+      "sha256": "0c87081609044adc0dbc46e1d5d833d36fddf3cb506829e764c21f06b287ab84"
+    }
+  ],
+  "publisher_can_apply_original_guard_to_all_structured_fields": true,
+  "restore_function": "scripts/semantic_b0b7_report.py:restore_public_report",
+  "schema": "semantic_b0b7_public_lossless_index_v1",
+  "serialization": {
+    "allow_nan": false,
+    "encoding": "utf-8",
+    "ensure_ascii": false,
+    "indent": 2,
+    "original_native_sort_keys": true,
+    "reconstruct_original_key_order_then_dump_sort_keys": false,
+    "terminal_newline": "LF"
+  },
+  "source_key_order_overrides": [
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        0,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        1,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        2,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        3,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        4,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        5,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        6,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        7,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        8,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        9,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        10,
+        "checkpoint_validation"
+      ]
+    },
+    {
+      "keys": [
+        "50",
+        "100",
+        "200",
+        "400"
+      ],
+      "path": [
+        "cells",
+        11,
+        "checkpoint_validation"
+      ]
+    }
+  ],
+  "source_utf8_bytes": 14079334,
+  "source_utf8_sha256": "2a368d408726344fbeebf5b264ac0319c879c6b320267971fbaa198f633b1cb2",
+  "source_without_cells": {
+    "P2_started": false,
+    "actual_checkpoint_replays": 48,
+    "all_twelve_extended": false,
+    "baseline_metrics": {
+      "CLINICAL": {
+        "coverage_fraction": 1.0,
+        "huber_definition": "within-patient mean over measured programs, then equal patients",
+        "macro_program_pearson": 0.06757534459318516,
+        "macro_program_spearman": 0.050070741759961665,
+        "measured_target_cells": 6850,
+        "patient_equal_masked_huber": 0.053677730263317514,
+        "patient_equal_profile_pearson_secondary": 0.07026766106935413,
+        "patients": 137,
+        "patients_with_measurement": 137,
+        "pearson_definition": "each program across unique patients, then equal supported-program mean",
+        "per_program": [
+          {
+            "patients": 137,
+            "pearson": 0.010337177664518098,
+            "program_index": 0,
+            "spearman": 0.03380622849760564
+          },
+          {
+            "patients": 137,
+            "pearson": 0.0059340212896999405,
+            "program_index": 1,
+            "spearman": 0.00715234971665364
+          },
+          {
+            "patients": 137,
+            "pearson": 0.024898494096173885,
+            "program_index": 2,
+            "spearman": 0.0011177734141197694
+          },
+          {
+            "patients": 137,
+            "pearson": 0.1513233684316316,
+            "program_index": 3,
+            "spearman": 0.1939138521221808
+          },
+          {
+            "patients": 137,
+            "pearson": 0.1824228500825231,
+            "program_index": 4,
+            "spearman": 0.16625654418032798
+          },
+          {
+            "patients": 137,
+            "pearson": 0.08700377682785085,
+            "program_index": 5,
+            "spearman": 0.05817322221417899
+          },
+          {
+            "patients": 137,
+            "pearson": 0.0331066984220502,
+            "program_index": 6,
+            "spearman": -0.026616541881941735
+          },
+          {
+            "patients": 137,
+            "pearson": 0.008401545450417592,
+            "program_index": 7,
+            "spearman": -0.013821653302361995
+          },
+          {
+            "patients": 137,
+            "pearson": 0.1028195678541204,
+            "program_index": 8,
+            "spearman": 0.0870719820481231
+          },
+          {
+            "patients": 137,
+            "pearson": -0.02103572027229704,
+            "program_index": 9,
+            "spearman": -0.018185403374186563
+          },
+          {
+            "patients": 137,
+            "pearson": 0.020299751198996772,
+            "program_index": 10,
+            "spearman": 0.03777794112982243
+          },
+          {
+            "patients": 137,
+            "pearson": 0.14042970592099546,
+            "program_index": 11,
+            "spearman": 0.07291429665466873
+          },
+          {
+            "patients": 137,
+            "pearson": -0.07187712936043551,
+            "program_index": 12,
+            "spearman": -0.0894685442533444
+          },
+          {
+            "patients": 137,
+            "pearson": 0.11271230269522652,
+            "program_index": 13,
+            "spearman": 0.15728402063692395
+          },
+          {
+            "patients": 137,
+            "pearson": 0.1951119389308827,
+            "program_index": 14,
+            "spearman": 0.029428477088652216
+          },
+          {
+            "patients": 137,
+            "pearson": 0.08268626235138314,
+            "program_index": 15,
+            "spearman": -0.05236966797427112
+          },
+          {
+            "patients": 137,
+            "pearson": 0.007216269634662596,
+            "program_index": 16,
+            "spearman": 0.06307835732165237
+          },
+          {
+            "patients": 137,
+            "pearson": -0.032865863702340674,
+            "program_index": 17,
+            "spearman": -0.07225156669723654
+          },
+          {
+            "patients": 137,
+            "pearson": 0.08129671304250378,
+            "program_index": 18,
+            "spearman": 0.1139008775431857
+          },
+          {
+            "patients": 137,
+            "pearson": 0.26452344784410486,
+            "program_index": 19,
+            "spearman": 0.21871955440212473
+          },
+          {
+            "patients": 137,
+            "pearson": 0.06989149679712447,
+            "program_index": 20,
+            "spearman": 0.06736276648308014
+          },
+          {
+            "patients": 137,
+            "pearson": 0.09687688216325613,
+            "program_index": 21,
+            "spearman": 0.07552787958538718
+          },
+          {
+            "patients": 137,
+            "pearson": 0.022357179901220506,
+            "program_index": 22,
+            "spearman": 0.019058153388551477
+          },
+          {
+            "patients": 137,
+            "pearson": 0.04092962175257283,
+            "program_index": 23,
+            "spearman": 0.0009800935990194222
+          },
+          {
+            "patients": 137,
+            "pearson": -0.03510903604260299,
+            "program_index": 24,
+            "spearman": -0.020430284427178667
+          },
+          {
+            "patients": 137,
+            "pearson": 0.05670227810012068,
+            "program_index": 25,
+            "spearman": 0.059253658729288484
+          },
+          {
+            "patients": 137,
+            "pearson": 0.055309386716663765,
+            "program_index": 26,
+            "spearman": 0.027435620103979395
+          },
+          {
+            "patients": 137,
+            "pearson": 0.12203257869205031,
+            "program_index": 27,
+            "spearman": 0.032452765908483575
+          },
+          {
+            "patients": 137,
+            "pearson": 0.05425083727263038,
+            "program_index": 28,
+            "spearman": 0.08142710962900884
+          },
+          {
+            "patients": 137,
+            "pearson": 0.15747731241035642,
+            "program_index": 29,
+            "spearman": 0.08737301079639334
+          },
+          {
+            "patients": 137,
+            "pearson": 0.047775610479048866,
+            "program_index": 30,
+            "spearman": 0.051163219425001974
+          },
+          {
+            "patients": 137,
+            "pearson": 0.05277129020173737,
+            "program_index": 31,
+            "spearman": 0.013840321751867125
+          },
+          {
+            "patients": 137,
+            "pearson": -0.009928136829185927,
+            "program_index": 32,
+            "spearman": -0.04024684357687613
+          },
+          {
+            "patients": 137,
+            "pearson": 0.22663929823818224,
+            "program_index": 33,
+            "spearman": 0.23301491961067947
+          },
+          {
+            "patients": 137,
+            "pearson": 0.1947983028811184,
+            "program_index": 34,
+            "spearman": 0.16476073466372926
+          },
+          {
+            "patients": 137,
+            "pearson": 0.09770753468373242,
+            "program_index": 35,
+            "spearman": 0.07087243499004493
+          },
+          {
+            "patients": 137,
+            "pearson": 0.06248855347085835,
+            "program_index": 36,
+            "spearman": -0.009716927967421128
+          },
+          {
+            "patients": 137,
+            "pearson": -0.03051943557788361,
+            "program_index": 37,
+            "spearman": -0.025601444940100193
+          },
+          {
+            "patients": 137,
+            "pearson": 0.02902949828927701,
+            "program_index": 38,
+            "spearman": 0.01794738064299613
+          },
+          {
+            "patients": 137,
+            "pearson": 0.06799525227966924,
+            "program_index": 39,
+            "spearman": -0.006197925235703774
+          },
+          {
+            "patients": 137,
+            "pearson": -0.034255479240717306,
+            "program_index": 40,
+            "spearman": -0.029428477088652216
+          },
+          {
+            "patients": 137,
+            "pearson": 0.03298411738972044,
+            "program_index": 41,
+            "spearman": 0.07270194304154784
+          },
+          {
+            "patients": 137,
+            "pearson": 0.02099520989705629,
+            "program_index": 42,
+            "spearman": 0.03646648255208693
+          },
+          {
+            "patients": 137,
+            "pearson": 0.10255974399558013,
+            "program_index": 43,
+            "spearman": 0.031236983134461868
+          },
+          {
+            "patients": 137,
+            "pearson": -0.05986673983293693,
+            "program_index": 44,
+            "spearman": -0.07994530144953901
+          },
+          {
+            "patients": 137,
+            "pearson": 0.08147296253772361,
+            "program_index": 45,
+            "spearman": 0.06561493289816217
+          },
+          {
+            "patients": 137,
+            "pearson": 0.14948701351557908,
+            "program_index": 46,
+            "spearman": 0.1718757474813727
+          },
+          {
+            "patients": 137,
+            "pearson": 0.06009127821189539,
+            "program_index": 47,
+            "spearman": 0.06189291077807651
+          },
+          {
+            "patients": 137,
+            "pearson": 0.2609063338316949,
+            "program_index": 48,
+            "spearman": 0.2682096140402293
+          },
+          {
+            "patients": 137,
+            "pearson": 0.0001713050710470307,
+            "program_index": 49,
+            "spearman": 0.036753509963228334
+          }
+        ],
+        "profile_pearson_secondary_definition": "within-patient across-program profile correlation, distinct from program Pearson",
+        "valid_pearson_programs": 50
+      },
+      "PATHOLOGY": {
+        "coverage_fraction": 1.0,
+        "huber_definition": "within-patient mean over measured programs, then equal patients",
+        "macro_program_pearson": 0.2400919828422388,
+        "macro_program_spearman": 0.23482377209849348,
+        "measured_target_cells": 6850,
+        "patient_equal_masked_huber": 0.0922060335851028,
+        "patient_equal_profile_pearson_secondary": 0.2334004053377317,
+        "patients": 137,
+        "patients_with_measurement": 137,
+        "pearson_definition": "each program across unique patients, then equal supported-program mean",
+        "per_program": [
+          {
+            "patients": 137,
+            "pearson": 0.19582278785081483,
+            "program_index": 0,
+            "spearman": 0.16886795975133945
+          },
+          {
+            "patients": 137,
+            "pearson": 0.37595165285764365,
+            "program_index": 1,
+            "spearman": 0.39695614837493226
+          },
+          {
+            "patients": 137,
+            "pearson": 0.005707155919146949,
+            "program_index": 2,
+            "spearman": 0.013123751563462576
+          },
+          {
+            "patients": 137,
+            "pearson": 0.30500137499319296,
+            "program_index": 3,
+            "spearman": 0.3050478839584072
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3533273853135777,
+            "program_index": 4,
+            "spearman": 0.3204864935501334
+          },
+          {
+            "patients": 137,
+            "pearson": 0.34614774428443,
+            "program_index": 5,
+            "spearman": 0.2731159109153023
+          },
+          {
+            "patients": 137,
+            "pearson": 0.27730042629683677,
+            "program_index": 6,
+            "spearman": 0.3115770903728041
+          },
+          {
+            "patients": 137,
+            "pearson": 0.19511187303299923,
+            "program_index": 7,
+            "spearman": 0.13405174827785762
+          },
+          {
+            "patients": 137,
+            "pearson": 0.21005306767432755,
+            "program_index": 8,
+            "spearman": 0.20703511490283197
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3667459924642104,
+            "program_index": 9,
+            "spearman": 0.3336755838482648
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3805634735167164,
+            "program_index": 10,
+            "spearman": 0.38638527451602667
+          },
+          {
+            "patients": 137,
+            "pearson": 0.22684545977233084,
+            "program_index": 11,
+            "spearman": 0.25265088580656003
+          },
+          {
+            "patients": 137,
+            "pearson": 0.24623278963154643,
+            "program_index": 12,
+            "spearman": 0.24390016241342616
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3270500536240498,
+            "program_index": 13,
+            "spearman": 0.33736722235704814
+          },
+          {
+            "patients": 137,
+            "pearson": 0.20086590406606594,
+            "program_index": 14,
+            "spearman": 0.16205873018836223
+          },
+          {
+            "patients": 137,
+            "pearson": 0.18634323638930328,
+            "program_index": 15,
+            "spearman": 0.19549349412884795
+          },
+          {
+            "patients": 137,
+            "pearson": 0.1918571334919238,
+            "program_index": 16,
+            "spearman": 0.1815390072245972
+          },
+          {
+            "patients": 137,
+            "pearson": 0.20928209636533165,
+            "program_index": 17,
+            "spearman": 0.2042815539417925
+          },
+          {
+            "patients": 137,
+            "pearson": 0.12871836627529876,
+            "program_index": 18,
+            "spearman": 0.09378908656448932
+          },
+          {
+            "patients": 137,
+            "pearson": 0.36152930126687144,
+            "program_index": 19,
+            "spearman": 0.34134355106688813
+          },
+          {
+            "patients": 137,
+            "pearson": 0.16977712252728924,
+            "program_index": 20,
+            "spearman": 0.1700533910803293
+          },
+          {
+            "patients": 137,
+            "pearson": 0.32334184015564366,
+            "program_index": 21,
+            "spearman": 0.3148253588963354
+          },
+          {
+            "patients": 137,
+            "pearson": 0.35425904900650534,
+            "program_index": 22,
+            "spearman": 0.34494184852614485
+          },
+          {
+            "patients": 137,
+            "pearson": 0.336246553410865,
+            "program_index": 23,
+            "spearman": 0.35968506729889665
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3655690494902315,
+            "program_index": 24,
+            "spearman": 0.371548714693748
+          },
+          {
+            "patients": 137,
+            "pearson": 0.16615933962579552,
+            "program_index": 25,
+            "spearman": 0.23834636996658387
+          },
+          {
+            "patients": 137,
+            "pearson": 0.23573647068709447,
+            "program_index": 26,
+            "spearman": 0.3328075120876659
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3174940241861332,
+            "program_index": 27,
+            "spearman": 0.28573562081132037
+          },
+          {
+            "patients": 137,
+            "pearson": 0.29684589248117443,
+            "program_index": 28,
+            "spearman": 0.26676871954748255
+          },
+          {
+            "patients": 137,
+            "pearson": 0.15343795708731064,
+            "program_index": 29,
+            "spearman": 0.14601340377471203
+          },
+          {
+            "patients": 137,
+            "pearson": 0.26717065170050364,
+            "program_index": 30,
+            "spearman": 0.23280657867717058
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3411227063633222,
+            "program_index": 31,
+            "spearman": 0.2988640394272593
+          },
+          {
+            "patients": 137,
+            "pearson": 0.35280601820270446,
+            "program_index": 32,
+            "spearman": 0.369574551496257
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3737057843502643,
+            "program_index": 33,
+            "spearman": 0.3100929676853286
+          },
+          {
+            "patients": 137,
+            "pearson": 0.25233882892509274,
+            "program_index": 34,
+            "spearman": 0.21632721638322097
+          },
+          {
+            "patients": 137,
+            "pearson": 0.265849423359906,
+            "program_index": 35,
+            "spearman": 0.21392368435790693
+          },
+          {
+            "patients": 137,
+            "pearson": 0.2119957563321567,
+            "program_index": 36,
+            "spearman": 0.24794649691041123
+          },
+          {
+            "patients": 137,
+            "pearson": 0.27291490860031414,
+            "program_index": 37,
+            "spearman": 0.325988948419736
+          },
+          {
+            "patients": 137,
+            "pearson": 0.11706917643848964,
+            "program_index": 38,
+            "spearman": 0.10196576250303359
+          },
+          {
+            "patients": 137,
+            "pearson": 0.03664690147091563,
+            "program_index": 39,
+            "spearman": 0.064736684899285
+          },
+          {
+            "patients": 137,
+            "pearson": -0.035153425447863595,
+            "program_index": 40,
+            "spearman": -0.0643073160714619
+          },
+          {
+            "patients": 137,
+            "pearson": 0.11337514399021335,
+            "program_index": 41,
+            "spearman": 0.15688296899210333
+          },
+          {
+            "patients": 137,
+            "pearson": 0.10144140756410008,
+            "program_index": 42,
+            "spearman": 0.12307950790598689
+          },
+          {
+            "patients": 137,
+            "pearson": 0.29318885272628353,
+            "program_index": 43,
+            "spearman": 0.2664700281889969
+          },
+          {
+            "patients": 137,
+            "pearson": 0.2797378479724956,
+            "program_index": 44,
+            "spearman": 0.2968058692851942
+          },
+          {
+            "patients": 137,
+            "pearson": 0.24725507125482063,
+            "program_index": 45,
+            "spearman": 0.27084305635932565
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3025069435627212,
+            "program_index": 46,
+            "spearman": 0.291653443351317
+          },
+          {
+            "patients": 137,
+            "pearson": 0.01344936971416222,
+            "program_index": 47,
+            "spearman": -0.009847480725073271
+          },
+          {
+            "patients": 137,
+            "pearson": 0.2216425988557299,
+            "program_index": 48,
+            "spearman": 0.1893889894897978
+          },
+          {
+            "patients": 137,
+            "pearson": 0.16621060243094415,
+            "program_index": 49,
+            "spearman": 0.14451994698228388
+          }
+        ],
+        "profile_pearson_secondary_definition": "within-patient across-program profile correlation, distinct from program Pearson",
+        "valid_pearson_programs": 50
+      },
+      "PATHOLOGY_CLINICAL": {
+        "coverage_fraction": 1.0,
+        "huber_definition": "within-patient mean over measured programs, then equal patients",
+        "macro_program_pearson": 0.24716534823033856,
+        "macro_program_spearman": 0.22629296021804468,
+        "measured_target_cells": 6850,
+        "patient_equal_masked_huber": 0.09316390280729116,
+        "patient_equal_profile_pearson_secondary": 0.22736758034874394,
+        "patients": 137,
+        "patients_with_measurement": 137,
+        "pearson_definition": "each program across unique patients, then equal supported-program mean",
+        "per_program": [
+          {
+            "patients": 137,
+            "pearson": 0.17624626021583228,
+            "program_index": 0,
+            "spearman": 0.14023559280900552
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3845755498036525,
+            "program_index": 1,
+            "spearman": 0.357631564209308
+          },
+          {
+            "patients": 137,
+            "pearson": 0.07204563408796574,
+            "program_index": 2,
+            "spearman": 0.06760225511975655
+          },
+          {
+            "patients": 137,
+            "pearson": 0.30217507233178753,
+            "program_index": 3,
+            "spearman": 0.3066766852726492
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3523533002986935,
+            "program_index": 4,
+            "spearman": 0.2988267030074486
+          },
+          {
+            "patients": 137,
+            "pearson": 0.28385045440439166,
+            "program_index": 5,
+            "spearman": 0.20837455896354098
+          },
+          {
+            "patients": 137,
+            "pearson": 0.30657610059007656,
+            "program_index": 6,
+            "spearman": 0.29761793641607703
+          },
+          {
+            "patients": 137,
+            "pearson": 0.1384414091617587,
+            "program_index": 7,
+            "spearman": 0.08721787667780535
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3200535242758351,
+            "program_index": 8,
+            "spearman": 0.2679214815091381
+          },
+          {
+            "patients": 137,
+            "pearson": 0.32765149280072886,
+            "program_index": 9,
+            "spearman": 0.2942063210558739
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3913488201683793,
+            "program_index": 10,
+            "spearman": 0.37696716261877644
+          },
+          {
+            "patients": 137,
+            "pearson": 0.20783746128209377,
+            "program_index": 11,
+            "spearman": 0.22270241006589878
+          },
+          {
+            "patients": 137,
+            "pearson": 0.19606135066819225,
+            "program_index": 12,
+            "spearman": 0.22411185991375282
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3166809104440852,
+            "program_index": 13,
+            "spearman": 0.32057050049470753
+          },
+          {
+            "patients": 137,
+            "pearson": 0.21593216251255362,
+            "program_index": 14,
+            "spearman": 0.16202606082102786
+          },
+          {
+            "patients": 137,
+            "pearson": 0.2169832905732328,
+            "program_index": 15,
+            "spearman": 0.19339332051449584
+          },
+          {
+            "patients": 137,
+            "pearson": 0.16933261757823903,
+            "program_index": 16,
+            "spearman": 0.15978120857990927
+          },
+          {
+            "patients": 137,
+            "pearson": 0.16992337349373618,
+            "program_index": 17,
+            "spearman": 0.1929732857916254
+          },
+          {
+            "patients": 137,
+            "pearson": 0.1696859930262068,
+            "program_index": 18,
+            "spearman": 0.15097448055705937
+          },
+          {
+            "patients": 137,
+            "pearson": 0.32139435786599796,
+            "program_index": 19,
+            "spearman": 0.28944592753000914
+          },
+          {
+            "patients": 137,
+            "pearson": 0.18374862543790757,
+            "program_index": 20,
+            "spearman": 0.1785054231149775
+          },
+          {
+            "patients": 137,
+            "pearson": 0.34065516189324424,
+            "program_index": 21,
+            "spearman": 0.33650848470140193
+          },
+          {
+            "patients": 137,
+            "pearson": 0.35557497170019964,
+            "program_index": 22,
+            "spearman": 0.3286071648589617
+          },
+          {
+            "patients": 137,
+            "pearson": 0.338586267076829,
+            "program_index": 23,
+            "spearman": 0.33751656803629093
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3701487463880467,
+            "program_index": 24,
+            "spearman": 0.3644874642970485
+          },
+          {
+            "patients": 137,
+            "pearson": 0.23690593606693044,
+            "program_index": 25,
+            "spearman": 0.21090876845819254
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3135479388861728,
+            "program_index": 26,
+            "spearman": 0.29388429443500663
+          },
+          {
+            "patients": 137,
+            "pearson": 0.2994983507644558,
+            "program_index": 27,
+            "spearman": 0.2381036832378143
+          },
+          {
+            "patients": 137,
+            "pearson": 0.31295623219750807,
+            "program_index": 28,
+            "spearman": 0.26763679130808143
+          },
+          {
+            "patients": 137,
+            "pearson": 0.14275216483320438,
+            "program_index": 29,
+            "spearman": 0.10616144267926148
+          },
+          {
+            "patients": 137,
+            "pearson": 0.31007000821643504,
+            "program_index": 30,
+            "spearman": 0.2739466462560905
+          },
+          {
+            "patients": 137,
+            "pearson": 0.32690962294009335,
+            "program_index": 31,
+            "spearman": 0.270502361528553
+          },
+          {
+            "patients": 137,
+            "pearson": 0.36502124688349447,
+            "program_index": 32,
+            "spearman": 0.36805775944144714
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3730771935466409,
+            "program_index": 33,
+            "spearman": 0.2815679429499505
+          },
+          {
+            "patients": 137,
+            "pearson": 0.2753115462244963,
+            "program_index": 34,
+            "spearman": 0.22698209718670076
+          },
+          {
+            "patients": 137,
+            "pearson": 0.2734173003671954,
+            "program_index": 35,
+            "spearman": 0.24487557638098081
+          },
+          {
+            "patients": 137,
+            "pearson": 0.23102797610971568,
+            "program_index": 36,
+            "spearman": 0.2603561894449941
+          },
+          {
+            "patients": 137,
+            "pearson": 0.20721665555478,
+            "program_index": 37,
+            "spearman": 0.25491440625758394
+          },
+          {
+            "patients": 137,
+            "pearson": 0.11165770840396906,
+            "program_index": 38,
+            "spearman": 0.07430880952825433
+          },
+          {
+            "patients": 137,
+            "pearson": 0.07467354709613512,
+            "program_index": 39,
+            "spearman": 0.06391061661097316
+          },
+          {
+            "patients": 137,
+            "pearson": 0.02694324082409899,
+            "program_index": 40,
+            "spearman": -0.002454869602553811
+          },
+          {
+            "patients": 137,
+            "pearson": 0.09229092702938865,
+            "program_index": 41,
+            "spearman": 0.1174510426195232
+          },
+          {
+            "patients": 137,
+            "pearson": 0.11397417154424068,
+            "program_index": 42,
+            "spearman": 0.0983021263091082
+          },
+          {
+            "patients": 137,
+            "pearson": 0.33352032706283374,
+            "program_index": 43,
+            "spearman": 0.31199712509567457
+          },
+          {
+            "patients": 137,
+            "pearson": 0.3159660959884959,
+            "program_index": 44,
+            "spearman": 0.3157681034965557
+          },
+          {
+            "patients": 137,
+            "pearson": 0.29704038500312324,
+            "program_index": 45,
+            "spearman": 0.33003061586424476
+          },
+          {
+            "patients": 137,
+            "pearson": 0.2903871127441002,
+            "program_index": 46,
+            "spearman": 0.25009800810200306
+          },
+          {
+            "patients": 137,
+            "pearson": 0.032815935534773875,
+            "program_index": 47,
+            "spearman": -0.005339108032930722
+          },
+          {
+            "patients": 137,
+            "pearson": 0.23150535273990544,
+            "program_index": 48,
+            "spearman": 0.18404988145686707
+          },
+          {
+            "patients": 137,
+            "pearson": 0.141917526875076,
+            "program_index": 49,
+            "spearman": 0.11374540295331081
+          }
+        ],
+        "profile_pearson_secondary_definition": "within-patient across-program profile correlation, distinct from program Pearson",
+        "valid_pearson_programs": 50
+      },
+      "TRAIN_PATIENT_MEDIAN": {
+        "coverage_fraction": 1.0,
+        "huber_definition": "within-patient mean over measured programs, then equal patients",
+        "macro_program_pearson": null,
+        "macro_program_spearman": null,
+        "measured_target_cells": 6850,
+        "patient_equal_masked_huber": 0.044910104809886345,
+        "patient_equal_profile_pearson_secondary": 0.07586300249211118,
+        "patients": 137,
+        "patients_with_measurement": 137,
+        "pearson_definition": "each program across unique patients, then equal supported-program mean",
+        "per_program": [
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 0,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 1,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 2,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 3,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 4,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 5,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 6,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 7,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 8,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 9,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 10,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 11,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 12,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 13,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 14,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 15,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 16,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 17,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 18,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 19,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 20,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 21,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 22,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 23,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 24,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 25,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 26,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 27,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 28,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 29,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 30,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 31,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 32,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 33,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 34,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 35,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 36,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 37,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 38,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 39,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 40,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 41,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 42,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 43,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 44,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 45,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 46,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 47,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 48,
+            "spearman": null
+          },
+          {
+            "patients": 137,
+            "pearson": null,
+            "program_index": 49,
+            "spearman": null
+          }
+        ],
+        "profile_pearson_secondary_definition": "within-patient across-program profile correlation, distinct from program Pearson",
+        "valid_pearson_programs": 0
+      }
+    },
+    "budget_limited": false,
+    "common_extension": {
+      "complete_cells": 12,
+      "completed400_receipts": [
+        {
+          "arm": "B3",
+          "seed": 31,
+          "sha256": "33550c9139ff0e0d7a7e0af47b679281e2e1bb934533577f87994d75a3c7863e"
+        },
+        {
+          "arm": "B3",
+          "seed": 47,
+          "sha256": "c671bfeb0522a353fd53cf075d557462f9ce51bac63b09fcd007e6919a925a51"
+        },
+        {
+          "arm": "B3",
+          "seed": 83,
+          "sha256": "9def8913627547b49b7515561e97692e5d493f76238060efc49222abf5e22fa1"
+        },
+        {
+          "arm": "B4",
+          "seed": 31,
+          "sha256": "59ff8a2cd1ac696287b648914579cabb8ecc97ed721fe159b2d5218859a5ba92"
+        },
+        {
+          "arm": "B4",
+          "seed": 47,
+          "sha256": "4a73e43173745343a8704129cbc625014b56b79bc0c6a9619b161c2ee7d106ea"
+        },
+        {
+          "arm": "B4",
+          "seed": 83,
+          "sha256": "e463a387ec2dc08e2c5b1183ff4339629f84bc90b310b02e6d980648845defcd"
+        },
+        {
+          "arm": "B6a",
+          "seed": 31,
+          "sha256": "2152522aa37e4f1c16110ef0cfffb06b4663ea942a51c348bafeffebdf308a6c"
+        },
+        {
+          "arm": "B6a",
+          "seed": 47,
+          "sha256": "0f04d0aba8da82f03de75da7f79c17a16ac12801ea2ad2b620614be9d49db810"
+        },
+        {
+          "arm": "B6a",
+          "seed": 83,
+          "sha256": "89b254d71a000517a97e3dfd9a73c9aeccbae0713a741d46625dec3e7f5e42e7"
+        },
+        {
+          "arm": "B4_MAP_SHUFFLE",
+          "seed": 31,
+          "sha256": "0eb9ecb2c411e6b61443f7e4bf34a590a8439156246a629d09061fb1088fe937"
+        },
+        {
+          "arm": "B4_MAP_SHUFFLE",
+          "seed": 47,
+          "sha256": "c5fb65a590d6642fdb1632b19498e70a738175eb41fc06aa96a50cebe7233dbb"
+        },
+        {
+          "arm": "B4_MAP_SHUFFLE",
+          "seed": 83,
+          "sha256": "93c93646db35e7e5931babe6c5a4b6a9bf29c8a194df397aba11c4cabfd8fdff"
+        }
+      ],
+      "extension_required": false,
+      "frozen_sources": {
+        "configs/phase6a_titan_crc_morphology_concepts.json": "3fc4ae7aeb34ec68f37a9667b1aa95c1c9a1ee479913dc7e6a6ca67b9f493d69",
+        "configs/semantic_b0b7/allowed_relations_v1.json": "cc086b414bb380706d24bfa1f7f94198975300ed60782c7c6b366c3765579d1a",
+        "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+        "scripts/semantic_b0b7_audit.py": "05fc683eec345084303c2bd474047c5f403a316ee75cad1cfd33aebb3a098fd1",
+        "scripts/semantic_b0b7_gate.py": "4d4b2d18b6935138beff1356367a3580d9f986bea6915bdae010c3753f583754",
+        "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+        "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+        "scripts/semantic_b0b7_titan_worker.py": "5831abcc92065efd684f53728262c0254f70ccb7041190f85b67a2bf5417fc55",
+        "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+        "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+        "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+        "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+        "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10"
+      },
+      "gate_sha256": "2282e18cbc697f352ac75923376e9db7460ec19c5d151d2cbdd08ae27de729cc",
+      "improved200to400_cells": 0,
+      "input_sha256": "93d2419a95c129e72e360fc24748e4fef6c909a01830208ecef5fc2d7d0b1b6c",
+      "not_a_DSS_selection_rule": true,
+      "patients": 409,
+      "rule": "if at least 6/12 cells have strictly lower held-out auxiliary loss at400 than200, extend ALL12 once to800",
+      "schema": "semantic_b0b7_p1_common_extension_v1",
+      "train_patients": 272,
+      "valid_patients": 137
+    },
+    "decoder_fits": 3,
+    "dss_models_fitted": 0,
+    "dss_scores_selected": 0,
+    "frozen_sources": {
+      "configs/phase6a_titan_crc_morphology_concepts.json": "3fc4ae7aeb34ec68f37a9667b1aa95c1c9a1ee479913dc7e6a6ca67b9f493d69",
+      "configs/semantic_b0b7/allowed_relations_v1.json": "cc086b414bb380706d24bfa1f7f94198975300ed60782c7c6b366c3765579d1a",
+      "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+      "scripts/semantic_b0b7_audit.py": "05fc683eec345084303c2bd474047c5f403a316ee75cad1cfd33aebb3a098fd1",
+      "scripts/semantic_b0b7_gate.py": "4d4b2d18b6935138beff1356367a3580d9f986bea6915bdae010c3753f583754",
+      "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+      "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+      "scripts/semantic_b0b7_titan_worker.py": "5831abcc92065efd684f53728262c0254f70ccb7041190f85b67a2bf5417fc55",
+      "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+      "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+      "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+      "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+      "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10"
+    },
+    "gate_sha256": "2282e18cbc697f352ac75923376e9db7460ec19c5d151d2cbdd08ae27de729cc",
+    "input_sha256": "93d2419a95c129e72e360fc24748e4fef6c909a01830208ecef5fc2d7d0b1b6c",
+    "mechanism_claim": "P1 auxiliary correspondence only; no DSS prognosis, morphology ground truth, or independent external validation",
+    "neural_fits": 12,
+    "no_outer_test_inputs_loaded": true,
+    "optimizer_steps": 4800,
+    "patients": 409,
+    "scalar_program_linear_system_solves": 150,
+    "schema": "semantic_b0b7_p1_public_aggregate_v1",
+    "status": "P1_EVALUATED",
+    "train_patients": 272,
+    "valid_patients": 137,
+    "validation_is_inner_development_and_has_been_used_for_auxiliary_checkpoint_selection": true
+  }
+}

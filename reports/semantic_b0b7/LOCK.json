@@ -1,0 +1,28 @@
+{
+  "schema": "semantic_b0b7_public_lock_projection_v1",
+  "scope": "P0_P1_ONLY",
+  "origin": "projection of retained source/input/gate hashes bound before the actual12fits; this public projection materialized after completion",
+  "original_plan_sha256": "da0a51f04418ed6cf5f2ed4b3542a16b0ce6cf71f0bcdd0d7d65e3d2f716b5bf",
+  "original_plan_reference": "B0_B7_语义条件互补三模态_严格实验方案_Codex.md",
+  "pre_fit_recipe_sha256": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+  "pre_fit_gate_sha256": "2282e18cbc697f352ac75923376e9db7460ec19c5d151d2cbdd08ae27de729cc",
+  "pre_fit_input_sha256": "93d2419a95c129e72e360fc24748e4fef6c909a01830208ecef5fc2d7d0b1b6c",
+  "frozen_scientific_sources": {
+    "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+    "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+    "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+    "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+    "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10",
+    "scripts/semantic_b0b7_gate.py": "4d4b2d18b6935138beff1356367a3580d9f986bea6915bdae010c3753f583754",
+    "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+    "scripts/semantic_b0b7_audit.py": "05fc683eec345084303c2bd474047c5f403a316ee75cad1cfd33aebb3a098fd1",
+    "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+    "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+    "configs/semantic_b0b7/allowed_relations_v1.json": "cc086b414bb380706d24bfa1f7f94198975300ed60782c7c6b366c3765579d1a",
+    "configs/phase6a_titan_crc_morphology_concepts.json": "3fc4ae7aeb34ec68f37a9667b1aa95c1c9a1ee479913dc7e6a6ca67b9f493d69",
+    "scripts/semantic_b0b7_titan_worker.py": "5831abcc92065efd684f53728262c0254f70ccb7041190f85b67a2bf5417fc55"
+  },
+  "P2_started": false,
+  "future_evaluation_policy": "configs/semantic_b0b7/evaluation_policy_20261031.json",
+  "existing_cohort_previously_used_for_development": true
+}

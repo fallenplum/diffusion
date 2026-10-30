@@ -1,0 +1,401 @@
+{
+  "schema": "semantic_b0b7_publication_manifest_v1",
+  "status": "COMPLETE_P0_P1_ONLY_DSS_NOT_STARTED",
+  "base_git_commit": "b579d8acf83bbf1e7b55a5f166c5aa98e4b94f0d",
+  "source_audit_sha256": "dd06ab44a233c0649536635f0d794794db2c8513af9147fc007a07f79ea642c4",
+  "files": [
+    {
+      "file": "B0_B7_语义条件互补三模态_严格实验方案_Codex.md",
+      "sha256": "da0a51f04418ed6cf5f2ed4b3542a16b0ce6cf71f0bcdd0d7d65e3d2f716b5bf",
+      "bytes": 35234
+    },
+    {
+      "file": "configs/semantic_b0b7/allowed_relations_v1.json",
+      "sha256": "cc086b414bb380706d24bfa1f7f94198975300ed60782c7c6b366c3765579d1a",
+      "bytes": 63082
+    },
+    {
+      "file": "configs/semantic_b0b7/evaluation_policy_20261031.json",
+      "sha256": "ca0f77d8546a13d88ba1a9257e5b21ef6d4245dda1f2f6ea1eb79b78f56b860d",
+      "bytes": 1038
+    },
+    {
+      "file": "configs/semantic_b0b7/p0_p1_v1.json",
+      "sha256": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+      "bytes": 4110
+    },
+    {
+      "file": "reports/semantic_b0b7/00_PROTOCOL_LOCK.md",
+      "sha256": "198b351e17aeebb6c1e61f1d3509ddbdbb924d48d21e26a33f1a4bcac1fe5211",
+      "bytes": 2543
+    },
+    {
+      "file": "reports/semantic_b0b7/01_DATA_ENDPOINT_FOLD_AUDIT.json",
+      "sha256": "3458c678fb8a02efa2ee46855cad09aff541af02c70e8e5cc8bace6ea3f9cca2",
+      "bytes": 5421
+    },
+    {
+      "file": "reports/semantic_b0b7/01_DATA_ENDPOINT_FOLD_AUDIT.md",
+      "sha256": "286881b9f75ef7bcaf8df046ce694dfd20228a33bbc232b7461862c2ebca017f",
+      "bytes": 1311
+    },
+    {
+      "file": "reports/semantic_b0b7/02_TEXT_ALIGNMENT_AND_CONCEPT_AUDIT.json",
+      "sha256": "edf23d1290cf072057f7bc0d9555fc8f7fbf4c0e7e8f9c3e2fe63a11d1227bfb",
+      "bytes": 4939
+    },
+    {
+      "file": "reports/semantic_b0b7/02_TEXT_ALIGNMENT_AND_CONCEPT_AUDIT.md",
+      "sha256": "f1eeaecd95665ec81e9b129ef0766e883793090287ec85783a26326fb8800ef6",
+      "bytes": 1207
+    },
+    {
+      "file": "reports/semantic_b0b7/03_FAIRNESS_CAPACITY_AND_GRADIENT_AUDIT.json",
+      "sha256": "7f2c4ef061629dc47c7e53284cdfb0809a30f9bb65dd82885204ec177a7bee1c",
+      "bytes": 11078
+    },
+    {
+      "file": "reports/semantic_b0b7/03_FAIRNESS_CAPACITY_AND_GRADIENT_AUDIT.md",
+      "sha256": "b21e71b7a986df146766bf2155bb49ace01c91bc93cfbd2686ef200eaa9052e7",
+      "bytes": 1436
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_ARM_SUMMARY_001.csv",
+      "sha256": "2fa9420b1b53743ed6311616f84e05a759729002f268006a7a36374be29e881f",
+      "bytes": 11570
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B3_seed031.json",
+      "sha256": "e22ea4c14422801a55248d72bed9396eb8f83b26ad86bb86153efbed5d15bfc3",
+      "bytes": 1110959
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B3_seed047.json",
+      "sha256": "ab981af757178c32a119521650b737c4faee0971d825c9b693f25a5d9db4d6c2",
+      "bytes": 1111517
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B3_seed083.json",
+      "sha256": "bcfdcdfd46614e3149b3bbf609cfc71c8025023290215e30844f83f02a74bbdc",
+      "bytes": 1111120
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B4_MAP_SHUFFLE_seed031.json",
+      "sha256": "e547a9cfc14ff89124cdd8cc7cdc6dbe559d1c029cdaea855717edede9caa934",
+      "bytes": 1111329
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B4_MAP_SHUFFLE_seed047.json",
+      "sha256": "f8cdfd3a84ba5d6aedc3d56d23221d22098e045800326e10c77d96f906089f58",
+      "bytes": 1110636
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B4_MAP_SHUFFLE_seed083.json",
+      "sha256": "0c87081609044adc0dbc46e1d5d833d36fddf3cb506829e764c21f06b287ab84",
+      "bytes": 1110378
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B4_seed031.json",
+      "sha256": "f2824f094852bb439db99ba1efbcceb7cd957519a2ce4339c2273015fb01c4de",
+      "bytes": 1111114
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B4_seed047.json",
+      "sha256": "232906bdee5bbee1d044229985ab21e5889fbe0d92d3aa78539024ec62b00346",
+      "bytes": 1110684
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B4_seed083.json",
+      "sha256": "279fb23bb27d2d2dce44c66a716316aed01a11cad7439f1e439fc7296d8cd0d6",
+      "bytes": 1110300
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B6a_seed031.json",
+      "sha256": "8e4d34848db8bdd77c2c7c7a066e9f122205c2af8c13d1b05f11405eaf76dc9c",
+      "bytes": 1111529
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B6a_seed047.json",
+      "sha256": "30917949653bbfcf6efe241d07bb7b059b663db3c0ed79da4dc59b60552d9c7a",
+      "bytes": 1110869
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_CELL_B6a_seed083.json",
+      "sha256": "dfa395dfa669ee28878bd1c3203e2a19e80d99a0fe3dcee651635ccaf02d81c5",
+      "bytes": 1110961
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_LOSSLESS_INDEX.json",
+      "sha256": "c9c0167c8f3ec3538a8879ab361bd9dcfeafbe044549d003db3173ae20ec16aa",
+      "bytes": 50370
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_PAIRED_MECHANISM_DIFFERENCES_001.csv",
+      "sha256": "4e650d507f2ac9e8c6f44f75a93aac79499177df2523c2886c8c1385b148e5c3",
+      "bytes": 11513
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_PAIRED_RETENTION_RESULTS.json",
+      "sha256": "9051524a894d1e4d00899d9519ddae739a7a74f057e60c3a1e966bd2cec7a355",
+      "bytes": 100575
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_PAIRED_RETENTION_RESULTS.md",
+      "sha256": "d02cf4515c288d011506f7c9ffb7a82ae5d2675a28e7fbf7875dab295cbe1b27",
+      "bytes": 5041
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_PROGRAM_METRICS_001.csv",
+      "sha256": "ef81ed45f49c22d142398a724a5ead827a43f1dbddc841be9c3c11d07b767855",
+      "bytes": 1503709
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_PROGRAM_METRICS_002.csv",
+      "sha256": "dad6618ed11c0ac3e4ac8311efdb8ad4108910d0427fe369a16408770c2fe329",
+      "bytes": 363386
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_REPORT_BUILD_AUDIT.json",
+      "sha256": "1fa5178bf4be53478819f28fcae035079b5611df55297a7493fab82823f397ed",
+      "bytes": 6485
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_RETRIEVAL_METRICS_001.csv",
+      "sha256": "713d3880ed8c1ebb4c0f91e12803bc79bd69cf776e66c3d278060487bb49264e",
+      "bytes": 547098
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_SEED_METRICS_001.csv",
+      "sha256": "d45a7f7a24c581370eb226781d83ce9a17573021fa96edf318012cfe41e736d0",
+      "bytes": 8394
+    },
+    {
+      "file": "reports/semantic_b0b7/04_PRETEXT_TRAINING_CURVES_001.csv",
+      "sha256": "f25fee04c24b9440703ce35af68c8879af0e6b19c729cd728a223bf7abdf36c7",
+      "bytes": 435705
+    },
+    {
+      "file": "reports/semantic_b0b7/05_INNER_SELECTION_SUMMARY.md",
+      "sha256": "3401e1c6f1ce107080ed8a484d223b15126d5baa79e0f0d33128cc72986bafd3",
+      "bytes": 810
+    },
+    {
+      "file": "reports/semantic_b0b7/08_RISK_REPAIR_DAMAGE_AND_CALIBRATION.md",
+      "sha256": "f5cb422dee0b8fa688b4ee698798174d5ea2b190af56f0b94a6a3509769298cd",
+      "bytes": 847
+    },
+    {
+      "file": "reports/semantic_b0b7/09_COMPLETION_AND_REPLAY_AUDIT.json",
+      "sha256": "1e00a2dd03b2ae94a1555d0223dacaebe7e56d5e0ea17a5da712b2e9951c637e",
+      "bytes": 2674
+    },
+    {
+      "file": "reports/semantic_b0b7/10_DECISION.json",
+      "sha256": "fe654b7d77dc1d92b964966f4b6c6d0628cdd84e197e54bb9c0f02cf8304d2b6",
+      "bytes": 1692
+    },
+    {
+      "file": "reports/semantic_b0b7/10_DECISION.md",
+      "sha256": "c70586506ce413e164f4c5b8b45771a5f45c22defcb59f79290396d84946c9a8",
+      "bytes": 2180
+    },
+    {
+      "file": "reports/semantic_b0b7/11_LIMITATIONS_AND_NEGATIVE_RESULTS.md",
+      "sha256": "22b07d96c87515663c6381818a974383b612cde0aedb6ad179ae747653cbdbc9",
+      "bytes": 1800
+    },
+    {
+      "file": "reports/semantic_b0b7/12_REPRODUCE.md",
+      "sha256": "3eff851a6c703e68cedaf78d23aeed151e2eea08dff182e2d3fe182b2ae5db43",
+      "bytes": 4304
+    },
+    {
+      "file": "reports/semantic_b0b7/COMPUTE_COST.json",
+      "sha256": "8e927fd7ccfd0da038d968c33c97c7d07155009a59f2208682f54d2b21156586",
+      "bytes": 9521
+    },
+    {
+      "file": "reports/semantic_b0b7/EVALUATION_POLICY_ADDENDUM_20261031.md",
+      "sha256": "a0d1743c8b62a16008fb1477696a32e46d0f13c6b6a767423780f608e4fc579d",
+      "bytes": 886
+    },
+    {
+      "file": "reports/semantic_b0b7/EXECUTION_FAILURE_LINEAGE.json",
+      "sha256": "13cdda461acdd6aecfd5129c3e7c08ef2e8ba5d76f5296e56946b2aa39b86b96",
+      "bytes": 2222
+    },
+    {
+      "file": "reports/semantic_b0b7/HISTORY_OPERATOR_AUDIT.json",
+      "sha256": "26d4fff47b21b8fd985516191fcb97db9b0c421045f1993007807a77fe224922",
+      "bytes": 24025
+    },
+    {
+      "file": "reports/semantic_b0b7/HISTORY_OPERATOR_AUDIT.md",
+      "sha256": "15785f417843deae22e83a28607d3d1f2f11bdc3f0e402956c043c6eb5bc1425",
+      "bytes": 11292
+    },
+    {
+      "file": "reports/semantic_b0b7/INDEPENDENT_P1_AUDIT.json",
+      "sha256": "e7dbfdcb70a8c3d3b1eba0a6420520b748febe3769aa67c6fe911a5432e66dbf",
+      "bytes": 16541
+    },
+    {
+      "file": "reports/semantic_b0b7/LOCK.json",
+      "sha256": "2c90b1dbb7f3568d0e31400b7d8ba5ee537887d619ad8136c64f242826a20c93",
+      "bytes": 2347
+    },
+    {
+      "file": "reports/semantic_b0b7/P0_HISTORICAL_BASELINE_BRIDGE.json",
+      "sha256": "b7f72868240a2e2fc4af1cc837aae1f15bbaeb191ff9abf52eff8db8c45020a8",
+      "bytes": 104302
+    },
+    {
+      "file": "reports/semantic_b0b7/P0_HISTORICAL_BASELINE_BRIDGE.md",
+      "sha256": "cf40bbe50b90ac218bf8a6576b1d592a869fcddd402848d5e822784d40876f93",
+      "bytes": 3209
+    },
+    {
+      "file": "reports/semantic_b0b7/P1_EXACT_RETRIEVAL_CHANCE.json",
+      "sha256": "dbdd259bb0b737f55b453d1dc1c82a59eb8ada39dc0a091debc658ce0c45bf18",
+      "bytes": 13295
+    },
+    {
+      "file": "reports/semantic_b0b7/P1_SAVED_SCALE_ROUTE_AUDIT.json",
+      "sha256": "9fa30fbf20a5c6f4d8298104631de4482f11f582451325e447711028cd92d9e1",
+      "bytes": 10791
+    },
+    {
+      "file": "reports/semantic_b0b7/PREPARE_ENVIRONMENT_FAILURE_LINEAGE.json",
+      "sha256": "6695b36bb1856b867fb22ea655f769a17e084e24253637caef009d2cfd106179",
+      "bytes": 5030
+    },
+    {
+      "file": "reports/semantic_b0b7/PUBLICATION_SOURCE_AUDIT.json",
+      "bytes": 21191,
+      "sha256": "dd06ab44a233c0649536635f0d794794db2c8513af9147fc007a07f79ea642c4"
+    },
+    {
+      "file": "reports/semantic_b0b7/SURVIVAL_SCORER_AUDIT.json",
+      "sha256": "c3f9ec3822cb4c81934c90490847254a5025dfcc5f9ba1ae33afefc057515287",
+      "bytes": 5401
+    },
+    {
+      "file": "reports/semantic_b0b7/SURVIVAL_SCORER_AUDIT.md",
+      "sha256": "9606086cabb9e5f0194ae7c1f4c5e021f80539a21470c8b2f134b08cf5bf29be",
+      "bytes": 3828
+    },
+    {
+      "file": "scripts/semantic_b0b7_audit.py",
+      "sha256": "05fc683eec345084303c2bd474047c5f403a316ee75cad1cfd33aebb3a098fd1",
+      "bytes": 7580
+    },
+    {
+      "file": "scripts/semantic_b0b7_chance.py",
+      "sha256": "88f82370333a086af2606e8f3584f9b6f49d7e497a74aaccadc5559c6f7d3bc3",
+      "bytes": 3605
+    },
+    {
+      "file": "scripts/semantic_b0b7_checkpoint_diagnostics.py",
+      "sha256": "1a0efeec730e4dbd44b45f1b043e6473a1f339192c78386e2c5ac06286b950e3",
+      "bytes": 4406
+    },
+    {
+      "file": "scripts/semantic_b0b7_gate.py",
+      "sha256": "4d4b2d18b6935138beff1356367a3580d9f986bea6915bdae010c3753f583754",
+      "bytes": 10565
+    },
+    {
+      "file": "scripts/semantic_b0b7_history_bridge.py",
+      "sha256": "1bc08a5140468fd60eb4a795d6c854d3dd50b0a6f4f975b966c627993b9a80cd",
+      "bytes": 16788
+    },
+    {
+      "file": "scripts/semantic_b0b7_p1.py",
+      "sha256": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+      "bytes": 48472
+    },
+    {
+      "file": "scripts/semantic_b0b7_prepare.py",
+      "sha256": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+      "bytes": 33597
+    },
+    {
+      "file": "scripts/semantic_b0b7_publication.py",
+      "sha256": "98b81cdb333b4a4fcc1ca7a73cb8ef68407262b62a813c0b4743720ed9232b94",
+      "bytes": 19244
+    },
+    {
+      "file": "scripts/semantic_b0b7_report.py",
+      "sha256": "4c3d06108c263e22ca715b0297df9d2dd5c14263969c3c789f178363404605e2",
+      "bytes": 29872
+    },
+    {
+      "file": "scripts/semantic_b0b7_titan_worker.py",
+      "sha256": "5831abcc92065efd684f53728262c0254f70ccb7041190f85b67a2bf5417fc55",
+      "bytes": 5828
+    },
+    {
+      "file": "scripts/verify_semantic_b0b7_p1.py",
+      "sha256": "daa2fbfd1a8eebf9d7be4f7c03e4963b798ab5f80e248d1386d7cb6eb4b0955d",
+      "bytes": 19333
+    },
+    {
+      "file": "src/semantic_b0b7/__init__.py",
+      "sha256": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+      "bytes": 83
+    },
+    {
+      "file": "src/semantic_b0b7/data.py",
+      "sha256": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+      "bytes": 9288
+    },
+    {
+      "file": "src/semantic_b0b7/models.py",
+      "sha256": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+      "bytes": 22601
+    },
+    {
+      "file": "src/semantic_b0b7/pretext.py",
+      "sha256": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+      "bytes": 8345
+    },
+    {
+      "file": "src/semantic_b0b7/survival.py",
+      "sha256": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10",
+      "bytes": 10039
+    },
+    {
+      "file": "tests/test_semantic_b0b7_data.py",
+      "sha256": "5c6616dbdcb374f7d507b0245449ff0a02455f09154c890d82b9c37b2f8ca5c2",
+      "bytes": 3458
+    },
+    {
+      "file": "tests/test_semantic_b0b7_execution.py",
+      "sha256": "60be039cbcb71dc14446503a350848310f065516eb8b25634c0c699c952b5632",
+      "bytes": 14928
+    },
+    {
+      "file": "tests/test_semantic_b0b7_models.py",
+      "sha256": "2d035d2d3698d01500533f24a2052b865ac4e2379bfae86e37e9322321e608b3",
+      "bytes": 15966
+    },
+    {
+      "file": "tests/test_semantic_b0b7_publication.py",
+      "sha256": "3e35c9e0c53d546800909cc55736704d0cc00a20b5aaa54466bc67753cc41526",
+      "bytes": 3254
+    },
+    {
+      "file": "tests/test_semantic_b0b7_report.py",
+      "sha256": "a7db8ab19b1b61136ab92df8d14e9e12a50608af1d7a87afa779f102d365408d",
+      "bytes": 6257
+    },
+    {
+      "file": "tests/test_semantic_b0b7_survival.py",
+      "sha256": "e50a89d7eaeb7908209d793fc5dcafaa3afeb964676ee0c36b32d757ae1a387a",
+      "bytes": 12247
+    }
+  ],
+  "file_count_including_audit_excluding_manifest": 78,
+  "manifest_does_not_hash_itself": true,
+  "Git_operations": 0
+}

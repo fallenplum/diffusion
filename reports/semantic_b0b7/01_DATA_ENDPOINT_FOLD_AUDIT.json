@@ -1,0 +1,212 @@
+{
+  "schema": "semantic_b0b7_P0_data_v1",
+  "status": "PASS_DATA_BYTE_INTEGRITY_ONLY",
+  "clinical_time_qualification": "historical_baseline_fields_only_no_new_variables_no_individual_field_timestamps_available",
+  "system_disk_clone_completion": "NOT_INFERRED_FROM_DIRECTORY_EXISTENCE",
+  "required_data_files": "all_current_bytes_equal_preexisting_pinned_SHA256",
+  "cohort": {
+    "patients": 512,
+    "DSS_events": 65,
+    "RNA_shape": [
+      512,
+      20511
+    ],
+    "CNA_shape": [
+      512,
+      25101
+    ],
+    "RNA_missing_count_histogram": {
+      "0": 309,
+      "3015": 203
+    },
+    "CNA_missing_entries": 260,
+    "folds": [
+      {
+        "fold": 1,
+        "n": 103,
+        "DSS_events": 13
+      },
+      {
+        "fold": 2,
+        "n": 103,
+        "DSS_events": 14
+      },
+      {
+        "fold": 3,
+        "n": 102,
+        "DSS_events": 12
+      },
+      {
+        "fold": 4,
+        "n": 102,
+        "DSS_events": 13
+      },
+      {
+        "fold": 5,
+        "n": 102,
+        "DSS_events": 13
+      }
+    ],
+    "stage_distribution": [
+      {
+        "category": "STAGE I",
+        "n": 93,
+        "DSS_events": 1
+      },
+      {
+        "category": "STAGE IA",
+        "n": 1,
+        "DSS_events": 0
+      },
+      {
+        "category": "STAGE II",
+        "n": 23,
+        "DSS_events": 4
+      },
+      {
+        "category": "STAGE IIA",
+        "n": 149,
+        "DSS_events": 5
+      },
+      {
+        "category": "STAGE IIB",
+        "n": 10,
+        "DSS_events": 1
+      },
+      {
+        "category": "STAGE IIC",
+        "n": 2,
+        "DSS_events": 0
+      },
+      {
+        "category": "STAGE III",
+        "n": 20,
+        "DSS_events": 4
+      },
+      {
+        "category": "STAGE IIIA",
+        "n": 13,
+        "DSS_events": 0
+      },
+      {
+        "category": "STAGE IIIB",
+        "n": 73,
+        "DSS_events": 7
+      },
+      {
+        "category": "STAGE IIIC",
+        "n": 45,
+        "DSS_events": 9
+      },
+      {
+        "category": "STAGE IV",
+        "n": 46,
+        "DSS_events": 27
+      },
+      {
+        "category": "STAGE IVA",
+        "n": 24,
+        "DSS_events": 5
+      },
+      {
+        "category": "STAGE IVB",
+        "n": 2,
+        "DSS_events": 0
+      },
+      {
+        "category": "[Discrepancy]",
+        "n": 2,
+        "DSS_events": 0
+      },
+      {
+        "category": "[Not Available]",
+        "n": 9,
+        "DSS_events": 2
+      }
+    ],
+    "time_unit": "months",
+    "RNA_transform": "already_log2_x_plus_1_do_not_log_again",
+    "missingness_platform": "proxy_only_not_verified_sequencing_platform"
+  },
+  "source_hashes": {
+    "cohort": {
+      "sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+      "bytes": 86726348
+    },
+    "endpoints": {
+      "sha256": "91b5d15aa32489c825a8341aed8d9733281dc62386151c8c6246b6312975fd4e",
+      "bytes": 7487
+    },
+    "visual_sources": {
+      "sha256": "4898df75eb03539e85ef394772fe2bda991bfbe325154cc3241426e168c39194",
+      "bytes": 7695537
+    },
+    "gmt": {
+      "sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+      "bytes": 48690
+    },
+    "legacy_groups": {
+      "sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+      "bytes": 14851
+    }
+  },
+  "original_CONCH_H5_verified": 519,
+  "CONCH_inventory_sha256": "dcda616eb16078eb0d3f7a98a206ee5882608571ff2fe7699032b56d1e13da74",
+  "patch_caches": {
+    "patch_regions": {
+      "status": "PASS_EXACT_RECEIPT_ALL_ARRAY_SHA256",
+      "ready_sha256": "cd2a9e4d761657c298f0496eabba68a4ecadf194cb30078e7792896794f278a2",
+      "slides": 519,
+      "patients": 512,
+      "patches": 257480,
+      "selector": "REGIONS",
+      "patient_budget": 512,
+      "slide_aggregation": "within_slide_then_equal_patient_slide_mean",
+      "coordinate_step_counts": {
+        "1024": 519
+      }
+    },
+    "patch_grid": {
+      "status": "PASS_EXACT_RECEIPT_ALL_ARRAY_SHA256",
+      "ready_sha256": "3ef674c9a2e7be9287168e9c33ea1aa596c0ca96faf3ecbda822717f2a2a623f",
+      "slides": 519,
+      "patients": 512,
+      "patches": 257480,
+      "selector": "GRID",
+      "patient_budget": 512,
+      "slide_aggregation": "within_slide_then_equal_patient_slide_mean",
+      "coordinate_step_counts": {
+        "1024": 519
+      }
+    }
+  },
+  "models": {
+    "CONCH_Z": {
+      "status": "PASS_PINNED_ALL_FILES_SHA256",
+      "revision": "60211fced9c25a014494e248eedb6a6be80109f7",
+      "weights_sha256": "95bd4caba9df4ed44eb81d60f3103ffc135296cf6b952efedd83cc32d0fcfd9d",
+      "checked_files": 11
+    },
+    "TITAN": {
+      "status": "PASS_PINNED_ALL_FILES_SHA256",
+      "revision": "dac6773d9961cfc75503440676ff157a2c6e8d2e",
+      "weights_sha256": "4e92128317dca5c9e47d8173467105c21e4095f88d3bde9077e7f1e784b195fe",
+      "checked_files": 11
+    }
+  },
+  "TITAN": {
+    "cache_sha256": "3d27ebbdc65c6e76c7af183729875be2e732675cf117ccd97a22f2a6d0c6f259",
+    "native_max_error": 0.0,
+    "S32_max_error": 0.0,
+    "semantic_cosine_max_error": 5.364418029785156e-07,
+    "official_forward_reverification": "PENDING_SEPARATE_OFFICIAL_INTERFACE_GATE"
+  },
+  "audit_execution": {
+    "seconds": 8.824911341071129,
+    "fits": 0,
+    "optimizer_updates": 0,
+    "model_forwards": 0,
+    "endpoints_read": "P0_only_separate_from_P1"
+  },
+  "G0_overall": "NOT_YET_PASS_MODEL_ALIGNMENT_FAIRNESS_REAL_GRADIENT_ANCHOR_AUDITS_PENDING"
+}

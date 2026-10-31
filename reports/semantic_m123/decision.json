@@ -1,0 +1,552 @@
+{
+  "CI_bootstrap_pvalues": false,
+  "M3_four_prespecified_control_gate": false,
+  "M3_frozen_patient_query_dependency_gate": false,
+  "M3_strong_anchor_gate": false,
+  "M4_M5_trained": false,
+  "all_baselines_and_negative_results_retained": true,
+  "all_fixed_paired_comparisons": [
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0630439896494942,
+      "Uno60_delta": -0.044691169324251545,
+      "comparison": "M0PLUS minus M0",
+      "positive_Harrell_seeds": 0,
+      "positive_Uno60_seeds": 0,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.0630439896494942,
+          "Uno60": -0.044691169324251545,
+          "seed": 0
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.00737081471026424,
+      "Uno60_delta": -0.019109278585405565,
+      "comparison": "M1_SCRATCH minus M0PLUS",
+      "positive_Harrell_seeds": 0,
+      "positive_Uno60_seeds": 0,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.008233356857210161,
+          "Uno60": -0.019651558683146608,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.0068219242531170066,
+          "Uno60": -0.02333172253997695,
+          "seed": 47
+        },
+        {
+          "Harrell": -0.007057163020465773,
+          "Uno60": -0.014344554533093135,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.053634438955539765,
+      "Uno60_delta": 0.02661684815645482,
+      "comparison": "M1_WARM minus M0PLUS",
+      "positive_Harrell_seeds": 3,
+      "positive_Uno60_seeds": 3,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.05081157374735357,
+          "Uno60": 0.023715396907637354,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.049164902375911534,
+          "Uno60": 0.024835739064380857,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.060926840743354416,
+          "Uno60": 0.03129940849734614,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.009409550693954438,
+      "Uno60_delta": -0.018074321167796725,
+      "comparison": "M1_WARM minus M0",
+      "positive_Harrell_seeds": 0,
+      "positive_Uno60_seeds": 0,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.012232415902140636,
+          "Uno60": -0.02097577241661419,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.013879087273582669,
+          "Uno60": -0.019855430259870688,
+          "seed": 47
+        },
+        {
+          "Harrell": -0.0021171489061397875,
+          "Uno60": -0.013391760826905408,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.061005253665804005,
+      "Uno60_delta": 0.045726126741860385,
+      "comparison": "M1_WARM minus M1_SCRATCH",
+      "positive_Harrell_seeds": 3,
+      "positive_Uno60_seeds": 3,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.05904493060456373,
+          "Uno60": 0.04336695559078396,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.05598682662902854,
+          "Uno60": 0.04816746160435781,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.06798400376382019,
+          "Uno60": 0.04564396303043927,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0006273033795968219,
+      "Uno60_delta": -0.0044268975151724455,
+      "comparison": "M2_MEAN_MATCHED minus M1_WARM",
+      "positive_Harrell_seeds": 1,
+      "positive_Uno60_seeds": 0,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.0007057163020466328,
+          "Uno60": -0.0033948849251738134,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0002352387673488776,
+          "Uno60": -0.004392512144591798,
+          "seed": 47
+        },
+        {
+          "Harrell": -0.0014114326040931546,
+          "Uno60": -0.005493295475751614,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0002352387673488776,
+      "Uno60_delta": 2.2696082586093347e-05,
+      "comparison": "M2_SINGLE minus M2_MEAN_MATCHED",
+      "positive_Harrell_seeds": 1,
+      "positive_Uno60_seeds": 2,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": -0.0007057163020465218,
+          "Uno60": -0.00029250389101864727,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.0002352387673488776,
+          "Uno60": 8.9305286627539e-05,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0002352387673488776,
+          "Uno60": 0.00027128685214916626,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.00031365168979835545,
+      "Uno60_delta": 0.00013742108495073957,
+      "comparison": "M2_EIGHT minus M2_SINGLE",
+      "positive_Harrell_seeds": 2,
+      "positive_Uno60_seeds": 2,
+      "positive_both_seeds": 2,
+      "seed_deltas": [
+        {
+          "Harrell": 0.0007057163020465218,
+          "Uno60": 0.00029250389101864727,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0002352387673488776,
+          "Uno60": 0.00011975936383401553,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 7.841292244947784e-05,
+      "Uno60_delta": 0.00016011716753683292,
+      "comparison": "M2_EIGHT minus M2_MEAN_MATCHED",
+      "positive_Harrell_seeds": 1,
+      "positive_Uno60_seeds": 2,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.0002352387673488776,
+          "Uno60": 8.9305286627539e-05,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0004704775346977552,
+          "Uno60": 0.0003910462159831818,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.00015682584489928875,
+      "Uno60_delta": 0.004034714092468916,
+      "comparison": "M2_EIGHT_MEAN minus M2_EIGHT",
+      "positive_Harrell_seeds": 1,
+      "positive_Uno60_seeds": 3,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": -0.0004704775346977552,
+          "Uno60": 0.0026986861596739464,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.004303206857964259,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0009409550693953994,
+          "Uno60": 0.005102249259768432,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0002352387673487666,
+      "Uno60_delta": 0.004194831260005749,
+      "comparison": "M2_EIGHT_MEAN minus M2_MEAN_MATCHED",
+      "positive_Harrell_seeds": 1,
+      "positive_Uno60_seeds": 3,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": -0.0004704775346977552,
+          "Uno60": 0.0026986861596739464,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.0002352387673488776,
+          "Uno60": 0.004392512144591798,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0014114326040931546,
+          "Uno60": 0.005493295475751614,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.00039206461224805533,
+      "Uno60_delta": -0.00023206625516669632,
+      "comparison": "M2_EIGHT_MEAN minus M1_WARM",
+      "positive_Harrell_seeds": 0,
+      "positive_Uno60_seeds": 0,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.001176193836744388,
+          "Uno60": -0.0006961987654998669,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.00039206461224805533,
+      "Uno60_delta": 0.00023206625516669632,
+      "comparison": "M3_FULL minus M2_EIGHT_MEAN",
+      "positive_Harrell_seeds": 1,
+      "positive_Uno60_seeds": 1,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": 0.001176193836744388,
+          "Uno60": 0.0006961987654998669,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0,
+      "Uno60_delta": 0.0,
+      "comparison": "M3_FULL minus M3_LEARNED_QUERY",
+      "positive_Harrell_seeds": 0,
+      "positive_Uno60_seeds": 0,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.00023523876734865556,
+      "Uno60_delta": 7.351530381927152e-05,
+      "comparison": "M3_FULL minus M3_NO_PRODUCT",
+      "positive_Harrell_seeds": 1,
+      "positive_Uno60_seeds": 1,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": 0.0,
+          "Uno60": -1.95606726594022e-06,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": -0.00014584126511651974,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0007057163020465218,
+          "Uno60": 0.0003683432438401635,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0001568258448990667,
+      "Uno60_delta": 7.111136496817938e-05,
+      "comparison": "M3_FULL minus M3_BIDIRECTIONAL",
+      "positive_Harrell_seeds": 2,
+      "positive_Uno60_seeds": 2,
+      "positive_both_seeds": 2,
+      "seed_deltas": [
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0002352387673488776,
+          "Uno60": 0.00011975936383390451,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0002352387673487666,
+          "Uno60": 9.357473107052261e-05,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.009409550693954438,
+      "Uno60_delta": -0.018074321167796725,
+      "comparison": "M3_FULL minus M0",
+      "positive_Harrell_seeds": 0,
+      "positive_Uno60_seeds": 0,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.012232415902140636,
+          "Uno60": -0.02097577241661419,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.013879087273582669,
+          "Uno60": -0.019855430259870688,
+          "seed": 47
+        },
+        {
+          "Harrell": -0.0021171489061397875,
+          "Uno60": -0.013391760826905408,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.053634438955539765,
+      "Uno60_delta": 0.02661684815645482,
+      "comparison": "M3_FULL minus M0PLUS",
+      "positive_Harrell_seeds": 3,
+      "positive_Uno60_seeds": 3,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.05081157374735357,
+          "Uno60": 0.023715396907637354,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.049164902375911534,
+          "Uno60": 0.024835739064380857,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.060926840743354416,
+          "Uno60": 0.03129940849734614,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0,
+      "Uno60_delta": 0.0,
+      "comparison": "M3_FULL minus M3_FULL_WRONG_QUERY",
+      "positive_Harrell_seeds": 0,
+      "positive_Uno60_seeds": 0,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0,
+      "Uno60_delta": 0.0,
+      "comparison": "M3_FULL minus M3_FULL_MEAN_QUERY",
+      "positive_Harrell_seeds": 0,
+      "positive_Uno60_seeds": 0,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -7.841292244969988e-05,
+      "Uno60_delta": -3.894359825018512e-05,
+      "comparison": "M3_FULL minus M3_FULL_NO_INTERACTION",
+      "positive_Harrell_seeds": 0,
+      "positive_Uno60_seeds": 0,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.0002352387673487666,
+          "Uno60": -0.00011683079475088842,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    }
+  ],
+  "independent_external_confirmation": false,
+  "mechanism_biological_truth_claim": false,
+  "next_stage": "DO_NOT_EXPAND_M4_M5_FROM_THIS_EVIDENCE",
+  "no_posthoc_outer_winner_selected": true,
+  "schema": "m123_scientific_decision_v1",
+  "status": "COMPLETE_LOCKED_M1_M2_M3"
+}

@@ -1,0 +1,204 @@
+{
+  "machine_path_placeholders": {
+    "assets_path": "${ASSETS_PATH}",
+    "frozen_images": "${FROZEN_IMAGES}",
+    "legacy_root": "${LEGACY_ROOT}",
+    "parent_private": "${PARENT_PRIVATE}",
+    "parent_split_plan": "${PARENT_SPLIT_PLAN}"
+  },
+  "private_execution_lock_sha256": "41f041bcb883d65285167a201183f40d41e9de1640ead2b40a9311f61f318af3",
+  "schema": "m123_public_scientific_lock_projection_v1",
+  "scientific_master": {
+    "design_precommit_sha256": "c74d2173836dc5bcf752f2f7161f79a1160cef2bed6a900c0d3597d699610f1a",
+    "legacy_dependencies_sha256": {
+      "src/bgb_en/baselines.py": "2a00c4bcd2eca06c26a5ad5e0c636d2c2771bbf356df9d72a350fe8061e30d5a",
+      "src/bgb_en/protocol.py": "e06e7196eee72957dbde363bc4cb78b004ded62a62ada0fa0ffa3add7590394c",
+      "src/bgb_en/survival.py": "2f54ca3262438cb725421e5a062b8529eecdd5033a122038798c5af6b083d086",
+      "src/phase10_trimodal/math.py": "e744e652590e9103ba0b376a7b4c232652789d72b5bb1976e511144bc07c417b",
+      "src/phase10_trimodal/reference.py": "a5b05d2c11a8aeb3b1ecffcf799746f90610382179b40f27564cbc7df7e25e07"
+    },
+    "outer_scores_used_for_this_new_protocol_selection": false,
+    "parent_commit": "4a913942012f4aabf975dada4b70ad7a7be5cfd0",
+    "parent_split_sha256": "5e7b5ea56dcd0a64720b08c4a34b1f1b0d78adbdc71c000149116f06ff19d441",
+    "partitions": {
+      "outer1_final": {
+        "anchor_receipt_sha256": "c245da2422a4266698f7f7e2c169115c0eb43b1cafde48c858403f6f0ed727bd",
+        "anchor_sha256": "d673a38b286a5d5bb60c7b9f318b4fc313cc9051398872347bf2a220c80146e1",
+        "evaluation_patients": 103,
+        "fit_patients": 409,
+        "input_sha256": "c64667a982fcdf6e9b2f9dda53943836788f149bfd2b5a4f587916b4951438c1"
+      },
+      "outer1_inner0": {
+        "anchor_receipt_sha256": "7a14d23b1072161e0f3d7a4b1dc2bb1a5882fd628ee51019c4cdfbb3f1f503fc",
+        "anchor_sha256": "ebf61c2c9f5ef1e8cf50ded6cee8eb98c460898deabaa362cd197e543d74289b",
+        "evaluation_patients": 137,
+        "fit_patients": 272,
+        "input_sha256": "97078f42757b62e8cea6eb2ee38c2377935fa0696337cf7a00619cbf884936e1"
+      },
+      "outer1_inner1": {
+        "anchor_receipt_sha256": "97fbf726caa3bf83c36e6c4bdea631b9ee02d4bc76dd1400203ced281ea98e76",
+        "anchor_sha256": "121b8b52b79948a86af390b1980bd2eae640ecac9594756a33ad5ff07dc21616",
+        "evaluation_patients": 136,
+        "fit_patients": 273,
+        "input_sha256": "aa447ef348628e6fb9e9da9477b5f51a307bc97b92c036f631638a513d30a186"
+      },
+      "outer1_inner2": {
+        "anchor_receipt_sha256": "254b7a2ef224029021de1052f73e35aa698ec2ad852f5f7483db5fc88fb36dec",
+        "anchor_sha256": "82d71f05989f9252185f9bfd0f6580fae0039316cd61f1504fe8cb4688d58798",
+        "evaluation_patients": 136,
+        "fit_patients": 273,
+        "input_sha256": "1efce3aa670da8c391f01a65f3d13c0c86a015be9eecf4ca4d61542e0affb687"
+      },
+      "outer2_final": {
+        "anchor_receipt_sha256": "14a7eac35735ea6f3b07ab8d74815d2f72511f32427e04c96e3b457d8bc98f3f",
+        "anchor_sha256": "a4b942ccb8a2ae379a8edfd28453cf69a045e95136eadb144c669279e9afb362",
+        "evaluation_patients": 103,
+        "fit_patients": 409,
+        "input_sha256": "9d6d806f9d5a21467206cccc5e9128ca15002815ac4ea9e06c73167032d4bda8"
+      },
+      "outer2_inner0": {
+        "anchor_receipt_sha256": "8871ed63e0facaa8e8f832a14fb942463f8d273601e9ddc45a2f32d0ba477898",
+        "anchor_sha256": "286ba40b8c2cb566fa48f51485138f54d610c9524980d00a52b2e622d587a879",
+        "evaluation_patients": 137,
+        "fit_patients": 272,
+        "input_sha256": "612e766409d18e0badcb638b82811d8f6715ce98f7f79eddf456834b5c6e4890"
+      },
+      "outer2_inner1": {
+        "anchor_receipt_sha256": "1e8121ecf053b9f7f0b1a5fe7f76749685f297e8e904df504e94b00bc0981999",
+        "anchor_sha256": "70b526e323af8c90f17ccd5bab53e0322e61b9ba8adb8560882a6adf2c51082d",
+        "evaluation_patients": 136,
+        "fit_patients": 273,
+        "input_sha256": "92521e15cad5810d74579724b6bcb569f23b23cd1255a3c8d7efcc8abefa1114"
+      },
+      "outer2_inner2": {
+        "anchor_receipt_sha256": "3852e3f62c798f15981f63bd0e601772e8f8cc4fbf66c1ded6baaee606a02830",
+        "anchor_sha256": "2f16821d549bb20a69e718dcf6301695cc2c369469902cdb7d8d00394d10b682",
+        "evaluation_patients": 136,
+        "fit_patients": 273,
+        "input_sha256": "0114a9ebb2b8f150184b164c096f70d242596f11019a69fd05a36c07800da293"
+      },
+      "outer3_final": {
+        "anchor_receipt_sha256": "bf076bdf7b403a506b085b18768589781f90dd69db37493a208ca86a05d6a4fa",
+        "anchor_sha256": "3c5f71f307cbd8f4695988784d79f32432645665d537428fe5b43bdd75d0478d",
+        "evaluation_patients": 102,
+        "fit_patients": 410,
+        "input_sha256": "451415daf21ea0e510cd86fe26b7f16a80d14be6e0b236653da6f24a8c0e0823"
+      },
+      "outer3_inner0": {
+        "anchor_receipt_sha256": "d5b061b958fb12bb018f58213193ca14583d2fa830515dfed7bc83adf043a6ca",
+        "anchor_sha256": "d5825584c5cdd3a49fb457869b500a169e0539523a72b21880a0822526a26b79",
+        "evaluation_patients": 137,
+        "fit_patients": 273,
+        "input_sha256": "4d7e710ff28046248b640a47e4e6116c9ba72a7f3047a8978425cad263106d88"
+      },
+      "outer3_inner1": {
+        "anchor_receipt_sha256": "5efb7aa21cb7105d1bde932f6c33b0258aba605d238f08b2ba67aedc195a3516",
+        "anchor_sha256": "6368c4d287c708ccdcfce4f6846e4daac136cdd269f28f38a35e8af8ec8fbdc8",
+        "evaluation_patients": 137,
+        "fit_patients": 273,
+        "input_sha256": "2ca457d6d7c95f9c96447ca52cd03a3f7e3e1e148eab44f5fea347fde774c714"
+      },
+      "outer3_inner2": {
+        "anchor_receipt_sha256": "4fb42ca80f27514930f56af8c0747b1c241e108580bb5d6591575615465f8659",
+        "anchor_sha256": "79f58f939f086dcbcd6a1bd609f8e92fdeba7e348f2aa6be35fbde2e9d413f11",
+        "evaluation_patients": 136,
+        "fit_patients": 274,
+        "input_sha256": "d9c02b8426f6d4cb643fc5748f9c8115fed53ffb987c51fdd1da683c4a060b0f"
+      },
+      "outer4_final": {
+        "anchor_receipt_sha256": "19bf9d25ff65e3d2c0b10239ae3d248b21d9bb29ab92abc35d181feb7f418ed9",
+        "anchor_sha256": "669e0806f99e9db5c64f222d4585160d8963950d7b2db7f793ee11897c638e17",
+        "evaluation_patients": 102,
+        "fit_patients": 410,
+        "input_sha256": "161fc2804e80bc1df9de43a3952d7ef07d03426cae8baf84deecb3b3910c17c7"
+      },
+      "outer4_inner0": {
+        "anchor_receipt_sha256": "3d622331919858096f8505afc5ca61e34c95d5db50e3234287d89beae85876a8",
+        "anchor_sha256": "917ef3e6461d35254a4cc70a60cc2ce9d7e88851cc4a7415a4cb8be971f4638f",
+        "evaluation_patients": 137,
+        "fit_patients": 273,
+        "input_sha256": "89ecea82ca5e6fd54aa3148e4e64e1ff9023a5105668dd513d09629253af2fd3"
+      },
+      "outer4_inner1": {
+        "anchor_receipt_sha256": "9c9df8258fcd23357cf56b9e32dec669a7227f522942857e9311a043a1fabc84",
+        "anchor_sha256": "5b3d41aa9027dd850b18734b0c8287d4d4e52d99909bc22f1a9b78b19fc18028",
+        "evaluation_patients": 137,
+        "fit_patients": 273,
+        "input_sha256": "30a1b18795a83be9105054d7287e76b0929041ded9ed1aa0f696c1ee4d8fe4bb"
+      },
+      "outer4_inner2": {
+        "anchor_receipt_sha256": "2180246fc3e28c5b1d3cba0cfbe95baa407637311821a571dc6bb02a79b287ab",
+        "anchor_sha256": "c8d67a259bac181881a8cc780cef9523e17f21f0450d6e2d847034b8e70f7f04",
+        "evaluation_patients": 136,
+        "fit_patients": 274,
+        "input_sha256": "183327282b778a3b9a3a2eb835b8093da2a4a8523d462f1ab0a790bbf288dbb5"
+      },
+      "outer5_final": {
+        "anchor_receipt_sha256": "93b7fb4d8b7b77439f757f441dc59e128988a4a046cce93a3eb0db4f83b5092b",
+        "anchor_sha256": "6fcde363c2fdb803721eecdf288e7ebad56c04f53254d59b7b5c15474e85964e",
+        "evaluation_patients": 102,
+        "fit_patients": 410,
+        "input_sha256": "b5df79c127f07a688c919c29b5614455633d67569f50e94c289eaf55d1d7cf0b"
+      },
+      "outer5_inner0": {
+        "anchor_receipt_sha256": "ad04ddbdf7177fa8ef7d12f16b029e975fb2b2f976c2504a63136cffad462ee7",
+        "anchor_sha256": "08529ade36f6654ca14d826f8a78769a5e0609df213e83f72172ad22b93f96fa",
+        "evaluation_patients": 137,
+        "fit_patients": 273,
+        "input_sha256": "ddb36044f5941788985188d2f8684c6e02f4ecec5bc5867d8bdf41d3dd30df60"
+      },
+      "outer5_inner1": {
+        "anchor_receipt_sha256": "470d0b13c7b6f8b24edf9f210bde08172f80399f1c8710b414a613da9e72d457",
+        "anchor_sha256": "2cb51d4ce48a2815a41fde5ac64e09b260d9199d8667d55953685113bafa619c",
+        "evaluation_patients": 137,
+        "fit_patients": 273,
+        "input_sha256": "0dcc8480681b1f61c75d5c6b93e3a3f8afd814833dbe9e99bf617f7c791db0bd"
+      },
+      "outer5_inner2": {
+        "anchor_receipt_sha256": "a46b83c59a4e8517626262f0532071fc43d0065533e19dee2c45cfc96b9d280e",
+        "anchor_sha256": "9f9341b0be770a05794afa99f33a93332cb4f175dcae3e489733933590b9ddbb",
+        "evaluation_patients": 136,
+        "fit_patients": 274,
+        "input_sha256": "9a608677812dea780e5c98f651a8497911b1ebf2e7edb9c6a6e3e1407b623dc0"
+      }
+    },
+    "qualification_sha256": "2255d83ad328fec20dd830d1c1d67bb0202948c195375c67719c6085e49a46ac",
+    "schema": "joint_trimodal_m123_master_v1",
+    "software_tests_junit_sha256": "4003b1a1bfe87904aa3c925cce39b75a86756f8980898e90c1544a8c23c886d4",
+    "source_and_scientific_grid_finalized": true,
+    "sources": {
+      "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+      "configs/semantic_b0b7/p1r_variants_v1.json": "223b22ce4e2371431a9884e190cdae76e699d3c1f3ba12f30d4ff9a3ee20085a",
+      "configs/semantic_b0b7/p2_design_precommit.json": "bc8000aace67c8864e85a50d3c13e9c6229cc9be942a4b8e8fc1047937d8876d",
+      "configs/semantic_b0b7/p2_qualification_amendment.json": "3c55810855c16b79936c5f7ef65130e9758cc21706a763ad82de1a59a3680a5e",
+      "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+      "scripts/semantic_b0b7_p1r.py": "c7214fbd2a1a078825695ded9762b8be1e088e1c843f194fa6c31effa79a271e",
+      "scripts/semantic_b0b7_p2_matrix.py": "13c5494550bdad5be21d3070197602a9b544f2a3c60dcda90384436074af8239",
+      "scripts/semantic_b0b7_p2_schedule.py": "f03a3571864af3512b6baa03aeaac9ab56d3e49bf6ac0f143523c359c428199c",
+      "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+      "scripts/semantic_m123_qualify.py": "47e1bbbd6a7209bbcb56d71937a97cca1369237c94849bdbcb16350748307079",
+      "scripts/semantic_m123_schedule.py": "e2ffc06129772cfbbfd308cff5c8a66682280792f4f3a0d8399862718dff9c35",
+      "scripts/semantic_m123_worker.py": "9bf8cf6b2cd068459799550329e5302e144222d70f885fa261ab499e8d2e874f",
+      "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+      "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+      "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+      "src/semantic_b0b7/p1r_data.py": "0aaf475fec0c2e84a8e89a49313b02120d09328c1ae87059047c976617e87463",
+      "src/semantic_b0b7/p1r_models.py": "4b187bfab3331ec6fb40ff2d375ccda612713f8cb9376de47de1a202ed65aa93",
+      "src/semantic_b0b7/p2_anchor.py": "9ce4262750b5af384365a2829c00bc145328a42200ef6725aebad2417afa8600",
+      "src/semantic_b0b7/p2_data.py": "f4dd68414246d7b8e8188515a851df7542c24c9f830a4af08c7934c175f6a2c6",
+      "src/semantic_b0b7/p2_models.py": "7e44213dbbf0b8be97396a4069e83998493c4fe2f7a606445fb7f49ba5ae1041",
+      "src/semantic_b0b7/p2_survival.py": "8fdb3820143a6fefb99269f566dc990cde80c68b53579e382d90e7d7f387c3b9",
+      "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+      "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10",
+      "src/semantic_m123/__init__.py": "401b4cc3fb91fbc38d732cc3a30006e738a7627fb7bf66d52aa371df553aceb0",
+      "src/semantic_m123/data.py": "b36cc27d017c12ed71a4f105a74d00872e61db750396d513dc61056c76b0d442",
+      "src/semantic_m123/models.py": "45f17a360834613ed73d2dbc9babe8e6998644465091eff913e12bf7a626fb6c",
+      "src/semantic_m123/training.py": "c665bcb091baf9779cbdf108a3e1a99e7b5fed5cb400301879e6727664061406",
+      "tests/test_semantic_m123_models.py": "73cd05a2ffcf2c78ca91428f0d65aad957fe48096727e8176197280aadd5f636",
+      "tests/test_semantic_m123_protocol.py": "26d0e89c7ceb27e33aedf7b0258c3bdebfb9424e553d2d0eecc08c48b7f16c3f",
+      "tests/test_semantic_m123_training.py": "f46a45f5a96a07bbebd669aa3cda63791615ee2c8a75a8c0430712f18962d240"
+    },
+    "status": "LOCKED_BEFORE_NEW_DSS_OPTIMIZATION"
+  },
+  "scope": "only_five_machine_paths_elided_scientific_fields_and_source_input_hashes_unchanged"
+}

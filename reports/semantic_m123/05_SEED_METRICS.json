@@ -1,0 +1,603 @@
+[
+  {
+    "Harrell": 0.8350976240884498,
+    "Uno60": 0.8139886604454789,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M0",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8350976240884498,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3550.0,
+        "Uno60": 0.8139886604454789,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9093.66047992542,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 0
+      }
+    ]
+  },
+  {
+    "Harrell": 0.7720536344389556,
+    "Uno60": 0.7692974911212274,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M0PLUS",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.7720536344389556,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3282.0,
+        "Uno60": 0.7692974911212274,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8594.382860918806,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 0
+      }
+    ]
+  },
+  {
+    "Harrell": 0.7646828197286913,
+    "Uno60": 0.7501882125358218,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M1_SCRATCH",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.7638202775817454,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3247.0,
+        "Uno60": 0.7496459324380808,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8374.840978765234,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.7652317101858386,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3253.0,
+        "Uno60": 0.7459657685812504,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8333.727186582684,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.7649964714184898,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3252.0,
+        "Uno60": 0.7549529365881342,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8434.129389343005,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.8256880733944953,
+    "Uno60": 0.7959143392776822,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M1_WARM",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8228652081863091,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3498.0,
+        "Uno60": 0.7930128880288647,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8859.324841199836,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8212185368148671,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3491.0,
+        "Uno60": 0.7941332301856082,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8871.840999826907,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.83298047518231,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3541.0,
+        "Uno60": 0.8005968996185735,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8944.051361142861,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.825139182937348,
+    "Uno60": 0.7916475589300466,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M2_EIGHT",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8221594918842625,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3495.0,
+        "Uno60": 0.7896180031036909,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8821.398107845771,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8212185368148671,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3491.0,
+        "Uno60": 0.789830023327644,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8823.766740266832,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.8320395201129146,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3537.0,
+        "Uno60": 0.7954946503588051,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8887.050416649492,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.8252960087822473,
+    "Uno60": 0.7956822730225155,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M2_EIGHT_MEAN",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8216890143495648,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3493.0,
+        "Uno60": 0.7923166892633648,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8851.547097469924,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8212185368148671,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3491.0,
+        "Uno60": 0.7941332301856082,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8871.840999826907,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.83298047518231,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3541.0,
+        "Uno60": 0.8005968996185735,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8944.051361142861,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.8250607700148985,
+    "Uno60": 0.7914874417625097,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M2_MEAN_MATCHED",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8221594918842625,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3495.0,
+        "Uno60": 0.7896180031036909,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8821.398107845771,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.821453775582216,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3492.0,
+        "Uno60": 0.7897407180410164,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8822.769045833093,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.8315690425782168,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3535.0,
+        "Uno60": 0.7951036041428219,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8882.681754415102,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.8248255312475496,
+    "Uno60": 0.7915101378450958,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M2_SINGLE",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.821453775582216,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3492.0,
+        "Uno60": 0.7893254992126723,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8818.130333731418,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8212185368148671,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3491.0,
+        "Uno60": 0.789830023327644,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8823.766740266832,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.8318042813455657,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3536.0,
+        "Uno60": 0.795374890994971,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8885.712497527373,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.8255312475495963,
+    "Uno60": 0.795843227912714,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M3_BIDIRECTIONAL",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8228652081863091,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3498.0,
+        "Uno60": 0.7930128880288647,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8859.324841199836,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8209832980475182,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3490.0,
+        "Uno60": 0.7940134708217743,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8870.503080704788,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.8327452364149612,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3540.0,
+        "Uno60": 0.800503324887503,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8943.005969634103,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.8256880733944953,
+    "Uno60": 0.7959143392776822,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M3_FULL",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8228652081863091,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3498.0,
+        "Uno60": 0.7930128880288647,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8859.324841199836,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8212185368148671,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3491.0,
+        "Uno60": 0.7941332301856082,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8871.840999826907,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.83298047518231,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3541.0,
+        "Uno60": 0.8005968996185735,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8944.051361142861,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.8256880733944953,
+    "Uno60": 0.7959143392776822,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M3_FULL_MEAN_QUERY",
+    "frozen_intervention": true,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8228652081863091,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3498.0,
+        "Uno60": 0.7930128880288647,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8859.324841199836,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8212185368148671,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3491.0,
+        "Uno60": 0.7941332301856082,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8871.840999826907,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.83298047518231,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3541.0,
+        "Uno60": 0.8005968996185735,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8944.051361142861,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.825766486316945,
+    "Uno60": 0.7959532828759324,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M3_FULL_NO_INTERACTION",
+    "frozen_intervention": true,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8231004469536579,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3499.0,
+        "Uno60": 0.7931297188236156,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8860.630043142677,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8212185368148671,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3491.0,
+        "Uno60": 0.7941332301856082,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8871.840999826907,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.83298047518231,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3541.0,
+        "Uno60": 0.8005968996185735,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8944.051361142861,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.8256880733944953,
+    "Uno60": 0.7959143392776822,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M3_FULL_WRONG_QUERY",
+    "frozen_intervention": true,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8228652081863091,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3498.0,
+        "Uno60": 0.7930128880288647,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8859.324841199836,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8212185368148671,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3491.0,
+        "Uno60": 0.7941332301856082,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8871.840999826907,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.83298047518231,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3541.0,
+        "Uno60": 0.8005968996185735,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8944.051361142861,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.8256880733944953,
+    "Uno60": 0.7959143392776822,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M3_LEARNED_QUERY",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8228652081863091,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3498.0,
+        "Uno60": 0.7930128880288647,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8859.324841199836,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8212185368148671,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3491.0,
+        "Uno60": 0.7941332301856082,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8871.840999826907,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.83298047518231,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3541.0,
+        "Uno60": 0.8005968996185735,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8944.051361142861,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  },
+  {
+    "Harrell": 0.8254528346271467,
+    "Uno60": 0.7958408239738629,
+    "aggregation": "five_within_fold_components_per_seed_then_equal_seed_mean",
+    "arm": "M3_NO_PRODUCT",
+    "frozen_intervention": false,
+    "seed_independent_cohorts_claim": false,
+    "seed_results": [
+      {
+        "Harrell": 0.8228652081863091,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3498.0,
+        "Uno60": 0.7930148440961307,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8859.34669385265,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.8212185368148671,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3491.0,
+        "Uno60": 0.7942790714507247,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8873.470298874152,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.8322747588802635,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3538.0,
+        "Uno60": 0.8002285563747333,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 8939.936330353952,
+        "aggregation": "within_fold_pair_components_only",
+        "folds": 5,
+        "seed": 83
+      }
+    ]
+  }
+]

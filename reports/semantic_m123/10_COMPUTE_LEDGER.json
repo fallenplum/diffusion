@@ -1,0 +1,17 @@
+{
+  "Cox_fits": 50,
+  "derived_frozen_main_only_vectors": 15,
+  "frozen_query_intervention_forwards": 30,
+  "neural_fits_with_positive_updates": 1050,
+  "neural_initializations": 1050,
+  "new_optimizer_updates": 365400,
+  "new_teacher_fits": 0,
+  "outer_saved_NN_forward_replays": 150,
+  "postprocess_fitted_preprocessors": 0,
+  "postprocess_optimizer_fits": 0,
+  "private_OOF_vectors": 41,
+  "saved_preprocessor_reconstructions": 5,
+  "scheduler_wall_seconds_from_process_create_to_completion_marker": 7470.044551849365,
+  "worker_elapsed_seconds_sum": 39160.39454802871,
+  "worker_elapsed_sum_is_not_wall_clock": true
+}

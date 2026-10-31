@@ -1,0 +1,1811 @@
+{
+  "CI_bootstrap_pvalues": false,
+  "actual_official_API_calls": 410,
+  "all_model_inputs_reconstructed_from_saved_transform_state": true,
+  "cases": [
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M0",
+      "official_API_calls": 2,
+      "outer": 1,
+      "seed": 0
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M0PLUS",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 8.881784197001252e-16,
+      "seed": 0
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 1,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 1,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 1,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 1,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 1,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 1,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 1,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 1,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 1,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 1,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M0",
+      "official_API_calls": 2,
+      "outer": 2,
+      "seed": 0
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M0PLUS",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 1.1102230246251565e-15,
+      "seed": 0
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 2,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 2,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 2,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 2,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 2,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 2,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 2,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 2,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 2,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 2,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M0",
+      "official_API_calls": 2,
+      "outer": 3,
+      "seed": 0
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M0PLUS",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 1.5543122344752192e-15,
+      "seed": 0
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 3,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 3,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 3,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 3,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 3,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 3,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 3,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 3,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 3,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 3,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M0",
+      "official_API_calls": 2,
+      "outer": 4,
+      "seed": 0
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M0PLUS",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 2.220446049250313e-16,
+      "seed": 0
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 4,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 4,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 4,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 4,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 4,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 4,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 4,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 4,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 4,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 4,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M0",
+      "official_API_calls": 2,
+      "outer": 5,
+      "seed": 0
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M0PLUS",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 4.440892098500626e-16,
+      "seed": 0
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_SCRATCH",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M1_WARM",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_EIGHT",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_EIGHT_MEAN",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M2_MEAN_MATCHED",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M2_SINGLE",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_BIDIRECTIONAL",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 5,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 5,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 5,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 5,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 5,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 5,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL_NO_INTERACTION",
+      "official_API_calls": 2,
+      "outer": 5,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL_WRONG_QUERY",
+      "official_API_calls": 2,
+      "outer": 5,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_FULL_MEAN_QUERY",
+      "official_API_calls": 2,
+      "outer": 5,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 1.1102230246251565e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 3.3306690738754696e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_LEARNED_QUERY",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 0.0,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 31
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 47
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno60_API_error": 2.220446049250313e-16,
+      "arm": "M3_NO_PRODUCT",
+      "official_API_calls": 2,
+      "outer": 5,
+      "saved_model_forward_max_error": 0.0,
+      "seed": 83
+    }
+  ],
+  "frozen_source_files_verified": 30,
+  "new_independent_raw_FM_extraction": false,
+  "new_preprocessor_fits": 0,
+  "no_new_optimizer_fits": true,
+  "official_scorer_version": "0.23.1",
+  "outer_metric_cases": 205,
+  "registered_private_fit_artifacts_verified": 1100,
+  "schema": "m123_actual_post_training_metric_replay_audit_v1",
+  "status": "PASS"
+}

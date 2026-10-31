@@ -1,0 +1,12 @@
+{
+  "master_lock_sha256": "41f041bcb883d65285167a201183f40d41e9de1640ead2b40a9311f61f318af3",
+  "schema": "m123_checkpoint_roles_diagnostic_lock_v1",
+  "scope": "checkpoint_schedule_and_output_weight_roles_no_new_training_or_outcome_scoring",
+  "sources": {
+    "scripts/semantic_m123_checkpoint_roles.py": "68939cb1be9cbc19de39bcfd23bb13fe1a4e920f7cb1d3734f5798425afe2c5c",
+    "tests/test_semantic_m123_checkpoint_roles.py": "2d254ce5ced60e35540912b06d9e3d8da9266152810ed9e4ea5add8dcb98f75e"
+  },
+  "status": "LOCKED_BEFORE_ACTUAL_STATE_ONLY_ROLE_AUDIT",
+  "test_count": 3,
+  "test_junit_sha256": "9058ca9e47cf7e7c260593d504501dcd6e035dc5559ba802affb8ce7cbeb6559"
+}

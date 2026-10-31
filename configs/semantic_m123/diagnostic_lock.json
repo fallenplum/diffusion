@@ -1,0 +1,15 @@
+{
+  "expected_model_forwards": 105,
+  "master_lock_sha256": "41f041bcb883d65285167a201183f40d41e9de1640ead2b40a9311f61f318af3",
+  "no_new_training_or_survival_endpoint_decoding": true,
+  "schema": "m123_geometry_diagnostic_lock_v1",
+  "scope": "attention_geometry_not_medical_semantics_or_new_performance_test",
+  "sources": {
+    "scripts/semantic_m123_diagnostics.py": "4969a704dd5c14cb8184140b1393ff1a717bb00bb5045dae85eadaa2ad85bea1",
+    "src/semantic_m123/diagnostics.py": "3fcc91fa100f7bf25ea50076920291e13fda05b86b166d50e06f49c3e4f01cbd",
+    "tests/test_semantic_m123_diagnostics.py": "0207498803aa442838db40310101b04b362c07002095fa5a8a65cf09aad8adee"
+  },
+  "status": "LOCKED_BEFORE_ACTUAL_FROZEN_GEOMETRY_REPLAY",
+  "test_junit_sha256": "a8de7c722432f657a295e943957baa803de24f86df85aad98b04020359d90ac9",
+  "tests_passed": 5
+}

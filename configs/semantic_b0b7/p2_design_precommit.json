@@ -1,0 +1,56 @@
+{
+  "schema": "semantic_b0b7_p2_architecture_precommit_v1",
+  "date": "2026-10-31",
+  "status": "DESIGN_FIXED_BEFORE_READING_P1R_DUAL_WINNER_OR_ANY_P2_OUTER_RESULT",
+  "main_phase_a": {
+    "repair_family": "dual_known_unknown_channels",
+    "known_fraction": 0.5,
+    "known_fraction_basis": "predefined_equal_channel_engineering_constant_not_P1R_development_winner",
+    "lambda_pair": 0.1,
+    "learning_rate": 0.0003,
+    "epochs_inner": 400,
+    "checkpoints": [50, 100, 200, 400],
+    "checkpoint_selection": "minimum_masked_program_Huber_with_training_median_tolerance_then_hard_gap_then_earlier_epoch",
+    "outer_final_epoch": "median_of_three_current_outer_train_inner_epochs",
+    "lambda003_in_P2_search": false,
+    "P1R_weights_used_as_P2_initialization": false,
+    "fallback_if_software_unqualified": "uniform_original_legacy_relation_lambda0.1_all_matched_arms"
+  },
+  "original_B4": "separate_legacy_relation_lambda0.1_diagnostic_same_train_partitions",
+  "textless_control_scope": {
+    "incremental_encoder": "no_actual_text_prototypes_no_concept_cosines_no_TITAN32_score_branch",
+    "shared_r0": "retains_S32_for_all_arms_as_required_by_the_common_strong_anchor_contract",
+    "full_prediction_is_globally_textless": false,
+    "B4_minus_TEXTLESS_interpretation": "explicit_text_in_incremental_representation_conditional_on_same_text_bearing_anchor_not_necessity_of_all_language_information"
+  },
+  "common_main_effect_readout": {
+    "P": "eight_preinteraction_visual_tokens_flatten512_then_train_PCA8",
+    "G": "fifty_preinteraction_gene_tokens_flatten3200_then_train_PCA8",
+    "C": "frozen_clinical64_then_train_PCA8",
+    "mechanism": "two_genuinely_variable_dimensions",
+    "Cox_coefficients": 26,
+    "minimum_relative_retained_singular_value": 0.00001,
+    "ridge_candidates": [0.1, 1.0, 10.0],
+    "selection": "three_inner_fold_micro_Harrell_then_supported_Uno60_then_stronger_ridge"
+  },
+  "ordinary_attention_controls": {
+    "domain": "raw512_via_eight_nonsemantic_image_only_readers_by_fifty_program_tokens",
+    "encoder_width": 64,
+    "matched_attention_width": 8,
+    "native_QKVO_attention_width": 64,
+    "native_means_official_paper_reproduction": false,
+    "biological_relation_prior_used": false,
+    "shared_actual_TITAN32_scores_used": true,
+    "FLOP_match_tolerance_if_real_profile_passes": 0.1
+  },
+  "r0": "entire_R4_pipeline_crossfit_including_supervised_scalar_beta_52_Cox_and_4_scalar_fits_per_partition",
+  "B0_exact": "deterministic_seed31_full_R4_teacher_per_outer_with_legacy_GRID_and_eight_program_union",
+  "outer_selection_barrier": "all_five_outer_epoch_and_lambda_receipts_frozen_before_first_outer_risk_score",
+  "planned_final_primary_fits": 105,
+  "planned_final_subcontrol_fits": 60,
+  "planned_final_original_B4_diagnostic_fits": 15,
+  "planned_deterministic_B0_full_pipeline_sources": 5,
+  "bootstrap": false,
+  "confidence_intervals": false,
+  "cohort_claim": "historically_developed_internal_crossvalidation_not_external_confirmation"
+}

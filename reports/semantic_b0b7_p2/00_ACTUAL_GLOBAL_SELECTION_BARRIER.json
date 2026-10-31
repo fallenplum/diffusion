@@ -1,0 +1,27 @@
+{
+  "all_final_epochs_are_exact_median_of_three_legal_inner_selections": true,
+  "all_ridge_lambdas_in_prelocked_set_and_use_no_outer_test": true,
+  "barrier_binding_sha256": "91ef27134dfc847ae8d6036d99f8af7039fdeab4caee0512b5bede51f48c9e02",
+  "choices_changed_by_this_audit": false,
+  "confidence_intervals_computed": false,
+  "endpoint_arrays_or_risk_vectors_loaded": false,
+  "global_selection_sha256": "92f8fc212682c3060771de23497ce7f6980ced1fe7cb96372efbd79b604d504a",
+  "model_fits_or_forwards_by_this_audit": 0,
+  "outer_folds_frozen": 5,
+  "outer_head_receipts_present_at_this_observation": 0,
+  "outer_metric_values_read": false,
+  "outer_neural_source_configurations_frozen": 120,
+  "outer_risk_head_configurations_frozen": 180,
+  "schema": "semantic_p2_actual_global_selection_barrier_audit_v1",
+  "scientific_lock_sha256": "b9aae9582c78e80f26833b0e049956246f3c7d09723abe813a505acb543f949c",
+  "scientific_sources_unchanged": 20,
+  "selected_epoch_histogram": {
+    "200": 11,
+    "400": 109
+  },
+  "selected_ridge_lambda_histogram": {
+    "1.0": 1,
+    "10.0": 179
+  },
+  "status": "VERIFIED_ALL_FIVE_OUTER_SELECTIONS_BEFORE_ANY_OUTER_HEAD_RECEIPT"
+}

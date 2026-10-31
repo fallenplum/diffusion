@@ -1,0 +1,119 @@
+{
+  "schema": "semantic_p2_final_independent_evidence_index_v1",
+  "status": "COMPLETE_WITH_EXPLICIT_SCOPE_AND_TRAINING_BUDGET_LIMITATION",
+  "master_lock_sha256": "b9aae9582c78e80f26833b0e049956246f3c7d09723abe813a505acb543f949c",
+  "actual_official_scorer": {
+    "Harrell_max_abs_error": 0.0,
+    "Uno60_max_abs_error": 6.217248937900877e-15,
+    "Uno_NA_by_prelocked_support": 0,
+    "actual_API_calls": 370,
+    "cases": 185,
+    "model_forwards": 0,
+    "optimizer_updates": 0,
+    "package_version": "0.23.1",
+    "status": "PASS_REAL_OFFICIAL_PACKAGE_METRICS_API"
+  },
+  "actual_report_math": {
+    "arms": 13,
+    "fold_rows": 185,
+    "maximum_fold_component_error": 2.0691004465334117e-11,
+    "missing_or_duplicate_comparisons_allowed": false,
+    "reporter_imported_or_called": false,
+    "required_comparisons_verified": 12,
+    "status": "PASS_INDEPENDENT_COMPONENTS_AND_MICRO_SEED_AGGREGATION"
+  },
+  "actual_saved_risks_recomputed": 185,
+  "actual_source_receipts_hash_verified": 480,
+  "actual_saved_checkpoint_byte_hash_verified": 1909,
+  "new_independent_neural_full_chain_replays": 0,
+  "raw_H5_to_prediction_second_replication": false,
+  "inner_risk_vectors_second_rescoring": false,
+  "Phase_A_heldout_mutation_actual_neural_fits": 2,
+  "Phase_A_raw_checkpoint_bytes_equal": true,
+  "Phase_A_decoded_model_optimizer_RNG_exact": true,
+  "full_DSS_pipeline_heldout_label_isolation": "PASS_REAL_HELDOUT_DSS_INVARIANT_LEARNED_PIPELINE",
+  "full_DSS_pipeline_components_exact": true,
+  "additional_software_cost": {
+    "teacher_Cox_fits": 104,
+    "downstream_Cox_fits": 2,
+    "all_Cox_fits": 106,
+    "scalar_fits": 8,
+    "teacher_preprocessing_fits": 32,
+    "risk_PCA_fits": 6,
+    "background_multioutput_Ridge_fits": 8,
+    "new_neural_fits": 0,
+    "neural_optimizer_updates": 0
+  },
+  "history_replay_scope": "five_saved_old_seed31_versus_new_B0_no_new_fit_or_forward",
+  "history_risk_byte_exact": false,
+  "history_fold_pair_components_exact": true,
+  "evidence_reports": [
+    {
+      "file": "11_decision.json",
+      "bytes": 1757,
+      "sha256": "e01a5bec73d6b3cec4056aaedef87d65573405c658e08131db062c53cda35c71"
+    },
+    {
+      "file": "06_paired_comparisons.json",
+      "bytes": 20298,
+      "sha256": "9aa1686f0850f82da685d525ea632ced33d26c86b3fdb78692ce96a7314e6ae4"
+    },
+    {
+      "file": "09_cost_ledger.json",
+      "bytes": 1228,
+      "sha256": "aeb087b09583f4330e88e62c87d0c53b148d6844a71682d627836abe9c8bc9a0"
+    },
+    {
+      "file": "09_TRAINING_BUDGET_AUDIT.json",
+      "bytes": 98774,
+      "sha256": "3531d2101eef2dc9892419baa51ec116b1e225b11e9e13e18959488f41ba8a59"
+    },
+    {
+      "file": "03_LIVE_PHASE_A_HELDOUT_MUTATION_AUDIT.json",
+      "bytes": 3323,
+      "sha256": "e655bccc8d8e9589b6fa933b05919dd0e3f4bf54716d6772b5c0d16eea47d085"
+    },
+    {
+      "file": "03_LIVE_DSS_PIPELINE_LABEL_ISOLATION_AUDIT.json",
+      "bytes": 5963,
+      "sha256": "2bee33bf17cc91a6a4bb953baf985fc946a2191dce65e0313036708e180a0130"
+    },
+    {
+      "file": "00_R4_EXACT_HISTORICAL_RISK_AUDIT.json",
+      "bytes": 15039,
+      "sha256": "006eb262b1a097e47b64f5a1cc4c0c4e026d44d079858f9e04b239aff1e2f46d"
+    },
+    {
+      "file": "00_R4_PRECISION_LAYOUT_DIAGNOSTIC.json",
+      "bytes": 298865,
+      "sha256": "299991c14f08cc16be8555ed247b2b8d36873109b935b10cb28569397e8667c2"
+    },
+    {
+      "file": "INDEPENDENT_P2_OUTER1_AUDIT.json",
+      "bytes": 160266,
+      "sha256": "6d443124a1d71136e60bf1340ff54b75e3f36f0217ca442d4a2beeb129ddae65"
+    },
+    {
+      "file": "INDEPENDENT_P2_OUTER2_AUDIT.json",
+      "bytes": 145304,
+      "sha256": "e65af944d0fafa2556fc00787fb3831037b0ef180b41730fb67a3ae26a43805f"
+    },
+    {
+      "file": "INDEPENDENT_P2_OUTER3_AUDIT.json",
+      "bytes": 145834,
+      "sha256": "f34b688d36859a80ad28e2e4a30bf48bdf37dbc5eb5bc792ab98a7a002312746"
+    },
+    {
+      "file": "INDEPENDENT_P2_OUTER4_AUDIT.json",
+      "bytes": 145572,
+      "sha256": "bd6ea06c598a06f09f6adcfb3a84c16514cca1314bb8b15da15bfb8d07ab2d83"
+    },
+    {
+      "file": "INDEPENDENT_P2_OUTER5_AUDIT.json",
+      "bytes": 145778,
+      "sha256": "ff2257e7f2c04e9cbf53deedc3f92c93d7af993dfb0d98f26e456544fa9a2a4d"
+    }
+  ],
+  "CI_computed": false,
+  "new_training_by_index": 0
+}

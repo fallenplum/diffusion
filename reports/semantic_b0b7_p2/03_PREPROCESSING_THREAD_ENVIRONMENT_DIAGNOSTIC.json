@@ -1,0 +1,762 @@
+{
+  "schema": "semantic_b0b7_p2_anonymous_preprocessing_thread_diagnostic_v1",
+  "status": "ENVIRONMENT_MISMATCH_REPRODUCED_WITHOUT_PREDICTIVE_FITS",
+  "scope": "outer1_final_MAIN_seed31_training_input_reconstruction_only",
+  "P2_master_lock_sha256": "b9aae9582c78e80f26833b0e049956246f3c7d09723abe813a505acb543f949c",
+  "audit_source_sha256": "84bf92571e00288bbcc41e808ef1e866f8900778dd7e85dd8f6b41d30937d7b8",
+  "audit_lock_sha256": "fa0f399a6315770df5089a07635a36e78a5a0304c8aca28765494819611f2e94",
+  "all_20_formal_scientific_source_hashes_unchanged": true,
+  "formal_scientific_source_sha256": {
+    "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+    "configs/semantic_b0b7/p1r_variants_v1.json": "223b22ce4e2371431a9884e190cdae76e699d3c1f3ba12f30d4ff9a3ee20085a",
+    "configs/semantic_b0b7/p2_design_precommit.json": "bc8000aace67c8864e85a50d3c13e9c6229cc9be942a4b8e8fc1047937d8876d",
+    "configs/semantic_b0b7/p2_qualification_amendment.json": "3c55810855c16b79936c5f7ef65130e9758cc21706a763ad82de1a59a3680a5e",
+    "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+    "scripts/semantic_b0b7_p1r.py": "c7214fbd2a1a078825695ded9762b8be1e088e1c843f194fa6c31effa79a271e",
+    "scripts/semantic_b0b7_p2_matrix.py": "13c5494550bdad5be21d3070197602a9b544f2a3c60dcda90384436074af8239",
+    "scripts/semantic_b0b7_p2_schedule.py": "f03a3571864af3512b6baa03aeaac9ab56d3e49bf6ac0f143523c359c428199c",
+    "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+    "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+    "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+    "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+    "src/semantic_b0b7/p1r_data.py": "0aaf475fec0c2e84a8e89a49313b02120d09328c1ae87059047c976617e87463",
+    "src/semantic_b0b7/p1r_models.py": "4b187bfab3331ec6fb40ff2d375ccda612713f8cb9376de47de1a202ed65aa93",
+    "src/semantic_b0b7/p2_anchor.py": "9ce4262750b5af384365a2829c00bc145328a42200ef6725aebad2417afa8600",
+    "src/semantic_b0b7/p2_data.py": "f4dd68414246d7b8e8188515a851df7542c24c9f830a4af08c7934c175f6a2c6",
+    "src/semantic_b0b7/p2_models.py": "7e44213dbbf0b8be97396a4069e83998493c4fe2f7a606445fb7f49ba5ae1041",
+    "src/semantic_b0b7/p2_survival.py": "8fdb3820143a6fefb99269f566dc990cde80c68b53579e382d90e7d7f387c3b9",
+    "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+    "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10"
+  },
+  "historical_failed_attempt": {
+    "evidence_origin": "root_observed_exec_session_65735_stderr_exit_position_and_actual_output_absence",
+    "exit_code": 1,
+    "error": "FROZEN_INPUT_SCOPE_CHANGED",
+    "source_line": 172,
+    "launch_explicit_OMP_MKL_OPENBLAS_override": false,
+    "actual_historical_process_environment": null,
+    "environment_not_recorded_and_not_backfilled": true,
+    "failed_private_output_exists_at_all_4_probes": false,
+    "failed_public_output_exists_at_all_4_probes": false,
+    "predictive_fit_and_forward_count_at_failure": 0,
+    "zero_count_basis": "exception_precedes_line173_checkpoint_deserialization_and_feature_forward_and_all_DSS_reads_and_predictive_fits; no claim of unavailable historical runtime call instrumentation"
+  },
+  "actual_four_case_probe": {
+    "local_preexecution_source_template_sha256": "5b75a3c6cd5a4d2593ef997003cc25d7a2923235eb31fca61877229149b09c44",
+    "transport": "PowerShell Get-Content -Raw piped through SSH to fresh Python stdin; local source bytes retained privately unchanged",
+    "transported_stdin_byte_sha256": null,
+    "stdin_byte_hash_limitation": "SSH stdin trailing newline bytes were not separately captured; template content hash is not mislabeled as a captured stdin byte hash",
+    "fresh_interpreters": 4,
+    "cases": [
+      {
+        "actual_remote_command_shape": [
+          "env",
+          "OMP_NUM_THREADS=2",
+          "MKL_NUM_THREADS=2",
+          "OPENBLAS_NUM_THREADS=2",
+          "python",
+          "-",
+          "formal2_torch2"
+        ],
+        "local_stdout_sha256": "07a69831bf526cd17567a58f1147694c8b8912a84b48f07156e7f8ffe04fa3d2",
+        "result": {
+          "mode": "formal2_torch2",
+          "process_environment_before_numpy": {
+            "OMP_NUM_THREADS": "2",
+            "MKL_NUM_THREADS": "2",
+            "OPENBLAS_NUM_THREADS": "2"
+          },
+          "numpy_preloaded_by_python_startup": false,
+          "process_environment_after_matrix_import": {
+            "OMP_NUM_THREADS": "2",
+            "MKL_NUM_THREADS": "2",
+            "OPENBLAS_NUM_THREADS": "2"
+          },
+          "torch_cpu_threads": 2,
+          "threadpools": [
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "version": null,
+              "num_threads": 2,
+              "architecture": null
+            },
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libscipy_openblas",
+              "version": "0.3.27.dev",
+              "num_threads": 2,
+              "architecture": "Zen"
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "version": null,
+              "num_threads": 2,
+              "architecture": null
+            },
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libscipy_openblas",
+              "version": "0.3.27",
+              "num_threads": 2,
+              "architecture": "Haswell"
+            }
+          ],
+          "actual_input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+          "saved_formal_input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+          "exact_saved_input_match": true,
+          "training_tensor_component_sha256": {
+            "image.patch_values": "3216ff9773d3a0ba94beab7f858bccce4f455d2e48c49c94c02bc994c9e49e12",
+            "image.patch_aligned": "bc244ca089a5b463328b282781767d5683efa08e004782b49a6fcb089172e544",
+            "image.patch_mask": "323a6c26a7adbfaa1b13ebf3e89732e507924219d8ad3d876f868651a8947d72",
+            "image.patch_slide": "2f5c37be77129847c13f28e16f99e89593ab8fde080c2c08843569ce68604bb5",
+            "image.titan_native": "99f77e925c9b1276f072d3e787e1a2c8f711271be30334dc855b88f20c52df14",
+            "image.titan_aligned": "c32de7a13dff3b6e918b4669261cce24ebb85c41f63b14d4aec5c9aee3cad4b5",
+            "image.titan_scores": "97228aa0a41227001fa59b6acfd35e4445e3ba59de5ae5a87d152507dbd10efb",
+            "image.clinical": "35dd4c155d0fe86411a947338162d23bc4277e4820545ab0d13ef18220ca4ade",
+            "omics.values": "cf3eb95de395d18103f9f50517287d837d44c6a3dc668943c1d1a6b83e8351b6",
+            "omics.measured": "2be7fdc35189427dd4aa790a6ad1060a5b935c25fb8388df765c761a7b215ecd",
+            "target": "8b6c30d04f5c024c7bd7ba525fcdb911104bb6b80cd841d5027016fbd5c9a1c6",
+            "target_mask": "5bb8d9bd29354f709fec81671e2506901f05ef4e3c3ae8a19bc415217e51fa50",
+            "metadata.patient": "f3aa9e501fff8f3a60e28157934a1ba82928f8b95ef16577a28cf3cb97841e64",
+            "metadata.stage": "75fb1aef60d459ffaa330064bc00a8fee42108d293bca71cf3548cc7dcefaaf8",
+            "metadata.cohort": "c8e8c25de097f0a4add1c4101841a22d27de73c627285ffd50f4ed3232bee311",
+            "metadata.missing_pattern": "271b866f4aeaa520361485d7cb680831199c7a8cf69272b8968c7b83dbbe3139"
+          },
+          "program_value_channel_sha256": {
+            "RNA": "8b6c30d04f5c024c7bd7ba525fcdb911104bb6b80cd841d5027016fbd5c9a1c6",
+            "CNA_gain": "7bb796334c7e79dd577c3d9ee60f5f25546c021b86305999ce08fb1d5ad03cac",
+            "CNA_loss": "2bedd562c88ca20d4c42dc6f17ad303f92186ef660d76bcb34e976057c630799"
+          },
+          "program_scale_component_sha256": {
+            "RNA.mean": "61de3181c6fef3eb693119129a2e3067db63827a9fe04111ee8c6dd287014520",
+            "RNA.sd": "fe0bbe9edc504dcf12c3f4ca22f33780f12ab02902662cf892fd35a7921bf699",
+            "RNA.measured": "8ef90c0748cca09f18c742a968105d940e37cd4db818fd7cc09da9cd6199b894",
+            "gain.mean": "d46f0aeccc9a03f31b79154abf6f4a39f5cff986ebe80cc88467dd69a2c62678",
+            "gain.sd": "20f758a181fbc6be2567e7a85142ab352cc8dbf0940e6b3c18d6fb47b7f97ba1",
+            "gain.measured": "25be14a55c2439451b23f21073b8371ffde988356c4e1b20db3e67b7647fecc3",
+            "loss.mean": "d5b16ac6fb3a8b2afb3bfccc82c57740b7169c47cb1d1fee6a408d472ef7360f",
+            "loss.sd": "f18f45eacbdbe98966775c6f0433ef5a716e9b55205db419c3090a5cb29e7fca",
+            "loss.measured": "25be14a55c2439451b23f21073b8371ffde988356c4e1b20db3e67b7647fecc3"
+          },
+          "fit_rows_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "molecular_fit_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "clinical_fit_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "cohort_input_hash": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+          "fit_n": 409,
+          "evaluation_n": 103,
+          "outcomes_loaded": false,
+          "forbidden_call_counts": {
+            "neural_fit": 0,
+            "teacher_Cox_fit": 0,
+            "risk_Cox_fit": 0,
+            "model_load": 0,
+            "neural_feature_forward": 0,
+            "DSS_read": 0,
+            "risk_scoring": 0,
+            "PCA_fit": 0
+          },
+          "elapsed_seconds": 10.5750852227211,
+          "failed_original_private_output_exists": false,
+          "failed_original_public_output_exists": false,
+          "weights_or_predictions_read": false,
+          "source_or_data_files_changed": false
+        }
+      },
+      {
+        "actual_remote_command_shape": [
+          "env",
+          "OMP_NUM_THREADS=2",
+          "MKL_NUM_THREADS=2",
+          "OPENBLAS_NUM_THREADS=2",
+          "python",
+          "-",
+          "formal2_torch1"
+        ],
+        "local_stdout_sha256": "72c201771e775efb98c1b50582f4ec8e0fd8e4f6c47d86a85d3953d9658620b0",
+        "result": {
+          "mode": "formal2_torch1",
+          "process_environment_before_numpy": {
+            "OMP_NUM_THREADS": "2",
+            "MKL_NUM_THREADS": "2",
+            "OPENBLAS_NUM_THREADS": "2"
+          },
+          "numpy_preloaded_by_python_startup": false,
+          "process_environment_after_matrix_import": {
+            "OMP_NUM_THREADS": "2",
+            "MKL_NUM_THREADS": "2",
+            "OPENBLAS_NUM_THREADS": "2"
+          },
+          "torch_cpu_threads": 1,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libscipy_openblas",
+              "version": "0.3.27.dev",
+              "num_threads": 2,
+              "architecture": "Zen"
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "version": null,
+              "num_threads": 1,
+              "architecture": null
+            },
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libscipy_openblas",
+              "version": "0.3.27",
+              "num_threads": 2,
+              "architecture": "Haswell"
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "version": null,
+              "num_threads": 2,
+              "architecture": null
+            }
+          ],
+          "actual_input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+          "saved_formal_input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+          "exact_saved_input_match": true,
+          "training_tensor_component_sha256": {
+            "image.patch_values": "3216ff9773d3a0ba94beab7f858bccce4f455d2e48c49c94c02bc994c9e49e12",
+            "image.patch_aligned": "bc244ca089a5b463328b282781767d5683efa08e004782b49a6fcb089172e544",
+            "image.patch_mask": "323a6c26a7adbfaa1b13ebf3e89732e507924219d8ad3d876f868651a8947d72",
+            "image.patch_slide": "2f5c37be77129847c13f28e16f99e89593ab8fde080c2c08843569ce68604bb5",
+            "image.titan_native": "99f77e925c9b1276f072d3e787e1a2c8f711271be30334dc855b88f20c52df14",
+            "image.titan_aligned": "c32de7a13dff3b6e918b4669261cce24ebb85c41f63b14d4aec5c9aee3cad4b5",
+            "image.titan_scores": "97228aa0a41227001fa59b6acfd35e4445e3ba59de5ae5a87d152507dbd10efb",
+            "image.clinical": "35dd4c155d0fe86411a947338162d23bc4277e4820545ab0d13ef18220ca4ade",
+            "omics.values": "cf3eb95de395d18103f9f50517287d837d44c6a3dc668943c1d1a6b83e8351b6",
+            "omics.measured": "2be7fdc35189427dd4aa790a6ad1060a5b935c25fb8388df765c761a7b215ecd",
+            "target": "8b6c30d04f5c024c7bd7ba525fcdb911104bb6b80cd841d5027016fbd5c9a1c6",
+            "target_mask": "5bb8d9bd29354f709fec81671e2506901f05ef4e3c3ae8a19bc415217e51fa50",
+            "metadata.patient": "f3aa9e501fff8f3a60e28157934a1ba82928f8b95ef16577a28cf3cb97841e64",
+            "metadata.stage": "75fb1aef60d459ffaa330064bc00a8fee42108d293bca71cf3548cc7dcefaaf8",
+            "metadata.cohort": "c8e8c25de097f0a4add1c4101841a22d27de73c627285ffd50f4ed3232bee311",
+            "metadata.missing_pattern": "271b866f4aeaa520361485d7cb680831199c7a8cf69272b8968c7b83dbbe3139"
+          },
+          "program_value_channel_sha256": {
+            "RNA": "8b6c30d04f5c024c7bd7ba525fcdb911104bb6b80cd841d5027016fbd5c9a1c6",
+            "CNA_gain": "7bb796334c7e79dd577c3d9ee60f5f25546c021b86305999ce08fb1d5ad03cac",
+            "CNA_loss": "2bedd562c88ca20d4c42dc6f17ad303f92186ef660d76bcb34e976057c630799"
+          },
+          "program_scale_component_sha256": {
+            "RNA.mean": "61de3181c6fef3eb693119129a2e3067db63827a9fe04111ee8c6dd287014520",
+            "RNA.sd": "fe0bbe9edc504dcf12c3f4ca22f33780f12ab02902662cf892fd35a7921bf699",
+            "RNA.measured": "8ef90c0748cca09f18c742a968105d940e37cd4db818fd7cc09da9cd6199b894",
+            "gain.mean": "d46f0aeccc9a03f31b79154abf6f4a39f5cff986ebe80cc88467dd69a2c62678",
+            "gain.sd": "20f758a181fbc6be2567e7a85142ab352cc8dbf0940e6b3c18d6fb47b7f97ba1",
+            "gain.measured": "25be14a55c2439451b23f21073b8371ffde988356c4e1b20db3e67b7647fecc3",
+            "loss.mean": "d5b16ac6fb3a8b2afb3bfccc82c57740b7169c47cb1d1fee6a408d472ef7360f",
+            "loss.sd": "f18f45eacbdbe98966775c6f0433ef5a716e9b55205db419c3090a5cb29e7fca",
+            "loss.measured": "25be14a55c2439451b23f21073b8371ffde988356c4e1b20db3e67b7647fecc3"
+          },
+          "fit_rows_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "molecular_fit_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "clinical_fit_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "cohort_input_hash": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+          "fit_n": 409,
+          "evaluation_n": 103,
+          "outcomes_loaded": false,
+          "forbidden_call_counts": {
+            "neural_fit": 0,
+            "teacher_Cox_fit": 0,
+            "risk_Cox_fit": 0,
+            "model_load": 0,
+            "neural_feature_forward": 0,
+            "DSS_read": 0,
+            "risk_scoring": 0,
+            "PCA_fit": 0
+          },
+          "elapsed_seconds": 11.365729309618473,
+          "failed_original_private_output_exists": false,
+          "failed_original_public_output_exists": false,
+          "weights_or_predictions_read": false,
+          "source_or_data_files_changed": false
+        }
+      },
+      {
+        "actual_remote_command_shape": [
+          "python",
+          "-",
+          "ambient_numpyfirst_torch1"
+        ],
+        "local_stdout_sha256": "5d975187e3187f6d9f6fae80b34189b6bbd5ba2fa2dec60a06723f3b398ca6e6",
+        "result": {
+          "mode": "ambient_numpyfirst_torch1",
+          "process_environment_before_numpy": {
+            "OMP_NUM_THREADS": null,
+            "MKL_NUM_THREADS": null,
+            "OPENBLAS_NUM_THREADS": null
+          },
+          "numpy_preloaded_by_python_startup": false,
+          "process_environment_after_matrix_import": {
+            "OMP_NUM_THREADS": "2",
+            "MKL_NUM_THREADS": "2",
+            "OPENBLAS_NUM_THREADS": null
+          },
+          "torch_cpu_threads": 1,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libscipy_openblas",
+              "version": "0.3.27.dev",
+              "num_threads": 2,
+              "architecture": "Zen"
+            },
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libscipy_openblas",
+              "version": "0.3.27",
+              "num_threads": 64,
+              "architecture": "Haswell"
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "version": null,
+              "num_threads": 2,
+              "architecture": null
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "version": null,
+              "num_threads": 1,
+              "architecture": null
+            }
+          ],
+          "actual_input_sha256": "43de14bf5b8cdf69fa5baf9317f027ea47038d7ce8b69f69c995bfb7b93d0628",
+          "saved_formal_input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+          "exact_saved_input_match": false,
+          "training_tensor_component_sha256": {
+            "image.patch_values": "3216ff9773d3a0ba94beab7f858bccce4f455d2e48c49c94c02bc994c9e49e12",
+            "image.patch_aligned": "bc244ca089a5b463328b282781767d5683efa08e004782b49a6fcb089172e544",
+            "image.patch_mask": "323a6c26a7adbfaa1b13ebf3e89732e507924219d8ad3d876f868651a8947d72",
+            "image.patch_slide": "2f5c37be77129847c13f28e16f99e89593ab8fde080c2c08843569ce68604bb5",
+            "image.titan_native": "99f77e925c9b1276f072d3e787e1a2c8f711271be30334dc855b88f20c52df14",
+            "image.titan_aligned": "c32de7a13dff3b6e918b4669261cce24ebb85c41f63b14d4aec5c9aee3cad4b5",
+            "image.titan_scores": "97228aa0a41227001fa59b6acfd35e4445e3ba59de5ae5a87d152507dbd10efb",
+            "image.clinical": "35dd4c155d0fe86411a947338162d23bc4277e4820545ab0d13ef18220ca4ade",
+            "omics.values": "3626c40af913dfebc111e86a107f3a652ed1102cbb9466f5d7ac1f3d66cac02a",
+            "omics.measured": "2be7fdc35189427dd4aa790a6ad1060a5b935c25fb8388df765c761a7b215ecd",
+            "target": "ace346a3f2e99b5f45ddcce9627737ec1c7c6911b0a642d4f3d4a398294c8e00",
+            "target_mask": "5bb8d9bd29354f709fec81671e2506901f05ef4e3c3ae8a19bc415217e51fa50",
+            "metadata.patient": "f3aa9e501fff8f3a60e28157934a1ba82928f8b95ef16577a28cf3cb97841e64",
+            "metadata.stage": "75fb1aef60d459ffaa330064bc00a8fee42108d293bca71cf3548cc7dcefaaf8",
+            "metadata.cohort": "c8e8c25de097f0a4add1c4101841a22d27de73c627285ffd50f4ed3232bee311",
+            "metadata.missing_pattern": "271b866f4aeaa520361485d7cb680831199c7a8cf69272b8968c7b83dbbe3139"
+          },
+          "program_value_channel_sha256": {
+            "RNA": "ace346a3f2e99b5f45ddcce9627737ec1c7c6911b0a642d4f3d4a398294c8e00",
+            "CNA_gain": "481556f286be2af0e2697e825be997efa2e62171c56938702135a8058eebd2f6",
+            "CNA_loss": "fadbdcb30ca2e900e42b89917a40459877a479336a6d074018b956352c1e7f22"
+          },
+          "program_scale_component_sha256": {
+            "RNA.mean": "61de3181c6fef3eb693119129a2e3067db63827a9fe04111ee8c6dd287014520",
+            "RNA.sd": "fe0bbe9edc504dcf12c3f4ca22f33780f12ab02902662cf892fd35a7921bf699",
+            "RNA.measured": "8ef90c0748cca09f18c742a968105d940e37cd4db818fd7cc09da9cd6199b894",
+            "gain.mean": "d46f0aeccc9a03f31b79154abf6f4a39f5cff986ebe80cc88467dd69a2c62678",
+            "gain.sd": "20f758a181fbc6be2567e7a85142ab352cc8dbf0940e6b3c18d6fb47b7f97ba1",
+            "gain.measured": "25be14a55c2439451b23f21073b8371ffde988356c4e1b20db3e67b7647fecc3",
+            "loss.mean": "d5b16ac6fb3a8b2afb3bfccc82c57740b7169c47cb1d1fee6a408d472ef7360f",
+            "loss.sd": "f18f45eacbdbe98966775c6f0433ef5a716e9b55205db419c3090a5cb29e7fca",
+            "loss.measured": "25be14a55c2439451b23f21073b8371ffde988356c4e1b20db3e67b7647fecc3"
+          },
+          "fit_rows_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "molecular_fit_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "clinical_fit_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "cohort_input_hash": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+          "fit_n": 409,
+          "evaluation_n": 103,
+          "outcomes_loaded": false,
+          "forbidden_call_counts": {
+            "neural_fit": 0,
+            "teacher_Cox_fit": 0,
+            "risk_Cox_fit": 0,
+            "model_load": 0,
+            "neural_feature_forward": 0,
+            "DSS_read": 0,
+            "risk_scoring": 0,
+            "PCA_fit": 0
+          },
+          "elapsed_seconds": 11.47598946094513,
+          "failed_original_private_output_exists": false,
+          "failed_original_public_output_exists": false,
+          "weights_or_predictions_read": false,
+          "source_or_data_files_changed": false
+        }
+      },
+      {
+        "actual_remote_command_shape": [
+          "env",
+          "OMP_NUM_THREADS=1",
+          "MKL_NUM_THREADS=1",
+          "OPENBLAS_NUM_THREADS=1",
+          "python",
+          "-",
+          "formal1_torch1"
+        ],
+        "local_stdout_sha256": "2dc3c063d3328a5fefd4a9f58ba0dc52156215c083b9ca706dd4917a5e5ab8fe",
+        "result": {
+          "mode": "formal1_torch1",
+          "process_environment_before_numpy": {
+            "OMP_NUM_THREADS": "1",
+            "MKL_NUM_THREADS": "1",
+            "OPENBLAS_NUM_THREADS": "1"
+          },
+          "numpy_preloaded_by_python_startup": false,
+          "process_environment_after_matrix_import": {
+            "OMP_NUM_THREADS": "1",
+            "MKL_NUM_THREADS": "1",
+            "OPENBLAS_NUM_THREADS": "1"
+          },
+          "torch_cpu_threads": 1,
+          "threadpools": [
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "version": null,
+              "num_threads": 1,
+              "architecture": null
+            },
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libscipy_openblas",
+              "version": "0.3.27",
+              "num_threads": 1,
+              "architecture": "Haswell"
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "version": null,
+              "num_threads": 1,
+              "architecture": null
+            },
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libscipy_openblas",
+              "version": "0.3.27.dev",
+              "num_threads": 1,
+              "architecture": "Zen"
+            }
+          ],
+          "actual_input_sha256": "c645155cac34fa3d8d7c0ffd019cf51ca1eac47a6c4e4a2916094fbf5e9c861d",
+          "saved_formal_input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+          "exact_saved_input_match": false,
+          "training_tensor_component_sha256": {
+            "image.patch_values": "3216ff9773d3a0ba94beab7f858bccce4f455d2e48c49c94c02bc994c9e49e12",
+            "image.patch_aligned": "bc244ca089a5b463328b282781767d5683efa08e004782b49a6fcb089172e544",
+            "image.patch_mask": "323a6c26a7adbfaa1b13ebf3e89732e507924219d8ad3d876f868651a8947d72",
+            "image.patch_slide": "2f5c37be77129847c13f28e16f99e89593ab8fde080c2c08843569ce68604bb5",
+            "image.titan_native": "99f77e925c9b1276f072d3e787e1a2c8f711271be30334dc855b88f20c52df14",
+            "image.titan_aligned": "c32de7a13dff3b6e918b4669261cce24ebb85c41f63b14d4aec5c9aee3cad4b5",
+            "image.titan_scores": "97228aa0a41227001fa59b6acfd35e4445e3ba59de5ae5a87d152507dbd10efb",
+            "image.clinical": "35dd4c155d0fe86411a947338162d23bc4277e4820545ab0d13ef18220ca4ade",
+            "omics.values": "55a0f7ee0ec2ca69261c72087eea05143d9b3078e546cc2934562b3c8f2f2753",
+            "omics.measured": "2be7fdc35189427dd4aa790a6ad1060a5b935c25fb8388df765c761a7b215ecd",
+            "target": "c2d2e16bbaa6a346404c7b2e353eca08791d0433104976ce2dea60ded39af915",
+            "target_mask": "5bb8d9bd29354f709fec81671e2506901f05ef4e3c3ae8a19bc415217e51fa50",
+            "metadata.patient": "f3aa9e501fff8f3a60e28157934a1ba82928f8b95ef16577a28cf3cb97841e64",
+            "metadata.stage": "75fb1aef60d459ffaa330064bc00a8fee42108d293bca71cf3548cc7dcefaaf8",
+            "metadata.cohort": "c8e8c25de097f0a4add1c4101841a22d27de73c627285ffd50f4ed3232bee311",
+            "metadata.missing_pattern": "271b866f4aeaa520361485d7cb680831199c7a8cf69272b8968c7b83dbbe3139"
+          },
+          "program_value_channel_sha256": {
+            "RNA": "c2d2e16bbaa6a346404c7b2e353eca08791d0433104976ce2dea60ded39af915",
+            "CNA_gain": "31cbae3038621e7cac24eb5f0f129af21d17af78785ac0822821f846a9edb237",
+            "CNA_loss": "7b3e9fe4ddbb92adc154237da720faeeaefc1916fa9a0d90aeb0621fed7b54bb"
+          },
+          "program_scale_component_sha256": {
+            "RNA.mean": "61de3181c6fef3eb693119129a2e3067db63827a9fe04111ee8c6dd287014520",
+            "RNA.sd": "fe0bbe9edc504dcf12c3f4ca22f33780f12ab02902662cf892fd35a7921bf699",
+            "RNA.measured": "8ef90c0748cca09f18c742a968105d940e37cd4db818fd7cc09da9cd6199b894",
+            "gain.mean": "d46f0aeccc9a03f31b79154abf6f4a39f5cff986ebe80cc88467dd69a2c62678",
+            "gain.sd": "20f758a181fbc6be2567e7a85142ab352cc8dbf0940e6b3c18d6fb47b7f97ba1",
+            "gain.measured": "25be14a55c2439451b23f21073b8371ffde988356c4e1b20db3e67b7647fecc3",
+            "loss.mean": "d5b16ac6fb3a8b2afb3bfccc82c57740b7169c47cb1d1fee6a408d472ef7360f",
+            "loss.sd": "f18f45eacbdbe98966775c6f0433ef5a716e9b55205db419c3090a5cb29e7fca",
+            "loss.measured": "25be14a55c2439451b23f21073b8371ffde988356c4e1b20db3e67b7647fecc3"
+          },
+          "fit_rows_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "molecular_fit_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "clinical_fit_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+          "cohort_input_hash": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+          "fit_n": 409,
+          "evaluation_n": 103,
+          "outcomes_loaded": false,
+          "forbidden_call_counts": {
+            "neural_fit": 0,
+            "teacher_Cox_fit": 0,
+            "risk_Cox_fit": 0,
+            "model_load": 0,
+            "neural_feature_forward": 0,
+            "DSS_read": 0,
+            "risk_scoring": 0,
+            "PCA_fit": 0
+          },
+          "elapsed_seconds": 11.641468070447445,
+          "failed_original_private_output_exists": false,
+          "failed_original_public_output_exists": false,
+          "weights_or_predictions_read": false,
+          "source_or_data_files_changed": false
+        }
+      }
+    ]
+  },
+  "actual_numeric_probe": {
+    "local_preexecution_source_template_sha256": "2c6abb2f09d17c2065c7ab1016dd13b04fe11470308dfc83ca97db577711453b",
+    "actual_remote_command_shape": [
+      "env",
+      "OMP_NUM_THREADS=2",
+      "MKL_NUM_THREADS=2",
+      "OPENBLAS_NUM_THREADS=2",
+      "python",
+      "-",
+      "formal2_torch1"
+    ],
+    "local_stdout_sha256": "b4005fcdbd6b6945f9820a697d9a2c379b8804a8dc78161a88636b45cbc8b4c0",
+    "fresh_interpreters": 1,
+    "build_inputs_calls": 2,
+    "intervention": "same process, same immutable inputs, change only BLAS threadpool limits from 2 to 64 for second preprocessing call, restore after context",
+    "result": {
+      "mode": "formal2_torch1",
+      "process_environment_before_numpy": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "numpy_preloaded_by_python_startup": false,
+      "process_environment_after_matrix_import": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "torch_cpu_threads": 1,
+      "threadpools": [
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "prefix": "libgomp",
+          "version": null,
+          "num_threads": 1,
+          "architecture": null
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "prefix": "libscipy_openblas",
+          "version": "0.3.27",
+          "num_threads": 2,
+          "architecture": "Haswell"
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "prefix": "libscipy_openblas",
+          "version": "0.3.27.dev",
+          "num_threads": 2,
+          "architecture": "Zen"
+        },
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "prefix": "libgomp",
+          "version": null,
+          "num_threads": 2,
+          "architecture": null
+        }
+      ],
+      "actual_input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "saved_formal_input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "exact_saved_input_match": true,
+      "training_tensor_component_sha256": {
+        "image.patch_values": "3216ff9773d3a0ba94beab7f858bccce4f455d2e48c49c94c02bc994c9e49e12",
+        "image.patch_aligned": "bc244ca089a5b463328b282781767d5683efa08e004782b49a6fcb089172e544",
+        "image.patch_mask": "323a6c26a7adbfaa1b13ebf3e89732e507924219d8ad3d876f868651a8947d72",
+        "image.patch_slide": "2f5c37be77129847c13f28e16f99e89593ab8fde080c2c08843569ce68604bb5",
+        "image.titan_native": "99f77e925c9b1276f072d3e787e1a2c8f711271be30334dc855b88f20c52df14",
+        "image.titan_aligned": "c32de7a13dff3b6e918b4669261cce24ebb85c41f63b14d4aec5c9aee3cad4b5",
+        "image.titan_scores": "97228aa0a41227001fa59b6acfd35e4445e3ba59de5ae5a87d152507dbd10efb",
+        "image.clinical": "35dd4c155d0fe86411a947338162d23bc4277e4820545ab0d13ef18220ca4ade",
+        "omics.values": "cf3eb95de395d18103f9f50517287d837d44c6a3dc668943c1d1a6b83e8351b6",
+        "omics.measured": "2be7fdc35189427dd4aa790a6ad1060a5b935c25fb8388df765c761a7b215ecd",
+        "target": "8b6c30d04f5c024c7bd7ba525fcdb911104bb6b80cd841d5027016fbd5c9a1c6",
+        "target_mask": "5bb8d9bd29354f709fec81671e2506901f05ef4e3c3ae8a19bc415217e51fa50",
+        "metadata.patient": "f3aa9e501fff8f3a60e28157934a1ba82928f8b95ef16577a28cf3cb97841e64",
+        "metadata.stage": "75fb1aef60d459ffaa330064bc00a8fee42108d293bca71cf3548cc7dcefaaf8",
+        "metadata.cohort": "c8e8c25de097f0a4add1c4101841a22d27de73c627285ffd50f4ed3232bee311",
+        "metadata.missing_pattern": "271b866f4aeaa520361485d7cb680831199c7a8cf69272b8968c7b83dbbe3139"
+      },
+      "program_value_channel_sha256": {
+        "RNA": "8b6c30d04f5c024c7bd7ba525fcdb911104bb6b80cd841d5027016fbd5c9a1c6",
+        "CNA_gain": "7bb796334c7e79dd577c3d9ee60f5f25546c021b86305999ce08fb1d5ad03cac",
+        "CNA_loss": "2bedd562c88ca20d4c42dc6f17ad303f92186ef660d76bcb34e976057c630799"
+      },
+      "program_scale_component_sha256": {
+        "RNA.mean": "61de3181c6fef3eb693119129a2e3067db63827a9fe04111ee8c6dd287014520",
+        "RNA.sd": "fe0bbe9edc504dcf12c3f4ca22f33780f12ab02902662cf892fd35a7921bf699",
+        "RNA.measured": "8ef90c0748cca09f18c742a968105d940e37cd4db818fd7cc09da9cd6199b894",
+        "gain.mean": "d46f0aeccc9a03f31b79154abf6f4a39f5cff986ebe80cc88467dd69a2c62678",
+        "gain.sd": "20f758a181fbc6be2567e7a85142ab352cc8dbf0940e6b3c18d6fb47b7f97ba1",
+        "gain.measured": "25be14a55c2439451b23f21073b8371ffde988356c4e1b20db3e67b7647fecc3",
+        "loss.mean": "d5b16ac6fb3a8b2afb3bfccc82c57740b7169c47cb1d1fee6a408d472ef7360f",
+        "loss.sd": "f18f45eacbdbe98966775c6f0433ef5a716e9b55205db419c3090a5cb29e7fca",
+        "loss.measured": "25be14a55c2439451b23f21073b8371ffde988356c4e1b20db3e67b7647fecc3"
+      },
+      "fit_rows_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+      "molecular_fit_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+      "clinical_fit_hash": "4efc58a133164874f5b6b878d6b1c274e1ef3f996c05de64b896af075ed46929",
+      "cohort_input_hash": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+      "fit_n": 409,
+      "evaluation_n": 103,
+      "outcomes_loaded": false,
+      "forbidden_call_counts": {
+        "neural_fit": 0,
+        "teacher_Cox_fit": 0,
+        "risk_Cox_fit": 0,
+        "model_load": 0,
+        "neural_feature_forward": 0,
+        "DSS_read": 0,
+        "risk_scoring": 0,
+        "PCA_fit": 0
+      },
+      "elapsed_seconds": 11.53079404681921,
+      "failed_original_private_output_exists": true,
+      "failed_original_public_output_exists": false,
+      "weights_or_predictions_read": false,
+      "source_or_data_files_changed": false,
+      "same_process_blas64_input_sha256": "43de14bf5b8cdf69fa5baf9317f027ea47038d7ce8b69f69c995bfb7b93d0628",
+      "same_process_blas64_value_differences": {
+        "omics.values": {
+          "shape": [
+            409,
+            50,
+            3
+          ],
+          "different_values": 6928,
+          "total_values": 61350,
+          "max_absolute_difference": 4.76837158203125e-07,
+          "mean_absolute_difference": 2.6915506076821207e-09,
+          "finite_both": true
+        },
+        "root.target": {
+          "shape": [
+            409,
+            50
+          ],
+          "different_values": 2709,
+          "total_values": 20450,
+          "max_absolute_difference": 3.5762786865234375e-07,
+          "mean_absolute_difference": 2.9052884521732487e-09,
+          "finite_both": true
+        }
+      },
+      "same_process_blas64_only_training_components_changed": [
+        "omics.values"
+      ],
+      "threadpools_restored": [
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "prefix": "libgomp",
+          "version": null,
+          "num_threads": 1,
+          "architecture": null
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "prefix": "libscipy_openblas",
+          "version": "0.3.27",
+          "num_threads": 2,
+          "architecture": "Haswell"
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "prefix": "libscipy_openblas",
+          "version": "0.3.27.dev",
+          "num_threads": 2,
+          "architecture": "Zen"
+        },
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "prefix": "libgomp",
+          "version": null,
+          "num_threads": 2,
+          "architecture": null
+        }
+      ]
+    }
+  },
+  "public_parameterized_reproducer": {
+    "path": "scripts/semantic_b0b7_p2_preprocessing_thread_probe.py",
+    "sha256": "4bc918e33bcb181bc36cd95237c4d968a033bfa65cf166e17bd1c82b5bb8fa2e",
+    "execution_status": "NOT_EXECUTED_ON_REAL_DATA; syntax_compile_only",
+    "source_is_distinct_from_actual_executed_private_templates": true,
+    "changes": "required CLI parameters replace execution-specific filesystem paths; optional numeric BLAS comparison combines the two executed diagnostic templates; no frozen science source changed"
+  },
+  "component_comparison": {
+    "training_tensor_components_changed_versus_formal2": {
+      "formal2_torch2": [],
+      "formal2_torch1": [],
+      "ambient_numpyfirst_torch1": [
+        "omics.values",
+        "target"
+      ],
+      "formal1_torch1": [
+        "omics.values",
+        "target"
+      ]
+    },
+    "all_9_training_scale_components_exact_across_4_cases": true,
+    "fit_clinical_cohort_hashes_exact_across_4_cases": true,
+    "all_RNA_CNA_gain_CNA_loss_value_channels_differ_under_ambient_and_env1": true
+  },
+  "diagnosis": {
+    "cause": "float32 ProgramTransform z @ member.T BLAS reduction order differs with threadpool configuration; exact input binding correctly fails closed",
+    "torch1_is_not_the_cause": "formal BLAS2 with torch1 reproduces the same exact input hash as formal BLAS2 with torch2",
+    "same_process_control_confirms_ambient_hash": true,
+    "confidence": "high_for_this_preprocessing_reproduction; historical_unrecorded_thread_values_remain_unknown",
+    "fix_executed_by_root": "restore documented formal launch environment OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 before Python imports; retain original auxiliary audit source, lock and torch1 predictive-fit loop",
+    "no_hash_bypass_or_tolerance_relaxation": true,
+    "science_model_training_or_selection_changed": false,
+    "limitation": "single fixed preprocessing partition; no DSS scores or predictive training inspected; numerical equivalence does not by itself establish all-platform bitwise reproducibility"
+  },
+  "diagnostic_cost": {
+    "fresh_processes": 5,
+    "build_inputs_calls": 6,
+    "outcome_free_program_and_clinical_preprocessing_reexecuted": true,
+    "new_neural_fits": 0,
+    "neural_optimizer_updates": 0,
+    "neural_forwards": 0,
+    "teacher_or_risk_Cox_fits": 0,
+    "PCA_fits": 0,
+    "DSS_reads": 0,
+    "trained_checkpoint_or_prediction_arrays_loaded": false
+  }
+}

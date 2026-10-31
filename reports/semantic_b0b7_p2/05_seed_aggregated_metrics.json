@@ -1,0 +1,1087 @@
+[
+  {
+    "Harrell": 0.8336861914843565,
+    "Harrell_seed_max": 0.834627146553752,
+    "Harrell_seed_min": 0.8320395201129146,
+    "Harrell_seed_sd": 0.0011683262311417849,
+    "Uno60": 0.8130643888365583,
+    "Uno60_seed_max": 0.8134364734637226,
+    "Uno60_seed_min": 0.8127430296332954,
+    "Uno60_seed_sd": 0.0002853604597252265,
+    "arm": "B2_MATCHED",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.834627146553752,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3548.0,
+        "Uno60": 0.8130136634126568,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9082.768077590765,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8343919077864032,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3547.0,
+        "Uno60": 0.8134364734637226,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9087.491596773192,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8320395201129146,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3537.0,
+        "Uno60": 0.8127430296332954,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9079.7446304305,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8339998431741552,
+    "Harrell_seed_max": 0.8369795342272407,
+    "Harrell_seed_min": 0.8308633262761703,
+    "Harrell_seed_sd": 0.002499392684154211,
+    "Uno60": 0.811903896094934,
+    "Uno60_seed_max": 0.8154910033505861,
+    "Uno60_seed_min": 0.808094159050783,
+    "Uno60_seed_sd": 0.0030238495791433183,
+    "arm": "B2_NATIVE",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8341566690190544,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3546.0,
+        "Uno60": 0.8121265258834328,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9072.857217794084,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8369795342272407,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3558.0,
+        "Uno60": 0.8154910033505861,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9110.444247276666,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8308633262761703,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3532.0,
+        "Uno60": 0.808094159050783,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9027.808709518107,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8320395201129146,
+    "Harrell_seed_max": 0.8336861914843566,
+    "Harrell_seed_min": 0.8303928487414726,
+    "Harrell_seed_sd": 0.0013445015446939888,
+    "Uno60": 0.8124949349040124,
+    "Uno60_seed_max": 0.8134164690796595,
+    "Uno60_seed_min": 0.8114410496339322,
+    "Uno60_seed_sd": 0.0008118735968066338,
+    "arm": "B1",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8320395201129146,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3537.0,
+        "Uno60": 0.8126272859984452,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9078.451573943124,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8336861914843566,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3544.0,
+        "Uno60": 0.8134164690796595,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9087.268113221615,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8303928487414726,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3530.0,
+        "Uno60": 0.8114410496339322,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9065.199263103905,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8320395201129145,
+    "Harrell_seed_max": 0.8334509527170078,
+    "Harrell_seed_min": 0.8310985650435192,
+    "Harrell_seed_sd": 0.0010163476356006937,
+    "Uno60": 0.8123942880334271,
+    "Uno60_seed_max": 0.8134465137523252,
+    "Uno60_seed_min": 0.8116721675097024,
+    "Uno60_seed_sd": 0.0007610533170494252,
+    "arm": "B4",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8315690425782168,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3535.0,
+        "Uno60": 0.8120641828382534,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9072.160738206967,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8334509527170078,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3543.0,
+        "Uno60": 0.8134465137523252,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9087.603764153537,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8310985650435192,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3533.0,
+        "Uno60": 0.8116721675097024,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9067.781249309886,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8315690425782168,
+    "Harrell_seed_max": 0.83298047518231,
+    "Harrell_seed_min": 0.8306280875088214,
+    "Harrell_seed_sd": 0.0010163476356006768,
+    "Uno60": 0.8107069456782828,
+    "Uno60_seed_max": 0.8128207132453468,
+    "Uno60_seed_min": 0.8092162640899125,
+    "Uno60_seed_sd": 0.0015360534997543194,
+    "arm": "B5",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8310985650435192,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3533.0,
+        "Uno60": 0.8092162640899125,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9040.344562588927,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.83298047518231,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3541.0,
+        "Uno60": 0.8128207132453468,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9080.612490668827,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8306280875088214,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3531.0,
+        "Uno60": 0.810083859699589,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9050.037105362131,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8318042813455658,
+    "Harrell_seed_max": 0.8336861914843566,
+    "Harrell_seed_min": 0.8306280875088214,
+    "Harrell_seed_sd": 0.001344501544693976,
+    "Uno60": 0.8118119758515719,
+    "Uno60_seed_max": 0.8133134450037475,
+    "Uno60_seed_min": 0.8099594649579328,
+    "Uno60_seed_sd": 0.0013915742320882512,
+    "arm": "B7",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8310985650435192,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3533.0,
+        "Uno60": 0.8121630175930353,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9073.264893273588,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8336861914843566,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3544.0,
+        "Uno60": 0.8133134450037475,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9086.117156195887,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8306280875088214,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3531.0,
+        "Uno60": 0.8099594649579328,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9048.647401056558,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8317258684231161,
+    "Harrell_seed_max": 0.8327452364149612,
+    "Harrell_seed_min": 0.8308633262761703,
+    "Harrell_seed_sd": 0.0007762483287549534,
+    "Uno60": 0.811792296734256,
+    "Uno60_seed_max": 0.812526302721762,
+    "Uno60_seed_min": 0.811025388703363,
+    "Uno60_seed_sd": 0.0006131871008650231,
+    "arm": "B5_CLINICAL_CAPACITY_CONTROL",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8315690425782168,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3535.0,
+        "Uno60": 0.8118251987776431,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9069.490873118042,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8327452364149612,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3540.0,
+        "Uno60": 0.812526302721762,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9077.323416172712,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8308633262761703,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3532.0,
+        "Uno60": 0.811025388703363,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9060.555611956115,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8325099976476124,
+    "Harrell_seed_max": 0.834627146553752,
+    "Harrell_seed_min": 0.8301576099741237,
+    "Harrell_seed_sd": 0.001832246756927467,
+    "Uno60": 0.8121228320609973,
+    "Uno60_seed_max": 0.8139189301035727,
+    "Uno60_seed_min": 0.8110955332543135,
+    "Uno60_seed_sd": 0.0012744100964583221,
+    "arm": "B4_MAP_SHUFFLE",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8327452364149612,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3540.0,
+        "Uno60": 0.8113540328251058,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9064.227134923298,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.834627146553752,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3548.0,
+        "Uno60": 0.8139189301035727,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9092.881471463439,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8301576099741237,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3529.0,
+        "Uno60": 0.8110955332543135,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9061.339247849164,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8326668234925116,
+    "Harrell_seed_max": 0.8332157139496589,
+    "Harrell_seed_min": 0.8322747588802635,
+    "Harrell_seed_sd": 0.00039982902168842925,
+    "Uno60": 0.8128879617509123,
+    "Uno60_seed_max": 0.8134307726317612,
+    "Uno60_seed_min": 0.8122667608167297,
+    "Uno60_seed_sd": 0.00047842772127704966,
+    "arm": "B4_ORIGINAL_DIAGNOSTIC",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8322747588802635,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3538.0,
+        "Uno60": 0.8134307726317612,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9087.427908625152,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8332157139496589,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3542.0,
+        "Uno60": 0.8129663518042461,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9082.239525137209,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8325099976476124,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3539.0,
+        "Uno60": 0.8122667608167297,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9074.423884423235,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8332941268721085,
+    "Harrell_seed_max": 0.8336861914843566,
+    "Harrell_seed_min": 0.8327452364149612,
+    "Harrell_seed_sd": 0.00039982902168842925,
+    "Uno60": 0.8126400885023567,
+    "Uno60_seed_max": 0.813160244562105,
+    "Uno60_seed_min": 0.811914636444246,
+    "Uno60_seed_sd": 0.0005288318768926788,
+    "arm": "B3",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8336861914843566,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3544.0,
+        "Uno60": 0.811914636444246,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9070.49004646495,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8334509527170078,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3543.0,
+        "Uno60": 0.813160244562105,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9084.405642425034,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8327452364149612,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3540.0,
+        "Uno60": 0.812845384500719,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9080.88811124055,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8333725397945582,
+    "Harrell_seed_max": 0.8353328628557987,
+    "Harrell_seed_min": 0.8308633262761703,
+    "Harrell_seed_sd": 0.0018655025881550024,
+    "Uno60": 0.8119289121242385,
+    "Uno60_seed_max": 0.8141907445969767,
+    "Uno60_seed_min": 0.8106810269473421,
+    "Uno60_seed_sd": 0.0016022060487752268,
+    "arm": "B3_TEXTLESS",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8339214302517055,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3545.0,
+        "Uno60": 0.8109149648283966,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9059.321986382913,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8353328628557987,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3551.0,
+        "Uno60": 0.8141907445969767,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9095.91810924066,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8308633262761703,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3532.0,
+        "Uno60": 0.8106810269473421,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9056.70849584296,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8314122167333177,
+    "Harrell_seed_max": 0.8320395201129146,
+    "Harrell_seed_min": 0.8303928487414726,
+    "Harrell_seed_sd": 0.0007271715279146689,
+    "Uno60": 0.8116286535059221,
+    "Uno60_seed_max": 0.8126782825592489,
+    "Uno60_seed_min": 0.8099539067806212,
+    "Uno60_seed_sd": 0.001196838870707359,
+    "arm": "B6a",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31,
+      47,
+      83
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8303928487414726,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3530.0,
+        "Uno60": 0.8099539067806212,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9048.585306607562,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8318042813455657,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3536.0,
+        "Uno60": 0.8122537711778962,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9074.278767702268,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 47,
+        "status": "COMPLETE"
+      },
+      {
+        "Harrell": 0.8320395201129146,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3537.0,
+        "Uno60": 0.8126782825592489,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9079.02129368509,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 83,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  },
+  {
+    "Harrell": 0.8350976240884498,
+    "Harrell_seed_max": 0.8350976240884498,
+    "Harrell_seed_min": 0.8350976240884498,
+    "Harrell_seed_sd": 0.0,
+    "Uno60": 0.8139886604454789,
+    "Uno60_seed_max": 0.8139886604454789,
+    "Uno60_seed_min": 0.8139886604454789,
+    "Uno60_seed_sd": 0.0,
+    "arm": "B0",
+    "cross_fold_risk_pairs": false,
+    "primary_aggregation": "equal_mean_of_seed_level_five_fold_micro_scores",
+    "required_seeds": [
+      31
+    ],
+    "seed_results": [
+      {
+        "Harrell": 0.8350976240884498,
+        "Harrell_complete_support": true,
+        "Harrell_den": 4251.0,
+        "Harrell_num": 3550.0,
+        "Uno60": 0.8139886604454789,
+        "Uno60_complete_support": true,
+        "Uno_den": 11171.728700678275,
+        "Uno_num": 9093.66047992542,
+        "aggregation": "sum_within_fold_numerators_divided_by_sum_within_fold_denominators",
+        "available_folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fold_count": 5,
+        "required_fold_count": 5,
+        "seed": 31,
+        "status": "COMPLETE"
+      }
+    ],
+    "status": "COMPLETE"
+  }
+]

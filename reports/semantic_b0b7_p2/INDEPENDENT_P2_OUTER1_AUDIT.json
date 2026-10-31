@@ -1,0 +1,4403 @@
+{
+  "all_outer_selection_sha256": "92f8fc212682c3060771de23497ce7f6980ced1fe7cb96372efbd79b604d504a",
+  "anchor_artifact_sha256": "d673a38b286a5d5bb60c7b9f318b4fc313cc9051398872347bf2a220c80146e1",
+  "anchor_receipt_sha256": "c245da2422a4266698f7f7e2c169115c0eb43b1cafde48c858403f6f0ed727bd",
+  "bootstrap_replicates": 0,
+  "cohort_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+  "common_anchor_verified_elementwise": true,
+  "confidence_intervals_computed": false,
+  "endpoint_sha256": "91b5d15aa32489c825a8341aed8d9733281dc62386151c8c6246b6312975fd4e",
+  "frozen_scientific_sources_verified": 20,
+  "global_summary": {
+    "DSS_only_labels_read": true,
+    "H5_features_or_encoder_reconstruction_performed": false,
+    "PFI_OS_arrays_read": false,
+    "actual_checkpoint_files_byte_hash_verified": 1909,
+    "checkpoint_policy": "four_inner_states_outer_states_only_up_to_the_inner_selected_fixed_epoch",
+    "evidence_type": "independent_saved_linear_risk_math_and_report_arithmetic_and_producer_checkpoint_byte_hashes",
+    "expected_phase_a_receipts": 480,
+    "inner_risk_selection_receipt_hashes_and_component_arithmetic_verified": 1620,
+    "inner_risk_vectors_independently_rescored": false,
+    "neural_checkpoints_deserialized": false,
+    "new_neural_model_forwards": 0,
+    "new_optimizer_updates": 0,
+    "official_package_API": {
+      "Harrell_max_abs_error": 0.0,
+      "Uno60_max_abs_error": 6.217248937900877e-15,
+      "Uno_NA_by_prelocked_support": 0,
+      "actual_API_calls": 370,
+      "cases": 185,
+      "model_forwards": 0,
+      "optimizer_updates": 0,
+      "package_version": "0.23.1",
+      "status": "PASS_REAL_OFFICIAL_PACKAGE_METRICS_API"
+    },
+    "phase_a_optimizer_steps_verified": 189800,
+    "phase_a_receipts_verified": 480,
+    "producer_replay_flags_are_not_second_independent_neural_replays": true,
+    "report_comparison": {
+      "arms": 13,
+      "fold_rows": 185,
+      "maximum_fold_component_error": 2.0691004465334117e-11,
+      "missing_or_duplicate_comparisons_allowed": false,
+      "reporter_imported_or_called": false,
+      "required_comparisons_verified": 12,
+      "status": "PASS_INDEPENDENT_COMPONENTS_AND_MICRO_SEED_AGGREGATION"
+    },
+    "risk_vectors_independently_recomputed": 185,
+    "seed_aggregates": [
+      {
+        "Harrell": 0.8350976240884498,
+        "Uno60": 0.81398866044548,
+        "arm": "B0",
+        "seed_results": [
+          {
+            "Harrell": 0.8350976240884498,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3550.0,
+            "Uno60": 0.81398866044548,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9093.6604799254,
+            "seed": 31
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8320395201129146,
+        "Uno60": 0.8124949349040134,
+        "arm": "B1",
+        "seed_results": [
+          {
+            "Harrell": 0.8320395201129146,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3537.0,
+            "Uno60": 0.8126272859984464,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9078.451573943104,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.8336861914843566,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3544.0,
+            "Uno60": 0.8134164690796606,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9087.268113221595,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8303928487414726,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3530.0,
+            "Uno60": 0.8114410496339333,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9065.199263103885,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8336861914843565,
+        "Uno60": 0.8130643888365593,
+        "arm": "B2_MATCHED",
+        "seed_results": [
+          {
+            "Harrell": 0.834627146553752,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3548.0,
+            "Uno60": 0.8130136634126579,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9082.768077590745,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.8343919077864032,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3547.0,
+            "Uno60": 0.8134364734637237,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9087.491596773172,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8320395201129146,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3537.0,
+            "Uno60": 0.8127430296332965,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9079.74463043048,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8339998431741552,
+        "Uno60": 0.8119038960949351,
+        "arm": "B2_NATIVE",
+        "seed_results": [
+          {
+            "Harrell": 0.8341566690190544,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3546.0,
+            "Uno60": 0.8121265258834339,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9072.857217794064,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.8369795342272407,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3558.0,
+            "Uno60": 0.8154910033505872,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9110.444247276646,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8308633262761703,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3532.0,
+            "Uno60": 0.8080941590507841,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9027.808709518087,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8332941268721085,
+        "Uno60": 0.8126400885023578,
+        "arm": "B3",
+        "seed_results": [
+          {
+            "Harrell": 0.8336861914843566,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3544.0,
+            "Uno60": 0.8119146364442471,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9070.49004646493,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.8334509527170078,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3543.0,
+            "Uno60": 0.8131602445621061,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9084.405642425014,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8327452364149612,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3540.0,
+            "Uno60": 0.8128453845007201,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9080.88811124053,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8333725397945582,
+        "Uno60": 0.8119289121242396,
+        "arm": "B3_TEXTLESS",
+        "seed_results": [
+          {
+            "Harrell": 0.8339214302517055,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3545.0,
+            "Uno60": 0.8109149648283978,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9059.321986382893,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.8353328628557987,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3551.0,
+            "Uno60": 0.8141907445969778,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9095.91810924064,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8308633262761703,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3532.0,
+            "Uno60": 0.8106810269473432,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9056.70849584294,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8320395201129146,
+        "Uno60": 0.8123942880334281,
+        "arm": "B4",
+        "seed_results": [
+          {
+            "Harrell": 0.8315690425782168,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3535.0,
+            "Uno60": 0.8120641828382544,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9072.160738206945,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.8334509527170078,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3543.0,
+            "Uno60": 0.8134465137523264,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9087.603764153517,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8310985650435192,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3533.0,
+            "Uno60": 0.8116721675097035,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9067.781249309866,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8325099976476124,
+        "Uno60": 0.8121228320609983,
+        "arm": "B4_MAP_SHUFFLE",
+        "seed_results": [
+          {
+            "Harrell": 0.8327452364149612,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3540.0,
+            "Uno60": 0.8113540328251068,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9064.227134923276,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.834627146553752,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3548.0,
+            "Uno60": 0.8139189301035737,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9092.881471463417,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8301576099741237,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3529.0,
+            "Uno60": 0.8110955332543146,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9061.339247849144,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8326668234925115,
+        "Uno60": 0.8128879617509135,
+        "arm": "B4_ORIGINAL_DIAGNOSTIC",
+        "seed_results": [
+          {
+            "Harrell": 0.8322747588802635,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3538.0,
+            "Uno60": 0.8134307726317623,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9087.427908625132,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.8332157139496589,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3542.0,
+            "Uno60": 0.8129663518042474,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9082.239525137189,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8325099976476124,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3539.0,
+            "Uno60": 0.8122667608167307,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9074.423884423213,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8315690425782168,
+        "Uno60": 0.8107069456782838,
+        "arm": "B5",
+        "seed_results": [
+          {
+            "Harrell": 0.8310985650435192,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3533.0,
+            "Uno60": 0.8092162640899137,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9040.344562588907,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.83298047518231,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3541.0,
+            "Uno60": 0.8128207132453479,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9080.612490668807,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8306280875088214,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3531.0,
+            "Uno60": 0.8100838596995898,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9050.03710536211,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8317258684231161,
+        "Uno60": 0.8117922967342571,
+        "arm": "B5_CLINICAL_CAPACITY_CONTROL",
+        "seed_results": [
+          {
+            "Harrell": 0.8315690425782168,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3535.0,
+            "Uno60": 0.8118251987776441,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9069.49087311802,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.8327452364149612,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3540.0,
+            "Uno60": 0.8125263027217628,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9077.32341617269,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8308633262761703,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3532.0,
+            "Uno60": 0.8110253887033642,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9060.555611956095,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8314122167333177,
+        "Uno60": 0.8116286535059233,
+        "arm": "B6a",
+        "seed_results": [
+          {
+            "Harrell": 0.8303928487414726,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3530.0,
+            "Uno60": 0.8099539067806223,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9048.585306607541,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.8318042813455657,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3536.0,
+            "Uno60": 0.8122537711778973,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9074.278767702248,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8320395201129146,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3537.0,
+            "Uno60": 0.81267828255925,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9079.02129368507,
+            "seed": 83
+          }
+        ]
+      },
+      {
+        "Harrell": 0.8318042813455658,
+        "Uno60": 0.8118119758515729,
+        "arm": "B7",
+        "seed_results": [
+          {
+            "Harrell": 0.8310985650435192,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3533.0,
+            "Uno60": 0.8121630175930364,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9073.264893273568,
+            "seed": 31
+          },
+          {
+            "Harrell": 0.8336861914843566,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3544.0,
+            "Uno60": 0.8133134450037484,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9086.117156195865,
+            "seed": 47
+          },
+          {
+            "Harrell": 0.8306280875088214,
+            "Harrell_den": 4251.0,
+            "Harrell_num": 3531.0,
+            "Uno60": 0.8099594649579341,
+            "Uno_den": 11171.728700678235,
+            "Uno_num": 9048.64740105654,
+            "seed": 83
+          }
+        ]
+      }
+    ]
+  },
+  "master_lock_sha256": "b9aae9582c78e80f26833b0e049956246f3c7d09723abe813a505acb543f949c",
+  "official_definition_sources": [
+    "https://scikit-survival.readthedocs.io/en/v0.23.1/api/generated/sksurv.metrics.concordance_index_ipcw.html",
+    "https://github.com/sebp/scikit-survival/blob/v0.23.1/sksurv/nonparametric.py",
+    "https://github.com/sebp/scikit-survival/blob/v0.23.1/sksurv/metrics.py"
+  ],
+  "outer": 1,
+  "p_values_computed": false,
+  "phase_a": [
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "8a9c6f692e6d8fac60a0726971697115a56bc57b0bc3fe3250d0cee120d92dac"
+        },
+        {
+          "epoch": 100,
+          "sha256": "e73c110be59a7853fbd01ddc04f5f5d52cb5febc57fca2fa00b47532260b87ae"
+        },
+        {
+          "epoch": 200,
+          "sha256": "5c69afcc6ea4cfa997c04df904dcdcc9bb792a36dd4a9df1d2ec6b807b5e5bf5"
+        },
+        {
+          "epoch": 400,
+          "sha256": "dea81ea378af259cf503d35d28fa74e4585d5d80ba7f523de455e443094ab351"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "fa370be7a00c2ebf57a7ff6fca556619e64993ebc35b3a2a2b425cb0b075cd84",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "dea81ea378af259cf503d35d28fa74e4585d5d80ba7f523de455e443094ab351",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "31fb8921df21edc33046db70240e6593ec6cedb38bdd37c309c98deaa4071a2e"
+        },
+        {
+          "epoch": 100,
+          "sha256": "353d677aabf377bb242325318a030feeb28bd9ee44e7dc788df1bbe83a8e1288"
+        },
+        {
+          "epoch": 200,
+          "sha256": "ccaad458575a64507c0c443cbb45f0e8c925bdf135c8d0125ee2efdf3f520c8e"
+        },
+        {
+          "epoch": 400,
+          "sha256": "ab7d41a2f071e4a2b0f0e2d521ddf87728c6492c3c9e20d40d9296eff4aad7c5"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "b40052b67aa2ad796bacf1fa196574c2cf3af699047e7438dd4f41e4610f542a",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "ab7d41a2f071e4a2b0f0e2d521ddf87728c6492c3c9e20d40d9296eff4aad7c5",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "791bde1a55afe910ffedfc096dd0c357740ebb4c3fa78c785f69fac2fdbd4e07"
+        },
+        {
+          "epoch": 100,
+          "sha256": "7b358f3ff781eb21c8e3123167b6d573310b99f256b239e858b649844e8c80f3"
+        },
+        {
+          "epoch": 200,
+          "sha256": "57f94565a9095a3e3e75417182bca5247a4d655ad695e43edabe54470a43e5c4"
+        },
+        {
+          "epoch": 400,
+          "sha256": "b2dadc7eccc32c62e2da16c8349acc0c43288b32683e361d26f509a602e709fb"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "89d8d4c950a03eb5f9783d116b50e80d30ce3406ab1aa296fb72c043551bdd48",
+      "seed": 83,
+      "selected_epoch": 100,
+      "selected_state_sha256": "7b358f3ff781eb21c8e3123167b6d573310b99f256b239e858b649844e8c80f3",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "c9cee58a7b7459f57e361c93c3e193523fbc78e7e160ebade44f3e8f0b26a56c"
+        },
+        {
+          "epoch": 100,
+          "sha256": "0a79900d90441017a60d044fd3d2a12eb81d98efec802cf77b43747567107bf0"
+        },
+        {
+          "epoch": 200,
+          "sha256": "9d37d5b056248ca96109e8b87af1faa92fb301f79c3fdc5fc67070d79be07c8d"
+        },
+        {
+          "epoch": 400,
+          "sha256": "350c4873c34896422123015a758ab149bf7c4be0ff868b15d512879fc55a8fcf"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "73b5bd7702aaede1b037f77b66627f06921575571ce458d2cedf487befed01e4",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "350c4873c34896422123015a758ab149bf7c4be0ff868b15d512879fc55a8fcf",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "15f83f4ea2740a010b8e49142c31a3703271e04d9f777066e02cc52f6ded4ce9"
+        },
+        {
+          "epoch": 100,
+          "sha256": "7ab0ba509e8636ed19f2ec1ef1be51c8c59a667ab19a986b81271478ee9c4cbf"
+        },
+        {
+          "epoch": 200,
+          "sha256": "04437f4d8a4e430e28e1e09547f8cb70129423e984ed408cf3a6a189ccbd3bd3"
+        },
+        {
+          "epoch": 400,
+          "sha256": "6a208e5c2c9312911089c88850cb034ecbf1d010fb63e090a1a6d65c1522deb3"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "4eaae09357a432c1031efab02683d5909edbb4e9d70265a35d3bddd639db6683",
+      "seed": 47,
+      "selected_epoch": 200,
+      "selected_state_sha256": "04437f4d8a4e430e28e1e09547f8cb70129423e984ed408cf3a6a189ccbd3bd3",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "7c60638500e0a0380ef5003d0edbc03e3bdeb55dc317f66f6e17f17618ebf64d"
+        },
+        {
+          "epoch": 100,
+          "sha256": "aa688a4d11307222fa4e34651a5eb6e708313b2da0892dc406ab2ee7c4080597"
+        },
+        {
+          "epoch": 200,
+          "sha256": "f7186564edf7ee63e2a676e0b72db37635f76a552e563df948977661e28a4140"
+        },
+        {
+          "epoch": 400,
+          "sha256": "b3f5ab47c5b2836ec48acf9b9e4acd483a1ff26a0b43e8098513a0f9dd53f742"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "cf985c35c31cb41100782173dc03f05f0a84dcc07d160c8669678494173a6f45",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "b3f5ab47c5b2836ec48acf9b9e4acd483a1ff26a0b43e8098513a0f9dd53f742",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "efcb849c58136bb866ac5576096efdd9e74f7d2adfcebf8bcb29d32c9963abf0"
+        },
+        {
+          "epoch": 100,
+          "sha256": "5e7527f88b7f7b82207319eaea3a721c0bc4b815d3cf447a51825ec2a7d0fb80"
+        },
+        {
+          "epoch": 200,
+          "sha256": "8069718c664407824265ebc55a9eaf30507ae9ac1a4f96d6b85564d3c82d9c73"
+        },
+        {
+          "epoch": 400,
+          "sha256": "a245c93851866a9c70bfcd286df51b0f9ae75941c472ba76d2d4b0c6af0f1449"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "e6a4132c2fea8ae9966a86e7fc459fd7acdad094202b6bf46c17d45b67c3202f",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "a245c93851866a9c70bfcd286df51b0f9ae75941c472ba76d2d4b0c6af0f1449",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "18dbb24c834a5a6b9d6bb567fc610615f1f116cea4a8cab61d60c29f8ce579e2"
+        },
+        {
+          "epoch": 100,
+          "sha256": "b93dd7e2ab8b6c41dd04526cc2f61b78a07433daa4c795701a8d23127fc02059"
+        },
+        {
+          "epoch": 200,
+          "sha256": "44cf6fcc33e4e868c65b07a10af07a9511fa38e98fcb7b599b02482591c0f816"
+        },
+        {
+          "epoch": 400,
+          "sha256": "d70f91315eab4184cbb984d4f5f8198b97cfee34eb5cfd4baafe7d88a2d4784b"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "b058bb5d33a18b40114ccc7afa64d913fd4d2ba576ec556bad938d81f4682a4a",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "d70f91315eab4184cbb984d4f5f8198b97cfee34eb5cfd4baafe7d88a2d4784b",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "80686c3f1eb53bb836b3443597d311417952ef70df9c3da0f322befcd6edeab2"
+        },
+        {
+          "epoch": 100,
+          "sha256": "3be018fb41b28b97950cc8d87133af681f234b55b9ab38c1163eec8c30af6d55"
+        },
+        {
+          "epoch": 200,
+          "sha256": "98c6732c8566402f058712144ef3c5e26219da628288360d12d6eb84c0c5d60f"
+        },
+        {
+          "epoch": 400,
+          "sha256": "56a34872e1581f82758a182710bcea0a08b23c1e7e12c93344cb691d88920d98"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "ab443eefa500ce7834e789ead9526f8616634e14ab5b3ef1da8f96b145e16d53",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "56a34872e1581f82758a182710bcea0a08b23c1e7e12c93344cb691d88920d98",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "09a499e31c539928956d2eb34ba1a5e45400fa1854cc026d73ce27aeb3c6d942"
+        },
+        {
+          "epoch": 100,
+          "sha256": "0c389bbe3ef6de505aadd1e31b8d0fe8ed50ab4dfa56b32be63691bebb73d10d"
+        },
+        {
+          "epoch": 200,
+          "sha256": "456c951f95a14ef2e9467bde00efd948692839ace3475d9339ccf333555b035e"
+        },
+        {
+          "epoch": 400,
+          "sha256": "658306b89d1c5b8a1c802af6d2b0c8f696ea0ca7f9f386ed03e54a0d69347a67"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "c633ad09ed4293d22e80a1cdbaf3034a0ed1164b647ea92e5d1403fa15d10957",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "658306b89d1c5b8a1c802af6d2b0c8f696ea0ca7f9f386ed03e54a0d69347a67",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "87f797976c37d7571e04212fb556e2e282101e8492a4de17c24b1b949675b9a1"
+        },
+        {
+          "epoch": 100,
+          "sha256": "e88b4c3a97a074d0aaad97fc9279274713b502244ba2feff5d62502b80046ea0"
+        },
+        {
+          "epoch": 200,
+          "sha256": "b1e27ff64dedf3473ff957c1912f4fd54b8317444f71a6b4d2d8817456630652"
+        },
+        {
+          "epoch": 400,
+          "sha256": "aa840626d1fd2fbda626364d9bc87093c6672cd39518d6552ca044f27f3b63e4"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "3a865a5f17e3da2804ba26f71e8007e8719001be1f9a4c5c4a04867759e761a9",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "aa840626d1fd2fbda626364d9bc87093c6672cd39518d6552ca044f27f3b63e4",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "6661f5c9fdb88d2d54d66041f7317298e70a094a7024f4df7d57905c48f7eef8"
+        },
+        {
+          "epoch": 100,
+          "sha256": "b0bcf31ce9c916d3eb450e7918873ad6364eee95b31f08c116f6d98d8a6ad0f9"
+        },
+        {
+          "epoch": 200,
+          "sha256": "92d51ccb5ef8df6a7884efe2ba379cfe84ecdf9157c58865a9b9de852a51d604"
+        },
+        {
+          "epoch": 400,
+          "sha256": "62a285f415e90f57cedd46ccd39230c266bf262684f39aef73acbb26cd75da19"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "985470edb9d5087ad176501328dde7e06bc54ed5cd2b1bd96601bfae6b498705",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "62a285f415e90f57cedd46ccd39230c266bf262684f39aef73acbb26cd75da19",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "e5bd984160275e1183b1b1de5c518b52b7fcca059ff861ef7ab9a41e97fd587b"
+        },
+        {
+          "epoch": 100,
+          "sha256": "3cf4c58a53e0c4c526c2925800160a358ff6ef0043598d50b9b9c0a3e86dabf1"
+        },
+        {
+          "epoch": 200,
+          "sha256": "1107e506704ccb8075dfdc90a5a68826e93ac442754a09cfecf4616f7da2cbe6"
+        },
+        {
+          "epoch": 400,
+          "sha256": "ab397548d4de8eca6c7453b4b1f85ae23ccda6f0b0a891e5eb400b7b85bc4e31"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "f278d470c55a795c2d1d0efe9590ff4d62a3d1cbfdfe791fd3f7c5ba7ef6183c",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "ab397548d4de8eca6c7453b4b1f85ae23ccda6f0b0a891e5eb400b7b85bc4e31",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "c3cb20fadf599c874f619ac2df027719e165bec66ae70de2b964a1c6f6ead47c"
+        },
+        {
+          "epoch": 100,
+          "sha256": "0b86d91ea6254b1305040464b15e5f4641c768b41f83740e80e94e07b52570cf"
+        },
+        {
+          "epoch": 200,
+          "sha256": "9ada1685a1c3b013ad581bf6c6e861aee995d84dea77e43fef52feec07b71f37"
+        },
+        {
+          "epoch": 400,
+          "sha256": "a77d45cd70af566b12187e6fab9b89e6e9a7bfe0d32f517e5ee2a12d45647036"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "0466d9a9f2df4902f369f19502e5eeed7a23abc219a9158356b6e2115eeda060",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "a77d45cd70af566b12187e6fab9b89e6e9a7bfe0d32f517e5ee2a12d45647036",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "8db272de081c5ee71277a8f9c900e658084e7d1e62040323d070e57fa2b66fa8"
+        },
+        {
+          "epoch": 100,
+          "sha256": "0092d861712ce9e2885da217fd1e2fc3bf6cdd0104b89b51b610585e1db6b4ef"
+        },
+        {
+          "epoch": 200,
+          "sha256": "548818fc739b0ea376745d04c3506b818f7cc96a45504f026d61412b6b93db5b"
+        },
+        {
+          "epoch": 400,
+          "sha256": "0d4f81aa555993d91dfdf4ab7817e6301d95e9f5a3b3604366fade06f76e19c7"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "03f175b4d25d31425d3dfc9973ab1923a0dd80008fcc9fe9ff3acb53edf86033",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "0d4f81aa555993d91dfdf4ab7817e6301d95e9f5a3b3604366fade06f76e19c7",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "8e2676389add5f1213bdb9593e2996dc4fab0d266e914f9c37582a271643ed4d"
+        },
+        {
+          "epoch": 100,
+          "sha256": "390a6a9d8a8926a2425039f7de171162e282bb8382372a228d5a1a868b0f1a2f"
+        },
+        {
+          "epoch": 200,
+          "sha256": "6d46f4dd401840f8ce2ed5c427d3fe7d7368cd637cc62ef10d33d73d646add79"
+        },
+        {
+          "epoch": 400,
+          "sha256": "8f12f73012ad288764cffaba85a300dfb55e2a1ef5b72f9346bdb1923c9e5700"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "8600697ba9abaea8abb394b5e0b92e378b6ca0fda4ea3f443c76aae6dc13a6b8",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "8f12f73012ad288764cffaba85a300dfb55e2a1ef5b72f9346bdb1923c9e5700",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "03059238a3258e48f79573aa8ee4d26c4c860bfc3f3a7739040e9fb03ac0c667"
+        },
+        {
+          "epoch": 100,
+          "sha256": "cb5fef8db8dbce8f17195a65c9750fa05e422378217fb3c39773600a5cea31ce"
+        },
+        {
+          "epoch": 200,
+          "sha256": "ff7ba51b7bb700401eb6de9d8e1e37ba9cf7208ebc94688e4ce665fc775f332b"
+        },
+        {
+          "epoch": 400,
+          "sha256": "128de90fc97167c8ec2035eaed332f6c28e1fa64939ee8b51e99add4c93181a5"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "9413e4fa1376914adc2717b7f684c5cec19818729c5915c6428a3e30c1310d36",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "128de90fc97167c8ec2035eaed332f6c28e1fa64939ee8b51e99add4c93181a5",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "a666a8f46065177f743cfc39c19ccbbebbd1face27f6ed0e3ffe40bd9f732270"
+        },
+        {
+          "epoch": 100,
+          "sha256": "b2f4fe44d5ab9af75d137f296ada146b8b50ecc467f4ad32671e5e46bb47bb92"
+        },
+        {
+          "epoch": 200,
+          "sha256": "22fb36182b943c25f227c4fbf4fb3fff0ca785671238da1dc3ad37e98789f036"
+        },
+        {
+          "epoch": 400,
+          "sha256": "04d017fe9cf336d0d69b8a1138f6df222fe7d565dc1cb2691035bffe100e79d0"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "0d4969ebb2ec720acbc9ac0a2a11cc076a2bf8ca4bf56d8511052431fee93539",
+      "seed": 83,
+      "selected_epoch": 100,
+      "selected_state_sha256": "b2f4fe44d5ab9af75d137f296ada146b8b50ecc467f4ad32671e5e46bb47bb92",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "cc91f60c9214166dbdc277de4299138a8f196633543b64890718c934a29d6d35"
+        },
+        {
+          "epoch": 100,
+          "sha256": "27251ad0804cb7233a3dfa3aec828c739a2d3fd5ad94a35d1c247f7302d1a8d0"
+        },
+        {
+          "epoch": 200,
+          "sha256": "da542ecd31156362d2e9a74793c2fbc386663f80254bb6640524e1090151e245"
+        },
+        {
+          "epoch": 400,
+          "sha256": "e5034eb505cc4ddbe071295819e3bc3e232b92a40d215bb22e317b82793e6332"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "f85858318be9233ee0761d0e9694abcd390fc91a2424b2c980a5dc021b687821",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "e5034eb505cc4ddbe071295819e3bc3e232b92a40d215bb22e317b82793e6332",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "b74b632e33724acd14f0fb244353d175f0312788ec5e671dcdc869ad4510daa9"
+        },
+        {
+          "epoch": 100,
+          "sha256": "6f15c85d86abde8734318208b5b0ed9b6efe52c2ff6722e4253063dc79f852c5"
+        },
+        {
+          "epoch": 200,
+          "sha256": "68ea33ed9af5c5f9280671a06d99c7e3d3a1ac9fe96694e4ed0cf30e0d50ab32"
+        },
+        {
+          "epoch": 400,
+          "sha256": "e058f353a6a7594caaea10b0f324fec75bc1eaaa8b138bbb01024ec1cfe43b77"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "078f37b657491d171946bb19b6f61aba339511cfbb3f4fc4a21537092c2d16b5",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "e058f353a6a7594caaea10b0f324fec75bc1eaaa8b138bbb01024ec1cfe43b77",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "147ea759f64f234de9c81b1475fd016f72020c1a7a0472e2ac6faa43ee3285f8"
+        },
+        {
+          "epoch": 100,
+          "sha256": "fc67598ef461bb5c5ec509de4ca3b11369652f7e8e8912910b11f9a8c242949c"
+        },
+        {
+          "epoch": 200,
+          "sha256": "c391539f990f0e95287e5beb5ca35f6ddb5e1326872da44afdb312b6a8043efb"
+        },
+        {
+          "epoch": 400,
+          "sha256": "821c461b32ecb9d1da75a0193ddf782f23b3fbe250ed6be86b17f36bfb609bc1"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "faa792179e71a84271f25511c3323ff1e44054d1deddc5cf4e94f7b55ff03d30",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "821c461b32ecb9d1da75a0193ddf782f23b3fbe250ed6be86b17f36bfb609bc1",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "7921d7836db12c084725cdfc608c977e945cb6a47a1ed89bcd5992fd6bb5924a"
+        },
+        {
+          "epoch": 100,
+          "sha256": "764bcb61c7a000ba6bf452a085b9f6688133177bc2549e50983ed1d746e27374"
+        },
+        {
+          "epoch": 200,
+          "sha256": "20677161a4103fd5f946f6f9a002fbca9ae4a033f11f2442ec393188f1afae92"
+        },
+        {
+          "epoch": 400,
+          "sha256": "b1c3189f9765c7b60338cbb2732bec43699806046f1e8d1d6c5e82f6c4e742dd"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "7a5ef629082d3bb04424de20a797cd5ffd4a679ab2853c3676321746cfa7d1fe",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "b1c3189f9765c7b60338cbb2732bec43699806046f1e8d1d6c5e82f6c4e742dd",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "a7c937479cb82f206a78635a8c54675b50125e0ad4085452ead344cfdb848824"
+        },
+        {
+          "epoch": 100,
+          "sha256": "d7c69f06882cc302d6d845f4831a37604789a2e700db25e3b6f00f5822ceb96a"
+        },
+        {
+          "epoch": 200,
+          "sha256": "32c5ee98a4797a4bfb4707beb402460221a9f1346c56c86f80d71d226f68b66d"
+        },
+        {
+          "epoch": 400,
+          "sha256": "9d26a3ccd5361393a7e3a314155745986eafc67d6f513196a47851481a83f8f9"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "f26f4565f533c85b323a6169f24558b242506f05af2e1277bc2cb7414d73dbc6",
+      "seed": 47,
+      "selected_epoch": 100,
+      "selected_state_sha256": "d7c69f06882cc302d6d845f4831a37604789a2e700db25e3b6f00f5822ceb96a",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "53b2d2e2a4039b674fcb1282556a037436f6f7366af61a7fd8a061e62956e580"
+        },
+        {
+          "epoch": 100,
+          "sha256": "2bd1861cf422d3ad8e5b4822ce9af60defcbd037da736a42fefac11d20c9c293"
+        },
+        {
+          "epoch": 200,
+          "sha256": "54149475ad7d4f6df9d9b0679202fce4f6b39f68f96720129ce6bf67665200ac"
+        },
+        {
+          "epoch": 400,
+          "sha256": "00550aa6080792cd449a832213c60990fb668fdd9856708e067ab362be118aa9"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "b915fbe15fa9438fb1ed687b4de0b485e0ce00b8bc0440b3e1cb7d112fadbe7a",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "00550aa6080792cd449a832213c60990fb668fdd9856708e067ab362be118aa9",
+      "split": "outer1_inner0"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "b6ef480b9ea1f7a9a94e206a503369ea204ea778cb0eed9641d78a34100c082b"
+        },
+        {
+          "epoch": 100,
+          "sha256": "e84cab16cb022138b6130ae6eadcf1e0d6fff4cd2890ea1a2e795d14556ef6f1"
+        },
+        {
+          "epoch": 200,
+          "sha256": "24da86301859ae299b1993da15b8be2e2ac53984fb6bdb046df43ddc365cf005"
+        },
+        {
+          "epoch": 400,
+          "sha256": "c0ec1f84d71bd6cf150dc4264f09b573ab113d0de9b21c19d3111aef07252d4f"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "b4701639427a02ccd9b608410488adcc8871b3f439f416782b829aa5dc60256d",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "c0ec1f84d71bd6cf150dc4264f09b573ab113d0de9b21c19d3111aef07252d4f",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "5150ae3ea121bf730aff25bb7edb74f3ac1e1a9e154556b416fcebd6fc3c8455"
+        },
+        {
+          "epoch": 100,
+          "sha256": "4fd03e064186795688b3b311e84a0ca0a980ad754ae6b9e5832d3b7da2da7cd4"
+        },
+        {
+          "epoch": 200,
+          "sha256": "5f03ffcd7a22ff7ef3554a509a72f26227da71cad13a4e55ac0a94122aa52786"
+        },
+        {
+          "epoch": 400,
+          "sha256": "a2da1367acfffdeb2e955b0cbcc18aed3f0c9e779ff9a06e4a3a27a9c48a14e7"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "ce8d0cb871091d803172cc0d2cbc2f097898a3084fb43e4d79bde0db9e060136",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "a2da1367acfffdeb2e955b0cbcc18aed3f0c9e779ff9a06e4a3a27a9c48a14e7",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "99dde7c80711e73d00b044eb12ba829ffc012cd36cf466fe262dda4ab20533bc"
+        },
+        {
+          "epoch": 100,
+          "sha256": "43a61d3b6490313aaf4a93a046c2937ed2f5a47d12a5b271ba89b9d2e4839fb5"
+        },
+        {
+          "epoch": 200,
+          "sha256": "fd9e0e02ee049b915ef45d394e523332ac95d269becf632ba44c8572b1cfba34"
+        },
+        {
+          "epoch": 400,
+          "sha256": "03971143982bcc395e6c09b659d16b02a9ec32aa3851007e9c1db600876e2916"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "e6226fe17481ae35404ef5224cbf17e4dada2b8b72ee57d43fbb3bd85755ba6e",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "03971143982bcc395e6c09b659d16b02a9ec32aa3851007e9c1db600876e2916",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "d0e946019fc9101aaf012641bfc02b9f7eda5cd29d1f8d29bdd5cf6e53360b27"
+        },
+        {
+          "epoch": 100,
+          "sha256": "8833dabe8023b0b8a68e38fe3c782fb263d74e2d7af0d31ab354a597f1a820d2"
+        },
+        {
+          "epoch": 200,
+          "sha256": "38fdfae1838fdaf7801fbc097b1525d93f31574e8c0126a3c31434e859c1a1e0"
+        },
+        {
+          "epoch": 400,
+          "sha256": "149fb7910a6c0bfa9ca4ce0ed1e760a3488261c6365a665a9d72a6912c5acd76"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "639f3f62bbbab760d064c2d75d7cf47ea724ecf85d7711dce0af432a0501e2c8",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "149fb7910a6c0bfa9ca4ce0ed1e760a3488261c6365a665a9d72a6912c5acd76",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "c8b26098a1bc206742364be18ccffb145537ec756f6266ce2a0d7cde5e564e33"
+        },
+        {
+          "epoch": 100,
+          "sha256": "bc82321dd7ee30e6f834c6182dc40b55bc60e56b066a626f62cbdd59c792e83a"
+        },
+        {
+          "epoch": 200,
+          "sha256": "e190d6d1e9080b4980bda208182b47e86492753c284ed896337b973f890152cc"
+        },
+        {
+          "epoch": 400,
+          "sha256": "b94313f240a9cd8643d6f991d185ee74dd186d5144251f508f6a101361d42083"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "c7e95d174f96b04a98473de5c9c4831ae045d37d151ddb673a824e19028e6eef",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "b94313f240a9cd8643d6f991d185ee74dd186d5144251f508f6a101361d42083",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "d6dcd9372f7f6e6b5968e0499ec66da0c6d6f4f6fcb8bcae3dc900513c847583"
+        },
+        {
+          "epoch": 100,
+          "sha256": "1d93ab14a5bd06b29beac280ad325afe2f685c56695a2ffa62b721a1c0a79aa9"
+        },
+        {
+          "epoch": 200,
+          "sha256": "66ad5d25833610dde15e110997acfe44605c5f758bf4d31d5803eb8a6032ff52"
+        },
+        {
+          "epoch": 400,
+          "sha256": "265bf3491159426a11e14800f2d9792151a7a1437d9c3b18c6fc61c98ef0a60f"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "823427b36a8db29ecc6f4b7fcee104b33b3dacfd859ba7ddf15a8cad897d4d63",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "265bf3491159426a11e14800f2d9792151a7a1437d9c3b18c6fc61c98ef0a60f",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "2543c5fa318a242ad9b9a34a493c073cc367bac39683afb0c84401666b53587d"
+        },
+        {
+          "epoch": 100,
+          "sha256": "6933dc49b222b1d28cac969972c3a28664ffd313913d1ca8f9d36b0e40c77fcc"
+        },
+        {
+          "epoch": 200,
+          "sha256": "d2134587a4bf8cf07874a259be43d44999272a80c879e8cdd76db2c87c95a503"
+        },
+        {
+          "epoch": 400,
+          "sha256": "8df50c6b2bc56a5f74167cf03f6299d8789631ef97e44e78d329b8bcd2e192d2"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "c9324acd73dc8a6038506f2aeb188f145fcbeaae07773347d8705e4fe541370a",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "8df50c6b2bc56a5f74167cf03f6299d8789631ef97e44e78d329b8bcd2e192d2",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "19a7a79365cbab245a64e975f63d3c82878dda7189e159e7286c8ac711a961ac"
+        },
+        {
+          "epoch": 100,
+          "sha256": "23fddf4094b7429ec5d9ca697cf9c55b9818736a1943d9096a7ba44d8e448a59"
+        },
+        {
+          "epoch": 200,
+          "sha256": "5d1245a6d0a488a315a4051de0ec9fc35ac65f6b1cded8137e1a5947d9710bc9"
+        },
+        {
+          "epoch": 400,
+          "sha256": "5fbeaca29d903a4d1b5cf4e23c6a6be2ff45f0eacb039742c33f0b0e9376bca4"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "8b8fa116972a092cbdc72870b9caa8339b506697d4fe02a0a967e43cda0dccd0",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "5fbeaca29d903a4d1b5cf4e23c6a6be2ff45f0eacb039742c33f0b0e9376bca4",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "f5bcea6043b2b6ecd73bc908006a6558358b061b7e6b57fade1d27645ff168f9"
+        },
+        {
+          "epoch": 100,
+          "sha256": "b81ab5da6585659e495635bdfad4fec7e826ad1dd3f6f969eac4d3ab5756f12e"
+        },
+        {
+          "epoch": 200,
+          "sha256": "814ceabf1c5c6ea27069c8950a4922b890487cb47553e6b5d84626b25d5c311e"
+        },
+        {
+          "epoch": 400,
+          "sha256": "5b2808b6a43d9616d5273210e5416dde76318a9b71255a5fa9524aa33a9567a9"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "387b0cf5aab63f418ddafb772207dcbda36b9b3739cc4c2af4f013b6c2f0dd33",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "5b2808b6a43d9616d5273210e5416dde76318a9b71255a5fa9524aa33a9567a9",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "78597e84bf171a0eb880e5c68ae709d8a8c8abc52089e3bd109dd160b0287006"
+        },
+        {
+          "epoch": 100,
+          "sha256": "6b6b1da754020ea95c18dece422e277b5fe57ce4ecfb1f685cae7bdb7def0bbd"
+        },
+        {
+          "epoch": 200,
+          "sha256": "cf0796c34853809f5b7ad0e26549951107ca80d75869050451ae25507b833be7"
+        },
+        {
+          "epoch": 400,
+          "sha256": "d9ffdbdd8dcdd13fbe19bd90bbbcd33862a383635568ed013e0a7093c0b9bb4b"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "4eb5ccd9d340938ebb591dc04d2c57a6086e54401bb510857e05a6667502e162",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "d9ffdbdd8dcdd13fbe19bd90bbbcd33862a383635568ed013e0a7093c0b9bb4b",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "4b5ef997d44c99ebc4842ff15b5e7d4ea1028fe802a134e400afc239ff69c1ed"
+        },
+        {
+          "epoch": 100,
+          "sha256": "3000e14b797a6ee192f23e0dd3ebdcdc52dce28d8ce23eb50d5a3d3876b41b04"
+        },
+        {
+          "epoch": 200,
+          "sha256": "0630f40e3fd6cdaba4e8a87d08547a843f62c1688a21316ad8a22ebf5c708c69"
+        },
+        {
+          "epoch": 400,
+          "sha256": "32e6a6008f98b52aef269b46611fbdd6e5f627a5dc8de1f3adaaa17d9cc446f1"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "e1f4ca2ed64d48530709fa7600e526fee36cd3feadb95101135205df182dfbc8",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "32e6a6008f98b52aef269b46611fbdd6e5f627a5dc8de1f3adaaa17d9cc446f1",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "a44c1d5b3b4b3af560eff556bb16bff49cc96111d0c1ac7311311c1611267331"
+        },
+        {
+          "epoch": 100,
+          "sha256": "89704bb3078ff94b6e497b40cfcb5bc69d2ff052589a988e77fcbe8b67cdc4cc"
+        },
+        {
+          "epoch": 200,
+          "sha256": "0dd9ea0044168f3cb8f00e566fa13ba33c384ea189a8860cc71caf54d7044219"
+        },
+        {
+          "epoch": 400,
+          "sha256": "65c14f0693cc89e28f0c7c05131b266513d2137fcfb850e261ac5010b04e917c"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "efbccd6b33490bdb55206d6ad7f6ba22ec0a9becb9ac7ac3448d506b9af072f2",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "65c14f0693cc89e28f0c7c05131b266513d2137fcfb850e261ac5010b04e917c",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "b6b876ace19f77ba0c5e9fa4efa590ab105b88b3996871bcbecd5db6b5d8e637"
+        },
+        {
+          "epoch": 100,
+          "sha256": "1d5fbf3aa5a89d22d790622913608ef8963e02ae1b7347a9082e1fe50001c1b8"
+        },
+        {
+          "epoch": 200,
+          "sha256": "074a47f6bd4401725ba40d31ae2f4fc9a513c394fd0c9a95e4687742697ea730"
+        },
+        {
+          "epoch": 400,
+          "sha256": "d6a9a2104f8802af9d7983fa2e998b561098f1da09607d5bcd986b1e953ff484"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "333a1054e3e19ed7bed809974670ec09ba9febcca9b4ef4db70547ae1caf26e4",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "d6a9a2104f8802af9d7983fa2e998b561098f1da09607d5bcd986b1e953ff484",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "812cb0120b3a4fab4b85d0abc313114131b704a6df13d48d1eefc7873f0334ae"
+        },
+        {
+          "epoch": 100,
+          "sha256": "c296c19e2651f260465fc572ea8513adadf86182e8d81c3ee84b946be5625db3"
+        },
+        {
+          "epoch": 200,
+          "sha256": "ae31d81405abe9c04fc869711cda3a91ced8395f78fbd5b5291ef4d90c9ba274"
+        },
+        {
+          "epoch": 400,
+          "sha256": "a72826ee60b0120aac38e4708fe4f35b177d858014f82586e611a21bc465c955"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "f07f5960450cc60f3f525a0125d18c8c488706a8fb82d6a7db8f3d0df1ef9d89",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "a72826ee60b0120aac38e4708fe4f35b177d858014f82586e611a21bc465c955",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "39db907c3a6e4481109755bd4c0404f5dc3ccf914714fd78c12d579a550e8bbf"
+        },
+        {
+          "epoch": 100,
+          "sha256": "9d68e7a9ab52ca976b4a0d7acbed4fca07b150562cb99369de8b7aead68cb0b4"
+        },
+        {
+          "epoch": 200,
+          "sha256": "735eca490ca85c48bad4826b8337db53c2678b7b97d679d929623c3d9113f5af"
+        },
+        {
+          "epoch": 400,
+          "sha256": "ccc05c0d5ab057463250f0751d4c1c8eb899f7e8fab0628123943c100b3c4bec"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "a6c05bf436a84911531f43d76ad2192bde22da263538be5dc5c731ecfd30aa2d",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "ccc05c0d5ab057463250f0751d4c1c8eb899f7e8fab0628123943c100b3c4bec",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "4560eef8b991fef7a5ef98b37d580d1b7e2ad6181d81482cde529a51dd5fff88"
+        },
+        {
+          "epoch": 100,
+          "sha256": "d349529c24075fb113901091104c23569b0eb5c6f34649e709098a5151c25336"
+        },
+        {
+          "epoch": 200,
+          "sha256": "d7bd62de9f1148dce29529efebc38738f0600a0d1e6e9dce58fe446683d73c4c"
+        },
+        {
+          "epoch": 400,
+          "sha256": "62957edc16f65973c5435de2cad86dc923caee52156a5e12419362cacb8186d0"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "16ecfd25b8ff01b432e9dcbff818e2aa5762f55ed5db2b74cf3c571fe650fc95",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "62957edc16f65973c5435de2cad86dc923caee52156a5e12419362cacb8186d0",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "daa145420eb3420b60fc71d96aaa590839f5cf49fc0b25d2fa7d23623c2a097a"
+        },
+        {
+          "epoch": 100,
+          "sha256": "2185c13b33b432b64d5ce5344d133284dd34f229db96a06ef3697b913c211806"
+        },
+        {
+          "epoch": 200,
+          "sha256": "9eb9ee20bf1d729dc297574e5765dc45b8d187308b738b2b0ca6111e15fcc45c"
+        },
+        {
+          "epoch": 400,
+          "sha256": "eca052799af9b450dfb45baa093409a0c9ec2077eb8f61245695ef3043d8b79e"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "7342c53bc38a15acdf91d6aedba928d3c1d51a8610a829c0e98278392086c23e",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "eca052799af9b450dfb45baa093409a0c9ec2077eb8f61245695ef3043d8b79e",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "e6ed3318f036aad7b3973f2ad35e83f22ebb024c4ea0c872e09c3dd71bf42917"
+        },
+        {
+          "epoch": 100,
+          "sha256": "ddb069598cd4af4bed4e3080079e36fb56ecf576f79eef5ec6b5cb9703636158"
+        },
+        {
+          "epoch": 200,
+          "sha256": "07131c0de5dc309eb7a8ea34ea65040da5aa8afe78962e1c760ac2f99975988a"
+        },
+        {
+          "epoch": 400,
+          "sha256": "f49470b6488a5dae851364db8b3001176601c41d8cd9fde1ebdbd0157c61ceed"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "20e55a50554a0ebb8a6cedf4727a6f639afce67dc4b92d7ae9343aeae13ba2a7",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "f49470b6488a5dae851364db8b3001176601c41d8cd9fde1ebdbd0157c61ceed",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "c2020432bb75ae76d4dcf0241ae58929e1882f9b7798e255dd119909c2f21d56"
+        },
+        {
+          "epoch": 100,
+          "sha256": "8aa8e89e418c0066b180cbcf371a03b0f5e0df0c9df0d1689b5700c0b69efa78"
+        },
+        {
+          "epoch": 200,
+          "sha256": "78473da24d4427cadaffb6211469c830ea0db8c1f4258c4160c0eabdd8ecf756"
+        },
+        {
+          "epoch": 400,
+          "sha256": "c74189b8bf5e5dbe1d8ed94071c121eb3325b8bfeac32a8b6f446138a6d7eac4"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "67b547ecd965641834bc1a409e8eba01f789ad6e9a50f385ecbcf4a7cf2041e2",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "c74189b8bf5e5dbe1d8ed94071c121eb3325b8bfeac32a8b6f446138a6d7eac4",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "5586b9279e12bc7430064f64c89c0a88dd0a64d3ebf9d0f464afa32339d8490e"
+        },
+        {
+          "epoch": 100,
+          "sha256": "248ab0721bdbbd27555badd718f6aae428b328e15b31af755382eb0e38a137cf"
+        },
+        {
+          "epoch": 200,
+          "sha256": "df9ba0e3b3edb2a4c9c081e0ac591a1519bf04d43e19b73db8823dd38bc5ecb8"
+        },
+        {
+          "epoch": 400,
+          "sha256": "c8066ea520f24019ed1c1528d118174b42087086c0167dc2b0c1501d5b175874"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "b4240488789c3767b3d2cb11e4eaa33ca05b9e1eb732803656906ab7ae62c17b",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "c8066ea520f24019ed1c1528d118174b42087086c0167dc2b0c1501d5b175874",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "30ceea277c9d76740af2dc569190e5cc2d109e626592f7a2f2e457dfb269a317"
+        },
+        {
+          "epoch": 100,
+          "sha256": "d50909d4d1383b8473b14e9fd2e8ee90b1958b3b7153e70899ca73fb4e44aa0d"
+        },
+        {
+          "epoch": 200,
+          "sha256": "68c63c3a378ac732e0bf25abdfc3966881c7a3d830d1e83cb35b446fde7446b7"
+        },
+        {
+          "epoch": 400,
+          "sha256": "1f2f480c67910bc8e79bb3422d066185d79b6eeba820e0d077c6e907a85b0628"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "e519a3826cc1d71b32520a2b3f318b6675b925a5d5c9986e7bb42a371d8767f7",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "1f2f480c67910bc8e79bb3422d066185d79b6eeba820e0d077c6e907a85b0628",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "1378f8b882f274f7d40f979d603595fb8b3fabc1512aaead5ddaac9c4ea9f532"
+        },
+        {
+          "epoch": 100,
+          "sha256": "8d2489799714e19832a8500919ef0547fb030f2c7b31ae6a8ce5769a147ff1e1"
+        },
+        {
+          "epoch": 200,
+          "sha256": "f5751099b8a618ca9a57f48ae1e11df039dc6a6dc287cc147cf62763af144ae0"
+        },
+        {
+          "epoch": 400,
+          "sha256": "9a6bd78457799e88ba2843d6a6a7c5af8c238ea5c6e13f8dbdcc27a7a48a5e1a"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "021292888c4634a202b5c1dab206087dabd92e18ba4651be997f4434a1a82116",
+      "seed": 31,
+      "selected_epoch": 200,
+      "selected_state_sha256": "f5751099b8a618ca9a57f48ae1e11df039dc6a6dc287cc147cf62763af144ae0",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "95eb94e9feb338a1fd565c434d2200a600089ff7db6ee5fb47ec07e36691d219"
+        },
+        {
+          "epoch": 100,
+          "sha256": "1d8232ef5f00ea8bc4561c45d9b055b9f828386365ce562d082e0377fa8ebb56"
+        },
+        {
+          "epoch": 200,
+          "sha256": "038eb5b36117f04d63074611e777fa7ecdaeaaa7814c9cb03819493ed0ca4955"
+        },
+        {
+          "epoch": 400,
+          "sha256": "4bf27841824aa55be0d5e5c87aab5f464467b95a9a43242d716302c00a2c67a9"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "c1b4c5bc0afafc2f1ff4af7db589308b60087bd8d3e6711dab2b92fc2d2ab46a",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "4bf27841824aa55be0d5e5c87aab5f464467b95a9a43242d716302c00a2c67a9",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "db3e931523a8fb0c085d4be28f7210d7a038a627a1bf85c1b19a72a82330594e"
+        },
+        {
+          "epoch": 100,
+          "sha256": "f93fa540861087c2249f7cdd21156a4ad7e3f9a17b47957975760b1c822aa70e"
+        },
+        {
+          "epoch": 200,
+          "sha256": "6c4f597cf18e4cb6bf7c23edf5e1d43af40eddfdb542d09473148ca973b918c1"
+        },
+        {
+          "epoch": 400,
+          "sha256": "cd062a21c992d4f19fd010ce2845817141793ae650cf86a97512b8a47453385e"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "97605d3eae92ea7d2e1d2a890cfa3e06cd023e95645b14545737216adcbdd47d",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "cd062a21c992d4f19fd010ce2845817141793ae650cf86a97512b8a47453385e",
+      "split": "outer1_inner1"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "d2ff2d4d48e92b07aafc15cf4b485569d12b28a8979b7749dfff066b2b997037"
+        },
+        {
+          "epoch": 100,
+          "sha256": "3b5b3b9b6e9241dbecb5a52257b53c0c478c38c65080d0b918db5161cbbdf885"
+        },
+        {
+          "epoch": 200,
+          "sha256": "7ba74149403b3a03a9db11f5be93688881d0f883ab2a41aeafef093be860669d"
+        },
+        {
+          "epoch": 400,
+          "sha256": "3e55c347b316f055a888951096e84a06af3df17458b365823c30b11fff542730"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "bb24a0c216d0941cc72c957182efc5ee1d964059f57758cab8f442422e837f73",
+      "seed": 31,
+      "selected_epoch": 200,
+      "selected_state_sha256": "7ba74149403b3a03a9db11f5be93688881d0f883ab2a41aeafef093be860669d",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "599d2d2d76a3926d1b79ac61e4afe1cff2d980799382a5143c386bd93d86b2a5"
+        },
+        {
+          "epoch": 100,
+          "sha256": "2ead8c3b99d28e2b0e71ebce677dc1f49f4eed1890c6193536d602a371cefea5"
+        },
+        {
+          "epoch": 200,
+          "sha256": "e0ea998e5f3ebcd8c79117701c3a3f37620df6eccbbd53c062e53d765e05ea52"
+        },
+        {
+          "epoch": 400,
+          "sha256": "a8f974b75466a236088182a64ea3fb53e6fdb7fcbf6eb8e3f2bd41a7710e5d85"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "d87bfa6208d379874ad03fdd9ea3b83641ef4dfbf81e897053f7cda2fda2c260",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "a8f974b75466a236088182a64ea3fb53e6fdb7fcbf6eb8e3f2bd41a7710e5d85",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "7d59c3a4aba1029914d15213f262eb12325f8232609c055828a5c796779cc1b5"
+        },
+        {
+          "epoch": 100,
+          "sha256": "b85c8152351099a604377daa81235e2509de5bd1e6a1761beb3529ee245595ce"
+        },
+        {
+          "epoch": 200,
+          "sha256": "46025e9f7c2d5880bf891ddc0dcd7fe6e131f6fb7ff6205ad00baa5a6950372d"
+        },
+        {
+          "epoch": 400,
+          "sha256": "64066a66847986c95dd2dd59ecc95861bc6619b3a3e4189da17890531e2d1485"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "e7e0c87752a925012463964a94fc4a4b84618bbf422e4a4d6b601f5712952c0a",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "64066a66847986c95dd2dd59ecc95861bc6619b3a3e4189da17890531e2d1485",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "674ed130c985ba587dd6dfa04ab54270e99a09ecacf624851dca7052612e41cd"
+        },
+        {
+          "epoch": 100,
+          "sha256": "ef0f7f40ccffa4cd3842752c48db9130e00e007df275c8a8ad4c614e79c773b5"
+        },
+        {
+          "epoch": 200,
+          "sha256": "a955c048cb07ca203f2d46058ae2cbeb86284f822c673ee2218be1fc4dbe809c"
+        },
+        {
+          "epoch": 400,
+          "sha256": "63e1e1bec20b61e5481c5ca0722ce69902cb5d5120dcb6d3a027461d62aa2330"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "28807f3050771a94b2edcb7b14c737571615d25a42461e5024e263e339c90366",
+      "seed": 31,
+      "selected_epoch": 200,
+      "selected_state_sha256": "a955c048cb07ca203f2d46058ae2cbeb86284f822c673ee2218be1fc4dbe809c",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "1644208b8dbe2ef68fc9b4181a9b737a398da9d12b31992f7141ade3640aca1a"
+        },
+        {
+          "epoch": 100,
+          "sha256": "4bf54340e129e7cf604ec904164dddbea12e1aa08b34257327e609960ca5d6f2"
+        },
+        {
+          "epoch": 200,
+          "sha256": "a0d2fc35c2216445a7e9b71f3e4e4cf143a03177f6ec0df8e32b145f8e3bb231"
+        },
+        {
+          "epoch": 400,
+          "sha256": "a2ec34f0b23e6bb45e499c6ac120b0a1165564b1221cf66abb481358dfe4f9f4"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "a75167bab8268e7ff9bf59dc6d841b864a5a7032802d8814ab3b0a98ad297396",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "a2ec34f0b23e6bb45e499c6ac120b0a1165564b1221cf66abb481358dfe4f9f4",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "385d3c127a8b96bdb99c9ba838252b834c22e28970dbec008921e283e3fda9e6"
+        },
+        {
+          "epoch": 100,
+          "sha256": "531fc54b1a8cc1b7d4e84e2ebf0a1b874338250f5647b21a85826f47588ba42d"
+        },
+        {
+          "epoch": 200,
+          "sha256": "c2401b84453e3828020593c60257cfb700b9192a3be97c23b63fe4760bb3b5d9"
+        },
+        {
+          "epoch": 400,
+          "sha256": "ef37e09dc7d143ad98471028aefec5e4a644ab6476f044cd48b76ac69af93f29"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "c161b111cda70299ddfeb27e765bcf2543c9cb8dd21bee04433c6d5a9ae4334d",
+      "seed": 83,
+      "selected_epoch": 200,
+      "selected_state_sha256": "c2401b84453e3828020593c60257cfb700b9192a3be97c23b63fe4760bb3b5d9",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "1bf3706d0964d73d3d403c5347108f5406f2991572264ce3b069fc6a6b30e5e9"
+        },
+        {
+          "epoch": 100,
+          "sha256": "7af539e56bff41b36497b0a4cff994712b1af6932f737a73748868734fffc2d1"
+        },
+        {
+          "epoch": 200,
+          "sha256": "f813839b12d692597dcd84d1dffc580e5f412c99e5d5989f2e70b97dd401eeec"
+        },
+        {
+          "epoch": 400,
+          "sha256": "73c94ca4d652386581857dbf1fa5813b1e277bd213a69c0a48bf879bfc1b17c4"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "62813f7d53b0c74bce3a64f7944dc949852e1adbb7d04cd582c2cc3113437aef",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "73c94ca4d652386581857dbf1fa5813b1e277bd213a69c0a48bf879bfc1b17c4",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "99ab198250287d1d1917fe395f74ec76d1cb5efa65c813453fcdf7a0d9e5a2a9"
+        },
+        {
+          "epoch": 100,
+          "sha256": "24f446f08437a2ca45d2d13f8fab6d3bcd08a1c1817d50ded11e2f8b23a78ed4"
+        },
+        {
+          "epoch": 200,
+          "sha256": "59b36de965080bc7f5aa5c609cb4640197db23c8ea969e3ccf505a2f38810eba"
+        },
+        {
+          "epoch": 400,
+          "sha256": "076928bf8f2a6aa39144f2bffff8f14103f1fccb227b8f72e0ffeb2dce5181fb"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "a956c4f0d3edbadb99430bc0f419fde9df9eedba169c82c090b616973c113e51",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "076928bf8f2a6aa39144f2bffff8f14103f1fccb227b8f72e0ffeb2dce5181fb",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "f58c3dff6fb566c11b95b0fce278add779e27898777099176ede21eaacb1e5ba"
+        },
+        {
+          "epoch": 100,
+          "sha256": "f08dbddd6335bc0e4c5bbc0a34a328af1df1b8d9c67484468e7fa59108074682"
+        },
+        {
+          "epoch": 200,
+          "sha256": "4c40ffcb18804dc0d34813c4317e6b3257c9ef87c1e03b115637b97d6fa53d3c"
+        },
+        {
+          "epoch": 400,
+          "sha256": "b44cd0005d00defe7d93cc632e1369f4c93c5416475dfaa28c79a7e116053c07"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "8f3f18c71b31d0bcc35828fbae92d5ebe3c8873a7f59d187a690f751676ccf0b",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "b44cd0005d00defe7d93cc632e1369f4c93c5416475dfaa28c79a7e116053c07",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "64c39f7e372932d1f82c27c53510e41535431f2200ec73ae015c0bccb39f8c03"
+        },
+        {
+          "epoch": 100,
+          "sha256": "f1f6d9efd9a145cb8e624b4ae40e415427a0a4ab0070bf33d89779aa7d0090e7"
+        },
+        {
+          "epoch": 200,
+          "sha256": "8168fd41aa30d76cfddf711802fa96538be7440bcc042cbeb39d9b8c166f88e3"
+        },
+        {
+          "epoch": 400,
+          "sha256": "4c98cec19b6903b69181d1c0fd9b0f0f00fadc3f2275a916009194aa97486555"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "7785b32db0fe015e68bcb1404189a8c609bdfc2c54807404a33779f998e2d49b",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "4c98cec19b6903b69181d1c0fd9b0f0f00fadc3f2275a916009194aa97486555",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "1688ccb23cbc08cea2b2f6ac83bff5ef57024400b2ef54cf94ba303e3ae769e4"
+        },
+        {
+          "epoch": 100,
+          "sha256": "92d97a39ccf6263d2202ca950497efed6dd90d60d73d17e3e5462db62f908028"
+        },
+        {
+          "epoch": 200,
+          "sha256": "8910cf8439e44047c828c814db9f7b38fb479978eae9d6a7a7cfefcd3593aac1"
+        },
+        {
+          "epoch": 400,
+          "sha256": "42c779869311d8f945d12d6df9bf0d8d4272ecc445014e277b02ea296bf89c07"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "0535e38f9d53df4ca42b72e4528f09d8dbc64907fbf0991b2a11a701bcbb214d",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "42c779869311d8f945d12d6df9bf0d8d4272ecc445014e277b02ea296bf89c07",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "3ab41335143987571f86f9b5d119d0961fad6e8dda4b7fd4b29d3e1d48c41cbf"
+        },
+        {
+          "epoch": 100,
+          "sha256": "e27b4daf58a4eb1e3958d0171593a413dc9c0c22c57511504dd64ab42bb211e9"
+        },
+        {
+          "epoch": 200,
+          "sha256": "179013229cdb98148494391a2e4d82944cfd58a6046119e8fca0421bd8fe5d26"
+        },
+        {
+          "epoch": 400,
+          "sha256": "e2cd158c152c3ea9f2985d57dac6f2eb29fbdf50feaf305006010ac74c47f24c"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "2d78175bf7ebf4633fed94ceb7220f9d07f8c010e13681e88b34525c8b56bf9d",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "e2cd158c152c3ea9f2985d57dac6f2eb29fbdf50feaf305006010ac74c47f24c",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "88ee275eef8ce5759f60399e6cc30f9c9c58646b0397690803db346a50d02e70"
+        },
+        {
+          "epoch": 100,
+          "sha256": "ba0ce6973c01e72183a034174ff4c84571627747b19e3eb566a00ecbf3e353ea"
+        },
+        {
+          "epoch": 200,
+          "sha256": "7af2777769080b32af119327b0e1e998cb11c25988a284306486778000431db9"
+        },
+        {
+          "epoch": 400,
+          "sha256": "3c95893defb5e52e87486db9f7c0464ede2ab74af8a4ad3886f14b84402337d3"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "4e88efe7c3bd48f2b234236979165f006bfe6c732fff74f7f876ec0972de98c3",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "3c95893defb5e52e87486db9f7c0464ede2ab74af8a4ad3886f14b84402337d3",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "0c01ec86addfe12cfd8921931fdcff4965aa3bd027dce19254afd1a385ae5303"
+        },
+        {
+          "epoch": 100,
+          "sha256": "fe4495d9d4d765e0a80935e06a27758cf3e0574fd2749572d475536eddb01c0f"
+        },
+        {
+          "epoch": 200,
+          "sha256": "e33afb0f7b9d4299f78b845e645db6eff23033d6ea1bf3509be8d2ba96321d93"
+        },
+        {
+          "epoch": 400,
+          "sha256": "95a6d35a5c22217981fc35e6804c302fc1fd233021f75e6dfc3ccd32bcd44cad"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "c158124410189e46f6a2d414635e9a270edef71ec2e5802457d82f47d872c917",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "95a6d35a5c22217981fc35e6804c302fc1fd233021f75e6dfc3ccd32bcd44cad",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "e01f3c13a74aaff54c20d56fcecd45eb99a76396c156d47c7b2f2d7eb7680933"
+        },
+        {
+          "epoch": 100,
+          "sha256": "1a02ea1c093f51419e6f8c566bfc34be2f9b69aade0d98593fb0c2ba9f42bc42"
+        },
+        {
+          "epoch": 200,
+          "sha256": "89066e55b8a60fac51c67fae965297f9a4fb6f9e5e8d870e554b8a7ec53d9db4"
+        },
+        {
+          "epoch": 400,
+          "sha256": "bdcffd648f789863fe127212646c40ce35e9c0d646859ef9f82046d64da87853"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "d203f483498c08374b4fc4faa5d209a2036fd6c0d267bcb40b08958628af1303",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "bdcffd648f789863fe127212646c40ce35e9c0d646859ef9f82046d64da87853",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "58cb362c0843479a29143a03e20cb027bf7eafde8610bf3f70c7be29516270ae"
+        },
+        {
+          "epoch": 100,
+          "sha256": "2c21a3ad4670d496028f17525fb488957e73b96d0848b8379d8bb946e89dc52f"
+        },
+        {
+          "epoch": 200,
+          "sha256": "959cf6c2b442412236e84f550c93a83be3833c916463a06f2bc9700bf5476f23"
+        },
+        {
+          "epoch": 400,
+          "sha256": "dd6adf2ab017226f2bf749596a9d1459085a35092152bca414a8b881b78cc95e"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "c2f51ff0b1aa8abefbe7e8c66f0650aa745c12f25e293462fa505cbd2eda1d29",
+      "seed": 31,
+      "selected_epoch": 200,
+      "selected_state_sha256": "959cf6c2b442412236e84f550c93a83be3833c916463a06f2bc9700bf5476f23",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "97fd0e2f55c69686c219602e7a5db2a3186bd8f2bab9a3e6140349dbea6cb591"
+        },
+        {
+          "epoch": 100,
+          "sha256": "b265e2546a51ccc10903ac9f4a86b5271a701d8fc24d652d753e6dc7f7243073"
+        },
+        {
+          "epoch": 200,
+          "sha256": "8561e307caf8e6c544e5f3b72303c4dd226dcdc25321b4a79a46d85de14735f6"
+        },
+        {
+          "epoch": 400,
+          "sha256": "c9bc5018c1b09ceb971272bb797acd14ef3402b0f92042c7931076e6c0d5ab0d"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "8ce2c874111ef31de70a4dc4197b6e789a6cf8776fe350f9dd700dd76ad890fa",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "c9bc5018c1b09ceb971272bb797acd14ef3402b0f92042c7931076e6c0d5ab0d",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "c04d565024e69d6a422ff8f379933b2bf3ce8792dfca566e67ecdd0249fc5119"
+        },
+        {
+          "epoch": 100,
+          "sha256": "fd43a646f39a0857c14967fd43455df91c2c2de138f61eea1358585fee2302f6"
+        },
+        {
+          "epoch": 200,
+          "sha256": "32b95c3b33d5ebb1ccba4663f120209bd831ba27c70da862ba94224c6880e932"
+        },
+        {
+          "epoch": 400,
+          "sha256": "fb141d08cadc6d2cb099d7846618cd6d9cf9cbd0a418ba8b241c37f573981ac6"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "03c10be79484b68e1b88efd620c9a3e4a8a2ea461d158e3ae462e1dbb67766a2",
+      "seed": 83,
+      "selected_epoch": 200,
+      "selected_state_sha256": "32b95c3b33d5ebb1ccba4663f120209bd831ba27c70da862ba94224c6880e932",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "09d0a76a0111aa45f61647d16532ab7f0a34d523d811ad5b0fd3355fd04c5898"
+        },
+        {
+          "epoch": 100,
+          "sha256": "c2b7d21c7bdb609a56294150869ad38a1c13dce9afe1828b5a0c745f5416e4aa"
+        },
+        {
+          "epoch": 200,
+          "sha256": "096ab97d171a7b91be5e8d2ab3730e7bfaf962fc6a3a2e9df2a5b68c361f8484"
+        },
+        {
+          "epoch": 400,
+          "sha256": "0b2db66cf22e3fbd6455ae043f58dc3752d369865b4a14dbca58c01fbee3e8bc"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "e9f3d47cf5fd3fac65ac34dcf60c5398c07d75e31daa6d743acd4d06db73bcfe",
+      "seed": 31,
+      "selected_epoch": 200,
+      "selected_state_sha256": "096ab97d171a7b91be5e8d2ab3730e7bfaf962fc6a3a2e9df2a5b68c361f8484",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "53d4a61b697374a8f2ad8520a12acafd842a79bd21b123df68a2743d3ccba26c"
+        },
+        {
+          "epoch": 100,
+          "sha256": "1204f3c252e80de5546d8ab7cb5ee92e80f8de9abc5012e0c70fdfa0ef6f0b72"
+        },
+        {
+          "epoch": 200,
+          "sha256": "a1a9387df9edbf5456c5dfc931aaa0e11863b756bbf60252361b4362054cf700"
+        },
+        {
+          "epoch": 400,
+          "sha256": "5638376bf8b118185183c42d9301ef61a5a27bb65e72de33fa2f22306e990327"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "9c6fe2b20034773bb40207060f568fc344638436525437cbd4ad5b3bf2e30709",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "5638376bf8b118185183c42d9301ef61a5a27bb65e72de33fa2f22306e990327",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "21582d8fd270c6467b48e91a45e7830a01beeb04edc67acdb19dbb3abab036d4"
+        },
+        {
+          "epoch": 100,
+          "sha256": "af0f024e3cb3bf3b17edcf965a577f277ff9ef3585a4b2335ac31157ced5ed53"
+        },
+        {
+          "epoch": 200,
+          "sha256": "778e50babba0745162e4576d6ea1f29ae847dbcb44959bd1889669ef1346b2e4"
+        },
+        {
+          "epoch": 400,
+          "sha256": "7310bc9571592ba38ef4d5410cceafac8f4ed5ab7017116b23286795900114d7"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "794f794c06cffb1471ad69db83c434c4d644670b68f561f0f4a7e1e9f4f598fd",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "7310bc9571592ba38ef4d5410cceafac8f4ed5ab7017116b23286795900114d7",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "488851b2e53ede4c6f06004af4358bb1b98815545e9e75970325fe9ea733dea7"
+        },
+        {
+          "epoch": 100,
+          "sha256": "5c81ce6b97fc3b17467935c778d1e79f2452e4626281530477f4d97d58c36254"
+        },
+        {
+          "epoch": 200,
+          "sha256": "f56aca46f78f42ea71dfc7b3b1cb3895febb93ce110b24ae47da5318e3b5fd99"
+        },
+        {
+          "epoch": 400,
+          "sha256": "d7ca9a2025e14c649e5369ebb2384c5068cfa641039bae42a88a0e567584b133"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "78364000cc282421768014f90d279c3751de25822b3525f668ae5086478a9274",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "d7ca9a2025e14c649e5369ebb2384c5068cfa641039bae42a88a0e567584b133",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "c15538897564bd559134380ea7dddc7e9e7719b35fa1b85ff0753d052f621d24"
+        },
+        {
+          "epoch": 100,
+          "sha256": "724d5be80bf460c6d76901f090db6ece078fe4dd8185000652445590dfe43b55"
+        },
+        {
+          "epoch": 200,
+          "sha256": "2e044d60fc95c8f195cf7c68914f6d5add8180b53e6f81ca0bc0458ad95eec15"
+        },
+        {
+          "epoch": 400,
+          "sha256": "dbb3f4fc256d1a41e2e47c5168a4e876ebee9a05f6c0bd151d7505b90dcb3cd4"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "8f6ea328ed84ef5f630575da1a8ee156cdaadce4e3db183a177674f24b9615e8",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "dbb3f4fc256d1a41e2e47c5168a4e876ebee9a05f6c0bd151d7505b90dcb3cd4",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "9115250b4f9acbf19de90abe1d0e3578143d7d1815d7ac0c27ce177388f26803"
+        },
+        {
+          "epoch": 100,
+          "sha256": "ba60d5b5e219f5434429f03c63c9d7c2b70158f5abea36bab4a2075cdea6c59f"
+        },
+        {
+          "epoch": 200,
+          "sha256": "32008f03bf174e0807d6b7168fcf5f9d38cff8a15cba3a31eda90dbb0e156d20"
+        },
+        {
+          "epoch": 400,
+          "sha256": "69f40740b53a891d00505fff28e3b5643c79a0aae7af756fbe0c9f92dfb0cd45"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "854d2d552974a8bb2960fda6f73d00b6411de76e18038d599d2491a1335fe8ac",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "69f40740b53a891d00505fff28e3b5643c79a0aae7af756fbe0c9f92dfb0cd45",
+      "split": "outer1_inner2"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "cc4a75f0d825d40652189449a8072b69c62e923a23de92ce35d8e77b4620c614"
+        },
+        {
+          "epoch": 100,
+          "sha256": "e0c5dc3243a5ae1bdcaeaa7f3d89c80a740888f8cf588199f816cf32736f4939"
+        },
+        {
+          "epoch": 200,
+          "sha256": "ee7a0a23c1bf6f6c003d50b991ee02c11b58571cbe4ec862a5d749a47439ea06"
+        },
+        {
+          "epoch": 400,
+          "sha256": "13e18aa8d3cd10308be49380607c324e0046ec2752751618fb35bdfbc8f0038a"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "56be32063f4f0eb45a130b96a489d7448b9c9e86cfc4dd4df26478fe9e99a08c",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "13e18aa8d3cd10308be49380607c324e0046ec2752751618fb35bdfbc8f0038a",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "6b9fab334c7333f10a8f83af984772eb3aa9d33ee697561069624f824d7ce5f6"
+        },
+        {
+          "epoch": 100,
+          "sha256": "6d2fd4a74502f22c961577334edc8d84f43038c80abb4f0ad862522876f54ab9"
+        },
+        {
+          "epoch": 200,
+          "sha256": "dc23ef210aa3191a0a6996c7f6bcc14175d2bf0bbf8498185624b5ef911899f5"
+        },
+        {
+          "epoch": 400,
+          "sha256": "d1262dc9802f17145edc3891912db701c8fbabe6ad21ef72d6f52404f8c5b5b2"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "e7e228ddc05e5f0412ef6e2842cd74d1f498b87508a9f4a8520243050c707cd9",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "d1262dc9802f17145edc3891912db701c8fbabe6ad21ef72d6f52404f8c5b5b2",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "ff1c19964a300ceab47fee5aa357257787fec43ced592a9dfdfa36788575ef01"
+        },
+        {
+          "epoch": 100,
+          "sha256": "7edaf85225fcee1a3d475ff1ffbb08881c237272f32c063789f66525c510c918"
+        },
+        {
+          "epoch": 200,
+          "sha256": "419871d1a4898a402439de68260881cd0ab569733cc51948d5b378e1e6f5a8b3"
+        },
+        {
+          "epoch": 400,
+          "sha256": "3da039701df062a2f09a27d27ef79c359e0de5f1e1be0f307b504f8f5053b94c"
+        }
+      ],
+      "family": "ATTN_MATCHED",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "02b67b2503bd7484fd45ea9fec6281534d6285bf27a698e20c3f0d9b017e5420",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "3da039701df062a2f09a27d27ef79c359e0de5f1e1be0f307b504f8f5053b94c",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "197d1f80170d8b20e8e1512f5decdb8ec823ae2010b50804257f760ae889da2d"
+        },
+        {
+          "epoch": 100,
+          "sha256": "967300599838dd8c7447867a9924e86fc2366e5fcacc0f9568d94e4b1381a1ae"
+        },
+        {
+          "epoch": 200,
+          "sha256": "c49a20a1af5d6eefba9938eb0e7774325a740ff14068751e435df14458b928f3"
+        },
+        {
+          "epoch": 400,
+          "sha256": "f9d63e11883e81121242a18279fa213aa9c317f6ac0424db90bd88fe7c8af8fc"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "947b1b31120ddb5d24da456ce58fd2c8f8e5df82308c912c6392edc7724b09d5",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "f9d63e11883e81121242a18279fa213aa9c317f6ac0424db90bd88fe7c8af8fc",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "5ebd3e457c953227e5517f2dea140eba4dac2cd5db4f9c36626fde0effaf0c91"
+        },
+        {
+          "epoch": 100,
+          "sha256": "e22b621dba33a7d19b1817e6af866271848c8db89b0f7b3e657c776eec977afa"
+        },
+        {
+          "epoch": 200,
+          "sha256": "0c542bb6ea42ba958b6df336ee7c89d1ec38110b240b64bc702ad870502d3526"
+        },
+        {
+          "epoch": 400,
+          "sha256": "281139a8ef6f2fb745305c6b7e5a771d1c9a9c449778a59ad8b11a00f980a768"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "aa3fc2004b25a4d720163a6aa8ef2fda423ea06ede18b8591a591b7c7a6ac457",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "281139a8ef6f2fb745305c6b7e5a771d1c9a9c449778a59ad8b11a00f980a768",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "323938bcaa50f8f8785654c20ec9076438be34a336f386261a51e84a3e1e7ce3"
+        },
+        {
+          "epoch": 100,
+          "sha256": "7d1e88607ceec268f63c5db352b75f9f07c3da54965508b986f66ffe00bcecad"
+        },
+        {
+          "epoch": 200,
+          "sha256": "981888091e5340517e0954f9029ea02733acd80a2b28aae44f653d71f6a33995"
+        },
+        {
+          "epoch": 400,
+          "sha256": "2f01e3d60ea0af107269132907255366f11cd7945106a1f5569aa2b6c5b0dec0"
+        }
+      ],
+      "family": "ATTN_NATIVE",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "345997b6eb479a4663858eba304905ee7fa2855ea29cfa6da0109bd191fc0359",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "2f01e3d60ea0af107269132907255366f11cd7945106a1f5569aa2b6c5b0dec0",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "67148354ebb68c184171b0497c433c55a1ec1e7a6b29c01c4ef4b0edabfb50bd"
+        },
+        {
+          "epoch": 100,
+          "sha256": "5ca1bdf35c59c7ec8dfc7eb9e1b1e14e93840dbd26ef9077240dfd1575b3ae70"
+        },
+        {
+          "epoch": 200,
+          "sha256": "33d7bc2f65e19bc77cd7e90fa1b492344510698edfbe5b3e10b7f9958d2f2aaf"
+        },
+        {
+          "epoch": 400,
+          "sha256": "1f6fee65b32b1c3c796f318948118543bb8a2fd07c5b6fb4cd28abfcbb89e0ee"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "83ef4aac782cfe1ce614b82fa10988cd69ad3fdd7dbb61d1354f29e6aa615b77",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "1f6fee65b32b1c3c796f318948118543bb8a2fd07c5b6fb4cd28abfcbb89e0ee",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "b8598f2aceb5e154f304fc37f5c58ae0114853b2ad8037f89c368138357fb762"
+        },
+        {
+          "epoch": 100,
+          "sha256": "86a9f2bd0c64a7095ba80878e72e6fb3ccd4e06920c0776c1b671f27068bbb45"
+        },
+        {
+          "epoch": 200,
+          "sha256": "61c78e5e91b3ac0a2f655fe6a9064c6c228fb6dda3905cb97865ad679923a3ab"
+        },
+        {
+          "epoch": 400,
+          "sha256": "a954af55cd873ca99c7fca1a5d435bd68a733329e4bc2be666504ef4871ba2a7"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "8454c8a8adc5ac59f8d337b8aba66c20946fdc3fe062e7f9cda1afc6984fcfe1",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "a954af55cd873ca99c7fca1a5d435bd68a733329e4bc2be666504ef4871ba2a7",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "67f919edfa6f58a7226e3c7d4ac96fc3c179d2a84546b5c2b23f473bceebee9d"
+        },
+        {
+          "epoch": 100,
+          "sha256": "49d5e4cd112819e58e469953972943fccb7463b1fde423f6d068794551bce05c"
+        },
+        {
+          "epoch": 200,
+          "sha256": "3cc593abaee7631dcbe7c7e685e208e3b0a451b560ff275d1fa2ee95450642a4"
+        },
+        {
+          "epoch": 400,
+          "sha256": "8d02fbebad65df12e7634393889e8485f880a213ea409bca09f2ea767608bc80"
+        }
+      ],
+      "family": "MAIN",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "d67ebda4462f017e987c01047d559b7992af79d3ef43b01ee52f01347e74c0c2",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "8d02fbebad65df12e7634393889e8485f880a213ea409bca09f2ea767608bc80",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "fb1cf7efaeec1a5f975c312241c51305e825c8a0ab784dc544d162e4bfc98a64"
+        },
+        {
+          "epoch": 100,
+          "sha256": "2c7f40451d3b7791846f13ca290000cd65f3f245a7ce8c3cded188c5788927a8"
+        },
+        {
+          "epoch": 200,
+          "sha256": "edd777853e7febd45efd5114fb3d6c7001b074f4e77faf32614d332111efbfb9"
+        },
+        {
+          "epoch": 400,
+          "sha256": "f8a8d1557050b5af5e352fe69fbf417d78f379b43fda842f41f569f572ba8d59"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "b7e3ea4715fb5493efdaac8d36cdc9deaf6a7414c5d893b6d23a9b8bd9d3d978",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "f8a8d1557050b5af5e352fe69fbf417d78f379b43fda842f41f569f572ba8d59",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "1bd16036ab9e360a10db58d6a97bcb40d1ac6c861f498f10ea3788025af9c296"
+        },
+        {
+          "epoch": 100,
+          "sha256": "c492af11a1bb85e6fd378d4416a0ec92324f4605cb42769523ee93a789f0f234"
+        },
+        {
+          "epoch": 200,
+          "sha256": "0359855a4a3d1b43d9c63e9e3c677acd97f28d4a493d16201b3bac763f89bf35"
+        },
+        {
+          "epoch": 400,
+          "sha256": "09f231700e76ea186c050e71e68d25b20a9f8af3a813e3c21e41a2f3ec6b05ed"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "79102c0bd4560e23edaeb1ed4c3da4634c0c045ab2bf8f8a09a15dd4b74b4777",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "09f231700e76ea186c050e71e68d25b20a9f8af3a813e3c21e41a2f3ec6b05ed",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "5d7fa87dbd28bf1d8d1466f79f6e30456d431f503ac6b96de07eab0b9a5a57e3"
+        },
+        {
+          "epoch": 100,
+          "sha256": "6654ed218ba537b9f21d7cbb1dfb5703877a57b5289fbdbf324dd2d0700ce801"
+        },
+        {
+          "epoch": 200,
+          "sha256": "4203b45a737819663da04bee9b6f259fbf9528c1c3dfdd01c7f4d67ff98fc155"
+        },
+        {
+          "epoch": 400,
+          "sha256": "9a06106f1d1ddc53aecaaea6017bda8a38331d994334d19bd35fd5bca8bb2502"
+        }
+      ],
+      "family": "MAP",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "52a1cffc74213e69176626ee86b5faee0954c6f21073701dbcc1dea71f22f223",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "9a06106f1d1ddc53aecaaea6017bda8a38331d994334d19bd35fd5bca8bb2502",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "7c0a83b24fe87175000a4ac51ae5096694f2ecd1f4bddedabd1b287de9b2bb9e"
+        },
+        {
+          "epoch": 100,
+          "sha256": "41febfb1a17440f0fae69f8c27bb5e710fa89625cf8ae22360e53cdc70c1f700"
+        },
+        {
+          "epoch": 200,
+          "sha256": "340edadb094dff85cdd7d62d24dfbdacd3d18f3f12e58642a93ed07224552364"
+        },
+        {
+          "epoch": 400,
+          "sha256": "683191f0d43e0abcb3abca62a530b5c96b64da1dbb5752949a122179e1552efa"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "a11cb143ea37c04e2faa1316c9d657415e697149f2cab6256c2e2dc36ed01656",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "683191f0d43e0abcb3abca62a530b5c96b64da1dbb5752949a122179e1552efa",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "2bb4d5b243eedb4c931ffe9e53e6e2cb745db2df0bdef2a6f27aa472a1085756"
+        },
+        {
+          "epoch": 100,
+          "sha256": "462a5d9bf13ee0f5f4459b3f9f891dc5cfd4b9c12815f0aa1ce410d4fe642b92"
+        },
+        {
+          "epoch": 200,
+          "sha256": "c60f21370bdf8777238ad701334743d308a708aa2ee9d1d84c34e53ef39b508d"
+        },
+        {
+          "epoch": 400,
+          "sha256": "d5bd8d192bd5ac31640173251c3be2c4844e87fb46425887e2e4ccb5d1550f77"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "aeb3778153009555cb504bf9d8125338edd2f75b83de1cb52f26f181d47e56fd",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "d5bd8d192bd5ac31640173251c3be2c4844e87fb46425887e2e4ccb5d1550f77",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "849f0e20b58b39b86c1df7166a4b60c0a5b81ac3f75a3dcc7de16664a4275d29"
+        },
+        {
+          "epoch": 100,
+          "sha256": "55023fb035a6ff4a875fa37df9db0f71e4767fcca6321c3c7121706cbfcf65ee"
+        },
+        {
+          "epoch": 200,
+          "sha256": "78013e6adb61ed89a9991d835f8b8f67f0847a699b9bceb63c2432374ab34005"
+        },
+        {
+          "epoch": 400,
+          "sha256": "dd7a92d4506566db664ce5cacf781c2bd04c40184617f4c99429b0678dabb777"
+        }
+      ],
+      "family": "ORIGINAL",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "84cfe0d9eb1fbbdd88aec58389700245b1c5a4b2ef466f99a2ca8573a63c46ff",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "dd7a92d4506566db664ce5cacf781c2bd04c40184617f4c99429b0678dabb777",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "67980028b7fc4023b0705bfd2014255ea35a9f260eaed8748cdbaba3e037000a"
+        },
+        {
+          "epoch": 100,
+          "sha256": "52476630cf70264f91900f0be18722a48a06fd9f56b2162446cccc179ba37342"
+        },
+        {
+          "epoch": 200,
+          "sha256": "03fb526d37a0b702d69bcb3b4ab5483c6734d1c8b01f10efa686e92fea19cca8"
+        },
+        {
+          "epoch": 400,
+          "sha256": "c1e6c996f9f1396ecc36137f48d504960eb42a6f976ea9ed455cb1afe1d02db3"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "8972145e49bd1203f3fbf31bf79d3cb375d4202d602211f684ca5a07b9974c55",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "c1e6c996f9f1396ecc36137f48d504960eb42a6f976ea9ed455cb1afe1d02db3",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "5f7801f165e4aa27f797368642e5a7cb2f0844cdb00ca42873a7b242a5a657a7"
+        },
+        {
+          "epoch": 100,
+          "sha256": "e4d8095acfc4783b04675823796dbbb252cf5ed0159e57322268624bc5575cbb"
+        },
+        {
+          "epoch": 200,
+          "sha256": "e28f8c59b205a4c2357bdac9faa09003afac5f539b8f4bf12b20133131e19a2b"
+        },
+        {
+          "epoch": 400,
+          "sha256": "eb5d16b950b57834d985f91b006bb905b9337634877b7a3921edec8a5ea43c9f"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "4cbd39bef6b98348a3876276a621cb5b876e9078da80cc1a3dd64a1eed65d412",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "eb5d16b950b57834d985f91b006bb905b9337634877b7a3921edec8a5ea43c9f",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "cb90a2dbca7af95597a12584c1ea652d54d0b884696eabef2f9992ea1e13343c"
+        },
+        {
+          "epoch": 100,
+          "sha256": "0cb4f317ed8e77d15c119658fbdb7b1576dc740007baf1a076d35533832a07a4"
+        },
+        {
+          "epoch": 200,
+          "sha256": "7ea2347c73fa93914adb9b99582fe787c60806ed6a8afc8069d5c01c8421dbba"
+        }
+      ],
+      "family": "RANDOM",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 200,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 3,
+      "receipt_sha256": "3dca46f5622330681358667301b9c78267b40cb0a8396f85eb4f831f7324627d",
+      "seed": 83,
+      "selected_epoch": 200,
+      "selected_state_sha256": "7ea2347c73fa93914adb9b99582fe787c60806ed6a8afc8069d5c01c8421dbba",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "aae550cb256bbefde3bae6561dbbbe833b82a843e89821acf080e40597ce9529"
+        },
+        {
+          "epoch": 100,
+          "sha256": "7899986ae8776b5ea81c08f47637aa1281fac0dc6879d3b7358d9848cba33e41"
+        },
+        {
+          "epoch": 200,
+          "sha256": "9af3fca9c8c08ab0bd7329e3b26e59b58f69063f3ce26f3a9d2b82d6c2a9e2d3"
+        },
+        {
+          "epoch": 400,
+          "sha256": "a17f3e08d58d892fc3b98effe3da86138a86215d8392fca044ebfbf9c73cba9c"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "67d98372d608a49b9f8a0aa869a6487e14a987f43586a1620a4a0c470baeb586",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "a17f3e08d58d892fc3b98effe3da86138a86215d8392fca044ebfbf9c73cba9c",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "49516eee1a74a2ba0582d7f9aacb06b0a4bbee2474e80b8be8f77cf6ef66d07c"
+        },
+        {
+          "epoch": 100,
+          "sha256": "5a2adaf5e19e960f7a0a754f0b40648bd0a287d8fb5e5b7fc22cba1eaf236662"
+        },
+        {
+          "epoch": 200,
+          "sha256": "0bea93830bbd14360685b1b55f2d50b38c0ec9f69f501e4cf6ac93341deba320"
+        },
+        {
+          "epoch": 400,
+          "sha256": "5ac9d379ddde118a94dcec1b9a92e298e1cee363a84af5c0909c932fb49e1aa9"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "d914ade64fe811e83aec22cefa101bcd57d5357d3d3d1c5b000763b6c6fdda0a",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "5ac9d379ddde118a94dcec1b9a92e298e1cee363a84af5c0909c932fb49e1aa9",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "032a59d3b29427753bd8e377c22195fa7f062b7b953df7ac06f448e9aba495e3"
+        },
+        {
+          "epoch": 100,
+          "sha256": "c668fb8a4da3722fa33af93fcf5a3ab4e91b0e1bffcefe45cdff0bee959a9045"
+        },
+        {
+          "epoch": 200,
+          "sha256": "ca403a23fa7a52a4b51b48cb7c37e103763f2975c804a1042bdadd76e4bec83a"
+        },
+        {
+          "epoch": 400,
+          "sha256": "e86996dbd9f6475e6dbce7241dc508a0f360ea6cfe40f0de8dee3dcc71323232"
+        }
+      ],
+      "family": "TEXTLESS",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "1ae74e5c9b520ea7b60c0b6c0046792381da91813c16174f81c9e696e6b0ef79",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "e86996dbd9f6475e6dbce7241dc508a0f360ea6cfe40f0de8dee3dcc71323232",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "8e3a123eb5797a0280ea313707e291ccb5340780c9d5c598c298065f3e4af05c"
+        },
+        {
+          "epoch": 100,
+          "sha256": "fb788bb9f8f936588e84b280141b4704cef6b1de62e72e120a6d6b18de79935b"
+        },
+        {
+          "epoch": 200,
+          "sha256": "4207915fadbaea64abbb548a3dad54f9ed4b78457b4a34779e9692c63d55a300"
+        },
+        {
+          "epoch": 400,
+          "sha256": "751f10fd0705b23029f78cfe8a8e7f9bf91c35bb9e5cfe11a2e554885af8ffc9"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "cfa4c6188b09343e89364757ed502cbeae3c1b9cb0df23067a205da7e40bb7ba",
+      "seed": 31,
+      "selected_epoch": 400,
+      "selected_state_sha256": "751f10fd0705b23029f78cfe8a8e7f9bf91c35bb9e5cfe11a2e554885af8ffc9",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "8d7b5722aae85661452ba6ca4bf284c76c8618aeb4e9b9c2415e2550b91b8f26"
+        },
+        {
+          "epoch": 100,
+          "sha256": "877d84d96c056a18944c8437749c1cd1bc10b43a30aca247f2064efa319c9f78"
+        },
+        {
+          "epoch": 200,
+          "sha256": "828016bff5fa4a04b3cc820b95ce5bedabe4ee67824443ab03c7a5f5e0004b99"
+        },
+        {
+          "epoch": 400,
+          "sha256": "de00faf67410fc65b6061336d8da7dbe56c14f9a45659dbf0cd72ae6f3234333"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "0f93b86259c200b8038d23175a881866f7931a422a78821f362513cf92f123ce",
+      "seed": 47,
+      "selected_epoch": 400,
+      "selected_state_sha256": "de00faf67410fc65b6061336d8da7dbe56c14f9a45659dbf0cd72ae6f3234333",
+      "split": "outer1_final"
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "epoch": 50,
+          "sha256": "2b8b553c28bd1904b3c099104d1d3329fdd8d6035cc21a01b8017de20ecef8df"
+        },
+        {
+          "epoch": 100,
+          "sha256": "e1827ac93789e27259bd259465d1519a593fa12c5277ee5b164d12683406dd04"
+        },
+        {
+          "epoch": 200,
+          "sha256": "f42e8f1e094f56000838eab227e4d3cd4dc6aed5f9df06a383eedb06af95ba17"
+        },
+        {
+          "epoch": 400,
+          "sha256": "405d571cbe69aa7eb70f9e19c481cec9d8c619443b6fcd4d12a2115fd5991a5e"
+        }
+      ],
+      "family": "WRONG_AUX",
+      "input_sha256": "c554d7f522f3421d38bf660cf56baf88c1c6604b23abc546f6cd2f6e40b41a14",
+      "new_model_forwards": 0,
+      "optimizer_steps": 400,
+      "producer_actual_saved_replays_verified_as_receipt_markers": 4,
+      "receipt_sha256": "e428f9e153f79aed93935477d5a28f2ddbacef39040ebc55a09d0a65085e582b",
+      "seed": 83,
+      "selected_epoch": 400,
+      "selected_state_sha256": "405d571cbe69aa7eb70f9e19c481cec9d8c619443b6fcd4d12a2115fd5991a5e",
+      "split": "outer1_final"
+    }
+  ],
+  "recorded_teacher_optimizer_gradients_checked": {
+    "Cox_fits": 52,
+    "Cox_gradient_max": 1.96017199532994e-06,
+    "old_teacher_objectives_not_independently_refit_or_replayed_from_raw_features": true,
+    "scalar_fits": 4,
+    "scalar_gradient_max": 1.0288686569381866e-11
+  },
+  "risk_cells": [
+    {
+      "arm": "B2_MATCHED",
+      "compact_artifact_sha256": "d966df12a7a6a4368edc875997e46ce4dcb9215360f4a87e5a417f5d1e6454b0",
+      "fold": 1,
+      "independent_objective_abs_error": 0.0,
+      "independent_ridge_gradient_max": 2.055847653226195e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8883034773445733,
+        "Harrell_den": 949.0,
+        "Harrell_num": 843.0,
+        "Uno60": 0.9133861785620966,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1810.3396099305228,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "697a0229fda6e6ec06d5f27fe83bc1961db1fdeb5e203c811dfe8cd12a2f260f",
+      "risk_artifact_sha256": "cac5b43c02dbbdd409dd695052450c92ade7d6b21b3ccf6b83f8b551d1b1cb1f",
+      "seed": 31
+    },
+    {
+      "arm": "B2_MATCHED",
+      "compact_artifact_sha256": "c2b2319933dbb6a3c66e06cdbdccf12b5b25c902071273d9b74471ccd8a77a21",
+      "fold": 1,
+      "independent_objective_abs_error": 0.0,
+      "independent_ridge_gradient_max": 2.8677700755763702e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8904109589041096,
+        "Harrell_den": 949.0,
+        "Harrell_num": 845.0,
+        "Uno60": 0.9117185219401102,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1807.0342995268797,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "63b1736784ac18e3a937422c9d9ade2bacea0cf38d5d9026f4b6e48ff2be71f7",
+      "risk_artifact_sha256": "98057b6d85b153950c6fe400bd234de6920fba86e4a0c813f56d25039fcaab75",
+      "seed": 47
+    },
+    {
+      "arm": "B2_MATCHED",
+      "compact_artifact_sha256": "2fa6ee0b9e110cd23ea5e3a27fbe162271ce19297ba1c2323c678884528f1912",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 7.4958946050252e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8904109589041096,
+        "Harrell_den": 949.0,
+        "Harrell_num": 845.0,
+        "Uno60": 0.9140551583886658,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1811.6655339555493,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "ffef8744b90310a422df0b341b5b4ff5046a708271b4af8209387007e0ddb43d",
+      "risk_artifact_sha256": "a92f80fe48390e748ffd82a03ea26e2a551218bcd77340b68553d28d3859b8ab",
+      "seed": 83
+    },
+    {
+      "arm": "B2_NATIVE",
+      "compact_artifact_sha256": "4088fc2743d7cda609a9a203b2d39a34d3655bfc4c8bb30cb5dff2a11b44ca28",
+      "fold": 1,
+      "independent_objective_abs_error": 1.7763568394002505e-15,
+      "independent_ridge_gradient_max": 8.460667857285165e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8893572181243414,
+        "Harrell_den": 949.0,
+        "Harrell_num": 844.0,
+        "Uno60": 0.9104978484534607,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1804.6149137122702,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "fa2485bcf8e64bcfbeff17e92467938e2d73f2c80231b7615df58879ebd78187",
+      "risk_artifact_sha256": "3b9b59220a783cda2ffdcc40da090d5676c9414e070e8b4ff5f00c25a719223b",
+      "seed": 31
+    },
+    {
+      "arm": "B2_NATIVE",
+      "compact_artifact_sha256": "b5076ae2a63c8e09a126c400f0ba05da1f3f1d8ac7d1a14515fe2ddc9104dc73",
+      "fold": 1,
+      "independent_objective_abs_error": 0.0,
+      "independent_ridge_gradient_max": 3.894549571725747e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8956796628029505,
+        "Harrell_den": 949.0,
+        "Harrell_num": 850.0,
+        "Uno60": 0.9177962902460557,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1819.0804908996843,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "cb57d3d178e39910a634937c0ded2ba9f1881367cace9a47834d7d5b7c84db5a",
+      "risk_artifact_sha256": "260f18829265a74c13979360662ec9dbaa4e2bc860a1eb62f37f283043f293e3",
+      "seed": 47
+    },
+    {
+      "arm": "B2_NATIVE",
+      "compact_artifact_sha256": "9e6a1403b1e97fab6f4d6c4eab9e7d269204581744de26a78be794bec9d75a39",
+      "fold": 1,
+      "independent_objective_abs_error": 2.6645352591003757e-15,
+      "independent_ridge_gradient_max": 2.1939962010532332e-07,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8830347734457323,
+        "Harrell_den": 949.0,
+        "Harrell_num": 838.0,
+        "Uno60": 0.9031290524811919,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1790.0098939088227,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "5982c20e072f4f30beb8ecb3b63aae8a29f28cb614e939c428cf48854b88ef37",
+      "risk_artifact_sha256": "d2d7c2518909d81fdee8cb1e85349105bd27f5281428d7d430cbe86f68bb3b46",
+      "seed": 83
+    },
+    {
+      "arm": "B1",
+      "compact_artifact_sha256": "fb8279e1bf76ba00ab78144772c8602c9b123b44a755a8e4ad49b083adc6b245",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 2.55123763504006e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8883034773445733,
+        "Harrell_den": 949.0,
+        "Harrell_num": 843.0,
+        "Uno60": 0.9092015802609694,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1802.0456985116919,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "bf224cf2fc4e9eef84d50a4b755769e4a65c26350a3aa41a7c5117192e05dc18",
+      "risk_artifact_sha256": "f48e196d7f3ebb12e1395614e66c5aa60d8d665f428de516a7566b374f4e0ab3",
+      "seed": 31
+    },
+    {
+      "arm": "B1",
+      "compact_artifact_sha256": "e3ccc65cac67d6b3f6c81990e6f75f36eb1f614ce02301d0a49d4d6c7d70b280",
+      "fold": 1,
+      "independent_objective_abs_error": 1.7763568394002505e-15,
+      "independent_ridge_gradient_max": 2.2656397175024878e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8883034773445733,
+        "Harrell_den": 949.0,
+        "Harrell_num": 843.0,
+        "Uno60": 0.9104855458869316,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1804.5905299149083,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "7df9798fef1e66049be768dd606ff8c68762c9ee4789e98ae4b052a948fa54f1",
+      "risk_artifact_sha256": "65ee0a2881927f153391e15c9445b942406c05acddb4e980913684d341eecdb7",
+      "seed": 47
+    },
+    {
+      "arm": "B1",
+      "compact_artifact_sha256": "99d6eb8531960640a62f79cbee06a25907544a0c20dde66776233d146f3e7e7a",
+      "fold": 1,
+      "independent_objective_abs_error": 1.7763568394002505e-15,
+      "independent_ridge_gradient_max": 1.1463049946758286e-07,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0691004465334117e-11,
+      "metrics": {
+        "Harrell": 0.8830347734457323,
+        "Harrell_den": 949.0,
+        "Harrell_num": 838.0,
+        "Uno60": 0.9063402291583627,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1796.3744749257141,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "9efb4de1bf11893b5b9c626ff1e8da2ac1f4b222e24bd8044ffaa79d47720c57",
+      "risk_artifact_sha256": "45447a584e974b9010994eedecadb72cbfdcc80582cf4bdceac628b6a82a0dc3",
+      "seed": 83
+    },
+    {
+      "arm": "B4",
+      "compact_artifact_sha256": "929b240699dacf41af3f06cf8b69c0a290368b0ccd0381d3d269a8785ed12cdb",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 1.4364416545120662e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8883034773445733,
+        "Harrell_den": 949.0,
+        "Harrell_num": 843.0,
+        "Uno60": 0.9092015802609694,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1802.0456985116919,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "e0722a7dc13599eebb6b84f324525dda2bad9d9f3eff9da7c7029e1a2f2557d0",
+      "risk_artifact_sha256": "e2fc688850822261edcdb8bd21619bd29f66f11aa1af61e34870dc4580806ec2",
+      "seed": 31
+    },
+    {
+      "arm": "B4",
+      "compact_artifact_sha256": "ae8cc83c626a61a40c1647fa674dd58db31c41d6e3d22feb8cd777e20fcfeab1",
+      "fold": 1,
+      "independent_objective_abs_error": 1.7763568394002505e-15,
+      "independent_ridge_gradient_max": 3.099368661718671e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8893572181243414,
+        "Harrell_den": 949.0,
+        "Harrell_num": 844.0,
+        "Uno60": 0.9142029645627711,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1811.9584871202187,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "2a3fb240ecf75900c14e88f576e4eb7bc4740763cb83796967263e9978408bbe",
+      "risk_artifact_sha256": "c788f31d1d8483e7c55405ca24cbdc612420cad65699f812ef051f9cb9dd10c8",
+      "seed": 47
+    },
+    {
+      "arm": "B4",
+      "compact_artifact_sha256": "a1686d4d458dca7daff54649bfba326f6e172075451f9ce0131e5a05c7de4919",
+      "fold": 1,
+      "independent_objective_abs_error": 0.0,
+      "independent_ridge_gradient_max": 4.021251619884536e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8840885142255005,
+        "Harrell_den": 949.0,
+        "Harrell_num": 839.0,
+        "Uno60": 0.9069129390284922,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1797.509591032382,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "a07164f1015287ede080e029b7ef35f57b3e783ffadd3e868f4a3c33d79b413b",
+      "risk_artifact_sha256": "c3af55a49a9514c61185507526c88bd7255c183e524c4c7639996136ef23279f",
+      "seed": 83
+    },
+    {
+      "arm": "B5",
+      "compact_artifact_sha256": "8d10fecbe3fa93f59ff56666b4641b8d6467b7c31d2205391ed0e2979d5ca2de",
+      "fold": 1,
+      "independent_objective_abs_error": 1.7763568394002505e-15,
+      "independent_ridge_gradient_max": 1.0021017605998939e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8883034773445733,
+        "Harrell_den": 949.0,
+        "Harrell_num": 843.0,
+        "Uno60": 0.9092015802609694,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1802.0456985116919,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "4ffaac808ee4acd9bc2103267a6edb6fdc1c828c131aebc4b87888cc3e07bb36",
+      "risk_artifact_sha256": "9d86b063963dcf6c3ec3c3a2c6ecfdbe6fad5c35730e7656ccb9a1458d3c0d2f",
+      "seed": 31
+    },
+    {
+      "arm": "B5",
+      "compact_artifact_sha256": "bbf3c69438a521ed758111e8471bfb36e0e2764137ddb2585a341b4c4a0c567e",
+      "fold": 1,
+      "independent_objective_abs_error": 1.7763568394002505e-15,
+      "independent_ridge_gradient_max": 1.0313589982047233e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8914646996838778,
+        "Harrell_den": 949.0,
+        "Harrell_num": 846.0,
+        "Uno60": 0.9122822087285741,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1808.1515318046413,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "cb6b64943b0140c952f001bca2fa2081d6928c18463ee69f480116ea8e0807dc",
+      "risk_artifact_sha256": "d30b57bcf2ab386035db621e1a2e616fabec2745d98c0491c284f6743a8e6d27",
+      "seed": 47
+    },
+    {
+      "arm": "B5",
+      "compact_artifact_sha256": "e9534976c99547bb088ee10258f8cb6848dc1964b4c44fd96c58c009652fc74e",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 1.0970355998618508e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8861959957850368,
+        "Harrell_den": 949.0,
+        "Harrell_num": 841.0,
+        "Uno60": 0.9080583587687514,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1799.779823245718,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "4536551109223beee906cb4ab5692964bff0773fdaddfd5a087ca1712c9b31ca",
+      "risk_artifact_sha256": "c0fc193757ffbb8d9910fb93a1b195c88a797dce0c7f41427b80376ea4d4c19e",
+      "seed": 83
+    },
+    {
+      "arm": "B7",
+      "compact_artifact_sha256": "ce58c9c77d026021b3fe0e756df55457f0734d627a671d5b7fd43fcc5da1f831",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 7.237667132287129e-09,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8883034773445733,
+        "Harrell_den": 949.0,
+        "Harrell_num": 843.0,
+        "Uno60": 0.9092015802609694,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1802.0456985116919,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "508183fdb20c22a13e9ac1754f958dbc121e1eb2f9aad89bb59327701a44aec5",
+      "risk_artifact_sha256": "b420a55ea7d0943f14909fef78355f52d9a72b56d612e44bd9206bb3aedbbe4d",
+      "seed": 31
+    },
+    {
+      "arm": "B7",
+      "compact_artifact_sha256": "6de0437675e62008d176a76ea3c5aa05ad950ad388051f0ee5e1a11c8213d086",
+      "fold": 1,
+      "independent_objective_abs_error": 1.7763568394002505e-15,
+      "independent_ridge_gradient_max": 6.679018996202934e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8914646996838778,
+        "Harrell_den": 949.0,
+        "Harrell_num": 846.0,
+        "Uno60": 0.9123607419598277,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1808.3071853743702,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "6494ff9fa99f911f2fb6b72a1a11e081f47b49b7427487bcff8b2c46966296bc",
+      "risk_artifact_sha256": "7a2ce954cf20557f033eccb64527ba319367508d55cd3ac1d8d211821b27b091",
+      "seed": 47
+    },
+    {
+      "arm": "B7",
+      "compact_artifact_sha256": "67c51768ba4783cc9660ad3ed937ab5ed99719dbee1d041b88be1c1c716cff04",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 2.815408467471414e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8861959957850368,
+        "Harrell_den": 949.0,
+        "Harrell_num": 841.0,
+        "Uno60": 0.9080583587687514,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1799.779823245718,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "48bc5376a61314d059f86d463cf67b93ff5e683378c06190b70a58d31c5ff257",
+      "risk_artifact_sha256": "ad550ef0af538ebdfbb18dda4285c9a09098497bd7524742bbda82dbf57c116a",
+      "seed": 83
+    },
+    {
+      "arm": "B5_CLINICAL_CAPACITY_CONTROL",
+      "compact_artifact_sha256": "0b549a018082760aef9629f5e5f7a71a9d1552d56f6f166c7fdfcdb944360409",
+      "fold": 1,
+      "independent_objective_abs_error": 0.0,
+      "independent_ridge_gradient_max": 1.088993648729053e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8872497365648051,
+        "Harrell_den": 949.0,
+        "Harrell_num": 842.0,
+        "Uno60": 0.9086288703908398,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1800.910582405024,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "758852624b212980d7e45ddd0daf68950e407a6d34393b49ea6cbb092b6e0253",
+      "risk_artifact_sha256": "3451b87ccd7bd79e51cf4053cd5459b417a495f154bb559fb9dcdded4946341b",
+      "seed": 31
+    },
+    {
+      "arm": "B5_CLINICAL_CAPACITY_CONTROL",
+      "compact_artifact_sha256": "6e461ddc168f9e821edd4febc0c0f7a2cfc55c3782c67f019efab9601ae8bdb8",
+      "fold": 1,
+      "independent_objective_abs_error": 1.7763568394002505e-15,
+      "independent_ridge_gradient_max": 1.870595348063553e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8883034773445733,
+        "Harrell_den": 949.0,
+        "Harrell_num": 843.0,
+        "Uno60": 0.9104855458869316,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1804.5905299149083,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "744733227053691af846c4a7a297422b05d2d244141e3220d32f31b112b14f09",
+      "risk_artifact_sha256": "1c699ffc270589787dc1689898fc307ee5b8539eafc9cde04bf191752ccb8fe2",
+      "seed": 47
+    },
+    {
+      "arm": "B5_CLINICAL_CAPACITY_CONTROL",
+      "compact_artifact_sha256": "6345953bc88204106598ef3ecfe354ca657b339d1cc2c90b1722176fed16286b",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 1.1492177431904338e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8872497365648051,
+        "Harrell_den": 949.0,
+        "Harrell_num": 842.0,
+        "Uno60": 0.9087096018701346,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1801.0705929221149,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "b277a9d80baa774bf908972d3a791254fb7c3845b2f7326ba15df1ac20e1141a",
+      "risk_artifact_sha256": "bc710c96c0cb9f970bb95f2c08a29765a37c12893c2ef606746e07d1e723c8d2",
+      "seed": 83
+    },
+    {
+      "arm": "B4_MAP_SHUFFLE",
+      "compact_artifact_sha256": "47e6b3c61548044bccd9405350e210539cbc217fdff716a9d6169cef7ac08d4f",
+      "fold": 1,
+      "independent_objective_abs_error": 1.7763568394002505e-15,
+      "independent_ridge_gradient_max": 3.3546520034066774e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8872497365648051,
+        "Harrell_den": 949.0,
+        "Harrell_num": 842.0,
+        "Uno60": 0.9093674325984061,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1802.3744193341745,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "7ee42740b9808a478e1ffdbcd0a7c5eeef06b1f1050a373056332107a347037d",
+      "risk_artifact_sha256": "17ea46ddf8519f8a6c7f19b6e49046e84dee833f3d3c3b6bc19ddbdd16485e83",
+      "seed": 31
+    },
+    {
+      "arm": "B4_MAP_SHUFFLE",
+      "compact_artifact_sha256": "8478ff1d1b6373c4a95899483e87c4c95b9bcbc345557b02f5c0a43433e2ff82",
+      "fold": 1,
+      "independent_objective_abs_error": 0.0,
+      "independent_ridge_gradient_max": 3.191245603884063e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8883034773445733,
+        "Harrell_den": 949.0,
+        "Harrell_num": 843.0,
+        "Uno60": 0.9129097386484066,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1809.3953017422134,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "815f01a704bf5703cef8b3b15c14a4ceeea3dea4e4b86574c3caed3fd1b58974",
+      "risk_artifact_sha256": "61ffbcb4611694e762bf37330a9b1106163c7e3ca02b46284c85b2ae095ef06f",
+      "seed": 47
+    },
+    {
+      "arm": "B4_MAP_SHUFFLE",
+      "compact_artifact_sha256": "ecc374285dcd40f7039c5bbc8cf8671d7bdc05b0ccafce6f7a78ff8c7a2029ac",
+      "fold": 1,
+      "independent_objective_abs_error": 1.7763568394002505e-15,
+      "independent_ridge_gradient_max": 2.3072755622743912e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8851422550052687,
+        "Harrell_den": 949.0,
+        "Harrell_num": 840.0,
+        "Uno60": 0.9074856488986218,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1798.64470713905,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "3e5daae789a2b230411aefa5fa0e8269c21053dcda0c56a78f9fdfb9f327dafa",
+      "risk_artifact_sha256": "1e693fcbdbe4301dfa33614000ff4fb3e19afe52e688cb4a42f76d1e55a7a799",
+      "seed": 83
+    },
+    {
+      "arm": "B4_ORIGINAL_DIAGNOSTIC",
+      "compact_artifact_sha256": "375660ee343c834f34295e8c33720cc3f8ab9a7a9ed1ce7bc231465b5cff34ee",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 3.001371803867947e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8861959957850368,
+        "Harrell_den": 949.0,
+        "Harrell_num": 841.0,
+        "Uno60": 0.9082244483129244,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1800.1090142140827,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "e970e5bef13b5c99033289f4e9b12eac01e7eecdbd4b93204fecb510cacf7deb",
+      "risk_artifact_sha256": "4db6ce3e0af39f8cb59dfd29351195a6a5c24898f31ed1fa874afb7efecb99d0",
+      "seed": 31
+    },
+    {
+      "arm": "B4_ORIGINAL_DIAGNOSTIC",
+      "compact_artifact_sha256": "bfbb39ddd0d942bdcf8c6ca9106b59a1ae4117b669697ae31ce89efc0e9549e1",
+      "fold": 1,
+      "independent_objective_abs_error": 2.6645352591003757e-15,
+      "independent_ridge_gradient_max": 2.5443795528823365e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.000888343900442e-11,
+      "metrics": {
+        "Harrell": 0.8893572181243414,
+        "Harrell_den": 949.0,
+        "Harrell_num": 844.0,
+        "Uno60": 0.9105845607362942,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1804.7867782356948,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "9dd531e1b4220b5b3e31e869fcf567ccf27353e04e397628fd226ae716d4e7c4",
+      "risk_artifact_sha256": "ed73c822eed45f21e0550c1fbf66defbab45e61a7878a94867a6123780711db5",
+      "seed": 47
+    },
+    {
+      "arm": "B4_ORIGINAL_DIAGNOSTIC",
+      "compact_artifact_sha256": "933a1eee950d242c2256d338106869bea3ec23c21a73588fdb4cf148d0077edb",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 1.4395438910352887e-07,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8840885142255005,
+        "Harrell_den": 949.0,
+        "Harrell_num": 839.0,
+        "Uno60": 0.9069250043882849,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1797.533504683862,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "f010efb264668e387e9fed1b04a61398083559259b44dc0c7055bb26957a6cae",
+      "risk_artifact_sha256": "068f46105fdc3f48bb0c30f25cb31879254e5f417de5d4359605d8d7c41edac7",
+      "seed": 83
+    },
+    {
+      "arm": "B3",
+      "compact_artifact_sha256": "8bff231af0d6d320261e2ba452eb50759c4597b0ad78b433c44876bc7a2f0692",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 1.5264550512483765e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8861959957850368,
+        "Harrell_den": 949.0,
+        "Harrell_num": 841.0,
+        "Uno60": 0.9079866503711224,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1799.6376965575337,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "4120a370b2608192df1a7148e2c4cf2d3a12efecdca73b3e4813ad31fd23fc17",
+      "risk_artifact_sha256": "013fc72d9ec6744ecbe018b70d55b76ff284c70f9cdf02622e6682e307c9c390",
+      "seed": 31
+    },
+    {
+      "arm": "B3",
+      "compact_artifact_sha256": "8f77946d774dbeca45f65c27d4456236d2b1bbec198289375d6ac024e8a6a422",
+      "fold": 1,
+      "independent_objective_abs_error": 2.6645352591003757e-15,
+      "independent_ridge_gradient_max": 1.7527008580597858e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8883034773445733,
+        "Harrell_den": 949.0,
+        "Harrell_num": 843.0,
+        "Uno60": 0.9104070126556781,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1804.4348763451794,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "9a6086e51c5a04e61b9c4eaa9a7ac9c402adead20c30b86bb66c9d3da517c80c",
+      "risk_artifact_sha256": "5c273bea3a15785e930d86ee669969a04a11c1a3c8f78293b7b60138021ce67a",
+      "seed": 47
+    },
+    {
+      "arm": "B3",
+      "compact_artifact_sha256": "a181d7bb75ace709a4408e49fd36fcfa2e4b1f3b1b12e44a33281bb4840d0812",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 7.352319895959081e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0463630789890885e-11,
+      "metrics": {
+        "Harrell": 0.8904109589041096,
+        "Harrell_den": 949.0,
+        "Harrell_num": 845.0,
+        "Uno60": 0.910910449582956,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1805.432692856907,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "88edccd465b93f0af895c32c089756897e123c4a19626349b1cf08f0380c77cb",
+      "risk_artifact_sha256": "e35f98696d877ce95f3259e9abd87f6699b2fdcc7bc997f779850595606750eb",
+      "seed": 83
+    },
+    {
+      "arm": "B3_TEXTLESS",
+      "compact_artifact_sha256": "4a506f7a5e2b0151bf12d4012fc911d65cdd82bec02745e002b02ff497c5bd6d",
+      "fold": 1,
+      "independent_objective_abs_error": 0.0,
+      "independent_ridge_gradient_max": 1.2700538391807736e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.000888343900442e-11,
+      "metrics": {
+        "Harrell": 0.8946259220231823,
+        "Harrell_den": 949.0,
+        "Harrell_num": 849.0,
+        "Uno60": 0.9168193955047471,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1817.1442767479573,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "e417bb6a717f7bf6a4910704f41d31b4ea4e554e357496ae64e90801e443ff46",
+      "risk_artifact_sha256": "6236029d983be50dec8211c8baa0849789a7a770d4938b7909cb3a1347d998c6",
+      "seed": 31
+    },
+    {
+      "arm": "B3_TEXTLESS",
+      "compact_artifact_sha256": "a87dc22a2f76fdb9b93e295725b51243109158e1b7eeb8857615c9351ecfb889",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 4.2979542189125475e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 1.978150976356119e-11,
+      "metrics": {
+        "Harrell": 0.8977871443624869,
+        "Harrell_den": 949.0,
+        "Harrell_num": 852.0,
+        "Uno60": 0.9197407592618034,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1822.9344459540866,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "9995a85010785075e8730d516f8ce491be622799e2b58a8d8df3e018bc62e2bd",
+      "risk_artifact_sha256": "3e89f138a7825e265a3c2ae3f3a83809c32607c7e6d04d48f6bfe29c948e19ce",
+      "seed": 47
+    },
+    {
+      "arm": "B3_TEXTLESS",
+      "compact_artifact_sha256": "7d917d9285c2a67bbb76c8c96ee5e4a2ddc5502c01cc557e24f06e196ed1a84b",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 4.7859797208671395e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8925184404636459,
+        "Harrell_den": 949.0,
+        "Harrell_num": 847.0,
+        "Uno60": 0.9129334518299573,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1809.4423014810382,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "31921036e2754f14405f76042caae53d62adb8e55fbe78f5ee3c7e12a48fb9a1",
+      "risk_artifact_sha256": "0c82fadcd1864d15301972e876f8bbbcfb3a84672eed4aa622dba7fa4f946e3e",
+      "seed": 83
+    },
+    {
+      "arm": "B6a",
+      "compact_artifact_sha256": "87847821d0a6e62642af02244714c5e533e3f5e7830c7aba8bd13acfd7081f7a",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 1.9882910290425215e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8872497365648051,
+        "Harrell_den": 949.0,
+        "Harrell_num": 842.0,
+        "Uno60": 0.9093674325984061,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1802.3744193341745,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "dfb0b7fc0b3f0ab4c785a4e9ac755df8749bd0420e3f5f21d57af1551edd1b33",
+      "risk_artifact_sha256": "9509fdabdced94c7ada9717970af50cdcd976272d0432653a8417e531b3527e4",
+      "seed": 31
+    },
+    {
+      "arm": "B6a",
+      "compact_artifact_sha256": "bad9bd442418e4e68318c621d39b51d695e8295bde41106d5f78c1ecf93f7881",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 1.5011054001201618e-07,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8851422550052687,
+        "Harrell_den": 949.0,
+        "Harrell_num": 840.0,
+        "Uno60": 0.911529028652532,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1806.6587221288742,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "59a42c44b6e31271dc9f7e4192fc0cbfc8b8dafc518d72d410593f940a3688c8",
+      "risk_artifact_sha256": "89da68a38a9b0898342a25c5f0315363a7352115e2976196b6d412c979d9e951",
+      "seed": 47
+    },
+    {
+      "arm": "B6a",
+      "compact_artifact_sha256": "9a0d2ed3bc28f5fc28246b4c055e093b07c6850e763f8c2ee51baa20d3473a1a",
+      "fold": 1,
+      "independent_objective_abs_error": 8.881784197001252e-16,
+      "independent_ridge_gradient_max": 6.370742218486658e-08,
+      "max_abs_evaluation_risk_error": 0.0,
+      "max_abs_training_risk_error": 0.0,
+      "metric_component_max_abs_error": 2.0236257114447653e-11,
+      "metrics": {
+        "Harrell": 0.8851422550052687,
+        "Harrell_den": 949.0,
+        "Harrell_num": 840.0,
+        "Uno60": 0.9074977142584145,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1798.66862079053,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "a8a03196c87650516c4fc46e23ed588af6a5972f11c1cc011fe184e32141da13",
+      "risk_artifact_sha256": "1fb4dd21d47edb94a46f022c451becfb62857fa45e840134a9ecd6427938c707",
+      "seed": 83
+    },
+    {
+      "arm": "B0",
+      "fold": 1,
+      "metrics": {
+        "Harrell": 0.8893572181243414,
+        "Harrell_den": 949.0,
+        "Harrell_num": 844.0,
+        "Uno60": 0.9099335548416474,
+        "Uno60_NA_reason": null,
+        "Uno60_valid": true,
+        "Uno_den": 1982.008981984444,
+        "Uno_num": 1803.49647870518,
+        "tau_support": {
+          "probability": 0.09843500456714908,
+          "reason": null,
+          "supported": true
+        }
+      },
+      "receipt_sha256": "2f6ea741315ef1356dac35d74e8b3a3888ecc5c135331e4e989eb0973965e25e",
+      "seed": 31
+    }
+  ],
+  "schema": "semantic_b0b7_p2_independent_audit_v1",
+  "split_plan_sha256": "5e7b5ea56dcd0a64720b08c4a34b1f1b0d78adbdc71c000149116f06ff19d441",
+  "status": "PASS_INDEPENDENT_SAVED_RISK_SCORER_AND_HASH_AUDIT",
+  "verifier_source_sha256": "e27bc68ce9c0d4e384c2befe459603cee2003c2456789c3ab43bdbdc55e0d143"
+}

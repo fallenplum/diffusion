@@ -1,0 +1,62 @@
+{
+  "DSS_primary_outcome": true,
+  "bootstrap_replicates": 0,
+  "confidence_intervals_computed": false,
+  "core_point_estimates": {
+    "B1-B0": {
+      "Harrell": -0.003058103975535187,
+      "Uno60": -0.0014937255414665396
+    },
+    "B4-B3": {
+      "Harrell": -0.001254606759193977,
+      "Uno60": -0.0002458004689296356
+    },
+    "B4-B3_TEXTLESS": {
+      "Harrell": -0.0013330196816436768,
+      "Uno60": 0.0004653759091886034
+    },
+    "B4-B4_MAP_SHUFFLE": {
+      "Harrell": -0.00047047753469786624,
+      "Uno60": 0.00027145597242972386
+    },
+    "B5-B0": {
+      "Harrell": -0.003528581510232942,
+      "Uno60": -0.0032817147671960756
+    },
+    "B5-B1": {
+      "Harrell": -0.0004704775346977552,
+      "Uno60": -0.001787989225729536
+    },
+    "B5-B2_MATCHED": {
+      "Harrell": -0.0021171489061396764,
+      "Uno60": -0.002357443158275463
+    },
+    "B5-B2_NATIVE": {
+      "Harrell": -0.002430800595938365,
+      "Uno60": -0.0011969504166511324
+    },
+    "B5-B4": {
+      "Harrell": -0.0004704775346976442,
+      "Uno60": -0.001687342355144228
+    },
+    "B5-B5_CLINICAL_CAPACITY_CONTROL": {
+      "Harrell": -0.00015682584489928875,
+      "Uno60": -0.0010853510559731827
+    },
+    "B5-B6a": {
+      "Harrell": 0.00015682584489917772,
+      "Uno60": -0.0009217078276392288
+    },
+    "B5-B7": {
+      "Harrell": -0.00023523876734898863,
+      "Uno60": -0.0011050301732891121
+    }
+  },
+  "decision_basis": "all_predeclared_comparisons_preserved_no_single_metric_winner_selection",
+  "no_further_model_expansion_automatically_authorized": true,
+  "p_values_computed": false,
+  "positive_delta_below_0_005": "weak_direction_only",
+  "requires_independent_validation": true,
+  "scientific_mechanism_proven": false,
+  "status": "COMPLETE"
+}

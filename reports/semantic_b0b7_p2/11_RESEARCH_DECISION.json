@@ -1,0 +1,214 @@
+{
+  "schema": "semantic_p2_final_research_decision_v1",
+  "status": "COMPLETE_FORMAL_MATRIX_AND_ACTUAL_QUALIFICATIONS",
+  "scientific_decision": "INCONCLUSIVE_DUE_TO_IMPLEMENTATION_OR_BUDGET",
+  "specific_unclosed_gate": "Phase_A_training_sufficiency_under_the_prelocked400_budget",
+  "known_software_or_leakage_failure_in_formal_results": false,
+  "fixed_budget_observation": "NO_CONFIRMED_DSS_INCREMENT_IN_THIS_IMPLEMENTATION",
+  "P1R_scope": "query_identity_pretext_signal_under_shared_S32_not_all_semantic_or_DSS_success",
+  "master_lock_sha256": "b9aae9582c78e80f26833b0e049956246f3c7d09723abe813a505acb543f949c",
+  "all_primary_arm_seed_fold_predictions_complete": true,
+  "formal_source_neural_fits": 480,
+  "formal_source_optimizer_updates": 189800,
+  "formal_source_checkpoint_producer_replays": 1909,
+  "formal_Cox_fits": 2840,
+  "separate_software_neural_fits": 2,
+  "separate_software_Cox_fits": 106,
+  "core_point_estimates": {
+    "B1-B0": {
+      "Harrell": -0.003058103975535187,
+      "Uno60": -0.0014937255414665396
+    },
+    "B4-B3": {
+      "Harrell": -0.001254606759193977,
+      "Uno60": -0.0002458004689296356
+    },
+    "B4-B3_TEXTLESS": {
+      "Harrell": -0.0013330196816436768,
+      "Uno60": 0.0004653759091886034
+    },
+    "B4-B4_MAP_SHUFFLE": {
+      "Harrell": -0.00047047753469786624,
+      "Uno60": 0.00027145597242972386
+    },
+    "B5-B0": {
+      "Harrell": -0.003528581510232942,
+      "Uno60": -0.0032817147671960756
+    },
+    "B5-B1": {
+      "Harrell": -0.0004704775346977552,
+      "Uno60": -0.001787989225729536
+    },
+    "B5-B2_MATCHED": {
+      "Harrell": -0.0021171489061396764,
+      "Uno60": -0.002357443158275463
+    },
+    "B5-B2_NATIVE": {
+      "Harrell": -0.002430800595938365,
+      "Uno60": -0.0011969504166511324
+    },
+    "B5-B4": {
+      "Harrell": -0.0004704775346976442,
+      "Uno60": -0.001687342355144228
+    },
+    "B5-B5_CLINICAL_CAPACITY_CONTROL": {
+      "Harrell": -0.00015682584489928875,
+      "Uno60": -0.0010853510559731827
+    },
+    "B5-B6a": {
+      "Harrell": 0.00015682584489917772,
+      "Uno60": -0.0009217078276392288
+    },
+    "B5-B7": {
+      "Harrell": -0.00023523876734898863,
+      "Uno60": -0.0011050301732891121
+    }
+  },
+  "B5_B0_each_seed_negative_in_both_metrics": true,
+  "B5_B0_fold_seed_directions": {
+    "Harrell_positive_fold_seed_pairs": 2,
+    "Harrell_negative_fold_seed_pairs": 12,
+    "Harrell_zero_fold_seed_pairs": 1,
+    "Uno60_positive_fold_seed_pairs": 3,
+    "Uno60_negative_fold_seed_pairs": 12,
+    "Uno60_zero_fold_seed_pairs": 0
+  },
+  "training_budget_boundary": {
+    "inner_fits": 360,
+    "raw_Huber_unique_minimum_at400": 272,
+    "selected_epoch400": 290,
+    "validation_Huber_improved200to400": 277,
+    "validation_Huber_improvement_exceeds_original_band": 224,
+    "MAIN_inner_scope": {
+      "family": "MAIN",
+      "role": "inner",
+      "fits": 45,
+      "optimizer_steps": 18000,
+      "selected_epoch_frequency": {
+        "50": 0,
+        "100": 0,
+        "200": 5,
+        "400": 40
+      },
+      "selected_epoch_at400_count": 40,
+      "raw_Huber_unique_minimum_at400_count": 35,
+      "train_program_loss_200to400": {
+        "supported_fits": 45,
+        "NA_fits": 0,
+        "mean_improvement": 0.004860417958762911,
+        "min_improvement": 0.00301346555352211,
+        "max_improvement": 0.00982915610074997,
+        "improved_direction_count": 45,
+        "numerically_flat_count": 0,
+        "worse_direction_count": 0
+      },
+      "val_patient_equal_masked_huber_200to400": {
+        "supported_fits": 45,
+        "NA_fits": 0,
+        "mean_improvement": 0.0006766348225759247,
+        "min_improvement": -0.007031486095303165,
+        "max_improvement": 0.002545486763119699,
+        "improved_direction_count": 35,
+        "numerically_flat_count": 0,
+        "worse_direction_count": 10
+      },
+      "val_hard_gap_available_direction_mean_200to400": {
+        "supported_fits": 45,
+        "NA_fits": 0,
+        "mean_improvement": 0.2032183303814627,
+        "min_improvement": -0.2736590116548894,
+        "max_improvement": 0.6254426952927632,
+        "improved_direction_count": 34,
+        "numerically_flat_count": 0,
+        "worse_direction_count": 11
+      },
+      "val_Huber200to400_within_original_selection_band_count": 11,
+      "val_Huber200to400_improvement_exceeds_band_count": 31
+    },
+    "interpretation": "fixed_budget_complete_not_convergence_or_sufficient_training_certificate",
+    "extension_run": false
+  },
+  "B0_risks_bitwise_equal_to_historical_seed31": false,
+  "B0_historical_unified_pair_components_exact_all_folds": true,
+  "B0_historical_max_abs_risk_difference": 6.335437729987348e-11,
+  "B0_historical_numerical_cause_fully_proven": false,
+  "new_architecture_or_further_training_started": false,
+  "formal_results_replaced_or_retuned_after_outer_evaluation": false,
+  "confidence_intervals_computed": false,
+  "bootstrap_replicates": 0,
+  "p_values_computed": false,
+  "confidence_ratings": {
+    "recorded_fixed_budget_metrics_and_no_observed_B5_gain": "HIGH",
+    "attribution_to_insufficient_training_as_the_cause_of_DSS_failure": "LOW",
+    "universal_claim_that_the_research_idea_cannot_work": "NOT_SUPPORTED"
+  },
+  "source_anonymous_reports": [
+    {
+      "file": "11_decision.json",
+      "bytes": 1757,
+      "sha256": "e01a5bec73d6b3cec4056aaedef87d65573405c658e08131db062c53cda35c71"
+    },
+    {
+      "file": "06_paired_comparisons.json",
+      "bytes": 20298,
+      "sha256": "9aa1686f0850f82da685d525ea632ced33d26c86b3fdb78692ce96a7314e6ae4"
+    },
+    {
+      "file": "09_cost_ledger.json",
+      "bytes": 1228,
+      "sha256": "aeb087b09583f4330e88e62c87d0c53b148d6844a71682d627836abe9c8bc9a0"
+    },
+    {
+      "file": "09_TRAINING_BUDGET_AUDIT.json",
+      "bytes": 98774,
+      "sha256": "3531d2101eef2dc9892419baa51ec116b1e225b11e9e13e18959488f41ba8a59"
+    },
+    {
+      "file": "03_LIVE_PHASE_A_HELDOUT_MUTATION_AUDIT.json",
+      "bytes": 3323,
+      "sha256": "e655bccc8d8e9589b6fa933b05919dd0e3f4bf54716d6772b5c0d16eea47d085"
+    },
+    {
+      "file": "03_LIVE_DSS_PIPELINE_LABEL_ISOLATION_AUDIT.json",
+      "bytes": 5963,
+      "sha256": "2bee33bf17cc91a6a4bb953baf985fc946a2191dce65e0313036708e180a0130"
+    },
+    {
+      "file": "00_R4_EXACT_HISTORICAL_RISK_AUDIT.json",
+      "bytes": 15039,
+      "sha256": "006eb262b1a097e47b64f5a1cc4c0c4e026d44d079858f9e04b239aff1e2f46d"
+    },
+    {
+      "file": "00_R4_PRECISION_LAYOUT_DIAGNOSTIC.json",
+      "bytes": 298865,
+      "sha256": "299991c14f08cc16be8555ed247b2b8d36873109b935b10cb28569397e8667c2"
+    },
+    {
+      "file": "INDEPENDENT_P2_OUTER1_AUDIT.json",
+      "bytes": 160266,
+      "sha256": "6d443124a1d71136e60bf1340ff54b75e3f36f0217ca442d4a2beeb129ddae65"
+    },
+    {
+      "file": "INDEPENDENT_P2_OUTER2_AUDIT.json",
+      "bytes": 145304,
+      "sha256": "e65af944d0fafa2556fc00787fb3831037b0ef180b41730fb67a3ae26a43805f"
+    },
+    {
+      "file": "INDEPENDENT_P2_OUTER3_AUDIT.json",
+      "bytes": 145834,
+      "sha256": "f34b688d36859a80ad28e2e4a30bf48bdf37dbc5eb5bc792ab98a7a002312746"
+    },
+    {
+      "file": "INDEPENDENT_P2_OUTER4_AUDIT.json",
+      "bytes": 145572,
+      "sha256": "bd6ea06c598a06f09f6adcfb3a84c16514cca1314bb8b15da15bfb8d07ab2d83"
+    },
+    {
+      "file": "INDEPENDENT_P2_OUTER5_AUDIT.json",
+      "bytes": 145778,
+      "sha256": "ff2257e7f2c04e9cbf53deedc3f92c93d7af993dfb0d98f26e456544fa9a2a4d"
+    }
+  ],
+  "new_model_fits_by_this_reporter": 0,
+  "new_model_forwards_by_this_reporter": 0
+}

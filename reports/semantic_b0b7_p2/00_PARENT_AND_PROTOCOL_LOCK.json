@@ -1,0 +1,22 @@
+{
+  "schema": "semantic_p2_protocol_fact_audit_v1",
+  "status": "PRE_OUTER_FACTUAL_PROTOCOL_AUDIT",
+  "master_lock_sha256": "b9aae9582c78e80f26833b0e049956246f3c7d09723abe813a505acb543f949c",
+  "scientific_sources_verified": 20,
+  "HEAD_at_scientific_prelock": "98f42e298975c39e9e3bde70f2250b2334caca8b",
+  "content_bound_P1R_qualification_sha256": "d74060162761be2dacb251e4dbcfea05df7640a0ab43e854bd5ec2f70823d60c",
+  "actual_P1R_publication_commit": "d2568ad4d57bb9c83366029cacee6baea6c3522d",
+  "actual_P1R_manifest_sha256": "2e914a8326614843520e9fbae4cd6b5b6a13608ebcc9eb0dd6518d5efd16d598",
+  "parent_publication_binding_sha256": "e335163b4703542b3040ce6bf37a944ab861933e81774bec82a0f8b3e9defa0b",
+  "publication_after_inner_started_but_before_outer_scoring": true,
+  "qualification_content_and_science_did_not_change_at_publication": true,
+  "all_five_outer_choices_must_freeze_before_first_outer_score": true,
+  "DSS_primary": true,
+  "PFI_OS_evaluation_started": false,
+  "confidence_intervals_computed": false,
+  "p_values_computed": false,
+  "current_document_is_not_a_formal_DSS_result_or_completion_claim": true,
+  "fact_builder_source_sha256": "ddf2176ed7738cdd0b78b42d5f9dea06b053753376ab59678743f2c137627fb2",
+  "new_training_by_fact_builder": 0,
+  "new_outer_risk_reads_by_fact_builder": 0
+}

@@ -1,0 +1,378 @@
+{
+  "B0_R4_EXACT": {
+    "B0_new_deterministic_full_outer_recipe_fits": 5,
+    "B0_source_shared_with_common_r0_full_fit": "real_full_R4_fit_not_copied_old_risks",
+    "Cox_fits_per_partition": 52,
+    "RNA512": "old_eight_program_union_977_external_955_canonical_train_variance_selection",
+    "full_CONCH_mean_sha256": "5eb0216b706d1e2d8bce533b9ab413632e7346360de44e4b63292d148679600d",
+    "historical_three_seed_mean_is_exact_replay_target": false,
+    "legacy_eight_program_union_sha256": "39dfa0b21e87b6a6799409d7eeca2089aac93c8f886749d3004c61d0de76b231",
+    "legacy_source_sha256": {
+      "src/bgb_en/baselines.py": "2a00c4bcd2eca06c26a5ad5e0c636d2c2771bbf356df9d72a350fe8061e30d5a",
+      "src/bgb_en/protocol.py": "e06e7196eee72957dbde363bc4cb78b004ded62a62ada0fa0ffa3add7590394c",
+      "src/bgb_en/survival.py": "2f54ca3262438cb725421e5a062b8529eecdd5033a122038798c5af6b083d086",
+      "src/phase10_trimodal/math.py": "e744e652590e9103ba0b376a7b4c232652789d72b5bb1976e511144bc07c417b",
+      "src/phase10_trimodal/reference.py": "a5b05d2c11a8aeb3b1ecffcf799746f90610382179b40f27564cbc7df7e25e07"
+    },
+    "report_with_family": "MAIN",
+    "scalar_fits_per_partition": 4,
+    "teacher_seed_inner": "27011+100*outer+inner",
+    "teacher_seed_outer": "27011+100*outer+31",
+    "training_offset": "whole_recipe_crossfit_including_scalar_beta",
+    "visual": "original_GRID_LOCAL_then_fit_train_PCA32_not_REGIONS"
+  },
+  "DSS_primary": true,
+  "P0_P1_parent_sha": "98f42e298975c39e9e3bde70f2250b2334caca8b",
+  "P1R_branch_HEAD_when_execution_prepared": "98f42e298975c39e9e3bde70f2250b2334caca8b",
+  "P1R_frozen_candidates_sha256": "d74060162761be2dacb251e4dbcfea05df7640a0ab43e854bd5ec2f70823d60c",
+  "P1R_master_lock_sha256": "cbbfa73f974773fdd86ba4730533f36e774c72586d8364255472c9307141ac5a",
+  "P1R_qualification_bound_by_content_before_Git_publication": true,
+  "PFI_OS_secondary_run": false,
+  "Phase_A": {
+    "DSS_used_for_pretraining_or_epoch_selection": false,
+    "all_positive_and_negative_support_same_seed": "all_arms_exclude_same_fixed_wrong_positive_candidates",
+    "checkpoints": [
+      50,
+      100,
+      200,
+      400
+    ],
+    "epochs_inner": 400,
+    "final_epoch": "median_of_three_legal_inner_no_DSS_selections",
+    "lambda_pair": 0.1,
+    "learning_rate": 0.0003,
+    "optimizer": "Adam",
+    "outer_eval_at_pretrain_checkpoints": false,
+    "selection": "program_Huber_within0.01_train_median_Huber_higher_hardgap_then_earlier_epoch"
+  },
+  "Phase_B": {
+    "DSS_coefficients": 26,
+    "background_clinical_preprocessing": "refit_raw_six_fields_per_background_subtrain",
+    "clinical_background": "Ridge1_three_OOF_plus_full_in_one_frozen_encoder_coordinate_system",
+    "gradient_tolerance": 2e-05,
+    "lambda_selection": "three_inner_fold_micro_Harrell_then_supported_Uno60_then_stronger_ridge",
+    "main_features": "P8x64_flat512_G50x64_flat3200_C64_train_only_PCA8_each_plus2M",
+    "minimum_relative_retained_singular_value": 1e-05,
+    "outer_selection_barrier": "all_five_outer_epoch_lambda_choices_before_first_outer_risk_score",
+    "ridge_candidates": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "risk_objective": "full_current_fit_train_Efron_event_equal_mean_plus_lambda_half_L2_with_frozen_r0_offset"
+  },
+  "assets": {
+    "GMT_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+    "assets_json_sha256": "5268b786101bb0aa97ff2b3e0fb67ab16d2970e8ef62b3a0d765bba5dd89c7da",
+    "cohort_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+    "endpoints_sha256": "91b5d15aa32489c825a8341aed8d9733281dc62386151c8c6246b6312975fd4e",
+    "frozen_images_sha256": "eb12386a1f51b65635893e47a60f79867a092eb663615dcce932b6db0cf41da5",
+    "legacy_data_source_sha256": "cebe55093915abeb2df38fee317b5af7e805f5714d43d3a56d3e67bc441bcd37",
+    "legacy_groups_sha256": "5b3d407cb6f7ce2e833393f3917e32472525e708dc2addb955c942a48f259df9",
+    "visual_sources_sha256": "4898df75eb03539e85ef394772fe2bda991bfbe325154cc3241426e168c39194"
+  },
+  "branch": "research/semantic-b0b7-p2-dss",
+  "budget": {
+    "deterministic_B0": 5,
+    "final_original_structure_diagnostic_risk_fits": 15,
+    "final_primary_risk_fits": 105,
+    "final_required_subcontrol_risk_fits": 60,
+    "inner_risk_fits_three_lambdas": 1620,
+    "inner_source_neural_fits": 360,
+    "no_P3": true,
+    "no_automatic800_extension": true,
+    "no_phaseC_unfreeze": true,
+    "no_unqualified_profile_fit_reuse": true,
+    "outer_source_neural_fits": 120,
+    "shared_anchor_partitions": 20,
+    "shared_phaseA_MAIN_readouts_count": 5
+  },
+  "date": "2026-10-31",
+  "evaluation": {
+    "Uno60": "fit_train_reverse_KM_post_t_t_lt60",
+    "bootstrap": false,
+    "confidence_intervals": false,
+    "no_15_cells_called_seed_mean": true,
+    "no_cross_fold_risk_pairs": true,
+    "positive_difference_below0.005": "weak_direction_only_not_confirmed_generalization",
+    "primary_aggregation": "sum_within_fold_numerators_denominators_each_seed_then_equal_mean_three_seeds",
+    "pvalues": false,
+    "scorer": "src/semantic_b0b7/survival.py"
+  },
+  "family_readouts": {
+    "ATTN_MATCHED": [
+      "B2_MATCHED"
+    ],
+    "ATTN_NATIVE": [
+      "B2_NATIVE"
+    ],
+    "MAIN": [
+      "B1",
+      "B4",
+      "B5",
+      "B7",
+      "B5_CLINICAL_CAPACITY_CONTROL"
+    ],
+    "MAP": [
+      "B4_MAP_SHUFFLE"
+    ],
+    "ORIGINAL": [
+      "B4_ORIGINAL_DIAGNOSTIC"
+    ],
+    "RANDOM": [
+      "B3"
+    ],
+    "TEXTLESS": [
+      "B3_TEXTLESS"
+    ],
+    "WRONG_AUX": [
+      "B6a"
+    ]
+  },
+  "final_Git_branch_base_policy": "create_P2_publication_branch_from_exact_full_P1R_publication_commit_keep_both_parent_provenances",
+  "fold_counts": [
+    103,
+    103,
+    102,
+    102,
+    102
+  ],
+  "fold_events": [
+    13,
+    14,
+    12,
+    13,
+    13
+  ],
+  "frozen_sources": {
+    "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+    "configs/semantic_b0b7/p1r_variants_v1.json": "223b22ce4e2371431a9884e190cdae76e699d3c1f3ba12f30d4ff9a3ee20085a",
+    "configs/semantic_b0b7/p2_design_precommit.json": "bc8000aace67c8864e85a50d3c13e9c6229cc9be942a4b8e8fc1047937d8876d",
+    "configs/semantic_b0b7/p2_qualification_amendment.json": "3c55810855c16b79936c5f7ef65130e9758cc21706a763ad82de1a59a3680a5e",
+    "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+    "scripts/semantic_b0b7_p1r.py": "c7214fbd2a1a078825695ded9762b8be1e088e1c843f194fa6c31effa79a271e",
+    "scripts/semantic_b0b7_p2_matrix.py": "13c5494550bdad5be21d3070197602a9b544f2a3c60dcda90384436074af8239",
+    "scripts/semantic_b0b7_p2_schedule.py": "f03a3571864af3512b6baa03aeaac9ab56d3e49bf6ac0f143523c359c428199c",
+    "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+    "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+    "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+    "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+    "src/semantic_b0b7/p1r_data.py": "0aaf475fec0c2e84a8e89a49313b02120d09328c1ae87059047c976617e87463",
+    "src/semantic_b0b7/p1r_models.py": "4b187bfab3331ec6fb40ff2d375ccda612713f8cb9376de47de1a202ed65aa93",
+    "src/semantic_b0b7/p2_anchor.py": "9ce4262750b5af384365a2829c00bc145328a42200ef6725aebad2417afa8600",
+    "src/semantic_b0b7/p2_data.py": "f4dd68414246d7b8e8188515a851df7542c24c9f830a4af08c7934c175f6a2c6",
+    "src/semantic_b0b7/p2_models.py": "7e44213dbbf0b8be97396a4069e83998493c4fe2f7a606445fb7f49ba5ae1041",
+    "src/semantic_b0b7/p2_survival.py": "8fdb3820143a6fefb99269f566dc990cde80c68b53579e382d90e7d7f387c3b9",
+    "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+    "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10"
+  },
+  "inner_split_seed": 27001,
+  "limitations": [
+    "historically_developed_internal_cohort_not_external_confirmation",
+    "TITAN_scores_not_independent_morphology_ground_truth",
+    "FM_pretraining_TCGA_overlap_cannot_be_excluded",
+    "TEXTLESS_only_incremental_branch_because_shared_r0_contains_S32",
+    "B2_is_shared_token_attention_adaptation_not_official_paper_reproduction"
+  ],
+  "matched_attention": {
+    "activation_checkpoint": false,
+    "compute_profile_qualification_addendum": "configs/semantic_b0b7/p2_qualification_amendment.json",
+    "domain": "eight_image_only_nonsemantic_readers_by_fifty_measured_program_tokens",
+    "encoder_width": 64,
+    "heads": 1,
+    "native_activation_checkpoint": true,
+    "native_heads": 4,
+    "native_means_official_paper_reproduction": false,
+    "native_width": 64,
+    "width": 8
+  },
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "parent_repository": "fallenplum/diffusion",
+  "phase_a_families": {
+    "ATTN_MATCHED": {
+      "known_fraction": 0.5,
+      "lambda_pair": 0.1,
+      "name": "P2_ATTN_MATCHED",
+      "query_mode": "visual_random",
+      "relation_mode": "legacy",
+      "score_route": "actual",
+      "source_arm": "B2_MATCHED"
+    },
+    "ATTN_NATIVE": {
+      "known_fraction": 0.5,
+      "lambda_pair": 0.1,
+      "name": "P2_ATTN_NATIVE",
+      "query_mode": "visual_random",
+      "relation_mode": "legacy",
+      "score_route": "actual",
+      "source_arm": "B2_NATIVE"
+    },
+    "MAIN": {
+      "known_fraction": 0.5,
+      "lambda_pair": 0.1,
+      "name": "P2_MAIN_DUAL",
+      "query_mode": "true",
+      "relation_mode": "dual",
+      "score_route": "actual",
+      "source_arm": "B4"
+    },
+    "MAP": {
+      "known_fraction": 0.5,
+      "lambda_pair": 0.1,
+      "name": "P2_MAP_DUAL",
+      "query_mode": "true",
+      "relation_mode": "dual",
+      "score_route": "actual",
+      "shuffled_map": true,
+      "source_arm": "B4"
+    },
+    "ORIGINAL": {
+      "known_fraction": 0.5,
+      "lambda_pair": 0.1,
+      "name": "P2_ORIGINAL_B4",
+      "query_mode": "true",
+      "relation_mode": "legacy",
+      "score_route": "actual",
+      "source_arm": "B4"
+    },
+    "RANDOM": {
+      "known_fraction": 0.5,
+      "lambda_pair": 0.1,
+      "name": "P2_RANDOM_DUAL",
+      "query_mode": "random",
+      "relation_mode": "dual",
+      "score_route": "actual",
+      "source_arm": "B3"
+    },
+    "TEXTLESS": {
+      "known_fraction": 0.5,
+      "lambda_pair": 0.1,
+      "name": "P2_TEXTLESS_DUAL",
+      "query_mode": "textless",
+      "relation_mode": "dual",
+      "score_route": "native_random",
+      "source_arm": "B4"
+    },
+    "WRONG_AUX": {
+      "known_fraction": 0.5,
+      "lambda_pair": 0.1,
+      "name": "P2_WRONG_AUX_DUAL",
+      "query_mode": "true",
+      "relation_mode": "dual",
+      "score_route": "actual",
+      "source_arm": "B4",
+      "wrong_aux": true
+    }
+  },
+  "phase_a_lock": {
+    "allow_derived_partition_payloads": true,
+    "allowed_input_sha256": [],
+    "allowed_variant_names": [
+      "P2_MAIN_DUAL",
+      "P2_RANDOM_DUAL",
+      "P2_MAP_DUAL",
+      "P2_WRONG_AUX_DUAL",
+      "P2_TEXTLESS_DUAL",
+      "P2_ATTN_MATCHED",
+      "P2_ATTN_NATIVE",
+      "P2_ORIGINAL_B4"
+    ],
+    "checkpoints": [
+      50,
+      100,
+      200,
+      400
+    ],
+    "expected_frozen_parent_input_sha256": [
+      "eb12386a1f51b65635893e47a60f79867a092eb663615dcce932b6db0cf41da5"
+    ],
+    "expected_raw_container_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+    "frozen_sources": {
+      "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+      "configs/semantic_b0b7/p1r_variants_v1.json": "223b22ce4e2371431a9884e190cdae76e699d3c1f3ba12f30d4ff9a3ee20085a",
+      "configs/semantic_b0b7/p2_design_precommit.json": "bc8000aace67c8864e85a50d3c13e9c6229cc9be942a4b8e8fc1047937d8876d",
+      "configs/semantic_b0b7/p2_qualification_amendment.json": "3c55810855c16b79936c5f7ef65130e9758cc21706a763ad82de1a59a3680a5e",
+      "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+      "scripts/semantic_b0b7_p1r.py": "c7214fbd2a1a078825695ded9762b8be1e088e1c843f194fa6c31effa79a271e",
+      "scripts/semantic_b0b7_p2_matrix.py": "13c5494550bdad5be21d3070197602a9b544f2a3c60dcda90384436074af8239",
+      "scripts/semantic_b0b7_p2_schedule.py": "f03a3571864af3512b6baa03aeaac9ab56d3e49bf6ac0f143523c359c428199c",
+      "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+      "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+      "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+      "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+      "src/semantic_b0b7/p1r_data.py": "0aaf475fec0c2e84a8e89a49313b02120d09328c1ae87059047c976617e87463",
+      "src/semantic_b0b7/p1r_models.py": "4b187bfab3331ec6fb40ff2d375ccda612713f8cb9376de47de1a202ed65aa93",
+      "src/semantic_b0b7/p2_anchor.py": "9ce4262750b5af384365a2829c00bc145328a42200ef6725aebad2417afa8600",
+      "src/semantic_b0b7/p2_data.py": "f4dd68414246d7b8e8188515a851df7542c24c9f830a4af08c7934c175f6a2c6",
+      "src/semantic_b0b7/p2_models.py": "7e44213dbbf0b8be97396a4069e83998493c4fe2f7a606445fb7f49ba5ae1041",
+      "src/semantic_b0b7/p2_survival.py": "8fdb3820143a6fefb99269f566dc990cde80c68b53579e382d90e7d7f387c3b9",
+      "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+      "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10"
+    },
+    "schema": "semantic_b0b7_p2_phase_a_lock_v1",
+    "status": "LOCKED_BEFORE_OPTIMIZER"
+  },
+  "prompt_sha256": "64b7f9d21a16dbce46b2b5e9a83b38ff44ab63a67492c161557aedb73a3f4e09",
+  "publication": "source_configs_anonymous_aggregates_hashes_only_no_patient_vectors_weights_identifiers_or_credentials",
+  "resource_admission": {
+    "CPU_parallel": 2,
+    "budgets_include_margin_over_zero_step_allocated_peak_and_historical_validation_residency": true,
+    "cgroup_reserve_GiB": 8,
+    "disk_reserve_GiB": 2,
+    "gpu_peak_budget_bytes": {
+      "inner": {
+        "ATTN_MATCHED": 5200000000,
+        "ATTN_NATIVE": 4800000000,
+        "MAIN": 4600000000,
+        "MAP": 4600000000,
+        "ORIGINAL": 4600000000,
+        "RANDOM": 4600000000,
+        "TEXTLESS": 4600000000,
+        "WRONG_AUX": 4600000000
+      },
+      "outer_final": {
+        "ATTN_MATCHED": 6500000000,
+        "ATTN_NATIVE": 5200000000,
+        "MAIN": 5200000000,
+        "MAP": 5200000000,
+        "ORIGINAL": 5200000000,
+        "RANDOM": 5200000000,
+        "TEXTLESS": 5200000000,
+        "WRONG_AUX": 5200000000
+      }
+    },
+    "gpu_reserve_GiB": 2,
+    "max_parallel": 6,
+    "profile_sha256": "becf224dece6ec249dd00966f1b174a5ec05be3aabb65f8da4a84217d4ce8914",
+    "profile_zero_step_actual_state_replays": 6,
+    "threads_per_process": 2
+  },
+  "schema": "semantic_b0b7_p2_lock_v1",
+  "seeds": [
+    31,
+    47,
+    83
+  ],
+  "software_qualification": {
+    "P1R_model_tests": 15,
+    "P2_attention_tests": 16,
+    "P2_risk_anchor_data_tests": 21,
+    "official_random_metric_API_calls": 200,
+    "official_sksurv_API_version": "0.23.1_isolated_environment",
+    "scheduler_tests": 16,
+    "source_tests_are_scientific_success": false
+  },
+  "status": "LOCKED_BEFORE_OUTER_EVALUATION",
+  "textless_scope": {
+    "common_anchor_contains_TITAN_S32": true,
+    "explicit_text_in_adapter": false,
+    "label": "B3_TEXTLESS_INCREMENT",
+    "whole_risk_text_free": false
+  }
+}

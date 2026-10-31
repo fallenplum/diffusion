@@ -1,0 +1,262 @@
+{
+  "schema": "semantic_b0b7_canonical_omics_source_provenance_v1",
+  "status": "SOURCE_RAW_CANONICAL_CHAIN_VERIFIED",
+  "scope": "Covariate source reconstruction only; no survival or outer-test metrics",
+  "source_sha256": "9f8871b67e8dfe5696c976c135304bb7562d036ac072c4ae257910ce2e15e5ef",
+  "canonical_container_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+  "parent_container_sha256": "0af8d9e3602294d1de2b9c76b8b1a527ffbfc7a225ebcf56ebfeba75c670ccc0",
+  "historical_manifest_container_hashes_match": true,
+  "parent_dataset_bound_by_canonical_manifest": true,
+  "patients": 512,
+  "inherited_arrays": {
+    "raw_rna": {
+      "shape": [
+        512,
+        20531
+      ],
+      "dtype": "float32",
+      "array_sha256": "e08d4a40c198d5e1cc7a8c29458bd8fb706a7a8f6c6d023009c93716820aabae",
+      "exact_parent_inheritance": true
+    },
+    "raw_cna": {
+      "shape": [
+        512,
+        25131
+      ],
+      "dtype": "float32",
+      "array_sha256": "ad17a77f74935a5796b18f21615eb0e020a2f53032e3be92c0b5f0ef1aef74ef",
+      "exact_parent_inheritance": true
+    },
+    "rna_genes": {
+      "shape": [
+        512,
+        20511
+      ],
+      "dtype": "float64",
+      "array_sha256": "0f678a6cc5d1cd63600ebd5925ffb9028e20e4ecbf13bfca80e587f2b326e928",
+      "exact_parent_inheritance": true
+    },
+    "cna_genes": {
+      "shape": [
+        512,
+        25101
+      ],
+      "dtype": "float64",
+      "array_sha256": "150b576b52a6d61e50eac27703d3b21cdb44ec912c91980226fd621ba2326a5b",
+      "exact_parent_inheritance": true
+    },
+    "rna_gene_symbols": {
+      "shape": [
+        20511
+      ],
+      "dtype": "<U64",
+      "array_sha256": "f7874cfcaf090c4c41baa8bc53f90cc343ed3550f66fd67028e306335d4d473a",
+      "exact_parent_inheritance": true
+    },
+    "cna_gene_symbols": {
+      "shape": [
+        25101
+      ],
+      "dtype": "<U64",
+      "array_sha256": "295d3ba56c2c759383ad7c94838c68b9b8614a79b2c6a8056da3a265dcd356e5",
+      "exact_parent_inheritance": true
+    },
+    "cohort_row_identity_hash_only": {
+      "shape": [
+        512
+      ],
+      "dtype": "<U20",
+      "array_sha256": "51fd582f356ec196b0e5120d00b2aa1bd84d10f6dde08e84033ea2ef269f9d0a",
+      "exact_parent_inheritance": true
+    }
+  },
+  "modalities": {
+    "RNA": {
+      "source_basename": "data_mrna_seq_v2_rsem.txt",
+      "source_sha256": "5887b1cb84d5df0faaf5e484fdcbf91d3836c12d4a7be4e81c2ba7e799ba8c90",
+      "source_bytes": 100912118,
+      "source_hash_matches_historical_manifest": true,
+      "raw_shape": [
+        512,
+        20531
+      ],
+      "canonical_shape": [
+        512,
+        20511
+      ],
+      "source_to_raw_exact": true,
+      "canonical_symbols_and_order_exact": true,
+      "canonical_observed_mask_exact": true,
+      "precision": {
+        "exact_canonical_values": true
+      },
+      "encoding": "log2(float32 raw + 1), symbol nanmean, float64 storage",
+      "global_imputation_in_canonical": false,
+      "infinite_source_or_canonical_cells": 0,
+      "selection": {
+        "source_gene_rows": 20531,
+        "source_sample_columns": 592,
+        "patients_with_multiple_primary_columns": 0,
+        "primary_columns_per_patient": {
+          "1": 512
+        },
+        "selection": "Primary tumor sample type 01 only; sorted aliquots; float32 nanmean"
+      },
+      "missing_aggregation": {
+        "raw_nonfinite_cells": 613872,
+        "canonical_nonfinite_cells": 612045,
+        "blank_symbol_source_rows_removed": 13,
+        "duplicate_symbol_source_rows_removed": 7,
+        "duplicate_symbol_groups": 7,
+        "blank_symbol_nonfinite_cells_removed": 1421,
+        "duplicate_symbol_raw_nonfinite_cells": 406,
+        "duplicate_symbol_missing_raw_cells_with_observed_same_symbol": 406,
+        "canonical_missing_in_duplicate_symbol_columns": 0,
+        "raw_nonfinite_per_patient": {
+          "0": 309,
+          "3024": 203
+        },
+        "canonical_nonfinite_per_patient": {
+          "0": 309,
+          "3015": 203
+        },
+        "raw_nonfinite_per_gene_nonzero": {
+          "203": 3024
+        },
+        "canonical_nonfinite_per_gene_nonzero": {
+          "203": 3015
+        },
+        "no_missing_cell_filled_from_other_patients": true,
+        "canonical_missing_rule": "Missing iff every primary-aliquot/same-symbol source contribution is missing"
+      },
+      "cohort_missingness": {
+        "COAD": {
+          "patients": 382,
+          "canonical_nonfinite_cells": 434160,
+          "patients_with_missing": 144,
+          "nonfinite_per_patient": {
+            "0": 238,
+            "3015": 144
+          }
+        },
+        "READ": {
+          "patients": 130,
+          "canonical_nonfinite_cells": 177885,
+          "patients_with_missing": 59,
+          "nonfinite_per_patient": {
+            "0": 71,
+            "3015": 59
+          }
+        }
+      }
+    },
+    "CNA": {
+      "source_basename": "data_log2_cna.txt",
+      "source_sha256": "e53a6bf66052aaa5f6f63decae3737a3f75b00045908f83df5d8269bf7683d59",
+      "source_bytes": 92055019,
+      "source_hash_matches_historical_manifest": true,
+      "raw_shape": [
+        512,
+        25131
+      ],
+      "canonical_shape": [
+        512,
+        25101
+      ],
+      "source_to_raw_exact": true,
+      "canonical_symbols_and_order_exact": true,
+      "canonical_observed_mask_exact": true,
+      "precision": {
+        "exact_canonical_values": true
+      },
+      "encoding": "Signed LOG2-VALUE CNA, no additional log, symbol nanmean, float64 storage",
+      "global_imputation_in_canonical": false,
+      "infinite_source_or_canonical_cells": 0,
+      "selection": {
+        "source_gene_rows": 25131,
+        "source_sample_columns": 592,
+        "patients_with_multiple_primary_columns": 0,
+        "primary_columns_per_patient": {
+          "1": 512
+        },
+        "selection": "Primary tumor sample type 01 only; sorted aliquots; float32 nanmean"
+      },
+      "missing_aggregation": {
+        "raw_nonfinite_cells": 1536,
+        "canonical_nonfinite_cells": 260,
+        "blank_symbol_source_rows_removed": 0,
+        "duplicate_symbol_source_rows_removed": 30,
+        "duplicate_symbol_groups": 30,
+        "blank_symbol_nonfinite_cells_removed": 0,
+        "duplicate_symbol_raw_nonfinite_cells": 1276,
+        "duplicate_symbol_missing_raw_cells_with_observed_same_symbol": 1276,
+        "canonical_missing_in_duplicate_symbol_columns": 0,
+        "raw_nonfinite_per_patient": {
+          "3": 512
+        },
+        "canonical_nonfinite_per_patient": {
+          "0": 382,
+          "2": 130
+        },
+        "raw_nonfinite_per_gene_nonzero": {
+          "130": 3,
+          "382": 3
+        },
+        "canonical_nonfinite_per_gene_nonzero": {
+          "130": 2
+        },
+        "no_missing_cell_filled_from_other_patients": true,
+        "canonical_missing_rule": "Missing iff every primary-aliquot/same-symbol source contribution is missing"
+      },
+      "cohort_missingness": {
+        "COAD": {
+          "patients": 382,
+          "canonical_nonfinite_cells": 0,
+          "patients_with_missing": 0,
+          "nonfinite_per_patient": {
+            "0": 382
+          }
+        },
+        "READ": {
+          "patients": 130,
+          "canonical_nonfinite_cells": 260,
+          "patients_with_missing": 130,
+          "nonfinite_per_patient": {
+            "2": 130
+          }
+        }
+      }
+    }
+  },
+  "decoded_npz_keys": [
+    "patient_ids",
+    "raw_rna",
+    "raw_cna",
+    "rna_genes",
+    "cna_genes",
+    "rna_gene_symbols",
+    "cna_gene_symbols",
+    "cancer_type"
+  ],
+  "survival_arrays_decoded": [],
+  "outer_results_read": false,
+  "model_forwards": 0,
+  "model_fits": 0,
+  "inputs_rewritten": false,
+  "interpretation": [
+    "raw_* retains source rows; *_genes retains sorted unique nonblank gene symbols.",
+    "Missingness may decrease when blank symbol rows are removed or duplicate symbols have a measured counterpart.",
+    "Same-symbol observed contribution aggregation is not cross-patient imputation.",
+    "Gene-level missingness and cohort/platform confounding still require model and sensitivity evaluation.",
+    "CNA signed dosage is not equivalent to molecular-program activation."
+  ],
+  "public_projection": {
+    "source_report_sha256": "be5f1c0bab6d6416a9e61953557ba47a0bc0a778113549f6baae76495ac79713",
+    "writer_source_sha256": "631527e35882fa00bb2a81f4813b00a9ca8b61e0d763d6cf39397e2cfd307713",
+    "changed_metadata_field": "inherited_arrays identity hash metadata key only",
+    "numerical_values_changed": false,
+    "array_values_loaded": false,
+    "new_model_fits": 0,
+    "new_model_forwards": 0
+  }
+}

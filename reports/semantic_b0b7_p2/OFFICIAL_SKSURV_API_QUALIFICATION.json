@@ -1,0 +1,39 @@
+{
+  "API_calls": 200,
+  "Harrell_max_abs_error": 0.0,
+  "Uno60_max_abs_error": 3.3306690738754696e-16,
+  "complete_declared_dependency_environment": false,
+  "date": "2026-10-31",
+  "declared_dependencies_not_installed": [
+    "ecos",
+    "osqp",
+    "numexpr"
+  ],
+  "installed_package_constraints": "scikit-learn>=1.4,<1.6",
+  "isolated_package_install_no_dependencies": true,
+  "metadata_correction_note": "Only client-date and declared dependency wording corrected; original 100 cases/200 API calls were not repeated.",
+  "metadata_correction_of_sha256": "19ad3c2ace57d87101a2e4ba23cdf0bc054c8d6243efa2ebf87c7fbe8de12be8",
+  "metrics_tested": [
+    "sksurv.metrics.concordance_index_censored",
+    "sksurv.metrics.concordance_index_ipcw"
+  ],
+  "model_forwards": 0,
+  "models_fitted": 0,
+  "numpy": "2.1.3",
+  "official_package_version": "0.23.1",
+  "python": "3.12.3",
+  "raw_cohort_read": false,
+  "real_DSS_evaluation": false,
+  "risk_near_ties_included": true,
+  "same_time_event_censor_cases_included": true,
+  "schema": "semantic_b0b7_p2_official_sksurv_api_qualification_v1",
+  "scikit_learn": "1.5.2",
+  "scipy": "1.14.1",
+  "scope": "Scorer mathematical/API qualification only; not model efficacy",
+  "scorer_sha256": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10",
+  "shared_environment_modified": false,
+  "status": "ACTUAL_OFFICIAL_PACKAGE_METRICS_API_PASS",
+  "synthetic_cases": 100,
+  "tau_months": 60,
+  "tested_metrics_import_and_execution_requires_missing_dependencies": false
+}

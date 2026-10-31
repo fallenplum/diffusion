@@ -1,0 +1,26 @@
+{
+  "JUnit_receipt_sha256": "69eaec17100eb3ee67b1ba147e4c9150a2edcd48107b7b8bdb2f73f0a5025c69",
+  "actual_targeted_tests_passed": 13,
+  "change": "replace_learned_beta_scalar_values_with_SHA256_only_preserve_exact_equality_and_absolute_difference",
+  "current_sources": [
+    {
+      "file": "scripts/semantic_b0b7_p2_r4_history_audit.py",
+      "sha256": "4d85be94306fd5a4596b3ad70c0d6406d2434500300ef46da823f511b4d7cc39"
+    },
+    {
+      "file": "tests/test_semantic_b0b7_p2_r4_history_audit.py",
+      "sha256": "911acd9681b78b6ff89ed6fa4d6fdb962fbd3fd70ec0f8a287811056c0e36071"
+    }
+  ],
+  "earlier_146_test_bundle_is_preserved_prior_software_evidence_not_current_history_export_revision": true,
+  "failed": 0,
+  "learned_model_weight_values_public": false,
+  "model_forwards_added": 0,
+  "neural_or_DSS_fits_added": 0,
+  "original_F1_and_DSS_pipeline_isolation_locks_changed": false,
+  "outer_risk_results_read": false,
+  "reported_duration_seconds": 6.8,
+  "schema": "semantic_p2_history_audit_preexecution_export_privacy_refinement_v1",
+  "scientific_twenty_frozen_sources_changed": false,
+  "status": "PASS_TARGETED_PRIVACY_COUNTEREXAMPLES_NO_SCIENTIFIC_CHANGE"
+}

@@ -1,0 +1,31 @@
+{
+  "B0_full_teacher_shared_with_r0_not_counted_twice": true,
+  "actual_neural_fit_elapsed_seconds_sum_not_wallclock": 69487.10208965093,
+  "actual_neural_fits": 480,
+  "actual_outcome_free_background_Ridge_fits": 960,
+  "actual_phase_A_optimizer_steps": 189800,
+  "actual_r0_Cox_fits": 1040,
+  "actual_r0_anchor_partitions": 20,
+  "actual_r0_elapsed_seconds_sum_not_wallclock": 297.2206907570362,
+  "actual_r0_preprocessing_fits": 320,
+  "actual_r0_scalar_fits": 80,
+  "actual_risk_Cox_fits": 1800,
+  "actual_risk_map_PCA_fits_including_lambda_repeats": 5400,
+  "actual_saved_checkpoint_replays": 1909,
+  "background_count_rule": "once_per_split_arm_seed_frozen_view_reused_across_its_lambdas_not_shared_across_arms",
+  "confidence_intervals_computed": false,
+  "excluded_separate_scopes": [
+    "P0_old95_prediction_rescores",
+    "P0_zero_optimizer_probes",
+    "P1",
+    "P1R",
+    "E0_independent_anchor_profile"
+  ],
+  "expected_neural_fits": 480,
+  "expected_risk_Cox_fits": 1800,
+  "max_per_fit_peak_cuda_allocated_bytes_not_concurrent_sum": 4525971968,
+  "report_head_arithmetic_checks_are_not_second_neural_replays": true,
+  "report_new_neural_forwards": 0,
+  "report_new_optimizer_steps": 0,
+  "status": "COMPLETE"
+}

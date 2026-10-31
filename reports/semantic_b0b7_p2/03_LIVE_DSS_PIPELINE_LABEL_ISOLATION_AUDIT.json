@@ -1,0 +1,131 @@
+{
+  "schema": "semantic_b0b7_p2_real_DSS_pipeline_isolation_v1",
+  "status": "PASS_REAL_HELDOUT_DSS_INVARIANT_LEARNED_PIPELINE",
+  "master_lock_sha256": "b9aae9582c78e80f26833b0e049956246f3c7d09723abe813a505acb543f949c",
+  "qualification_lock_sha256": "fa0f399a6315770df5089a07635a36e78a5a0304c8aca28765494819611f2e94",
+  "audit_source_sha256": "84bf92571e00288bbcc41e808ef1e866f8900778dd7e85dd8f6b41d30937d7b8",
+  "formal_neural_fits_unchanged": 480,
+  "phase_a_checkpoint_sha256": "1f6fee65b32b1c3c796f318948118543bb8a2fd07c5b6fb4cd28abfcbb89e0ee",
+  "phase_a_receipt_sha256": "83ef4aac782cfe1ce614b82fa10988cd69ad3fdd7dbb61d1354f29e6aa615b77",
+  "all_outer_selection_sha256": "92f8fc212682c3060771de23497ce7f6980ced1fe7cb96372efbd79b604d504a",
+  "fixed_family": "MAIN",
+  "fixed_arm": "B5",
+  "seed": 31,
+  "ridge_lambda": 10.0,
+  "lambda_reselected": false,
+  "epoch_reselected": false,
+  "fit_patients": 409,
+  "evaluation_patients": 103,
+  "intervention": {
+    "permutation_sha256": "920015e41360c2d97217819ff55bf1511c8d02ba57ebc54c3bda222d277251de",
+    "training_label_values_changed": 0,
+    "evaluation_time_values_changed": 103,
+    "evaluation_event_values_changed": 20,
+    "evaluation_pairs_jointly_permuted": true,
+    "covariates_changed": false
+  },
+  "exact_components": {
+    "background_state": {
+      "baseline_sha256": "ed491560273fcc86217a30d2a768aa382ff81281a640297b7fc0edfe844f3650",
+      "mutated_sha256": "ed491560273fcc86217a30d2a768aa382ff81281a640297b7fc0edfe844f3650",
+      "exact": true
+    },
+    "crossfit_training_offset": {
+      "baseline_sha256": "f05ed1baf821225dc5dbe366509b0fe55260a3d975b4050bdae2235c668855f5",
+      "mutated_sha256": "f05ed1baf821225dc5dbe366509b0fe55260a3d975b4050bdae2235c668855f5",
+      "exact": true
+    },
+    "evaluation_feature_views": {
+      "baseline_sha256": "452384a9f5aa2d5113c30b68081a3996fd9a733e03d61bd6d3df2383033f255e",
+      "mutated_sha256": "452384a9f5aa2d5113c30b68081a3996fd9a733e03d61bd6d3df2383033f255e",
+      "exact": true
+    },
+    "evaluation_predictions": {
+      "baseline_sha256": "776f7fa0250e566efc59d861c1d0884d57efc38c02b8b4b5ba9f76825a08276c",
+      "mutated_sha256": "776f7fa0250e566efc59d861c1d0884d57efc38c02b8b4b5ba9f76825a08276c",
+      "exact": true
+    },
+    "full_evaluation_offset": {
+      "baseline_sha256": "6d4197334fbccbccd369ffcb76b5cbb919d9ca1a667e754b6631b200c0e3a664",
+      "mutated_sha256": "6d4197334fbccbccd369ffcb76b5cbb919d9ca1a667e754b6631b200c0e3a664",
+      "exact": true
+    },
+    "risk_PCA_all_statistics": {
+      "baseline_sha256": "00d76a2b4ee8181756bcacfe69281be46c108b5190d6b9857d78ecbc2abde815",
+      "mutated_sha256": "00d76a2b4ee8181756bcacfe69281be46c108b5190d6b9857d78ecbc2abde815",
+      "exact": true
+    },
+    "risk_coefficients_and_solver_state": {
+      "baseline_sha256": "c21fa9b993b7d0496956d0f66f92f88a55a73d9def8e929fbf776c22333cf506",
+      "mutated_sha256": "c21fa9b993b7d0496956d0f66f92f88a55a73d9def8e929fbf776c22333cf506",
+      "exact": true
+    },
+    "teacher_entire_learned_state": {
+      "baseline_sha256": "d7807a1abb7f7771cae5bd493bc794133535d18dedcc4a7989245168208c2d9e",
+      "mutated_sha256": "d7807a1abb7f7771cae5bd493bc794133535d18dedcc4a7989245168208c2d9e",
+      "exact": true
+    },
+    "teacher_receipt": {
+      "baseline_sha256": "22798195a4c9970b22ca4ab71a8e32fdbd4c600d7579240ed1537a573aac6028",
+      "mutated_sha256": "22798195a4c9970b22ca4ab71a8e32fdbd4c600d7579240ed1537a573aac6028",
+      "exact": true
+    },
+    "training_feature_views": {
+      "baseline_sha256": "fc1d7d56eaaab027e963f2e3c6ac42b6a068ea2d22b1e2ab4ce9ad002922bd0f",
+      "mutated_sha256": "fc1d7d56eaaab027e963f2e3c6ac42b6a068ea2d22b1e2ab4ce9ad002922bd0f",
+      "exact": true
+    },
+    "training_metrics": {
+      "baseline_sha256": "30c126307f15e818c2c57bb84a0e4fff6945bb9f527f0b8ecf44ac2f5fd5ce1e",
+      "mutated_sha256": "30c126307f15e818c2c57bb84a0e4fff6945bb9f527f0b8ecf44ac2f5fd5ce1e",
+      "exact": true
+    },
+    "training_predictions": {
+      "baseline_sha256": "c3e0b10a17b9a3573e4348488e93c0bc3aec9851c07dc0a26a68f373f0b588da",
+      "mutated_sha256": "c3e0b10a17b9a3573e4348488e93c0bc3aec9851c07dc0a26a68f373f0b588da",
+      "exact": true
+    }
+  },
+  "shared_frozen_preprocessing_sha256": "0989a93745efb2de98ac6db62025d4995f854085f2665d633882c4e37d54b902",
+  "actual_additional_compute": {
+    "teacher_Cox_fits": 104,
+    "downstream_Cox_fits": 2,
+    "all_Cox_fits": 106,
+    "scalar_fits": 8,
+    "teacher_preprocessing_fits": 32,
+    "risk_PCA_fits": 6,
+    "background_multioutput_Ridge_fits": 8,
+    "new_neural_fits": 0,
+    "neural_optimizer_updates": 0
+  },
+  "frozen_encoder_feature_extractions": 1,
+  "frozen_encoder_branch_forward_batches_per_modality": 16,
+  "frozen_feature_device": "cuda",
+  "frozen_encoder_optimizer_updates": 0,
+  "heldout_metrics_equal": false,
+  "heldout_metric_values_published": false,
+  "heldout_scoring_is_software_diagnostic_not_new_performance_evidence": true,
+  "original_two_by_50_Phase_A_F1_replaced": false,
+  "primary_predictions_or_selections_changed": false,
+  "PFI_OS_arrays_read": false,
+  "confidence_intervals_computed": false,
+  "p_values_computed": false,
+  "elapsed_seconds": 54.90432529896498,
+  "runs": [
+    {
+      "run": "baseline",
+      "elapsed_seconds": 20.34763692319393,
+      "artifact_sha256": "290dbe1e12cc306ca40cd9d722a3f55df385e7998703e4be5823a79f82420954",
+      "teacher_Cox_gradient_max": 1.96017199532994e-06,
+      "risk_gradient_max": 1.0021017609468386e-08
+    },
+    {
+      "run": "heldout_DSS_permutation",
+      "elapsed_seconds": 19.839337415993214,
+      "artifact_sha256": "c754d904a5eb8a3741edc9be3fafffa36f011b6e47fe1e373379e194e1e3b466",
+      "teacher_Cox_gradient_max": 1.96017199532994e-06,
+      "risk_gradient_max": 1.0021017609468386e-08
+    }
+  ],
+  "qualification_limit": "One fixed outer1 checkpoint and lambda; not a second full data-to-prediction replication or external validation"
+}

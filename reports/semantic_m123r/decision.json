@@ -1,0 +1,231 @@
+{
+  "CI_bootstrap_pvalues": false,
+  "M4_M5_trained": false,
+  "R3_vs_M0": {
+    "CI_bootstrap_pvalues": false,
+    "Harrell_delta": 0.004391123657178679,
+    "Uno60_delta": 0.002786727777664163,
+    "direction_pass": true,
+    "positive_both_seeds": 3,
+    "seed_deltas": [
+      {
+        "Harrell": 0.003528581510232831,
+        "Uno60": 0.001506644939332169,
+        "seed": 31
+      },
+      {
+        "Harrell": 0.005175252881674863,
+        "Uno60": 0.0034353632058771177,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.0044695365796283415,
+        "Uno60": 0.003418175187783201,
+        "seed": 83
+      }
+    ]
+  },
+  "R3_vs_R2": {
+    "CI_bootstrap_pvalues": false,
+    "Harrell_delta": -0.0010977809142946882,
+    "Uno60_delta": -0.004489528315953691,
+    "direction_pass": false,
+    "positive_both_seeds": 0,
+    "seed_deltas": [
+      {
+        "Harrell": -0.0032933427428840645,
+        "Uno60": -0.006414413835948984,
+        "seed": 31
+      },
+      {
+        "Harrell": -0.0002352387673488776,
+        "Uno60": -0.0037151629760687754,
+        "seed": 47
+      },
+      {
+        "Harrell": 0.0002352387673488776,
+        "Uno60": -0.0033390081358433132,
+        "seed": 83
+      }
+    ]
+  },
+  "completed_initializations": 1005,
+  "completed_optimizer_updates": 137430,
+  "execution_master_sha256": "ba830987731efa23f82679d7182ff0c0fdbeacbd9767cd26d210cdf2cd93636e",
+  "formal_arms": [
+    "R2",
+    "R3"
+  ],
+  "formal_decision_sha256": "031dca5046b20c18f2151645b8d09d142419e2ba32593567e9ddaae8041c30df",
+  "formal_inner_fits": 432,
+  "formal_necessary_control": "R2",
+  "formal_primary_candidate": "R3",
+  "gates": {
+    "M1_FUNCTION": {
+      "candidate": "R3",
+      "controls": [
+        "R1",
+        "R2"
+      ],
+      "direction_pass": true,
+      "passed": true,
+      "structure_pass": true,
+      "structure_support": [
+        {
+          "all_three_cell_checks": [
+            false,
+            false,
+            false
+          ],
+          "passing_inner_cells": 0,
+          "seed": 31
+        },
+        {
+          "all_three_cell_checks": [
+            true,
+            true,
+            true
+          ],
+          "passing_inner_cells": 3,
+          "seed": 47
+        },
+        {
+          "all_three_cell_checks": [
+            true,
+            true,
+            true
+          ],
+          "passing_inner_cells": 3,
+          "seed": 83
+        }
+      ]
+    },
+    "M1_GROUP": {
+      "candidate": "R2",
+      "controls": [
+        "R1"
+      ],
+      "direction_pass": false,
+      "passed": false,
+      "structure_pass": true,
+      "structure_support": [
+        {
+          "all_three_cell_checks": [
+            true,
+            true,
+            false
+          ],
+          "passing_inner_cells": 2,
+          "seed": 31
+        },
+        {
+          "all_three_cell_checks": [
+            true,
+            false,
+            false
+          ],
+          "passing_inner_cells": 1,
+          "seed": 47
+        },
+        {
+          "all_three_cell_checks": [
+            true,
+            true,
+            false
+          ],
+          "passing_inner_cells": 2,
+          "seed": 83
+        }
+      ]
+    },
+    "MIL": {
+      "candidate": "R5",
+      "controls": [
+        "R3",
+        "R4"
+      ],
+      "direction_pass": false,
+      "passed": false,
+      "structure_pass": true,
+      "structure_support": [
+        {
+          "all_three_cell_checks": [
+            true,
+            true,
+            true
+          ],
+          "passing_inner_cells": 3,
+          "seed": 31
+        },
+        {
+          "all_three_cell_checks": [
+            true,
+            true,
+            true
+          ],
+          "passing_inner_cells": 3,
+          "seed": 47
+        },
+        {
+          "all_three_cell_checks": [
+            true,
+            true,
+            true
+          ],
+          "passing_inner_cells": 3,
+          "seed": 83
+        }
+      ]
+    },
+    "MOLECULAR": {
+      "candidate": "R6",
+      "controls": [
+        "R5",
+        "R7",
+        "R8",
+        "R9",
+        "R6_WRONG_QUERY",
+        "R6_MEAN_QUERY"
+      ],
+      "direction_pass": false,
+      "passed": false,
+      "structure_pass": false,
+      "structure_support": [
+        {
+          "all_three_cell_checks": [
+            false,
+            true,
+            true
+          ],
+          "passing_inner_cells": 2,
+          "seed": 31
+        },
+        {
+          "all_three_cell_checks": [
+            false,
+            false,
+            false
+          ],
+          "passing_inner_cells": 0,
+          "seed": 47
+        },
+        {
+          "all_three_cell_checks": [
+            false,
+            false,
+            false
+          ],
+          "passing_inner_cells": 0,
+          "seed": 83
+        }
+      ]
+    }
+  },
+  "new_external_independent_validation_claim": false,
+  "patient_arrays_or_weights_public": false,
+  "qualification_decision_sha256": "6a7e406a0b225cd84b2a159a64be744f0539c01d7cdafeb393a3206e7ba45b8c",
+  "qualification_fits": 540,
+  "retired_failed_attempt_updates": 10,
+  "schema": "m123r_complete_bounded_repair_decision_v1",
+  "status": "COMPLETE_M1_M2_M3_REPAIR_EXPERIMENTS"
+}

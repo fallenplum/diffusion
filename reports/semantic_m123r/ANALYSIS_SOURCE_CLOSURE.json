@@ -1,0 +1,49 @@
+{
+  "actual_report_source_checks": 7,
+  "execution_master_sha256": "ba830987731efa23f82679d7182ff0c0fdbeacbd9767cd26d210cdf2cd93636e",
+  "locked_derived_sources": [
+    {
+      "file": "scripts/semantic_m123r_learning_audit.py",
+      "sha256": "778ef324b3424114b8f194840e23c60e9ad9bf571d239f84b09b8199e74dc028"
+    },
+    {
+      "file": "scripts/semantic_m123r_publication.py",
+      "sha256": "b3415aa510e1cd9ec3574b7f3bf1d24aab02a226186a7d4308476b21bc1d8469"
+    },
+    {
+      "file": "scripts/semantic_m123r_report_formal.py",
+      "sha256": "f8a4edfd812bdbc90e7bf82d326daa7f36255bf74e6a997207701607b313719d"
+    },
+    {
+      "file": "tests/test_semantic_m123r_formal_report.py",
+      "sha256": "f4330ed87f0dac0c662134e0634483d128b4012a963d4ea64d0671337c7e5f2a"
+    },
+    {
+      "file": "tests/test_semantic_m123r_publication.py",
+      "sha256": "c4482de8146cd74566ec762579a64d9c695c22fd26576ec4aad64658002d43da"
+    },
+    {
+      "file": "scripts/semantic_m123r_drift_audit.py",
+      "sha256": "2a3c795759ca266abe905f1dce47743012321bc582ac6aa96d23f0c9f5481990"
+    },
+    {
+      "file": "scripts/semantic_m123r_verify_reports.py",
+      "sha256": "0eb6a4f2b942df8cb1c476cb8462805fef8cf764fd65ee435e33898df3162ac6"
+    },
+    {
+      "file": "tests/test_semantic_m123r_drift_audit.py",
+      "sha256": "0af1de4db3a7eba5495f7701d60aaf638a058c142b17da5fce2f282a1b550906"
+    },
+    {
+      "file": "tests/test_semantic_m123r_verify_reports.py",
+      "sha256": "9b357ce89076c284ae546b7e2c5052601a672b050c79f19c5d52cdf67b9e937f"
+    },
+    {
+      "file": "scripts/semantic_m123r_cost_ledger.py",
+      "sha256": "27be95e4e2f71aa88fdb1040188df2cfefffe5249a3b4e8541f3c11814e8d411"
+    }
+  ],
+  "original_sources_verified": 52,
+  "patient_arrays_or_weights_read": false,
+  "status": "PASS_EXECUTION_AND_DERIVED_SOURCE_CLOSURE"
+}

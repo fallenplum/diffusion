@@ -1,0 +1,154 @@
+{
+  "machine_path_placeholders": {
+    "parent_master": "${PARENT_MASTER}",
+    "previous_study_private": "${PREVIOUS_STUDY_PRIVATE}"
+  },
+  "private_execution_lock_sha256": "ba830987731efa23f82679d7182ff0c0fdbeacbd9767cd26d210cdf2cd93636e",
+  "schema": "m123r_public_execution_projection_v1",
+  "scientific_master": {
+    "CI_bootstrap_pvalues": false,
+    "M4_M5_implemented_or_trained": false,
+    "R1_reference_bindings": {
+      "31/0": {
+        "epoch": 20,
+        "input_sha256": "97078f42757b62e8cea6eb2ee38c2377935fa0696337cf7a00619cbf884936e1",
+        "lambda": 0.01,
+        "predictions_sha256": "880c742e19cb21c09427c95fa73517a02edac72c8595ada08182118d471aaa05",
+        "receipt_sha256": "24838641ca25720bd1fa6c2d91df8e55878464dcbbcf14e6bd0df22b81c7949d"
+      },
+      "31/1": {
+        "epoch": 20,
+        "input_sha256": "aa447ef348628e6fb9e9da9477b5f51a307bc97b92c036f631638a513d30a186",
+        "lambda": 0.01,
+        "predictions_sha256": "5c64040174c147c9f88a8ab55d4e65e9199731d77bf477a0995c158f6881a643",
+        "receipt_sha256": "5549ec69f6e0d95af0cb2432b21e91ff415c55cca8deccf291ff455875dc0e77"
+      },
+      "31/2": {
+        "epoch": 20,
+        "input_sha256": "1efce3aa670da8c391f01a65f3d13c0c86a015be9eecf4ca4d61542e0affb687",
+        "lambda": 0.01,
+        "predictions_sha256": "a60be21e7799de8c420ab585ee5c96b6d955d326c6bd64525bebc0b9adb0bc54",
+        "receipt_sha256": "2999b869c8f3fbbf8f8455a6467566e0d7bcf2c3c9f137448b629b44bf4b2d4c"
+      },
+      "47/0": {
+        "epoch": 20,
+        "input_sha256": "97078f42757b62e8cea6eb2ee38c2377935fa0696337cf7a00619cbf884936e1",
+        "lambda": 0.01,
+        "predictions_sha256": "ef53c0d0c8add9053ce95242759923e7df825d5cf92c876805f6482e1a4ed0b1",
+        "receipt_sha256": "a1ebc5fd9940930a61a6d9ea870198e5b8c32ad35233284bb2b3433f0a59ba1c"
+      },
+      "47/1": {
+        "epoch": 20,
+        "input_sha256": "aa447ef348628e6fb9e9da9477b5f51a307bc97b92c036f631638a513d30a186",
+        "lambda": 0.01,
+        "predictions_sha256": "68adcb54c73ee9c455c921560242b72cb081ae6098a91c6e8d18e0e8c9e8f654",
+        "receipt_sha256": "1fbfafbfef9a6409f80a6291ba16f04aa694220a17c84afecadcf49333e67355"
+      },
+      "47/2": {
+        "epoch": 20,
+        "input_sha256": "1efce3aa670da8c391f01a65f3d13c0c86a015be9eecf4ca4d61542e0affb687",
+        "lambda": 0.01,
+        "predictions_sha256": "f79f3c4d93c282f45bf2d7121e928ca3e1417150510a35af42726f207c287523",
+        "receipt_sha256": "b1c23777472ff248a4c37090b276b9d6f8dadc34a8d32492722da3fb68155b4e"
+      },
+      "83/0": {
+        "epoch": 20,
+        "input_sha256": "97078f42757b62e8cea6eb2ee38c2377935fa0696337cf7a00619cbf884936e1",
+        "lambda": 0.01,
+        "predictions_sha256": "7f36bf89544e80ba661c512968843e6b5e769611aaa71c19b97e9d9e0db6b050",
+        "receipt_sha256": "ed4778a880b64e79183436aafe9152e0b55554fbbad87035d99095e766677993"
+      },
+      "83/1": {
+        "epoch": 20,
+        "input_sha256": "aa447ef348628e6fb9e9da9477b5f51a307bc97b92c036f631638a513d30a186",
+        "lambda": 0.01,
+        "predictions_sha256": "77cd511f80cf902a5a7c2fac8132b58e7e9463bd80b658867473f057c19a3a21",
+        "receipt_sha256": "44114f8198552fc1ff04aa88a937170cf208677dde6d4b9a47973a624799e8a0"
+      },
+      "83/2": {
+        "epoch": 20,
+        "input_sha256": "1efce3aa670da8c391f01a65f3d13c0c86a015be9eecf4ca4d61542e0affb687",
+        "lambda": 0.01,
+        "predictions_sha256": "e6d4e0f9da8e87c179da2a2f44afa8a957e8d7ff38917ce77a6c5246bb8e65bb",
+        "receipt_sha256": "7d2550089da74e13be03d38ce4f533d86656a2f16d632441b7e5ef7d4f6291d4"
+      }
+    },
+    "artifact_replay_amendment": {
+      "failed_attempt_actual_optimizer_updates": 10,
+      "failed_fits": 1,
+      "initial_design_sha256": "e699c37fa7c80ce4a5b3b4faf8c5be94a046331fa2fd3cf2abfa02666ffaa057",
+      "old_failed_attempt_preserved": true,
+      "previous_execution_master_sha256": "a60de1b2ae380ce4a67b49e15d6b388b80f35b52190fb534fca3da449fac398f",
+      "previous_source_zip_sha256": "32dd61975c48dab44496a590184ea3712c28f21412ecd998b6a20dfab6d0c10a",
+      "same_replay_tolerance": 1e-09,
+      "scientific_design_unchanged": true,
+      "scope": "checkpoint_loader_restores_original_requires_grad_stage_and_integrity_guard_accepts_append_only_lock_lineage"
+    },
+    "input_sha256": {
+      "outer1_inner0": "6e97894adb6c0fcf69c063b89af3478e77c88aa8f5338b7186bc777b6ce0adbc",
+      "outer1_inner1": "c7173f068f46d3d1936f0b366f478846005d1afe7fa4fccf76ed0405e1a9c4ee",
+      "outer1_inner2": "d3fa2d90dfcc0d64d7a6772d241f86d54f15dbd02dad05d9557830ec504ede7b"
+    },
+    "no_current_outer1_test_outcome_access": true,
+    "parent_commit": "4b212b5fe3d1f86915ec41261fe10f817539d9af",
+    "parent_master_sha256": "41f041bcb883d65285167a201183f40d41e9de1640ead2b40a9311f61f318af3",
+    "qualification_fits": 540,
+    "qualification_updates": 75600,
+    "schema": "m123r_master_v1",
+    "sources": {
+      "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+      "configs/semantic_b0b7/p1r_variants_v1.json": "223b22ce4e2371431a9884e190cdae76e699d3c1f3ba12f30d4ff9a3ee20085a",
+      "configs/semantic_b0b7/p2_design_precommit.json": "bc8000aace67c8864e85a50d3c13e9c6229cc9be942a4b8e8fc1047937d8876d",
+      "configs/semantic_b0b7/p2_qualification_amendment.json": "3c55810855c16b79936c5f7ef65130e9758cc21706a763ad82de1a59a3680a5e",
+      "configs/semantic_m123r/design_precommit.json": "e699c37fa7c80ce4a5b3b4faf8c5be94a046331fa2fd3cf2abfa02666ffaa057",
+      "configs/semantic_m123r/qualification_gate_clarification.json": "6c7df3b77ab3d86019f8491be3a11d82883f4b26471eaff0a4f341088ba6a4dd",
+      "reports/semantic_m123r/00_ACTUAL_ASSET_QUALIFICATION.json": "fcdbe483888cbf0f81adb417554905a7ec2d2c11fc65aef60a809830fe69be52",
+      "reports/semantic_m123r/01_PRETRAIN_SOFTWARE_QUALIFICATION.json": "5e1733b25eb1ec86810802d38b4c2b33543be4691849e0289091707121c57105",
+      "reports/semantic_m123r/02_ARTIFACT_REPLAY_REPAIR.md": "6a21ecb8f71d3ccee37352640ce00cabd841cb919564aa52606d64a384aad4ea",
+      "reports/semantic_m123r/METHODS_AND_LOCK.md": "24a93be3d96e36687157682554fc5d85368e2bc8fd3702095084bc84fa9e4fa5",
+      "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+      "scripts/semantic_b0b7_p1r.py": "c7214fbd2a1a078825695ded9762b8be1e088e1c843f194fa6c31effa79a271e",
+      "scripts/semantic_b0b7_p2_matrix.py": "13c5494550bdad5be21d3070197602a9b544f2a3c60dcda90384436074af8239",
+      "scripts/semantic_b0b7_p2_schedule.py": "f03a3571864af3512b6baa03aeaac9ab56d3e49bf6ac0f143523c359c428199c",
+      "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+      "scripts/semantic_m123_qualify.py": "47e1bbbd6a7209bbcb56d71937a97cca1369237c94849bdbcb16350748307079",
+      "scripts/semantic_m123_schedule.py": "e2ffc06129772cfbbfd308cff5c8a66682280792f4f3a0d8399862718dff9c35",
+      "scripts/semantic_m123_worker.py": "9bf8cf6b2cd068459799550329e5302e144222d70f885fa261ab499e8d2e874f",
+      "scripts/semantic_m123r_common.py": "656dd56e6d747e8625af406e53696f8bc9efed6d36af44d6e9f76becdbd9d885",
+      "scripts/semantic_m123r_qualify.py": "42b704add702048919a435541b2f0621a38fc9b1c14a3c293236f4d474597422",
+      "scripts/semantic_m123r_report.py": "0eaefcafec78172efae279356e7bbb77979f29369268a4cce4ef04233ad30604",
+      "scripts/semantic_m123r_schedule.py": "0fc4ab96fe2627dfb267e89797896a81dfc1bd4d36e01b278bc9e543a5a1e7b4",
+      "scripts/semantic_m123r_selection.py": "b1456cff0d05e909a9816fb5cfeec3b72d6ed48fb50980f5f49e822baa6749f1",
+      "scripts/semantic_m123r_worker.py": "20acfb236e6530a5a0c75f23db8dcf4b978cd007bdd8e59571a65e56870eacf2",
+      "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+      "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+      "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+      "src/semantic_b0b7/p1r_data.py": "0aaf475fec0c2e84a8e89a49313b02120d09328c1ae87059047c976617e87463",
+      "src/semantic_b0b7/p1r_models.py": "4b187bfab3331ec6fb40ff2d375ccda612713f8cb9376de47de1a202ed65aa93",
+      "src/semantic_b0b7/p2_anchor.py": "9ce4262750b5af384365a2829c00bc145328a42200ef6725aebad2417afa8600",
+      "src/semantic_b0b7/p2_data.py": "f4dd68414246d7b8e8188515a851df7542c24c9f830a4af08c7934c175f6a2c6",
+      "src/semantic_b0b7/p2_models.py": "7e44213dbbf0b8be97396a4069e83998493c4fe2f7a606445fb7f49ba5ae1041",
+      "src/semantic_b0b7/p2_survival.py": "8fdb3820143a6fefb99269f566dc990cde80c68b53579e382d90e7d7f387c3b9",
+      "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+      "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10",
+      "src/semantic_m123/__init__.py": "401b4cc3fb91fbc38d732cc3a30006e738a7627fb7bf66d52aa371df553aceb0",
+      "src/semantic_m123/data.py": "b36cc27d017c12ed71a4f105a74d00872e61db750396d513dc61056c76b0d442",
+      "src/semantic_m123/diagnostics.py": "3fcc91fa100f7bf25ea50076920291e13fda05b86b166d50e06f49c3e4f01cbd",
+      "src/semantic_m123/models.py": "45f17a360834613ed73d2dbc9babe8e6998644465091eff913e12bf7a626fb6c",
+      "src/semantic_m123/replay.py": "c9ac0aeff985975bb9ce1d7f90b876edce2fc1fd9fa36f123d4151a5c3b4c16c",
+      "src/semantic_m123/training.py": "c665bcb091baf9779cbdf108a3e1a99e7b5fed5cb400301879e6727664061406",
+      "src/semantic_m123r/__init__.py": "2ccb7b37e66b3e4b48debf6d42fb374d991b3651993526af87e7020ebfb27c5c",
+      "src/semantic_m123r/data.py": "4555f54664987430584e65548ede063e785e37a703d596b55cf3184cfca08d27",
+      "src/semantic_m123r/io.py": "b8e45d954d6789028207a7de52f849935cf4587659a3b7d9ef35b4cb1082dfc3",
+      "src/semantic_m123r/models.py": "535b772b62b0e251c9d94a6326191f23c92335a13a477390c065ec8611a57a3d",
+      "src/semantic_m123r/protocol.py": "b0ed449580b24ac80e67ac4230f4ae258f422e91cbb8c9d40a8a3e6dad72fc5f",
+      "src/semantic_m123r/reporting.py": "e8c99240a64cbccfd1dc730d16ec4c168bae9bce1bc1eb9a32ccae09b1c4790d",
+      "src/semantic_m123r/training.py": "128092f2a04ad677720b5ea46a9a5574b1b718a4f3b55e00fd3e32cbce90381f",
+      "tests/test_semantic_m123_models.py": "73cd05a2ffcf2c78ca91428f0d65aad957fe48096727e8176197280aadd5f636",
+      "tests/test_semantic_m123_protocol.py": "26d0e89c7ceb27e33aedf7b0258c3bdebfb9424e553d2d0eecc08c48b7f16c3f",
+      "tests/test_semantic_m123_training.py": "f46a45f5a96a07bbebd669aa3cda63791615ee2c8a75a8c0430712f18962d240",
+      "tests/test_semantic_m123r.py": "e3a2365f7997402a6bdd74300fc98f66f75d142e50ec50e08428e64dc60cf2a1"
+    },
+    "status": "LOCKED_ARTIFACT_REPLAY_REPAIR_BEFORE_RETRY"
+  }
+}

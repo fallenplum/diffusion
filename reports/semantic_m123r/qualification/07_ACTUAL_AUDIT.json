@@ -1,0 +1,1940 @@
+{
+  "OOF_patients_per_vector": 409,
+  "actual_official_API_calls": 480,
+  "actual_selected_checkpoint_replays_after_retention": 144,
+  "all_snapshot_disk_replays_before_retention": 3240,
+  "cases": [
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R0",
+      "inner": 0,
+      "seed": 0,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R0",
+      "inner": 0,
+      "seed": 0,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R1",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R1",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R1",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R1",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R2",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R2",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R2",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R2",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 3.3306690738754696e-16,
+      "arm": "R2",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 3.3306690738754696e-16,
+      "arm": "R2",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R3",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R3",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R3",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R3",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R3",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R3",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R4",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R4",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R4",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R4",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R4",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R4",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R5_NO_MIL",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R5_NO_MIL",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R5_NO_MIL",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R5_NO_MIL",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 3.3306690738754696e-16,
+      "arm": "R5",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R5_NO_MIL",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 3.3306690738754696e-16,
+      "arm": "R5",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R5_NO_MIL",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 3.3306690738754696e-16,
+      "arm": "R6",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 3.3306690738754696e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 3.3306690738754696e-16,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 3.3306690738754696e-16,
+      "arm": "R6",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 3.3306690738754696e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 3.3306690738754696e-16,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R7",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R7",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R7",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R7",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R7",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R7",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R8",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R8",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R9",
+      "inner": 0,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R9",
+      "inner": 0,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R9",
+      "inner": 0,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R9",
+      "inner": 0,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R9",
+      "inner": 0,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R9",
+      "inner": 0,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R0",
+      "inner": 1,
+      "seed": 0,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R0",
+      "inner": 1,
+      "seed": 0,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R2",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R2",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R2",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R2",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R2",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R2",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R3",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R3",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R3",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R3",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R3",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R3",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R4",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R4",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R4",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R4",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R4",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R4",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R5_NO_MIL",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R5_NO_MIL",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5_NO_MIL",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5_NO_MIL",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5_NO_MIL",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5_NO_MIL",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R7",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R7",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R7",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R7",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R7",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R7",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R9",
+      "inner": 1,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R9",
+      "inner": 1,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R9",
+      "inner": 1,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R9",
+      "inner": 1,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R9",
+      "inner": 1,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R9",
+      "inner": 1,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R0",
+      "inner": 2,
+      "seed": 0,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R0",
+      "inner": 2,
+      "seed": 0,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R1",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R1",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R1",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R2",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R2",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R2",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R2",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R2",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R2",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R3",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R3",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R3",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R3",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R3",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R3",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R4",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R4",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R4",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R4",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R4",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R4",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R5",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5_NO_MIL",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R5",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5_NO_MIL",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R5",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5_NO_MIL",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R5",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5_NO_MIL",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R5",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5_NO_MIL",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R5",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R5_NO_MIL",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_WRONG_QUERY",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_MEAN_QUERY",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R6_NO_INTERACTION",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R7",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R7",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R7",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R7",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R7",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R7",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R8",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R8",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R8",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R9",
+      "inner": 2,
+      "seed": 31,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 2.220446049250313e-16,
+      "arm": "R9",
+      "inner": 2,
+      "seed": 31,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R9",
+      "inner": 2,
+      "seed": 47,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 1.1102230246251565e-16,
+      "arm": "R9",
+      "inner": 2,
+      "seed": 47,
+      "track": "ENCODER_TRAINED"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R9",
+      "inner": 2,
+      "seed": 83,
+      "track": "EARLY_ANY"
+    },
+    {
+      "Harrell_API_error": 0.0,
+      "Uno_API_error": 0.0,
+      "arm": "R9",
+      "inner": 2,
+      "seed": 83,
+      "track": "ENCODER_TRAINED"
+    }
+  ],
+  "maximum_selected_replay_error": 0.0,
+  "new_optimizer_updates": 75600,
+  "new_postprocess_optimizer_fits": 0,
+  "new_teacher_fits": 0,
+  "original_R1_reference": "saved_predictions_at_its_original_locked_choice;no_early_weight_replay_claim",
+  "outer1_test_endpoint_elements_decoded": 0,
+  "patient_OOF_vectors_private": 80,
+  "registered_real_fits": 540,
+  "scheduler_wall_seconds": 4166.5330102443695,
+  "source_sha256": "0eaefcafec78172efae279356e7bbb77979f29369268a4cce4ef04233ad30604",
+  "status": "PASS",
+  "worker_elapsed_seconds_sum_not_wall": 20506.62111434713
+}

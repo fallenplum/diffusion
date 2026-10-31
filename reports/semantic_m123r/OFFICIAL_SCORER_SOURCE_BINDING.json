@@ -1,0 +1,31 @@
+{
+  "status": "PASS_INSTALLED_MODULE_BYTES_EQUAL_OFFICIAL_UPSTREAM_TAG",
+  "package": "scikit-survival",
+  "version": "0.23.1",
+  "official_repository": "sebp/scikit-survival",
+  "official_ref": "v0.23.1",
+  "method": "GitHub_connector_upstream_blob_SHA1_equals_Git_blob_formula_over_actual_installed_module_bytes",
+  "modules": [
+    {
+      "module": "sksurv/metrics.py",
+      "git_blob_sha1": "d797607d7e13aaba45b2316d166b3c7d72c01b24",
+      "sha256": "a5181381ee826e5749875ccaccbcfb1b6ab232c3ca46b0c4fe425c97ee491eda",
+      "source_url": "https://github.com/sebp/scikit-survival/blob/v0.23.1/sksurv/metrics.py"
+    },
+    {
+      "module": "sksurv/nonparametric.py",
+      "git_blob_sha1": "8b4a629bb3286e33227f339f416bf9524a0e44a8",
+      "sha256": "c74c1cccba8bffab1ec4bc1727af52bd40d4bde6aaa866db0f0f132f19456992",
+      "source_url": "https://github.com/sebp/scikit-survival/blob/v0.23.1/sksurv/nonparametric.py"
+    },
+    {
+      "module": "sksurv/util.py",
+      "git_blob_sha1": "2abf9d9ea8c30f9c17562eaa7adde4203b5c1218",
+      "sha256": "fedf81782818db48fcdec1379baef7378d62331dae334a0c7fdb6a5ac2146b9a",
+      "source_url": "https://github.com/sebp/scikit-survival/blob/v0.23.1/sksurv/util.py"
+    }
+  ],
+  "same_installed_modules_used_by_current_official_API_reports": true,
+  "new_optimizer_updates": 0,
+  "patient_arrays_or_weights_read_for_source_binding": false
+}

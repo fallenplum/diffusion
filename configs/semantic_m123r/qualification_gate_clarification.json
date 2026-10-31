@@ -1,0 +1,18 @@
+{
+  "schema": "m123r_gate_implementation_clarification_v1",
+  "status": "BEFORE_ANY_NEW_DSS_OPTIMIZER_STEP",
+  "design_sha256": "e699c37fa7c80ce4a5b3b4faf8c5be94a046331fa2fd3cf2abfa02666ffaa057",
+  "CROSS_uses_same_geometry_thresholds_as_MIL": true,
+  "wrong_query_sensitivity_minimum_eligible": "max(10,current_validation_patients/2)",
+  "none_or_missing_geometry_means_structure_failed": true,
+  "encoder_counts_are_actual_nonzero_parameter_step_changes": true,
+  "Cox_gradients_are_observed_unregularized_full_training_loss_derivatives": true,
+  "structure_support": "at_least_two_inner_cells_for_at_least_two_seeds",
+  "positive_direction_gate": "strictly_positive_mean_Harrell_and_Uno60_plus_at_least_two_seeds_positive_in_both",
+  "M1_GROUP": "R2_vs_R1_plus_main_stability",
+  "M1_FUNCTION": "R3_vs_R1_and_R2_plus_main_stability",
+  "MIL": "R5_vs_R3_and_R4_plus_MIL_structure",
+  "MOLECULAR": "R6_vs_R5_R7_R8_R9_and_its_frozen_wrong_mean_controls_plus_MIL_and_CROSS_structure",
+  "formal_control_union": "only_preregistered_controls_required_by_gated_candidates",
+  "data_dependent_gate_changes": false
+}

@@ -1,0 +1,1014 @@
+{
+  "EARLY_ANY": {
+    "R2 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0025792747686238515,
+      "Uno60_delta": 0.003945536709601701,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.001820664542558026,
+          "Uno60": 0.0053479038873949225,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.003413746017296271,
+          "Uno60": 0.003593599726786856,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.002503413746017258,
+          "Uno60": 0.0028951065146233246,
+          "seed": 83
+        }
+      ]
+    },
+    "R2 minus R1": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0009103322712790499,
+      "Uno60_delta": -0.0007476800499693533,
+      "direction_pass": false,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": 0.000682749203459343,
+          "Uno60": 0.002285281891496349,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.001137915339098794,
+          "Uno60": -0.0032926024513921792,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.000910332271279013,
+          "Uno60": -0.0012357195900122298,
+          "seed": 83
+        }
+      ]
+    },
+    "R3 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.007965407373691336,
+      "Uno60_delta": 0.012254658579896271,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.007965407373691336,
+          "Uno60": 0.008121603551670797,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.007965407373691336,
+          "Uno60": 0.013923370367985966,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.007965407373691336,
+          "Uno60": 0.014719001820032052,
+          "seed": 83
+        }
+      ]
+    },
+    "R3 minus R1": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.006296464876346534,
+      "Uno60_delta": 0.007561441820325217,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.006827492034592653,
+          "Uno60": 0.005058981555772224,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.005689576695493859,
+          "Uno60": 0.0070371681898069305,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.006372325898953091,
+          "Uno60": 0.010588175715396497,
+          "seed": 83
+        }
+      ]
+    },
+    "R3 minus R2": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.005386132605067484,
+      "Uno60_delta": 0.00830912187029457,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.00614474283113331,
+          "Uno60": 0.002773699664275875,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.004551661356395065,
+          "Uno60": 0.01032977064119911,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.005461993627674078,
+          "Uno60": 0.011823895305408727,
+          "seed": 83
+        }
+      ]
+    },
+    "R4 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.005689576695493785,
+      "Uno60_delta": 0.007117987399186306,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.005234410559854297,
+          "Uno60": 0.006922350103253816,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.005917159763313529,
+          "Uno60": 0.007057826291679503,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.005917159763313529,
+          "Uno60": 0.007373785802625599,
+          "seed": 83
+        }
+      ]
+    },
+    "R5 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.007586102260658441,
+      "Uno60_delta": 0.008434902379177397,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.00933090578060991,
+          "Uno60": 0.013538275046467318,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.007282658170232104,
+          "Uno60": 0.0006135815262573452,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.00614474283113331,
+          "Uno60": 0.011152850564807526,
+          "seed": 83
+        }
+      ]
+    },
+    "R5 minus R3": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0003793051130328943,
+      "Uno60_delta": -0.003819756200718875,
+      "direction_pass": false,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": 0.001365498406918575,
+          "Uno60": 0.005416671494796521,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.000682749203459232,
+          "Uno60": -0.01330978884172862,
+          "seed": 47
+        },
+        {
+          "Harrell": -0.001820664542558026,
+          "Uno60": -0.0035661512552245256,
+          "seed": 83
+        }
+      ]
+    },
+    "R5 minus R4": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0018965255651646566,
+      "Uno60_delta": 0.0013169149799910906,
+      "direction_pass": true,
+      "positive_both_seeds": 2,
+      "seed_deltas": [
+        {
+          "Harrell": 0.004096495220755614,
+          "Uno60": 0.0066159249432135026,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.001365498406918575,
+          "Uno60": -0.006444244765422158,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.000227583067819781,
+          "Uno60": 0.0037790647621819273,
+          "seed": 83
+        }
+      ]
+    },
+    "R5 minus R5_NO_MIL": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.008041268396298004,
+      "Uno60_delta": 0.006487516666820829,
+      "direction_pass": true,
+      "positive_both_seeds": 2,
+      "seed_deltas": [
+        {
+          "Harrell": 0.008420573509330898,
+          "Uno60": 0.011652166460997648,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.013654984069185305,
+          "Uno60": 0.009455909602436141,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.002048247610377807,
+          "Uno60": -0.001645526062971303,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.00705507510241236,
+      "Uno60_delta": 0.009693819636775328,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.008420573509330898,
+          "Uno60": 0.01038117869024413,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.006599908966772872,
+          "Uno60": 0.007547429655274329,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.00614474283113331,
+          "Uno60": 0.011152850564807526,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R5": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0005310271582460816,
+      "Uno60_delta": 0.001258917257597932,
+      "direction_pass": false,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.000910332271279013,
+          "Uno60": -0.003157096356223188,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.000682749203459232,
+          "Uno60": 0.006933848129016984,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R6_MEAN_QUERY": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.00015172204521315033,
+      "Uno60_delta": -0.00014345242063048177,
+      "direction_pass": false,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.00045516613563945096,
+          "Uno60": -0.0004303572618914453,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R6_NO_INTERACTION": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 7.586102260659366e-05,
+      "Uno60_delta": 0.000687932028316518,
+      "direction_pass": true,
+      "positive_both_seeds": 2,
+      "seed_deltas": [
+        {
+          "Harrell": 0.000227583067819781,
+          "Uno60": 0.0020045302940721044,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.000455166135639562,
+          "Uno60": 0.00038482977438325516,
+          "seed": 47
+        },
+        {
+          "Harrell": -0.000455166135639562,
+          "Uno60": -0.0003255639835058055,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R6_WRONG_QUERY": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0,
+      "Uno60_delta": -5.4888378309692065e-05,
+      "direction_pass": false,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": 0.0,
+          "Uno60": -0.0001646651349290762,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R7": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0009861932938855327,
+      "Uno60_delta": -0.0005495531405467213,
+      "direction_pass": false,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": -0.002958579881656709,
+          "Uno60": -0.0020439133656857678,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.00022758306781966997,
+          "Uno60": 0.00011022833155716061,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.000227583067819781,
+          "Uno60": 0.00028502561248844316,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R8": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0018965255651645825,
+      "Uno60_delta": -0.0011097490526976728,
+      "direction_pass": false,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": -0.004779244424214846,
+          "Uno60": -0.0037184839576163142,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.000682749203459343,
+          "Uno60": 0.002954416099818058,
+          "seed": 47
+        },
+        {
+          "Harrell": -0.001593081474738245,
+          "Uno60": -0.002565179300294762,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R9": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0012896373843119442,
+      "Uno60_delta": -0.00020585975320016234,
+      "direction_pass": false,
+      "positive_both_seeds": 2,
+      "seed_deltas": [
+        {
+          "Harrell": 0.000910332271279013,
+          "Uno60": 0.003632119413760182,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.005234410559854297,
+          "Uno60": -0.0046064978426997305,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.00045516613563945096,
+          "Uno60": 0.00035679916933906153,
+          "seed": 83
+        }
+      ]
+    },
+    "R7 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.008041268396297893,
+      "Uno60_delta": 0.01024337277732205,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.011379153390987606,
+          "Uno60": 0.012425092055929898,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.006827492034592542,
+          "Uno60": 0.007437201323717169,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.005917159763313529,
+          "Uno60": 0.010867824952319083,
+          "seed": 83
+        }
+      ]
+    },
+    "R8 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.008951600667576942,
+      "Uno60_delta": 0.010803568689473,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.013199817933545743,
+          "Uno60": 0.014099662647860445,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.005917159763313529,
+          "Uno60": 0.004593013555456271,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0077378243058715546,
+          "Uno60": 0.013718029865102288,
+          "seed": 83
+        }
+      ]
+    },
+    "R9 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.008344712486724304,
+      "Uno60_delta": 0.009899679389975491,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.007510241238051885,
+          "Uno60": 0.0067490592764839485,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.011834319526627168,
+          "Uno60": 0.01215392749797406,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.005689576695493859,
+          "Uno60": 0.010796051395468464,
+          "seed": 83
+        }
+      ]
+    }
+  },
+  "ENCODER_TRAINED": {
+    "R2 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.002503413746017258,
+      "Uno60_delta": 0.0027773156484961112,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.001593081474738245,
+          "Uno60": 0.0018432407040781529,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.003413746017296271,
+          "Uno60": 0.003593599726786856,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.002503413746017258,
+          "Uno60": 0.0028951065146233246,
+          "seed": 83
+        }
+      ]
+    },
+    "R2 minus R1": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0008344712486724563,
+      "Uno60_delta": -0.001915901111074943,
+      "direction_pass": false,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": 0.000455166135639562,
+          "Uno60": -0.0012193812918204205,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.001137915339098794,
+          "Uno60": -0.0032926024513921792,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.000910332271279013,
+          "Uno60": -0.0012357195900122298,
+          "seed": 83
+        }
+      ]
+    },
+    "R3 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.007965407373691336,
+      "Uno60_delta": 0.012254658579896271,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.007965407373691336,
+          "Uno60": 0.008121603551670797,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.007965407373691336,
+          "Uno60": 0.013923370367985966,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.007965407373691336,
+          "Uno60": 0.014719001820032052,
+          "seed": 83
+        }
+      ]
+    },
+    "R3 minus R1": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.006296464876346534,
+      "Uno60_delta": 0.007561441820325217,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.006827492034592653,
+          "Uno60": 0.005058981555772224,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.005689576695493859,
+          "Uno60": 0.0070371681898069305,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.006372325898953091,
+          "Uno60": 0.010588175715396497,
+          "seed": 83
+        }
+      ]
+    },
+    "R3 minus R2": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.005461993627674078,
+      "Uno60_delta": 0.00947734293140016,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.006372325898953091,
+          "Uno60": 0.0062783628475926445,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.004551661356395065,
+          "Uno60": 0.01032977064119911,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.005461993627674078,
+          "Uno60": 0.011823895305408727,
+          "seed": 83
+        }
+      ]
+    },
+    "R4 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.005689576695493785,
+      "Uno60_delta": 0.007117987399186306,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.005234410559854297,
+          "Uno60": 0.006922350103253816,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.005917159763313529,
+          "Uno60": 0.007057826291679503,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.005917159763313529,
+          "Uno60": 0.007373785802625599,
+          "seed": 83
+        }
+      ]
+    },
+    "R5 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.007586102260658441,
+      "Uno60_delta": 0.008434902379177397,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.00933090578060991,
+          "Uno60": 0.013538275046467318,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.007282658170232104,
+          "Uno60": 0.0006135815262573452,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.00614474283113331,
+          "Uno60": 0.011152850564807526,
+          "seed": 83
+        }
+      ]
+    },
+    "R5 minus R3": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0003793051130328943,
+      "Uno60_delta": -0.003819756200718875,
+      "direction_pass": false,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": 0.001365498406918575,
+          "Uno60": 0.005416671494796521,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.000682749203459232,
+          "Uno60": -0.01330978884172862,
+          "seed": 47
+        },
+        {
+          "Harrell": -0.001820664542558026,
+          "Uno60": -0.0035661512552245256,
+          "seed": 83
+        }
+      ]
+    },
+    "R5 minus R4": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0018965255651646566,
+      "Uno60_delta": 0.0013169149799910906,
+      "direction_pass": true,
+      "positive_both_seeds": 2,
+      "seed_deltas": [
+        {
+          "Harrell": 0.004096495220755614,
+          "Uno60": 0.0066159249432135026,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.001365498406918575,
+          "Uno60": -0.006444244765422158,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.000227583067819781,
+          "Uno60": 0.0037790647621819273,
+          "seed": 83
+        }
+      ]
+    },
+    "R5 minus R5_NO_MIL": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.008041268396298004,
+      "Uno60_delta": 0.006487516666820829,
+      "direction_pass": true,
+      "positive_both_seeds": 2,
+      "seed_deltas": [
+        {
+          "Harrell": 0.008420573509330898,
+          "Uno60": 0.011652166460997648,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.013654984069185305,
+          "Uno60": 0.009455909602436141,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.002048247610377807,
+          "Uno60": -0.001645526062971303,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.00705507510241236,
+      "Uno60_delta": 0.009693819636775328,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.008420573509330898,
+          "Uno60": 0.01038117869024413,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.006599908966772872,
+          "Uno60": 0.007547429655274329,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.00614474283113331,
+          "Uno60": 0.011152850564807526,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R5": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0005310271582460816,
+      "Uno60_delta": 0.001258917257597932,
+      "direction_pass": false,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.000910332271279013,
+          "Uno60": -0.003157096356223188,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.000682749203459232,
+          "Uno60": 0.006933848129016984,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R6_MEAN_QUERY": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.00015172204521315033,
+      "Uno60_delta": -0.00014345242063048177,
+      "direction_pass": false,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": -0.00045516613563945096,
+          "Uno60": -0.0004303572618914453,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R6_NO_INTERACTION": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 7.586102260659366e-05,
+      "Uno60_delta": 0.000687932028316518,
+      "direction_pass": true,
+      "positive_both_seeds": 2,
+      "seed_deltas": [
+        {
+          "Harrell": 0.000227583067819781,
+          "Uno60": 0.0020045302940721044,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.000455166135639562,
+          "Uno60": 0.00038482977438325516,
+          "seed": 47
+        },
+        {
+          "Harrell": -0.000455166135639562,
+          "Uno60": -0.0003255639835058055,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R6_WRONG_QUERY": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.0,
+      "Uno60_delta": -5.4888378309692065e-05,
+      "direction_pass": false,
+      "positive_both_seeds": 0,
+      "seed_deltas": [
+        {
+          "Harrell": 0.0,
+          "Uno60": -0.0001646651349290762,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0,
+          "Uno60": 0.0,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R7": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0009861932938855327,
+      "Uno60_delta": -0.0005495531405467213,
+      "direction_pass": false,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": -0.002958579881656709,
+          "Uno60": -0.0020439133656857678,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.00022758306781966997,
+          "Uno60": 0.00011022833155716061,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.000227583067819781,
+          "Uno60": 0.00028502561248844316,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R8": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0018965255651645825,
+      "Uno60_delta": -0.0011097490526976728,
+      "direction_pass": false,
+      "positive_both_seeds": 1,
+      "seed_deltas": [
+        {
+          "Harrell": -0.004779244424214846,
+          "Uno60": -0.0037184839576163142,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.000682749203459343,
+          "Uno60": 0.002954416099818058,
+          "seed": 47
+        },
+        {
+          "Harrell": -0.001593081474738245,
+          "Uno60": -0.002565179300294762,
+          "seed": 83
+        }
+      ]
+    },
+    "R6 minus R9": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": -0.0012896373843119442,
+      "Uno60_delta": -0.00020585975320016234,
+      "direction_pass": false,
+      "positive_both_seeds": 2,
+      "seed_deltas": [
+        {
+          "Harrell": 0.000910332271279013,
+          "Uno60": 0.003632119413760182,
+          "seed": 31
+        },
+        {
+          "Harrell": -0.005234410559854297,
+          "Uno60": -0.0046064978426997305,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.00045516613563945096,
+          "Uno60": 0.00035679916933906153,
+          "seed": 83
+        }
+      ]
+    },
+    "R7 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.008041268396297893,
+      "Uno60_delta": 0.01024337277732205,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.011379153390987606,
+          "Uno60": 0.012425092055929898,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.006827492034592542,
+          "Uno60": 0.007437201323717169,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.005917159763313529,
+          "Uno60": 0.010867824952319083,
+          "seed": 83
+        }
+      ]
+    },
+    "R8 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.008951600667576942,
+      "Uno60_delta": 0.010803568689473,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.013199817933545743,
+          "Uno60": 0.014099662647860445,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.005917159763313529,
+          "Uno60": 0.004593013555456271,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.0077378243058715546,
+          "Uno60": 0.013718029865102288,
+          "seed": 83
+        }
+      ]
+    },
+    "R9 minus R0": {
+      "CI_bootstrap_pvalues": false,
+      "Harrell_delta": 0.008344712486724304,
+      "Uno60_delta": 0.009899679389975491,
+      "direction_pass": true,
+      "positive_both_seeds": 3,
+      "seed_deltas": [
+        {
+          "Harrell": 0.007510241238051885,
+          "Uno60": 0.0067490592764839485,
+          "seed": 31
+        },
+        {
+          "Harrell": 0.011834319526627168,
+          "Uno60": 0.01215392749797406,
+          "seed": 47
+        },
+        {
+          "Harrell": 0.005689576695493859,
+          "Uno60": 0.010796051395468464,
+          "seed": 83
+        }
+      ]
+    }
+  }
+}

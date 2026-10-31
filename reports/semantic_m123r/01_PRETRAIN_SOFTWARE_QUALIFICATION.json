@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "tests": 29,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 20.873,
+  "junit_sha256": "24e660aa4353cf362026024b96a31a78dc59df2355bcc7b231e611843caf6c72",
+  "DSS_optimizer_updates_before_lock": 0,
+  "preserved_prior_failures": "early_tensor_assertion_and_qualification_reduction_or_batch_broadcast_fixed_before_DSS_optimization",
+  "no_smoke_weights_retained": true
+}

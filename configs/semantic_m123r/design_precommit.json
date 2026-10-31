@@ -1,0 +1,171 @@
+{
+  "schema": "m123r_bounded_repair_design_v1",
+  "status": "PRECOMMITTED_BEFORE_NEW_DSS_OPTIMIZATION",
+  "parent_commit": "4b212b5fe3d1f86915ec41261fe10f817539d9af",
+  "scope": "M1_R_M2_R_M3_R_no_M4_M5",
+  "scientific_instructions_transcribed_without_server_credentials": true,
+  "data": {
+    "patients": 512,
+    "DSS_events": 65,
+    "same_original_patient_splits": true,
+    "seeds": [
+      31,
+      47,
+      83
+    ],
+    "qualification_outer": 1,
+    "qualification_inner": [
+      0,
+      1,
+      2
+    ],
+    "no_new_data_download": true,
+    "RNA512_and_S32_GRID32_TITAN_CONCH_and_50_RNA_CNA_programs_preserved": true
+  },
+  "precision_and_inputs": {
+    "base_parameterization": "same_original_64D_Branch_modules_in_FP64",
+    "S0": "exact_current_fit_R4_function_no_fixed_risk_offset",
+    "new_modules": "FP32_no_AMP_no_TF32",
+    "patch_scaling": "training_only_equal_patient_equal_slide_feature_moments_mean_and_patch_share_scale",
+    "normalized_attention": "per_head_layernorm_then_unit_Q_K_fixed_cosine_logit_scale_5",
+    "M2_initial_queries": "eight_orthogonal_anonymous_queries_not_medical_labels",
+    "M3_query_normalization": "unit_projected_program_context_plus_unit_program_identity",
+    "M3_uses_repaired_M2_MIL_and_mean_in_all_four_controls": true
+  },
+  "loss": {
+    "formula": "Efron + a*sum((center(full_training_risk)-center(current_fit_R4_risk))^2) + b*sum((base-base_initial)^2) + n*sum(new^2)",
+    "risk_set": "complete_current_fit_patients",
+    "a_candidates": [
+      0.01,
+      0.1
+    ],
+    "b_candidates": [
+      0.01,
+      0.1
+    ],
+    "n_candidates": [
+      0.0005,
+      0.005
+    ],
+    "R2_a": 0,
+    "base_group": "all_p_g_c_Branch_parameters_including_their_residual_layers",
+    "new_group": "all_other_parameters",
+    "a_schedule": "constant_through90_then_linearly_to0.1_times_initial_at140",
+    "no_forced_attention_rank_or_wrong_pair_difference_loss": true
+  },
+  "schedule": {
+    "S0": 0,
+    "S1_output_only": 10,
+    "S2_new_modules_main_frozen": 80,
+    "S3_full_joint": 50,
+    "M1_R": "140_main_effect_updates_matching_total_budget_no_MIL",
+    "main_lr": 1e-05,
+    "new_encoder_lr": 0.0001,
+    "new_output_lr": 0.0003,
+    "optimizer": "Adam",
+    "gradient_clip": 5,
+    "snapshots": [
+      0,
+      10,
+      30,
+      50,
+      90,
+      140
+    ],
+    "early_any_snapshots": [
+      0,
+      10,
+      30,
+      50,
+      90,
+      140
+    ],
+    "genuinely_trained_minimum_snapshot": 30,
+    "new_encoder_actual_updates_required": 20,
+    "qualification_fits": 540,
+    "qualification_maximum_updates": 75600,
+    "max_GPU_workers": 6,
+    "training_curves_and_raw_candidate_predictions_all_retained": true
+  },
+  "controls": {
+    "R0": "reuse_exact_current_fit_R4",
+    "R1": "reuse_original_M1_WARM_fixed_original_inner_choice_predictions_no_new_training",
+    "R2": "M1_R_group_regularization",
+    "R3": "R2_plus_function_preservation",
+    "R4": "same_schedule_capacity_matched_mean",
+    "R5": "eight_query_MIL_plus_shared_scale_mean",
+    "R6": "true_molecular_condition_query",
+    "R7": "learned_query_same_owner_molecular_main_and_product",
+    "R8": "no_explicit_product_still_conditioned_reader",
+    "R9": "ordinary_weight_shared_bidirectional_cross_attention_same_normalization_and_budget"
+  },
+  "selection": {
+    "same_config_and_epoch_across_three_inner_folds": true,
+    "rule": "within_inner_fold_micro_Harrell_then_Uno60_then_stronger_b_a_n_then_shorter_epoch",
+    "two_tracks": "EARLY_ANY_and_ENCODER_TRAINED_kept_separately_never_label_epoch10_as_trained_MIL",
+    "qualification_is_development_not_independent_test": true,
+    "phase2_only_gate_qualified_candidates_plus_required_controls": true,
+    "all_five_outer_choices_frozen_before_any_new_outer_scoring": true
+  },
+  "mechanism_gates": {
+    "required_positive_direction": "mean_Harrell_and_Uno60_positive_and_at_least_two_seeds_both_positive",
+    "S0_max_abs_error": 1e-10,
+    "base_drift_ratio_max": 0.1,
+    "MIL_risk_ablation_SD_over_anchor_SD_min": 0.001,
+    "MIL_slot_rank_min": 1.1,
+    "MIL_centered_energy_fraction_min": 0.0001,
+    "MIL_attention_pair_cosine_max": 0.995,
+    "MIL_effective_patch_fraction_max": 0.98,
+    "query_risk_SD_over_anchor_SD_min": 0.001,
+    "query_attention_L1_min": 0.02,
+    "structural_support": "at_least_two_of_three_inner_partitions_for_at_least_two_of_three_seeds",
+    "M1_GROUP_controls": [
+      "R1"
+    ],
+    "M1_FUNCTION_controls": [
+      "R1",
+      "R2"
+    ],
+    "MIL_controls": [
+      "R3",
+      "R4"
+    ],
+    "MOLECULAR_controls": [
+      "R5",
+      "R7",
+      "R8",
+      "R9",
+      "WRONG_QUERY",
+      "MEAN_QUERY"
+    ],
+    "no_outer_M0_win_required_for_development_qualification_but_report_it": true,
+    "no_posthoc_rescue_grid_or_relaxed_gate": true
+  },
+  "wrong_pair": {
+    "scope": "query_only_owner_values_RNA512_main_and_MIL_preserved",
+    "strata": "exact_RNA_plus_CNA_measurement_mask_fingerprint_current_partition_only",
+    "singletons": "remain_self_and_excluded_from_sensitivity_SD",
+    "mean_query": "current_fit_observed_program_channel_means_only",
+    "not_a_wrong_RNA_to_own_DSS_training_task": true
+  },
+  "retention": {
+    "registered_candidate_predictions_metrics_curves_kept": true,
+    "every_snapshot_saved_and_loaded_forward_verified_before_pruning": true,
+    "checkpoint_prune": "after_all_configs_of_one_arm_seed_three_inners_complete_keep_only_global_EARLY_ANY_and_ENCODER_TRAINED_choices",
+    "shared_frozen_base_checkpoint_composition_verified": true,
+    "no_smoke_weights_retained": true,
+    "root_and_data_reserve_bytes": 1073741824
+  },
+  "evaluation": {
+    "Harrell_and_Uno60_tau_months": 60,
+    "no_cross_fold_risk_pairs": true,
+    "CI_bootstrap_pvalues": false,
+    "formal_outer_scores_already_historically_exposed": true,
+    "no_independent_external_confirmation_claim": true
+  },
+  "publication": {
+    "new_branch": "research/joint-trimodal-m123-repair",
+    "preserve_all_historical_results": true,
+    "no_patient_arrays_weights_credentials_in_Git": true
+  }
+}

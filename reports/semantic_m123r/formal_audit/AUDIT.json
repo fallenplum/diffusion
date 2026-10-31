@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_FORMAL_ARITHMETIC",
+  "fold_metric_rows": 100,
+  "five_fold_seed_vectors": 20,
+  "paired_comparisons_checked": 10,
+  "paired_fold_directions": 150,
+  "repair_damage_rows_checked": 200,
+  "patient_arrays_or_weights_read": false,
+  "new_optimizer_fits": 0,
+  "new_hyperparameter_or_scale_selection": false,
+  "source_sha256": "a4eb8ff8ea0320ba7a4c52da2d4fb39508fbafc69a86061014c20a128800edda",
+  "main_formal_report_index_sha256": "60180f45c2b05444008f940d7b1d219f7a8d521f7b4cfc1381b3ff1fa8c288e6",
+  "CI_bootstrap_pvalues": false
+}

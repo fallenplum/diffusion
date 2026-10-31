@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "bytes": 21291,
+      "file": "01_FORMAL_FOLD_METRICS_01.csv",
+      "sha256": "5d7c1139689a1656520e58c6acaadf871c357a85cdb9aa4677d963b7d95bd5f3"
+    },
+    {
+      "bytes": 10872,
+      "file": "02_FORMAL_MECHANISMS_01.csv",
+      "sha256": "5decd6ccb22dd0cbef2f1151f7c39fb4f983ef3bdf1c6040a735073ad37b4ad2"
+    },
+    {
+      "bytes": 16184,
+      "file": "03_PAIR_REPAIR_DAMAGE_01.csv",
+      "sha256": "2b7122a0eda7f903d95d32db0a567261c8d521314a5c51ab577cb4f8bd402be5"
+    },
+    {
+      "bytes": 2426,
+      "file": "04_FORMAL_SEED_METRICS.json",
+      "sha256": "125487242041074f9b25695cbc48bf51d3bdc97309c2a02ce5c2789affa5053f"
+    },
+    {
+      "bytes": 6310,
+      "file": "05_FORMAL_COMPARISONS.json",
+      "sha256": "4f02994df8cd9d3e28950d7f787d968099f6611be8beaad868f92e9cc3b3a205"
+    },
+    {
+      "bytes": 979,
+      "file": "06_FORMAL_ACTUAL_AUDIT.json",
+      "sha256": "6ce854203931e9e0d9de0ca623a1a3da27c2e4240bc43530963099c66f498929"
+    },
+    {
+      "bytes": 940,
+      "file": "RESULTS.md",
+      "sha256": "083d39d38bb6a7e6023bb8fa438459d9175619c86e4b0b757322aac35b77b8e6"
+    },
+    {
+      "bytes": 1645,
+      "file": "decision.json",
+      "sha256": "031dca5046b20c18f2151645b8d09d142419e2ba32593567e9ddaae8041c30df"
+    }
+  ],
+  "lock_sha256": "ba830987731efa23f82679d7182ff0c0fdbeacbd9767cd26d210cdf2cd93636e",
+  "schema": "m123r_formal_report_index_v1",
+  "status": "COMPLETE"
+}

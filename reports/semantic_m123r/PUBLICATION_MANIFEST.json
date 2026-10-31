@@ -1,0 +1,419 @@
+{
+  "base_commit": "4b212b5fe3d1f86915ec41261fe10f817539d9af",
+  "base_tree": "8896efa03efdafa3c3252c9a68b5f041e1842779",
+  "branch": "research/joint-trimodal-m123-repair",
+  "files": [
+    {
+      "bytes": 1111,
+      "file": "configs/semantic_m123r/analysis_lock.json",
+      "sha256": "0511831f157d0282d0fc7153bb33a65ce3b3f6ab5475a00a7dcfd9da596ab1ec"
+    },
+    {
+      "bytes": 447,
+      "file": "configs/semantic_m123r/cost_ledger_lock.json",
+      "sha256": "58a6e6efcbc3b169eef2dbd38310fff04943e1c0476c0a9e9f50e691f210596c"
+    },
+    {
+      "bytes": 6232,
+      "file": "configs/semantic_m123r/design_precommit.json",
+      "sha256": "e699c37fa7c80ce4a5b3b4faf8c5be94a046331fa2fd3cf2abfa02666ffaa057"
+    },
+    {
+      "bytes": 1017,
+      "file": "configs/semantic_m123r/diagnostic_appendix_lock.json",
+      "sha256": "499371c532c08f68056c53c39fb304c663a515fbfc47980bbeaab0058fee59b3"
+    },
+    {
+      "bytes": 10814,
+      "file": "configs/semantic_m123r/master_public.json",
+      "sha256": "444a456a5d380b55fc505a7b194cef1de06f833dc8fbb5ec292f2558b0495729"
+    },
+    {
+      "bytes": 1129,
+      "file": "configs/semantic_m123r/qualification_gate_clarification.json",
+      "sha256": "6c7df3b77ab3d86019f8491be3a11d82883f4b26471eaff0a4f341088ba6a4dd"
+    },
+    {
+      "bytes": 5291,
+      "file": "reports/semantic_m123r/00_ACTUAL_ASSET_QUALIFICATION.json",
+      "sha256": "fcdbe483888cbf0f81adb417554905a7ec2d2c11fc65aef60a809830fe69be52"
+    },
+    {
+      "bytes": 400,
+      "file": "reports/semantic_m123r/01_PRETRAIN_SOFTWARE_QUALIFICATION.json",
+      "sha256": "5e1733b25eb1ec86810802d38b4c2b33543be4691849e0289091707121c57105"
+    },
+    {
+      "bytes": 1230,
+      "file": "reports/semantic_m123r/02_ARTIFACT_REPLAY_REPAIR.md",
+      "sha256": "6a21ecb8f71d3ccee37352640ce00cabd841cb919564aa52606d64a384aad4ea"
+    },
+    {
+      "bytes": 654,
+      "file": "reports/semantic_m123r/03_REPLAY_REPAIR_VERIFICATION.json",
+      "sha256": "d8cc97d0763862c42395543cf014a823d057f30564ca4625eb86ba1f5fb9685e"
+    },
+    {
+      "bytes": 1840,
+      "file": "reports/semantic_m123r/ANALYSIS_SOURCE_CLOSURE.json",
+      "sha256": "685b29e8b06943833b17955e5245d30d9190e4fac26d307b39cad2d7849ce6e2"
+    },
+    {
+      "bytes": 1032,
+      "file": "reports/semantic_m123r/ARTIFACT_LINEAGE_NOTE.md",
+      "sha256": "4cf7517b52377286a3ae596e8708efeb4725381e4f4dab6d18aa1a5528b1b502"
+    },
+    {
+      "bytes": 578,
+      "file": "reports/semantic_m123r/INDEPENDENT_ARITHMETIC_AUDIT.json",
+      "sha256": "33e513252b524a81d30a6ab8218bb9d2fbba0919611c9ad2274115f74e25a58a"
+    },
+    {
+      "bytes": 5590,
+      "file": "reports/semantic_m123r/METHODS_AND_LOCK.md",
+      "sha256": "24a93be3d96e36687157682554fc5d85368e2bc8fd3702095084bc84fa9e4fa5"
+    },
+    {
+      "bytes": 1387,
+      "file": "reports/semantic_m123r/OFFICIAL_SCORER_SOURCE_BINDING.json",
+      "sha256": "c57c07b0420270ab12b67f5299009c2bc467a45a8e12d6dac1efc2bb52fd2d5b"
+    },
+    {
+      "bytes": 509,
+      "file": "reports/semantic_m123r/PARENT_GIT_EXACT_BEFORE.json",
+      "sha256": "d4a551c15479c71acce88d27dab856350426e42a31c55f592454bab53ba46c05"
+    },
+    {
+      "bytes": 5074,
+      "file": "reports/semantic_m123r/REPRODUCE.md",
+      "sha256": "dc2a38cf3422657bf7dfcb64e5ccc05344f7d781cc715738c4d2d2b9e98fd800"
+    },
+    {
+      "bytes": 1692,
+      "file": "reports/semantic_m123r/RESULTS.md",
+      "sha256": "5ec0d9a74f0ad5570ff43cc855d60d1d883c918b12c8ad2eb1ff3d6a1a71425d"
+    },
+    {
+      "bytes": 8892,
+      "file": "reports/semantic_m123r/SCIENTIFIC_INTERPRETATION.md",
+      "sha256": "0c3391fc9389aeaa225f81c8539389ddd766b9fd5fe58ec3506b772753d0e2dc"
+    },
+    {
+      "bytes": 963,
+      "file": "reports/semantic_m123r/SOFTWARE_TEST_LEDGER.json",
+      "sha256": "9e14fb771a11ba2d55f8c65920abcc92dac29413e223f25405f3aef29f159b62"
+    },
+    {
+      "bytes": 97840,
+      "file": "reports/semantic_m123r/cost/01_REGISTERED_FIT_COSTS_01.csv",
+      "sha256": "103a4b3bd4ed4d3a59ac208653065dcf9c65ebf53773c20f8d5fed23e0b61083"
+    },
+    {
+      "bytes": 4425,
+      "file": "reports/semantic_m123r/cost/02_COST_SUMMARY.json",
+      "sha256": "063f071470bee80b3f27b255c2564202f66ff6f1ad0d08708fb30a6aa3460c3d"
+    },
+    {
+      "bytes": 980,
+      "file": "reports/semantic_m123r/cost/AUDIT.json",
+      "sha256": "f752e43e4fde8a4644433b1879cbdab6eaf767af4d6602238850b98212027f14"
+    },
+    {
+      "bytes": 545,
+      "file": "reports/semantic_m123r/cost/REPORT_INDEX.json",
+      "sha256": "f7f881bda6c795984d51946f0d130e2c57cc3a15af5330b33157a5654a9cc897"
+    },
+    {
+      "bytes": 5186,
+      "file": "reports/semantic_m123r/decision.json",
+      "sha256": "cde1fda301daf5e93e506e897cfc092e10a84cf6eae7eea20aa800d7d13b4bae"
+    },
+    {
+      "bytes": 79657,
+      "file": "reports/semantic_m123r/drift/01_SELECTED_DRIFT_DECOMPOSITION_01.csv",
+      "sha256": "b68ccedb52474f47dd8c19097d5d19f62c64dd555349f1b3f12d2a7f986ff08f"
+    },
+    {
+      "bytes": 646,
+      "file": "reports/semantic_m123r/drift/AUDIT.json",
+      "sha256": "b1f01485b5b80540d8745937a83fc52e2d187109f64d1c312d6a2be76aa28e0b"
+    },
+    {
+      "bytes": 405,
+      "file": "reports/semantic_m123r/drift/REPORT_INDEX.json",
+      "sha256": "b81e7e2d4df3bee5dab5c06262e0fe710f77d17297b8dfcab7be20b868d58c40"
+    },
+    {
+      "bytes": 21291,
+      "file": "reports/semantic_m123r/formal/01_FORMAL_FOLD_METRICS_01.csv",
+      "sha256": "5d7c1139689a1656520e58c6acaadf871c357a85cdb9aa4677d963b7d95bd5f3"
+    },
+    {
+      "bytes": 10872,
+      "file": "reports/semantic_m123r/formal/02_FORMAL_MECHANISMS_01.csv",
+      "sha256": "5decd6ccb22dd0cbef2f1151f7c39fb4f983ef3bdf1c6040a735073ad37b4ad2"
+    },
+    {
+      "bytes": 16184,
+      "file": "reports/semantic_m123r/formal/03_PAIR_REPAIR_DAMAGE_01.csv",
+      "sha256": "2b7122a0eda7f903d95d32db0a567261c8d521314a5c51ab577cb4f8bd402be5"
+    },
+    {
+      "bytes": 2426,
+      "file": "reports/semantic_m123r/formal/04_FORMAL_SEED_METRICS.json",
+      "sha256": "125487242041074f9b25695cbc48bf51d3bdc97309c2a02ce5c2789affa5053f"
+    },
+    {
+      "bytes": 6310,
+      "file": "reports/semantic_m123r/formal/05_FORMAL_COMPARISONS.json",
+      "sha256": "4f02994df8cd9d3e28950d7f787d968099f6611be8beaad868f92e9cc3b3a205"
+    },
+    {
+      "bytes": 979,
+      "file": "reports/semantic_m123r/formal/06_FORMAL_ACTUAL_AUDIT.json",
+      "sha256": "6ce854203931e9e0d9de0ca623a1a3da27c2e4240bc43530963099c66f498929"
+    },
+    {
+      "bytes": 1441,
+      "file": "reports/semantic_m123r/formal/REPORT_INDEX.json",
+      "sha256": "60180f45c2b05444008f940d7b1d219f7a8d521f7b4cfc1381b3ff1fa8c288e6"
+    },
+    {
+      "bytes": 940,
+      "file": "reports/semantic_m123r/formal/RESULTS.md",
+      "sha256": "083d39d38bb6a7e6023bb8fa438459d9175619c86e4b0b757322aac35b77b8e6"
+    },
+    {
+      "bytes": 1645,
+      "file": "reports/semantic_m123r/formal/decision.json",
+      "sha256": "031dca5046b20c18f2151645b8d09d142419e2ba32593567e9ddaae8041c30df"
+    },
+    {
+      "bytes": 11699,
+      "file": "reports/semantic_m123r/formal_audit/01_PAIRED_FOLD_DIRECTIONS_01.csv",
+      "sha256": "37047ddf24ff7d6810485c8ba04a18f43fc2ef6b647c55ce240d21c4bf0bcc02"
+    },
+    {
+      "bytes": 577,
+      "file": "reports/semantic_m123r/formal_audit/AUDIT.json",
+      "sha256": "d7cc71c5b0769282acec84005e71958770b87c6bfac88bf3b6d6e70d7b6d11b4"
+    },
+    {
+      "bytes": 421,
+      "file": "reports/semantic_m123r/formal_audit/REPORT_INDEX.json",
+      "sha256": "aa1392a724b7383c5ea0bde36651dbc1f4570f7c70844f5274cee6d5466b7093"
+    },
+    {
+      "bytes": 562236,
+      "file": "reports/semantic_m123r/learning/01_EXACT_POSTUPDATE_LEARNING_01.csv",
+      "sha256": "7858389420219a47f3d411619f550c9c8b415fa38e3baff6679be26f17ff8c60"
+    },
+    {
+      "bytes": 190760,
+      "file": "reports/semantic_m123r/learning/02_PAIRED_LEARNING_TRANSITIONS_01.csv",
+      "sha256": "f421ab8505ca2d4434b5e84e7fc412089a455dea50341020a9def3e005b4102e"
+    },
+    {
+      "bytes": 1604198,
+      "file": "reports/semantic_m123r/learning/03_ATTENTION_ALL_LOCKED_SNAPSHOTS_01.csv",
+      "sha256": "437018cb9fa11ab22207d71fc599c8c1aa56b3c8939d830a417c8e602b66526b"
+    },
+    {
+      "bytes": 6949,
+      "file": "reports/semantic_m123r/learning/04_LEARNING_SUMMARY.json",
+      "sha256": "59c0416aca48d83bdbe7842b670c3deb69aba740698ca38825286c135dbab3d4"
+    },
+    {
+      "bytes": 698,
+      "file": "reports/semantic_m123r/learning/AUDIT.json",
+      "sha256": "7aaf9c6f12a978ea5a9fa22c31062d1bf1750208640171f0cd1f9d3e72dafa0e"
+    },
+    {
+      "bytes": 917,
+      "file": "reports/semantic_m123r/learning/REPORT_INDEX.json",
+      "sha256": "6387b348112eadefa5e27fd4e2db26f2fc46580600131eadcce3af650a153edb"
+    },
+    {
+      "bytes": 1206574,
+      "file": "reports/semantic_m123r/qualification/01_ALL_FIXED_CANDIDATE_METRICS_01.csv",
+      "sha256": "04eeb739cf40084679ecf57eebd8b67c6e4f21f970d3e9a50a52d109bb0bb53e"
+    },
+    {
+      "bytes": 629163,
+      "file": "reports/semantic_m123r/qualification/02_TRAINING_CURVES_01.csv",
+      "sha256": "99cdafafff574d715a24fc2897b33899fa2cf9c8e7b7d36ec9ae868de92a40b8"
+    },
+    {
+      "bytes": 33445,
+      "file": "reports/semantic_m123r/qualification/03_SELECTED_INNER_FOLD_METRICS_01.csv",
+      "sha256": "81e68677413e7d1ff16c422029dab222b5d98ec447c7db2c454775d4bde95cdf"
+    },
+    {
+      "bytes": 233225,
+      "file": "reports/semantic_m123r/qualification/04_SELECTED_STRUCTURE_AND_GRADIENTS_01.csv",
+      "sha256": "8ac8ceff7b21a44eed38ff9533e92dffbd22581a3c319e9931a3d278b7fc93ff"
+    },
+    {
+      "bytes": 9577,
+      "file": "reports/semantic_m123r/qualification/05_SEED_METRICS.json",
+      "sha256": "ed7de50efe01fa059ebe39ee7464a8eb903b4a3746f8daafa0ed87b85f28c0f2"
+    },
+    {
+      "bytes": 26072,
+      "file": "reports/semantic_m123r/qualification/06_PAIRED_COMPARISONS.json",
+      "sha256": "54658bb3f860e34c579637be833f966802c8be275bd3bf1d5f3d2c11ace0e91e"
+    },
+    {
+      "bytes": 41954,
+      "file": "reports/semantic_m123r/qualification/07_ACTUAL_AUDIT.json",
+      "sha256": "f48abc05fe2105c4d2ade2d0e1d70e6ec445ae2e32735f56521b7235aee2bb57"
+    },
+    {
+      "bytes": 1635,
+      "file": "reports/semantic_m123r/qualification/REPORT_INDEX.json",
+      "sha256": "d96a7c57e8cfd900ccf742879148911dbe93836b3413ef3840b86c68c61eae3f"
+    },
+    {
+      "bytes": 2725,
+      "file": "reports/semantic_m123r/qualification/RESULTS.md",
+      "sha256": "1bf84e53909ddb20eabfebb392ff096fb4880698bdc6a9d109dde341305e4041"
+    },
+    {
+      "bytes": 3725,
+      "file": "reports/semantic_m123r/qualification/decision.json",
+      "sha256": "6a7e406a0b225cd84b2a159a64be744f0539c01d7cdafeb393a3206e7ba45b8c"
+    },
+    {
+      "bytes": 3513,
+      "file": "scripts/semantic_m123r_common.py",
+      "sha256": "656dd56e6d747e8625af406e53696f8bc9efed6d36af44d6e9f76becdbd9d885"
+    },
+    {
+      "bytes": 4904,
+      "file": "scripts/semantic_m123r_cost_ledger.py",
+      "sha256": "27be95e4e2f71aa88fdb1040188df2cfefffe5249a3b4e8541f3c11814e8d411"
+    },
+    {
+      "bytes": 4674,
+      "file": "scripts/semantic_m123r_drift_audit.py",
+      "sha256": "2a3c795759ca266abe905f1dce47743012321bc582ac6aa96d23f0c9f5481990"
+    },
+    {
+      "bytes": 6695,
+      "file": "scripts/semantic_m123r_learning_audit.py",
+      "sha256": "778ef324b3424114b8f194840e23c60e9ad9bf571d239f84b09b8199e74dc028"
+    },
+    {
+      "bytes": 10710,
+      "file": "scripts/semantic_m123r_publication.py",
+      "sha256": "b3415aa510e1cd9ec3574b7f3bf1d24aab02a226186a7d4308476b21bc1d8469"
+    },
+    {
+      "bytes": 4294,
+      "file": "scripts/semantic_m123r_qualify.py",
+      "sha256": "42b704add702048919a435541b2f0621a38fc9b1c14a3c293236f4d474597422"
+    },
+    {
+      "bytes": 15637,
+      "file": "scripts/semantic_m123r_report.py",
+      "sha256": "0eaefcafec78172efae279356e7bbb77979f29369268a4cce4ef04233ad30604"
+    },
+    {
+      "bytes": 12714,
+      "file": "scripts/semantic_m123r_report_formal.py",
+      "sha256": "f8a4edfd812bdbc90e7bf82d326daa7f36255bf74e6a997207701607b313719d"
+    },
+    {
+      "bytes": 9156,
+      "file": "scripts/semantic_m123r_schedule.py",
+      "sha256": "0fc4ab96fe2627dfb267e89797896a81dfc1bd4d36e01b278bc9e543a5a1e7b4"
+    },
+    {
+      "bytes": 3371,
+      "file": "scripts/semantic_m123r_selection.py",
+      "sha256": "b1456cff0d05e909a9816fb5cfeec3b72d6ed48fb50980f5f49e822baa6749f1"
+    },
+    {
+      "bytes": 4997,
+      "file": "scripts/semantic_m123r_verify_formal.py",
+      "sha256": "a4eb8ff8ea0320ba7a4c52da2d4fb39508fbafc69a86061014c20a128800edda"
+    },
+    {
+      "bytes": 6587,
+      "file": "scripts/semantic_m123r_verify_reports.py",
+      "sha256": "0eb6a4f2b942df8cb1c476cb8462805fef8cf764fd65ee435e33898df3162ac6"
+    },
+    {
+      "bytes": 10521,
+      "file": "scripts/semantic_m123r_worker.py",
+      "sha256": "20acfb236e6530a5a0c75f23db8dcf4b978cd007bdd8e59571a65e56870eacf2"
+    },
+    {
+      "bytes": 65,
+      "file": "src/semantic_m123r/__init__.py",
+      "sha256": "2ccb7b37e66b3e4b48debf6d42fb374d991b3651993526af87e7020ebfb27c5c"
+    },
+    {
+      "bytes": 1925,
+      "file": "src/semantic_m123r/data.py",
+      "sha256": "4555f54664987430584e65548ede063e785e37a703d596b55cf3184cfca08d27"
+    },
+    {
+      "bytes": 4095,
+      "file": "src/semantic_m123r/io.py",
+      "sha256": "b8e45d954d6789028207a7de52f849935cf4587659a3b7d9ef35b4cb1082dfc3"
+    },
+    {
+      "bytes": 7539,
+      "file": "src/semantic_m123r/models.py",
+      "sha256": "535b772b62b0e251c9d94a6326191f23c92335a13a477390c065ec8611a57a3d"
+    },
+    {
+      "bytes": 1804,
+      "file": "src/semantic_m123r/protocol.py",
+      "sha256": "b0ed449580b24ac80e67ac4230f4ae258f422e91cbb8c9d40a8a3e6dad72fc5f"
+    },
+    {
+      "bytes": 3370,
+      "file": "src/semantic_m123r/reporting.py",
+      "sha256": "e8c99240a64cbccfd1dc730d16ec4c168bae9bce1bc1eb9a32ccae09b1c4790d"
+    },
+    {
+      "bytes": 4829,
+      "file": "src/semantic_m123r/training.py",
+      "sha256": "128092f2a04ad677720b5ea46a9a5574b1b718a4f3b55e00fd3e32cbce90381f"
+    },
+    {
+      "bytes": 10495,
+      "file": "tests/test_semantic_m123r.py",
+      "sha256": "e3a2365f7997402a6bdd74300fc98f66f75d142e50ec50e08428e64dc60cf2a1"
+    },
+    {
+      "bytes": 614,
+      "file": "tests/test_semantic_m123r_drift_audit.py",
+      "sha256": "0af1de4db3a7eba5495f7701d60aaf638a058c142b17da5fce2f282a1b550906"
+    },
+    {
+      "bytes": 1242,
+      "file": "tests/test_semantic_m123r_formal_report.py",
+      "sha256": "f4330ed87f0dac0c662134e0634483d128b4012a963d4ea64d0671337c7e5f2a"
+    },
+    {
+      "bytes": 1564,
+      "file": "tests/test_semantic_m123r_publication.py",
+      "sha256": "c4482de8146cd74566ec762579a64d9c695c22fd26576ec4aad64658002d43da"
+    },
+    {
+      "bytes": 748,
+      "file": "tests/test_semantic_m123r_verify_reports.py",
+      "sha256": "9b357ce89076c284ae546b7e2c5052601a672b050c79f19c5d52cdf67b9e937f"
+    },
+    {
+      "bytes": 1059,
+      "file": "reports/semantic_m123r/PUBLICATION_SCAN_RECEIPT.json",
+      "sha256": "75fd50df0a4afc16607d4ff2b2a787c33b004665354735fd0d725dbc49f24e3d"
+    }
+  ],
+  "schema": "m123r_anonymous_publication_manifest_v1",
+  "status": "COMPLETE_SCANNED_TEXT_ONLY"
+}

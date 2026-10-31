@@ -1,0 +1,65 @@
+{
+  "schema": "semantic_b0b7_p2s_anonymous_software_and_runtime_evidence_v1",
+  "snapshot_UTC": "2026-10-31 07:11:38 UTC",
+  "python_version": "3.12.3",
+  "installed_default_environment_versions": {
+    "torch": "2.5.1+cu124",
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.2",
+    "h5py": "3.16.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "GPU_model_and_driver_no_UUID_or_serial": "NVIDIA vGPU-32GB, 570.124.04",
+  "formal_training_runtime_from_completed_receipt": {
+    "cublas_workspace_config": ":4096:8",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "cudnn_tf32": false,
+    "deterministic_algorithms": true,
+    "matmul_tf32": false,
+    "startup_thread_environment": {
+      "MKL_NUM_THREADS": "2",
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2"
+    },
+    "threadpools": [
+      {
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "libgomp",
+        "user_api": "openmp",
+        "version": null
+      },
+      {
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "user_api": "blas",
+        "version": "0.3.27.dev"
+      },
+      {
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "libgomp",
+        "user_api": "openmp",
+        "version": null
+      },
+      {
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "user_api": "blas",
+        "version": "0.3.27"
+      }
+    ],
+    "torch_cpu_threads": 2,
+    "torch_version": "2.5.1+cu124"
+  },
+  "runtime_source_receipt_sha256": "3fbc1a2f7426b4eb9347dce8ce62b5b76bbb10814d57f6f6ffc8c77df8a3e9f1",
+  "runtime_source_scope": "outer1_inner0_MAIN_seed31_pair003_completed_neural_training",
+  "official_survival_API_software_proof_location": "independent_summary_official_API_not_inferred_from_default_environment_versions",
+  "model_fits_or_forwards_by_this_snapshot": 0,
+  "DSS_reads_by_this_snapshot": 0,
+  "patient_or_feature_arrays_or_model_weights_loaded": false
+}

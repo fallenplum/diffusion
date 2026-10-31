@@ -1,0 +1,543 @@
+{
+  "schema": "semantic_b0b7_p2s_lock_v1",
+  "status": "LOCKED_BEFORE_P2S_OPTIMIZER",
+  "created_UTC": "2026-10-31T06:05:20.403986+00:00",
+  "parent_master_sha256": "b9aae9582c78e80f26833b0e049956246f3c7d09723abe813a505acb543f949c",
+  "parent_git_commit": "dab64dff52b1170f9a11ceb0833d9d49424fa63a",
+  "training": {
+    "learning_rate": 0.0003,
+    "optimizer": "Adam",
+    "threads": 2,
+    "checkpoint_epochs": [
+      400,
+      800
+    ],
+    "maximum_epoch": 800,
+    "eval_only_at_fixed_checkpoints": true,
+    "use_DSS": false,
+    "loss": "original_masked_program_Huber_plus_lambda_pair_InfoNCE"
+  },
+  "frozen_sources": {
+    "configs/semantic_b0b7/p0_p1_v1.json": "9914227e9a50664cb4bb4566c27aefd156dcd6a927443e20ada2c02725c5b6db",
+    "configs/semantic_b0b7/p1r_variants_v1.json": "223b22ce4e2371431a9884e190cdae76e699d3c1f3ba12f30d4ff9a3ee20085a",
+    "configs/semantic_b0b7/p2_design_precommit.json": "bc8000aace67c8864e85a50d3c13e9c6229cc9be942a4b8e8fc1047937d8876d",
+    "configs/semantic_b0b7/p2_qualification_amendment.json": "3c55810855c16b79936c5f7ef65130e9758cc21706a763ad82de1a59a3680a5e",
+    "scripts/semantic_b0b7_p1.py": "f7ed76fba5a4bbc7eac3cbc4e34fc36912e18c8af980481ef205a526b06a23fc",
+    "scripts/semantic_b0b7_p1r.py": "c7214fbd2a1a078825695ded9762b8be1e088e1c843f194fa6c31effa79a271e",
+    "scripts/semantic_b0b7_p2_matrix.py": "13c5494550bdad5be21d3070197602a9b544f2a3c60dcda90384436074af8239",
+    "scripts/semantic_b0b7_p2_schedule.py": "f03a3571864af3512b6baa03aeaac9ab56d3e49bf6ac0f143523c359c428199c",
+    "scripts/semantic_b0b7_prepare.py": "187ca24232f6f8abbdfa6e8a26b02f643cb566a16bc8d5303c65a51cc6016f83",
+    "src/semantic_b0b7/__init__.py": "b651454969539c9164973569ca066c8e75a56d94647ded455b82e6e464461330",
+    "src/semantic_b0b7/data.py": "85f64f2efbf1786edf88d6c6aa1ebddfaed0752d4dac938e51d951773681d6cb",
+    "src/semantic_b0b7/models.py": "7aee3b02d327a60e25ddb276e9287d02975207cdf3923f4757a81eee2cf5054e",
+    "src/semantic_b0b7/p1r_data.py": "0aaf475fec0c2e84a8e89a49313b02120d09328c1ae87059047c976617e87463",
+    "src/semantic_b0b7/p1r_models.py": "4b187bfab3331ec6fb40ff2d375ccda612713f8cb9376de47de1a202ed65aa93",
+    "src/semantic_b0b7/p2_anchor.py": "9ce4262750b5af384365a2829c00bc145328a42200ef6725aebad2417afa8600",
+    "src/semantic_b0b7/p2_data.py": "f4dd68414246d7b8e8188515a851df7542c24c9f830a4af08c7934c175f6a2c6",
+    "src/semantic_b0b7/p2_models.py": "7e44213dbbf0b8be97396a4069e83998493c4fe2f7a606445fb7f49ba5ae1041",
+    "src/semantic_b0b7/p2_survival.py": "8fdb3820143a6fefb99269f566dc990cde80c68b53579e382d90e7d7f387c3b9",
+    "src/semantic_b0b7/pretext.py": "7f8e5cd43c530e049e94c1ad404e36f5bcd394590f5f6db215052124b7cfc928",
+    "src/semantic_b0b7/survival.py": "fe785a12b327198d5f4ed886db61375adb9a543275be5fc677d5224c724c7a10",
+    "scripts/semantic_b0b7_p2s_pretrain.py": "e7a5742399803232c72476253bbcd645e798e7af4aaaa7b31eff39d493619cd5",
+    "tests/test_semantic_b0b7_p2s_pretrain.py": "28a49138821ea4348f8e45fd4fb2fef0fcc232a80bfe07480a40d9a837e5ff5d",
+    "configs/semantic_b0b7/p2s_design_precommit.json": "6f61a07385aac0e58b8fbd7e910a6c66ac47ecb06ec51285328fb6d6da91ca22"
+  },
+  "cells": [
+    {
+      "split": "outer1_inner0",
+      "family": "MAIN",
+      "seed": 31,
+      "lambda_pair": 0.1,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "e6a4132c2fea8ae9966a86e7fc459fd7acdad094202b6bf46c17d45b67c3202f",
+      "parent_binding_sha256": "1bc89481b6496db3543c0a6ff3c32699107d0f10340205fa17f60d48e4c10226",
+      "parent_state400_sha256": "a245c93851866a9c70bfcd286df51b0f9ae75941c472ba76d2d4b0c6af0f1449"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "MAIN",
+      "seed": 31,
+      "lambda_pair": 0.03,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "e6a4132c2fea8ae9966a86e7fc459fd7acdad094202b6bf46c17d45b67c3202f",
+      "parent_binding_sha256": "1bc89481b6496db3543c0a6ff3c32699107d0f10340205fa17f60d48e4c10226",
+      "parent_state400_sha256": "a245c93851866a9c70bfcd286df51b0f9ae75941c472ba76d2d4b0c6af0f1449"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "MAIN",
+      "seed": 47,
+      "lambda_pair": 0.1,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "b058bb5d33a18b40114ccc7afa64d913fd4d2ba576ec556bad938d81f4682a4a",
+      "parent_binding_sha256": "a4ae42881b5b28af7f19c10d6c19df233a87077857dc8f4885f2b98889928abf",
+      "parent_state400_sha256": "d70f91315eab4184cbb984d4f5f8198b97cfee34eb5cfd4baafe7d88a2d4784b"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "MAIN",
+      "seed": 47,
+      "lambda_pair": 0.03,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "b058bb5d33a18b40114ccc7afa64d913fd4d2ba576ec556bad938d81f4682a4a",
+      "parent_binding_sha256": "a4ae42881b5b28af7f19c10d6c19df233a87077857dc8f4885f2b98889928abf",
+      "parent_state400_sha256": "d70f91315eab4184cbb984d4f5f8198b97cfee34eb5cfd4baafe7d88a2d4784b"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "MAIN",
+      "seed": 83,
+      "lambda_pair": 0.1,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "ab443eefa500ce7834e789ead9526f8616634e14ab5b3ef1da8f96b145e16d53",
+      "parent_binding_sha256": "e2f82562d4e10599eac6f01fe0574b0eb233a90327e34f150839acfb9c80dd48",
+      "parent_state400_sha256": "56a34872e1581f82758a182710bcea0a08b23c1e7e12c93344cb691d88920d98"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "MAIN",
+      "seed": 83,
+      "lambda_pair": 0.03,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "ab443eefa500ce7834e789ead9526f8616634e14ab5b3ef1da8f96b145e16d53",
+      "parent_binding_sha256": "e2f82562d4e10599eac6f01fe0574b0eb233a90327e34f150839acfb9c80dd48",
+      "parent_state400_sha256": "56a34872e1581f82758a182710bcea0a08b23c1e7e12c93344cb691d88920d98"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "ATTN_MATCHED",
+      "seed": 31,
+      "lambda_pair": 0.1,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "fa370be7a00c2ebf57a7ff6fca556619e64993ebc35b3a2a2b425cb0b075cd84",
+      "parent_binding_sha256": "36e9b77acb0712f580dcfc9dbdbd0832389be30a9ba210f5855050170610f13b",
+      "parent_state400_sha256": "dea81ea378af259cf503d35d28fa74e4585d5d80ba7f523de455e443094ab351"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "ATTN_MATCHED",
+      "seed": 31,
+      "lambda_pair": 0.03,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "fa370be7a00c2ebf57a7ff6fca556619e64993ebc35b3a2a2b425cb0b075cd84",
+      "parent_binding_sha256": "36e9b77acb0712f580dcfc9dbdbd0832389be30a9ba210f5855050170610f13b",
+      "parent_state400_sha256": "dea81ea378af259cf503d35d28fa74e4585d5d80ba7f523de455e443094ab351"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "ATTN_MATCHED",
+      "seed": 47,
+      "lambda_pair": 0.1,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "b40052b67aa2ad796bacf1fa196574c2cf3af699047e7438dd4f41e4610f542a",
+      "parent_binding_sha256": "efd5f877b4d52489a1c2aa282ea4bc1e6aee73b0ea37e0da4d7c1f829437477d",
+      "parent_state400_sha256": "ab7d41a2f071e4a2b0f0e2d521ddf87728c6492c3c9e20d40d9296eff4aad7c5"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "ATTN_MATCHED",
+      "seed": 47,
+      "lambda_pair": 0.03,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "b40052b67aa2ad796bacf1fa196574c2cf3af699047e7438dd4f41e4610f542a",
+      "parent_binding_sha256": "efd5f877b4d52489a1c2aa282ea4bc1e6aee73b0ea37e0da4d7c1f829437477d",
+      "parent_state400_sha256": "ab7d41a2f071e4a2b0f0e2d521ddf87728c6492c3c9e20d40d9296eff4aad7c5"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "ATTN_MATCHED",
+      "seed": 83,
+      "lambda_pair": 0.1,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "89d8d4c950a03eb5f9783d116b50e80d30ce3406ab1aa296fb72c043551bdd48",
+      "parent_binding_sha256": "f0d2fd51cd32e32996df26e8433fc1e25939fea3c8117c4d6dd98fb65dcc565c",
+      "parent_state400_sha256": "b2dadc7eccc32c62e2da16c8349acc0c43288b32683e361d26f509a602e709fb"
+    },
+    {
+      "split": "outer1_inner0",
+      "family": "ATTN_MATCHED",
+      "seed": 83,
+      "lambda_pair": 0.03,
+      "input_sha256": "5a8854d22f0250e394a0e9d708d42d4fb988672d57e7010b340bfe6028875d50",
+      "parent_receipt_sha256": "89d8d4c950a03eb5f9783d116b50e80d30ce3406ab1aa296fb72c043551bdd48",
+      "parent_binding_sha256": "f0d2fd51cd32e32996df26e8433fc1e25939fea3c8117c4d6dd98fb65dcc565c",
+      "parent_state400_sha256": "b2dadc7eccc32c62e2da16c8349acc0c43288b32683e361d26f509a602e709fb"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "MAIN",
+      "seed": 31,
+      "lambda_pair": 0.1,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "c9324acd73dc8a6038506f2aeb188f145fcbeaae07773347d8705e4fe541370a",
+      "parent_binding_sha256": "ea5a35f63d3210d6fa1d999b96fc324d56c82a648488b23a053b3fb3aedf5097",
+      "parent_state400_sha256": "8df50c6b2bc56a5f74167cf03f6299d8789631ef97e44e78d329b8bcd2e192d2"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "MAIN",
+      "seed": 31,
+      "lambda_pair": 0.03,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "c9324acd73dc8a6038506f2aeb188f145fcbeaae07773347d8705e4fe541370a",
+      "parent_binding_sha256": "ea5a35f63d3210d6fa1d999b96fc324d56c82a648488b23a053b3fb3aedf5097",
+      "parent_state400_sha256": "8df50c6b2bc56a5f74167cf03f6299d8789631ef97e44e78d329b8bcd2e192d2"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "MAIN",
+      "seed": 47,
+      "lambda_pair": 0.1,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "8b8fa116972a092cbdc72870b9caa8339b506697d4fe02a0a967e43cda0dccd0",
+      "parent_binding_sha256": "e51ce12108cbdf8d10e72a7083596f680769c41b460ebd5259f2886081792488",
+      "parent_state400_sha256": "5fbeaca29d903a4d1b5cf4e23c6a6be2ff45f0eacb039742c33f0b0e9376bca4"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "MAIN",
+      "seed": 47,
+      "lambda_pair": 0.03,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "8b8fa116972a092cbdc72870b9caa8339b506697d4fe02a0a967e43cda0dccd0",
+      "parent_binding_sha256": "e51ce12108cbdf8d10e72a7083596f680769c41b460ebd5259f2886081792488",
+      "parent_state400_sha256": "5fbeaca29d903a4d1b5cf4e23c6a6be2ff45f0eacb039742c33f0b0e9376bca4"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "MAIN",
+      "seed": 83,
+      "lambda_pair": 0.1,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "387b0cf5aab63f418ddafb772207dcbda36b9b3739cc4c2af4f013b6c2f0dd33",
+      "parent_binding_sha256": "426fa5f76cd6a9f552a489547a4a6ac33748a020609981dd9111c4ff749c6472",
+      "parent_state400_sha256": "5b2808b6a43d9616d5273210e5416dde76318a9b71255a5fa9524aa33a9567a9"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "MAIN",
+      "seed": 83,
+      "lambda_pair": 0.03,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "387b0cf5aab63f418ddafb772207dcbda36b9b3739cc4c2af4f013b6c2f0dd33",
+      "parent_binding_sha256": "426fa5f76cd6a9f552a489547a4a6ac33748a020609981dd9111c4ff749c6472",
+      "parent_state400_sha256": "5b2808b6a43d9616d5273210e5416dde76318a9b71255a5fa9524aa33a9567a9"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "ATTN_MATCHED",
+      "seed": 31,
+      "lambda_pair": 0.1,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "b4701639427a02ccd9b608410488adcc8871b3f439f416782b829aa5dc60256d",
+      "parent_binding_sha256": "ebd85d89272fcf03660485b94adb2653788e09301cb41f0c1daac14dd2e51c89",
+      "parent_state400_sha256": "c0ec1f84d71bd6cf150dc4264f09b573ab113d0de9b21c19d3111aef07252d4f"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "ATTN_MATCHED",
+      "seed": 31,
+      "lambda_pair": 0.03,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "b4701639427a02ccd9b608410488adcc8871b3f439f416782b829aa5dc60256d",
+      "parent_binding_sha256": "ebd85d89272fcf03660485b94adb2653788e09301cb41f0c1daac14dd2e51c89",
+      "parent_state400_sha256": "c0ec1f84d71bd6cf150dc4264f09b573ab113d0de9b21c19d3111aef07252d4f"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "ATTN_MATCHED",
+      "seed": 47,
+      "lambda_pair": 0.1,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "ce8d0cb871091d803172cc0d2cbc2f097898a3084fb43e4d79bde0db9e060136",
+      "parent_binding_sha256": "0300ab9cff12057113a4b9943dd547b3425a661c83b6312491550d6bc709c9c4",
+      "parent_state400_sha256": "a2da1367acfffdeb2e955b0cbcc18aed3f0c9e779ff9a06e4a3a27a9c48a14e7"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "ATTN_MATCHED",
+      "seed": 47,
+      "lambda_pair": 0.03,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "ce8d0cb871091d803172cc0d2cbc2f097898a3084fb43e4d79bde0db9e060136",
+      "parent_binding_sha256": "0300ab9cff12057113a4b9943dd547b3425a661c83b6312491550d6bc709c9c4",
+      "parent_state400_sha256": "a2da1367acfffdeb2e955b0cbcc18aed3f0c9e779ff9a06e4a3a27a9c48a14e7"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "ATTN_MATCHED",
+      "seed": 83,
+      "lambda_pair": 0.1,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "e6226fe17481ae35404ef5224cbf17e4dada2b8b72ee57d43fbb3bd85755ba6e",
+      "parent_binding_sha256": "963e617430972d8c765c207654054fbd2e33874b0dc2317d86a9669aea66200e",
+      "parent_state400_sha256": "03971143982bcc395e6c09b659d16b02a9ec32aa3851007e9c1db600876e2916"
+    },
+    {
+      "split": "outer1_inner1",
+      "family": "ATTN_MATCHED",
+      "seed": 83,
+      "lambda_pair": 0.03,
+      "input_sha256": "4c172575139d786b462be461577a99e9db9e1736f64f33f985196a62c3b056a5",
+      "parent_receipt_sha256": "e6226fe17481ae35404ef5224cbf17e4dada2b8b72ee57d43fbb3bd85755ba6e",
+      "parent_binding_sha256": "963e617430972d8c765c207654054fbd2e33874b0dc2317d86a9669aea66200e",
+      "parent_state400_sha256": "03971143982bcc395e6c09b659d16b02a9ec32aa3851007e9c1db600876e2916"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "MAIN",
+      "seed": 31,
+      "lambda_pair": 0.1,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "62813f7d53b0c74bce3a64f7944dc949852e1adbb7d04cd582c2cc3113437aef",
+      "parent_binding_sha256": "2db60a7a82784ccd9daa8553b69873d66794da2ff35c7a0a010ee353ec04bce0",
+      "parent_state400_sha256": "73c94ca4d652386581857dbf1fa5813b1e277bd213a69c0a48bf879bfc1b17c4"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "MAIN",
+      "seed": 31,
+      "lambda_pair": 0.03,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "62813f7d53b0c74bce3a64f7944dc949852e1adbb7d04cd582c2cc3113437aef",
+      "parent_binding_sha256": "2db60a7a82784ccd9daa8553b69873d66794da2ff35c7a0a010ee353ec04bce0",
+      "parent_state400_sha256": "73c94ca4d652386581857dbf1fa5813b1e277bd213a69c0a48bf879bfc1b17c4"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "MAIN",
+      "seed": 47,
+      "lambda_pair": 0.1,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "a956c4f0d3edbadb99430bc0f419fde9df9eedba169c82c090b616973c113e51",
+      "parent_binding_sha256": "a659dbf06b00012b44182730aa602a1e1cd82188eb89c62906fd39b9c20a0533",
+      "parent_state400_sha256": "076928bf8f2a6aa39144f2bffff8f14103f1fccb227b8f72e0ffeb2dce5181fb"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "MAIN",
+      "seed": 47,
+      "lambda_pair": 0.03,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "a956c4f0d3edbadb99430bc0f419fde9df9eedba169c82c090b616973c113e51",
+      "parent_binding_sha256": "a659dbf06b00012b44182730aa602a1e1cd82188eb89c62906fd39b9c20a0533",
+      "parent_state400_sha256": "076928bf8f2a6aa39144f2bffff8f14103f1fccb227b8f72e0ffeb2dce5181fb"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "MAIN",
+      "seed": 83,
+      "lambda_pair": 0.1,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "8f3f18c71b31d0bcc35828fbae92d5ebe3c8873a7f59d187a690f751676ccf0b",
+      "parent_binding_sha256": "d146003640a79e810add8b68cee19109eeb73787ce3468cd956dd1254bd9fa27",
+      "parent_state400_sha256": "b44cd0005d00defe7d93cc632e1369f4c93c5416475dfaa28c79a7e116053c07"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "MAIN",
+      "seed": 83,
+      "lambda_pair": 0.03,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "8f3f18c71b31d0bcc35828fbae92d5ebe3c8873a7f59d187a690f751676ccf0b",
+      "parent_binding_sha256": "d146003640a79e810add8b68cee19109eeb73787ce3468cd956dd1254bd9fa27",
+      "parent_state400_sha256": "b44cd0005d00defe7d93cc632e1369f4c93c5416475dfaa28c79a7e116053c07"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "ATTN_MATCHED",
+      "seed": 31,
+      "lambda_pair": 0.1,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "bb24a0c216d0941cc72c957182efc5ee1d964059f57758cab8f442422e837f73",
+      "parent_binding_sha256": "b92602d6c8de1fe9a89b3952e4e2b7396588012ae5e3c6c7818aa42b06cead2f",
+      "parent_state400_sha256": "3e55c347b316f055a888951096e84a06af3df17458b365823c30b11fff542730"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "ATTN_MATCHED",
+      "seed": 31,
+      "lambda_pair": 0.03,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "bb24a0c216d0941cc72c957182efc5ee1d964059f57758cab8f442422e837f73",
+      "parent_binding_sha256": "b92602d6c8de1fe9a89b3952e4e2b7396588012ae5e3c6c7818aa42b06cead2f",
+      "parent_state400_sha256": "3e55c347b316f055a888951096e84a06af3df17458b365823c30b11fff542730"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "ATTN_MATCHED",
+      "seed": 47,
+      "lambda_pair": 0.1,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "d87bfa6208d379874ad03fdd9ea3b83641ef4dfbf81e897053f7cda2fda2c260",
+      "parent_binding_sha256": "608a9f98e86afd55dad9e4d36c0a9540333ca16442c38bc7d7e889f0d712410f",
+      "parent_state400_sha256": "a8f974b75466a236088182a64ea3fb53e6fdb7fcbf6eb8e3f2bd41a7710e5d85"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "ATTN_MATCHED",
+      "seed": 47,
+      "lambda_pair": 0.03,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "d87bfa6208d379874ad03fdd9ea3b83641ef4dfbf81e897053f7cda2fda2c260",
+      "parent_binding_sha256": "608a9f98e86afd55dad9e4d36c0a9540333ca16442c38bc7d7e889f0d712410f",
+      "parent_state400_sha256": "a8f974b75466a236088182a64ea3fb53e6fdb7fcbf6eb8e3f2bd41a7710e5d85"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "ATTN_MATCHED",
+      "seed": 83,
+      "lambda_pair": 0.1,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "e7e0c87752a925012463964a94fc4a4b84618bbf422e4a4d6b601f5712952c0a",
+      "parent_binding_sha256": "552d73d0d7b770664303ca76db0e51a8005a36000174b0239e84e39828d34d76",
+      "parent_state400_sha256": "64066a66847986c95dd2dd59ecc95861bc6619b3a3e4189da17890531e2d1485"
+    },
+    {
+      "split": "outer1_inner2",
+      "family": "ATTN_MATCHED",
+      "seed": 83,
+      "lambda_pair": 0.03,
+      "input_sha256": "0fae28f5a250474488d4f60d665ab2410bd53bb92b434164862f62f0acfd9713",
+      "parent_receipt_sha256": "e7e0c87752a925012463964a94fc4a4b84618bbf422e4a4d6b601f5712952c0a",
+      "parent_binding_sha256": "552d73d0d7b770664303ca76db0e51a8005a36000174b0239e84e39828d34d76",
+      "parent_state400_sha256": "64066a66847986c95dd2dd59ecc95861bc6619b3a3e4189da17890531e2d1485"
+    }
+  ],
+  "study_design": {
+    "schema": "semantic_b0b7_p2s_design_precommit_v1",
+    "scope": "ONE_FINAL_BOUNDED_POST_P2_TRAINING_SUFFICIENCY_DIAGNOSTIC",
+    "parent_commit": "dab64dff52b1170f9a11ceb0833d9d49424fa63a",
+    "cohort_role": "outer1_training_patients_only_existing_three_inner_partitions",
+    "outer_evaluation": false,
+    "independent_confirmation_claim": false,
+    "seeds": [
+      31,
+      47,
+      83
+    ],
+    "families": [
+      "MAIN",
+      "ATTN_MATCHED"
+    ],
+    "native_attention_or_new_architectures_added": false,
+    "A_C": {
+      "epochs": [
+        400,
+        800
+      ],
+      "pair_weights": [
+        0.1,
+        0.03
+      ],
+      "learning_rate": 0.0003,
+      "new_initialized_trajectories": 18,
+      "continued_formal400_trajectories": 18,
+      "new_optimizer_updates": 21600,
+      "reused_original400_checkpoint_locations": 18,
+      "new_checkpoint_snapshots": 54,
+      "actual_fixed_checkpoint_replays_required": 72,
+      "neural_DSS_access": false,
+      "epoch_or_pair_weight_winner_selected": false,
+      "primary_auxiliary_metrics": [
+        "patient_equal_masked_program_Huber",
+        "macro_program_Pearson",
+        "matched_hard_retrieval_gap"
+      ],
+      "compare_weighted_total_loss_between_pair_weights": false,
+      "extension_after800": false
+    },
+    "B": {
+      "MAIN_checkpoint_feature_sets": 36,
+      "pathology_and_gene_PCA_widths": [
+        8,
+        16
+      ],
+      "clinical_PCA_width": 8,
+      "factor_widths": [
+        2,
+        4
+      ],
+      "factor4_definition": "original_two_learned_rows_plus_two_fixed_orthogonal_complement_rows_per_modality",
+      "factor4_is_pretrained_rank4_architecture": false,
+      "orthogonal_completion_seed": 271703,
+      "completion_scale": "mean_L2_norm_of_original_two_rows_per_modality",
+      "failed_completion_or_insufficient_feature_rank": "NA_NO_RESEED_NO_NOISE_WHITENING",
+      "arms": [
+        "B4",
+        "B5"
+      ],
+      "modes": [
+        "INTER",
+        "B7_ADDITIVE",
+        "NO_INTER"
+      ],
+      "NO_INTER_shared_once_per_width": true,
+      "MAIN_readouts_per_feature_set": 18,
+      "effective_Cox_coefficients": [
+        24,
+        26,
+        28,
+        40,
+        42,
+        44
+      ],
+      "main_projection_and_r0_shared_exact_within_feature_set_and_width": true,
+      "original_B4_means_published_P2_B4_TRUE_TEXT_not_extra_ORIGINAL_family": true,
+      "clinical_background": "original_same_coordinate_train_OOF_Ridge1_once_per_MAIN_feature_set",
+      "negative_factor4_probe_excludes_all_learned_rank4_models": false
+    },
+    "D": {
+      "anchor": "exact_saved_current_inner_whole_R4_crossfit_training_offset_and_fullfit_validation_offset",
+      "new_teacher_fits": 0,
+      "ridge_candidates_all_reported_without_selection": [
+        0.1,
+        1.0,
+        10.0
+      ],
+      "primary_ridge_lambda": 1.0,
+      "risk_objective": "same_full_current_training_riskset_Efron_plus_ridge_frozen_r0_offset",
+      "expected_MAIN_Cox_fits": 1944,
+      "ATTN_checkpoint_feature_sets": 36,
+      "ATTN_readouts_per_feature_set": 4,
+      "ATTN_contract": "P_G_width8_or16_C8_with_original_attention_M2_or_real_NO_INTER",
+      "expected_ATTN_Cox_fits": 432,
+      "expected_total_Cox_fits": 2376,
+      "full_vs_main_refit_and_same_width_B7": true,
+      "joint_minus_main_refit_decomposition": "Z_times_beta_joint_minus_beta_refit_plus_M_times_gamma",
+      "frozen_mechanism_off_is_dependency_not_retraining": true,
+      "in_sample_additive_stacking_as_offset": false,
+      "new_error_pair_supervision": false,
+      "primary_aggregation": "sum_within_inner_fold_pair_numerators_denominators_each_seed_then_equal_mean_seeds",
+      "cross_fold_risk_pairs": false,
+      "claim_after_looking_at_these_inner_scores": "development_diagnostic_not_independent_validation"
+    },
+    "execution": {
+      "max_parallel_GPU_cells": 6,
+      "GPU_reserve_bytes": 2147483648,
+      "profile_per_GPU_cell_admission_bytes": 4800000000,
+      "minimum_cgroup_available_bytes": 21474836480,
+      "minimum_free_bytes_each_root_and_data_disk": 2147483648,
+      "root_new_output_planned_ceiling_bytes": 750000000,
+      "data_new_feature_cache_planned_ceiling_bytes": 800000000,
+      "no_partial_optimizer_retry_or_new_unregistered_candidate": true,
+      "no_modification_of_parent_scientific_sources_or_outputs": true,
+      "separate_scheduler_and_readout_source_locks_before_respective_execution": true
+    },
+    "delivery": {
+      "confidence_intervals": false,
+      "bootstrap": false,
+      "p_values": false,
+      "retain_negative_results_and_all_lambda_cells": true,
+      "patient_level_arrays_identifiers_and_weights_public": false,
+      "public_branch": "research/semantic-b0b7-p2-sufficiency",
+      "no_additional_model_search_after_this_diagnostic": true
+    }
+  },
+  "cell_candidate_list_sha256": "05b7040560c3c482cb0698de4a155e31c59b1e968b66eec83b1ffd869d1ffacd",
+  "readout_source_lock_required_before_first_DSS_fit": true,
+  "scheduler_source_lock_required_before_first_GPU_worker": true,
+  "old400_reference_is_not_new_training": true,
+  "confidence_intervals_computed": false,
+  "p_values_computed": false
+}

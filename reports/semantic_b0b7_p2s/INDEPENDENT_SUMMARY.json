@@ -1,0 +1,58 @@
+{
+  "CI_pvalues_bootstrap": false,
+  "DSS_access_boundary": "verifier_reads_saved_training409_scopes_only; original_producer_canonical_DSS_reader_decoded512_before_subsetting409; outer103_not_fitted_or_scored",
+  "explicit_rank_NA": 0,
+  "files": [
+    {
+      "bytes": 1298555,
+      "file": "INDEPENDENT_HEAD_CHECKS_01.csv",
+      "sha256": "9b6e1fa30ee912c0fea35bf8fc60d0941c45d449af7a7182ef0e83b35bdfa261"
+    },
+    {
+      "bytes": 30855,
+      "file": "INDEPENDENT_72_JOB_CHECKS.json",
+      "sha256": "046212398ce41681cc2f9a728810779bdb25507976161700dd6e9f8386e01b3f"
+    }
+  ],
+  "fitted_heads_audited": 2376,
+  "independent_helper_source_sha256": "e27bc68ce9c0d4e384c2befe459603cee2003c2456789c3ab43bdbdc55e0d143",
+  "manifest_sha256": "3e88765288218d937369dc79c7bf575201fc4be53d690181cacaa9261b8ef77a",
+  "max_gradient_max_abs_error": 2.7755575615628914e-16,
+  "max_metric_component_abs_error": 8.076312951743603e-10,
+  "max_objective_abs_error": 2.6645352591003757e-15,
+  "max_risk_abs_error": 0.0,
+  "model_predict_calls": 0,
+  "new_neural_forwards": 0,
+  "new_optimizer_fits": 0,
+  "official_API": {
+    "Harrell_NA_by_saved_comparable_pair_support": 0,
+    "Harrell_max_abs_error": 0.0,
+    "Uno60_max_abs_error": 1.1213252548714081e-14,
+    "Uno_NA_by_prelocked_support": 0,
+    "actual_API_calls": 4752,
+    "batches": 10,
+    "head_cases": 2376,
+    "package_version": "0.23.1",
+    "status": "PASS_REAL_PINNED_OFFICIAL_API"
+  },
+  "outer_predictions_read": false,
+  "producer_scorer_calls": 0,
+  "raw_gene_matrix_or_H5_reads": 0,
+  "readout_jobs": 72,
+  "readout_lock_sha256": "0e7173021a36e1565d1e957fc8cc3116b40aa6cbedc4a56800289367d0dfc0ed",
+  "registered_head_positions": 2376,
+  "report_arithmetic": {
+    "aggregation": "within_partition_pair_components_then_seed_micro_then_equal_three_seed_mean",
+    "all1104_contrast_set_independently_rederived": false,
+    "configuration_summaries_checked": 264,
+    "contrast_tables_independently_recomputed": 0,
+    "status": "PASS_264_CONFIGURATION_AGGREGATE_ARITHMETIC"
+  },
+  "schema": "semantic_p2s_independent_postsave_Z_coefficient_audit_v1",
+  "scientific_mechanism_decision_assigned": false,
+  "scope": "saved_design_matrices_and_coefficients_only_not_raw_feature_chain_independent_reproduction",
+  "status": "PASS_POSTSAVE_Z_COEFFICIENT_METRIC_AND_OBJECTIVE_AUDIT",
+  "study_lock_sha256": "3babf37b356e7d27f3cb5da0985b94d0b8d983edadc333eb8333b627539b5c4b",
+  "unique_exact_shared_r0_partitions": 3,
+  "verifier_source_sha256": "8c4b9005f33069f1232aa3fbf776358cd279de1e7133c816de1dea7b69c3d7a0"
+}

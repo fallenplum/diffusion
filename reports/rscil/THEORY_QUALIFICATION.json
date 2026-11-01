@@ -1,0 +1,14 @@
+{
+  "role": "software_math_qualification_not_prediction_evidence",
+  "theory_pass": true,
+  "Hessian_sum_information_max_abs": 1.7763568394002505e-15,
+  "information_min_eigenvalue": 1.3728877199298843,
+  "linear_class_mapping_max_abs": 1.1102230246251565e-16,
+  "ridge_identity_max_abs": 4.918821968659393e-16,
+  "tests_local": 23,
+  "tests_server": 23,
+  "tests_cover_reference": true,
+  "reference_linear_36_rows_rerun": true,
+  "reference_max_C_difference": 0.0,
+  "literal_exact_zero_not_claimed_for_ridge": true
+}

@@ -1,0 +1,42 @@
+{
+  "role": "synthetic_covariate_only_compute_profile_no_training",
+  "dtype": "FP64",
+  "batch": 16,
+  "P_dimension": 12,
+  "G_dimension": 12,
+  "C_dimension": 6,
+  "rank": 8,
+  "rows": [
+    {
+      "arm": "S0",
+      "added_parameters": 0,
+      "total_parameters": 80896,
+      "supported_profile_forward_FLOPs_per_patient": 160131.0
+    },
+    {
+      "arm": "S1",
+      "added_parameters": 1080,
+      "total_parameters": 81976,
+      "supported_profile_forward_FLOPs_per_patient": 162203.0
+    },
+    {
+      "arm": "S2",
+      "added_parameters": 1080,
+      "total_parameters": 81976,
+      "supported_profile_forward_FLOPs_per_patient": 162251.0
+    },
+    {
+      "arm": "S3",
+      "added_parameters": 1080,
+      "total_parameters": 81976,
+      "supported_profile_forward_FLOPs_per_patient": 162251.0
+    },
+    {
+      "arm": "S1S",
+      "added_parameters": 1088,
+      "total_parameters": 81984,
+      "supported_profile_forward_FLOPs_per_patient": 162212.0
+    }
+  ],
+  "limits": "Profiler-supported matrix/elementwise forward operators only; excludes unsupported normalization/GELU, backward, optimizer and per-epoch training projection solve. Not total FLOPs or wall-time equivalence."
+}

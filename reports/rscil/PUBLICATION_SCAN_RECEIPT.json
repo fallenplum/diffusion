@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ANONYMOUS_RSCIL_TEXT_ONLY",
+  "files": 89,
+  "bytes": 4134911,
+  "manifest_sha256": "dbe00306cc0cbed80ee7f6c547540dff1dbf911e85aeb6b2fc16b8eeed8e7c8f",
+  "scanner_sha256": "4c70929d57459a9e97774e6319bd455deedc29fbcedf077131c918c53db60e98",
+  "denylist_sha256": "d73b70939a38277f8f9f693e9958afcc9435893cd05f5c1d6a6d08a100ffe867",
+  "patient_identifiers_exported": false,
+  "protected_datasets_weights_predictions_credentials_exported": false
+}

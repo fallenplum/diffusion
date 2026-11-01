@@ -1,0 +1,13 @@
+{
+  "theory_pass": true,
+  "synthetic_neural_pass": false,
+  "inner_pass": null,
+  "outer_completed": false,
+  "originality_status": "NOT_ESTABLISHED",
+  "claim_status": "SYNTHETIC_NO_GO",
+  "stage": "SYNTHETIC_COMPLETED",
+  "TCGA_fits": 0,
+  "TCGA_endpoint_elements_decoded": 0,
+  "no_CI_bootstrap_pvalues": true,
+  "larger_N_not_used_to_rescue": true
+}

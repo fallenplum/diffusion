@@ -1,0 +1,10 @@
+{
+  "schema": "rscil_all_snapshot_replay_amendment_v2",
+  "prior_run_lock_sha256": "ac4933ebef2e3367d59aa9b48ae68cb262d8ba846934883f900586955c5a0b9e",
+  "scope": "replay_every_0_10_30_60_90_checkpoint_on_fit_and_evaluation_in_both_selection_and_refit",
+  "scientific_DGP_models_initialization_loss_schedule_selection_gates_unchanged": true,
+  "all_v1_fits_excluded_from_primary_results": true,
+  "retired_initial_runner": "scripts/rscil/reference/run_synthetic_initial.py",
+  "full_v2_matrix_new_directory": true,
+  "weights_temporary_only": true
+}

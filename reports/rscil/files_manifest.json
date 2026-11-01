@@ -1,0 +1,455 @@
+{
+  "schema": "rscil_public_text_manifest_v1",
+  "parent_commit": "974e2bfa0664cfba6aa4240a3eab9a1e9c4642e1",
+  "parent_tree": "80a7f7ccaab2a3f827d3755d613727eafaccbe8c",
+  "preserved_parent_files": 4200,
+  "files": [
+    {
+      "file": "configs/rscil/analysis_binding.json",
+      "sha256": "7835667ec6c4630ab1c892b129d50cd4a168bca740c2c83d66fec6658fb895cb",
+      "bytes": 542
+    },
+    {
+      "file": "configs/rscil/precommit.json",
+      "sha256": "a38ca3f8b86ab2da00ab603903f0467f1a0ab42e1d69782945bd433886a166fc",
+      "bytes": 2610
+    },
+    {
+      "file": "configs/rscil/replay_amendment.json",
+      "sha256": "74bebd8a6304fb30764d8254beb3eade2cf4f42832502461a8b1e9e546bf3cf4",
+      "bytes": 559
+    },
+    {
+      "file": "configs/rscil/run_lock.json",
+      "sha256": "e9992023adeb10aae73156b26a690d7a9661ab88e008e7aa2b42f0690c62813c",
+      "bytes": 3515
+    },
+    {
+      "file": "configs/rscil/run_lock_v1_retired.json",
+      "sha256": "ac4933ebef2e3367d59aa9b48ae68cb262d8ba846934883f900586955c5a0b9e",
+      "bytes": 3051
+    },
+    {
+      "file": "configs/rscil/synthetic_lock.json",
+      "sha256": "055979c09de5266c49535b2674b0e515b9d65aaffdeeddb8bba071b5a59b9749",
+      "bytes": 2734
+    },
+    {
+      "file": "reports/rscil/00_SOURCE_AND_THEORY_AUDIT.md",
+      "sha256": "7dd5dd5b1c6b53c2fc8a419b3e5c2fa69058c75416d48bd15c91d33199694f2c",
+      "bytes": 6665
+    },
+    {
+      "file": "reports/rscil/01_SYNTHETIC_RESULTS.md",
+      "sha256": "b469e95a617001811aa6667ad15d02f401587194bf2f8ddfa109ef5986144411",
+      "bytes": 3767
+    },
+    {
+      "file": "reports/rscil/04_SCIENTIFIC_DECISION.md",
+      "sha256": "e222e1d86bb67eaaaf56a35a63c8b8f6421dfd50a8ff0fd7d37ce9e1d967168b",
+      "bytes": 2766
+    },
+    {
+      "file": "reports/rscil/05_METHOD_AND_LIMITATIONS.md",
+      "sha256": "5d4a15798870262bdeaf8c30a16ea47af02b5a645f5a753118958fe4e7648b9c",
+      "bytes": 3991
+    },
+    {
+      "file": "reports/rscil/checkpoint_summaries_2048.json",
+      "sha256": "94d043ff7d34b7cd9a58431b79f1d0d5a641c6ac80ff919e1f3140e018343054",
+      "bytes": 1192650
+    },
+    {
+      "file": "reports/rscil/checkpoint_summaries_512.json",
+      "sha256": "58d2bedb77f1d76e35143a138cb30a2b151409b2025bb8039ecdf31d0316accb",
+      "bytes": 1188239
+    },
+    {
+      "file": "reports/rscil/curves/2048_CORRELATED_INTERACTION_S0.csv",
+      "sha256": "b2d732fa55086a23017e1d86d0479b15dfa028daaa1d0124a926aca7a777e2ea",
+      "bytes": 14482
+    },
+    {
+      "file": "reports/rscil/curves/2048_CORRELATED_INTERACTION_S1.csv",
+      "sha256": "72028e382762f507852f55d7cce7773b0b941d1f394c5323bd28101d40e50330",
+      "bytes": 19345
+    },
+    {
+      "file": "reports/rscil/curves/2048_CORRELATED_INTERACTION_S1S.csv",
+      "sha256": "864190f41c8db8d365a59a8739b1c59f981d320ec0225fa70c6b55ef140e9c64",
+      "bytes": 16856
+    },
+    {
+      "file": "reports/rscil/curves/2048_CORRELATED_INTERACTION_S2.csv",
+      "sha256": "e81c894f29950f14a408cb4b8e8b0d19e2bf700058664be880cf826c7ab3598d",
+      "bytes": 25562
+    },
+    {
+      "file": "reports/rscil/curves/2048_CORRELATED_INTERACTION_S3.csv",
+      "sha256": "9bf5fb2879c81f5519aee48b87f66cda0d6b259a21fd86c6d392ec946ab818e8",
+      "bytes": 25535
+    },
+    {
+      "file": "reports/rscil/curves/2048_INTERACTION_S0.csv",
+      "sha256": "1a1e103d3edc569ecf9b0835849f17ad16e36a2000d4ca43e31b9aefdbc16a1c",
+      "bytes": 14525
+    },
+    {
+      "file": "reports/rscil/curves/2048_INTERACTION_S1.csv",
+      "sha256": "11fd3923f5ccd6b84a548b6eed33572b03c7cbeeba3eea657ae80f7b3c8ce02f",
+      "bytes": 19366
+    },
+    {
+      "file": "reports/rscil/curves/2048_INTERACTION_S1S.csv",
+      "sha256": "b5867dd3d64bbc7dc2c2ac6f9b3498f606891593baf2305ab13b001f01219909",
+      "bytes": 16845
+    },
+    {
+      "file": "reports/rscil/curves/2048_INTERACTION_S2.csv",
+      "sha256": "06e60f4f2026ee9e30473ca527bbda4059645e6e219a714a66f947c680b39939",
+      "bytes": 25567
+    },
+    {
+      "file": "reports/rscil/curves/2048_INTERACTION_S3.csv",
+      "sha256": "2fb2e906ea5f705b215e1405f76b068ade008344793bb361d8743f94de210714",
+      "bytes": 25528
+    },
+    {
+      "file": "reports/rscil/curves/2048_NULL_S0.csv",
+      "sha256": "99b1de9d1bdead56fa632e3482d4af2ece245d03685849bb245e0758552ac1b6",
+      "bytes": 14522
+    },
+    {
+      "file": "reports/rscil/curves/2048_NULL_S1.csv",
+      "sha256": "cebae9866098a6569afddbdacc22939cc3aa6b100889da6b26feae1107d3e115",
+      "bytes": 19378
+    },
+    {
+      "file": "reports/rscil/curves/2048_NULL_S1S.csv",
+      "sha256": "8d0fc63c2f9f592ceacdc4cebf827519dcdca5334b79a7e33a917e03c6380d3c",
+      "bytes": 16877
+    },
+    {
+      "file": "reports/rscil/curves/2048_NULL_S2.csv",
+      "sha256": "477691830aee2b1cafa6a59c727c3db65177e4f841093b5912f5efb785b3f4a8",
+      "bytes": 25583
+    },
+    {
+      "file": "reports/rscil/curves/2048_NULL_S3.csv",
+      "sha256": "4859e472880a7ce9aa0d34386567edee66dd9d72dc520855258ac908ef2b8899",
+      "bytes": 25598
+    },
+    {
+      "file": "reports/rscil/curves/2048_REDUNDANT_S0.csv",
+      "sha256": "483f0c97a25ce20db9211375e80c4a2154068c0eff8e86dd5e8ef6d5ac1a62c2",
+      "bytes": 14510
+    },
+    {
+      "file": "reports/rscil/curves/2048_REDUNDANT_S1.csv",
+      "sha256": "3f0428074a93990325c604e5a9cf444918e140c8c96053fad1f784c8f7367784",
+      "bytes": 19390
+    },
+    {
+      "file": "reports/rscil/curves/2048_REDUNDANT_S1S.csv",
+      "sha256": "fe0d50102b4afbd29f234ec45eec85d091310fbb1a8cab21eab8aae0e9eeab03",
+      "bytes": 16893
+    },
+    {
+      "file": "reports/rscil/curves/2048_REDUNDANT_S2.csv",
+      "sha256": "318d1912413aef961bbb9ed75fc3452200b29dd9321384a62b0ab215d4b13986",
+      "bytes": 25632
+    },
+    {
+      "file": "reports/rscil/curves/2048_REDUNDANT_S3.csv",
+      "sha256": "52894325a1ce6dd4a9c09a064c55b556460cb576d3ca2cad8006c0b61bec419e",
+      "bytes": 25564
+    },
+    {
+      "file": "reports/rscil/curves/512_CORRELATED_INTERACTION_S0.csv",
+      "sha256": "67f1a8567a2a7e9c64703b8fc6144387128a23374ac333363818bef933f78245",
+      "bytes": 14501
+    },
+    {
+      "file": "reports/rscil/curves/512_CORRELATED_INTERACTION_S1.csv",
+      "sha256": "57168cd657ef4a3b375ccf640c5c2d439344b730b730699575bfa49de14499b1",
+      "bytes": 19340
+    },
+    {
+      "file": "reports/rscil/curves/512_CORRELATED_INTERACTION_S1S.csv",
+      "sha256": "3af3600259a247375a883a450e4469eee88ffeff4ac024742c12a2c0712ee2c1",
+      "bytes": 16865
+    },
+    {
+      "file": "reports/rscil/curves/512_CORRELATED_INTERACTION_S2.csv",
+      "sha256": "a6fc987439eb46db00906b6a7827b9c8961f700b7ed3d1e66824d7959d888902",
+      "bytes": 25511
+    },
+    {
+      "file": "reports/rscil/curves/512_CORRELATED_INTERACTION_S3.csv",
+      "sha256": "8bf681fb0e18f84a39308eee8ee775fa262b2a3f84945b5effca619081ee686a",
+      "bytes": 25518
+    },
+    {
+      "file": "reports/rscil/curves/512_INTERACTION_S0.csv",
+      "sha256": "57778143b8125af4353f0ec3900b1b527aaf6518da85bf5f33a4f4a0212fb7c7",
+      "bytes": 14517
+    },
+    {
+      "file": "reports/rscil/curves/512_INTERACTION_S1.csv",
+      "sha256": "18a494f2bfdadb2dc8e52b2e2bab7a80b3bd093bd655615dcffbd12fc35de1fe",
+      "bytes": 19332
+    },
+    {
+      "file": "reports/rscil/curves/512_INTERACTION_S1S.csv",
+      "sha256": "2b08775881c812cdeb0d500ae51eca170699d4e289d9697cb690e8b16de0cb9b",
+      "bytes": 16874
+    },
+    {
+      "file": "reports/rscil/curves/512_INTERACTION_S2.csv",
+      "sha256": "e0cfbfc7827dba2f078c1218f57647ecbfda1734909e65503cf725454a93c283",
+      "bytes": 25570
+    },
+    {
+      "file": "reports/rscil/curves/512_INTERACTION_S3.csv",
+      "sha256": "8346a182a4f62869a8dd00c7f33a0d4df4a34b650435735d3f13b96643b1e2c4",
+      "bytes": 25565
+    },
+    {
+      "file": "reports/rscil/curves/512_NULL_S0.csv",
+      "sha256": "409213b2aa65a62b646d7f82ef55a0d8bf69238bd42c75b9dd10a0c54d9afb74",
+      "bytes": 14515
+    },
+    {
+      "file": "reports/rscil/curves/512_NULL_S1.csv",
+      "sha256": "c355998ca6ba25bdd9cf090e1efeab0a2177d6afa252da653ed815909761ca95",
+      "bytes": 19354
+    },
+    {
+      "file": "reports/rscil/curves/512_NULL_S1S.csv",
+      "sha256": "d7736c544088c83f08012e59ccf6e90f10ef6dd83fa9f72c91ca9c014fe7348c",
+      "bytes": 16854
+    },
+    {
+      "file": "reports/rscil/curves/512_NULL_S2.csv",
+      "sha256": "1f6bc2b757bd6deae3877dd3869609752ff11872ca20d0ee9cd13040afe4b82f",
+      "bytes": 25549
+    },
+    {
+      "file": "reports/rscil/curves/512_NULL_S3.csv",
+      "sha256": "8b9bca055219fde27117173c55c75d7bb812b8eebeb33d1b714eae1b2fcc89eb",
+      "bytes": 25532
+    },
+    {
+      "file": "reports/rscil/curves/512_REDUNDANT_S0.csv",
+      "sha256": "a0bb3a89256b8c7f9462817b02b840581a40e8d3c05d839151ec590be064eaaf",
+      "bytes": 14500
+    },
+    {
+      "file": "reports/rscil/curves/512_REDUNDANT_S1.csv",
+      "sha256": "5e9b372c0c956bddded450e9cd2c1acec687facd4a18a75ddd569f5e476919ef",
+      "bytes": 19331
+    },
+    {
+      "file": "reports/rscil/curves/512_REDUNDANT_S1S.csv",
+      "sha256": "486c4389f6b380b672b9b3aa5b3f9ea7f3ba2cf6bcd34e6266441e7e9f69853a",
+      "bytes": 16885
+    },
+    {
+      "file": "reports/rscil/curves/512_REDUNDANT_S2.csv",
+      "sha256": "b8042833044ec1e1c23527b1d9d654db8c42fefdd88c32b4f8bd80d575fbc612",
+      "bytes": 25524
+    },
+    {
+      "file": "reports/rscil/curves/512_REDUNDANT_S3.csv",
+      "sha256": "d59aa67773fb3a75fe70565700a1aeda56008571a6083bf2be92317d1114f988",
+      "bytes": 25539
+    },
+    {
+      "file": "reports/rscil/decision.json",
+      "sha256": "2da1a681c07ee0954eb481a90428f7186ddd58e9292b886deeda1a464e978e56",
+      "bytes": 368
+    },
+    {
+      "file": "reports/rscil/fit_ledger.json",
+      "sha256": "c310d7c60e135873c0376d353a98b5ad77aaf262909eb3cdf98424bd3b5007a9",
+      "bytes": 1033
+    },
+    {
+      "file": "reports/rscil/PARAMETER_COMPUTE_BUDGET.json",
+      "sha256": "aa5e5df55049c33ab27e39d05063f638bc95c63cecdb1350ec1de8d6944c6eaf",
+      "bytes": 1250
+    },
+    {
+      "file": "reports/rscil/reference/recomputed_linear_results.json",
+      "sha256": "c4971e030dc8dab1c1620ad800c371f295d3b754a25472392c1ec12166d2bfa7",
+      "bytes": 15449
+    },
+    {
+      "file": "reports/rscil/reference/supplied_linear_results.json",
+      "sha256": "348efc815763f770433ace355974b1c4a22423cfb0cfe03c90941199db8cd662",
+      "bytes": 14947
+    },
+    {
+      "file": "reports/rscil/REPRODUCE.md",
+      "sha256": "fe17c1b05abc7c9f537f39ffa90dbdf198b6263aeb3b88dfbec5593f6110b305",
+      "bytes": 2580
+    },
+    {
+      "file": "reports/rscil/SOFTWARE_TEST_LEDGER.json",
+      "sha256": "acfa141563c301ba469ed54288801ea28b8e690f2d1bac0d143d4f6dbd3aa817",
+      "bytes": 1454
+    },
+    {
+      "file": "reports/rscil/synthetic_all_repetitions.csv",
+      "sha256": "824deb2780bfdfcd82992cd4f456a62da2465265237fc8d4603d3f1c8e2dc2d5",
+      "bytes": 137439
+    },
+    {
+      "file": "reports/rscil/synthetic_all_repetitions.json",
+      "sha256": "c942281ea2a15627614bfb1fe533f9c1283090885282a639f5a5bb422f12c273",
+      "bytes": 551034
+    },
+    {
+      "file": "reports/rscil/synthetic_gate.json",
+      "sha256": "257f20f13a593983e201892d680c38a0849599ff5740a5338e6f1b51edf17a58",
+      "bytes": 3164
+    },
+    {
+      "file": "reports/rscil/synthetic_summary.csv",
+      "sha256": "4862efe3ff559984bc935cd79b379ba97d9f2c523d278ec6c6f3795acf79c2c4",
+      "bytes": 2820
+    },
+    {
+      "file": "reports/rscil/THEORY_QUALIFICATION.json",
+      "sha256": "7c2dbd99af3378a4279e9245fa7f723d70532c17307e395b3ab83b3083be67f4",
+      "bytes": 534
+    },
+    {
+      "file": "reports/rscil/training_effectiveness.csv",
+      "sha256": "73a3294c4feb9c469b763e91042798955f3903ded9bc42dc0e6b366733bafc07",
+      "bytes": 102286
+    },
+    {
+      "file": "scripts/rscil/audit.py",
+      "sha256": "c5f298d31ecfe20f908c651cbcee0219550b8f787f688f80c79978d7d23ec502",
+      "bytes": 11201
+    },
+    {
+      "file": "scripts/rscil/check_theory.py",
+      "sha256": "f6530523d95c0110f4b912be1469aded494eba40d2a74ec400cfd1d96e87303b",
+      "bytes": 291
+    },
+    {
+      "file": "scripts/rscil/launch_matrix.py",
+      "sha256": "629cfecccd62e1804765cd0f4596c711566c4f15d8cadd1ce58842689dfa2b60",
+      "bytes": 1877
+    },
+    {
+      "file": "scripts/rscil/preflight.py",
+      "sha256": "13c168d91697a119629bcaeca6f47c58d31b9b61db74e4e98d3e5894d5f82d75",
+      "bytes": 358
+    },
+    {
+      "file": "scripts/rscil/publication.py",
+      "sha256": "42ef713b55e6883236ba2a8b92096a25846930ceeae73ce6cbd47e185426ba43",
+      "bytes": 2439
+    },
+    {
+      "file": "scripts/rscil/reference/riskset_core.py",
+      "sha256": "27f9d2f66ec158881699e1c31f490dbc4cf10d1fc779f94526ad3cfb3db3ce6b",
+      "bytes": 3856
+    },
+    {
+      "file": "scripts/rscil/reference/run_synthetic_initial.py",
+      "sha256": "f505f82fccc3e8ceed5708d7250a8ae2439d6abd19bd292ddcd060816e569daf",
+      "bytes": 7052
+    },
+    {
+      "file": "scripts/rscil/reference/synthetic_gate.py",
+      "sha256": "a2defd7fbc83d73ff57202ad6867e6c7902194067d029d21334527c618782c0b",
+      "bytes": 5670
+    },
+    {
+      "file": "scripts/rscil/run_inner.py",
+      "sha256": "6e1e8e7a8747be14d9438143f235b68526a19dcf635c183d74f4977321f2b76b",
+      "bytes": 334
+    },
+    {
+      "file": "scripts/rscil/run_outer.py",
+      "sha256": "8bcb1bf9d439de131353baee0fcf9a9735b21fec1e460845ae3c54990ea5ecea",
+      "bytes": 415
+    },
+    {
+      "file": "scripts/rscil/run_synthetic.py",
+      "sha256": "0153dbc11bfab55d139bcce6cd811b008929fc685698663780a18f5476469011",
+      "bytes": 8418
+    },
+    {
+      "file": "src/rscil/__init__.py",
+      "sha256": "77851eb34bc2cbcf16042c7ff4c3819d11a0d14ec674f9fb1ecd18a12fca4a7b",
+      "bytes": 76
+    },
+    {
+      "file": "src/rscil/data.py",
+      "sha256": "f5857f8a3be98dc1387481b96471d30660e86e668e43fc2e6b67155785df80fd",
+      "bytes": 3627
+    },
+    {
+      "file": "src/rscil/geometry.py",
+      "sha256": "fe0c5b00210ed71d562eaaa57c36852f58f14fc6247a21aa2379e69b41200bbf",
+      "bytes": 4374
+    },
+    {
+      "file": "src/rscil/model.py",
+      "sha256": "55354342d1c28b4fd7f09a55161b7b122e1b7868f5492501fd6bd1fdd1d1ac37",
+      "bytes": 4138
+    },
+    {
+      "file": "src/rscil/protocol.py",
+      "sha256": "5c67c0208c864aed373087addbe3a411b98d4c41a2fa8ba9ae58dcc68d7fa8c1",
+      "bytes": 1726
+    },
+    {
+      "file": "src/rscil/report.py",
+      "sha256": "1370815d097261ff0af47eb12f07007be2a507f998be5e32bc1f3960279fc544",
+      "bytes": 754
+    },
+    {
+      "file": "src/rscil/train.py",
+      "sha256": "f768e7349e6e1a7201ae3d70f5aee83ca3465c83cb34000c422ffbc5b2b0d4a7",
+      "bytes": 4354
+    },
+    {
+      "file": "tests/rscil/reference/riskset_core.py",
+      "sha256": "27f9d2f66ec158881699e1c31f490dbc4cf10d1fc779f94526ad3cfb3db3ce6b",
+      "bytes": 3856
+    },
+    {
+      "file": "tests/rscil/reference/test_riskset_core.py",
+      "sha256": "02dc1f8b2bd7429b80ca5cf8e7a53b9ac0a89eeddee94cd4845cbe23b9ce6105",
+      "bytes": 1704
+    },
+    {
+      "file": "tests/rscil/test_geometry.py",
+      "sha256": "6428d33396ffea4133a31463dc91f5f91162dddea330f6221ebcfe6fe89a5314",
+      "bytes": 2874
+    },
+    {
+      "file": "tests/rscil/test_model_training.py",
+      "sha256": "a7b6ef87b78176f34466749af1a577a6d495d24e16b1c5e5fe3071f55495846a",
+      "bytes": 3102
+    },
+    {
+      "file": "tests/rscil/test_posttraining_audit.py",
+      "sha256": "687167faa95648a5673caebe709000164b1a6f0e67c63d3482408223a4e5c81c",
+      "bytes": 1373
+    },
+    {
+      "file": "tests/rscil/test_reference_alignment.py",
+      "sha256": "93e6aa245feb7a4a896067841bf7f14ec391b952f93299bc627e38cc76d7fde9",
+      "bytes": 861
+    }
+  ],
+  "self_and_scan_receipt_excluded_from_recursive_hash_list": true,
+  "no_patient_outputs_or_weights": true
+}

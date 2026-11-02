@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "formal_fits": 36,
+  "learning_curve_epochs": 2880,
+  "checkpoint_files_hash_verified": 180,
+  "maximum_actual_saved_checkpoint_replay_error": 0.0,
+  "exact_initial_anchor_models": 36,
+  "outer_test_labels_decoded": 0,
+  "input_partitions": [
+    {
+      "inner": 1,
+      "fit_patients": 272,
+      "validation_patients": 137,
+      "eligible_slides": 416,
+      "clinical_columns": 37,
+      "source_teacher_edges": 1484821,
+      "content_control_nodes": 1019429,
+      "frozen_main_risk_sha256": "d3c083977537f26653ebbd961342989f1955bfd945b66d03aacb58f45b465cfa",
+      "all_arms_share_original_main_risk": true,
+      "full_pipeline_crossfit": true,
+      "held_labels_excluded_from_supervised_scalar_beta": true,
+      "R4_full_beta": 0.05470454422535885,
+      "training_offset_mean": 0.002976556869182399,
+      "training_offset_SD": 0.951283059354138,
+      "full_fit_train_in_sample_mean": 3.918434204559376e-17,
+      "full_fit_train_in_sample_SD": 1.0282225604112283,
+      "crossfit_fullfit_RMS_gap": 0.4042034162742023,
+      "RNA_donor_mapping": {
+        "mapping_fraction": 1.0,
+        "exact_cancer_stage_fraction": 0.9828850855745721,
+        "donors_training_partition_only": true,
+        "no_event_matching": true
+      }
+    },
+    {
+      "inner": 2,
+      "fit_patients": 273,
+      "validation_patients": 136,
+      "eligible_slides": 416,
+      "clinical_columns": 38,
+      "source_teacher_edges": 1484821,
+      "content_control_nodes": 1019429,
+      "frozen_main_risk_sha256": "90060cd1ebb041dea95c1c85e5f6a0131d10c9336585265fd0b880701e0a3c3c",
+      "all_arms_share_original_main_risk": true,
+      "full_pipeline_crossfit": true,
+      "held_labels_excluded_from_supervised_scalar_beta": true,
+      "R4_full_beta": 0.031201890204625705,
+      "training_offset_mean": -0.027376313212799486,
+      "training_offset_SD": 0.9209667528646779,
+      "full_fit_train_in_sample_mean": 0.0,
+      "full_fit_train_in_sample_SD": 1.0183459239995944,
+      "crossfit_fullfit_RMS_gap": 0.44373880503074914,
+      "RNA_donor_mapping": {
+        "mapping_fraction": 1.0,
+        "exact_cancer_stage_fraction": 0.9853300733496333,
+        "donors_training_partition_only": true,
+        "no_event_matching": true
+      }
+    },
+    {
+      "inner": 3,
+      "fit_patients": 273,
+      "validation_patients": 136,
+      "eligible_slides": 416,
+      "clinical_columns": 40,
+      "source_teacher_edges": 1484821,
+      "content_control_nodes": 1019429,
+      "frozen_main_risk_sha256": "5c4d5b8d820a2a10fb646caa94b7f71ba7258e4676f1ef6b9a648ded26917bc6",
+      "all_arms_share_original_main_risk": true,
+      "full_pipeline_crossfit": true,
+      "held_labels_excluded_from_supervised_scalar_beta": true,
+      "R4_full_beta": 0.0921805320605441,
+      "training_offset_mean": -0.031937431390038885,
+      "training_offset_SD": 0.97107995864885,
+      "full_fit_train_in_sample_mean": -2.6027206438098908e-17,
+      "full_fit_train_in_sample_SD": 1.0558782384905396,
+      "crossfit_fullfit_RMS_gap": 0.514582630143033,
+      "RNA_donor_mapping": {
+        "mapping_fraction": 1.0,
+        "exact_cancer_stage_fraction": 0.9853300733496333,
+        "donors_training_partition_only": true,
+        "no_event_matching": true
+      }
+    }
+  ],
+  "new_optimizer_steps_in_this_audit": 0,
+  "gradient_probe_scope": "unregularized full-risk Cox gradient, first replay microbatch only; not whole-fit parameter-gradient norm"
+}

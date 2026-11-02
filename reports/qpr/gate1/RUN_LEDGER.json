@@ -1,0 +1,17 @@
+{
+  "qualified_neural_fits": 20,
+  "qualified_optimizer_updates": 47856,
+  "qualified_fit_elapsed_seconds_sum": 11425.883776960894,
+  "KMeans_fit_calls": 10,
+  "checkpoint_save_load_replays": 20,
+  "maximum_replay_metric_error": 0.0,
+  "formal_lock_sha256": [
+    "ac181ef2f4668c0b646cf51a9ce919a5492a314c71e8e8f8954c050cd4e21b94"
+  ],
+  "no_survival_labels_used": true,
+  "validation_used_for_epoch_selection": true,
+  "independent_clinical_test": false,
+  "G1_temporary_weights_deleted_after_actual_replay": true,
+  "G2_selected_weights_retained": true,
+  "invalid_software_attempt_cost": "reported_separately_in_maintenance_G1_INVALID_SOFTWARE_ATTEMPTS"
+}

@@ -1,0 +1,19 @@
+{
+  "fidelity_go": false,
+  "status": "FIDELITY_NO_GO",
+  "replications": 10,
+  "main_metric": "real_patient_equal_slide_probe_RMSE",
+  "A2_mean_RMSE": 0.000830728949854838,
+  "A4_mean_RMSE": 0.0009940071747662953,
+  "fraction_RMSE_reduction": -0.19654813394909207,
+  "positive_seeds": 0,
+  "logZ_A2": 0.0023646867475204105,
+  "logZ_A4": 0.0026519433288152787,
+  "topology_counterexample_pass": true,
+  "mass_structure_pass": false,
+  "numerical_and_no_DSS_pass": true,
+  "neural_fits": 20,
+  "KMeans_fit_calls": 10,
+  "gate2_independently_allowed": true,
+  "gate3_allowed": false
+}

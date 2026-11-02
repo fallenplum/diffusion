@@ -1,0 +1,77 @@
+{
+  "relation_go": false,
+  "status": "RELATION_NO_GO",
+  "role": "INTERNAL_OUTER1_TRAIN_SIDE_DEVELOPMENT_ONLY",
+  "mean_metrics": {
+    "B0": {
+      "Harrell": 0.8148064297034187,
+      "Uno60": 0.8022514732645819
+    },
+    "B1": {
+      "Harrell": 0.8144668326918723,
+      "Uno60": 0.8008896976352075
+    },
+    "B2": {
+      "Harrell": 0.8146932306995698,
+      "Uno60": 0.8021756966816269
+    },
+    "B3": {
+      "Harrell": 0.8144668326918723,
+      "Uno60": 0.8008766254708024
+    },
+    "B4": {
+      "Harrell": 0.8153724247226625,
+      "Uno60": 0.8027687650532538
+    },
+    "B5": {
+      "Harrell": 0.8144668326918723,
+      "Uno60": 0.8008766254708024
+    },
+    "B3_QUERY_OFF": {
+      "Harrell": 0.8144668326918723,
+      "Uno60": 0.8008766254708024
+    }
+  },
+  "paired_mean_differences_B3_minus": {
+    "B0": {
+      "Harrell": -0.00033959701154639976,
+      "Uno60": -0.001374847793779499
+    },
+    "B1": {
+      "Harrell": 0.0,
+      "Uno60": -1.3072164405047992e-05
+    },
+    "B2": {
+      "Harrell": -0.00022639800769752583,
+      "Uno60": -0.0012990712108245095
+    },
+    "B4": {
+      "Harrell": -0.0009055920307902143,
+      "Uno60": -0.0018921395824513798
+    },
+    "B5": {
+      "Harrell": 0.0,
+      "Uno60": 0.0
+    },
+    "B3_QUERY_OFF": {
+      "Harrell": 0.0,
+      "Uno60": 0.0
+    }
+  },
+  "positive_inner_splits": 1,
+  "positive_seeds": 1,
+  "actual_training_updates_qualified": true,
+  "formal_neural_fits": 36,
+  "formal_neural_optimizer_steps": 2880,
+  "fresh_anchor_Cox_fits": 156,
+  "fresh_scalar_anchor_fits": 12,
+  "outer_test_labels_decoded": 0,
+  "official_scorer_maximum_absolute_difference": 2.220446049250313e-16,
+  "scorer_qualification": {
+    "synthetic_cases_with_event_time_and_risk_ties": 8,
+    "maximum_absolute_difference": 1.6653345369377348e-16,
+    "status": "PASS"
+  },
+  "no_CI_bootstrap_pvalues": true,
+  "gate3_allowed": false
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "stage": "gate3",
+      "entry": "Python_precondition",
+      "blocked": true,
+      "reason": "PRIOR_GATE_NOT_PASSED:gate1"
+    },
+    {
+      "stage": "gate3",
+      "entry": "Python_execution_API",
+      "blocked": true,
+      "reason": "PRIOR_GATE_NOT_PASSED:gate1"
+    },
+    {
+      "stage": "gate4",
+      "entry": "Python_precondition",
+      "blocked": true,
+      "reason": "PRIOR_GATE_NOT_PASSED:gate1"
+    },
+    {
+      "stage": "gate4",
+      "entry": "Python_execution_API",
+      "blocked": true,
+      "reason": "PRIOR_GATE_NOT_PASSED:gate1"
+    }
+  ],
+  "new_optimizer_steps": 0
+}

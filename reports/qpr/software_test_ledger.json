@@ -1,0 +1,16 @@
+{
+  "G0_original_qualification_tests": 11,
+  "current_CPU_and_operator_tests": 18,
+  "local_pass_seconds": 17.1,
+  "server_pass_seconds": 2.61,
+  "official_scorer_synthetic_tied_cases": 8,
+  "official_scorer_actual_cells": 42,
+  "actual_cell_metric_max_error": 2.220446049250313e-16,
+  "G2_complete_risk_cached_gradient_equivalence": "PASS_WITH_EVENT_TIME_TIES",
+  "G2_CUDA_query_gradient_qualification": "PASS",
+  "G1_selected_checkpoint_replay_count": 20,
+  "G2_checkpoint_replay_and_hash_count": 180,
+  "G2_frozen_selected_replay_count": 6,
+  "failed_first_G1_version": "preserved_and_excluded",
+  "gate3_gate4_fail_closed_entries_checked": 4
+}

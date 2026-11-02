@@ -1,0 +1,61 @@
+{
+  "outer1_development_patients": 409,
+  "development_events": 52,
+  "outer_test_rows_decoded": 0,
+  "splits": [
+    {
+      "inner": 1,
+      "fit_patients": 272,
+      "validation_patients": 137,
+      "fit_sha256": "fda248f58f59e9f9727fe5cf3a6645ff19cfd597ee83ffe7872c074191f5ed96",
+      "validation_sha256": "7bdc8cbb8ddede7e9999270a6b131814aedd1e927b07502211199e71c043b7fa",
+      "fit_events": 34,
+      "validation_events": 18,
+      "cache_sha256": "33f659f9866eb9cfc59d71484f4b396becca88ed42900ba4828bf71d28bba8c8",
+      "cache_bytes": 1533199847,
+      "lock_sha256": "d8168b15b34748844e8fed5210de30f173e4f002daf3b64957f59bbd0e006894",
+      "Cox_anchor_fits": 52,
+      "scalar_anchor_fits": 4,
+      "full_pipeline_honest_training_offsets": true,
+      "decoded_endpoint_rows": 409,
+      "outer1_test_endpoint_elements_decoded": 0,
+      "elapsed_seconds": 87.79579556360841
+    },
+    {
+      "inner": 2,
+      "fit_patients": 273,
+      "validation_patients": 136,
+      "fit_sha256": "2586c755d29df1bcdca76c436b508eecf305ae7d5dc6423ed0a4a5cbcb12b3ef",
+      "validation_sha256": "8b2d377a4ddc9c799b8c2db500089fbdc7c97befb29700a89a34ab4275e11f5d",
+      "fit_events": 35,
+      "validation_events": 17,
+      "cache_sha256": "9088701786577d847ec9ef341f6eaf7ad1b471678b154e2313da561ee44594cb",
+      "cache_bytes": 1533204287,
+      "lock_sha256": "d8168b15b34748844e8fed5210de30f173e4f002daf3b64957f59bbd0e006894",
+      "Cox_anchor_fits": 52,
+      "scalar_anchor_fits": 4,
+      "full_pipeline_honest_training_offsets": true,
+      "decoded_endpoint_rows": 409,
+      "outer1_test_endpoint_elements_decoded": 0,
+      "elapsed_seconds": 93.22895886935294
+    },
+    {
+      "inner": 3,
+      "fit_patients": 273,
+      "validation_patients": 136,
+      "fit_sha256": "068d7b9bf8d7af3fc2f7f3c6dbd2c73098255c751fcb3ad098406eeba86f8eb8",
+      "validation_sha256": "63b1d7445e356a6f3157107009b369a4b64cf27895357ea0cdcd919ef751308d",
+      "fit_events": 35,
+      "validation_events": 17,
+      "cache_sha256": "cf96cb1560bd882f75e3dffa4ac285feaad575faf594d3883af2e2517bff3680",
+      "cache_bytes": 1533213151,
+      "lock_sha256": "d8168b15b34748844e8fed5210de30f173e4f002daf3b64957f59bbd0e006894",
+      "Cox_anchor_fits": 52,
+      "scalar_anchor_fits": 4,
+      "full_pipeline_honest_training_offsets": true,
+      "decoded_endpoint_rows": 409,
+      "outer1_test_endpoint_elements_decoded": 0,
+      "elapsed_seconds": 100.01210610195994
+    }
+  ]
+}

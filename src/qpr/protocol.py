@@ -14,8 +14,13 @@ def require_stage(stage,report_root):
         if d.get(field) is not True:raise ValueError('PRIOR_GATE_NOT_PASSED:'+previous)
 
 
-def run_stage(stage,*,report_root,lock):
+def run_stage(stage,*,report_root,lock,resources=None):
     require_stage(stage,report_root)
     frozen=json.loads(Path(lock).read_text(encoding='utf-8'))
     if frozen.get('status')!='LOCKED_BEFORE_FORMAL_FITS':raise ValueError('FORMAL_PRECOMMIT_NOT_LOCKED')
+    if stage=='gate1':
+        if resources is None:raise ValueError('EXECUTION_RESOURCES_REQUIRED')
+        from types import SimpleNamespace
+        from scripts.qpr.launch_gate1 import launch
+        return launch(SimpleNamespace(**resources,reports=str(report_root),lock=str(lock)))
     raise NotImplementedError('QUALIFIED_STAGE_TRAINER_NOT_IMPLEMENTED_YET')

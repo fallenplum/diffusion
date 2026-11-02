@@ -1,0 +1,247 @@
+{
+  "schema": "diffusion_qpr_precommit_v1_2026_11_02",
+  "project": "QPR_Fusion",
+  "status": "G0_LOCKED_FORMAL_SOURCE_IMPLEMENTATION_PENDING",
+  "reference_repository": "fallenplum/diffusion",
+  "reference_branch_at_design": "research/rscil-riskset-interaction-v0",
+  "reference_sha_at_design": "c27c5101430821ac1373febee4e5f77c5de982e1",
+  "working_branch": "research/qpr-fusion-v1",
+  "source_derived": "User-provided TCGA_20篇文献精读与研究立项.md; novel hypothesis not established",
+  "roles": {
+    "stage_0": "data_geometry_novelty_math_qualification",
+    "stage_1": "outcome_free_synthetic_and_heldout_query_fidelity",
+    "stage_2": "uncompressed_true_spatial_relation_survival_qualification",
+    "stage_3": "frozen_teacher_query_preserving_compression",
+    "stage_4": "one_locked_internal_five_fold_validation"
+  },
+  "cohort": {
+    "source": "TCGA_COADREAD_historical_fixed_split",
+    "n_patients_required": 512,
+    "dss_event_count_required": 65,
+    "endpoint": "DSS",
+    "secondary_endpoint": "PFI_FREEZE_ONLY_NO_SELECTION",
+    "outer_folds": 5,
+    "development_partition": "outer_fold_1_training_patients_only",
+    "development_neural_seeds": [
+      31,
+      47
+    ],
+    "final_outer_neural_seeds": [
+      31,
+      47,
+      83
+    ],
+    "tau_months": 60,
+    "metrics": {
+      "primary": "within_fold_pair_weighted_Harrell",
+      "safety": "within_fold_training_censoring_based_Uno60",
+      "selection": "inner_validation_event_normalized_Efron_Cox",
+      "conditional_uncertainty": "NO_CI_BOOTSTRAP_PVALUES_PER_USER_STANDING_INSTRUCTION"
+    },
+    "patient_split_hash": "7ad94dfdfa496c21be86b82fd0a048152c9d1cb25bd862296b220609f7c64950",
+    "source_code_hashes": {
+      "src/qpr/attention.py": "fe49815f82d9b70cea453a35f8f099119b63eaab55fb122d5c917b89387dff50",
+      "src/qpr/graph.py": "188df2c2c12e82cdfd5c501621b89f6225013d2281f06b22ddc9e878260cb02b",
+      "src/qpr/protocol.py": "b803aca5fe8b98321da120e69b76e9801842131aa902395f6ec05942134d8023",
+      "src/qpr/__init__.py": "5ec7fe6032b54c76faa3f3ffba73fe883022adaac65e5a404151450fbf11cab7",
+      "scripts/qpr/audit_native.py": "2fcdf48c8e77e17a99312fb34678c8f34b576ef0b3887e5637a12534c4ceb77b",
+      "scripts/qpr/run_stage.py": "6fde2aacc9f0e617db374429dcfa6bec0ca929bb86ad9a66ba8fcac8530e8af5",
+      "tests/qpr/test_qualification.py": "a75fb613ef700a2125e29e08186809842bcd9dbfa939710e8d85514b7dfe8726",
+      "tests/qpr/reference/math_reference.py": "1fa36ff2f64c068c49abbbbf752e00d2cc27452b947c167d3c50b8d150112bf6"
+    },
+    "development_inner_splits": "src.bgb_en.protocol.fixed_inner_splits(folds,event,outer=1,seed=62001): StratifiedKFold3 with random_state=62002",
+    "development_inner_fold_indices": [
+      1,
+      2,
+      3
+    ],
+    "stage4_inner_split_seed_base": 62001
+  },
+  "data": {
+    "pathology": "native_original_CONCH_H5_features_and_coords",
+    "strict_no_synthetic_adjacency_from_grid512": true,
+    "no_cross_slide_edges": true,
+    "adjacency": "native_integer_coordinates_eight_neighbors_per_slide",
+    "reference_definition": "full_retrieval_over_fixed_sampled_true_edges_not_all_WSI_edges",
+    "edge_cap_per_slide": 4096,
+    "edge_sampling": "deterministic_spatial_stratified_then_hash_seeded_no_DSS",
+    "molecular": "RNA_512_main_effect_and_50_Hallmark_program_queries",
+    "clinical": "Age_Sex_Stage_TNM",
+    "additional_visual": "TITAN_S32_and_existing_CONCH_GRID32",
+    "patient_pooling": "equal_slides_within_patient",
+    "feature_projection": "outer_and_inner_fit_only_outcome_free_PCA32",
+    "value_dim": 64,
+    "key_dim": 32,
+    "key_norm_max": 1.0,
+    "value_norm_max": 1.0,
+    "query_norm_max": 1.0,
+    "tau": 1.0,
+    "summary_M": 32,
+    "number_queries": 50,
+    "risk_readout_factors": 4
+  },
+  "machine_gate_logic": {
+    "stage_0_pass_required_for_1_and_2": true,
+    "stage_1_and_2_both_pass_required_for_3": true,
+    "stage_3_pass_required_for_4": true,
+    "never_rescue_with_large_sample_or_historical_result": true,
+    "code_and_data_source_lock_required": true,
+    "no_auto_refit_after_outer_label": true,
+    "failure_is_preserved": true
+  },
+  "gate_0": {
+    "real_coords_readable": true,
+    "patient_slide_separation": true,
+    "all_planned_patients_have_eligible_real_edges": true,
+    "unmodified_teacher_key_value": true,
+    "math_and_leakage_tests_pass": true,
+    "novelty_has_testable_difference": true,
+    "data_or_math_failure": "STOP_NO_DSS"
+  },
+  "gate_1": {
+    "synthetic_seeds": [
+      9101,
+      9102,
+      9103,
+      9104,
+      9105,
+      9106,
+      9107,
+      9108,
+      9109,
+      9110
+    ],
+    "arms": [
+      "A0_FULL",
+      "A1_RANDOM_M32",
+      "A2_KMEANS_M32",
+      "A3_COVER_ONLY_M32",
+      "A4_QPR_M32",
+      "A5_NO_MASS_DIAGNOSTIC"
+    ],
+    "lambda_answer": 1.0,
+    "lambda_cover": 0.1,
+    "answer_log_partition_weight": 0.1,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 100,
+    "early_stop_patience": 10,
+    "max_outcome_free_neural_fits": 20,
+    "probe_queries_per_slide": 256,
+    "qpr_vs_kmeans_min_fraction_reduction_heldout_RMSE": 0.15,
+    "qpr_vs_kmeans_min_positive_seeds": 8,
+    "replications": 10,
+    "max_logZ_relative_regression_fraction": 0.05,
+    "fail": "FIDELITY_NO_GO",
+    "scored_cells_including_non_train_reference": 50,
+    "max_kmeans_fits": 10
+  },
+  "gate_2": {
+    "arms": [
+      "B0_STRONG_ADD",
+      "B1_SPATIAL_UNCOND",
+      "B2_QUERY_NO_SPATIAL",
+      "B3_FULL_TRUE_SPATIAL",
+      "B4_WRONG_TOPO_RETRAIN",
+      "B5_WRONG_RNA_QUERY_RETRAIN",
+      "B3_RNA_QUERY_OFF_RETRAIN"
+    ],
+    "neural_fits_maximum": 36,
+    "max_epochs": 80,
+    "snapshots": [
+      0,
+      10,
+      20,
+      40,
+      80
+    ],
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 5.0,
+    "loss": "full_fit_patient_Efron_Cox_plus_locked_L2",
+    "main_risk": "fit_local_honest_CP_plus_RNA512_anchor_frozen_for_all_arms",
+    "B3_vs_B0_min_Harrell": 0.005,
+    "B3_vs_B0_min_Uno60": 0.003,
+    "B3_vs_B2_B4_B5_min_Harrell_exclusive": 0.0,
+    "B3_vs_B2_B4_B5_min_Uno60_inclusive": 0.0,
+    "B3_vs_B1_positive_Harrell": true,
+    "B3_vs_RNA_query_off_positive_Harrell": true,
+    "B3_vs_B0_min_positive_inner_splits_of_3": 2,
+    "B3_vs_B0_min_positive_neural_seeds_of_2": 2,
+    "if_fail": "RELATION_NO_GO_STOP_COMPRESSION_SURVIVAL_CLAIM",
+    "query_learning_rate": 3e-05,
+    "head_training_epochs": [
+      1,
+      20
+    ],
+    "query_training_epochs": [
+      21,
+      80
+    ],
+    "delta_r_shrink": "0.01*mean_fit((delta_r/(sd_fit(r0)+1e-6))**2)",
+    "new_risk_head_initialization": "zero_last_layer_exact_anchor_at_epoch0"
+  },
+  "gate_3": {
+    "arms": [
+      "C0_FROZEN_FULL",
+      "C1_WEIGHTED_KMEANS32",
+      "C2_STRONG_CORESET32",
+      "C3_QPR32",
+      "C4_COVER_ONLY32",
+      "C5_NO_MASS_INFERENCE"
+    ],
+    "max_summary_fits": 24,
+    "frozen_full_teacher_and_risk_head": true,
+    "C3_vs_C1_C2_RMSE_min_fraction_reduction": 0.15,
+    "C3_min_positive_seeds_of_2": 2,
+    "C3_min_positive_inner_splits_of_3": 2,
+    "C3_vs_C0_max_Harrell_loss": 0.003,
+    "C3_vs_C0_max_Uno60_loss": 0.003,
+    "C3_vs_B0_min_preserved_Harrell_gain": 0.003,
+    "online_query_latency_min_speedup_vs_C0": 2.0,
+    "must_report_cold_start": true,
+    "if_fail": "COMPRESSION_NO_GO",
+    "online_latency_primary_hardware": "NVIDIA_GeForce_RTX_4080_SUPER_32760MiB_authorized_20261102"
+  },
+  "gate_4": {
+    "required_prior": [
+      "gate_0",
+      "gate_1",
+      "gate_2",
+      "gate_3"
+    ],
+    "primary_comparison": "C3_QPR_vs_B0_STRONG_ADD",
+    "require_positive_Harrell": true,
+    "require_positive_Uno60": true,
+    "require_all_3_seed_direction_positive": true,
+    "requires_precommit_final_protocol_before_outer_results": true,
+    "interpretation": "INTERNAL_REPEATED_DEVELOPMENT_EVIDENCE_NOT_INDEPENDENT_EXTERNAL_VALIDATION"
+  },
+  "publication": {
+    "public_only_aggregate": true,
+    "no_private_patient_records": true,
+    "no_private_wsi_h5_or_weights": true,
+    "no_external_cohort_claim": true,
+    "fail_closed_report": true,
+    "not_started_stage_must_be_null_not_reused": true
+  },
+  "lock_rule": "The file is a template. Codex must fill and hash a locked copy BEFORE any formal model fit and must retain unaltered source template. No post-outcome threshold, seed, cohort, arm, learning rate or capacity tuning.",
+  "environment": {
+    "GPU": "NVIDIA GeForce RTX 4080 SUPER",
+    "GPU_memory_MiB": 32760,
+    "torch": "2.5.1+cu124",
+    "DSS_decoded_at_G0": false
+  },
+  "source_code_hashes": {
+    "src/qpr/attention.py": "fe49815f82d9b70cea453a35f8f099119b63eaab55fb122d5c917b89387dff50",
+    "src/qpr/graph.py": "188df2c2c12e82cdfd5c501621b89f6225013d2281f06b22ddc9e878260cb02b",
+    "src/qpr/protocol.py": "b803aca5fe8b98321da120e69b76e9801842131aa902395f6ec05942134d8023",
+    "src/qpr/__init__.py": "5ec7fe6032b54c76faa3f3ffba73fe883022adaac65e5a404151450fbf11cab7",
+    "scripts/qpr/audit_native.py": "2fcdf48c8e77e17a99312fb34678c8f34b576ef0b3887e5637a12534c4ceb77b",
+    "scripts/qpr/run_stage.py": "6fde2aacc9f0e617db374429dcfa6bec0ca929bb86ad9a66ba8fcac8530e8af5",
+    "tests/qpr/test_qualification.py": "a75fb613ef700a2125e29e08186809842bcd9dbfa939710e8d85514b7dfe8726",
+    "tests/qpr/reference/math_reference.py": "1fa36ff2f64c068c49abbbbf752e00d2cc27452b947c167d3c50b8d150112bf6"
+  }
+}

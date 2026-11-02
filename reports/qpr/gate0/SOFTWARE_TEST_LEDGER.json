@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "local_pytest_passed": 11,
+  "supplied_NumPy_groups_passed": 5,
+  "formal_neural_fits": 0,
+  "source_lock_status": "G0_only_not_formal_training_lock",
+  "server_pytest_passed": 11,
+  "server_summary": "11 passed in 1.90s"
+}

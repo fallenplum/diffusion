@@ -1,0 +1,83 @@
+{
+  "cohort_sha256": "4aaeb4cc22374f32615148605d824abed679fcb957c64286b6a8e44f12a294a1",
+  "patient_order_sha256": "76a144d544b7461d669487625855dc7de65f115a6a2f65d7a20002b2a8e5008f",
+  "folds_sha256": "7ad94dfdfa496c21be86b82fd0a048152c9d1cb25bd862296b220609f7c64950",
+  "inventory_sha256": "dcda616eb16078eb0d3f7a98a206ee5882608571ff2fe7699032b56d1e13da74",
+  "slides": 519,
+  "patients": 512,
+  "patients_with_eligible_edges": 512,
+  "zero_edge_patients": 0,
+  "invalid_slides": 0,
+  "total_native_nodes": 1278642,
+  "total_true_edges": 4880849,
+  "native_H5_hashes_verified": 519,
+  "real_permutation_tests": [
+    {
+      "slide_index": 0,
+      "N": 3947,
+      "E": 15130,
+      "pass": true
+    },
+    {
+      "slide_index": 1,
+      "N": 2134,
+      "E": 8047,
+      "pass": true
+    },
+    {
+      "slide_index": 2,
+      "N": 4217,
+      "E": 16223,
+      "pass": true
+    },
+    {
+      "slide_index": 3,
+      "N": 5643,
+      "E": 21805,
+      "pass": true
+    },
+    {
+      "slide_index": 4,
+      "N": 6479,
+      "E": 25344,
+      "pass": true
+    },
+    {
+      "slide_index": 5,
+      "N": 6543,
+      "E": 25412,
+      "pass": true
+    },
+    {
+      "slide_index": 6,
+      "N": 4600,
+      "E": 17732,
+      "pass": true
+    },
+    {
+      "slide_index": 7,
+      "N": 8139,
+      "E": 31691,
+      "pass": true
+    },
+    {
+      "slide_index": 8,
+      "N": 736,
+      "E": 2714,
+      "pass": true
+    },
+    {
+      "slide_index": 9,
+      "N": 906,
+      "E": 3307,
+      "pass": true
+    }
+  ],
+  "DSS_file_opened": false,
+  "DSS_columns_decoded": false,
+  "cohort_arrays_decoded": [
+    "patient_ids",
+    "folds"
+  ],
+  "elapsed_seconds": 67.39491881616414
+}

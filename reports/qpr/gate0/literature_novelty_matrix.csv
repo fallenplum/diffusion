@@ -1,0 +1,14 @@
+method,primary_url,verified_scope,prior_mechanism,candidate_boundary
+MCAT,https://openaccess.thecvf.com/content/ICCV2021/html/Chen_Multimodal_Co-Attention_Transformer_for_Survival_Prediction_in_Gigapixel_Whole_Slide_ICCV_2021_paper.html,coattention method; official original reference,omics queries pathology instances,not query-preserving edge compression
+MOTCat,https://arxiv.org/abs/2306.08330,OT coattention original reference,global allocation across modalities,not frozen mass-aware edge barycenters
+SurvPath,https://arxiv.org/html/2304.06819v2,methods 3.2-3.5,pathway and pathology attention blocks,not arbitrary raw neighbor-edge query compression
+CMTA,https://arxiv.org/html/2309.12855,methods 3.3-3.4 equations4-8,PPEG and cross-modal translation,cannot claim all prior models ignore position
+MMP,https://arxiv.org/html/2407.00224,methods3.1-3.2,GMM proportions means covariances,prototypes are not edge-response fidelity
+PIBD,https://arxiv.org/html/2401.01646,methods3.2 equations8-9,survival-supervised prototype bottleneck,not outcome-free frozen retrieval teacher
+SlotSPE,https://arxiv.org/html/2512.01116v1,original full-text method/clinical appendix scope,structural slots and reconstruction,no claim of independent medical slot truth
+Querent,https://arxiv.org/html/2501.18984,3.2 equations1-2 Theorem3.1,spatial query-patch region selection,bulk RNA query has no spatial coordinate
+AttentionCoresets2026,https://arxiv.org/html/2605.05602,Theorem1 and4,bounded-query KV subset approximation,no new optimal coreset theorem claimed
+ProtoSurv,https://proceedings.neurips.cc/paper_files/paper/2024/hash/760341adc5632de3f1cf2e8d22215a93-Abstract-Conference.html,primary proceedings abstract; not native reproduction,tissue heterogeneous graphs,graph and spatial survival already exist
+GraphFusionTMI2024,https://pmc.ncbi.nlm.nih.gov/articles/PMC11374469/,II-B TableIII official code link,graph mixer plus genomic attention,not first real graph plus gene query
+DiffPool,https://arxiv.org/html/1806.08804,equations3-6,soft assignment and pooled adjacency,query loss is task adaptation not new pooling
+MPGuarantees,https://arxiv.org/html/2405.18127,methods2-4 equation1,operator-specific graph coarsening,not identical attention/risk theorem

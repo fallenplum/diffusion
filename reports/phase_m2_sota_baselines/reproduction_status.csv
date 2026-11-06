@@ -1,7 +1,0 @@
-method,label,mechanism,source,status
-B0,EarlyFusion / Concat + Cox,Concat -> no explicit interaction,fixed protocol baseline,ADAPTED_ARCHITECTURE_FAITHFUL
-B1,TransSurv-style Transformer,TransSurv -> transformer cross-modal interaction,TransSurv-style architecture-faithful adaptation,ADAPTED_ARCHITECTURE_FAITHFUL
-B2,MGCT,MGCT -> mutual-guided cross-modal interaction,https://github.com/lmxmercy/MGCT,ADAPTED_ARCHITECTURE_FAITHFUL
-B3,CAMR,CAMR -> shared/specific + alignment,https://github.com/wxq-ustc/CAMR,ADAPTED_ARCHITECTURE_FAITHFUL
-B4,MMP,MMP -> multimodal prototypes,https://github.com/mahmoodlab/MMP,ADAPTED_ARCHITECTURE_FAITHFUL
-B5,MOTCat / MCAT-style co-attention,MOTCat/MCAT -> co-attention / transport-guided interaction,https://github.com/mahmoodlab/MCAT,ADAPTED_ARCHITECTURE_FAITHFUL

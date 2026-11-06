@@ -1,5 +1,0 @@
-method,n_embeddings,embedding_dim,mean_variance,total_variance,zero_variance_dims,pca_note
-B0_mean,487,1536,0.034942425188904454,53.671565090157245,0,PCA diagnostic only; no model/tuning feedback
-B1_ABMIL,1461,64,0.03804194647387953,2.43468457432829,0,PCA diagnostic only; no model/tuning feedback
-B4_TransMIL,1461,64,0.42426797342156425,27.153150298980112,0,PCA diagnostic only; no model/tuning feedback
-B8_EAGLE_spatial,1461,64,0.06739626739075803,4.313361113008514,0,PCA diagnostic only; no model/tuning feedback

@@ -1,7 +1,0 @@
-{
-  "status": "PASS",
-  "checkpoints": 15,
-  "context_swap": "training partition only;own direct and late evidence unchanged",
-  "no_outcome_selection": true,
-  "no_histological_ground_truth_claim": true
-}

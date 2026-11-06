@@ -1,30 +1,13 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
-
 [project]
-name = "diffusion-research"
-version = "0.1.0"
-description = "Reproducible pathology-only research infrastructure for the diffusion project"
-requires-python = ">=3.11,<3.14"
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-pythonpath = ["src"]
-addopts = "-ra"
-
-[tool.ruff]
-target-version = "py311"
-line-length = 120
-extend-exclude = ["outputs", "TCGA", "data", ".git_local"]
-
-[tool.ruff.lint]
-# Existing research scripts are intentionally kept structurally stable.  This
-# catches syntax/import correctness without forcing a broad algorithm rewrite.
-# Keep the legacy research scripts structurally stable while still catching
-# syntax errors and undefined names in every source/test file.
-select = ["E9", "F63", "F7", "F82"]
-ignore = ["E501"]
-
-[tool.ruff.lint.per-file-ignores]
-"tests/*" = ["F401"]
+name = "r4-multimodal-survival-cn"
+version = "1.0.0"
+description = "Feature-level pathology-omics-clinical DSS risk analysis software"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.12,<2", "scikit-learn>=1.4,<2"]
+[project.scripts]
+r4surv = "r4surv.cli:main"
+[tool.setuptools.packages.find]
+include = ["r4surv*"]

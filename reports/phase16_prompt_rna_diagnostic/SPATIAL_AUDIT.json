@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "heldout_patient_records": 12288,
-  "patients_per_arm_seed": 512,
-  "seeds": 3,
-  "no_survival_labels_read": true,
-  "raw_image_QA": "BLOCKED",
-  "aggregation": "patient mean; multi-slide metrics weighted by selected patch count; Jaccard is weighted slide mean, not a single global Jaccard"
-}

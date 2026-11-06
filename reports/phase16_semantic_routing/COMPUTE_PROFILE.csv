@@ -1,9 +1,0 @@
-arm,patients_per_forward,latency_ms,profiled_operator_FLOPs,analytic_linear_attention_FLOPs,analytic_full_candidate_score_FLOPs,GPU_allocated_peak_MiB,includes_topk_search,FLOPs_scope
-RAND_128,512,5.721920798532665,459179008,613097472,102039552,239.34619140625,False,analytic padded linear MACs x2;profiler undercounts MV;topk/softmax/mask/I/O excluded;forward only
-RAND_512,512,6.732979498337954,608883712,1211916288,401448960,836.7900390625,False,analytic padded linear MACs x2;profiler undercounts MV;topk/softmax/mask/I/O excluded;forward only
-GRID_128,512,6.681916397064924,459179008,613097472,102039552,239.34619140625,False,analytic padded linear MACs x2;profiler undercounts MV;topk/softmax/mask/I/O excluded;forward only
-GRID_512,512,7.028208603151143,608883712,1211916288,401448960,836.7900390625,False,analytic padded linear MACs x2;profiler undercounts MV;topk/softmax/mask/I/O excluded;forward only
-DIVERSE_128,512,6.935313600115478,459179008,613097472,102039552,239.34619140625,False,analytic padded linear MACs x2;profiler undercounts MV;topk/softmax/mask/I/O excluded;forward only
-DIVERSE_512,512,6.913683103630319,608883712,1211916288,401448960,836.7900390625,False,analytic padded linear MACs x2;profiler undercounts MV;topk/softmax/mask/I/O excluded;forward only
-MIL_128,512,11.78495689528063,459179008,2616430080,2105372160,4074.90185546875,True,analytic padded linear MACs x2;profiler undercounts MV;topk/softmax/mask/I/O excluded;forward only
-MIL_512,512,11.893658101325855,610855936,2919783936,2105372160,4129.05126953125,True,analytic padded linear MACs x2;profiler undercounts MV;topk/softmax/mask/I/O excluded;forward only

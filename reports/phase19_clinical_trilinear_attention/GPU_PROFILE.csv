@@ -1,3 +1,0 @@
-role,samples,sampled_interval_seconds,maximum_running_workers,maximum_configured_workers_limit,GPU_utilization_percent_time_weighted_mean,GPU_utilization_percent_sample_maximum,GPU_utilization_percent_sample_median,whole_GPU_memory_MiB_time_weighted_mean,whole_GPU_memory_MiB_sample_maximum,whole_GPU_memory_MiB_sample_median
-inner,238,2389.246047258377,8,8,93.51548245848839,100.0,99.0,18744.821438932926,25469.0,19133.0
-outer,87,866.7585079669952,8,8,86.26867528984236,100.0,99.0,16384.41046928387,29247.0,17187.0

@@ -1,8 +1,0 @@
-method,label,mechanism,source,status,failure_reason
-B0,EarlyFusion,early concatenation + Cox,fixed protocol baseline,PAPER_FAITHFUL_REIMPLEMENTATION,
-B1,TransSurv,histology/omics branches + cross-modal transformer + clinical Cox head,TransSurv paper-faithful reimplementation adapted to UNI2-h,PAPER_FAITHFUL_REIMPLEMENTATION,
-B2,MGCT,"two-stage mutual-guided cross-attention, gated pooling and feed-forward fusion",https://github.com/lmxmercy/MGCT,OFFICIAL_ADAPTED,
-B3,CAMR,invariant/specific encoders + adversarial alignment + reconstruction + CMFM,https://github.com/wxq-ustc/CAMR,OFFICIAL_ADAPTED,
-B4,MMPTrans,train-only Ch=16 GMM morphology/transcriptomic prototypes + MMPTrans,https://github.com/mahmoodlab/MMP,OFFICIAL_ADAPTED,
-B5,MCAT,omic-query histology co-attention + dual transformer attention pooling,https://github.com/mahmoodlab/MCAT,OFFICIAL_ADAPTED,
-B6,MOTCat,entropic OT token alignment + global structure consistency + clinical fusion,https://github.com/Innse/MOTCat,OFFICIAL_ADAPTED,

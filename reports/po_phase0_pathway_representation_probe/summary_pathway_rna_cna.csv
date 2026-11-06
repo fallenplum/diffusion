@@ -1,2 +1,0 @@
-method,fold_cell_harrell_mean,fold_cell_harrell_std,fold_cell_uno_mean,fold_cell_uno_std,params,n_cells,aggregation,status
-Pathway-RNA+CNA,0.5914513778476707,0.10880440925380162,0.5475992676627311,0.09702305501275926,542119,15,arithmetic mean/std over 15 outer-fold cells; not per-seed OOF,archived_raw_cells_preserved

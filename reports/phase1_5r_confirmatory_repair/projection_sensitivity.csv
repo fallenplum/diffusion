@@ -1,6 +1,0 @@
-projection,feature_dim,token_budget,oof_harrell_c,oof_uno_c,n_seeds,protocol
-random64,64,1024,0.4452349192233585,0.5120266275988415,3,"repaired K=1024; P1 random64 is a new K=1024 sensitivity, not the old K=128 report"
-learned64,64,1024,0.4238921001926782,0.41333680759781594,3,"repaired K=1024; P1 random64 is a new K=1024 sensitivity, not the old K=128 report"
-learned256,256,1024,0.41208438318264906,0.45314698292607414,3,"repaired K=1024; P1 random64 is a new K=1024 sensitivity, not the old K=128 report"
-learned512,512,1024,0.4710241588854306,0.4672613993248159,3,"repaired K=1024; P1 random64 is a new K=1024 sensitivity, not the old K=128 report"
-random64_old_Phase1.5,64,128,0.5498246134084285,0.5939147086934722,3,historical Phase1.5 fixed random64/K128 comparator

@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "inner_graph": "identity adjacency",
-  "outer_graph": "identity adjacency",
-  "r6_inner_graph": "true normalized KGML adjacency",
-  "r6_outer_graph": "true normalized KGML adjacency",
-  "same_encoder_optimizer_budget": true,
-  "source_anchor": "scripts/run_phase9_g0r.py AAi selection branch"
-}

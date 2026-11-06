@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "formal_dir": "/root/phase8_v0_c3r_surv",
-  "formal_done_sha256": "825737244aaeaf26368bab66ce8c491fa8d541e30822e445cd47836603915c1c",
-  "n_oof_cells": 105,
-  "bootstrap_replicates": 2000,
-  "uno_fix": "sum fold-local IPCW numerators and denominators; no Harrell-pair weighting"
-}

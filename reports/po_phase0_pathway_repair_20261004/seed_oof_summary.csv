@@ -1,4 +1,0 @@
-method,seed_oof_harrell_mean,seed_oof_harrell_std,seed_oof_uno_mean,seed_oof_uno_std,n_seeds,aggregation,status
-Pathway-RNA,0.6180320150659134,0.005564525619343556,0.5641835156061533,0.03709483275668171,3,mean/std of three per-seed five-fold OOF metrics,completed
-Pathway-RNA+CNA,0.6053829252981795,0.01753849157755667,0.5204192982177953,0.05080857458868588,3,mean/std of three per-seed five-fold OOF metrics,completed
-Signature-RNA+CNA,0.6013496547394853,0.01915503591303513,0.49525611913062234,0.037724671043435354,3,mean/std of three per-seed five-fold OOF metrics,completed

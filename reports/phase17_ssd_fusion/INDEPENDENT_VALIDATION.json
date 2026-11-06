@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "trained_model_seed_vectors": 51,
-  "fold_metric_rows": 255,
-  "metrics_checked_against_sksurv": true,
-  "anchor_recomputed_independently": true,
-  "checkpoint_replay": "separate CHECKPOINT_REPLAY.json required",
-  "PFI": "same frozen DSS risks;no PFI training or selection"
-}

@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "max_gradient": 1.2039446830749512,
-  "gradient_finite": true,
-  "finite_difference": {
-    "status": "PASS",
-    "finite_difference_max_error": 2.893088546507272e-10
-  }
-}

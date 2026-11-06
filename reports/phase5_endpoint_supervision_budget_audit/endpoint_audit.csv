@@ -1,5 +1,0 @@
-endpoint,available,eligible_for_modeling,valid_n,event_n,censoring_rate,median_followup,time_min,time_max,missing_or_invalid_n,dss_event_overlap_n,fold_event_counts,fold_valid_counts,source_columns,reason
-DSS,True,True,512,65,0.873046875,21.99427952,0.197258112,148.0093369,0,65,"{""1"": 13, ""2"": 14, ""3"": 12, ""4"": 13, ""5"": 13}","{""1"": 103, ""2"": 103, ""3"": 102, ""4"": 102, ""5"": 102}","DSS_STATUS,DSS_MONTHS",
-OS,True,True,512,90,0.82421875,21.99427952,0.197258112,148.0093369,0,65,"{""1"": 18, ""2"": 20, ""3"": 19, ""4"": 15, ""5"": 18}","{""1"": 103, ""2"": 103, ""3"": 102, ""4"": 102, ""5"": 102}","OS_STATUS,OS_MONTHS",
-PFI,False,False,,,,,,,,,,,,explicit_status_or_months_field_missing
-PFS,True,False,510,129,0.7470588235294118,19.19978959,0.197258112,148.0093369,2,64,"{""1"": 28, ""2"": 19, ""3"": 32, ""4"": 29, ""5"": 21}","{""1"": 101, ""2"": 103, ""3"": 102, ""4"": 102, ""5"": 102}","PFS_STATUS,PFS_MONTHS",PFS excluded from formal modeling because valid_n != 512

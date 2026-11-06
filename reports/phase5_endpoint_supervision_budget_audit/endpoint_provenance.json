@@ -1,9 +1,0 @@
-{
-  "DSS": "DSS_STATUS/DSS_MONTHS",
-  "OS": "OS_STATUS/OS_MONTHS",
-  "PFI": "unavailable; no explicit fields; no fabricated definition",
-  "PFS": "PFS_STATUS/PFS_MONTHS; valid_n=510; audit only",
-  "cohort_n": 512,
-  "patient_ids_written": false,
-  "source": "data/data_8/coadread_tcga_pan_can_atlas_2018/data_clinical_patient.txt"
-}

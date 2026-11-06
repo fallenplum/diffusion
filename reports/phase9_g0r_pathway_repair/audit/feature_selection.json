@@ -1,7 +1,0 @@
-{
-  "status": "PASS",
-  "RNA_input": "rna_genes pre-log2 collapsed values, no second log",
-  "top512": "raw variance before z-score; train fold only",
-  "CNA": "gain/loss separate channels; train median and z-score",
-  "KEGG": "fixed 32 pathways; no DSS screening"
-}

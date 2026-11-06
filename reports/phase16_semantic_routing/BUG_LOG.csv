@@ -1,5 +1,0 @@
-bug_id,status,scope,problem,repair,affected_formal_cells
-G0_001,INVALID_SUPERSEDED,G0_inventory,UNI2 leading batch dimension counted as patch dimension,product of all dimensions except feature dimension;retain invalid audit privately,0
-G1_001,INVALID_SUPERSEDED,G1_preparation,NumPy2 random projection promoted float32 to float64,cast after normalization;rerun all selectors before training,0
-G0_002,INVALID_SUPERSEDED,UNI2_coordinate_audit,UNI2 coordinates also contain a leading batch axis,reshape to N by2 before uniqueness and overlap;rerun coordinate audit;dual branch remains blocked,0
-G0_003,SCOPE_CORRECTED,all_cells,519 recovered historical CONCH files do not imply all520 original cohort slides recovered,E-drive audit confirms one original slide unavailable;mark candidate-pool-limited for every arm;no input or prediction changed,0

@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "outer_test_labels_used_for_selection": false,
-  "top512_train_fold_only": true,
-  "ridge_inner_selection": true,
-  "graph_epoch_inner_val_only": true,
-  "random_graphs_fixed_before_test": true
-}

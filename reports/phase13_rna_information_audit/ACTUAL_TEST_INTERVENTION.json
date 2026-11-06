@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "full_inner_epochs_each": 80,
-  "fitted_state_initial_epoch_invariant": true,
-  "RNA_input_response": true,
-  "PFI_trainlocal_preprocessing_invariant": true,
-  "smoke_patient_predictions_saved": false,
-  "selected_epoch": 12
-}

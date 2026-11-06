@@ -1,7 +1,0 @@
-{
-  "status": "PASS",
-  "backend": "Python/matplotlib",
-  "figures_actually_viewed": ["01_mechanism.png","02_primary_Harrell.png","03_training.png"],
-  "checks": ["titles, axes, ticks and confidence intervals visible without clipping", "all source values from real aggregate CSVs", "zero gradients shown at explicit log floor while CSV retains zero", "no synthetic histology or medical localization claims", "editable SVG and matching PNG exports retained"],
-  "scope": "experiment diagnostic figures; not a claim of histological validity"
-}

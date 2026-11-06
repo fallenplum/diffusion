@@ -1,3 +1,0 @@
-role,samples,sample_span_seconds,workers_limit_max,running_max,GPU_percent_interval_weighted,GPU_percent_median,GPU_percent_max,memory_MiB_interval_weighted,memory_MiB_max
-inner,79,787.9511871337891,6,6,95.80089931316236,100.0,100.0,17815.547853102617,21120.0
-outer,30,293.1282579898834,6,6,96.13672963497393,100.0,100.0,19134.0489283388,23058.0

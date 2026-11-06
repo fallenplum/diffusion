@@ -1,7 +1,0 @@
-{
-  "status": "PASS",
-  "expected_records": 465,
-  "verified_records": 465,
-  "failures": [],
-  "method": "independent event pairs/reverseKM vs scikit-survival0.23.1"
-}

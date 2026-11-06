@@ -1,8 +1,0 @@
-{
-  "python": "3.12.3",
-  "torch": "2.5.1+cu124",
-  "GPU": "NVIDIA GeForce RTX 4080 SUPER",
-  "GPU_total_MiB": 32230.8125,
-  "source": "3eafc2c455e53e71adc39fa305952ad616d7d87f235d56a894502c4e4a3572a0",
-  "parent_training_environment_reuse_audited_separately": true
-}

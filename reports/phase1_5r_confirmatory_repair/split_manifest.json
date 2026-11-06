@@ -1,9 +1,0 @@
-{
-  "source": "outputs/phase1r_confirmatory_20260828/split/confirmatory_patient_manifest.csv",
-  "source_sha256": "86a5dc6b13eaa71b21ff94ffdf77b96436ce1ed8b49e8eb1c6a1fe032f0d79dc",
-  "fixed_split_sha256": "68238e4be6e690cb96fe5eac4752202f716977a7ca503e611beb2bff1119d945",
-  "folds": 5,
-  "patient_level": true,
-  "stratification": "inherited Phase1R frozen split; no regeneration",
-  "created_at": "2026-08-28T17:08:32.265396+00:00"
-}

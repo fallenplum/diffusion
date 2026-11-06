@@ -1,4 +1,0 @@
-seed,b4_encoder_frozen,bootstrap_replicates,cohort_n,decision,event_budget_rows,expected_event_budget_rows,expected_fold_rows,expected_seed_oof_rows,failure_count,formal_endpoints,formal_fold_rows,formal_seeds,outer_test_not_used_for_selection,pfi_not_fabricated,pfs_not_modeled_same_512,seed_oof_rows,status
-20260904,True,2000,512,DSS_REMAINS_PRIMARY,135,135,50,10,0,"['DSS', 'OS']",50,[20260904],True,True,True,10,True
-20260905,True,2000,512,DSS_REMAINS_PRIMARY,135,135,50,10,0,"['DSS', 'OS']",50,[20260905],True,True,True,10,True
-20260906,True,2000,512,DSS_REMAINS_PRIMARY,135,135,50,10,0,"['DSS', 'OS']",50,[20260906],True,True,True,10,True
